@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>Base_SWC</SHORT-NAME>
+      <ELEMENTS>
+        <APPLICATION-SW-COMPONENT-TYPE>
+          <SHORT-NAME>ASW_BASE</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="Master">
+                <SD>true</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <PORTS>
+            <P-PORT-PROTOTYPE UUID="e587b653-adf9-46a9-ae5f-b74d6e38fa0c">
+              <SHORT-NAME>PPort_SwcModeRequest</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/ModeRequestInterface/ModeRequestInterface</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+          </PORTS>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR UUID="6131a7d7-2eb4-443c-af46-b440c9e69731">
+              <SHORT-NAME>IB_Base_SWC</SHORT-NAME>
+              <DATA-TYPE-MAPPING-REFS>
+                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/AppMode_Mapping/AppMode_Mapping</DATA-TYPE-MAPPING-REF>
+              </DATA-TYPE-MAPPING-REFS>
+              <EVENTS>
+                <TIMING-EVENT UUID="824c2f2b-58b1-49a4-88fb-01f05c5050de">
+                  <SHORT-NAME>TE_Base_SWC_100ms</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Base_SWC/ASW_BASE/IB_Base_SWC/RE_BASE_SWC</START-ON-EVENT-REF>
+                  <PERIOD>0.1</PERIOD>
+                </TIMING-EVENT>
+              </EVENTS>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="e753a1ae-ccc4-4f00-93be-4840ac74bfef">
+                  <SHORT-NAME>RE_BASE_SWC</SHORT-NAME>
+                  <DATA-SEND-POINTS>
+                    <VARIABLE-ACCESS UUID="fae33f13-0891-4c1f-b8bc-b39853797b83">
+                      <SHORT-NAME>DSP_AppMode_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Base_SWC/ASW_BASE/PPort_SwcModeRequest</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/ModeRequestInterface/ModeRequestInterface/AppMode</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </DATA-SEND-POINTS>
+                  <MODE-ACCESS-POINTS>
+                    <MODE-ACCESS-POINT>
+                      <MODE-GROUP-IREF>
+                        <R-MODE-GROUP-IN-ATOMIC-SWC-INSTANCE-REF>
+                          <TARGET-MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/AUTOSAR_ComM/PortInterfaces/ComM_CurrentMode/currentMode</TARGET-MODE-GROUP-REF>
+                        </R-MODE-GROUP-IN-ATOMIC-SWC-INSTANCE-REF>
+                      </MODE-GROUP-IREF>
+                    </MODE-ACCESS-POINT>
+                  </MODE-ACCESS-POINTS>
+                  <SYMBOL>RE_BASE_SWC_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </APPLICATION-SW-COMPONENT-TYPE>
+        <SENDER-RECEIVER-INTERFACE>
+          <SHORT-NAME>DataTransfer100Byte_From100msTaskTo10msTask</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <DATA-ELEMENTS>
+            <VARIABLE-DATA-PROTOTYPE>
+              <SHORT-NAME>Data_ptr</SHORT-NAME>
+              <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Base_SWC/Array100ByteDataElement</TYPE-TREF>
+            </VARIABLE-DATA-PROTOTYPE>
+          </DATA-ELEMENTS>
+        </SENDER-RECEIVER-INTERFACE>
+        <IMPLEMENTATION-DATA-TYPE>
+          <SHORT-NAME>Array100ByteDataElement</SHORT-NAME>
+          <CATEGORY>ARRAY</CATEGORY>
+          <SUB-ELEMENTS>
+            <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              <SHORT-NAME>DataElement</SHORT-NAME>
+              <CATEGORY>TYPE_REFERENCE</CATEGORY>
+              <ARRAY-SIZE>100</ARRAY-SIZE>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+            </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+          </SUB-ELEMENTS>
+        </IMPLEMENTATION-DATA-TYPE>
+        <SENDER-RECEIVER-INTERFACE>
+          <SHORT-NAME>DataTransfer100Byte_Core0Core1</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <DATA-ELEMENTS>
+            <VARIABLE-DATA-PROTOTYPE>
+              <SHORT-NAME>Data_ptr</SHORT-NAME>
+              <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Base_SWC/Array100ByteDataElement</TYPE-TREF>
+            </VARIABLE-DATA-PROTOTYPE>
+          </DATA-ELEMENTS>
+        </SENDER-RECEIVER-INTERFACE>
+        <CLIENT-SERVER-INTERFACE>
+          <SHORT-NAME>Core_ClientServer_Interface</SHORT-NAME>
+          <IS-SERVICE>true</IS-SERVICE>
+          <OPERATIONS>
+            <CLIENT-SERVER-OPERATION>
+              <SHORT-NAME>Core_ClientServer</SHORT-NAME>
+              <ARGUMENTS>
+                <ARGUMENT-DATA-PROTOTYPE>
+                  <SHORT-NAME>CoreStatus</SHORT-NAME>
+                  <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint16</TYPE-TREF>
+                  <DIRECTION>OUT</DIRECTION>
+                </ARGUMENT-DATA-PROTOTYPE>
+                <ARGUMENT-DATA-PROTOTYPE>
+                  <SHORT-NAME>Data2Core</SHORT-NAME>
+                  <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint16</TYPE-TREF>
+                  <DIRECTION>IN</DIRECTION>
+                </ARGUMENT-DATA-PROTOTYPE>
+                <ARGUMENT-DATA-PROTOTYPE>
+                  <SHORT-NAME>DataOfCore</SHORT-NAME>
+                  <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint16</TYPE-TREF>
+                  <DIRECTION>OUT</DIRECTION>
+                </ARGUMENT-DATA-PROTOTYPE>
+              </ARGUMENTS>
+            </CLIENT-SERVER-OPERATION>
+          </OPERATIONS>
+        </CLIENT-SERVER-INTERFACE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

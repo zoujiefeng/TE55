@@ -1,0 +1,207 @@
+/*******************************************************************************
+**                                                                            **
+** Copyright (C) Hitex (UK) Ltd. (2020)                                       **
+**                                                                            **
+** All rights reserved.                                                       **
+**                                                                            **
+** This source code and any compilation or derivative thereof is the sole     **
+** property of Hitex (UK) Ltd. and is provided pursuant to a Software         **
+** License  Agreement. This code is the proprietary information of            **
+** Hitex (UK) Ltd. and is confidential in nature. Its use and dissemination   **
+** by any other party other than Hitex (UK) Ltd. is strictly limited by the   **
+** confidential information provisions of the Agreement referenced above.     **
+**                                                                            **
+********************************************************************************
+**                                                                            **
+** FILENAME : HtxStpSignature.txt                                             **
+**                                                                            **
+** REVISION : \$Revision: 31004 $                                              **
+**                                                                            **
+** DATE, TIME: 2024-08-27, 15:18:15                                           **
+**                                                                            **
+** GENERATOR : Build b191017-0938                                             **
+**                                                                            **
+** PLATFORM : AURIX 2G (TC3XX)                                                **
+**                                                                            **
+** AUTHOR : AURIX-SW-Dev                                                      **
+**                                                                            **
+** VENDOR : Hitex (UK) Ltd.                                                   **
+**                                                                            **
+** DESCRIPTION : AURIX 2G SafeTpack Signatures                                **
+**                                                                            **
+** SPECIFICATION(S) : <spec name, version>                                    **
+**                                                                            **
+** MAY BE CHANGED BY USER : No                                                **
+**                                                                            **
+*******************************************************************************/
+/******************************************/
+  Startup Test Seed (to be used in TstM.c)
+/******************************************/
+
+#define TSTM_STARTUP_TEST_SEED      (5U)
+
+/***************************************************************/
+  Expected Startup Test Group Signatures (to be used in TstM.c)
+/***************************************************************/
+
+TstM_ExpectedStartupTestGrpSig[0] : 0x1447D059
+TstM_ExpectedStartupTestGrpSig[1] : 0xFA53EF1B
+TstM_ExpectedStartupTestGrpSig[2] : 0x82DF3E6C
+
+
+/******************************************************************************************/
+  Expected Runtime consolidated signatures to be used in TstM.c
+  (Applicable when macro 'HTXSTPIF_WDG_STACK_STATUS' is defined as 'STD_OFF' in HtxStpIf.h)
+/******************************************************************************************/
+
+TstM_ExpectedRuntimeTestGrpSig[0]  : 0xB1FEB757
+TstM_ExpectedRuntimeTestGrpSig[1]  : 0xE4F3C7A6
+TstM_ExpectedRuntimeTestGrpSig[2]  : 0xAFA19196
+TstM_ExpectedRuntimeTestGrpSig[3]  : 0xFAACE167
+TstM_ExpectedRuntimeTestGrpSig[4]  : 0x65A54D8F
+TstM_ExpectedRuntimeTestGrpSig[5]  : 0x30A83D7E
+TstM_ExpectedRuntimeTestGrpSig[6]  : 0x7BFA6B4E
+TstM_ExpectedRuntimeTestGrpSig[7]  : 0x2EF71BBF
+TstM_ExpectedRuntimeTestGrpSig[8]  : 0x0BD49101
+TstM_ExpectedRuntimeTestGrpSig[9]  : 0x5ED9E1F0
+TstM_ExpectedRuntimeTestGrpSig[10] : 0x158BB7C0
+TstM_ExpectedRuntimeTestGrpSig[11] : 0x4086C731
+TstM_ExpectedRuntimeTestGrpSig[12] : 0xDF8F6BD9
+TstM_ExpectedRuntimeTestGrpSig[13] : 0x8A821B28
+TstM_ExpectedRuntimeTestGrpSig[14] : 0xC1D04D18
+TstM_ExpectedRuntimeTestGrpSig[15] : 0x94DD3DE9
+
+/*****************************************************************************************/
+  TLF35584 XOR Masks (to be configured in HtxTLF35584 module)
+  (Applicable when macro 'HTXSTPIF_WDG_STACK_STATUS' is defined as 'STD_ON' in HtxStpIf.h
+   and HtxTLF35584 is configured as functional watchdog)
+/*****************************************************************************************/
+
+/* Applicable to configuration without Program Flow Monitor (HtxPfm) module */
+HtxTLF35584XorMask[0]  : 0x4EF14757
+HtxTLF35584XorMask[1]  : 0x54B378E9
+HtxTLF35584XorMask[2]  : 0x46B87780
+HtxTLF35584XorMask[3]  : 0x5CFA483E
+HtxTLF35584XorMask[4]  : 0x10203705
+HtxTLF35584XorMask[5]  : 0x0A6208BB
+HtxTLF35584XorMask[6]  : 0x186907D2
+HtxTLF35584XorMask[7]  : 0x022B386C
+HtxTLF35584XorMask[8]  : 0xD9F64C2C
+HtxTLF35584XorMask[9]  : 0xC3B47392
+HtxTLF35584XorMask[10] : 0xD1BF7CFB
+HtxTLF35584XorMask[11] : 0xCBFD4345
+HtxTLF35584XorMask[12] : 0x87273C7E
+HtxTLF35584XorMask[13] : 0x9D6503C0
+HtxTLF35584XorMask[14] : 0x8F6E0CA9
+HtxTLF35584XorMask[15] : 0x952C3317
+
+
+/****************************************************************************************/
+  Internal Safety Watchdog Signatures (to be configured in HtxIntSafeWdg module)
+  (Applicable when macro 'HTXSTPIF_WDG_STACK_STATUS' is defined as 'STD_ON' in HtxStpIf.h
+   and HtxIntSafeWdg is configured as functional watchdog)
+   
+  HtxIntSafeWdgExptdTstSig[] signatures are valid only for configuration without Program
+  Flow Monitor (HtxPfm) module. For configuration with Program Flow Monitor use the 
+  HtxPfmOutputSignature[] signatures returned by Program Flow Monitor (HtxPfm) module.
+/****************************************************************************************/
+
+HtxIntSafeWdgExptdTstSig[0]  : 0xB1FEB757
+HtxIntSafeWdgExptdTstSig[1]  : 0xE4F3C7A6
+HtxIntSafeWdgExptdTstSig[2]  : 0xAFA19196
+HtxIntSafeWdgExptdTstSig[3]  : 0xFAACE167
+HtxIntSafeWdgExptdTstSig[4]  : 0x65A54D8F
+HtxIntSafeWdgExptdTstSig[5]  : 0x30A83D7E
+HtxIntSafeWdgExptdTstSig[6]  : 0x7BFA6B4E
+HtxIntSafeWdgExptdTstSig[7]  : 0x2EF71BBF
+HtxIntSafeWdgExptdTstSig[8]  : 0x0BD49101
+HtxIntSafeWdgExptdTstSig[9]  : 0x5ED9E1F0
+HtxIntSafeWdgExptdTstSig[10] : 0x158BB7C0
+HtxIntSafeWdgExptdTstSig[11] : 0x4086C731
+HtxIntSafeWdgExptdTstSig[12] : 0xDF8F6BD9
+HtxIntSafeWdgExptdTstSig[13] : 0x8A821B28
+HtxIntSafeWdgExptdTstSig[14] : 0xC1D04D18
+HtxIntSafeWdgExptdTstSig[15] : 0x94DD3DE9
+
+
+/*************************************************/
+  ADDITIONAL INFO: RUN-TIME TEST GROUP SIGNATURES
+/*************************************************/
+
+Run-time Test Group0 Signatures:
+
+TestGroup0Sig[0]  : 0xE0ECCF37
+TestGroup0Sig[1]  : 0x7BFC8EFD
+TestGroup0Sig[2]  : 0x20E0DB98
+TestGroup0Sig[3]  : 0xBBF09A52
+TestGroup0Sig[4]  : 0x38B0E0C2
+TestGroup0Sig[5]  : 0xA3A0A108
+TestGroup0Sig[6]  : 0xF8BCF46D
+TestGroup0Sig[7]  : 0x63ACB5A7
+TestGroup0Sig[8]  : 0x496D6F3F
+TestGroup0Sig[9]  : 0xD27D2EF5
+TestGroup0Sig[10] : 0x89617B90
+TestGroup0Sig[11] : 0x12713A5A
+TestGroup0Sig[12] : 0x913140CA
+TestGroup0Sig[13] : 0x0A210100
+TestGroup0Sig[14] : 0x513D5465
+TestGroup0Sig[15] : 0xCA2D15AF
+
+Run-time Test Group1 Signatures:
+
+TestGroup1Sig[0]  : 0xCA7C6630
+TestGroup1Sig[1]  : 0xB92571B6
+TestGroup1Sig[2]  : 0x91BD1C4B
+TestGroup1Sig[3]  : 0xE2E40BCD
+TestGroup1Sig[4]  : 0x0C27C72E
+TestGroup1Sig[5]  : 0x7F7ED0A8
+TestGroup1Sig[6]  : 0x57E6BD55
+TestGroup1Sig[7]  : 0x24BFAAD3
+TestGroup1Sig[8]  : 0xF741A7CD
+TestGroup1Sig[9]  : 0x8418B04B
+TestGroup1Sig[10] : 0xAC80DDB6
+TestGroup1Sig[11] : 0xDFD9CA30
+TestGroup1Sig[12] : 0x311A06D3
+TestGroup1Sig[13] : 0x42431155
+TestGroup1Sig[14] : 0x6ADB7CA8
+TestGroup1Sig[15] : 0x19826B2E
+
+Run-time Test Group2 Signatures:
+
+TestGroup2Sig[0]  : 0x0FF4D7CB
+TestGroup2Sig[1]  : 0xEF7C7B34
+TestGroup2Sig[2]  : 0x29C835F9
+TestGroup2Sig[3]  : 0xC9409906
+TestGroup2Sig[4]  : 0x3548490E
+TestGroup2Sig[5]  : 0xD5C0E5F1
+TestGroup2Sig[6]  : 0x1374AB3C
+TestGroup2Sig[7]  : 0xF3FC07C3
+TestGroup2Sig[8]  : 0x30140D6D
+TestGroup2Sig[9]  : 0xD09CA192
+TestGroup2Sig[10] : 0x1628EF5F
+TestGroup2Sig[11] : 0xF6A043A0
+TestGroup2Sig[12] : 0x0AA893A8
+TestGroup2Sig[13] : 0xEA203F57
+TestGroup2Sig[14] : 0x2C94719A
+TestGroup2Sig[15] : 0xCC1CDD65
+
+Run-time Test Group3 Signatures:
+
+TestGroup3Sig[0]  : 0x05FFBE4D
+TestGroup3Sig[1]  : 0xE57712B2
+TestGroup3Sig[2]  : 0x23C35C7F
+TestGroup3Sig[3]  : 0xC34BF080
+TestGroup3Sig[4]  : 0x3F432088
+TestGroup3Sig[5]  : 0xDFCB8C77
+TestGroup3Sig[6]  : 0x197FC2BA
+TestGroup3Sig[7]  : 0xF9F76E45
+TestGroup3Sig[8]  : 0x3A1F64EB
+TestGroup3Sig[9]  : 0xDA97C814
+TestGroup3Sig[10] : 0x1C2386D9
+TestGroup3Sig[11] : 0xFCAB2A26
+TestGroup3Sig[12] : 0x00A3FA2E
+TestGroup3Sig[13] : 0xE02B56D1
+TestGroup3Sig[14] : 0x269F181C
+TestGroup3Sig[15] : 0xC617B4E3
+
+/* End of file */

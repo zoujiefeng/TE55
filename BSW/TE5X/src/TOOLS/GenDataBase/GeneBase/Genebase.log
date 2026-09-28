@@ -1,0 +1,24 @@
+Reading text files (*3.txt)
+BD3: loading addresses from ABS file
+ABS file read:
+ 3654 updated parameters
+ 0 parameters not updated
+ 2897 parameters not found
+BD3: Integrity test
+Integrity test OK
+ 407 parameters out of calibration zones
+ 8 overlapping bytes
+Creating 'ORIGINAL VERSION' 
+Database files successfully created
+Reading text files
+BDD: Reading addresses from ABS file
+ABS file read:
+ 3495 updated parameters
+ 0 parameters not updated
+ 2723 parameters not found
+BDD: integrity test
+Integrity test OK
+ 392 parameters out of calibration zones
+ 8 overlapping bytes
+Creating 'ORIGINAL VERSION' 
+Database files successfully created

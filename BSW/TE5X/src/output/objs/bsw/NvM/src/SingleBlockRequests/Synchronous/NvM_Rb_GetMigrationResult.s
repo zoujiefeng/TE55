@@ -1,0 +1,1791 @@
+	.file	"NvM_Rb_GetMigrationResult.c"
+.section .text,"ax",@progbits
+.Ltext0:
+.section .text.NvM_Rb_GetMigrationResult,"ax",@progbits
+	.align 1
+	.global	NvM_Rb_GetMigrationResult
+	.type	NvM_Rb_GetMigrationResult, @function
+NvM_Rb_GetMigrationResult:
+.LFB109:
+	.file 1 "bsw\\NvM\\src\\SingleBlockRequests\\Synchronous\\NvM_Rb_GetMigrationResult.c"
+	.loc 1 27 0
+.LVL0:
+	mov	%d15, %d4
+	sub.a	%SP, 8
+.LCFI0:
+	.loc 1 33 0
+	mov	%d4, 239
+.LVL1:
+	mov	%d5, %d15
+	mov	%d6, 0
+	.loc 1 27 0
+	mov.aa	%a15, %a4
+	.loc 1 33 0
+	call	NvM_Prv_ErrorDetection_IsBlockIdValid
+.LVL2:
+	.loc 1 29 0
+	mov	%d8, 1
+	.loc 1 33 0
+	jnz	%d2, .L19
+.L2:
+.LVL3:
+	.loc 1 81 0
+	mov	%d2, %d8
+	ret
+.LVL4:
+.L19:
+.LBB5:
+	.loc 1 36 0
+	lea	%a4, [%SP] 8
+	st.a	[+%a4]-4, %a15
+	.loc 1 37 0
+	mov	%d4, 239
+	mov	%d5, %d15
+	mov	%d6, 14
+	call	NvM_Prv_ErrorDetection_IsPtrValid
+.LVL5:
+	jz	%d2, .L2
+.LVL6:
+.LBB6:
+.LBB7:
+	.file 2 ".\\output\\inc/..\\..\\bsw\\NvM\\src\\Internal\\BlockData\\NvM_Prv_BlockDescriptor_Inl.h"
+	.loc 2 315 0
+	ge.u	%d2, %d15, 60
+	.loc 2 314 0
+	mov	%d4, 0
+	.loc 2 315 0
+	jnz	%d2, .L4
+	.loc 2 317 0
+	movh.a	%a2, hi:NvM_Prv_BlockDescriptors_acst
+	mov.d	%d3, %a2
+	addi	%d2, %d3, lo:NvM_Prv_BlockDescriptors_acst
+	madd	%d3, %d2, %d15, 52
+	mov.a	%a2, %d3
+	ld.hu	%d4, [%a2]0
+.LVL7:
+.L4:
+.LBE7:
+.LBE6:
+	.loc 1 42 0
+	call	Fee_Rb_GetMigrationResult
+.LVL8:
+	.loc 1 76 0
+	mov	%d8, 0
+	.loc 1 45 0
+	jge.u	%d2, 6, .L2
+	movh.a	%a2, hi:.L6
+	lea	%a2, [%a2] lo:.L6
+	addsc.a	%a2, %a2, %d2, 2
+	ji	%a2
+	.align 2
+	.align 2
+.L6:
+	.code32
+	j	.L5
+	.code32
+	j	.L7
+	.code32
+	j	.L8
+	.code32
+	j	.L9
+	.code32
+	j	.L10
+	.code32
+	j	.L11
+.L10:
+	.loc 1 64 0
+	mov	%d15, 4
+.LVL9:
+	st.b	[%a15]0, %d15
+	.loc 1 76 0
+	mov	%d8, 0
+	.loc 1 65 0
+	j	.L2
+.LVL10:
+.L9:
+	.loc 1 60 0
+	mov	%d15, 3
+.LVL11:
+	st.b	[%a15]0, %d15
+	.loc 1 76 0
+	mov	%d8, 0
+	.loc 1 61 0
+	j	.L2
+.LVL12:
+.L8:
+	.loc 1 56 0
+	mov	%d15, 2
+.LVL13:
+	st.b	[%a15]0, %d15
+	.loc 1 76 0
+	mov	%d8, 0
+	.loc 1 57 0
+	j	.L2
+.LVL14:
+.L7:
+	.loc 1 52 0
+	mov	%d15, 1
+.LVL15:
+	st.b	[%a15]0, %d15
+	.loc 1 76 0
+	mov	%d8, 0
+	.loc 1 53 0
+	j	.L2
+.LVL16:
+.L5:
+	.loc 1 48 0
+	mov	%d15, 0
+.LVL17:
+	st.b	[%a15]0, %d15
+	.loc 1 76 0
+	mov	%d8, 0
+	.loc 1 49 0
+	j	.L2
+.LVL18:
+.L11:
+	.loc 1 68 0
+	mov	%d15, 5
+.LVL19:
+	st.b	[%a15]0, %d15
+	.loc 1 76 0
+	mov	%d8, 0
+	.loc 1 69 0
+	j	.L2
+.LBE5:
+.LFE109:
+	.size	NvM_Rb_GetMigrationResult, .-NvM_Rb_GetMigrationResult
+.section .debug_frame,"",@progbits
+.Lframe0:
+	.uaword	.LECIE0-.LSCIE0
+.LSCIE0:
+	.uaword	0xffffffff
+	.byte	0x1
+	.string	""
+	.uleb128 0x1
+	.sleb128 1
+	.byte	0x1b
+	.byte	0xc
+	.uleb128 0x1a
+	.uleb128 0
+	.align 2
+.LECIE0:
+.LSFDE0:
+	.uaword	.LEFDE0-.LASFDE0
+.LASFDE0:
+	.uaword	.Lframe0
+	.uaword	.LFB109
+	.uaword	.LFE109-.LFB109
+	.byte	0x4
+	.uaword	.LCFI0-.LFB109
+	.byte	0xe
+	.uleb128 0x8
+	.align 2
+.LEFDE0:
+.section .text,"ax",@progbits
+.Letext0:
+	.file 3 ".\\output\\inc/..\\..\\bsw\\integration\\Platform_Types.h"
+	.file 4 ".\\output\\inc/..\\..\\bsw\\integration\\Std_Types.h"
+	.file 5 ".\\output\\inc/..\\..\\rte\\Rte_Type.h"
+	.file 6 ".\\output\\inc/..\\..\\bsw\\MemIf\\api\\MemIf_Types.h"
+	.file 7 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM_Types.h"
+	.file 8 ".\\output\\inc/..\\..\\bsw\\NvM\\src\\Internal\\BlockData\\NvM_Prv_BlockDescriptor.h"
+	.file 9 ".\\output\\inc/..\\..\\bsw\\NvM\\src\\Internal\\ErrorDetection\\NvM_Prv_ErrorDetection.h"
+	.file 10 ".\\output\\inc/..\\..\\bsw\\NvM\\src\\Internal\\BlockData\\NvM_Prv_BlockData.h"
+	.file 11 ".\\output\\inc/..\\..\\bsw\\Fee\\api\\Fee.h"
+.section .debug_info,"",@progbits
+.Ldebug_info0:
+	.uaword	0xfa9
+	.uahalf	0x2
+	.uaword	.Ldebug_abbrev0
+	.byte	0x4
+	.uleb128 0x1
+	.ascii	"GNU C 4.9.4 build on 2020-09-01 -mli"
+	.string	"cense-dir=s:\\hightec\\toolchains\\tricore\\v4.9.4.1\\bin\\../lib/gcc/tricore/4.9.4/../../../../licenses -mcpu=tc38xx -mpragma-data-sections -mtc162 -maligned-data-sections -gdwarf-2 -O3 -fno-builtin -fno-common -ffunction-sections -fdata-sections -fshort-double"
+	.byte	0x1
+	.string	"bsw\\NvM\\src\\SingleBlockRequests\\Synchronous\\NvM_Rb_GetMigrationResult.c"
+	.string	"D:\\\\1_OutProjest\\\\dongfeng\\\\90080-05101\\\\trunk\\\\BSW\\\\20Proj\\\\BSW\\\\TE5X\\\\src"
+	.uaword	.Ldebug_ranges0+0
+	.uaword	0
+	.uaword	0
+	.uaword	.Ldebug_line0
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x6
+	.string	"signed char"
+	.uleb128 0x3
+	.string	"uint8"
+	.byte	0x3
+	.byte	0x51
+	.uaword	0x1f2
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x8
+	.string	"unsigned char"
+	.uleb128 0x2
+	.byte	0x2
+	.byte	0x5
+	.string	"short int"
+	.uleb128 0x3
+	.string	"uint16"
+	.byte	0x3
+	.byte	0x5b
+	.uaword	0x21e
+	.uleb128 0x2
+	.byte	0x2
+	.byte	0x7
+	.string	"short unsigned int"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x5
+	.string	"int"
+	.uleb128 0x2
+	.byte	0x8
+	.byte	0x5
+	.string	"long long int"
+	.uleb128 0x3
+	.string	"uint32"
+	.byte	0x3
+	.byte	0x6a
+	.uaword	0x25a
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x7
+	.string	"unsigned int"
+	.uleb128 0x2
+	.byte	0x8
+	.byte	0x7
+	.string	"long long unsigned int"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x4
+	.string	"float"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x4
+	.string	"double"
+	.uleb128 0x3
+	.string	"boolean"
+	.byte	0x3
+	.byte	0x80
+	.uaword	0x1f2
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x5
+	.string	"long int"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x7
+	.string	"long unsigned int"
+	.uleb128 0x3
+	.string	"Std_ReturnType"
+	.byte	0x4
+	.byte	0x60
+	.uaword	0x1e5
+	.uleb128 0x4
+	.byte	0x8
+	.byte	0x4
+	.byte	0x64
+	.uaword	0x35d
+	.uleb128 0x5
+	.string	"vendorID"
+	.byte	0x4
+	.byte	0x66
+	.uaword	0x210
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x5
+	.string	"moduleID"
+	.byte	0x4
+	.byte	0x67
+	.uaword	0x210
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x2
+	.uleb128 0x5
+	.string	"sw_major_version"
+	.byte	0x4
+	.byte	0x68
+	.uaword	0x1e5
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.uleb128 0x5
+	.string	"sw_minor_version"
+	.byte	0x4
+	.byte	0x69
+	.uaword	0x1e5
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x5
+	.uleb128 0x5
+	.string	"sw_patch_version"
+	.byte	0x4
+	.byte	0x6a
+	.uaword	0x1e5
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x6
+	.byte	0
+	.uleb128 0x3
+	.string	"Std_VersionInfoType"
+	.byte	0x4
+	.byte	0x6b
+	.uaword	0x2dd
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x7
+	.string	"sizetype"
+	.uleb128 0x6
+	.byte	0x4
+	.uleb128 0x7
+	.byte	0x4
+	.uaword	0x35d
+	.uleb128 0x7
+	.byte	0x4
+	.uaword	0x1e5
+	.uleb128 0x7
+	.byte	0x4
+	.uaword	0x398
+	.uleb128 0x8
+	.uaword	0x210
+	.uleb128 0x7
+	.byte	0x4
+	.uaword	0x210
+	.uleb128 0x7
+	.byte	0x4
+	.uaword	0x24c
+	.uleb128 0x7
+	.byte	0x4
+	.uaword	0x3af
+	.uleb128 0x9
+	.uleb128 0xa
+	.string	"NvM_BlockIdType"
+	.byte	0x5
+	.uahalf	0x1ca
+	.uaword	0x210
+	.uleb128 0xa
+	.string	"NvM_RequestResultType"
+	.byte	0x5
+	.uahalf	0x1d4
+	.uaword	0x1e5
+	.uleb128 0x7
+	.byte	0x4
+	.uaword	0x3ec
+	.uleb128 0xb
+	.byte	0x1
+	.uaword	0x2c7
+	.uleb128 0x7
+	.byte	0x4
+	.uaword	0x3c8
+	.uleb128 0x7
+	.byte	0x4
+	.uaword	0x3fe
+	.uleb128 0xc
+	.byte	0x1
+	.uaword	0x2c7
+	.uaword	0x40e
+	.uleb128 0xd
+	.uaword	0x1e5
+	.byte	0
+	.uleb128 0xe
+	.byte	0x1
+	.byte	0x6
+	.byte	0x30
+	.uaword	0x512
+	.uleb128 0xf
+	.string	"MEMIF_RB_MIGRATION_RESULT_INIT_E"
+	.sleb128 0
+	.uleb128 0xf
+	.string	"MEMIF_RB_MIGRATION_RESULT_NOT_NECESSARY_E"
+	.sleb128 1
+	.uleb128 0xf
+	.string	"MEMIF_RB_MIGRATION_RESULT_TO_SMALLER_SIZE_E"
+	.sleb128 2
+	.uleb128 0xf
+	.string	"MEMIF_RB_MIGRATION_RESULT_TO_BIGGER_SIZE_E"
+	.sleb128 3
+	.uleb128 0xf
+	.string	"MEMIF_RB_MIGRATION_RESULT_NOT_DONE_E"
+	.sleb128 4
+	.uleb128 0xf
+	.string	"MEMIF_RB_MIGRATION_RESULT_DEACTIVATED_E"
+	.sleb128 5
+	.byte	0
+	.uleb128 0x3
+	.string	"MemIf_Rb_MigrationResult_ten"
+	.byte	0x6
+	.byte	0x37
+	.uaword	0x40e
+	.uleb128 0xe
+	.byte	0x1
+	.byte	0x7
+	.byte	0x8f
+	.uaword	0x62e
+	.uleb128 0xf
+	.string	"NVM_RB_MIGRATION_RESULT_INIT_E"
+	.sleb128 0
+	.uleb128 0xf
+	.string	"NVM_RB_MIGRATION_RESULT_NOT_NECESSARY_E"
+	.sleb128 1
+	.uleb128 0xf
+	.string	"NVM_RB_MIGRATION_RESULT_TO_SMALLER_SIZE_E"
+	.sleb128 2
+	.uleb128 0xf
+	.string	"NVM_RB_MIGRATION_RESULT_TO_BIGGER_SIZE_E"
+	.sleb128 3
+	.uleb128 0xf
+	.string	"NVM_RB_MIGRATION_RESULT_NOT_DONE_E"
+	.sleb128 4
+	.uleb128 0xf
+	.string	"NVM_RB_MIGRATION_RESULT_DEACTIVATED_E"
+	.sleb128 5
+	.byte	0
+	.uleb128 0x3
+	.string	"NvM_Rb_MigrationResult_ten"
+	.byte	0x7
+	.byte	0x96
+	.uaword	0x536
+	.uleb128 0xe
+	.byte	0x1
+	.byte	0x7
+	.byte	0x9a
+	.uaword	0x69a
+	.uleb128 0xf
+	.string	"NVM_RB_STATUS_UNINIT"
+	.sleb128 0
+	.uleb128 0xf
+	.string	"NVM_RB_STATUS_IDLE"
+	.sleb128 1
+	.uleb128 0xf
+	.string	"NVM_RB_STATUS_BUSY"
+	.sleb128 2
+	.byte	0
+	.uleb128 0x3
+	.string	"NvM_Rb_StatusType"
+	.byte	0x7
+	.byte	0x9e
+	.uaword	0x650
+	.uleb128 0xe
+	.byte	0x1
+	.byte	0x7
+	.byte	0xa2
+	.uaword	0x6f9
+	.uleb128 0xf
+	.string	"NVM_BLOCK_NATIVE"
+	.sleb128 0
+	.uleb128 0xf
+	.string	"NVM_BLOCK_REDUNDANT"
+	.sleb128 1
+	.uleb128 0xf
+	.string	"NVM_BLOCK_DATASET"
+	.sleb128 2
+	.byte	0
+	.uleb128 0x3
+	.string	"NvM_BlockManagementType"
+	.byte	0x7
+	.byte	0xa6
+	.uaword	0x6b3
+	.uleb128 0xa
+	.string	"NvM_Prv_idService_tuo"
+	.byte	0x7
+	.uahalf	0x14c
+	.uaword	0x1e5
+	.uleb128 0xa
+	.string	"NvM_Prv_idDetError_tuo"
+	.byte	0x7
+	.uahalf	0x150
+	.uaword	0x1e5
+	.uleb128 0x7
+	.byte	0x4
+	.uaword	0x75b
+	.uleb128 0xc
+	.byte	0x1
+	.uaword	0x2c7
+	.uaword	0x76b
+	.uleb128 0xd
+	.uaword	0x384
+	.byte	0
+	.uleb128 0x4
+	.byte	0xc
+	.byte	0x8
+	.byte	0x77
+	.uaword	0x7df
+	.uleb128 0x5
+	.string	"MultiBlockCallback_pfct"
+	.byte	0x8
+	.byte	0x7f
+	.uaword	0x7f0
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x5
+	.string	"RbMultiBlockStartCallback_pfct"
+	.byte	0x8
+	.byte	0x84
+	.uaword	0x802
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.uleb128 0x5
+	.string	"ObserverCallback_pfct"
+	.byte	0x8
+	.byte	0x8a
+	.uaword	0x822
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.byte	0
+	.uleb128 0x10
+	.byte	0x1
+	.uaword	0x7f0
+	.uleb128 0xd
+	.uaword	0x1e5
+	.uleb128 0xd
+	.uaword	0x3c8
+	.byte	0
+	.uleb128 0x7
+	.byte	0x4
+	.uaword	0x7df
+	.uleb128 0x10
+	.byte	0x1
+	.uaword	0x802
+	.uleb128 0xd
+	.uaword	0x1e5
+	.byte	0
+	.uleb128 0x7
+	.byte	0x4
+	.uaword	0x7f6
+	.uleb128 0xc
+	.byte	0x1
+	.uaword	0x2c7
+	.uaword	0x822
+	.uleb128 0xd
+	.uaword	0x3b0
+	.uleb128 0xd
+	.uaword	0x1e5
+	.uleb128 0xd
+	.uaword	0x3c8
+	.byte	0
+	.uleb128 0x7
+	.byte	0x4
+	.uaword	0x808
+	.uleb128 0x3
+	.string	"NvM_Prv_Common_tst"
+	.byte	0x8
+	.byte	0x8d
+	.uaword	0x76b
+	.uleb128 0x4
+	.byte	0x34
+	.byte	0x8
+	.byte	0x95
+	.uaword	0xa17
+	.uleb128 0x11
+	.uaword	.LASF0
+	.byte	0x8
+	.byte	0x9b
+	.uaword	0x210
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x5
+	.string	"nrBlockBytes_pu16"
+	.byte	0x8
+	.byte	0xa9
+	.uaword	0x392
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.uleb128 0x5
+	.string	"nrBlockBytesStored_u16"
+	.byte	0x8
+	.byte	0xb5
+	.uaword	0x210
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.uleb128 0x5
+	.string	"idxDevice_u8"
+	.byte	0x8
+	.byte	0xbb
+	.uaword	0x1e5
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xa
+	.uleb128 0x5
+	.string	"nrNvBlocks_u8"
+	.byte	0x8
+	.byte	0xc0
+	.uaword	0x1e5
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xb
+	.uleb128 0x5
+	.string	"nrRomBlocks_u8"
+	.byte	0x8
+	.byte	0xc5
+	.uaword	0x1e5
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xc
+	.uleb128 0x5
+	.string	"adrRamBlock_ppv"
+	.byte	0x8
+	.byte	0xd6
+	.uaword	0xa17
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x10
+	.uleb128 0x5
+	.string	"adrRomBlock_pcv"
+	.byte	0x8
+	.byte	0xde
+	.uaword	0x3a9
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x14
+	.uleb128 0x5
+	.string	"SingleBlockCallback_pfct"
+	.byte	0x8
+	.byte	0xe8
+	.uaword	0xa37
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x18
+	.uleb128 0x5
+	.string	"SingleBlockStartCallback_pfct"
+	.byte	0x8
+	.byte	0xf0
+	.uaword	0x3f8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x1c
+	.uleb128 0x5
+	.string	"InitBlockCallback_pfct"
+	.byte	0x8
+	.byte	0xf9
+	.uaword	0x3e6
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x20
+	.uleb128 0x12
+	.string	"ReadRamBlockFromNvm_pfct"
+	.byte	0x8
+	.uahalf	0x102
+	.uaword	0x755
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x24
+	.uleb128 0x12
+	.string	"WriteRamBlockToNvm_pfct"
+	.byte	0x8
+	.uahalf	0x10b
+	.uaword	0x755
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x28
+	.uleb128 0x12
+	.string	"BlockManagementType_en"
+	.byte	0x8
+	.uahalf	0x110
+	.uaword	0x6f9
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x2c
+	.uleb128 0x12
+	.string	"JobPriority_u8"
+	.byte	0x8
+	.uahalf	0x115
+	.uaword	0x1e5
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x2d
+	.uleb128 0x12
+	.string	"stFlags_uo"
+	.byte	0x8
+	.uahalf	0x13e
+	.uaword	0x24c
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x30
+	.byte	0
+	.uleb128 0x7
+	.byte	0x4
+	.uaword	0xa1d
+	.uleb128 0x8
+	.uaword	0x384
+	.uleb128 0xc
+	.byte	0x1
+	.uaword	0x2c7
+	.uaword	0xa37
+	.uleb128 0xd
+	.uaword	0x1e5
+	.uleb128 0xd
+	.uaword	0x3c8
+	.byte	0
+	.uleb128 0x7
+	.byte	0x4
+	.uaword	0xa22
+	.uleb128 0xa
+	.string	"NvM_Prv_BlockDescriptor_tst"
+	.byte	0x8
+	.uahalf	0x153
+	.uaword	0x842
+	.uleb128 0x13
+	.byte	0x4
+	.byte	0x8
+	.uahalf	0x158
+	.uaword	0xa9e
+	.uleb128 0x12
+	.string	"PersistentId_u16"
+	.byte	0x8
+	.uahalf	0x15a
+	.uaword	0x210
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x12
+	.string	"BlockId_u16"
+	.byte	0x8
+	.uahalf	0x15b
+	.uaword	0x3b0
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x2
+	.byte	0
+	.uleb128 0xa
+	.string	"NvM_Prv_PersId_BlockId_tst"
+	.byte	0x8
+	.uahalf	0x15c
+	.uaword	0xa61
+	.uleb128 0x14
+	.byte	0x4
+	.byte	0x9
+	.byte	0x1d
+	.uaword	0xbc8
+	.uleb128 0x15
+	.string	"ptrToCheck_pv"
+	.byte	0x9
+	.byte	0x1f
+	.uaword	0x384
+	.uleb128 0x15
+	.string	"ptrDataIdx_pu8"
+	.byte	0x9
+	.byte	0x20
+	.uaword	0x38c
+	.uleb128 0x15
+	.string	"ptrRequestResult_puo"
+	.byte	0x9
+	.byte	0x21
+	.uaword	0x3f2
+	.uleb128 0x15
+	.string	"ptrMigrationResult_pen"
+	.byte	0x9
+	.byte	0x22
+	.uaword	0xbc8
+	.uleb128 0x15
+	.string	"ptrStatusType_pen"
+	.byte	0x9
+	.byte	0x23
+	.uaword	0xbce
+	.uleb128 0x15
+	.string	"ptrBlockLength_pu16"
+	.byte	0x9
+	.byte	0x24
+	.uaword	0x39d
+	.uleb128 0x15
+	.string	"ptrIdService_puo"
+	.byte	0x9
+	.byte	0x25
+	.uaword	0xbd4
+	.uleb128 0x15
+	.string	"ptrIdBlock_puo"
+	.byte	0x9
+	.byte	0x26
+	.uaword	0xbda
+	.uleb128 0x15
+	.string	"ptrVersionInfo_pst"
+	.byte	0x9
+	.byte	0x27
+	.uaword	0x386
+	.uleb128 0x15
+	.string	"ptrCntrWriteBlock_puo"
+	.byte	0x9
+	.byte	0x28
+	.uaword	0x3a3
+	.byte	0
+	.uleb128 0x7
+	.byte	0x4
+	.uaword	0x62e
+	.uleb128 0x7
+	.byte	0x4
+	.uaword	0x69a
+	.uleb128 0x7
+	.byte	0x4
+	.uaword	0x718
+	.uleb128 0x7
+	.byte	0x4
+	.uaword	0x3b0
+	.uleb128 0x3
+	.string	"NvM_Prv_ErrorDetection_Ptr_tun"
+	.byte	0x9
+	.byte	0x2a
+	.uaword	0xac1
+	.uleb128 0x16
+	.string	"NvM_Prv_GetIdBlockMemIf"
+	.byte	0x2
+	.uahalf	0x138
+	.byte	0x1
+	.uaword	0x210
+	.byte	0x3
+	.uaword	0xc4c
+	.uleb128 0x17
+	.string	"idBlock_uo"
+	.byte	0x2
+	.uahalf	0x138
+	.uaword	0x3b0
+	.uleb128 0x18
+	.uaword	.LASF0
+	.byte	0x2
+	.uahalf	0x13a
+	.uaword	0x210
+	.byte	0
+	.uleb128 0x19
+	.byte	0x1
+	.string	"NvM_Rb_GetMigrationResult"
+	.byte	0x1
+	.byte	0x1a
+	.byte	0x1
+	.uaword	0x2c7
+	.uaword	.LFB109
+	.uaword	.LFE109
+	.uaword	.LLST0
+	.byte	0x1
+	.uaword	0xd7d
+	.uleb128 0x1a
+	.string	"BlockId"
+	.byte	0x1
+	.byte	0x1a
+	.uaword	0x3b0
+	.uaword	.LLST1
+	.uleb128 0x1a
+	.string	"MigrationResultPtr"
+	.byte	0x1
+	.byte	0x1a
+	.uaword	0xbc8
+	.uaword	.LLST2
+	.uleb128 0x1b
+	.string	"stReturn_uo"
+	.byte	0x1
+	.byte	0x1d
+	.uaword	0x2c7
+	.uaword	.LLST3
+	.uleb128 0x1c
+	.string	"migrationResult_en"
+	.byte	0x1
+	.byte	0x1e
+	.uaword	0x512
+	.byte	0x1
+	.byte	0x52
+	.uleb128 0x1d
+	.uaword	.LBB5
+	.uaword	.LBE5
+	.uaword	0xd61
+	.uleb128 0x1c
+	.string	"ptr_un"
+	.byte	0x1
+	.byte	0x23
+	.uaword	0xbe0
+	.byte	0x2
+	.byte	0x91
+	.sleb128 -4
+	.uleb128 0x1e
+	.uaword	0xc06
+	.uaword	.LBB6
+	.uaword	.LBE6
+	.byte	0x1
+	.byte	0x2a
+	.uaword	0xd32
+	.uleb128 0x1f
+	.uaword	0xc2c
+	.uaword	.LLST4
+	.uleb128 0x20
+	.uaword	.LBB7
+	.uaword	.LBE7
+	.uleb128 0x21
+	.uaword	0xc3f
+	.uaword	.LLST5
+	.byte	0
+	.byte	0
+	.uleb128 0x22
+	.uaword	.LVL5
+	.uaword	0xeee
+	.uaword	0xd57
+	.uleb128 0x23
+	.byte	0x1
+	.byte	0x64
+	.byte	0x2
+	.byte	0x91
+	.sleb128 -4
+	.uleb128 0x23
+	.byte	0x1
+	.byte	0x56
+	.byte	0x1
+	.byte	0x3e
+	.uleb128 0x23
+	.byte	0x1
+	.byte	0x55
+	.byte	0x2
+	.byte	0x7f
+	.sleb128 0
+	.uleb128 0x23
+	.byte	0x1
+	.byte	0x54
+	.byte	0x2
+	.byte	0x9
+	.byte	0xef
+	.byte	0
+	.uleb128 0x24
+	.uaword	.LVL8
+	.uaword	0xf3e
+	.byte	0
+	.uleb128 0x25
+	.uaword	.LVL2
+	.uaword	0xf6c
+	.uleb128 0x23
+	.byte	0x1
+	.byte	0x56
+	.byte	0x1
+	.byte	0x30
+	.uleb128 0x23
+	.byte	0x1
+	.byte	0x55
+	.byte	0x2
+	.byte	0x7f
+	.sleb128 0
+	.uleb128 0x23
+	.byte	0x1
+	.byte	0x54
+	.byte	0x2
+	.byte	0x9
+	.byte	0xef
+	.byte	0
+	.byte	0
+	.uleb128 0x26
+	.string	"NvM_Prv_Common_cst"
+	.byte	0x8
+	.uahalf	0x16d
+	.uaword	0xd9a
+	.byte	0x1
+	.byte	0x1
+	.uleb128 0x8
+	.uaword	0x828
+	.uleb128 0x27
+	.uaword	0xa3d
+	.uaword	0xdaf
+	.uleb128 0x28
+	.uaword	0x378
+	.byte	0x3b
+	.byte	0
+	.uleb128 0x26
+	.string	"NvM_Prv_BlockDescriptors_acst"
+	.byte	0x8
+	.uahalf	0x172
+	.uaword	0xdd7
+	.byte	0x1
+	.byte	0x1
+	.uleb128 0x8
+	.uaword	0xd9f
+	.uleb128 0x27
+	.uaword	0xa9e
+	.uaword	0xdec
+	.uleb128 0x28
+	.uaword	0x378
+	.byte	0x39
+	.byte	0
+	.uleb128 0x26
+	.string	"NvM_Prv_PersId_BlockId_acst"
+	.byte	0x8
+	.uahalf	0x176
+	.uaword	0xe12
+	.byte	0x1
+	.byte	0x1
+	.uleb128 0x8
+	.uaword	0xddc
+	.uleb128 0x27
+	.uaword	0x1e5
+	.uaword	0xe27
+	.uleb128 0x28
+	.uaword	0x378
+	.byte	0x3b
+	.byte	0
+	.uleb128 0x29
+	.string	"NvM_Prv_stBlock_au8"
+	.byte	0xa
+	.byte	0x54
+	.uaword	0xe17
+	.byte	0x1
+	.byte	0x1
+	.uleb128 0x27
+	.uaword	0x210
+	.uaword	0xe54
+	.uleb128 0x28
+	.uaword	0x378
+	.byte	0x3b
+	.byte	0
+	.uleb128 0x29
+	.string	"NvM_Prv_stRequests_au16"
+	.byte	0xa
+	.byte	0x6b
+	.uaword	0xe44
+	.byte	0x1
+	.byte	0x1
+	.uleb128 0x27
+	.uaword	0x3c8
+	.uaword	0xe85
+	.uleb128 0x28
+	.uaword	0x378
+	.byte	0x3b
+	.byte	0
+	.uleb128 0x29
+	.string	"NvM_Prv_stRequestResult_au8"
+	.byte	0xa
+	.byte	0x74
+	.uaword	0xe75
+	.byte	0x1
+	.byte	0x1
+	.uleb128 0x29
+	.string	"NvM_Prv_idxDataSet_au8"
+	.byte	0xa
+	.byte	0x78
+	.uaword	0xe17
+	.byte	0x1
+	.byte	0x1
+	.uleb128 0x29
+	.string	"NvM_Prv_idConfigStored_u16"
+	.byte	0xa
+	.byte	0x81
+	.uaword	0x210
+	.byte	0x1
+	.byte	0x1
+	.uleb128 0x2a
+	.byte	0x1
+	.string	"NvM_Prv_ErrorDetection_IsPtrValid"
+	.byte	0x9
+	.byte	0x56
+	.byte	0x1
+	.uaword	0x297
+	.byte	0x1
+	.uaword	0xf33
+	.uleb128 0xd
+	.uaword	0x718
+	.uleb128 0xd
+	.uaword	0x3b0
+	.uleb128 0xd
+	.uaword	0x736
+	.uleb128 0xd
+	.uaword	0xf33
+	.byte	0
+	.uleb128 0x7
+	.byte	0x4
+	.uaword	0xf39
+	.uleb128 0x8
+	.uaword	0xbe0
+	.uleb128 0x2a
+	.byte	0x1
+	.string	"Fee_Rb_GetMigrationResult"
+	.byte	0xb
+	.byte	0x5a
+	.byte	0x1
+	.uaword	0x512
+	.byte	0x1
+	.uaword	0xf6c
+	.uleb128 0xd
+	.uaword	0x210
+	.byte	0
+	.uleb128 0x2b
+	.byte	0x1
+	.string	"NvM_Prv_ErrorDetection_IsBlockIdValid"
+	.byte	0x9
+	.byte	0x5c
+	.byte	0x1
+	.uaword	0x297
+	.byte	0x1
+	.uleb128 0xd
+	.uaword	0x718
+	.uleb128 0xd
+	.uaword	0x3b0
+	.uleb128 0xd
+	.uaword	0x297
+	.byte	0
+	.byte	0
+.section .debug_abbrev,"",@progbits
+.Ldebug_abbrev0:
+	.uleb128 0x1
+	.uleb128 0x11
+	.byte	0x1
+	.uleb128 0x25
+	.uleb128 0x8
+	.uleb128 0x13
+	.uleb128 0xb
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x1b
+	.uleb128 0x8
+	.uleb128 0x55
+	.uleb128 0x6
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x52
+	.uleb128 0x1
+	.uleb128 0x10
+	.uleb128 0x6
+	.byte	0
+	.byte	0
+	.uleb128 0x2
+	.uleb128 0x24
+	.byte	0
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3e
+	.uleb128 0xb
+	.uleb128 0x3
+	.uleb128 0x8
+	.byte	0
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x16
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x4
+	.uleb128 0x13
+	.byte	0x1
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x5
+	.uleb128 0xd
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x38
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0x6
+	.uleb128 0xf
+	.byte	0
+	.uleb128 0xb
+	.uleb128 0xb
+	.byte	0
+	.byte	0
+	.uleb128 0x7
+	.uleb128 0xf
+	.byte	0
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x8
+	.uleb128 0x26
+	.byte	0
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x9
+	.uleb128 0x26
+	.byte	0
+	.byte	0
+	.byte	0
+	.uleb128 0xa
+	.uleb128 0x16
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0xb
+	.uleb128 0x15
+	.byte	0
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0xc
+	.uleb128 0x15
+	.byte	0x1
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0xd
+	.uleb128 0x5
+	.byte	0
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0xe
+	.uleb128 0x4
+	.byte	0x1
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0xf
+	.uleb128 0x28
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x1c
+	.uleb128 0xd
+	.byte	0
+	.byte	0
+	.uleb128 0x10
+	.uleb128 0x15
+	.byte	0x1
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x11
+	.uleb128 0xd
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0xe
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x38
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0x12
+	.uleb128 0xd
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x38
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0x13
+	.uleb128 0x13
+	.byte	0x1
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x14
+	.uleb128 0x17
+	.byte	0x1
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x15
+	.uleb128 0xd
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x16
+	.uleb128 0x2e
+	.byte	0x1
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x20
+	.uleb128 0xb
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x17
+	.uleb128 0x5
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x18
+	.uleb128 0x34
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0xe
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x19
+	.uleb128 0x2e
+	.byte	0x1
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x12
+	.uleb128 0x1
+	.uleb128 0x40
+	.uleb128 0x6
+	.uleb128 0x2117
+	.uleb128 0xc
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x1a
+	.uleb128 0x5
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0x6
+	.byte	0
+	.byte	0
+	.uleb128 0x1b
+	.uleb128 0x34
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0x6
+	.byte	0
+	.byte	0
+	.uleb128 0x1c
+	.uleb128 0x34
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0x1d
+	.uleb128 0xb
+	.byte	0x1
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x12
+	.uleb128 0x1
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x1e
+	.uleb128 0x1d
+	.byte	0x1
+	.uleb128 0x31
+	.uleb128 0x13
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x12
+	.uleb128 0x1
+	.uleb128 0x58
+	.uleb128 0xb
+	.uleb128 0x59
+	.uleb128 0xb
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x1f
+	.uleb128 0x5
+	.byte	0
+	.uleb128 0x31
+	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0x6
+	.byte	0
+	.byte	0
+	.uleb128 0x20
+	.uleb128 0xb
+	.byte	0x1
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x12
+	.uleb128 0x1
+	.byte	0
+	.byte	0
+	.uleb128 0x21
+	.uleb128 0x34
+	.byte	0
+	.uleb128 0x31
+	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0x6
+	.byte	0
+	.byte	0
+	.uleb128 0x22
+	.uleb128 0x4109
+	.byte	0x1
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x31
+	.uleb128 0x13
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x23
+	.uleb128 0x410a
+	.byte	0
+	.uleb128 0x2
+	.uleb128 0xa
+	.uleb128 0x2111
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0x24
+	.uleb128 0x4109
+	.byte	0
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x31
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x25
+	.uleb128 0x4109
+	.byte	0x1
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x31
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x26
+	.uleb128 0x34
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x3c
+	.uleb128 0xc
+	.byte	0
+	.byte	0
+	.uleb128 0x27
+	.uleb128 0x1
+	.byte	0x1
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x28
+	.uleb128 0x21
+	.byte	0
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2f
+	.uleb128 0xb
+	.byte	0
+	.byte	0
+	.uleb128 0x29
+	.uleb128 0x34
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x3c
+	.uleb128 0xc
+	.byte	0
+	.byte	0
+	.uleb128 0x2a
+	.uleb128 0x2e
+	.byte	0x1
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x3c
+	.uleb128 0xc
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x2b
+	.uleb128 0x2e
+	.byte	0x1
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x3c
+	.uleb128 0xc
+	.byte	0
+	.byte	0
+	.byte	0
+.section .debug_loc,"",@progbits
+.Ldebug_loc0:
+.LLST0:
+	.uaword	.LFB109
+	.uaword	.LCFI0
+	.uahalf	0x2
+	.byte	0x8a
+	.sleb128 0
+	.uaword	.LCFI0
+	.uaword	.LFE109
+	.uahalf	0x2
+	.byte	0x8a
+	.sleb128 8
+	.uaword	0
+	.uaword	0
+.LLST1:
+	.uaword	.LVL0
+	.uaword	.LVL1
+	.uahalf	0x1
+	.byte	0x54
+	.uaword	.LVL1
+	.uaword	.LFE109
+	.uahalf	0x4
+	.byte	0xf3
+	.uleb128 0x1
+	.byte	0x54
+	.byte	0x9f
+	.uaword	0
+	.uaword	0
+.LLST2:
+	.uaword	.LVL0
+	.uaword	.LVL2-1
+	.uahalf	0x1
+	.byte	0x64
+	.uaword	.LVL2-1
+	.uaword	.LFE109
+	.uahalf	0x1
+	.byte	0x6f
+	.uaword	0
+	.uaword	0
+.LLST3:
+	.uaword	.LVL0
+	.uaword	.LVL3
+	.uahalf	0x2
+	.byte	0x31
+	.byte	0x9f
+	.uaword	.LVL3
+	.uaword	.LVL4
+	.uahalf	0x1
+	.byte	0x58
+	.uaword	.LVL4
+	.uaword	.LFE109
+	.uahalf	0x2
+	.byte	0x31
+	.byte	0x9f
+	.uaword	0
+	.uaword	0
+.LLST4:
+	.uaword	.LVL6
+	.uaword	.LVL9
+	.uahalf	0x1
+	.byte	0x5f
+	.uaword	.LVL10
+	.uaword	.LVL11
+	.uahalf	0x1
+	.byte	0x5f
+	.uaword	.LVL12
+	.uaword	.LVL13
+	.uahalf	0x1
+	.byte	0x5f
+	.uaword	.LVL14
+	.uaword	.LVL15
+	.uahalf	0x1
+	.byte	0x5f
+	.uaword	.LVL16
+	.uaword	.LVL17
+	.uahalf	0x1
+	.byte	0x5f
+	.uaword	.LVL18
+	.uaword	.LVL19
+	.uahalf	0x1
+	.byte	0x5f
+	.uaword	0
+	.uaword	0
+.LLST5:
+	.uaword	.LVL6
+	.uaword	.LVL7
+	.uahalf	0x2
+	.byte	0x30
+	.byte	0x9f
+	.uaword	.LVL7
+	.uaword	.LVL8-1
+	.uahalf	0x1
+	.byte	0x54
+	.uaword	0
+	.uaword	0
+.section .debug_aranges,"",@progbits
+	.uaword	0x1c
+	.uahalf	0x2
+	.uaword	.Ldebug_info0
+	.byte	0x4
+	.byte	0
+	.uahalf	0
+	.uahalf	0
+	.uaword	.LFB109
+	.uaword	.LFE109-.LFB109
+	.uaword	0
+	.uaword	0
+.section .debug_ranges,"",@progbits
+.Ldebug_ranges0:
+	.uaword	.LFB109
+	.uaword	.LFE109
+	.uaword	0
+	.uaword	0
+.section .debug_line,"",@progbits
+.Ldebug_line0:
+.section .debug_str,"",@progbits
+.LASF0:
+	.string	"idBlockMemIf_u16"
+	.extern	Fee_Rb_GetMigrationResult,STT_FUNC,0
+	.extern	NvM_Prv_BlockDescriptors_acst,STT_OBJECT,3120
+	.extern	NvM_Prv_ErrorDetection_IsPtrValid,STT_FUNC,0
+	.extern	NvM_Prv_ErrorDetection_IsBlockIdValid,STT_FUNC,0
+	.ident	"GCC: (HighTec Release HDP-v4.9.4.1-11fcedf) 4.9.4 build on 2020-09-01"

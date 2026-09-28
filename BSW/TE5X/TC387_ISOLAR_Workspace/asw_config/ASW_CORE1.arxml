@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00047.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>ASW_CORE1</SHORT-NAME>
+      <ELEMENTS>
+        <APPLICATION-SW-COMPONENT-TYPE>
+          <SHORT-NAME>ASW_CORE1</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="Master">
+                <SD>true</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <PORTS>
+            <P-PORT-PROTOTYPE UUID="6f106e77-52b6-4617-8195-5f68d1096af8">
+              <SHORT-NAME>PPort_TransmitData2Core0</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Base_SWC/DataTransfer100Byte_Core0Core1</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="c1095ce1-6493-45f3-8d76-72686552a25f">
+              <SHORT-NAME>RPort_ReceiverDataFromCore0</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Base_SWC/DataTransfer100Byte_Core0Core1</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="eda5826e-880a-465d-b942-ba2d66192f63">
+              <SHORT-NAME>RPort_CPUUtilizationCore1</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/ServiceSwComponentInterface/CPU_Utilization</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="9f2029b8-e156-40b2-8ee3-ef2ac7439173">
+              <SHORT-NAME>RPort_GetMaxUserStackUtilization</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/ServiceSwComponentInterface/GetMaxUserStackUtilization</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+          </PORTS>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR UUID="2ce80a45-c0d5-45d8-abf7-4e1febe74308">
+              <SHORT-NAME>SwcInternalBehavior</SHORT-NAME>
+              <EVENTS>
+                <TIMING-EVENT>
+                  <SHORT-NAME>TimingEvent_0</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ASW_CORE1/ASW_CORE1/SwcInternalBehavior/RE_CORE1_SWC</START-ON-EVENT-REF>
+                  <PERIOD>0.01</PERIOD>
+                </TIMING-EVENT>
+                <TIMING-EVENT UUID="9bfe221e-9e8e-4c21-976a-2ae103bf0625">
+                  <SHORT-NAME>TimingEvent_1</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ASW_CORE1/ASW_CORE1/SwcInternalBehavior/MAIN_CORE1_1ms</START-ON-EVENT-REF>
+                  <PERIOD>0.001</PERIOD>
+                </TIMING-EVENT>
+                <TIMING-EVENT UUID="00345cec-7170-49cf-9d70-dde588bf1e33">
+                  <SHORT-NAME>TimingEvent_2</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ASW_CORE1/ASW_CORE1/SwcInternalBehavior/GMAIN_CORE1_1ms</START-ON-EVENT-REF>
+                  <PERIOD>0.001</PERIOD>
+                </TIMING-EVENT>
+                <TIMING-EVENT UUID="f8af31fe-1538-4af7-b795-26d9eec12155">
+                  <SHORT-NAME>TimingEvent_3</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ASW_CORE1/ASW_CORE1/SwcInternalBehavior/MAIN_CORE1_10ms</START-ON-EVENT-REF>
+                  <PERIOD>0.01</PERIOD>
+                </TIMING-EVENT>
+              </EVENTS>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="72212f6c-51c0-4506-aa73-55227f833f51">
+                  <SHORT-NAME>RE_CORE1_SWC</SHORT-NAME>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                    <VARIABLE-ACCESS>
+                      <SHORT-NAME>DRPA_Data_ptr_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/ASW_CORE1/ASW_CORE1/RPort_ReceiverDataFromCore0</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Base_SWC/DataTransfer100Byte_Core0Core1/Data_ptr</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                  <DATA-SEND-POINTS>
+                    <VARIABLE-ACCESS>
+                      <SHORT-NAME>DSP_Data_ptr_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/ASW_CORE1/ASW_CORE1/PPort_TransmitData2Core0</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Base_SWC/DataTransfer100Byte_Core0Core1/Data_ptr</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </DATA-SEND-POINTS>
+                  <SERVER-CALL-POINTS>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="f2526885-fd65-4ccc-add0-56a833cf65fe">
+                      <SHORT-NAME>SynchronousServerCallPoint</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ASW_CORE1/ASW_CORE1/RPort_CPUUtilizationCore1</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ServiceSwComponentInterface/CPU_Utilization/CPU_Utilization</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="dd46c08d-f6a6-44c5-bbe0-4e5ef1baf56f">
+                      <SHORT-NAME>SynchronousServerCallPoint_0</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ASW_CORE1/ASW_CORE1/RPort_GetMaxUserStackUtilization</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ServiceSwComponentInterface/GetMaxUserStackUtilization/GetMaxUserStackUtilization</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                  </SERVER-CALL-POINTS>
+                  <SYMBOL>RE_CORE1_SWC_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="784b3aef-8c0e-4665-8ce5-e07e79b9588a">
+                  <SHORT-NAME>MAIN_CORE1_1ms</SHORT-NAME>
+                  <SYMBOL>MAIN_CORE1_1ms_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="0415f543-14b4-445d-b731-7b3c358a7b63">
+                  <SHORT-NAME>GMAIN_CORE1_1ms</SHORT-NAME>
+                  <SYMBOL>GMAIN_CORE1_1ms_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="75880119-4b45-4078-b8df-d9dee1061ae0">
+                  <SHORT-NAME>MAIN_CORE1_10ms</SHORT-NAME>
+                  <SYMBOL>MAIN_CORE1_10ms_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </APPLICATION-SW-COMPONENT-TYPE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

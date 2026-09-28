@@ -1,0 +1,25 @@
+Nom_donnée|Type|Nom_module|Public|Nb_lignes|Nb_colonnes|Label_père|Offset|Masque_accès|Affichage|Unité|Fonction_transfert_ades|Coefficient_a|Coefficient_b|Groupe|Groupe_1|Groupe_2|Alias_1|Alias_2|Genre|Variable_indice_ligne|Variable_indice_colonne|Fonction_transfert_ligne|Fonction_transfert_colonne|Table_breakpoint_ligne|Table_breakpoint_colonne|Référence_spécification|Recuperable|Modifiable|Fournisseur|Responsable|Valeurs|Visualisable_ADES|Donnée_a_supprimer|Validation|Commentaires|Volatile|MinDecValue|MaxDecValue|MinPhysValue|MaxPhysValue|Def_Eval|MemSec
+VSI_bBenchFrameRxChkOffC|boolean|VSI|1|0|0|VSI_bBenchFrameRxChkOffC|0|0|Phys|bool|2|0||Developpement|Developpement||VSI_bBenchFrameRxChkOffC||2|||||||NONE|1|1|||0|1|0|0|VSI Rx Chk off|0||||||
+VSI_u16Cal1OverCurThBatC|uint16|VSI|0|0|0|VSI_u16Cal1OverCurThBatC|0|0|Phys|V|1|5/4095|0|Driver|Driver||VSI_u16Cal1OverCurThBatC||2|||||||V01 NT 10 01945|1|1|||3687|1|0|0|Over current threshold, for battery (MAJ OC140)|0||||||
+VSI_u16Cal1OverCurThMotC|uint16|VSI|0|0|0|VSI_u16Cal1OverCurThMotC|0|0|Phys|V|1|5/4095|0|Driver|Driver||VSI_u16Cal1OverCurThMotC||2|||||||V01 NT 10 01945|1|1|||3480|1|0|0|Over current threshold, for motor (MAJ OC140)|0||||||
+VSI_u16Cal1OverVoltVbatThC|uint16|VSI|0|0|0|VSI_u16Cal1OverVoltVbatThC|0|0|Phys|V|1|5/4095|0|Driver|Driver||VSI_u16Cal1OverVoltVbatThC||2|||||||V01 NT 10 01945|1|1|||2875|1|0|0|Over voltage Vbat threshold|0||||||
+VSI_u16Cal1PwmDeadtimeC|uint16|VSI|0|0|0|VSI_u16Cal1PwmDeadtimeC|0|0|Phys|µs|1|1/40|0|Driver|Driver||VSI_u16Cal1PwmDeadtimeC||2|||||||V01 NT 10 01945|1|1|||100|1|0|0|VSI Dead Time|0||||||
+VSI_u16Cal1PwmFreqC|uint16|VSI|0|0|0|VSI_u16Cal1PwmFreqC|0|0|Phys|KHz|3|2/40000|0|Driver|Driver||VSI_u16Cal1PwmFreqC||2|||||||V01 NT 10 01945|1|1|||2000|1|0|0|SPI Timer Max|0||||||
+VSI_u16Cal1PwmInitValUlC|uint16|VSI|0|0|0|VSI_u16Cal1PwmInitValUlC|0|0|Phys|-|0|||Driver|Driver||VSI_u16Cal1PwmInitValUlC||2|||||||V01 NT 10 01945|1|1|||0|1|0|0||0||||||
+VSI_u16Cal1PwmInitValUrC|uint16|VSI|0|0|0|VSI_u16Cal1PwmInitValUrC|0|0|Phys|-|0|||Driver|Driver||VSI_u16Cal1PwmInitValUrC||2|||||||V01 NT 10 01945|1|1|||0|1|0|0||0||||||
+VSI_u16Cal1PwmInitValVlC|uint16|VSI|0|0|0|VSI_u16Cal1PwmInitValVlC|0|0|Phys|-|0|||Driver|Driver||VSI_u16Cal1PwmInitValVlC||2|||||||V01 NT 10 01945|1|1|||0|1|0|0||0||||||
+VSI_u16Cal1PwmInitValVrC|uint16|VSI|0|0|0|VSI_u16Cal1PwmInitValVrC|0|0|Phys|-|0|||Driver|Driver||VSI_u16Cal1PwmInitValVrC||2|||||||V01 NT 10 01945|1|1|||0|1|0|0||0||||||
+VSI_u16Cal1PwmInitValWlC|uint16|VSI|0|0|0|VSI_u16Cal1PwmInitValWlC|0|0|Phys|-|0|||Driver|Driver||VSI_u16Cal1PwmInitValWlC||2|||||||V01 NT 10 01945|1|1|||0|1|0|0||0||||||
+VSI_u16Cal1PwmInitValWrC|uint16|VSI|0|0|0|VSI_u16Cal1PwmInitValWrC|0|0|Phys|-|0|||Driver|Driver||VSI_u16Cal1PwmInitValWrC||2|||||||V01 NT 10 01945|1|1|||0|1|0|0||0||||||
+VSI_u16Cal1SynchroDelayC|uint16|VSI|0|0|0|VSI_u16Cal1SynchroDelayC|0|0|Phys|ns|1|25|0|Driver|Driver||VSI_u16Cal1SynchroDelayC||2|||||||V01 NT 10 01945|1|1|||436|1|0|0|Frame Synchronisation delay|0||||||
+VSI_u32SafeTreatDelayC|uint32|VSI|1|0|0|VSI_u32SafeTreatDelayC|0|0|Phys|µs|1|0.1|0|Driver|Driver||VSI_u32SafeTreatDelayC||2|||||||NONE|1|1|||190|1|0|0|Delay between the failling edge of the CS signal and firing Safe CPU0 ISR|0||||||
+VSI_u32TimeoutCsC|uint32|VSI|1|0|0|VSI_u32TimeoutCsC|0|0|Phys|µs|1|0.5|0.5|Driver|Driver||VSI_u32TimeoutCsC||2|||||||NONE|1|1|||170|1|0|0|Time before Timeout Chip Select VSI|0||||||
+VSI_u32TimeoutSafeTcalcC|uint32|VSI|1|0|0|VSI_u32TimeoutSafeTcalcC|0|0|Phys|µs|1|0.1|0|Driver|Driver||VSI_u32TimeoutSafeTcalcC||2|||||||NONE|1|1|||756|1|0|0|Time before Timeout treatment Safe VSI Treatment|0||||||
+VSI_u32TimeoutSyncPosC|uint32|VSI|1|0|0|VSI_u32TimeoutSyncPosC|0|0|Phys|µs|1|0.5|0.5|Driver|Driver||VSI_u32TimeoutSyncPosC||2|||||||NONE|1|1|||206|1|0|0|Time before Timeout Synchro Pos|0||||||
+VSI_u32TimeoutTcalcC|uint32|VSI|1|0|0|VSI_u32TimeoutTcalcC|0|0|Phys|µs|1|0.1|0|Driver|Driver||VSI_u32TimeoutTcalcC||2|||||||NONE|1|1|||410|1|0|0|Time before Timeout VSI Treatment|0||||||
+VSI_u8IdTx|uint8|VSI|0|0|0|VSI_u8IdTx|0|0|Déci|-||||Developpement|Developpement||VSI_u8IdTx||1||||||||0|1||||1|0|0||0|||||0|
+VSI_u32TimeoutEmailC|uint32|VSI|1|0|0|VSI_u32TimeoutEmailC|0|0|Phys|µs|1|0.1|0|Driver|Driver||VSI_u32TimeoutEmailC||2|||||||NONE|1|1|||50|1|0|0|Timeout of email|0||||||
+VSI_bSoftOvCurrPhsUFlg|boolean|VSI|0|0|0|VSI_bSoftOvCurrPhsUFlg|0|0|Phys|bool|2|0||Driver|Driver|Raw|VSI_bSoftOvCurrPhsUFlg||1|||||||NONE|0|1||||1|0|0|...|0||||||
+VSI_bSoftOvCurrPhsVFlg|boolean|VSI|0|0|0|VSI_bSoftOvCurrPhsVFlg|0|0|Phys|bool|2|0||Driver|Driver|Raw|VSI_bSoftOvCurrPhsVFlg||1|||||||NONE|0|1||||1|0|0|...|0||||||
+VSI_bSoftOvCurrPhsWFlg|boolean|VSI|0|0|0|VSI_bSoftOvCurrPhsWFlg|0|0|Phys|bool|2|0||Driver|Driver|Raw|VSI_bSoftOvCurrPhsWFlg||1|||||||NONE|0|1||||1|0|0|...|0||||||
+

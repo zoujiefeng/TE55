@@ -1,0 +1,102 @@
+/begin IF_DATA ETK
+	/begin TP_BLOB
+		0x1000101                  /* TP_BLOB Version Don't change */
+		INTERFACE_SPEED_100MBIT    /* ETK communication mode  Don't change */		
+		0x0                        /* ETKP: RESET_CFG parameter, Don't change */
+		/begin DISTAB_CFG
+			0xD          			/* Type of display table (0x0D = 13). Don't change */
+			0x0122       			/* DAT_MOD, Don't change*/
+			0x1          			/* Byte order 1 = high first, 2 = low first */
+			0xFFFF1000   			/* Trigger segment address, don't care */
+			0x01020100   			/* Trigger configuration. Don't change */
+			TRG_MOD 0x01 0x27 0x0 0x0 0x0 	/* Trigger mode. Don't change */
+		/end DISTAB_CFG
+		ETK_CFG  0x87           /* 0x87: subtype = "D3" Don't change */
+		0x04 0x10 0xFF 0xFF     /* Pattern adress = 0xFFFF1004 Don't change*/
+		0x48 0x53 0x4C 0x46     /* Flash require ID = "FLSH" Don't change*/
+		0x00                    /* 0x00: uC = SH7059FCC Don't change*/
+		0xFF 0xFF 0xFF 0xFF     /* Reserved for other ETK. Don't change */
+		0xFF 0xFF 0xFF 0xFF     /* Reserved for other ETK. Don't change */
+		0xFF 0xFF 0xFF 0xFF     /* Reserved for other ETK. Don't change */
+		0xFF 0xFF 0xFF 0xFF     /* Reserved for other ETK. Don't change */
+		0xFF 0xFF 0xFF 0xFF     /* Reserved for other ETK. Don't change */
+		0xFF 0xFF 0xFF 0xFF     /* Reserved for other ETK. Don't change */
+		0xFF 0xFF 0xFF          /* Reserved for other ETK. Don't change */
+		/begin COLDSTART_HANDSHAKE
+			0xFFFDFFFC			/* cold start pattern address */
+			WAIT 0x57 0x41 0x49 0x54 	/* pattern codes for ’WAIT’ */
+							/* (characters for ’W’, ’A’, ’I’ and ’T’ are used in this example) */
+			READY 0x52 0x45 0x44 0x59 	/* pattern codes for ’READY’ */
+							/* (characters for ’R’, ’E’, ’D’ and ’Y’ are used in this example) */
+		/end COLDSTART_HANDSHAKE
+	/end TP_BLOB  
+	/begin SOURCE		/* Description of first display table */
+		"Synchro PMH"	/* Source name */
+		103		/* CSE unit (minimal period duration) of the aquisition raster */
+		1		/* Minimal period number measured in CSE units */
+				/* Refer to ASAM-2MC standerd chapter "SOURCE" */
+ 		QP_BLOB
+			0x101		/* QP_BLOB version number */
+			15		/* Select trigger pin used for this raster */
+					/*    15 = DIA1, 16 = DAI2 */
+			INDIRECT	/* Trigger type. Don't change */
+			29		/* raster priority (1..32), higher number = higher priority */
+			MEASUREMENT	/* assigned application */
+			0xFFFDB900	/* Address of trigger flag */
+			0x100		/* Max length of address table in bytes */
+			0xFFFDB904	/* Start address of address table */
+ 		        0xFFFDBA0C	/* Start address of output table */
+ 		        0x0		/* Max length of bypass receive table */
+ 		        0x0		/* Start address of address table for bypass */
+ 		        0x0		/* Start address of output table for bypass */
+ 		        4000		/* Worst case minimum raster time in us */
+ 		        0x40		/* Max number of measurement variables */
+ 		        0x0		/* Max number of variables read by bypass routine */
+	/end SOURCE
+	/begin SOURCE		/* Description of second display table */
+		"4 ms"		/* Source name */
+		3		/* CSE unit (minimal period duration) of the aquisition raster */
+		4		/* Minimal period number measured in CSE units */
+				/* Refer to ASAM-2MC standerd chapter "SOURCE" */
+		QP_BLOB
+			0x101		/* QP_BLOB version number */
+			16		/* Select trigger pin used for this raster */
+					/*    15 = DIA1, 16 = DAI2 */
+			INDIRECT	/* Trigger type. Don't change */
+			28		/* raster priority (1..32), higher number = higher priority */
+			MEASUREMENT	/* assigned application */
+			0xFFFDBB0C	/* Address of trigger flag */
+			0x100		/* Max length of address table in bytes */
+			0xFFFDBB10	/* Start address of address table */
+			0xFFFDBC18	/* Start address of output table */
+			0x0		/* Max length of bypass receive table */
+			0x0		/* Start address of address table for bypass */
+			0x0		/* Start address of output table for bypass */
+			4000		/* Worst case minimum raster time in us */
+			0x40		/* Max number of measured variables */
+			0x0		/* Max number of variables read by bypass routine */
+	/end SOURCE
+	/begin SOURCE		/* Description of third display table */
+		"256 ms"	/* Source name */
+		3		/* CSE unit (minimal period duration) of the aquisition raster */
+		256		/* Minimal period number measured in CSE units */
+				/* Refer to ASAM-2MC standerd chapter "SOURCE" */
+		QP_BLOB
+			0x101		/* QP_BLOB version number */
+			16		/* Select trigger pin used for this raster */
+					/*    15 = DIA1, 16 = DAI2 */
+			INDIRECT	/* Trigger type. Don't change */
+			27		/* raster priority (1..32), higher number = higher priority */
+			MEASUREMENT	/* assigned application */
+			0xFFFDBD18	/* Address of trigger flag */
+			0x100		/* Max length of address table in bytes */
+			0xFFFDBD1C	/* Start address of address table */
+			0xFFFDBE24	/* Start address of output table */
+			0x0		/* Max length of bypass receive table */
+			0x0		/* Start address of address table for bypass */
+			0x0		/* Start address of output table for bypass */
+			256000		/* Worst case minimum raster time in us */
+			0x40		/* Max number of measured variables */
+			0x0		/* Max number of variables read by bypass routine */
+	/end SOURCE
+/end IF_DATA

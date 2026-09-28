@@ -1,0 +1,11 @@
+RECUPVER v6.0 1.6 0	(null)
+
+Format: HEXA
+MAIN_SampleSequenceEnC          :34_96_01#1C             :1802071900:MAIN_SampleSequenceEnC          :TestPro         :1:1:0:1:2:00
+CCU6_bHwPinAscEnaC              :34_96_01#1C             :1205211627:CCU6_bHwPinAscEnaC              :TestPro         :2:0:0:1:2:00
+CCU6_bHwOvcFltDetEnaC           :34_96_01#1C             :1205211627:CCU6_bHwOvcFltDetEnaC           :TestPro         :2:0:0:1:2:01
+RES_u16ExcitDelayC              :34_9A_01#19             :1606071443:RES_u16ExcitDelayC              :TestPro         :1:0.1:0:2:2:0244
+FAIL_bCanErrCheckonC            :ECU REVISION            :1205211627:FAIL_bCanErrCheckonC            :TestPro         :2:0:0:1:2:00
+RES_u16SyncDelayC               :34_96_01#1C      	      :2412172043:RES_u16SyncDelayC               :TestPro         :1:0.1:0:2:2:01A4
+RES_u16SyncDelay2C              :34_96_01#1C      	      :2412172043:RES_u16SyncDelay2C              :TestPro         :1:0.1:0:2:2:0244
+GCCU6_bHwPinAscEnaC             :34_96_01#1C             :1205211627:GCCU6_bHwPinAscEnaC             :TestPro         :2:0:0:1:2:00

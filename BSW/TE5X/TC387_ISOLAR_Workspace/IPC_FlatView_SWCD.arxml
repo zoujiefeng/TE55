@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00047.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>IPC_FlatView</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>SwComponentTypes</SHORT-NAME>
+          <ELEMENTS>
+            <COMPOSITION-SW-COMPONENT-TYPE>
+              <SHORT-NAME>IPC_FlatView</SHORT-NAME>
+              <COMPONENTS>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_ASW_BASE</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/Base_SWC/ASW_BASE</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_ASW_COM</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/Components/ASW_COM</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_ASW_CORE0</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ASW_CORE0/ASW_CORE0</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_ASW_CORE1</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ASW_CORE1/ASW_CORE1</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_ASW_CORE2</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ARPackage/ASW_CORE2</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_ASW_DCM</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ASW_DCM/ASW_DCM</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_ASW_DEM</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ASW_DEM/ASW_DEM</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_ASW_NM</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ASW_NM/ASW_NM</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_ASW_NVM</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ASW_NVM/ASW_NVM/ASW_NVM</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_ASW_WDG</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ARPackage_0/ASW_WDG</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_ASW_XCP</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/XCP_SWC/ASW_XCP</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_BswM</SHORT-NAME>
+                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/AUTOSAR_BswM/SwComponentTypes/BswM</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_CDD_CORE0</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/CDD_CORE0/CDD_CORE0</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_CDD_CORE1</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/CDD_CORE1/CDD_CORE1</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_CDD_CORE2</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/CDD_CORE2/CDD_CORE2</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_ComM</SHORT-NAME>
+                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/AUTOSAR_ComM/SwComponentTypes/ComM</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_Dcm</SHORT-NAME>
+                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/AUTOSAR_Dcm/SwComponentTypes/Dcm</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_Dem</SHORT-NAME>
+                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/AUTOSAR_Dem/SwComponentTypes/Dem</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_Det</SHORT-NAME>
+                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/AUTOSAR_Det/SwComponentTypes/Det</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_EcuM</SHORT-NAME>
+                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/AUTOSAR_EcuM/SwComponentTypes/EcuM</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_NvM</SHORT-NAME>
+                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/AUTOSAR_NvM/SwComponentTypes/NvM</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_RSID</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/RSID/RSID</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_WdgM</SHORT-NAME>
+                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/AUTOSAR_WdgM/WdgM</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_rba_DiagLib</SHORT-NAME>
+                  <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/rba_DiagLib/SwComponentTypes/rba_DiagLib</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_SWC_DEM</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/SWC_DEM/SWC_DEM</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE UUID="75591dc8-7f31-4471-9463-285a4d43c8b0">
+                  <SHORT-NAME>CPT_ASW_CORE3</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ASW_CORE3/ASW_CORE3</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE UUID="ebadd380-aa9c-4726-b987-eb08e0d8873b">
+                  <SHORT-NAME>CPT_CDD_CORE3</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/CDD_CORE3/CDD_CORE3</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+              </COMPONENTS>
+              <CONNECTORS>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_ASW_BASE_PPort_SwcModeRequest_CPT_BswM_RP_BswMArbitration_BswMSwcModeRequest</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_BASE</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Base_SWC/ASW_BASE/PPort_SwcModeRequest</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_BswM</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AUTOSAR_BswM/SwComponentTypes/BswM/RP_BswMArbitration_BswMSwcModeRequest</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_ASW_CORE0_PPort_SwcModeRequest_CPT_BswM_RP_BswMArbitration_BswMSwcModeRequest</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_CORE0</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ASW_CORE0/ASW_CORE0/PPort_SwcModeRequest</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_BswM</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AUTOSAR_BswM/SwComponentTypes/BswM/RP_BswMArbitration_BswMSwcModeRequest</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_ASW_CORE0_PPort_TransmitData2Core1_CPT_ASW_CORE1_RPort_ReceiverDataFromCore0</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_CORE0</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ASW_CORE0/ASW_CORE0/PPort_TransmitData2Core1</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_CORE1</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ASW_CORE1/ASW_CORE1/RPort_ReceiverDataFromCore0</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_ASW_CORE1_PPort_TransmitData2Core0_CPT_ASW_CORE0_RPort_ReceiveDatafromCore1</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_CORE1</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ASW_CORE1/ASW_CORE1/PPort_TransmitData2Core0</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_CORE0</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ASW_CORE0/ASW_CORE0/RPort_ReceiveDatafromCore1</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_ASW_DCM_VIT_04_CPT_Dcm_InfotypeServices_DcmDspVehInfoData_04</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_DCM</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ASW_DCM/ASW_DCM/VIT_04</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_Dcm</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AUTOSAR_Dcm/SwComponentTypes/Dcm/InfotypeServices_DcmDspVehInfoData_04</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_ASW_DCM_VIT_06_CPT_Dcm_InfotypeServices_VIT_06_0</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_DCM</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ASW_DCM/ASW_DCM/VIT_06</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_Dcm</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AUTOSAR_Dcm/SwComponentTypes/Dcm/InfotypeServices_VIT_06_0</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_ASW_DCM_VIT_0A_CPT_Dcm_InfotypeServices_DcmDspVehInfoData_0A</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_DCM</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ASW_DCM/ASW_DCM/VIT_0A</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_Dcm</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AUTOSAR_Dcm/SwComponentTypes/Dcm/InfotypeServices_DcmDspVehInfoData_0A</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_ASW_DEM_DataServices_CS_ExtendedDataRecord_Aged_counter_CPT_Dem_DataServices_CS_ExtendedDataRecord_Aged_counter</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_DEM</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ASW_DEM/ASW_DEM/DataServices_CS_ExtendedDataRecord_Aged_counter</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_Dem</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AUTOSAR_Dem/SwComponentTypes/Dem/DataServices_CS_ExtendedDataRecord_Aged_counter</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_ASW_DEM_DataServices_CS_ExtendedDataRecord_Fault_pending_counter_CPT_Dem_DataServices_CS_ExtendedDataRecord_Fault_pendin</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_DEM</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ASW_DEM/ASW_DEM/DataServices_CS_ExtendedDataRecord_Fault_pending_counter</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_Dem</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AUTOSAR_Dem/SwComponentTypes/Dem/DataServices_CS_ExtendedDataRecord_Fault_pending_counter</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_ASW_NM_PP_BswMArbitration_BswM_MRP_Network_CPT_BswM_RP_BswMArbitration_BswM_MRP_SWC_Network</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_NM</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ASW_NM/ASW_NM/PP_BswMArbitration_BswM_MRP_Network</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_BswM</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AUTOSAR_BswM/SwComponentTypes/BswM/RP_BswMArbitration_BswM_MRP_SWC_Network</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_ASW_NM_PP_BswMArbitration_BswM_MRP_NmState_CPT_BswM_RP_BswMArbitration_BswM_MRP_SWC_Network</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_NM</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ASW_NM/ASW_NM/PP_BswMArbitration_BswM_MRP_NmState</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_BswM</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AUTOSAR_BswM/SwComponentTypes/BswM/RP_BswMArbitration_BswM_MRP_SWC_Network</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_CDD_CORE0_PPort_CPUUtilizationCore0_CPT_ASW_CORE0_RPort_CPUUtilizationCore0</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_CDD_CORE0</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/CDD_CORE0/CDD_CORE0/PPort_CPUUtilizationCore0</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_CORE0</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ASW_CORE0/ASW_CORE0/RPort_CPUUtilizationCore0</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_CDD_CORE0_PPort_Core0Server_CPT_ASW_CORE0_RPort_ClientCallCore0</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_CDD_CORE0</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/CDD_CORE0/CDD_CORE0/PPort_Core0Server</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_CORE0</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ASW_CORE0/ASW_CORE0/RPort_ClientCallCore0</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_CDD_CORE0_PPort_GetMaxUserStackUtilization_CPT_ASW_CORE0_RPort_GetMaxUserStackUtilization</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_CDD_CORE0</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/CDD_CORE0/CDD_CORE0/PPort_GetMaxUserStackUtilization</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_CORE0</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ASW_CORE0/ASW_CORE0/RPort_GetMaxUserStackUtilization</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_CDD_CORE1_PPort_CPUUtilizationCore1_CPT_ASW_CORE1_RPort_CPUUtilizationCore1</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_CDD_CORE1</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/CDD_CORE1/CDD_CORE1/PPort_CPUUtilizationCore1</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_CORE1</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ASW_CORE1/ASW_CORE1/RPort_CPUUtilizationCore1</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_CDD_CORE1_PPort_GetMaxUserStackUtilization_CPT_ASW_CORE1_RPort_GetMaxUserStackUtilization</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_CDD_CORE1</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/CDD_CORE1/CDD_CORE1/PPort_GetMaxUserStackUtilization</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_CORE1</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ASW_CORE1/ASW_CORE1/RPort_GetMaxUserStackUtilization</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_CDD_CORE2_PPort_CPUUtilizationCore2_CPT_ASW_CORE2_RPort_CPUUtilizationCore2</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_CDD_CORE2</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/CDD_CORE2/CDD_CORE2/PPort_CPUUtilizationCore2</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_CORE2</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ARPackage/ASW_CORE2/RPort_CPUUtilizationCore2</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_CDD_CORE2_PPort_GetMaxUserStackUtilization_CPT_ASW_CORE2_RPort_GetMaxUserStackUtilization</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_CDD_CORE2</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/CDD_CORE2/CDD_CORE2/PPort_GetMaxUserStackUtilization</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_CORE2</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ARPackage/ASW_CORE2/RPort_GetMaxUserStackUtilization</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_ComM_UR_ComMUser_Can_Network_Channel_Can_Network_CPT_ASW_NM_RP_ComM_UserRequest_CAN0</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ComM</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/AUTOSAR_ComM/SwComponentTypes/ComM/UR_ComMUser_Can_Network_CanNodeNum_01</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_NM</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ASW_NM/ASW_NM/RP_ComM_UserRequest_CAN0</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_ComM_modeLimitation_CPT_ASW_NM_RPort_EcuModeLimitation</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ComM</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/AUTOSAR_ComM/SwComponentTypes/ComM/modeLimitation</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_NM</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ASW_NM/ASW_NM/RPort_EcuModeLimitation</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_Dcm_DCMServices_CPT_ASW_DCM_RPort_DCMServices</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_Dcm</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/AUTOSAR_Dcm/SwComponentTypes/Dcm/DCMServices</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_DCM</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ASW_DCM/ASW_DCM/RPort_DCMServices</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_Dem_IndStatus_MIL_CPT_ASW_DEM_IndStatus_MIL</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_Dem</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/AUTOSAR_Dem/SwComponentTypes/Dem/IndStatus_MIL</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_DEM</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ASW_DEM/ASW_DEM/IndStatus_MIL</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_Dem_OpCycle_DemOperationCycle_Ignition_CPT_ASW_DEM_OpCycle_DemOperationCycle_Ignition</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_Dem</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/AUTOSAR_Dem/SwComponentTypes/Dem/OpCycle_DemOperationCycle_Ignition</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_DEM</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ASW_DEM/ASW_DEM/OpCycle_DemOperationCycle_Ignition</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_Dem_OpCycle_DemOperationCycle_Power_CPT_ASW_DEM_RPort_OpCycle_DemOperationCycle_Power</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_Dem</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/AUTOSAR_Dem/SwComponentTypes/Dem/OpCycle_DemOperationCycle_Power</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_DEM</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ASW_DEM/ASW_DEM/RPort_OpCycle_DemOperationCycle_Power</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_RSID_RoutineServices_DcmDspRoutine_0203_CPT_Dcm_RoutineServices_DcmDspRoutine_0203</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_RSID</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/RSID/RSID/RoutineServices_DcmDspRoutine_0203</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_Dcm</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AUTOSAR_Dcm/SwComponentTypes/Dcm/RoutineServices_DcmDspRoutine_0203</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_WdgM_globalMode_CPT_ASW_WDG_RPort_WdgM_GlobalMode</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_WdgM</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/AUTOSAR_WdgM/WdgM/globalMode</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_WDG</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ARPackage_0/ASW_WDG/RPort_WdgM_GlobalMode</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_WdgM_localSupervision_WdgMSupervisedEntity_Alive_Supervision_Entity1_WdgMCheckpoint_Alive_Supervision_Entity1_CPT_ASW_WD</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_WdgM</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/AUTOSAR_WdgM/WdgM/localSupervision_WdgMSupervisedEntity_Alive_Supervision_Entity1_WdgMCheckpoint_Alive_Supervision_Entity1</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_WDG</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ARPackage_0/ASW_WDG/RPort_Alive_Supervision_Entity1</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_WdgM_localSupervision_WdgMSupervisedEntity_Alive_Supervision_Entity1_WdgMCheckpoint_Alive_Supervision_Entity1_CPT_ASW__0</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_WdgM</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/AUTOSAR_WdgM/WdgM/localSupervision_WdgMSupervisedEntity_Alive_Supervision_Entity1_WdgMCheckpoint_Alive_Supervision_Entity1</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_WDG</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ARPackage_0/ASW_WDG/RPort_Deadline_Supervision_Entity1</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_SWC_DEM_DataServices_PID_0C_CPT_Dem_DataServices_PID_0C</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_SWC_DEM</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/SWC_DEM/SWC_DEM/DataServices_PID_0C</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_Dem</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AUTOSAR_Dem/SwComponentTypes/Dem/DataServices_PID_0C</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_SWC_DEM_DataServices_PID_49_CPT_Dem_DataServices_PID_49</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_SWC_DEM</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/SWC_DEM/SWC_DEM/DataServices_PID_49</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_Dem</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AUTOSAR_Dem/SwComponentTypes/Dem/DataServices_PID_49</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_SWC_DEM_DataServices_PID_05_CPT_Dem_DataServices_PID_05</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_SWC_DEM</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/SWC_DEM/SWC_DEM/DataServices_PID_05</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_Dem</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AUTOSAR_Dem/SwComponentTypes/Dem/DataServices_PID_05</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_SWC_DEM_DataServices_PID_0D_CPT_Dem_DataServices_PID_0D</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_SWC_DEM</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/SWC_DEM/SWC_DEM/DataServices_PID_0D</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_Dem</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AUTOSAR_Dem/SwComponentTypes/Dem/DataServices_PID_0D</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_SWC_DEM_DataServices_PID_42_CPT_Dem_DataServices_PID_42</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_SWC_DEM</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/SWC_DEM/SWC_DEM/DataServices_PID_42</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_Dem</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AUTOSAR_Dem/SwComponentTypes/Dem/DataServices_PID_42</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_SWC_DEM_DataServices_PID_04_CPT_Dem_DataServices_PID_04</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_SWC_DEM</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/SWC_DEM/SWC_DEM/DataServices_PID_04</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_Dem</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AUTOSAR_Dem/SwComponentTypes/Dem/DataServices_PID_04</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_SWC_DEM_DataServices_PID_02_CPT_Dem_DataServices_PID_02</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_SWC_DEM</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/SWC_DEM/SWC_DEM/DataServices_PID_02</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_Dem</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AUTOSAR_Dem/SwComponentTypes/Dem/DataServices_PID_02</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_ASW_DCM_DataServices_DcmDspPidData_41_CPT_Dcm_DataServices_DcmDspPidData_41</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_DCM</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ASW_DCM/ASW_DCM/DataServices_DcmDspPidData_41</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_Dcm</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AUTOSAR_Dcm/SwComponentTypes/Dcm/DataServices_DcmDspPidData_41</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_ASW_DCM_DataServices_DcmDspPidData_05_CPT_Dcm_DataServices_DcmDspPidData_05</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_DCM</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ASW_DCM/ASW_DCM/DataServices_DcmDspPidData_05</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_Dcm</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AUTOSAR_Dcm/SwComponentTypes/Dcm/DataServices_DcmDspPidData_05</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_ASW_DCM_DataServices_DcmDspPidData_0C_CPT_Dcm_DataServices_DcmDspPidData_0C</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_DCM</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ASW_DCM/ASW_DCM/DataServices_DcmDspPidData_0C</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_Dcm</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AUTOSAR_Dcm/SwComponentTypes/Dcm/DataServices_DcmDspPidData_0C</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_ASW_DCM_DataServices_DcmDspPidData_49_CPT_Dcm_DataServices_DcmDspPidData_49</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_DCM</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ASW_DCM/ASW_DCM/DataServices_DcmDspPidData_49</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_Dcm</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AUTOSAR_Dcm/SwComponentTypes/Dcm/DataServices_DcmDspPidData_49</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_ASW_DCM_DataServices_DcmDspPidData_42_CPT_Dcm_DataServices_DcmDspPidData_42</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_DCM</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ASW_DCM/ASW_DCM/DataServices_DcmDspPidData_42</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_Dcm</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AUTOSAR_Dcm/SwComponentTypes/Dcm/DataServices_DcmDspPidData_42</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_ASW_DCM_DataServices_DcmDspPidData_30_CPT_Dcm_DataServices_DcmDspPidData_30</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_DCM</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ASW_DCM/ASW_DCM/DataServices_DcmDspPidData_30</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_Dcm</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AUTOSAR_Dcm/SwComponentTypes/Dcm/DataServices_DcmDspPidData_30</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_ASW_DCM_DataServices_DcmDspPidData_04_CPT_Dcm_DataServices_DcmDspPidData_04</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_DCM</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ASW_DCM/ASW_DCM/DataServices_DcmDspPidData_04</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_Dcm</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AUTOSAR_Dcm/SwComponentTypes/Dcm/DataServices_DcmDspPidData_04</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_ASW_DCM_DataServices_DcmDspPidData_0D_CPT_Dcm_DataServices_DcmDspPidData_0D</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_DCM</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ASW_DCM/ASW_DCM/DataServices_DcmDspPidData_0D</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_Dcm</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AUTOSAR_Dcm/SwComponentTypes/Dcm/DataServices_DcmDspPidData_0D</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_ASW_DCM_DataServices_DcmDspPidData_21_CPT_Dcm_DataServices_DcmDspPidData_21</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_DCM</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ASW_DCM/ASW_DCM/DataServices_DcmDspPidData_21</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_Dcm</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AUTOSAR_Dcm/SwComponentTypes/Dcm/DataServices_DcmDspPidData_21</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_NvM_NvM_NativeBlock_2_CPT_ASW_NVM_RPort_ASW_NVM_BlockNative_1024_1</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_NvM</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/AUTOSAR_NvM/SwComponentTypes/NvM/NvM_NativeBlock_2</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_NVM</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ASW_NVM/ASW_NVM/ASW_NVM/RPort_ASW_NVM_BlockNative_1024_1</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_CDD_CORE3_PPort_CPUUtilizationCore3_CPT_ASW_CORE3_RPort_CPUUtilizationCore3</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_CDD_CORE3</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/CDD_CORE3/CDD_CORE3/PPort_CPUUtilizationCore3</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_CORE3</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ASW_CORE3/ASW_CORE3/RPort_CPUUtilizationCore3</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_CDD_CORE3_PPort_GetMaxUserStackUtilization_CPT_ASW_CORE3_RPort_GetMaxUserStackUtilization</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_CDD_CORE3</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/CDD_CORE3/CDD_CORE3/PPort_GetMaxUserStackUtilization</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_CORE3</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ASW_CORE3/ASW_CORE3/RPort_GetMaxUserStackUtilization</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_ASW_DCM_DataServices_DcmDspPidData_31_CPT_Dcm_DataServices_DcmDspPidData_31</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_ASW_DCM</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ASW_DCM/ASW_DCM/DataServices_DcmDspPidData_31</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/IPC_FlatView/SwComponentTypes/IPC_FlatView/CPT_Dcm</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AUTOSAR_Dcm/SwComponentTypes/Dcm/DataServices_DcmDspPidData_31</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+              </CONNECTORS>
+            </COMPOSITION-SW-COMPONENT-TYPE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

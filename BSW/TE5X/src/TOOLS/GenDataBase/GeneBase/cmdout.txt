@@ -1,0 +1,29 @@
+WinAdes 5.2.0.0
+ Copyright © Valeo 2002-2015 
+
+Echo:
+	Byte Order Warning
+		Unknown project code
+database: operation successful
+import:
+	
+		Chemin de la base: .\
+		Chemin du fichier de calibration:.\INITIAL_Calib.rp2
+import:
+	Chargement d'un jeu de calibration
+		17 erreur(s) ont été reportées dans un fichier.
+
+import: operation successful
+Echo:
+	Byte Order Warning
+		Unknown project code
+database: operation successful
+import:
+	
+		Chemin de la base: .\
+		Chemin du fichier de calibration:.\INITIAL_Vehicle.rp2
+import:
+	Chargement d'un jeu de calibration
+		17 erreur(s) ont été reportées dans un fichier.
+
+import: operation successful

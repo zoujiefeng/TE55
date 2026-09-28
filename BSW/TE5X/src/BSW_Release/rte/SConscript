@@ -1,0 +1,61 @@
+#Generate User: 01004867
+#Generate Time: 2026-09-24 17:27:46
+
+Import('*')
+import re,sys, os, glob, fnmatch
+import prebuild
+objects = [
+]
+# INCLUDE DIRECTORIES
+# Implements: COR010
+includes = [
+	'',
+]#Include Files
+# SOURCE FILES
+sources = [
+	'Core0_BSW_OsTask_SwcRequest.c',
+	'Core0_OsTask_ASW_100ms.c',
+	'Core0_OsTask_ASW_10ms.c',
+	'Core0_OsTask_ASW_1ms.c',
+	'Core0_OsTask_BSW_100ms.c',
+	'Core0_OsTask_BSW_10ms.c',
+	'Core0_OsTask_BSW_1ms.c',
+	'Core0_OsTask_BSW_50ms.c',
+	'Core1_OsTask_ASW_100ms.c',
+	'Core1_OsTask_ASW_10ms.c',
+	'Core1_OsTask_ASW_1ms.c',
+	'Core1_OsTask_BSW_10ms.c',
+	'Core2_OsTask_ASW_100ms.c',
+	'Core2_OsTask_ASW_10ms.c',
+	'Core2_OsTask_ASW_1ms.c',
+	'Core2_OsTask_ASW_5ms.c',
+	'Core2_OsTask_BSW_10ms.c',
+	'Core3_OsTask_ASW_1ms.c',
+	'Core3_OsTask_ASW_5ms.c',
+	'Core3_OsTask_BSW_10ms.c',
+	'Rte.c',
+	'Rte_Lib.c',
+]#Source Files
+# GENERATED SOURCE FILES
+gen_sources = [
+]
+
+# ADD INCLUDE DIRECTORIES
+for include in includes:
+    env.Append(CPPPATH=[Dir(include).abspath])
+    string = re.sub( r'output\\objs\\','''''' ,Dir(include).abspath)
+    prebuild.createSymlinkHeader( os.path.join(Dir('#').abspath,env['CEN_HEADER_DIR']),string )
+# COMPILE SOURCE FILES
+for source in sources:
+    objects += env.Object(source)
+
+# GENERATED SOURCE FILES
+for gen_source in gen_sources:
+    objects += env.Object(gen_source)
+
+# RETURN
+Return('objects')
+
+#*******************************************************************************
+# END OF FILE
+#*******************************************************************************

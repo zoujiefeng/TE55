@@ -1,0 +1,1276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00047.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>Systems</SHORT-NAME>
+      <ELEMENTS>
+        <SYSTEM>
+          <SHORT-NAME>System</SHORT-NAME>
+          <CATEGORY>SYSTEM_EXTRACT</CATEGORY>
+          <MAPPINGS>
+            <SYSTEM-MAPPING>
+              <SHORT-NAME>SystemMapping</SHORT-NAME>
+              <SW-MAPPINGS>
+                <SWC-TO-ECU-MAPPING>
+                  <SHORT-NAME>SwcToEcuMapping_0</SHORT-NAME>
+                  <COMPONENT-IREFS>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Systems/System/RootSwCompositionPrototype_0</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/System/TopLevelComposition/CPT_ASW_BASE</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Systems/System/RootSwCompositionPrototype_0</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/System/TopLevelComposition/CPT_ASW_CORE0</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Systems/System/RootSwCompositionPrototype_0</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/System/TopLevelComposition/CPT_ASW_CORE1</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Systems/System/RootSwCompositionPrototype_0</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/System/TopLevelComposition/CPT_ASW_CORE2</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Systems/System/RootSwCompositionPrototype_0</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/System/TopLevelComposition/CPT_ASW_DCM</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Systems/System/RootSwCompositionPrototype_0</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/System/TopLevelComposition/CPT_ASW_DEM</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Systems/System/RootSwCompositionPrototype_0</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/System/TopLevelComposition/CPT_ASW_NM</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Systems/System/RootSwCompositionPrototype_0</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/System/TopLevelComposition/CPT_ASW_NVM</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Systems/System/RootSwCompositionPrototype_0</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/System/TopLevelComposition/CPT_ASW_WDG</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Systems/System/RootSwCompositionPrototype_0</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/System/TopLevelComposition/CPT_ASW_XCP</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Systems/System/RootSwCompositionPrototype_0</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/System/TopLevelComposition/CPT_CDD_CORE0</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Systems/System/RootSwCompositionPrototype_0</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/System/TopLevelComposition/CPT_CDD_CORE1</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Systems/System/RootSwCompositionPrototype_0</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/System/TopLevelComposition/CPT_CDD_CORE2</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Systems/System/RootSwCompositionPrototype_0</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/System/TopLevelComposition/CPT_BswM</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Systems/System/RootSwCompositionPrototype_0</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/System/TopLevelComposition/CPT_ComM</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Systems/System/RootSwCompositionPrototype_0</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/System/TopLevelComposition/CPT_Dcm</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Systems/System/RootSwCompositionPrototype_0</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/System/TopLevelComposition/CPT_Dem</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Systems/System/RootSwCompositionPrototype_0</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/System/TopLevelComposition/CPT_Det</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Systems/System/RootSwCompositionPrototype_0</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/System/TopLevelComposition/CPT_EcuM</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Systems/System/RootSwCompositionPrototype_0</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/System/TopLevelComposition/CPT_NvM</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Systems/System/RootSwCompositionPrototype_0</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/System/TopLevelComposition/CPT_WdgM</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Systems/System/RootSwCompositionPrototype_0</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/System/TopLevelComposition/CPT_rba_DiagLib</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Systems/System/RootSwCompositionPrototype_0</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/System/TopLevelComposition/CPT_ASW_COM</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Systems/System/RootSwCompositionPrototype_0</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/System/TopLevelComposition/CPT_RSID</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Systems/System/RootSwCompositionPrototype_0</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/System/TopLevelComposition/CPT_SWC_DEM</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Systems/System/RootSwCompositionPrototype_0</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/System/TopLevelComposition/CPT_ASW_CORE3</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Systems/System/RootSwCompositionPrototype_0</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/System/TopLevelComposition/CPT_CDD_CORE3</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                  </COMPONENT-IREFS>
+                  <ECU-INSTANCE-REF DEST="ECU-INSTANCE">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC</ECU-INSTANCE-REF>
+                </SWC-TO-ECU-MAPPING>
+              </SW-MAPPINGS>
+            </SYSTEM-MAPPING>
+          </MAPPINGS>
+          <ROOT-SOFTWARE-COMPOSITIONS>
+            <ROOT-SW-COMPOSITION-PROTOTYPE>
+              <SHORT-NAME>RootSwCompositionPrototype_0</SHORT-NAME>
+              <SOFTWARE-COMPOSITION-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/System/TopLevelComposition</SOFTWARE-COMPOSITION-TREF>
+            </ROOT-SW-COMPOSITION-PROTOTYPE>
+          </ROOT-SOFTWARE-COMPOSITIONS>
+        </SYSTEM>
+      </ELEMENTS>
+    </AR-PACKAGE>
+    <AR-PACKAGE>
+      <SHORT-NAME>DBC_SysDesc_CanNetwork</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>Pkg_Cluster</SHORT-NAME>
+          <ELEMENTS>
+            <CAN-CLUSTER>
+              <SHORT-NAME>Can_Network</SHORT-NAME>
+              <CAN-CLUSTER-VARIANTS>
+                <CAN-CLUSTER-CONDITIONAL>
+                  <PHYSICAL-CHANNELS>
+                    <CAN-PHYSICAL-CHANNEL>
+                      <SHORT-NAME>Can_Network_Channel</SHORT-NAME>
+                      <COMM-CONNECTORS>
+                        <COMMUNICATION-CONNECTOR-REF-CONDITIONAL>
+                          <COMMUNICATION-CONNECTOR-REF DEST="CAN-COMMUNICATION-CONNECTOR">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC/Conn_Can_Network_CANNODE_0_IPC</COMMUNICATION-CONNECTOR-REF>
+                        </COMMUNICATION-CONNECTOR-REF-CONDITIONAL>
+                      </COMM-CONNECTORS>
+                      <FRAME-TRIGGERINGS>
+                        <CAN-FRAME-TRIGGERING>
+                          <SHORT-NAME>RIPC_600_NM_Trgr</SHORT-NAME>
+                          <FRAME-PORT-REFS>
+                            <FRAME-PORT-REF DEST="FRAME-PORT">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC/Conn_Can_Network_CANNODE_0_IPC/FrmPort_RIPC_600_NM_IPC_IN</FRAME-PORT-REF>
+                          </FRAME-PORT-REFS>
+                          <FRAME-REF DEST="CAN-FRAME">/DBC_SysDesc_CanNetwork/Pkg_Frame/RIPC_600_NM</FRAME-REF>
+                          <CAN-ADDRESSING-MODE>STANDARD</CAN-ADDRESSING-MODE>
+                          <CAN-FRAME-RX-BEHAVIOR>ANY</CAN-FRAME-RX-BEHAVIOR>
+                          <IDENTIFIER>1536</IDENTIFIER>
+                        </CAN-FRAME-TRIGGERING>
+                        <CAN-FRAME-TRIGGERING>
+                          <SHORT-NAME>IPC_633_NM_Trgr</SHORT-NAME>
+                          <FRAME-PORT-REFS>
+                            <FRAME-PORT-REF DEST="FRAME-PORT">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC/Conn_Can_Network_CANNODE_0_IPC/FrmPort_IPC_633_NM_IPC_OUT</FRAME-PORT-REF>
+                          </FRAME-PORT-REFS>
+                          <FRAME-REF DEST="CAN-FRAME">/DBC_SysDesc_CanNetwork/Pkg_Frame/IPC_633_NM</FRAME-REF>
+                          <CAN-ADDRESSING-MODE>STANDARD</CAN-ADDRESSING-MODE>
+                          <IDENTIFIER>1587</IDENTIFIER>
+                        </CAN-FRAME-TRIGGERING>
+                        <CAN-FRAME-TRIGGERING>
+                          <SHORT-NAME>Diag_Functional_request_Trgr</SHORT-NAME>
+                          <FRAME-PORT-REFS>
+                            <FRAME-PORT-REF DEST="FRAME-PORT">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC/Conn_Can_Network_CANNODE_0_IPC/FrmPort_Diag_Functional_request_IPC_IN</FRAME-PORT-REF>
+                          </FRAME-PORT-REFS>
+                          <FRAME-REF DEST="CAN-FRAME">/DBC_SysDesc_CanNetwork/Pkg_Frame/Diag_Functional_request</FRAME-REF>
+                          <PDU-TRIGGERINGS>
+                            <PDU-TRIGGERING-REF-CONDITIONAL>
+                              <PDU-TRIGGERING-REF DEST="PDU-TRIGGERING">/DBC_SysDesc_CanNetwork/Pkg_Cluster/Can_Network/Can_Network_Channel/PduTrig_Diag_Functional_request</PDU-TRIGGERING-REF>
+                            </PDU-TRIGGERING-REF-CONDITIONAL>
+                          </PDU-TRIGGERINGS>
+                          <CAN-ADDRESSING-MODE>STANDARD</CAN-ADDRESSING-MODE>
+                          <CAN-FRAME-RX-BEHAVIOR>ANY</CAN-FRAME-RX-BEHAVIOR>
+                          <IDENTIFIER>2015</IDENTIFIER>
+                        </CAN-FRAME-TRIGGERING>
+                        <CAN-FRAME-TRIGGERING>
+                          <SHORT-NAME>Diag_Physical_request_Trgr</SHORT-NAME>
+                          <FRAME-PORT-REFS>
+                            <FRAME-PORT-REF DEST="FRAME-PORT">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC/Conn_Can_Network_CANNODE_0_IPC/FrmPort_Diag_Physical_request_IPC_IN</FRAME-PORT-REF>
+                          </FRAME-PORT-REFS>
+                          <FRAME-REF DEST="CAN-FRAME">/DBC_SysDesc_CanNetwork/Pkg_Frame/Diag_Physical_request</FRAME-REF>
+                          <PDU-TRIGGERINGS>
+                            <PDU-TRIGGERING-REF-CONDITIONAL>
+                              <PDU-TRIGGERING-REF DEST="PDU-TRIGGERING">/DBC_SysDesc_CanNetwork/Pkg_Cluster/Can_Network/Can_Network_Channel/PduTrig_Diag_Physical_request</PDU-TRIGGERING-REF>
+                            </PDU-TRIGGERING-REF-CONDITIONAL>
+                          </PDU-TRIGGERINGS>
+                          <CAN-ADDRESSING-MODE>STANDARD</CAN-ADDRESSING-MODE>
+                          <CAN-FRAME-RX-BEHAVIOR>ANY</CAN-FRAME-RX-BEHAVIOR>
+                          <IDENTIFIER>2019</IDENTIFIER>
+                        </CAN-FRAME-TRIGGERING>
+                        <CAN-FRAME-TRIGGERING>
+                          <SHORT-NAME>Diag_Physical_response_Trgr</SHORT-NAME>
+                          <FRAME-PORT-REFS>
+                            <FRAME-PORT-REF DEST="FRAME-PORT">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC/Conn_Can_Network_CANNODE_0_IPC/FrmPort_Diag_Physical_response_IPC_OUT</FRAME-PORT-REF>
+                          </FRAME-PORT-REFS>
+                          <FRAME-REF DEST="CAN-FRAME">/DBC_SysDesc_CanNetwork/Pkg_Frame/Diag_Physical_response</FRAME-REF>
+                          <PDU-TRIGGERINGS>
+                            <PDU-TRIGGERING-REF-CONDITIONAL>
+                              <PDU-TRIGGERING-REF DEST="PDU-TRIGGERING">/DBC_SysDesc_CanNetwork/Pkg_Cluster/Can_Network/Can_Network_Channel/PduTrig_Diag_Physical_response</PDU-TRIGGERING-REF>
+                            </PDU-TRIGGERING-REF-CONDITIONAL>
+                          </PDU-TRIGGERINGS>
+                          <CAN-ADDRESSING-MODE>STANDARD</CAN-ADDRESSING-MODE>
+                          <IDENTIFIER>2027</IDENTIFIER>
+                        </CAN-FRAME-TRIGGERING>
+                      </FRAME-TRIGGERINGS>
+                      <PDU-TRIGGERINGS>
+                        <PDU-TRIGGERING>
+                          <SHORT-NAME>PduTrig_Diag_Functional_request</SHORT-NAME>
+                          <I-PDU-PORT-REFS>
+                            <I-PDU-PORT-REF DEST="I-PDU-PORT">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC/Conn_Can_Network_CANNODE_0_IPC/IpduPort_Diag_Functional_request_IPC_IN</I-PDU-PORT-REF>
+                          </I-PDU-PORT-REFS>
+                          <I-PDU-REF DEST="DCM-I-PDU">/DBC_SysDesc_CanNetwork/Pkg_Pdus/Diag_Functional_request</I-PDU-REF>
+                        </PDU-TRIGGERING>
+                        <PDU-TRIGGERING>
+                          <SHORT-NAME>PduTrig_Diag_Physical_request</SHORT-NAME>
+                          <I-PDU-PORT-REFS>
+                            <I-PDU-PORT-REF DEST="I-PDU-PORT">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC/Conn_Can_Network_CANNODE_0_IPC/IpduPort_Diag_Physical_request_IPC_IN</I-PDU-PORT-REF>
+                          </I-PDU-PORT-REFS>
+                          <I-PDU-REF DEST="DCM-I-PDU">/DBC_SysDesc_CanNetwork/Pkg_Pdus/Diag_Physical_request</I-PDU-REF>
+                        </PDU-TRIGGERING>
+                        <PDU-TRIGGERING>
+                          <SHORT-NAME>PduTrig_Diag_Physical_response</SHORT-NAME>
+                          <I-PDU-PORT-REFS>
+                            <I-PDU-PORT-REF DEST="I-PDU-PORT">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC/Conn_Can_Network_CANNODE_0_IPC/IpduPort_Diag_Physical_response_IPC_OUT</I-PDU-PORT-REF>
+                          </I-PDU-PORT-REFS>
+                          <I-PDU-REF DEST="DCM-I-PDU">/DBC_SysDesc_CanNetwork/Pkg_Pdus/Diag_Physical_response</I-PDU-REF>
+                        </PDU-TRIGGERING>
+                        <PDU-TRIGGERING>
+                          <SHORT-NAME>PduTrig_TEST_receive</SHORT-NAME>
+                        </PDU-TRIGGERING>
+                        <PDU-TRIGGERING>
+                          <SHORT-NAME>PduTrig_TEST_send</SHORT-NAME>
+                        </PDU-TRIGGERING>
+                      </PDU-TRIGGERINGS>
+                    </CAN-PHYSICAL-CHANNEL>
+                  </PHYSICAL-CHANNELS>
+                  <PROTOCOL-NAME>CAN</PROTOCOL-NAME>
+                  <PROTOCOL-VERSION />
+                </CAN-CLUSTER-CONDITIONAL>
+              </CAN-CLUSTER-VARIANTS>
+            </CAN-CLUSTER>
+            <CAN-CLUSTER>
+              <SHORT-NAME>Can_Network_XCP</SHORT-NAME>
+              <CAN-CLUSTER-VARIANTS>
+                <CAN-CLUSTER-CONDITIONAL>
+                  <PHYSICAL-CHANNELS>
+                    <CAN-PHYSICAL-CHANNEL>
+                      <SHORT-NAME>Can_Network_XCP_Channel</SHORT-NAME>
+                      <COMM-CONNECTORS>
+                        <COMMUNICATION-CONNECTOR-REF-CONDITIONAL>
+                          <COMMUNICATION-CONNECTOR-REF DEST="CAN-COMMUNICATION-CONNECTOR">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC/Conn_Can_Network_CANNODE_1_IPC</COMMUNICATION-CONNECTOR-REF>
+                        </COMMUNICATION-CONNECTOR-REF-CONDITIONAL>
+                      </COMM-CONNECTORS>
+                      <FRAME-TRIGGERINGS>
+                        <CAN-FRAME-TRIGGERING>
+                          <SHORT-NAME>XCP_RX_Broadcast_Trgr</SHORT-NAME>
+                          <FRAME-PORT-REFS>
+                            <FRAME-PORT-REF DEST="FRAME-PORT">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC/Conn_Can_Network_CANNODE_1_IPC/FrmPort_XCP_RX_Broadcast_IPC_IN</FRAME-PORT-REF>
+                          </FRAME-PORT-REFS>
+                          <FRAME-REF DEST="CAN-FRAME">/DBC_SysDesc_CanNetwork/Pkg_Frame/XCP_RX_Broadcast</FRAME-REF>
+                          <PDU-TRIGGERINGS>
+                            <PDU-TRIGGERING-REF-CONDITIONAL>
+                              <PDU-TRIGGERING-REF DEST="PDU-TRIGGERING">/DBC_SysDesc_CanNetwork/Pkg_Cluster/Can_Network_XCP/Can_Network_XCP_Channel/PduTrig_XCP_RX_Broadcast</PDU-TRIGGERING-REF>
+                            </PDU-TRIGGERING-REF-CONDITIONAL>
+                          </PDU-TRIGGERINGS>
+                          <CAN-ADDRESSING-MODE>STANDARD</CAN-ADDRESSING-MODE>
+                          <CAN-FRAME-RX-BEHAVIOR>ANY</CAN-FRAME-RX-BEHAVIOR>
+                          <IDENTIFIER>818</IDENTIFIER>
+                        </CAN-FRAME-TRIGGERING>
+                        <CAN-FRAME-TRIGGERING>
+                          <SHORT-NAME>XCP_RX_CMD_Trgr</SHORT-NAME>
+                          <FRAME-PORT-REFS>
+                            <FRAME-PORT-REF DEST="FRAME-PORT">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC/Conn_Can_Network_CANNODE_1_IPC/FrmPort_XCP_RX_CMD_IPC_IN</FRAME-PORT-REF>
+                          </FRAME-PORT-REFS>
+                          <FRAME-REF DEST="CAN-FRAME">/DBC_SysDesc_CanNetwork/Pkg_Frame/XCP_RX_CMD</FRAME-REF>
+                          <PDU-TRIGGERINGS>
+                            <PDU-TRIGGERING-REF-CONDITIONAL>
+                              <PDU-TRIGGERING-REF DEST="PDU-TRIGGERING">/DBC_SysDesc_CanNetwork/Pkg_Cluster/Can_Network_XCP/Can_Network_XCP_Channel/PduTrig_XCP_RX_CMD</PDU-TRIGGERING-REF>
+                            </PDU-TRIGGERING-REF-CONDITIONAL>
+                          </PDU-TRIGGERINGS>
+                          <CAN-ADDRESSING-MODE>STANDARD</CAN-ADDRESSING-MODE>
+                          <CAN-FRAME-RX-BEHAVIOR>ANY</CAN-FRAME-RX-BEHAVIOR>
+                          <IDENTIFIER>819</IDENTIFIER>
+                        </CAN-FRAME-TRIGGERING>
+                        <CAN-FRAME-TRIGGERING>
+                          <SHORT-NAME>XCP_TX_DAQ0_Trgr</SHORT-NAME>
+                          <FRAME-PORT-REFS>
+                            <FRAME-PORT-REF DEST="FRAME-PORT">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC/Conn_Can_Network_CANNODE_1_IPC/FrmPort_XCP_TX_DAQ0_IPC_OUT</FRAME-PORT-REF>
+                          </FRAME-PORT-REFS>
+                          <FRAME-REF DEST="CAN-FRAME">/DBC_SysDesc_CanNetwork/Pkg_Frame/XCP_TX_DAQ0</FRAME-REF>
+                          <PDU-TRIGGERINGS>
+                            <PDU-TRIGGERING-REF-CONDITIONAL>
+                              <PDU-TRIGGERING-REF DEST="PDU-TRIGGERING">/DBC_SysDesc_CanNetwork/Pkg_Cluster/Can_Network_XCP/Can_Network_XCP_Channel/PduTrig_XCP_TX_DAQ0</PDU-TRIGGERING-REF>
+                            </PDU-TRIGGERING-REF-CONDITIONAL>
+                          </PDU-TRIGGERINGS>
+                          <CAN-ADDRESSING-MODE>STANDARD</CAN-ADDRESSING-MODE>
+                          <IDENTIFIER>1912</IDENTIFIER>
+                        </CAN-FRAME-TRIGGERING>
+                        <CAN-FRAME-TRIGGERING>
+                          <SHORT-NAME>XCP_TX_DAQ1_Trgr</SHORT-NAME>
+                          <FRAME-PORT-REFS>
+                            <FRAME-PORT-REF DEST="FRAME-PORT">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC/Conn_Can_Network_CANNODE_1_IPC/FrmPort_XCP_TX_DAQ1_IPC_OUT</FRAME-PORT-REF>
+                          </FRAME-PORT-REFS>
+                          <FRAME-REF DEST="CAN-FRAME">/DBC_SysDesc_CanNetwork/Pkg_Frame/XCP_TX_DAQ1</FRAME-REF>
+                          <PDU-TRIGGERINGS>
+                            <PDU-TRIGGERING-REF-CONDITIONAL>
+                              <PDU-TRIGGERING-REF DEST="PDU-TRIGGERING">/DBC_SysDesc_CanNetwork/Pkg_Cluster/Can_Network_XCP/Can_Network_XCP_Channel/PduTrig_XCP_TX_DAQ1</PDU-TRIGGERING-REF>
+                            </PDU-TRIGGERING-REF-CONDITIONAL>
+                          </PDU-TRIGGERINGS>
+                          <CAN-ADDRESSING-MODE>STANDARD</CAN-ADDRESSING-MODE>
+                          <IDENTIFIER>1913</IDENTIFIER>
+                        </CAN-FRAME-TRIGGERING>
+                        <CAN-FRAME-TRIGGERING>
+                          <SHORT-NAME>XCP_TX_DAQ2_Trgr</SHORT-NAME>
+                          <FRAME-PORT-REFS>
+                            <FRAME-PORT-REF DEST="FRAME-PORT">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC/Conn_Can_Network_CANNODE_1_IPC/FrmPort_XCP_TX_DAQ2_IPC_OUT</FRAME-PORT-REF>
+                          </FRAME-PORT-REFS>
+                          <FRAME-REF DEST="CAN-FRAME">/DBC_SysDesc_CanNetwork/Pkg_Frame/XCP_TX_DAQ2</FRAME-REF>
+                          <PDU-TRIGGERINGS>
+                            <PDU-TRIGGERING-REF-CONDITIONAL>
+                              <PDU-TRIGGERING-REF DEST="PDU-TRIGGERING">/DBC_SysDesc_CanNetwork/Pkg_Cluster/Can_Network_XCP/Can_Network_XCP_Channel/PduTrig_XCP_TX_DAQ2</PDU-TRIGGERING-REF>
+                            </PDU-TRIGGERING-REF-CONDITIONAL>
+                          </PDU-TRIGGERINGS>
+                          <CAN-ADDRESSING-MODE>STANDARD</CAN-ADDRESSING-MODE>
+                          <IDENTIFIER>1914</IDENTIFIER>
+                        </CAN-FRAME-TRIGGERING>
+                        <CAN-FRAME-TRIGGERING>
+                          <SHORT-NAME>XCP_TX_RES_Trgr</SHORT-NAME>
+                          <FRAME-PORT-REFS>
+                            <FRAME-PORT-REF DEST="FRAME-PORT">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC/Conn_Can_Network_CANNODE_1_IPC/FrmPort_XCP_TX_RES_IPC_OUT</FRAME-PORT-REF>
+                          </FRAME-PORT-REFS>
+                          <FRAME-REF DEST="CAN-FRAME">/DBC_SysDesc_CanNetwork/Pkg_Frame/XCP_TX_RES</FRAME-REF>
+                          <PDU-TRIGGERINGS>
+                            <PDU-TRIGGERING-REF-CONDITIONAL>
+                              <PDU-TRIGGERING-REF DEST="PDU-TRIGGERING">/DBC_SysDesc_CanNetwork/Pkg_Cluster/Can_Network_XCP/Can_Network_XCP_Channel/PduTrig_XCP_TX_RES</PDU-TRIGGERING-REF>
+                            </PDU-TRIGGERING-REF-CONDITIONAL>
+                          </PDU-TRIGGERINGS>
+                          <CAN-ADDRESSING-MODE>STANDARD</CAN-ADDRESSING-MODE>
+                          <IDENTIFIER>1911</IDENTIFIER>
+                        </CAN-FRAME-TRIGGERING>
+                        <CAN-FRAME-TRIGGERING>
+                          <SHORT-NAME>CCP_RX_CRO_MCU_Trgr</SHORT-NAME>
+                          <FRAME-PORT-REFS>
+                            <FRAME-PORT-REF DEST="FRAME-PORT">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC/Conn_Can_Network_CANNODE_1_IPC/FrmPort_CCP_RX_CRO_MCU_IPC_IN</FRAME-PORT-REF>
+                          </FRAME-PORT-REFS>
+                          <FRAME-REF DEST="CAN-FRAME">/DBC_SysDesc_CanNetwork/Pkg_Frame/CCP_RX_CRO_MCU</FRAME-REF>
+                          <PDU-TRIGGERINGS>
+                            <PDU-TRIGGERING-REF-CONDITIONAL>
+                              <PDU-TRIGGERING-REF DEST="PDU-TRIGGERING">/DBC_SysDesc_CanNetwork/Pkg_Cluster/Can_Network_XCP/Can_Network_XCP_Channel/PduTrig_CCP_RX_CRO_MCU</PDU-TRIGGERING-REF>
+                            </PDU-TRIGGERING-REF-CONDITIONAL>
+                          </PDU-TRIGGERINGS>
+                          <CAN-ADDRESSING-MODE>STANDARD</CAN-ADDRESSING-MODE>
+                          <CAN-FRAME-RX-BEHAVIOR>ANY</CAN-FRAME-RX-BEHAVIOR>
+                          <IDENTIFIER>791</IDENTIFIER>
+                        </CAN-FRAME-TRIGGERING>
+                        <CAN-FRAME-TRIGGERING>
+                          <SHORT-NAME>CCP_TX_DAQ0_MCU_Trgr</SHORT-NAME>
+                          <FRAME-PORT-REFS>
+                            <FRAME-PORT-REF DEST="FRAME-PORT">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC/Conn_Can_Network_CANNODE_1_IPC/FrmPort_CCP_TX_DAQ0_MCU_IPC_OUT</FRAME-PORT-REF>
+                          </FRAME-PORT-REFS>
+                          <FRAME-REF DEST="CAN-FRAME">/DBC_SysDesc_CanNetwork/Pkg_Frame/CCP_TX_DAQ0_MCU</FRAME-REF>
+                          <PDU-TRIGGERINGS>
+                            <PDU-TRIGGERING-REF-CONDITIONAL>
+                              <PDU-TRIGGERING-REF DEST="PDU-TRIGGERING">/DBC_SysDesc_CanNetwork/Pkg_Cluster/Can_Network_XCP/Can_Network_XCP_Channel/PduTrig_CCP_TX_DAQ0_MCU</PDU-TRIGGERING-REF>
+                            </PDU-TRIGGERING-REF-CONDITIONAL>
+                          </PDU-TRIGGERINGS>
+                          <CAN-ADDRESSING-MODE>STANDARD</CAN-ADDRESSING-MODE>
+                          <IDENTIFIER>534</IDENTIFIER>
+                        </CAN-FRAME-TRIGGERING>
+                        <CAN-FRAME-TRIGGERING>
+                          <SHORT-NAME>CCP_TX_DAQ1_MCU_Trgr</SHORT-NAME>
+                          <FRAME-PORT-REFS>
+                            <FRAME-PORT-REF DEST="FRAME-PORT">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC/Conn_Can_Network_CANNODE_1_IPC/FrmPort_CCP_TX_DAQ1_MCU_IPC_OUT</FRAME-PORT-REF>
+                          </FRAME-PORT-REFS>
+                          <FRAME-REF DEST="CAN-FRAME">/DBC_SysDesc_CanNetwork/Pkg_Frame/CCP_TX_DAQ1_MCU</FRAME-REF>
+                          <PDU-TRIGGERINGS>
+                            <PDU-TRIGGERING-REF-CONDITIONAL>
+                              <PDU-TRIGGERING-REF DEST="PDU-TRIGGERING">/DBC_SysDesc_CanNetwork/Pkg_Cluster/Can_Network_XCP/Can_Network_XCP_Channel/PduTrig_CCP_TX_DAQ1_MCU</PDU-TRIGGERING-REF>
+                            </PDU-TRIGGERING-REF-CONDITIONAL>
+                          </PDU-TRIGGERINGS>
+                          <CAN-ADDRESSING-MODE>STANDARD</CAN-ADDRESSING-MODE>
+                          <IDENTIFIER>533</IDENTIFIER>
+                        </CAN-FRAME-TRIGGERING>
+                        <CAN-FRAME-TRIGGERING>
+                          <SHORT-NAME>CCP_TX_DTO_MCU_Trgr</SHORT-NAME>
+                          <FRAME-PORT-REFS>
+                            <FRAME-PORT-REF DEST="FRAME-PORT">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC/Conn_Can_Network_CANNODE_1_IPC/FrmPort_CCP_TX_DTO_MCU_IPC_OUT</FRAME-PORT-REF>
+                          </FRAME-PORT-REFS>
+                          <FRAME-REF DEST="CAN-FRAME">/DBC_SysDesc_CanNetwork/Pkg_Frame/CCP_TX_DTO_MCU</FRAME-REF>
+                          <PDU-TRIGGERINGS>
+                            <PDU-TRIGGERING-REF-CONDITIONAL>
+                              <PDU-TRIGGERING-REF DEST="PDU-TRIGGERING">/DBC_SysDesc_CanNetwork/Pkg_Cluster/Can_Network_XCP/Can_Network_XCP_Channel/PduTrig_CCP_TX_DTO_MCU</PDU-TRIGGERING-REF>
+                            </PDU-TRIGGERING-REF-CONDITIONAL>
+                          </PDU-TRIGGERINGS>
+                          <CAN-ADDRESSING-MODE>STANDARD</CAN-ADDRESSING-MODE>
+                          <IDENTIFIER>792</IDENTIFIER>
+                        </CAN-FRAME-TRIGGERING>
+                        <CAN-FRAME-TRIGGERING>
+                          <SHORT-NAME>CCP_TX_DAQ2_MCU_Trgr</SHORT-NAME>
+                          <FRAME-PORT-REFS>
+                            <FRAME-PORT-REF DEST="FRAME-PORT">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC/Conn_Can_Network_CANNODE_1_IPC/FrmPort_CCP_TX_DAQ2_MCU_IPC_OUT</FRAME-PORT-REF>
+                          </FRAME-PORT-REFS>
+                          <FRAME-REF DEST="CAN-FRAME">/DBC_SysDesc_CanNetwork/Pkg_Frame/CCP_TX_DAQ2_MCU</FRAME-REF>
+                          <PDU-TRIGGERINGS>
+                            <PDU-TRIGGERING-REF-CONDITIONAL>
+                              <PDU-TRIGGERING-REF DEST="PDU-TRIGGERING">/DBC_SysDesc_CanNetwork/Pkg_Cluster/Can_Network_XCP/Can_Network_XCP_Channel/PduTrig_CCP_TX_DAQ2_MCU</PDU-TRIGGERING-REF>
+                            </PDU-TRIGGERING-REF-CONDITIONAL>
+                          </PDU-TRIGGERINGS>
+                          <CAN-ADDRESSING-MODE>STANDARD</CAN-ADDRESSING-MODE>
+                          <IDENTIFIER>535</IDENTIFIER>
+                        </CAN-FRAME-TRIGGERING>
+                      </FRAME-TRIGGERINGS>
+                      <PDU-TRIGGERINGS>
+                        <PDU-TRIGGERING>
+                          <SHORT-NAME>PduTrig_XCP_RX_Broadcast</SHORT-NAME>
+                          <I-PDU-PORT-REFS>
+                            <I-PDU-PORT-REF DEST="I-PDU-PORT">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC/Conn_Can_Network_CANNODE_1_IPC/IpduPort_XCP_RX_Broadcast_IPC_IN</I-PDU-PORT-REF>
+                          </I-PDU-PORT-REFS>
+                          <I-PDU-REF DEST="GENERAL-PURPOSE-I-PDU">/DBC_SysDesc_CanNetwork/Pkg_Pdus/XCP_RX_Broadcast</I-PDU-REF>
+                        </PDU-TRIGGERING>
+                        <PDU-TRIGGERING>
+                          <SHORT-NAME>PduTrig_XCP_RX_CMD</SHORT-NAME>
+                          <I-PDU-PORT-REFS>
+                            <I-PDU-PORT-REF DEST="I-PDU-PORT">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC/Conn_Can_Network_CANNODE_1_IPC/IpduPort_XCP_RX_CMD_IPC_IN</I-PDU-PORT-REF>
+                          </I-PDU-PORT-REFS>
+                          <I-PDU-REF DEST="GENERAL-PURPOSE-I-PDU">/DBC_SysDesc_CanNetwork/Pkg_Pdus/XCP_RX_CMD</I-PDU-REF>
+                        </PDU-TRIGGERING>
+                        <PDU-TRIGGERING>
+                          <SHORT-NAME>PduTrig_XCP_TX_DAQ0</SHORT-NAME>
+                          <I-PDU-PORT-REFS>
+                            <I-PDU-PORT-REF DEST="I-PDU-PORT">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC/Conn_Can_Network_CANNODE_1_IPC/IpduPort_XCP_TX_DAQ0_IPC_OUT</I-PDU-PORT-REF>
+                          </I-PDU-PORT-REFS>
+                          <I-PDU-REF DEST="GENERAL-PURPOSE-I-PDU">/DBC_SysDesc_CanNetwork/Pkg_Pdus/XCP_TX_DAQ0</I-PDU-REF>
+                        </PDU-TRIGGERING>
+                        <PDU-TRIGGERING>
+                          <SHORT-NAME>PduTrig_XCP_TX_DAQ1</SHORT-NAME>
+                          <I-PDU-PORT-REFS>
+                            <I-PDU-PORT-REF DEST="I-PDU-PORT">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC/Conn_Can_Network_CANNODE_1_IPC/IpduPort_XCP_TX_DAQ1_IPC_OUT</I-PDU-PORT-REF>
+                          </I-PDU-PORT-REFS>
+                          <I-PDU-REF DEST="GENERAL-PURPOSE-I-PDU">/DBC_SysDesc_CanNetwork/Pkg_Pdus/XCP_TX_DAQ1</I-PDU-REF>
+                        </PDU-TRIGGERING>
+                        <PDU-TRIGGERING>
+                          <SHORT-NAME>PduTrig_XCP_TX_DAQ2</SHORT-NAME>
+                          <I-PDU-PORT-REFS>
+                            <I-PDU-PORT-REF DEST="I-PDU-PORT">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC/Conn_Can_Network_CANNODE_1_IPC/IpduPort_XCP_TX_DAQ2_IPC_OUT</I-PDU-PORT-REF>
+                          </I-PDU-PORT-REFS>
+                          <I-PDU-REF DEST="GENERAL-PURPOSE-I-PDU">/DBC_SysDesc_CanNetwork/Pkg_Pdus/XCP_TX_DAQ2</I-PDU-REF>
+                        </PDU-TRIGGERING>
+                        <PDU-TRIGGERING>
+                          <SHORT-NAME>PduTrig_XCP_TX_RES</SHORT-NAME>
+                          <I-PDU-PORT-REFS>
+                            <I-PDU-PORT-REF DEST="I-PDU-PORT">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC/Conn_Can_Network_CANNODE_1_IPC/IpduPort_XCP_TX_RES_IPC_OUT</I-PDU-PORT-REF>
+                          </I-PDU-PORT-REFS>
+                          <I-PDU-REF DEST="GENERAL-PURPOSE-I-PDU">/DBC_SysDesc_CanNetwork/Pkg_Pdus/XCP_TX_RES</I-PDU-REF>
+                        </PDU-TRIGGERING>
+                        <PDU-TRIGGERING>
+                          <SHORT-NAME>PduTrig_CCP_RX_CRO_MCU</SHORT-NAME>
+                          <I-PDU-PORT-REFS>
+                            <I-PDU-PORT-REF DEST="I-PDU-PORT">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC/Conn_Can_Network_CANNODE_1_IPC/IpduPort_CCP_RX_CRO_MCU_IPC_IN</I-PDU-PORT-REF>
+                          </I-PDU-PORT-REFS>
+                          <I-PDU-REF DEST="N-PDU">/DBC_SysDesc_CanNetwork/Pkg_Pdus/CCP_RX_CRO_MCU</I-PDU-REF>
+                        </PDU-TRIGGERING>
+                        <PDU-TRIGGERING>
+                          <SHORT-NAME>PduTrig_CCP_TX_DAQ0_MCU</SHORT-NAME>
+                          <I-PDU-PORT-REFS>
+                            <I-PDU-PORT-REF DEST="I-PDU-PORT">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC/Conn_Can_Network_CANNODE_1_IPC/IpduPort_CCP_TX_DAQ0_MCU_IPC_OUT</I-PDU-PORT-REF>
+                          </I-PDU-PORT-REFS>
+                          <I-PDU-REF DEST="N-PDU">/DBC_SysDesc_CanNetwork/Pkg_Pdus/CCP_TX_DAQ0_MCU</I-PDU-REF>
+                        </PDU-TRIGGERING>
+                        <PDU-TRIGGERING>
+                          <SHORT-NAME>PduTrig_CCP_TX_DAQ1_MCU</SHORT-NAME>
+                          <I-PDU-PORT-REFS>
+                            <I-PDU-PORT-REF DEST="I-PDU-PORT">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC/Conn_Can_Network_CANNODE_1_IPC/IpduPort_CCP_TX_DAQ1_MCU_IPC_OUT</I-PDU-PORT-REF>
+                          </I-PDU-PORT-REFS>
+                          <I-PDU-REF DEST="N-PDU">/DBC_SysDesc_CanNetwork/Pkg_Pdus/CCP_TX_DAQ1_MCU</I-PDU-REF>
+                        </PDU-TRIGGERING>
+                        <PDU-TRIGGERING>
+                          <SHORT-NAME>PduTrig_CCP_TX_DTO_MCU</SHORT-NAME>
+                          <I-PDU-PORT-REFS>
+                            <I-PDU-PORT-REF DEST="I-PDU-PORT">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC/Conn_Can_Network_CANNODE_1_IPC/IpduPort_CCP_TX_DTO_MCU_IPC_OUT</I-PDU-PORT-REF>
+                          </I-PDU-PORT-REFS>
+                          <I-PDU-REF DEST="N-PDU">/DBC_SysDesc_CanNetwork/Pkg_Pdus/CCP_TX_DTO_MCU</I-PDU-REF>
+                        </PDU-TRIGGERING>
+                        <PDU-TRIGGERING>
+                          <SHORT-NAME>PduTrig_CCP_TX_DAQ2_MCU</SHORT-NAME>
+                          <I-PDU-PORT-REFS>
+                            <I-PDU-PORT-REF DEST="I-PDU-PORT">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC/Conn_Can_Network_CANNODE_1_IPC/IpduPort_CCP_TX_DAQ2_MCU_IPC_OUT</I-PDU-PORT-REF>
+                          </I-PDU-PORT-REFS>
+                          <I-PDU-REF DEST="N-PDU">/DBC_SysDesc_CanNetwork/Pkg_Pdus/CCP_TX_DAQ2_MCU</I-PDU-REF>
+                        </PDU-TRIGGERING>
+                      </PDU-TRIGGERINGS>
+                    </CAN-PHYSICAL-CHANNEL>
+                  </PHYSICAL-CHANNELS>
+                  <PROTOCOL-NAME>CAN</PROTOCOL-NAME>
+                  <PROTOCOL-VERSION />
+                </CAN-CLUSTER-CONDITIONAL>
+              </CAN-CLUSTER-VARIANTS>
+            </CAN-CLUSTER>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>Pkg_Pdus</SHORT-NAME>
+          <ELEMENTS>
+            <NM-PDU>
+              <SHORT-NAME>RIPC_600_NM</SHORT-NAME>
+              <LENGTH>8</LENGTH>
+              <NM-DATA-INFORMATION>false</NM-DATA-INFORMATION>
+              <NM-VOTE-INFORMATION>false</NM-VOTE-INFORMATION>
+            </NM-PDU>
+            <NM-PDU>
+              <SHORT-NAME>IPC_633_NM</SHORT-NAME>
+              <LENGTH>8</LENGTH>
+              <NM-DATA-INFORMATION>false</NM-DATA-INFORMATION>
+              <NM-VOTE-INFORMATION>false</NM-VOTE-INFORMATION>
+            </NM-PDU>
+            <DCM-I-PDU>
+              <SHORT-NAME>Diag_Functional_request</SHORT-NAME>
+              <LENGTH>8</LENGTH>
+              <DIAG-PDU-TYPE>DIAG-REQUEST</DIAG-PDU-TYPE>
+            </DCM-I-PDU>
+            <DCM-I-PDU>
+              <SHORT-NAME>Diag_Physical_request</SHORT-NAME>
+              <LENGTH>8</LENGTH>
+              <DIAG-PDU-TYPE>DIAG-REQUEST</DIAG-PDU-TYPE>
+            </DCM-I-PDU>
+            <DCM-I-PDU>
+              <SHORT-NAME>Diag_Physical_response</SHORT-NAME>
+              <LENGTH>8</LENGTH>
+              <DIAG-PDU-TYPE>DIAG-RESPONSE</DIAG-PDU-TYPE>
+            </DCM-I-PDU>
+            <GENERAL-PURPOSE-I-PDU>
+              <SHORT-NAME>XCP_RX_Broadcast</SHORT-NAME>
+              <CATEGORY>XCP</CATEGORY>
+              <LENGTH>8</LENGTH>
+            </GENERAL-PURPOSE-I-PDU>
+            <GENERAL-PURPOSE-I-PDU>
+              <SHORT-NAME>XCP_RX_CMD</SHORT-NAME>
+              <CATEGORY>XCP</CATEGORY>
+              <LENGTH>8</LENGTH>
+            </GENERAL-PURPOSE-I-PDU>
+            <GENERAL-PURPOSE-I-PDU>
+              <SHORT-NAME>XCP_TX_DAQ0</SHORT-NAME>
+              <CATEGORY>XCP</CATEGORY>
+              <LENGTH>8</LENGTH>
+            </GENERAL-PURPOSE-I-PDU>
+            <GENERAL-PURPOSE-I-PDU>
+              <SHORT-NAME>XCP_TX_DAQ1</SHORT-NAME>
+              <CATEGORY>XCP</CATEGORY>
+              <LENGTH>8</LENGTH>
+            </GENERAL-PURPOSE-I-PDU>
+            <GENERAL-PURPOSE-I-PDU>
+              <SHORT-NAME>XCP_TX_DAQ2</SHORT-NAME>
+              <CATEGORY>XCP</CATEGORY>
+              <LENGTH>8</LENGTH>
+            </GENERAL-PURPOSE-I-PDU>
+            <GENERAL-PURPOSE-I-PDU>
+              <SHORT-NAME>XCP_TX_RES</SHORT-NAME>
+              <CATEGORY>XCP</CATEGORY>
+              <LENGTH>8</LENGTH>
+            </GENERAL-PURPOSE-I-PDU>
+            <N-PDU>
+              <SHORT-NAME>CCP_RX_CRO_MCU</SHORT-NAME>
+              <LENGTH>8</LENGTH>
+            </N-PDU>
+            <N-PDU>
+              <SHORT-NAME>CCP_TX_DAQ0_MCU</SHORT-NAME>
+              <LENGTH>8</LENGTH>
+            </N-PDU>
+            <N-PDU>
+              <SHORT-NAME>CCP_TX_DAQ1_MCU</SHORT-NAME>
+              <LENGTH>8</LENGTH>
+            </N-PDU>
+            <N-PDU>
+              <SHORT-NAME>CCP_TX_DTO_MCU</SHORT-NAME>
+              <LENGTH>8</LENGTH>
+            </N-PDU>
+            <N-PDU>
+              <SHORT-NAME>CCP_TX_DAQ2_MCU</SHORT-NAME>
+              <LENGTH>8</LENGTH>
+            </N-PDU>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>Pkg_Nm</SHORT-NAME>
+          <ELEMENTS>
+            <NM-CONFIG>
+              <SHORT-NAME>NmConfig_0</SHORT-NAME>
+              <NM-CLUSTERS>
+                <CAN-NM-CLUSTER>
+                  <SHORT-NAME>CanNmCluster_0</SHORT-NAME>
+                  <COMMUNICATION-CLUSTER-REF DEST="CAN-CLUSTER">/DBC_SysDesc_CanNetwork/Pkg_Cluster/Can_Network</COMMUNICATION-CLUSTER-REF>
+                  <NM-CHANNEL-ID>1</NM-CHANNEL-ID>
+                  <NM-CHANNEL-SLEEP-MASTER>false</NM-CHANNEL-SLEEP-MASTER>
+                  <NM-NODES>
+                    <CAN-NM-NODE>
+                      <SHORT-NAME>CanNmMode_IPC_Can_Network_CANNODE_0</SHORT-NAME>
+                      <CONTROLLER-REF DEST="CAN-COMMUNICATION-CONTROLLER">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC/Can_Network_CANNODE_0</CONTROLLER-REF>
+                      <NM-IF-ECU-REF DEST="NM-ECU">/DBC_SysDesc_CanNetwork/Pkg_Nm/NmConfig_0/NmEcu_IPC</NM-IF-ECU-REF>
+                      <NM-NODE-ID>1</NM-NODE-ID>
+                      <NM-PASSIVE-MODE-ENABLED>false</NM-PASSIVE-MODE-ENABLED>
+                      <RX-NM-PDU-REFS>
+                        <RX-NM-PDU-REF DEST="NM-PDU">/DBC_SysDesc_CanNetwork/Pkg_Pdus/RIPC_600_NM</RX-NM-PDU-REF>
+                      </RX-NM-PDU-REFS>
+                      <TX-NM-PDU-REFS>
+                        <TX-NM-PDU-REF DEST="NM-PDU">/DBC_SysDesc_CanNetwork/Pkg_Pdus/IPC_633_NM</TX-NM-PDU-REF>
+                      </TX-NM-PDU-REFS>
+                      <NM-RANGE-CONFIG>
+                        <LOWER-CAN-ID>1536</LOWER-CAN-ID>
+                        <UPPER-CAN-ID>1587</UPPER-CAN-ID>
+                      </NM-RANGE-CONFIG>
+                    </CAN-NM-NODE>
+                  </NM-NODES>
+                  <NM-SYNCHRONIZING-NETWORK>false</NM-SYNCHRONIZING-NETWORK>
+                  <NM-BUSLOAD-REDUCTION-ACTIVE>false</NM-BUSLOAD-REDUCTION-ACTIVE>
+                  <NM-CAR-WAKE-UP-FILTER-ENABLED>false</NM-CAR-WAKE-UP-FILTER-ENABLED>
+                  <NM-CAR-WAKE-UP-RX-ENABLED>false</NM-CAR-WAKE-UP-RX-ENABLED>
+                  <NM-CHANNEL-ACTIVE>false</NM-CHANNEL-ACTIVE>
+                </CAN-NM-CLUSTER>
+              </NM-CLUSTERS>
+              <NM-IF-ECUS>
+                <NM-ECU>
+                  <SHORT-NAME>NmEcu_IPC</SHORT-NAME>
+                  <BUS-SPECIFIC-NM-ECU>
+                    <CAN-NM-ECU>
+                      <NM-REPEAT-MSG-INDICATION-ENABLED>false</NM-REPEAT-MSG-INDICATION-ENABLED>
+                    </CAN-NM-ECU>
+                  </BUS-SPECIFIC-NM-ECU>
+                  <ECU-INSTANCE-REF DEST="ECU-INSTANCE">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC</ECU-INSTANCE-REF>
+                  <NM-BUS-SYNCHRONIZATION-ENABLED>false</NM-BUS-SYNCHRONIZATION-ENABLED>
+                  <NM-COM-CONTROL-ENABLED>false</NM-COM-CONTROL-ENABLED>
+                  <NM-COORDINATOR>
+                    <NM-NODE-REFS>
+                      <NM-NODE-REF DEST="CAN-NM-NODE">/DBC_SysDesc_CanNetwork/Pkg_Nm/NmConfig_0/CanNmCluster_0/CanNmMode_IPC_Can_Network_CANNODE_0</NM-NODE-REF>
+                    </NM-NODE-REFS>
+                  </NM-COORDINATOR>
+                  <NM-MULTIPLE-CHANNELS-ENABLED>false</NM-MULTIPLE-CHANNELS-ENABLED>
+                  <NM-NODE-DETECTION-ENABLED>false</NM-NODE-DETECTION-ENABLED>
+                  <NM-NODE-ID-ENABLED>false</NM-NODE-ID-ENABLED>
+                  <NM-PASSIVE-MODE-ENABLED>false</NM-PASSIVE-MODE-ENABLED>
+                  <NM-PDU-RX-INDICATION-ENABLED>false</NM-PDU-RX-INDICATION-ENABLED>
+                  <NM-REMOTE-SLEEP-IND-ENABLED>false</NM-REMOTE-SLEEP-IND-ENABLED>
+                  <NM-REPEAT-MSG-IND-ENABLED>false</NM-REPEAT-MSG-IND-ENABLED>
+                  <NM-STATE-CHANGE-IND-ENABLED>false</NM-STATE-CHANGE-IND-ENABLED>
+                  <NM-USER-DATA-ENABLED>false</NM-USER-DATA-ENABLED>
+                </NM-ECU>
+              </NM-IF-ECUS>
+            </NM-CONFIG>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>Pkg_Frame</SHORT-NAME>
+          <ELEMENTS>
+            <CAN-FRAME>
+              <SHORT-NAME>RIPC_600_NM</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING>
+                  <SHORT-NAME>RIPC_600_NM</SHORT-NAME>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-FIRST</PACKING-BYTE-ORDER>
+                  <PDU-REF DEST="NM-PDU">/DBC_SysDesc_CanNetwork/Pkg_Pdus/RIPC_600_NM</PDU-REF>
+                  <START-POSITION>0</START-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME>
+              <SHORT-NAME>IPC_633_NM</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING>
+                  <SHORT-NAME>IPC_633_NM</SHORT-NAME>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-FIRST</PACKING-BYTE-ORDER>
+                  <PDU-REF DEST="NM-PDU">/DBC_SysDesc_CanNetwork/Pkg_Pdus/IPC_633_NM</PDU-REF>
+                  <START-POSITION>0</START-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME>
+              <SHORT-NAME>Diag_Functional_request</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING>
+                  <SHORT-NAME>Diag_Functional_request</SHORT-NAME>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-FIRST</PACKING-BYTE-ORDER>
+                  <PDU-REF DEST="DCM-I-PDU">/DBC_SysDesc_CanNetwork/Pkg_Pdus/Diag_Functional_request</PDU-REF>
+                  <START-POSITION>0</START-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME>
+              <SHORT-NAME>Diag_Physical_request</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING>
+                  <SHORT-NAME>Diag_Physical_request</SHORT-NAME>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-FIRST</PACKING-BYTE-ORDER>
+                  <PDU-REF DEST="DCM-I-PDU">/DBC_SysDesc_CanNetwork/Pkg_Pdus/Diag_Physical_request</PDU-REF>
+                  <START-POSITION>0</START-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME>
+              <SHORT-NAME>Diag_Physical_response</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING>
+                  <SHORT-NAME>Diag_Physical_response</SHORT-NAME>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-FIRST</PACKING-BYTE-ORDER>
+                  <PDU-REF DEST="DCM-I-PDU">/DBC_SysDesc_CanNetwork/Pkg_Pdus/Diag_Physical_response</PDU-REF>
+                  <START-POSITION>0</START-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME>
+              <SHORT-NAME>XCP_RX_Broadcast</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING>
+                  <SHORT-NAME>XCP_RX_Broadcast</SHORT-NAME>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-FIRST</PACKING-BYTE-ORDER>
+                  <PDU-REF DEST="GENERAL-PURPOSE-I-PDU">/DBC_SysDesc_CanNetwork/Pkg_Pdus/XCP_RX_Broadcast</PDU-REF>
+                  <START-POSITION>0</START-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME>
+              <SHORT-NAME>XCP_RX_CMD</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING>
+                  <SHORT-NAME>XCP_RX_CMD</SHORT-NAME>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-FIRST</PACKING-BYTE-ORDER>
+                  <PDU-REF DEST="GENERAL-PURPOSE-I-PDU">/DBC_SysDesc_CanNetwork/Pkg_Pdus/XCP_RX_CMD</PDU-REF>
+                  <START-POSITION>0</START-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME>
+              <SHORT-NAME>XCP_TX_DAQ0</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING>
+                  <SHORT-NAME>XCP_TX_DAQ0</SHORT-NAME>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-FIRST</PACKING-BYTE-ORDER>
+                  <PDU-REF DEST="GENERAL-PURPOSE-I-PDU">/DBC_SysDesc_CanNetwork/Pkg_Pdus/XCP_TX_DAQ0</PDU-REF>
+                  <START-POSITION>0</START-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME>
+              <SHORT-NAME>XCP_TX_DAQ1</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING>
+                  <SHORT-NAME>XCP_TX_DAQ1</SHORT-NAME>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-FIRST</PACKING-BYTE-ORDER>
+                  <PDU-REF DEST="GENERAL-PURPOSE-I-PDU">/DBC_SysDesc_CanNetwork/Pkg_Pdus/XCP_TX_DAQ1</PDU-REF>
+                  <START-POSITION>0</START-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME>
+              <SHORT-NAME>XCP_TX_DAQ2</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING>
+                  <SHORT-NAME>XCP_TX_DAQ2</SHORT-NAME>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-FIRST</PACKING-BYTE-ORDER>
+                  <PDU-REF DEST="GENERAL-PURPOSE-I-PDU">/DBC_SysDesc_CanNetwork/Pkg_Pdus/XCP_TX_DAQ2</PDU-REF>
+                  <START-POSITION>0</START-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME>
+              <SHORT-NAME>XCP_TX_RES</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING>
+                  <SHORT-NAME>XCP_TX_RES</SHORT-NAME>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-FIRST</PACKING-BYTE-ORDER>
+                  <PDU-REF DEST="GENERAL-PURPOSE-I-PDU">/DBC_SysDesc_CanNetwork/Pkg_Pdus/XCP_TX_RES</PDU-REF>
+                  <START-POSITION>0</START-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME>
+              <SHORT-NAME>CCP_RX_CRO_MCU</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING>
+                  <SHORT-NAME>CCP_RX_CRO_MCU</SHORT-NAME>
+                  <PDU-REF DEST="N-PDU">/DBC_SysDesc_CanNetwork/Pkg_Pdus/CCP_RX_CRO_MCU</PDU-REF>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME>
+              <SHORT-NAME>CCP_TX_DAQ0_MCU</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING>
+                  <SHORT-NAME>CCP_TX_DAQ0_MCU</SHORT-NAME>
+                  <PDU-REF DEST="N-PDU">/DBC_SysDesc_CanNetwork/Pkg_Pdus/CCP_TX_DAQ0_MCU</PDU-REF>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME>
+              <SHORT-NAME>CCP_TX_DAQ1_MCU</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING>
+                  <SHORT-NAME>CCP_TX_DAQ1_MCU</SHORT-NAME>
+                  <PDU-REF DEST="N-PDU">/DBC_SysDesc_CanNetwork/Pkg_Pdus/CCP_TX_DAQ1_MCU</PDU-REF>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME>
+              <SHORT-NAME>CCP_TX_DTO_MCU</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING>
+                  <SHORT-NAME>CCP_TX_DTO_MCU</SHORT-NAME>
+                  <PDU-REF DEST="N-PDU">/DBC_SysDesc_CanNetwork/Pkg_Pdus/CCP_TX_DTO_MCU</PDU-REF>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME>
+              <SHORT-NAME>CCP_TX_DAQ2_MCU</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING>
+                  <SHORT-NAME>CCP_TX_DAQ2_MCU</SHORT-NAME>
+                  <PDU-REF DEST="N-PDU">/DBC_SysDesc_CanNetwork/Pkg_Pdus/CCP_TX_DAQ2_MCU</PDU-REF>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>Pkg_Ecu</SHORT-NAME>
+          <ELEMENTS>
+            <ECU-INSTANCE>
+              <SHORT-NAME>IPC</SHORT-NAME>
+              <COM-CONFIGURATION-GW-TIME-BASE>0.005</COM-CONFIGURATION-GW-TIME-BASE>
+              <COM-CONFIGURATION-RX-TIME-BASE>0.01</COM-CONFIGURATION-RX-TIME-BASE>
+              <COM-CONFIGURATION-TX-TIME-BASE>0.01</COM-CONFIGURATION-TX-TIME-BASE>
+              <COMM-CONTROLLERS>
+                <CAN-COMMUNICATION-CONTROLLER>
+                  <SHORT-NAME>Can_Network_CANNODE_0</SHORT-NAME>
+                  <CAN-COMMUNICATION-CONTROLLER-VARIANTS>
+                    <CAN-COMMUNICATION-CONTROLLER-CONDITIONAL>
+                      <CAN-CONTROLLER-ATTRIBUTES>
+                        <CAN-CONTROLLER-CONFIGURATION>
+                          <PROP-SEG>0</PROP-SEG>
+                          <SYNC-JUMP-WIDTH>0</SYNC-JUMP-WIDTH>
+                          <TIME-SEG-1>10</TIME-SEG-1>
+                          <TIME-SEG-2>0</TIME-SEG-2>
+                        </CAN-CONTROLLER-CONFIGURATION>
+                      </CAN-CONTROLLER-ATTRIBUTES>
+                    </CAN-COMMUNICATION-CONTROLLER-CONDITIONAL>
+                  </CAN-COMMUNICATION-CONTROLLER-VARIANTS>
+                </CAN-COMMUNICATION-CONTROLLER>
+                <CAN-COMMUNICATION-CONTROLLER>
+                  <SHORT-NAME>Can_Network_CANNODE_1</SHORT-NAME>
+                  <CAN-COMMUNICATION-CONTROLLER-VARIANTS>
+                    <CAN-COMMUNICATION-CONTROLLER-CONDITIONAL>
+                      <CAN-CONTROLLER-ATTRIBUTES>
+                        <CAN-CONTROLLER-CONFIGURATION>
+                          <PROP-SEG>0</PROP-SEG>
+                          <SYNC-JUMP-WIDTH>0</SYNC-JUMP-WIDTH>
+                          <TIME-SEG-1>10</TIME-SEG-1>
+                          <TIME-SEG-2>0</TIME-SEG-2>
+                        </CAN-CONTROLLER-CONFIGURATION>
+                      </CAN-CONTROLLER-ATTRIBUTES>
+                    </CAN-COMMUNICATION-CONTROLLER-CONDITIONAL>
+                  </CAN-COMMUNICATION-CONTROLLER-VARIANTS>
+                </CAN-COMMUNICATION-CONTROLLER>
+              </COMM-CONTROLLERS>
+              <CONNECTORS>
+                <CAN-COMMUNICATION-CONNECTOR>
+                  <SHORT-NAME>Conn_Can_Network_CANNODE_0_IPC</SHORT-NAME>
+                  <COMM-CONTROLLER-REF DEST="CAN-COMMUNICATION-CONTROLLER">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC/Can_Network_CANNODE_0</COMM-CONTROLLER-REF>
+                  <ECU-COMM-PORT-INSTANCES>
+                    <FRAME-PORT>
+                      <SHORT-NAME>FrmPort_RIPC_600_NM_IPC_IN</SHORT-NAME>
+                      <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                    </FRAME-PORT>
+                    <FRAME-PORT>
+                      <SHORT-NAME>FrmPort_IPC_633_NM_IPC_OUT</SHORT-NAME>
+                      <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                    </FRAME-PORT>
+                    <FRAME-PORT>
+                      <SHORT-NAME>FrmPort_Diag_Functional_request_IPC_IN</SHORT-NAME>
+                      <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                    </FRAME-PORT>
+                    <I-PDU-PORT>
+                      <SHORT-NAME>IpduPort_Diag_Functional_request_IPC_IN</SHORT-NAME>
+                      <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                    </I-PDU-PORT>
+                    <FRAME-PORT>
+                      <SHORT-NAME>FrmPort_Diag_Physical_request_IPC_IN</SHORT-NAME>
+                      <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                    </FRAME-PORT>
+                    <I-PDU-PORT>
+                      <SHORT-NAME>IpduPort_Diag_Physical_request_IPC_IN</SHORT-NAME>
+                      <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                    </I-PDU-PORT>
+                    <FRAME-PORT>
+                      <SHORT-NAME>FrmPort_Diag_Physical_response_IPC_OUT</SHORT-NAME>
+                      <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                    </FRAME-PORT>
+                    <I-PDU-PORT>
+                      <SHORT-NAME>IpduPort_Diag_Physical_response_IPC_OUT</SHORT-NAME>
+                      <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                    </I-PDU-PORT>
+                  </ECU-COMM-PORT-INSTANCES>
+                </CAN-COMMUNICATION-CONNECTOR>
+                <CAN-COMMUNICATION-CONNECTOR>
+                  <SHORT-NAME>Conn_Can_Network_CANNODE_1_IPC</SHORT-NAME>
+                  <COMM-CONTROLLER-REF DEST="CAN-COMMUNICATION-CONTROLLER">/DBC_SysDesc_CanNetwork/Pkg_Ecu/IPC/Can_Network_CANNODE_1</COMM-CONTROLLER-REF>
+                  <ECU-COMM-PORT-INSTANCES>
+                    <FRAME-PORT>
+                      <SHORT-NAME>FrmPort_XCP_RX_Broadcast_IPC_IN</SHORT-NAME>
+                      <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                    </FRAME-PORT>
+                    <I-PDU-PORT>
+                      <SHORT-NAME>IpduPort_XCP_RX_Broadcast_IPC_IN</SHORT-NAME>
+                      <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                    </I-PDU-PORT>
+                    <FRAME-PORT>
+                      <SHORT-NAME>FrmPort_XCP_RX_CMD_IPC_IN</SHORT-NAME>
+                      <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                    </FRAME-PORT>
+                    <I-PDU-PORT>
+                      <SHORT-NAME>IpduPort_XCP_RX_CMD_IPC_IN</SHORT-NAME>
+                      <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                    </I-PDU-PORT>
+                    <FRAME-PORT>
+                      <SHORT-NAME>FrmPort_XCP_TX_DAQ0_IPC_OUT</SHORT-NAME>
+                      <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                    </FRAME-PORT>
+                    <I-PDU-PORT>
+                      <SHORT-NAME>IpduPort_XCP_TX_DAQ0_IPC_OUT</SHORT-NAME>
+                      <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                    </I-PDU-PORT>
+                    <FRAME-PORT>
+                      <SHORT-NAME>FrmPort_XCP_TX_DAQ1_IPC_OUT</SHORT-NAME>
+                      <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                    </FRAME-PORT>
+                    <I-PDU-PORT>
+                      <SHORT-NAME>IpduPort_XCP_TX_DAQ1_IPC_OUT</SHORT-NAME>
+                      <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                    </I-PDU-PORT>
+                    <FRAME-PORT>
+                      <SHORT-NAME>FrmPort_XCP_TX_DAQ2_IPC_OUT</SHORT-NAME>
+                      <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                    </FRAME-PORT>
+                    <I-PDU-PORT>
+                      <SHORT-NAME>IpduPort_XCP_TX_DAQ2_IPC_OUT</SHORT-NAME>
+                      <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                    </I-PDU-PORT>
+                    <FRAME-PORT>
+                      <SHORT-NAME>FrmPort_XCP_TX_RES_IPC_OUT</SHORT-NAME>
+                      <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                    </FRAME-PORT>
+                    <I-PDU-PORT>
+                      <SHORT-NAME>IpduPort_XCP_TX_RES_IPC_OUT</SHORT-NAME>
+                      <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                    </I-PDU-PORT>
+                    <FRAME-PORT>
+                      <SHORT-NAME>FrmPort_CCP_RX_CRO_MCU_IPC_IN</SHORT-NAME>
+                      <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                    </FRAME-PORT>
+                    <I-PDU-PORT>
+                      <SHORT-NAME>IpduPort_CCP_RX_CRO_MCU_IPC_IN</SHORT-NAME>
+                      <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                    </I-PDU-PORT>
+                    <FRAME-PORT>
+                      <SHORT-NAME>FrmPort_CCP_TX_DAQ0_MCU_IPC_OUT</SHORT-NAME>
+                      <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                    </FRAME-PORT>
+                    <I-PDU-PORT>
+                      <SHORT-NAME>IpduPort_CCP_TX_DAQ0_MCU_IPC_OUT</SHORT-NAME>
+                      <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                    </I-PDU-PORT>
+                    <FRAME-PORT>
+                      <SHORT-NAME>FrmPort_CCP_TX_DAQ1_MCU_IPC_OUT</SHORT-NAME>
+                      <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                    </FRAME-PORT>
+                    <I-PDU-PORT>
+                      <SHORT-NAME>IpduPort_CCP_TX_DAQ1_MCU_IPC_OUT</SHORT-NAME>
+                      <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                    </I-PDU-PORT>
+                    <FRAME-PORT>
+                      <SHORT-NAME>FrmPort_CCP_TX_DTO_MCU_IPC_OUT</SHORT-NAME>
+                      <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                    </FRAME-PORT>
+                    <I-PDU-PORT>
+                      <SHORT-NAME>IpduPort_CCP_TX_DTO_MCU_IPC_OUT</SHORT-NAME>
+                      <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                    </I-PDU-PORT>
+                    <FRAME-PORT>
+                      <SHORT-NAME>FrmPort_CCP_TX_DAQ2_MCU_IPC_OUT</SHORT-NAME>
+                      <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                    </FRAME-PORT>
+                    <I-PDU-PORT>
+                      <SHORT-NAME>IpduPort_CCP_TX_DAQ2_MCU_IPC_OUT</SHORT-NAME>
+                      <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                    </I-PDU-PORT>
+                  </ECU-COMM-PORT-INSTANCES>
+                </CAN-COMMUNICATION-CONNECTOR>
+              </CONNECTORS>
+              <SLEEP-MODE-SUPPORTED>false</SLEEP-MODE-SUPPORTED>
+              <WAKE-UP-OVER-BUS-SUPPORTED>false</WAKE-UP-OVER-BUS-SUPPORTED>
+            </ECU-INSTANCE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>Pkg_CompuMethod</SHORT-NAME>
+          <ELEMENTS>
+            <COMPU-METHOD>
+              <SHORT-NAME>CompuMethod_NMNode</SHORT-NAME>
+              <CATEGORY>LINEAR</CATEGORY>
+              <COMPU-PHYS-TO-INTERNAL>
+                <COMPU-SCALES>
+                  <COMPU-SCALE>
+                    <SHORT-LABEL>CompuScale_CompuMethod_NMNode</SHORT-LABEL>
+                    <LOWER-LIMIT>0.0</LOWER-LIMIT>
+                    <UPPER-LIMIT>255.0</UPPER-LIMIT>
+                    <COMPU-RATIONAL-COEFFS>
+                      <COMPU-NUMERATOR>
+                        <V>-0.0</V>
+                        <V>1</V>
+                      </COMPU-NUMERATOR>
+                      <COMPU-DENOMINATOR>
+                        <V>1.0</V>
+                      </COMPU-DENOMINATOR>
+                    </COMPU-RATIONAL-COEFFS>
+                  </COMPU-SCALE>
+                </COMPU-SCALES>
+              </COMPU-PHYS-TO-INTERNAL>
+            </COMPU-METHOD>
+            <COMPU-METHOD>
+              <SHORT-NAME>CompuMethod_RepeatMessageRequestBit1</SHORT-NAME>
+              <CATEGORY>LINEAR</CATEGORY>
+              <UNIT-REF DEST="UNIT">/DBC_SysDesc_CanNetwork/Pkg_Units/I</UNIT-REF>
+              <COMPU-PHYS-TO-INTERNAL>
+                <COMPU-SCALES>
+                  <COMPU-SCALE>
+                    <SHORT-LABEL>CompuScale_CompuMethod_RepeatMessageRequestBit1</SHORT-LABEL>
+                    <LOWER-LIMIT>0.0</LOWER-LIMIT>
+                    <UPPER-LIMIT>1.0</UPPER-LIMIT>
+                    <COMPU-RATIONAL-COEFFS>
+                      <COMPU-NUMERATOR>
+                        <V>-0.0</V>
+                        <V>1</V>
+                      </COMPU-NUMERATOR>
+                      <COMPU-DENOMINATOR>
+                        <V>1.0</V>
+                      </COMPU-DENOMINATOR>
+                    </COMPU-RATIONAL-COEFFS>
+                  </COMPU-SCALE>
+                </COMPU-SCALES>
+              </COMPU-PHYS-TO-INTERNAL>
+            </COMPU-METHOD>
+            <COMPU-METHOD>
+              <SHORT-NAME>CompuMethod_NMWakeupSource</SHORT-NAME>
+              <CATEGORY>LINEAR</CATEGORY>
+              <COMPU-PHYS-TO-INTERNAL>
+                <COMPU-SCALES>
+                  <COMPU-SCALE>
+                    <SHORT-LABEL>CompuScale_CompuMethod_NMWakeupSource</SHORT-LABEL>
+                    <LOWER-LIMIT>0.0</LOWER-LIMIT>
+                    <UPPER-LIMIT>255.0</UPPER-LIMIT>
+                    <COMPU-RATIONAL-COEFFS>
+                      <COMPU-NUMERATOR>
+                        <V>-0.0</V>
+                        <V>1</V>
+                      </COMPU-NUMERATOR>
+                      <COMPU-DENOMINATOR>
+                        <V>1.0</V>
+                      </COMPU-DENOMINATOR>
+                    </COMPU-RATIONAL-COEFFS>
+                  </COMPU-SCALE>
+                </COMPU-SCALES>
+              </COMPU-PHYS-TO-INTERNAL>
+            </COMPU-METHOD>
+            <COMPU-METHOD>
+              <SHORT-NAME>CompuMethod_NMWakeupStype</SHORT-NAME>
+              <CATEGORY>LINEAR</CATEGORY>
+              <UNIT-REF DEST="UNIT">/DBC_SysDesc_CanNetwork/Pkg_Units/I</UNIT-REF>
+              <COMPU-PHYS-TO-INTERNAL>
+                <COMPU-SCALES>
+                  <COMPU-SCALE>
+                    <SHORT-LABEL>CompuScale_CompuMethod_NMWakeupStype</SHORT-LABEL>
+                    <LOWER-LIMIT>0.0</LOWER-LIMIT>
+                    <UPPER-LIMIT>15.0</UPPER-LIMIT>
+                    <COMPU-RATIONAL-COEFFS>
+                      <COMPU-NUMERATOR>
+                        <V>-0.0</V>
+                        <V>1</V>
+                      </COMPU-NUMERATOR>
+                      <COMPU-DENOMINATOR>
+                        <V>1.0</V>
+                      </COMPU-DENOMINATOR>
+                    </COMPU-RATIONAL-COEFFS>
+                  </COMPU-SCALE>
+                </COMPU-SCALES>
+              </COMPU-PHYS-TO-INTERNAL>
+            </COMPU-METHOD>
+            <COMPU-METHOD>
+              <SHORT-NAME>CompuMethod_ActiveWakeupBit</SHORT-NAME>
+              <CATEGORY>LINEAR</CATEGORY>
+              <UNIT-REF DEST="UNIT">/DBC_SysDesc_CanNetwork/Pkg_Units/I</UNIT-REF>
+              <COMPU-PHYS-TO-INTERNAL>
+                <COMPU-SCALES>
+                  <COMPU-SCALE>
+                    <SHORT-LABEL>CompuScale_CompuMethod_ActiveWakeupBit</SHORT-LABEL>
+                    <LOWER-LIMIT>0.0</LOWER-LIMIT>
+                    <UPPER-LIMIT>1.0</UPPER-LIMIT>
+                    <COMPU-RATIONAL-COEFFS>
+                      <COMPU-NUMERATOR>
+                        <V>-0.0</V>
+                        <V>1</V>
+                      </COMPU-NUMERATOR>
+                      <COMPU-DENOMINATOR>
+                        <V>1.0</V>
+                      </COMPU-DENOMINATOR>
+                    </COMPU-RATIONAL-COEFFS>
+                  </COMPU-SCALE>
+                </COMPU-SCALES>
+              </COMPU-PHYS-TO-INTERNAL>
+            </COMPU-METHOD>
+            <COMPU-METHOD>
+              <SHORT-NAME>CompuMethod_NMWakeupPower</SHORT-NAME>
+              <CATEGORY>LINEAR</CATEGORY>
+              <UNIT-REF DEST="UNIT">/DBC_SysDesc_CanNetwork/Pkg_Units/NOUNIT</UNIT-REF>
+              <COMPU-PHYS-TO-INTERNAL>
+                <COMPU-SCALES>
+                  <COMPU-SCALE>
+                    <SHORT-LABEL>CompuScale_CompuMethod_NMWakeupPower</SHORT-LABEL>
+                    <LOWER-LIMIT>0.0</LOWER-LIMIT>
+                    <UPPER-LIMIT>15.0</UPPER-LIMIT>
+                    <COMPU-RATIONAL-COEFFS>
+                      <COMPU-NUMERATOR>
+                        <V>-0.0</V>
+                        <V>1</V>
+                      </COMPU-NUMERATOR>
+                      <COMPU-DENOMINATOR>
+                        <V>1.0</V>
+                      </COMPU-DENOMINATOR>
+                    </COMPU-RATIONAL-COEFFS>
+                  </COMPU-SCALE>
+                </COMPU-SCALES>
+              </COMPU-PHYS-TO-INTERNAL>
+            </COMPU-METHOD>
+            <COMPU-METHOD>
+              <SHORT-NAME>CompuMethod_RepeatSts</SHORT-NAME>
+              <CATEGORY>LINEAR</CATEGORY>
+              <UNIT-REF DEST="UNIT">/DBC_SysDesc_CanNetwork/Pkg_Units/I</UNIT-REF>
+              <COMPU-PHYS-TO-INTERNAL>
+                <COMPU-SCALES>
+                  <COMPU-SCALE>
+                    <SHORT-LABEL>CompuScale_CompuMethod_RepeatSts</SHORT-LABEL>
+                    <LOWER-LIMIT>0.0</LOWER-LIMIT>
+                    <UPPER-LIMIT>1.0</UPPER-LIMIT>
+                    <COMPU-RATIONAL-COEFFS>
+                      <COMPU-NUMERATOR>
+                        <V>-0.0</V>
+                        <V>1</V>
+                      </COMPU-NUMERATOR>
+                      <COMPU-DENOMINATOR>
+                        <V>1.0</V>
+                      </COMPU-DENOMINATOR>
+                    </COMPU-RATIONAL-COEFFS>
+                  </COMPU-SCALE>
+                </COMPU-SCALES>
+              </COMPU-PHYS-TO-INTERNAL>
+            </COMPU-METHOD>
+            <COMPU-METHOD>
+              <SHORT-NAME>CompuMethod_rls_lightSWReason</SHORT-NAME>
+              <CATEGORY>LINEAR</CATEGORY>
+              <COMPU-PHYS-TO-INTERNAL>
+                <COMPU-SCALES>
+                  <COMPU-SCALE>
+                    <SHORT-LABEL>CompuScale_CompuMethod_rls_lightSWReason</SHORT-LABEL>
+                    <LOWER-LIMIT>0.0</LOWER-LIMIT>
+                    <UPPER-LIMIT>7.0</UPPER-LIMIT>
+                    <COMPU-RATIONAL-COEFFS>
+                      <COMPU-NUMERATOR>
+                        <V>-0.0</V>
+                        <V>1</V>
+                      </COMPU-NUMERATOR>
+                      <COMPU-DENOMINATOR>
+                        <V>1.0</V>
+                      </COMPU-DENOMINATOR>
+                    </COMPU-RATIONAL-COEFFS>
+                  </COMPU-SCALE>
+                </COMPU-SCALES>
+              </COMPU-PHYS-TO-INTERNAL>
+            </COMPU-METHOD>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>Pkg_Units</SHORT-NAME>
+          <ELEMENTS>
+            <UNIT>
+              <SHORT-NAME>I</SHORT-NAME>
+            </UNIT>
+            <UNIT>
+              <SHORT-NAME>NOUNIT</SHORT-NAME>
+            </UNIT>
+            <UNIT>
+              <SHORT-NAME>Nm</SHORT-NAME>
+            </UNIT>
+            <UNIT>
+              <SHORT-NAME>rpm</SHORT-NAME>
+            </UNIT>
+            <UNIT>
+              <SHORT-NAME>kW</SHORT-NAME>
+            </UNIT>
+            <UNIT>
+              <SHORT-NAME>W</SHORT-NAME>
+            </UNIT>
+            <UNIT>
+              <SHORT-NAME>Ampere</SHORT-NAME>
+            </UNIT>
+            <UNIT>
+              <SHORT-NAME>pct</SHORT-NAME>
+            </UNIT>
+            <UNIT>
+              <SHORT-NAME>Min</SHORT-NAME>
+            </UNIT>
+            <UNIT>
+              <SHORT-NAME>km_h</SHORT-NAME>
+            </UNIT>
+            <UNIT>
+              <SHORT-NAME>km</SHORT-NAME>
+            </UNIT>
+            <UNIT>
+              <SHORT-NAME>V</SHORT-NAME>
+            </UNIT>
+            <UNIT>
+              <SHORT-NAME>ohm</SHORT-NAME>
+            </UNIT>
+            <UNIT>
+              <SHORT-NAME>degreeC</SHORT-NAME>
+            </UNIT>
+            <UNIT>
+              <SHORT-NAME>degree</SHORT-NAME>
+            </UNIT>
+            <UNIT>
+              <SHORT-NAME>Hz</SHORT-NAME>
+            </UNIT>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

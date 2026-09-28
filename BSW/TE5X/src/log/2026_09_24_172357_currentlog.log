@@ -1,0 +1,39 @@
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./bsw done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./bswcdd done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./main done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./rte done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./os done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./asw done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./Targets done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./Integration done
+scons: done reading SConscript files.
+scons: Building targets ...
+Compiling bswcdd\BSW\bswsrv.c
+All licenses in use (-22) (rlm stat (0)) (product: tricore-gcc, version: 4.9.4)
+license check: No valid license!
+bswcdd\BSW\bswsrv.c:1:0: error: error in licenser
+ /*
+ ^
+bswcdd\BSW\bswsrv.c:1:0: error: license check failed
+
+=====
+None
+=====
+scons: *** [output\objs\bswcdd\BSW\bswsrv.o] Error 1
+scons: building terminated because of errors.

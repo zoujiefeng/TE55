@@ -1,0 +1,823 @@
+
+/*<VersionHead>
+ * This Configuration File is generated using versions (automatically filled in) as listed below.
+ *
+ * $Generator__: PduR  / AR42.10.0.0                Module Package Version
+ * $Editor_____: ISOLAR-A/B 9.2.1_9.2.1                Tool Version
+ * $Model______: 2.3.0.4                ECU Parameter Definition Version
+ *
+ 
+ </VersionHead>*/
+
+#ifndef PDUR_CFG_SYMBOLICNAMES_H
+#define PDUR_CFG_SYMBOLICNAMES_H
+
+/* Note: Module variant generation is done here, specifically to make below macros available on the inclusion of 
+ * PduR_memmap.h header file by other modules without PduR_Cfg.h inclusion */
+
+#define PDUR_VARIANT_PRE_COMPILE    (0)
+
+#define PDUR_VARIANT_POSTBUILD_SELECTABLE   (1)
+
+#if !defined(PDUR_CONFIGURATION_VARIANT)
+#define PDUR_CONFIGURATION_VARIANT    PDUR_VARIANT_PRE_COMPILE
+#endif /* PDUR_CONFIGURATION_VARIANT */
+
+/* For PduRRoutingTable: Symbolic Name reference are generated for Tx Paths and Rx paths
+ For TxPaths:
+ PduRConf_PduRSrcPdu_<shortname of PduRSrcPdu> will be used by module which gives PduR_<UpperLayer>Transmit request e.g Com,Dcm,Up-Cdd
+ PduRConf_PduRDestPdu_<shortname of PduRDestPdu> will be used by module which gives PduR_<LowerLayer>TxConfirmation callback e.g CanIf,CanTp,Low-Cdd
+
+ For RxPaths:
+ PduRConf_PduRSrcPdu_<shortname of PduRSrcPdu> will be used by module which gives PduR_<LowerLayer>RxIndication callback e.g CanIf,CanTp,Low-Cdd */
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_01    0
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_01  0
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_02    1
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_02  1
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_03    2
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_03  2
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_04    3
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_04  3
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_05    4
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_05  4
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_06    5
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_06  5
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_07    6
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_07  6
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_08    7
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_08  7
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_09    8
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_09  8
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_10    9
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_10  9
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_11    10
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_11  10
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_12    11
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_12  11
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_13    12
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_13  12
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_14    13
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_14  13
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_15    14
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_15  14
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_16    15
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_16  15
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_17    16
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_17  16
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_18    17
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_18  17
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_19    18
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_19  18
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_20    19
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_20  19
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_21    20
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_21  20
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_22    21
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_22  21
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_23    22
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_23  22
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_24    23
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_24  23
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_25    24
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_25  24
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_26    25
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_26  25
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_27    26
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_27  26
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_28    27
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_28  27
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_29    28
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_29  28
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_30    29
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_30  29
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_31    30
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_31  30
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_32    31
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_32  31
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_33    32
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_33  32
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_34    33
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_34  33
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_35    34
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_35  34
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_36    35
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_36  35
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_37    36
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_37  36
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_38    37
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_38  37
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_39    38
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_39  38
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_01_Rx_40    39
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_01_Rx_40  39
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_01    40
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_01  40
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_02    41
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_02  41
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_03    42
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_03  42
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_04    43
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_04  43
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_05    44
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_05  44
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_06    45
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_06  45
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_07    46
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_07  46
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_08    47
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_08  47
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_09    48
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_09  48
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_10    49
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_10  49
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_11    50
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_11  50
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_12    51
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_12  51
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_13    52
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_13  52
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_14    53
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_14  53
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_15    54
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_15  54
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_16    55
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_16  55
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_17    56
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_17  56
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_18    57
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_18  57
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_19    58
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_19  58
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_20    59
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_20  59
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_21    60
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_21  60
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_22    61
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_22  61
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_23    62
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_23  62
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_24    63
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_24  63
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_25    64
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_25  64
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_26    65
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_26  65
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_27    66
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_27  66
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_28    67
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_28  67
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_29    68
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_29  68
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_30    69
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_30  69
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_31    70
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_31  70
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_32    71
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_32  71
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_33    72
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_33  72
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_34    73
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_34  73
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_35    74
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_35  74
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_36    75
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_36  75
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_37    76
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_37  76
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_38    77
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_38  77
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_39    78
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_39  78
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_02_Rx_40    79
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_02_Rx_40  79
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_01    80
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_01  80
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_02    81
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_02  81
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_03    82
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_03  82
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_04    83
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_04  83
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_05    84
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_05  84
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_06    85
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_06  85
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_07    86
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_07  86
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_08    87
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_08  87
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_09    88
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_09  88
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_10    89
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_10  89
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_11    90
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_11  90
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_12    91
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_12  91
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_13    92
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_13  92
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_14    93
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_14  93
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_15    94
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_15  94
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_16    95
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_16  95
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_17    96
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_17  96
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_18    97
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_18  97
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_19    98
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_19  98
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_20    99
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_20  99
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_21    100
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_21  100
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_22    101
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_22  101
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_23    102
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_23  102
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_24    103
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_24  103
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_25    104
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_25  104
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_26    105
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_26  105
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_27    106
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_27  106
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_28    107
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_28  107
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_29    108
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_29  108
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_30    109
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_30  109
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_31    110
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_31  110
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_32    111
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_32  111
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_33    112
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_33  112
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_34    113
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_34  113
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_35    114
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_35  114
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_36    115
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_36  115
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_37    116
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_37  116
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_38    117
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_38  117
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_39    118
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_39  118
+
+#define PduRConf_PduRSrcPdu_Can_CanIf2PduR_CanNodeNum_03_Rx_40    119
+#define PduRConf_PduRDestPdu_Can_PduR2Com_CanNodeNum_03_Rx_40  119
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_TxBasic_01    0
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_TxBasic_01  0
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_TxBasic_02    1
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_TxBasic_02  1
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_TxBasic_03    2
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_TxBasic_03  2
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_TxBasic_04    3
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_TxBasic_04  3
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_TxBasic_05    4
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_TxBasic_05  4
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_TxBasic_06    5
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_TxBasic_06  5
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_TxBasic_07    6
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_TxBasic_07  6
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_TxBasic_08    7
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_TxBasic_08  7
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_TxBasic_09    8
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_TxBasic_09  8
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_TxBasic_10    9
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_TxBasic_10  9
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_TxBasic_11    10
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_TxBasic_11  10
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_TxBasic_12    11
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_TxBasic_12  11
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_TxBasic_13    12
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_TxBasic_13  12
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_TxBasic_14    13
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_TxBasic_14  13
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_TxBasic_15    14
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_TxBasic_15  14
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_TxBasic_16    15
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_TxBasic_16  15
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_TxBasic_17    16
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_TxBasic_17  16
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_TxBasic_18    17
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_TxBasic_18  17
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_TxBasic_19    18
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_TxBasic_19  18
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_TxBasic_20    19
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_TxBasic_20  19
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_Tx_01    20
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_Tx_01  20
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_Tx_02    21
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_Tx_02  21
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_Tx_03    22
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_Tx_03  22
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_Tx_04    23
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_Tx_04  23
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_Tx_05    24
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_Tx_05  24
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_Tx_06    25
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_Tx_06  25
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_Tx_07    26
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_Tx_07  26
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_Tx_08    27
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_Tx_08  27
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_Tx_09    28
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_Tx_09  28
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_Tx_10    29
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_Tx_10  29
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_Tx_11    30
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_Tx_11  30
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_Tx_12    31
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_Tx_12  31
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_Tx_13    32
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_Tx_13  32
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_Tx_14    33
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_Tx_14  33
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_Tx_15    34
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_Tx_15  34
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_Tx_16    35
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_Tx_16  35
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_Tx_17    36
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_Tx_17  36
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_Tx_18    37
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_Tx_18  37
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_Tx_19    38
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_Tx_19  38
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_Tx_20    39
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_Tx_20  39
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_Tx_21    40
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_Tx_21  40
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_Tx_22    41
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_Tx_22  41
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_Tx_23    42
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_Tx_23  42
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_Tx_24    43
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_Tx_24  43
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_Tx_25    44
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_Tx_25  44
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_Tx_25_00    45
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_Tx_25_00  45
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_Tx_25_01    46
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_Tx_25_01  46
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_01_Tx_26    47
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_01_Tx_26  47
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_TxBasic_01    48
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_TxBasic_01  48
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_TxBasic_02    49
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_TxBasic_02  49
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_TxBasic_03    50
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_TxBasic_03  50
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_TxBasic_04    51
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_TxBasic_04  51
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_TxBasic_05    52
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_TxBasic_05  52
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_TxBasic_06    53
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_TxBasic_06  53
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_TxBasic_07    54
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_TxBasic_07  54
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_TxBasic_08    55
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_TxBasic_08  55
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_TxBasic_09    56
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_TxBasic_09  56
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_TxBasic_10    57
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_TxBasic_10  57
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_TxBasic_11    58
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_TxBasic_11  58
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_TxBasic_12    59
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_TxBasic_12  59
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_TxBasic_13    60
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_TxBasic_13  60
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_TxBasic_14    61
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_TxBasic_14  61
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_TxBasic_15    62
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_TxBasic_15  62
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_TxBasic_16    63
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_TxBasic_16  63
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_TxBasic_17    64
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_TxBasic_17  64
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_TxBasic_18    65
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_TxBasic_18  65
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_TxBasic_19    66
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_TxBasic_19  66
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_TxBasic_20    67
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_TxBasic_20  67
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_Tx_01    68
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_Tx_01  68
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_Tx_02    69
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_Tx_02  69
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_Tx_03    70
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_Tx_03  70
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_Tx_04    71
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_Tx_04  71
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_Tx_05    72
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_Tx_05  72
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_Tx_06    73
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_Tx_06  73
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_Tx_07    74
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_Tx_07  74
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_Tx_08    75
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_Tx_08  75
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_Tx_09    76
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_Tx_09  76
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_Tx_10    77
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_Tx_10  77
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_Tx_11    78
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_Tx_11  78
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_Tx_12    79
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_Tx_12  79
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_Tx_13    80
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_Tx_13  80
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_Tx_14    81
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_Tx_14  81
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_Tx_15    82
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_Tx_15  82
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_Tx_16    83
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_Tx_16  83
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_Tx_17    84
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_Tx_17  84
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_Tx_18    85
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_Tx_18  85
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_Tx_19    86
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_Tx_19  86
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_Tx_20    87
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_Tx_20  87
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_Tx_21    88
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_Tx_21  88
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_Tx_22    89
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_Tx_22  89
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_Tx_23    90
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_Tx_23  90
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_Tx_24    91
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_Tx_24  91
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_Tx_25    92
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_Tx_25  92
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_02_Tx_26    93
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_02_Tx_26  93
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_TxBasic_01    94
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_TxBasic_01  94
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_TxBasic_02    95
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_TxBasic_02  95
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_TxBasic_03    96
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_TxBasic_03  96
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_TxBasic_04    97
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_TxBasic_04  97
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_TxBasic_05    98
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_TxBasic_05  98
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_TxBasic_06    99
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_TxBasic_06  99
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_TxBasic_07    100
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_TxBasic_07  100
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_TxBasic_08    101
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_TxBasic_08  101
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_TxBasic_09    102
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_TxBasic_09  102
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_TxBasic_10    103
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_TxBasic_10  103
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_TxBasic_11    104
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_TxBasic_11  104
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_TxBasic_12    105
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_TxBasic_12  105
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_TxBasic_13    106
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_TxBasic_13  106
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_TxBasic_14    107
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_TxBasic_14  107
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_TxBasic_15    108
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_TxBasic_15  108
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_TxBasic_16    109
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_TxBasic_16  109
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_TxBasic_17    110
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_TxBasic_17  110
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_TxBasic_18    111
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_TxBasic_18  111
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_TxBasic_19    112
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_TxBasic_19  112
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_TxBasic_20    113
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_TxBasic_20  113
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_Tx_01    114
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_Tx_01  114
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_Tx_02    115
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_Tx_02  115
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_Tx_03    116
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_Tx_03  116
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_Tx_04    117
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_Tx_04  117
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_Tx_05    118
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_Tx_05  118
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_Tx_06    119
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_Tx_06  119
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_Tx_07    120
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_Tx_07  120
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_Tx_08    121
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_Tx_08  121
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_Tx_09    122
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_Tx_09  122
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_Tx_10    123
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_Tx_10  123
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_Tx_11    124
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_Tx_11  124
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_Tx_12    125
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_Tx_12  125
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_Tx_13    126
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_Tx_13  126
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_Tx_14    127
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_Tx_14  127
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_Tx_15    128
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_Tx_15  128
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_Tx_16    129
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_Tx_16  129
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_Tx_17    130
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_Tx_17  130
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_Tx_18    131
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_Tx_18  131
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_Tx_19    132
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_Tx_19  132
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_Tx_20    133
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_Tx_20  133
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_Tx_21    134
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_Tx_21  134
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_Tx_22    135
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_Tx_22  135
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_Tx_23    136
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_Tx_23  136
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_Tx_24    137
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_Tx_24  137
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_Tx_25    138
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_Tx_25  138
+
+#define PduRConf_PduRSrcPdu_Can_Com2PduR_CanNodeNum_03_Tx_26    139
+#define PduRConf_PduRDestPdu_Can_PduR2CanIf_CanNodeNum_03_Tx_26  139
+
+#define PduRConf_PduRSrcPdu_Dcm_CanTp2PduR_CanNodeNum_01_FunRequest    0
+#define PduRConf_PduRDestPdu_Dcm_PduR2Dcm_CanNodeNum_01_FunRequest  0
+
+#define PduRConf_PduRSrcPdu_Dcm_CanTp2PduR_CanNodeNum_01_PhyRequest    1
+#define PduRConf_PduRDestPdu_Dcm_PduR2Dcm_CanNodeNum_01_PhyRequest  1
+
+#define PduRConf_PduRSrcPdu_Dcm_Dcm2PduR_CanNodeNum_01_PhyResponse    0
+#define PduRConf_PduRDestPdu_Dcm_PduR2CanTp_CanNodeNum_01_PhyResponse  0
+
+#endif /* PDUR_CFG_SYMBOLICNAMES_H */

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+<ADMIN-DATA>
+<LANGUAGE>EN</LANGUAGE>
+<SDGS>
+<SDG GID="RBHead-BASD-eASEE-Keywords">
+<SD GID="Domain"></SD>
+<SD GID="Namespace"></SD>
+<SD GID="Class"></SD>
+<SD GID="Name"></SD>
+<SD GID="Variant"></SD>
+<SD GID="Revision"></SD>
+<SD GID="History"></SD>
+</SDG>
+</SDGS>
+</ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>AUTOSAR_CanTrcv</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>BswModuleEntrys</SHORT-NAME>
+            <ELEMENTS>
+            <BSW-MODULE-ENTRY>
+                <SHORT-NAME>CanTrcv_MainFunction</SHORT-NAME>
+                <IS-REENTRANT>false</IS-REENTRANT>
+                <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+                <CALL-TYPE>SCHEDULED</CALL-TYPE>
+                <EXECUTION-CONTEXT>TASK</EXECUTION-CONTEXT>
+                <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+            </BSW-MODULE-ENTRY>
+            <BSW-MODULE-ENTRY>
+              <SHORT-NAME>CanTrcv_Init</SHORT-NAME>
+              <LONG-NAME>
+                <L-4 L="EN">Initialize the CanTrcv module.</L-4>
+              </LONG-NAME>
+              <DESC>
+                <L-2 L="EN">Initialize the CanTrcv module.</L-2>
+              </DESC>
+              <SERVICE-ID>0x00</SERVICE-ID>
+              <IS-REENTRANT>false</IS-REENTRANT>
+              <IS-SYNCHRONOUS>true</IS-SYNCHRONOUS>
+              <CALL-TYPE>REGULAR</CALL-TYPE>
+              <EXECUTION-CONTEXT>UNSPECIFIED</EXECUTION-CONTEXT>
+              <SW-SERVICE-IMPL-POLICY>STANDARD</SW-SERVICE-IMPL-POLICY>
+              <ARGUMENTS>
+                <SW-SERVICE-ARG>
+                  <SHORT-NAME>CanTrcvConfigPtr</SHORT-NAME>
+                  <DESC>
+                    <L-2 S="" L="EN">Pointer to a selected configuration structure</L-2>
+                  </DESC>
+                  <CATEGORY>DATA_REFERENCE</CATEGORY>
+                  <DIRECTION>IN</DIRECTION>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                        <SW-POINTER-TARGET-PROPS>
+                          <TARGET-CATEGORY>STRUCTURE</TARGET-CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_CanTrcv/ImplementationDataTypes/CanTrcv_ConfigType</IMPLEMENTATION-DATA-TYPE-REF>
+                                <SW-IMPL-POLICY>CONST</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                        </SW-POINTER-TARGET-PROPS>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </SW-SERVICE-ARG>
+              </ARGUMENTS>
+            </BSW-MODULE-ENTRY>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>ImplementationDataTypes</SHORT-NAME>
+          <ELEMENTS>
+            <IMPLEMENTATION-DATA-TYPE>
+              <SHORT-NAME>CanTrcv_ConfigType</SHORT-NAME>
+              <LONG-NAME>
+                <L-4 L="EN">This type shall contain at least all parameters that are post-build able</L-4>
+              </LONG-NAME>
+              <DESC>
+                <L-2 L="EN">This type shall contain at least all parameters that are post-build able</L-2>
+              </DESC>
+              <CATEGORY>STRUCTURE</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  <SHORT-NAME>CanTrcv_ConfigData</SHORT-NAME>
+                  <CATEGORY>DATA_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-POINTER-TARGET-PROPS>
+                          <TARGET-CATEGORY>VALUE</TARGET-CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/void</BASE-TYPE-REF>
+                                <SW-IMPL-POLICY>CONST</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                        </SW-POINTER-TARGET-PROPS>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  <SHORT-NAME>versionInfo</SHORT-NAME>
+                  <CATEGORY>DATA_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <SW-POINTER-TARGET-PROPS>
+                          <TARGET-CATEGORY>VALUE</TARGET-CATEGORY>
+                          <SW-DATA-DEF-PROPS>
+                            <SW-DATA-DEF-PROPS-VARIANTS>
+                              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint16</BASE-TYPE-REF>
+                                <SW-IMPL-POLICY>CONST</SW-IMPL-POLICY>
+                              </SW-DATA-DEF-PROPS-CONDITIONAL>
+                            </SW-DATA-DEF-PROPS-VARIANTS>
+                          </SW-DATA-DEF-PROPS>
+                        </SW-POINTER-TARGET-PROPS>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              </SUB-ELEMENTS>
+              <TYPE-EMITTER>HEADER_FILE</TYPE-EMITTER>
+            </IMPLEMENTATION-DATA-TYPE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>Units</SHORT-NAME>
+            <ELEMENTS></ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>PhysicalDimensions</SHORT-NAME>
+            <ELEMENTS></ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

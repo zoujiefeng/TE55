@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>CDD_CORE1</SHORT-NAME>
+      <ELEMENTS>
+        <APPLICATION-SW-COMPONENT-TYPE>
+          <SHORT-NAME>CDD_CORE1</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="Master">
+                <SD>true</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <PORTS>
+            <P-PORT-PROTOTYPE UUID="1fb26980-d1a4-49e2-8225-9d48df898c6b">
+              <SHORT-NAME>PPort_CPUUtilizationCore1</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/ServiceSwComponentInterface/CPU_Utilization</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="63e952f7-c2f3-4d09-bbc4-568a0097481c">
+              <SHORT-NAME>PPort_GetMaxUserStackUtilization</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/ServiceSwComponentInterface/GetMaxUserStackUtilization</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+          </PORTS>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR UUID="f90e1a78-37aa-49de-b8e8-d8a11b5c4dc1">
+              <SHORT-NAME>SwcInternalBehavior</SHORT-NAME>
+              <EVENTS>
+                <TIMING-EVENT>
+                  <SHORT-NAME>TimingEvent_0</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/CDD_CORE1/CDD_CORE1/SwcInternalBehavior/CDD_CORE1</START-ON-EVENT-REF>
+                  <PERIOD>0.01</PERIOD>
+                </TIMING-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="a96298de-a540-4490-9ad8-9dfed3480fa2">
+                  <SHORT-NAME>OperationInvokedEvent_0</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/CDD_CORE1/CDD_CORE1/SwcInternalBehavior/CPUUtilizationCore1</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/CDD_CORE1/CDD_CORE1/PPort_CPUUtilizationCore1</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ServiceSwComponentInterface/CPU_Utilization/CPU_Utilization</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="a471b01b-d536-4cf8-ba8e-40e8ea558459">
+                  <SHORT-NAME>OperationInvokedEvent_1</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/CDD_CORE1/CDD_CORE1/SwcInternalBehavior/GetMaxUserStackUtilization_Core1</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/CDD_CORE1/CDD_CORE1/PPort_GetMaxUserStackUtilization</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ServiceSwComponentInterface/GetMaxUserStackUtilization/GetMaxUserStackUtilization</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+              </EVENTS>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="0ea64435-f196-478f-bdd3-bf1c41648a8c">
+                  <SHORT-NAME>CPUUtilizationCore1</SHORT-NAME>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CPUUtilizationCore1_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="c15bcfed-9a7f-461d-ada7-db0461091e9a">
+                  <SHORT-NAME>CDD_CORE1</SHORT-NAME>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CDD_CORE1_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="7b39d1dc-261b-4ab1-a8cd-752330610096">
+                  <SHORT-NAME>GetMaxUserStackUtilization_Core1</SHORT-NAME>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>GetMaxUserStackUtilization_Core1_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </APPLICATION-SW-COMPONENT-TYPE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

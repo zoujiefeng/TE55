@@ -1,0 +1,2028 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00047.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>ETAS_Project</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>EcucModuleConfigurationValuess</SHORT-NAME>
+          <ELEMENTS>
+            <ECUC-MODULE-CONFIGURATION-VALUES>
+              <SHORT-NAME>NvM</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-MODULE-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM</DEFINITION-REF>
+              <CONTAINERS>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>NvM_NativeBlock_2</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRbSelectBlockForFirstInitAll</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockWriteProt</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE S="USER_GENERATED">
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockNum</DEFINITION-REF>
+                      <VALUE>2</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE S="USER_GENERATED">
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockManagementType</DEFINITION-REF>
+                      <VALUE>NVM_BLOCK_REDUNDANT</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE S="USER_GENERATED">
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockJobPriority</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMResistantToChangedSw</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRbGenRteServicePort</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfWriteRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE S="USER_GENERATED">
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockLength</DEFINITION-REF>
+                      <VALUE>100</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRamBlockDataAddress</DEFINITION-REF>
+                      <VALUE>Rte_CPim_ASW_NVM_ASW_NVM_BlockNative_1024_1</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForWriteAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramDeviceId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMStaticBlockIDCheck</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerification</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseSyncMechanism</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfReadRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseAutoValidation</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForReadAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMCalcRamBlockCrc</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockNum</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteBlockOnce</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMInitBlockCallback</DEFINITION-REF>
+                      <VALUE>NULL_PTR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE S="USER_GENERATED">
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockCrcType</DEFINITION-REF>
+                      <VALUE>NVM_CRC16</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE S="USER_GENERATED">
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseCrc</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRbGenRteAdminPort</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerificationDataSize</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE S="USER_GENERATED">
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramBlockIdentifier</DEFINITION-REF>
+                      <VALUE>23</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockDataAddress</DEFINITION-REF>
+                      <VALUE>Rte_CPim_ASW_NVM_ASW_NVM_BlockNative_1024_1_Rom_NVM</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE S="USER_GENERATED">
+                  <SHORT-NAME>NVM_BlockRunTime</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMStaticBlockIDCheck</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerification</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfReadRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseSyncMechanism</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockWriteProt</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockNum</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForReadAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMCalcRamBlockCrc</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockManagementType</DEFINITION-REF>
+                      <VALUE>NVM_BLOCK_NATIVE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteBlockOnce</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockNum</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockJobPriority</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMResistantToChangedSw</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMInitBlockCallback</DEFINITION-REF>
+                      <VALUE>NULL_PTR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseCrc</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockCrcType</DEFINITION-REF>
+                      <VALUE>NVM_CRC16</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockLength</DEFINITION-REF>
+                      <VALUE>8</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfWriteRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRamBlockDataAddress</DEFINITION-REF>
+                      <VALUE>MAIN_u64RunTime_NVM</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForWriteAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramDeviceId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerificationDataSize</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramBlockIdentifier</DEFINITION-REF>
+                      <VALUE>24</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockHeaderInclude</DEFINITION-REF>
+                      <VALUE>MAIN_RunTime</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockDataAddress</DEFINITION-REF>
+                      <VALUE>MAIN_u64RunTimeRom_NVM</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE S="USER_GENERATED">
+                  <SHORT-NAME>NvM_UDS_au8WrDidTable</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMStaticBlockIDCheck</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerification</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfReadRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseSyncMechanism</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockWriteProt</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockNum</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForReadAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMCalcRamBlockCrc</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockManagementType</DEFINITION-REF>
+                      <VALUE>NVM_BLOCK_NATIVE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteBlockOnce</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockNum</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockJobPriority</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMResistantToChangedSw</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMInitBlockCallback</DEFINITION-REF>
+                      <VALUE>NULL_PTR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseCrc</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockCrcType</DEFINITION-REF>
+                      <VALUE>NVM_CRC16</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockLength</DEFINITION-REF>
+                      <VALUE>128</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfWriteRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRamBlockDataAddress</DEFINITION-REF>
+                      <VALUE>UDS_au8WrDidTableNvM_Ram</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForWriteAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramDeviceId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerificationDataSize</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockDataAddress</DEFINITION-REF>
+                      <VALUE>UDS_au8WrDidTableNvM_Rom</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramBlockIdentifier</DEFINITION-REF>
+                      <VALUE>21</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockHeaderInclude</DEFINITION-REF>
+                      <VALUE>UDS_Nvm</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRbGenRteServicePort</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>NvM_UDS_au8ESKData</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockCrcType</DEFINITION-REF>
+                      <VALUE>NVM_CRC16</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseSyncMechanism</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMCalcRamBlockCrc</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMInitBlockCallback</DEFINITION-REF>
+                      <VALUE>NULL_PTR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRamBlockDataAddress</DEFINITION-REF>
+                      <VALUE>UDS_au8ESKDataNvM_Ram</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockDataAddress</DEFINITION-REF>
+                      <VALUE>UDS_au8ESKDataNvM_Rom</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForReadAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForWriteAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockJobPriority</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockManagementType</DEFINITION-REF>
+                      <VALUE>NVM_BLOCK_NATIVE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseCrc</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfReadRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfWriteRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockLength</DEFINITION-REF>
+                      <VALUE>16</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramBlockIdentifier</DEFINITION-REF>
+                      <VALUE>22</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockNum</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramDeviceId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockWriteProt</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockNum</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerificationDataSize</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteBlockOnce</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerification</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMStaticBlockIDCheck</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMResistantToChangedSw</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockHeaderInclude</DEFINITION-REF>
+                      <VALUE>UDS_Nvm</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>NvMBlock_LogisticData</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockCrcType</DEFINITION-REF>
+                      <VALUE>NVM_CRC16</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockJobPriority</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockManagementType</DEFINITION-REF>
+                      <VALUE>NVM_BLOCK_NATIVE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseCrc</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseSyncMechanism</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockWriteProt</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMCalcRamBlockCrc</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMInitBlockCallback</DEFINITION-REF>
+                      <VALUE>NULL_PTR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfReadRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfWriteRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockLength</DEFINITION-REF>
+                      <VALUE>128</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockNum</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramBlockIdentifier</DEFINITION-REF>
+                      <VALUE>19</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramDeviceId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRbGenRteServicePort</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMReadRamBlockFromNvCallback</DEFINITION-REF>
+                      <VALUE>NULL_PTR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMResistantToChangedSw</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockNum</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForReadAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForWriteAll</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSingleBlockCallback</DEFINITION-REF>
+                      <VALUE>NULL_PTR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMStaticBlockIDCheck</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteBlockOnce</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteRamBlockToNvCallback</DEFINITION-REF>
+                      <VALUE>NULL_PTR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerification</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerificationDataSize</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRamBlockDataAddress</DEFINITION-REF>
+                      <VALUE>NvBlock_ECU_LogisticData</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockDataAddress</DEFINITION-REF>
+                      <VALUE>NvBlock_ECU_LogisticDataRom_NVM</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>NvMBlockDescriptor_ECUConfiguration</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockCrcType</DEFINITION-REF>
+                      <VALUE>NVM_CRC16</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseSyncMechanism</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMCalcRamBlockCrc</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRbSelectBlockForFirstInitAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForReadAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForWriteAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockJobPriority</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockManagementType</DEFINITION-REF>
+                      <VALUE>NVM_BLOCK_REDUNDANT</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseCrc</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockWriteProt</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMInitBlockCallback</DEFINITION-REF>
+                      <VALUE>NULL_PTR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfReadRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfWriteRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockNum</DEFINITION-REF>
+                      <VALUE>2</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramBlockIdentifier</DEFINITION-REF>
+                      <VALUE>20</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramDeviceId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRamBlockDataAddress</DEFINITION-REF>
+                      <VALUE>NvBlock_ECU_Configuration</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockLength</DEFINITION-REF>
+                      <VALUE>4</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMReadRamBlockFromNvCallback</DEFINITION-REF>
+                      <VALUE>NULL_PTR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMResistantToChangedSw</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockDataAddress</DEFINITION-REF>
+                      <VALUE>NvBlock_ECU_ConfigurationRom_NVM</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockNum</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSingleBlockCallback</DEFINITION-REF>
+                      <VALUE>NULL_PTR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMStaticBlockIDCheck</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteBlockOnce</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteRamBlockToNvCallback</DEFINITION-REF>
+                      <VALUE>NULL_PTR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerification</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerificationDataSize</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE S="USER_GENERATED">
+                  <SHORT-NAME>NvM_UDS_au8FailureAttemptCnt_L1</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMStaticBlockIDCheck</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerification</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfReadRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseSyncMechanism</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockWriteProt</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockNum</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForReadAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMCalcRamBlockCrc</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockManagementType</DEFINITION-REF>
+                      <VALUE>NVM_BLOCK_NATIVE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteBlockOnce</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockNum</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockJobPriority</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMResistantToChangedSw</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMInitBlockCallback</DEFINITION-REF>
+                      <VALUE>NULL_PTR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseCrc</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockCrcType</DEFINITION-REF>
+                      <VALUE>NVM_CRC16</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockLength</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfWriteRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRamBlockDataAddress</DEFINITION-REF>
+                      <VALUE>UDS_au8FAC_L1_Ram</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForWriteAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramDeviceId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerificationDataSize</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramBlockIdentifier</DEFINITION-REF>
+                      <VALUE>25</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockDataAddress</DEFINITION-REF>
+                      <VALUE>UDS_au8FAC_L1_Rom</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE S="USER_GENERATED">
+                  <SHORT-NAME>NvM_ShutdownStatusBlock</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockCrcType</DEFINITION-REF>
+                      <VALUE>NVM_CRC16</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseSyncMechanism</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMCalcRamBlockCrc</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMInitBlockCallback</DEFINITION-REF>
+                      <VALUE>NULL_PTR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRamBlockDataAddress</DEFINITION-REF>
+                      <VALUE>ERL_xShutdownStatusBlock</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForReadAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForWriteAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockJobPriority</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockManagementType</DEFINITION-REF>
+                      <VALUE>NVM_BLOCK_NATIVE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseCrc</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfReadRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfWriteRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockLength</DEFINITION-REF>
+                      <VALUE>16</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramBlockIdentifier</DEFINITION-REF>
+                      <VALUE>26</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockNum</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramDeviceId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockWriteProt</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockNum</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerificationDataSize</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteBlockOnce</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerification</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMStaticBlockIDCheck</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMResistantToChangedSw</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockDataAddress</DEFINITION-REF>
+                      <VALUE>ERL_xShutdownStatusBlockRom_NVM</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE S="USER_GENERATED">
+                  <SHORT-NAME>NvM_ResetLogNvMEntry_0</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockCrcType</DEFINITION-REF>
+                      <VALUE>NVM_CRC16</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseSyncMechanism</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMCalcRamBlockCrc</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMInitBlockCallback</DEFINITION-REF>
+                      <VALUE>NULL_PTR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRamBlockDataAddress</DEFINITION-REF>
+                      <VALUE>ERL_xResetLogNvMEntry_0</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForReadAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForWriteAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockJobPriority</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockManagementType</DEFINITION-REF>
+                      <VALUE>NVM_BLOCK_NATIVE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseCrc</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfReadRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfWriteRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockLength</DEFINITION-REF>
+                      <VALUE>200</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramBlockIdentifier</DEFINITION-REF>
+                      <VALUE>27</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockNum</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramDeviceId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockWriteProt</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockNum</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerificationDataSize</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteBlockOnce</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerification</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMStaticBlockIDCheck</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMResistantToChangedSw</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockDataAddress</DEFINITION-REF>
+                      <VALUE>ERL_xResetLogNvMEntry_0_Rom_NVM</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE S="USER_GENERATED">
+                  <SHORT-NAME>NvM_ResetLogNvMEntry_1</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockCrcType</DEFINITION-REF>
+                      <VALUE>NVM_CRC16</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseSyncMechanism</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMCalcRamBlockCrc</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMInitBlockCallback</DEFINITION-REF>
+                      <VALUE>NULL_PTR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRamBlockDataAddress</DEFINITION-REF>
+                      <VALUE>ERL_xResetLogNvMEntry_1</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForReadAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForWriteAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockJobPriority</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockManagementType</DEFINITION-REF>
+                      <VALUE>NVM_BLOCK_NATIVE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseCrc</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfReadRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfWriteRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockLength</DEFINITION-REF>
+                      <VALUE>200</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramBlockIdentifier</DEFINITION-REF>
+                      <VALUE>28</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockNum</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramDeviceId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockWriteProt</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockNum</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerificationDataSize</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteBlockOnce</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerification</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMStaticBlockIDCheck</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMResistantToChangedSw</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockDataAddress</DEFINITION-REF>
+                      <VALUE>ERL_xResetLogNvMEntry_1_Rom_NVM</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE S="USER_GENERATED">
+                  <SHORT-NAME>NvM_ResetLogNvMEntry_2</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockCrcType</DEFINITION-REF>
+                      <VALUE>NVM_CRC16</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseSyncMechanism</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMCalcRamBlockCrc</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMInitBlockCallback</DEFINITION-REF>
+                      <VALUE>NULL_PTR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRamBlockDataAddress</DEFINITION-REF>
+                      <VALUE>ERL_xResetLogNvMEntry_2</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForReadAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForWriteAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockJobPriority</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockManagementType</DEFINITION-REF>
+                      <VALUE>NVM_BLOCK_NATIVE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseCrc</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfReadRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfWriteRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockLength</DEFINITION-REF>
+                      <VALUE>200</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramBlockIdentifier</DEFINITION-REF>
+                      <VALUE>29</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockNum</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramDeviceId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockWriteProt</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockNum</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerificationDataSize</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteBlockOnce</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerification</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMStaticBlockIDCheck</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMResistantToChangedSw</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockDataAddress</DEFINITION-REF>
+                      <VALUE>ERL_xResetLogNvMEntry_2_Rom_NVM</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE S="USER_GENERATED">
+                  <SHORT-NAME>NvM_ResetLogNvMEntry_3</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockCrcType</DEFINITION-REF>
+                      <VALUE>NVM_CRC16</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseSyncMechanism</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMCalcRamBlockCrc</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMInitBlockCallback</DEFINITION-REF>
+                      <VALUE>NULL_PTR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRamBlockDataAddress</DEFINITION-REF>
+                      <VALUE>ERL_xResetLogNvMEntry_3</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForReadAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForWriteAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockJobPriority</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockManagementType</DEFINITION-REF>
+                      <VALUE>NVM_BLOCK_NATIVE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseCrc</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfReadRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfWriteRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockLength</DEFINITION-REF>
+                      <VALUE>200</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramBlockIdentifier</DEFINITION-REF>
+                      <VALUE>30</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockNum</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramDeviceId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockWriteProt</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockNum</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerificationDataSize</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteBlockOnce</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerification</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMStaticBlockIDCheck</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMResistantToChangedSw</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockDataAddress</DEFINITION-REF>
+                      <VALUE>ERL_xResetLogNvMEntry_3_Rom_NVM</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE S="USER_GENERATED">
+                  <SHORT-NAME>NvM_ResetLogNvMEntry_4</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockCrcType</DEFINITION-REF>
+                      <VALUE>NVM_CRC16</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseSyncMechanism</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMCalcRamBlockCrc</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMInitBlockCallback</DEFINITION-REF>
+                      <VALUE>NULL_PTR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRamBlockDataAddress</DEFINITION-REF>
+                      <VALUE>ERL_xResetLogNvMEntry_4</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForReadAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForWriteAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockJobPriority</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockManagementType</DEFINITION-REF>
+                      <VALUE>NVM_BLOCK_NATIVE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseCrc</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfReadRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfWriteRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockLength</DEFINITION-REF>
+                      <VALUE>200</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramBlockIdentifier</DEFINITION-REF>
+                      <VALUE>31</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockNum</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramDeviceId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockWriteProt</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockNum</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerificationDataSize</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteBlockOnce</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerification</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMStaticBlockIDCheck</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMResistantToChangedSw</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockDataAddress</DEFINITION-REF>
+                      <VALUE>ERL_xResetLogNvMEntry_4_Rom_NVM</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE S="USER_GENERATED">
+                  <SHORT-NAME>NvM_ResetLogNvMEntry_5</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockCrcType</DEFINITION-REF>
+                      <VALUE>NVM_CRC16</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseSyncMechanism</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMCalcRamBlockCrc</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMInitBlockCallback</DEFINITION-REF>
+                      <VALUE>NULL_PTR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRamBlockDataAddress</DEFINITION-REF>
+                      <VALUE>ERL_xResetLogNvMEntry_5</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForReadAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForWriteAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockJobPriority</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockManagementType</DEFINITION-REF>
+                      <VALUE>NVM_BLOCK_NATIVE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseCrc</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfReadRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfWriteRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockLength</DEFINITION-REF>
+                      <VALUE>200</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramBlockIdentifier</DEFINITION-REF>
+                      <VALUE>32</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockNum</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramDeviceId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockWriteProt</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockNum</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerificationDataSize</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteBlockOnce</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerification</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMStaticBlockIDCheck</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMResistantToChangedSw</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockDataAddress</DEFINITION-REF>
+                      <VALUE>ERL_xResetLogNvMEntry_5_Rom_NVM</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE S="USER_GENERATED">
+                  <SHORT-NAME>NvM_ResetLogNvMEntry_6</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockCrcType</DEFINITION-REF>
+                      <VALUE>NVM_CRC16</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseSyncMechanism</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMCalcRamBlockCrc</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMInitBlockCallback</DEFINITION-REF>
+                      <VALUE>NULL_PTR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRamBlockDataAddress</DEFINITION-REF>
+                      <VALUE>ERL_xResetLogNvMEntry_6</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForReadAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForWriteAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockJobPriority</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockManagementType</DEFINITION-REF>
+                      <VALUE>NVM_BLOCK_NATIVE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseCrc</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfReadRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfWriteRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockLength</DEFINITION-REF>
+                      <VALUE>200</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramBlockIdentifier</DEFINITION-REF>
+                      <VALUE>33</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockNum</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramDeviceId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockWriteProt</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockNum</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerificationDataSize</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteBlockOnce</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerification</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMStaticBlockIDCheck</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMResistantToChangedSw</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockDataAddress</DEFINITION-REF>
+                      <VALUE>ERL_xResetLogNvMEntry_6_Rom_NVM</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE S="USER_GENERATED">
+                  <SHORT-NAME>NvM_ResetLogNvMEntry_7</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockCrcType</DEFINITION-REF>
+                      <VALUE>NVM_CRC16</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseSyncMechanism</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMCalcRamBlockCrc</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMInitBlockCallback</DEFINITION-REF>
+                      <VALUE>NULL_PTR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRamBlockDataAddress</DEFINITION-REF>
+                      <VALUE>ERL_xResetLogNvMEntry_7</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForReadAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForWriteAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockJobPriority</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockManagementType</DEFINITION-REF>
+                      <VALUE>NVM_BLOCK_NATIVE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseCrc</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfReadRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfWriteRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockLength</DEFINITION-REF>
+                      <VALUE>200</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramBlockIdentifier</DEFINITION-REF>
+                      <VALUE>34</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockNum</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramDeviceId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockWriteProt</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockNum</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerificationDataSize</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteBlockOnce</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerification</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMStaticBlockIDCheck</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMResistantToChangedSw</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockDataAddress</DEFINITION-REF>
+                      <VALUE>ERL_xResetLogNvMEntry_7_Rom_NVM</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE S="USER_GENERATED">
+                  <SHORT-NAME>NvM_ResetLogNvMEntry_8</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockCrcType</DEFINITION-REF>
+                      <VALUE>NVM_CRC16</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseSyncMechanism</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMCalcRamBlockCrc</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMInitBlockCallback</DEFINITION-REF>
+                      <VALUE>NULL_PTR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRamBlockDataAddress</DEFINITION-REF>
+                      <VALUE>ERL_xResetLogNvMEntry_8</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForReadAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForWriteAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockJobPriority</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockManagementType</DEFINITION-REF>
+                      <VALUE>NVM_BLOCK_NATIVE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseCrc</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfReadRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfWriteRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockLength</DEFINITION-REF>
+                      <VALUE>200</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramBlockIdentifier</DEFINITION-REF>
+                      <VALUE>35</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockNum</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramDeviceId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockWriteProt</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockNum</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerificationDataSize</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteBlockOnce</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerification</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMStaticBlockIDCheck</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMResistantToChangedSw</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockDataAddress</DEFINITION-REF>
+                      <VALUE>ERL_xResetLogNvMEntry_8_Rom_NVM</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE S="USER_GENERATED">
+                  <SHORT-NAME>NvM_ResetLogNvMEntry_9</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockCrcType</DEFINITION-REF>
+                      <VALUE>NVM_CRC16</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseSyncMechanism</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMCalcRamBlockCrc</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMInitBlockCallback</DEFINITION-REF>
+                      <VALUE>NULL_PTR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRamBlockDataAddress</DEFINITION-REF>
+                      <VALUE>ERL_xResetLogNvMEntry_9</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForReadAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForWriteAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockJobPriority</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockManagementType</DEFINITION-REF>
+                      <VALUE>NVM_BLOCK_NATIVE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseCrc</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfReadRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfWriteRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockLength</DEFINITION-REF>
+                      <VALUE>200</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramBlockIdentifier</DEFINITION-REF>
+                      <VALUE>36</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockNum</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramDeviceId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockWriteProt</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockNum</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerificationDataSize</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteBlockOnce</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerification</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMStaticBlockIDCheck</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMResistantToChangedSw</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockDataAddress</DEFINITION-REF>
+                      <VALUE>ERL_xResetLogNvMEntry_9_Rom_NVM</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+                <ECUC-CONTAINER-VALUE S="USER_GENERATED">
+                  <SHORT-NAME>NvM_RCVoltageGain</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor</DEFINITION-REF>
+                  <PARAMETER-VALUES>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockCrcType</DEFINITION-REF>
+                      <VALUE>NVM_CRC16</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseSyncMechanism</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMCalcRamBlockCrc</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-FUNCTION-NAME-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMInitBlockCallback</DEFINITION-REF>
+                      <VALUE>NULL_PTR</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRamBlockDataAddress</DEFINITION-REF>
+                      <VALUE>RC_au16VoltageGain</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForReadAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMSelectBlockForWriteAll</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockJobPriority</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockManagementType</DEFINITION-REF>
+                      <VALUE>NVM_BLOCK_NATIVE</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockUseCrc</DEFINITION-REF>
+                      <VALUE>true</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfReadRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMMaxNumOfWriteRetries</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockLength</DEFINITION-REF>
+                      <VALUE>50</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramBlockIdentifier</DEFINITION-REF>
+                      <VALUE>37</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvBlockNum</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMNvramDeviceId</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockWriteProt</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockNum</DEFINITION-REF>
+                      <VALUE>1</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerificationDataSize</DEFINITION-REF>
+                      <VALUE>0</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteBlockOnce</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMWriteVerification</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMStaticBlockIDCheck</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-NUMERICAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMResistantToChangedSw</DEFINITION-REF>
+                      <VALUE>false</VALUE>
+                    </ECUC-NUMERICAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMRomBlockDataAddress</DEFINITION-REF>
+                      <VALUE>RC_kau16VoltageGain</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                    <ECUC-TEXTUAL-PARAM-VALUE>
+                      <DEFINITION-REF DEST="ECUC-STRING-PARAM-DEF">/AUTOSAR_NvM/EcucModuleDefs/NvM/NvMBlockDescriptor/NvMBlockHeaderInclude</DEFINITION-REF>
+                      <VALUE>MAIN_CalibData</VALUE>
+                    </ECUC-TEXTUAL-PARAM-VALUE>
+                  </PARAMETER-VALUES>
+                </ECUC-CONTAINER-VALUE>
+              </CONTAINERS>
+            </ECUC-MODULE-CONFIGURATION-VALUES>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

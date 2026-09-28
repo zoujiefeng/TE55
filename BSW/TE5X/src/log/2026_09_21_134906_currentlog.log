@@ -1,0 +1,63 @@
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./bsw done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./bswcdd done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./main done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./rte done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./os done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./asw done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./Targets done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./Integration done
+scons: done reading SConscript files.
+scons: Building targets ...
+Compiling Targets\TC38xx\MCAL\MCAL_Gen\src\Adc_PBcfg.c
+Compiling Targets\TC38xx\MCAL\MCAL_Gen\src\Can_17_McmCan_PBcfg.c
+All licenses in use (-22) (rlm stat (0)) (product: tricore-gcc, version: 4.9.4)
+license check: No valid license!
+Targets\TC38xx\MCAL\MCAL_Gen\src\Can_17_McmCan_PBcfg.c:1:0: error: error in licenser
+ 
+ ^
+Targets\TC38xx\MCAL\MCAL_Gen\src\Can_17_McmCan_PBcfg.c:1:0: error: license check failed
+All licenses in use (-22) (rlm stat (0)) (product: tricore-gcc, version: 4.9.4)
+license check: No valid license!
+Targets\TC38xx\MCAL\MCAL_Gen\src\Adc_PBcfg.c:1:0: error: error in licenser
+ /*****************************************************************************
+ ^
+Targets\TC38xx\MCAL\MCAL_Gen\src\Adc_PBcfg.c:1:0: error: license check failed
+
+
+=====
+=====
+None
+None
+=====
+=====
+Compiling Integration\ecu\BswM_Callout_Stub.c
+scons: *** [output\objs\Targets\TC38xx\MCAL\MCAL_Gen\src\Can_17_McmCan_PBcfg.o] Error 1
+scons: *** [output\objs\Targets\TC38xx\MCAL\MCAL_Gen\src\Adc_PBcfg.o] Error 1
+All licenses in use (-22) (rlm stat (0)) (product: tricore-gcc, version: 4.9.4)
+license check: No valid license!
+Integration\ecu\BswM_Callout_Stub.c:1:0: error: error in licenser
+ /*
+ ^
+Integration\ecu\BswM_Callout_Stub.c:1:0: error: license check failed
+
+=====
+None
+=====
+scons: *** [output\objs\Integration\ecu\BswM_Callout_Stub.o] Error 1
+scons: building terminated because of errors.

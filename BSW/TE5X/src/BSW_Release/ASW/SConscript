@@ -1,0 +1,93 @@
+#Generate User: 01004867
+#Generate Time: 2026-09-24 17:27:46
+
+Import('*')
+import re,sys, os, glob, fnmatch
+import prebuild
+objects = [
+]
+# INCLUDE DIRECTORIES
+# Implements: COR010
+includes = [
+	'',
+	'ASW_COM',
+	'ASW_CORE0/api',
+	'ASW_CORE1/api',
+	'ASW_CORE2/api',
+	'ASW_CORE3/api',
+	'ASW_DCM/api',
+	'ASW_DCM/src',
+	'ASW_DEM/api',
+	'ASW_NM/api',
+	'ASW_NVM/api',
+	'ASW_WDG/api',
+	'CDD_BLDC',
+	'CDD_CORE0/api',
+	'CDD_CORE1/api',
+	'CDD_CORE2/api',
+	'CDD_CORE3/api',
+	'CDD_FR/DCAC',
+	'CDD_FR/MGTCU',
+	'CDD_FR/PDU',
+	'CDD_TPPC',
+	'Dem_User',
+	'RSID',
+	'SWC_DEM',
+]#Include Files
+# SOURCE FILES
+sources = [
+	'ASW_BASE/src/ASW_BASE.c',
+	'ASW_COM/ASW_COM.c',
+	'ASW_CORE0/src/ASW_CORE0.c',
+	'ASW_CORE1/src/ASW_CORE1.c',
+	'ASW_CORE2/src/ASW_CORE2.c',
+	'ASW_CORE3/src/ASW_CORE3.c',
+	'ASW_DCM/obd/RunnableEntity_0_func_vit_06.c',
+	'ASW_DCM/obd/RunnableEntity_0_func_VIT_0A.c',
+	'ASW_DCM/obd/RunnableEntity_0_VIT_04.c',
+	'ASW_DCM/src/ASW_DCM.c',
+	'ASW_DCM/src/ASW_DCM_PID_Service01.c',
+	'ASW_DCM/src/Dcm_ExternalServiceProcessing.c',
+	'ASW_DCM/src/Dcm_FailureAttemptCnt.c',
+	'ASW_DCM/src/Diag_SeedKey.c',
+	'ASW_DEM/src/ASW_DEM.c',
+	'ASW_DEM/src/ASW_DEM_CBStatusComp_DemComponent_func.c',
+	'ASW_NM/src/ASW_NM.c',
+	'ASW_NVM/src/ASW_NVM.c',
+	'ASW_WDG/src/ASW_WDG.c',
+	'ASW_XCP/src/ASW_XCP.c',
+	'CDD_CORE0/src/CDD_CORE0.c',
+	'CDD_CORE1/src/CDD_CORE1.c',
+	'CDD_CORE2/src/CDD_CORE2.c',
+	'CDD_CORE3/src/CDD_CORE3.c',
+	'CDD_FR/DCAC/FR_DCACCfg.c',
+	'CDD_FR/MGTCU/FR_MGTCUCfg.c',
+	'CDD_FR/PDU/FR_PDUCfg.c',
+	'CDD_TPPC/CDD_TPPC.c',
+	'Dem_User/Dem_User.c',
+	'RSID/RSID.c',
+	'SWC_DEM/SWC_DEM.c',
+]#Source Files
+# GENERATED SOURCE FILES
+gen_sources = [
+]
+
+# ADD INCLUDE DIRECTORIES
+for include in includes:
+    env.Append(CPPPATH=[Dir(include).abspath])
+    string = re.sub( r'output\\objs\\','''''' ,Dir(include).abspath)
+    prebuild.createSymlinkHeader( os.path.join(Dir('#').abspath,env['CEN_HEADER_DIR']),string )
+# COMPILE SOURCE FILES
+for source in sources:
+    objects += env.Object(source)
+
+# GENERATED SOURCE FILES
+for gen_source in gen_sources:
+    objects += env.Object(gen_source)
+
+# RETURN
+Return('objects')
+
+#*******************************************************************************
+# END OF FILE
+#*******************************************************************************

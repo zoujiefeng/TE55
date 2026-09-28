@@ -1,0 +1,11 @@
+Nom_donn�e|Type|Nom_module|Public|Nb_lignes|Nb_colonnes|Label_p�re|Offset|Masque_acc�s|Affichage|Unit�|Fonction_transfert_ades|Coefficient_a|Coefficient_b|Groupe|Groupe_1|Groupe_2|Alias_1|Alias_2|Genre|Variable_indice_ligne|Variable_indice_colonne|Fonction_transfert_ligne|Fonction_transfert_colonne|Table_breakpoint_ligne|Table_breakpoint_colonne|R�f�rence_sp�cification|Recuperable|Modifiable|Fournisseur|Responsable|Valeurs|Visualisable_ADES|Donn�e_a_supprimer|Validation|Commentaires|Volatile|MinDecValue|MaxDecValue|MinPhysValue|MaxPhysValue|Def_Eval|MemSec
+Frecord_bFaultRecoverPermission|boolean|FRecord|0|0|0|Frecord_bFaultRecoverPermission|0|0|Hexa|-||||FRecord|FRecord||Frecord_bFaultRecoverPermission||1|||||||NONE|0|1||||1|0|0|...|0||||||
+
+FRecord_u8FRLockedStatus|uint8|FRecord|0|0|0|FRecord_u8FRLockedStatus|0|0|Hexa|-||||FRecord|FRecord||FRecord_u8FRLockedStatus||1|||||||NONE|0|1||||1|0|0|...|0||||||
+FRecord_u8ClearReq|uint8|FRecord|0|0|0|FRecord_u8ClearReq|0|0|Hexa|-||||FRecord|FRecord||FRecord_u8ClearReq||1|||||||NONE|0|1||||1|0|0|...|0||||||
+FRecord_u8EventWriteState|uint8|FRecord|0|0|0|FRecord_u8EventWriteState|0|0|Hexa|-||||FRecord|FRecord||FRecord_u8EventWriteState||1|||||||NONE|0|1||||1|0|0|...|0||||||
+FRecord_u8HeadWriteState|uint8|FRecord|0|0|0|FRecord_u8HeadWriteState|0|0|Hexa|-||||FRecord|FRecord||FRecord_u8HeadWriteState||1|||||||NONE|0|1||||1|0|0|...|0||||||
+FRecord_u8FRStoreState|uint8|FRecord|0|0|0|FRecord_u8FRStoreState|0|0|Hexa|-||||FRecord|FRecord||FRecord_u8FRStoreState||1|||||||NONE|0|1||||1|0|0|...|0||||||
+DFApp_u8DflashMainState|uint8|DFLASH|0|0|0|DFApp_u8DflashMainState|0|0|Hexa|-||||DFLASH|DFLASH||DFApp_u8DflashMainState||1|||||||NONE|0|1||||1|0|0|...|0||||||
+
+FRecord_ku32TimeBeforeFaultOccurC|uint32|FRecord|0|0|0|FRecord_ku32TimeBeforeFaultOccurC|0|0|Phys|-|1|1|-20000|FRecord|FRecord||FRecord_ku32TimeBeforeFaultOccurC||2|||||||...|1|1|||10|1|0|0|Spare|0||||||

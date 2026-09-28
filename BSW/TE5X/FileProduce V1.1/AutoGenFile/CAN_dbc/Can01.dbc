@@ -1,0 +1,321 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+        CM_
+        BA_DEF_
+        BA_
+        VAL_
+        CAT_DEF_
+        CAT_
+        FILTER
+        BA_DEF_DEF_
+        EV_DATA_
+        ENVVAR_DATA_
+        SGTYPE_
+        SGTYPE_VAL_
+        BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: HCU PDU HSCU  ACU ACU 
+
+
+BO_ 2566331953 PDUMC1: 8 HCU
+ SG_ PDUMC1_Power_Enable_Signal : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUMC1_Key_Signal : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUMC1_Auxiliary_Contactor_Enable : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUMC1_PTC_Enable_Signal : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUMC1_Upper_Enable_Signal : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUMC1_Keyon_Signal_Sts : 10|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUMC1_Insulationresistance_Ctrl_Cmd : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUMC1_NegContactor_Ctrl_Cmd : 12|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUMC1_Cab1_PTC_MOS_Switch_Cmd : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUMC1_Cab2_PTC_MOS_Switch_Cmd : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUMC1_Batteryheat1_MOS_Switch_Cmd : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUMC1_Batteryheat2_MOS_Switch_Cmd : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUMC1_Batteryheat3_MOS_Switch_Cmd : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUMC1_Batteryheat4_MOS_Switch_Cmd : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUMC1_ChargCircuit1_PosContactor_Ctrl_Cmd : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUMC1_ChargCircuit1_NegContactor_Ctrl_Cmd : 25|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUMC1_ChargCircuit2_PosContactor_Ctrl_Cmd : 26|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUMC1_ChargCircuit2_NegContactor_Ctrl_Cmd : 27|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUMC1_ChargCircuit3_PosContactor_Ctrl_Cmd : 28|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUMC1_ChargCircuit3_NegContactor_Ctrl_Cmd : 29|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUMC1_ChargCircuit4_PosContactor_Ctrl_Cmd : 30|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUMC1_ChargCircuit4_NegContactor_Ctrl_Cmd : 31|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUMC1_Heartbeat_Signal : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2565877297 HSMC1: 8 HCU
+ SG_ HSMC1_HV_STEERING_REQUEST : 0|2@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HSMC1_HEARTBEAT : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2565811761 HSSTC: 8 HCU
+ SG_ HSSTC_Steerpump_Motor_Targetspeed : 0|8@1+ (20,0) [0|3000] "" Vector__XXX
+ SG_ HSSTC_Heartbeat_Signal : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2566205489 ACUMC1: 8 HCU
+ SG_ ACUMC1_Acu_Inhibit_Cmd : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ACUMC1_Aircompressor_Motor_Targspeed : 8|8@1+ (20,0) [0|3000] "" Vector__XXX
+ SG_ ACUMC1_CtrlMsg_Cycle_Counter : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2566827568 AIR1: 8 HCU
+ SG_ AIR1_TCU_MotorWorkModReq : 16|8@1+ (8,0) [0|2000] "" Vector__XXX
+ SG_ AIR1_TCU_MotorTorReq : 24|8@1+ (8,0) [0|2000] "" Vector__XXX
+
+BO_ 2566827570 AIR1: 8 HCU
+ SG_ AIR1_TCU_MotorWorkModReq : 16|8@1+ (8,0) [0|2000] "" Vector__XXX
+ SG_ AIR1_TCU_MotorTorReq : 24|8@1+ (8,0) [0|2000] "" Vector__XXX
+
+BO_ 2566324510 PDUST1: 8 PDU
+ SG_ PDUST1_Low_input_voltage : 0|8@1+ (0.4,0) [0|102] "" Vector__XXX
+ SG_ PDUST1_Power_battery_pack_voltage : 8|16@1+ (0.1,0) [0|6553.5] "" Vector__XXX
+ SG_ PDUST1_Main_pos_contactor_out_voltage : 24|16@1+ (0.1,0) [0|6553.5] "" Vector__XXX
+ SG_ PDUST1_Precharg_resistor_temp : 40|8@1+ (1,-20) [-20|200] "" Vector__XXX
+ SG_ PDUST1_Precharg_time_consumption : 48|8@1+ (0.1,0) [0|25.5] "" Vector__XXX
+ SG_ PDUST1_Enable_signal : 56|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUST1_Key_signal : 57|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUST1_Precharge_contactor_on : 58|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUST1_Positive_contactor_on : 59|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUST1_Voltage_diff_of_positive_contactor : 60|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUST1_Positive_contactor_status : 61|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUST1_Poweron_selftest_ok_signal : 62|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUST1_Highvoltage_of_circuit_positive_contactor : 63|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2566324766 PDUST2: 8 PDU
+ SG_ PDUST2_Stuck_Status_Feedback : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ PDUST2_1stStage_PTC_MOS_Switch_Command : 4|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ PDUST2_2stStage_PTC_MOS_Switch_Command : 6|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ PDUST2_PTC_Contactor_Status : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUST2_UpperCircuit_Contactor_On : 13|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUST2_UpperCircuit_Precharge_Contactor_On : 14|1@1+ (1,0) [0|1] "°" Vector__XXX
+ SG_ PDUST2_UpperCircuit_Contactor_Status : 15|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUST2_Internal_Trouble_Code : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PDUST2_Software_Version : 24|8@1+ (0.01,0) [0|2.54] "" Vector__XXX
+ SG_ PDUST2_Outputvoltage_of_UpperCircuit_Contactor : 32|16@1+ (0.1,0) [0|6553.5] "" Vector__XXX
+ SG_ PDUST2_Heartbeat_Signal : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ PDUST2_AuxiliaryContactor_Status : 56|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUST2_AuxiliaryContactor_On : 57|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ PDUST2_PTCContactor_On : 59|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ PDUST2_PTCContactor2_On : 61|2@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 2566325022 PDUST3: 8 PDU
+ SG_ PDUST3_Insulation_Resistance_Sts : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ PDUST3_Negative_Contactor_Sts : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ PDUST3_Number_of_Positive_Contactors : 4|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ PDUST3_Positive_Contactor1_Sts : 8|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ PDUST3_Positive_Contactor2_Sts : 10|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ PDUST3_Positive_Contactor3_Sts : 12|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ PDUST3_Positive_Contactor4_Sts : 14|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ PDUST3_OnStatus_of_Cab1_Stage_PTC_Switch : 16|2@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUST3_OnStatus_of_Cab2_Stage_PTC_Switch : 18|2@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUST3_OnStatus_of_BatteryHeating1_Switch : 24|2@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUST3_OnStatus_of_BatteryHeating2_Switch : 26|2@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUST3_OnStatus_of_BatteryHeating3_Switch : 28|2@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUST3_OnStatus_of_BatteryHeating4_Switch : 30|2@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ PDUST3_ChargeCircuit1_Positive_Contactor_Sts : 32|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ PDUST3_ChargeCircuit1_Negative_Contactor_Sts : 34|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ PDUST3_ChargeCircuit2_Positive_Contactor_Sts : 36|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ PDUST3_ChargeCircuit2_Negative_Contactor_Sts : 38|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ PDUST3_ChargeCircuit3_Positive_Contactor_Sts : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ PDUST3_ChargeCircuit3_Negative_Contactor_Sts : 42|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ PDUST3_ChargeCircuit4_Positive_Contactor_Sts : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ PDUST3_ChargeCircuit4_Negative_Contactor_Sts : 46|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ PDUST3_Number_of_Cab_PTC_Switch : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ PDUST3_Number_of_BatteryHeating_PTC_Switch : 50|3@1+ (1,0) [0|7] "" Vector__XXX
+
+BO_ 2566325278 PDUST4: 8 PDU
+ SG_ PDUST4_Positivepole_to_ground_resistance_value : 0|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ PDUST4_Negativepole_to_ground_resistance_value : 16|16@1+ (0.01,0) [0|655.35] "" Vector__XXX
+ SG_ PDUST4_Chargingpile_voltage : 32|16@1+ (0.1,0) [0|6553.5] "" Vector__XXX
+
+BO_ 2364932398 HSST1: 8 HSCU 
+ SG_ HSST1_Heartbeat_Signal : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ HSST1_Motor_Speed : 8|16@1+ (1,0) [0|5000] "" Vector__XXX
+ SG_ HSST1_Output_Current : 24|16@1+ (0.1,0) [0|100] "" Vector__XXX
+ SG_ HSST1_Steering_Oil_DCAC_Module_Temp : 40|8@1+ (1,-40) [-40|215] "" Vector__XXX
+ SG_ HSST1_Motor_Sts : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ HSST1_Fault_Level : 50|2@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 2364932654 HSST2: 8 HSCU
+ SG_ HSST2_Steer_Motor_Temp : 0|8@1+ (1,-40) [-40|210] "" Vector__XXX
+ SG_ HSST2_Input_Voltage : 8|8@1+ (4,0) [0|1020] "" Vector__XXX
+ SG_ HSST2_Input_Current : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ HSST2_Internal_FaultCode : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ HSST2_Software_Version : 56|8@1+ (0.01,0) [0|2.54] "" Vector__XXX
+
+BO_ 2566857008 ACUST1: 8 ACU
+ SG_ ACUST1_Input_Voltage : 0|8@1+ (4,0) [0|1020] "" Vector__XXX
+ SG_ ACUST1_Input_Current : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ACUST1_Output_Voltage : 16|8@1+ (4,0) [0|1020] "" Vector__XXX
+ SG_ ACUST1_Output_Current : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ACUST1_SDCAC_MotorTemp : 32|8@1+ (1,-40) [-40|210] "" Vector__XXX
+ SG_ ACUST1_AirCompressor_Temp : 40|8@1+ (1,-40) [-40|210] "" Vector__XXX
+ SG_ ACUST1_Controller_Operating_Sts : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ACUST1_Hardwire_Enable_Signal_Sts : 50|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ACUST1_Heartbeat_Signal : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2566857264 ACUST2: 8 ACU 
+ SG_ ACUST2_AirCompressor_Motor_Speed : 0|8@1+ (20,0) [0|3000] "" Vector__XXX
+ SG_ ACUST2_Internal_Fault_Code : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ACUST2_Software_Version : 56|8@1+ (0.01,0) [0|2.54] "" Vector__XXX
+
+
+
+CM_ SG_ 2566331953 PDUMC1_Power_Enable_Signal "上电使能信号";
+CM_ SG_ 2566331953 PDUMC1_Key_Signal "钥匙START信号";
+CM_ SG_ 2566331953 PDUMC1_Auxiliary_Contactor_Enable "辅驱接触器使能";
+CM_ SG_ 2566331953 PDUMC1_PTC_Enable_Signal "PTC使能信号";
+CM_ SG_ 2566331953 PDUMC1_Upper_Enable_Signal "上装使能信号";
+CM_ SG_ 2566331953 PDUMC1_Keyon_Signal_Sts "Keyon信号状态";
+CM_ SG_ 2566331953 PDUMC1_Insulationresistance_Ctrl_Cmd "绝缘电阻检测控制指令";
+CM_ SG_ 2566331953 PDUMC1_NegContactor_Ctrl_Cmd "负极接触器控制指令";
+CM_ SG_ 2566331953 PDUMC1_Cab1_PTC_MOS_Switch_Cmd "驾驶室1挡PTC配电mos管开关指令";
+CM_ SG_ 2566331953 PDUMC1_Cab2_PTC_MOS_Switch_Cmd "驾驶室2挡PTC配电mos管开关指令";
+CM_ SG_ 2566331953 PDUMC1_Batteryheat1_MOS_Switch_Cmd "电池加热1配电mos管开关指令";
+CM_ SG_ 2566331953 PDUMC1_Batteryheat2_MOS_Switch_Cmd "电池加热2配电mos管开关指令";
+CM_ SG_ 2566331953 PDUMC1_Batteryheat3_MOS_Switch_Cmd "电池加热3配电mos管开关指令";
+CM_ SG_ 2566331953 PDUMC1_Batteryheat4_MOS_Switch_Cmd "电池加热4配电mos管开关指令";
+CM_ SG_ 2566331953 PDUMC1_ChargCircuit1_PosContactor_Ctrl_Cmd "充电回路1正极接触器控制指令";
+CM_ SG_ 2566331953 PDUMC1_ChargCircuit1_NegContactor_Ctrl_Cmd "充电回路1负极接触器控制指令";
+CM_ SG_ 2566331953 PDUMC1_ChargCircuit2_PosContactor_Ctrl_Cmd "充电回路2正极接触器控制指令";
+CM_ SG_ 2566331953 PDUMC1_ChargCircuit2_NegContactor_Ctrl_Cmd "充电回路2负极接触器控制指令";
+CM_ SG_ 2566331953 PDUMC1_ChargCircuit3_PosContactor_Ctrl_Cmd "充电回路3正极接触器控制指令";
+CM_ SG_ 2566331953 PDUMC1_ChargCircuit3_NegContactor_Ctrl_Cmd "充电回路3负极接触器控制指令";
+CM_ SG_ 2566331953 PDUMC1_ChargCircuit4_PosContactor_Ctrl_Cmd "充电回路4正极接触器控制指令";
+CM_ SG_ 2566331953 PDUMC1_ChargCircuit4_NegContactor_Ctrl_Cmd "充电回路4负极接触器控制指令";
+CM_ SG_ 2566331953 PDUMC1_Heartbeat_Signal "心跳信号";
+CM_ SG_ 2565877297 HSMC1_HV_STEERING_REQUEST "高压转向需求信号";
+CM_ SG_ 2565877297 HSMC1_HEARTBEAT "心跳信号";
+CM_ SG_ 2565811761 HSSTC_Steerpump_Motor_Targetspeed "转向泵电机目标转速";
+CM_ SG_ 2565811761 HSSTC_Heartbeat_Signal "心跳信号";
+CM_ SG_ 2566205489 ACUMC1_Acu_Inhibit_Cmd "ACU禁止指令";
+CM_ SG_ 2566205489 ACUMC1_Aircompressor_Motor_Targspeed "空压机电机目标转速";
+CM_ SG_ 2566205489 ACUMC1_CtrlMsg_Cycle_Counter "控制报文循环计数值";
+CM_ SG_ 2566827568 AIR1_TCU_MotorWorkModReq "前桥气压";
+CM_ SG_ 2566827568 AIR1_TCU_MotorTorReq "后桥气压";
+CM_ SG_ 2566827570 AIR1_TCU_MotorWorkModReq "前桥气压";
+CM_ SG_ 2566827570 AIR1_TCU_MotorTorReq "后桥气压";
+CM_ SG_ 2566324510 PDUST1_Low_input_voltage "低压输入";
+CM_ SG_ 2566324510 PDUST1_Power_battery_pack_voltage "动力电池包端电压";
+CM_ SG_ 2566324510 PDUST1_Main_pos_contactor_out_voltage "主回路正极接触器后端";
+CM_ SG_ 2566324510 PDUST1_Precharg_resistor_temp "预充电阻温度";
+CM_ SG_ 2566324510 PDUST1_Precharg_time_consumption "预充耗时";
+CM_ SG_ 2566324510 PDUST1_Enable_signal "使能信号";
+CM_ SG_ 2566324510 PDUST1_Key_signal "钥匙 START 信号";
+CM_ SG_ 2566324510 PDUST1_Precharge_contactor_on "主驱预充接触器接通";
+CM_ SG_ 2566324510 PDUST1_Positive_contactor_on "主驱正极接触器接通";
+CM_ SG_ 2566324510 PDUST1_Voltage_diff_of_positive_contactor "主驱正极接触器实时压差";
+CM_ SG_ 2566324510 PDUST1_Positive_contactor_status "主驱正极接触器状态";
+CM_ SG_ 2566324510 PDUST1_Poweron_selftest_ok_signal "上电自检 OK 信号";
+CM_ SG_ 2566324510 PDUST1_Highvoltage_of_circuit_positive_contactor "主回路正极接触器允许上高压状态";
+CM_ SG_ 2566324766 PDUST2_Stuck_Status_Feedback "粘连检测状态反馈";
+CM_ SG_ 2566324766 PDUST2_1stStage_PTC_MOS_Switch_Command "驾驶室1挡PTC配电mos管开关指令";
+CM_ SG_ 2566324766 PDUST2_2stStage_PTC_MOS_Switch_Command "驾驶室2挡PTC配电mos管开关指令";
+CM_ SG_ 2566324766 PDUST2_PTC_Contactor_Status "PTC接触器状态";
+CM_ SG_ 2566324766 PDUST2_UpperCircuit_Contactor_On "上装回路接触器接通";
+CM_ SG_ 2566324766 PDUST2_UpperCircuit_Precharge_Contactor_On "上装回路预充接触器接通";
+CM_ SG_ 2566324766 PDUST2_UpperCircuit_Contactor_Status "上装回路接触器状态";
+CM_ SG_ 2566324766 PDUST2_Internal_Trouble_Code "内部故障码";
+CM_ SG_ 2566324766 PDUST2_Software_Version "软件版本";
+CM_ SG_ 2566324766 PDUST2_Outputvoltage_of_UpperCircuit_Contactor "上装回路接触器输出端电压";
+CM_ SG_ 2566324766 PDUST2_Heartbeat_Signal "心跳信号";
+CM_ SG_ 2566324766 PDUST2_AuxiliaryContactor_Status "辅驱接触器状态";
+CM_ SG_ 2566324766 PDUST2_AuxiliaryContactor_On "辅驱接触器接通";
+CM_ SG_ 2566324766 PDUST2_PTCContactor_On "PTC接触器接通";
+CM_ SG_ 2566324766 PDUST2_PTCContactor2_On "PTC接触器2接通";
+CM_ SG_ 2566325022 PDUST3_Insulation_Resistance_Sts "绝缘电阻检测状态";
+CM_ SG_ 2566325022 PDUST3_Negative_Contactor_Sts "主负接触器状态";
+CM_ SG_ 2566325022 PDUST3_Number_of_Positive_Contactors "正极接触器数量";
+CM_ SG_ 2566325022 PDUST3_Positive_Contactor1_Sts "正极接触器1状态";
+CM_ SG_ 2566325022 PDUST3_Positive_Contactor2_Sts "正极接触器2状态";
+CM_ SG_ 2566325022 PDUST3_Positive_Contactor3_Sts "正极接触器3状态";
+CM_ SG_ 2566325022 PDUST3_Positive_Contactor4_Sts "正极接触器4状态";
+CM_ SG_ 2566325022 PDUST3_OnStatus_of_Cab1_Stage_PTC_Switch "驾驶室1挡PTC配电开关器件通断状态";
+CM_ SG_ 2566325022 PDUST3_OnStatus_of_Cab2_Stage_PTC_Switch "驾驶室2挡PTC配电开关器件通断状态";
+CM_ SG_ 2566325022 PDUST3_OnStatus_of_BatteryHeating1_Switch "电池加热1配电开关器件通断状态";
+CM_ SG_ 2566325022 PDUST3_OnStatus_of_BatteryHeating2_Switch "电池加热2配电开关器件通断状态";
+CM_ SG_ 2566325022 PDUST3_OnStatus_of_BatteryHeating3_Switch "电池加热3配电开关器件通断状态";
+CM_ SG_ 2566325022 PDUST3_OnStatus_of_BatteryHeating4_Switch "电池加热4配电开关器件管通断状态";
+CM_ SG_ 2566325022 PDUST3_ChargeCircuit1_Positive_Contactor_Sts "充电回路1正极接触器状态";
+CM_ SG_ 2566325022 PDUST3_ChargeCircuit1_Negative_Contactor_Sts "充电回路1负极接触器状态";
+CM_ SG_ 2566325022 PDUST3_ChargeCircuit2_Positive_Contactor_Sts "充电回路2正极接触器状态";
+CM_ SG_ 2566325022 PDUST3_ChargeCircuit2_Negative_Contactor_Sts "充电回路2负极接触器状态";
+CM_ SG_ 2566325022 PDUST3_ChargeCircuit3_Positive_Contactor_Sts "充电回路3正极接触器状态";
+CM_ SG_ 2566325022 PDUST3_ChargeCircuit3_Negative_Contactor_Sts "充电回路3负极接触器状态";
+CM_ SG_ 2566325022 PDUST3_ChargeCircuit4_Positive_Contactor_Sts "充电回路4正极接触器状态";
+CM_ SG_ 2566325022 PDUST3_ChargeCircuit4_Negative_Contactor_Sts "充电回路4负极接触器状态";
+CM_ SG_ 2566325022 PDUST3_Number_of_Cab_PTC_Switch "驾驶室PTC开关器件数量";
+CM_ SG_ 2566325022 PDUST3_Number_of_BatteryHeating_PTC_Switch "电池加热PTC开关器件数量";
+CM_ SG_ 2566325278 PDUST4_Positivepole_to_ground_resistance_value "正极对地绝缘电阻值";
+CM_ SG_ 2566325278 PDUST4_Negativepole_to_ground_resistance_value "负极对地绝缘电阻值";
+CM_ SG_ 2566325278 PDUST4_Chargingpile_voltage "充电桩端电压";
+CM_ SG_ 2364932398 HSST1_Heartbeat_Signal "心跳信号";
+CM_ SG_ 2364932398 HSST1_Motor_Speed "电机转速";
+CM_ SG_ 2364932398 HSST1_Output_Current "输出电流";
+CM_ SG_ 2364932398 HSST1_Steering_Oil_DCAC_Module_Temp "转向油DCAC模块温度";
+CM_ SG_ 2364932398 HSST1_Motor_Sts "电机状态";
+CM_ SG_ 2364932398 HSST1_Fault_Level "故障等级";
+CM_ SG_ 2364932654 HSST2_Steer_Motor_Temp "转向电机温度";
+CM_ SG_ 2364932654 HSST2_Input_Voltage "输入电压";
+CM_ SG_ 2364932654 HSST2_Input_Current "输入电流";
+CM_ SG_ 2364932654 HSST2_Internal_FaultCode "内部故障码";
+CM_ SG_ 2364932654 HSST2_Software_Version "软件版本";
+CM_ SG_ 2566857008 ACUST1_Input_Voltage "输入电压";
+CM_ SG_ 2566857008 ACUST1_Input_Current "输入电流";
+CM_ SG_ 2566857008 ACUST1_Output_Voltage "输出电压";
+CM_ SG_ 2566857008 ACUST1_Output_Current "输出电流";
+CM_ SG_ 2566857008 ACUST1_SDCAC_MotorTemp "制动气泵DCAC模块温度";
+CM_ SG_ 2566857008 ACUST1_AirCompressor_Temp "空压机温度";
+CM_ SG_ 2566857008 ACUST1_Controller_Operating_Sts "控制器工作状态";
+CM_ SG_ 2566857008 ACUST1_Hardwire_Enable_Signal_Sts "硬线使能信号状态";
+CM_ SG_ 2566857008 ACUST1_Heartbeat_Signal "心跳信号";
+CM_ SG_ 2566857264 ACUST2_AirCompressor_Motor_Speed "空压机电机转速";
+CM_ SG_ 2566857264 ACUST2_Internal_Fault_Code "内部故障码";
+CM_ SG_ 2566857264 ACUST2_Software_Version "软件版本";
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0; 
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0; 
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","not_used","not_used","not_used","not_used","Cyclic","not_used","IfActive","NoMsgSendType"; 
+BA_DEF_ BU_  "NmStationAddress" HEX 0 0; 
+BA_DEF_  "DBName" STRING ; 
+BA_DEF_  "BusType" STRING ; 
+BA_DEF_DEF_  "GenSigSendType" "Cyclic"; 
+BA_DEF_DEF_  "GenSigInactiveValue" 0; 
+BA_DEF_DEF_  "GenMsgCycleTime" 0; 
+BA_DEF_DEF_  "GenMsgSendType" "NoMsgSendType"; 
+BA_DEF_DEF_  "NmStationAddress" 0; 
+BA_DEF_DEF_  "DBName" ""; 
+BA_DEF_DEF_  "BusType" "CAN";
+BA_ "DBName" "MAIN_MSG_Auto_Can01";
+BA_ "GenMsgCycleTime" BO_ 2566331953 100;
+BA_ "GenMsgCycleTime" BO_ 2565877297 100;
+BA_ "GenMsgCycleTime" BO_ 2565811761 100;
+BA_ "GenMsgCycleTime" BO_ 2566205489 100;
+BA_ "GenMsgCycleTime" BO_ 2566827568 1000;
+BA_ "GenMsgCycleTime" BO_ 2566827570 1000;
+BA_ "GenMsgCycleTime" BO_ 2566324510 100;
+BA_ "GenMsgCycleTime" BO_ 2566324766 100;
+BA_ "GenMsgCycleTime" BO_ 2566325022 100;
+BA_ "GenMsgCycleTime" BO_ 2566325278 100;
+BA_ "GenMsgCycleTime" BO_ 2364932398 100;
+BA_ "GenMsgCycleTime" BO_ 2364932654 100;
+BA_ "GenMsgCycleTime" BO_ 2566857008 200;
+BA_ "GenMsgCycleTime" BO_ 2566857264 100;
+VAL_ 2566324766 PDUST2_Stuck_Status_Feedback  ;
+

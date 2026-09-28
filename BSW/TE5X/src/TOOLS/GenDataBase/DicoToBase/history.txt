@@ -1,0 +1,39 @@
+DicoToBase
+-------------
+This tool is used to generate winades and genebase txt files from dictionary txt files
+It replaces Projet "Winades and Genebase txt files generation" step.
+
+This tool does NOT generate *2.txt files (no BD2 support), therefore it requires Genebase S_50 or more recent.
+
+Applicable documents
+--------------------
+Requirements : V01 NT 10 02934 - USER REQUIREMENTS FOR A DICTIONARY TO GENEBASE CONVERTER
+User manual :  V01 NT 11 01453 - Dictionary To Genebase (DicoToBase) User Guide
+
+V1_0, 4/03/2011
+---------------
+Initial version.
+
+v1_1, 03/08/2011
+----------------
+VEMS V01#055874 : the TXT generated should not depend on the decimal separator
+VEMS V01#054593 : Wrong min/max export when physical min/max are empty
+VEMS V01#053397 : Very low performance when using large number of specification references
+VEMS V01#053396 : References with name more than 50 characters are not supported
+VEMS V01#055882 : different behavior between Debug and Release mode (robustness against empty lists)
+
+v1_2, 15/02/2012
+----------------
+- PTS_100972 CR : Update DicoToBase Groups management, to take into account all associated data groups
+	- By default, multi-group relations are exported, so the output of this version should be used genebase 5.9 and
+	  upwards and can't be used to versions prior to 5.9. 
+	- A new command-line option -NoMultiGroup can be used to suppress multi-group relation exporting.
+	  This option should be used with genebase versions prior to 5.9.
+- PTS_101568 PR : In Donnée.txt file, "Group" attribute is always specified. it is the lowest level group in the group hierarchy
+                  and Group2 is the highest level one, this should be taken into consideration while generating txt files. 
+- Integrate Evallib Library Version 1.5
+V1_3, 12/11/2014
+----------------
+CO PTS135423
+PR PTS_135285	Floating number precision on the generated files from Projet.mde is much accurate than the one generated from DicoToBase
+PR PTS_112573	Rounding problem about coef transfer function for 2^-16 in the file caracter.txt.

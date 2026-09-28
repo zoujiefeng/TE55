@@ -1,0 +1,954 @@
+/******************************************************************************
+ *
+ *  ASAP2 file:     CAND.a2l
+ *
+ * Code generation for model "CAND.mdl".
+ *
+ * Model version              : 1.17
+ * Simulink Coder version : 8.1 (R2011b) 08-Jul-2011
+ * C source code generated on : Thu Mar 02 11:07:16 2023
+ * 
+ * Target selection: autosar_servicePort.tlc
+ * Embedded hardware selection: Freescale->32-bit PowerPC
+ * Code generation objectives: Unspecified
+ * Validation result: Not run
+ *
+ * (add additional file header information here)
+ *
+ ******************************************************************************/
+
+ASAP2_VERSION  1 31   /* Version 1.31 */
+
+/begin PROJECT ProjectName "Project Comment Goes Here"
+  
+  /begin HEADER "Header Comments go here"
+    
+  /end HEADER
+  
+  
+  /begin MODULE ModuleName  "Module Comment Goes Here"
+    
+    /begin MOD_PAR "MOD PAR Comment Goes Here"
+      
+    /end MOD_PAR
+    
+    /begin MOD_COMMON  "Mod Common Comment Here" 
+      BYTE_ORDER     MSB_FIRST
+    /end MOD_COMMON
+    
+    /begin RECORD_LAYOUT Scalar_BOOLEAN
+      FNC_VALUES  1 UBYTE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_UBYTE
+      FNC_VALUES  1 UBYTE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_BYTE
+      FNC_VALUES  1 SBYTE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_UWORD
+      FNC_VALUES  1 UWORD COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_SWORD
+      FNC_VALUES 1 SWORD COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_ULONG
+      FNC_VALUES  1 ULONG COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_LONG
+      FNC_VALUES  1 SLONG COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_FLOAT32_IEEE
+      FNC_VALUES  1 FLOAT32_IEEE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_FLOAT64_IEEE
+      FNC_VALUES  1 FLOAT64_IEEE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    
+    /begin RECORD_LAYOUT Lookup1D_BYTE
+      FNC_VALUES  1 SBYTE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_BYTE
+      AXIS_PTS_X  1 SBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_UBYTE
+      FNC_VALUES  1 UBYTE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_UBYTE
+      AXIS_PTS_X  1 UBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_UWORD
+      FNC_VALUES  1 UWORD COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_UWORD
+      AXIS_PTS_X  1 UWORD INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_WORD
+      FNC_VALUES  1 SWORD COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_WORD
+      AXIS_PTS_X  1 SWORD INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_ULONG
+      FNC_VALUES  1 ULONG COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_ULONG
+      AXIS_PTS_X  1 ULONG INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_SLONG
+      FNC_VALUES  1 SLONG COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_LONG
+      AXIS_PTS_X  1 SLONG INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_FLOAT32_IEEE
+      FNC_VALUES  1 FLOAT32_IEEE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_FLOAT32_IEEE
+      AXIS_PTS_X  1 FLOAT32_IEEE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_FLOAT64_IEEE
+      FNC_VALUES  1 FLOAT64_IEEE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_FLOAT64_IEEE
+      AXIS_PTS_X  1 FLOAT64_IEEE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_UBYTE
+      FNC_VALUES  1 UBYTE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_UBYTE
+      AXIS_PTS_X  1 UBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_BYTE
+      FNC_VALUES  1 SBYTE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_BYTE
+      AXIS_PTS_X  1 SBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_UWORD
+      FNC_VALUES  1 UWORD COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_UWORD
+      AXIS_PTS_X  1 UWORD INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_WORD
+      FNC_VALUES  1 SWORD COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_WORD
+      AXIS_PTS_X  1 SWORD INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_ULONG
+      FNC_VALUES  1 ULONG COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_ULONG
+      AXIS_PTS_X  1 ULONG INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_LONG
+      FNC_VALUES  1 SLONG COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_LONG
+      AXIS_PTS_X  1 SLONG INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_FLOAT32_IEEE
+      FNC_VALUES  1 FLOAT32_IEEE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_FLOAT32_IEEE
+      AXIS_PTS_X 1 FLOAT32_IEEE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_FLOAT64_IEEE
+      FNC_VALUES  1  FLOAT64_IEEE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_FLOAT64_IEEE
+      AXIS_PTS_X 1 FLOAT64_IEEE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      CANDke_Cnt_ID_VCU_DiagCounts 
+      /* Long Identifier        */      "Number of diagnostic cycles before reporting PASS to DEM."
+      /* Type                   */      VALUE 
+      /* ECU Address            */      0x0000 /* @ECU_Address@CANDke_Cnt_ID_VCU_DiagCounts@ */ 
+      /* Record Layout          */      Scalar_UWORD 
+      /* Maximum Difference     */      0 
+      /* Conversion Method      */      CM_T_Cnt_Num_1_1_u16 
+      /* Lower Limit            */      0.0 
+      /* Upper Limit            */      65535.0
+      EXTENDED_LIMITS
+      /* Extended Lower Limit   */      0.0
+      /* Extended Upper Limit   */      65535.0
+    /end CHARACTERISTIC
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      CANDke_Cnt_VCUFAULT_DiagCounts 
+      /* Long Identifier        */      "Diagagnostic evaluations before PASS"
+      /* Type                   */      VALUE 
+      /* ECU Address            */      0x0000 /* @ECU_Address@CANDke_Cnt_VCUFAULT_DiagCounts@ */ 
+      /* Record Layout          */      Scalar_UWORD 
+      /* Maximum Difference     */      0 
+      /* Conversion Method      */      CM_T_Cnt_Num_1_1_u16 
+      /* Lower Limit            */      0.0 
+      /* Upper Limit            */      65535.0
+      EXTENDED_LIMITS
+      /* Extended Lower Limit   */      0.0
+      /* Extended Upper Limit   */      65535.0
+    /end CHARACTERISTIC
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      CANDke_r_ID_VCU_RatioToFail 
+      /* Long Identifier        */      "Number of failed cycles before reporting FAIL to DEM. As a ratio of CANDke_Cnt_ID_VCU_DiagCounts."
+      /* Type                   */      VALUE 
+      /* ECU Address            */      0x0000 /* @ECU_Address@CANDke_r_ID_VCU_RatioToFail@ */ 
+      /* Record Layout          */      Scalar_UWORD 
+      /* Maximum Difference     */      0 
+      /* Conversion Method      */      CM_T_r_NA_256_1_u16 
+      /* Lower Limit            */      0.0 
+      /* Upper Limit            */      1.0
+      EXTENDED_LIMITS
+      /* Extended Lower Limit   */      0.0
+      /* Extended Upper Limit   */      255.99609375
+    /end CHARACTERISTIC
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      CANDke_r_VCUFAULT_RatioToFail 
+      /* Long Identifier        */      "Number of failed diagnostic evaluations before FAIL. As a ratio to CANDke_Cnt_VCUFAULT_DiagCounts."
+      /* Type                   */      VALUE 
+      /* ECU Address            */      0x0000 /* @ECU_Address@CANDke_r_VCUFAULT_RatioToFail@ */ 
+      /* Record Layout          */      Scalar_UWORD 
+      /* Maximum Difference     */      0 
+      /* Conversion Method      */      CM_T_r_NA_256_1_u16 
+      /* Lower Limit            */      0.0 
+      /* Upper Limit            */      1.0
+      EXTENDED_LIMITS
+      /* Extended Lower Limit   */      0.0
+      /* Extended Upper Limit   */      255.99609375
+    /end CHARACTERISTIC
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      CANDie_y_HTCU_Fault_OV 
+      /* Long Identifier        */      "Override value for the HTCU_Fault signal."
+      /* Type                   */      VALUE 
+      /* ECU Address            */      0x0000 /* @ECU_Address@CANDie_y_HTCU_Fault_OV@ */ 
+      /* Record Layout          */      Scalar_UBYTE 
+      /* Maximum Difference     */      0 
+      /* Conversion Method      */      CM_T_y_BitField8 
+      /* Lower Limit            */      0.0 
+      /* Upper Limit            */      255.0
+      EXTENDED_LIMITS
+      /* Extended Lower Limit   */      0.0
+      /* Extended Upper Limit   */      255.0
+    /end CHARACTERISTIC
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      CANDie_y_HTCU_State_OV 
+      /* Long Identifier        */      "Override value for the HTCU_State signal."
+      /* Type                   */      VALUE 
+      /* ECU Address            */      0x0000 /* @ECU_Address@CANDie_y_HTCU_State_OV@ */ 
+      /* Record Layout          */      Scalar_UBYTE 
+      /* Maximum Difference     */      0 
+      /* Conversion Method      */      CM_T_y_BitField8 
+      /* Lower Limit            */      0.0 
+      /* Upper Limit            */      1.0
+      EXTENDED_LIMITS
+      /* Extended Lower Limit   */      0.0
+      /* Extended Upper Limit   */      255.0
+    /end CHARACTERISTIC
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      CANDke_Cnt_CtrlMon_10ms_Index 
+      /* Long Identifier        */      "This is the index reported to the control flow function. It should be unique and in the correct order of execution according to the scheduler."
+      /* Type                   */      VALUE 
+      /* ECU Address            */      0x0000 /* @ECU_Address@CANDke_Cnt_CtrlMon_10ms_Index@ */ 
+      /* Record Layout          */      Scalar_UBYTE 
+      /* Maximum Difference     */      0 
+      /* Conversion Method      */      CM_T_Cnt_Num_1_1_u8 
+      /* Lower Limit            */      0.0 
+      /* Upper Limit            */      255.0
+      EXTENDED_LIMITS
+      /* Extended Lower Limit   */      0.0
+      /* Extended Upper Limit   */      255.0
+    /end CHARACTERISTIC
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      CANDke_Cnt_ID_ClutchCmdMaxLim 
+      /* Long Identifier        */      "Maximum allowed value for the clutch command data."
+      /* Type                   */      VALUE 
+      /* ECU Address            */      0x0000 /* @ECU_Address@CANDke_Cnt_ID_ClutchCmdMaxLim@ */ 
+      /* Record Layout          */      Scalar_UBYTE 
+      /* Maximum Difference     */      0 
+      /* Conversion Method      */      CM_T_Cnt_Num_1_1_u8 
+      /* Lower Limit            */      0.0 
+      /* Upper Limit            */      255.0
+      EXTENDED_LIMITS
+      /* Extended Lower Limit   */      0.0
+      /* Extended Upper Limit   */      255.0
+    /end CHARACTERISTIC
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      CANDke_Cnt_ID_ClutchCmdMinLim 
+      /* Long Identifier        */      "Minimum allowed value for the clutch command data."
+      /* Type                   */      VALUE 
+      /* ECU Address            */      0x0000 /* @ECU_Address@CANDke_Cnt_ID_ClutchCmdMinLim@ */ 
+      /* Record Layout          */      Scalar_UBYTE 
+      /* Maximum Difference     */      0 
+      /* Conversion Method      */      CM_T_Cnt_Num_1_1_u8 
+      /* Lower Limit            */      0.0 
+      /* Upper Limit            */      255.0
+      EXTENDED_LIMITS
+      /* Extended Lower Limit   */      0.0
+      /* Extended Upper Limit   */      255.0
+    /end CHARACTERISTIC
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      CANDke_Cnt_VCUFAULT_FaultLim 
+      /* Long Identifier        */      "If bit 6-7 typecast into a number is greater or equal to this value a fault shall be detected."
+      /* Type                   */      VALUE 
+      /* ECU Address            */      0x0000 /* @ECU_Address@CANDke_Cnt_VCUFAULT_FaultLim@ */ 
+      /* Record Layout          */      Scalar_UBYTE 
+      /* Maximum Difference     */      0 
+      /* Conversion Method      */      CM_T_Cnt_Num_1_1_u8 
+      /* Lower Limit            */      0.0 
+      /* Upper Limit            */      255.0
+      EXTENDED_LIMITS
+      /* Extended Lower Limit   */      0.0
+      /* Extended Upper Limit   */      255.0
+    /end CHARACTERISTIC
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      CANDke_y_BitPat_CCPClear 
+      /* Long Identifier        */      "Bit pattern for ForceOilLubricationToSafeLubricationMode"
+      /* Type                   */      VALUE 
+      /* ECU Address            */      0x0000 /* @ECU_Address@CANDke_y_BitPat_CCPClear@ */ 
+      /* Record Layout          */      Scalar_UBYTE 
+      /* Maximum Difference     */      0 
+      /* Conversion Method      */      CM_T_y_BitField8 
+      /* Lower Limit            */      0.0 
+      /* Upper Limit            */      255.0
+      EXTENDED_LIMITS
+      /* Extended Lower Limit   */      0.0
+      /* Extended Upper Limit   */      255.0
+    /end CHARACTERISTIC
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      CANDke_y_BitPat_CutFuel 
+      /* Long Identifier        */      "bitpattern"
+      /* Type                   */      VALUE 
+      /* ECU Address            */      0x0000 /* @ECU_Address@CANDke_y_BitPat_CutFuel@ */ 
+      /* Record Layout          */      Scalar_UBYTE 
+      /* Maximum Difference     */      0 
+      /* Conversion Method      */      CM_T_y_BitField8 
+      /* Lower Limit            */      0 
+      /* Upper Limit            */      255
+      EXTENDED_LIMITS
+      /* Extended Lower Limit   */      0.0
+      /* Extended Upper Limit   */      255.0
+    /end CHARACTERISTIC
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      CANDke_y_BitPat_EngStop 
+      /* Long Identifier        */      "bitpattern"
+      /* Type                   */      VALUE 
+      /* ECU Address            */      0x0000 /* @ECU_Address@CANDke_y_BitPat_EngStop@ */ 
+      /* Record Layout          */      Scalar_UBYTE 
+      /* Maximum Difference     */      0 
+      /* Conversion Method      */      CM_T_y_BitField8 
+      /* Lower Limit            */      0 
+      /* Upper Limit            */      255
+      EXTENDED_LIMITS
+      /* Extended Lower Limit   */      0.0
+      /* Extended Upper Limit   */      255.0
+    /end CHARACTERISTIC
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      CANDke_y_BitPat_FCNGear 
+      /* Long Identifier        */      "bitpattern"
+      /* Type                   */      VALUE 
+      /* ECU Address            */      0x0000 /* @ECU_Address@CANDke_y_BitPat_FCNGear@ */ 
+      /* Record Layout          */      Scalar_UBYTE 
+      /* Maximum Difference     */      0 
+      /* Conversion Method      */      CM_T_y_BitField8 
+      /* Lower Limit            */      0 
+      /* Upper Limit            */      255
+      EXTENDED_LIMITS
+      /* Extended Lower Limit   */      0.0
+      /* Extended Upper Limit   */      255.0
+    /end CHARACTERISTIC
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      CANDke_y_BitPat_FCOO 
+      /* Long Identifier        */      "Bitpattern for ForceClutchOddOpen"
+      /* Type                   */      VALUE 
+      /* ECU Address            */      0x0000 /* @ECU_Address@CANDke_y_BitPat_FCOO@ */ 
+      /* Record Layout          */      Scalar_UBYTE 
+      /* Maximum Difference     */      0 
+      /* Conversion Method      */      CM_T_y_BitField8 
+      /* Lower Limit            */      0.0 
+      /* Upper Limit            */      255.0
+      EXTENDED_LIMITS
+      /* Extended Lower Limit   */      0.0
+      /* Extended Upper Limit   */      255.0
+    /end CHARACTERISTIC
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      CANDke_y_BitPat_FCOOnorecover 
+      /* Long Identifier        */      "bitpattern"
+      /* Type                   */      VALUE 
+      /* ECU Address            */      0x0000 /* @ECU_Address@CANDke_y_BitPat_FCOOnorecover@ */ 
+      /* Record Layout          */      Scalar_UBYTE 
+      /* Maximum Difference     */      0 
+      /* Conversion Method      */      CM_T_y_BitField8 
+      /* Lower Limit            */      0 
+      /* Upper Limit            */      255
+      EXTENDED_LIMITS
+      /* Extended Lower Limit   */      0.0
+      /* Extended Upper Limit   */      255.0
+    /end CHARACTERISTIC
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      CANDke_y_BitPat_FICTO 
+      /* Long Identifier        */      "Bitpattern for ForceIOCControlToOff"
+      /* Type                   */      VALUE 
+      /* ECU Address            */      0x0000 /* @ECU_Address@CANDke_y_BitPat_FICTO@ */ 
+      /* Record Layout          */      Scalar_UBYTE 
+      /* Maximum Difference     */      0 
+      /* Conversion Method      */      CM_T_y_BitField8 
+      /* Lower Limit            */      0.0 
+      /* Upper Limit            */      255.0
+      EXTENDED_LIMITS
+      /* Extended Lower Limit   */      0.0
+      /* Extended Upper Limit   */      255.0
+    /end CHARACTERISTIC
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      CANDke_y_BitPat_FOCTSCM 
+      /* Long Identifier        */      "Bit pattern for ForceOilCoolingToSafeCoolingMode"
+      /* Type                   */      VALUE 
+      /* ECU Address            */      0x0000 /* @ECU_Address@CANDke_y_BitPat_FOCTSCM@ */ 
+      /* Record Layout          */      Scalar_UBYTE 
+      /* Maximum Difference     */      0 
+      /* Conversion Method      */      CM_T_y_BitField8 
+      /* Lower Limit            */      0.0 
+      /* Upper Limit            */      255.0
+      EXTENDED_LIMITS
+      /* Extended Lower Limit   */      0.0
+      /* Extended Upper Limit   */      255.0
+    /end CHARACTERISTIC
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      CANDke_y_BitPat_HTCU_State 
+      /* Long Identifier        */      "Value for HTCU_State when any of the inputs are TRUE."
+      /* Type                   */      VALUE 
+      /* ECU Address            */      0x0000 /* @ECU_Address@CANDke_y_BitPat_HTCU_State@ */ 
+      /* Record Layout          */      Scalar_UBYTE 
+      /* Maximum Difference     */      0 
+      /* Conversion Method      */      CM_T_y_BitField8 
+      /* Lower Limit            */      0.0 
+      /* Upper Limit            */      255.0
+      EXTENDED_LIMITS
+      /* Extended Lower Limit   */      0.0
+      /* Extended Upper Limit   */      255.0
+    /end CHARACTERISTIC
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      CANDke_y_BitPat_LimitCapability 
+      /* Long Identifier        */      "bitpattern"
+      /* Type                   */      VALUE 
+      /* ECU Address            */      0x0000 /* @ECU_Address@CANDke_y_BitPat_LimitCapability@ */ 
+      /* Record Layout          */      Scalar_UBYTE 
+      /* Maximum Difference     */      0 
+      /* Conversion Method      */      CM_T_y_BitField8 
+      /* Lower Limit            */      0 
+      /* Upper Limit            */      255
+      EXTENDED_LIMITS
+      /* Extended Lower Limit   */      0.0
+      /* Extended Upper Limit   */      255.0
+    /end CHARACTERISTIC
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      CANDke_y_BitPat_LimitSpeed 
+      /* Long Identifier        */      "bitpattern"
+      /* Type                   */      VALUE 
+      /* ECU Address            */      0x0000 /* @ECU_Address@CANDke_y_BitPat_LimitSpeed@ */ 
+      /* Record Layout          */      Scalar_UBYTE 
+      /* Maximum Difference     */      0 
+      /* Conversion Method      */      CM_T_y_BitField8 
+      /* Lower Limit            */      0 
+      /* Upper Limit            */      255
+      EXTENDED_LIMITS
+      /* Extended Lower Limit   */      0.0
+      /* Extended Upper Limit   */      255.0
+    /end CHARACTERISTIC
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      CANDke_y_BitPat_OilTempCrit 
+      /* Long Identifier        */      "Bit pattern for high oil temperature critical signal."
+      /* Type                   */      VALUE 
+      /* ECU Address            */      0x0000 /* @ECU_Address@CANDke_y_BitPat_OilTempCrit@ */ 
+      /* Record Layout          */      Scalar_UBYTE 
+      /* Maximum Difference     */      0 
+      /* Conversion Method      */      CM_T_y_BitField8 
+      /* Lower Limit            */      0.0 
+      /* Upper Limit            */      255.0
+      EXTENDED_LIMITS
+      /* Extended Lower Limit   */      0.0
+      /* Extended Upper Limit   */      255.0
+    /end CHARACTERISTIC
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      CANDke_y_BitPat_OilTempWarn 
+      /* Long Identifier        */      "Bit pattern for high oil temperature warning signal."
+      /* Type                   */      VALUE 
+      /* ECU Address            */      0x0000 /* @ECU_Address@CANDke_y_BitPat_OilTempWarn@ */ 
+      /* Record Layout          */      Scalar_UBYTE 
+      /* Maximum Difference     */      0 
+      /* Conversion Method      */      CM_T_y_BitField8 
+      /* Lower Limit            */      0.0 
+      /* Upper Limit            */      255.0
+      EXTENDED_LIMITS
+      /* Extended Lower Limit   */      0.0
+      /* Extended Upper Limit   */      255.0
+    /end CHARACTERISTIC
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      CANDie_b_ATFailure_OB 
+      /* Long Identifier        */      "Override boolean for ATFaliure"
+      /* Type                   */      VALUE 
+      /* ECU Address            */      0x0000 /* @ECU_Address@CANDie_b_ATFailure_OB@ */ 
+      /* Record Layout          */      Scalar_BOOLEAN 
+      /* Maximum Difference     */      0 
+      /* Conversion Method      */      CM_T_BOOLEAN 
+      /* Lower Limit            */      0.0 
+      /* Upper Limit            */      1.0
+      EXTENDED_LIMITS
+      /* Extended Lower Limit   */      0.0
+      /* Extended Upper Limit   */      1.0
+    /end CHARACTERISTIC
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      CANDie_b_ATFailure_OV 
+      /* Long Identifier        */      "Override value for ATFaliure"
+      /* Type                   */      VALUE 
+      /* ECU Address            */      0x0000 /* @ECU_Address@CANDie_b_ATFailure_OV@ */ 
+      /* Record Layout          */      Scalar_BOOLEAN 
+      /* Maximum Difference     */      0 
+      /* Conversion Method      */      CM_T_BOOLEAN 
+      /* Lower Limit            */      0.0 
+      /* Upper Limit            */      1.0
+      EXTENDED_LIMITS
+      /* Extended Lower Limit   */      0.0
+      /* Extended Upper Limit   */      1.0
+    /end CHARACTERISTIC
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      CANDie_b_CtrlMon_10ms_BlockReport 
+      /* Long Identifier        */      "This override blocks the report of the execution to the monitoring system.
+      Should be used during testing to verify correct behaviour of the monitoring system.
+      "
+      /* Type                   */      VALUE 
+      /* ECU Address            */      0x0000 /* @ECU_Address@CANDie_b_CtrlMon_10ms_BlockReport@ */ 
+      /* Record Layout          */      Scalar_BOOLEAN 
+      /* Maximum Difference     */      0 
+      /* Conversion Method      */      CM_T_BOOLEAN 
+      /* Lower Limit            */      0.0 
+      /* Upper Limit            */      1.0
+      EXTENDED_LIMITS
+      /* Extended Lower Limit   */      0.0
+      /* Extended Upper Limit   */      1.0
+    /end CHARACTERISTIC
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      CANDie_b_HTCU_Fault_OB 
+      /* Long Identifier        */      "Override boolean for the HTCU_Fault signal."
+      /* Type                   */      VALUE 
+      /* ECU Address            */      0x0000 /* @ECU_Address@CANDie_b_HTCU_Fault_OB@ */ 
+      /* Record Layout          */      Scalar_BOOLEAN 
+      /* Maximum Difference     */      0 
+      /* Conversion Method      */      CM_T_BOOLEAN 
+      /* Lower Limit            */      0.0 
+      /* Upper Limit            */      1.0
+      EXTENDED_LIMITS
+      /* Extended Lower Limit   */      0.0
+      /* Extended Upper Limit   */      1.0
+    /end CHARACTERISTIC
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      CANDie_b_HTCU_State_OB 
+      /* Long Identifier        */      "Override boolean for the HTCU_State signal."
+      /* Type                   */      VALUE 
+      /* ECU Address            */      0x0000 /* @ECU_Address@CANDie_b_HTCU_State_OB@ */ 
+      /* Record Layout          */      Scalar_BOOLEAN 
+      /* Maximum Difference     */      0 
+      /* Conversion Method      */      CM_T_BOOLEAN 
+      /* Lower Limit            */      0.0 
+      /* Upper Limit            */      1.0
+      EXTENDED_LIMITS
+      /* Extended Lower Limit   */      0.0
+      /* Extended Upper Limit   */      1.0
+    /end CHARACTERISTIC
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      CANDke_b_VCUFAULT_DiagEnbl 
+      /* Long Identifier        */      "Enable boolean for the VCU internal fault diagnosis."
+      /* Type                   */      VALUE 
+      /* ECU Address            */      0x0000 /* @ECU_Address@CANDke_b_VCUFAULT_DiagEnbl@ */ 
+      /* Record Layout          */      Scalar_BOOLEAN 
+      /* Maximum Difference     */      0 
+      /* Conversion Method      */      CM_T_BOOLEAN 
+      /* Lower Limit            */      0.0 
+      /* Upper Limit            */      1.0
+      EXTENDED_LIMITS
+      /* Extended Lower Limit   */      0.0
+      /* Extended Upper Limit   */      1.0
+    /end CHARACTERISTIC
+    
+    /begin CHARACTERISTIC 
+      /* Name                   */      CANDke_b_VCU_ID_DiagEnbl 
+      /* Long Identifier        */      "Enable boolean for the invalid data diagnosis."
+      /* Type                   */      VALUE 
+      /* ECU Address            */      0x0000 /* @ECU_Address@CANDke_b_VCU_ID_DiagEnbl@ */ 
+      /* Record Layout          */      Scalar_BOOLEAN 
+      /* Maximum Difference     */      0 
+      /* Conversion Method      */      CM_T_BOOLEAN 
+      /* Lower Limit            */      0.0 
+      /* Upper Limit            */      1.0
+      EXTENDED_LIMITS
+      /* Extended Lower Limit   */      0.0
+      /* Extended Upper Limit   */      1.0
+    /end CHARACTERISTIC
+    
+    /begin MEASUREMENT
+      /* Name                   */      CANDve_Cnt_VCUFAULT_FailLim
+      /* Long identifier        */      "Fail limit"
+      /* Data type              */      UWORD
+      /* Conversion method      */      CM_T_Cnt_Num_1_1_u16
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      65535
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@CANDve_Cnt_VCUFAULT_FailLim@ */
+    /end MEASUREMENT
+    
+    /begin MEASUREMENT
+      /* Name                   */      CANDve_Cnt_ID_FailLim
+      /* Long identifier        */      "Fail limit for the invalid data diagnosis."
+      /* Data type              */      UWORD
+      /* Conversion method      */      CM_T_Cnt_Num_1_1_u16
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      65535
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@CANDve_Cnt_ID_FailLim@ */
+    /end MEASUREMENT
+    
+    /begin MEASUREMENT
+      /* Name                   */      CANDve_y_ResetByBSW
+      /* Long identifier        */      "ResetByBSW event status"
+      /* Data type              */      UBYTE
+      /* Conversion method      */      CM_T_y_BitField8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@CANDve_y_ResetByBSW@ */
+    /end MEASUREMENT
+    
+    /begin MEASUREMENT
+      /* Name                   */      CANDve_y_ResetByASW
+      /* Long identifier        */      "ResetByASW event status"
+      /* Data type              */      UBYTE
+      /* Conversion method      */      CM_T_y_BitField8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@CANDve_y_ResetByASW@ */
+    /end MEASUREMENT
+    
+    /begin MEASUREMENT
+      /* Name                   */      CANDve_y_ResetByHW
+      /* Long identifier        */      "ResetByHW event status"
+      /* Data type              */      UBYTE
+      /* Conversion method      */      CM_T_y_BitField8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@CANDve_y_ResetByHW@ */
+    /end MEASUREMENT
+    
+    /begin MEASUREMENT
+      /* Name                   */      CANDve_y_XCPBusOff
+      /* Long identifier        */      "XCPBusOFF event status"
+      /* Data type              */      UBYTE
+      /* Conversion method      */      CM_T_y_BitField8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@CANDve_y_XCPBusOff@ */
+    /end MEASUREMENT
+    
+    /begin MEASUREMENT
+      /* Name                   */      CANDve_b_VCUFAULT_FaultFound
+      /* Long identifier        */      "A fault has been detected on the VCU"
+      /* Data type              */      UBYTE
+      /* Conversion method      */      CM_T_BOOLEAN
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@CANDve_b_VCUFAULT_FaultFound@ */
+    /end MEASUREMENT
+    
+    /begin MEASUREMENT
+      /* Name                   */      CANDve_b_ID_NotEqual
+      /* Long identifier        */      "TRUE if the CAN signal and SWIN conversion does not match."
+      /* Data type              */      UBYTE
+      /* Conversion method      */      CM_T_BOOLEAN
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@CANDve_b_ID_NotEqual@ */
+    /end MEASUREMENT
+    
+    /begin MEASUREMENT
+      /* Name                   */      CANDve_b_ID_SWINsigOutOfRange
+      /* Long identifier        */      "TRUE if the SWIN signal is outside accepted range."
+      /* Data type              */      UBYTE
+      /* Conversion method      */      CM_T_BOOLEAN
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@CANDve_b_ID_SWINsigOutOfRange@ */
+    /end MEASUREMENT
+    
+    /begin MEASUREMENT
+      /* Name                   */      CANDve_b_ID_CANsigOutOfRange
+      /* Long identifier        */      "TRUE if the CAN signal is outside accepted range."
+      /* Data type              */      UBYTE
+      /* Conversion method      */      CM_T_BOOLEAN
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@CANDve_b_ID_CANsigOutOfRange@ */
+    /end MEASUREMENT
+    
+    /begin MEASUREMENT
+      /* Name                   */      CANDve_b_ID_FaultFound
+      /* Long identifier        */      "TRUE if an invalid data fault has been found."
+      /* Data type              */      UBYTE
+      /* Conversion method      */      CM_T_BOOLEAN
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      1
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@CANDve_b_ID_FaultFound@ */
+    /end MEASUREMENT
+    
+    /begin MEASUREMENT
+      /* Name                   */      CANDve_Cnt_DiagCounts
+      /* Long identifier        */      "Diagnostic counter for the invalid data diagnosis."
+      /* Data type              */      UWORD
+      /* Conversion method      */      CM_T_Cnt_Num_1_1_u16
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      65535
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@CANDve_Cnt_DiagCounts@ */
+    /end MEASUREMENT
+    
+    /begin MEASUREMENT
+      /* Name                   */      CANDve_Cnt_DiagFails
+      /* Long identifier        */      "Fail counter for the invalid data diagnosis."
+      /* Data type              */      UWORD
+      /* Conversion method      */      CM_T_Cnt_Num_1_1_u16
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      65535
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@CANDve_Cnt_DiagFails@ */
+    /end MEASUREMENT
+    
+    /begin MEASUREMENT
+      /* Name                   */      CANDve_y_VCUFAULT_DiagCounts
+      /* Long identifier        */      "counts"
+      /* Data type              */      UWORD
+      /* Conversion method      */      CM_T_Cnt_Num_1_1_u16
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      65535
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@CANDve_y_VCUFAULT_DiagCounts@ */
+    /end MEASUREMENT
+    
+    /begin MEASUREMENT
+      /* Name                   */      CANDve_y_VCUFAULT_DiagFails
+      /* Long identifier        */      "fails"
+      /* Data type              */      UWORD
+      /* Conversion method      */      CM_T_Cnt_Num_1_1_u16
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      65535
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@CANDve_y_VCUFAULT_DiagFails@ */
+    /end MEASUREMENT
+    
+    /begin MEASUREMENT
+      /* Name                   */      CANDve_y_ID_Status
+      /* Long identifier        */      "Status of the invalid data diagnosis."
+      /* Data type              */      UBYTE
+      /* Conversion method      */      CM_T_y_BitFieldDiagStatus
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@CANDve_y_ID_Status@ */
+    /end MEASUREMENT
+    
+    /begin MEASUREMENT
+      /* Name                   */      CANDve_y_Progress
+      /* Long identifier        */      "Progress of the invalid data diagnosis."
+      /* Data type              */      UBYTE
+      /* Conversion method      */      CM_T_y_BitFieldDiagProgress
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@CANDve_y_Progress@ */
+    /end MEASUREMENT
+    
+    /begin MEASUREMENT
+      /* Name                   */      CANDve_y_VCUFAULT_Progress
+      /* Long identifier        */      "progress"
+      /* Data type              */      UBYTE
+      /* Conversion method      */      CM_T_y_BitFieldDiagProgress
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@CANDve_y_VCUFAULT_Progress@ */
+    /end MEASUREMENT
+    
+    /begin MEASUREMENT
+      /* Name                   */      CANDve_y_VCUFAULT_Status
+      /* Long identifier        */      "Status"
+      /* Data type              */      UBYTE
+      /* Conversion method      */      CM_T_y_BitFieldDiagStatus
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@CANDve_y_VCUFAULT_Status@ */
+    /end MEASUREMENT
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      CM_T_Cnt_Num_1_1_u16
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%5.0"
+      /* Units                  */      "Num (counts)"
+      /* Coefficients           */      COEFFS 0  1  0  0  0  1
+    /end COMPU_METHOD
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      CM_T_r_NA_256_1_u16
+      /* Long identifier        */      "Q = V*256.000000"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%11.8"
+      /* Units                  */      "NA (none)"
+      /* Coefficients           */      COEFFS 0  256    0    0    0    1
+    /end COMPU_METHOD
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      CM_T_y_BitField8
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%3.0"
+      /* Units                  */      "BitField"
+      /* Coefficients           */      COEFFS 0  1  0  0  0  1
+    /end COMPU_METHOD
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      CM_T_Cnt_Num_1_1_u8
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%3.0"
+      /* Units                  */      "Num (counts)"
+      /* Coefficients           */      COEFFS 0  1  0  0  0  1
+    /end COMPU_METHOD
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      CM_T_BOOLEAN
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%1.0"
+      /* Units                  */      "Bool"
+      /* Coefficients           */      COEFFS 0  1  0  0  0  1
+    /end COMPU_METHOD
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      CM_T_y_BitFieldDiagStatus
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%3.0"
+      /* Units                  */      "BitField"
+      /* Coefficients           */      COEFFS 0  1  0  0  0  1
+    /end COMPU_METHOD
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      CM_T_y_BitFieldDiagProgress
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%3.0"
+      /* Units                  */      "BitField"
+      /* Coefficients           */      COEFFS 0  1  0  0  0  1
+    /end COMPU_METHOD
+    
+    
+  /end MODULE
+  
+  
+/end PROJECT
+/* (add any file trailer comments here) */
+/* EOF CAND.a2l */

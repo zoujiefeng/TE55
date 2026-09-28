@@ -1,0 +1,53 @@
+
+#include "Dcm_Cfg_Prot.h"
+#include "DcmCore_DslDsd_Inf.h"
+#include "Rte_Dcm.h"
+
+#if(DCM_CFG_DSPUDSSUPPORT_ENABLED != DCM_CFG_OFF)
+#include "DcmDspUds_Uds_Prot.h"
+/*TESTCODE-START
+#include "DcmTest.h"
+TESTCODE-END*/
+#if ((DCM_CFG_DSP_WRITEMEMORYBYADDRESS_ENABLED != DCM_CFG_OFF) || (DCM_CFG_DSP_READMEMORYBYADDRESS_ENABLED != DCM_CFG_OFF) || (DCM_CFG_DSP_DYNAMICALLYDEFINEIDENTIFIER_ENABLED != DCM_CFG_OFF)\
+		|| (DCM_CFG_DSP_READDATABYIDENTIFIER_ENABLED != DCM_CFG_OFF))
+
+
+
+#define DCM_START_SEC_CODE /*Adding this for memory mapping*/
+#include "Dcm_MemMap.h"
+/**
+ *@ingroup DCM_TPL
+ * DcmAppl_DcmGetPermissionForMemoryAccess_u8:-\n
+ * This API is used to check the memory read and write access permission
+ *
+ *  @param[in]      adrMemoryAddress_u32    :   Starting address of the server memory address to be copied
+ *  @param[in]      dataDataLength_u32      :   Number of bytes in memory data
+ *  @param[in]      dataDirection_en        :   Read/Write Request
+ *  @param[out]    None
+ *  @retval        E_OK    : access to the address location permitted
+ *  @retval        E_NOT_OK    : access to the address location denied
+ *
+ */
+ Std_ReturnType DcmAppl_DcmGetPermissionForMemoryAccess_u8(
+																	uint32 adrMemoryAddress_u32,
+																	uint32 dataDataLength_u32,
+																	Dcm_Direction_t dataDirection_en
+																   )
+ {
+    Std_ReturnType retVal = E_OK;
+	/* User / Application should add the necessary code to check the address location read and write access permissions */
+    (void)(adrMemoryAddress_u32);
+    (void)(dataDataLength_u32);
+    (void)(dataDirection_en);
+
+	/*TESTCODE-START
+	retVal =  DcmTest_DcmAppl_DcmGetPermissionForMemoryAccess_u8(adrMemoryAddress_u32,dataDataLength_u32,dataDirection_en);
+	TESTCODE-END*/
+
+    return(retVal);
+}
+#define DCM_STOP_SEC_CODE /*Adding this for memory mapping*/
+#include "Dcm_MemMap.h"
+#endif
+#endif
+

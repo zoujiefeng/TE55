@@ -1,0 +1,42 @@
+Nom_donn�e|Type|Nom_module|Public|Nb_lignes|Nb_colonnes|Label_p�re|Offset|Masque_acc�s|Affichage|Unit�|Fonction_transfert_ades|Coefficient_a|Coefficient_b|Groupe|Groupe_1|Groupe_2|Alias_1|Alias_2|Genre|Variable_indice_ligne|Variable_indice_colonne|Fonction_transfert_ligne|Fonction_transfert_colonne|Table_breakpoint_ligne|Table_breakpoint_colonne|R�f�rence_sp�cification|Recuperable|Modifiable|Fournisseur|Responsable|Valeurs|Visualisable_ADES|Donn�e_a_supprimer|Validation|Commentaires|Volatile|MinDecValue|MaxDecValue|MinPhysValue|MaxPhysValue|Def_Eval|MemSec
+
+OMAIN_bBswReadySts|boolean|OMAIN|0|0|0|OMAIN_bBswReadySts|0|0|Phys|bool|2|0||OMAIN|OMAIN|Raw|OMAIN_bBswReadySts||1|||||||NONE|0|1||||1|0|0|BSW Power on check finish flag.|0||||||
+OMAIN_bESMStarted|boolean|OMAIN|0|0|0|OMAIN_bESMStarted|0|0|Phys|bool|2|0||OMAIN|OMAIN|Raw|OMAIN_bESMStarted||1|||||||NONE|0|1||||1|0|0|BSW Power on check finish flag.|0||||||
+OMAIN_bSoftOvBhvFlg|boolean|OMAIN|0|0|0|OMAIN_bSoftOvBhvFlg|0|0|Phys|bool|2|0||OMAIN|OMAIN|Raw|OMAIN_bSoftOvBhvFlg||1|||||||NONE|0|1||||1|0|0|BSW Power on check finish flag.|0||||||
+OMAIN_bSoftOvCurrPhsUFlg|boolean|OMAIN|0|0|0|OMAIN_bSoftOvCurrPhsUFlg|0|0|Phys|bool|2|0||OMAIN|OMAIN|Raw|OMAIN_bSoftOvCurrPhsUFlg||1|||||||NONE|0|1||||1|0|0|BSW Power on check finish flag.|0||||||
+OMAIN_bSoftOvCurrPhsVFlg|boolean|OMAIN|0|0|0|OMAIN_bSoftOvCurrPhsVFlg|0|0|Phys|bool|2|0||OMAIN|OMAIN|Raw|OMAIN_bSoftOvCurrPhsVFlg||1|||||||NONE|0|1||||1|0|0|BSW Power on check finish flag.|0||||||
+OMAIN_bSoftOvCurrPhsWFlg|boolean|OMAIN|0|0|0|OMAIN_bSoftOvCurrPhsWFlg|0|0|Phys|bool|2|0||OMAIN|OMAIN|Raw|OMAIN_bSoftOvCurrPhsWFlg||1|||||||NONE|0|1||||1|0|0|BSW Power on check finish flag.|0||||||
+OMAIN_bVSIStarted|boolean|OMAIN|0|0|0|OMAIN_bVSIStarted|0|0|Phys|bool|2|0||OMAIN|OMAIN|Raw|OMAIN_bVSIStarted||1|||||||NONE|0|1||||1|0|0|BSW Power on check finish flag.|0||||||
+OMAIN_ESMGo2StartupIEvent|boolean|OMAIN|0|0|0|OMAIN_ESMGo2StartupIEvent|0|0|Phys|bool|2|0||OMAIN|OMAIN|Raw|OMAIN_ESMGo2StartupIEvent||1|||||||NONE|0|1||||1|0|0|BSW Power on check finish flag.|0||||||
+OMAIN_bProgConditionOk|boolean|OMAIN|0|0|0|OMAIN_bProgConditionOk|0|0|Phys|bool|2|0||OMAIN|OMAIN|Raw|OMAIN_bProgConditionOk||1|||||||NONE|0|1||||1|0|0|BSW Power on check finish flag.|0||||||
+OMAIN_f32PWMDutyUPhys|float32|OMAIN|0|0|0|OMAIN_f32PWMDutyUPhys|0|0|Phys|-|1|1|0|OMAIN|OMAIN|Physical|OMAIN_f32PWMDutyUPhys||1|||||||NONE|0|1||||1|0|0|... |1||||||
+OMAIN_f32PWMDutyVPhys|float32|OMAIN|0|0|0|OMAIN_f32PWMDutyVPhys|0|0|Phys|-|1|1|0|OMAIN|OMAIN|Physical|OMAIN_f32PWMDutyVPhys||1|||||||NONE|0|1||||1|0|0|... |1||||||
+OMAIN_f32PWMDutyWPhys|float32|OMAIN|0|0|0|OMAIN_f32PWMDutyWPhys|0|0|Phys|-|1|1|0|OMAIN|OMAIN|Physical|OMAIN_f32PWMDutyWPhys||1|||||||NONE|0|1||||1|0|0|... |1||||||
+OMAIN_u8DEV_Fault|uint8|OMAIN|0|1|16|OMAIN_u8DEV_Fault|0|0|Phys|-|1|1|0|OMAIN|OMAIN||OMAIN_u8DEV_Fault||1|*|*|*|*|*|*||0|1||||1|0|0|-|0|||||0|
+
+OMAIN_u16Cnt1|uint16|OMAIN|0|0|0|OMAIN_u16Cnt1|0|0|Phys|-|0|0|0|OMAIN|OMAIN|Physical|OMAIN_u16Cnt1||1|||||||NONE|0|1||||1|0|0|... |1||||||
+OMAIN_u16Cnt2|uint16|OMAIN|0|0|0|OMAIN_u16Cnt2|0|0|Phys|-|0|0|0|OMAIN|OMAIN|Physical|OMAIN_u16Cnt2||1|||||||NONE|0|1||||1|0|0|... |1||||||
+OMAIN_u16Cnt5|uint16|OMAIN|0|0|0|OMAIN_u16Cnt5|0|0|Phys|-|0|0|0|OMAIN|OMAIN|Physical|OMAIN_u16Cnt5||1|||||||NONE|0|1||||1|0|0|... |1||||||
+OMAIN_u16Cnt10|uint16|OMAIN|0|0|0|OMAIN_u16Cnt10|0|0|Phys|-|0|0|0|OMAIN|OMAIN|Physical|OMAIN_u16Cnt10||1|||||||NONE|0|1||||1|0|0|... |1||||||
+OMAIN_u16Cnt100|uint16|OMAIN|0|0|0|OMAIN_u16Cnt100|0|0|Phys|-|0|0|0|OMAIN|OMAIN|Physical|OMAIN_u16Cnt100||1|||||||NONE|0|1||||1|0|0|... |1||||||
+OMAIN_u16Cnt200|uint16|OMAIN|0|0|0|OMAIN_u16Cnt200|0|0|Phys|-|0|0|0|OMAIN|OMAIN|Physical|OMAIN_u16Cnt200||1|||||||NONE|0|1||||1|0|0|... |1||||||
+OMAIN_u16VadcPhaseCurU|uint16|OMAIN|0|0|0|OMAIN_u16VadcPhaseCurU|0|0|Phys|-|0|0|0|OMAIN|OMAIN|Physical|OMAIN_u16VadcPhaseCurU||1|||||||NONE|0|1||||1|0|0|... |1||||||
+OMAIN_u16VadcPhaseCurV|uint16|OMAIN|0|0|0|OMAIN_u16VadcPhaseCurV|0|0|Phys|-|0|0|0|OMAIN|OMAIN|Physical|OMAIN_u16VadcPhaseCurV||1|||||||NONE|0|1||||1|0|0|... |1||||||
+OMAIN_u16VadcPhaseCurW|uint16|OMAIN|0|0|0|OMAIN_u16VadcPhaseCurW|0|0|Phys|-|0|0|0|OMAIN|OMAIN|Physical|OMAIN_u16VadcPhaseCurW||1|||||||NONE|0|1||||1|0|0|... |1||||||
+
+OMAIN_startTime|uint32|OMAIN|0|0|0|OMAIN_startTime|0|0|D�ci|-||||OMAIN|OMAIN|Raw|OMAIN_startTime||1|||||||NONE|0|1||||1|0|0|...|1||||||
+OMAIN_EndTime|uint32|OMAIN|0|0|0|OMAIN_EndTime|0|0|D�ci|-||||OMAIN|OMAIN|Raw|OMAIN_EndTime||1|||||||NONE|0|1||||1|0|0|...|1||||||
+OMAIN_TotalTime|uint32|OMAIN|0|0|0|OMAIN_TotalTime|0|0|D�ci|-||||OMAIN|OMAIN|Raw|OMAIN_TotalTime||1|||||||NONE|0|1||||1|0|0|...|1||||||
+
+
+OMAIN_f32CanSpeedTgtSetC|float32|OMAIN|0|0|0|OMAIN_f32CanSpeedTgtSetC|0|0|Phys|-|1|1|0|OMAIN|OMAIN||OMAIN_f32CanSpeedTgtSetC||2|||||||...|1|1|||0.5|1|0|0|...|0||||||
+OMAIN_f32UvwOvCurrThdC|float32|OMAIN|0|0|0|OMAIN_f32UvwOvCurrThdC|0|0|Phys|-|1|1|0|OMAIN|OMAIN||OMAIN_f32UvwOvCurrThdC||2|||||||...|1|1|||0.5|1|0|0|...|0||||||
+OMAIN_u32VSICntCkreqESMStartedC|uint32|OMAIN|0|0|0|OMAIN_u32VSICntCkreqESMStartedC|0|0|Phys|-|1|1|0|OMAIN|OMAIN||OMAIN_u32VSICntCkreqESMStartedC||2|||||||...|1|1|||200000|1|0|0|Spare|0||||||
+OMAIN_u32VSICntCkreqVSIStartedC|uint32|OMAIN|0|0|0|OMAIN_u32VSICntCkreqESMStartedC|0|0|Phys|-|1|1|0|OMAIN|OMAIN||OMAIN_u32VSICntCkreqESMStartedC||2|||||||...|1|1|||200000|1|0|0|Spare|0||||||
+OMAIN_f32OverBhvThdC|float32|OMAIN|0|0|0|OMAIN_f32OverBhvThdC|0|0|Phys|-|1|1|0|OMAIN|OMAIN||OMAIN_f32OverBhvThdC||2|||||||...|1|1|||0.5|1|0|0|...|0||||||
+
+OMAIN_HARDBenchOnC|boolean|OMAIN|0|0|0|OMAIN_HARDBenchOnC|0|0|Phys|bool|2|0||OMAIN|OMAIN||OMAIN_HARDBenchOnC||2|||||||NONE|1|1|||1|1|0|0|Bench VSI write datas|0||||||
+OMAIN_VSIBenchOnWriteDataC|boolean|OMAIN|0|0|0|OMAIN_VSIBenchOnWriteDataC|0|0|Phys|bool|2|0||OMAIN|OMAIN||OMAIN_VSIBenchOnWriteDataC||2|||||||NONE|1|1|||1|1|0|0|Bench VSI write datas|0||||||
+
+
+

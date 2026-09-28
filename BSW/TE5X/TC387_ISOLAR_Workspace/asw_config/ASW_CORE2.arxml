@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00047.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>ARPackage</SHORT-NAME>
+      <ELEMENTS>
+        <APPLICATION-SW-COMPONENT-TYPE>
+          <SHORT-NAME>ASW_CORE2</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="Master">
+                <SD>true</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <PORTS>
+            <R-PORT-PROTOTYPE UUID="324507cb-6ae7-42dd-8dc5-8347f8499f73">
+              <SHORT-NAME>RPort_CPUUtilizationCore2</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/ServiceSwComponentInterface/CPU_Utilization</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="633a8040-a201-42d5-8dd1-0c4022efbce8">
+              <SHORT-NAME>RPort_GetMaxUserStackUtilization</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/ServiceSwComponentInterface/GetMaxUserStackUtilization</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+          </PORTS>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR>
+              <SHORT-NAME>SwcInternalBehavior</SHORT-NAME>
+              <EVENTS>
+                <TIMING-EVENT UUID="4f4d849b-17dd-4854-afe4-71dfc1b0932b">
+                  <SHORT-NAME>TimingEvent_0</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ARPackage/ASW_CORE2/SwcInternalBehavior/RE_CORE2_SWC</START-ON-EVENT-REF>
+                  <PERIOD>0.005</PERIOD>
+                </TIMING-EVENT>
+                <TIMING-EVENT UUID="01b34a18-2764-4763-9b15-a02e32b3de92">
+                  <SHORT-NAME>TimingEvent_1</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ARPackage/ASW_CORE2/SwcInternalBehavior/GMAIN_CORE2_1ms</START-ON-EVENT-REF>
+                  <PERIOD>0.001</PERIOD>
+                </TIMING-EVENT>
+                <TIMING-EVENT UUID="40ef9641-1231-420b-a408-3bf80d840477">
+                  <SHORT-NAME>TimingEvent_2</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ARPackage/ASW_CORE2/SwcInternalBehavior/GMAIN_CORE2_2ms</START-ON-EVENT-REF>
+                  <PERIOD>0.002</PERIOD>
+                </TIMING-EVENT>
+                <TIMING-EVENT UUID="cbf0bbcd-9bbd-4d51-b439-38c348390421">
+                  <SHORT-NAME>TimingEvent_3</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ARPackage/ASW_CORE2/SwcInternalBehavior/GMAIN_CORE2_5ms</START-ON-EVENT-REF>
+                  <PERIOD>0.005</PERIOD>
+                </TIMING-EVENT>
+                <TIMING-EVENT UUID="9d688487-8090-4d2a-82c2-3d160a551c19">
+                  <SHORT-NAME>TimingEvent_4</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ARPackage/ASW_CORE2/SwcInternalBehavior/GMAIN_CORE2_10ms</START-ON-EVENT-REF>
+                  <PERIOD>0.01</PERIOD>
+                </TIMING-EVENT>
+                <TIMING-EVENT UUID="4f9c69a4-6002-4ab6-b723-caae32db8749">
+                  <SHORT-NAME>TimingEvent_5</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ARPackage/ASW_CORE2/SwcInternalBehavior/GMAIN_CORE2_100ms</START-ON-EVENT-REF>
+                  <PERIOD>0.1</PERIOD>
+                </TIMING-EVENT>
+                <TIMING-EVENT UUID="7c64c2c9-0a1f-4220-8b07-c0b56f4c6f1a">
+                  <SHORT-NAME>TimingEvent_6</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ARPackage/ASW_CORE2/SwcInternalBehavior/GMAIN_CORE2_200ms</START-ON-EVENT-REF>
+                  <PERIOD>0.2</PERIOD>
+                </TIMING-EVENT>
+              </EVENTS>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="4089926a-cdab-4735-b49a-efa2809f3518">
+                  <SHORT-NAME>RE_CORE2_SWC</SHORT-NAME>
+                  <SERVER-CALL-POINTS>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="27514bce-a575-42fe-9235-cc9ce3d5cd8c">
+                      <SHORT-NAME>SynchronousServerCallPoint_0</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ARPackage/ASW_CORE2/RPort_CPUUtilizationCore2</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ServiceSwComponentInterface/CPU_Utilization/CPU_Utilization</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="129efd1e-b3d5-40a2-8b0e-17d946ae1f1e">
+                      <SHORT-NAME>SynchronousServerCallPoint_1</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ARPackage/ASW_CORE2/RPort_GetMaxUserStackUtilization</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ServiceSwComponentInterface/GetMaxUserStackUtilization/GetMaxUserStackUtilization</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                  </SERVER-CALL-POINTS>
+                  <SYMBOL>RE_CORE2_SWC_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="7a3f58a0-c180-4a6c-8958-5d9678c6143c">
+                  <SHORT-NAME>GMAIN_CORE2_1ms</SHORT-NAME>
+                  <SYMBOL>GMAIN_CORE2_1ms_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="f8015688-f54e-4ff8-9de8-048d65109455">
+                  <SHORT-NAME>GMAIN_CORE2_2ms</SHORT-NAME>
+                  <SYMBOL>GMAIN_CORE2_2ms_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="2b9f3f3a-a5f8-4e09-819f-d984e223203e">
+                  <SHORT-NAME>GMAIN_CORE2_5ms</SHORT-NAME>
+                  <SYMBOL>GMAIN_CORE2_5ms_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="17ea9ec9-3a33-42fa-9e9a-d56d55e100d6">
+                  <SHORT-NAME>GMAIN_CORE2_10ms</SHORT-NAME>
+                  <SYMBOL>GMAIN_CORE2_10ms_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="6e769829-d355-48ed-a54b-54185d6b33d1">
+                  <SHORT-NAME>GMAIN_CORE2_100ms</SHORT-NAME>
+                  <SYMBOL>GMAIN_CORE2_100ms_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="f2d6342d-1c34-464e-a023-7b16f253c2fd">
+                  <SHORT-NAME>GMAIN_CORE2_200ms</SHORT-NAME>
+                  <SYMBOL>GMAIN_CORE2_200ms_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </APPLICATION-SW-COMPONENT-TYPE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

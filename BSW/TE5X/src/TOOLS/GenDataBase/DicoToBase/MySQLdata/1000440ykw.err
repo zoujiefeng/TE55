@@ -1,0 +1,51 @@
+211103 15:26:25  InnoDB: Initializing buffer pool, size = 8.0M
+211103 15:26:25  InnoDB: Completed initialization of buffer pool
+InnoDB: The first specified data file C:\Users\Administrator\Desktop\0D Winades\0D Winades\04 ·¶Àý\GVD\DicoToBase 01\MySQLdata\ibdata1 did not exist:
+InnoDB: a new database to be created!
+211103 15:26:25  InnoDB: Setting file C:\Users\Administrator\Desktop\0D Winades\0D Winades\04 ·¶Àý\GVD\DicoToBase 01\MySQLdata\ibdata1 size to 10 MB
+InnoDB: Database physically writes the file full: wait...
+211103 15:26:26  InnoDB: Log file C:\Users\Administrator\Desktop\0D Winades\0D Winades\04 ·¶Àý\GVD\DicoToBase 01\MySQLdata\ib_logfile0 did not exist: new to be created
+InnoDB: Setting log file C:\Users\Administrator\Desktop\0D Winades\0D Winades\04 ·¶Àý\GVD\DicoToBase 01\MySQLdata\ib_logfile0 size to 5 MB
+InnoDB: Database physically writes the file full: wait...
+211103 15:26:26  InnoDB: Log file C:\Users\Administrator\Desktop\0D Winades\0D Winades\04 ·¶Àý\GVD\DicoToBase 01\MySQLdata\ib_logfile1 did not exist: new to be created
+InnoDB: Setting log file C:\Users\Administrator\Desktop\0D Winades\0D Winades\04 ·¶Àý\GVD\DicoToBase 01\MySQLdata\ib_logfile1 size to 5 MB
+InnoDB: Database physically writes the file full: wait...
+InnoDB: Doublewrite buffer not found: creating new
+InnoDB: Doublewrite buffer created
+InnoDB: Creating foreign key constraint system tables
+InnoDB: Foreign key constraint system tables created
+211103 15:28:43  InnoDB: Initializing buffer pool, size = 8.0M
+211103 15:28:43  InnoDB: Completed initialization of buffer pool
+InnoDB: The log sequence number in ibdata files does not match
+InnoDB: the log sequence number in the ib_logfiles!
+211103 15:28:43  InnoDB: Database was not shut down normally!
+InnoDB: Starting crash recovery.
+InnoDB: Reading tablespace information from the .ibd files...
+InnoDB: Restoring possible half-written data pages from the doublewrite
+InnoDB: buffer...
+211103 15:30:14  InnoDB: Initializing buffer pool, size = 8.0M
+211103 15:30:14  InnoDB: Completed initialization of buffer pool
+211103 15:30:55  InnoDB: Initializing buffer pool, size = 8.0M
+211103 15:30:55  InnoDB: Completed initialization of buffer pool
+211103 15:41:46  InnoDB: Initializing buffer pool, size = 8.0M
+211103 15:41:46  InnoDB: Completed initialization of buffer pool
+211103 15:44:20  InnoDB: Initializing buffer pool, size = 8.0M
+211103 15:44:20  InnoDB: Completed initialization of buffer pool
+211103 15:48:49  InnoDB: Initializing buffer pool, size = 8.0M
+211103 15:48:49  InnoDB: Completed initialization of buffer pool
+211103 16:00:16  InnoDB: Initializing buffer pool, size = 8.0M
+211103 16:00:16  InnoDB: Completed initialization of buffer pool
+211103 16:03:29  InnoDB: Initializing buffer pool, size = 8.0M
+211103 16:03:29  InnoDB: Completed initialization of buffer pool
+211103 16:06:29  InnoDB: Initializing buffer pool, size = 8.0M
+211103 16:06:29  InnoDB: Completed initialization of buffer pool
+211103 16:09:48  InnoDB: Initializing buffer pool, size = 8.0M
+211103 16:09:48  InnoDB: Completed initialization of buffer pool
+211103 16:14:03  InnoDB: Initializing buffer pool, size = 8.0M
+211103 16:14:03  InnoDB: Completed initialization of buffer pool
+211103 16:20:25  InnoDB: Initializing buffer pool, size = 8.0M
+211103 16:20:25  InnoDB: Completed initialization of buffer pool
+211103 16:22:53  InnoDB: Initializing buffer pool, size = 8.0M
+211103 16:22:53  InnoDB: Completed initialization of buffer pool
+211103 16:24:22  InnoDB: Initializing buffer pool, size = 8.0M
+211103 16:24:22  InnoDB: Completed initialization of buffer pool

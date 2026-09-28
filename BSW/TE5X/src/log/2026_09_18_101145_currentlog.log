@@ -1,0 +1,76 @@
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./bsw done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./bswcdd done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./main done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./rte done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./os done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./asw done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./Targets done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./Integration done
+scons: done reading SConscript files.
+scons: Building targets ...
+Compiling bsw\Dcm\Dcm_Lcfg_DspUds.c
+
+Compiling bswcdd\BSW\bswsrv.c
+bswcdd\BSW\bswsrv.c: In function 'BSW_vidInit':
+bswcdd\BSW\bswsrv.c:417:4: warning: implicit declaration of function 'J1939_vidDM1_Periodic_Send_Ctr_Func' [-Wimplicit-function-declaration]
+    J1939_vidDM1_Periodic_Send_Ctr_Func( _MAIN_J1939_DM1_NOERR_TX_SW_ ) ;
+    ^
+bswcdd\BSW\bswsrv.c:417:4: warning: nested extern declaration of 'J1939_vidDM1_Periodic_Send_Ctr_Func' [-Wnested-externs]
+bswcdd\BSW\bswsrv.c: In function 'BSW_vidCORE0_1ms_Head_Func':
+bswcdd\BSW\bswsrv.c:602:4: warning: implicit declaration of function 'Stp_vidCore0Runable1ms' [-Wimplicit-function-declaration]
+    Stp_vidCore0Runable1ms();
+    ^
+bswcdd\BSW\bswsrv.c:602:4: warning: nested extern declaration of 'Stp_vidCore0Runable1ms' [-Wnested-externs]
+bswcdd\BSW\bswsrv.c:603:4: warning: implicit declaration of function 'Icu_vidGetDutyCycle' [-Wimplicit-function-declaration]
+    Icu_vidGetDutyCycle();
+    ^
+bswcdd\BSW\bswsrv.c:603:4: warning: nested extern declaration of 'Icu_vidGetDutyCycle' [-Wnested-externs]
+bswcdd\BSW\bswsrv.c:604:4: warning: implicit declaration of function 'ComHal_vidMsgMainfunction' [-Wimplicit-function-declaration]
+    ComHal_vidMsgMainfunction();
+    ^
+bswcdd\BSW\bswsrv.c:604:4: warning: nested extern declaration of 'ComHal_vidMsgMainfunction' [-Wnested-externs]
+bswcdd\BSW\bswsrv.c:609:7: warning: implicit declaration of function 'HARD_vidIoTestIO' [-Wimplicit-function-declaration]
+       HARD_vidIoTestIO();
+       ^
+bswcdd\BSW\bswsrv.c:609:7: warning: nested extern declaration of 'HARD_vidIoTestIO' [-Wnested-externs]
+bswcdd\BSW\bswsrv.c: In function 'BSW_vidCORE0_10ms_Head_Func':
+bswcdd\BSW\bswsrv.c:640:4: warning: implicit declaration of function 'VADC_vidMainFunction' [-Wimplicit-function-declaration]
+    VADC_vidMainFunction();
+    ^
+bswcdd\BSW\bswsrv.c:640:4: warning: nested extern declaration of 'VADC_vidMainFunction' [-Wnested-externs]
+bswcdd\BSW\bswsrv.c:646:7: warning: implicit declaration of function 'HARD_vidModManager' [-Wimplicit-function-declaration]
+       HARD_vidModManager();
+       ^
+bswcdd\BSW\bswsrv.c:646:7: warning: nested extern declaration of 'HARD_vidModManager' [-Wnested-externs]
+bswcdd\BSW\bswsrv.c: In function 'BSW_vidCORE0_100ms_Func':
+bswcdd\BSW\bswsrv.c:674:4: warning: implicit declaration of function 'CCPUSR_vidMainFunction' [-Wimplicit-function-declaration]
+    CCPUSR_vidMainFunction();
+    ^
+bswcdd\BSW\bswsrv.c:674:4: warning: nested extern declaration of 'CCPUSR_vidMainFunction' [-Wnested-externs]
+bswcdd\BSW\bswsrv.c: In function 'BSW_vidCORE1_1ms_Func':
+bswcdd\BSW\bswsrv.c:688:4: warning: implicit declaration of function 'Stp_vidCore1Runable1ms' [-Wimplicit-function-declaration]
+    Stp_vidCore1Runable1ms();
+    ^
+bswcdd\BSW\bswsrv.c:688:4: warning: nested extern declaration of 'Stp_vidCore1Runable1ms' [-Wnested-externs]
+
+Linking output\dbg\P_TC387_PLATFORM_0_0.elf...
+
+Dumping output\dbg\P_TC387_PLATFORM_0_0.elf to output\hex\P_TC387_PLATFORM_0_0.hex
+
+scons: done building targets.

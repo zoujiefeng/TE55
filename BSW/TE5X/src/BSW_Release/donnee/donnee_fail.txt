@@ -1,0 +1,28 @@
+Nom_donnée|Type|Nom_module|Public|Nb_lignes|Nb_colonnes|Label_père|Offset|Masque_accès|Affichage|Unité|Fonction_transfert_ades|Coefficient_a|Coefficient_b|Groupe|Groupe_1|Groupe_2|Alias_1|Alias_2|Genre|Variable_indice_ligne|Variable_indice_colonne|Fonction_transfert_ligne|Fonction_transfert_colonne|Table_breakpoint_ligne|Table_breakpoint_colonne|Référence_spécification|Recuperable|Modifiable|Fournisseur|Responsable|Valeurs|Visualisable_ADES|Donnée_a_supprimer|Validation|Commentaires|Volatile|MinDecValue|MaxDecValue|MinPhysValue|MaxPhysValue|Def_Eval|MemSec
+FAIL_bDebug1|boolean|FAIL|0|0|0|FAIL_bDebug1|0|0|Phys|bool|2|0||BSW|Diagnostic||FAIL_bDebug1||1||||||||0|1||||1|0|0||0|||||0|
+FAIL_bRstHotFlag|boolean|FAIL|0|0|0|FAIL_bRstHotFlag|0|0|Phys|bool|2|0||BSW|Diagnostic||FAIL_bRstHotFlag||1||||||||0|1||||1|0|0|Detection power off without OS TASK_POWER_DOWN activation|0|||||0|
+FAIL_bComLostDiagTEna|boolean|FAIL|0|0|0|FAIL_bComLostDiagTEna|0|0|Phys|bool|2|0||BSW|Diagnostic||FAIL_bComLostDiagTEna||1||||||||0|1||||1|0|0|Indicates if external CAN communication started|0|||||0|
+FAIL_bComLostDiagVEna|boolean|FAIL|0|0|0|FAIL_bComLostDiagVEna|0|0|Phys|bool|2|0||BSW|Diagnostic||FAIL_bComLostDiagVEna||1||||||||0|1||||1|0|0|Indicates if external CAN communication started|0|||||0|
+FAIL_bComLostDiagVLow|boolean|FAIL|0|0|0|FAIL_bComLostDiagVLow|0|0|Phys|bool|2|0||BSW|Diagnostic||FAIL_bComLostDiagVLow||1||||||||0|1||||1|0|0|Indicates if external CAN communication started|0|||||0|
+FAIL_bComLostDiagVHigh|boolean|FAIL|0|0|0|FAIL_bComLostDiagVHigh|0|0|Phys|bool|2|0||BSW|Diagnostic||FAIL_bComLostDiagVHigh||1||||||||0|1||||1|0|0|Indicates if external CAN communication started|0|||||0|
+FAIL_bCanErrChkDisabled|boolean|FAIL|0|0|0|FAIL_bCanErrChkDisabled|0|0|Phys|bool|2|0||BSW|Diagnostic||FAIL_bCanErrChkDisabled||1||||||||0|1||||1|0|0|Indicates if CAN error check is disabled|0|||||0|
+FAIL_bRstHotFlagNvm|boolean|FAIL|0|0|0|FAIL_bRstHotFlagNvm|0|0|Phys|bool|2|0||BSW|Diagnostic||FAIL_bRstHotFlagNvm||4||||||||0|1||||1|0|0|Flag to detect power off without OS TASK_POWER_DOWN activation (stored into NVM)|0|||||0|
+FAIL_bRstHotFlagNvm_def|boolean|FAIL|0|0|0|FAIL_bRstHotFlagNvm_def|0|0|Phys|bool|2|0||BSW|Diagnostic||FAIL_bRstHotFlagNvm_def||4||||||||0|1||||1|0|0|Flag to detect power off without OS TASK_POWER_DOWN activation (stored into NVM)|0|||||0|
+FAIL_u16RstHotCntNvm|uint16|FAIL|1|0|0|FAIL_u16RstHotCntNvm|0|0|Déci|-||||BSW|Diagnostic||FAIL_u16RstHotCntNvm||4||||||||0|1||||1|0|0|Number of detection power off without OS TASK_POWER_DOWN activation (stored into NVM)|0||||||
+FAIL_u16RstHotCntNvm_def|uint16|FAIL|1|0|0|FAIL_u16RstHotCntNvm_def|0|0|Déci|-||||BSW|Diagnostic||FAIL_u16RstHotCntNvm_def||4||||||||0|1||||1|0|0|Number of detection power off without OS TASK_POWER_DOWN activation (stored into NVM)|0||||||
+FAIL_u16RstStartUpCntNvm|uint16|FAIL|1|0|0|FAIL_u16RstStartUpCntNvm|0|0|Déci|-||||BSW|Diagnostic||FAIL_u16RstStartUpCntNvm||4||||||||0|1||||1|0|0|Number of power off detected with OS TASK_POWER_DOWN activation (stored into NVM)|0||||||
+FAIL_u16RstStartUpCntNvm_def|uint16|FAIL|1|0|0|FAIL_u16RstStartUpCntNvm_def|0|0|Déci|-||||BSW|Diagnostic||FAIL_u16RstStartUpCntNvm_def||4||||||||0|1||||1|0|0|Number of power off detected with OS TASK_POWER_DOWN activation (stored into NVM)|0||||||
+FAIL_u16TimestampIgnNvm|uint16|FAIL|1|0|0|FAIL_u16TimestampIgnNvm|0|0|Déci|-||||BSW|Diagnostic||FAIL_u16TimestampIgnNvm||4||||||||0|1||||1|0|0|Inverter Ignition time stamp (s)|0||||||
+FAIL_u16TimestampIgnNvm_def|uint16|FAIL|1|0|0|FAIL_u16TimestampIgnNvm_def|0|0|Déci|-||||BSW|Diagnostic||FAIL_u16TimestampIgnNvm_def||4||||||||0|1||||1|0|0|Inverter Ignition time stamp (s)|0||||||
+FAIL_u32TimestampLifeNvm|uint32|FAIL|1|0|0|FAIL_u32TimestampLifeNvm|0|0|Déci|-||||BSW|Diagnostic||FAIL_u32TimestampLifeNvm||4||||||||0|1||||1|0|0|Inverter life time stamp (s)|0||||||
+FAIL_u32TimestampLifeNvm_def|uint32|FAIL|1|0|0|FAIL_u32TimestampLifeNvm_def|0|0|Déci|-||||BSW|Diagnostic||FAIL_u32TimestampLifeNvm_def||4||||||||0|1||||1|0|0|Inverter life time stamp (s)|0||||||
+FAIL_bCanErrCheckonC|boolean|FAIL|0|0|0|FAIL_bCanErrCheckonC|0|0|Phys|bool|2|0||BSW|Diagnostic||FAIL_bCanErrCheckonC||2|||||||NONE|1|1|||1|1|0|0|Check Can Error|0||||||
+FAIL_u16KeyOnValue|uint16|FAIL|1|0|0|FAIL_u16KeyOnValue|0|0|Déci|-||||BSW|Diagnostic||FAIL_u16KeyOnValue||1||||||||0|1||||1|0|0|ECU communication lost detection delay count|0|||||0|
+FAIL_u16ComLostDiagEnaCnt|uint16|FAIL|0|0|0|FAIL_u16ComLostDiagEnaCnt|0|0|Phys|ms|1|10|0|BSW|Diagnostic||FAIL_u16ComLostDiagEnaCnt||1||||||||0|1||||1|0|0|ECU communication lost detection delay count|0|||||0|
+FAIL_u16ComLostDiagVRecCnt|uint16|FAIL|0|0|0|FAIL_u16ComLostDiagVRecCnt|0|0|Phys|ms|1|10|0|BSW|Diagnostic||FAIL_u16ComLostDiagVRecCnt||1||||||||0|1||||1|0|0|ECU communication lost detection delay count|0|||||0|
+FAIL_u16LvBatVoltRaw|uint16|FAIL|0|0|0|FAIL_u16LvBatVoltRaw|0|0|Phys|V|1|105/8190|0|BSW|Diagnostic||FAIL_u16LvBatVoltRaw||1||||||||0|1||||1|0|0|ECU communication lost detection delay count|0|||||0|
+FAIL_u8Can1BusoffCnt|uint8|FAIL|0|0|0|FAIL_u8Can1BusoffCnt|0|0|Hexa|-|2|0||FAIL|FAIL||FAIL_u8Can1BusoffCnt||1|||||||NONE|0|1||||1|0|0||0|||||| 
+FAIL_u16KeyOnDelay|uint16|FAIL|0|0|0|FAIL_u16KeyOnDelay|0|0|Hexa|-|1|1|0|FAIL|FAIL||FAIL_u16KeyOnDelay||1||||||||0|1||||1|0|0|...|0|||||0|
+FAIL_u8CCP_FaultLevel|uint8|FAIL|0|0|0|FAIL_u8CCP_FaultLevel|0|0|Hexa|-||||FAIL|FAIL|Raw|FAIL_u8CCP_FaultLevel||1|||||||NONE|0|1||||1|0|0|...|0||||||
+FAIL_u16Test|uint16|FAIL|0|0|0|FAIL_u16Test|0|0|Hexa|-|1|1|0|FAIL|FAIL||FAIL_u16Test||1||||||||0|1||||1|0|0|...|0|||||0|
+

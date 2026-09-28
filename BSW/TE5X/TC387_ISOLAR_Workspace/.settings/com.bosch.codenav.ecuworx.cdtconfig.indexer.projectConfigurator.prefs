@@ -1,0 +1,3 @@
+INDEXER_CFG_ID=com.bosch.codenav.cdt.util.indexerConfig.disabled
+RESET_INDEXER_CFG=true
+eclipse.preferences.version=1

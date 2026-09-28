@@ -1,0 +1,79 @@
+#Generate User: 01004867
+#Generate Time: 2026-09-24 17:27:46
+
+Import('*')
+import re,sys, os, glob, fnmatch
+import prebuild
+objects = [
+]
+# INCLUDE DIRECTORIES
+# Implements: COR010
+includes = [
+	'TC38xx/MCAL/MCAL_Gen/inc',
+	'TC38xx/MCAL/MCAL_Modules/Adc/inc',
+	'TC38xx/MCAL/MCAL_Modules/Can_17_McmCan/inc',
+	'TC38xx/MCAL/MCAL_Modules/Dio/inc',
+	'TC38xx/MCAL/MCAL_Modules/Fls_17_Dmu/inc',
+	'TC38xx/MCAL/MCAL_Modules/Gpt/inc',
+	'TC38xx/MCAL/MCAL_Modules/I2c/inc',
+	'TC38xx/MCAL/MCAL_Modules/Icu_17_TimerIp/inc',
+	'TC38xx/MCAL/MCAL_Modules/Irq',
+	'TC38xx/MCAL/MCAL_Modules/McalLib/inc',
+	'TC38xx/MCAL/MCAL_Modules/Mcu/inc',
+	'TC38xx/MCAL/MCAL_Modules/Port/inc',
+	'TC38xx/MCAL/MCAL_Modules/Pwm_17_GtmCcu6/inc',
+	'TC38xx/MCAL/MCAL_Modules/Spi/inc',
+]#Include Files
+# SOURCE FILES
+sources = [
+	'TC38xx/MCAL/MCAL_Gen/src/Adc_PBcfg.c',
+	'TC38xx/MCAL/MCAL_Gen/src/Can_17_McmCan_PBcfg.c',
+	'TC38xx/MCAL/MCAL_Gen/src/Dio_Lcfg.c',
+	'TC38xx/MCAL/MCAL_Gen/src/Fls_17_Dmu_PBcfg.c',
+	'TC38xx/MCAL/MCAL_Gen/src/Gpt_PBcfg.c',
+	'TC38xx/MCAL/MCAL_Gen/src/I2c_PBcfg.c',
+	'TC38xx/MCAL/MCAL_Gen/src/Icu_17_TimerIp_PBcfg.c',
+	'TC38xx/MCAL/MCAL_Gen/src/Mcu_17_TimerIp_Cfg.c',
+	'TC38xx/MCAL/MCAL_Gen/src/Mcu_PBcfg.c',
+	'TC38xx/MCAL/MCAL_Gen/src/Port_PBcfg.c',
+	'TC38xx/MCAL/MCAL_Gen/src/Pwm_17_GtmCcu6_PBcfg.c',
+	'TC38xx/MCAL/MCAL_Gen/src/Spi_PBcfg.c',
+	'TC38xx/MCAL/MCAL_Modules/Adc/src/Adc.c',
+	'TC38xx/MCAL/MCAL_Modules/Can_17_McmCan/src/Can_17_McmCan.c',
+	'TC38xx/MCAL/MCAL_Modules/Dio/src/Dio.c',
+	'TC38xx/MCAL/MCAL_Modules/Fls_17_Dmu/src/Fls_17_Dmu.c',
+	'TC38xx/MCAL/MCAL_Modules/Fls_17_Dmu/src/Fls_17_Dmu_ac.c',
+	'TC38xx/MCAL/MCAL_Modules/Gpt/src/Gpt.c',
+	'TC38xx/MCAL/MCAL_Modules/I2c/src/I2c.c',
+	'TC38xx/MCAL/MCAL_Modules/Icu_17_TimerIp/src/Icu_17_TimerIp.c',
+	'TC38xx/MCAL/MCAL_Modules/Irq/Irq.c',
+	'TC38xx/MCAL/MCAL_Modules/McalLib/src/McalLib.c',
+	'TC38xx/MCAL/MCAL_Modules/Mcu/src/Mcu.c',
+	'TC38xx/MCAL/MCAL_Modules/Mcu/src/Mcu_17_TimerIp.c',
+	'TC38xx/MCAL/MCAL_Modules/Port/src/Port.c',
+	'TC38xx/MCAL/MCAL_Modules/Pwm_17_GtmCcu6/src/Pwm_17_GtmCcu6.c',
+	'TC38xx/MCAL/MCAL_Modules/Spi/src/Spi.c',
+]#Source Files
+# GENERATED SOURCE FILES
+gen_sources = [
+]
+
+# ADD INCLUDE DIRECTORIES
+for include in includes:
+    env.Append(CPPPATH=[Dir(include).abspath])
+    string = re.sub( r'output\\objs\\','''''' ,Dir(include).abspath)
+    prebuild.createSymlinkHeader( os.path.join(Dir('#').abspath,env['CEN_HEADER_DIR']),string )
+# COMPILE SOURCE FILES
+for source in sources:
+    objects += env.Object(source)
+
+# GENERATED SOURCE FILES
+for gen_source in gen_sources:
+    objects += env.Object(gen_source)
+
+# RETURN
+Return('objects')
+
+#*******************************************************************************
+# END OF FILE
+#*******************************************************************************

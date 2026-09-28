@@ -1,0 +1,845 @@
+	.file	"ComM_PBcfg.c"
+.section .text,"ax",@progbits
+.Ltext0:
+	.global	ComM_UserList_acst
+.section .rodata.a4.ComM_UserList_acst,"a",@progbits
+	.align 2
+	.type	ComM_UserList_acst, @object
+	.size	ComM_UserList_acst, 32
+ComM_UserList_acst:
+	.word	ComM_DirectChannelsPerUser_ComMUser_Can_Network_CanNodeNum_00
+	.byte	1
+	.byte	1
+	.zero	2
+	.word	ComM_DirectChannelsPerUser_ComMUser_Can_Network_CanNodeNum_01
+	.byte	1
+	.byte	1
+	.zero	2
+	.word	ComM_DirectChannelsPerUser_ComMUser_Can_Network_CanNodeNum_02
+	.byte	1
+	.byte	1
+	.zero	2
+	.word	ComM_DirectChannelsPerUser_ComMUser_Can_Network_CanNodeNum_03
+	.byte	1
+	.byte	1
+	.zero	2
+	.global	ComM_UserId_MappingTable_acst
+.section .rodata.a1.ComM_UserId_MappingTable_acst,"a",@progbits
+	.type	ComM_UserId_MappingTable_acst, @object
+	.size	ComM_UserId_MappingTable_acst, 4
+ComM_UserId_MappingTable_acst:
+	.byte	0
+	.byte	1
+	.byte	2
+	.byte	3
+.section .rodata.a1.ComM_DirectChannelsPerUser_ComMUser_Can_Network_CanNodeNum_03,"a",@progbits
+	.type	ComM_DirectChannelsPerUser_ComMUser_Can_Network_CanNodeNum_03, @object
+	.size	ComM_DirectChannelsPerUser_ComMUser_Can_Network_CanNodeNum_03, 1
+ComM_DirectChannelsPerUser_ComMUser_Can_Network_CanNodeNum_03:
+	.byte	3
+.section .rodata.a1.ComM_DirectChannelsPerUser_ComMUser_Can_Network_CanNodeNum_02,"a",@progbits
+	.type	ComM_DirectChannelsPerUser_ComMUser_Can_Network_CanNodeNum_02, @object
+	.size	ComM_DirectChannelsPerUser_ComMUser_Can_Network_CanNodeNum_02, 1
+ComM_DirectChannelsPerUser_ComMUser_Can_Network_CanNodeNum_02:
+	.byte	2
+.section .rodata.a1.ComM_DirectChannelsPerUser_ComMUser_Can_Network_CanNodeNum_01,"a",@progbits
+	.type	ComM_DirectChannelsPerUser_ComMUser_Can_Network_CanNodeNum_01, @object
+	.size	ComM_DirectChannelsPerUser_ComMUser_Can_Network_CanNodeNum_01, 1
+ComM_DirectChannelsPerUser_ComMUser_Can_Network_CanNodeNum_01:
+	.byte	1
+.section .rodata.a1.ComM_DirectChannelsPerUser_ComMUser_Can_Network_CanNodeNum_00,"a",@progbits
+	.type	ComM_DirectChannelsPerUser_ComMUser_Can_Network_CanNodeNum_00, @object
+	.size	ComM_DirectChannelsPerUser_ComMUser_Can_Network_CanNodeNum_00, 1
+ComM_DirectChannelsPerUser_ComMUser_Can_Network_CanNodeNum_00:
+	.zero	1
+	.global	ComM_ChanelList_acst
+.section .rodata.a4.ComM_ChanelList_acst,"a",@progbits
+	.align 2
+	.type	ComM_ChanelList_acst, @object
+	.size	ComM_ChanelList_acst, 96
+ComM_ChanelList_acst:
+	.word	ComM_DirectUsersPerChannel_Can_Network_CanNodeNum_00
+	.word	ComM_AllUsersPerChannel_Can_Network_CanNodeNum_00
+	.byte	0
+	.byte	1
+	.zero	2
+	.word	25500
+	.short	1
+	.byte	0
+	.byte	1
+	.byte	0
+	.byte	1
+	.byte	0
+	.zero	1
+	.word	ComM_DirectUsersPerChannel_Can_Network_CanNodeNum_01
+	.word	ComM_AllUsersPerChannel_Can_Network_CanNodeNum_01
+	.byte	0
+	.byte	0
+	.zero	2
+	.word	200
+	.short	1
+	.byte	1
+	.byte	1
+	.byte	0
+	.byte	1
+	.byte	0
+	.zero	1
+	.word	ComM_DirectUsersPerChannel_Can_Network_CanNodeNum_02
+	.word	ComM_AllUsersPerChannel_Can_Network_CanNodeNum_02
+	.byte	0
+	.byte	1
+	.zero	2
+	.word	200
+	.short	1
+	.byte	2
+	.byte	1
+	.byte	0
+	.byte	1
+	.byte	0
+	.zero	1
+	.word	ComM_DirectUsersPerChannel_Can_Network_CanNodeNum_03
+	.word	ComM_AllUsersPerChannel_Can_Network_CanNodeNum_03
+	.byte	0
+	.byte	1
+	.zero	2
+	.word	200
+	.short	1
+	.byte	3
+	.byte	1
+	.byte	0
+	.byte	1
+	.byte	0
+	.zero	1
+.section .rodata.a1.ComM_AllUsersPerChannel_Can_Network_CanNodeNum_03,"a",@progbits
+	.type	ComM_AllUsersPerChannel_Can_Network_CanNodeNum_03, @object
+	.size	ComM_AllUsersPerChannel_Can_Network_CanNodeNum_03, 1
+ComM_AllUsersPerChannel_Can_Network_CanNodeNum_03:
+	.byte	3
+.section .rodata.a1.ComM_AllUsersPerChannel_Can_Network_CanNodeNum_02,"a",@progbits
+	.type	ComM_AllUsersPerChannel_Can_Network_CanNodeNum_02, @object
+	.size	ComM_AllUsersPerChannel_Can_Network_CanNodeNum_02, 1
+ComM_AllUsersPerChannel_Can_Network_CanNodeNum_02:
+	.byte	2
+.section .rodata.a1.ComM_AllUsersPerChannel_Can_Network_CanNodeNum_01,"a",@progbits
+	.type	ComM_AllUsersPerChannel_Can_Network_CanNodeNum_01, @object
+	.size	ComM_AllUsersPerChannel_Can_Network_CanNodeNum_01, 1
+ComM_AllUsersPerChannel_Can_Network_CanNodeNum_01:
+	.byte	1
+.section .rodata.a1.ComM_AllUsersPerChannel_Can_Network_CanNodeNum_00,"a",@progbits
+	.type	ComM_AllUsersPerChannel_Can_Network_CanNodeNum_00, @object
+	.size	ComM_AllUsersPerChannel_Can_Network_CanNodeNum_00, 1
+ComM_AllUsersPerChannel_Can_Network_CanNodeNum_00:
+	.zero	1
+.section .rodata.a1.ComM_DirectUsersPerChannel_Can_Network_CanNodeNum_03,"a",@progbits
+	.type	ComM_DirectUsersPerChannel_Can_Network_CanNodeNum_03, @object
+	.size	ComM_DirectUsersPerChannel_Can_Network_CanNodeNum_03, 1
+ComM_DirectUsersPerChannel_Can_Network_CanNodeNum_03:
+	.byte	3
+.section .rodata.a1.ComM_DirectUsersPerChannel_Can_Network_CanNodeNum_02,"a",@progbits
+	.type	ComM_DirectUsersPerChannel_Can_Network_CanNodeNum_02, @object
+	.size	ComM_DirectUsersPerChannel_Can_Network_CanNodeNum_02, 1
+ComM_DirectUsersPerChannel_Can_Network_CanNodeNum_02:
+	.byte	2
+.section .rodata.a1.ComM_DirectUsersPerChannel_Can_Network_CanNodeNum_01,"a",@progbits
+	.type	ComM_DirectUsersPerChannel_Can_Network_CanNodeNum_01, @object
+	.size	ComM_DirectUsersPerChannel_Can_Network_CanNodeNum_01, 1
+ComM_DirectUsersPerChannel_Can_Network_CanNodeNum_01:
+	.byte	1
+.section .rodata.a1.ComM_DirectUsersPerChannel_Can_Network_CanNodeNum_00,"a",@progbits
+	.type	ComM_DirectUsersPerChannel_Can_Network_CanNodeNum_00, @object
+	.size	ComM_DirectUsersPerChannel_Can_Network_CanNodeNum_00, 1
+ComM_DirectUsersPerChannel_Can_Network_CanNodeNum_00:
+	.zero	1
+.section .text,"ax",@progbits
+.Letext0:
+	.file 1 ".\\output\\inc/..\\..\\bsw\\integration\\Platform_Types.h"
+	.file 2 ".\\output\\inc/..\\..\\bsw\\ComStack\\api\\ComStack_Types.h"
+	.file 3 ".\\output\\inc/..\\..\\bsw\\ComM\\api\\ComM_Types.h"
+	.file 4 ".\\output\\inc/..\\..\\rte\\Rte_Type.h"
+	.file 5 ".\\output\\inc/..\\..\\bsw\\ComM\\ComM_Cfg_Internal.h"
+	.file 6 "bsw\\ComM\\ComM_PBcfg.c"
+.section .debug_info,"",@progbits
+.Ldebug_info0:
+	.uaword	0x9d4
+	.uahalf	0x2
+	.uaword	.Ldebug_abbrev0
+	.byte	0x4
+	.uleb128 0x1
+	.ascii	"GNU C 4.9.4 build on 2020-09-01 -mli"
+	.string	"cense-dir=s:\\hightec\\toolchains\\tricore\\v4.9.4.1\\bin\\../lib/gcc/tricore/4.9.4/../../../../licenses -mcpu=tc38xx -mpragma-data-sections -mtc162 -maligned-data-sections -gdwarf-2 -O3 -fno-builtin -fno-common -ffunction-sections -fdata-sections -fshort-double"
+	.byte	0x1
+	.string	"bsw\\ComM\\ComM_PBcfg.c"
+	.string	"D:\\\\1_OutProjest\\\\dongfeng\\\\90080-05101\\\\trunk\\\\BSW\\\\20Proj\\\\BSW\\\\TE5X\\\\src"
+	.uaword	.Ldebug_line0
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x6
+	.string	"signed char"
+	.uleb128 0x3
+	.string	"uint8"
+	.byte	0x1
+	.byte	0x51
+	.uaword	0x1b4
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x8
+	.string	"unsigned char"
+	.uleb128 0x2
+	.byte	0x2
+	.byte	0x5
+	.string	"short int"
+	.uleb128 0x3
+	.string	"uint16"
+	.byte	0x1
+	.byte	0x5b
+	.uaword	0x1e0
+	.uleb128 0x2
+	.byte	0x2
+	.byte	0x7
+	.string	"short unsigned int"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x5
+	.string	"int"
+	.uleb128 0x2
+	.byte	0x8
+	.byte	0x5
+	.string	"long long int"
+	.uleb128 0x3
+	.string	"uint32"
+	.byte	0x1
+	.byte	0x6a
+	.uaword	0x21c
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x7
+	.string	"unsigned int"
+	.uleb128 0x2
+	.byte	0x8
+	.byte	0x7
+	.string	"long long unsigned int"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x4
+	.string	"float"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x4
+	.string	"double"
+	.uleb128 0x3
+	.string	"boolean"
+	.byte	0x1
+	.byte	0x80
+	.uaword	0x1b4
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x5
+	.string	"long int"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x7
+	.string	"long unsigned int"
+	.uleb128 0x3
+	.string	"NetworkHandleType"
+	.byte	0x2
+	.byte	0x4f
+	.uaword	0x1a7
+	.uleb128 0x4
+	.byte	0x1
+	.byte	0x3
+	.byte	0x5d
+	.uaword	0x313
+	.uleb128 0x5
+	.string	"COMM_BUS_TYPE_CAN"
+	.sleb128 0
+	.uleb128 0x5
+	.string	"COMM_BUS_TYPE_ETH"
+	.sleb128 1
+	.uleb128 0x5
+	.string	"COMM_BUS_TYPE_FR"
+	.sleb128 2
+	.uleb128 0x5
+	.string	"COMM_BUS_TYPE_INTERNAL"
+	.sleb128 3
+	.uleb128 0x5
+	.string	"COMM_BUS_TYPE_LIN"
+	.sleb128 4
+	.byte	0
+	.uleb128 0x3
+	.string	"ComM_BusType_ten"
+	.byte	0x3
+	.byte	0x63
+	.uaword	0x2a2
+	.uleb128 0x4
+	.byte	0x1
+	.byte	0x3
+	.byte	0x72
+	.uaword	0x354
+	.uleb128 0x5
+	.string	"FULL"
+	.sleb128 0
+	.uleb128 0x5
+	.string	"LIGHT"
+	.sleb128 1
+	.uleb128 0x5
+	.string	"NONE"
+	.sleb128 2
+	.uleb128 0x5
+	.string	"PASSIVE"
+	.sleb128 3
+	.byte	0
+	.uleb128 0x3
+	.string	"ComM_NMVariantType_ten"
+	.byte	0x3
+	.byte	0x77
+	.uaword	0x32b
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x7
+	.string	"sizetype"
+	.uleb128 0x6
+	.uaword	0x1a7
+	.uleb128 0x3
+	.string	"ComM_UserHandleType"
+	.byte	0x4
+	.byte	0xe2
+	.uaword	0x1a7
+	.uleb128 0x7
+	.uaword	0x1a7
+	.uaword	0x3ae
+	.uleb128 0x8
+	.uaword	0x372
+	.byte	0
+	.byte	0
+	.uleb128 0x9
+	.byte	0x4
+	.uaword	0x37e
+	.uleb128 0xa
+	.byte	0x8
+	.byte	0x5
+	.byte	0x8d
+	.uaword	0x416
+	.uleb128 0xb
+	.string	"DirectChannels_pcu8"
+	.byte	0x5
+	.byte	0x8f
+	.uaword	0x3ae
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xb
+	.string	"NumDirectChannels_u8"
+	.byte	0x5
+	.byte	0x93
+	.uaword	0x1a7
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.uleb128 0xb
+	.string	"NumAllChannels_u8"
+	.byte	0x5
+	.byte	0x94
+	.uaword	0x1a7
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x5
+	.byte	0
+	.uleb128 0x3
+	.string	"ComM_UsersType_tst"
+	.byte	0x5
+	.byte	0x98
+	.uaword	0x3b4
+	.uleb128 0xc
+	.string	"ComM_ChannelTypeStruct"
+	.byte	0x18
+	.byte	0x5
+	.byte	0x9b
+	.uaword	0x59a
+	.uleb128 0xb
+	.string	"DirectUsers_pcu8"
+	.byte	0x5
+	.byte	0xa1
+	.uaword	0x3ae
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xb
+	.string	"AllUsers_pcu8"
+	.byte	0x5
+	.byte	0xa3
+	.uaword	0x3ae
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.uleb128 0xb
+	.string	"BusType_en"
+	.byte	0x5
+	.byte	0xa4
+	.uaword	0x313
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.uleb128 0xb
+	.string	"ComMNmVariant_en"
+	.byte	0x5
+	.byte	0xa5
+	.uaword	0x354
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x9
+	.uleb128 0xb
+	.string	"NmLightTimeout_u32"
+	.byte	0x5
+	.byte	0xa9
+	.uaword	0x20e
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xc
+	.uleb128 0xb
+	.string	"TMinFullComModeDuration_u16"
+	.byte	0x5
+	.byte	0xaa
+	.uaword	0x1d2
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x10
+	.uleb128 0xb
+	.string	"ComMChannelId_u8"
+	.byte	0x5
+	.byte	0xae
+	.uaword	0x289
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x12
+	.uleb128 0xb
+	.string	"numDirectUsers_u8"
+	.byte	0x5
+	.byte	0xb3
+	.uaword	0x1a7
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x13
+	.uleb128 0xb
+	.string	"InhibitionInitValue_u8"
+	.byte	0x5
+	.byte	0xb4
+	.uaword	0x1a7
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x14
+	.uleb128 0xb
+	.string	"numAllUsers_u8"
+	.byte	0x5
+	.byte	0xb6
+	.uaword	0x1a7
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x15
+	.uleb128 0xb
+	.string	"ComMFullCommRequestNotificationEnabled_b"
+	.byte	0x5
+	.byte	0xc3
+	.uaword	0x259
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x16
+	.byte	0
+	.uleb128 0x3
+	.string	"ComM_ChannelType_tst"
+	.byte	0x5
+	.byte	0xc4
+	.uaword	0x430
+	.uleb128 0xd
+	.string	"ComM_DirectUsersPerChannel_Can_Network_CanNodeNum_00"
+	.byte	0x6
+	.byte	0x1e
+	.uaword	0x5f8
+	.byte	0x5
+	.byte	0x3
+	.uaword	ComM_DirectUsersPerChannel_Can_Network_CanNodeNum_00
+	.uleb128 0x6
+	.uaword	0x39e
+	.uleb128 0xd
+	.string	"ComM_DirectUsersPerChannel_Can_Network_CanNodeNum_01"
+	.byte	0x6
+	.byte	0x22
+	.uaword	0x63f
+	.byte	0x5
+	.byte	0x3
+	.uaword	ComM_DirectUsersPerChannel_Can_Network_CanNodeNum_01
+	.uleb128 0x6
+	.uaword	0x39e
+	.uleb128 0xd
+	.string	"ComM_DirectUsersPerChannel_Can_Network_CanNodeNum_02"
+	.byte	0x6
+	.byte	0x26
+	.uaword	0x686
+	.byte	0x5
+	.byte	0x3
+	.uaword	ComM_DirectUsersPerChannel_Can_Network_CanNodeNum_02
+	.uleb128 0x6
+	.uaword	0x39e
+	.uleb128 0xd
+	.string	"ComM_DirectUsersPerChannel_Can_Network_CanNodeNum_03"
+	.byte	0x6
+	.byte	0x2a
+	.uaword	0x6cd
+	.byte	0x5
+	.byte	0x3
+	.uaword	ComM_DirectUsersPerChannel_Can_Network_CanNodeNum_03
+	.uleb128 0x6
+	.uaword	0x39e
+	.uleb128 0xd
+	.string	"ComM_AllUsersPerChannel_Can_Network_CanNodeNum_00"
+	.byte	0x6
+	.byte	0x30
+	.uaword	0x711
+	.byte	0x5
+	.byte	0x3
+	.uaword	ComM_AllUsersPerChannel_Can_Network_CanNodeNum_00
+	.uleb128 0x6
+	.uaword	0x39e
+	.uleb128 0xd
+	.string	"ComM_AllUsersPerChannel_Can_Network_CanNodeNum_01"
+	.byte	0x6
+	.byte	0x34
+	.uaword	0x755
+	.byte	0x5
+	.byte	0x3
+	.uaword	ComM_AllUsersPerChannel_Can_Network_CanNodeNum_01
+	.uleb128 0x6
+	.uaword	0x39e
+	.uleb128 0xd
+	.string	"ComM_AllUsersPerChannel_Can_Network_CanNodeNum_02"
+	.byte	0x6
+	.byte	0x38
+	.uaword	0x799
+	.byte	0x5
+	.byte	0x3
+	.uaword	ComM_AllUsersPerChannel_Can_Network_CanNodeNum_02
+	.uleb128 0x6
+	.uaword	0x39e
+	.uleb128 0xd
+	.string	"ComM_AllUsersPerChannel_Can_Network_CanNodeNum_03"
+	.byte	0x6
+	.byte	0x3c
+	.uaword	0x7dd
+	.byte	0x5
+	.byte	0x3
+	.uaword	ComM_AllUsersPerChannel_Can_Network_CanNodeNum_03
+	.uleb128 0x6
+	.uaword	0x39e
+	.uleb128 0xe
+	.string	"ComM_DirectChannelsPerUser_ComMUser_Can_Network_CanNodeNum_00"
+	.byte	0x6
+	.uahalf	0x10b
+	.uaword	0x82e
+	.byte	0x5
+	.byte	0x3
+	.uaword	ComM_DirectChannelsPerUser_ComMUser_Can_Network_CanNodeNum_00
+	.uleb128 0x6
+	.uaword	0x39e
+	.uleb128 0xe
+	.string	"ComM_DirectChannelsPerUser_ComMUser_Can_Network_CanNodeNum_01"
+	.byte	0x6
+	.uahalf	0x111
+	.uaword	0x87f
+	.byte	0x5
+	.byte	0x3
+	.uaword	ComM_DirectChannelsPerUser_ComMUser_Can_Network_CanNodeNum_01
+	.uleb128 0x6
+	.uaword	0x39e
+	.uleb128 0xe
+	.string	"ComM_DirectChannelsPerUser_ComMUser_Can_Network_CanNodeNum_02"
+	.byte	0x6
+	.uahalf	0x117
+	.uaword	0x8d0
+	.byte	0x5
+	.byte	0x3
+	.uaword	ComM_DirectChannelsPerUser_ComMUser_Can_Network_CanNodeNum_02
+	.uleb128 0x6
+	.uaword	0x39e
+	.uleb128 0xe
+	.string	"ComM_DirectChannelsPerUser_ComMUser_Can_Network_CanNodeNum_03"
+	.byte	0x6
+	.uahalf	0x11d
+	.uaword	0x921
+	.byte	0x5
+	.byte	0x3
+	.uaword	ComM_DirectChannelsPerUser_ComMUser_Can_Network_CanNodeNum_03
+	.uleb128 0x6
+	.uaword	0x39e
+	.uleb128 0x7
+	.uaword	0x383
+	.uaword	0x936
+	.uleb128 0x8
+	.uaword	0x372
+	.byte	0x3
+	.byte	0
+	.uleb128 0xf
+	.string	"ComM_UserId_MappingTable_acst"
+	.byte	0x6
+	.uahalf	0x12b
+	.uaword	0x963
+	.byte	0x1
+	.byte	0x5
+	.byte	0x3
+	.uaword	ComM_UserId_MappingTable_acst
+	.uleb128 0x6
+	.uaword	0x926
+	.uleb128 0x7
+	.uaword	0x59a
+	.uaword	0x978
+	.uleb128 0x8
+	.uaword	0x372
+	.byte	0x3
+	.byte	0
+	.uleb128 0x10
+	.string	"ComM_ChanelList_acst"
+	.byte	0x6
+	.byte	0x48
+	.uaword	0x99b
+	.byte	0x1
+	.byte	0x5
+	.byte	0x3
+	.uaword	ComM_ChanelList_acst
+	.uleb128 0x6
+	.uaword	0x968
+	.uleb128 0x7
+	.uaword	0x416
+	.uaword	0x9b0
+	.uleb128 0x8
+	.uaword	0x372
+	.byte	0x3
+	.byte	0
+	.uleb128 0xf
+	.string	"ComM_UserList_acst"
+	.byte	0x6
+	.uahalf	0x13a
+	.uaword	0x9d2
+	.byte	0x1
+	.byte	0x5
+	.byte	0x3
+	.uaword	ComM_UserList_acst
+	.uleb128 0x6
+	.uaword	0x9a0
+	.byte	0
+.section .debug_abbrev,"",@progbits
+.Ldebug_abbrev0:
+	.uleb128 0x1
+	.uleb128 0x11
+	.byte	0x1
+	.uleb128 0x25
+	.uleb128 0x8
+	.uleb128 0x13
+	.uleb128 0xb
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x1b
+	.uleb128 0x8
+	.uleb128 0x10
+	.uleb128 0x6
+	.byte	0
+	.byte	0
+	.uleb128 0x2
+	.uleb128 0x24
+	.byte	0
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3e
+	.uleb128 0xb
+	.uleb128 0x3
+	.uleb128 0x8
+	.byte	0
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x16
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x4
+	.uleb128 0x4
+	.byte	0x1
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x5
+	.uleb128 0x28
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x1c
+	.uleb128 0xd
+	.byte	0
+	.byte	0
+	.uleb128 0x6
+	.uleb128 0x26
+	.byte	0
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x7
+	.uleb128 0x1
+	.byte	0x1
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x8
+	.uleb128 0x21
+	.byte	0
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2f
+	.uleb128 0xb
+	.byte	0
+	.byte	0
+	.uleb128 0x9
+	.uleb128 0xf
+	.byte	0
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0xa
+	.uleb128 0x13
+	.byte	0x1
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0xb
+	.uleb128 0xd
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x38
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0xc
+	.uleb128 0x13
+	.byte	0x1
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0xd
+	.uleb128 0x34
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0xe
+	.uleb128 0x34
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0xf
+	.uleb128 0x34
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x2
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0x10
+	.uleb128 0x34
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x2
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.byte	0
+.section .debug_aranges,"",@progbits
+	.uaword	0x14
+	.uahalf	0x2
+	.uaword	.Ldebug_info0
+	.byte	0x4
+	.byte	0
+	.uahalf	0
+	.uahalf	0
+	.uaword	0
+	.uaword	0
+.section .debug_line,"",@progbits
+.Ldebug_line0:
+.section .debug_str,"",@progbits
+	.ident	"GCC: (HighTec Release HDP-v4.9.4.1-11fcedf) 4.9.4 build on 2020-09-01"

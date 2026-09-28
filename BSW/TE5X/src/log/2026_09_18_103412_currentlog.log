@@ -1,0 +1,68 @@
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./bsw done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./bswcdd done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./main done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./rte done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./os done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./asw done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./Targets done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./Integration done
+scons: done reading SConscript files.
+scons: Building targets ...
+Compiling bswcdd\BSW\bswsrv.c
+All licenses in use (-22) (rlm stat (0)) (product: tricore-gcc, version: 4.9.4)
+license check: No valid license!
+bswcdd\BSW\bswsrv.c:1:0: error: error in licenser
+ /*
+ ^
+bswcdd\BSW\bswsrv.c:1:0: error: license check failed
+
+=====
+None
+=====
+Compiling bswcdd\UDS\UDS_DidCfg.c
+scons: *** [output\objs\bswcdd\BSW\bswsrv.o] Error 1
+bswcdd\UDS\UDS_DidCfg.c:1035:21: warning: cast discards 'volatile' qualifier from pointer target type [-Wcast-qual]
+       .au8DataBuf      = (uint8 *)&UDS_au8DidBuf_0x0D2A_1,
+                     ^
+bswcdd\UDS\UDS_DidCfg.c:1053:21: warning: cast discards 'volatile' qualifier from pointer target type [-Wcast-qual]
+       .au8DataBuf      = (uint8 *)&UDS_au8DidBuf_0x0D2A_2,
+                     ^
+bswcdd\UDS\UDS_DidCfg.c:1071:21: warning: cast discards 'volatile' qualifier from pointer target type [-Wcast-qual]
+       .au8DataBuf      = (uint8 *)&UDS_au8DidBuf_0x0D2A_3,
+                     ^
+bswcdd\UDS\UDS_DidCfg.c:1089:21: warning: cast discards 'volatile' qualifier from pointer target type [-Wcast-qual]
+       .au8DataBuf      = (uint8 *)&UDS_au8DidBuf_0x0D2A_4,
+                     ^
+bswcdd\UDS\UDS_DidCfg.c:2205:21: warning: cast discards 'volatile' qualifier from pointer target type [-Wcast-qual]
+       .au8DataBuf      = (uint8 *)&UDS_au8DidBuf_0x1D2A,
+                     ^
+bswcdd\UDS\UDS_DidCfg.c:2223:21: warning: cast discards 'volatile' qualifier from pointer target type [-Wcast-qual]
+       .au8DataBuf      = (uint8 *)&UDS_au8DidBuf_0x1D2A_1,
+                     ^
+bswcdd\UDS\UDS_DidCfg.c:2241:21: warning: cast discards 'volatile' qualifier from pointer target type [-Wcast-qual]
+       .au8DataBuf      = (uint8 *)&UDS_au8DidBuf_0x1D2A_2,
+                     ^
+bswcdd\UDS\UDS_DidCfg.c:2259:21: warning: cast discards 'volatile' qualifier from pointer target type [-Wcast-qual]
+       .au8DataBuf      = (uint8 *)&UDS_au8DidBuf_0x1D2A_3,
+                     ^
+bswcdd\UDS\UDS_DidCfg.c:2277:21: warning: cast discards 'volatile' qualifier from pointer target type [-Wcast-qual]
+       .au8DataBuf      = (uint8 *)&UDS_au8DidBuf_0x1D2A_4,
+                     ^
+
+scons: building terminated because of errors.

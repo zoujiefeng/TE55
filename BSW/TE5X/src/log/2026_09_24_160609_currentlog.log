@@ -1,0 +1,57 @@
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./bsw done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./bswcdd done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./main done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./rte done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./os done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./asw done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./Targets done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./Integration done
+scons: done reading SConscript files.
+scons: Building targets ...
+Compiling bswcdd\BSW\bswsrv.c
+Compiling bswcdd\ESM\ESM\esm_1.c
+All licenses in use (-22) (rlm stat (0)) (product: tricore-gcc, version: 4.9.4)
+license check: No valid license!
+bswcdd\BSW\bswsrv.c:1:0: error: error in licenser
+ /*
+ ^
+bswcdd\BSW\bswsrv.c:1:0: error: license check failed
+
+=====
+None
+=====
+All licenses in use (-22) (rlm stat (0)) (product: tricore-gcc, version: 4.9.4)
+license check: No valid license!
+bswcdd\ESM\ESM\esm_1.c:1:0: error: error in licenser
+ /******************************************************************************/
+ ^
+bswcdd\ESM\ESM\esm_1.c:1:0: error: license check failed
+
+=====
+None
+=====
+Compiling ASW\ASW_NM\src\ASW_NM.c
+scons: *** [output\objs\bswcdd\BSW\bswsrv.o] Error 1
+scons: *** [output\objs\bswcdd\ESM\ESM\esm_1.o] Error 1
+ASW\ASW_NM\src\ASW_NM.c: In function 'RE_ASW_NM_func':
+ASW\ASW_NM\src\ASW_NM.c:131:11: warning: unused variable 'u16LocKl15Sts' [-Wunused-variable]
+    uint16 u16LocKl15Sts = FALSE;
+           ^
+
+scons: building terminated because of errors.

@@ -1,0 +1,73 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: IPC
+
+
+BO_ 1536 RIPC_600_NM: 8 Vector__XXX
+ SG_ IPC_NM_L : 7|32@0+ (1,0) [0|65535] ""  IPC
+ SG_ IPC_NM_H : 39|32@0+ (1,0) [0|65535] ""  IPC
+
+BO_ 1587 IPC_633_NM: 8 IPC
+ SG_ ActiveWakeupBit : 12|1@0+ (1,0) [0|1] "I" Vector__XXX
+ SG_ RepeatSts : 16|1@0+ (1,0) [0|1] "I" Vector__XXX
+ SG_ RepeatMessageRequestBit1 : 8|1@0+ (1,0) [0|1] "I" Vector__XXX
+ SG_ NMWakeupStype : 55|4@0+ (1,0) [0|15] "I" Vector__XXX
+ SG_ NMWakeupSource : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ NMWakeupPower : 51|4@0+ (1,0) [0|15] "¡ª" Vector__XXX
+ SG_ NMNode : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+
+
+
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 100000;
+BA_DEF_ BO_  "NmMessage" ENUM  "no","yes";
+BA_DEF_ BO_  "XcpResp" ENUM  "no","yes";
+BA_DEF_ BO_  "XcpReq" ENUM  "no","yes";
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Periodic","Event","Mixed","IfActive","POE","PA";
+BA_DEF_ BO_  "GenMsgStartDelayTime" FLOAT 0 300000;
+BA_DEF_ BO_  "GenMsgCycleTime" FLOAT 0 300000;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "NmMessage" "no";
+BA_DEF_DEF_  "XcpResp" "no";
+BA_DEF_DEF_  "XcpReq" "no";
+BA_DEF_DEF_  "GenMsgSendType" "Periodic";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "BusType" "CAN";
+BA_ "NmMessage" BO_ 1536 1;
+BA_ "NmMessage" BO_ 1587 1;
+BA_ "GenMsgCycleTime" BO_ 1587 10;
+

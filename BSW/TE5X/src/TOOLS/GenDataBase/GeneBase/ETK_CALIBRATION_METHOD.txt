@@ -1,0 +1,99 @@
+/begin CALIBRATION_METHOD
+	"FixedSizeMoveableEmuRAM"  /* Method name     Don't change */
+	1                          /* Method version  Don't change */
+	/begin CALIBRATION_HANDLE
+		0                 /* EmuRAM page identifier */
+		0xFFF84000        /* Original RAM Address */
+		0x4000            /* Page size */
+	/end CALIBRATION_HANDLE
+	/begin CALIBRATION_HANDLE
+		1                 /* EmuRAM page identifier */
+		0xFFF88000        /* Original RAM Address */
+		0x4000            /* Page size */
+	/end CALIBRATION_HANDLE
+	/begin CALIBRATION_HANDLE
+		2                 /* EmuRAM page identifier */
+		0xFFF8C000        /* Original RAM Address */
+		0x4000            /* Page size */
+	/end CALIBRATION_HANDLE
+	/begin CALIBRATION_HANDLE
+		3                 /* EmuRAM page identifier */        
+		0xFFF90000        /* Original RAM Address */    
+		0x4000            /* Page size */
+	/end CALIBRATION_HANDLE
+	/begin CALIBRATION_HANDLE
+		4                 /* EmuRAM page identifier */
+		0xFFF94000        /* Original RAM Address */
+		0x4000            /* Page size */
+	/end CALIBRATION_HANDLE
+	/begin CALIBRATION_HANDLE
+		5                 /* EmuRAM page identifier */			
+		0xFFF98000        /* Original RAM Address */
+		0x4000            /* Page size */		
+	/end CALIBRATION_HANDLE
+	/begin CALIBRATION_HANDLE
+		6                 /* EmuRAM page identifier */			
+		0xFFF9C000        /* Original RAM Address */
+		0x4000            /* Page size */		
+	/end CALIBRATION_HANDLE  
+	/begin CALIBRATION_HANDLE
+		7                 /* EmuRAM page identifier */			
+		0xFFFA0000        /* Original RAM Address */
+		0x4000            /* Page size */		
+	/end CALIBRATION_HANDLE
+	/begin CALIBRATION_HANDLE
+		8                 /* EmuRAM page identifier */			
+		0xFFFA4000        /* Original RAM Address */
+		0x4000            /* Page size */		
+	/end CALIBRATION_HANDLE
+	/begin CALIBRATION_HANDLE
+		9                 /* EmuRAM page identifier */			
+		0xFFFA8000        /* Original RAM Address */
+		0x4000            /* Page size */		
+	/end CALIBRATION_HANDLE
+	/begin CALIBRATION_HANDLE
+		10                /* EmuRAM page identifier */			
+		0xFFFAC000        /* Original RAM Address */
+		0x4000            /* Page size */		
+	/end CALIBRATION_HANDLE
+	/begin CALIBRATION_HANDLE
+		11                /* EmuRAM page identifier */			
+		0xFFFB0000        /* Original RAM Address */
+		0x4000            /* Page size */		
+	/end CALIBRATION_HANDLE
+	/begin CALIBRATION_HANDLE
+		12                /* EmuRAM page identifier */			
+		0xFFFB4000        /* Original RAM Address */
+		0x4000            /* Page size */		
+	/end CALIBRATION_HANDLE  
+	/begin CALIBRATION_HANDLE
+		13                /* EmuRAM page identifier */			
+		0xFFFB8000        /* Original RAM Address */
+		0x4000            /* Page size */		
+	/end CALIBRATION_HANDLE  
+	/begin CALIBRATION_HANDLE
+		14                /* EmuRAM page identifier */			
+		0xFFFBC000        /* Original RAM Address */
+		0x4000            /* Page size */		
+	/end CALIBRATION_HANDLE
+	/begin CALIBRATION_HANDLE
+		15                /* EmuRAM page identifier */			
+		0xFFFC0000        /* Original RAM Address */
+		0x4000            /* Page size */		
+	/end CALIBRATION_HANDLE  
+	/begin CALIBRATION_HANDLE
+		16                /* EmuRAM page identifier */			
+		0xFFFC4000        /* Original RAM Address */
+		0x4000            /* Page size */		
+	/end CALIBRATION_HANDLE  
+	/begin CALIBRATION_HANDLE
+		17                /* EmuRAM page identifier */			
+		0xFFFC8000        /* Original RAM Address */
+		0x4000            /* Page size */		
+	/end CALIBRATION_HANDLE  
+	/begin CALIBRATION_HANDLE
+		18                /* EmuRAM page identifier */			
+		0xFFFCC000        /* Original RAM Address */
+		0x4000            /* Page size */		
+	/end CALIBRATION_HANDLE
+/end CALIBRATION_METHOD

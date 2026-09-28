@@ -1,0 +1,807 @@
+/******************************************************************************/
+/*                                                                            */
+/* !Layer           : SRV                                                     */
+/*                                                                            */
+/* !Component       : FAULT                                                   */
+/* !Description     :                                                         */
+/*                                                                            */
+/* !File            : FAULT_FF.oil                                            */
+/*                                                                            */
+/* !Scope           : Public                                                  */
+/*                                                                            */
+/* !Target          : All                                                     */
+/*                                                                            */
+/* !Vendor          : invt                                                    */
+/*                                                                            */
+/* Coding language  : OIL                                                     */
+/*                                                                            */
+/* COPYRIGHT 2011 invt                                                        */
+/* all rights reserved                                                        */
+/*                                                                            */
+/******************************************************************************/
+/* SVN Information                                                           */
+/* $Archive:                                                                 $*/
+/* $Revision::            $$Author::                  $$Date::               $*/
+/******************************************************************************/
+
+OPTION opt 
+{ 
+/*******************************************************************************
+; les options par defaut ont les valeurs suivantes : (cf. Panne.stx) 
+;
+;  GROUPE = "Diagnostic_9";
+;  GROUPE_1 = "d_Diagnostic";
+;  d'autres options peuvent etre rajoutees suivant les besoins (ne pas 
+;  oublier de les definir dans le fichier Fault.stx qui contient la 
+;  definition de la syntaxe utilisee)
+;******************************************************************************/
+   GROUPE             = "DSM";
+   GROUPE_1           = "FAULT_FF";
+   ENDIANNESS         = INTEL;
+   FREEZEFRAME_LENGTH = 350;
+};
+
+/*******************************************************************************
+;*******************************************************************************
+;
+;Common fault context (FF1): 350 bytes
+;                                                     
+;*******************************************************************************
+;******************************************************************************/ 
+FREEZEFRAME   FF1
+{
+     DTC_FAILTYPE = 0x01;
+     ITEM = ITEM {
+                    NAME         = "Item_0xDF20";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0xDF21";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };	      
+	 ITEM = ITEM {
+                    NAME         = "Item_0xDF23";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+	 ITEM = ITEM {
+                    NAME         = "Item_0xDF29";
+                    API_TYPE     = "uint8";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };	      
+	 ITEM = ITEM {
+                    NAME         = "Item_0xDF2A";
+                    API_TYPE     = "uint8";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };	 			 
+     ITEM = ITEM {
+                    NAME         = "Item_0xDF2C";
+                    API_TYPE     = "uint8";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };		 
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D01";
+                    API_TYPE     = "uint8";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D02";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D03";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D04";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D05";
+                    API_TYPE     = "uint8";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D06";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D07";
+                    API_TYPE     = "uint8";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D08";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D09";
+                    API_TYPE     = "uint8";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D0A";
+                    API_TYPE     = "uint8";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D0B";
+                    API_TYPE     = "uint8";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D0C";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D0C_1";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D0C_2";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D0D";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D0E";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D0F";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D13";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D14";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D15";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D16";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D17";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D18";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D19";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D1A";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D1B";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D1C";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D1D";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D1E";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D1F";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D20";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D21";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D22";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D23";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D24";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D25";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D26";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D27";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D28";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x0D29";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D01";
+                    API_TYPE     = "uint8";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D02";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D03";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D04";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D05";
+                    API_TYPE     = "uint8";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D06";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D07";
+                    API_TYPE     = "uint8";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D08";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D09";
+                    API_TYPE     = "uint8";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D0A";
+                    API_TYPE     = "uint8";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D0B";
+                    API_TYPE     = "uint8";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D0C";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D0C_1";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D0C_2";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D0D";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D0E";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D0F";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D13";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D14";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D15";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D16";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D17";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D18";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D19";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D1A";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D1B";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D1C";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D1D";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D1E";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D1F";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D20";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D21";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D22";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D23";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D24";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D25";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D26";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D27";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D28";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x1D29";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x2D02";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x2D03";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x2D04";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x2D05";
+                    API_TYPE     = "uint8";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x2D06";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x2D07";
+                    API_TYPE     = "uint8";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x2D08";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x2D0E";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x2D13";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x2D14";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x2D15";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x2D1C";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x2D1D";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x2D1E";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x2D1F";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x2D20";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x2D21";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x2D22";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x2D25";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x2D26";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x3D02";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x3D03";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x3D04";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x3D05";
+                    API_TYPE     = "uint8";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x3D06";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x3D07";
+                    API_TYPE     = "uint8";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x3D08";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x3D0E";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x3D13";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x3D14";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x3D15";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x3D1C";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x3D1D";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x3D1E";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x3D1F";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x3D20";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x3D21";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x3D22";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x3D25";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x3D26";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x4D27";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x4D28";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x4D29";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x4D2A";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x4D2B";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x4D2C";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x4D2D";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x4D2E";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x4D2F";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x4D30";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x4D31";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x4D32";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x4D33";
+                    API_TYPE     = "uint8";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x4D34";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x4D35";
+                    API_TYPE     = "uint8";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x4D36";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x4D37";
+                    API_TYPE     = "uint8";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x4D38";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x4D39";
+                    API_TYPE     = "uint8";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x4D3A";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x4D3B";
+                    API_TYPE     = "uint8";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x4D3C";
+                    API_TYPE     = "uint16";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+     ITEM = ITEM {
+                    NAME         = "Item_0x4D3D";
+                    API_TYPE     = "uint8";
+                    ITEMPROPERTY = UNQUEUED {FILTER  = ALWAYS;};
+                 };
+};
+
+/*******************************************************************************
+;*******************************************************************************
+;
+;*******************************************************************************
+;******************************************************************************/ 
+
+/*------------------------------- end of file --------------------------------*/

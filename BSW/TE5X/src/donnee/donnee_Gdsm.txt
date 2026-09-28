@@ -1,0 +1,7 @@
+Nom_donnée|Type|Nom_module|Public|Nb_lignes|Nb_colonnes|Label_père|Offset|Masque_accès|Affichage|Unité|Fonction_transfert_ades|Coefficient_a|Coefficient_b|Groupe|Groupe_1|Groupe_2|Alias_1|Alias_2|Genre|Variable_indice_ligne|Variable_indice_colonne|Fonction_transfert_ligne|Fonction_transfert_colonne|Table_breakpoint_ligne|Table_breakpoint_colonne|Référence_spécification|Recuperable|Modifiable|Fournisseur|Responsable|Valeurs|Visualisable_ADES|Donnée_a_supprimer|Validation|Commentaires|Volatile|MinDecValue|MaxDecValue|MinPhysValue|MaxPhysValue|Def_Eval|MemSec
+GFAULT_FAILURE_LEVEL_0|uint8|GDSM|1|0|0|GFAULT_FAILURE_LEVEL_0|0|0|Phys|-|2|0||Diagnostic|Diagnostic||GFAULT_FAILURE_LEVEL_0||3||||||||0|1|||0|0|0|0||0||||||
+GFaultEraseRequest|uint16|GDSM|1|0|0|GFaultEraseRequest|0|0|Hexa|-||||Diagnostic|Diagnostic||GFaultEraseRequest||1||||||||0|1||||1|0|0||0||||||
+GFaultFailureLevel|uint8|GDSM|1|0|0|GFaultFailureLevel|0|0|Phys|-|0|||Diagnostic|Diagnostic||GFaultFailureLevel||1||||||||0|1||||1|0|0||0||||||
+GDSM_DtcStatusNvm|uint8|GDSM|1|1|10|GDSM_DtcStatusNvm|0|0|Phys|-|1|1|0|Diagnostic|Diagnostic||GDSM_DtcStatusNvm||4||*||*||*||0|1||||1|0|0|DID 120 -> DTC Setting Control|0|||||0|
+GDSM_DtcNumber|uint32|GDSM|1|0|10|GDSM_DtcNumber|0|0|Hexa|-||||Diagnostic|Diagnostic||GDSM_DtcNumber||1||||||||0|1||||1|0|0||0||||||
+GFaultEraseRequestC|uint16|GDSM|0|0|0|GFaultEraseRequestC|0|0|Hexa|-||||Diagnostic|Diagnostic||GFaultEraseRequestC||2|||||||NONE|1|1|||0x0000|1|0|0||0|||||0| 

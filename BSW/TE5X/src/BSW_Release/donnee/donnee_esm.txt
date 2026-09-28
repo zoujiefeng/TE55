@@ -1,0 +1,11 @@
+Nom_donnée|Type|Nom_module|Public|Nb_lignes|Nb_colonnes|Label_père|Offset|Masque_accès|Affichage|Unité|Fonction_transfert_ades|Coefficient_a|Coefficient_b|Groupe|Groupe_1|Groupe_2|Alias_1|Alias_2|Genre|Variable_indice_ligne|Variable_indice_colonne|Fonction_transfert_ligne|Fonction_transfert_colonne|Table_breakpoint_ligne|Table_breakpoint_colonne|Référence_spécification|Recuperable|Modifiable|Fournisseur|Responsable|Valeurs|Visualisable_ADES|Donnée_a_supprimer|Validation|Commentaires
+ESM_EcuState|uint8|ESM|1|0|0|ESM_EcuState|0|0|Bin|-||||Application|Application||ESM_EcuState||1||||||||0|0||||1|0|0|
+ESM_STARTUP_I_MODE|bool|ESM|1|0|0|ESM_EcuState|0|0|Phys|etat|2|0||Application|Application||ESM_STARTUP_I_MODE||4||||||||0|0||||1|0|0|
+ESM_STARTUP_II_MODE|bool|ESM|1|0|0|ESM_EcuState|0|1|Phys|etat|2|1||Application|Application||ESM_STARTUP_II_MODE||4||||||||0|0||||1|0|0|
+ESM_OPERATIONAL_MODE|bool|ESM|1|0|0|ESM_EcuState|0|2|Phys|etat|2|2||Application|Application||ESM_OPERATIONAL_MODE||4||||||||0|0||||1|0|0|
+ESM_POWERLATCH_MODE|bool|ESM|1|0|0|ESM_EcuState|0|3|Phys|etat|2|3||Application|Application||ESM_POWERLATCH_MODE||4||||||||0|0||||1|0|0|
+ESM_POWER_OFF_MODE|bool|ESM|1|0|0|ESM_EcuState|0|4|Phys|etat|2|4||Application|Application||ESM_POWER_OFF_MODE||4||||||||0|0||||1|0|0|
+ESM_u16PowerLatchTempo|uint16|ESM|0|0|0|ESM_u16PowerLatchTempo|0|0|Phys|ms|1|5|0|Application|Application||ESM_u16PowerLatchTempo||1||||||||0|1||||1|0|0|
+ESM_u16PowerLatchTempoC|uint16|ESM|0|0|0|ESM_u16PowerLatchTempoC|0|0|Phys|ms|1|5|0|Application|Application||ESM_u16PowerLatchTempoC||2|||||||NONE|1|1|||0|1|0|0|
+ESM_u8RestartDelayCntC|uint8|ESM|0|0|0|ESM_u8RestartDelayCntC|0|0|Phys|ms|1|5|0|Application|Application||ESM_u8RestartDelayCntC||2|||||||NONE|1|1|||0|1|0|0|
+

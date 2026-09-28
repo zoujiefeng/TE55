@@ -1,0 +1,165 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+        CM_
+        BA_DEF_
+        BA_
+        VAL_
+        CAT_DEF_
+        CAT_
+        FILTER
+        BA_DEF_DEF_
+        EV_DATA_
+        ENVVAR_DATA_
+        SGTYPE_
+        SGTYPE_VAL_
+        BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: MCU
+
+
+BO_ 2365524176 MC2: 8 MCU
+ SG_ MC2_MCU1_Mor_Cmd : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MC2_MCU1_Mor_Fault_Reset : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ MC2_TCU3_Mor_Con_Mode : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ MC2_MCU1_CycMsg_Num : 4|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ MC2_MCU1_CycMsg_LimitHigh : 8|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ MC2_MCU1_CycMsg_LimitLow : 20|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ MC2_MC1_Mor_Tgt_Trq : 32|16@1+ (1,-5000) [-5000|5000] "" Vector__XXX
+ SG_ MC2_MC1_Mor_Tgt_Spd : 48|16@1+ (1,-15000) [-15000|15000] "" Vector__XXX
+
+BO_ 2365523920 CCVS: 8 MCU
+ SG_ CCVS_HCU1_PKB : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CCVS_Allow_Pulse_Discharge_Current : 4|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ CCVS_Allow_Pulse_Charge_Current : 16|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ CCVS_HCU1_BrakePed : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CCVS_HCU1_MCU_LimitLowTrq : 32|16@1+ (1,-5000) [-5000|0] "" Vector__XXX
+ SG_ CCVS_HCU1_MCU_LimitHighTrq : 48|16@1+ (1,0) [0|5000] "" Vector__XXX
+
+BO_ 2365523664 TS1: 8 MCU
+ SG_ TS1_HCU_GearNum : 0|8@1+ (1,-125) [0|130] "" Vector__XXX
+ SG_ TS1_HCU_Targear_State : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ TS1_HCU_Gearshift_State : 14|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TS1_HCU_HandleShift : 28|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ TS1_HCU_SelfLearningSignal : 38|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TS1_HCU_PTOWorkState : 46|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TS1_HCU_OutputShaftSpeed : 48|16@1+ (0.125,0) [0|8031.875] "" Vector__XXX
+
+BO_ 2365522696 MS0: 8 MCU
+ SG_ MS0_TS3_Motor_Out_Current : 32|16@1+ (0.1,0) [0|6553.5] "" Vector__XXX
+ SG_ MS0_TS3_Mor_Con_Mode : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ MS0_TS3_Motor_Speed : 0|16@1+ (1,-15000) [-15000|15000] "" Vector__XXX
+ SG_ MS0_TS3_Motor_Torque : 16|16@1+ (1,-5000) [-5000|5000] "" Vector__XXX
+
+BO_ 2365521928 MS1: 8 MCU
+ SG_ MS1_TS3_Motor_DC_Current : 0|16@1+ (0.1,-1000) [-1000|5553.5] "A" Vector__XXX
+ SG_ MS1_TS3_Motor_AC_Voltage : 16|16@1+ (0.1,0) [0|6553.5] "V" Vector__XXX
+ SG_ MS1_TS3_Motor_Speed : 32|16@1+ (0.25,0) [0|16383.75] "rpm" Vector__XXX
+ SG_ MS1_TS3_Motor_Torque : 48|16@1+ (1,0) [0|65535] "Nm" Vector__XXX
+
+BO_ 2365522184 MS2: 8 MCU
+ SG_ MS2_TS3_Motor_WORKfeed : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ MS2_TS3_Motor_WORKmodefeed : 4|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ MS2_TS3_Motor_MaxDrviTrqLmt : 8|8@1+ (16,0) [0|4000] "" Vector__XXX
+ SG_ MS2_TS3_Motor_MaxBrkiTrqLmt : 16|8@1+ (16,0) [0|4000] "" Vector__XXX
+ SG_ MS2_TS3_Motor_MotMaxspdLmt : 24|8@1+ (50,0) [0|12750] "" Vector__XXX
+ SG_ MS2_TS3_Motor_MotTemp : 32|8@1+ (1,-80) [-80|175] "" Vector__XXX
+ SG_ MS2_TS3_Motor_MotControllerTemp : 40|8@1+ (1,-80) [-80|175] "" Vector__XXX
+ SG_ MS2_TS3_Motor_MotContrlReqInstruction : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ MS2_TS3_Motor_LiveCounter : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ MS2_TS3_Motor_CanVersion : 56|8@1+ (0.01,0) [1|2.5] "" Vector__XXX
+
+BO_ 2365522440 MDM1: 8 MCU
+ SG_ MDM1_MCU_Err_level : 22|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ MDM1_MCU_Err_code : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2365522697 MS3: 8 MCU
+ SG_ MS3_TS3_DC_NTC_Temp : 0|8@1+ (1,-80) [-80|175] "" Vector__XXX
+
+
+
+CM_ SG_ 2365524176 MC2_MCU1_Mor_Cmd "";
+CM_ SG_ 2365524176 MC2_MCU1_Mor_Fault_Reset "";
+CM_ SG_ 2365524176 MC2_TCU3_Mor_Con_Mode "";
+CM_ SG_ 2365524176 MC2_MCU1_CycMsg_Num "";
+CM_ SG_ 2365524176 MC2_MCU1_CycMsg_LimitHigh "";
+CM_ SG_ 2365524176 MC2_MCU1_CycMsg_LimitLow "";
+CM_ SG_ 2365524176 MC2_MC1_Mor_Tgt_Trq "";
+CM_ SG_ 2365524176 MC2_MC1_Mor_Tgt_Spd "";
+CM_ SG_ 2365523920 CCVS_HCU1_PKB "";
+CM_ SG_ 2365523920 CCVS_Allow_Pulse_Discharge_Current "";
+CM_ SG_ 2365523920 CCVS_Allow_Pulse_Charge_Current "";
+CM_ SG_ 2365523920 CCVS_HCU1_BrakePed "";
+CM_ SG_ 2365523920 CCVS_HCU1_MCU_LimitLowTrq "";
+CM_ SG_ 2365523920 CCVS_HCU1_MCU_LimitHighTrq "";
+CM_ SG_ 2365523664 TS1_HCU_GearNum "";
+CM_ SG_ 2365523664 TS1_HCU_Targear_State "";
+CM_ SG_ 2365523664 TS1_HCU_Gearshift_State "";
+CM_ SG_ 2365523664 TS1_HCU_HandleShift "";
+CM_ SG_ 2365523664 TS1_HCU_SelfLearningSignal "";
+CM_ SG_ 2365523664 TS1_HCU_PTOWorkState "";
+CM_ SG_ 2365523664 TS1_HCU_OutputShaftSpeed "";
+CM_ SG_ 2365522696 MS0_TS3_Motor_Out_Current "电机转速";
+CM_ SG_ 2365522696 MS0_TS3_Mor_Con_Mode "电机扭矩";
+CM_ SG_ 2365522696 MS0_TS3_Motor_Speed "";
+CM_ SG_ 2365522696 MS0_TS3_Motor_Torque "";
+CM_ SG_ 2365521928 MS1_TS3_Motor_DC_Current "";
+CM_ SG_ 2365521928 MS1_TS3_Motor_AC_Voltage "";
+CM_ SG_ 2365521928 MS1_TS3_Motor_Speed "";
+CM_ SG_ 2365521928 MS1_TS3_Motor_Torque "";
+CM_ SG_ 2365522184 MS2_TS3_Motor_WORKfeed "";
+CM_ SG_ 2365522184 MS2_TS3_Motor_WORKmodefeed "";
+CM_ SG_ 2365522184 MS2_TS3_Motor_MaxDrviTrqLmt "";
+CM_ SG_ 2365522184 MS2_TS3_Motor_MaxBrkiTrqLmt "";
+CM_ SG_ 2365522184 MS2_TS3_Motor_MotMaxspdLmt "";
+CM_ SG_ 2365522184 MS2_TS3_Motor_MotTemp "";
+CM_ SG_ 2365522184 MS2_TS3_Motor_MotControllerTemp "";
+CM_ SG_ 2365522184 MS2_TS3_Motor_MotContrlReqInstruction "";
+CM_ SG_ 2365522184 MS2_TS3_Motor_LiveCounter "";
+CM_ SG_ 2365522184 MS2_TS3_Motor_CanVersion "";
+CM_ SG_ 2365522440 MDM1_MCU_Err_level "";
+CM_ SG_ 2365522440 MDM1_MCU_Err_code "";
+CM_ SG_ 2365522697 MS3_TS3_DC_NTC_Temp "";
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0; 
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0; 
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","not_used","not_used","not_used","not_used","Cyclic","not_used","IfActive","NoMsgSendType"; 
+BA_DEF_ BU_  "NmStationAddress" HEX 0 0; 
+BA_DEF_  "DBName" STRING ; 
+BA_DEF_  "BusType" STRING ; 
+BA_DEF_DEF_  "GenSigSendType" "Cyclic"; 
+BA_DEF_DEF_  "GenSigInactiveValue" 0; 
+BA_DEF_DEF_  "GenMsgCycleTime" 0; 
+BA_DEF_DEF_  "GenMsgSendType" "NoMsgSendType"; 
+BA_DEF_DEF_  "NmStationAddress" 0; 
+BA_DEF_DEF_  "DBName" ""; 
+BA_DEF_DEF_  "BusType" "CAN";
+BA_ "DBName" "MAIN_MSG_Auto_Can02";
+BA_ "GenMsgCycleTime" BO_ 2365524176 10;
+BA_ "GenMsgCycleTime" BO_ 2365523920 100;
+BA_ "GenMsgCycleTime" BO_ 2365523664 20;
+BA_ "GenMsgCycleTime" BO_ 2365522696 10;
+BA_ "GenMsgCycleTime" BO_ 2365521928 20;
+BA_ "GenMsgCycleTime" BO_ 2365522184 50;
+BA_ "GenMsgCycleTime" BO_ 2365522440 1000;
+BA_ "GenMsgCycleTime" BO_ 2365522697 500;
+VAL_ 2365524176 MC2_MCU1_CycMsg_LimitLow  ;
+

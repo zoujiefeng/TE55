@@ -1,0 +1,31 @@
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./bsw done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./bswcdd done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./main done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./rte done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./os done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./asw done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./Targets done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./Integration done
+scons: done reading SConscript files.
+scons: Building targets ...
+Compiling Targets\TC38xx\MCAL\MCAL_Gen\src\Adc_PBcfg.c
+Compiling Targets\TC38xx\MCAL\MCAL_Gen\src\Can_17_McmCan_PBcfg.c
+scons: *** [output\objs\Targets\TC38xx\MCAL\MCAL_Gen\src\Adc_PBcfg.o] 
+scons: *** [output\objs\Targets\TC38xx\MCAL\MCAL_Gen\src\Can_17_McmCan_PBcfg.o] 
+scons: building terminated because of errors.

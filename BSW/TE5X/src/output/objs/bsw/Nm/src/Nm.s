@@ -1,0 +1,476 @@
+	.file	"Nm.c"
+.section .text,"ax",@progbits
+.Ltext0:
+.section .text.Nm_Init,"ax",@progbits
+	.align 1
+	.global	Nm_Init
+	.type	Nm_Init, @function
+Nm_Init:
+.LFB27:
+	.file 1 "bsw\\Nm\\src\\Nm.c"
+	.loc 1 45 0
+.LVL0:
+	ret
+.LFE27:
+	.size	Nm_Init, .-Nm_Init
+.section .debug_frame,"",@progbits
+.Lframe0:
+	.uaword	.LECIE0-.LSCIE0
+.LSCIE0:
+	.uaword	0xffffffff
+	.byte	0x1
+	.string	""
+	.uleb128 0x1
+	.sleb128 1
+	.byte	0x1b
+	.byte	0xc
+	.uleb128 0x1a
+	.uleb128 0
+	.align 2
+.LECIE0:
+.LSFDE0:
+	.uaword	.LEFDE0-.LASFDE0
+.LASFDE0:
+	.uaword	.Lframe0
+	.uaword	.LFB27
+	.uaword	.LFE27-.LFB27
+	.align 2
+.LEFDE0:
+.section .text,"ax",@progbits
+.Letext0:
+	.file 2 ".\\output\\inc/..\\..\\bsw\\Nm\\api\\NmStack_Types.h"
+	.file 3 ".\\output\\inc/..\\..\\bsw\\integration\\Platform_Types.h"
+	.file 4 ".\\output\\inc/..\\..\\bsw\\ComStack\\api\\ComStack_Types.h"
+	.file 5 ".\\output\\inc/..\\..\\bsw\\Nm\\Nm_Cfg.h"
+	.file 6 ".\\output\\inc/..\\..\\bsw\\Nm\\api\\Nm.h"
+.section .debug_info,"",@progbits
+.Ldebug_info0:
+	.uaword	0x4a4
+	.uahalf	0x2
+	.uaword	.Ldebug_abbrev0
+	.byte	0x4
+	.uleb128 0x1
+	.ascii	"GNU C 4.9.4 build on 2020-09-01 -mli"
+	.string	"cense-dir=s:\\hightec\\toolchains\\tricore\\v4.9.4.1\\bin\\../lib/gcc/tricore/4.9.4/../../../../licenses -mcpu=tc38xx -mpragma-data-sections -mtc162 -maligned-data-sections -gdwarf-2 -O3 -fno-builtin -fno-common -ffunction-sections -fdata-sections -fshort-double"
+	.byte	0x1
+	.string	"bsw\\Nm\\src\\Nm.c"
+	.string	"D:\\\\1_OutProjest\\\\dongfeng\\\\90080-05101\\\\trunk\\\\BSW\\\\20Proj\\\\BSW\\\\TE5X\\\\src"
+	.uaword	.Ldebug_ranges0+0
+	.uaword	0
+	.uaword	0
+	.uaword	.Ldebug_line0
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x2
+	.byte	0x75
+	.uaword	0x1d0
+	.uleb128 0x3
+	.string	"NM_ACTIVE_CHANNEL"
+	.sleb128 0
+	.uleb128 0x3
+	.string	"NM_PASSIVE_CHANNEL"
+	.sleb128 1
+	.byte	0
+	.uleb128 0x4
+	.string	"Nm_ChannelType_ten"
+	.byte	0x2
+	.byte	0x78
+	.uaword	0x19e
+	.uleb128 0x5
+	.byte	0x1
+	.byte	0x6
+	.string	"signed char"
+	.uleb128 0x4
+	.string	"uint8"
+	.byte	0x3
+	.byte	0x51
+	.uaword	0x206
+	.uleb128 0x5
+	.byte	0x1
+	.byte	0x8
+	.string	"unsigned char"
+	.uleb128 0x5
+	.byte	0x2
+	.byte	0x5
+	.string	"short int"
+	.uleb128 0x5
+	.byte	0x2
+	.byte	0x7
+	.string	"short unsigned int"
+	.uleb128 0x5
+	.byte	0x4
+	.byte	0x5
+	.string	"int"
+	.uleb128 0x5
+	.byte	0x8
+	.byte	0x5
+	.string	"long long int"
+	.uleb128 0x4
+	.string	"uint32"
+	.byte	0x3
+	.byte	0x6a
+	.uaword	0x260
+	.uleb128 0x5
+	.byte	0x4
+	.byte	0x7
+	.string	"unsigned int"
+	.uleb128 0x5
+	.byte	0x8
+	.byte	0x7
+	.string	"long long unsigned int"
+	.uleb128 0x5
+	.byte	0x4
+	.byte	0x4
+	.string	"float"
+	.uleb128 0x5
+	.byte	0x4
+	.byte	0x4
+	.string	"double"
+	.uleb128 0x4
+	.string	"boolean"
+	.byte	0x3
+	.byte	0x80
+	.uaword	0x206
+	.uleb128 0x5
+	.byte	0x4
+	.byte	0x5
+	.string	"long int"
+	.uleb128 0x5
+	.byte	0x4
+	.byte	0x7
+	.string	"long unsigned int"
+	.uleb128 0x4
+	.string	"NetworkHandleType"
+	.byte	0x4
+	.byte	0x4f
+	.uaword	0x1f9
+	.uleb128 0x5
+	.byte	0x4
+	.byte	0x7
+	.string	"sizetype"
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x5
+	.byte	0xbe
+	.uaword	0x30d
+	.uleb128 0x3
+	.string	"NM_BUS_TYPE_CAN"
+	.sleb128 0
+	.byte	0
+	.uleb128 0x4
+	.string	"Nm_BusType_ten"
+	.byte	0x5
+	.byte	0xc0
+	.uaword	0x2f2
+	.uleb128 0x6
+	.string	"Nm_TimerType"
+	.byte	0x6
+	.uahalf	0x1ff
+	.uaword	0x252
+	.uleb128 0x7
+	.byte	0x10
+	.byte	0x6
+	.uahalf	0x215
+	.uaword	0x455
+	.uleb128 0x8
+	.string	"ShutdownDelay"
+	.byte	0x6
+	.uahalf	0x217
+	.uaword	0x323
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x8
+	.string	"BusNmType"
+	.byte	0x6
+	.uahalf	0x21b
+	.uaword	0x30d
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.uleb128 0x8
+	.string	"NmChannelType"
+	.byte	0x6
+	.uahalf	0x21c
+	.uaword	0x1d0
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x5
+	.uleb128 0x8
+	.string	"ClusterIdx"
+	.byte	0x6
+	.uahalf	0x21d
+	.uaword	0x2cd
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x6
+	.uleb128 0x8
+	.string	"comMHandle"
+	.byte	0x6
+	.uahalf	0x21e
+	.uaword	0x2cd
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x7
+	.uleb128 0x8
+	.string	"NmChannelSleepMaster"
+	.byte	0x6
+	.uahalf	0x21f
+	.uaword	0x29d
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.uleb128 0x8
+	.string	"NmSynchronizingNetwork"
+	.byte	0x6
+	.uahalf	0x220
+	.uaword	0x29d
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x9
+	.uleb128 0x8
+	.string	"NmNodeDetectionEnabled"
+	.byte	0x6
+	.uahalf	0x221
+	.uaword	0x29d
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xa
+	.uleb128 0x8
+	.string	"NmNodeIdEnabled"
+	.byte	0x6
+	.uahalf	0x222
+	.uaword	0x29d
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xb
+	.uleb128 0x8
+	.string	"NmRepeatMsgIndEnabled"
+	.byte	0x6
+	.uahalf	0x223
+	.uaword	0x29d
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xc
+	.byte	0
+	.uleb128 0x6
+	.string	"Nm_ConfigType"
+	.byte	0x6
+	.uahalf	0x224
+	.uaword	0x338
+	.uleb128 0x9
+	.byte	0x1
+	.string	"Nm_Init"
+	.byte	0x1
+	.byte	0x2c
+	.byte	0x1
+	.uaword	.LFB27
+	.uaword	.LFE27
+	.byte	0x2
+	.byte	0x8a
+	.sleb128 0
+	.byte	0x1
+	.uaword	0x49c
+	.uleb128 0xa
+	.string	"ConfigPtr"
+	.byte	0x1
+	.byte	0x2c
+	.uaword	0x49c
+	.byte	0x1
+	.byte	0x64
+	.byte	0
+	.uleb128 0xb
+	.byte	0x4
+	.uaword	0x4a2
+	.uleb128 0xc
+	.uaword	0x455
+	.byte	0
+.section .debug_abbrev,"",@progbits
+.Ldebug_abbrev0:
+	.uleb128 0x1
+	.uleb128 0x11
+	.byte	0x1
+	.uleb128 0x25
+	.uleb128 0x8
+	.uleb128 0x13
+	.uleb128 0xb
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x1b
+	.uleb128 0x8
+	.uleb128 0x55
+	.uleb128 0x6
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x52
+	.uleb128 0x1
+	.uleb128 0x10
+	.uleb128 0x6
+	.byte	0
+	.byte	0
+	.uleb128 0x2
+	.uleb128 0x4
+	.byte	0x1
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x28
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x1c
+	.uleb128 0xd
+	.byte	0
+	.byte	0
+	.uleb128 0x4
+	.uleb128 0x16
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x5
+	.uleb128 0x24
+	.byte	0
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3e
+	.uleb128 0xb
+	.uleb128 0x3
+	.uleb128 0x8
+	.byte	0
+	.byte	0
+	.uleb128 0x6
+	.uleb128 0x16
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x7
+	.uleb128 0x13
+	.byte	0x1
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x8
+	.uleb128 0xd
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x38
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0x9
+	.uleb128 0x2e
+	.byte	0x1
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x12
+	.uleb128 0x1
+	.uleb128 0x40
+	.uleb128 0xa
+	.uleb128 0x2117
+	.uleb128 0xc
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0xa
+	.uleb128 0x5
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0xb
+	.uleb128 0xf
+	.byte	0
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0xc
+	.uleb128 0x26
+	.byte	0
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.byte	0
+.section .debug_aranges,"",@progbits
+	.uaword	0x1c
+	.uahalf	0x2
+	.uaword	.Ldebug_info0
+	.byte	0x4
+	.byte	0
+	.uahalf	0
+	.uahalf	0
+	.uaword	.LFB27
+	.uaword	.LFE27-.LFB27
+	.uaword	0
+	.uaword	0
+.section .debug_ranges,"",@progbits
+.Ldebug_ranges0:
+	.uaword	.LFB27
+	.uaword	.LFE27
+	.uaword	0
+	.uaword	0
+.section .debug_line,"",@progbits
+.Ldebug_line0:
+.section .debug_str,"",@progbits
+	.ident	"GCC: (HighTec Release HDP-v4.9.4.1-11fcedf) 4.9.4 build on 2020-09-01"

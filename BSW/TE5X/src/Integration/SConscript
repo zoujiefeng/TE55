@@ -1,0 +1,170 @@
+#Generate User: 01004867
+#Generate Time: 2026-09-24 17:27:46
+
+Import('*')
+import re,sys, os, glob, fnmatch
+import prebuild
+objects = [
+]
+# INCLUDE DIRECTORIES
+# Implements: COR010
+includes = [
+	'',
+	'ecu',
+	'Infineon/iLLD/TC38A/Tricore/Ccu6/PwmHl',
+	'Infineon/iLLD/TC38A/Tricore/Ccu6/Std',
+	'Infineon/iLLD/TC38A/Tricore/Ccu6/TimerWithTrigger',
+	'Infineon/iLLD/TC38A/Tricore/Cpu/Irq',
+	'Infineon/iLLD/TC38A/Tricore/Cpu/Std',
+	'Infineon/iLLD/TC38A/Tricore/Cpu/Trap',
+	'Infineon/iLLD/TC38A/Tricore/Evadc/Adc',
+	'Infineon/iLLD/TC38A/Tricore/Evadc/Std',
+	'Infineon/iLLD/TC38A/Tricore/Gtm/Atom/Dtm_PwmHl',
+	'Infineon/iLLD/TC38A/Tricore/Gtm/Atom/Pwm',
+	'Infineon/iLLD/TC38A/Tricore/Gtm/Atom/PwmHl',
+	'Infineon/iLLD/TC38A/Tricore/Gtm/Atom/Timer',
+	'Infineon/iLLD/TC38A/Tricore/Gtm/Pwm',
+	'Infineon/iLLD/TC38A/Tricore/Gtm/Std',
+	'Infineon/iLLD/TC38A/Tricore/Gtm/Tim/In',
+	'Infineon/iLLD/TC38A/Tricore/Gtm/Tim/Timer',
+	'Infineon/iLLD/TC38A/Tricore/Gtm/Tom/Dtm_PwmHl',
+	'Infineon/iLLD/TC38A/Tricore/Gtm/Tom/Pwm',
+	'Infineon/iLLD/TC38A/Tricore/Gtm/Tom/PwmHl',
+	'Infineon/iLLD/TC38A/Tricore/Gtm/Tom/Timer',
+	'Infineon/iLLD/TC38A/Tricore/Gtm/Trig',
+	'Infineon/iLLD/TC38A/Tricore',
+	'Infineon/iLLD/TC38A/Tricore/Pms/Std',
+	'Infineon/iLLD/TC38A/Tricore/Port/Std',
+	'Infineon/iLLD/TC38A/Tricore/Scu/Std',
+	'Infineon/iLLD/TC38A/Tricore/Src/Std',
+	'Infineon/iLLD/TC38A/Tricore/_Impl',
+	'Infineon/iLLD/TC38A/Tricore/_PinMap',
+	'Infineon/Infra/Platform/Tricore/Compilers',
+	'Infineon/Infra/Sfr/TC38A/_Reg',
+	'Infineon/Service/CpuGeneric/StdIf',
+	'Infineon/Service/CpuGeneric/_Utilities',
+	'mcal',
+	'os',
+	'rte',
+	'TC38x',
+]#Include Files
+# SOURCE FILES
+sources = [
+	'ecu/BswM_Callout_Stub.c',
+	'ecu/CanIf_Cdd_Cbk.c',
+	'ecu/EcuM_integration.c',
+	'ecu/EcuM_User.c',
+	'ecu/ECU_Startup.c',
+	'ecu/FBL_DataMPrvCfg.c',
+	'ecu/Integration.c',
+	'ecu/LogisticData.c',
+	'ecu/Nvm_MultiBlockCallback.c',
+	'ecu/SchM.c',
+	'ecu/TimingCalculation.c',
+	'Infineon/iLLD/TC38A/Tricore/Ccu6/PwmHl/IfxCcu6_PwmHl.c',
+	'Infineon/iLLD/TC38A/Tricore/Ccu6/Std/IfxCcu6.c',
+	'Infineon/iLLD/TC38A/Tricore/Ccu6/TimerWithTrigger/IfxCcu6_TimerWithTrigger.c',
+	'Infineon/iLLD/TC38A/Tricore/Cpu/Irq/IfxCpu_Irq.c',
+	'Infineon/iLLD/TC38A/Tricore/Cpu/Std/IfxCpu.c',
+	'Infineon/iLLD/TC38A/Tricore/Evadc/Adc/IfxEvadc_Adc.c',
+	'Infineon/iLLD/TC38A/Tricore/Evadc/Std/IfxEvadc.c',
+	'Infineon/iLLD/TC38A/Tricore/Gtm/Atom/Dtm_PwmHl/IfxGtm_Atom_Dtm_PwmHl.c',
+	'Infineon/iLLD/TC38A/Tricore/Gtm/Atom/Pwm/IfxGtm_Atom_Pwm.c',
+	'Infineon/iLLD/TC38A/Tricore/Gtm/Atom/PwmHl/IfxGtm_Atom_PwmHl.c',
+	'Infineon/iLLD/TC38A/Tricore/Gtm/Atom/Timer/IfxGtm_Atom_Timer.c',
+	'Infineon/iLLD/TC38A/Tricore/Gtm/Pwm/IfxGtm_Pwm.c',
+	'Infineon/iLLD/TC38A/Tricore/Gtm/Std/IfxGtm.c',
+	'Infineon/iLLD/TC38A/Tricore/Gtm/Std/IfxGtm_Atom.c',
+	'Infineon/iLLD/TC38A/Tricore/Gtm/Std/IfxGtm_Cmu.c',
+	'Infineon/iLLD/TC38A/Tricore/Gtm/Std/IfxGtm_Dpll.c',
+	'Infineon/iLLD/TC38A/Tricore/Gtm/Std/IfxGtm_Dtm.c',
+	'Infineon/iLLD/TC38A/Tricore/Gtm/Std/IfxGtm_Psm.c',
+	'Infineon/iLLD/TC38A/Tricore/Gtm/Std/IfxGtm_Spe.c',
+	'Infineon/iLLD/TC38A/Tricore/Gtm/Std/IfxGtm_Tbu.c',
+	'Infineon/iLLD/TC38A/Tricore/Gtm/Std/IfxGtm_Tim.c',
+	'Infineon/iLLD/TC38A/Tricore/Gtm/Std/IfxGtm_Tom.c',
+	'Infineon/iLLD/TC38A/Tricore/Gtm/Tim/In/IfxGtm_Tim_In.c',
+	'Infineon/iLLD/TC38A/Tricore/Gtm/Tim/Timer/IfxGtm_Tim_Timer.c',
+	'Infineon/iLLD/TC38A/Tricore/Gtm/Tom/Dtm_PwmHl/IfxGtm_Tom_Dtm_PwmHl.c',
+	'Infineon/iLLD/TC38A/Tricore/Gtm/Tom/Pwm/IfxGtm_Tom_Pwm.c',
+	'Infineon/iLLD/TC38A/Tricore/Gtm/Tom/PwmHl/IfxGtm_Tom_PwmHl.c',
+	'Infineon/iLLD/TC38A/Tricore/Gtm/Tom/Timer/IfxGtm_Tom_Timer.c',
+	'Infineon/iLLD/TC38A/Tricore/Gtm/Trig/IfxGtm_Trig.c',
+	'Infineon/iLLD/TC38A/Tricore/Pms/Std/IfxPmsEvr.c',
+	'Infineon/iLLD/TC38A/Tricore/Pms/Std/IfxPmsPm.c',
+	'Infineon/iLLD/TC38A/Tricore/Port/Std/IfxPort.c',
+	'Infineon/iLLD/TC38A/Tricore/Scu/Std/IfxScuCcu.c',
+	'Infineon/iLLD/TC38A/Tricore/Scu/Std/IfxScuWdt.c',
+	'Infineon/iLLD/TC38A/Tricore/Src/Std/IfxSrc.c',
+	'Infineon/iLLD/TC38A/Tricore/_Impl/IfxCcu6_cfg.c',
+	'Infineon/iLLD/TC38A/Tricore/_Impl/IfxCpu_cfg.c',
+	'Infineon/iLLD/TC38A/Tricore/_Impl/IfxEvadc_cfg.c',
+	'Infineon/iLLD/TC38A/Tricore/_Impl/IfxGtm_cfg.c',
+	'Infineon/iLLD/TC38A/Tricore/_Impl/IfxPort_cfg.c',
+	'Infineon/iLLD/TC38A/Tricore/_PinMap/IfxCcu6_PinMap.c',
+	'Infineon/iLLD/TC38A/Tricore/_PinMap/IfxGtm_PinMap.c',
+	'Infineon/Service/CpuGeneric/StdIf/IfxStdIf_PwmHl.c',
+	'Infineon/Service/CpuGeneric/StdIf/IfxStdIf_Timer.c',
+	'mcal/Adc_Irq.c',
+	'mcal/Can_17_McmCan_Irq.c',
+	'mcal/Ccu6_Irq.c',
+	'mcal/Cpu0_Main.c',
+	'mcal/Cpu1_Main.c',
+	'mcal/Cpu2_Main.c',
+	'mcal/Cpu3_Main.c',
+	'mcal/Gtm_Irq.c',
+	'mcal/main.c',
+	'mcal/McuFunc.c',
+	'mcal/OverlayManager.c',
+	'mcal/SchM_Adc.c',
+	'mcal/SchM_Can_17_McmCan.c',
+	'mcal/SchM_Gpt.c',
+	'mcal/SchM_Icu_17_TimerIp.c',
+	'mcal/SchM_McalLib.c',
+	'mcal/SchM_Mcu.c',
+	'mcal/SchM_Pwm_17_GtmCcu6.c',
+	'mcal/SchM_Smu.c',
+	'mcal/SchM_Spi.c',
+	'mcal/SchM_Wdg_17_Scu.c',
+	'mcal/Spi_Irq.c',
+	'mcal/Stm_Irq.c',
+	'mcal/Stubs.c',
+	'mcal/Traps.c',
+	'mcal/Wdg.c',
+	'os/Os_Cbk_GetStopwatch.c',
+	'os/Os_Cbk_Idle.c',
+	'os/Os_Hooks.c',
+	'os/ProtectionHook.c',
+	'os/Task_Background.c',
+	'TC38x/Ifx_Cfg_Ssw.c',
+	'TC38x/Ifx_Cfg_SswBmhd.c',
+	'TC38x/IFX_Os.c',
+	'TC38x/Ifx_Ssw_Infra.c',
+	'TC38x/Ifx_Ssw_Tc0.c',
+	'TC38x/Ifx_Ssw_Tc1.c',
+	'TC38x/Ifx_Ssw_Tc2.c',
+	'TC38x/Ifx_Ssw_Tc3.c',
+]#Source Files
+# GENERATED SOURCE FILES
+gen_sources = [
+]
+
+# ADD INCLUDE DIRECTORIES
+for include in includes:
+    env.Append(CPPPATH=[Dir(include).abspath])
+    string = re.sub( r'output\\objs\\','''''' ,Dir(include).abspath)
+    prebuild.createSymlinkHeader( os.path.join(Dir('#').abspath,env['CEN_HEADER_DIR']),string )
+# COMPILE SOURCE FILES
+for source in sources:
+    objects += env.Object(source)
+
+# GENERATED SOURCE FILES
+for gen_source in gen_sources:
+    objects += env.Object(gen_source)
+
+# RETURN
+Return('objects')
+
+#*******************************************************************************
+# END OF FILE
+#*******************************************************************************

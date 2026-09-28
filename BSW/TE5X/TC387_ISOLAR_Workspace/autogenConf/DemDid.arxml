@@ -1,0 +1,2348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00047.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>ETAS_Project</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>EcucModuleConfigurationValuess</SHORT-NAME>
+          <ELEMENTS>
+            <ECUC-MODULE-CONFIGURATION-VALUES>
+              <SHORT-NAME>Dem</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-MODULE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem</DEFINITION-REF>
+              <CONTAINERS>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>DemGeneral</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral</DEFINITION-REF>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D000</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53248</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D000</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D001</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53249</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D001</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D002</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53250</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D002</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D003</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53251</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D003</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D004</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53252</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D004</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D005</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53253</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D005</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D007</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53255</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D007</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D008</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53256</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D008</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D009</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53257</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D009</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D010</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53264</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D010</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D011</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53265</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D011</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D012</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53266</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D012</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D013</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53267</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D013</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D014</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53268</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D014</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D015</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53269</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D015</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D016</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53270</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D016</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D017</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53271</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D017</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D018</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53272</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D018</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D019</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53273</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D019</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D020</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53280</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D020</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D021</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53281</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D021</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D022</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53282</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D022</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D023</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53283</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D023</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D024</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53284</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D024</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D025</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53285</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D025</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D026</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53286</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D026</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D027</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53287</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D027</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D028</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53288</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D028</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D029</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53289</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D029</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D030</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53296</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D030</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D031</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53297</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D031</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D032</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53298</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D032</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D033</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53299</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D033</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D034</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53300</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D034</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D035</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53301</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D035</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D036</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53302</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D036</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D037</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53303</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D037</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D038</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53304</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D038</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D039</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53305</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D039</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D040</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53312</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D040</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D041</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53313</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D041</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D042</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53314</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D042</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D043</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53315</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D043</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D044</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53316</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D044</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D045</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53317</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D045</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D046</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53318</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D046</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D047</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53319</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D047</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D048</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53320</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D048</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_D049</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>53321</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_D049</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_1D06</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>7430</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_1D06</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_1D07</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>7431</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_1D07</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_1D08</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>7432</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_1D08</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_1D09</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>7433</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_1D09</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_1D0A</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>7434</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_1D0A</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_1D0B</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>7435</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_1D0B</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_1D0C</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>7436</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_1D0C</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_1D0D</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>7437</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_1D0D</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_1D0E</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>7438</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_1D0E</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_1D0F</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>7439</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_1D0F</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_1D13</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>7443</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_1D13</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_1D14</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>7444</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_1D14</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_1D15</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>7445</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_1D15</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_1D16</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>7446</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_1D16</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_1D17</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>7447</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_1D17</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_1D18</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>7448</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_1D18</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_1D19</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>7449</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_1D19</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_1D1A</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>7450</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_1D1A</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_1D1B</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>7451</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_1D1B</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_1D1C</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>7452</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_1D1C</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_1D1D</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>7453</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_1D1D</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_1D1E</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>7454</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_1D1E</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_1D1F</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>7455</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_1D1F</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_1D20</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>7456</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_1D20</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_1D21</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>7457</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_1D21</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_1D22</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>7458</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_1D22</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_1D23</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>7459</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_1D23</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_1D24</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>7460</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_1D24</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_1D25</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>7461</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_1D25</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_1D26</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>7462</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_1D26</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_1D27</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>7463</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_1D27</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_1D28</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>7464</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_1D28</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_1D29</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>7465</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_1D29</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_2D02</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>11522</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_2D02</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_2D03</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>11523</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_2D03</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_2D04</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>11524</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_2D04</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_2D05</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>11525</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_2D05</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_2D06</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>11526</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_2D06</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_2D07</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>11527</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_2D07</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_2D08</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>11528</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_2D08</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_2D0E</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>11534</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_2D0E</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_2D13</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>11539</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_2D13</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_2D14</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>11540</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_2D14</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_2D15</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>11541</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_2D15</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_2D1C</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>11548</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_2D1C</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_2D1D</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>11549</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_2D1D</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_2D1E</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>11550</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_2D1E</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_2D1F</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>11551</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_2D1F</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_2D20</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>11552</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_2D20</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_2D21</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>11553</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_2D21</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_2D22</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>11554</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_2D22</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_2D25</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>11557</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_2D25</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_2D26</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>11558</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_2D26</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_3D02</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>15618</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_3D02</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_3D03</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>15619</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_3D03</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_3D04</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>15620</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_3D04</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_3D05</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>15621</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_3D05</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_3D06</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>15622</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_3D06</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_3D07</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>15623</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_3D07</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_3D08</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>15624</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_3D08</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_3D0E</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>15630</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_3D0E</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_3D13</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>15635</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_3D13</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_3D14</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>15636</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_3D14</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_3D15</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>15637</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_3D15</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_3D1C</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>15644</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_3D1C</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_3D1D</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>15645</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_3D1D</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_3D1E</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>15646</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_3D1E</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_3D1F</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>15647</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_3D1F</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_3D20</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>15648</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_3D20</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_3D21</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>15649</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_3D21</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_3D22</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>15650</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_3D22</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_3D25</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>15653</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_3D25</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_3D26</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>15654</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_3D26</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_4D27</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>19751</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_4D27</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_4D28</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>19752</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_4D28</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_4D29</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>19753</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_4D29</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_4D2A</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>19754</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_4D2A</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_4D2B</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>19755</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_4D2B</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_4D2C</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>19756</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_4D2C</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_4D2D</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>19757</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_4D2D</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_4D2E</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>19758</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_4D2E</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_4D2F</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>19759</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_4D2F</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_4D30</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>19760</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_4D30</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_4D31</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>19761</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_4D31</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_4D32</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>19762</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_4D32</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_4D33</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>19763</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_4D33</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_4D34</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>19764</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_4D34</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_4D35</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>19765</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_4D35</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_4D36</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>19766</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_4D36</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_4D37</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>19767</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_4D37</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_4D38</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>19768</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_4D38</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_4D39</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>19769</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_4D39</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_4D3A</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>19770</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_4D3A</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_4D3B</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>19771</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_4D3B</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_4D3C</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>19772</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_4D3C</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>Did_Class_4D3D</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE>
+                          <DEFINITION-REF DEST="ECUC-INTEGER-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidIdentifier</DEFINITION-REF>
+                          <VALUE>19773</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <REFERENCE-VALUES>
+                        <ECUC-REFERENCE-VALUE>
+                          <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemGeneral/DemDidClass/DemDidDataElementClassRef</DEFINITION-REF>
+                          <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/Dem/DemGeneral/DemDataElementClass_4D3D</VALUE-REF>
+                        </ECUC-REFERENCE-VALUE>
+                      </REFERENCE-VALUES>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+              </CONTAINERS>
+            </ECUC-MODULE-CONFIGURATION-VALUES>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

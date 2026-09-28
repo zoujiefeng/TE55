@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00047.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>ETAS_Project</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>EcucModuleConfigurationValuess</SHORT-NAME>
+          <ELEMENTS>
+            <ECUC-MODULE-CONFIGURATION-VALUES>
+              <SHORT-NAME>Cdd</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-MODULE-DEF">/AUTOSAR_Cdd/EcucModuleDefs/Cdd</DEFINITION-REF>
+              <CONTAINERS>
+                <ECUC-CONTAINER-VALUE>
+                  <SHORT-NAME>CddComStackContribution</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Cdd/EcucModuleDefs/Cdd/CddComStackContribution</DEFINITION-REF>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE>
+                      <SHORT-NAME>CddComIfUpperLayerContribution</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Cdd/EcucModuleDefs/Cdd/CddComStackContribution/CddComIfUpperLayerContribution</DEFINITION-REF>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE>
+                          <SHORT-NAME>CddComIfUpperLayerRxPdu_CCP_RX_CRO</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Cdd/EcucModuleDefs/Cdd/CddComStackContribution/CddComIfUpperLayerContribution/CddComIfUpperLayerRxPdu</DEFINITION-REF>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Cdd/EcucModuleDefs/Cdd/CddComStackContribution/CddComIfUpperLayerContribution/CddComIfUpperLayerRxPdu/CddComIfPduRef</DEFINITION-REF>
+                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/EcuC/EcucConfigSet/EcucPduCollection/CcpPdu_CanIf2Cdd_CanNodeNum_00_Rx_Cro</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE>
+                          <SHORT-NAME>CddComIfUpperLayerTxPdu_CCP_TX_DTO_MCU</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Cdd/EcucModuleDefs/Cdd/CddComStackContribution/CddComIfUpperLayerContribution/CddComIfUpperLayerTxPdu</DEFINITION-REF>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Cdd/EcucModuleDefs/Cdd/CddComStackContribution/CddComIfUpperLayerContribution/CddComIfUpperLayerTxPdu/CddComIfPduRef</DEFINITION-REF>
+                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/EcuC/EcucConfigSet/EcucPduCollection/CcpPdu_Cdd2CanIf_CanNodeNum_00_Tx_Dto</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE>
+                          <SHORT-NAME>CddComIfUpperLayerTxPdu_CCP_TX_DAQ0_MCU</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Cdd/EcucModuleDefs/Cdd/CddComStackContribution/CddComIfUpperLayerContribution/CddComIfUpperLayerTxPdu</DEFINITION-REF>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Cdd/EcucModuleDefs/Cdd/CddComStackContribution/CddComIfUpperLayerContribution/CddComIfUpperLayerTxPdu/CddComIfPduRef</DEFINITION-REF>
+                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/EcuC/EcucConfigSet/EcucPduCollection/CcpPdu_Cdd2CanIf_CanNodeNum_00_Tx_Daq0</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE>
+                          <SHORT-NAME>CddComIfUpperLayerTxPdu_CCP_TX_DAQ1_MCU</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Cdd/EcucModuleDefs/Cdd/CddComStackContribution/CddComIfUpperLayerContribution/CddComIfUpperLayerTxPdu</DEFINITION-REF>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Cdd/EcucModuleDefs/Cdd/CddComStackContribution/CddComIfUpperLayerContribution/CddComIfUpperLayerTxPdu/CddComIfPduRef</DEFINITION-REF>
+                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/EcuC/EcucConfigSet/EcucPduCollection/CcpPdu_Cdd2CanIf_CanNodeNum_00_Tx_Daq1</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE>
+                          <SHORT-NAME>CddComIfUpperLayerTxPdu_CCP_TX_DAQ2_MCU</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Cdd/EcucModuleDefs/Cdd/CddComStackContribution/CddComIfUpperLayerContribution/CddComIfUpperLayerTxPdu</DEFINITION-REF>
+                          <REFERENCE-VALUES>
+                            <ECUC-REFERENCE-VALUE>
+                              <DEFINITION-REF DEST="ECUC-REFERENCE-DEF">/AUTOSAR_Cdd/EcucModuleDefs/Cdd/CddComStackContribution/CddComIfUpperLayerContribution/CddComIfUpperLayerTxPdu/CddComIfPduRef</DEFINITION-REF>
+                              <VALUE-REF DEST="ECUC-CONTAINER-VALUE">/ETAS_Project/EcucModuleConfigurationValuess/EcuC/EcucConfigSet/EcucPduCollection/CcpPdu_Cdd2CanIf_CanNodeNum_00_Tx_Daq2</VALUE-REF>
+                            </ECUC-REFERENCE-VALUE>
+                          </REFERENCE-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+              </CONTAINERS>
+            </ECUC-MODULE-CONFIGURATION-VALUES>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

@@ -1,0 +1,1 @@
+[2025/5/29 17:30:58]-[未能找到文件“E:\SystemCode\Build\FileProduce\EB_Workspace\Targets\TC38xx\MCAL\MCAL_Cfg\config\IPC_Project_Can_EcucValues.arxml”。]

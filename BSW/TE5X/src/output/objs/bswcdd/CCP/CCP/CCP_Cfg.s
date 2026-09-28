@@ -1,0 +1,406 @@
+	.file	"CCP_Cfg.c"
+.section .text,"ax",@progbits
+.Ltext0:
+	.global	CCP_kastrDaqListStatCfg
+.section .const.CCP_kastrDaqListStatCfg,"a",@progbits
+	.align 1
+	.type	CCP_kastrDaqListStatCfg, @object
+	.size	CCP_kastrDaqListStatCfg, 6
+CCP_kastrDaqListStatCfg:
+	.byte	6
+	.byte	0
+	.byte	12
+	.byte	6
+	.byte	28
+	.byte	18
+	.global	CCP_kaudtDevId
+.section .const.CCP_kaudtDevId,"a",@progbits
+	.type	CCP_kaudtDevId, @object
+	.size	CCP_kaudtDevId, 12
+CCP_kaudtDevId:
+	.string	"A5H_BSWTC26"
+	.global	CCP_kapfudtSrvFcn
+.section .const.CCP_kapfudtSrvFcn,"a",@progbits
+	.align 2
+	.type	CCP_kapfudtSrvFcn, @object
+	.size	CCP_kapfudtSrvFcn, 144
+CCP_kapfudtSrvFcn:
+	.word	CCP_udtFcnNotAvl
+	.word	CCP_udtCnct
+	.word	CCP_udtSetMta
+	.word	CCP_udtDnld
+	.word	CCP_udtUpld
+	.word	CCP_udtTest
+	.word	CCP_udtStrtStop
+	.word	CCP_udtDcnct
+	.word	CCP_udtStrtStopAll
+	.word	CCP_udtGetAcvCalPage
+	.word	CCP_udtFcnNotAvl
+	.word	CCP_udtFcnNotAvl
+	.word	CCP_udtSetSsnSts
+	.word	CCP_udtGetSsnSts
+	.word	CCP_udtBldCks
+	.word	CCP_udtShoUpld
+	.word	CCP_udtFcnNotAvl
+	.word	CCP_udtSelCalPage
+	.word	CCP_udtFcnNotAvl
+	.word	CCP_udtFcnNotAvl
+	.word	CCP_udtGetDaqSize
+	.word	CCP_udtSetDaqPtr
+	.word	CCP_udtWrDaqElmCfg
+	.word	CCP_udtExchId
+	.word	CCP_udtFcnNotAvl
+	.word	CCP_udtFcnNotAvl
+	.word	CCP_udtFcnNotAvl
+	.word	CCP_udtGetCcpVers
+	.word	CCP_udtFcnNotAvl
+	.word	CCP_udtFcnNotAvl
+	.word	CCP_udtFcnNotAvl
+	.word	CCP_udtFcnNotAvl
+	.word	CCP_udtFcnNotAvl
+	.word	CCP_udtFcnNotAvl
+	.word	CCP_udtFcnNotAvl
+	.word	CCP_udtDnld6
+.section .text,"ax",@progbits
+.Letext0:
+	.file 1 ".\\output\\inc/..\\..\\bsw\\integration\\Platform_Types.h"
+	.file 2 "bswcdd\\CCP\\CCP\\CCP_Typ.h"
+	.file 3 "bswcdd\\CCP\\CCP\\CCP_Cfg.c"
+.section .debug_info,"",@progbits
+.Ldebug_info0:
+	.uaword	0x3a7
+	.uahalf	0x2
+	.uaword	.Ldebug_abbrev0
+	.byte	0x4
+	.uleb128 0x1
+	.ascii	"GNU C 4.9.4 build on 2020-09-01 -mli"
+	.string	"cense-dir=s:\\hightec\\toolchains\\tricore\\v4.9.4.1\\bin\\../lib/gcc/tricore/4.9.4/../../../../licenses -mcpu=tc38xx -mpragma-data-sections -mtc162 -maligned-data-sections -gdwarf-2 -O3 -fno-builtin -fno-common -ffunction-sections -fdata-sections -fshort-double"
+	.byte	0x1
+	.string	"bswcdd\\CCP\\CCP\\CCP_Cfg.c"
+	.string	"D:\\\\1_OutProjest\\\\dongfeng\\\\90080-05101\\\\trunk\\\\BSW\\\\20Proj\\\\BSW\\\\TE5X\\\\src"
+	.uaword	.Ldebug_line0
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x6
+	.string	"signed char"
+	.uleb128 0x3
+	.string	"uint8"
+	.byte	0x1
+	.byte	0x51
+	.uaword	0x1b7
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x8
+	.string	"unsigned char"
+	.uleb128 0x2
+	.byte	0x2
+	.byte	0x5
+	.string	"short int"
+	.uleb128 0x2
+	.byte	0x2
+	.byte	0x7
+	.string	"short unsigned int"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x5
+	.string	"int"
+	.uleb128 0x2
+	.byte	0x8
+	.byte	0x5
+	.string	"long long int"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x7
+	.string	"unsigned int"
+	.uleb128 0x2
+	.byte	0x8
+	.byte	0x7
+	.string	"long long unsigned int"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x4
+	.string	"float"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x4
+	.string	"double"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x5
+	.string	"long int"
+	.uleb128 0x3
+	.string	"uint8_least"
+	.byte	0x1
+	.byte	0x8a
+	.uaword	0x25f
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x7
+	.string	"long unsigned int"
+	.uleb128 0x3
+	.string	"CCP_tudtCmdSts"
+	.byte	0x2
+	.byte	0x3f
+	.uaword	0x24c
+	.uleb128 0x3
+	.string	"CCP_tpfudtSrvFcn"
+	.byte	0x2
+	.byte	0x44
+	.uaword	0x2a2
+	.uleb128 0x4
+	.byte	0x4
+	.uaword	0x2a8
+	.uleb128 0x5
+	.byte	0x1
+	.uaword	0x274
+	.uleb128 0x6
+	.byte	0x2
+	.byte	0x2
+	.byte	0x4d
+	.uaword	0x2de
+	.uleb128 0x7
+	.string	"u8NoOdt"
+	.byte	0x2
+	.byte	0x4f
+	.uaword	0x1aa
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x7
+	.string	"u8FirstPid"
+	.byte	0x2
+	.byte	0x50
+	.uaword	0x1aa
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x1
+	.byte	0
+	.uleb128 0x3
+	.string	"CCP_tstrDaqListStatCfg"
+	.byte	0x2
+	.byte	0x53
+	.uaword	0x2ae
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x7
+	.string	"sizetype"
+	.uleb128 0x8
+	.uaword	0x1aa
+	.uaword	0x318
+	.uleb128 0x9
+	.uaword	0x2fc
+	.byte	0xb
+	.byte	0
+	.uleb128 0xa
+	.string	"CCP_kaudtDevId"
+	.byte	0x3
+	.byte	0x53
+	.uaword	0x335
+	.byte	0x1
+	.byte	0x5
+	.byte	0x3
+	.uaword	CCP_kaudtDevId
+	.uleb128 0xb
+	.uaword	0x308
+	.uleb128 0x8
+	.uaword	0x28a
+	.uaword	0x34a
+	.uleb128 0x9
+	.uaword	0x2fc
+	.byte	0x23
+	.byte	0
+	.uleb128 0xa
+	.string	"CCP_kapfudtSrvFcn"
+	.byte	0x3
+	.byte	0x2a
+	.uaword	0x36a
+	.byte	0x1
+	.byte	0x5
+	.byte	0x3
+	.uaword	CCP_kapfudtSrvFcn
+	.uleb128 0xb
+	.uaword	0x33a
+	.uleb128 0x8
+	.uaword	0x2de
+	.uaword	0x37f
+	.uleb128 0x9
+	.uaword	0x2fc
+	.byte	0x2
+	.byte	0
+	.uleb128 0xa
+	.string	"CCP_kastrDaqListStatCfg"
+	.byte	0x3
+	.byte	0x57
+	.uaword	0x3a5
+	.byte	0x1
+	.byte	0x5
+	.byte	0x3
+	.uaword	CCP_kastrDaqListStatCfg
+	.uleb128 0xb
+	.uaword	0x36f
+	.byte	0
+.section .debug_abbrev,"",@progbits
+.Ldebug_abbrev0:
+	.uleb128 0x1
+	.uleb128 0x11
+	.byte	0x1
+	.uleb128 0x25
+	.uleb128 0x8
+	.uleb128 0x13
+	.uleb128 0xb
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x1b
+	.uleb128 0x8
+	.uleb128 0x10
+	.uleb128 0x6
+	.byte	0
+	.byte	0
+	.uleb128 0x2
+	.uleb128 0x24
+	.byte	0
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3e
+	.uleb128 0xb
+	.uleb128 0x3
+	.uleb128 0x8
+	.byte	0
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x16
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x4
+	.uleb128 0xf
+	.byte	0
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x5
+	.uleb128 0x15
+	.byte	0
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x6
+	.uleb128 0x13
+	.byte	0x1
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x7
+	.uleb128 0xd
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x38
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0x8
+	.uleb128 0x1
+	.byte	0x1
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x9
+	.uleb128 0x21
+	.byte	0
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2f
+	.uleb128 0xb
+	.byte	0
+	.byte	0
+	.uleb128 0xa
+	.uleb128 0x34
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x2
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0xb
+	.uleb128 0x26
+	.byte	0
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.byte	0
+.section .debug_aranges,"",@progbits
+	.uaword	0x14
+	.uahalf	0x2
+	.uaword	.Ldebug_info0
+	.byte	0x4
+	.byte	0
+	.uahalf	0
+	.uahalf	0
+	.uaword	0
+	.uaword	0
+.section .debug_line,"",@progbits
+.Ldebug_line0:
+.section .debug_str,"",@progbits
+	.extern	CCP_udtDnld6,STT_FUNC,0
+	.extern	CCP_udtGetCcpVers,STT_FUNC,0
+	.extern	CCP_udtExchId,STT_FUNC,0
+	.extern	CCP_udtWrDaqElmCfg,STT_FUNC,0
+	.extern	CCP_udtSetDaqPtr,STT_FUNC,0
+	.extern	CCP_udtGetDaqSize,STT_FUNC,0
+	.extern	CCP_udtSelCalPage,STT_FUNC,0
+	.extern	CCP_udtShoUpld,STT_FUNC,0
+	.extern	CCP_udtBldCks,STT_FUNC,0
+	.extern	CCP_udtGetSsnSts,STT_FUNC,0
+	.extern	CCP_udtSetSsnSts,STT_FUNC,0
+	.extern	CCP_udtGetAcvCalPage,STT_FUNC,0
+	.extern	CCP_udtStrtStopAll,STT_FUNC,0
+	.extern	CCP_udtDcnct,STT_FUNC,0
+	.extern	CCP_udtStrtStop,STT_FUNC,0
+	.extern	CCP_udtTest,STT_FUNC,0
+	.extern	CCP_udtUpld,STT_FUNC,0
+	.extern	CCP_udtDnld,STT_FUNC,0
+	.extern	CCP_udtSetMta,STT_FUNC,0
+	.extern	CCP_udtCnct,STT_FUNC,0
+	.extern	CCP_udtFcnNotAvl,STT_FUNC,0
+	.ident	"GCC: (HighTec Release HDP-v4.9.4.1-11fcedf) 4.9.4 build on 2020-09-01"

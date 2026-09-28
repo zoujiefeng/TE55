@@ -1,0 +1,254 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+        CM_
+        BA_DEF_
+        BA_
+        VAL_
+        CAT_DEF_
+        CAT_
+        FILTER
+        BA_DEF_DEF_
+        EV_DATA_
+        ENVVAR_DATA_
+        SGTYPE_
+        SGTYPE_VAL_
+        BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: VCU MCU
+
+
+BO_ 513 VCU_Cmd1: 8 VCU
+ SG_ VCU_Cmd1_VCM_PDULocation : 17|2@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_Cmd1_VCM_MCUEnable : 22|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_Cmd1_VCM_HoldEnable : 23|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_Cmd1_VCM_TorqueCommand : 24|16@1+ (0.1,-500) [-500|1500] "Nm" Vector__XXX
+ SG_ VCU_Cmd1_VCM_Ready : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ VCU_Cmd1_VCM_MCUMode : 42|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ VCU_Cmd1_VCU_VehPowerMode : 52|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ VCU_Cmd1_VCM_ShiftLeverPosition : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ VCU_Cmd1_VCM_ShiftLeverPositionValid : 60|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 514 VCU_1: 8 VCU
+ SG_ VCU_1_VCM_HandBrakeSts : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_1_VCM_DCDCEnable : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_1_VCM_BrakePedalStatus : 32|2@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 2147484169 VCU_2: 8 VCU
+ SG_ VCU_2_VCM_BrakePadelPct : 32|8@1+ (0.5,0) [0|100] "%" Vector__XXX
+
+BO_ 2147484176 VCU_3: 8 VCU
+ SG_ VCU_3_VCM_MotPedalPosThrottleValve : 16|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+
+BO_ 2647483716 VCU_Cmd2: 8 VCU
+ SG_ VCU_Cmd2_Power_Solenoid_Sts : 9|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VCU_Cmd2_Power_Switch_Sts : 10|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2647483651 VCU_Cmd4: 8 VCU
+ SG_ VCU_Cmd4_VCM_speedCommand : 32|16@1+ (1,0) [0|65535] "rpm" Vector__XXX
+
+BO_ 2647483649 VCU_3: 8 VCU
+ SG_ VCU_3_VCM_MotPedalPosThrottleValve : 16|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+
+BO_ 2667483716 ISG_MCU_STATUS1: 8 MCU
+ SG_ ISG_MCU_STATUS1_Motor_Speed : 0|16@1+ (1,-15000) [-15000|20000] "rpm" Vector__XXX
+ SG_ ISG_MCU_STATUS1_Motor_Torque : 16|16@1+ (1,-5000) [-5000|5000] "Nm" Vector__XXX
+ SG_ ISG_MCU_STATUS1_Motor_AC_Current : 32|16@1+ (0.1,0) [0|1000] "A" Vector__XXX
+ SG_ ISG_MCU_STATUS1_MCU_Sta : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ ISG_MCU_STATUS1_MCU_Precharge_Allow : 52|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ISG_MCU_STATUS1_MCU_Fast_DisChar_feedback : 53|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ISG_MCU_STATUS1_IGBT_Enable_Feedback : 54|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ISG_MCU_STATUS1_Work_Mode : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ ISG_MCU_STATUS1_CycMsg_Num_1 : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 258 ISG_MCU_STATUS2: 8 MCU
+ SG_ ISG_MCU_STATUS2_TS4_Motor_Temp : 0|8@1+ (1,-40) [-40|215] "℃" Vector__XXX
+ SG_ ISG_MCU_STATUS2_TS4_MCU_Temp : 8|8@1+ (1,-40) [-40|215] "℃" Vector__XXX
+ SG_ ISG_MCU_STATUS2_TS4_MCU_PositiveTorqLimit : 16|16@1+ (1,0) [0|5000] "Nm" Vector__XXX
+ SG_ ISG_MCU_STATUS2_TS4_MCU_NegTorqLimit : 32|16@1+ (1,-5000) [-5000|5000] "Nm" Vector__XXX
+ SG_ ISG_MCU_STATUS2_TS4_MCU_ErrLevel : 48|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ ISG_MCU_STATUS2_SlopeState : 52|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ISG_MCU_STATUS2_HillFlag : 54|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ISG_MCU_STATUS2_TS4_CycMsg_Num : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 2667483717 ISG_MCU_STATUS3: 8 MCU
+ SG_ ISG_MCU_STATUS3_MCU_DTC_Code : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ ISG_MCU_STATUS3_PCUVehType : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ISG_MCU_STATUS3_MCU_DCVoltage : 32|16@1+ (0.1,0) [0|750] "V" Vector__XXX
+ SG_ ISG_MCU_STATUS3_CycMsg_Num_3 : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 260 ISG_MCU_STATUS4: 8 MCU
+ SG_ ISG_MCU_STATUS4_MCU_DCCurrent : 0|16@1+ (1,-1000) [-1000|1000] "A" Vector__XXX
+ SG_ ISG_MCU_STATUS4_MCUHW_low : 16|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ ISG_MCU_STATUS4_MCUHW_high : 21|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ ISG_MCU_STATUS4_MCUSW_low : 24|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ ISG_MCU_STATUS4_MCUSW_high : 29|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ ISG_MCU_STATUS4_MCU_Vehicle_Mass : 32|16@1+ (1,0) [0|65534] "kg" Vector__XXX
+ SG_ ISG_MCU_STATUS4_MCU_Vehicle_Mass_Level : 48|2@1+ (1,1) [1|4] "" Vector__XXX
+ SG_ ISG_MCU_STATUS4_CycMsg_Num_4 : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 261 ISG_MCU_STATUS5: 8 MCU
+ SG_ ISG_MCU_STATUS5_MCU_RegTorqReqVD : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ISG_MCU_STATUS5_MCU_RegTorqReq : 8|16@1+ (1,-5000) [-5000|0] "Nm" Vector__XXX
+ SG_ ISG_MCU_STATUS5_CycMsg_Num_5 : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 262 MCU_STATUS1: 8 MCU
+ SG_ MCU_STATUS1_ElecEnergyComverson_rate : 1|10@1+ (0.1,0) [0|100] "%" Vector__XXX
+
+BO_ 2667483648 MCU_STATUS2: 8 MCU
+ SG_ MCU_STATUS2_Software_Version_L : 0|32@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ MCU_STATUS2_Software_Version_H : 32|32@1+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 2667483650 MCU_STATUS2: 8 MCU
+ SG_ MCU_STATUS2_Software_Version_L : 0|32@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ MCU_STATUS2_Software_Version_H : 32|32@1+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 2667483649 MCU_STATUS2: 8 MCU
+ SG_ MCU_STATUS2_Software_Version_L : 0|32@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ MCU_STATUS2_Software_Version_H : 32|32@1+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 2667483658 MCU_STATUS2: 8 MCU
+ SG_ MCU_STATUS2_Software_Version_L : 0|32@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ MCU_STATUS2_Software_Version_H : 32|32@1+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 2667483659 MCU_STATUS2: 8 MCU
+ SG_ MCU_STATUS2_Software_Version_L : 0|32@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ MCU_STATUS2_Software_Version_H : 32|32@1+ (1,0) [0|65535] "" Vector__XXX
+
+
+
+CM_ SG_ 513 VCU_Cmd1_VCM_PDULocation "高压盒放置位置";
+CM_ SG_ 513 VCU_Cmd1_VCM_MCUEnable "MCU使能信号";
+CM_ SG_ 513 VCU_Cmd1_VCM_HoldEnable "MCU驻坡使能信号";
+CM_ SG_ 513 VCU_Cmd1_VCM_TorqueCommand "MCU扭矩指令";
+CM_ SG_ 513 VCU_Cmd1_VCM_Ready "整车Ready 状态";
+CM_ SG_ 513 VCU_Cmd1_VCM_MCUMode "MCU的模式控制";
+CM_ SG_ 513 VCU_Cmd1_VCU_VehPowerMode "整车电源状态";
+CM_ SG_ 513 VCU_Cmd1_VCM_ShiftLeverPosition "档位";
+CM_ SG_ 513 VCU_Cmd1_VCM_ShiftLeverPositionValid "挡位信号有效性";
+CM_ SG_ 514 VCU_1_VCM_HandBrakeSts "手刹开关状态";
+CM_ SG_ 514 VCU_1_VCM_DCDCEnable "DCDC使能";
+CM_ SG_ 514 VCU_1_VCM_BrakePedalStatus "刹车踏板状态";
+CM_ SG_ 2147484169 VCU_2_VCM_BrakePadelPct "刹车踏板深度";
+CM_ SG_ 2147484176 VCU_3_VCM_MotPedalPosThrottleValve "当前油门踏板开度";
+CM_ SG_ 2647483716 VCU_Cmd2_Power_Solenoid_Sts "取力器电磁阀使能";
+CM_ SG_ 2647483716 VCU_Cmd2_Power_Switch_Sts "取力器开关状态";
+CM_ SG_ 2647483651 VCU_Cmd4_VCM_speedCommand "MCU转速指令";
+CM_ SG_ 2647483649 VCU_3_VCM_MotPedalPosThrottleValve "当前油门踏板开度";
+CM_ SG_ 2667483716 ISG_MCU_STATUS1_Motor_Speed "电机实际转速";
+CM_ SG_ 2667483716 ISG_MCU_STATUS1_Motor_Torque "电机实际扭矩";
+CM_ SG_ 2667483716 ISG_MCU_STATUS1_Motor_AC_Current "交流侧电流有效值反馈";
+CM_ SG_ 2667483716 ISG_MCU_STATUS1_MCU_Sta "电机状态";
+CM_ SG_ 2667483716 ISG_MCU_STATUS1_MCU_Precharge_Allow "允许预充电";
+CM_ SG_ 2667483716 ISG_MCU_STATUS1_MCU_Fast_DisChar_feedback "电机控制器快速泄放状态反馈";
+CM_ SG_ 2667483716 ISG_MCU_STATUS1_IGBT_Enable_Feedback "IGBT使能状态反馈";
+CM_ SG_ 2667483716 ISG_MCU_STATUS1_Work_Mode "电机工作模式反馈";
+CM_ SG_ 2667483716 ISG_MCU_STATUS1_CycMsg_Num_1 "控制报文循环计数值";
+CM_ SG_ 258 ISG_MCU_STATUS2_TS4_Motor_Temp "电机实际温度";
+CM_ SG_ 258 ISG_MCU_STATUS2_TS4_MCU_Temp "电机控制器实际温度";
+CM_ SG_ 258 ISG_MCU_STATUS2_TS4_MCU_PositiveTorqLimit "电机可实现的扭矩上限";
+CM_ SG_ 258 ISG_MCU_STATUS2_TS4_MCU_NegTorqLimit "电机可实现的扭矩下限";
+CM_ SG_ 258 ISG_MCU_STATUS2_TS4_MCU_ErrLevel "MCU系统故障等级";
+CM_ SG_ 258 ISG_MCU_STATUS2_SlopeState "电机驻坡状态";
+CM_ SG_ 258 ISG_MCU_STATUS2_HillFlag "电机驻坡次数极限";
+CM_ SG_ 258 ISG_MCU_STATUS2_TS4_CycMsg_Num "控制报文循环计数值";
+CM_ SG_ 2667483717 ISG_MCU_STATUS3_MCU_DTC_Code "MCU故障码";
+CM_ SG_ 2667483717 ISG_MCU_STATUS3_PCUVehType "车型代号";
+CM_ SG_ 2667483717 ISG_MCU_STATUS3_MCU_DCVoltage "电机控制器母线电容电压";
+CM_ SG_ 2667483717 ISG_MCU_STATUS3_CycMsg_Num_3 "控制报文循环计数值";
+CM_ SG_ 260 ISG_MCU_STATUS4_MCU_DCCurrent "电机控制器直流侧电流";
+CM_ SG_ 260 ISG_MCU_STATUS4_MCUHW_low "硬件版本号低五位";
+CM_ SG_ 260 ISG_MCU_STATUS4_MCUHW_high "硬件版本号高三位";
+CM_ SG_ 260 ISG_MCU_STATUS4_MCUSW_low "软件版本号低五位";
+CM_ SG_ 260 ISG_MCU_STATUS4_MCUSW_high "软件版本号高三位";
+CM_ SG_ 260 ISG_MCU_STATUS4_MCU_Vehicle_Mass "MCU估算的车重";
+CM_ SG_ 260 ISG_MCU_STATUS4_MCU_Vehicle_Mass_Level "MCU估算的车重等级";
+CM_ SG_ 260 ISG_MCU_STATUS4_CycMsg_Num_4 "控制报文循环计数值";
+CM_ SG_ 261 ISG_MCU_STATUS5_MCU_RegTorqReqVD "能量回收扭矩请求有效性";
+CM_ SG_ 261 ISG_MCU_STATUS5_MCU_RegTorqReq "能量回收扭矩请求";
+CM_ SG_ 261 ISG_MCU_STATUS5_CycMsg_Num_5 "控制报文循环计数值";
+CM_ SG_ 262 MCU_STATUS1_ElecEnergyComverson_rate "电能转化率";
+CM_ SG_ 2667483648 MCU_STATUS2_Software_Version_L "电机软件版本动态码";
+CM_ SG_ 2667483648 MCU_STATUS2_Software_Version_H "电机软件版本动态码";
+CM_ SG_ 2667483650 MCU_STATUS2_Software_Version_L "电机软件版本动态码";
+CM_ SG_ 2667483650 MCU_STATUS2_Software_Version_H "电机软件版本动态码";
+CM_ SG_ 2667483649 MCU_STATUS2_Software_Version_L "电机软件版本动态码";
+CM_ SG_ 2667483649 MCU_STATUS2_Software_Version_H "电机软件版本动态码";
+CM_ SG_ 2667483658 MCU_STATUS2_Software_Version_L "电机软件版本动态码";
+CM_ SG_ 2667483658 MCU_STATUS2_Software_Version_H "电机软件版本动态码";
+CM_ SG_ 2667483659 MCU_STATUS2_Software_Version_L "电机软件版本动态码";
+CM_ SG_ 2667483659 MCU_STATUS2_Software_Version_H "电机软件版本动态码";
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0; 
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0; 
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","not_used","not_used","not_used","not_used","Cyclic","not_used","IfActive","NoMsgSendType"; 
+BA_DEF_ BU_  "NmStationAddress" HEX 0 0; 
+BA_DEF_  "DBName" STRING ; 
+BA_DEF_  "BusType" STRING ; 
+BA_DEF_DEF_  "GenSigSendType" "Cyclic"; 
+BA_DEF_DEF_  "GenSigInactiveValue" 0; 
+BA_DEF_DEF_  "GenMsgCycleTime" 0; 
+BA_DEF_DEF_  "GenMsgSendType" "NoMsgSendType"; 
+BA_DEF_DEF_  "NmStationAddress" 0; 
+BA_DEF_DEF_  "DBName" ""; 
+BA_DEF_DEF_  "BusType" "CAN";
+BA_ "DBName" "MAIN_MSG_Auto_Can03";
+BA_ "GenMsgCycleTime" BO_ 513 10;
+BA_ "GenMsgCycleTime" BO_ 514 100;
+BA_ "GenMsgCycleTime" BO_ 2147484169 100;
+BA_ "GenMsgCycleTime" BO_ 2147484176 100;
+BA_ "GenMsgCycleTime" BO_ 2647483716 20;
+BA_ "GenMsgCycleTime" BO_ 2647483651 20;
+BA_ "GenMsgCycleTime" BO_ 2647483649 100;
+BA_ "GenMsgCycleTime" BO_ 2667483716 10;
+BA_ "GenMsgCycleTime" BO_ 258 50;
+BA_ "GenMsgCycleTime" BO_ 2667483717 100;
+BA_ "GenMsgCycleTime" BO_ 260 100;
+BA_ "GenMsgCycleTime" BO_ 261 20;
+BA_ "GenMsgCycleTime" BO_ 262 1000;
+BA_ "GenMsgCycleTime" BO_ 2667483648 5000;
+BA_ "GenMsgCycleTime" BO_ 2667483650 5000;
+BA_ "GenMsgCycleTime" BO_ 2667483649 5000;
+BA_ "GenMsgCycleTime" BO_ 2667483658 5000;
+BA_ "GenMsgCycleTime" BO_ 2667483659 5000;
+VAL_ 513 VCU_Cmd1_VCM_PDULocation 0 "0x0:高压盒前置" 1 "0x1:高压盒后置" ;
+VAL_ 513 VCU_Cmd1_VCM_MCUEnable 0 "0x0:关闭" 1 "0x1:使能" ;
+VAL_ 513 VCU_Cmd1_VCM_HoldEnable 0 "0x0:关闭" 1 "0x1:使能" ;
+VAL_ 513 VCU_Cmd1_VCM_Ready 0 "0x0:Not ready" 1 "0x1:Ready" 2 "0x2:预留" 3 "0x3:无效" ;
+VAL_ 513 VCU_Cmd1_VCM_MCUMode 0 "0x0:无效" 1 "0x1:速度模式" 2 "0x2:扭矩模式" 3 "0x3:主动放电模式" ;
+VAL_ 513 VCU_Cmd1_VCU_VehPowerMode 0 "0x0:INIT" 1 "0x1:OFF" 2 "0x2:CANWP" 3 "0x3:ACC" 4 "0x4:ON" 5 "0x5:START" 6 "0x6:ACCCHARGE" 7 "0x7:ONCHARGE" 8 "0x8:STARTCHARGE" 9 "0x9:CHARGE" ;
+VAL_ 513 VCU_Cmd1_VCM_ShiftLeverPosition 0 "0x0:P" 1 "0x1:R" 2 "0x2:N" 3 "0x3:D" 4 "0x4:M档" 5 "0x5:M+" 6 "0x6:M-" 7 "0x7:Fault" ;
+VAL_ 513 VCU_Cmd1_VCM_ShiftLeverPositionValid 0 "0x0:Invalid" 1 "0x1:Valid" ;
+VAL_ 514 VCU_1_VCM_HandBrakeSts 0 "0x0:InActive" 1 "0x1:Active" ;
+VAL_ 514 VCU_1_VCM_DCDCEnable 0 "0x0:关闭" 1 "0x1:使能" ;
+VAL_ 514 VCU_1_VCM_BrakePedalStatus 0 "0x0:Invalid" 1 "0x1:brake not active" 2 "0x2:brake active" 3 "0x3:无效" ;
+VAL_ 2647483716 VCU_Cmd2_Power_Solenoid_Sts 0 "0x0:关闭" 1 "0x1:使能" ;
+VAL_ 2647483716 VCU_Cmd2_Power_Switch_Sts 0 "0x0:关闭" 1 "0x1:使能" ;
+VAL_ 2667483716 ISG_MCU_STATUS1_MCU_Sta 0 "0x0:off" 1 "0x1:crawling" 2 "0x2:driving" 3 "0x3:regenerating" 4 "0x4:standby" ;
+VAL_ 2667483716 ISG_MCU_STATUS1_MCU_Precharge_Allow 0 "0x0:disable" 1 "0x1:enable" ;
+VAL_ 2667483716 ISG_MCU_STATUS1_MCU_Fast_DisChar_feedback 0 "0x0:disable" 1 "0x1:enable" ;
+VAL_ 2667483716 ISG_MCU_STATUS1_IGBT_Enable_Feedback 0 "0x0:disable" 1 "0x1:enable" ;
+VAL_ 2667483716 ISG_MCU_STATUS1_Work_Mode 0 "0x0:初始化" 1 "0x1:低压上电正常" 2 "0x2:保留" 3 "0x3:电机允许运行" 4 "0x4:电机转速闭环运行" 5 "0x5:电机转矩闭环运行" 6 "0x6:下强电（主动放电）" 7 "0x7:下弱电（高压低于 36V）" 8 "0x8:错误（故障保护）" ;
+VAL_ 258 ISG_MCU_STATUS2_TS4_MCU_ErrLevel 0 "0x0:预留，不处理" 1 "0x1:一级故障，轻微故障" 2 "0x2:二级故障，一般故障" 3 "0x3:三级故障，严重故障" 4 "0x4:四级故障，致命故障" ;
+VAL_ 258 ISG_MCU_STATUS2_SlopeState 0 "0x0:非驻坡状态" 1 "0x1:驻坡状态" 2 "0x2:not available" 3 "0x3:not available" ;
+VAL_ 258 ISG_MCU_STATUS2_HillFlag 0 "0x0:未满" 1 "0x1:达到极限" ;
+VAL_ 261 ISG_MCU_STATUS5_MCU_RegTorqReqVD 0 "0x0:Invalid" 1 "0x1:Valid" ;
+

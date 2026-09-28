@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00047.xsd">
+  <ADMIN-DATA>
+    <SDGS>
+      <SDG>
+        <SD GID="BSW_TYPE">AUTOSAR_TOOL_GENERATED</SD>
+      </SDG>
+    </SDGS>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>ETAS_Project</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>EcucModuleConfigurationValuess</SHORT-NAME>
+          <ELEMENTS>
+            <ECUC-MODULE-CONFIGURATION-VALUES>
+              <SHORT-NAME>Dcm</SHORT-NAME>
+              <DEFINITION-REF DEST="ECUC-MODULE-DEF">/AUTOSAR_Dcm/EcucModuleDefs/Dcm</DEFINITION-REF>
+              <IMPLEMENTATION-CONFIG-VARIANT>VARIANT-PRE-COMPILE</IMPLEMENTATION-CONFIG-VARIANT>
+              <CONTAINERS>
+                <ECUC-CONTAINER-VALUE S="USER_GENERATED">
+                  <SHORT-NAME>DcmConfigSet</SHORT-NAME>
+                  <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dcm/EcucModuleDefs/Dcm/DcmConfigSet</DEFINITION-REF>
+                  <SUB-CONTAINERS>
+                    <ECUC-CONTAINER-VALUE S="USER_GENERATED">
+                      <SHORT-NAME>DcmDsp</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dcm/EcucModuleDefs/Dcm/DcmConfigSet/DcmDsp</DEFINITION-REF>
+                      <PARAMETER-VALUES>
+                        <ECUC-NUMERICAL-PARAM-VALUE S="USER_GENERATED">
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_Dcm/EcucModuleDefs/Dcm/DcmConfigSet/DcmDsp/DcmRbDspLimitRDBIRespToBufSize</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE S="USER_GENERATED">
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_Dcm/EcucModuleDefs/Dcm/DcmConfigSet/DcmDsp/DcmRbDspRdbiPagedBufferEnabled</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE S="USER_GENERATED">
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_Dcm/EcucModuleDefs/Dcm/DcmConfigSet/DcmDsp/DcmRbDspRmbaPagedBufferEnabled</DEFINITION-REF>
+                          <VALUE>false</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE S="USER_GENERATED">
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_Dcm/EcucModuleDefs/Dcm/DcmConfigSet/DcmDsp/DcmRbDspRdtcPagedBufferEnabled</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE S="USER_GENERATED">
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_Dcm/EcucModuleDefs/Dcm/DcmConfigSet/DcmDsp/DcmRbDspSequenceCheckRequestDownloadDisabled</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE S="USER_GENERATED">
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_Dcm/EcucModuleDefs/Dcm/DcmConfigSet/DcmDsp/DcmRbDspSequenceCheckRequestUploadDisabled</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-TEXTUAL-PARAM-VALUE S="USER_GENERATED">
+                          <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Dcm/EcucModuleDefs/Dcm/DcmConfigSet/DcmDsp/DcmRbDspSesSecUsedInProtocol</DEFINITION-REF>
+                          <VALUE>UDS</VALUE>
+                        </ECUC-TEXTUAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE S="USER_GENERATED">
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_Dcm/EcucModuleDefs/Dcm/DcmConfigSet/DcmDsp/DcmRbDspTransferDataMaxLenChkRequired</DEFINITION-REF>
+                          <VALUE>1</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                        <ECUC-NUMERICAL-PARAM-VALUE S="USER_GENERATED">
+                          <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_Dcm/EcucModuleDefs/Dcm/DcmConfigSet/DcmDsp/DcmRbDspAutoConfigureDEMOBDPIDs</DEFINITION-REF>
+                          <VALUE>0</VALUE>
+                        </ECUC-NUMERICAL-PARAM-VALUE>
+                      </PARAMETER-VALUES>
+                      <SUB-CONTAINERS>
+                        <ECUC-CONTAINER-VALUE S="USER_GENERATED">
+                          <SHORT-NAME>DcmDspSecurity</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Dcm/EcucModuleDefs/Dcm/DcmConfigSet/DcmDsp/DcmDspSecurity</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE S="USER_GENERATED">
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Dcm/EcucModuleDefs/Dcm/DcmConfigSet/DcmDsp/DcmDspSecurity/DcmRbDspSecurityDelayTimerMonitor</DEFINITION-REF>
+                              <VALUE>REQUEST_SEED</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE S="USER_GENERATED">
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Dcm/EcucModuleDefs/Dcm/DcmConfigSet/DcmDsp/DcmDspSecurity/DcmRbDspSecurityNRCExceedNoOfAttempt</DEFINITION-REF>
+                              <VALUE>NumAttDelayAndNumAttLock</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_Dcm/EcucModuleDefs/Dcm/DcmConfigSet/DcmDsp/DcmDspSecurity/DcmRbDspSecurityStoreSeed</DEFINITION-REF>
+                              <VALUE>false</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </SUB-CONTAINERS>
+                    </ECUC-CONTAINER-VALUE>
+                  </SUB-CONTAINERS>
+                </ECUC-CONTAINER-VALUE>
+              </CONTAINERS>
+            </ECUC-MODULE-CONFIGURATION-VALUES>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

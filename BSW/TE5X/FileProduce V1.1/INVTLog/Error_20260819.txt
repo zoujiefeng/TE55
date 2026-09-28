@@ -1,0 +1,1 @@
+[8/19/2026 3:07:37 PM]-[Cannot set Visibility to Visible or call Show, ShowDialog, Close, or WindowInteropHelper.EnsureHandle while a Window is closing.]

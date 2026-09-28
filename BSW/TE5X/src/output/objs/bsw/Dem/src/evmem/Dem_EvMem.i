@@ -1,0 +1,31893 @@
+# 1 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c"
+# 1 "D:\\1_OutProjest\\dongfeng\\90080-05101\\trunk\\BSW\\20Proj\\BSW\\TE5X\\src//"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "s:\\hightec\\toolchains\\tricore\\v4.9.4.1\\tricore\\include\\stdc-predef.h" 1 3
+# 1 "<command-line>" 2
+# 1 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c"
+
+
+# 1 ".\\output\\inc/Dem_Internal.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\Dem_Internal.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Cfg.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg.h" 1
+# 2 ".\\output\\inc/Dem_Cfg.h" 2
+# 7 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\Dem_Internal.h" 2
+# 1 ".\\output\\inc/Platform_Types.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Platform_Types.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\integration\\Platform_Types.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Platform_Types_Cfg.h" 1
+# 14 ".\\output\\inc/..\\..\\bsw\\integration\\Platform_Types.h" 2
+# 76 ".\\output\\inc/..\\..\\bsw\\integration\\Platform_Types.h"
+typedef signed char sint8;
+
+
+
+
+typedef unsigned char uint8;
+
+
+
+
+typedef signed short sint16;
+
+
+
+
+typedef unsigned short uint16;
+
+
+
+
+typedef signed int sint32;
+
+
+
+
+typedef signed long long sint64;
+
+
+
+
+typedef unsigned int uint32;
+
+
+
+
+typedef unsigned long long uint64;
+
+
+
+
+
+typedef float float32;
+
+
+typedef double float64;
+
+
+
+
+
+
+
+typedef unsigned char boolean;
+
+
+
+
+
+
+typedef signed long sint8_least;
+
+
+typedef unsigned long uint8_least;
+
+
+
+
+typedef signed long sint16_least;
+
+
+
+
+typedef unsigned long uint16_least;
+
+
+
+
+typedef signed long sint32_least;
+
+
+
+
+typedef unsigned long uint32_least;
+# 2 ".\\output\\inc/Platform_Types.h" 2
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\Dem_Internal.h" 2
+# 1 ".\\output\\inc/Rte_Dem_Type.h" 1
+# 1 ".\\output\\inc/..\\..\\rte\\Rte_Dem_Type.h" 1
+# 16 ".\\output\\inc/..\\..\\rte\\Rte_Dem_Type.h"
+# 1 ".\\output\\inc/..\\..\\rte\\Rte_Type.h" 1
+# 16 ".\\output\\inc/..\\..\\rte\\Rte_Type.h"
+# 1 ".\\output\\inc/..\\..\\rte\\Rte.h" 1
+# 18 ".\\output\\inc/..\\..\\rte\\Rte.h"
+# 1 ".\\output\\inc/Rte_UserCfg.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_UserCfg.h" 1
+# 23 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_UserCfg.h"
+# 1 ".\\output\\inc/Can.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Can.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/Can_17_McmCan.h" 1
+# 1 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Can_17_McmCan\\inc\\Can_17_McmCan.h" 1
+# 50 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Can_17_McmCan\\inc\\Can_17_McmCan.h"
+# 1 ".\\output\\inc/IfxCan_reg.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxCan_reg.h" 1
+# 62 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxCan_reg.h"
+# 1 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxCan_regdef.h" 1
+# 57 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxCan_regdef.h"
+# 1 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\Ifx_TypesReg.h" 1
+# 96 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\Ifx_TypesReg.h"
+typedef unsigned char Ifx_UReg_8Bit;
+typedef unsigned short Ifx_UReg_16Bit;
+typedef unsigned int Ifx_UReg_32Bit;
+typedef signed char Ifx_SReg_8Bit;
+typedef signed short Ifx_SReg_16Bit;
+typedef signed int Ifx_SReg_32Bit;
+# 58 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxCan_regdef.h" 2
+# 68 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxCan_regdef.h"
+typedef struct _Ifx_CAN_ACCEN0_Bits
+{
+    Ifx_UReg_32Bit EN0:1;
+    Ifx_UReg_32Bit EN1:1;
+    Ifx_UReg_32Bit EN2:1;
+    Ifx_UReg_32Bit EN3:1;
+    Ifx_UReg_32Bit EN4:1;
+    Ifx_UReg_32Bit EN5:1;
+    Ifx_UReg_32Bit EN6:1;
+    Ifx_UReg_32Bit EN7:1;
+    Ifx_UReg_32Bit EN8:1;
+    Ifx_UReg_32Bit EN9:1;
+    Ifx_UReg_32Bit EN10:1;
+    Ifx_UReg_32Bit EN11:1;
+    Ifx_UReg_32Bit EN12:1;
+    Ifx_UReg_32Bit EN13:1;
+    Ifx_UReg_32Bit EN14:1;
+    Ifx_UReg_32Bit EN15:1;
+    Ifx_UReg_32Bit EN16:1;
+    Ifx_UReg_32Bit EN17:1;
+    Ifx_UReg_32Bit EN18:1;
+    Ifx_UReg_32Bit EN19:1;
+    Ifx_UReg_32Bit EN20:1;
+    Ifx_UReg_32Bit EN21:1;
+    Ifx_UReg_32Bit EN22:1;
+    Ifx_UReg_32Bit EN23:1;
+    Ifx_UReg_32Bit EN24:1;
+    Ifx_UReg_32Bit EN25:1;
+    Ifx_UReg_32Bit EN26:1;
+    Ifx_UReg_32Bit EN27:1;
+    Ifx_UReg_32Bit EN28:1;
+    Ifx_UReg_32Bit EN29:1;
+    Ifx_UReg_32Bit EN30:1;
+    Ifx_UReg_32Bit EN31:1;
+} Ifx_CAN_ACCEN0_Bits;
+
+
+typedef struct _Ifx_CAN_ACCENCTR0_Bits
+{
+    Ifx_UReg_32Bit EN0:1;
+    Ifx_UReg_32Bit EN1:1;
+    Ifx_UReg_32Bit EN2:1;
+    Ifx_UReg_32Bit EN3:1;
+    Ifx_UReg_32Bit EN4:1;
+    Ifx_UReg_32Bit EN5:1;
+    Ifx_UReg_32Bit EN6:1;
+    Ifx_UReg_32Bit EN7:1;
+    Ifx_UReg_32Bit EN8:1;
+    Ifx_UReg_32Bit EN9:1;
+    Ifx_UReg_32Bit EN10:1;
+    Ifx_UReg_32Bit EN11:1;
+    Ifx_UReg_32Bit EN12:1;
+    Ifx_UReg_32Bit EN13:1;
+    Ifx_UReg_32Bit EN14:1;
+    Ifx_UReg_32Bit EN15:1;
+    Ifx_UReg_32Bit EN16:1;
+    Ifx_UReg_32Bit EN17:1;
+    Ifx_UReg_32Bit EN18:1;
+    Ifx_UReg_32Bit EN19:1;
+    Ifx_UReg_32Bit EN20:1;
+    Ifx_UReg_32Bit EN21:1;
+    Ifx_UReg_32Bit EN22:1;
+    Ifx_UReg_32Bit EN23:1;
+    Ifx_UReg_32Bit EN24:1;
+    Ifx_UReg_32Bit EN25:1;
+    Ifx_UReg_32Bit EN26:1;
+    Ifx_UReg_32Bit EN27:1;
+    Ifx_UReg_32Bit EN28:1;
+    Ifx_UReg_32Bit EN29:1;
+    Ifx_UReg_32Bit EN30:1;
+    Ifx_UReg_32Bit EN31:1;
+} Ifx_CAN_ACCENCTR0_Bits;
+
+
+typedef struct _Ifx_CAN_BUFADR_Bits
+{
+    Ifx_UReg_32Bit TXBUF:14;
+    Ifx_UReg_32Bit reserved_14:2;
+    Ifx_UReg_32Bit RXBUF:14;
+    Ifx_UReg_32Bit reserved_30:2;
+} Ifx_CAN_BUFADR_Bits;
+
+
+typedef struct _Ifx_CAN_CLC_Bits
+{
+    Ifx_UReg_32Bit DISR:1;
+    Ifx_UReg_32Bit DISS:1;
+    Ifx_UReg_32Bit reserved_2:1;
+    Ifx_UReg_32Bit EDIS:1;
+    Ifx_UReg_32Bit reserved_4:28;
+} Ifx_CAN_CLC_Bits;
+
+
+typedef struct _Ifx_CAN_DB_Bits
+{
+    Ifx_UReg_8Bit DB:8;
+} Ifx_CAN_DB_Bits;
+
+
+typedef struct _Ifx_CAN_EXTMSG_F0_Bits
+{
+    Ifx_UReg_32Bit EFID1:29;
+    Ifx_UReg_32Bit EFEC:3;
+} Ifx_CAN_EXTMSG_F0_Bits;
+
+
+typedef struct _Ifx_CAN_EXTMSG_F1_Bits
+{
+    Ifx_UReg_32Bit EFID2:29;
+    Ifx_UReg_32Bit reserved_29:1;
+    Ifx_UReg_32Bit EFT:2;
+} Ifx_CAN_EXTMSG_F1_Bits;
+
+
+typedef struct _Ifx_CAN_ID_Bits
+{
+    Ifx_UReg_32Bit MOD_REV:8;
+    Ifx_UReg_32Bit MOD_TYPE:8;
+    Ifx_UReg_32Bit MOD_NUMBER:16;
+} Ifx_CAN_ID_Bits;
+
+
+typedef struct _Ifx_CAN_KRST0_Bits
+{
+    Ifx_UReg_32Bit RST:1;
+    Ifx_UReg_32Bit RSTSTAT:1;
+    Ifx_UReg_32Bit reserved_2:30;
+} Ifx_CAN_KRST0_Bits;
+
+
+typedef struct _Ifx_CAN_KRST1_Bits
+{
+    Ifx_UReg_32Bit RST:1;
+    Ifx_UReg_32Bit reserved_1:31;
+} Ifx_CAN_KRST1_Bits;
+
+
+typedef struct _Ifx_CAN_KRSTCLR_Bits
+{
+    Ifx_UReg_32Bit CLR:1;
+    Ifx_UReg_32Bit reserved_1:31;
+} Ifx_CAN_KRSTCLR_Bits;
+
+
+typedef struct _Ifx_CAN_MCR_Bits
+{
+    Ifx_UReg_32Bit CLKSEL0:2;
+    Ifx_UReg_32Bit CLKSEL1:2;
+    Ifx_UReg_32Bit CLKSEL2:2;
+    Ifx_UReg_32Bit CLKSEL3:2;
+    Ifx_UReg_32Bit reserved_8:16;
+    Ifx_UReg_32Bit NODE:3;
+    Ifx_UReg_32Bit DXCM:1;
+    Ifx_UReg_32Bit RBUSY:1;
+    Ifx_UReg_32Bit RINIT:1;
+    Ifx_UReg_32Bit CI:1;
+    Ifx_UReg_32Bit CCCE:1;
+} Ifx_CAN_MCR_Bits;
+
+
+typedef struct _Ifx_CAN_MECR_Bits
+{
+    Ifx_UReg_32Bit TH:16;
+    Ifx_UReg_32Bit INP:4;
+    Ifx_UReg_32Bit NODE:3;
+    Ifx_UReg_32Bit reserved_23:1;
+    Ifx_UReg_32Bit ANYED:1;
+    Ifx_UReg_32Bit CAPEIE:1;
+    Ifx_UReg_32Bit reserved_26:1;
+    Ifx_UReg_32Bit DEPTH:3;
+    Ifx_UReg_32Bit SOF:1;
+    Ifx_UReg_32Bit reserved_31:1;
+} Ifx_CAN_MECR_Bits;
+
+
+typedef struct _Ifx_CAN_MESTAT_Bits
+{
+    Ifx_UReg_32Bit CAPT:16;
+    Ifx_UReg_32Bit CAPRED:1;
+    Ifx_UReg_32Bit CAPE:1;
+    Ifx_UReg_32Bit reserved_18:14;
+} Ifx_CAN_MESTAT_Bits;
+
+
+typedef struct _Ifx_CAN_N_ACCENNODE0_Bits
+{
+    Ifx_UReg_32Bit EN0:1;
+    Ifx_UReg_32Bit EN1:1;
+    Ifx_UReg_32Bit EN2:1;
+    Ifx_UReg_32Bit EN3:1;
+    Ifx_UReg_32Bit EN4:1;
+    Ifx_UReg_32Bit EN5:1;
+    Ifx_UReg_32Bit EN6:1;
+    Ifx_UReg_32Bit EN7:1;
+    Ifx_UReg_32Bit EN8:1;
+    Ifx_UReg_32Bit EN9:1;
+    Ifx_UReg_32Bit EN10:1;
+    Ifx_UReg_32Bit EN11:1;
+    Ifx_UReg_32Bit EN12:1;
+    Ifx_UReg_32Bit EN13:1;
+    Ifx_UReg_32Bit EN14:1;
+    Ifx_UReg_32Bit EN15:1;
+    Ifx_UReg_32Bit EN16:1;
+    Ifx_UReg_32Bit EN17:1;
+    Ifx_UReg_32Bit EN18:1;
+    Ifx_UReg_32Bit EN19:1;
+    Ifx_UReg_32Bit EN20:1;
+    Ifx_UReg_32Bit EN21:1;
+    Ifx_UReg_32Bit EN22:1;
+    Ifx_UReg_32Bit EN23:1;
+    Ifx_UReg_32Bit EN24:1;
+    Ifx_UReg_32Bit EN25:1;
+    Ifx_UReg_32Bit EN26:1;
+    Ifx_UReg_32Bit EN27:1;
+    Ifx_UReg_32Bit EN28:1;
+    Ifx_UReg_32Bit EN29:1;
+    Ifx_UReg_32Bit EN30:1;
+    Ifx_UReg_32Bit EN31:1;
+} Ifx_CAN_N_ACCENNODE0_Bits;
+
+
+typedef struct _Ifx_CAN_N_CCCR_Bits
+{
+    Ifx_UReg_32Bit INIT:1;
+    Ifx_UReg_32Bit CCE:1;
+    Ifx_UReg_32Bit ASM:1;
+    Ifx_UReg_32Bit CSA:1;
+    Ifx_UReg_32Bit CSR:1;
+    Ifx_UReg_32Bit MON:1;
+    Ifx_UReg_32Bit DAR:1;
+    Ifx_UReg_32Bit TEST:1;
+    Ifx_UReg_32Bit FDOE:1;
+    Ifx_UReg_32Bit BRSE:1;
+    Ifx_UReg_32Bit reserved_10:2;
+    Ifx_UReg_32Bit PXHD:1;
+    Ifx_UReg_32Bit EFBI:1;
+    Ifx_UReg_32Bit TXP:1;
+    Ifx_UReg_32Bit NISO:1;
+    Ifx_UReg_32Bit reserved_16:16;
+} Ifx_CAN_N_CCCR_Bits;
+
+
+typedef struct _Ifx_CAN_N_CREL_Bits
+{
+    Ifx_UReg_32Bit DAY:8;
+    Ifx_UReg_32Bit MON:8;
+    Ifx_UReg_32Bit YEAR:4;
+    Ifx_UReg_32Bit SUBSTEP:4;
+    Ifx_UReg_32Bit STEP:4;
+    Ifx_UReg_32Bit REL:4;
+} Ifx_CAN_N_CREL_Bits;
+
+
+typedef struct _Ifx_CAN_N_DBTP_Bits
+{
+    Ifx_UReg_32Bit DSJW:4;
+    Ifx_UReg_32Bit DTSEG2:4;
+    Ifx_UReg_32Bit DTSEG1:5;
+    Ifx_UReg_32Bit reserved_13:3;
+    Ifx_UReg_32Bit DBRP:5;
+    Ifx_UReg_32Bit reserved_21:2;
+    Ifx_UReg_32Bit TDC:1;
+    Ifx_UReg_32Bit reserved_24:8;
+} Ifx_CAN_N_DBTP_Bits;
+
+
+typedef struct _Ifx_CAN_N_ECR_Bits
+{
+    Ifx_UReg_32Bit TEC:8;
+    Ifx_UReg_32Bit REC:7;
+    Ifx_UReg_32Bit RP:1;
+    Ifx_UReg_32Bit CEL:8;
+    Ifx_UReg_32Bit reserved_24:8;
+} Ifx_CAN_N_ECR_Bits;
+
+
+typedef struct _Ifx_CAN_N_ENDADR_Bits
+{
+    Ifx_UReg_32Bit reserved_0:2;
+    Ifx_UReg_32Bit END:14;
+    Ifx_UReg_32Bit reserved_16:16;
+} Ifx_CAN_N_ENDADR_Bits;
+
+
+typedef struct _Ifx_CAN_N_ENDN_Bits
+{
+    Ifx_UReg_32Bit ETV:32;
+} Ifx_CAN_N_ENDN_Bits;
+
+
+typedef struct _Ifx_CAN_N_GFC_Bits
+{
+    Ifx_UReg_32Bit RRFE:1;
+    Ifx_UReg_32Bit RRFS:1;
+    Ifx_UReg_32Bit ANFE:2;
+    Ifx_UReg_32Bit ANFS:2;
+    Ifx_UReg_32Bit reserved_6:26;
+} Ifx_CAN_N_GFC_Bits;
+
+
+typedef struct _Ifx_CAN_N_GRINT1_Bits
+{
+    Ifx_UReg_32Bit TEFIFO:4;
+    Ifx_UReg_32Bit HPE:4;
+    Ifx_UReg_32Bit WATI:4;
+    Ifx_UReg_32Bit ALRT:4;
+    Ifx_UReg_32Bit MOER:4;
+    Ifx_UReg_32Bit SAFE:4;
+    Ifx_UReg_32Bit BOFF:4;
+    Ifx_UReg_32Bit LOI:4;
+} Ifx_CAN_N_GRINT1_Bits;
+
+
+typedef struct _Ifx_CAN_N_GRINT2_Bits
+{
+    Ifx_UReg_32Bit REINT:4;
+    Ifx_UReg_32Bit RXF1F:4;
+    Ifx_UReg_32Bit RXF0F:4;
+    Ifx_UReg_32Bit RXF1N:4;
+    Ifx_UReg_32Bit RXF0N:4;
+    Ifx_UReg_32Bit RETI:4;
+    Ifx_UReg_32Bit TRAQ:4;
+    Ifx_UReg_32Bit TRACO:4;
+} Ifx_CAN_N_GRINT2_Bits;
+
+
+typedef struct _Ifx_CAN_N_HPMS_Bits
+{
+    Ifx_UReg_32Bit BIDX:6;
+    Ifx_UReg_32Bit MSI:2;
+    Ifx_UReg_32Bit FIDX:7;
+    Ifx_UReg_32Bit FLST:1;
+    Ifx_UReg_32Bit reserved_16:16;
+} Ifx_CAN_N_HPMS_Bits;
+
+
+typedef struct _Ifx_CAN_N_IE_Bits
+{
+    Ifx_UReg_32Bit RF0NE:1;
+    Ifx_UReg_32Bit RF0WE:1;
+    Ifx_UReg_32Bit RF0FE:1;
+    Ifx_UReg_32Bit RF0LE:1;
+    Ifx_UReg_32Bit RF1NE:1;
+    Ifx_UReg_32Bit RF1WE:1;
+    Ifx_UReg_32Bit RF1FE:1;
+    Ifx_UReg_32Bit RF1LE:1;
+    Ifx_UReg_32Bit HPME:1;
+    Ifx_UReg_32Bit TCE:1;
+    Ifx_UReg_32Bit TCFE:1;
+    Ifx_UReg_32Bit TFEE:1;
+    Ifx_UReg_32Bit TEFNE:1;
+    Ifx_UReg_32Bit TEFWE:1;
+    Ifx_UReg_32Bit TEFFE:1;
+    Ifx_UReg_32Bit TEFLE:1;
+    Ifx_UReg_32Bit TSWE:1;
+    Ifx_UReg_32Bit MRAFE:1;
+    Ifx_UReg_32Bit TOOE:1;
+    Ifx_UReg_32Bit DRXE:1;
+    Ifx_UReg_32Bit reserved_20:1;
+    Ifx_UReg_32Bit reserved_21:1;
+    Ifx_UReg_32Bit ELOE:1;
+    Ifx_UReg_32Bit EPE:1;
+    Ifx_UReg_32Bit EWE:1;
+    Ifx_UReg_32Bit BOE:1;
+    Ifx_UReg_32Bit WDIE:1;
+    Ifx_UReg_32Bit PEAE:1;
+    Ifx_UReg_32Bit PEDE:1;
+    Ifx_UReg_32Bit reserved_29:1;
+    Ifx_UReg_32Bit reserved_30:2;
+} Ifx_CAN_N_IE_Bits;
+
+
+typedef struct _Ifx_CAN_N_IR_Bits
+{
+    Ifx_UReg_32Bit RF0N:1;
+    Ifx_UReg_32Bit RF0W:1;
+    Ifx_UReg_32Bit RF0F:1;
+    Ifx_UReg_32Bit RF0L:1;
+    Ifx_UReg_32Bit RF1N:1;
+    Ifx_UReg_32Bit RF1W:1;
+    Ifx_UReg_32Bit RF1F:1;
+    Ifx_UReg_32Bit RF1L:1;
+    Ifx_UReg_32Bit HPM:1;
+    Ifx_UReg_32Bit TC:1;
+    Ifx_UReg_32Bit TCF:1;
+    Ifx_UReg_32Bit TFE:1;
+    Ifx_UReg_32Bit TEFN:1;
+    Ifx_UReg_32Bit TEFW:1;
+    Ifx_UReg_32Bit TEFF:1;
+    Ifx_UReg_32Bit TEFL:1;
+    Ifx_UReg_32Bit TSW:1;
+    Ifx_UReg_32Bit MRAF:1;
+    Ifx_UReg_32Bit TOO:1;
+    Ifx_UReg_32Bit DRX:1;
+    Ifx_UReg_32Bit reserved_20:1;
+    Ifx_UReg_32Bit reserved_21:1;
+    Ifx_UReg_32Bit ELO:1;
+    Ifx_UReg_32Bit EP:1;
+    Ifx_UReg_32Bit EW:1;
+    Ifx_UReg_32Bit BO:1;
+    Ifx_UReg_32Bit WDI:1;
+    Ifx_UReg_32Bit PEA:1;
+    Ifx_UReg_32Bit PED:1;
+    Ifx_UReg_32Bit reserved_29:1;
+    Ifx_UReg_32Bit reserved_30:2;
+} Ifx_CAN_N_IR_Bits;
+
+
+typedef struct _Ifx_CAN_N_ISREG_Bits
+{
+    Ifx_UReg_32Bit REINT:1;
+    Ifx_UReg_32Bit RXF1F:1;
+    Ifx_UReg_32Bit RXF0F:1;
+    Ifx_UReg_32Bit RXF1N:1;
+    Ifx_UReg_32Bit RXF0N:1;
+    Ifx_UReg_32Bit RETI:1;
+    Ifx_UReg_32Bit TRAQ:1;
+    Ifx_UReg_32Bit TRACO:1;
+    Ifx_UReg_32Bit TEFIFO:1;
+    Ifx_UReg_32Bit HPE:1;
+    Ifx_UReg_32Bit WATI:1;
+    Ifx_UReg_32Bit ALRT:1;
+    Ifx_UReg_32Bit MOER:1;
+    Ifx_UReg_32Bit SAFE:1;
+    Ifx_UReg_32Bit BOFF:1;
+    Ifx_UReg_32Bit LOI:1;
+    Ifx_UReg_32Bit reserved_16:16;
+} Ifx_CAN_N_ISREG_Bits;
+
+
+typedef struct _Ifx_CAN_N_NBTP_Bits
+{
+    Ifx_UReg_32Bit NTSEG2:7;
+    Ifx_UReg_32Bit reserved_7:1;
+    Ifx_UReg_32Bit NTSEG1:8;
+    Ifx_UReg_32Bit NBRP:9;
+    Ifx_UReg_32Bit NSJW:7;
+} Ifx_CAN_N_NBTP_Bits;
+
+
+typedef struct _Ifx_CAN_N_NDAT1_Bits
+{
+    Ifx_UReg_32Bit ND0:1;
+    Ifx_UReg_32Bit ND1:1;
+    Ifx_UReg_32Bit ND2:1;
+    Ifx_UReg_32Bit ND3:1;
+    Ifx_UReg_32Bit ND4:1;
+    Ifx_UReg_32Bit ND5:1;
+    Ifx_UReg_32Bit ND6:1;
+    Ifx_UReg_32Bit ND7:1;
+    Ifx_UReg_32Bit ND8:1;
+    Ifx_UReg_32Bit ND9:1;
+    Ifx_UReg_32Bit ND10:1;
+    Ifx_UReg_32Bit ND11:1;
+    Ifx_UReg_32Bit ND12:1;
+    Ifx_UReg_32Bit ND13:1;
+    Ifx_UReg_32Bit ND14:1;
+    Ifx_UReg_32Bit ND15:1;
+    Ifx_UReg_32Bit ND16:1;
+    Ifx_UReg_32Bit ND17:1;
+    Ifx_UReg_32Bit ND18:1;
+    Ifx_UReg_32Bit ND19:1;
+    Ifx_UReg_32Bit ND20:1;
+    Ifx_UReg_32Bit ND21:1;
+    Ifx_UReg_32Bit ND22:1;
+    Ifx_UReg_32Bit ND23:1;
+    Ifx_UReg_32Bit ND24:1;
+    Ifx_UReg_32Bit ND25:1;
+    Ifx_UReg_32Bit ND26:1;
+    Ifx_UReg_32Bit ND27:1;
+    Ifx_UReg_32Bit ND28:1;
+    Ifx_UReg_32Bit ND29:1;
+    Ifx_UReg_32Bit ND30:1;
+    Ifx_UReg_32Bit ND31:1;
+} Ifx_CAN_N_NDAT1_Bits;
+
+
+typedef struct _Ifx_CAN_N_NDAT2_Bits
+{
+    Ifx_UReg_32Bit ND32:1;
+    Ifx_UReg_32Bit ND33:1;
+    Ifx_UReg_32Bit ND34:1;
+    Ifx_UReg_32Bit ND35:1;
+    Ifx_UReg_32Bit ND36:1;
+    Ifx_UReg_32Bit ND37:1;
+    Ifx_UReg_32Bit ND38:1;
+    Ifx_UReg_32Bit ND39:1;
+    Ifx_UReg_32Bit ND40:1;
+    Ifx_UReg_32Bit ND41:1;
+    Ifx_UReg_32Bit ND42:1;
+    Ifx_UReg_32Bit ND43:1;
+    Ifx_UReg_32Bit ND44:1;
+    Ifx_UReg_32Bit ND45:1;
+    Ifx_UReg_32Bit ND46:1;
+    Ifx_UReg_32Bit ND47:1;
+    Ifx_UReg_32Bit ND48:1;
+    Ifx_UReg_32Bit ND49:1;
+    Ifx_UReg_32Bit ND50:1;
+    Ifx_UReg_32Bit ND51:1;
+    Ifx_UReg_32Bit ND52:1;
+    Ifx_UReg_32Bit ND53:1;
+    Ifx_UReg_32Bit ND54:1;
+    Ifx_UReg_32Bit ND55:1;
+    Ifx_UReg_32Bit ND56:1;
+    Ifx_UReg_32Bit ND57:1;
+    Ifx_UReg_32Bit ND58:1;
+    Ifx_UReg_32Bit ND59:1;
+    Ifx_UReg_32Bit ND60:1;
+    Ifx_UReg_32Bit ND61:1;
+    Ifx_UReg_32Bit ND62:1;
+    Ifx_UReg_32Bit ND63:1;
+} Ifx_CAN_N_NDAT2_Bits;
+
+
+typedef struct _Ifx_CAN_N_NPCR_Bits
+{
+    Ifx_UReg_32Bit RXSEL:3;
+    Ifx_UReg_32Bit reserved_3:5;
+    Ifx_UReg_32Bit LBM:1;
+    Ifx_UReg_32Bit LOUT:1;
+    Ifx_UReg_32Bit DELE:1;
+    Ifx_UReg_32Bit reserved_11:21;
+} Ifx_CAN_N_NPCR_Bits;
+
+
+typedef struct _Ifx_CAN_N_NT_ATTR_Bits
+{
+    Ifx_UReg_32Bit RELOAD:16;
+    Ifx_UReg_32Bit TXMO:8;
+    Ifx_UReg_32Bit STRT:1;
+    Ifx_UReg_32Bit reserved_25:7;
+} Ifx_CAN_N_NT_ATTR_Bits;
+
+
+typedef struct _Ifx_CAN_N_NT_BTTR_Bits
+{
+    Ifx_UReg_32Bit RELOAD:16;
+    Ifx_UReg_32Bit TXMO:8;
+    Ifx_UReg_32Bit STRT:1;
+    Ifx_UReg_32Bit reserved_25:7;
+} Ifx_CAN_N_NT_BTTR_Bits;
+
+
+typedef struct _Ifx_CAN_N_NT_CCR_Bits
+{
+    Ifx_UReg_32Bit reserved_0:8;
+    Ifx_UReg_32Bit TPSC:4;
+    Ifx_UReg_32Bit reserved_12:2;
+    Ifx_UReg_32Bit STRESET:1;
+    Ifx_UReg_32Bit STSTART:1;
+    Ifx_UReg_32Bit reserved_16:2;
+    Ifx_UReg_32Bit TRIGSRC:3;
+    Ifx_UReg_32Bit reserved_21:11;
+} Ifx_CAN_N_NT_CCR_Bits;
+
+
+typedef struct _Ifx_CAN_N_NT_CTTR_Bits
+{
+    Ifx_UReg_32Bit RELOAD:16;
+    Ifx_UReg_32Bit TXMO:8;
+    Ifx_UReg_32Bit STRT:1;
+    Ifx_UReg_32Bit reserved_25:7;
+} Ifx_CAN_N_NT_CTTR_Bits;
+
+
+typedef struct _Ifx_CAN_N_NT_RTR_Bits
+{
+    Ifx_UReg_32Bit RELOAD:16;
+    Ifx_UReg_32Bit reserved_16:6;
+    Ifx_UReg_32Bit TEIE:1;
+    Ifx_UReg_32Bit TE:1;
+    Ifx_UReg_32Bit reserved_24:8;
+} Ifx_CAN_N_NT_RTR_Bits;
+
+
+typedef struct _Ifx_CAN_N_PSR_Bits
+{
+    Ifx_UReg_32Bit LEC:3;
+    Ifx_UReg_32Bit ACT:2;
+    Ifx_UReg_32Bit EP:1;
+    Ifx_UReg_32Bit EW:1;
+    Ifx_UReg_32Bit BO:1;
+    Ifx_UReg_32Bit DLEC:3;
+    Ifx_UReg_32Bit RESI:1;
+    Ifx_UReg_32Bit RBRS:1;
+    Ifx_UReg_32Bit RFDF:1;
+    Ifx_UReg_32Bit PXE:1;
+    Ifx_UReg_32Bit reserved_15:1;
+    Ifx_UReg_32Bit TDCV:7;
+    Ifx_UReg_32Bit reserved_23:9;
+} Ifx_CAN_N_PSR_Bits;
+
+
+typedef struct _Ifx_CAN_N_RWD_Bits
+{
+    Ifx_UReg_32Bit WDC:8;
+    Ifx_UReg_32Bit WDV:8;
+    Ifx_UReg_32Bit reserved_16:16;
+} Ifx_CAN_N_RWD_Bits;
+
+
+typedef struct _Ifx_CAN_N_RX_BC_Bits
+{
+    Ifx_UReg_32Bit reserved_0:2;
+    Ifx_UReg_32Bit RBSA:14;
+    Ifx_UReg_32Bit reserved_16:16;
+} Ifx_CAN_N_RX_BC_Bits;
+
+
+typedef struct _Ifx_CAN_N_RX_ESC_Bits
+{
+    Ifx_UReg_32Bit F0DS:3;
+    Ifx_UReg_32Bit reserved_3:1;
+    Ifx_UReg_32Bit F1DS:3;
+    Ifx_UReg_32Bit reserved_7:1;
+    Ifx_UReg_32Bit RBDS:3;
+    Ifx_UReg_32Bit reserved_11:21;
+} Ifx_CAN_N_RX_ESC_Bits;
+
+
+typedef struct _Ifx_CAN_N_RX_F0A_Bits
+{
+    Ifx_UReg_32Bit F0AI:6;
+    Ifx_UReg_32Bit reserved_6:26;
+} Ifx_CAN_N_RX_F0A_Bits;
+
+
+typedef struct _Ifx_CAN_N_RX_F0C_Bits
+{
+    Ifx_UReg_32Bit reserved_0:2;
+    Ifx_UReg_32Bit F0SA:14;
+    Ifx_UReg_32Bit F0S:7;
+    Ifx_UReg_32Bit reserved_23:1;
+    Ifx_UReg_32Bit F0WM:7;
+    Ifx_UReg_32Bit F0OM:1;
+} Ifx_CAN_N_RX_F0C_Bits;
+
+
+typedef struct _Ifx_CAN_N_RX_F0S_Bits
+{
+    Ifx_UReg_32Bit F0FL:7;
+    Ifx_UReg_32Bit reserved_7:1;
+    Ifx_UReg_32Bit F0GI:6;
+    Ifx_UReg_32Bit reserved_14:2;
+    Ifx_UReg_32Bit F0PI:6;
+    Ifx_UReg_32Bit reserved_22:2;
+    Ifx_UReg_32Bit F0F:1;
+    Ifx_UReg_32Bit RF0L:1;
+    Ifx_UReg_32Bit reserved_26:6;
+} Ifx_CAN_N_RX_F0S_Bits;
+
+
+typedef struct _Ifx_CAN_N_RX_F1A_Bits
+{
+    Ifx_UReg_32Bit F1AI:6;
+    Ifx_UReg_32Bit reserved_6:26;
+} Ifx_CAN_N_RX_F1A_Bits;
+
+
+typedef struct _Ifx_CAN_N_RX_F1C_Bits
+{
+    Ifx_UReg_32Bit reserved_0:2;
+    Ifx_UReg_32Bit F1SA:14;
+    Ifx_UReg_32Bit F1S:7;
+    Ifx_UReg_32Bit reserved_23:1;
+    Ifx_UReg_32Bit F1WM:7;
+    Ifx_UReg_32Bit F1OM:1;
+} Ifx_CAN_N_RX_F1C_Bits;
+
+
+typedef struct _Ifx_CAN_N_RX_F1S_Bits
+{
+    Ifx_UReg_32Bit F1FL:7;
+    Ifx_UReg_32Bit reserved_7:1;
+    Ifx_UReg_32Bit F1GI:6;
+    Ifx_UReg_32Bit reserved_14:2;
+    Ifx_UReg_32Bit F1PI:6;
+    Ifx_UReg_32Bit reserved_22:2;
+    Ifx_UReg_32Bit F1F:1;
+    Ifx_UReg_32Bit RF1L:1;
+    Ifx_UReg_32Bit reserved_26:4;
+    Ifx_UReg_32Bit reserved_30:2;
+} Ifx_CAN_N_RX_F1S_Bits;
+
+
+typedef struct _Ifx_CAN_N_SIDFC_Bits
+{
+    Ifx_UReg_32Bit reserved_0:2;
+    Ifx_UReg_32Bit FLSSA:14;
+    Ifx_UReg_32Bit LSS:8;
+    Ifx_UReg_32Bit reserved_24:8;
+} Ifx_CAN_N_SIDFC_Bits;
+
+
+typedef struct _Ifx_CAN_N_STARTADR_Bits
+{
+    Ifx_UReg_32Bit reserved_0:2;
+    Ifx_UReg_32Bit START:14;
+    Ifx_UReg_32Bit reserved_16:16;
+} Ifx_CAN_N_STARTADR_Bits;
+
+
+typedef struct _Ifx_CAN_N_TDCR_Bits
+{
+    Ifx_UReg_32Bit TDCF:7;
+    Ifx_UReg_32Bit reserved_7:1;
+    Ifx_UReg_32Bit TDCO:7;
+    Ifx_UReg_32Bit reserved_15:17;
+} Ifx_CAN_N_TDCR_Bits;
+
+
+typedef struct _Ifx_CAN_N_TEST_Bits
+{
+    Ifx_UReg_32Bit reserved_0:1;
+    Ifx_UReg_32Bit reserved_1:1;
+    Ifx_UReg_32Bit reserved_2:1;
+    Ifx_UReg_32Bit reserved_3:1;
+    Ifx_UReg_32Bit LBCK:1;
+    Ifx_UReg_32Bit TX:2;
+    Ifx_UReg_32Bit RX:1;
+    Ifx_UReg_32Bit reserved_8:24;
+} Ifx_CAN_N_TEST_Bits;
+
+
+typedef struct _Ifx_CAN_N_TOCC_Bits
+{
+    Ifx_UReg_32Bit ETOC:1;
+    Ifx_UReg_32Bit TOS:2;
+    Ifx_UReg_32Bit reserved_3:13;
+    Ifx_UReg_32Bit TOP:16;
+} Ifx_CAN_N_TOCC_Bits;
+
+
+typedef struct _Ifx_CAN_N_TOCV_Bits
+{
+    Ifx_UReg_32Bit TOC:16;
+    Ifx_UReg_32Bit reserved_16:16;
+} Ifx_CAN_N_TOCV_Bits;
+
+
+typedef struct _Ifx_CAN_N_TSCC_Bits
+{
+    Ifx_UReg_32Bit TSS:2;
+    Ifx_UReg_32Bit reserved_2:14;
+    Ifx_UReg_32Bit TCP:4;
+    Ifx_UReg_32Bit reserved_20:12;
+} Ifx_CAN_N_TSCC_Bits;
+
+
+typedef struct _Ifx_CAN_N_TSCV_Bits
+{
+    Ifx_UReg_32Bit TSC:16;
+    Ifx_UReg_32Bit reserved_16:16;
+} Ifx_CAN_N_TSCV_Bits;
+
+
+typedef struct _Ifx_CAN_N_TTCR_Bits
+{
+    Ifx_UReg_32Bit reserved_0:2;
+    Ifx_UReg_32Bit ETESEL:2;
+    Ifx_UReg_32Bit ETSSEL:3;
+    Ifx_UReg_32Bit reserved_7:2;
+    Ifx_UReg_32Bit TTCTSS:3;
+    Ifx_UReg_32Bit reserved_12:20;
+} Ifx_CAN_N_TTCR_Bits;
+
+
+typedef struct _Ifx_CAN_N_TT_CPT_Bits
+{
+    Ifx_UReg_32Bit CCV:6;
+    Ifx_UReg_32Bit reserved_6:10;
+    Ifx_UReg_32Bit SWV:16;
+} Ifx_CAN_N_TT_CPT_Bits;
+
+
+typedef struct _Ifx_CAN_N_TT_CSM_Bits
+{
+    Ifx_UReg_32Bit CSM:16;
+    Ifx_UReg_32Bit reserved_16:16;
+} Ifx_CAN_N_TT_CSM_Bits;
+
+
+typedef struct _Ifx_CAN_N_TT_CTC_Bits
+{
+    Ifx_UReg_32Bit CT:16;
+    Ifx_UReg_32Bit CC:6;
+    Ifx_UReg_32Bit reserved_22:10;
+} Ifx_CAN_N_TT_CTC_Bits;
+
+
+typedef struct _Ifx_CAN_N_TT_GTP_Bits
+{
+    Ifx_UReg_32Bit TP:16;
+    Ifx_UReg_32Bit CTP:16;
+} Ifx_CAN_N_TT_GTP_Bits;
+
+
+typedef struct _Ifx_CAN_N_TT_IE_Bits
+{
+    Ifx_UReg_32Bit SBCE:1;
+    Ifx_UReg_32Bit SMCE:1;
+    Ifx_UReg_32Bit CSME:1;
+    Ifx_UReg_32Bit SOGE:1;
+    Ifx_UReg_32Bit RTMIE:1;
+    Ifx_UReg_32Bit TTMIE:1;
+    Ifx_UReg_32Bit SWEE:1;
+    Ifx_UReg_32Bit GTWE:1;
+    Ifx_UReg_32Bit GTDE:1;
+    Ifx_UReg_32Bit GTEE:1;
+    Ifx_UReg_32Bit TXUE:1;
+    Ifx_UReg_32Bit TXOE:1;
+    Ifx_UReg_32Bit SE1E:1;
+    Ifx_UReg_32Bit SE2E:1;
+    Ifx_UReg_32Bit ELCE:1;
+    Ifx_UReg_32Bit IWTE:1;
+    Ifx_UReg_32Bit WTE:1;
+    Ifx_UReg_32Bit AWE:1;
+    Ifx_UReg_32Bit CERE:1;
+    Ifx_UReg_32Bit reserved_19:13;
+} Ifx_CAN_N_TT_IE_Bits;
+
+
+typedef struct _Ifx_CAN_N_TT_IR_Bits
+{
+    Ifx_UReg_32Bit SBC:1;
+    Ifx_UReg_32Bit SMC:1;
+    Ifx_UReg_32Bit CSM:1;
+    Ifx_UReg_32Bit SOG:1;
+    Ifx_UReg_32Bit RTMI:1;
+    Ifx_UReg_32Bit TTMI:1;
+    Ifx_UReg_32Bit SWE:1;
+    Ifx_UReg_32Bit GTW:1;
+    Ifx_UReg_32Bit GTD:1;
+    Ifx_UReg_32Bit GTE:1;
+    Ifx_UReg_32Bit TXU:1;
+    Ifx_UReg_32Bit TXO:1;
+    Ifx_UReg_32Bit SE1:1;
+    Ifx_UReg_32Bit SE2:1;
+    Ifx_UReg_32Bit ELC:1;
+    Ifx_UReg_32Bit IWT:1;
+    Ifx_UReg_32Bit WT:1;
+    Ifx_UReg_32Bit AW:1;
+    Ifx_UReg_32Bit CER:1;
+    Ifx_UReg_32Bit reserved_19:13;
+} Ifx_CAN_N_TT_IR_Bits;
+
+
+typedef struct _Ifx_CAN_N_TT_LGT_Bits
+{
+    Ifx_UReg_32Bit LT:16;
+    Ifx_UReg_32Bit GT:16;
+} Ifx_CAN_N_TT_LGT_Bits;
+
+
+typedef struct _Ifx_CAN_N_TT_MLM_Bits
+{
+    Ifx_UReg_32Bit CCM:6;
+    Ifx_UReg_32Bit CSS:2;
+    Ifx_UReg_32Bit TXEW:4;
+    Ifx_UReg_32Bit reserved_12:4;
+    Ifx_UReg_32Bit ENTT:12;
+    Ifx_UReg_32Bit reserved_28:4;
+} Ifx_CAN_N_TT_MLM_Bits;
+
+
+typedef struct _Ifx_CAN_N_TT_OCF_Bits
+{
+    Ifx_UReg_32Bit OM:2;
+    Ifx_UReg_32Bit reserved_2:1;
+    Ifx_UReg_32Bit GEN:1;
+    Ifx_UReg_32Bit TM:1;
+    Ifx_UReg_32Bit LDSDL:3;
+    Ifx_UReg_32Bit IRTO:7;
+    Ifx_UReg_32Bit EECS:1;
+    Ifx_UReg_32Bit AWL:8;
+    Ifx_UReg_32Bit EGTF:1;
+    Ifx_UReg_32Bit ECC:1;
+    Ifx_UReg_32Bit EVTP:1;
+    Ifx_UReg_32Bit reserved_27:5;
+} Ifx_CAN_N_TT_OCF_Bits;
+
+
+typedef struct _Ifx_CAN_N_TT_OCN_Bits
+{
+    Ifx_UReg_32Bit SGT:1;
+    Ifx_UReg_32Bit ECS:1;
+    Ifx_UReg_32Bit SWP:1;
+    Ifx_UReg_32Bit SWS:2;
+    Ifx_UReg_32Bit RTIE:1;
+    Ifx_UReg_32Bit TMC:2;
+    Ifx_UReg_32Bit TTIE:1;
+    Ifx_UReg_32Bit GCS:1;
+    Ifx_UReg_32Bit FGP:1;
+    Ifx_UReg_32Bit TMG:1;
+    Ifx_UReg_32Bit NIG:1;
+    Ifx_UReg_32Bit ESCN:1;
+    Ifx_UReg_32Bit reserved_14:1;
+    Ifx_UReg_32Bit LCKC:1;
+    Ifx_UReg_32Bit reserved_16:16;
+} Ifx_CAN_N_TT_OCN_Bits;
+
+
+typedef struct _Ifx_CAN_N_TT_OST_Bits
+{
+    Ifx_UReg_32Bit EL:2;
+    Ifx_UReg_32Bit MS:2;
+    Ifx_UReg_32Bit SYS:2;
+    Ifx_UReg_32Bit QGTP:1;
+    Ifx_UReg_32Bit QCS:1;
+    Ifx_UReg_32Bit RTO:8;
+    Ifx_UReg_32Bit reserved_16:6;
+    Ifx_UReg_32Bit WGTD:1;
+    Ifx_UReg_32Bit GFI:1;
+    Ifx_UReg_32Bit TMP:3;
+    Ifx_UReg_32Bit GSI:1;
+    Ifx_UReg_32Bit WFE:1;
+    Ifx_UReg_32Bit AWE:1;
+    Ifx_UReg_32Bit WECS:1;
+    Ifx_UReg_32Bit SPL:1;
+} Ifx_CAN_N_TT_OST_Bits;
+
+
+typedef struct _Ifx_CAN_N_TT_RMC_Bits
+{
+    Ifx_UReg_32Bit RID:29;
+    Ifx_UReg_32Bit reserved_29:1;
+    Ifx_UReg_32Bit XTD:1;
+    Ifx_UReg_32Bit RMPS:1;
+} Ifx_CAN_N_TT_RMC_Bits;
+
+
+typedef struct _Ifx_CAN_N_TT_TMC_Bits
+{
+    Ifx_UReg_32Bit reserved_0:2;
+    Ifx_UReg_32Bit TMSA:14;
+    Ifx_UReg_32Bit TME:7;
+    Ifx_UReg_32Bit reserved_23:9;
+} Ifx_CAN_N_TT_TMC_Bits;
+
+
+typedef struct _Ifx_CAN_N_TT_TMK_Bits
+{
+    Ifx_UReg_32Bit TM:16;
+    Ifx_UReg_32Bit TICC:7;
+    Ifx_UReg_32Bit reserved_23:8;
+    Ifx_UReg_32Bit LCKM:1;
+} Ifx_CAN_N_TT_TMK_Bits;
+
+
+typedef struct _Ifx_CAN_N_TT_TURCF_Bits
+{
+    Ifx_UReg_32Bit NCL:16;
+    Ifx_UReg_32Bit DC:14;
+    Ifx_UReg_32Bit reserved_30:1;
+    Ifx_UReg_32Bit ELT:1;
+} Ifx_CAN_N_TT_TURCF_Bits;
+
+
+typedef struct _Ifx_CAN_N_TT_TURNA_Bits
+{
+    Ifx_UReg_32Bit NAV:18;
+    Ifx_UReg_32Bit reserved_18:14;
+} Ifx_CAN_N_TT_TURNA_Bits;
+
+
+typedef struct _Ifx_CAN_N_TX_BAR_Bits
+{
+    Ifx_UReg_32Bit AR0:1;
+    Ifx_UReg_32Bit AR1:1;
+    Ifx_UReg_32Bit AR2:1;
+    Ifx_UReg_32Bit AR3:1;
+    Ifx_UReg_32Bit AR4:1;
+    Ifx_UReg_32Bit AR5:1;
+    Ifx_UReg_32Bit AR6:1;
+    Ifx_UReg_32Bit AR7:1;
+    Ifx_UReg_32Bit AR8:1;
+    Ifx_UReg_32Bit AR9:1;
+    Ifx_UReg_32Bit AR10:1;
+    Ifx_UReg_32Bit AR11:1;
+    Ifx_UReg_32Bit AR12:1;
+    Ifx_UReg_32Bit AR13:1;
+    Ifx_UReg_32Bit AR14:1;
+    Ifx_UReg_32Bit AR15:1;
+    Ifx_UReg_32Bit AR16:1;
+    Ifx_UReg_32Bit AR17:1;
+    Ifx_UReg_32Bit AR18:1;
+    Ifx_UReg_32Bit AR19:1;
+    Ifx_UReg_32Bit AR20:1;
+    Ifx_UReg_32Bit AR21:1;
+    Ifx_UReg_32Bit AR22:1;
+    Ifx_UReg_32Bit AR23:1;
+    Ifx_UReg_32Bit AR24:1;
+    Ifx_UReg_32Bit AR25:1;
+    Ifx_UReg_32Bit AR26:1;
+    Ifx_UReg_32Bit AR27:1;
+    Ifx_UReg_32Bit AR28:1;
+    Ifx_UReg_32Bit AR29:1;
+    Ifx_UReg_32Bit AR30:1;
+    Ifx_UReg_32Bit AR31:1;
+} Ifx_CAN_N_TX_BAR_Bits;
+
+
+typedef struct _Ifx_CAN_N_TX_BC_Bits
+{
+    Ifx_UReg_32Bit reserved_0:2;
+    Ifx_UReg_32Bit TBSA:14;
+    Ifx_UReg_32Bit NDTB:6;
+    Ifx_UReg_32Bit reserved_22:2;
+    Ifx_UReg_32Bit TFQS:6;
+    Ifx_UReg_32Bit TFQM:1;
+    Ifx_UReg_32Bit reserved_31:1;
+} Ifx_CAN_N_TX_BC_Bits;
+
+
+typedef struct _Ifx_CAN_N_TX_BCF_Bits
+{
+    Ifx_UReg_32Bit CF0:1;
+    Ifx_UReg_32Bit CF1:1;
+    Ifx_UReg_32Bit CF2:1;
+    Ifx_UReg_32Bit CF3:1;
+    Ifx_UReg_32Bit CF4:1;
+    Ifx_UReg_32Bit CF5:1;
+    Ifx_UReg_32Bit CF6:1;
+    Ifx_UReg_32Bit CF7:1;
+    Ifx_UReg_32Bit CF8:1;
+    Ifx_UReg_32Bit CF9:1;
+    Ifx_UReg_32Bit CF10:1;
+    Ifx_UReg_32Bit CF11:1;
+    Ifx_UReg_32Bit CF12:1;
+    Ifx_UReg_32Bit CF13:1;
+    Ifx_UReg_32Bit CF14:1;
+    Ifx_UReg_32Bit CF15:1;
+    Ifx_UReg_32Bit CF16:1;
+    Ifx_UReg_32Bit CF17:1;
+    Ifx_UReg_32Bit CF18:1;
+    Ifx_UReg_32Bit CF19:1;
+    Ifx_UReg_32Bit CF20:1;
+    Ifx_UReg_32Bit CF21:1;
+    Ifx_UReg_32Bit CF22:1;
+    Ifx_UReg_32Bit CF23:1;
+    Ifx_UReg_32Bit CF24:1;
+    Ifx_UReg_32Bit CF25:1;
+    Ifx_UReg_32Bit CF26:1;
+    Ifx_UReg_32Bit CF27:1;
+    Ifx_UReg_32Bit CF28:1;
+    Ifx_UReg_32Bit CF29:1;
+    Ifx_UReg_32Bit CF30:1;
+    Ifx_UReg_32Bit CF31:1;
+} Ifx_CAN_N_TX_BCF_Bits;
+
+
+typedef struct _Ifx_CAN_N_TX_BCIE_Bits
+{
+    Ifx_UReg_32Bit CFIE0:1;
+    Ifx_UReg_32Bit CFIE1:1;
+    Ifx_UReg_32Bit CFIE2:1;
+    Ifx_UReg_32Bit CFIE3:1;
+    Ifx_UReg_32Bit CFIE4:1;
+    Ifx_UReg_32Bit CFIE5:1;
+    Ifx_UReg_32Bit CFIE6:1;
+    Ifx_UReg_32Bit CFIE7:1;
+    Ifx_UReg_32Bit CFIE8:1;
+    Ifx_UReg_32Bit CFIE9:1;
+    Ifx_UReg_32Bit CFIE10:1;
+    Ifx_UReg_32Bit CFIE11:1;
+    Ifx_UReg_32Bit CFIE12:1;
+    Ifx_UReg_32Bit CFIE13:1;
+    Ifx_UReg_32Bit CFIE14:1;
+    Ifx_UReg_32Bit CFIE15:1;
+    Ifx_UReg_32Bit CFIE16:1;
+    Ifx_UReg_32Bit CFIE17:1;
+    Ifx_UReg_32Bit CFIE18:1;
+    Ifx_UReg_32Bit CFIE19:1;
+    Ifx_UReg_32Bit CFIE20:1;
+    Ifx_UReg_32Bit CFIE21:1;
+    Ifx_UReg_32Bit CFIE22:1;
+    Ifx_UReg_32Bit CFIE23:1;
+    Ifx_UReg_32Bit CFIE24:1;
+    Ifx_UReg_32Bit CFIE25:1;
+    Ifx_UReg_32Bit CFIE26:1;
+    Ifx_UReg_32Bit CFIE27:1;
+    Ifx_UReg_32Bit CFIE28:1;
+    Ifx_UReg_32Bit CFIE29:1;
+    Ifx_UReg_32Bit CFIE30:1;
+    Ifx_UReg_32Bit CFIE31:1;
+} Ifx_CAN_N_TX_BCIE_Bits;
+
+
+typedef struct _Ifx_CAN_N_TX_BCR_Bits
+{
+    Ifx_UReg_32Bit CR0:1;
+    Ifx_UReg_32Bit CR1:1;
+    Ifx_UReg_32Bit CR2:1;
+    Ifx_UReg_32Bit CR3:1;
+    Ifx_UReg_32Bit CR4:1;
+    Ifx_UReg_32Bit CR5:1;
+    Ifx_UReg_32Bit CR6:1;
+    Ifx_UReg_32Bit CR7:1;
+    Ifx_UReg_32Bit CR8:1;
+    Ifx_UReg_32Bit CR9:1;
+    Ifx_UReg_32Bit CR10:1;
+    Ifx_UReg_32Bit CR11:1;
+    Ifx_UReg_32Bit CR12:1;
+    Ifx_UReg_32Bit CR13:1;
+    Ifx_UReg_32Bit CR14:1;
+    Ifx_UReg_32Bit CR15:1;
+    Ifx_UReg_32Bit CR16:1;
+    Ifx_UReg_32Bit CR17:1;
+    Ifx_UReg_32Bit CR18:1;
+    Ifx_UReg_32Bit CR19:1;
+    Ifx_UReg_32Bit CR20:1;
+    Ifx_UReg_32Bit CR21:1;
+    Ifx_UReg_32Bit CR22:1;
+    Ifx_UReg_32Bit CR23:1;
+    Ifx_UReg_32Bit CR24:1;
+    Ifx_UReg_32Bit CR25:1;
+    Ifx_UReg_32Bit CR26:1;
+    Ifx_UReg_32Bit CR27:1;
+    Ifx_UReg_32Bit CR28:1;
+    Ifx_UReg_32Bit CR29:1;
+    Ifx_UReg_32Bit CR30:1;
+    Ifx_UReg_32Bit CR31:1;
+} Ifx_CAN_N_TX_BCR_Bits;
+
+
+typedef struct _Ifx_CAN_N_TX_BRP_Bits
+{
+    Ifx_UReg_32Bit TRP0:1;
+    Ifx_UReg_32Bit TRP1:1;
+    Ifx_UReg_32Bit TRP2:1;
+    Ifx_UReg_32Bit TRP3:1;
+    Ifx_UReg_32Bit TRP4:1;
+    Ifx_UReg_32Bit TRP5:1;
+    Ifx_UReg_32Bit TRP6:1;
+    Ifx_UReg_32Bit TRP7:1;
+    Ifx_UReg_32Bit TRP8:1;
+    Ifx_UReg_32Bit TRP9:1;
+    Ifx_UReg_32Bit TRP10:1;
+    Ifx_UReg_32Bit TRP11:1;
+    Ifx_UReg_32Bit TRP12:1;
+    Ifx_UReg_32Bit TRP13:1;
+    Ifx_UReg_32Bit TRP14:1;
+    Ifx_UReg_32Bit TRP15:1;
+    Ifx_UReg_32Bit TRP16:1;
+    Ifx_UReg_32Bit TRP17:1;
+    Ifx_UReg_32Bit TRP18:1;
+    Ifx_UReg_32Bit TRP19:1;
+    Ifx_UReg_32Bit TRP20:1;
+    Ifx_UReg_32Bit TRP21:1;
+    Ifx_UReg_32Bit TRP22:1;
+    Ifx_UReg_32Bit TRP23:1;
+    Ifx_UReg_32Bit TRP24:1;
+    Ifx_UReg_32Bit TRP25:1;
+    Ifx_UReg_32Bit TRP26:1;
+    Ifx_UReg_32Bit TRP27:1;
+    Ifx_UReg_32Bit TRP28:1;
+    Ifx_UReg_32Bit TRP29:1;
+    Ifx_UReg_32Bit TRP30:1;
+    Ifx_UReg_32Bit TRP31:1;
+} Ifx_CAN_N_TX_BRP_Bits;
+
+
+typedef struct _Ifx_CAN_N_TX_BTIE_Bits
+{
+    Ifx_UReg_32Bit TIE0:1;
+    Ifx_UReg_32Bit TIE1:1;
+    Ifx_UReg_32Bit TIE2:1;
+    Ifx_UReg_32Bit TIE3:1;
+    Ifx_UReg_32Bit TIE4:1;
+    Ifx_UReg_32Bit TIE5:1;
+    Ifx_UReg_32Bit TIE6:1;
+    Ifx_UReg_32Bit TIE7:1;
+    Ifx_UReg_32Bit TIE8:1;
+    Ifx_UReg_32Bit TIE9:1;
+    Ifx_UReg_32Bit TIE10:1;
+    Ifx_UReg_32Bit TIE11:1;
+    Ifx_UReg_32Bit TIE12:1;
+    Ifx_UReg_32Bit TIE13:1;
+    Ifx_UReg_32Bit TIE14:1;
+    Ifx_UReg_32Bit TIE15:1;
+    Ifx_UReg_32Bit TIE16:1;
+    Ifx_UReg_32Bit TIE17:1;
+    Ifx_UReg_32Bit TIE18:1;
+    Ifx_UReg_32Bit TIE19:1;
+    Ifx_UReg_32Bit TIE20:1;
+    Ifx_UReg_32Bit TIE21:1;
+    Ifx_UReg_32Bit TIE22:1;
+    Ifx_UReg_32Bit TIE23:1;
+    Ifx_UReg_32Bit TIE24:1;
+    Ifx_UReg_32Bit TIE25:1;
+    Ifx_UReg_32Bit TIE26:1;
+    Ifx_UReg_32Bit TIE27:1;
+    Ifx_UReg_32Bit TIE28:1;
+    Ifx_UReg_32Bit TIE29:1;
+    Ifx_UReg_32Bit TIE30:1;
+    Ifx_UReg_32Bit TIE31:1;
+} Ifx_CAN_N_TX_BTIE_Bits;
+
+
+typedef struct _Ifx_CAN_N_TX_BTO_Bits
+{
+    Ifx_UReg_32Bit TO0:1;
+    Ifx_UReg_32Bit TO1:1;
+    Ifx_UReg_32Bit TO2:1;
+    Ifx_UReg_32Bit TO3:1;
+    Ifx_UReg_32Bit TO4:1;
+    Ifx_UReg_32Bit TO5:1;
+    Ifx_UReg_32Bit TO6:1;
+    Ifx_UReg_32Bit TO7:1;
+    Ifx_UReg_32Bit TO8:1;
+    Ifx_UReg_32Bit TO9:1;
+    Ifx_UReg_32Bit TO10:1;
+    Ifx_UReg_32Bit TO11:1;
+    Ifx_UReg_32Bit TO12:1;
+    Ifx_UReg_32Bit TO13:1;
+    Ifx_UReg_32Bit TO14:1;
+    Ifx_UReg_32Bit TO15:1;
+    Ifx_UReg_32Bit TO16:1;
+    Ifx_UReg_32Bit TO17:1;
+    Ifx_UReg_32Bit TO18:1;
+    Ifx_UReg_32Bit TO19:1;
+    Ifx_UReg_32Bit TO20:1;
+    Ifx_UReg_32Bit TO21:1;
+    Ifx_UReg_32Bit TO22:1;
+    Ifx_UReg_32Bit TO23:1;
+    Ifx_UReg_32Bit TO24:1;
+    Ifx_UReg_32Bit TO25:1;
+    Ifx_UReg_32Bit TO26:1;
+    Ifx_UReg_32Bit TO27:1;
+    Ifx_UReg_32Bit TO28:1;
+    Ifx_UReg_32Bit TO29:1;
+    Ifx_UReg_32Bit TO30:1;
+    Ifx_UReg_32Bit TO31:1;
+} Ifx_CAN_N_TX_BTO_Bits;
+
+
+typedef struct _Ifx_CAN_N_TX_EFA_Bits
+{
+    Ifx_UReg_32Bit EFAI:5;
+    Ifx_UReg_32Bit reserved_5:27;
+} Ifx_CAN_N_TX_EFA_Bits;
+
+
+typedef struct _Ifx_CAN_N_TX_EFC_Bits
+{
+    Ifx_UReg_32Bit reserved_0:2;
+    Ifx_UReg_32Bit EFSA:14;
+    Ifx_UReg_32Bit EFS:6;
+    Ifx_UReg_32Bit reserved_22:2;
+    Ifx_UReg_32Bit EFWM:6;
+    Ifx_UReg_32Bit reserved_30:2;
+} Ifx_CAN_N_TX_EFC_Bits;
+
+
+typedef struct _Ifx_CAN_N_TX_EFS_Bits
+{
+    Ifx_UReg_32Bit EFFL:6;
+    Ifx_UReg_32Bit reserved_6:2;
+    Ifx_UReg_32Bit EFGI:5;
+    Ifx_UReg_32Bit reserved_13:3;
+    Ifx_UReg_32Bit EFPI:5;
+    Ifx_UReg_32Bit reserved_21:3;
+    Ifx_UReg_32Bit EFF:1;
+    Ifx_UReg_32Bit TEFL:1;
+    Ifx_UReg_32Bit reserved_26:6;
+} Ifx_CAN_N_TX_EFS_Bits;
+
+
+typedef struct _Ifx_CAN_N_TX_ESC_Bits
+{
+    Ifx_UReg_32Bit TBDS:3;
+    Ifx_UReg_32Bit reserved_3:29;
+} Ifx_CAN_N_TX_ESC_Bits;
+
+
+typedef struct _Ifx_CAN_N_TX_FQS_Bits
+{
+    Ifx_UReg_32Bit TFFL:6;
+    Ifx_UReg_32Bit reserved_6:2;
+    Ifx_UReg_32Bit TFGI:5;
+    Ifx_UReg_32Bit reserved_13:3;
+    Ifx_UReg_32Bit TFQPI:5;
+    Ifx_UReg_32Bit TFQF:1;
+    Ifx_UReg_32Bit reserved_22:10;
+} Ifx_CAN_N_TX_FQS_Bits;
+
+
+typedef struct _Ifx_CAN_N_XIDAM_Bits
+{
+    Ifx_UReg_32Bit EIDM:29;
+    Ifx_UReg_32Bit reserved_29:3;
+} Ifx_CAN_N_XIDAM_Bits;
+
+
+typedef struct _Ifx_CAN_N_XIDFC_Bits
+{
+    Ifx_UReg_32Bit reserved_0:2;
+    Ifx_UReg_32Bit FLESA:14;
+    Ifx_UReg_32Bit LSE:7;
+    Ifx_UReg_32Bit reserved_23:9;
+} Ifx_CAN_N_XIDFC_Bits;
+
+
+typedef struct _Ifx_CAN_OCS_Bits
+{
+    Ifx_UReg_32Bit TGS:2;
+    Ifx_UReg_32Bit TGB:1;
+    Ifx_UReg_32Bit TG_P:1;
+    Ifx_UReg_32Bit reserved_4:20;
+    Ifx_UReg_32Bit SUS:4;
+    Ifx_UReg_32Bit SUS_P:1;
+    Ifx_UReg_32Bit SUSSTA:1;
+    Ifx_UReg_32Bit reserved_30:2;
+} Ifx_CAN_OCS_Bits;
+
+
+typedef struct _Ifx_CAN_R0_Bits
+{
+    Ifx_UReg_32Bit ID:29;
+    Ifx_UReg_32Bit RTR:1;
+    Ifx_UReg_32Bit XTD:1;
+    Ifx_UReg_32Bit ESI:1;
+} Ifx_CAN_R0_Bits;
+
+
+typedef struct _Ifx_CAN_R1_Bits
+{
+    Ifx_UReg_32Bit RXTS:16;
+    Ifx_UReg_32Bit DLC:4;
+    Ifx_UReg_32Bit BRS:1;
+    Ifx_UReg_32Bit FDF:1;
+    Ifx_UReg_32Bit reserved_22:2;
+    Ifx_UReg_32Bit FIDX:7;
+    Ifx_UReg_32Bit ANMF:1;
+} Ifx_CAN_R1_Bits;
+
+
+typedef struct _Ifx_CAN_STDMSG_S0_Bits
+{
+    Ifx_UReg_32Bit SFID2:11;
+    Ifx_UReg_32Bit reserved_11:5;
+    Ifx_UReg_32Bit SFID1:11;
+    Ifx_UReg_32Bit SFEC:3;
+    Ifx_UReg_32Bit SFT:2;
+} Ifx_CAN_STDMSG_S0_Bits;
+
+
+typedef struct _Ifx_CAN_TRIGMSG_TM0_Bits
+{
+    Ifx_UReg_32Bit TYPE:4;
+    Ifx_UReg_32Bit TMEX:1;
+    Ifx_UReg_32Bit TMIN:1;
+    Ifx_UReg_32Bit reserved_6:2;
+    Ifx_UReg_32Bit CC:7;
+    Ifx_UReg_32Bit reserved_15:1;
+    Ifx_UReg_32Bit TM:16;
+} Ifx_CAN_TRIGMSG_TM0_Bits;
+
+
+typedef struct _Ifx_CAN_TRIGMSG_TM1_Bits
+{
+    Ifx_UReg_32Bit MSC:3;
+    Ifx_UReg_32Bit reserved_3:13;
+    Ifx_UReg_32Bit MMR:7;
+    Ifx_UReg_32Bit FTYPE:1;
+    Ifx_UReg_32Bit reserved_24:8;
+} Ifx_CAN_TRIGMSG_TM1_Bits;
+
+
+typedef struct _Ifx_CAN_TXEVENT_E0_Bits
+{
+    Ifx_UReg_32Bit ID:29;
+    Ifx_UReg_32Bit RTR:1;
+    Ifx_UReg_32Bit XTD:1;
+    Ifx_UReg_32Bit ESI:1;
+} Ifx_CAN_TXEVENT_E0_Bits;
+
+
+typedef struct _Ifx_CAN_TXEVENT_E1_Bits
+{
+    Ifx_UReg_32Bit TXTS:16;
+    Ifx_UReg_32Bit DLC:4;
+    Ifx_UReg_32Bit BRS:1;
+    Ifx_UReg_32Bit FDF:1;
+    Ifx_UReg_32Bit ET:2;
+    Ifx_UReg_32Bit MM:8;
+} Ifx_CAN_TXEVENT_E1_Bits;
+
+
+typedef struct _Ifx_CAN_TXMSG_DB_Bits
+{
+    Ifx_UReg_8Bit DB:8;
+} Ifx_CAN_TXMSG_DB_Bits;
+
+
+typedef struct _Ifx_CAN_TXMSG_T0_Bits
+{
+    Ifx_UReg_32Bit ID:29;
+    Ifx_UReg_32Bit RTR:1;
+    Ifx_UReg_32Bit XTD:1;
+    Ifx_UReg_32Bit ESI:1;
+} Ifx_CAN_TXMSG_T0_Bits;
+
+
+typedef struct _Ifx_CAN_TXMSG_T1_Bits
+{
+    Ifx_UReg_32Bit reserved_0:16;
+    Ifx_UReg_32Bit DLC:4;
+    Ifx_UReg_32Bit BRS:1;
+    Ifx_UReg_32Bit FDF:1;
+    Ifx_UReg_32Bit reserved_22:1;
+    Ifx_UReg_32Bit EFC:1;
+    Ifx_UReg_32Bit MM:8;
+} Ifx_CAN_TXMSG_T1_Bits;
+
+
+
+
+
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_ACCEN0_Bits B;
+} Ifx_CAN_ACCEN0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_ACCENCTR0_Bits B;
+} Ifx_CAN_ACCENCTR0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_BUFADR_Bits B;
+} Ifx_CAN_BUFADR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_CLC_Bits B;
+} Ifx_CAN_CLC;
+
+
+typedef union
+{
+    Ifx_UReg_8Bit U;
+    Ifx_SReg_8Bit I;
+    Ifx_CAN_DB_Bits B;
+} Ifx_CAN_DB;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_EXTMSG_F0_Bits B;
+} Ifx_CAN_EXTMSG_F0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_EXTMSG_F1_Bits B;
+} Ifx_CAN_EXTMSG_F1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_ID_Bits B;
+} Ifx_CAN_ID;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_KRST0_Bits B;
+} Ifx_CAN_KRST0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_KRST1_Bits B;
+} Ifx_CAN_KRST1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_KRSTCLR_Bits B;
+} Ifx_CAN_KRSTCLR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_MCR_Bits B;
+} Ifx_CAN_MCR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_MECR_Bits B;
+} Ifx_CAN_MECR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_MESTAT_Bits B;
+} Ifx_CAN_MESTAT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_ACCENNODE0_Bits B;
+} Ifx_CAN_N_ACCENNODE0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_CCCR_Bits B;
+} Ifx_CAN_N_CCCR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_CREL_Bits B;
+} Ifx_CAN_N_CREL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_DBTP_Bits B;
+} Ifx_CAN_N_DBTP;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_ECR_Bits B;
+} Ifx_CAN_N_ECR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_ENDADR_Bits B;
+} Ifx_CAN_N_ENDADR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_ENDN_Bits B;
+} Ifx_CAN_N_ENDN;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_GFC_Bits B;
+} Ifx_CAN_N_GFC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_GRINT1_Bits B;
+} Ifx_CAN_N_GRINT1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_GRINT2_Bits B;
+} Ifx_CAN_N_GRINT2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_HPMS_Bits B;
+} Ifx_CAN_N_HPMS;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_IE_Bits B;
+} Ifx_CAN_N_IE;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_IR_Bits B;
+} Ifx_CAN_N_IR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_ISREG_Bits B;
+} Ifx_CAN_N_ISREG;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_NBTP_Bits B;
+} Ifx_CAN_N_NBTP;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_NDAT1_Bits B;
+} Ifx_CAN_N_NDAT1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_NDAT2_Bits B;
+} Ifx_CAN_N_NDAT2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_NPCR_Bits B;
+} Ifx_CAN_N_NPCR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_NT_ATTR_Bits B;
+} Ifx_CAN_N_NT_ATTR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_NT_BTTR_Bits B;
+} Ifx_CAN_N_NT_BTTR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_NT_CCR_Bits B;
+} Ifx_CAN_N_NT_CCR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_NT_CTTR_Bits B;
+} Ifx_CAN_N_NT_CTTR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_NT_RTR_Bits B;
+} Ifx_CAN_N_NT_RTR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_PSR_Bits B;
+} Ifx_CAN_N_PSR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_RWD_Bits B;
+} Ifx_CAN_N_RWD;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_RX_BC_Bits B;
+} Ifx_CAN_N_RX_BC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_RX_ESC_Bits B;
+} Ifx_CAN_N_RX_ESC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_RX_F0A_Bits B;
+} Ifx_CAN_N_RX_F0A;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_RX_F0C_Bits B;
+} Ifx_CAN_N_RX_F0C;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_RX_F0S_Bits B;
+} Ifx_CAN_N_RX_F0S;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_RX_F1A_Bits B;
+} Ifx_CAN_N_RX_F1A;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_RX_F1C_Bits B;
+} Ifx_CAN_N_RX_F1C;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_RX_F1S_Bits B;
+} Ifx_CAN_N_RX_F1S;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_SIDFC_Bits B;
+} Ifx_CAN_N_SIDFC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_STARTADR_Bits B;
+} Ifx_CAN_N_STARTADR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_TDCR_Bits B;
+} Ifx_CAN_N_TDCR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_TEST_Bits B;
+} Ifx_CAN_N_TEST;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_TOCC_Bits B;
+} Ifx_CAN_N_TOCC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_TOCV_Bits B;
+} Ifx_CAN_N_TOCV;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_TSCC_Bits B;
+} Ifx_CAN_N_TSCC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_TSCV_Bits B;
+} Ifx_CAN_N_TSCV;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_TTCR_Bits B;
+} Ifx_CAN_N_TTCR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_TT_CPT_Bits B;
+} Ifx_CAN_N_TT_CPT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_TT_CSM_Bits B;
+} Ifx_CAN_N_TT_CSM;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_TT_CTC_Bits B;
+} Ifx_CAN_N_TT_CTC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_TT_GTP_Bits B;
+} Ifx_CAN_N_TT_GTP;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_TT_IE_Bits B;
+} Ifx_CAN_N_TT_IE;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_TT_IR_Bits B;
+} Ifx_CAN_N_TT_IR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_TT_LGT_Bits B;
+} Ifx_CAN_N_TT_LGT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_TT_MLM_Bits B;
+} Ifx_CAN_N_TT_MLM;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_TT_OCF_Bits B;
+} Ifx_CAN_N_TT_OCF;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_TT_OCN_Bits B;
+} Ifx_CAN_N_TT_OCN;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_TT_OST_Bits B;
+} Ifx_CAN_N_TT_OST;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_TT_RMC_Bits B;
+} Ifx_CAN_N_TT_RMC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_TT_TMC_Bits B;
+} Ifx_CAN_N_TT_TMC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_TT_TMK_Bits B;
+} Ifx_CAN_N_TT_TMK;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_TT_TURCF_Bits B;
+} Ifx_CAN_N_TT_TURCF;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_TT_TURNA_Bits B;
+} Ifx_CAN_N_TT_TURNA;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_TX_BAR_Bits B;
+} Ifx_CAN_N_TX_BAR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_TX_BC_Bits B;
+} Ifx_CAN_N_TX_BC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_TX_BCF_Bits B;
+} Ifx_CAN_N_TX_BCF;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_TX_BCIE_Bits B;
+} Ifx_CAN_N_TX_BCIE;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_TX_BCR_Bits B;
+} Ifx_CAN_N_TX_BCR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_TX_BRP_Bits B;
+} Ifx_CAN_N_TX_BRP;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_TX_BTIE_Bits B;
+} Ifx_CAN_N_TX_BTIE;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_TX_BTO_Bits B;
+} Ifx_CAN_N_TX_BTO;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_TX_EFA_Bits B;
+} Ifx_CAN_N_TX_EFA;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_TX_EFC_Bits B;
+} Ifx_CAN_N_TX_EFC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_TX_EFS_Bits B;
+} Ifx_CAN_N_TX_EFS;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_TX_ESC_Bits B;
+} Ifx_CAN_N_TX_ESC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_TX_FQS_Bits B;
+} Ifx_CAN_N_TX_FQS;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_XIDAM_Bits B;
+} Ifx_CAN_N_XIDAM;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_N_XIDFC_Bits B;
+} Ifx_CAN_N_XIDFC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_OCS_Bits B;
+} Ifx_CAN_OCS;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_R0_Bits B;
+} Ifx_CAN_R0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_R1_Bits B;
+} Ifx_CAN_R1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_STDMSG_S0_Bits B;
+} Ifx_CAN_STDMSG_S0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_TRIGMSG_TM0_Bits B;
+} Ifx_CAN_TRIGMSG_TM0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_TRIGMSG_TM1_Bits B;
+} Ifx_CAN_TRIGMSG_TM1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_TXEVENT_E0_Bits B;
+} Ifx_CAN_TXEVENT_E0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_TXEVENT_E1_Bits B;
+} Ifx_CAN_TXEVENT_E1;
+
+
+typedef union
+{
+    Ifx_UReg_8Bit U;
+    Ifx_SReg_8Bit I;
+    Ifx_CAN_TXMSG_DB_Bits B;
+} Ifx_CAN_TXMSG_DB;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_TXMSG_T0_Bits B;
+} Ifx_CAN_TXMSG_T0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CAN_TXMSG_T1_Bits B;
+} Ifx_CAN_TXMSG_T1;
+# 2282 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxCan_regdef.h"
+typedef volatile struct _Ifx_CAN_N_NT
+{
+       Ifx_CAN_N_NT_CCR CCR;
+       Ifx_CAN_N_NT_ATTR ATTR;
+       Ifx_CAN_N_NT_BTTR BTTR;
+       Ifx_CAN_N_NT_CTTR CTTR;
+       Ifx_CAN_N_NT_RTR RTR;
+} Ifx_CAN_N_NT;
+# 2304 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxCan_regdef.h"
+typedef volatile struct _Ifx_CAN_N_RX
+{
+       Ifx_CAN_N_RX_F0C F0C;
+       Ifx_CAN_N_RX_F0S F0S;
+       Ifx_CAN_N_RX_F0A F0A;
+       Ifx_CAN_N_RX_BC BC;
+       Ifx_CAN_N_RX_F1C F1C;
+       Ifx_CAN_N_RX_F1S F1S;
+       Ifx_CAN_N_RX_F1A F1A;
+       Ifx_CAN_N_RX_ESC ESC;
+} Ifx_CAN_N_RX;
+# 2329 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxCan_regdef.h"
+typedef volatile struct _Ifx_CAN_N_TX
+{
+       Ifx_CAN_N_TX_BC BC;
+       Ifx_CAN_N_TX_FQS FQS;
+       Ifx_CAN_N_TX_ESC ESC;
+       Ifx_CAN_N_TX_BRP BRP;
+       Ifx_CAN_N_TX_BAR BAR;
+       Ifx_CAN_N_TX_BCR BCR;
+       Ifx_CAN_N_TX_BTO BTO;
+       Ifx_CAN_N_TX_BCF BCF;
+       Ifx_CAN_N_TX_BTIE BTIE;
+       Ifx_CAN_N_TX_BCIE BCIE;
+       Ifx_UReg_8Bit reserved_28[8];
+       Ifx_CAN_N_TX_EFC EFC;
+       Ifx_CAN_N_TX_EFS EFS;
+       Ifx_CAN_N_TX_EFA EFA;
+} Ifx_CAN_N_TX;
+# 2360 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxCan_regdef.h"
+typedef volatile struct _Ifx_CAN_N_TT
+{
+       Ifx_CAN_N_TT_TMC TMC;
+       Ifx_CAN_N_TT_RMC RMC;
+       Ifx_CAN_N_TT_OCF OCF;
+       Ifx_CAN_N_TT_MLM MLM;
+       Ifx_CAN_N_TT_TURCF TURCF;
+       Ifx_CAN_N_TT_OCN OCN;
+       Ifx_CAN_N_TT_GTP GTP;
+       Ifx_CAN_N_TT_TMK TMK;
+       Ifx_CAN_N_TT_IR IR;
+       Ifx_CAN_N_TT_IE IE;
+       Ifx_UReg_8Bit reserved_28[4];
+       Ifx_CAN_N_TT_OST OST;
+       Ifx_CAN_N_TT_TURNA TURNA;
+       Ifx_CAN_N_TT_LGT LGT;
+       Ifx_CAN_N_TT_CTC CTC;
+       Ifx_CAN_N_TT_CPT CPT;
+       Ifx_CAN_N_TT_CSM CSM;
+} Ifx_CAN_N_TT;
+# 2394 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxCan_regdef.h"
+typedef volatile struct _Ifx_CAN_N
+{
+       Ifx_CAN_N_ACCENNODE0 ACCENNODE0;
+       Ifx_UReg_8Bit reserved_4[4];
+       Ifx_CAN_N_STARTADR STARTADR;
+       Ifx_CAN_N_ENDADR ENDADR;
+       Ifx_CAN_N_ISREG ISREG;
+       Ifx_CAN_N_GRINT1 GRINT1;
+       Ifx_CAN_N_GRINT2 GRINT2;
+       Ifx_UReg_8Bit reserved_1C[4];
+       Ifx_CAN_N_NT NT;
+       Ifx_UReg_8Bit reserved_34[12];
+       Ifx_CAN_N_NPCR NPCR;
+       Ifx_UReg_8Bit reserved_44[172];
+       Ifx_CAN_N_TTCR TTCR;
+       Ifx_UReg_8Bit reserved_F4[12];
+       Ifx_CAN_N_CREL CREL;
+       Ifx_CAN_N_ENDN ENDN;
+       Ifx_UReg_8Bit reserved_108[4];
+       Ifx_CAN_N_DBTP DBTP;
+       Ifx_CAN_N_TEST TEST;
+       Ifx_CAN_N_RWD RWD;
+       Ifx_CAN_N_CCCR CCCR;
+       Ifx_CAN_N_NBTP NBTP;
+       Ifx_CAN_N_TSCC TSCC;
+       Ifx_CAN_N_TSCV TSCV;
+       Ifx_CAN_N_TOCC TOCC;
+       Ifx_CAN_N_TOCV TOCV;
+       Ifx_UReg_8Bit reserved_130[16];
+       Ifx_CAN_N_ECR ECR;
+       Ifx_CAN_N_PSR PSR;
+       Ifx_CAN_N_TDCR TDCR;
+       Ifx_UReg_8Bit reserved_14C[4];
+       Ifx_CAN_N_IR IR;
+       Ifx_CAN_N_IE IE;
+       Ifx_UReg_8Bit reserved_158[40];
+       Ifx_CAN_N_GFC GFC;
+       Ifx_CAN_N_SIDFC SIDFC;
+       Ifx_CAN_N_XIDFC XIDFC;
+       Ifx_UReg_8Bit reserved_18C[4];
+       Ifx_CAN_N_XIDAM XIDAM;
+       Ifx_CAN_N_HPMS HPMS;
+       Ifx_CAN_N_NDAT1 NDAT1;
+       Ifx_CAN_N_NDAT2 NDAT2;
+       Ifx_CAN_N_RX RX;
+       Ifx_CAN_N_TX TX;
+       Ifx_UReg_8Bit reserved_1FC[4];
+       Ifx_CAN_N_TT TT;
+       Ifx_UReg_8Bit reserved_244[444];
+} Ifx_CAN_N;
+# 2458 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxCan_regdef.h"
+typedef volatile struct _Ifx_CAN_STDMSG
+{
+       Ifx_CAN_STDMSG_S0 S0;
+} Ifx_CAN_STDMSG;
+# 2476 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxCan_regdef.h"
+typedef volatile struct _Ifx_CAN_EXTMSG
+{
+       Ifx_CAN_EXTMSG_F0 F0;
+       Ifx_CAN_EXTMSG_F1 F1;
+} Ifx_CAN_EXTMSG;
+# 2495 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxCan_regdef.h"
+typedef volatile struct _Ifx_CAN_RXMSG
+{
+       Ifx_CAN_R0 R0;
+       Ifx_CAN_R1 R1;
+       Ifx_CAN_DB DB[64];
+} Ifx_CAN_RXMSG;
+# 2515 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxCan_regdef.h"
+typedef volatile struct _Ifx_CAN_TXEVENT
+{
+       Ifx_CAN_TXEVENT_E0 E0;
+       Ifx_CAN_TXEVENT_E1 E1;
+} Ifx_CAN_TXEVENT;
+# 2534 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxCan_regdef.h"
+typedef volatile struct _Ifx_CAN_TXMSG
+{
+       Ifx_CAN_TXMSG_T0 T0;
+       Ifx_CAN_TXMSG_T1 T1;
+       Ifx_CAN_TXMSG_DB DB[64];
+} Ifx_CAN_TXMSG;
+# 2554 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxCan_regdef.h"
+typedef volatile struct _Ifx_CAN_TRIGMSG
+{
+       Ifx_CAN_TRIGMSG_TM0 TM0;
+       Ifx_CAN_TRIGMSG_TM1 TM1;
+} Ifx_CAN_TRIGMSG;
+# 2573 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxCan_regdef.h"
+typedef volatile struct _Ifx_CAN
+{
+       Ifx_UReg_32Bit RAM[8192];
+       Ifx_CAN_CLC CLC;
+       Ifx_UReg_8Bit reserved_8004[4];
+       Ifx_CAN_ID ID;
+       Ifx_UReg_8Bit reserved_800C[36];
+       Ifx_CAN_MCR MCR;
+       Ifx_CAN_BUFADR BUFADR;
+       Ifx_UReg_8Bit reserved_8038[8];
+       Ifx_CAN_MECR MECR;
+       Ifx_CAN_MESTAT MESTAT;
+       Ifx_UReg_8Bit reserved_8048[148];
+       Ifx_CAN_ACCENCTR0 ACCENCTR0;
+       Ifx_UReg_8Bit reserved_80E0[8];
+       Ifx_CAN_OCS OCS;
+       Ifx_CAN_KRSTCLR KRSTCLR;
+       Ifx_CAN_KRST1 KRST1;
+       Ifx_CAN_KRST0 KRST0;
+       Ifx_UReg_8Bit reserved_80F8[4];
+       Ifx_CAN_ACCEN0 ACCEN0;
+       Ifx_CAN_N N[4];
+} Ifx_CAN;
+# 63 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxCan_reg.h" 2
+# 2 ".\\output\\inc/IfxCan_reg.h" 2
+# 51 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Can_17_McmCan\\inc\\Can_17_McmCan.h" 2
+
+# 1 ".\\output\\inc/ComStack_Types.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\ComStack\\api\\ComStack_Types.h" 1
+# 19 ".\\output\\inc/..\\..\\bsw\\ComStack\\api\\ComStack_Types.h"
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Std_Types.h" 1
+# 21 ".\\output\\inc/..\\..\\bsw\\integration\\Std_Types.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Platform_Types.h" 1
+# 22 ".\\output\\inc/..\\..\\bsw\\integration\\Std_Types.h" 2
+# 1 ".\\output\\inc/Compiler.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Compiler.h" 1
+# 44 ".\\output\\inc/..\\..\\Integration\\mcal\\Compiler.h"
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Compiler_Cfg.h" 1
+# 50 ".\\output\\inc/..\\..\\Integration\\mcal\\Compiler_Cfg.h"
+# 1 ".\\output\\inc/Os_Compiler_Cfg.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\os\\Os_Compiler_Cfg.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/Compiler.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Compiler.h" 1
+# 2 ".\\output\\inc/Compiler.h" 2
+# 7 ".\\output\\inc/..\\..\\Integration\\os\\Os_Compiler_Cfg.h" 2
+# 2 ".\\output\\inc/Os_Compiler_Cfg.h" 2
+# 51 ".\\output\\inc/..\\..\\Integration\\mcal\\Compiler_Cfg.h" 2
+# 45 ".\\output\\inc/..\\..\\Integration\\mcal\\Compiler.h" 2
+# 2 ".\\output\\inc/Compiler.h" 2
+# 23 ".\\output\\inc/..\\..\\bsw\\integration\\Std_Types.h" 2
+# 72 ".\\output\\inc/..\\..\\bsw\\integration\\Std_Types.h"
+    typedef unsigned char StatusType;
+# 96 ".\\output\\inc/..\\..\\bsw\\integration\\Std_Types.h"
+typedef uint8 Std_ReturnType;
+
+
+
+typedef struct
+{
+    uint16 vendorID;
+    uint16 moduleID;
+    uint8 sw_major_version;
+    uint8 sw_minor_version;
+    uint8 sw_patch_version;
+} Std_VersionInfoType;
+# 2 ".\\output\\inc/Std_Types.h" 2
+# 20 ".\\output\\inc/..\\..\\bsw\\ComStack\\api\\ComStack_Types.h" 2
+# 1 ".\\output\\inc/ComStack_Cfg.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\ComStack\\ComStack_Cfg.h" 1
+# 44 ".\\output\\inc/..\\..\\bsw\\ComStack\\ComStack_Cfg.h"
+typedef uint16 PduIdType;
+
+
+
+typedef uint16 PduLengthType;
+# 57 ".\\output\\inc/..\\..\\bsw\\ComStack\\ComStack_Cfg.h"
+typedef struct
+{
+    uint8 * SduDataPtr;
+    uint8 * MetaDataPtr;
+    PduLengthType SduLength;
+} PduInfoType;
+# 71 ".\\output\\inc/..\\..\\bsw\\ComStack\\ComStack_Cfg.h"
+typedef uint8 BusTrcvErrorType;
+# 2 ".\\output\\inc/ComStack_Cfg.h" 2
+# 21 ".\\output\\inc/..\\..\\bsw\\ComStack\\api\\ComStack_Types.h" 2
+# 44 ".\\output\\inc/..\\..\\bsw\\ComStack\\api\\ComStack_Types.h"
+typedef uint8 PNCHandleType;
+
+
+typedef enum
+{
+    TP_STMIN = 0x00,
+    TP_BS = 0x01,
+    TP_BC = 0x02
+} TPParameterType;
+
+
+typedef enum
+{
+    BUFREQ_OK = 0x00,
+    BUFREQ_E_NOT_OK = 0x01,
+    BUFREQ_E_BUSY = 0x02,
+    BUFREQ_E_OVFL = 0x03
+} BufReq_ReturnType;
+
+
+typedef enum
+{
+    TP_DATACONF = 0x00,
+    TP_DATARETRY = 0x01,
+    TP_CONFPENDING = 0x02
+} TpDataStateType;
+
+
+typedef struct
+{
+    TpDataStateType TpDataState;
+    PduLengthType TxTpDataCnt;
+} RetryInfoType;
+
+
+typedef uint8 NetworkHandleType;
+
+
+typedef uint8 IcomConfigIdType;
+
+
+typedef enum
+{
+    ICOM_SWITCH_E_OK,
+    ICOM_SWITCH_E_FAILED
+} IcomSwitch_ErrorType;
+# 2 ".\\output\\inc/ComStack_Types.h" 2
+# 53 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Can_17_McmCan\\inc\\Can_17_McmCan.h" 2
+
+# 1 ".\\output\\inc/Can_17_McmCan_Cfg.h" 1
+# 1 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Can_17_McmCan_Cfg.h" 1
+# 2 ".\\output\\inc/Can_17_McmCan_Cfg.h" 2
+# 55 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Can_17_McmCan\\inc\\Can_17_McmCan.h" 2
+
+
+
+
+# 1 ".\\output\\inc/Can_GeneralTypes.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\CanIf\\integration\\Can_GeneralTypes.h" 1
+
+
+
+
+
+
+# 1 ".\\output\\inc/ComStack_Types.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\CanIf\\integration\\Can_GeneralTypes.h" 2
+# 21 ".\\output\\inc/..\\..\\bsw\\CanIf\\integration\\Can_GeneralTypes.h"
+typedef uint32 Can_IdType;
+# 30 ".\\output\\inc/..\\..\\bsw\\CanIf\\integration\\Can_GeneralTypes.h"
+typedef uint16 Can_HwHandleType;
+# 42 ".\\output\\inc/..\\..\\bsw\\CanIf\\integration\\Can_GeneralTypes.h"
+typedef struct
+{
+    Can_IdType CanId;
+    Can_HwHandleType Hoh;
+    uint8 ControllerId;
+}Can_HwType;
+# 62 ".\\output\\inc/..\\..\\bsw\\CanIf\\integration\\Can_GeneralTypes.h"
+typedef struct
+{
+    uint8 * sdu;
+    Can_IdType id;
+    PduIdType swPduHandle;
+    uint8 length;
+
+}Can_PduType;
+# 83 ".\\output\\inc/..\\..\\bsw\\CanIf\\integration\\Can_GeneralTypes.h"
+typedef enum
+{
+    CAN_T_START,
+    CAN_T_STOP,
+    CAN_T_SLEEP,
+    CAN_T_WAKEUP,
+    CAN_T_MAXTRANSITION
+
+}Can_StateTransitionType;
+# 104 ".\\output\\inc/..\\..\\bsw\\CanIf\\integration\\Can_GeneralTypes.h"
+typedef enum
+{
+    CAN_OK,
+    CAN_NOT_OK,
+    CAN_BUSY
+
+}Can_ReturnType;
+# 131 ".\\output\\inc/..\\..\\bsw\\CanIf\\integration\\Can_GeneralTypes.h"
+typedef enum
+{
+    CANTRCV_TRCVMODE_NORMAL=0,
+    CANTRCV_TRCVMODE_SLEEP,
+    CANTRCV_TRCVMODE_STANDBY
+
+}CanTrcv_TrcvModeType;
+
+
+typedef enum
+{
+    CANTRCV_WUMODE_ENABLE=0,
+    CANTRCV_WUMODE_DISABLE,
+    CANTRCV_WUMODE_CLEAR
+
+}CanTrcv_TrcvWakeupModeType;
+# 164 ".\\output\\inc/..\\..\\bsw\\CanIf\\integration\\Can_GeneralTypes.h"
+typedef enum
+{
+
+    CANTRCV_WU_ERROR=0,
+    CANTRCV_WU_NOT_SUPPORTED,
+    CANTRCV_WU_BY_BUS,
+    CANTRCV_WU_INTERNALLY,
+    CANTRCV_WU_RESET,
+    CANTRCV_WU_POWER_ON,
+    CANTRCV_WU_BY_PIN
+
+}CanTrcv_TrcvWakeupReasonType;
+# 2 ".\\output\\inc/Can_GeneralTypes.h" 2
+# 60 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Can_17_McmCan\\inc\\Can_17_McmCan.h" 2
+
+# 1 ".\\output\\inc/McalLib.h" 1
+# 1 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h" 1
+# 41 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+# 1 ".\\output\\inc/McalLib_Cfg.h" 1
+# 1 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\McalLib_Cfg.h" 1
+# 2 ".\\output\\inc/McalLib_Cfg.h" 2
+# 42 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h" 2
+# 1 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\Mcal_Compiler.h" 1
+# 45 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\Mcal_Compiler.h"
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 46 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\Mcal_Compiler.h" 2
+# 1 ".\\output\\inc/Compiler.h" 1
+# 47 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\Mcal_Compiler.h" 2
+
+
+
+
+
+
+# 1 "s:\\hightec\\toolchains\\tricore\\v4.9.4.1\\tricore\\include\\machine\\intrinsics.h" 1 3
+# 88 "s:\\hightec\\toolchains\\tricore\\v4.9.4.1\\tricore\\include\\machine\\intrinsics.h" 3
+static __inline__ __attribute__((__always_inline__))
+void _bisr (const unsigned __irq_level)
+{
+  __asm__ volatile ("bisr %0" :: "i" (__irq_level) : "memory");
+}
+# 110 "s:\\hightec\\toolchains\\tricore\\v4.9.4.1\\tricore\\include\\machine\\intrinsics.h" 3
+static __inline__ __attribute__((__always_inline__))
+unsigned _mfcr (const unsigned __regaddr)
+{
+  unsigned __res;
+  __asm__ volatile ("mfcr %0, LO:%1"
+                    : "=d" (__res) : "i" (__regaddr) : "memory");
+  return __res;
+}
+# 134 "s:\\hightec\\toolchains\\tricore\\v4.9.4.1\\tricore\\include\\machine\\intrinsics.h" 3
+static __inline__ __attribute__((__always_inline__))
+void _mtcr (const unsigned __regaddr, const unsigned __val)
+{
+  __asm__ volatile ("mtcr LO:%0, %1"
+                    :: "i" (__regaddr), "d" (__val) : "memory");
+}
+# 152 "s:\\hightec\\toolchains\\tricore\\v4.9.4.1\\tricore\\include\\machine\\intrinsics.h" 3
+static __inline__ __attribute__((__always_inline__))
+void _syscall (const unsigned __service)
+{
+  __asm__ volatile ("syscall %0" :: "i" (__service) : "memory");
+}
+
+
+
+
+
+
+static __inline__ __attribute__((__always_inline__))
+void _disable (void)
+{
+  __asm__ volatile ("disable" ::: "memory");
+}
+
+static __inline__ __attribute__((__always_inline__))
+void _enable (void)
+{
+  __asm__ volatile ("enable" ::: "memory");
+}
+
+static __inline__ __attribute__((__always_inline__))
+void _debug (void)
+{
+  __asm__ volatile ("debug" ::: "memory");
+}
+
+static __inline__ __attribute__((__always_inline__))
+void _isync (void)
+{
+  __asm__ volatile ("isync" ::: "memory");
+}
+
+static __inline__ __attribute__((__always_inline__))
+void _dsync (void)
+{
+  __asm__ volatile ("dsync" ::: "memory");
+}
+
+static __inline__ __attribute__((__always_inline__))
+void _rstv (void)
+{
+  __asm__ volatile ("rstv" ::: "memory");
+}
+
+static __inline__ __attribute__((__always_inline__))
+void _rslcx (void)
+{
+    __asm__ volatile ("rslcx" ::: "memory",
+                      "d0", "d1", "d2", "d3", "d4", "d5", "d6", "d7",
+                      "a2", "a3", "a4", "a5", "a6", "a7", "a11");
+}
+
+
+static __inline__ __attribute__((__always_inline__))
+void _svlcx (void)
+{
+  __asm__ volatile ("svlcx" ::: "memory");
+}
+
+static __inline__ __attribute__((__always_inline__))
+void _nop (void)
+{
+  __asm__ volatile ("nop" ::: "memory");
+}
+# 227 "s:\\hightec\\toolchains\\tricore\\v4.9.4.1\\tricore\\include\\machine\\intrinsics.h" 3
+static __inline__ __attribute__((__always_inline__))
+void _restore (const int irqs_on)
+{
+
+
+
+  if (irqs_on)
+    _enable();
+  else
+    _disable();
+
+}
+# 54 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\Mcal_Compiler.h" 2
+# 75 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\Mcal_Compiler.h"
+typedef unsigned int unsigned_int;
+# 201 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\Mcal_Compiler.h"
+static __inline__ unsigned __crc32bw( unsigned b, unsigned a )
+ __attribute__ ((always_inline));
+
+
+
+
+
+
+static __inline__ unsigned __crc32bw( unsigned b, unsigned a ) {
+  unsigned res;
+  __asm__ volatile("crc32b.w %0, %1, %2" :"=d"(res) : "d"(b), "d"(a): "memory");
+    return res;
+}
+# 223 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\Mcal_Compiler.h"
+static __inline__ unsigned __crc32b( unsigned b, unsigned a )
+ __attribute__ ((always_inline));
+
+
+
+
+
+
+static __inline__ unsigned __crc32b( unsigned b, unsigned a ) {
+  unsigned res;
+  __asm__ volatile("crc32.b %0, %1, %2" :"=d"(res) : "d"(b), "d"(a): "memory");
+    return res;
+}
+# 613 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\Mcal_Compiler.h"
+static __inline__ unsigned _extru(unsigned a, unsigned p, unsigned w) {
+  unsigned res;
+  __asm__ volatile ("mov %%d14,%2  \n                     mov %%d15,%3  \n                     extr.u %0,%1,%%e14"
+
+
+                    : "=d" (res) : "d" (a), "d" (p), "d" (w):"d14","d15");
+  return res;
+}
+# 717 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\Mcal_Compiler.h"
+static __inline__ unsigned int cmpswap_w (unsigned int volatile *address,
+           unsigned int value, unsigned int condition)
+{
+  __extension__ unsigned long long reg64
+    = value | (unsigned long long) condition << 32;
+
+  __asm__ __volatile__ ("cmpswap.w [%[addr]]0, %A[reg]"
+                        : [reg] "+d" (reg64)
+                        : [addr] "a" (address)
+                        : "memory");
+    return reg64;
+}
+# 839 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\Mcal_Compiler.h"
+static __inline__ unsigned int swapmskw (unsigned int *address,
+                                           unsigned int value,unsigned int mask)
+{
+  __extension__ unsigned long long reg64
+    = value | (unsigned long long) mask << 32;
+
+    __asm__ __volatile__( "swapmsk.w [%[addr]] 0,%A[reg]"
+        : [reg]"+d" (reg64)
+        : [addr]"a" (address)
+        : "memory");
+     return ((unsigned int)reg64 & mask);
+}
+# 43 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h" 2
+# 273 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+# 1 ".\\output\\inc/McalLib_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\McalLib_MemMap.h" 1
+# 137 ".\\output\\inc/..\\..\\Integration\\mcal\\McalLib_MemMap.h"
+#pragma section "Code.Cpu0" ax
+# 2 ".\\output\\inc/McalLib_MemMap.h" 2
+# 274 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h" 2
+# 297 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern uint32 Mcal_GetCpuWdgPassword(void);
+# 324 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern uint32 Mcal_SetCpuWdgPassword(const uint32 Password);
+# 350 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern void Mcal_WriteCpuEndInitProtReg
+(volatile void* const RegAddress, const uint32 DataValue);
+# 377 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern uint32 Mcal_GetSafetyEndInitPassword(void);
+# 405 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern uint32 Mcal_SetSafetyEndInitPassword(const uint32 Password);
+# 432 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern void Mcal_WriteSafetyEndInitProtReg
+( volatile void* const RegAddress, const uint32 DataValue);
+# 466 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern void Mcal_WriteSafetyEndInitProtRegMask
+(volatile void* const RegAddress, const uint32 DataValue, uint32 Mask);
+# 492 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern uint32 Mcal_GetPeripheralEndInitPassword(void);
+# 520 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern uint32 Mcal_SetPeripheralEndInitPassword(const uint32 Password);
+# 547 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern void Mcal_WritePeripEndInitProtReg
+( volatile void* const RegAddress, const uint32 DataValue);
+# 573 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern uint32 Mcal_GetCpuPhysicalId(void);
+# 609 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern uint32 Mcal_GetGlobalDsprAddress
+(const uint32 CpuId, const uint32 LocalDsprAddress);
+# 642 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern uint32 Mcal_GetLocalDsprAddress(const uint32 GlobalDsprAddress);
+# 677 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern uint32 Mcal_GetGlobalPsprAddress
+(const uint32 CpuId, const uint32 LocalPsprAddress);
+# 711 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern uint32 Mcal_GetLocalPsprAddress(const uint32 GlobalPsprAddress);
+# 734 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern uint32 Mcal_DelayTickResolution(void);
+# 762 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern uint32 Mcal_DelayResetTickCalibration(void);
+# 794 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern uint32 Mcal_DelayGetTick(void);
+# 821 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern uint32 Mcal_GetCpuIndex(void);
+# 853 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern void Mcal_GetSpinlock
+(volatile uint32 * const LockAddress, const uint32 Timeout);
+# 879 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern void Mcal_ReleaseSpinlock(volatile uint32 * const LockAddress);
+# 903 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern void McalLib_GetVersionInfo( Std_VersionInfoType* const versioninfo);
+# 930 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern void Mcal_WriteSafetyEndInitProtReg16(volatile void* const RegAddress,
+                                      const uint16 DataValue);
+# 963 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern uint32 Mcal_UpdateSafetyEndInit(const uint32 NewPassword,
+                                       const boolean UpdatePassword,
+                                       const boolean SetResetProtection);
+# 995 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern uint32 Mcal_UpdatePeripheralEndInit(const uint32 NewPassword,
+                                           const boolean UpdatePassword,
+                                           const boolean SetResetProtection);
+
+
+
+
+
+# 1 ".\\output\\inc/McalLib_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\McalLib_MemMap.h" 1
+# 149 ".\\output\\inc/..\\..\\Integration\\mcal\\McalLib_MemMap.h"
+#pragma section
+# 2 ".\\output\\inc/McalLib_MemMap.h" 2
+# 1004 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h" 2
+# 2 ".\\output\\inc/McalLib.h" 2
+# 62 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Can_17_McmCan\\inc\\Can_17_McmCan.h" 2
+# 1 ".\\output\\inc/Mcal_Compiler.h" 1
+# 1 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\Mcal_Compiler.h" 1
+# 2 ".\\output\\inc/Mcal_Compiler.h" 2
+# 63 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Can_17_McmCan\\inc\\Can_17_McmCan.h" 2
+# 1 ".\\output\\inc/Can_17_McmCan_Externals.h" 1
+# 1 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Can_17_McmCan_Externals.h" 1
+# 2 ".\\output\\inc/Can_17_McmCan_Externals.h" 2
+# 64 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Can_17_McmCan\\inc\\Can_17_McmCan.h" 2
+# 261 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Can_17_McmCan\\inc\\Can_17_McmCan.h"
+typedef enum
+{
+  CAN_17_MCMCAN_TX_DED_BUFFER = 0,
+  CAN_17_MCMCAN_TX_QUEUE = 1
+} Can_17_McmCan_TxBufferType;
+
+
+
+
+typedef enum
+{
+  CAN_17_MCMCAN_RX_DED_BUFFER = 0,
+  CAN_17_MCMCAN_RX_FIFO0 = 1,
+  CAN_17_MCMCAN_RX_FIFO1 = 2
+} Can_17_McmCan_RxBufferType;
+# 294 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Can_17_McmCan\\inc\\Can_17_McmCan.h"
+typedef struct
+{
+
+  Ifx_CAN* CanBaseAddress;
+
+  boolean CanUsedHwCfgIndx [(4U)];
+} Can_17_McmCan_McmModuleConfigType;
+
+
+
+
+typedef struct
+{
+
+  uint32 CanControllerMsgRAMMap [(7U)];
+
+  uint8 CanTxDedBuffCount;
+
+  uint8 CanTxEvntFIFOSize;
+
+  uint8 CanRxFIFO0Size;
+
+  uint8 CanRxFIFO0Threshold;
+
+  uint8 CanRxFIFO1Size;
+
+  uint8 CanRxFIFO1Threshold;
+
+
+
+  uint8 CanTxQueueSize;
+
+  boolean CanTxQueueStatus;
+
+} Can_17_McmCan_ControllerMsgRAMConfigType;
+
+
+
+
+typedef struct
+{
+
+  uint32 CanControllerBaudrate;
+
+  uint16 CanBaudrateCfg;
+
+
+
+
+
+
+} Can_17_McmCan_ControllerBaudrateConfigType;
+# 366 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Can_17_McmCan\\inc\\Can_17_McmCan.h"
+typedef struct
+{
+
+  uint32 CanSIDFiltEleS0;
+
+  Can_HwHandleType CanSidHwObjId;
+
+  uint8 HwControllerId;
+
+  Can_17_McmCan_RxBufferType CanSidBufferType;
+
+
+
+
+
+
+} Can_17_McmCan_SIDFilterConfigType;
+
+
+
+
+
+typedef struct
+{
+
+  uint32 CanXIDFiltEleF0;
+
+  uint32 CanXIDFiltEleF1;
+
+  Can_HwHandleType CanXidHwObjId;
+
+  uint8 HwControllerId;
+
+  Can_17_McmCan_RxBufferType CanXidBufferType;
+
+
+
+
+
+
+} Can_17_McmCan_XIDFilterConfigType;
+
+
+
+
+typedef struct
+{
+
+  Can_HwHandleType CanTxHwObjId;
+
+  uint8 CanTxBuffIndx;
+
+  uint8 HwControllerId;
+
+
+
+
+
+
+
+  uint8 CanTxHwObjIdType;
+
+  Can_17_McmCan_TxBufferType CanTxBufferType;
+
+
+
+
+} Can_17_McmCan_TxHwObjectConfigType;
+
+
+
+
+typedef struct
+{
+  uint8 CanEventType[(4U)];
+} Can_17_McmCan_EventHandlingType;
+# 553 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Can_17_McmCan\\inc\\Can_17_McmCan.h"
+typedef struct
+{
+
+  Ifx_CAN_N* CanNodeAddress;
+
+  uint32 CanNPCRValue;
+
+
+  uint16 CanControllerMOMap[(6U)];
+
+  uint16 CanDefaultBRCfgIndx;
+
+  uint16 CanBaudrateCfgIndx;
+
+  uint16 CanNoOfBaudrateCfg;
+
+  uint8 CanKernelHwId;
+
+  uint8 CanControllerHwId;
+
+  uint8 CanControllerLogicalId;
+
+
+
+
+
+
+} Can_17_McmCan_ControllerConfigType;
+
+
+
+
+typedef uint8 Can_17_McmCan_ControllerIndexType;
+
+
+
+
+typedef uint8 Can_17_McmCan_HthPeriodIndexType;
+
+
+
+
+typedef uint8 Can_17_McmCan_HrhPeriodIndexType;
+
+
+
+
+
+
+typedef struct
+{
+
+  uint8 CanHthCoreAssigned;
+
+  uint8 CanHthLogicContIndex;
+
+  uint16 CanHthCoreSpecIndex;
+} Can_17_McmCan_HthIndexType;
+
+
+
+
+
+typedef struct
+{
+
+  uint8 CanLCoreAssigned;
+
+  uint8 CanLCoreSpecContIndex;
+
+  uint8 CanLContPhyIndex;
+
+  uint8 CanLKerPhyIndex;
+} Can_17_McmCan_LogicalControllerIndexType;
+
+
+
+
+
+
+
+typedef struct
+{
+
+  uint8 CanPLogicContIndex;
+
+  uint8 CanPCoreSpecContIndex;
+
+  uint8 CanPCoreAssigned;
+} Can_17_McmCan_PhyControllerIndexType;
+
+
+
+
+
+
+typedef struct
+{
+
+  const uint8 CanCoreContCnt;
+
+  const Can_17_McmCan_ControllerIndexType* CanControllerIndexingPtr;
+
+  const Can_17_McmCan_ControllerConfigType* CanControllerConfigPtr;
+
+
+  const Can_17_McmCan_ControllerMsgRAMConfigType*
+  CanControllerMsgRAMMapConfigPtr;
+
+  const Can_17_McmCan_EventHandlingType* CanEventHandlingConfigPtr;
+
+  const Can_17_McmCan_ControllerBaudrateConfigType* CanBaudrateConfigPtr;
+
+
+
+
+
+
+
+  const Can_17_McmCan_TxHwObjectConfigType* CanTxHwObjectConfigPtr;
+
+  const Can_17_McmCan_SIDFilterConfigType* CanSIDFilterConfigPtr;
+
+  const Can_17_McmCan_XIDFilterConfigType* CanXIDFilterConfigPtr;
+# 697 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Can_17_McmCan\\inc\\Can_17_McmCan.h"
+} Can_17_McmCan_CoreConfigType;
+
+
+
+
+
+
+typedef struct
+{
+
+
+
+  const Can_17_McmCan_CoreConfigType* CanCoreConfigPtr[(0x4U)];
+
+
+
+  const uint8 CanNoOfKernel;
+
+  const Can_HwHandleType CanNoOfHrh;
+
+  const Can_17_McmCan_McmModuleConfigType* CanMCMModuleConfigPtr;
+
+  const Can_17_McmCan_PhyControllerIndexType* CanPhyControllerIndexPtr;
+
+  const Can_17_McmCan_LogicalControllerIndexType* CanLogicalControllerIndexPtr;
+
+  const Can_17_McmCan_HthIndexType* CanHthIndexPtr;
+# 736 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Can_17_McmCan\\inc\\Can_17_McmCan.h"
+} Can_17_McmCan_ConfigType;
+# 762 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Can_17_McmCan\\inc\\Can_17_McmCan.h"
+# 1 ".\\output\\inc/Can_17_McmCan_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Can_17_McmCan_MemMap.h" 1
+# 785 ".\\output\\inc/..\\..\\Integration\\mcal\\Can_17_McmCan_MemMap.h"
+#pragma section "Code.Cpu0" ax
+# 2 ".\\output\\inc/Can_17_McmCan_MemMap.h" 2
+# 763 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Can_17_McmCan\\inc\\Can_17_McmCan.h" 2
+# 792 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Can_17_McmCan\\inc\\Can_17_McmCan.h"
+extern void Can_17_McmCan_Init
+(
+  const Can_17_McmCan_ConfigType* const Config
+);
+# 975 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Can_17_McmCan\\inc\\Can_17_McmCan.h"
+extern Can_ReturnType Can_17_McmCan_SetControllerMode
+(
+  const uint8 Controller,
+  const Can_StateTransitionType Transition
+);
+# 1004 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Can_17_McmCan\\inc\\Can_17_McmCan.h"
+extern void Can_17_McmCan_DisableControllerInterrupts
+(
+  const uint8 Controller
+);
+# 1032 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Can_17_McmCan\\inc\\Can_17_McmCan.h"
+extern void Can_17_McmCan_EnableControllerInterrupts
+(
+  const uint8 Controller
+);
+# 1063 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Can_17_McmCan\\inc\\Can_17_McmCan.h"
+extern Can_ReturnType Can_17_McmCan_Write
+(
+  const Can_HwHandleType Hth,
+  const Can_PduType* const PduInfo
+);
+# 1094 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Can_17_McmCan\\inc\\Can_17_McmCan.h"
+extern void Can_17_McmCan_MainFunction_Write(void);
+# 1122 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Can_17_McmCan\\inc\\Can_17_McmCan.h"
+extern void Can_17_McmCan_MainFunction_Read(void);
+# 1148 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Can_17_McmCan\\inc\\Can_17_McmCan.h"
+extern void Can_17_McmCan_MainFunction_BusOff
+(
+  void
+);
+# 1177 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Can_17_McmCan\\inc\\Can_17_McmCan.h"
+extern void Can_17_McmCan_MainFunction_Wakeup
+(
+  void
+);
+# 1205 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Can_17_McmCan\\inc\\Can_17_McmCan.h"
+extern void Can_17_McmCan_MainFunction_Mode
+(
+  void
+);
+# 1283 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Can_17_McmCan\\inc\\Can_17_McmCan.h"
+extern void Can_17_McmCan_IsrBusOffHandler
+(
+  const uint8 HwKernelId, const uint8 NodeIdIndex
+);
+# 1319 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Can_17_McmCan\\inc\\Can_17_McmCan.h"
+extern void Can_17_McmCan_IsrReceiveHandler
+(
+  const uint8 HwKernelId, const uint8 NodeIdIndex
+);
+# 1352 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Can_17_McmCan\\inc\\Can_17_McmCan.h"
+extern void Can_17_McmCan_IsrTransmitHandler
+(
+  const uint8 HwKernelId, const uint8 NodeIdIndex
+);
+# 1387 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Can_17_McmCan\\inc\\Can_17_McmCan.h"
+extern void Can_17_McmCan_IsrRxFIFOHandler
+(
+  const uint8 HwKernelId, const uint8 NodeIdIndex
+);
+# 1471 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Can_17_McmCan\\inc\\Can_17_McmCan.h"
+# 1 ".\\output\\inc/Can_17_McmCan_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Can_17_McmCan_MemMap.h" 1
+# 797 ".\\output\\inc/..\\..\\Integration\\mcal\\Can_17_McmCan_MemMap.h"
+#pragma section
+# 2 ".\\output\\inc/Can_17_McmCan_MemMap.h" 2
+# 1472 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Can_17_McmCan\\inc\\Can_17_McmCan.h" 2
+
+# 1 ".\\output\\inc/Can_17_McmCan_PBcfg.h" 1
+# 1 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Can_17_McmCan_PBcfg.h" 1
+# 62 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Can_17_McmCan_PBcfg.h"
+# 1 ".\\output\\inc/Can_17_McmCan_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Can_17_McmCan_MemMap.h" 1
+# 588 ".\\output\\inc/..\\..\\Integration\\mcal\\Can_17_McmCan_MemMap.h"
+#pragma section "Config.Cpu0.Unspecified" a 4
+# 2 ".\\output\\inc/Can_17_McmCan_MemMap.h" 2
+# 63 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Can_17_McmCan_PBcfg.h" 2
+
+extern const Can_17_McmCan_ConfigType Can_17_McmCan_Config;
+# 82 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Can_17_McmCan_PBcfg.h"
+# 1 ".\\output\\inc/Can_17_McmCan_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Can_17_McmCan_MemMap.h" 1
+# 601 ".\\output\\inc/..\\..\\Integration\\mcal\\Can_17_McmCan_MemMap.h"
+#pragma section
+# 2 ".\\output\\inc/Can_17_McmCan_MemMap.h" 2
+# 83 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Can_17_McmCan_PBcfg.h" 2
+# 2 ".\\output\\inc/Can_17_McmCan_PBcfg.h" 2
+# 1474 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Can_17_McmCan\\inc\\Can_17_McmCan.h" 2
+# 2 ".\\output\\inc/Can_17_McmCan.h" 2
+# 7 ".\\output\\inc/..\\..\\Integration\\mcal\\Can.h" 2
+# 2 ".\\output\\inc/Can.h" 2
+# 24 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_UserCfg.h" 2
+# 2 ".\\output\\inc/Rte_UserCfg.h" 2
+# 19 ".\\output\\inc/..\\..\\rte\\Rte.h" 2
+
+
+
+
+
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 25 ".\\output\\inc/..\\..\\rte\\Rte.h" 2
+# 37 ".\\output\\inc/..\\..\\rte\\Rte.h"
+# 1 ".\\output\\inc/Rte_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 1
+# 117 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 2 ".\\output\\inc/MemMap.h" 2
+# 118 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 2
+# 2 ".\\output\\inc/Rte_MemMap.h" 2
+# 38 ".\\output\\inc/..\\..\\rte\\Rte.h" 2
+void Rte_Tick_Timeouts(void);
+
+# 1 ".\\output\\inc/Rte_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 1
+# 117 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 2 ".\\output\\inc/MemMap.h" 2
+# 118 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 2
+# 2 ".\\output\\inc/Rte_MemMap.h" 2
+# 41 ".\\output\\inc/..\\..\\rte\\Rte.h" 2
+# 132 ".\\output\\inc/..\\..\\rte\\Rte.h"
+typedef uint8 Rte_TransformerErrorCode;
+typedef uint8 Rte_TransformerClass;
+
+
+
+
+
+
+
+typedef struct Rte_TransformerError {
+   Rte_TransformerErrorCode errorCode;
+   Rte_TransformerClass transformerClass;
+} Rte_TransformerError;
+
+
+
+
+
+typedef struct {
+   uint16 clientId;
+   uint16 sequenceCounter;
+} Rte_Cs_TransactionHandleType;
+
+
+
+# 1 ".\\output\\inc/Rte_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 1
+# 117 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 2 ".\\output\\inc/MemMap.h" 2
+# 118 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 2
+# 2 ".\\output\\inc/Rte_MemMap.h" 2
+# 158 ".\\output\\inc/..\\..\\rte\\Rte.h" 2
+extern void Rte_memcpy(void * dst,
+                                          const void * src,
+                                          uint16 length);
+
+# 1 ".\\output\\inc/Rte_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 1
+# 117 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 2 ".\\output\\inc/MemMap.h" 2
+# 118 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 2
+# 2 ".\\output\\inc/Rte_MemMap.h" 2
+# 163 ".\\output\\inc/..\\..\\rte\\Rte.h" 2
+# 172 ".\\output\\inc/..\\..\\rte\\Rte.h"
+typedef sint8 Rte_Char;
+typedef sint8* Rte_String;
+
+
+typedef struct {
+   void * in;
+   void * out;
+   uint16 used;
+   Std_ReturnType lost_data;
+} Rte_QDynType;
+
+typedef enum {
+   RTE_DRA,
+   RTE_WOWP,
+   RTE_TASK,
+   RTE_ARE,
+   RTE_EV,
+   RTE_MSI
+} Rte_NotificationType;
+
+typedef struct Rte_QCmnType {
+   Rte_QDynType * dynamic;
+   boolean copy;
+   uint16 queue_size;
+   uint16 element_size;
+   void * buffer_start;
+   void * buffer_end;
+   Rte_NotificationType notification_type;
+} Rte_QCmnType;
+
+
+
+
+typedef const struct Rte_QCmnType * Rte_QCmnRefType;
+
+
+
+
+typedef const void * RteCalprmRefTabEntryType;
+# 219 ".\\output\\inc/..\\..\\rte\\Rte.h"
+typedef const void * Rte_ResourceRefType;
+# 232 ".\\output\\inc/..\\..\\rte\\Rte.h"
+typedef unsigned int Rte_AlarmRefType;
+
+typedef uint16 Rte_AlarmIndexType;
+
+typedef uint16 Rte_SeqCounterType_16;
+
+
+
+
+typedef void SchM_ConfigType;
+# 17 ".\\output\\inc/..\\..\\rte\\Rte_Type.h" 2
+# 1 ".\\output\\inc/..\\..\\rte\\Rte_Cfg.h" 1
+# 14 ".\\output\\inc/..\\..\\rte\\Rte_Cfg.h"
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 15 ".\\output\\inc/..\\..\\rte\\Rte_Cfg.h" 2
+# 18 ".\\output\\inc/..\\..\\rte\\Rte_Type.h" 2
+
+
+
+
+
+
+
+struct Rte_CDS_ASW_BASE;
+struct Rte_CDS_ASW_COM;
+struct Rte_CDS_ASW_CORE0;
+struct Rte_CDS_ASW_CORE1;
+struct Rte_CDS_ASW_CORE2;
+struct Rte_CDS_ASW_CORE3;
+struct Rte_CDS_ASW_DCM;
+struct Rte_CDS_ASW_DEM;
+struct Rte_CDS_ASW_NM;
+struct Rte_CDS_ASW_NVM;
+struct Rte_CDS_ASW_WDG;
+struct Rte_CDS_ASW_XCP;
+struct Rte_CDS_BswM;
+struct Rte_CDS_CDD_CORE0;
+struct Rte_CDS_CDD_CORE1;
+struct Rte_CDS_CDD_CORE2;
+struct Rte_CDS_CDD_CORE3;
+struct Rte_CDS_ComM;
+struct Rte_CDS_Dcm;
+struct Rte_CDS_Dem;
+struct Rte_CDS_Det;
+struct Rte_CDS_EcuM;
+struct Rte_CDS_NvM;
+struct Rte_CDS_RSID;
+struct Rte_CDS_SWC_DEM;
+struct Rte_CDS_WdgM;
+struct Rte_CDS_rba_DiagLib;
+# 61 ".\\output\\inc/..\\..\\rte\\Rte_Type.h"
+typedef uint8 Impl_NVM_DstPtrType_1024[1024];
+
+
+
+
+typedef uint16 BswM_ModeType;
+
+typedef uint16 BswM_UserType;
+# 78 ".\\output\\inc/..\\..\\rte\\Rte_Type.h"
+typedef uint32 CanIf_u32_impl;
+
+typedef uint16 CanIf_u16_impl;
+
+typedef uint8 CanIf_u8_impl;
+
+typedef struct {
+   CanIf_u32_impl CanId;
+   CanIf_u16_impl swPduHandle;
+   CanIf_u8_impl SduLength;
+   CanIf_u8_impl BufferIndex;
+} CanIf_CanIdBuffer_struct_impl;
+
+
+
+
+
+
+
+typedef uint8 CanIf_ControllerModeType_Enum_impl;
+
+typedef struct {
+   CanIf_u8_impl Ctrl_Pdu_mode;
+} CanIf_ControllerStateType_struct_impl;
+
+typedef CanIf_ControllerStateType_struct_impl CanIf_ControllerState_Astruct_impl[4];
+
+
+typedef uint8 CanIf_NotifStatusType_Enum_impl;
+
+typedef CanIf_NotifStatusType_Enum_impl CanIf_NotifStatusType_Aenum_impl[152];
+
+
+
+
+typedef uint8 CanIf_PduModeType_Enum_impl;
+
+
+
+typedef uint8 CanIf_Prv_BuffStatus_ten_Enum_impl;
+
+typedef struct {
+   CanIf_u8_impl last_index;
+   CanIf_u8_impl bufferstatus;
+} CanIf_Prv_TxBufferStatus_tst_struct_impl;
+
+typedef CanIf_u8_impl CanIf_SDUBuffer_CanIf_Buffer_CanNodeNum_01_Tx_25_Au8_impl[80];
+typedef CanIf_u8_impl CanIf_SDUBuffer_CanIf_Buffer_CanNodeNum_01_Tx_Basic_Au8_impl[240];
+typedef CanIf_u8_impl CanIf_SDUBuffer_CanIf_Buffer_CanNodeNum_02_Tx_Basic_Au8_impl[80];
+typedef CanIf_u8_impl CanIf_SDUBuffer_CanIf_Buffer_CanNodeNum_03_Tx_Basic_Au8_impl[80];
+typedef CanIf_Prv_TxBufferStatus_tst_struct_impl CanIf_TxBufferRam_Astruct_impl[91];
+typedef CanIf_CanIdBuffer_struct_impl CanIf_Tx_CanId_CanIf_Buffer_CanNodeNum_01_Tx_25_Astruct_impl[10];
+typedef CanIf_CanIdBuffer_struct_impl CanIf_Tx_CanId_CanIf_Buffer_CanNodeNum_01_Tx_Basic_Astruct_impl[30];
+typedef CanIf_CanIdBuffer_struct_impl CanIf_Tx_CanId_CanIf_Buffer_CanNodeNum_02_Tx_Basic_Astruct_impl[10];
+typedef CanIf_CanIdBuffer_struct_impl CanIf_Tx_CanId_CanIf_Buffer_CanNodeNum_03_Tx_Basic_Astruct_impl[10];
+typedef uint8 CanIf_boolean_impl;
+
+
+
+typedef uint8 CanSM_boolean_Impl;
+
+typedef CanSM_boolean_Impl CanSM_Aboolean_impl[4];
+typedef uint8 CanSM_u8_Impl;
+
+typedef CanSM_u8_Impl CanSM_Au8_impl[4];
+
+
+typedef uint8 CanSM_BusOffRecoveryStateType_Enum_impl;
+
+
+
+typedef uint8 CanSM_NetworkModeStateType_Enum_impl;
+
+
+
+typedef uint16 CanSM_u16_Impl;
+
+typedef uint8 CanSM_TimerStateType_Enum_impl;
+
+typedef struct {
+   CanSM_u16_Impl cntTick_u16;
+   CanSM_TimerStateType_Enum_impl stTimer;
+} CanSM_TimerConfig_tst_struct_impl;
+
+typedef CanSM_TimerConfig_tst_struct_impl CanSM_TimerConfig_ast_Astruct_impl[4];
+typedef CanSM_BusOffRecoveryStateType_Enum_impl CanSM_currBOR_State_a_Aenum_impl[4];
+typedef CanSM_NetworkModeStateType_Enum_impl CanSM_currComM_Mode_a_Aenum_impl[4];
+# 179 ".\\output\\inc/..\\..\\rte\\Rte_Type.h"
+typedef uint8 Com_impl_u8;
+
+typedef Com_impl_u8 Com_SigBuf_au8_impl[960];
+typedef Com_impl_u8 Com_implDataType_au8_Size8[8];
+
+
+typedef boolean Com_impl_b;
+
+typedef uint16 Com_impl_u16;
+
+typedef uint32 Com_impl_u32;
+
+
+
+typedef uint64 Com_impl_u64;
+
+typedef uint32 ComM_uint32_Impl;
+
+typedef uint16 ComM_uint16_Impl;
+
+typedef uint8 ComM_uint8_Impl;
+
+typedef uint8 ComM_bool_Impl;
+
+typedef struct {
+   ComM_uint32_Impl ChannelState_e;
+   ComM_uint32_Impl LightTimeoutCtr_u32;
+   ComM_uint16_Impl MinFullComTimeoutCtr_u16;
+   ComM_uint16_Impl UserRequestCtr_u16;
+   ComM_uint8_Impl ChannelMode_u8;
+   ComM_uint8_Impl BusSmMode_u8;
+   ComM_uint8_Impl PassiveRequestState_u8;
+   ComM_uint8_Impl PncRequestCtr_u8;
+   ComM_uint8_Impl InhibitionReqStatus_u8;
+   ComM_bool_Impl NmNetworkRequestStatus_b;
+   ComM_bool_Impl DiagnosticRequestState_b;
+   ComM_bool_Impl CommunicationAllowed_b;
+   ComM_bool_Impl NmBusSleepIndicationStatus_b;
+   ComM_bool_Impl NmPrepareBusSleepIndicationStatus_b;
+   ComM_bool_Impl NmNetworkModeStatus_b;
+} ComM_ChannelStruct_Impl;
+
+typedef ComM_ChannelStruct_Impl ComM_ChannelStruct_Array_Impl[4];
+typedef uint8 ComM_InhibitionStatusType;
+
+typedef uint8 ComM_ModeType;
+
+typedef uint8 ComM_UserHandleType;
+
+typedef struct {
+   ComM_uint16_Impl WakeUpInhibitionCtr_u16;
+   ComM_uint16_Impl LimitToNoComCtr_u16;
+   ComM_uint8_Impl RequestedUserMode_u8;
+   ComM_uint8_Impl IndicatedUserMode_u8;
+   ComM_uint8_Impl numChannelsInFullCom_u8;
+   ComM_uint8_Impl numChannelsInSilentCom_u8;
+   ComM_uint8_Impl numChannelsInNoCom_u8;
+} ComM_UserStruct_Impl;
+
+typedef ComM_UserStruct_Impl ComM_UserStruct_Array_Impl[4];
+# 263 ".\\output\\inc/..\\..\\rte\\Rte_Type.h"
+typedef uint8 Dcm_ConfirmationStatusType;
+
+typedef uint8 Dcm_DataArrayTypeUint8_DcmDspPidData_04Type[1];
+typedef uint8 Dcm_DataArrayTypeUint8_DcmDspPidData_05Type[1];
+typedef uint8 Dcm_DataArrayTypeUint8_DcmDspPidData_0CType[2];
+typedef uint8 Dcm_DataArrayTypeUint8_DcmDspPidData_0DType[1];
+typedef uint8 Dcm_DataArrayTypeUint8_DcmDspPidData_21Type[2];
+typedef uint8 Dcm_DataArrayTypeUint8_DcmDspPidData_30Type[1];
+typedef uint8 Dcm_DataArrayTypeUint8_DcmDspPidData_31Type[2];
+typedef uint8 Dcm_DataArrayTypeUint8_DcmDspPidData_41Type[4];
+typedef uint8 Dcm_DataArrayTypeUint8_DcmDspPidData_42Type[2];
+typedef uint8 Dcm_DataArrayTypeUint8_DcmDspPidData_49Type[1];
+typedef uint8 Dcm_DidSupportedType;
+
+typedef uint8 Dcm_InfoTypeServicesArray_DcmDspVehInfoData_04Type[16];
+typedef uint8 Dcm_InfoTypeServicesArray_DcmDspVehInfoData_0AType[20];
+typedef uint8 Dcm_InfoTypeServicesArray_VIT_06_0Type[4];
+typedef uint8 Dcm_NegativeResponseCodeType;
+
+typedef uint8 Dcm_OpStatusType;
+
+typedef uint8 Dcm_ProtocolType;
+
+typedef uint8 Dcm_RequestDataOut_DcmDspRoutine_0203_DcmDspRequestRoutineResultsOutSignal_0PrimitivType;
+
+typedef Dcm_RequestDataOut_DcmDspRoutine_0203_DcmDspRequestRoutineResultsOutSignal_0PrimitivType Dcm_RequestDataOut_DcmDspRoutine_0203_DcmDspRequestRoutineResultsOutSignal_0Type;
+
+typedef uint8 Dcm_SecLevelType;
+
+typedef uint8 Dcm_SesCtrlType;
+
+typedef uint8 Dcm_StartDataOut_DcmDspRoutine_0203_DcmDspStartRoutineOutSignalPrimitivType;
+
+typedef Dcm_StartDataOut_DcmDspRoutine_0203_DcmDspStartRoutineOutSignalPrimitivType Dcm_StartDataOut_DcmDspRoutine_0203_DcmDspStartRoutineOutSignalType;
+
+
+
+typedef uint8 DemDataElememtDataSize_CS_ExtendedDataRecord_Aged_counter[1];
+typedef uint8 DemDataElememtDataSize_CS_ExtendedDataRecord_Fault_pending_counter[1];
+typedef uint8 DemDataElememtDataSize_PID_02[2];
+typedef uint8 DemDataElememtDataSize_PID_04[1];
+typedef uint8 DemDataElememtDataSize_PID_05[1];
+typedef uint8 DemDataElememtDataSize_PID_0C[2];
+typedef uint8 DemDataElememtDataSize_PID_0D[1];
+typedef uint8 DemDataElememtDataSize_PID_42[2];
+typedef uint8 DemDataElememtDataSize_PID_49[1];
+typedef uint8 Dem_DTCFormatType;
+
+typedef uint16 Dem_DTCOriginType;
+
+typedef uint8 Dem_DTRControlType;
+
+typedef uint8 Dem_DebounceResetStatusType;
+
+typedef uint8 Dem_DebouncingStateType;
+
+typedef uint32 Dem_DebugDataType;
+
+typedef uint16 Dem_DtrIdType;
+
+typedef uint16 Dem_EventIdType;
+
+typedef uint8 Dem_EventStatusType;
+
+typedef uint8 Dem_IndicatorIdType;
+
+typedef uint8 Dem_IndicatorStatusType;
+
+typedef uint8 Dem_InitMonitorReasonType;
+
+typedef uint8 Dem_IumprDenomCondIdType;
+
+typedef uint8 Dem_IumprDenomCondStatusType;
+
+typedef uint8 Dem_MaxDataValueType[6];
+typedef uint8 Dem_OperationCycleIdType;
+
+typedef uint8 Dem_OperationCycleStateType;
+
+typedef uint8 Dem_PID21valueType[2];
+typedef uint8 Dem_PID31valueType[2];
+typedef uint8 Dem_PID4DvalueType[2];
+typedef uint8 Dem_PID4EvalueType[2];
+typedef uint8 Dem_RatioIdType;
+
+typedef uint8 Dem_UdsStatusByteType;
+# 428 ".\\output\\inc/..\\..\\rte\\Rte_Type.h"
+typedef uint8 EcuM_BootTargetType;
+
+
+
+typedef uint8 EcuM_ShutdownCauseType;
+
+
+
+typedef uint16 EcuM_ShutdownModeType;
+
+typedef uint8 EcuM_ShutdownTargetType;
+
+
+
+typedef uint32 EcuM_TimeType;
+
+typedef uint16 EcuM_UserType;
+# 458 ".\\output\\inc/..\\..\\rte\\Rte_Type.h"
+typedef uint16 NvM_BlockIdType;
+
+typedef const void * NvM_Rb_ConstVoidPtr;
+
+
+
+
+
+
+typedef void * NvM_Rb_VoidPtr;
+typedef uint8 NvM_RequestResultType;
+
+typedef uint8 PduR_uint8_impl;
+# 506 ".\\output\\inc/..\\..\\rte\\Rte_Type.h"
+typedef uint8 WdgM_CheckpointIdType;
+
+typedef uint8 WdgM_SupervisedEntityIdType;
+
+
+
+typedef uint8 WdgM_ModeType;
+# 528 ".\\output\\inc/..\\..\\rte\\Rte_Type.h"
+typedef uint8 WdgM_GlobalStatusType;
+
+typedef uint8 WdgM_LocalStatusType;
+
+typedef uint8 Array100ByteDataElement[100];
+typedef boolean Boolean;
+typedef float64 Double;
+typedef float32 Float;
+typedef uint16 UInt16;
+typedef uint32 UInt32;
+typedef uint8 UInt8;
+typedef Std_ReturnType (*Rte_CallFP_ASW_CORE0_CPU_Utilization_CPU_Utilization) (uint32 Duration_u32, float64 * CPU_PercentUtilization, uint8 * Status);
+
+typedef Std_ReturnType (*Rte_CallFP_ASW_CORE0_Core_ClientServer_Interface_Core_ClientServer) (uint16 * CoreStatus, uint16 Data2Core, uint16 * DataOfCore);
+
+typedef Std_ReturnType (*Rte_CallFP_ASW_CORE0_GetMaxUserStackUtilization_GetMaxUserStackUtilization) (float64 * MaxUserStackUtilization);
+
+typedef Std_ReturnType (*Rte_CallFP_ASW_CORE1_CPU_Utilization_CPU_Utilization) (uint32 Duration_u32, float64 * CPU_PercentUtilization, uint8 * Status);
+
+typedef Std_ReturnType (*Rte_CallFP_ASW_CORE1_GetMaxUserStackUtilization_GetMaxUserStackUtilization) (float64 * MaxUserStackUtilization);
+
+typedef Std_ReturnType (*Rte_CallFP_ASW_CORE2_CPU_Utilization_CPU_Utilization) (uint32 Duration_u32, float64 * CPU_PercentUtilization, uint8 * Status);
+
+typedef Std_ReturnType (*Rte_CallFP_ASW_CORE2_GetMaxUserStackUtilization_GetMaxUserStackUtilization) (float64 * MaxUserStackUtilization);
+
+typedef Std_ReturnType (*Rte_CallFP_ASW_CORE3_CPU_Utilization_CPU_Utilization) (uint32 Duration_u32, float64 * CPU_PercentUtilization, uint8 * Status);
+
+typedef Std_ReturnType (*Rte_CallFP_ASW_CORE3_GetMaxUserStackUtilization_GetMaxUserStackUtilization) (float64 * MaxUserStackUtilization);
+
+typedef Std_ReturnType (*Rte_CallFP_ASW_DEM_IndicatorStatus_GetIndicatorStatus) (Dem_IndicatorStatusType * IndicatorStatus);
+
+typedef Std_ReturnType (*Rte_CallFP_ASW_DEM_OperationCycle_GetCycleQualified) (boolean * CycleState);
+
+typedef Std_ReturnType (*Rte_CallFP_ASW_DEM_OperationCycle_GetOperationCycleState) (Dem_OperationCycleStateType * CycleState);
+
+typedef Std_ReturnType (*Rte_CallFP_ASW_DEM_OperationCycle_SetCycleQualified) (void);
+
+typedef Std_ReturnType (*Rte_CallFP_ASW_DEM_OperationCycle_SetOperationCycleState) (Dem_OperationCycleStateType CycleState);
+
+typedef Std_ReturnType (*Rte_CallFP_ASW_NM_ComM_ECUModeLimitation_LimitECUToNoComMode) (boolean Status);
+
+typedef Std_ReturnType (*Rte_CallFP_ASW_NM_ComM_ECUModeLimitation_ReadInhibitCounter) (uint16 * CounterValue);
+
+typedef Std_ReturnType (*Rte_CallFP_ASW_NM_ComM_ECUModeLimitation_ResetInhibitCounter) (void);
+
+typedef Std_ReturnType (*Rte_CallFP_ASW_NM_ComM_ECUModeLimitation_SetECUGroupClassification) (ComM_InhibitionStatusType Status);
+
+typedef Std_ReturnType (*Rte_CallFP_ASW_NM_ComM_UserRequest_GetCurrentComMode) (ComM_ModeType * ComMode);
+
+typedef Std_ReturnType (*Rte_CallFP_ASW_NM_ComM_UserRequest_GetMaxComMode) (ComM_ModeType * ComMode);
+
+typedef Std_ReturnType (*Rte_CallFP_ASW_NM_ComM_UserRequest_GetRequestedComMode) (ComM_ModeType * ComMode);
+
+typedef Std_ReturnType (*Rte_CallFP_ASW_NM_ComM_UserRequest_RequestComMode) (ComM_ModeType ComMode);
+
+typedef Std_ReturnType (*Rte_CallFP_ASW_NVM_NvMService_EraseBlock) (void);
+
+typedef Std_ReturnType (*Rte_CallFP_ASW_NVM_NvMService_GetDataIndex) (uint8 * DataIndexPtr);
+
+typedef Std_ReturnType (*Rte_CallFP_ASW_NVM_NvMService_GetErrorStatus) (NvM_RequestResultType * RequestResultPtr);
+
+typedef Std_ReturnType (*Rte_CallFP_ASW_NVM_NvMService_InvalidateNvBlock) (void);
+
+typedef Std_ReturnType (*Rte_CallFP_ASW_NVM_NvMService_ReadBlock) (NvM_Rb_VoidPtr DstPtr);
+
+typedef Std_ReturnType (*Rte_CallFP_ASW_NVM_NvMService_RestoreBlockDefaults) (NvM_Rb_VoidPtr DstPtr);
+
+typedef Std_ReturnType (*Rte_CallFP_ASW_NVM_NvMService_SetDataIndex) (uint8 DataIndex);
+
+typedef Std_ReturnType (*Rte_CallFP_ASW_NVM_NvMService_SetRamBlockStatus) (boolean BlockChanged);
+
+typedef Std_ReturnType (*Rte_CallFP_ASW_NVM_NvMService_WriteBlock) (NvM_Rb_ConstVoidPtr SrcPtr);
+
+typedef Std_ReturnType (*Rte_CallFP_ASW_WDG_WdgM_LocalSupervision_CheckpointReached) (void);
+
+typedef Std_ReturnType (*Rte_CallFP_Dcm_DataServices_DcmDspPidData_04_ReadData) (uint8 * Data);
+
+typedef Std_ReturnType (*Rte_CallFP_Dcm_DataServices_DcmDspPidData_05_ReadData) (uint8 * Data);
+
+typedef Std_ReturnType (*Rte_CallFP_Dcm_DataServices_DcmDspPidData_0C_ReadData) (uint8 * Data);
+
+typedef Std_ReturnType (*Rte_CallFP_Dcm_DataServices_DcmDspPidData_0D_ReadData) (uint8 * Data);
+
+typedef Std_ReturnType (*Rte_CallFP_Dcm_DataServices_DcmDspPidData_21_ReadData) (uint8 * Data);
+
+typedef Std_ReturnType (*Rte_CallFP_Dcm_DataServices_DcmDspPidData_30_ReadData) (uint8 * Data);
+
+typedef Std_ReturnType (*Rte_CallFP_Dcm_DataServices_DcmDspPidData_31_ReadData) (uint8 * Data);
+
+typedef Std_ReturnType (*Rte_CallFP_Dcm_DataServices_DcmDspPidData_41_ReadData) (uint8 * Data);
+
+typedef Std_ReturnType (*Rte_CallFP_Dcm_DataServices_DcmDspPidData_42_ReadData) (uint8 * Data);
+
+typedef Std_ReturnType (*Rte_CallFP_Dcm_DataServices_DcmDspPidData_49_ReadData) (uint8 * Data);
+
+typedef Std_ReturnType (*Rte_CallFP_Dcm_InfotypeServices_DcmDspVehInfoData_04_GetInfotypeValueData) (Dcm_OpStatusType OpStatus, uint8 * DataValueBuffer, uint8 * DataValueBufferSize);
+
+typedef Std_ReturnType (*Rte_CallFP_Dcm_InfotypeServices_DcmDspVehInfoData_0A_GetInfotypeValueData) (Dcm_OpStatusType OpStatus, uint8 * DataValueBuffer, uint8 * DataValueBufferSize);
+
+typedef Std_ReturnType (*Rte_CallFP_Dcm_InfotypeServices_VIT_06_0_GetInfotypeValueData) (Dcm_OpStatusType OpStatus, uint8 * DataValueBuffer, uint8 * DataValueBufferSize);
+
+typedef Std_ReturnType (*Rte_CallFP_Dcm_RoutineServices_DcmDspRoutine_0203_RequestResults) (Dcm_OpStatusType OpStatus, Dcm_RequestDataOut_DcmDspRoutine_0203_DcmDspRequestRoutineResultsOutSignal_0Type * DataOut_DcmDspRequestRoutineResultsOutSignal_0, Dcm_NegativeResponseCodeType * ErrorCode);
+
+typedef Std_ReturnType (*Rte_CallFP_Dcm_RoutineServices_DcmDspRoutine_0203_Start) (Dcm_OpStatusType OpStatus, Dcm_StartDataOut_DcmDspRoutine_0203_DcmDspStartRoutineOutSignalType * DataOut_DcmDspStartRoutineOutSignal, Dcm_NegativeResponseCodeType * ErrorCode);
+
+typedef Std_ReturnType (*Rte_CallFP_Dem_DataServices_CS_ExtendedDataRecord_Aged_counter_ReadData) (uint8 * Data);
+
+typedef Std_ReturnType (*Rte_CallFP_Dem_DataServices_CS_ExtendedDataRecord_Fault_pending_counter_ReadData) (uint8 * Data);
+
+typedef Std_ReturnType (*Rte_CallFP_Dem_DataServices_PID_02_ReadData) (uint8 * Data);
+
+typedef Std_ReturnType (*Rte_CallFP_Dem_DataServices_PID_04_ReadData) (uint8 * Data);
+
+typedef Std_ReturnType (*Rte_CallFP_Dem_DataServices_PID_05_ReadData) (uint8 * Data);
+
+typedef Std_ReturnType (*Rte_CallFP_Dem_DataServices_PID_0C_ReadData) (uint8 * Data);
+
+typedef Std_ReturnType (*Rte_CallFP_Dem_DataServices_PID_0D_ReadData) (uint8 * Data);
+
+typedef Std_ReturnType (*Rte_CallFP_Dem_DataServices_PID_42_ReadData) (uint8 * Data);
+
+typedef Std_ReturnType (*Rte_CallFP_Dem_DataServices_PID_49_ReadData) (uint8 * Data);
+
+typedef void (*Rte_IrvReadFP_ASW_CORE0_RE_CORE0_SWC_100ms_Explicit_IRV_1) (uint8 * data);
+
+typedef void (*Rte_IrvWriteFP_ASW_CORE0_RE_CORE0_SWC_10ms_Explicit_IRV_1) (const uint8 * data);
+
+typedef Impl_NVM_DstPtrType_1024 Rte_PimType_ASW_NVM_ASW_NVM_BlockNative_1024_Type;
+typedef Rte_PimType_ASW_NVM_ASW_NVM_BlockNative_1024_Type * (*Rte_PimFP_ASW_NVM_ASW_NVM_BlockNative_1024_1) (void);
+
+typedef Impl_NVM_DstPtrType_1024 Rte_PimType_ASW_NVM_ASW_NVM_BlockRedundant_1024_Type;
+typedef Rte_PimType_ASW_NVM_ASW_NVM_BlockRedundant_1024_Type * (*Rte_PimFP_ASW_NVM_ASW_NVM_BlockNative_1024_2) (void);
+
+typedef Std_ReturnType (*Rte_ReadFP_ASW_CORE0_DataTransfer100Byte_Core0Core1_Data_ptr) (uint8 * data);
+
+typedef Std_ReturnType (*Rte_ReadFP_ASW_CORE1_DataTransfer100Byte_Core0Core1_Data_ptr) (uint8 * data);
+
+typedef Std_ReturnType (*Rte_ReadFP_BswM_ETAS_SenderReceiverInterface_uint8_uint8) (uint8 * data);
+
+typedef Std_ReturnType (*Rte_ReadFP_BswM_ModeRequestInterface_AppMode) (uint8 * data);
+
+typedef const struct Rte_CDS_ASW_BASE * Rte_SelfType_ASW_BASE;
+
+typedef const struct Rte_CDS_ASW_COM * Rte_SelfType_ASW_COM;
+
+typedef const struct Rte_CDS_ASW_CORE0 * Rte_SelfType_ASW_CORE0;
+
+typedef const struct Rte_CDS_ASW_CORE1 * Rte_SelfType_ASW_CORE1;
+
+typedef const struct Rte_CDS_ASW_CORE2 * Rte_SelfType_ASW_CORE2;
+
+typedef const struct Rte_CDS_ASW_CORE3 * Rte_SelfType_ASW_CORE3;
+
+typedef const struct Rte_CDS_ASW_DCM * Rte_SelfType_ASW_DCM;
+
+typedef const struct Rte_CDS_ASW_DEM * Rte_SelfType_ASW_DEM;
+
+typedef const struct Rte_CDS_ASW_NM * Rte_SelfType_ASW_NM;
+
+typedef const struct Rte_CDS_ASW_NVM * Rte_SelfType_ASW_NVM;
+
+typedef const struct Rte_CDS_ASW_WDG * Rte_SelfType_ASW_WDG;
+
+typedef const struct Rte_CDS_ASW_XCP * Rte_SelfType_ASW_XCP;
+
+typedef const struct Rte_CDS_BswM * Rte_SelfType_BswM;
+
+typedef const struct Rte_CDS_CDD_CORE0 * Rte_SelfType_CDD_CORE0;
+
+typedef const struct Rte_CDS_CDD_CORE1 * Rte_SelfType_CDD_CORE1;
+
+typedef const struct Rte_CDS_CDD_CORE2 * Rte_SelfType_CDD_CORE2;
+
+typedef const struct Rte_CDS_CDD_CORE3 * Rte_SelfType_CDD_CORE3;
+
+typedef const struct Rte_CDS_ComM * Rte_SelfType_ComM;
+
+typedef const struct Rte_CDS_Dcm * Rte_SelfType_Dcm;
+
+typedef const struct Rte_CDS_Dem * Rte_SelfType_Dem;
+
+typedef const struct Rte_CDS_Det * Rte_SelfType_Det;
+
+typedef const struct Rte_CDS_EcuM * Rte_SelfType_EcuM;
+
+typedef const struct Rte_CDS_NvM * Rte_SelfType_NvM;
+
+typedef const struct Rte_CDS_RSID * Rte_SelfType_RSID;
+
+typedef const struct Rte_CDS_SWC_DEM * Rte_SelfType_SWC_DEM;
+
+typedef const struct Rte_CDS_WdgM * Rte_SelfType_WdgM;
+
+typedef const struct Rte_CDS_rba_DiagLib * Rte_SelfType_rba_DiagLib;
+
+typedef Std_ReturnType (*Rte_SwitchAckFP_WdgM_WdgM_GlobalMode_currentMode) (void);
+
+typedef Std_ReturnType (*Rte_SwitchAckFP_WdgM_WdgM_LocalMode_currentMode) (void);
+
+typedef Std_ReturnType (*Rte_SwitchFP_ComM_ComM_CurrentMode_currentMode) (uint8 data);
+
+typedef Std_ReturnType (*Rte_SwitchFP_Dcm_DcmCommunicationControl_Can_Network_CanNodeNum_01_MDGP_DcmCommunicationControl_Can_Network_CanNodeNum_01) (uint8 data);
+
+typedef Std_ReturnType (*Rte_SwitchFP_Dcm_DcmControlDTCSetting_MDGP_DcmControlDTCSetting) (uint8 data);
+
+typedef Std_ReturnType (*Rte_SwitchFP_Dcm_DcmDiagnosticSessionControl_MDGP_DcmDiagnosticSessionControl) (uint8 data);
+
+typedef Std_ReturnType (*Rte_SwitchFP_Dcm_DcmEcuReset_MDGP_DcmEcuReset) (uint8 data);
+
+typedef Std_ReturnType (*Rte_SwitchFP_WdgM_WdgM_GlobalMode_currentMode) (uint8 data);
+
+typedef Std_ReturnType (*Rte_SwitchFP_WdgM_WdgM_LocalMode_currentMode) (uint8 data);
+
+typedef Std_ReturnType (*Rte_WriteFP_ASW_BASE_ModeRequestInterface_AppMode) (uint8 data);
+
+typedef Std_ReturnType (*Rte_WriteFP_ASW_CORE0_DataTransfer100Byte_Core0Core1_Data_ptr) (const uint8 * data);
+
+typedef Std_ReturnType (*Rte_WriteFP_ASW_CORE0_ModeRequestInterface_AppMode) (uint8 data);
+
+typedef Std_ReturnType (*Rte_WriteFP_ASW_CORE1_DataTransfer100Byte_Core0Core1_Data_ptr) (const uint8 * data);
+
+typedef Std_ReturnType (*Rte_WriteFP_ASW_NM_ETAS_SenderReceiverInterface_uint8_uint8) (uint8 data);
+
+# 1 ".\\output\\inc/..\\..\\rte\\iocNeeds.h" 1
+# 752 ".\\output\\inc/..\\..\\rte\\Rte_Type.h" 2
+# 17 ".\\output\\inc/..\\..\\rte\\Rte_Dem_Type.h" 2
+# 2 ".\\output\\inc/Rte_Dem_Type.h" 2
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\Dem_Internal.h" 2
+# 20 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\Dem_Internal.h"
+# 1 ".\\output\\inc/Dem.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h" 1
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Types.h" 1
+
+
+
+
+
+
+
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Types.h" 2
+# 1 ".\\output\\inc/Dem_Cfg.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Types.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_Client.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_Client.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_Client.h"
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 12 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_Client.h" 2
+# 1 ".\\output\\inc/Dem_ClientHandlingTypes.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\client\\Dem_ClientHandlingTypes.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Types.h" 1
+# 2 ".\\output\\inc/Dem_Types.h" 2
+# 7 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\client\\Dem_ClientHandlingTypes.h" 2
+# 55 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\client\\Dem_ClientHandlingTypes.h"
+typedef uint16 Dem_ClientRequestType;
+typedef uint16 Dem_ClientResultType;
+typedef uint32 Dem_ClientSelectionType;
+
+typedef uint8 Dem_ClientPriorityType;
+# 2 ".\\output\\inc/Dem_ClientHandlingTypes.h" 2
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_Client.h" 2
+# 2 ".\\output\\inc/Dem_Cfg_Client.h" 2
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Types.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_NodeId.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_NodeId.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_NodeId.h"
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_NodeId.h" 2
+# 20 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_NodeId.h"
+typedef uint16 Dem_ComponentIdType;
+# 2 ".\\output\\inc/Dem_Cfg_NodeId.h" 2
+# 12 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Types.h" 2
+
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Cfg_Version.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_Version.h" 1
+# 2 ".\\output\\inc/Dem_Cfg_Version.h" 2
+# 20 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Types.h" 2
+# 1 ".\\output\\inc/Rte_Dem_Type.h" 1
+# 21 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Types.h" 2
+# 42 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Types.h"
+typedef uint8 Dem_DTCGroupIdType;
+typedef uint16 Dem_DtcIdType;
+typedef uint8 Dem_J1939NodeIdType;
+
+typedef uint8 Dem_ClientIdType;
+
+typedef uint32 Dem_DtcCodeType;
+
+
+typedef struct Dem_ConfigType Dem_ConfigType;
+
+typedef boolean Dem_boolean_least;
+
+typedef uint8 Dem_EventCategoryType;
+
+typedef struct {
+    uint16_least evMemId;
+    uint16_least locIterator;
+} Dem_ReadEventsFromMemoryType;
+
+
+
+# 1 ".\\output\\inc/rba_DemObd_Types.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObd_Types.h" 1
+
+
+
+
+
+
+# 1 ".\\output\\inc/rba_DemObdBasic_Cfg_Main.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\rba_DemObdBasic_Cfg_Main.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\rba_DemObdBasic_Cfg_Main.h"
+# 1 ".\\output\\inc/Dem_Cfg_Main.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_Main.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_Main.h"
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_Main.h" 2
+# 2 ".\\output\\inc/Dem_Cfg_Main.h" 2
+# 12 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\rba_DemObdBasic_Cfg_Main.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\rba_DemObdBasic_Cfg_Iumpr.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\rba_DemObdBasic_Cfg_Main.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\rba_DemObdBasic_Cfg_Rdy.h" 1
+# 14 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\rba_DemObdBasic_Cfg_Main.h" 2
+
+# 1 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\rba_DemObdBasic_Cfg_Dtr.h" 1
+# 16 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\rba_DemObdBasic_Cfg_Main.h" 2
+# 2 ".\\output\\inc/rba_DemObdBasic_Cfg_Main.h" 2
+# 8 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObd_Types.h" 2
+
+
+# 1 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_Types.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 7 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_Types.h" 2
+# 1 ".\\output\\inc/Platform_Types.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_Types.h" 2
+
+# 1 ".\\output\\inc/rba_DemObdBasic_Cfg_Main.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_Types.h" 2
+
+# 1 ".\\output\\inc/Dcm_Types.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dcm\\api\\Dcm_Types.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dcm\\api\\Dcm_Types.h"
+# 1 ".\\output\\inc/Rte_Dcm_Type.h" 1
+# 1 ".\\output\\inc/..\\..\\rte\\Rte_Dcm_Type.h" 1
+# 27 ".\\output\\inc/..\\..\\rte\\Rte_Dcm_Type.h"
+typedef uint8 Rte_ModeType_DcmCommunicationControl_Can_Network_CanNodeNum_01;
+
+
+
+
+
+typedef uint8 Rte_ModeType_DcmControlDTCSetting;
+
+
+
+
+
+typedef uint8 Rte_ModeType_DcmDiagnosticSessionControl;
+
+
+
+
+
+typedef uint8 Rte_ModeType_DcmEcuReset;
+# 2 ".\\output\\inc/Rte_Dcm_Type.h" 2
+# 12 ".\\output\\inc/..\\..\\bsw\\Dcm\\api\\Dcm_Types.h" 2
+
+# 1 ".\\output\\inc/Dcm_Type_Integration.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dcm\\integration\\Dcm_Type_Integration.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dcm\\integration\\Dcm_Type_Integration.h"
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dcm\\integration\\Dcm_Type_Integration.h" 2
+# 2 ".\\output\\inc/Dcm_Type_Integration.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dcm\\api\\Dcm_Types.h" 2
+# 2 ".\\output\\inc/Dcm_Types.h" 2
+# 12 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_Types.h" 2
+
+# 1 ".\\output\\inc/rba_DemObdBasic_PidTypes.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\src\\main\\rba_DemObdBasic_PidTypes.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 7 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\src\\main\\rba_DemObdBasic_PidTypes.h" 2
+# 1 ".\\output\\inc/Dem_Cfg.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\src\\main\\rba_DemObdBasic_PidTypes.h" 2
+
+typedef struct
+{
+    uint8 pid30;
+
+
+
+    uint32 pid21Cnt_u32;
+
+    boolean pid21CntSet_b;
+# 26 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\src\\main\\rba_DemObdBasic_PidTypes.h"
+    uint32 pid31Cnt_u32;
+# 41 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\src\\main\\rba_DemObdBasic_PidTypes.h"
+} rba_DemObdBasic_PidDataType;
+# 2 ".\\output\\inc/rba_DemObdBasic_PidTypes.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_Types.h" 2
+# 1 ".\\output\\inc/rba_DemObdBasic_PdtcMemTypes.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\src\\main\\rba_DemObdBasic_PdtcMemTypes.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 7 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\src\\main\\rba_DemObdBasic_PdtcMemTypes.h" 2
+# 1 ".\\output\\inc/Dem_Cfg.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\src\\main\\rba_DemObdBasic_PdtcMemTypes.h" 2
+# 32 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\src\\main\\rba_DemObdBasic_PdtcMemTypes.h"
+typedef struct
+{
+    uint8 state;
+    Dem_EventIdType EventId;
+} rba_DemObdBasic_PdtcMemType;
+
+typedef uint16_least rba_DemObdBasic_PdtcMemIterator;
+# 2 ".\\output\\inc/rba_DemObdBasic_PdtcMemTypes.h" 2
+# 15 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_Types.h" 2
+# 1 ".\\output\\inc/rba_DemObdBasic_DtcTypes.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\src\\main\\rba_DemObdBasic_DtcTypes.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 7 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\src\\main\\rba_DemObdBasic_DtcTypes.h" 2
+# 1 ".\\output\\inc/Dem_Cfg.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\src\\main\\rba_DemObdBasic_DtcTypes.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\src\\main\\rba_DemObdBasic_PdtcMemTypes.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\src\\main\\rba_DemObdBasic_DtcTypes.h" 2
+
+typedef struct
+{
+    uint16_least evMemLocIt;
+    rba_DemObdBasic_PdtcMemIterator pdtcLocIt;
+} rba_DemObdBasic_DTCFilterState;
+# 2 ".\\output\\inc/rba_DemObdBasic_DtcTypes.h" 2
+# 16 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_Types.h" 2
+# 1 ".\\output\\inc/rba_DemObdBasic_IumprTypes.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\src\\iumpr\\rba_DemObdBasic_IumprTypes.h" 1
+# 2 ".\\output\\inc/rba_DemObdBasic_IumprTypes.h" 2
+# 17 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_Types.h" 2
+
+# 1 ".\\output\\inc/rba_DemObdBasic_DtrTypes.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\src\\dtr\\rba_DemObdBasic_DtrTypes.h" 1
+
+
+
+
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 6 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\src\\dtr\\rba_DemObdBasic_DtrTypes.h" 2
+# 1 ".\\output\\inc/Dem_Cfg.h" 1
+# 7 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\src\\dtr\\rba_DemObdBasic_DtrTypes.h" 2
+# 24 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\src\\dtr\\rba_DemObdBasic_DtrTypes.h"
+typedef struct
+{
+    uint32 ObdmidMaskRunTime[8u];
+    uint16 TestValue_u16[1u];
+    uint16 LowLimitValue_u16[1u];
+    uint16 UppLimitValue_u16[1u];
+    uint8 DtrStatus_u8[1u];
+} rba_DemObdBasic_DtrDataType;
+
+
+typedef struct
+{
+   sint32 denominator_s32;
+   sint32 numerator0_s32;
+   sint32 numerator1_s32;
+   uint8 ObdMid_u8;
+   uint8 ObdTid_u8;
+   uint8 UaSId_u8;
+   uint8 updateKind_u8;
+   Dem_EventIdType EventIdRef;
+}rba_DemObdBasic_DtrConfigType;
+
+
+typedef struct
+{
+    uint8 ObdMid_u8;
+    Dem_DtrIdType Offset_u16;
+}rba_DemObdBasic_DtrOffsetType;
+# 2 ".\\output\\inc/rba_DemObdBasic_DtrTypes.h" 2
+# 19 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_Types.h" 2
+
+
+# 1 ".\\output\\inc/rba_DemObdBasic_RdyTypes.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\src\\rdy\\rba_DemObdBasic_RdyTypes.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\src\\rdy\\rba_DemObdBasic_RdyTypes.h"
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\src\\rdy\\rba_DemObdBasic_RdyTypes.h" 2
+# 1 ".\\output\\inc/Dem_Cfg.h" 1
+# 12 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\src\\rdy\\rba_DemObdBasic_RdyTypes.h" 2
+# 2 ".\\output\\inc/rba_DemObdBasic_RdyTypes.h" 2
+# 22 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_Types.h" 2
+# 11 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObd_Types.h" 2
+
+typedef struct
+{
+    rba_DemObdBasic_PidDataType pidBasicData;
+
+} rba_DemObd_PidDataType;
+# 2 ".\\output\\inc/rba_DemObd_Types.h" 2
+# 65 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Types.h" 2
+# 76 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Types.h"
+typedef uint8 Dem_ReadEventType;
+# 96 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Types.h"
+typedef uint8 Dem_ReturnSetFilterType;
+# 109 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Types.h"
+typedef uint8 Dem_DTCSeverityType;
+# 121 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Types.h"
+typedef uint32 Dem_DTCGroupType;
+# 133 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Types.h"
+typedef uint8 Dem_ReturnGetNumberOfFilteredDTCType;
+# 149 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Types.h"
+typedef uint8 Dem_DTCTranslationFormatType;
+# 166 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Types.h"
+typedef uint8 Dem_DTCRequestType;
+
+
+
+
+
+
+
+typedef uint8 Dem_EraseAllStatusType;
+
+
+
+
+
+
+typedef uint8 Dem_EraseAllRequestType;
+
+
+
+typedef uint8 Dem_HashIdCheckResultType;
+# 200 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Types.h"
+typedef uint8 Dem_DTCKindType;
+
+
+
+typedef uint8 Dem_TriggerType;
+# 223 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Types.h"
+typedef uint8 Dem_ReturnGetNextFilteredDTCType;
+# 15 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h" 2
+
+# 1 ".\\output\\inc/Dem_Cfg_Version.h" 1
+# 17 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EventId.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EventId.h" 1
+# 2 ".\\output\\inc/Dem_Cfg_EventId.h" 2
+# 18 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_DtcId.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_DtcId.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_DtcId.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EventId.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_DtcId.h" 2
+# 2 ".\\output\\inc/Dem_Cfg_DtcId.h" 2
+# 19 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_NodeId.h" 1
+# 20 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_Main.h" 1
+# 21 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_Deb.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_Deb.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_Deb.h"
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_Deb.h" 2
+# 2 ".\\output\\inc/Dem_Cfg_Deb.h" 2
+# 22 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EnableCondition.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EnableCondition.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EnableCondition.h"
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EnableCondition.h" 2
+# 23 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EnableCondition.h"
+typedef uint8 Dem_EnCoList;
+# 2 ".\\output\\inc/Dem_Cfg_EnableCondition.h" 2
+# 23 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EventCategory.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EventCategory.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EventCategory.h"
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EventCategory.h" 2
+# 2 ".\\output\\inc/Dem_Cfg_EventCategory.h" 2
+# 24 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EventIndicators.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EventIndicators.h" 1
+# 71 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EventIndicators.h"
+typedef uint16 Dem_EvtIndicatorParamType;
+# 2 ".\\output\\inc/Dem_Cfg_EventIndicators.h" 2
+# 25 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_OperationCycle.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_OperationCycle.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_OperationCycle.h"
+# 1 ".\\output\\inc/rba_DiagLib_Bits8.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\src\\rba_DiagLib_Bits8.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 7 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\src\\rba_DiagLib_Bits8.h" 2
+# 1 ".\\output\\inc/Compiler.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\src\\rba_DiagLib_Bits8.h" 2
+
+
+
+
+
+
+
+static __inline__ uint8 rba_DiagLib_Bit8Mask(uint8 pos, uint8 len)
+{
+    uint8 bit2shift = 1;
+    return (((bit2shift << len) - 1u) << pos);
+}
+
+static __inline__ void rba_DiagLib_Bit8SetBitMask(uint8 *buffer, uint8 bitMask)
+{
+    *buffer |= bitMask;
+}
+
+static __inline__ void rba_DiagLib_Bit8ClearBitMask(uint8 *buffer, uint8 bitMask)
+{
+    *buffer &= ((uint8) (~bitMask));
+}
+
+static __inline__ void rba_DiagLib_Bit8MergeBitmask(uint8 *buffer, uint8 value)
+{
+    *buffer &= value;
+}
+
+static __inline__ void rba_DiagLib_Bit8SetBit(uint8 *buffer, uint8 bit_position)
+{
+    uint8 bit2shift = 1;
+    *buffer |= ((uint8) (bit2shift << bit_position));
+}
+
+static __inline__ void rba_DiagLib_Bit8ClearBit(uint8 *buffer, uint8 bit_position)
+{
+    uint8 bit2shift = 1;
+    *buffer &= ((uint8) (~((uint8) (bit2shift << bit_position))));
+}
+
+static __inline__ void rba_DiagLib_Bit8OverwriteBit(uint8 *buffer, uint8 bit_position, boolean will_bit_be_set)
+{
+    if (will_bit_be_set)
+    {
+        rba_DiagLib_Bit8SetBit(buffer, bit_position);
+    }
+    else
+    {
+        rba_DiagLib_Bit8ClearBit(buffer, bit_position);
+    }
+}
+
+static __inline__ uint8 rba_DiagLib_Bit8GetSingleBit(uint8 value, uint8 bit_position)
+{
+    return (uint8) ((value >> (bit_position)) & 1u);
+}
+static __inline__ boolean rba_DiagLib_Bit8IsBitSet(uint8 value, uint8 bit_position)
+{
+    return (boolean) (rba_DiagLib_Bit8GetSingleBit(value, bit_position) != 0u);
+}
+
+static __inline__ uint8 rba_DiagLib_Bit8GetBits(uint8 value, uint8 bit_position, uint8 number_of_bits)
+{
+    uint8 bit2shift = 1;
+    value = value >> bit_position;
+    value = value % ((uint8) (bit2shift << number_of_bits));
+    return value;
+}
+
+static __inline__ void rba_DiagLib_Bit8ClearBits(uint8 *value, uint8 bit_position, uint8 number_of_bits)
+{
+    uint8 bit2shift = 1;
+    *value &= ((uint8) (~((uint8) ((((uint8) (bit2shift << number_of_bits)) - 1u) << bit_position))));
+}
+
+static __inline__ void rba_DiagLib_Bit8OverwriteBits(uint8 *value, uint8 bit_position, uint8 number_of_bits, uint8 newValue)
+{
+    uint8 bit2shift = 1;
+    rba_DiagLib_Bit8ClearBits(value, bit_position, number_of_bits);
+    *value |= ((uint8) ((newValue % ((uint8) (bit2shift << number_of_bits))) << bit_position));
+}
+
+static __inline__ void rba_DiagLib_Bit8ClearAll(uint8 *buffer)
+{
+    *buffer = 0u;
+}
+# 2 ".\\output\\inc/rba_DiagLib_Bits8.h" 2
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_OperationCycle.h" 2
+# 1 ".\\output\\inc/rba_DiagLib_Bits16.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\src\\rba_DiagLib_Bits16.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 7 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\src\\rba_DiagLib_Bits16.h" 2
+# 1 ".\\output\\inc/Compiler.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\src\\rba_DiagLib_Bits16.h" 2
+
+
+
+
+
+
+
+static __inline__ uint16 rba_DiagLib_Bit16Mask(uint8 pos, uint8 len)
+{
+    uint16 bit2shift = 1;
+    return (((bit2shift << len) - 1u) << pos);
+}
+
+static __inline__ void rba_DiagLib_Bit16SetBitMask(uint16 *buffer, uint16 bitMask)
+{
+    *buffer |= bitMask;
+}
+
+static __inline__ void rba_DiagLib_Bit16ClearBitMask(uint16 *buffer, uint16 bitMask)
+{
+    *buffer &= ((uint16) (~bitMask));
+}
+
+static __inline__ void rba_DiagLib_Bit16MergeBitmask(uint16 *buffer, uint16 value)
+{
+    *buffer &= value;
+}
+
+static __inline__ void rba_DiagLib_Bit16SetBit(uint16 *buffer, uint8 bit_position)
+{
+    uint16 bit2shift = 1;
+    *buffer |= ((uint16) (bit2shift << bit_position));
+}
+
+static __inline__ void rba_DiagLib_Bit16ClearBit(uint16 *buffer, uint8 bit_position)
+{
+    uint16 bit2shift = 1;
+    *buffer &= ((uint16) (~((uint16) (bit2shift << bit_position))));
+}
+
+static __inline__ void rba_DiagLib_Bit16OverwriteBit(uint16 *buffer, uint8 bit_position, boolean will_bit_be_set)
+{
+    if (will_bit_be_set)
+    {
+        rba_DiagLib_Bit16SetBit(buffer, bit_position);
+    }
+    else
+    {
+        rba_DiagLib_Bit16ClearBit(buffer, bit_position);
+    }
+}
+
+static __inline__ uint16 rba_DiagLib_Bit16GetSingleBit(uint16 value, uint8 bit_position)
+{
+    return (uint16) ((value >> bit_position) & 1u);
+}
+
+static __inline__ boolean rba_DiagLib_Bit16IsBitSet(uint16 value, uint8 bit_position)
+{
+    return (boolean) (rba_DiagLib_Bit16GetSingleBit(value, bit_position) != 0u);
+}
+
+static __inline__ uint16 rba_DiagLib_Bit16GetBits(uint16 value, uint8 bit_position, uint8 number_of_bits)
+{
+    uint16 bit2shift = 1;
+    value = value >> bit_position;
+    value = value % ((uint16) (bit2shift << number_of_bits));
+    return value;
+}
+
+static __inline__ void rba_DiagLib_Bit16ClearBits(uint16 *value, uint8 bit_position, uint8 number_of_bits)
+{
+    uint16 bit2shift = 1;
+    *value &= ((uint16) (~((uint16) ((((uint16) (bit2shift << number_of_bits)) - 1u) << bit_position))));
+}
+
+static __inline__ void rba_DiagLib_Bit16OverwriteBits(uint16 *value, uint8 bit_position, uint8 number_of_bits, uint16 newValue)
+{
+    uint16 bit2shift = 1;
+    rba_DiagLib_Bit16ClearBits(value, bit_position, number_of_bits);
+    *value |= ((uint16) ((newValue % ((uint16) (bit2shift << number_of_bits))) << bit_position));
+}
+
+static __inline__ void rba_DiagLib_Bit16ClearAll(uint16 *buffer)
+{
+    *buffer = 0u;
+}
+# 2 ".\\output\\inc/rba_DiagLib_Bits16.h" 2
+# 12 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_OperationCycle.h" 2
+# 1 ".\\output\\inc/rba_DiagLib_Bits32.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\src\\rba_DiagLib_Bits32.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 7 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\src\\rba_DiagLib_Bits32.h" 2
+# 1 ".\\output\\inc/Compiler.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\src\\rba_DiagLib_Bits32.h" 2
+
+
+
+
+
+
+
+static __inline__ uint32 rba_DiagLib_Bit32Mask(uint8 pos, uint8 len)
+{
+    uint32 bit2shift = 1;
+    return (((bit2shift << len) - 1u) << pos);
+}
+
+static __inline__ void rba_DiagLib_Bit32SetBitMask(uint32 *buffer, uint32 bitMask)
+{
+    *buffer |= bitMask;
+}
+
+static __inline__ void rba_DiagLib_Bit32ClearBitMask(uint32 *buffer, uint32 bitMask)
+{
+    *buffer &= ((uint32) (~bitMask));
+}
+
+static __inline__ void rba_DiagLib_Bit32MergeBitmask(uint32 *buffer, uint32 value)
+{
+    *buffer &= value;
+}
+
+static __inline__ void rba_DiagLib_Bit32SetBit(uint32 *buffer, uint8 bit_position)
+{
+    uint32 bit2shift = 1;
+    *buffer |= ((uint32) (bit2shift << bit_position));
+}
+
+static __inline__ void rba_DiagLib_Bit32ClearBit(uint32 *buffer, uint8 bit_position)
+{
+    uint32 bit2shift = 1;
+    *buffer &= ((uint32) (~((uint32) (bit2shift << bit_position))));
+}
+
+static __inline__ void rba_DiagLib_Bit32OverwriteBit(uint32 *buffer, uint8 bit_position, boolean will_bit_be_set)
+{
+    if (will_bit_be_set)
+    {
+        rba_DiagLib_Bit32SetBit(buffer, bit_position);
+    }
+    else
+    {
+        rba_DiagLib_Bit32ClearBit(buffer, bit_position);
+    }
+}
+
+static __inline__ uint32 rba_DiagLib_Bit32GetSingleBit(uint32 value, uint8 bit_position)
+{
+    return (uint32) ((value >> bit_position) & 1u);
+}
+
+static __inline__ boolean rba_DiagLib_Bit32IsBitSet(uint32 value, uint8 bit_position)
+{
+    return (boolean) (rba_DiagLib_Bit32GetSingleBit(value, bit_position) != 0u);
+}
+
+static __inline__ uint32 rba_DiagLib_Bit32GetBits(uint32 value, uint8 bit_position, uint8 number_of_bits)
+{
+    uint32 bit2shift = 1;
+    value = value >> bit_position;
+    value = value % ((uint32) (bit2shift << number_of_bits));
+    return value;
+}
+
+static __inline__ void rba_DiagLib_Bit32ClearBits(uint32 *value, uint8 bit_position, uint8 number_of_bits)
+{
+    uint32 bit2shift = 1;
+    *value &= ((uint32) (~((uint32) ((((uint32) (bit2shift << number_of_bits)) - 1u) << bit_position))));
+}
+
+static __inline__ void rba_DiagLib_Bit32OverwriteBits(uint32 *value, uint8 bit_position, uint8 number_of_bits, uint32 newValue)
+{
+    uint32 bit2shift = 1;
+    rba_DiagLib_Bit32ClearBits(value, bit_position, number_of_bits);
+    *value |= ((uint32) ((newValue % ((uint32) (bit2shift << number_of_bits))) << bit_position));
+}
+
+static __inline__ void rba_DiagLib_Bit32ClearAll(uint32 *buffer)
+{
+    *buffer = 0u;
+}
+# 2 ".\\output\\inc/rba_DiagLib_Bits32.h" 2
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_OperationCycle.h" 2
+# 26 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_OperationCycle.h"
+typedef uint8 Dem_OperationCycleList;
+# 2 ".\\output\\inc/Dem_Cfg_OperationCycle.h" 2
+# 26 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_StorageCondition.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_StorageCondition.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_StorageCondition.h"
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_StorageCondition.h" 2
+# 23 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_StorageCondition.h"
+typedef uint8 Dem_StoCoList;
+# 2 ".\\output\\inc/Dem_Cfg_StorageCondition.h" 2
+# 27 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h" 2
+
+
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dlt.h" 1
+# 19 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dlt.h"
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 92 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 93 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 20 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dlt.h" 2
+# 35 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dlt.h"
+Std_ReturnType Dem_DltGetAllExtendedDataRecords(Dem_EventIdType EventId, uint8* DestBuffer, uint16* BufSize);
+# 52 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dlt.h"
+Std_ReturnType Dem_DltGetMostRecentFreezeFrameRecordData(Dem_EventIdType EventId, uint8* DestBuffer, uint16* BufSize);
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 56 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dlt.h" 2
+# 30 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h" 2
+
+# 1 ".\\output\\inc/Dem_Dcm_Internal.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\Dem_Dcm_Internal.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Cfg.h" 1
+# 7 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\Dem_Dcm_Internal.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_Client.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\Dem_Dcm_Internal.h" 2
+# 1 ".\\output\\inc/Platform_Types.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\Dem_Dcm_Internal.h" 2
+
+
+
+
+# 1 ".\\output\\inc/Dem_Dcm.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dcm.h" 1
+
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dcm_Types.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dcm.h" 2
+
+
+# 1 ".\\output\\inc/rba_DemObdBasic_Dcm.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_Dcm.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_Dcm.h"
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 92 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 93 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 10 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_Dcm.h" 2
+# 28 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_Dcm.h"
+Std_ReturnType Dem_DcmReadDataOfPID21(uint8* PID21value);
+# 93 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_Dcm.h"
+Std_ReturnType Dem_DcmReadDataOfPID01 (uint8* PID01value);
+# 108 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_Dcm.h"
+Std_ReturnType Dem_DcmReadDataOfPID1C (uint8* PID1Cvalue);
+# 123 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_Dcm.h"
+Std_ReturnType Dem_DcmReadDataOfPID30 (uint8* PID30value);
+# 139 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_Dcm.h"
+Std_ReturnType Dem_DcmReadDataOfPID41 (uint8* PID41value);
+
+
+
+
+
+Std_ReturnType Dem_DcmGetInfoTypeValue08(Dcm_OpStatusType OpStatus, uint8* Iumprdata08, uint8* Iumprdata08BufferSize);
+
+
+
+
+
+Std_ReturnType Dem_DcmGetInfoTypeValue0B(Dcm_OpStatusType OpStatus,uint8* Iumprdata0B, uint8* Iumprdata0BBufferSize);
+# 175 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_Dcm.h"
+Std_ReturnType Dem_DcmReadDataOfOBDFreezeFrame (uint8 PID, uint8 DataElementIndexOfPID, uint8* DestBuffer, uint16* BufSize);
+# 193 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_Dcm.h"
+Std_ReturnType Dem_DcmGetDTCOfOBDFreezeFrame(uint8 FrameNumber, uint32* DTC, Dem_DTCFormatType DTCFormat);
+# 203 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_Dcm.h"
+Std_ReturnType Dem_IsOBDFullClearPossible(void);
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 207 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_Dcm.h" 2
+# 2 ".\\output\\inc/rba_DemObdBasic_Dcm.h" 2
+# 12 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dcm.h" 2
+# 24 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dcm.h"
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 92 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 93 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 25 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dcm.h" 2
+# 41 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dcm.h"
+Dem_DTCTranslationFormatType Dem_GetTranslationType(uint8 ClientId);
+# 55 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dcm.h"
+Std_ReturnType Dem_GetDTCStatusAvailabilityMask(uint8 ClientId, Dem_UdsStatusByteType* DTCStatusMask);
+# 69 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dcm.h"
+Std_ReturnType Dem_GetStatusOfDTC(uint8 ClientId, uint8* DTCStatus);
+# 80 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dcm.h"
+Std_ReturnType Dem_GetSeverityOfDTC(uint8 ClientId, Dem_DTCSeverityType* DTCSeverity);
+# 91 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dcm.h"
+Std_ReturnType Dem_GetFunctionalUnitOfDTC(uint8 ClientId, uint8* DTCFunctionalUnit );
+# 124 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dcm.h"
+Std_ReturnType Dem_SetDTCFilter(uint8 ClientId,
+                                         uint8 DTCStatusMask,
+                                         Dem_DTCFormatType DTCFormat,
+                                         Dem_DTCOriginType DTCOrigin,
+                                         boolean FilterWithSeverity,
+                                         Dem_DTCSeverityType DTCSeverityMask,
+                                         boolean FilterForFaultDetectionCounter);
+# 142 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dcm.h"
+Std_ReturnType Dem_GetNumberOfFilteredDTC(uint8 ClientId, uint16* NumberOfFilteredDTC);
+# 158 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dcm.h"
+Std_ReturnType Dem_GetNextFilteredDTC(uint8 ClientId, uint32* DTC, uint8* DTCStatus);
+# 175 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dcm.h"
+Std_ReturnType Dem_GetNextFilteredDTCAndFDC(uint8 ClientId, uint32* DTC, sint8* DTCFaultDetectionCounter);
+# 197 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dcm.h"
+Std_ReturnType Dem_GetNextFilteredDTCAndSeverity(uint8 ClientId,
+                                                                   uint32* DTC,
+                                                                   uint8* DTCStatus,
+                                                                   Dem_DTCSeverityType* DTCSeverity,
+                                                                   uint8* DTCFunctionalUnit);
+# 217 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dcm.h"
+Std_ReturnType Dem_SetFreezeFrameRecordFilter(uint8 ClientId, Dem_DTCFormatType DTCFormat, uint16* NumberOfFilteredRecords);
+# 235 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dcm.h"
+Std_ReturnType Dem_GetNextFilteredRecord(uint8 ClientId, uint32* DTC, uint8* RecordNumber);
+# 251 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dcm.h"
+Std_ReturnType Dem_GetDTCByOccurrenceTime(uint8 ClientId, Dem_DTCRequestType DTCRequest, uint32* DTC);
+# 280 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dcm.h"
+Std_ReturnType Dem_DisableDTCRecordUpdate(uint8 ClientId);
+# 300 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dcm.h"
+Std_ReturnType Dem_EnableDTCRecordUpdate(uint8 ClientId);
+# 320 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dcm.h"
+Std_ReturnType Dem_SelectExtendedDataRecord(uint8 ClientId, uint8 ExtendedDataNumber);
+# 343 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dcm.h"
+Std_ReturnType Dem_GetNextExtendedDataRecord(uint8 ClientId, uint8* DestBuffer, uint16* BufSize);
+# 364 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dcm.h"
+Std_ReturnType Dem_GetSizeOfExtendedDataRecordSelection(uint8 ClientId, uint16* SizeOfExtendedDataRecord);
+# 384 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dcm.h"
+Std_ReturnType Dem_SelectFreezeFrameData(uint8 ClientId, uint8 RecordNumber);
+# 406 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dcm.h"
+Std_ReturnType Dem_GetNextFreezeFrameData(uint8 ClientId, uint8* DestBuffer, uint16* BufSize);
+# 426 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dcm.h"
+Std_ReturnType Dem_GetSizeOfFreezeFrameSelection(uint8 ClientId, uint16* SizeOfFreezeFrame);
+# 442 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dcm.h"
+Std_ReturnType Dem_DisableDTCSetting(uint8 ClientId);
+# 454 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dcm.h"
+Std_ReturnType Dem_EnableDTCSetting(uint8 ClientId);
+# 466 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dcm.h"
+Std_ReturnType Dem_GetDTCSelectionResult(uint8 ClientId);
+# 476 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dcm.h"
+Std_ReturnType Dem_GetDTCSelectionResultForClearDTC(uint8 ClientId);
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 481 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_Dcm.h" 2
+# 2 ".\\output\\inc/Dem_Dcm.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\Dem_Dcm_Internal.h" 2
+# 2 ".\\output\\inc/Dem_Dcm_Internal.h" 2
+# 32 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h" 2
+
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem_J1939Dcm.h" 1
+# 34 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h" 2
+
+
+
+
+
+
+# 1 ".\\output\\inc/rba_DemObd.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObd.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic.h" 1
+
+
+
+
+
+
+
+# 1 ".\\output\\inc/rba_DemObdBasic_Dtr.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\src\\dtr\\rba_DemObdBasic_Dtr.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\src\\dtr\\rba_DemObdBasic_Dtr.h"
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 92 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 93 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 12 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\src\\dtr\\rba_DemObdBasic_Dtr.h" 2
+# 29 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\src\\dtr\\rba_DemObdBasic_Dtr.h"
+extern Std_ReturnType Dem_DcmGetAvailableOBDMIDs(uint8 Obdmid, uint32* Obdmidvalue);
+# 47 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\src\\dtr\\rba_DemObdBasic_Dtr.h"
+extern Std_ReturnType Dem_DcmGetNumTIDsOfOBDMID(uint8 Obdmid,uint8* numberOfTIDs);
+# 69 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\src\\dtr\\rba_DemObdBasic_Dtr.h"
+extern Std_ReturnType Dem_DcmGetDTRData(uint8 Obdmid,
+                                        uint8 TIDindex,
+                                        uint8* TIDvalue,
+                                        uint8* UaSID,
+                                        uint16* Testvalue,
+                                        uint16* Lowlimvalue,
+                                        uint16* Upplimvalue);
+# 95 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\src\\dtr\\rba_DemObdBasic_Dtr.h"
+extern Std_ReturnType Dem_SetDTR(Dem_DtrIdType DTRId,
+                                sint32 TestResult,
+                                sint32 LowerLimit,
+                                sint32 UpperLimit,
+                                Dem_DTRControlType Ctrlval);
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 103 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\src\\dtr\\rba_DemObdBasic_Dtr.h" 2
+# 2 ".\\output\\inc/rba_DemObdBasic_Dtr.h" 2
+# 9 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic.h" 2
+
+
+# 1 ".\\output\\inc/rba_DemObdBasic_DistanceTimePid.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\src\\main\\rba_DemObdBasic_DistanceTimePid.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 92 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 93 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 7 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\src\\main\\rba_DemObdBasic_DistanceTimePid.h" 2
+# 176 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\src\\main\\rba_DemObdBasic_DistanceTimePid.h"
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 177 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\src\\main\\rba_DemObdBasic_DistanceTimePid.h" 2
+# 2 ".\\output\\inc/rba_DemObdBasic_DistanceTimePid.h" 2
+# 12 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic.h" 2
+# 133 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic.h"
+void Dem_SignalEndOfOBDIgnitionCycle(void);
+# 143 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic.h"
+boolean Dem_IsOBDRelevantNvmBlockNotReadCorrectly(void);
+# 7 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObd.h" 2
+# 2 ".\\output\\inc/rba_DemObd.h" 2
+# 41 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h" 2
+# 55 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 92 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 93 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 56 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h" 2
+# 501 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_GetEventMemoryOverflow(uint8 ClientId, Dem_DTCOriginType DTCOrigin, boolean* OverflowIndication);
+# 515 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_GetNumberOfEventMemoryEntries(uint8 ClientId, Dem_DTCOriginType DTCOrigin, uint8* NumberOfEventMemoryEntries);
+# 527 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_ClearDTC(uint8 ClientId);
+# 543 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_SelectDTC(uint8 ClientId, uint32 DTC, Dem_DTCFormatType DTCFormat, Dem_DTCOriginType DTCOrigin);
+# 560 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_SetDTCSuppression (uint8 ClientId, boolean SuppressionStatus);
+# 575 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_GetDTCSuppression (uint8 ClientId, boolean *SuppressionStatus);
+# 595 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_DebSwitchToParameters(uint8 CounterParamSetId);
+# 607 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_GetDtcFaultDetectionCounter(Dem_DtcCodeType dtcCode, sint8* FaultDetectionCounter);
+# 620 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_GetEventAvailable(Dem_EventIdType EventId, boolean* AvailableStatus);
+# 659 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_TriggerStorageToNvm(void);
+# 686 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+void Dem_AllowHistoryStatus(void);
+# 696 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Dem_EventStatusType Dem_EvtGetLastReportedEventStatus(Dem_EventIdType EventId);
+# 709 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_GetDtcKindOfEvent(Dem_EventIdType EventId, Dem_DTCKindType *DtcKind);
+# 722 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_GetEventCategory(Dem_EventIdType EventId, Dem_EventCategoryType *EventCategory);
+# 734 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_GetEventFdcThresholdReached(Dem_EventIdType EventId, boolean* FdcThresholdReached);
+# 746 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_GetEventSuspicious(Dem_EventIdType EventId, boolean* EventSuspicious);
+# 758 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_GetHistoryStatus(Dem_EventIdType EventId, boolean *historyStatus);
+# 776 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_IsAnyInitMonitorForEventRequested(uint16 *localCounter, boolean *modified);
+# 789 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+boolean Dem_IsInitMonitorForEventRequested(Dem_EventIdType EventId, Dem_InitMonitorReasonType* InitMonitorReason);
+# 803 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_ManipulateEventDebounceStatus(Dem_EventIdType EventId, Dem_DebugDataType debug0, Dem_DebugDataType debug1, sint16 manipulationValue);
+# 814 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_OverwriteWIRStatus(Dem_EventIdType EventId, boolean WIRStatus);
+# 827 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+void Dem_ReportErrorStatus(Dem_EventIdType EventId, Dem_EventStatusType EventStatus);
+# 842 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+void Dem_ReportErrorStatusWithEnvData( Dem_EventIdType EventId,Dem_EventStatusType EventStatus,Dem_DebugDataType debug0,Dem_DebugDataType debug1);
+# 867 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_SetIndicatorStatusForEvent(Dem_EventIdType EventId, Dem_IndicatorIdType IndicatorId, boolean IndicatorActivation);
+# 885 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_LockAllFailureInfo(void);
+# 900 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_GetComponentAvailable(Dem_ComponentIdType ComponentId, boolean* ComponentAvailable);
+# 930 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_SetEventSuppression(Dem_EventIdType EventId, boolean SuppressionStatus);
+# 956 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_SetEventSuppressionByDTC(uint32 DTC, Dem_DTCFormatType DTCFormat, boolean SuppressionStatus);
+# 992 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_GetEventExtendedDataRecord(
+        Dem_EventIdType EventId,
+        uint8 RecordNumber,
+        uint8* DestBuffer,
+        uint16* BufSize
+);
+# 1029 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_GetEventFreezeFrameData(
+        Dem_EventIdType EventId,
+        uint8 RecordNumber,
+        boolean ReportTotalRecord,
+        uint16 DataId,
+        uint8* DestBuffer,
+        uint16* BufSize
+);
+# 1046 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+boolean Dem_GetEvMemLock(void);
+# 1058 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Dem_ReadEventType Dem_GetNextEventFromMemory (Dem_ReadEventsFromMemoryType* ReadEventsFromMemoryState, Dem_EventIdType* EventId, uint16* LocId);
+# 1069 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_LockEventMemory(boolean Lock);
+# 1084 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_PrestoreFreezeFrameWithEnvData(Dem_EventIdType EventId ,Dem_DebugDataType debug0 ,Dem_DebugDataType debug1);
+# 1096 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Dem_ReadEventType Dem_ReadEventsFromMemory(Dem_ReadEventsFromMemoryType* ReadEventsFromMemoryState, Dem_DTCOriginType origin);
+# 1115 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_ClearDisturbanceMemory(void);
+# 1130 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_GetNextDisturbanceData(Dem_EventIdType* EventId, uint8* DestBuffer, uint8* BufSize);
+# 1141 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_LockDisturbanceMemory(boolean Lock);
+# 1151 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_ReadDisturbanceMemory(void);
+# 1175 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_GetComponentAreAncestorsInitialized(Dem_ComponentIdType ComponentId, boolean* ComponentAreAncestorsInitialized);
+# 1190 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_GetComponentFailed(Dem_ComponentIdType ComponentId, boolean* ComponentFailed);
+# 1205 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_GetComponentFailedItself(Dem_ComponentIdType ComponentId, boolean* ComponentFailedItself);
+# 1220 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_GetComponentInitialized(Dem_ComponentIdType ComponentId, boolean* ComponentInitialized);
+# 1236 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_GetComponentRestrictedUsable(Dem_ComponentIdType ComponentId, boolean* ComponentRestrictedUsable);
+# 1249 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_GetComponentSuspicious(Dem_ComponentIdType ComponentId, boolean* ComponentSuspicious);
+# 1265 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_GetComponentSuspiciousItself(Dem_ComponentIdType ComponentId, boolean* ComponentSuspiciousItself);
+# 1280 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_GetComponentUsable(Dem_ComponentIdType ComponentId, boolean* ComponentUsable);
+# 1293 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+boolean Dem_NodeAreAllFailedFiltered(Dem_ComponentIdType NodeId);
+# 1405 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+void Dem_NodeSetInitialized(Dem_ComponentIdType NodeId, boolean init);
+# 1504 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 1505 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h" 2
+# 1526 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 69 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 70 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 1527 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h" 2
+
+
+
+
+extern const Dem_ConfigType Dem_ConfigAlternativeParameters;
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 82 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 83 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 1534 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h" 2
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 92 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 93 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 1538 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h" 2
+
+
+
+
+
+
+void Dem_Init(void);
+
+
+
+
+
+
+
+void Dem_PreInit(const Dem_ConfigType* ConfigPtr);
+
+
+
+
+
+
+
+void Dem_Shutdown(void);
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 1564 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h" 2
+# 1577 ".\\output\\inc/..\\..\\bsw\\Dem\\api\\Dem.h"
+Std_ReturnType Dem_GetDTCSeverityAvailabilityMask(uint8 ClientId,Dem_DTCSeverityType* DTCSeverityMask);
+# 2 ".\\output\\inc/Dem.h" 2
+# 21 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\Dem_Internal.h" 2
+# 2 ".\\output\\inc/Dem_Internal.h" 2
+# 4 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c" 2
+# 1 ".\\output\\inc/Rte_Dem.h" 1
+# 1 ".\\output\\inc/..\\..\\rte\\Rte_Dem.h" 1
+# 30 ".\\output\\inc/..\\..\\rte\\Rte_Dem.h"
+# 1 ".\\output\\inc/..\\..\\rte\\Rte_Intl.h" 1
+# 23 ".\\output\\inc/..\\..\\rte\\Rte_Intl.h"
+# 1 ".\\output\\inc/..\\..\\rte\\Rte_Const.h" 1
+# 24 ".\\output\\inc/..\\..\\rte\\Rte_Intl.h" 2
+# 1 ".\\output\\inc/Os.h" 1
+# 1 ".\\output\\inc/..\\..\\os\\Os.h" 1
+# 39 ".\\output\\inc/..\\..\\os\\Os.h"
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 40 ".\\output\\inc/..\\..\\os\\Os.h" 2
+# 94 ".\\output\\inc/..\\..\\os\\Os.h"
+ extern int __builtin_clz(unsigned int reg);
+
+
+
+
+
+
+typedef struct {
+  uint8 Class;
+  uint8 TIN;
+  uint32 ReturnAddress;
+} OsTrapInfoType;
+typedef OsTrapInfoType * OsTrapInfoRefType;
+
+
+
+
+typedef uint32 uint32_aligned __attribute__ ((aligned (4)));
+# 131 ".\\output\\inc/..\\..\\os\\Os.h"
+# 1 ".\\output\\inc/Os_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 1
+# 14 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h"
+# 1 ".\\output\\inc/Compiler.h" 1
+# 15 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 2
+# 2 ".\\output\\inc/Os_MemMap.h" 2
+# 132 ".\\output\\inc/..\\..\\os\\Os.h" 2
+
+extern StatusType Os_Cbk_StartCore(uint16 CoreID);
+
+
+# 1 ".\\output\\inc/Os_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 1
+# 14 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h"
+# 1 ".\\output\\inc/Compiler.h" 1
+# 15 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 2
+# 2 ".\\output\\inc/Os_MemMap.h" 2
+# 137 ".\\output\\inc/..\\..\\os\\Os.h" 2
+
+
+
+
+# 1 ".\\output\\inc/Os_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 1
+# 14 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h"
+# 1 ".\\output\\inc/Compiler.h" 1
+# 15 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 2
+# 2 ".\\output\\inc/Os_MemMap.h" 2
+# 142 ".\\output\\inc/..\\..\\os\\Os.h" 2
+
+extern void Os_InitializeInterruptTable(void);
+extern void Os_InitializeTrapTable(void);
+extern void Os_InitializeServiceRequests(void);
+extern void Os_StartCoreGate(void);
+extern StatusType Os_GetTrapInfo(OsTrapInfoRefType Info);
+
+
+# 1 ".\\output\\inc/Os_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 1
+# 14 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h"
+# 1 ".\\output\\inc/Compiler.h" 1
+# 15 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 2
+# 2 ".\\output\\inc/Os_MemMap.h" 2
+# 151 ".\\output\\inc/..\\..\\os\\Os.h" 2
+
+
+
+
+# 1 ".\\output\\inc/Os_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 1
+# 14 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h"
+# 1 ".\\output\\inc/Compiler.h" 1
+# 15 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 2
+# 2 ".\\output\\inc/Os_MemMap.h" 2
+# 156 ".\\output\\inc/..\\..\\os\\Os.h" 2
+
+
+
+
+  extern void Os_ISRWrapper0(uint32 isr_index, uint32 pcxi) __attribute__((interrupt_handler));
+
+
+
+# 1 ".\\output\\inc/Os_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 1
+# 14 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h"
+# 1 ".\\output\\inc/Compiler.h" 1
+# 15 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 2
+# 2 ".\\output\\inc/Os_MemMap.h" 2
+# 165 ".\\output\\inc/..\\..\\os\\Os.h" 2
+
+
+
+
+# 1 ".\\output\\inc/Os_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 1
+# 14 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h"
+# 1 ".\\output\\inc/Compiler.h" 1
+# 15 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 2
+# 2 ".\\output\\inc/Os_MemMap.h" 2
+# 170 ".\\output\\inc/..\\..\\os\\Os.h" 2
+
+
+
+
+  extern void Os_ISRWrapper2(uint32 isr_index, uint32 pcxi) __attribute__((interrupt_handler));
+
+
+
+# 1 ".\\output\\inc/Os_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 1
+# 14 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h"
+# 1 ".\\output\\inc/Compiler.h" 1
+# 15 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 2
+# 2 ".\\output\\inc/Os_MemMap.h" 2
+# 179 ".\\output\\inc/..\\..\\os\\Os.h" 2
+
+
+
+
+# 1 ".\\output\\inc/Os_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 1
+# 14 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h"
+# 1 ".\\output\\inc/Compiler.h" 1
+# 15 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 2
+# 2 ".\\output\\inc/Os_MemMap.h" 2
+# 184 ".\\output\\inc/..\\..\\os\\Os.h" 2
+
+
+
+
+  extern void Os_ISRWrapper3(uint32 isr_index, uint32 pcxi) __attribute__((interrupt_handler));
+
+
+
+# 1 ".\\output\\inc/Os_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 1
+# 14 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h"
+# 1 ".\\output\\inc/Compiler.h" 1
+# 15 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 2
+# 2 ".\\output\\inc/Os_MemMap.h" 2
+# 193 ".\\output\\inc/..\\..\\os\\Os.h" 2
+
+
+
+
+
+
+typedef struct {
+  uint32 store[17U];
+} Os_JumpBufType[1];
+extern sint32 Os_setjmp(Os_JumpBufType j);
+extern void Os_longjmp(Os_JumpBufType j);
+extern void Os_longjmp_ext(Os_JumpBufType j);
+extern void Os_ECClongjmp(Os_JumpBufType j);
+# 218 ".\\output\\inc/..\\..\\os\\Os.h"
+typedef unsigned char Os_ResourceCountType;
+typedef unsigned Os_StackTraceType;
+typedef struct {Os_StackTraceType sp; Os_StackTraceType ctx;} Os_StackValueType;
+typedef Os_StackValueType Os_StackSizeType;
+
+
+typedef void (*Os_VoidVoidFunctionType)(void);
+typedef Os_VoidVoidFunctionType Os_TaskEntryFunctionType;
+typedef Os_VoidVoidFunctionType Os_IsrEntryFunctionType;
+typedef Std_VersionInfoType * Std_VersionInfoRefType;
+
+typedef enum {OS_BUDGET = 0U, OS_ECC_START, OS_ECC_RESUME, OS_ECC_WAIT} Os_StackOverrunType;
+# 238 ".\\output\\inc/..\\..\\os\\Os.h"
+typedef unsigned char ApplicationType;
+
+
+typedef void (*Os_AppErrorHookFunctionType)(StatusType Error);
+typedef uint32 Os_tmaskType;
+typedef struct Os_ApplicationConfigurationType_s {
+  ApplicationType app_id;
+  Os_AppErrorHookFunctionType errorhook;
+  uint8 access;
+} Os_ApplicationConfigurationType;
+
+typedef uint32 Os_CoreStateType;
+typedef uint16 AreaIdType;
+typedef const uint8 * const Os_ucharConstRefType;
+typedef const uint8 * const Os_uint8ConstRefType;
+typedef uint8 * const Os_uint8RefType;
+typedef const uint16 * const Os_uint16ConstRefType;
+typedef uint16 * const Os_uint16RefType;
+typedef const uint32 * const Os_uint32ConstRefType;
+typedef uint32 * const Os_uint32RefType;
+typedef unsigned int Os_PeripheralAddressType;
+typedef struct {
+  AreaIdType id;
+  uint8 access;
+  Os_PeripheralAddressType start;
+  Os_PeripheralAddressType end;
+} Os_PeripheralAreaType;
+
+
+typedef unsigned int TickType;
+typedef signed int SignedTickType;
+typedef TickType * TickRefType;
+typedef uint32 PhysicalTimeType;
+typedef unsigned int Os_StopwatchTickType;
+typedef Os_StopwatchTickType * Os_StopwatchTickRefType;
+typedef signed int Os_TimeLimitType;
+
+typedef enum {PRO_IGNORE = 0U, PRO_SHUTDOWN} ProtectionReturnType;
+typedef Os_JumpBufType * Os_TerminatorType;
+
+typedef uint32 IdleModeType;
+
+
+typedef uint32_aligned Os_Lockable;
+typedef const void * Os_LockerRefType;
+typedef uint16 CoreIdType;
+typedef uint16 SpinlockIdType;
+
+typedef enum {TRYTOGETSPINLOCK_SUCCESS = 0U, TRYTOGETSPINLOCK_NOSUCCESS} TryToGetSpinlockType;
+typedef TryToGetSpinlockType * Os_TryToGetSpinlockRefType;
+struct Os_ControlledCoreType_s;
+typedef struct Os_SpinlockDynType_s {
+  volatile Os_Lockable lock;
+  SpinlockIdType predecessor;
+} Os_SpinlockDynType;
+typedef struct Os_SpinlockType_s {
+  uint8 access;
+  SpinlockIdType successor;
+} Os_SpinlockType;
+# 330 ".\\output\\inc/..\\..\\os\\Os.h"
+typedef StatusType * Os_StatusRefType;
+
+
+typedef unsigned char AppModeType;
+
+
+
+typedef unsigned int AccessType;
+# 347 ".\\output\\inc/..\\..\\os\\Os.h"
+typedef const uint8 * MemoryStartAddressType;
+typedef unsigned int MemorySizeType;
+
+typedef enum {RESTART = 1U, NO_RESTART} RestartType;
+typedef enum {APPLICATION_ACCESSIBLE = 0U, APPLICATION_RESTARTING, APPLICATION_TERMINATED} ApplicationStateType;
+typedef ApplicationStateType * ApplicationStateRefType;
+typedef enum {ACCESS = 0U, NO_ACCESS} ObjectAccessType;
+typedef enum {OBJECT_TASK = 0U, OBJECT_ISR, OBJECT_ALARM, OBJECT_RESOURCE, OBJECT_COUNTER, OBJECT_SCHEDULETABLE} ObjectTypeType;
+typedef const void * const Os_AnyType;
+
+typedef unsigned char TrustedFunctionIndexType;
+typedef void * TrustedFunctionParameterRefType;
+
+typedef void (*Os_FunctionEntryType)(TrustedFunctionIndexType FunctionIndex, TrustedFunctionParameterRefType FunctionParams);
+typedef struct Os_TrustedFunctionType_s {
+  Os_FunctionEntryType function;
+  CoreIdType core_id;
+  const Os_ApplicationConfigurationType * const application;
+} Os_TrustedFunctionType;
+
+typedef uint16 Os_IdleType;
+
+
+typedef struct Os_MeterInfoType_s {
+  Os_StopwatchTickType elapsed;
+  Os_StopwatchTickType previous;
+  Os_StopwatchTickType max;
+   Os_StopwatchTickType cumulative;
+  Os_StackValueType stackbase;
+  Os_StackSizeType stackusage;
+  Os_StackSizeType stackmax;
+  Os_StackSizeType stackbudget;
+} Os_MeterInfoType;
+typedef Os_MeterInfoType * Os_MeterInfoRefType;
+
+
+typedef uint8 EventMaskType;
+typedef EventMaskType * EventMaskRefType;
+
+
+
+typedef uint32 Os_imaskType;
+
+typedef struct Os_ISRDynType_s {
+  boolean terminating;
+  Os_MeterInfoType meter;
+} Os_ISRDynType;
+typedef void (*Os_IsrTerminatedFunctionType)(void);
+typedef struct Os_ISRType_s {
+  Os_VoidVoidFunctionType entry_function;
+  Os_IsrTerminatedFunctionType terminated_function;
+  Os_ISRDynType * const dynamic;
+  Os_imaskType imask;
+  uint32 index;
+  Os_StackSizeType stackbudget;
+  uint8 access;
+  ApplicationType application;
+} Os_ISRType;
+typedef const Os_ISRType * ISRType;
+
+
+
+
+
+
+typedef ISRType * ISRRefType;
+# 423 ".\\output\\inc/..\\..\\os\\Os.h"
+typedef unsigned int Os_bitmask;
+typedef Os_bitmask Os_pset0Type;
+typedef Os_bitmask Os_pset1Type;
+typedef Os_bitmask Os_pset2Type;
+typedef Os_bitmask Os_pset3Type;
+typedef union {
+  Os_pset0Type p0;
+  Os_pset1Type p1;
+  Os_pset2Type p2;
+  Os_pset3Type p3;
+} Os_psetType;
+
+typedef union {
+  Os_bitmask t0;
+  Os_bitmask t1;
+  Os_bitmask t2;
+  Os_bitmask t3;
+} Os_tpmaskType;
+
+typedef struct Os_TaskDynType_s {
+  Os_JumpBufType terminate_jump_buf;
+  Os_MeterInfoType meter;
+  uint32 termination_state;
+} Os_TaskDynType;
+
+typedef struct Os_TaskType_s {
+  Os_TaskDynType * const dynamic;
+  Os_VoidVoidFunctionType entry_function;
+  Os_psetType pset;
+  Os_tpmaskType base_tpmask;
+  Os_tpmaskType tpmask;
+  CoreIdType core_id;
+  uint32 index;
+  Os_StackSizeType stackbudget;
+  uint8 access;
+  ApplicationType application;
+} Os_TaskType;
+typedef const Os_TaskType * TaskType;
+
+
+
+
+
+
+typedef TaskType * TaskRefType;
+enum Os_TaskStateType {SUSPENDED = 0U, READY, WAITING, RUNNING};
+typedef enum Os_TaskStateType TaskStateType;
+typedef TaskStateType * TaskStateRefType;
+# 481 ".\\output\\inc/..\\..\\os\\Os.h"
+typedef struct Os_ResourceDynType_s {
+  TaskType locker;
+  union {
+    Os_tpmaskType tpmask;
+  } saved_priority;
+} Os_ResourceDynType;
+typedef struct Os_ResourceType_s {
+  Os_ResourceDynType * const dynamic;
+  Os_tpmaskType tpmask;
+  uint8 access;
+} Os_ResourceType;
+typedef const Os_ResourceType * ResourceType;
+
+
+
+
+typedef struct {
+  TickType maxallowedvalue;
+  TickType ticksperbase;
+  TickType mincycle;
+} AlarmBaseType;
+typedef AlarmBaseType * AlarmBaseRefType;
+typedef struct Os_AlarmDynType_s {
+  boolean running;
+  TickType match;
+  TickType period;
+} Os_AlarmDynType;
+typedef struct Os_AlarmType_s {
+  uint8 config;
+  uint8 access;
+  ApplicationType application;
+} Os_AlarmType;
+typedef unsigned char AlarmType;
+
+
+
+typedef void (*Os_AlarmCallbackType)(void);
+
+
+
+
+typedef struct {
+  boolean Running;
+  boolean Pending;
+  TickType Delay;
+} Os_CounterStatusType;
+typedef Os_CounterStatusType * Os_CounterStatusRefType;
+
+typedef TickType (*Os_HwCounterNowType)(void);
+typedef void (*Os_HwCounterSetType)(TickType Value);
+typedef void (*Os_HwCounterStateType)(Os_CounterStatusRefType State);
+typedef void (*Os_HwCounterCancelType)(void);
+typedef StatusType (*Os_CounterIncrAdvType)(void);
+typedef void (*Os_CounterStartType)(Os_AnyType ctr, TickType requested, TickType relative, TickRefType match_value);
+
+typedef struct Os_CounterDynType_s {
+  union {
+    struct s_swd {
+      TickType count;
+    } sw;
+  } type_dependent;
+} Os_CounterDynType;
+typedef struct Os_CounterType_s {
+  Os_CounterDynType * const dynamic;
+  Os_CounterIncrAdvType advincr;
+  AlarmBaseType base;
+  const void *core;
+  uint8 access;
+  ApplicationType application;
+} Os_CounterType;
+typedef const Os_CounterType * CounterType;
+
+
+
+
+enum Os_ScheduleTableStatusType {SCHEDULETABLE_STOPPED = 0U, SCHEDULETABLE_NEXT, SCHEDULETABLE_WAITING, SCHEDULETABLE_RUNNING, SCHEDULETABLE_RUNNING_AND_SYNCHRONOUS};
+typedef enum Os_ScheduleTableStatusType ScheduleTableStatusType;
+typedef ScheduleTableStatusType * ScheduleTableStatusRefType;
+typedef enum {OS_SYNC_NONE, OS_SYNC_IMPLICIT, OS_SYNC_EXPLICIT} Os_ScheduleTableSyncType;
+typedef enum {OS_SYNC_ASYNC, OS_SYNC_ADVANCING, OS_SYNC_RETARDING, OS_SYNC_INSYNC} Os_ScheduleTableSyncStateType;
+
+struct Os_ScheduleTableDynType_s;
+typedef struct Os_ScheduleTableType_s {
+  struct Os_ScheduleTableDynType_s * const dynamic;
+  CounterType counter;
+  TickType sync_precision;
+  TickType maxallowedvalue;
+  boolean repeat;
+  uint32 config;
+  uint8 initial;
+  uint8 access;
+  Os_ScheduleTableSyncType sync_type;
+  ApplicationType application;
+} Os_ScheduleTableType;
+typedef const Os_ScheduleTableType * ScheduleTableType;
+typedef ScheduleTableType * ScheduleTableRefType;
+typedef struct Os_ScheduleTableDynType_s {
+  TickType match;
+  TickType drift;
+  ScheduleTableType next;
+  ScheduleTableStatusType state;
+  uint32 config;
+  TickType sync_count_tracker;
+  Os_ScheduleTableSyncStateType sync_state;
+} Os_ScheduleTableDynType;
+
+
+
+
+
+typedef unsigned char OSServiceIdType;
+# 687 ".\\output\\inc/..\\..\\os\\Os.h"
+typedef unsigned int Os_BiggestType;
+typedef unsigned int Os_BiggestCommonType;
+# 798 ".\\output\\inc/..\\..\\os\\Os.h"
+typedef StatusType Os_TraceStatusType;
+typedef uint8 Os_TraceDataType;
+# 905 ".\\output\\inc/..\\..\\os\\Os.h"
+# 1 ".\\output\\inc/Os_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 1
+# 14 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h"
+# 1 ".\\output\\inc/Compiler.h" 1
+# 15 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 2
+# 2 ".\\output\\inc/Os_MemMap.h" 2
+# 906 ".\\output\\inc/..\\..\\os\\Os.h" 2
+
+extern Os_TraceStatusType Os_Cbk_TraceCommInitTarget(void) ;
+extern void Os_Cbk_TraceCommDataReady(void) ;
+extern void Os_Cbk_TraceCommTxStart(void) ;
+extern void Os_Cbk_TraceCommTxByte(Os_TraceDataType val) ;
+extern void Os_Cbk_TraceCommTxEnd(void) ;
+extern boolean Os_Cbk_TraceCommTxReady(void) ;
+
+
+# 1 ".\\output\\inc/Os_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 1
+# 14 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h"
+# 1 ".\\output\\inc/Compiler.h" 1
+# 15 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 2
+# 2 ".\\output\\inc/Os_MemMap.h" 2
+# 916 ".\\output\\inc/..\\..\\os\\Os.h" 2
+
+
+
+typedef struct Os_ControlledCoreType_s {
+  OsTrapInfoType TrapInfo;
+  volatile Os_Lockable lock_taskaccess;
+  volatile Os_psetType ReadyTasks ;
+  volatile ISRType RunningISR;
+  volatile TaskType RunningTask;
+  volatile Os_tpmaskType RunningTPMask ;
+  volatile Os_psetType TerminatingTasks;
+  volatile Os_TerminatorType CurrentTerminator;
+  Os_MeterInfoRefType CurrentMeteredObject;
+  Os_MeterInfoType IdleMeter;
+  uint8 AppAccess;
+  volatile ApplicationType AppOverride;
+  Os_StackSizeType GetStackValueAdjust;
+  boolean InErrorHook;
+  volatile TaskType ChainTaskRef;
+  Os_StackSizeType GetStackUsageAdjust;
+  boolean InProtectionHook;
+  boolean CoreIsActive;
+  boolean InShutdownHook;
+} Os_ControlledCoreType;
+# 951 ".\\output\\inc/..\\..\\os\\Os.h"
+typedef struct Os_AnyCoreType_s {
+  volatile Os_imaskType DisableAllImask;
+  volatile Os_imaskType SuspendAllImask;
+  volatile Os_imaskType SuspendOSImask;
+  volatile uint32 DisableAllCount;
+  volatile uint32 SuspendAllCount;
+  volatile uint32 SuspendOSCount;
+  Os_JumpBufType RestartJumpBuf;
+  boolean Restartable;
+  StatusType LastProtectionFault;
+} Os_AnyCoreType;
+# 970 ".\\output\\inc/..\\..\\os\\Os.h"
+typedef struct Os_CoreConfiguration_s {
+  Os_ControlledCoreType * const controlled;
+  Os_AnyCoreType * const any;
+  volatile Os_CoreStateType * const state;
+  Os_VoidVoidFunctionType dispatch;
+  ResourceType Os_Res_Scheduler;
+  CoreIdType core_id;
+} Os_CoreConfiguration;
+
+
+
+
+# 1 ".\\output\\inc/Os_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 1
+# 14 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h"
+# 1 ".\\output\\inc/Compiler.h" 1
+# 15 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 2
+# 2 ".\\output\\inc/Os_MemMap.h" 2
+# 983 ".\\output\\inc/..\\..\\os\\Os.h" 2
+
+extern void ErrorHook(StatusType Error) ;
+extern void PreTaskHook(void) ;
+extern void PostTaskHook(void) ;
+extern ProtectionReturnType ProtectionHook(StatusType FatalError) ;
+extern void StartupHook(void) ;
+extern void ShutdownHook(StatusType Error) ;
+extern void Os_Cbk_StackOverrunHook(Os_StackSizeType Overrun, Os_StackOverrunType Reason);
+extern AccessType Os_Cbk_CheckMemoryAccess(ApplicationType Application, TaskType TaskID, ISRType ISRID, MemoryStartAddressType Address, MemorySizeType Size);
+extern boolean Os_Cbk_Idle(void) ;
+extern void Os_Cbk_InShutdown(void) ;
+extern void Os_Cbk_CheckStackDepth(CoreIdType Core_id, Os_StackSizeType Depth, Os_StackSizeType CurrentPos);
+
+ extern Os_StopwatchTickType Os_Cbk_GetStopwatch(void) ;
+
+extern void Os_Cbk_TimeOverrunHook(Os_StopwatchTickType Overrun) ;
+
+
+# 1 ".\\output\\inc/Os_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 1
+# 14 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h"
+# 1 ".\\output\\inc/Compiler.h" 1
+# 15 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 2
+# 2 ".\\output\\inc/Os_MemMap.h" 2
+# 1002 ".\\output\\inc/..\\..\\os\\Os.h" 2
+
+
+
+
+# 1 ".\\output\\inc/Os_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 1
+# 14 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h"
+# 1 ".\\output\\inc/Compiler.h" 1
+# 15 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 2
+# 2 ".\\output\\inc/Os_MemMap.h" 2
+# 1007 ".\\output\\inc/..\\..\\os\\Os.h" 2
+
+extern Os_StackValueType Os_GetSP(void);
+extern void Os_GetVersionInfo(Std_VersionInfoType *versioninfo) ;
+extern Os_StopwatchTickType Os_GetExecutionTime(void) ;
+extern Os_StopwatchTickType Os_GetTaskMaxExecutionTime(TaskType TaskID) ;
+extern Os_StopwatchTickType Os_GetISRMaxExecutionTime(ISRType ISRID) ;
+extern StatusType Os_ResetTaskMaxExecutionTime(TaskType TaskID) ;
+extern StatusType Os_ResetISRMaxExecutionTime(ISRType ISRID) ;
+extern Os_StopwatchTickType Os_GetElapsedTime(void) ;
+extern Os_StopwatchTickType Os_GetTaskElapsedTime(TaskType TaskID) ;
+extern Os_StopwatchTickType Os_GetISRElapsedTime(ISRType ISRID) ;
+extern Os_StopwatchTickType Os_GetIdleElapsedTime(Os_IdleType IdleID) ;
+extern StatusType Os_ResetTaskElapsedTime(TaskType TaskID) ;
+extern StatusType Os_ResetISRElapsedTime(ISRType ISRID) ;
+extern StatusType Os_ResetIdleElapsedTime(Os_IdleType IdleID) ;
+extern Os_StackSizeType Os_GetStackUsage(void) ;
+extern Os_StackSizeType Os_GetTaskMaxStackUsage(TaskType TaskID) ;
+extern Os_StackSizeType Os_GetISRMaxStackUsage(ISRType ISRID) ;
+extern StatusType Os_ResetTaskMaxStackUsage(TaskType TaskID) ;
+extern StatusType Os_ResetISRMaxStackUsage(ISRType ISRID) ;
+extern Os_StackValueType Os_GetStackValue(void) ;
+extern Os_StackSizeType Os_GetStackSize(Os_StackValueType Base, Os_StackValueType Sample) ;
+extern StatusType Os_ActivateTask(TaskType TaskID) ;
+extern StatusType Os_GetTaskID(TaskRefType TaskID) ;
+extern StatusType Os_GetTaskState(TaskType TaskID, TaskStateRefType State) ;
+extern StatusType Os_Schedule(void) ;
+extern StatusType Os_SetEvent(TaskType TaskID, EventMaskType Mask) ;
+extern StatusType Os_ClearEvent(EventMaskType Mask) ;
+extern StatusType Os_GetEvent(TaskType TaskID, EventMaskRefType Mask) ;
+extern StatusType Os_WaitEvent(EventMaskType Mask) ;
+extern StatusType Os_GetResource(ResourceType ResID) ;
+extern StatusType Os_ReleaseResource(ResourceType ResID) ;
+extern void Os_DisableAllInterrupts(void) ;
+extern void Os_EnableAllInterrupts(void) ;
+extern void Os_SuspendAllInterrupts(void) ;
+extern void Os_ResumeAllInterrupts(void) ;
+extern void Os_SuspendOSInterrupts(void) ;
+extern void Os_ResumeOSInterrupts(void) ;
+extern ISRType Os_GetISRID(void) ;
+extern AppModeType Os_GetActiveApplicationMode(void) ;
+extern ApplicationType Os_CheckObjectOwnership(ObjectTypeType ObjectType, Os_AnyType Object) ;
+extern ObjectAccessType Os_CheckObjectAccess(ApplicationType ApplID, ObjectTypeType ObjectType, Os_AnyType Object) ;
+extern ApplicationType Os_GetApplicationID(void) ;
+extern ApplicationType Os_GetCurrentApplicationID(void) ;
+extern StatusType Os_TerminateTask(void) ;
+extern AccessType Os_CheckTaskMemoryAccess(TaskType TaskID, MemoryStartAddressType Address, MemorySizeType Size) ;
+extern AccessType Os_CheckISRMemoryAccess(ISRType ISRID, MemoryStartAddressType Address, MemorySizeType Size) ;
+extern StatusType Os_GetCounterValue(CounterType CounterID, TickRefType Value) ;
+extern StatusType Os_GetElapsedCounterValue(CounterType CounterID, TickRefType Value, TickRefType ElapsedValue) ;
+extern StatusType Os_IncrementCounter(CounterType CounterID) ;
+extern StatusType Os_AdvanceCounter(CounterType CounterID) ;
+extern StatusType Os_GetAlarmBase(AlarmType AlarmID, AlarmBaseRefType Info) ;
+extern StatusType Os_CancelAlarm(AlarmType AlarmID) ;
+extern StatusType Os_GetAlarm(AlarmType AlarmID, TickRefType Tick) ;
+extern StatusType Os_SetRelAlarm(AlarmType AlarmID, TickType increment, TickType cycle) ;
+extern StatusType Os_SetAbsAlarm(AlarmType AlarmID, TickType start, TickType cycle) ;
+extern StatusType Os_StopScheduleTable(ScheduleTableType ScheduleTableID) ;
+extern StatusType Os_StartScheduleTableRel(ScheduleTableType ScheduleTableID, TickType Offset) ;
+extern StatusType Os_StartScheduleTableAbs(ScheduleTableType ScheduleTableID, TickType Start) ;
+extern StatusType Os_StartScheduleTableSynchron(ScheduleTableType ScheduleTableID) ;
+extern StatusType Os_SyncScheduleTable(ScheduleTableType ScheduleTableID, TickType Value) ;
+extern StatusType Os_SyncScheduleTableRel(ScheduleTableType ScheduleTableID, SignedTickType RelativeValue) ;
+extern StatusType Os_SetScheduleTableAsync(ScheduleTableType ScheduleTableID) ;
+extern StatusType Os_GetScheduleTableStatus(ScheduleTableType ScheduleTableID, ScheduleTableStatusRefType ScheduleStatus) ;
+extern StatusType Os_NextScheduleTable(ScheduleTableType ScheduleTableID_From, ScheduleTableType ScheduleTableID_To) ;
+extern boolean Os_StartOS(AppModeType Mode) ;
+extern void Os_ShutdownOS(StatusType Error) ;
+extern void Os_ProtectionLog(StatusType os_status);
+extern StatusType Os_ControlIdle(CoreIdType CoreID, IdleModeType IdleMode) ;
+extern IdleModeType Os_CurrentIdleMode(void);
+extern uint32 Os_GetCurrentTPL(void) ;
+extern Os_imaskType Os_GetCurrentIMask(void) ;
+extern StatusType Os_EnableInterruptSource(ISRType ISRID, boolean ClearPending) ;
+extern StatusType Os_DisableInterruptSource(ISRType ISRID) ;
+extern StatusType Os_ClearPendingInterrupt(ISRType ISRID) ;
+extern uint32 Os_GetNumberOfActivatedCores(void) ;
+extern void Os_ShutdownAllCores(StatusType Error) ;
+extern void Os_StartCore(CoreIdType CoreID, Os_StatusRefType Status) ;
+extern StatusType Os_GetSpinlock(SpinlockIdType SpinlockId) ;
+extern StatusType Os_TryToGetSpinlock(SpinlockIdType SpinlockId, TryToGetSpinlockType* Success) ;
+extern StatusType Os_ReleaseSpinlock(SpinlockIdType SpinlockId) ;
+extern void Os_CrossCoreCheck(Os_ControlledCoreType *os_current_controlled_core, const Os_CoreConfiguration *os_current_core_const);
+extern StatusType Os_Restart(void) ;
+extern StatusType Os_ChainTask(TaskType TaskID) ;
+extern StatusType Os_TerminateApplication(ApplicationType Application, RestartType RestartOption) ;
+extern StatusType Os_GetApplicationState(ApplicationType Application, ApplicationStateRefType Value) ;
+extern StatusType Os_AllowAccess(void) ;
+extern StatusType Os_CallTrustedFunction(TrustedFunctionIndexType FunctionIndex, TrustedFunctionParameterRefType FunctionParams) ;
+extern StatusType Os_ReadPeripheral8(AreaIdType Area, Os_uint8ConstRefType Address, Os_uint8RefType ReadValue) ;
+extern StatusType Os_WritePeripheral8(AreaIdType Area, Os_uint8RefType Address, uint8 WriteValue) ;
+extern StatusType Os_ModifyPeripheral8(AreaIdType Area, Os_uint8RefType Address, uint8 Clearmask, uint8 Setmask) ;
+extern StatusType Os_ReadPeripheral16(AreaIdType Area, Os_uint16ConstRefType Address, Os_uint16RefType ReadValue) ;
+extern StatusType Os_WritePeripheral16(AreaIdType Area, Os_uint16RefType Address, uint16 WriteValue) ;
+extern StatusType Os_ModifyPeripheral16(AreaIdType Area, Os_uint16RefType Address, uint16 Clearmask, uint16 Setmask) ;
+extern StatusType Os_ReadPeripheral32(AreaIdType Area, Os_uint32ConstRefType Address, Os_uint32RefType ReadValue) ;
+extern StatusType Os_WritePeripheral32(AreaIdType Area, Os_uint32RefType Address, uint32 WriteValue) ;
+extern StatusType Os_ModifyPeripheral32(AreaIdType Area, Os_uint32RefType Address, uint32 Clearmask, uint32 Setmask) ;
+
+
+# 1 ".\\output\\inc/Os_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 1
+# 14 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h"
+# 1 ".\\output\\inc/Compiler.h" 1
+# 15 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 2
+# 2 ".\\output\\inc/Os_MemMap.h" 2
+# 1107 ".\\output\\inc/..\\..\\os\\Os.h" 2
+
+
+
+
+# 1 ".\\output\\inc/Os_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 1
+# 14 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h"
+# 1 ".\\output\\inc/Compiler.h" 1
+# 15 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 2
+# 347 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 372 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h"
+#pragma section ".rodata.DEFAULT_CONST_UNSPECIFIED" a
+# 2 ".\\output\\inc/MemMap.h" 2
+# 348 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 2
+# 2 ".\\output\\inc/Os_MemMap.h" 2
+# 1112 ".\\output\\inc/..\\..\\os\\Os.h" 2
+
+extern const CoreIdType Os_TotalNumberOfCores;
+extern const Os_CoreConfiguration Os_const_coreconfiguration[];
+extern const Os_ApplicationConfigurationType Os_const_applications[];
+extern const Os_ISRType Os_const_isrs[];
+extern const TaskType Os_const_tasks[];
+extern const Os_ResourceType Os_const_resources[];
+extern const Os_CounterType Os_const_counters[];
+extern const Os_ScheduleTableType Os_const_scheduletables[];
+extern const Os_TaskType Os_const_tasks0[];
+extern const Os_TaskType Os_const_tasks1[];
+extern const Os_TaskType Os_const_tasks2[];
+extern const Os_TaskType Os_const_tasks3[];
+
+
+# 1 ".\\output\\inc/Os_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 1
+# 14 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h"
+# 1 ".\\output\\inc/Compiler.h" 1
+# 15 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 2
+# 351 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 382 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h"
+#pragma section
+# 2 ".\\output\\inc/MemMap.h" 2
+# 352 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 2
+# 2 ".\\output\\inc/Os_MemMap.h" 2
+# 1128 ".\\output\\inc/..\\..\\os\\Os.h" 2
+
+
+
+
+# 1 ".\\output\\inc/Os_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 1
+# 14 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h"
+# 1 ".\\output\\inc/Compiler.h" 1
+# 15 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 2
+# 104 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 427 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h"
+#pragma section ".bss.DEFAULT_VAR_CLEARED_UNSPECIFIED"
+# 2 ".\\output\\inc/MemMap.h" 2
+# 105 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 2
+# 2 ".\\output\\inc/Os_MemMap.h" 2
+# 1133 ".\\output\\inc/..\\..\\os\\Os.h" 2
+
+extern volatile AppModeType Os_CurrentAppMode;
+extern Os_AnyCoreType Os_AnyCoreInfo[];
+
+
+# 1 ".\\output\\inc/Os_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 1
+# 14 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h"
+# 1 ".\\output\\inc/Compiler.h" 1
+# 15 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 2
+# 109 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 435 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h"
+#pragma section
+# 2 ".\\output\\inc/MemMap.h" 2
+# 110 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 2
+# 2 ".\\output\\inc/Os_MemMap.h" 2
+# 1139 ".\\output\\inc/..\\..\\os\\Os.h" 2
+
+
+
+
+# 1 ".\\output\\inc/Os_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 1
+# 14 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h"
+# 1 ".\\output\\inc/Compiler.h" 1
+# 15 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 2
+# 62 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 227 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h"
+#pragma section ".bss.DEFAULT_START_SEC_VAR_NO_INIT_UNSPECIFIED"
+# 2 ".\\output\\inc/MemMap.h" 2
+# 63 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 2
+# 2 ".\\output\\inc/Os_MemMap.h" 2
+# 1144 ".\\output\\inc/..\\..\\os\\Os.h" 2
+
+extern StatusType Os_ShutdownAllCores_Indicator;
+extern Os_StackValueType Os_StackBase[];
+extern volatile Os_Lockable Os_lock_alarmaccess;
+extern ApplicationStateType Os_dyn_appstate[];
+extern Os_TaskDynType Os_dyn_tasks[];
+extern Os_ISRDynType Os_dyn_isrs[];
+extern Os_ControlledCoreType Os_ControlledCoreInfo[];
+
+
+# 1 ".\\output\\inc/Os_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 1
+# 14 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h"
+# 1 ".\\output\\inc/Compiler.h" 1
+# 15 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 2
+# 66 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 236 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h"
+#pragma section
+# 2 ".\\output\\inc/MemMap.h" 2
+# 67 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 2
+# 2 ".\\output\\inc/Os_MemMap.h" 2
+# 1155 ".\\output\\inc/..\\..\\os\\Os.h" 2
+
+
+
+# 1 ".\\output\\inc/Os_Cfg.h" 1
+# 1 ".\\output\\inc/..\\..\\os\\Os_Cfg.h" 1
+# 171 ".\\output\\inc/..\\..\\os\\Os_Cfg.h"
+extern void Os_CrossCoreISR0(void) __attribute__((interrupt_handler));
+
+extern void Os_CrossCoreISR1(void) __attribute__((interrupt_handler));
+
+extern void Os_CrossCoreISR2(void) __attribute__((interrupt_handler));
+
+extern void Os_CrossCoreISR3(void) __attribute__((interrupt_handler));
+
+extern void ADC8SR0_ISR(void) __attribute__((interrupt_handler));
+extern void GTMTIM2SR4_ISR(void) __attribute__((interrupt_handler));
+extern void GTMTIM3SR6_ISR(void) __attribute__((interrupt_handler));
+extern void ADC0SR0_ISR(void) __attribute__((interrupt_handler));
+extern void ADC2SR0_ISR(void) __attribute__((interrupt_handler));
+extern void ADC3SR0_ISR(void) __attribute__((interrupt_handler));
+extern void ADC1SR0_ISR(void) __attribute__((interrupt_handler));
+extern void CCU61SR2_ISR(void) __attribute__((interrupt_handler));
+extern void CCU60SR2_ISR(void) __attribute__((interrupt_handler));
+extern void DefaultInterruptHandler(void) __attribute__((interrupt_handler));
+# 249 ".\\output\\inc/..\\..\\os\\Os_Cfg.h"
+# 1 ".\\output\\inc/Os_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 1
+# 14 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h"
+# 1 ".\\output\\inc/Compiler.h" 1
+# 15 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 2
+# 2 ".\\output\\inc/Os_MemMap.h" 2
+# 250 ".\\output\\inc/..\\..\\os\\Os_Cfg.h" 2
+
+extern void ErrorHook_OsApplication_Core0(StatusType Error) ;
+extern void ErrorHook_OsApplication_Core1(StatusType Error) ;
+extern void ErrorHook_OsApplication_Core2(StatusType Error) ;
+extern void ErrorHook_OsApplication_Core3(StatusType Error) ;
+extern void Os_Cbk_Terminated_CAN1SR11_ISR(void) ;
+extern void Os_Cbk_Terminated_CAN1SR10_ISR(void) ;
+extern void Os_Cbk_Terminated_CAN1SR9_ISR(void) ;
+extern void Os_Cbk_Terminated_CAN1SR8_ISR(void) ;
+extern void Os_Cbk_Terminated_CAN0SR11_ISR(void) ;
+extern void Os_Cbk_Terminated_CAN0SR10_ISR(void) ;
+extern void Os_Cbk_Terminated_CAN0SR9_ISR(void) ;
+extern void Os_Cbk_Terminated_CAN0SR8_ISR(void) ;
+extern void Os_Cbk_Terminated_CAN0SR0_ISR(void) ;
+extern void Os_Cbk_Terminated_CAN0SR7_ISR(void) ;
+extern void Os_Cbk_Terminated_CAN0SR6_ISR(void) ;
+extern void Os_Cbk_Terminated_CAN0SR5_ISR(void) ;
+extern void Os_Cbk_Terminated_CAN0SR4_ISR(void) ;
+extern void Os_Cbk_Terminated_CAN0SR3_ISR(void) ;
+extern void Os_Cbk_Terminated_CAN0SR2_ISR(void) ;
+extern void Os_Cbk_Terminated_CAN0SR1_ISR(void) ;
+extern void Os_Cbk_Terminated_ADC4SR0_ISR(void) ;
+extern void Os_Cbk_Terminated_ADC11SR0_ISR(void) ;
+extern void Os_Cbk_Terminated_ADC10SR0_ISR(void) ;
+extern void Os_Cbk_Terminated_ADC9SR0_ISR(void) ;
+extern void Os_Cbk_Terminated_ADC8SR1_ISR(void) ;
+extern void Os_Cbk_Terminated_ADC3SR1_ISR(void) ;
+extern void Os_Cbk_Terminated_STM0SR1_ISR(void) ;
+extern void Os_Cbk_Terminated_Millisecond(void) ;
+extern void Os_Cbk_Disable_CAN1SR11_ISR(void) ;
+extern void Os_Cbk_Disable_CAN1SR10_ISR(void) ;
+extern void Os_Cbk_Disable_CAN1SR9_ISR(void) ;
+extern void Os_Cbk_Disable_CAN1SR8_ISR(void) ;
+extern void Os_Cbk_Disable_CAN0SR11_ISR(void) ;
+extern void Os_Cbk_Disable_CAN0SR10_ISR(void) ;
+extern void Os_Cbk_Disable_CAN0SR9_ISR(void) ;
+extern void Os_Cbk_Disable_CAN0SR8_ISR(void) ;
+extern void Os_Cbk_Disable_CAN0SR0_ISR(void) ;
+extern void Os_Cbk_Disable_CAN0SR7_ISR(void) ;
+extern void Os_Cbk_Disable_CAN0SR6_ISR(void) ;
+extern void Os_Cbk_Disable_CAN0SR5_ISR(void) ;
+extern void Os_Cbk_Disable_CAN0SR4_ISR(void) ;
+extern void Os_Cbk_Disable_CAN0SR3_ISR(void) ;
+extern void Os_Cbk_Disable_CAN0SR2_ISR(void) ;
+extern void Os_Cbk_Disable_CAN0SR1_ISR(void) ;
+extern void Os_Cbk_Disable_ADC4SR0_ISR(void) ;
+extern void Os_Cbk_Disable_ADC11SR0_ISR(void) ;
+extern void Os_Cbk_Disable_ADC10SR0_ISR(void) ;
+extern void Os_Cbk_Disable_ADC9SR0_ISR(void) ;
+extern void Os_Cbk_Disable_ADC8SR1_ISR(void) ;
+extern void Os_Cbk_Disable_ADC3SR1_ISR(void) ;
+extern void Os_Cbk_Disable_STM0SR1_ISR(void) ;
+extern void Os_Cbk_Disable_Millisecond(void) ;
+extern void Os_Cbk_Disable_ADC8SR0_ISR(void) ;
+extern void Os_Cbk_Disable_GTMTIM2SR4_ISR(void) ;
+extern void Os_Cbk_Disable_GTMTIM3SR6_ISR(void) ;
+extern void Os_Cbk_Disable_ADC0SR0_ISR(void) ;
+extern void Os_Cbk_Disable_ADC2SR0_ISR(void) ;
+extern void Os_Cbk_Disable_ADC3SR0_ISR(void) ;
+extern void Os_Cbk_Disable_ADC1SR0_ISR(void) ;
+extern void Os_Cbk_Disable_CCU61SR2_ISR(void) ;
+extern void Os_Cbk_Disable_CCU60SR2_ISR(void) ;
+
+
+# 1 ".\\output\\inc/Os_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 1
+# 14 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h"
+# 1 ".\\output\\inc/Compiler.h" 1
+# 15 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 2
+# 2 ".\\output\\inc/Os_MemMap.h" 2
+# 315 ".\\output\\inc/..\\..\\os\\Os_Cfg.h" 2
+
+
+
+
+# 1 ".\\output\\inc/Os_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 1
+# 14 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h"
+# 1 ".\\output\\inc/Compiler.h" 1
+# 15 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 2
+# 2 ".\\output\\inc/Os_MemMap.h" 2
+# 320 ".\\output\\inc/..\\..\\os\\Os_Cfg.h" 2
+
+extern StatusType Os_IncrementCounter_Rte_TickCounter(void);
+extern void Os_Entry_Core0_OsTask_Background_1ms(void);
+extern void Os_Entry_Core3_OsTask_ASW_5ms(void);
+extern void Os_Entry_Core3_OsTask_ASW_1ms(void);
+extern void Os_Entry_Core3_OsTask_BSW_10ms(void);
+extern void Os_Entry_Core2_OsTask_ASW_100ms(void);
+extern void Os_Entry_Core2_OsTask_ASW_10ms(void);
+extern void Os_Entry_Core2_OsTask_ASW_5ms(void);
+extern void Os_Entry_Core2_OsTask_ASW_1ms(void);
+extern void Os_Entry_Core2_OsTask_BSW_10ms(void);
+extern void Os_Entry_Core1_OsTask_ASW_100ms(void);
+extern void Os_Entry_Core0_OsTask_ASW_100ms(void);
+extern void Os_Entry_Core1_OsTask_ASW_10ms(void);
+extern void Os_Entry_Core0_BSW_OsTask_SwcRequest(void);
+extern void Os_Entry_Core1_OsTask_BSW_10ms(void);
+extern void Os_Entry_Core1_OsTask_ASW_1ms(void);
+extern void Os_Entry_Core0_OsTask_BSW_100ms(void);
+extern void Os_Entry_Core0_OsTask_BSW_50ms(void);
+extern void Os_Entry_Core0_OsTask_ASW_10ms(void);
+extern void Os_Entry_Core0_OsTask_BSW_10ms(void);
+extern void Os_Entry_Core0_OsTask_ASW_1ms(void);
+extern void Os_Entry_Core0_OsTask_BSW_1ms(void);
+extern void Os_Entry_Core0_ECU_StartupTask(void);
+extern void Os_Entry_CAN1SR11_ISR(void);
+extern void Os_Entry_CAN1SR10_ISR(void);
+extern void Os_Entry_CAN1SR9_ISR(void);
+extern void Os_Entry_CAN1SR8_ISR(void);
+extern void Os_Entry_CAN0SR11_ISR(void);
+extern void Os_Entry_CAN0SR10_ISR(void);
+extern void Os_Entry_CAN0SR9_ISR(void);
+extern void Os_Entry_CAN0SR8_ISR(void);
+extern void Os_Entry_CAN0SR0_ISR(void);
+extern void Os_Entry_CAN0SR7_ISR(void);
+extern void Os_Entry_CAN0SR6_ISR(void);
+extern void Os_Entry_CAN0SR5_ISR(void);
+extern void Os_Entry_CAN0SR4_ISR(void);
+extern void Os_Entry_CAN0SR3_ISR(void);
+extern void Os_Entry_CAN0SR2_ISR(void);
+extern void Os_Entry_CAN0SR1_ISR(void);
+extern void Os_Entry_ADC4SR0_ISR(void);
+extern void Os_Entry_ADC11SR0_ISR(void);
+extern void Os_Entry_ADC10SR0_ISR(void);
+extern void Os_Entry_ADC9SR0_ISR(void);
+extern void Os_Entry_ADC8SR1_ISR(void);
+extern void Os_Entry_ADC3SR1_ISR(void);
+extern void Os_Entry_STM0SR1_ISR(void);
+extern void Os_Entry_Millisecond(void);
+
+
+# 1 ".\\output\\inc/Os_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 1
+# 14 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h"
+# 1 ".\\output\\inc/Compiler.h" 1
+# 15 ".\\output\\inc/..\\..\\Integration\\os\\Os_MemMap.h" 2
+# 2 ".\\output\\inc/Os_MemMap.h" 2
+# 371 ".\\output\\inc/..\\..\\os\\Os_Cfg.h" 2
+# 403 ".\\output\\inc/..\\..\\os\\Os_Cfg.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 543 ".\\output\\inc/..\\..\\os\\Os_Cfg.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 668 ".\\output\\inc/..\\..\\os\\Os_Cfg.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 2 ".\\output\\inc/Os_Cfg.h" 2
+# 1159 ".\\output\\inc/..\\..\\os\\Os.h" 2
+# 2 ".\\output\\inc/Os.h" 2
+# 25 ".\\output\\inc/..\\..\\rte\\Rte_Intl.h" 2
+# 96 ".\\output\\inc/..\\..\\rte\\Rte_Intl.h"
+# 1 ".\\output\\inc/Rte_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 1
+# 117 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 2 ".\\output\\inc/MemMap.h" 2
+# 118 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 2
+# 2 ".\\output\\inc/Rte_MemMap.h" 2
+# 97 ".\\output\\inc/..\\..\\rte\\Rte_Intl.h" 2
+extern const Rte_AlarmRefType Rte_TimeoutAlarms[];
+
+# 1 ".\\output\\inc/Rte_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 1
+# 117 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 2 ".\\output\\inc/MemMap.h" 2
+# 118 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 2
+# 2 ".\\output\\inc/Rte_MemMap.h" 2
+# 100 ".\\output\\inc/..\\..\\rte\\Rte_Intl.h" 2
+# 181 ".\\output\\inc/..\\..\\rte\\Rte_Intl.h"
+typedef uint16 * Rte_ResourceCountRefType;
+
+typedef TaskType Rte_TaskRefType;
+typedef EventMaskType Rte_EventRefType;
+typedef uint32 Rte_EventType;
+# 194 ".\\output\\inc/..\\..\\rte\\Rte_Intl.h"
+# 1 ".\\output\\inc/Rte_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 1
+# 117 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 2 ".\\output\\inc/MemMap.h" 2
+# 118 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 2
+# 2 ".\\output\\inc/Rte_MemMap.h" 2
+# 195 ".\\output\\inc/..\\..\\rte\\Rte_Intl.h" 2
+
+extern Rte_ResourceRefType Rte_Resources[(4U) + 1];
+
+# 1 ".\\output\\inc/Rte_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 1
+# 117 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 2 ".\\output\\inc/MemMap.h" 2
+# 118 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 2
+# 2 ".\\output\\inc/Rte_MemMap.h" 2
+# 199 ".\\output\\inc/..\\..\\rte\\Rte_Intl.h" 2
+
+
+
+
+# 1 ".\\output\\inc/Rte_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 1
+# 117 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 2 ".\\output\\inc/MemMap.h" 2
+# 118 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 2
+# 2 ".\\output\\inc/Rte_MemMap.h" 2
+# 204 ".\\output\\inc/..\\..\\rte\\Rte_Intl.h" 2
+
+extern Rte_ResourceCountRefType Rte_ResourceCount[(4U) + 1];
+
+# 1 ".\\output\\inc/Rte_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 1
+# 117 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 2 ".\\output\\inc/MemMap.h" 2
+# 118 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 2
+# 2 ".\\output\\inc/Rte_MemMap.h" 2
+# 208 ".\\output\\inc/..\\..\\rte\\Rte_Intl.h" 2
+
+
+
+
+
+
+# 1 ".\\output\\inc/Rte_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 1
+# 117 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 2 ".\\output\\inc/MemMap.h" 2
+# 118 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 2
+# 2 ".\\output\\inc/Rte_MemMap.h" 2
+# 215 ".\\output\\inc/..\\..\\rte\\Rte_Intl.h" 2
+extern uint16 Rte_SpinlockCount[(3) + 1];
+
+# 1 ".\\output\\inc/Rte_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 1
+# 117 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 2 ".\\output\\inc/MemMap.h" 2
+# 118 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 2
+# 2 ".\\output\\inc/Rte_MemMap.h" 2
+# 218 ".\\output\\inc/..\\..\\rte\\Rte_Intl.h" 2
+# 296 ".\\output\\inc/..\\..\\rte\\Rte_Intl.h"
+typedef uint8 Rte_REActCounterType;
+typedef Rte_REActCounterType * Rte_REActCounterRefType;
+
+typedef struct {
+   Rte_TaskRefType task;
+   Rte_REActCounterRefType acnt;
+} Rte_REContainerType;
+
+typedef const Rte_REContainerType * Rte_REContainerRefType;
+
+
+# 1 ".\\output\\inc/Rte_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 1
+# 117 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 2 ".\\output\\inc/MemMap.h" 2
+# 118 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 2
+# 2 ".\\output\\inc/Rte_MemMap.h" 2
+# 308 ".\\output\\inc/..\\..\\rte\\Rte_Intl.h" 2
+extern Std_ReturnType Rte_ActivateRE(Rte_REContainerRefType c);
+
+# 1 ".\\output\\inc/Rte_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 1
+# 117 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 2 ".\\output\\inc/MemMap.h" 2
+# 118 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 2
+# 2 ".\\output\\inc/Rte_MemMap.h" 2
+# 311 ".\\output\\inc/..\\..\\rte\\Rte_Intl.h" 2
+
+
+typedef struct
+{
+   Rte_AlarmRefType osAlarm;
+   TickType increment;
+   TickType period;
+} Rte_AlarmTable;
+
+
+typedef uint16 Rte_MSICounterType;
+typedef Rte_MSICounterType * Rte_MSICounterRefType;
+
+typedef boolean Rte_MSIPendingFlagType;
+typedef Rte_MSIPendingFlagType * Rte_MSIPendingFlagRefType;
+
+
+# 1 ".\\output\\inc/Rte_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 1
+# 117 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 2 ".\\output\\inc/MemMap.h" 2
+# 118 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 2
+# 2 ".\\output\\inc/Rte_MemMap.h" 2
+# 329 ".\\output\\inc/..\\..\\rte\\Rte_Intl.h" 2
+extern boolean Rte_MSITest(Rte_MSICounterType,
+                                              Rte_MSIPendingFlagRefType,
+                                              Rte_MSICounterType);
+
+# 1 ".\\output\\inc/Rte_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 1
+# 117 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 2 ".\\output\\inc/MemMap.h" 2
+# 118 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 2
+# 2 ".\\output\\inc/Rte_MemMap.h" 2
+# 334 ".\\output\\inc/..\\..\\rte\\Rte_Intl.h" 2
+
+typedef struct
+{
+   Rte_MSICounterRefType counter;
+   boolean incCounter;
+   Rte_MSIPendingFlagRefType pending;
+   Rte_TaskRefType osTask;
+   Rte_REActCounterRefType acnt;
+   Rte_EventRefType osEvent;
+   Rte_MSICounterType MSIInit;
+} Rte_MSITableEntry;
+
+typedef const Rte_MSITableEntry * Rte_MSITableEntryRef;
+
+
+
+
+typedef uint32 Rte_TaskArrayIndex;
+typedef uint32 Rte_NrWaitingTasks;
+
+typedef struct {
+   uint8 pending;
+   Rte_NrWaitingTasks count;
+   Rte_TaskArrayIndex firstWaitingTask;
+} Rte_WaitableDatum;
+
+typedef struct {
+   Rte_TaskRefType task;
+   Rte_AlarmIndexType alarm;
+   Rte_EventType * waitingEv;
+} Rte_TaskInfo;
+
+
+# 1 ".\\output\\inc/Rte_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 1
+# 117 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 2 ".\\output\\inc/MemMap.h" 2
+# 118 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 2
+# 2 ".\\output\\inc/Rte_MemMap.h" 2
+# 368 ".\\output\\inc/..\\..\\rte\\Rte_Intl.h" 2
+extern Std_ReturnType Rte_WaitWithTimeout(Rte_WaitableDatum * datum,
+                                                             Rte_EventType event,
+                                                             const TickType timeout);
+
+# 1 ".\\output\\inc/Rte_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 1
+# 117 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 2 ".\\output\\inc/MemMap.h" 2
+# 118 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 2
+# 2 ".\\output\\inc/Rte_MemMap.h" 2
+# 373 ".\\output\\inc/..\\..\\rte\\Rte_Intl.h" 2
+
+
+# 1 ".\\output\\inc/Rte_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 1
+# 117 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 2 ".\\output\\inc/MemMap.h" 2
+# 118 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 2
+# 2 ".\\output\\inc/Rte_MemMap.h" 2
+# 376 ".\\output\\inc/..\\..\\rte\\Rte_Intl.h" 2
+extern Std_ReturnType Rte_SetEvent(Rte_WaitableDatum * datum,
+                                                      Rte_EventType event);
+
+# 1 ".\\output\\inc/Rte_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 1
+# 117 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 2 ".\\output\\inc/MemMap.h" 2
+# 118 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 2
+# 2 ".\\output\\inc/Rte_MemMap.h" 2
+# 380 ".\\output\\inc/..\\..\\rte\\Rte_Intl.h" 2
+
+
+# 1 ".\\output\\inc/Rte_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 1
+# 117 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 2 ".\\output\\inc/MemMap.h" 2
+# 118 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 2
+# 2 ".\\output\\inc/Rte_MemMap.h" 2
+# 383 ".\\output\\inc/..\\..\\rte\\Rte_Intl.h" 2
+extern void Rte_DecrementWaitingCount( Rte_WaitableDatum * datum,
+                                                          Rte_TaskArrayIndex idx,
+                                                          Rte_EventType event );
+
+# 1 ".\\output\\inc/Rte_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 1
+# 117 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 2 ".\\output\\inc/MemMap.h" 2
+# 118 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 2
+# 2 ".\\output\\inc/Rte_MemMap.h" 2
+# 388 ".\\output\\inc/..\\..\\rte\\Rte_Intl.h" 2
+
+
+# 1 ".\\output\\inc/Rte_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 1
+# 117 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 2 ".\\output\\inc/MemMap.h" 2
+# 118 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 2
+# 2 ".\\output\\inc/Rte_MemMap.h" 2
+# 391 ".\\output\\inc/..\\..\\rte\\Rte_Intl.h" 2
+extern Rte_TaskArrayIndex Rte_GetCurrentTaskIndex( TaskType * taskRef );
+
+# 1 ".\\output\\inc/Rte_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 1
+# 117 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 2 ".\\output\\inc/MemMap.h" 2
+# 118 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 2
+# 2 ".\\output\\inc/Rte_MemMap.h" 2
+# 394 ".\\output\\inc/..\\..\\rte\\Rte_Intl.h" 2
+
+
+
+
+typedef struct {
+   Rte_EventType event_id;
+   Rte_WaitableDatum * wd;
+   TickType timeout;
+} Rte_WOWP_NotificationType;
+
+typedef const Rte_WOWP_NotificationType * Rte_WOWP_NotificationRefType;
+
+typedef Rte_REContainerType Rte_ARE_NotificationType;
+
+typedef const Rte_ARE_NotificationType * Rte_ARE_NotificationRefType;
+
+typedef struct Rte_QDRAType {
+   Rte_QCmnType cmn;
+
+} Rte_QDRAType;
+
+typedef struct Rte_QTaskType {
+   Rte_QCmnType cmn;
+   Rte_TaskRefType task;
+} Rte_QTaskType;
+
+typedef const Rte_QTaskType * Rte_QRefTaskType;
+
+typedef struct Rte_QREType {
+   Rte_QCmnType cmn;
+   Rte_REContainerRefType re;
+} Rte_QREType;
+
+typedef const Rte_QREType * Rte_QRefREType;
+
+typedef struct Rte_QWWPType {
+   Rte_QCmnType cmn;
+   Rte_WOWP_NotificationRefType wwp;
+} Rte_QWWPType;
+
+typedef const Rte_QWWPType * Rte_QRefWWPType;
+
+typedef struct Rte_QEvType {
+   Rte_QCmnType cmn;
+   Rte_TaskRefType task;
+   Rte_EventRefType mask;
+   Rte_REActCounterRefType acnt;
+} Rte_QEvType;
+
+typedef const Rte_QEvType * Rte_QRefEvType;
+
+typedef struct Rte_QMSIType {
+   Rte_QCmnType cmn;
+   Rte_TaskRefType task;
+   Rte_EventRefType mask;
+   Rte_REActCounterRefType acnt;
+   Rte_MSICounterRefType msiCounter;
+   Rte_MSIPendingFlagRefType msiPending;
+   uint16 msiLimit;
+} Rte_QMSIType;
+
+typedef const Rte_QMSIType * Rte_QRefMSIType;
+
+typedef void * Rte_VarDataPtr;
+typedef const void * Rte_ConstDataPtr;
+
+
+# 1 ".\\output\\inc/Rte_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 1
+# 117 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 2 ".\\output\\inc/MemMap.h" 2
+# 118 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 2
+# 2 ".\\output\\inc/Rte_MemMap.h" 2
+# 462 ".\\output\\inc/..\\..\\rte\\Rte_Intl.h" 2
+extern Std_ReturnType Rte_WriteQueue(Rte_QCmnRefType q,
+                                                        Rte_ConstDataPtr data);
+
+# 1 ".\\output\\inc/Rte_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 1
+# 117 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 2 ".\\output\\inc/MemMap.h" 2
+# 118 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 2
+# 2 ".\\output\\inc/Rte_MemMap.h" 2
+# 466 ".\\output\\inc/..\\..\\rte\\Rte_Intl.h" 2
+
+
+# 1 ".\\output\\inc/Rte_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 1
+# 117 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 2 ".\\output\\inc/MemMap.h" 2
+# 118 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 2
+# 2 ".\\output\\inc/Rte_MemMap.h" 2
+# 469 ".\\output\\inc/..\\..\\rte\\Rte_Intl.h" 2
+extern Std_ReturnType Rte_ReadQueue(Rte_QCmnRefType q,
+                                                       Rte_VarDataPtr data);
+
+# 1 ".\\output\\inc/Rte_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 1
+# 117 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 2 ".\\output\\inc/MemMap.h" 2
+# 118 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 2
+# 2 ".\\output\\inc/Rte_MemMap.h" 2
+# 473 ".\\output\\inc/..\\..\\rte\\Rte_Intl.h" 2
+
+
+
+
+typedef boolean (*Rte_MddGuard)(void);
+# 527 ".\\output\\inc/..\\..\\rte\\Rte_Intl.h"
+# 1 ".\\output\\inc/Rte_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 1
+# 117 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 2 ".\\output\\inc/MemMap.h" 2
+# 118 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 2
+# 2 ".\\output\\inc/Rte_MemMap.h" 2
+# 528 ".\\output\\inc/..\\..\\rte\\Rte_Intl.h" 2
+extern boolean Rte_Initialized;
+extern boolean SchM_Initialized;
+
+# 1 ".\\output\\inc/Rte_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 1
+# 117 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 2 ".\\output\\inc/MemMap.h" 2
+# 118 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 2
+# 2 ".\\output\\inc/Rte_MemMap.h" 2
+# 532 ".\\output\\inc/..\\..\\rte\\Rte_Intl.h" 2
+# 31 ".\\output\\inc/..\\..\\rte\\Rte_Dem.h" 2
+# 1 ".\\output\\inc/..\\..\\rte\\Rte_Dem_Type.h" 1
+# 32 ".\\output\\inc/..\\..\\rte\\Rte_Dem.h" 2
+
+# 1 ".\\output\\inc/..\\..\\rte\\Rte_DataHandleType.h" 1
+# 34 ".\\output\\inc/..\\..\\rte\\Rte_Dem.h" 2
+# 152 ".\\output\\inc/..\\..\\rte\\Rte_Dem.h"
+struct Rte_CDS_Dem {
+   uint8 Rte_Dummy;
+};
+typedef struct Rte_CDS_Dem Rte_CDS_Dem;
+# 174 ".\\output\\inc/..\\..\\rte\\Rte_Dem.h"
+# 1 ".\\output\\inc/Rte_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 1
+# 117 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 2 ".\\output\\inc/MemMap.h" 2
+# 118 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 2
+# 2 ".\\output\\inc/Rte_MemMap.h" 2
+# 175 ".\\output\\inc/..\\..\\rte\\Rte_Dem.h" 2
+extern const struct Rte_CDS_Dem Rte_Inst_Dem;
+
+# 1 ".\\output\\inc/Rte_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 1
+# 117 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 2 ".\\output\\inc/MemMap.h" 2
+# 118 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 2
+# 2 ".\\output\\inc/Rte_MemMap.h" 2
+# 178 ".\\output\\inc/..\\..\\rte\\Rte_Dem.h" 2
+
+
+
+typedef const struct Rte_CDS_Dem * const Rte_Instance;
+# 194 ".\\output\\inc/..\\..\\rte\\Rte_Dem.h"
+# 1 ".\\output\\inc/Rte_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 1
+# 117 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 2 ".\\output\\inc/MemMap.h" 2
+# 118 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 2
+# 2 ".\\output\\inc/Rte_MemMap.h" 2
+# 195 ".\\output\\inc/..\\..\\rte\\Rte_Dem.h" 2
+Std_ReturnType Rte_Call_Dem_DataServices_CS_ExtendedDataRecord_Aged_counter_ReadData(uint8 * Data);
+Std_ReturnType Rte_Call_Dem_DataServices_CS_ExtendedDataRecord_Fault_pending_counter_ReadData(uint8 * Data);
+Std_ReturnType Rte_Call_Dem_DataServices_PID_02_ReadData(uint8 * Data);
+Std_ReturnType Rte_Call_Dem_DataServices_PID_04_ReadData(uint8 * Data);
+Std_ReturnType Rte_Call_Dem_DataServices_PID_05_ReadData(uint8 * Data);
+Std_ReturnType Rte_Call_Dem_DataServices_PID_0C_ReadData(uint8 * Data);
+Std_ReturnType Rte_Call_Dem_DataServices_PID_0D_ReadData(uint8 * Data);
+Std_ReturnType Rte_Call_Dem_DataServices_PID_42_ReadData(uint8 * Data);
+Std_ReturnType Rte_Call_Dem_DataServices_PID_49_ReadData(uint8 * Data);
+
+# 1 ".\\output\\inc/Rte_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 1
+# 117 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 2 ".\\output\\inc/MemMap.h" 2
+# 118 ".\\output\\inc/..\\..\\Integration\\rte\\Rte_MemMap.h" 2
+# 2 ".\\output\\inc/Rte_MemMap.h" 2
+# 206 ".\\output\\inc/..\\..\\rte\\Rte_Dem.h" 2
+# 243 ".\\output\\inc/..\\..\\rte\\Rte_Dem.h"
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 139 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 140 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 244 ".\\output\\inc/..\\..\\rte\\Rte_Dem.h" 2
+Std_ReturnType Dem_ClearPrestoredFreezeFrame(Dem_EventIdType EventId);
+Std_ReturnType Dem_GetCycleQualified(Dem_OperationCycleIdType OperationCycleId,
+                                                     boolean * isQualified);
+Std_ReturnType Dem_GetDTCOfEvent(Dem_EventIdType EventId,
+                                                 Dem_DTCFormatType DTCFormat,
+                                                 uint32 * DTCOfEvent);
+Std_ReturnType Dem_GetDTCOfEvent_GeneralEvtInfo(Dem_EventIdType EventId,
+                                                                Dem_DTCFormatType DTCFormat,
+                                                                uint32 * DTCOfEvent);
+Std_ReturnType Dem_GetDebouncingOfEvent(Dem_EventIdType EventId,
+                                                        Dem_DebouncingStateType * DebouncingState);
+Std_ReturnType Dem_GetDebouncingOfEvent_GeneralEvtInfo(Dem_EventIdType EventId,
+                                                                       Dem_DebouncingStateType * DebouncingState);
+Std_ReturnType Dem_GetEventExtendedDataRecordEx(Dem_EventIdType EventId,
+                                                                uint8 RecordNumber,
+                                                                uint8 * DestBuffer,
+                                                                uint16 * BufSize);
+Std_ReturnType Dem_GetEventExtendedDataRecordEx_GeneralEvtInfo(Dem_EventIdType EventId,
+                                                                               uint8 RecordNumber,
+                                                                               uint8 * DestBuffer,
+                                                                               uint16 * BufSize);
+Std_ReturnType Dem_GetEventExtendedDataRecordForRTE(Dem_EventIdType EventId,
+                                                                    uint8 RecordNumber,
+                                                                    uint8 * DestBuffer);
+Std_ReturnType Dem_GetEventExtendedDataRecord_GeneralEvtInfo(Dem_EventIdType EventId,
+                                                                             uint8 RecordNumber,
+                                                                             uint8 * DestBuffer);
+Std_ReturnType Dem_GetEventFailed(Dem_EventIdType EventId,
+                                                  boolean * EventFailed);
+Std_ReturnType Dem_GetEventFailed_GeneralEvtInfo(Dem_EventIdType EventId,
+                                                                 boolean * EventFailed);
+Std_ReturnType Dem_GetEventFreezeFrameDataEx(Dem_EventIdType EventId,
+                                                             uint8 RecordNumber,
+                                                             uint16 DataId,
+                                                             uint8 * DestBuffer,
+                                                             uint16 * BufSize);
+Std_ReturnType Dem_GetEventFreezeFrameDataEx_GeneralEvtInfo(Dem_EventIdType EventId,
+                                                                            uint8 RecordNumber,
+                                                                            uint16 DataId,
+                                                                            uint8 * DestBuffer,
+                                                                            uint16 * BufSize);
+Std_ReturnType Dem_GetEventFreezeFrameDataForRTE(Dem_EventIdType EventId,
+                                                                 uint8 RecordNumber,
+                                                                 boolean ReportTotalRecord,
+                                                                 uint16 DataId,
+                                                                 uint8 * DestBuffer);
+Std_ReturnType Dem_GetEventFreezeFrameData_GeneralEvtInfo(Dem_EventIdType EventId,
+                                                                          uint8 RecordNumber,
+                                                                          boolean ReportTotalRecord,
+                                                                          uint16 DataId,
+                                                                          uint8 * DestBuffer);
+Std_ReturnType Dem_GetEventIdCausingLastDetError(Dem_EventIdType * EventId);
+Std_ReturnType Dem_GetEventStatus(Dem_EventIdType EventId,
+                                                  Dem_UdsStatusByteType * EventStatusExtended);
+Std_ReturnType Dem_GetEventStatus_GeneralEvtInfo(Dem_EventIdType EventId,
+                                                                 Dem_UdsStatusByteType * EventStatusExtended);
+Std_ReturnType Dem_GetEventTested(Dem_EventIdType EventId,
+                                                  boolean * EventTested);
+Std_ReturnType Dem_GetEventTested_GeneralEvtInfo(Dem_EventIdType EventId,
+                                                                 boolean * EventTested);
+Std_ReturnType Dem_GetFaultDetectionCounter(Dem_EventIdType EventId,
+                                                            sint8 * FaultDetectionCounter);
+Std_ReturnType Dem_GetFaultDetectionCounter_GeneralEvtInfo(Dem_EventIdType EventId,
+                                                                           sint8 * FaultDetectionCounter);
+Std_ReturnType Dem_GetIndicatorStatus(uint8 IndicatorId,
+                                                      Dem_IndicatorStatusType * IndicatorStatus);
+Std_ReturnType Dem_GetOperationCycleState(Dem_OperationCycleIdType OperationCycleId,
+                                                          Dem_OperationCycleStateType * CycleState);
+Std_ReturnType Dem_PrestoreFreezeFrame(Dem_EventIdType EventId);
+Std_ReturnType Dem_ResetEventDebounceStatus(Dem_EventIdType EventId,
+                                                            Dem_DebounceResetStatusType DebounceResetStatus);
+Std_ReturnType Dem_ResetEventStatus(Dem_EventIdType EventId);
+Std_ReturnType Dem_SetCycleQualified(Dem_OperationCycleIdType OperationCycleId);
+Std_ReturnType Dem_SetDTR(Dem_DtrIdType DTRId,
+                                          sint32 TestResult,
+                                          sint32 LowerLimit,
+                                          sint32 UpperLimit,
+                                          Dem_DTRControlType Ctrlval);
+Std_ReturnType Dem_SetEventAvailable(Dem_EventIdType EventId,
+                                                     boolean AvailableStatus);
+Std_ReturnType Dem_SetEventDisabled(Dem_EventIdType EventId);
+Std_ReturnType Dem_SetEventStatus(Dem_EventIdType EventId,
+                                                  Dem_EventStatusType EventStatus);
+Std_ReturnType Dem_SetEventStatusWithEnvData(Dem_EventIdType EventId,
+                                                             Dem_EventStatusType EventStatus,
+                                                             Dem_DebugDataType debug0,
+                                                             Dem_DebugDataType debug1);
+Std_ReturnType Dem_SetIUMPRDenCondition(Dem_IumprDenomCondIdType ConditionId,
+                                                        Dem_IumprDenomCondStatusType ConditionStatus);
+Std_ReturnType Dem_SetOperationCycleState(Dem_OperationCycleIdType OperationCycleId,
+                                                          Dem_OperationCycleStateType CycleState);
+Std_ReturnType Dem_SetWIRStatus(Dem_EventIdType EventId,
+                                                boolean WIRStatus);
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 152 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 153 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 339 ".\\output\\inc/..\\..\\rte\\Rte_Dem.h" 2
+# 2 ".\\output\\inc/Rte_Dem.h" 2
+# 5 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c" 2
+
+# 1 "bsw\\Dem\\src\\evmem\\Dem_EvMem.h" 1
+
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 9 "bsw\\Dem\\src\\evmem\\Dem_EvMem.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EvMem.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EvMem.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EvMem.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_Main.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EvMem.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_DtcId.h" 1
+# 12 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EvMem.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_Events.h" 1
+# 162 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_Events.h"
+typedef uint16 Dem_EvtStateType;
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EvMem.h" 2
+# 2 ".\\output\\inc/Dem_Cfg_EvMem.h" 2
+# 10 "bsw\\Dem\\src\\evmem\\Dem_EvMem.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EnvMain.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EnvMain.h" 1
+# 2 ".\\output\\inc/Dem_Cfg_EnvMain.h" 2
+# 11 "bsw\\Dem\\src\\evmem\\Dem_EvMem.h" 2
+# 1 ".\\output\\inc/Dem_OperationCycle.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\main\\Dem_OperationCycle.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Cfg_OperationCycle.h" 1
+# 7 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\main\\Dem_OperationCycle.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_OperationCycle_DataStructures.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_OperationCycle_DataStructures.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_OperationCycle_DataStructures.h"
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_OperationCycle_DataStructures.h" 2
+# 1 ".\\output\\inc/Dem_Lib.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\lib\\Dem_Lib.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 7 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\lib\\Dem_Lib.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\lib\\Dem_Prv_Det.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Cfg_Main.h" 1
+# 7 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\lib\\Dem_Prv_Det.h" 2
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\lib\\Dem_Prv_Det.h" 2
+
+extern Dem_EventIdType Dem_EventIdCausingLastDetError;
+
+
+
+
+
+
+
+# 1 ".\\output\\inc/Det.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Det\\api\\Det.h" 1
+# 27 ".\\output\\inc/..\\..\\bsw\\Det\\api\\Det.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Det\\api\\Det_Types.h" 1
+# 16 ".\\output\\inc/..\\..\\bsw\\Det\\api\\Det_Types.h"
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 17 ".\\output\\inc/..\\..\\bsw\\Det\\api\\Det_Types.h" 2
+# 1 ".\\output\\inc/Rte_Det_Type.h" 1
+# 1 ".\\output\\inc/..\\..\\rte\\Rte_Det_Type.h" 1
+# 2 ".\\output\\inc/Rte_Det_Type.h" 2
+# 18 ".\\output\\inc/..\\..\\bsw\\Det\\api\\Det_Types.h" 2
+# 65 ".\\output\\inc/..\\..\\bsw\\Det\\api\\Det_Types.h"
+typedef uint16 Det_BufferIndexType;
+
+
+
+
+
+
+typedef struct
+{
+    uint8 Dummy;
+} Det_ConfigType;
+
+
+
+
+
+typedef struct
+{
+    uint16 ModuleId;
+    uint8 InstanceId;
+    uint8 ApiId;
+    uint8 ErrorId;
+} Det_ErrorEntryBufferType;
+# 28 ".\\output\\inc/..\\..\\bsw\\Det\\api\\Det.h" 2
+# 1 ".\\output\\inc/Det_Cfg.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Det\\Det_Cfg.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Det\\Det_Cfg.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Det\\Det_Cfg_Version.h" 1
+# 14 ".\\output\\inc/..\\..\\bsw\\Det\\Det_Cfg.h" 2
+# 2 ".\\output\\inc/Det_Cfg.h" 2
+# 29 ".\\output\\inc/..\\..\\bsw\\Det\\api\\Det.h" 2
+
+
+
+
+
+
+
+# 1 ".\\output\\inc/Det_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Det\\integration\\Det_MemMap.h" 1
+# 78 ".\\output\\inc/..\\..\\bsw\\Det\\integration\\Det_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 79 ".\\output\\inc/..\\..\\bsw\\Det\\integration\\Det_MemMap.h" 2
+# 2 ".\\output\\inc/Det_MemMap.h" 2
+# 37 ".\\output\\inc/..\\..\\bsw\\Det\\api\\Det.h" 2
+# 75 ".\\output\\inc/..\\..\\bsw\\Det\\api\\Det.h"
+void Det_Init(const Det_ConfigType* ConfigPtr);
+# 85 ".\\output\\inc/..\\..\\bsw\\Det\\api\\Det.h"
+void Det_Start(void);
+# 112 ".\\output\\inc/..\\..\\bsw\\Det\\api\\Det.h"
+Std_ReturnType Det_ReportError(uint16 ModuleId, uint8 InstanceId, uint8 ApiId, uint8 ErrorId);
+# 126 ".\\output\\inc/..\\..\\bsw\\Det\\api\\Det.h"
+Std_ReturnType Det_ReportRuntimeError(uint16 ModuleId, uint8 InstanceId, uint8 ApiId, uint8 ErrorId);
+# 142 ".\\output\\inc/..\\..\\bsw\\Det\\api\\Det.h"
+Std_ReturnType Det_ReportTransientFault(uint16 ModuleId, uint8 InstanceId, uint8 ApiId, uint8 FaultId);
+
+
+
+# 1 ".\\output\\inc/Det_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Det\\integration\\Det_MemMap.h" 1
+# 90 ".\\output\\inc/..\\..\\bsw\\Det\\integration\\Det_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 91 ".\\output\\inc/..\\..\\bsw\\Det\\integration\\Det_MemMap.h" 2
+# 2 ".\\output\\inc/Det_MemMap.h" 2
+# 147 ".\\output\\inc/..\\..\\bsw\\Det\\api\\Det.h" 2
+# 2 ".\\output\\inc/Det.h" 2
+# 18 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\lib\\Dem_Prv_Det.h" 2
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\lib\\Dem_Lib.h" 2
+# 1 ".\\output\\inc/rba_DiagLib_MemUtils.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\src\\rba_DiagLib_MemUtils.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 7 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\src\\rba_DiagLib_MemUtils.h" 2
+# 1 ".\\output\\inc/rba_BswSrv.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\rba_BswSrv\\api\\rba_BswSrv.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\integration\\rba_BswSrv\\api\\rba_BswSrv.h"
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 12 ".\\output\\inc/..\\..\\bsw\\integration\\rba_BswSrv\\api\\rba_BswSrv.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\rba_BswSrv\\api\\rba_BswSrv_Cfg.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\integration\\rba_BswSrv\\api\\rba_BswSrv.h" 2
+# 69 ".\\output\\inc/..\\..\\bsw\\integration\\rba_BswSrv\\api\\rba_BswSrv.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\rba_BswSrv\\api\\rba_BswSrv_MemMap.h" 1
+# 70 ".\\output\\inc/..\\..\\bsw\\integration\\rba_BswSrv\\api\\rba_BswSrv.h" 2
+extern void* rba_BswSrv_MemCopy(void* xDest_pv, const void* xSrc_pcv, uint32 numBytes_u32);
+extern void* rba_BswSrv_MemSet(void* xDest_pv, sint32 xPattern_s32, uint32 numBytes_u32);
+extern sint32 rba_BswSrv_MemCompare(const void* xSrc1_pcv, const void* xSrc2_pcv, uint32 numBytes_u32);
+
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\rba_BswSrv\\api\\rba_BswSrv_MemMap.h" 1
+# 75 ".\\output\\inc/..\\..\\bsw\\integration\\rba_BswSrv\\api\\rba_BswSrv.h" 2
+
+
+
+static __inline__ uint32 rba_BswSrv_CountLeadingZero32(uint32 Input_u32);
+static __inline__ uint32 rba_BswSrv_ByteOrderSwap32(uint32 Input_u32);
+static __inline__ uint16 rba_BswSrv_ByteOrderSwap16(uint16 Input_u16);
+
+static __inline__ void rba_BswSrv_MemCopy32(uint32* xDest_pu32, const uint32* xSrc_pcu32, uint32 numBytes_u32);
+static __inline__ void rba_BswSrv_MemCopy16(uint16* xDest_pu16, const uint16* xSrc_pcu16, uint32 numBytes_u32);
+static __inline__ void rba_BswSrv_MemCopy8(uint8* xDest_pu8, const uint8* xSrc_pcu8, uint32 numBytes_u32);
+
+static __inline__ uint32 rba_BswSrv_MemCompare32(const uint32* xSrc1_pcu32, const uint32* xSrc2_pcu32, uint32 numBytes_u32);
+static __inline__ uint32 rba_BswSrv_MemCompare16(const uint16* xSrc1_pcu16, const uint16* xSrc2_pcu16, uint32 numBytes_u32);
+static __inline__ uint32 rba_BswSrv_MemCompare8(const uint8* xSrc1_pcu8, const uint8* xSrc2_pcu8, uint32 numBytes_u32);
+
+static __inline__ void rba_BswSrv_MemSet32(uint32* xDest_pu32, uint32 xPattern_u32, uint32 numBytes_u32);
+static __inline__ void rba_BswSrv_MemSet16(uint16* xDest_pu16, uint32 xPattern_u32, uint32 numBytes_u32);
+static __inline__ void rba_BswSrv_MemSet8(uint8* xDest_pu8, uint32 xPattern_u32, uint32 numBytes_u32);
+# 119 ".\\output\\inc/..\\..\\bsw\\integration\\rba_BswSrv\\api\\rba_BswSrv.h"
+static __inline__ uint32 rba_BswSrv_CountLeadingZero32(uint32 Input_u32)
+{
+    uint32 numLeadingZero_u32;
+
+
+    numLeadingZero_u32 = 32;
+    while(Input_u32 != 0u)
+    {
+        Input_u32 >>= 1;
+        numLeadingZero_u32--;
+    }
+
+    return numLeadingZero_u32;
+}
+# 148 ".\\output\\inc/..\\..\\bsw\\integration\\rba_BswSrv\\api\\rba_BswSrv.h"
+static __inline__ uint32 rba_BswSrv_ByteOrderSwap32(uint32 Input_u32)
+{
+    uint32 retVal_u32;
+
+    retVal_u32 = (Input_u32 << 24) | ((Input_u32 & 0xFF00u) << 8) | ((Input_u32 & 0x00FF0000u) >> 8) | (Input_u32 >> 24);
+
+    return retVal_u32;
+}
+# 171 ".\\output\\inc/..\\..\\bsw\\integration\\rba_BswSrv\\api\\rba_BswSrv.h"
+static __inline__ uint16 rba_BswSrv_ByteOrderSwap16(uint16 Input_u16)
+{
+    uint16 retVal_u16;
+
+    retVal_u16 = ((Input_u16 & 0x00FFu) << 8) | ((Input_u16 & 0xFF00u) >> 8);
+
+    return retVal_u16;
+}
+# 225 ".\\output\\inc/..\\..\\bsw\\integration\\rba_BswSrv\\api\\rba_BswSrv.h"
+static __inline__ void rba_BswSrv_MemCopy32(uint32* xDest_pu32, const uint32* xSrc_pcu32, uint32 numBytes_u32)
+{
+    uint32 ctLoop_u32;
+
+    for(ctLoop_u32 = 0u; ctLoop_u32 < (numBytes_u32 / 4u); ctLoop_u32++)
+    {
+        *xDest_pu32 = *xSrc_pcu32;
+        xDest_pu32++;
+        xSrc_pcu32++;
+    }
+
+    return;
+}
+# 254 ".\\output\\inc/..\\..\\bsw\\integration\\rba_BswSrv\\api\\rba_BswSrv.h"
+static __inline__ void rba_BswSrv_MemCopy16(uint16* xDest_pu16, const uint16* xSrc_pcu16, uint32 numBytes_u32)
+{
+    uint32 ctLoop_u32;
+
+    for(ctLoop_u32 = 0u; ctLoop_u32 < (numBytes_u32 / 2u); ctLoop_u32++)
+    {
+        *xDest_pu16 = *xSrc_pcu16;
+        xDest_pu16++;
+        xSrc_pcu16++;
+    }
+
+    return;
+}
+# 281 ".\\output\\inc/..\\..\\bsw\\integration\\rba_BswSrv\\api\\rba_BswSrv.h"
+static __inline__ void rba_BswSrv_MemCopy8(uint8* xDest_pu8, const uint8* xSrc_pcu8, uint32 numBytes_u32)
+{
+    uint32 ctLoop_u32;
+
+    for(ctLoop_u32 = 0; ctLoop_u32 < numBytes_u32; ctLoop_u32++)
+    {
+        *xDest_pu8 = *xSrc_pcu8;
+        xDest_pu8++;
+        xSrc_pcu8++;
+    }
+
+    return;
+}
+# 349 ".\\output\\inc/..\\..\\bsw\\integration\\rba_BswSrv\\api\\rba_BswSrv.h"
+static __inline__ uint32 rba_BswSrv_MemCompare32(const uint32* xSrc1_pcu32, const uint32* xSrc2_pcu32, uint32 numBytes_u32)
+{
+    uint32 stEqual_u32 = 0u;
+    uint32 ctLoop_u32;
+
+    for(ctLoop_u32 = 0u; ctLoop_u32 < (numBytes_u32 / 4u); ctLoop_u32++)
+    {
+
+        if (*xSrc1_pcu32++ != *xSrc2_pcu32++)
+        {
+            stEqual_u32 = 1u;
+            break;
+        }
+    }
+    return stEqual_u32;
+}
+# 383 ".\\output\\inc/..\\..\\bsw\\integration\\rba_BswSrv\\api\\rba_BswSrv.h"
+static __inline__ uint32 rba_BswSrv_MemCompare16(const uint16* xSrc1_pcu16, const uint16* xSrc2_pcu16, uint32 numBytes_u32)
+{
+    uint32 stEqual_u32 = 0u;
+    uint32 ctLoop_u32;
+
+    for(ctLoop_u32 = 0; ctLoop_u32 < (numBytes_u32 / 2u); ctLoop_u32++)
+    {
+
+        if (*xSrc1_pcu16++ != *xSrc2_pcu16++)
+        {
+            stEqual_u32 = 1u;
+            break;
+        }
+    }
+    return stEqual_u32;
+}
+# 416 ".\\output\\inc/..\\..\\bsw\\integration\\rba_BswSrv\\api\\rba_BswSrv.h"
+static __inline__ uint32 rba_BswSrv_MemCompare8(const uint8* xSrc1_pcu8, const uint8* xSrc2_pcu8, uint32 numBytes_u32)
+{
+    uint32 stEqual_u32 = 0u;
+    uint32 ctLoop_u32;
+
+    for(ctLoop_u32 = 0; ctLoop_u32 < numBytes_u32; ctLoop_u32++)
+    {
+
+        if (*xSrc1_pcu8++ != *xSrc2_pcu8++)
+        {
+            stEqual_u32 = 1u;
+            break;
+        }
+    }
+    return stEqual_u32;
+}
+# 478 ".\\output\\inc/..\\..\\bsw\\integration\\rba_BswSrv\\api\\rba_BswSrv.h"
+static __inline__ void rba_BswSrv_MemSet32(uint32* xDest_pu32, uint32 xPattern_u32, uint32 numBytes_u32)
+{
+    uint32 ctLoop_u32;
+
+    for(ctLoop_u32 = 0; ctLoop_u32 < (numBytes_u32 / 4u); ctLoop_u32++)
+    {
+        *xDest_pu32 = xPattern_u32;
+        xDest_pu32++;
+    }
+    return;
+}
+# 505 ".\\output\\inc/..\\..\\bsw\\integration\\rba_BswSrv\\api\\rba_BswSrv.h"
+static __inline__ void rba_BswSrv_MemSet16(uint16* xDest_pu16, uint32 xPattern_u32, uint32 numBytes_u32)
+{
+    uint32 ctLoop_u32;
+
+    for(ctLoop_u32 = 0; ctLoop_u32 < (numBytes_u32 / 2u); ctLoop_u32++)
+    {
+        *xDest_pu16 = (uint16)xPattern_u32;
+        xDest_pu16++;
+    }
+    return;
+}
+# 530 ".\\output\\inc/..\\..\\bsw\\integration\\rba_BswSrv\\api\\rba_BswSrv.h"
+static __inline__ void rba_BswSrv_MemSet8(uint8* xDest_pu8, uint32 xPattern_u32, uint32 numBytes_u32)
+{
+    uint32 ctLoop_u32;
+
+    for(ctLoop_u32 = 0; ctLoop_u32 < numBytes_u32; ctLoop_u32++)
+    {
+        *xDest_pu8 = (uint8)xPattern_u32;
+        xDest_pu8++;
+    }
+    return;
+}
+# 2 ".\\output\\inc/rba_BswSrv.h" 2
+# 8 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\src\\rba_DiagLib_MemUtils.h" 2
+
+
+
+
+
+
+# 1 ".\\output\\inc/rba_DiagLib_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\integration\\rba_DiagLib_MemMap.h" 1
+# 76 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\integration\\rba_DiagLib_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 77 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\integration\\rba_DiagLib_MemMap.h" 2
+# 2 ".\\output\\inc/rba_DiagLib_MemMap.h" 2
+# 15 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\src\\rba_DiagLib_MemUtils.h" 2
+
+
+
+
+
+static __inline__ void rba_DiagLib_MemUtils_MemCpy(uint8* xDest_p, const uint8* xSrc_pc, uint32 numBytes_s32)
+{
+
+    (void) rba_BswSrv_MemCopy(xDest_p, xSrc_pc, numBytes_s32);
+}
+
+static __inline__ void rba_DiagLib_MemUtils_MemSet(uint8* xDest_pv, sint32 xPattern_u32, uint32 numBytes_s32)
+{
+
+    (void) rba_BswSrv_MemSet(xDest_pv, xPattern_u32, numBytes_s32);
+}
+
+static __inline__ sint32 rba_DiagLib_MemUtils_MemCmp(const uint8* xSrc1_pc, const uint8* xSrc2_pc, uint32 numBytes_s32)
+{
+
+    return rba_BswSrv_MemCompare(xSrc1_pc, xSrc2_pc, numBytes_s32);
+}
+
+
+# 1 ".\\output\\inc/rba_DiagLib_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\integration\\rba_DiagLib_MemMap.h" 1
+# 88 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\integration\\rba_DiagLib_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 89 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\integration\\rba_DiagLib_MemMap.h" 2
+# 2 ".\\output\\inc/rba_DiagLib_MemMap.h" 2
+# 40 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\src\\rba_DiagLib_MemUtils.h" 2
+# 2 ".\\output\\inc/rba_DiagLib_MemUtils.h" 2
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\lib\\Dem_Lib.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_Main.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\lib\\Dem_Lib.h" 2
+# 32 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\lib\\Dem_Lib.h"
+static __inline__ uint16 Dem_LibGetParamUI16( uint16 parameter )
+{
+    return parameter;
+}
+
+static __inline__ uint8 Dem_LibGetParamUI8( uint8 parameter )
+{
+    return parameter;
+}
+
+static __inline__ boolean Dem_LibGetParamBool( boolean parameter )
+{
+    return parameter;
+}
+
+
+
+static __inline__ uint32 Dem_BigEndian_ReadValueFromBuffer(const uint8 *buffer, uint32 size)
+{
+    uint32 i;
+    uint32 result = 0;
+
+    for(i=0; i<size; i++)
+    {
+        result = (uint32)( (result << 8) + buffer[i]) ;
+    }
+    return result;
+
+}
+static __inline__ void Dem_BigEndian_WriteValue2Buffer(uint8 *buffer, uint32 value, uint32 size)
+{
+    while (size > 0u)
+    {
+        size--;
+        buffer[size] = (uint8) (value & 0xFFu);
+        value = value / 0x100u;
+    }
+}
+
+static __inline__ uint32 Dem_LittleEndian_ReadValueFromBuffer(const uint8 *buffer, uint32 size)
+{
+    uint32 result = 0;
+    while (size > 0u)
+    {
+        size--;
+        result = (uint32) ((result << 8) + buffer[size]);
+    }
+    return result;
+}
+
+static __inline__ void Dem_LittleEndian_WriteValue2Buffer(uint8 *buffer, uint32 value, uint32 size)
+{
+    uint32 i = 0;
+
+    while (i < size)
+    {
+        buffer[i] = (uint8) (value & 0xFFu);
+        value = value / 0x100u;
+        i++;
+    }
+}
+# 2 ".\\output\\inc/Dem_Lib.h" 2
+# 12 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_OperationCycle_DataStructures.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_OperationCycle.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_OperationCycle_DataStructures.h" 2
+
+typedef struct {
+ Dem_OperationCycleList DependentCycleMask;
+ boolean IsAllowedToBeStartedDirectly;
+} Dem_Cfg_OperationCycleType;
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 69 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 70 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 21 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_OperationCycle_DataStructures.h" 2
+
+extern const Dem_Cfg_OperationCycleType Dem_Cfg_OperationCycle[5];
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 82 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 83 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 26 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_OperationCycle_DataStructures.h" 2
+
+static __inline__ Dem_OperationCycleList Dem_Cfg_OperationCycle_GetDependentCycleMask(
+  Dem_OperationCycleIdType indx) {
+ do {} while (0);
+ return Dem_Cfg_OperationCycle[indx].DependentCycleMask;
+}
+
+static __inline__ boolean Dem_Cfg_OperationCycle_GetIsAllowedToBeStartedDirectly(
+  Dem_OperationCycleIdType indx) {
+ do {} while (0);
+ return Dem_Cfg_OperationCycle[indx].IsAllowedToBeStartedDirectly;
+}
+# 2 ".\\output\\inc/Dem_Cfg_OperationCycle_DataStructures.h" 2
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\main\\Dem_OperationCycle.h" 2
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\main\\Dem_OperationCycle.h" 2
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 23 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 24 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 12 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\main\\Dem_OperationCycle.h" 2
+
+extern Dem_OperationCycleList Dem_OperationCycleStates;
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 36 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 37 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 17 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\main\\Dem_OperationCycle.h" 2
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 92 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 93 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 20 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\main\\Dem_OperationCycle.h" 2
+
+static __inline__ boolean Dem_IsOperationCycleStarted(Dem_OperationCycleIdType OperationCycleId)
+{
+    return rba_DiagLib_Bit8IsBitSet(Dem_OperationCycleStates, OperationCycleId);
+}
+
+void Dem_OperationCycleInit(void);
+void Dem_OperationCycleInitCheckNvm(void);
+boolean Dem_OperationCyclesMainFunction(void);
+Std_ReturnType Dem_ResetCycleQualified(Dem_OperationCycleIdType OperationCycleId);
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 33 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\main\\Dem_OperationCycle.h" 2
+# 2 ".\\output\\inc/Dem_OperationCycle.h" 2
+# 12 "bsw\\Dem\\src\\evmem\\Dem_EvMem.h" 2
+
+# 1 "bsw\\Dem\\src\\evmem\\Dem_EvMemTypes.h" 1
+# 11 "bsw\\Dem\\src\\evmem\\Dem_EvMemTypes.h"
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 12 "bsw\\Dem\\src\\evmem\\Dem_EvMemTypes.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EvMem.h" 1
+# 13 "bsw\\Dem\\src\\evmem\\Dem_EvMemTypes.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EnvMain.h" 1
+# 14 "bsw\\Dem\\src\\evmem\\Dem_EvMemTypes.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EnvDataElement.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EnvDataElement.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EnvDataElement.h"
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EnvDataElement.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EnvDataElement_DataSize.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EnvDataElement_DataSize.h"
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EnvDataElement_DataSize.h" 2
+# 12 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EnvDataElement.h" 2
+# 2 ".\\output\\inc/Dem_Cfg_EnvDataElement.h" 2
+# 15 "bsw\\Dem\\src\\evmem\\Dem_EvMemTypes.h" 2
+
+# 1 ".\\output\\inc/Dem_Cfg_DTCs.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_DTCs.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_DTCs.h"
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_DTCs.h" 2
+# 40 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_DTCs.h"
+typedef uint8 Dem_DtcStateType;
+# 2 ".\\output\\inc/Dem_Cfg_DTCs.h" 2
+# 17 "bsw\\Dem\\src\\evmem\\Dem_EvMemTypes.h" 2
+
+# 1 ".\\output\\inc/Dem_Cfg_DTC_DataStructures.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_DTC_DataStructures.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_DTC_DataStructures.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_DTCs.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_DTC_DataStructures.h" 2
+# 1 ".\\output\\inc/Dem_Prv_Det.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\lib\\Dem_Prv_Det.h" 1
+# 2 ".\\output\\inc/Dem_Prv_Det.h" 2
+# 12 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_DTC_DataStructures.h" 2
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_DTC_DataStructures.h" 2
+# 1 ".\\output\\inc/Dem_Lib.h" 1
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_DTC_DataStructures.h" 2
+# 1 ".\\output\\inc/rba_DiagLib.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\api\\rba_DiagLib.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\api\\rba_DiagLib.h"
+# 1 ".\\output\\inc/rba_DiagLib_Bits8.h" 1
+# 12 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\api\\rba_DiagLib.h" 2
+# 1 ".\\output\\inc/rba_DiagLib_Bits16.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\api\\rba_DiagLib.h" 2
+# 1 ".\\output\\inc/rba_DiagLib_Bits32.h" 1
+# 14 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\api\\rba_DiagLib.h" 2
+# 1 ".\\output\\inc/rba_DiagLib_ByteOrderUtils.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\src\\rba_DiagLib_ByteOrderUtils.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 7 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\src\\rba_DiagLib_ByteOrderUtils.h" 2
+# 1 ".\\output\\inc/Compiler.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\src\\rba_DiagLib_ByteOrderUtils.h" 2
+# 1 ".\\output\\inc/rba_BswSrv.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\src\\rba_DiagLib_ByteOrderUtils.h" 2
+
+
+# 1 ".\\output\\inc/rba_DiagLib_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\integration\\rba_DiagLib_MemMap.h" 1
+# 76 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\integration\\rba_DiagLib_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 77 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\integration\\rba_DiagLib_MemMap.h" 2
+# 2 ".\\output\\inc/rba_DiagLib_MemMap.h" 2
+# 12 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\src\\rba_DiagLib_ByteOrderUtils.h" 2
+# 36 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\src\\rba_DiagLib_ByteOrderUtils.h"
+static __inline__ uint16 rba_DiagLib_ByteOrderUtils_SwapByteOrderS(uint16 val)
+{
+    return rba_BswSrv_ByteOrderSwap16(val);
+}
+
+static __inline__ uint32 rba_DiagLib_ByteOrderUtils_SwapByteOrderL(uint32 val)
+{
+    return rba_BswSrv_ByteOrderSwap32(val);
+}
+
+static __inline__ boolean rba_DiagLib_ByteOrderUtils_IsBigEndian(void)
+{
+    boolean isBigEndian = (1 != 0);
+
+    isBigEndian = (0 != 0);
+
+    return isBigEndian;
+}
+
+static __inline__ uint16 rba_DiagLib_ByteOrderUtils_Htons(uint16 val)
+{
+    uint16 ret = val;
+
+    ret = rba_DiagLib_ByteOrderUtils_SwapByteOrderS(val);
+
+    return ret;
+}
+
+static __inline__ uint32 rba_DiagLib_ByteOrderUtils_Htonl(uint32 val)
+{
+    uint32 ret = val;
+
+    ret = rba_DiagLib_ByteOrderUtils_SwapByteOrderL(val);
+
+    return ret;
+}
+
+static __inline__ uint16 rba_DiagLib_ByteOrderUtils_Ntohs(uint16 val)
+{
+    uint16 ret = val;
+
+    ret = rba_DiagLib_ByteOrderUtils_SwapByteOrderS(val);
+
+    return ret;
+}
+
+static __inline__ uint32 rba_DiagLib_ByteOrderUtils_Ntohl(uint32 val)
+{
+    uint32 ret = val;
+
+    ret = rba_DiagLib_ByteOrderUtils_SwapByteOrderL(val);
+
+    return ret;
+}
+
+
+
+boolean rba_DiagLib_ByteOrderUtils_Dummy(void);
+
+
+# 1 ".\\output\\inc/rba_DiagLib_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\integration\\rba_DiagLib_MemMap.h" 1
+# 88 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\integration\\rba_DiagLib_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 89 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\integration\\rba_DiagLib_MemMap.h" 2
+# 2 ".\\output\\inc/rba_DiagLib_MemMap.h" 2
+# 97 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\src\\rba_DiagLib_ByteOrderUtils.h" 2
+# 2 ".\\output\\inc/rba_DiagLib_ByteOrderUtils.h" 2
+# 15 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\api\\rba_DiagLib.h" 2
+# 1 ".\\output\\inc/rba_DiagLib_MemUtils.h" 1
+# 16 ".\\output\\inc/..\\..\\bsw\\Rba_DiagLib\\api\\rba_DiagLib.h" 2
+# 2 ".\\output\\inc/rba_DiagLib.h" 2
+# 15 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_DTC_DataStructures.h" 2
+# 49 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_DTC_DataStructures.h"
+typedef struct {
+ uint8 data3;
+} Dem_Cfg_Dtc_8Type;
+
+typedef struct {
+ uint16 data2;
+} Dem_Cfg_Dtc_16Type;
+
+typedef struct {
+ uint32 data1;
+} Dem_Cfg_Dtc_32Type;
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 69 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 70 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 63 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_DTC_DataStructures.h" 2
+extern const Dem_Cfg_Dtc_8Type Dem_Cfg_Dtc_8[501];
+extern const Dem_Cfg_Dtc_16Type Dem_Cfg_Dtc_16[501];
+extern const Dem_Cfg_Dtc_32Type Dem_Cfg_Dtc_32[501];
+
+static __inline__ Dem_DTCKindType Dem_Cfg_Dtc_GetKind(Dem_DtcIdType indx) {
+ do {} while (0);
+ return (Dem_DTCKindType)(
+   rba_DiagLib_Bit32GetBits(Dem_Cfg_Dtc_32[indx].data1, 0, 2));
+}
+
+static __inline__ Dem_DTCSeverityType Dem_Cfg_Dtc_GetSeverity(Dem_DtcIdType indx) {
+ do {} while (0);
+ return Dem_Cfg_Dtc_8[indx].data3;
+}
+
+static __inline__ boolean Dem_Cfg_Dtc_GetNv_Storage(Dem_DtcIdType indx) {
+ do {} while (0);
+ return rba_DiagLib_Bit32IsBitSet(Dem_Cfg_Dtc_32[indx].data1, 2);
+}
+
+static __inline__ uint8 Dem_Cfg_Dtc_GetFunc_Unit(Dem_DtcIdType indx) {
+ do {} while (0);
+ return (uint8)(rba_DiagLib_Bit32GetSingleBit(Dem_Cfg_Dtc_32[indx].data1, 3));
+}
+
+static __inline__ boolean Dem_Cfg_Dtc_GetDtcCode_Is_Index(Dem_DtcIdType indx) {
+ do {} while (0);
+ return rba_DiagLib_Bit32IsBitSet(Dem_Cfg_Dtc_32[indx].data1, 4);
+}
+
+static __inline__ Dem_DtcCodeType Dem_Cfg_Dtc_GetObd_DtcCode(Dem_DtcIdType indx) {
+ do {} while (0);
+ return Dem_Cfg_Dtc_16[indx].data2;
+}
+
+static __inline__ Dem_DtcCodeType Dem_Cfg_Dtc_GetDtcCode(Dem_DtcIdType indx) {
+ do {} while (0);
+ return (Dem_DtcCodeType)(
+   rba_DiagLib_Bit32GetBits(Dem_Cfg_Dtc_32[indx].data1, 5, 24));
+}
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 82 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 83 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_DTC_DataStructures.h" 2
+# 2 ".\\output\\inc/Dem_Cfg_DTC_DataStructures.h" 2
+# 19 "bsw\\Dem\\src\\evmem\\Dem_EvMemTypes.h" 2
+# 90 "bsw\\Dem\\src\\evmem\\Dem_EvMemTypes.h"
+   typedef uint8 Dem_EvMemOccurrenceCounterType;
+# 99 "bsw\\Dem\\src\\evmem\\Dem_EvMemTypes.h"
+   typedef uint8 Dem_EvMemAgingCounterType;
+# 131 "bsw\\Dem\\src\\evmem\\Dem_EvMemTypes.h"
+typedef union
+{
+  struct
+  {
+      uint16 Status;
+      uint16 EventId;
+  } Data;
+
+
+
+} Dem_EvMemHdrType;
+
+
+typedef struct
+{
+   Dem_EvMemHdrType Hdr;
+# 167 "bsw\\Dem\\src\\evmem\\Dem_EvMemTypes.h"
+    uint8 Data[(76u + 10u + 0u)];
+    uint8 FailureCounter;
+
+
+   uint8 FreezeFrameCounter;
+# 181 "bsw\\Dem\\src\\evmem\\Dem_EvMemTypes.h"
+   uint8 ObdMilCounter;
+   boolean ObdMilResetThisCycle;
+   boolean ObdFreezeFrameAvailable;
+# 193 "bsw\\Dem\\src\\evmem\\Dem_EvMemTypes.h"
+   Dem_EvMemAgingCounterType AgingCounter;
+
+
+
+
+
+   Dem_EvMemOccurrenceCounterType OccurrenceCounter;
+
+
+   Dem_TriggerType Trigger;
+
+
+   uint32 TimeId;
+
+
+   uint32 ObdFFTimeId;
+# 221 "bsw\\Dem\\src\\evmem\\Dem_EvMemTypes.h"
+} Dem_EvMemEventMemoryType;
+# 14 "bsw\\Dem\\src\\evmem\\Dem_EvMem.h" 2
+# 1 "bsw\\Dem\\src\\evmem\\Dem_EvMemBase.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Helpers.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\lib\\Dem_Helpers.h" 1
+# 2 ".\\output\\inc/Dem_Helpers.h" 2
+# 7 "bsw\\Dem\\src\\evmem\\Dem_EvMemBase.h" 2
+# 1 ".\\output\\inc/Dem_Events.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Internal.h" 1
+# 7 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h" 2
+
+# 1 ".\\output\\inc/Dem_Array.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\lib\\Dem_Array.h" 1
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Cfg_Main.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\lib\\Dem_Array.h" 2
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\lib\\Dem_Array.h" 2
+# 2 ".\\output\\inc/Dem_Array.h" 2
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h" 2
+# 1 ".\\output\\inc/Dem_BitArray.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\lib\\Dem_BitArray.h" 1
+
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\lib\\Dem_BitArray.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\lib\\Dem_Array.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\lib\\Dem_BitArray.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\lib\\Dem_Lock.h" 1
+
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Cfg_Main.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\lib\\Dem_Lock.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_Events.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_Events.h" 1
+# 2 ".\\output\\inc/Dem_Cfg_Events.h" 2
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\lib\\Dem_Lock.h" 2
+# 1 ".\\output\\inc/Dem_Main.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\main\\Dem_Main.h" 1
+
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\main\\Dem_Main.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_Main.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\main\\Dem_Main.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_Events.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\main\\Dem_Main.h" 2
+
+
+typedef uint8 Dem_OpMoStateType;
+# 23 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\main\\Dem_Main.h"
+typedef uint8 Dem_FimStateType;
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 46 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 47 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 31 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\main\\Dem_Main.h" 2
+extern Dem_OpMoStateType Dem_OpMoState;
+extern Dem_FimStateType Dem_FimState;
+extern Dem_boolean_least Dem_TestFailedStatusInitialized;
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 59 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 60 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 37 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\main\\Dem_Main.h" 2
+# 112 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\main\\Dem_Main.h"
+static __inline__ Dem_boolean_least Dem_OpMoIsInitialized(void)
+{
+   return (Dem_OpMoState == 2);
+}
+
+static __inline__ Dem_boolean_least Dem_Is_Fim_Initialized(void)
+{
+    return (Dem_FimState == 2);
+}
+# 129 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\main\\Dem_Main.h"
+static __inline__ Dem_boolean_least Dem_GetTestFailedInitState(void)
+{
+    return Dem_TestFailedStatusInitialized;
+}
+# 2 ".\\output\\inc/Dem_Main.h" 2
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\lib\\Dem_Lock.h" 2
+
+
+
+
+# 1 ".\\output\\inc/Dem_Cfg_SchM.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_SchM.h" 1
+
+
+
+
+# 1 ".\\output\\inc/SchM_Default.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\SchM_Default.h" 1
+# 22 ".\\output\\inc/..\\..\\bsw\\integration\\SchM_Default.h"
+# 1 ".\\output\\inc/Os.h" 1
+# 23 ".\\output\\inc/..\\..\\bsw\\integration\\SchM_Default.h" 2
+
+# 1 ".\\output\\inc/Compiler.h" 1
+# 25 ".\\output\\inc/..\\..\\bsw\\integration\\SchM_Default.h" 2
+# 2 ".\\output\\inc/SchM_Default.h" 2
+# 6 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_SchM.h" 2
+# 2 ".\\output\\inc/Dem_Cfg_SchM.h" 2
+# 16 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\lib\\Dem_Lock.h" 2
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\lib\\Dem_BitArray.h" 2
+# 33 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\lib\\Dem_BitArray.h"
+static __inline__ void Dem_BitArraySetBit(uint32 buffer[], uint32 bit_position)
+{
+
+    const uint32 element_pos = ((uint32)(bit_position / (sizeof(uint32) * 8u)));
+    const uint32 local_bitpos = ((uint32)(bit_position % (sizeof(uint32) * 8u)));
+    const uint32 mask =
+            ((uint32) 1) << local_bitpos;
+
+    buffer[element_pos] |= mask;
+    return;
+}
+
+
+static __inline__ void Dem_BitArrayClearBit(uint32 buffer[], uint32 bit_position)
+{
+
+    const uint32 element_pos = ((uint32)(bit_position / (sizeof(uint32) * 8u)));
+    const uint32 local_bitpos = ((uint32)(bit_position % (sizeof(uint32) * 8u)));
+    const uint32 mask =
+            ((uint32) 1) << local_bitpos;
+
+    buffer[element_pos] &= (uint32) ~ mask;
+    return;
+}
+
+
+
+
+static __inline__ void Dem_BitArrayOverwriteBit(uint32 buffer[],
+                 uint32 bit_position, Dem_boolean_least will_bit_be_set)
+{
+    if (will_bit_be_set) {
+        Dem_BitArraySetBit(buffer, bit_position);
+    } else {
+        Dem_BitArrayClearBit(buffer, bit_position);
+    }
+    return;
+}
+
+
+
+
+static __inline__ Dem_boolean_least Dem_BitArrayIsBitSet(const uint32 buffer[], uint32 bit_position)
+{
+
+    const uint32 element_pos = ((uint32)(bit_position / (sizeof(uint32) * 8u)));
+    const uint32 local_bitpos = ((uint32)(bit_position % (sizeof(uint32) * 8u)));
+    const uint32 mask =
+            ((uint32) 1) << local_bitpos;
+
+
+
+
+    return (buffer[element_pos] & mask) != 0u;
+}
+
+
+
+
+
+static __inline__ void Dem_BitArrayClearAll (uint32 buffer[], uint32 number_of_bits)
+{
+    uint32 i;
+    for (i = 0; i < ((((number_of_bits)-1u) >> 5u)+1UL); i++) {
+        buffer[i] = 0U;
+    }
+    return;
+}
+# 2 ".\\output\\inc/Dem_BitArray.h" 2
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h" 2
+# 1 ".\\output\\inc/rba_DiagLib_Bits8.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h" 2
+# 1 ".\\output\\inc/rba_DiagLib_Bits16.h" 1
+# 12 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h" 2
+# 1 ".\\output\\inc/rba_DiagLib_Bits32.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h" 2
+# 1 ".\\output\\inc/Dem_ISO14229Byte.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\lib\\Dem_ISO14229Byte.h" 1
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\lib\\Dem_ISO14229Byte.h" 2
+# 1 ".\\output\\inc/rba_DiagLib_Bits8.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\lib\\Dem_ISO14229Byte.h" 2
+# 122 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\lib\\Dem_ISO14229Byte.h"
+static __inline__ Dem_boolean_least Dem_ISO14229ByteIsTestFailed (uint8 self)
+{
+    return rba_DiagLib_Bit8IsBitSet (self, 0u);
+}
+
+
+
+static __inline__ Dem_boolean_least Dem_ISO14229ByteIsTestFailedTOC (uint8 self)
+{
+    return rba_DiagLib_Bit8IsBitSet (self, 1u);
+}
+
+
+
+static __inline__ Dem_boolean_least Dem_ISO14229ByteIsTestFailedSLC (uint8 self)
+{
+    return rba_DiagLib_Bit8IsBitSet (self, 5u);
+}
+
+
+
+static __inline__ Dem_boolean_least Dem_ISO14229ByteIsTestNotCompleteTOC (uint8 self)
+{
+    return rba_DiagLib_Bit8IsBitSet (self, 6u);
+}
+
+
+
+static __inline__ Dem_boolean_least Dem_ISO14229ByteIsTestNotCompleteSLC (uint8 self)
+{
+    return rba_DiagLib_Bit8IsBitSet (self, 4u);
+}
+
+
+
+static __inline__ Dem_boolean_least Dem_ISO14229ByteIsTestCompleteTOC (uint8 self)
+{
+    return !rba_DiagLib_Bit8IsBitSet (self, 6u);
+}
+
+
+
+static __inline__ Dem_boolean_least Dem_ISO14229ByteIsPendingDTC (uint8 self)
+{
+    return rba_DiagLib_Bit8IsBitSet (self, 2u);
+}
+
+
+
+static __inline__ Dem_boolean_least Dem_ISO14229ByteIsConfirmedDTC (uint8 self)
+{
+    return rba_DiagLib_Bit8IsBitSet (self, 3u);
+}
+
+
+static __inline__ Dem_boolean_least Dem_ISO14229ByteIsWarningIndicatorRequested (uint8 self)
+{
+    return rba_DiagLib_Bit8IsBitSet (self, 7u);
+}
+
+
+
+
+
+static __inline__ void Dem_ISO14229ByteSetTestFailed (uint8 *self, Dem_boolean_least setOrReset)
+{
+    rba_DiagLib_Bit8OverwriteBit (self, 0u, setOrReset);
+}
+
+
+
+static __inline__ void Dem_ISO14229ByteSetTestFailedTOC (uint8 *self, Dem_boolean_least setOrReset)
+{
+    rba_DiagLib_Bit8OverwriteBit (self, 1u, setOrReset);
+}
+
+
+
+static __inline__ void Dem_ISO14229ByteSetTestFailedSLC (uint8 *self, Dem_boolean_least setOrReset)
+{
+    rba_DiagLib_Bit8OverwriteBit (self, 5u, setOrReset);
+}
+
+
+
+static __inline__ void Dem_ISO14229ByteSetTestNotCompleteTOC (uint8 *self, Dem_boolean_least setOrReset)
+{
+    rba_DiagLib_Bit8OverwriteBit (self, 6u, setOrReset);
+}
+
+
+
+static __inline__ void Dem_ISO14229ByteSetTestCompleteTOC (uint8 *self, Dem_boolean_least setOrReset)
+{
+    rba_DiagLib_Bit8OverwriteBit (self, 6u, !setOrReset);
+}
+
+
+
+static __inline__ void Dem_ISO14229ByteSetTestCompleteSLC (uint8 *self, Dem_boolean_least setOrReset)
+{
+    rba_DiagLib_Bit8OverwriteBit (self, 4u, !setOrReset);
+}
+
+
+
+static __inline__ void Dem_ISO14229ByteSetPendingDTC (uint8 *self, Dem_boolean_least setOrReset)
+{
+    rba_DiagLib_Bit8OverwriteBit (self, 2u, setOrReset);
+}
+
+
+
+static __inline__ void Dem_ISO14229ByteSetConfirmedDTC (uint8 *self, Dem_boolean_least setOrReset)
+{
+    rba_DiagLib_Bit8OverwriteBit (self, 3u, setOrReset);
+}
+
+
+
+static __inline__ void Dem_ISO14229ByteSetWarningIndicatorRequested (uint8 *self, Dem_boolean_least setOrReset)
+{
+    rba_DiagLib_Bit8OverwriteBit (self, 7u, setOrReset);
+}
+# 2 ".\\output\\inc/Dem_ISO14229Byte.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h" 2
+
+# 1 ".\\output\\inc/Dem_Clear.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\main\\Dem_Clear.h" 1
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Cfg_Clear.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_Clear.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_Clear.h"
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_Clear.h" 2
+# 29 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_Clear.h"
+static __inline__ void Dem_ClearDtcNotificationStartCallbacks(uint32 DTC,
+  Dem_DTCFormatType DTCFormat, Dem_DTCOriginType DTCOrigin) {
+ ((void)(DTC));
+ ((void)(DTCFormat));
+ ((void)(DTCOrigin));
+}
+static __inline__ void Dem_ClearDtcNotificationFinishCallbacks(uint32 DTC,
+  Dem_DTCFormatType DTCFormat, Dem_DTCOriginType DTCOrigin) {
+ ((void)(DTC));
+ ((void)(DTCFormat));
+ ((void)(DTCOrigin));
+}
+# 2 ".\\output\\inc/Dem_Cfg_Clear.h" 2
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\main\\Dem_Clear.h" 2
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\main\\Dem_Clear.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_Events.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\main\\Dem_Clear.h" 2
+# 1 ".\\output\\inc/Dem_Mapping.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\map\\Dem_Mapping.h" 1
+
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\map\\Dem_Mapping.h" 2
+# 1 ".\\output\\inc/Dem_Lib.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\map\\Dem_Mapping.h" 2
+
+# 1 ".\\output\\inc/Dem_Cfg_EventId.h" 1
+# 12 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\map\\Dem_Mapping.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_DtcId.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\map\\Dem_Mapping.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_NodeId.h" 1
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\map\\Dem_Mapping.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_Nodes.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_Nodes.h" 1
+# 2 ".\\output\\inc/Dem_Cfg_Nodes.h" 2
+# 15 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\map\\Dem_Mapping.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EventIndicators.h" 1
+# 16 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\map\\Dem_Mapping.h" 2
+
+
+
+
+static __inline__ Dem_boolean_least Dem_isEventIdValid(Dem_EventIdType checkID)
+{
+   return ((0 < checkID) && (checkID <= 500u));
+}
+
+
+
+typedef uint16_least Dem_EventIdIterator;
+
+
+
+static __inline__ void Dem_EventIdIteratorNew(Dem_EventIdIterator *it)
+{
+   (*it) = 1;
+}
+
+static __inline__ Dem_boolean_least Dem_EventIdIteratorIsValid(const Dem_EventIdIterator *it)
+{
+   return (*it <= 500u);
+}
+
+static __inline__ void Dem_EventIdIteratorNext(Dem_EventIdIterator *it)
+{
+   (*it)++;
+}
+
+static __inline__ Dem_EventIdType Dem_EventIdIteratorCurrent(const Dem_EventIdIterator *it)
+{
+   return (Dem_EventIdType)(*it);
+}
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\map\\Dem_Mapping.h"
+static __inline__ Dem_ComponentIdType Dem_NodeIdFromEventId (Dem_EventIdType id)
+{
+ ((void)(id));
+ return 0;
+}
+
+static __inline__ Dem_boolean_least Dem_NodeIdIsValid (uint16 checkID)
+{
+ ((void)(checkID));
+ return (0 != 0);
+}
+# 130 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\map\\Dem_Mapping.h"
+typedef struct {
+   const Dem_EventIdType *mappingTable;
+   uint16 length;
+} Dem_MapDtcIdToEventIdType;
+
+
+typedef Dem_DTCGroupIdType Dem_MapDtcIdToGroupIdType;
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 69 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 70 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 139 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\map\\Dem_Mapping.h" 2
+extern const Dem_MapDtcIdToEventIdType Dem_MapDtcIdToEventId[(500u +1u)];
+extern const Dem_DtcIdType Dem_MapEventIdToDtcId[(500u +1u)];
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 82 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 83 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 143 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\map\\Dem_Mapping.h" 2
+
+
+
+static __inline__ Dem_boolean_least Dem_EventIdIsDtcAssigned (Dem_EventIdType id)
+{
+   return (Dem_MapEventIdToDtcId[id] != 0u);
+}
+
+
+static __inline__ Dem_boolean_least Dem_isDtcIdValid (Dem_DtcIdType id)
+{
+   return ((0 < id) && (id <= 500u));
+}
+
+
+static __inline__ Dem_DtcIdType Dem_DtcIdFromEventId (Dem_EventIdType id)
+{
+   return Dem_MapEventIdToDtcId[id];
+}
+# 174 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\map\\Dem_Mapping.h"
+static __inline__ Dem_EventIdType Dem_DtcIdGetFirstEventId (Dem_DtcIdType dtcid)
+{
+
+
+
+   return Dem_MapDtcIdToEventId[dtcid].mappingTable[0];
+
+}
+
+static __inline__ uint16 Dem_DtcIdGetNumberOfEvents (Dem_DtcIdType dtcid)
+{
+
+
+
+
+   return Dem_MapDtcIdToEventId[dtcid].length;
+
+
+}
+
+
+
+
+typedef uint16_least Dem_DtcIdIterator;
+
+
+
+
+static __inline__ void Dem_DtcIdIteratorNew(Dem_DtcIdIterator *it)
+{
+   (*it) = 1;
+}
+
+static __inline__ Dem_boolean_least Dem_DtcIdIteratorIsValid(const Dem_DtcIdIterator *it)
+{
+   return ((0u < *it) && (*it <= 500u));
+}
+
+static __inline__ void Dem_DtcIdIteratorNext(Dem_DtcIdIterator *it)
+{
+   (*it)++;
+}
+
+static __inline__ Dem_DtcIdType Dem_DtcIdIteratorCurrent(const Dem_DtcIdIterator *it)
+{
+   return (Dem_DtcIdType)(*it);
+}
+
+static __inline__ void Dem_DtcIdIteratorInvalidate(Dem_DtcIdIterator *it)
+{
+   (*it) =0;
+}
+
+
+
+
+typedef uint8_least Dem_DtcGroupIdIterator;
+
+static __inline__ void Dem_DtcGroupIdIteratorNew(Dem_DtcGroupIdIterator *it)
+{
+   (*it) = 1;
+}
+
+static __inline__ Dem_boolean_least Dem_DtcGroupIdIteratorIsValid(const Dem_DtcGroupIdIterator *it)
+{
+   return (*it <= 2u);
+}
+
+static __inline__ void Dem_DtcGroupIdIteratorNext(Dem_DtcGroupIdIterator *it)
+{
+   (*it)++;
+}
+
+static __inline__ Dem_DTCGroupIdType Dem_DtcGroupIdIteratorCurrent(const Dem_DtcGroupIdIterator *it)
+{
+   return (Dem_DTCGroupIdType)(*it);
+}
+
+static __inline__ Dem_boolean_least Dem_DtcGroupIdIsValid (Dem_DTCGroupIdType dtcGroupID)
+{
+
+
+
+
+    return ((dtcGroupID != 0u) && (dtcGroupID <= 2u));
+}
+
+
+
+
+
+typedef uint16_least Dem_EventIndicatorAttributeIterator;
+
+static __inline__ void Dem_EventIndicatorAttributeIteratorNew(Dem_EventIdType EventId, Dem_EventIndicatorAttributeIterator *it)
+{
+   (*it) = ((EventId - 1) * 1u) ;
+}
+
+static __inline__ Dem_boolean_least Dem_EventIndicatorAttributeIsValid(Dem_EventIdType EventId, const Dem_EventIndicatorAttributeIterator *it)
+{
+   return (*it < (EventId * 1u));
+}
+
+static __inline__ void Dem_EventIndicatorAttributeNext(Dem_EventIndicatorAttributeIterator *it)
+{
+   (*it)++;
+}
+
+static __inline__ uint16_least Dem_EventIndicatorAttributeCurrent(const Dem_EventIndicatorAttributeIterator *it)
+{
+   return (uint16_least)(*it);
+}
+
+
+
+static __inline__ Dem_boolean_least Dem_isIndicatorIdValid (uint8 checkID)
+{
+ return ((checkID != 0u) && (checkID <= 2u));
+}
+# 301 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\map\\Dem_Mapping.h"
+typedef struct {
+   const Dem_EventIdType* it;
+   const Dem_EventIdType* end;
+} Dem_EventIdListIterator;
+
+
+static __inline__ void Dem_EventIdListIteratorNewFromDtcId(Dem_EventIdListIterator *it, Dem_DtcIdType dtcid)
+{
+
+   if (!(Dem_isDtcIdValid(dtcid)))
+   {
+    do {Dem_EventIdCausingLastDetError = 0u; Det_ReportError(54,0,0xBD,0);}while(0);
+   }
+
+
+
+
+   it->it = &Dem_MapDtcIdToEventId[dtcid].mappingTable[0];
+   it->end = &Dem_MapDtcIdToEventId[dtcid].mappingTable[Dem_MapDtcIdToEventId[dtcid].length];
+
+}
+
+static __inline__ Dem_boolean_least Dem_EventIdListIteratorIsValid(const Dem_EventIdListIterator *it)
+{
+   return ((Dem_boolean_least)(it->it < it->end));
+}
+
+static __inline__ void Dem_EventIdListIteratorNext(Dem_EventIdListIterator *it)
+{
+   (it->it)++;
+}
+
+static __inline__ Dem_EventIdType Dem_EventIdListIteratorCurrent(const Dem_EventIdListIterator *it)
+{
+   return (Dem_EventIdType)(*(it->it));
+}
+
+
+
+
+
+
+typedef struct {
+ Dem_DtcIdType it;
+ Dem_DtcIdType end;
+} Dem_DtcIdListIterator;
+
+typedef struct {
+ Dem_DtcIdType dtcStartIndex;
+ Dem_DtcIdType dtcEndIndex;
+} Dem_DtcGroupIdMapToDtcIdType;
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 69 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 70 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 354 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\map\\Dem_Mapping.h" 2
+extern const Dem_DtcGroupIdMapToDtcIdType Dem_DtcGroupIdMapToDtcId[(2u +1u)];
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 82 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 83 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 357 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\map\\Dem_Mapping.h" 2
+
+
+static __inline__ void Dem_DtcIdListIteratorNewFromDtcGroup(Dem_DtcIdListIterator *it, Dem_DTCGroupIdType dtcGroup)
+{
+ if (!(Dem_DtcGroupIdIsValid(dtcGroup)))
+ {
+  do {Dem_EventIdCausingLastDetError = 0u; Det_ReportError(54,0,0xC5,0);}while(0);
+ }
+
+ it->it = Dem_DtcGroupIdMapToDtcId[dtcGroup].dtcStartIndex;
+ it->end = Dem_DtcGroupIdMapToDtcId[dtcGroup].dtcEndIndex;
+}
+
+static __inline__ Dem_boolean_least Dem_DtcIdListIteratorIsValid(const Dem_DtcIdListIterator *it)
+{
+   return (it->it <= it->end);
+}
+
+static __inline__ void Dem_DtcIdListIteratorNext(Dem_DtcIdListIterator *it)
+{
+   (it->it)++;
+}
+
+static __inline__ Dem_DtcIdType Dem_DtcIdListIteratorCurrent(const Dem_DtcIdListIterator *it)
+{
+   return (it->it);
+}
+# 2 ".\\output\\inc/Dem_Mapping.h" 2
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\main\\Dem_Clear.h" 2
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 92 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 93 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\main\\Dem_Clear.h" 2
+
+void Dem_ClearMainFunction(void);
+boolean Dem_ClearIsInProgress (void);
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 20 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\main\\Dem_Clear.h" 2
+# 2 ".\\output\\inc/Dem_Clear.h" 2
+# 16 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_Events.h" 1
+# 17 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_Deb.h" 1
+# 18 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EvBuff.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EvBuff.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EvBuff.h"
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EvBuff.h" 2
+# 2 ".\\output\\inc/Dem_Cfg_EvBuff.h" 2
+# 19 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_Nodes.h" 1
+# 20 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventCategory.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventCategory.h"
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventCategory.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EventCategory.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventCategory.h" 2
+
+typedef uint8 Dem_EvtCategoryPriorityType;
+# 21 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h" 2
+# 1 ".\\output\\inc/Dem_StorageCondition.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\stoco\\Dem_StorageCondition.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\stoco\\Dem_StorageCondition.h"
+# 1 ".\\output\\inc/Dem_Cfg_StorageCondition.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\stoco\\Dem_StorageCondition.h" 2
+# 1 ".\\output\\inc/Dem_Mapping.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\stoco\\Dem_StorageCondition.h" 2
+# 1 ".\\output\\inc/Dem_Lock.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\lib\\Dem_Lock.h" 1
+# 2 ".\\output\\inc/Dem_Lock.h" 2
+# 12 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\stoco\\Dem_StorageCondition.h" 2
+# 1 ".\\output\\inc/Dem_Helpers.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\stoco\\Dem_StorageCondition.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_Events.h" 1
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\stoco\\Dem_StorageCondition.h" 2
+# 54 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\stoco\\Dem_StorageCondition.h"
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 92 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 93 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 55 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\stoco\\Dem_StorageCondition.h" 2
+
+
+
+
+Dem_EventIdType Dem_Stoco_GetReplacementEventID(Dem_StoCoList index);
+
+static __inline__ boolean Dem_StoCoAreAllFulfilled(Dem_StoCoList storageConditionList)
+{
+
+
+
+   ((void)(storageConditionList));
+   return (1 != 0);
+
+}
+# 83 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\stoco\\Dem_StorageCondition.h"
+static __inline__ void Dem_StoCoMainFunction(void) {}
+static __inline__ void Dem_StoCoRecheckReplacementStorage(uint32 storageConditions) { ((void)(storageConditions)); }
+static __inline__ void Dem_StoCoSetHasFilteredEvent(Dem_StoCoList storageConditionList
+                                             ,Dem_DebugDataType EventId,Dem_DebugDataType debug1){
+
+   ((void)(storageConditionList));
+
+   ((void)(EventId));
+   ((void)(debug1));
+
+}
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 100 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\stoco\\Dem_StorageCondition.h" 2
+# 2 ".\\output\\inc/Dem_StorageCondition.h" 2
+# 22 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h" 2
+# 1 ".\\output\\inc/Dem_EnableCondition.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\enco\\Dem_EnableCondition.h" 1
+
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\enco\\Dem_EnableCondition.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EnableCondition.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\enco\\Dem_EnableCondition.h" 2
+# 32 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\enco\\Dem_EnableCondition.h"
+static __inline__ Dem_boolean_least Dem_EnCoAreAllFulfilled (Dem_EnCoList enableConditionList)
+{
+
+
+
+   ((void)(enableConditionList));
+   return (1 != 0);
+
+}
+
+static __inline__ Dem_boolean_least Dem_EnCoFulfilled (Dem_EnCoList enableConditionBitmask)
+{
+    return Dem_EnCoAreAllFulfilled (enableConditionBitmask);
+}
+# 2 ".\\output\\inc/Dem_EnableCondition.h" 2
+# 23 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_Main.h" 1
+# 24 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_OperationCycle.h" 1
+# 25 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_DistMem.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_DistMem.h" 1
+# 2 ".\\output\\inc/Dem_Cfg_DistMem.h" 2
+# 26 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_StorageCondition.h" 1
+# 27 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h" 2
+# 1 ".\\output\\inc/Dem_Nvm.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\nvm\\Dem_Nvm.h" 1
+
+
+
+
+
+
+# 1 ".\\output\\inc/NvM.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM.h"
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 12 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM_Types.h" 1
+# 12 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM_Types.h"
+# 1 ".\\output\\inc/NvM_Cfg.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\NvM\\NvM_Cfg.h" 1
+# 21 ".\\output\\inc/..\\..\\bsw\\NvM\\NvM_Cfg.h"
+# 1 ".\\output\\inc/UDS_Nvm.h" 1
+# 1 ".\\output\\inc/..\\..\\bswcdd\\UDS\\UDS_Nvm.h" 1
+# 31 ".\\output\\inc/..\\..\\bswcdd\\UDS\\UDS_Nvm.h"
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 32 ".\\output\\inc/..\\..\\bswcdd\\UDS\\UDS_Nvm.h" 2
+# 1 ".\\output\\inc/..\\..\\bswcdd\\UDS\\UDS_DidDataDef.h" 1
+
+
+
+
+
+
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 8 ".\\output\\inc/..\\..\\bswcdd\\UDS\\UDS_DidDataDef.h" 2
+# 1 ".\\output\\inc/NvM_Cfg.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\NvM\\NvM_Cfg.h" 1
+# 2 ".\\output\\inc/NvM_Cfg.h" 2
+# 9 ".\\output\\inc/..\\..\\bswcdd\\UDS\\UDS_DidDataDef.h" 2
+
+
+
+
+
+
+
+# 1 ".\\output\\inc/MAIN_tsk.h" 1
+# 1 ".\\output\\inc/..\\..\\main\\McuMain\\MAIN_tsk.h" 1
+# 37 ".\\output\\inc/..\\..\\main\\McuMain\\MAIN_tsk.h"
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 38 ".\\output\\inc/..\\..\\main\\McuMain\\MAIN_tsk.h" 2
+# 55 ".\\output\\inc/..\\..\\main\\McuMain\\MAIN_tsk.h"
+# 1 ".\\output\\inc/MAIN_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\main\\MAIN_MemMap.h" 1
+# 83 ".\\output\\inc/..\\..\\main\\MAIN_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 164 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h"
+#pragma section ".rodata.Calib_16" a 2
+# 2 ".\\output\\inc/MemMap.h" 2
+# 84 ".\\output\\inc/..\\..\\main\\MAIN_MemMap.h" 2
+# 2 ".\\output\\inc/MAIN_MemMap.h" 2
+# 56 ".\\output\\inc/..\\..\\main\\McuMain\\MAIN_tsk.h" 2
+
+# 1 ".\\output\\inc/MAIN_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\main\\MAIN_MemMap.h" 1
+# 88 ".\\output\\inc/..\\..\\main\\MAIN_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 173 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h"
+#pragma section
+# 2 ".\\output\\inc/MemMap.h" 2
+# 89 ".\\output\\inc/..\\..\\main\\MAIN_MemMap.h" 2
+# 2 ".\\output\\inc/MAIN_MemMap.h" 2
+# 58 ".\\output\\inc/..\\..\\main\\McuMain\\MAIN_tsk.h" 2
+
+
+
+
+
+
+# 1 ".\\output\\inc/MAIN_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\main\\MAIN_MemMap.h" 1
+# 2 ".\\output\\inc/MAIN_MemMap.h" 2
+# 65 ".\\output\\inc/..\\..\\main\\McuMain\\MAIN_tsk.h" 2
+extern boolean MAIN_bAscFlag;
+extern boolean MAIN_bESMStarted;
+extern boolean MAIN_bVSIStarted;
+extern boolean MAIN_bComDisableFlg;
+extern uint16 MAIN_u16Core0Cnt1;
+extern uint16 MAIN_u16Core0Cnt2;
+extern uint16 MAIN_u16Core0Cnt5;
+extern uint16 MAIN_u16Core0Cnt10;
+extern uint16 MAIN_u16Core0Cnt100;
+extern uint16 MAIN_u16Core0Cnt200;
+extern uint16 MAIN_u16PWMPeriodVal;
+extern volatile sint32 MAIN_as32OCTrimNvm[( 5 )];
+extern uint32 Core0_u32ModReqStartTime;
+extern uint32 Core0_u32ModReqStopTime;
+extern uint32 Core0_u32ModReqTotalTime;
+extern uint32 Core0_Asw100msStartTime;
+extern uint32 Core0_Asw100msStopTime;
+extern uint32 Core0_Asw100msTotalTime;
+extern uint32 Core0_Asw10msStartTime;
+extern uint32 Core0_Asw10msStopTime;
+extern uint32 Core0_Asw10msTotalTime;
+extern uint32 Core0_Bsw100msStartTime;
+extern uint32 Core0_Bsw100msStopTime;
+extern uint32 Core0_Bsw100msTotalTime;
+extern uint32 Core0_Bsw10msStartTime;
+extern uint32 Core0_Bsw10msStopTime;
+extern uint32 Core0_Bsw10msTotalTime;
+extern uint32 Core0_Bsw1msStartTime;
+extern uint32 Core0_Bsw1msStopTime;
+extern uint32 Core0_Bsw1msTotalTime;
+extern uint32 Core0_Bsw50msStartTime;
+extern uint32 Core0_Bsw50msStopTime;
+extern uint32 Core0_Bsw50msTotalTime;
+extern uint32 MAIN_startTime;
+extern uint32 MAIN_EndTime;
+extern uint32 MAIN_TotalTime;
+extern uint32 Core1_Asw10msStartTime;
+extern uint32 Core1_Asw10msStopTime;
+extern uint32 Core1_Asw10msTotalTime;
+extern uint32 Core1_Asw1msStartTime;
+extern uint32 Core1_Asw1msStopTime;
+extern uint32 Core1_Asw1msTotalTime;
+extern uint32 Core1_Bsw10msStartTime;
+extern uint32 Core1_Bsw10msStopTime;
+extern uint32 Core1_Bsw10msTotalTime;
+extern uint32 Core1_PositionStartTime;
+extern uint32 Core1_PositionStopTime;
+extern uint32 Core1_PositionTotalTime;
+extern uint32 Core2_Asw10msStartTime;
+extern uint32 Core2_Asw10msStopTime;
+extern uint32 Core2_Asw10msTotalTime;
+extern uint32 Core2_Asw1msStartTime;
+extern uint32 Core2_Asw1msStopTime;
+extern uint32 Core2_Asw1msTotalTime;
+extern uint32 Core2_Bsw10msStartTime;
+extern uint32 Core2_Bsw10msStopTime;
+extern uint32 Core2_Bsw10msTotalTime;
+
+# 1 ".\\output\\inc/MAIN_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\main\\MAIN_MemMap.h" 1
+# 2 ".\\output\\inc/MAIN_MemMap.h" 2
+# 124 ".\\output\\inc/..\\..\\main\\McuMain\\MAIN_tsk.h" 2
+
+
+
+
+
+void MAIN_TaskInit(void);
+boolean MAIN_bInitOcTrimData(void);
+boolean MAIN_bChkOcCondition(void);
+boolean MAIN_bSetSaforiAutophsAngC(const uint16);
+float MAIN_f32GetAutophsingAngle(void);
+void MAIN_vidPositionTreatment(void);
+void MAIN_vidVSITreatment(void);
+extern void MAIN_vidOcDataRestore(void);
+boolean MAIN_vidGetProgCondition(void);
+# 2 ".\\output\\inc/MAIN_tsk.h" 2
+# 17 ".\\output\\inc/..\\..\\bswcdd\\UDS\\UDS_DidDataDef.h" 2
+# 1 ".\\output\\inc/GMAIN_tsk.h" 1
+# 1 ".\\output\\inc/..\\..\\main\\GcuMain\\GMAIN_tsk.h" 1
+# 37 ".\\output\\inc/..\\..\\main\\GcuMain\\GMAIN_tsk.h"
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 38 ".\\output\\inc/..\\..\\main\\GcuMain\\GMAIN_tsk.h" 2
+# 55 ".\\output\\inc/..\\..\\main\\GcuMain\\GMAIN_tsk.h"
+# 1 ".\\output\\inc/MAIN_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\main\\MAIN_MemMap.h" 1
+# 83 ".\\output\\inc/..\\..\\main\\MAIN_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 164 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h"
+#pragma section ".rodata.Calib_16" a 2
+# 2 ".\\output\\inc/MemMap.h" 2
+# 84 ".\\output\\inc/..\\..\\main\\MAIN_MemMap.h" 2
+# 2 ".\\output\\inc/MAIN_MemMap.h" 2
+# 56 ".\\output\\inc/..\\..\\main\\GcuMain\\GMAIN_tsk.h" 2
+
+# 1 ".\\output\\inc/MAIN_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\main\\MAIN_MemMap.h" 1
+# 88 ".\\output\\inc/..\\..\\main\\MAIN_MemMap.h"
+# 1 ".\\output\\inc/MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h" 1
+# 173 ".\\output\\inc/..\\..\\Integration\\mcal\\MemMap.h"
+#pragma section
+# 2 ".\\output\\inc/MemMap.h" 2
+# 89 ".\\output\\inc/..\\..\\main\\MAIN_MemMap.h" 2
+# 2 ".\\output\\inc/MAIN_MemMap.h" 2
+# 58 ".\\output\\inc/..\\..\\main\\GcuMain\\GMAIN_tsk.h" 2
+
+
+
+
+
+
+# 1 ".\\output\\inc/MAIN_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\main\\MAIN_MemMap.h" 1
+# 2 ".\\output\\inc/MAIN_MemMap.h" 2
+# 65 ".\\output\\inc/..\\..\\main\\GcuMain\\GMAIN_tsk.h" 2
+extern boolean GMAIN_bAscFlag;
+extern boolean GMAIN_bESMStarted;
+extern boolean GMAIN_bVSIStarted;
+extern boolean GMAIN_ESMGo2StartupIEvent;
+extern uint16 GMAIN_u16Core0Cnt5;
+extern uint16 GMAIN_u16Core1Cnt1;
+extern uint16 GMAIN_u16Core0Cnt100;
+extern uint16 GMAIN_u16Core2Cnt10;
+extern uint16 GMAIN_u16PWMPeriodVal;
+extern volatile sint32 GMAIN_as32OCTrimNvm[( 5 )];
+extern uint32 GMAIN_startTime;
+extern uint32 GMAIN_EndTime;
+extern uint32 GMAIN_TotalTime;
+extern uint32 GCore1_PositionStartTime;
+extern uint32 GCore1_PositionStopTime;
+extern uint32 GCore1_PositionTotalTime;
+
+# 1 ".\\output\\inc/MAIN_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\main\\MAIN_MemMap.h" 1
+# 2 ".\\output\\inc/MAIN_MemMap.h" 2
+# 83 ".\\output\\inc/..\\..\\main\\GcuMain\\GMAIN_tsk.h" 2
+
+
+
+
+
+void GMAIN_TaskInit(void);
+boolean GMAIN_bInitOcTrimData(void);
+boolean GMAIN_bChkOcCondition(void);
+boolean GMAIN_bSetSaforiAutophsAngC(const uint16);
+boolean GMAIN_bSetSimensAutophsAngC(const uint16);
+float GMAIN_f32GetAutophsingAngle(void);
+void GMAIN_vidPositionTreatment(void);
+void GMAIN_vidVSITreatment(void);
+extern void GMAIN_vidOcDataRestore(void);
+boolean GMAIN_vidGetProgCondition(void);
+# 2 ".\\output\\inc/GMAIN_tsk.h" 2
+# 18 ".\\output\\inc/..\\..\\bswcdd\\UDS\\UDS_DidDataDef.h" 2
+# 426 ".\\output\\inc/..\\..\\bswcdd\\UDS\\UDS_DidDataDef.h"
+typedef union UDS_WrDidTable_t{
+   uint8 au8Buf[128];
+   struct tBuf{
+  uint8 au8DidBuf_0xF18A[(5u)];
+  uint8 au8DidBuf_0xF197[(6u)];
+  uint8 au8DidBuf_0xF187[(14u)];
+  uint8 au8DidBuf_0xF188[(14u)];
+  uint8 au8DidBuf_0xF191[(14u)];
+  uint8 au8DidBuf_0xF193[(8u)];
+  uint8 au8DidBuf_0xF189[(8u)];
+  uint8 au8DidBuf_0xF190[(17u)];
+  uint8 au8DidBuf_0xB303[(20u)];
+  uint8 au8DidBuf_0xF18C[(8u)];
+
+   }tBuf;
+}UDS_WrDidTable_t;
+
+
+
+
+
+
+
+extern const uint8 UDS_au8DidBuf_0x0B0C[(1u)];
+extern const uint8 UDS_au8DidBuf_0x0E00[(2u)];
+extern const uint8 UDS_au8DidBuf_0x0E01[(1u)];
+extern const uint8 UDS_au8DidBuf_0x0E02[(1u)];
+extern const uint8 UDS_au8DidBuf_0x0E03[(16u)];
+extern const uint8 UDS_au8DidBuf_0x0E04[(1u)];
+extern const uint8 UDS_au8DidBuf_0x0E05[(2u)];
+extern const uint8 UDS_au8DidBuf_0x0E06[(1u)];
+extern const uint8 UDS_au8DidBuf_0x0E07[(2u)];
+extern const uint8 UDS_au8DidBuf_0x0E08[(2u)];
+extern const uint8 UDS_au8DidBuf_0x0E09[(2u)];
+extern const uint8 UDS_au8DidBuf_0x0E0A[(2u)];
+extern const uint8 UDS_au8DidBuf_0x0E0B[(4u)];
+extern const uint8 UDS_au8DidBuf_0x0E0C[(4u)];
+extern const uint8 UDS_au8DidBuf_0x0E0D[(4u)];
+extern const uint8 UDS_au8DidBuf_0x0E0E[(4u)];
+extern const uint8 UDS_au8DidBuf_0x0E0F[(4u)];
+extern const uint8 UDS_au8DidBuf_0x1E00[(2u)];
+extern const uint8 UDS_au8DidBuf_0x1E01[(1u)];
+extern const uint8 UDS_au8DidBuf_0x1E02[(1u)];
+extern const uint8 UDS_au8DidBuf_0x1E03[(16u)];
+extern const uint8 UDS_au8DidBuf_0x1E04[(1u)];
+extern const uint8 UDS_au8DidBuf_0x1E05[(2u)];
+extern const uint8 UDS_au8DidBuf_0x1E06[(1u)];
+extern const uint8 UDS_au8DidBuf_0x1E07[(2u)];
+extern const uint8 UDS_au8DidBuf_0x1E08[(2u)];
+extern const uint8 UDS_au8DidBuf_0x1E09[(2u)];
+extern const uint8 UDS_au8DidBuf_0x1E0A[(2u)];
+extern const uint8 UDS_au8DidBuf_0x1E0B[(4u)];
+extern const uint8 UDS_au8DidBuf_0x1E0C[(4u)];
+extern const uint8 UDS_au8DidBuf_0x1E0D[(4u)];
+extern const uint8 UDS_au8DidBuf_0x1E0E[(4u)];
+extern const uint8 UDS_au8DidBuf_0x1E0F[(4u)];
+extern const uint8 UDS_au8DidBuf_0x2E02[(1u)];
+extern const uint8 UDS_au8DidBuf_0x2E03[(16u)];
+extern const uint8 UDS_au8DidBuf_0x2E04[(1u)];
+extern const uint8 UDS_au8DidBuf_0x2E05[(2u)];
+extern const uint8 UDS_au8DidBuf_0x2E06[(1u)];
+extern const uint8 UDS_au8DidBuf_0x2E07[(2u)];
+extern const uint8 UDS_au8DidBuf_0x2E08[(2u)];
+extern const uint8 UDS_au8DidBuf_0x2E09[(2u)];
+extern const uint8 UDS_au8DidBuf_0x2E0A[(2u)];
+extern const uint8 UDS_au8DidBuf_0x2E0B[(4u)];
+extern const uint8 UDS_au8DidBuf_0x2E0C[(4u)];
+extern const uint8 UDS_au8DidBuf_0x2E0D[(4u)];
+extern const uint8 UDS_au8DidBuf_0x2E0E[(4u)];
+extern const uint8 UDS_au8DidBuf_0x2E0F[(4u)];
+extern const uint8 UDS_au8DidBuf_0x3E02[(1u)];
+extern const uint8 UDS_au8DidBuf_0x3E03[(16u)];
+extern const uint8 UDS_au8DidBuf_0x3E04[(1u)];
+extern const uint8 UDS_au8DidBuf_0x3E05[(2u)];
+extern const uint8 UDS_au8DidBuf_0x3E06[(1u)];
+extern const uint8 UDS_au8DidBuf_0x3E07[(2u)];
+extern const uint8 UDS_au8DidBuf_0x3E08[(2u)];
+extern const uint8 UDS_au8DidBuf_0x3E09[(2u)];
+extern const uint8 UDS_au8DidBuf_0x3E0A[(2u)];
+extern const uint8 UDS_au8DidBuf_0x3E0B[(4u)];
+extern const uint8 UDS_au8DidBuf_0x3E0C[(4u)];
+extern const uint8 UDS_au8DidBuf_0x3E0D[(4u)];
+extern const uint8 UDS_au8DidBuf_0x3E0E[(4u)];
+extern const uint8 UDS_au8DidBuf_0x3E0F[(4u)];
+
+
+
+
+extern const UDS_WrDidTable_t UDS_au8WrDidTableNvM_Rom;
+# 523 ".\\output\\inc/..\\..\\bswcdd\\UDS\\UDS_DidDataDef.h"
+extern uint8 UDS_au8DidBuf_0x0B01[(2u)];
+extern uint8 UDS_au8DidBuf_0x0B02[(4u)];
+extern uint8 UDS_au8DidBuf_0x0B03[(2u)];
+extern uint8 UDS_au8DidBuf_0x0B08[(2u)];
+extern uint8 UDS_au8DidBuf_0x0B0B[(1u)];
+extern uint8 UDS_au8DidBuf_0x0D00[(1u)];
+extern uint8 UDS_au8DidBuf_0x0D10[(1u)];
+extern uint8 UDS_au8DidBuf_0x0D11[(2u)];
+extern uint8 UDS_au8DidBuf_0x0D12[(2u)];
+extern uint8 UDS_au8DidBuf_0x0D2B[(1u)];
+extern uint8 UDS_au8DidBuf_0x1D00[(1u)];
+extern uint8 UDS_au8DidBuf_0x1D10[(1u)];
+extern uint8 UDS_au8DidBuf_0x1D11[(2u)];
+extern uint8 UDS_au8DidBuf_0x1D12[(2u)];
+extern uint8 UDS_au8DidBuf_0x1D2B[(1u)];
+extern uint8 UDS_au8DidBuf_0x2D09[(1u)];
+extern uint8 UDS_au8DidBuf_0x2D0A[(1u)];
+extern uint8 UDS_au8DidBuf_0x2D0C[(2u)];
+extern uint8 UDS_au8DidBuf_0x2D0C_1[(2u)];
+extern uint8 UDS_au8DidBuf_0x2D0C_2[(2u)];
+extern uint8 UDS_au8DidBuf_0x2D0D[(2u)];
+extern uint8 UDS_au8DidBuf_0x2D11[(2u)];
+extern uint8 UDS_au8DidBuf_0x2D12[(2u)];
+extern uint8 UDS_au8DidBuf_0x2D23[(2u)];
+extern uint8 UDS_au8DidBuf_0x2D24[(2u)];
+extern uint8 UDS_au8DidBuf_0x2D27[(2u)];
+extern uint8 UDS_au8DidBuf_0x2D28[(2u)];
+extern uint8 UDS_au8DidBuf_0x3D09[(1u)];
+extern uint8 UDS_au8DidBuf_0x3D0A[(1u)];
+extern uint8 UDS_au8DidBuf_0x3D0C[(2u)];
+extern uint8 UDS_au8DidBuf_0x3D0C_1[(2u)];
+extern uint8 UDS_au8DidBuf_0x3D0C_2[(2u)];
+extern uint8 UDS_au8DidBuf_0x3D0D[(2u)];
+extern uint8 UDS_au8DidBuf_0x3D11[(2u)];
+extern uint8 UDS_au8DidBuf_0x3D12[(2u)];
+extern uint8 UDS_au8DidBuf_0x3D23[(2u)];
+extern uint8 UDS_au8DidBuf_0x3D24[(2u)];
+extern uint8 UDS_au8DidBuf_0x3D27[(2u)];
+extern uint8 UDS_au8DidBuf_0x3D28[(2u)];
+extern uint8 UDS_au8DidBuf_0x4D00[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D01[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D02[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D03[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D04[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D05[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D06[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D07[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D08[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D09[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D0A[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D0B[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D0C[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D0D[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D0E[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D0F[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D10[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D11[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D12[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D13[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D14[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D15[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D16[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D17[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D18[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D19[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D1A[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D1B[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D1C[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D1D[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D1E[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D1F[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D20[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D21[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D22[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D23[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D24[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D25[(1u)];
+extern uint8 UDS_au8DidBuf_0x4D26[(1u)];
+
+extern uint8 UDS_au8DidBuf_0xF18A[(5u)];
+extern uint8 UDS_au8DidBuf_0xF197[(6u)];
+extern uint8 UDS_au8DidBuf_0xF187[(14u)];
+extern uint8 UDS_au8DidBuf_0xF188[(14u)];
+extern uint8 UDS_au8DidBuf_0xF191[(14u)];
+extern uint8 UDS_au8DidBuf_0xF193[(8u)];
+extern uint8 UDS_au8DidBuf_0xF189[(8u)];
+extern uint8 UDS_au8DidBuf_0xF190[(17u)];
+extern uint8 UDS_au8DidBuf_0xB303[(20u)];
+extern uint8 UDS_au8DidBuf_0xF18C[(8u)];
+
+
+
+
+
+
+
+extern uint8 UDS_au8DidBuf_0xF1E0[(48u)] ;
+extern uint8 UDS_au8DidBuf_0x0B20[(6u)] ;
+extern uint8 UDS_au8DidBuf_0x0B21[(2u)] ;
+extern uint8 UDS_au8DidBuf_0x0B22[(4u)] ;
+extern uint8 UDS_au8DidBuf_0x0B23[(4u)] ;
+
+
+
+
+
+extern uint8 UDS_au8DidBuf_0xD000[(1u)];
+extern uint8 UDS_au8DidBuf_0xD001[(2u)];
+extern uint8 UDS_au8DidBuf_0xD002[(2u)];
+extern uint8 UDS_au8DidBuf_0xD003[(1u)];
+extern uint8 UDS_au8DidBuf_0xD004[(2u)];
+extern uint8 UDS_au8DidBuf_0xD005[(2u)];
+extern uint8 UDS_au8DidBuf_0xD007[(2u)];
+extern uint8 UDS_au8DidBuf_0xD008[(2u)];
+extern uint8 UDS_au8DidBuf_0xD009[(1u)];
+extern uint8 UDS_au8DidBuf_0xD010[(1u)];
+extern uint8 UDS_au8DidBuf_0xD011[(1u)];
+extern uint8 UDS_au8DidBuf_0xD012[(1u)];
+extern uint8 UDS_au8DidBuf_0xD013[(1u)];
+extern uint8 UDS_au8DidBuf_0xD014[(1u)];
+extern uint8 UDS_au8DidBuf_0xD015[(1u)];
+extern uint8 UDS_au8DidBuf_0xD016[(1u)];
+extern uint8 UDS_au8DidBuf_0xD017[(1u)];
+extern uint8 UDS_au8DidBuf_0xD018[(1u)];
+extern uint8 UDS_au8DidBuf_0xD019[(1u)];
+extern uint8 UDS_au8DidBuf_0xD020[(1u)];
+extern uint8 UDS_au8DidBuf_0xD021[(1u)];
+extern uint8 UDS_au8DidBuf_0xD022[(1u)];
+extern uint8 UDS_au8DidBuf_0xD023[(1u)];
+extern uint8 UDS_au8DidBuf_0xD024[(1u)];
+extern uint8 UDS_au8DidBuf_0xD025[(1u)];
+extern uint8 UDS_au8DidBuf_0xD026[(1u)];
+extern uint8 UDS_au8DidBuf_0xD027[(1u)];
+extern uint8 UDS_au8DidBuf_0xD028[(1u)];
+extern uint8 UDS_au8DidBuf_0xD029[(1u)];
+extern uint8 UDS_au8DidBuf_0xD030[(1u)];
+extern uint8 UDS_au8DidBuf_0xD031[(1u)];
+extern uint8 UDS_au8DidBuf_0xD032[(1u)];
+extern uint8 UDS_au8DidBuf_0xD033[(1u)];
+extern uint8 UDS_au8DidBuf_0xD034[(2u)];
+extern uint8 UDS_au8DidBuf_0xD035[(2u)];
+extern uint8 UDS_au8DidBuf_0xD036[(1u)];
+extern uint8 UDS_au8DidBuf_0xD037[(1u)];
+extern uint8 UDS_au8DidBuf_0xD038[(1u)];
+extern uint8 UDS_au8DidBuf_0xD039[(1u)];
+extern uint8 UDS_au8DidBuf_0xD040[(2u)];
+extern uint8 UDS_au8DidBuf_0xD041[(1u)];
+extern uint8 UDS_au8DidBuf_0xD042[(1u)];
+extern uint8 UDS_au8DidBuf_0xD043[(1u)];
+extern uint8 UDS_au8DidBuf_0xD044[(1u)];
+extern uint8 UDS_au8DidBuf_0xD045[(1u)];
+extern uint8 UDS_au8DidBuf_0xD046[(1u)];
+extern uint8 UDS_au8DidBuf_0xD047[(2u)];
+extern uint8 UDS_au8DidBuf_0xD048[(2u)];
+extern uint8 UDS_au8DidBuf_0xD049[(2u)];
+
+
+
+
+extern UDS_WrDidTable_t UDS_au8WrDidTableNvM_Ram;
+# 33 ".\\output\\inc/..\\..\\bswcdd\\UDS\\UDS_Nvm.h" 2
+
+
+extern uint8 UDS_au8ESKDataNvM_Ram[16];
+
+
+extern const uint8 UDS_au8ESKDataNvM_Rom[16];
+# 2 ".\\output\\inc/UDS_Nvm.h" 2
+# 22 ".\\output\\inc/..\\..\\bsw\\NvM\\NvM_Cfg.h" 2
+# 1 ".\\output\\inc/MAIN_RunTime.h" 1
+# 1 ".\\output\\inc/..\\..\\main\\_MainModule\\RunTime\\MAIN_RunTime.h" 1
+
+
+
+
+
+
+
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 9 ".\\output\\inc/..\\..\\main\\_MainModule\\RunTime\\MAIN_RunTime.h" 2
+# 29 ".\\output\\inc/..\\..\\main\\_MainModule\\RunTime\\MAIN_RunTime.h"
+extern uint64 MAIN_u64RunTime_NVM;
+extern const uint64 MAIN_u64RunTimeRom_NVM;
+# 43 ".\\output\\inc/..\\..\\main\\_MainModule\\RunTime\\MAIN_RunTime.h"
+void MAIN_vidGetSystemRunTime(void);
+extern uint32 MAIN_u32GetRunTime_s(void);
+extern uint32 MAIN_u32GetRunTime_ms(void);
+extern uint32 MAIN_u32GetFactoryRunTime_s(void);
+extern void MAIN_vidUpdateSystemRunTime(void);
+# 2 ".\\output\\inc/MAIN_RunTime.h" 2
+# 23 ".\\output\\inc/..\\..\\bsw\\NvM\\NvM_Cfg.h" 2
+# 1 ".\\output\\inc/MAIN_CalibData.h" 1
+# 1 ".\\output\\inc/..\\..\\main\\_MainModule\\CalibData\\MAIN_CalibData.h" 1
+
+
+
+
+
+
+
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 9 ".\\output\\inc/..\\..\\main\\_MainModule\\CalibData\\MAIN_CalibData.h" 2
+# 21 ".\\output\\inc/..\\..\\main\\_MainModule\\CalibData\\MAIN_CalibData.h"
+enum eCalibIndex{
+   eMAIN_CALIB_BUF_UI_INDEX = 0,
+   eMAIN_CALIB_BUF_VI_INDEX,
+   eMAIN_CALIB_BUF_WI_INDEX,
+   eMAIN_CALIB_BUF_VO_INDEX,
+   eMAIN_CALIB_BUF_VALID_PARAM_NO,
+
+   eMAIN_CALIB_BUF_MAX_NO = 16
+};
+
+enum{
+   eMAIN_CALIB_IDX_MCU1 = 0,
+   eMAIN_CALIB_IDX_MCU2,
+   eMAIN_CALIB_IDX_ACM,
+   eMAIN_CALIB_IDX_EPS,
+   eMAIN_CALIB_ECU_NO
+};
+
+enum eRcGainIndex{
+   eMAIN_CALIB_BUF_RC00_INDEX = 0,
+   eMAIN_CALIB_BUF_RC01_INDEX,
+   eMAIN_CALIB_BUF_RC02_INDEX,
+   eMAIN_CALIB_BUF_RC03_INDEX,
+   eMAIN_CALIB_BUF_RC04_INDEX,
+   eMAIN_CALIB_BUF_RC05_INDEX,
+   eMAIN_CALIB_BUF_RC06_INDEX,
+   eMAIN_CALIB_BUF_RC07_INDEX,
+   eMAIN_CALIB_BUF_RC08_INDEX,
+   eMAIN_CALIB_BUF_RC09_INDEX,
+   eMAIN_CALIB_BUF_RC10_INDEX,
+   eMAIN_CALIB_BUF_RC11_INDEX,
+   eMAIN_CALIB_BUF_RC12_INDEX,
+   eMAIN_CALIB_BUF_RC13_INDEX,
+   eMAIN_CALIB_BUF_RC14_INDEX,
+   eMAIN_CALIB_BUF_RC15_INDEX,
+   eMAIN_CALIB_BUF_RC16_INDEX,
+   eMAIN_CALIB_BUF_VALID_RC_NO,
+
+   eMAIN_CALIB_BUF_MAX_RC_NO = 25
+};
+
+
+
+
+extern const uint16 RC_kau16VoltageGain[eMAIN_CALIB_BUF_MAX_RC_NO];
+# 77 ".\\output\\inc/..\\..\\main\\_MainModule\\CalibData\\MAIN_CalibData.h"
+extern uint16 MAIN_au16CalibParamNvm[eMAIN_CALIB_ECU_NO][eMAIN_CALIB_BUF_MAX_NO];
+extern uint16 RC_au16VoltageGain[eMAIN_CALIB_BUF_MAX_RC_NO];
+# 87 ".\\output\\inc/..\\..\\main\\_MainModule\\CalibData\\MAIN_CalibData.h"
+extern void MAIN_CAL_vidCalibDataMng(void);
+extern void MAIN_CAL_vidCheckAllCalibData(void);
+extern void MAIN_CAL_vidSetCalibDataStoreReq(boolean bStoreReq);
+extern uint16 * MAIN_CAL_pu16GetCalDataBuf(const uint8 ku8EcuId);
+extern uint16 MAIN_CAL_u16GetRcGainData(const uint8 ku8R);
+# 2 ".\\output\\inc/MAIN_CalibData.h" 2
+# 24 ".\\output\\inc/..\\..\\bsw\\NvM\\NvM_Cfg.h" 2
+# 1 ".\\output\\inc/EcuM.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\api\\EcuM.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\EcuM\\api\\EcuM.h"
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 12 ".\\output\\inc/..\\..\\bsw\\EcuM\\api\\EcuM.h" 2
+
+
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\api\\EcuM_Types.h" 1
+
+
+
+
+
+
+
+# 1 ".\\output\\inc/EcuM_Cfg.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\EcuM_Cfg.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\EcuM\\EcuM_Cfg.h"
+# 1 ".\\output\\inc/Mcu.h" 1
+# 1 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu.h" 1
+# 43 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu.h"
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 44 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu.h" 2
+# 1 ".\\output\\inc/McalLib.h" 1
+# 45 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu.h" 2
+
+# 1 ".\\output\\inc/Mcu_Cfg.h" 1
+# 1 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Mcu_Cfg.h" 1
+# 2 ".\\output\\inc/Mcu_Cfg.h" 2
+# 47 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu.h" 2
+# 210 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu.h"
+typedef uint32 Mcu_ExternalClockConfigType;
+
+
+
+
+typedef uint32 Mcu_ClockType;
+
+
+
+
+typedef uint32 Mcu_RamSectionType;
+
+
+
+
+
+typedef uint32 Mcu_RawResetType;
+
+
+
+
+typedef void* Mcu_RamBaseAdrType;
+
+
+
+typedef uint32 Mcu_RamSizeType;
+
+
+
+typedef uint8 Mcu_RamPrstDatType;
+
+
+
+
+typedef uint8 Mcu_ModeType;
+
+
+
+
+typedef enum
+{
+  MCU_PLL_LOCKED = 0x0U,
+  MCU_PLL_UNLOCKED,
+  MCU_PLL_STATUS_UNDEFINED
+} Mcu_PllStatusType;
+
+
+
+
+typedef enum
+{
+  MCU_ESR0_RESET = 0x00U,
+  MCU_ESR1_RESET = 0x01U,
+  MCU_SMU_RESET = 0x02U,
+  MCU_SW_RESET = 0x03U,
+  MCU_STM0_RESET = 0x04U,
+  MCU_STM1_RESET = 0x05U,
+  MCU_STM2_RESET = 0x06U,
+  MCU_STM3_RESET = 0x07U,
+  MCU_STM4_RESET = 0x08U,
+  MCU_STM5_RESET = 0x09U,
+  MCU_POWER_ON_RESET = 0x0AU,
+  MCU_CB0_RESET = 0x0BU,
+  MCU_CB1_RESET = 0x0CU,
+  MCU_CB3_RESET = 0x0DU,
+  MCU_EVRC_RESET = 0x0EU,
+  MCU_EVR33_RESET = 0x0FU,
+  MCU_SUPPLY_WDOG_RESET = 0x10U,
+  MCU_STBYR_RESET = 0x11U,
+  MCU_LBIST_RESET = 0x12U,
+  MCU_RESET_MULTIPLE = 0xFEU,
+  MCU_RESET_UNDEFINED = 0xFFU
+} Mcu_ResetType;
+
+
+
+
+typedef enum
+{
+  MCU_CPU0 = 0x0U,
+
+  MCU_CPU1 = 0x1U,
+
+
+  MCU_CPU2 = 0x2U,
+
+
+  MCU_CPU3 = 0x3U,
+
+
+
+
+
+
+
+} Mcu_CpuIdType;
+
+
+
+
+
+typedef enum
+{
+  MCU_RAMSTATE_INVALID = 0x0U,
+  MCU_RAMSTATE_VALID = 0x1U
+} Mcu_RamStateType;
+
+
+
+
+
+
+typedef enum
+{
+  MCU_CPU_NORMAL_MODE = 0x1U,
+  MCU_CPU_IDLE_MODE_REQ = 0x2U,
+  MCU_CPU_IDLE_MODE_ACK = 0x3U,
+  MCU_CPU_SLEEP_MODE_REQ = 0x4U,
+  MCU_CPU_STANDBY_MODE_REQ = 0x6U,
+  MCU_CPU_UNDEFINED_MODE = 0xFFU
+} Mcu_CpuModeType;
+
+
+
+typedef enum
+{
+  MCU_TRAP_ESR0 = 0x0U,
+  MCU_TRAP_ESR1 = 0x1U,
+  MCU_TRAP_TRAP2 = 0x2U,
+  MCU_TRAP_SMU = 0x3U,
+  MCU_TRAP_INVALID = 0x4U
+} Mcu_TrapRequestType;
+
+
+
+
+
+
+typedef struct
+{
+  unsigned_int Insel : 2;
+  unsigned_int SysPllPDiv : 3;
+  unsigned_int SysPllNDiv : 7;
+  unsigned_int SysPllK2Div : 3;
+  unsigned_int FmPllEn : 1;
+
+  unsigned_int ModulationAmplitude : 16;
+} Mcu_SystemPllConfigType;
+
+
+
+
+
+
+
+typedef struct
+{
+  unsigned_int PerPllNDiv : 7;
+  unsigned_int PerPllPDiv : 3;
+  unsigned_int PerPllK2Div : 3;
+  unsigned_int PerPllK3Div : 3;
+  unsigned_int K3DivByPass : 1;
+  unsigned_int Reserved : 15;
+} Mcu_PeripheralPllConfigType;
+
+
+
+
+
+
+
+typedef struct
+{
+  uint32 Ccucon0;
+  uint32 Ccucon1;
+  uint32 Ccucon2;
+
+
+
+
+  uint32 Ccucon5;
+
+  uint32 CcuconCpu[(0x4U)];
+} Mcu_PllDistributionConfigType;
+
+
+
+
+
+
+
+typedef struct
+{
+
+  Mcu_SystemPllConfigType SystemPllCfg;
+
+  Mcu_PeripheralPllConfigType PeripheralPllCfg;
+
+  uint32 SysPllK2DivStepUpChangeDelay;
+
+  uint32 SysPllK2DivStepDownChangeDelay;
+
+  uint32 PeripheralPllK2StepUpChangeDelay;
+
+  uint32 PeripheralPllK2StepDownChangeDelay;
+
+  uint32 PeripheralPllK3StepUpChangeDelay;
+
+  uint32 PeripheralPllK3StepDownChangeDelay;
+
+  const Mcu_PllDistributionConfigType *PllDistributionCfgPtr;
+
+  Mcu_ExternalClockConfigType ExternalClockCfg;
+
+  uint16 BackupFreqKDiv;
+
+  uint8 ConvCtrlBlockConf;
+} Mcu_ClockConfigType;
+
+
+
+
+
+
+typedef struct
+{
+  Mcu_RamBaseAdrType RamBaseAdrPtr;
+  Mcu_RamSizeType RamSize;
+  Mcu_RamPrstDatType RamPrstData;
+} Mcu_RamConfigType;
+
+
+
+
+
+
+
+typedef struct
+{
+  unsigned_int McuMode : 3;
+  unsigned_int EvrcLowPowerMode : 1;
+  unsigned_int Reserved : 28;
+} Mcu_ModeEvrcCtrlType;
+# 469 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu.h"
+typedef struct
+{
+
+  Mcu_ModeEvrcCtrlType MaxModeEvrcCtrl;
+
+  uint32 Pmswcr0;
+
+  uint32 Pmswcr3;
+
+  uint32 Pmswcr4;
+
+  uint32 Pmswcr5;
+
+
+
+} Mcu_LowPowerModeType;
+
+
+
+
+
+
+
+typedef struct
+{
+
+  uint32 GtmCmuExtClockNum;
+
+  uint32 GtmCmuExtClockDen;
+} Mcu_GtmExtClkType;
+
+
+
+
+
+
+typedef struct
+{
+
+  uint32 GtmCmuClockEnable;
+
+  uint32 GtmCmuGlobalNumerator;
+
+  uint32 GtmCmuGlobalDenominator;
+
+  uint32 GtmCmuConfClkCtrl[(8U)];
+
+  uint32 GtmCmuFixedClkCtrl;
+
+  uint32 GtmCmuClsInDiv;
+
+  Mcu_GtmExtClkType GtmEclkCtrl[(3U)];
+} Mcu_GtmClockSettingType;
+
+
+
+
+
+
+typedef struct
+{
+
+  uint32 GtmCcmCfg;
+
+  uint32 GtmCcmConfClockCfg;
+
+  uint32 GtmCcmFixedClockCfg;
+} Mcu_GtmClusterConfigType;
+
+
+
+
+
+
+typedef struct
+{
+
+
+
+
+
+
+
+  uint32 TomTgcIntTrigRstCn0;
+
+
+
+
+  uint32 TomTgcActTb;
+} Mcu_GtmTomConfigType;
+
+
+
+
+
+
+typedef struct
+{
+
+
+
+
+
+
+
+  uint32 AtomAgcIntTrigRstCn0;
+
+
+
+
+  uint32 AtomAgcActTb;
+} Mcu_GtmAtomConfigType;
+
+
+
+
+
+
+typedef struct
+{
+  uint32 GtmAdcTrigOut0;
+  uint32 GtmAdcTrigOut1;
+} Mcu_GtmAdcTrigType;
+
+
+
+typedef struct
+{
+  uint32 GtmDsadcTrigOut0;
+  uint32 GtmDsadcTrigOut1;
+} Mcu_GtmDsadcTrigType;
+
+
+
+
+
+
+
+typedef struct
+{
+
+  const Mcu_GtmClockSettingType *GtmClockCfgPtr;
+
+  const Mcu_GtmClusterConfigType *GtmClusterCfgPtr;
+
+  Mcu_GtmTomConfigType GtmTomCfg[(5U) * 2U];
+
+  Mcu_GtmAtomConfigType GtmAtomCfg[(9U)];
+
+  Mcu_GtmAdcTrigType GtmAdcTrigCfg[(5U)];
+
+  Mcu_GtmDsadcTrigType GtmDsadcTrigCfg[(4U)];
+
+  uint32 GtmToutSelCfg[(34U)];
+
+  uint32 GtmToutSelCfgMsk[(34U)];
+
+  uint32 GtmTbuCfg;
+
+  uint16 GtmTomModuleUsage;
+
+  uint16 GtmAtomModuleUsage;
+
+  boolean IsGtmSleepModeEnabled;
+} Mcu_GtmConfigType;
+# 643 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu.h"
+typedef struct
+{
+
+  const Mcu_ClockConfigType *McuClockSettingPtr;
+
+  const Mcu_RamConfigType *McuRamCfgPtr;
+
+
+  const Mcu_GtmConfigType *McuGtmConfigPtr;
+
+
+
+
+
+
+  const Mcu_LowPowerModeType *McuLowPowerModeCfgPtr;
+
+  uint32 McuResetCfg;
+
+  uint32 McuArstDisCfg;
+
+  uint32 McuTrapSettingConf0;
+
+
+
+
+  uint32 McuEruEiFiltCfg;
+
+  Mcu_ClockType McuNoOfClockCfg;
+
+  Mcu_RamSectionType McuNoOfRamCfg;
+# 686 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu.h"
+} Mcu_ConfigType;
+# 705 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu.h"
+# 1 ".\\output\\inc/Mcu_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Mcu_MemMap.h" 1
+# 300 ".\\output\\inc/..\\..\\Integration\\mcal\\Mcu_MemMap.h"
+#pragma section "Code.Cpu0" ax
+# 2 ".\\output\\inc/Mcu_MemMap.h" 2
+# 706 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu.h" 2
+# 731 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu.h"
+extern void Mcu_Init(const Mcu_ConfigType * const ConfigPtr);
+# 760 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu.h"
+extern Std_ReturnType Mcu_InitRamSection(const Mcu_RamSectionType RamSection );
+# 801 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu.h"
+extern Std_ReturnType Mcu_InitClock(const Mcu_ClockType ClockSetting);
+# 830 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu.h"
+extern Std_ReturnType Mcu_DistributePllClock( void );
+# 857 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu.h"
+extern Mcu_PllStatusType Mcu_GetPllStatus( void );
+# 881 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu.h"
+extern Mcu_ResetType Mcu_GetResetReason( void );
+# 905 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu.h"
+extern Mcu_RawResetType Mcu_GetResetRawValue( void );
+# 930 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu.h"
+extern void Mcu_PerformReset( void );
+# 958 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu.h"
+extern void Mcu_SetMode(const Mcu_ModeType McuMode);
+# 1386 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu.h"
+# 1 ".\\output\\inc/Mcu_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Mcu_MemMap.h" 1
+# 312 ".\\output\\inc/..\\..\\Integration\\mcal\\Mcu_MemMap.h"
+#pragma section
+# 2 ".\\output\\inc/Mcu_MemMap.h" 2
+# 1387 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu.h" 2
+
+
+
+# 1 ".\\output\\inc/Mcu_PBcfg.h" 1
+# 1 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Mcu_PBcfg.h" 1
+# 59 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Mcu_PBcfg.h"
+# 1 ".\\output\\inc/Mcu_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Mcu_MemMap.h" 1
+# 211 ".\\output\\inc/..\\..\\Integration\\mcal\\Mcu_MemMap.h"
+#pragma section "Config.Cpu0.Unspecified" a 4
+# 2 ".\\output\\inc/Mcu_MemMap.h" 2
+# 60 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Mcu_PBcfg.h" 2
+
+extern const Mcu_ConfigType Mcu_Config;
+# 75 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Mcu_PBcfg.h"
+# 1 ".\\output\\inc/Mcu_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Mcu_MemMap.h" 1
+# 224 ".\\output\\inc/..\\..\\Integration\\mcal\\Mcu_MemMap.h"
+#pragma section
+# 2 ".\\output\\inc/Mcu_MemMap.h" 2
+# 76 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Mcu_PBcfg.h" 2
+# 2 ".\\output\\inc/Mcu_PBcfg.h" 2
+# 1391 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu.h" 2
+# 2 ".\\output\\inc/Mcu.h" 2
+# 10 ".\\output\\inc/..\\..\\bsw\\EcuM\\EcuM_Cfg.h" 2
+
+
+
+
+
+
+
+# 1 ".\\output\\inc/Os.h" 1
+# 18 ".\\output\\inc/..\\..\\bsw\\EcuM\\EcuM_Cfg.h" 2
+# 82 ".\\output\\inc/..\\..\\bsw\\EcuM\\EcuM_Cfg.h"
+typedef struct {
+ boolean IsComChannelPresent;
+ uint8 ComChannelReferance;
+ Mcu_ResetType ResetReason;
+ uint16 ValidationTimeout;
+ boolean IsWakeupSourcePolling;
+ uint32 WakeupSourceId;
+ uint16 CheckWakeupTimeout;
+} EcuM_Cfg_dataWkupSrcStruct_tst;
+# 114 ".\\output\\inc/..\\..\\bsw\\EcuM\\EcuM_Cfg.h"
+typedef struct {
+ uint8 nbrOfComMPNCRef;
+ const uint8 *ListOfPNCRefs;
+} EcuM_Cfg_dataWkupPNCRefStruct_tst;
+
+
+# 1 ".\\output\\inc/EcuM_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h" 1
+# 202 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 203 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h" 2
+# 11 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h" 2
+# 2 ".\\output\\inc/EcuM_MemMap.h" 2
+# 121 ".\\output\\inc/..\\..\\bsw\\EcuM\\EcuM_Cfg.h" 2
+extern const uint8 EcuM_Cfg_dataPreCompileHash_au8[(16)];
+
+# 1 ".\\output\\inc/EcuM_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h" 1
+# 209 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 210 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h" 2
+# 11 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h" 2
+# 2 ".\\output\\inc/EcuM_MemMap.h" 2
+# 124 ".\\output\\inc/..\\..\\bsw\\EcuM\\EcuM_Cfg.h" 2
+
+
+# 1 ".\\output\\inc/EcuM_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h" 1
+# 158 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 159 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h" 2
+# 11 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h" 2
+# 2 ".\\output\\inc/EcuM_MemMap.h" 2
+# 127 ".\\output\\inc/..\\..\\bsw\\EcuM\\EcuM_Cfg.h" 2
+extern const EcuM_Cfg_dataWkupSrcStruct_tst EcuM_Cfg_idxWakeupSourcesPC_au32[(7U)];
+
+extern const EcuM_Cfg_dataWkupPNCRefStruct_tst EcuM_Cfg_dataWkupPNCRef_cast[(7U)];
+
+
+
+
+
+
+# 1 ".\\output\\inc/EcuM_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h" 1
+# 165 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 166 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h" 2
+# 11 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h" 2
+# 2 ".\\output\\inc/EcuM_MemMap.h" 2
+# 137 ".\\output\\inc/..\\..\\bsw\\EcuM\\EcuM_Cfg.h" 2
+# 148 ".\\output\\inc/..\\..\\bsw\\EcuM\\EcuM_Cfg.h"
+# 1 ".\\output\\inc/EcuM_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h" 1
+# 173 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 174 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h" 2
+# 11 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h" 2
+# 2 ".\\output\\inc/EcuM_MemMap.h" 2
+# 149 ".\\output\\inc/..\\..\\bsw\\EcuM\\EcuM_Cfg.h" 2
+
+extern const uint16 EcuM_Cfg_idxGoDownValidCallerArr_au16[(1U)];
+
+
+# 1 ".\\output\\inc/EcuM_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h" 1
+# 180 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 181 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h" 2
+# 11 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h" 2
+# 2 ".\\output\\inc/EcuM_MemMap.h" 2
+# 154 ".\\output\\inc/..\\..\\bsw\\EcuM\\EcuM_Cfg.h" 2
+# 2 ".\\output\\inc/EcuM_Cfg.h" 2
+# 9 ".\\output\\inc/..\\..\\bsw\\EcuM\\api\\EcuM_Types.h" 2
+# 1 ".\\output\\inc/EcuM_RunTime.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_RunTime.h" 1
+
+
+
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 5 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_RunTime.h" 2
+
+
+# 1 ".\\output\\inc/rba_BswSrv.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_RunTime.h" 2
+
+
+# 1 ".\\output\\inc/Mcu.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_RunTime.h" 2
+
+# 1 ".\\output\\inc/EcuM_Cfg.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_RunTime.h" 2
+# 2 ".\\output\\inc/EcuM_RunTime.h" 2
+# 10 ".\\output\\inc/..\\..\\bsw\\EcuM\\api\\EcuM_Types.h" 2
+
+
+# 1 ".\\output\\inc/Rte_EcuM_Type.h" 1
+# 1 ".\\output\\inc/..\\..\\rte\\Rte_EcuM_Type.h" 1
+# 2 ".\\output\\inc/Rte_EcuM_Type.h" 2
+# 13 ".\\output\\inc/..\\..\\bsw\\EcuM\\api\\EcuM_Types.h" 2
+# 78 ".\\output\\inc/..\\..\\bsw\\EcuM\\api\\EcuM_Types.h"
+typedef uint32 EcuM_WakeupSourceType;
+
+typedef uint8 EcuM_ResetType;
+
+typedef uint8 EcuM_WakeupStatusType;
+
+typedef uint8 EcuM_RunStatusType;
+
+typedef uint8 EcuM_StateType;
+
+typedef struct
+{
+    EcuM_ShutdownCauseType ShutdownCause;
+
+
+
+} EcuM_ShutdownInfoType;
+
+typedef struct
+{
+    EcuM_ShutdownTargetType ShutdownTarget;
+    EcuM_ShutdownCauseType ShutdownCause;
+    EcuM_ShutdownModeType mode;
+
+
+
+
+} EcuM_ShutdownTargetInfoType;
+# 15 ".\\output\\inc/..\\..\\bsw\\EcuM\\api\\EcuM.h" 2
+# 1 ".\\output\\inc/EcuM_Generated_Types.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\EcuM_Generated_Types.h" 1
+# 2 ".\\output\\inc/EcuM_Generated_Types.h" 2
+# 16 ".\\output\\inc/..\\..\\bsw\\EcuM\\api\\EcuM.h" 2
+
+# 1 ".\\output\\inc/EcuM_Cfg_Version.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\EcuM_Cfg_Version.h" 1
+# 2 ".\\output\\inc/EcuM_Cfg_Version.h" 2
+# 18 ".\\output\\inc/..\\..\\bsw\\EcuM\\api\\EcuM.h" 2
+
+
+# 1 ".\\output\\inc/SchM_EcuM.h" 1
+# 1 ".\\output\\inc/..\\..\\rte\\SchM_EcuM.h" 1
+# 16 ".\\output\\inc/..\\..\\rte\\SchM_EcuM.h"
+# 1 ".\\output\\inc/..\\..\\rte\\SchM_EcuM_Type.h" 1
+# 17 ".\\output\\inc/..\\..\\rte\\SchM_EcuM.h" 2
+# 41 ".\\output\\inc/..\\..\\rte\\SchM_EcuM.h"
+# 1 ".\\output\\inc/EcuM_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h" 1
+# 260 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 261 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h" 2
+# 11 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h" 2
+# 2 ".\\output\\inc/EcuM_MemMap.h" 2
+# 42 ".\\output\\inc/..\\..\\rte\\SchM_EcuM.h" 2
+void EcuM_MainFunction(void);
+
+# 1 ".\\output\\inc/EcuM_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h" 1
+# 267 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 268 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h" 2
+# 11 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h" 2
+# 2 ".\\output\\inc/EcuM_MemMap.h" 2
+# 45 ".\\output\\inc/..\\..\\rte\\SchM_EcuM.h" 2
+# 2 ".\\output\\inc/SchM_EcuM.h" 2
+# 21 ".\\output\\inc/..\\..\\bsw\\EcuM\\api\\EcuM.h" 2
+# 1 ".\\output\\inc/Rte_EcuM_Type.h" 1
+# 22 ".\\output\\inc/..\\..\\bsw\\EcuM\\api\\EcuM.h" 2
+
+
+# 1 ".\\output\\inc/EcuM_Cfg_RbExt.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\EcuM_Cfg_RbExt.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\EcuM\\EcuM_Cfg_RbExt.h"
+# 1 ".\\output\\inc/EcuM_PBDefine.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\ecu\\EcuM_PBDefine.h" 1
+# 13 ".\\output\\inc/..\\..\\Integration\\ecu\\EcuM_PBDefine.h"
+# 1 ".\\output\\inc/Mcu.h" 1
+# 14 ".\\output\\inc/..\\..\\Integration\\ecu\\EcuM_PBDefine.h" 2
+# 1 ".\\output\\inc/Port.h" 1
+# 1 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Port\\inc\\Port.h" 1
+# 45 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Port\\inc\\Port.h"
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 46 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Port\\inc\\Port.h" 2
+# 1 ".\\output\\inc/Mcal_Compiler.h" 1
+# 47 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Port\\inc\\Port.h" 2
+
+# 1 ".\\output\\inc/Port_Cfg.h" 1
+# 1 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Port_Cfg.h" 1
+# 2 ".\\output\\inc/Port_Cfg.h" 2
+# 49 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Port\\inc\\Port.h" 2
+# 164 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Port\\inc\\Port.h"
+typedef uint16 Port_PinType;
+
+
+
+
+typedef enum
+{
+  PORT_PIN_IN = 0x00U,
+  PORT_PIN_OUT = 0x80U
+} Port_PinDirectionType;
+
+
+
+
+typedef uint8 Port_PinModeType;
+
+
+
+
+
+typedef struct
+{
+
+  uint8 PC0;
+  uint8 PC1;
+  uint8 PC2;
+  uint8 PC3;
+  uint8 PC4;
+  uint8 PC5;
+  uint8 PC6;
+  uint8 PC7;
+  uint8 PC8;
+  uint8 PC9;
+  uint8 PC10;
+  uint8 PC11;
+  uint8 PC12;
+  uint8 PC13;
+  uint8 PC14;
+  uint8 PC15;
+
+} Port_n_ControlType;
+
+
+
+typedef struct
+{
+
+  unsigned_int P0 : 1;
+  unsigned_int P1 : 1;
+  unsigned_int P2 : 1;
+  unsigned_int P3 : 1;
+  unsigned_int P4 : 1;
+  unsigned_int P5 : 1;
+  unsigned_int P6 : 1;
+  unsigned_int P7 : 1;
+  unsigned_int P8 : 1;
+  unsigned_int P9 : 1;
+  unsigned_int P10 : 1;
+  unsigned_int P11 : 1;
+  unsigned_int P12 : 1;
+  unsigned_int P13 : 1;
+  unsigned_int P14 : 1;
+  unsigned_int P15 : 1;
+  unsigned_int reserved: 16;
+
+} Port_n_PinType;
+
+
+
+
+
+
+
+typedef struct
+{
+
+  uint8 U[(16U)];
+
+} Port_n_ModeType;
+
+
+
+
+
+
+typedef struct
+{
+
+  Port_n_ControlType PinControl;
+
+  Port_n_PinType PinLevel;
+
+  uint32 DriverStrength0;
+
+  uint32 DriverStrength1;
+
+
+
+  Port_n_PinType ModeChangeControl;
+
+
+
+
+  Port_n_PinType DirChangeControl;
+
+
+  Port_n_ControlType PinControl2;
+
+  Port_n_PinType EmergencyStopConf;
+} Port_n_ConfigType;
+
+
+
+
+
+typedef struct
+{
+  uint32 LPCR0;
+
+  uint32 LPCR1;
+
+
+  uint32 LPCR2;
+
+
+  uint32 LPCR3;
+
+
+  uint32 LPCR4;
+
+
+  uint32 LPCR5;
+
+
+  uint32 LPCR6;
+
+
+
+
+} Port_n_LVDSConfigType;
+
+
+
+typedef uint32 Port_n_PCSRConfigType;
+
+
+
+
+
+
+typedef struct
+{
+
+  const Port_n_ConfigType* PortConfigSetPtr;
+
+  const uint32* PDiscSet;
+# 328 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Port\\inc\\Port.h"
+  const Port_n_LVDSConfigType* Port_LVDSConfigTypePtr;
+  const Port_n_PCSRConfigType* Port_PCSRConfigTypePtr;
+} Port_ConfigType;
+# 348 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Port\\inc\\Port.h"
+# 1 ".\\output\\inc/Port_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Port_MemMap.h" 1
+# 271 ".\\output\\inc/..\\..\\Integration\\mcal\\Port_MemMap.h"
+#pragma section "Code.Cpu0" ax
+# 2 ".\\output\\inc/Port_MemMap.h" 2
+# 349 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Port\\inc\\Port.h" 2
+# 379 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Port\\inc\\Port.h"
+extern void Port_Init
+(
+  const Port_ConfigType * ConfigPtr
+);
+# 418 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Port\\inc\\Port.h"
+extern void Port_SetPinDirection
+(
+  const Port_PinType Pin,
+  const Port_PinDirectionType Direction
+);
+# 452 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Port\\inc\\Port.h"
+extern void Port_RefreshPortDirection(void);
+# 528 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Port\\inc\\Port.h"
+extern void Port_SetPinMode
+(
+  const Port_PinType Pin,
+  const Port_PinModeType Mode
+);
+# 579 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Port\\inc\\Port.h"
+# 1 ".\\output\\inc/Port_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Port_MemMap.h" 1
+# 283 ".\\output\\inc/..\\..\\Integration\\mcal\\Port_MemMap.h"
+#pragma section
+# 2 ".\\output\\inc/Port_MemMap.h" 2
+# 580 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Port\\inc\\Port.h" 2
+
+# 1 ".\\output\\inc/Port_PBcfg.h" 1
+# 1 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Port_PBcfg.h" 1
+# 50 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Port_PBcfg.h"
+# 1 ".\\output\\inc/Port_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Port_MemMap.h" 1
+# 236 ".\\output\\inc/..\\..\\Integration\\mcal\\Port_MemMap.h"
+#pragma section "Config.Cpu0.Unspecified" a 4
+# 2 ".\\output\\inc/Port_MemMap.h" 2
+# 51 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Port_PBcfg.h" 2
+
+extern const Port_ConfigType Port_Config;
+
+
+
+
+# 1 ".\\output\\inc/Port_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Port_MemMap.h" 1
+# 249 ".\\output\\inc/..\\..\\Integration\\mcal\\Port_MemMap.h"
+#pragma section
+# 2 ".\\output\\inc/Port_MemMap.h" 2
+# 58 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Port_PBcfg.h" 2
+# 2 ".\\output\\inc/Port_PBcfg.h" 2
+# 582 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Port\\inc\\Port.h" 2
+# 2 ".\\output\\inc/Port.h" 2
+# 15 ".\\output\\inc/..\\..\\Integration\\ecu\\EcuM_PBDefine.h" 2
+# 1 ".\\output\\inc/Dio.h" 1
+# 1 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Dio\\inc\\Dio.h" 1
+# 44 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Dio\\inc\\Dio.h"
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 45 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Dio\\inc\\Dio.h" 2
+
+
+# 1 ".\\output\\inc/Dio_Cfg.h" 1
+# 1 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Dio_Cfg.h" 1
+# 2081 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Dio_Cfg.h"
+# 1 ".\\output\\inc/Dio_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Dio_MemMap.h" 1
+# 159 ".\\output\\inc/..\\..\\Integration\\mcal\\Dio_MemMap.h"
+#pragma section "Config.Cpu0.Unspecified" a 4
+# 2 ".\\output\\inc/Dio_MemMap.h" 2
+# 2082 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Dio_Cfg.h" 2
+
+extern const struct Dio_ConfigType Dio_Config;
+
+
+
+# 1 ".\\output\\inc/Dio_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Dio_MemMap.h" 1
+# 172 ".\\output\\inc/..\\..\\Integration\\mcal\\Dio_MemMap.h"
+#pragma section
+# 2 ".\\output\\inc/Dio_MemMap.h" 2
+# 2088 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Dio_Cfg.h" 2
+# 2 ".\\output\\inc/Dio_Cfg.h" 2
+# 48 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Dio\\inc\\Dio.h" 2
+# 117 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Dio\\inc\\Dio.h"
+typedef uint16 Dio_ChannelType;
+
+
+
+
+
+typedef uint8 Dio_LevelType;
+
+
+
+
+typedef uint8 Dio_PortType;
+
+
+
+
+typedef uint16 Dio_PortLevelType;
+
+
+
+
+typedef struct
+{
+
+  Dio_PortLevelType mask;
+
+
+  uint8 offset;
+
+
+  Dio_PortType port;
+} Dio_ChannelGroupType;
+
+
+
+
+typedef struct
+{
+
+  uint8 Dio_PortIdConfig;
+
+
+  uint16 Dio_ChannelConfig;
+
+} Dio_PortChannelIdType;
+
+
+
+
+typedef struct Dio_ConfigType
+{
+
+  const Dio_PortChannelIdType* Dio_PortChannelIdConfigPtr;
+
+
+  const Dio_ChannelGroupType* Dio_ChannelGroupConfigPtr;
+
+
+  uint32 Dio_ChannelGroupConfigSize;
+} Dio_ConfigType;
+# 193 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Dio\\inc\\Dio.h"
+# 1 ".\\output\\inc/Dio_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Dio_MemMap.h" 1
+# 194 ".\\output\\inc/..\\..\\Integration\\mcal\\Dio_MemMap.h"
+#pragma section "Code.Cpu0" ax
+# 2 ".\\output\\inc/Dio_MemMap.h" 2
+# 194 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Dio\\inc\\Dio.h" 2
+# 223 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Dio\\inc\\Dio.h"
+extern Dio_LevelType Dio_ReadChannel
+(
+  const Dio_ChannelType ChannelId
+);
+# 261 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Dio\\inc\\Dio.h"
+extern void Dio_WriteChannel
+(
+  const Dio_ChannelType ChannelId,
+  const Dio_LevelType Level
+);
+# 293 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Dio\\inc\\Dio.h"
+extern Dio_PortLevelType Dio_ReadPort
+(
+  const Dio_PortType PortId
+);
+# 325 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Dio\\inc\\Dio.h"
+extern void Dio_WritePort
+(
+  const Dio_PortType PortId,
+  const Dio_PortLevelType Level
+);
+# 358 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Dio\\inc\\Dio.h"
+extern Dio_PortLevelType Dio_ReadChannelGroup
+(
+  const Dio_ChannelGroupType * const ChannelGroupIdPtr
+);
+# 394 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Dio\\inc\\Dio.h"
+extern void Dio_WriteChannelGroup
+(
+  const Dio_ChannelGroupType * const ChannelGroupIdPtr,
+  const Dio_PortLevelType Level
+);
+# 431 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Dio\\inc\\Dio.h"
+extern Dio_LevelType Dio_FlipChannel
+(
+  const Dio_ChannelType ChannelId
+);
+# 487 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Dio\\inc\\Dio.h"
+# 1 ".\\output\\inc/Dio_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Dio_MemMap.h" 1
+# 206 ".\\output\\inc/..\\..\\Integration\\mcal\\Dio_MemMap.h"
+#pragma section
+# 2 ".\\output\\inc/Dio_MemMap.h" 2
+# 488 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Dio\\inc\\Dio.h" 2
+# 2 ".\\output\\inc/Dio.h" 2
+# 16 ".\\output\\inc/..\\..\\Integration\\ecu\\EcuM_PBDefine.h" 2
+# 1 ".\\output\\inc/Fls.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Fls.h" 1
+
+
+
+
+# 1 ".\\output\\inc/Fls_17_Dmu.h" 1
+# 1 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Fls_17_Dmu\\inc\\Fls_17_Dmu.h" 1
+# 43 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Fls_17_Dmu\\inc\\Fls_17_Dmu.h"
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 44 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Fls_17_Dmu\\inc\\Fls_17_Dmu.h" 2
+
+
+
+# 1 ".\\output\\inc/McalLib.h" 1
+# 48 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Fls_17_Dmu\\inc\\Fls_17_Dmu.h" 2
+
+
+# 1 ".\\output\\inc/Fls_17_Dmu_Cfg.h" 1
+# 1 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Fls_17_Dmu_Cfg.h" 1
+# 49 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Fls_17_Dmu_Cfg.h"
+# 1 ".\\output\\inc/MemIf_Types.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\MemIf\\api\\MemIf_Types.h" 1
+# 23 ".\\output\\inc/..\\..\\bsw\\MemIf\\api\\MemIf_Types.h"
+typedef enum
+{
+    MEMIF_UNINIT,
+    MEMIF_IDLE,
+    MEMIF_BUSY,
+    MEMIF_BUSY_INTERNAL
+}MemIf_StatusType;
+
+typedef enum
+{
+    MEMIF_JOB_OK,
+    MEMIF_JOB_FAILED,
+    MEMIF_JOB_PENDING,
+    MEMIF_JOB_CANCELED,
+    MEMIF_BLOCK_INCONSISTENT,
+    MEMIF_BLOCK_INVALID
+}MemIf_JobResultType;
+
+typedef enum
+{
+    MEMIF_MODE_SLOW,
+    MEMIF_MODE_FAST
+}MemIf_ModeType;
+
+typedef enum
+{
+    MEMIF_RB_MIGRATION_RESULT_INIT_E = 0,
+    MEMIF_RB_MIGRATION_RESULT_NOT_NECESSARY_E = 1,
+    MEMIF_RB_MIGRATION_RESULT_TO_SMALLER_SIZE_E = 2,
+    MEMIF_RB_MIGRATION_RESULT_TO_BIGGER_SIZE_E = 3,
+    MEMIF_RB_MIGRATION_RESULT_NOT_DONE_E = 4,
+    MEMIF_RB_MIGRATION_RESULT_DEACTIVATED_E = 5
+}MemIf_Rb_MigrationResult_ten;
+# 2 ".\\output\\inc/MemIf_Types.h" 2
+# 50 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Fls_17_Dmu_Cfg.h" 2
+# 2 ".\\output\\inc/Fls_17_Dmu_Cfg.h" 2
+# 51 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Fls_17_Dmu\\inc\\Fls_17_Dmu.h" 2
+# 2593 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Fls_17_Dmu\\inc\\Fls_17_Dmu.h"
+typedef uint32 Fls_17_Dmu_AddressType;
+
+
+
+typedef uint32 Fls_17_Dmu_LengthType;
+
+
+typedef struct
+{
+  unsigned_int Reserved1 : 1;
+
+  unsigned_int Write : 1;
+
+  unsigned_int Erase : 1;
+
+  unsigned_int Read : 1;
+
+  unsigned_int Compare : 1;
+
+  unsigned_int Reserved2 : 3;
+} Fls_17_Dmu_JobStartType;
+
+
+
+
+
+typedef uint8 Fls_17_Dmu_Job_Type;
+
+typedef uint8 Fls_17_Dmu_HardenType;
+# 2633 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Fls_17_Dmu\\inc\\Fls_17_Dmu.h"
+typedef struct
+{
+
+
+
+  uint32 FlsReadAddress;
+  uint32 FlsWriteAddress;
+  uint32 FlsEraseAddress;
+# 2650 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Fls_17_Dmu\\inc\\Fls_17_Dmu.h"
+  Fls_17_Dmu_LengthType FlsReadLength;
+  Fls_17_Dmu_LengthType FlsWriteLength;
+
+
+
+  uint8* FlsReadBufferPtr;
+  const uint8* FlsWriteBufferPtr;
+
+
+  MemIf_JobResultType FlsJobResult;
+
+
+  MemIf_ModeType FlsMode;
+
+
+  Fls_17_Dmu_Job_Type NotifCaller;
+
+
+  Fls_17_Dmu_JobStartType JobStarted;
+
+
+  uint16 FlsEraseNumSectors;
+
+  uint8 FlsEraseNumSecPerCmd;
+
+  Fls_17_Dmu_Job_Type FlsJobType;
+# 2684 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Fls_17_Dmu\\inc\\Fls_17_Dmu.h"
+  uint8 FlsEver;
+
+
+  uint8 FlsTimeoutErr;
+
+
+
+
+
+
+
+} Fls_17_Dmu_StateType;
+
+
+
+
+
+typedef void (*Fls_17_Dmu_NotifFunctionPtrType)(void);
+
+
+
+
+
+
+
+typedef struct
+{
+  Fls_17_Dmu_StateType *FlsStateVarPtr;
+
+
+
+  Fls_17_Dmu_LengthType FlsFastRead;
+  Fls_17_Dmu_LengthType FlsSlowRead;
+
+  Fls_17_Dmu_NotifFunctionPtrType FlsJobEndNotificationPtr;
+
+
+  Fls_17_Dmu_NotifFunctionPtrType FlsJobErrorNotificationPtr;
+
+
+  Fls_17_Dmu_NotifFunctionPtrType FlsEraseVerifyErrNotifPtr;
+
+
+  Fls_17_Dmu_NotifFunctionPtrType FlsProgVerifyErrNotifPtr;
+
+
+  Fls_17_Dmu_NotifFunctionPtrType FlsIllegalStateNotificationPtr;
+
+
+  uint32 FlsWaitStates;
+# 2742 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Fls_17_Dmu\\inc\\Fls_17_Dmu.h"
+  MemIf_ModeType FlsDefaultMode;
+
+} Fls_17_Dmu_ConfigType;
+
+
+typedef void (*Fls_Init_Type)(const Fls_17_Dmu_ConfigType* ConfigPtr);
+# 2776 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Fls_17_Dmu\\inc\\Fls_17_Dmu.h"
+# 1 ".\\output\\inc/Fls_17_Dmu_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Fls_17_Dmu_MemMap.h" 1
+# 191 ".\\output\\inc/..\\..\\Integration\\mcal\\Fls_17_Dmu_MemMap.h"
+#pragma section "Code.Cpu0" ax
+# 2 ".\\output\\inc/Fls_17_Dmu_MemMap.h" 2
+# 2777 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Fls_17_Dmu\\inc\\Fls_17_Dmu.h" 2
+# 2800 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Fls_17_Dmu\\inc\\Fls_17_Dmu.h"
+extern void Fls_17_Dmu_Init(const Fls_17_Dmu_ConfigType*const ConfigPtr);
+# 2826 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Fls_17_Dmu\\inc\\Fls_17_Dmu.h"
+extern void Fls_17_Dmu_GetVersionInfo
+                               (Std_VersionInfoType* const VersionInfoPtr);
+# 2860 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Fls_17_Dmu\\inc\\Fls_17_Dmu.h"
+extern Std_ReturnType Fls_17_Dmu_Erase(
+                              const Fls_17_Dmu_AddressType TargetAddress,
+                              const Fls_17_Dmu_LengthType Length
+                               );
+# 2891 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Fls_17_Dmu\\inc\\Fls_17_Dmu.h"
+extern Std_ReturnType Fls_17_Dmu_Write(
+                                 const Fls_17_Dmu_AddressType TargetAddress,
+                                 const uint8 *const SourceAddressPtr,
+                                 const Fls_17_Dmu_LengthType Length
+                                  );
+# 2925 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Fls_17_Dmu\\inc\\Fls_17_Dmu.h"
+extern Std_ReturnType Fls_17_Dmu_Compare(
+                            const Fls_17_Dmu_AddressType SourceAddress,
+                            const uint8 *const TargetAddressPtr,
+                            const Fls_17_Dmu_LengthType Length
+                            );
+# 2964 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Fls_17_Dmu\\inc\\Fls_17_Dmu.h"
+extern Std_ReturnType Fls_17_Dmu_BlankCheck(
+                                    const Fls_17_Dmu_AddressType TargetAddress,
+                                    const Fls_17_Dmu_LengthType Length
+                                     );
+# 3000 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Fls_17_Dmu\\inc\\Fls_17_Dmu.h"
+extern void Fls_17_Dmu_Cancel(void);
+# 3060 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Fls_17_Dmu\\inc\\Fls_17_Dmu.h"
+extern MemIf_StatusType Fls_17_Dmu_GetStatus(void);
+# 3089 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Fls_17_Dmu\\inc\\Fls_17_Dmu.h"
+extern MemIf_JobResultType Fls_17_Dmu_GetJobResult(void);
+# 3117 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Fls_17_Dmu\\inc\\Fls_17_Dmu.h"
+extern void Fls_17_Dmu_MainFunction(void);
+# 3145 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Fls_17_Dmu\\inc\\Fls_17_Dmu.h"
+extern void Fls_17_Dmu_SetMode(const MemIf_ModeType Mode);
+# 3176 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Fls_17_Dmu\\inc\\Fls_17_Dmu.h"
+extern Std_ReturnType Fls_17_Dmu_Read(
+                                const Fls_17_Dmu_AddressType SourceAddress,
+                                uint8 *const TargetAddressPtr,
+                                const Fls_17_Dmu_LengthType Length
+                               );
+# 3459 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Fls_17_Dmu\\inc\\Fls_17_Dmu.h"
+extern Std_ReturnType Fls_17_Dmu_GetOperStatus(void);
+# 3479 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Fls_17_Dmu\\inc\\Fls_17_Dmu.h"
+extern void Fls_17_Dmu_ControlTimeoutDet(const uint8 Param);
+# 3575 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Fls_17_Dmu\\inc\\Fls_17_Dmu.h"
+# 1 ".\\output\\inc/Fls_17_Dmu_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Fls_17_Dmu_MemMap.h" 1
+# 203 ".\\output\\inc/..\\..\\Integration\\mcal\\Fls_17_Dmu_MemMap.h"
+#pragma section
+# 2 ".\\output\\inc/Fls_17_Dmu_MemMap.h" 2
+# 3576 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Fls_17_Dmu\\inc\\Fls_17_Dmu.h" 2
+
+# 1 ".\\output\\inc/Fls_17_Dmu_PBcfg.h" 1
+# 1 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Fls_17_Dmu_PBcfg.h" 1
+# 60 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Fls_17_Dmu_PBcfg.h"
+# 1 ".\\output\\inc/Fls_17_Dmu_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Fls_17_Dmu_MemMap.h" 1
+# 156 ".\\output\\inc/..\\..\\Integration\\mcal\\Fls_17_Dmu_MemMap.h"
+#pragma section "Config.Cpu0.Unspecified" a 4
+# 2 ".\\output\\inc/Fls_17_Dmu_MemMap.h" 2
+# 61 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Fls_17_Dmu_PBcfg.h" 2
+
+extern const Fls_17_Dmu_ConfigType Fls_17_Dmu_Config;
+# 76 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Fls_17_Dmu_PBcfg.h"
+# 1 ".\\output\\inc/Fls_17_Dmu_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Fls_17_Dmu_MemMap.h" 1
+# 169 ".\\output\\inc/..\\..\\Integration\\mcal\\Fls_17_Dmu_MemMap.h"
+#pragma section
+# 2 ".\\output\\inc/Fls_17_Dmu_MemMap.h" 2
+# 77 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Fls_17_Dmu_PBcfg.h" 2
+# 2 ".\\output\\inc/Fls_17_Dmu_PBcfg.h" 2
+# 3578 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Fls_17_Dmu\\inc\\Fls_17_Dmu.h" 2
+# 2 ".\\output\\inc/Fls_17_Dmu.h" 2
+# 6 ".\\output\\inc/..\\..\\Integration\\mcal\\Fls.h" 2
+# 44 ".\\output\\inc/..\\..\\Integration\\mcal\\Fls.h"
+typedef uint32 Fls_AddressType;
+
+typedef uint32 Fls_LengthType;
+# 2 ".\\output\\inc/Fls.h" 2
+# 17 ".\\output\\inc/..\\..\\Integration\\ecu\\EcuM_PBDefine.h" 2
+# 1 ".\\output\\inc/Gpt.h" 1
+# 1 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Gpt\\inc\\Gpt.h" 1
+# 46 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Gpt\\inc\\Gpt.h"
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 47 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Gpt\\inc\\Gpt.h" 2
+
+# 1 ".\\output\\inc/Gpt_Cfg.h" 1
+# 1 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Gpt_Cfg.h" 1
+# 2 ".\\output\\inc/Gpt_Cfg.h" 2
+# 49 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Gpt\\inc\\Gpt.h" 2
+
+
+# 1 ".\\output\\inc/Mcu_17_TimerIp.h" 1
+# 1 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h" 1
+# 41 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+# 1 ".\\output\\inc/Mcal_Compiler.h" 1
+# 42 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h" 2
+# 1 ".\\output\\inc/Mcu_17_TimerIp_Cfg.h" 1
+# 1 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Mcu_17_TimerIp_Cfg.h" 1
+# 46 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Mcu_17_TimerIp_Cfg.h"
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 47 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Mcu_17_TimerIp_Cfg.h" 2
+# 1 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Mcu_Cfg.h" 1
+# 48 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Mcu_17_TimerIp_Cfg.h" 2
+# 2 ".\\output\\inc/Mcu_17_TimerIp_Cfg.h" 2
+# 43 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h" 2
+# 53 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+# 1 ".\\output\\inc/IfxGtm_reg.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_reg.h" 1
+# 56 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_reg.h"
+# 1 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h" 1
+# 73 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef struct _Ifx_GTM_ACCEN0_Bits
+{
+    Ifx_UReg_32Bit EN0:1;
+    Ifx_UReg_32Bit EN1:1;
+    Ifx_UReg_32Bit EN2:1;
+    Ifx_UReg_32Bit EN3:1;
+    Ifx_UReg_32Bit EN4:1;
+    Ifx_UReg_32Bit EN5:1;
+    Ifx_UReg_32Bit EN6:1;
+    Ifx_UReg_32Bit EN7:1;
+    Ifx_UReg_32Bit EN8:1;
+    Ifx_UReg_32Bit EN9:1;
+    Ifx_UReg_32Bit EN10:1;
+    Ifx_UReg_32Bit EN11:1;
+    Ifx_UReg_32Bit EN12:1;
+    Ifx_UReg_32Bit EN13:1;
+    Ifx_UReg_32Bit EN14:1;
+    Ifx_UReg_32Bit EN15:1;
+    Ifx_UReg_32Bit EN16:1;
+    Ifx_UReg_32Bit EN17:1;
+    Ifx_UReg_32Bit EN18:1;
+    Ifx_UReg_32Bit EN19:1;
+    Ifx_UReg_32Bit EN20:1;
+    Ifx_UReg_32Bit EN21:1;
+    Ifx_UReg_32Bit EN22:1;
+    Ifx_UReg_32Bit EN23:1;
+    Ifx_UReg_32Bit EN24:1;
+    Ifx_UReg_32Bit EN25:1;
+    Ifx_UReg_32Bit EN26:1;
+    Ifx_UReg_32Bit EN27:1;
+    Ifx_UReg_32Bit EN28:1;
+    Ifx_UReg_32Bit EN29:1;
+    Ifx_UReg_32Bit EN30:1;
+    Ifx_UReg_32Bit EN31:1;
+} Ifx_GTM_ACCEN0_Bits;
+
+
+typedef struct _Ifx_GTM_ACCEN1_Bits
+{
+    Ifx_UReg_32Bit reserved_0:32;
+} Ifx_GTM_ACCEN1_Bits;
+
+
+typedef struct _Ifx_GTM_ADCTRIG_OUT0_Bits
+{
+    Ifx_UReg_32Bit SEL0:4;
+    Ifx_UReg_32Bit SEL1:4;
+    Ifx_UReg_32Bit SEL2:4;
+    Ifx_UReg_32Bit SEL3:4;
+    Ifx_UReg_32Bit SEL4:4;
+    Ifx_UReg_32Bit SEL5:4;
+    Ifx_UReg_32Bit SEL6:4;
+    Ifx_UReg_32Bit SEL7:4;
+} Ifx_GTM_ADCTRIG_OUT0_Bits;
+
+
+typedef struct _Ifx_GTM_ADCTRIG_OUT1_Bits
+{
+    Ifx_UReg_32Bit SEL0:4;
+    Ifx_UReg_32Bit SEL1:4;
+    Ifx_UReg_32Bit SEL2:4;
+    Ifx_UReg_32Bit SEL3:4;
+    Ifx_UReg_32Bit reserved_16:16;
+} Ifx_GTM_ADCTRIG_OUT1_Bits;
+
+
+typedef struct _Ifx_GTM_AEI_ADDR_XPT_Bits
+{
+    volatile unsigned int TO_ADDR:20;
+    volatile unsigned int TO_W1R0:1;
+    volatile unsigned int reserved_21:11;
+} Ifx_GTM_AEI_ADDR_XPT_Bits;
+
+
+typedef struct _Ifx_GTM_AEI_STA_XPT_Bits
+{
+    volatile unsigned int ADDR:20;
+    volatile unsigned int W1R0:1;
+    volatile unsigned int reserved_21:11;
+} Ifx_GTM_AEI_STA_XPT_Bits;
+
+
+typedef struct _Ifx_GTM_ARU_ACCESS_Bits
+{
+    volatile unsigned int ADDR:9;
+    volatile unsigned int reserved_9:3;
+    volatile unsigned int RREQ:1;
+    volatile unsigned int WREQ:1;
+    volatile unsigned int reserved_14:18;
+} Ifx_GTM_ARU_ACCESS_Bits;
+
+
+typedef struct _Ifx_GTM_ARU_CADDR_Bits
+{
+    volatile unsigned int CADDR_0:7;
+    volatile unsigned int reserved_7:9;
+    volatile unsigned int CADDR_1:7;
+    volatile unsigned int reserved_23:9;
+} Ifx_GTM_ARU_CADDR_Bits;
+
+
+typedef struct _Ifx_GTM_ARU_CADDR_END_Bits
+{
+    volatile unsigned int CADDR_END:7;
+    volatile unsigned int reserved_7:25;
+} Ifx_GTM_ARU_CADDR_END_Bits;
+
+
+typedef struct _Ifx_GTM_ARU_CTRL_Bits
+{
+    volatile unsigned int ARU_0_DYN_EN:2;
+    volatile unsigned int ARU_1_DYN_EN:2;
+    volatile unsigned int ARU_DYN_RING_MODE:1;
+    volatile unsigned int reserved_5:27;
+} Ifx_GTM_ARU_CTRL_Bits;
+
+
+typedef struct _Ifx_GTM_ARU_DATA_H_Bits
+{
+    volatile unsigned int DATA:29;
+    volatile unsigned int reserved_29:3;
+} Ifx_GTM_ARU_DATA_H_Bits;
+
+
+typedef struct _Ifx_GTM_ARU_DATA_L_Bits
+{
+    volatile unsigned int DATA:29;
+    volatile unsigned int reserved_29:3;
+} Ifx_GTM_ARU_DATA_L_Bits;
+
+
+typedef struct _Ifx_GTM_ARU_DBG_ACCESS0_Bits
+{
+    volatile unsigned int ADDR:9;
+    volatile unsigned int reserved_9:23;
+} Ifx_GTM_ARU_DBG_ACCESS0_Bits;
+
+
+typedef struct _Ifx_GTM_ARU_DBG_ACCESS1_Bits
+{
+    volatile unsigned int ADDR:9;
+    volatile unsigned int reserved_9:23;
+} Ifx_GTM_ARU_DBG_ACCESS1_Bits;
+
+
+typedef struct _Ifx_GTM_ARU_DBG_DATA0_H_Bits
+{
+    volatile unsigned int DATA:29;
+    volatile unsigned int reserved_29:3;
+} Ifx_GTM_ARU_DBG_DATA0_H_Bits;
+
+
+typedef struct _Ifx_GTM_ARU_DBG_DATA0_L_Bits
+{
+    volatile unsigned int DATA:29;
+    volatile unsigned int reserved_29:3;
+} Ifx_GTM_ARU_DBG_DATA0_L_Bits;
+
+
+typedef struct _Ifx_GTM_ARU_DBG_DATA1_H_Bits
+{
+    volatile unsigned int DATA:29;
+    volatile unsigned int reserved_29:3;
+} Ifx_GTM_ARU_DBG_DATA1_H_Bits;
+
+
+typedef struct _Ifx_GTM_ARU_DBG_DATA1_L_Bits
+{
+    volatile unsigned int DATA:29;
+    volatile unsigned int reserved_29:3;
+} Ifx_GTM_ARU_DBG_DATA1_L_Bits;
+
+
+typedef struct _Ifx_GTM_ARU_DYN_CTRL_Bits
+{
+    volatile unsigned int DYN_ARU_UPDATE_EN:1;
+    volatile unsigned int DYN_ROUTE_SWAP:1;
+    volatile unsigned int reserved_2:30;
+} Ifx_GTM_ARU_DYN_CTRL_Bits;
+
+
+typedef struct _Ifx_GTM_ARU_DYN_RDADDR_Bits
+{
+    volatile unsigned int DYN_ARU_RDADDR:9;
+    volatile unsigned int reserved_9:23;
+} Ifx_GTM_ARU_DYN_RDADDR_Bits;
+
+
+typedef struct _Ifx_GTM_ARU_DYN_ROUTE_HIGH_Bits
+{
+    volatile unsigned int DYN_READ_ID3:8;
+    volatile unsigned int DYN_READ_ID4:8;
+    volatile unsigned int DYN_READ_ID5:8;
+    volatile unsigned int DYN_CLK_WAIT:4;
+    volatile unsigned int reserved_28:4;
+} Ifx_GTM_ARU_DYN_ROUTE_HIGH_Bits;
+
+
+typedef struct _Ifx_GTM_ARU_DYN_ROUTE_LOW_Bits
+{
+    volatile unsigned int DYN_READ_ID0:8;
+    volatile unsigned int DYN_READ_ID1:8;
+    volatile unsigned int DYN_READ_ID2:8;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_ARU_DYN_ROUTE_LOW_Bits;
+
+
+typedef struct _Ifx_GTM_ARU_DYN_ROUTE_SR_HIGH_Bits
+{
+    volatile unsigned int DYN_READ_ID9:8;
+    volatile unsigned int DYN_READ_ID10:8;
+    volatile unsigned int DYN_READ_ID11:8;
+    volatile unsigned int DYN_CLK_WAIT:4;
+    volatile unsigned int DYN_UPDATE_EN:1;
+    volatile unsigned int reserved_29:3;
+} Ifx_GTM_ARU_DYN_ROUTE_SR_HIGH_Bits;
+
+
+typedef struct _Ifx_GTM_ARU_DYN_ROUTE_SR_LOW_Bits
+{
+    volatile unsigned int DYN_READ_ID6:8;
+    volatile unsigned int DYN_READ_ID7:8;
+    volatile unsigned int DYN_READ_ID8:8;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_ARU_DYN_ROUTE_SR_LOW_Bits;
+
+
+typedef struct _Ifx_GTM_ARU_IRQ_EN_Bits
+{
+    volatile unsigned int NEW_DATA0_IRQ_EN:1;
+    volatile unsigned int NEW_DATA1_IRQ_EN:1;
+    volatile unsigned int ACC_ACK_IRQ_EN:1;
+    volatile unsigned int reserved_3:29;
+} Ifx_GTM_ARU_IRQ_EN_Bits;
+
+
+typedef struct _Ifx_GTM_ARU_IRQ_FORCINT_Bits
+{
+    volatile unsigned int TRG_NEW_DATA0:1;
+    volatile unsigned int TRG_NEW_DATA1:1;
+    volatile unsigned int TRG_ACC_ACK:1;
+    volatile unsigned int reserved_3:29;
+} Ifx_GTM_ARU_IRQ_FORCINT_Bits;
+
+
+typedef struct _Ifx_GTM_ARU_IRQ_MODE_Bits
+{
+    volatile unsigned int IRQ_MODE:2;
+    volatile unsigned int reserved_2:30;
+} Ifx_GTM_ARU_IRQ_MODE_Bits;
+
+
+typedef struct _Ifx_GTM_ARU_IRQ_NOTIFY_Bits
+{
+    volatile unsigned int NEW_DATA0:1;
+    volatile unsigned int NEW_DATA1:1;
+    volatile unsigned int ACC_ACK:1;
+    volatile unsigned int reserved_3:29;
+} Ifx_GTM_ARU_IRQ_NOTIFY_Bits;
+
+
+typedef struct _Ifx_GTM_ATOM_AGC_ACT_TB_Bits
+{
+    volatile unsigned int ACT_TB:24;
+    volatile unsigned int TB_TRIG:1;
+    volatile unsigned int TBU_SEL:2;
+    volatile unsigned int reserved_27:5;
+} Ifx_GTM_ATOM_AGC_ACT_TB_Bits;
+
+
+typedef struct _Ifx_GTM_ATOM_AGC_ENDIS_CTRL_Bits
+{
+    volatile unsigned int ENDIS_CTRL0:2;
+    volatile unsigned int ENDIS_CTRL1:2;
+    volatile unsigned int ENDIS_CTRL2:2;
+    volatile unsigned int ENDIS_CTRL3:2;
+    volatile unsigned int ENDIS_CTRL4:2;
+    volatile unsigned int ENDIS_CTRL5:2;
+    volatile unsigned int ENDIS_CTRL6:2;
+    volatile unsigned int ENDIS_CTRL7:2;
+    volatile unsigned int reserved_16:16;
+} Ifx_GTM_ATOM_AGC_ENDIS_CTRL_Bits;
+
+
+typedef struct _Ifx_GTM_ATOM_AGC_ENDIS_STAT_Bits
+{
+    volatile unsigned int ENDIS_CTRL0:2;
+    volatile unsigned int ENDIS_CTRL1:2;
+    volatile unsigned int ENDIS_CTRL2:2;
+    volatile unsigned int ENDIS_CTRL3:2;
+    volatile unsigned int ENDIS_CTRL4:2;
+    volatile unsigned int ENDIS_CTRL5:2;
+    volatile unsigned int ENDIS_CTRL6:2;
+    volatile unsigned int ENDIS_CTRL7:2;
+    volatile unsigned int reserved_16:16;
+} Ifx_GTM_ATOM_AGC_ENDIS_STAT_Bits;
+
+
+typedef struct _Ifx_GTM_ATOM_AGC_FUPD_CTRL_Bits
+{
+    volatile unsigned int FUPD_CTRL0:2;
+    volatile unsigned int FUPD_CTRL1:2;
+    volatile unsigned int FUPD_CTRL2:2;
+    volatile unsigned int FUPD_CTRL3:2;
+    volatile unsigned int FUPD_CTRL4:2;
+    volatile unsigned int FUPD_CTRL5:2;
+    volatile unsigned int FUPD_CTRL6:2;
+    volatile unsigned int FUPD_CTRL7:2;
+    volatile unsigned int RSTCN0_CH0:2;
+    volatile unsigned int RSTCN0_CH1:2;
+    volatile unsigned int RSTCN0_CH2:2;
+    volatile unsigned int RSTCN0_CH3:2;
+    volatile unsigned int RSTCN0_CH4:2;
+    volatile unsigned int RSTCN0_CH5:2;
+    volatile unsigned int RSTCN0_CH6:2;
+    volatile unsigned int RSTCN0_CH7:2;
+} Ifx_GTM_ATOM_AGC_FUPD_CTRL_Bits;
+
+
+typedef struct _Ifx_GTM_ATOM_AGC_GLB_CTRL_Bits
+{
+    volatile unsigned int HOST_TRIG:1;
+    volatile unsigned int reserved_1:7;
+    volatile unsigned int RST_CH0:1;
+    volatile unsigned int RST_CH1:1;
+    volatile unsigned int RST_CH2:1;
+    volatile unsigned int RST_CH3:1;
+    volatile unsigned int RST_CH4:1;
+    volatile unsigned int RST_CH5:1;
+    volatile unsigned int RST_CH6:1;
+    volatile unsigned int RST_CH7:1;
+    volatile unsigned int UPEN_CTRL0:2;
+    volatile unsigned int UPEN_CTRL1:2;
+    volatile unsigned int UPEN_CTRL2:2;
+    volatile unsigned int UPEN_CTRL3:2;
+    volatile unsigned int UPEN_CTRL4:2;
+    volatile unsigned int UPEN_CTRL5:2;
+    volatile unsigned int UPEN_CTRL6:2;
+    volatile unsigned int UPEN_CTRL7:2;
+} Ifx_GTM_ATOM_AGC_GLB_CTRL_Bits;
+
+
+typedef struct _Ifx_GTM_ATOM_AGC_INT_TRIG_Bits
+{
+    volatile unsigned int INT_TRIG0:2;
+    volatile unsigned int INT_TRIG1:2;
+    volatile unsigned int INT_TRIG2:2;
+    volatile unsigned int INT_TRIG3:2;
+    volatile unsigned int INT_TRIG4:2;
+    volatile unsigned int INT_TRIG5:2;
+    volatile unsigned int INT_TRIG6:2;
+    volatile unsigned int INT_TRIG7:2;
+    volatile unsigned int reserved_16:16;
+} Ifx_GTM_ATOM_AGC_INT_TRIG_Bits;
+
+
+typedef struct _Ifx_GTM_ATOM_AGC_OUTEN_CTRL_Bits
+{
+    volatile unsigned int OUTEN_CTRL0:2;
+    volatile unsigned int OUTEN_CTRL1:2;
+    volatile unsigned int OUTEN_CTRL2:2;
+    volatile unsigned int OUTEN_CTRL3:2;
+    volatile unsigned int OUTEN_CTRL4:2;
+    volatile unsigned int OUTEN_CTRL5:2;
+    volatile unsigned int OUTEN_CTRL6:2;
+    volatile unsigned int OUTEN_CTRL7:2;
+    volatile unsigned int reserved_16:16;
+} Ifx_GTM_ATOM_AGC_OUTEN_CTRL_Bits;
+
+
+typedef struct _Ifx_GTM_ATOM_AGC_OUTEN_STAT_Bits
+{
+    volatile unsigned int OUTEN_STAT0:2;
+    volatile unsigned int OUTEN_STAT1:2;
+    volatile unsigned int OUTEN_STAT2:2;
+    volatile unsigned int OUTEN_STAT3:2;
+    volatile unsigned int OUTEN_STAT4:2;
+    volatile unsigned int OUTEN_STAT5:2;
+    volatile unsigned int OUTEN_STAT6:2;
+    volatile unsigned int OUTEN_STAT7:2;
+    volatile unsigned int reserved_16:16;
+} Ifx_GTM_ATOM_AGC_OUTEN_STAT_Bits;
+
+
+typedef struct _Ifx_GTM_ATOM_CH_CM0_Bits
+{
+    volatile unsigned int CM0:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_ATOM_CH_CM0_Bits;
+
+
+typedef struct _Ifx_GTM_ATOM_CH_CM1_Bits
+{
+    volatile unsigned int CM1:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_ATOM_CH_CM1_Bits;
+
+
+typedef struct _Ifx_GTM_ATOM_CH_CN0_Bits
+{
+    volatile unsigned int CN0:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_ATOM_CH_CN0_Bits;
+
+
+typedef struct _Ifx_GTM_ATOM_CH_CTRL_Bits
+{
+    volatile unsigned int MODE:2;
+    volatile unsigned int TB12_SEL:1;
+    volatile unsigned int ARU_EN:1;
+    volatile unsigned int ACB:5;
+    volatile unsigned int CMP_CTRL:1;
+    volatile unsigned int EUPM:1;
+    volatile unsigned int SL:1;
+    volatile unsigned int CLK_SRC_SR:3;
+    volatile unsigned int ECLK_SRC:1;
+    volatile unsigned int WR_REQ:1;
+    volatile unsigned int TRIG_PULSE:1;
+    volatile unsigned int UDMODE:2;
+    volatile unsigned int RST_CCU0:1;
+    volatile unsigned int OSM_TRIG:1;
+    volatile unsigned int EXT_TRIG:1;
+    volatile unsigned int EXTTRIGOUT:1;
+    volatile unsigned int TRIGOUT:1;
+    volatile unsigned int SLA:1;
+    volatile unsigned int OSM:1;
+    volatile unsigned int ABM:1;
+    volatile unsigned int reserved_28:1;
+    volatile unsigned int EXT_FUPD:1;
+    volatile unsigned int SOMB:1;
+    volatile unsigned int FREEZE:1;
+} Ifx_GTM_ATOM_CH_CTRL_Bits;
+
+
+typedef struct _Ifx_GTM_ATOM_CH_IRQ_EN_Bits
+{
+    volatile unsigned int CCU0TC_IRQ_EN:1;
+    volatile unsigned int CCU1TC_IRQ_EN:1;
+    volatile unsigned int reserved_2:30;
+} Ifx_GTM_ATOM_CH_IRQ_EN_Bits;
+
+
+typedef struct _Ifx_GTM_ATOM_CH_IRQ_FORCINT_Bits
+{
+    volatile unsigned int TRG_CCU0TC:1;
+    volatile unsigned int TRG_CCU1TC:1;
+    volatile unsigned int reserved_2:30;
+} Ifx_GTM_ATOM_CH_IRQ_FORCINT_Bits;
+
+
+typedef struct _Ifx_GTM_ATOM_CH_IRQ_MODE_Bits
+{
+    volatile unsigned int IRQ_MODE:2;
+    volatile unsigned int reserved_2:30;
+} Ifx_GTM_ATOM_CH_IRQ_MODE_Bits;
+
+
+typedef struct _Ifx_GTM_ATOM_CH_IRQ_NOTIFY_Bits
+{
+    volatile unsigned int CCU0TC:1;
+    volatile unsigned int CCU1TC:1;
+    volatile unsigned int reserved_2:30;
+} Ifx_GTM_ATOM_CH_IRQ_NOTIFY_Bits;
+
+
+typedef struct _Ifx_GTM_ATOM_CH_RDADDR_Bits
+{
+    volatile unsigned int RDADDR0:9;
+    volatile unsigned int reserved_9:7;
+    volatile unsigned int RDADDR1:9;
+    volatile unsigned int reserved_25:7;
+} Ifx_GTM_ATOM_CH_RDADDR_Bits;
+
+
+typedef struct _Ifx_GTM_ATOM_CH_SOMB_Bits
+{
+    volatile unsigned int MODE:2;
+    volatile unsigned int TB12_SEL:1;
+    volatile unsigned int ARU_EN:1;
+    volatile unsigned int ACB_1_0:2;
+    volatile unsigned int ACB_4_3_2:3;
+    volatile unsigned int CMP_CTRL:1;
+    volatile unsigned int EUPM:1;
+    volatile unsigned int SL:1;
+    volatile unsigned int reserved_12:3;
+    volatile unsigned int reserved_15:1;
+    volatile unsigned int WR_REQ:1;
+    volatile unsigned int reserved_17:1;
+    volatile unsigned int reserved_18:2;
+    volatile unsigned int reserved_20:1;
+    volatile unsigned int reserved_21:2;
+    volatile unsigned int EXTTRIGOUT:1;
+    volatile unsigned int TRIGOUT:1;
+    volatile unsigned int reserved_25:1;
+    volatile unsigned int reserved_26:1;
+    volatile unsigned int ABM:1;
+    volatile unsigned int reserved_28:1;
+    volatile unsigned int reserved_29:1;
+    volatile unsigned int SOMB:1;
+    volatile unsigned int FREEZE:1;
+} Ifx_GTM_ATOM_CH_SOMB_Bits;
+
+
+typedef struct _Ifx_GTM_ATOM_CH_SOMC_Bits
+{
+    volatile unsigned int MODE:2;
+    volatile unsigned int TB12_SEL:1;
+    volatile unsigned int ARU_EN:1;
+    volatile unsigned int ACB_1_0:2;
+    volatile unsigned int ACB_4_3_2:3;
+    volatile unsigned int CMP_CTRL:1;
+    volatile unsigned int EUPM:1;
+    volatile unsigned int SL:1;
+    volatile unsigned int reserved_12:3;
+    volatile unsigned int reserved_15:1;
+    volatile unsigned int WR_REQ:1;
+    volatile unsigned int reserved_17:1;
+    volatile unsigned int reserved_18:2;
+    volatile unsigned int reserved_20:1;
+    volatile unsigned int reserved_21:2;
+    volatile unsigned int EXTTRIGOUT:1;
+    volatile unsigned int TRIGOUT:1;
+    volatile unsigned int SLA:1;
+    volatile unsigned int reserved_26:1;
+    volatile unsigned int ABM:1;
+    volatile unsigned int reserved_28:1;
+    volatile unsigned int reserved_29:1;
+    volatile unsigned int reserved_30:1;
+    volatile unsigned int FREEZE:1;
+} Ifx_GTM_ATOM_CH_SOMC_Bits;
+
+
+typedef struct _Ifx_GTM_ATOM_CH_SOMI_Bits
+{
+    volatile unsigned int MODE:2;
+    volatile unsigned int reserved_2:1;
+    volatile unsigned int ARU_EN:1;
+    volatile unsigned int ACB0:1;
+    volatile unsigned int reserved_5:4;
+    volatile unsigned int reserved_9:1;
+    volatile unsigned int reserved_10:1;
+    volatile unsigned int SL:1;
+    volatile unsigned int reserved_12:3;
+    volatile unsigned int reserved_15:1;
+    volatile unsigned int reserved_16:1;
+    volatile unsigned int reserved_17:1;
+    volatile unsigned int reserved_18:2;
+    volatile unsigned int reserved_20:1;
+    volatile unsigned int reserved_21:3;
+    volatile unsigned int reserved_24:1;
+    volatile unsigned int reserved_25:1;
+    volatile unsigned int reserved_26:1;
+    volatile unsigned int reserved_27:1;
+    volatile unsigned int reserved_28:1;
+    volatile unsigned int reserved_29:1;
+    volatile unsigned int reserved_30:1;
+    volatile unsigned int FREEZE:1;
+} Ifx_GTM_ATOM_CH_SOMI_Bits;
+
+
+typedef struct _Ifx_GTM_ATOM_CH_SOMP_Bits
+{
+    volatile unsigned int MODE:2;
+    volatile unsigned int reserved_2:1;
+    volatile unsigned int ARU_EN:1;
+    volatile unsigned int ADL:2;
+    volatile unsigned int BITREV:1;
+    volatile unsigned int SR0_TRIG:1;
+    volatile unsigned int reserved_8:1;
+    volatile unsigned int reserved_9:1;
+    volatile unsigned int reserved_10:1;
+    volatile unsigned int SL:1;
+    volatile unsigned int CLK_SRC_SR:3;
+    volatile unsigned int ECLK_SRC:1;
+    volatile unsigned int reserved_16:1;
+    volatile unsigned int TRIG_PULSE:1;
+    volatile unsigned int UDMODE:2;
+    volatile unsigned int RST_CCU0:1;
+    volatile unsigned int OSM_TRIG:1;
+    volatile unsigned int EXT_TRIG:1;
+    volatile unsigned int EXTTRIGOUT:1;
+    volatile unsigned int TRIGOUT:1;
+    volatile unsigned int reserved_25:1;
+    volatile unsigned int OSM:1;
+    volatile unsigned int reserved_27:1;
+    volatile unsigned int reserved_28:1;
+    volatile unsigned int EXT_FUPD:1;
+    volatile unsigned int reserved_30:1;
+    volatile unsigned int FREEZE:1;
+} Ifx_GTM_ATOM_CH_SOMP_Bits;
+
+
+typedef struct _Ifx_GTM_ATOM_CH_SOMS_Bits
+{
+    volatile unsigned int MODE:2;
+    volatile unsigned int reserved_2:1;
+    volatile unsigned int ARU_EN:1;
+    volatile unsigned int ACB0:1;
+    volatile unsigned int reserved_5:2;
+    volatile unsigned int DSO:1;
+    volatile unsigned int reserved_8:1;
+    volatile unsigned int reserved_9:1;
+    volatile unsigned int reserved_10:1;
+    volatile unsigned int SL:1;
+    volatile unsigned int CLK_SRC_SR:3;
+    volatile unsigned int ECLK_SRC:1;
+    volatile unsigned int reserved_16:1;
+    volatile unsigned int reserved_17:1;
+    volatile unsigned int reserved_18:2;
+    volatile unsigned int reserved_20:1;
+    volatile unsigned int reserved_21:3;
+    volatile unsigned int reserved_24:1;
+    volatile unsigned int reserved_25:1;
+    volatile unsigned int OSM:1;
+    volatile unsigned int reserved_27:1;
+    volatile unsigned int reserved_28:1;
+    volatile unsigned int EXT_FUPD:1;
+    volatile unsigned int reserved_30:1;
+    volatile unsigned int FREEZE:1;
+} Ifx_GTM_ATOM_CH_SOMS_Bits;
+
+
+typedef struct _Ifx_GTM_ATOM_CH_SR0_Bits
+{
+    volatile unsigned int SR0:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_ATOM_CH_SR0_Bits;
+
+
+typedef struct _Ifx_GTM_ATOM_CH_SR1_Bits
+{
+    volatile unsigned int SR1:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_ATOM_CH_SR1_Bits;
+
+
+typedef struct _Ifx_GTM_ATOM_CH_STAT_Bits
+{
+    volatile unsigned int OL:1;
+    volatile unsigned int reserved_1:15;
+    volatile unsigned int ACBI:5;
+    volatile unsigned int DV:1;
+    volatile unsigned int WRF:1;
+    volatile unsigned int DR:1;
+    volatile unsigned int ACBO:5;
+    volatile unsigned int reserved_29:3;
+} Ifx_GTM_ATOM_CH_STAT_Bits;
+
+
+typedef struct _Ifx_GTM_AUX_IN_SRC_TIM_Bits
+{
+    volatile unsigned int SRC_CH0:1;
+    volatile unsigned int SRC_CH1:1;
+    volatile unsigned int SRC_CH2:1;
+    volatile unsigned int SRC_CH3:1;
+    volatile unsigned int SRC_CH4:1;
+    volatile unsigned int SRC_CH5:1;
+    volatile unsigned int SRC_CH6:1;
+    volatile unsigned int SRC_CH7:1;
+    volatile unsigned int reserved_8:8;
+    volatile unsigned int SEL_OUT_N_CH0:1;
+    volatile unsigned int SEL_OUT_N_CH1:1;
+    volatile unsigned int SEL_OUT_N_CH2:1;
+    volatile unsigned int SEL_OUT_N_CH3:1;
+    volatile unsigned int SEL_OUT_N_CH4:1;
+    volatile unsigned int SEL_OUT_N_CH5:1;
+    volatile unsigned int SEL_OUT_N_CH6:1;
+    volatile unsigned int SEL_OUT_N_CH7:1;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_AUX_IN_SRC_TIM_Bits;
+
+
+typedef struct _Ifx_GTM_BRC_EIRQ_EN_Bits
+{
+    volatile unsigned int DEST_ERR_EIRQ_EN:1;
+    volatile unsigned int DID_EIRQ_EN0:1;
+    volatile unsigned int DID_EIRQ_EN1:1;
+    volatile unsigned int DID_EIRQ_EN2:1;
+    volatile unsigned int DID_EIRQ_EN3:1;
+    volatile unsigned int DID_EIRQ_EN4:1;
+    volatile unsigned int DID_EIRQ_EN5:1;
+    volatile unsigned int DID_EIRQ_EN6:1;
+    volatile unsigned int DID_EIRQ_EN7:1;
+    volatile unsigned int DID_EIRQ_EN8:1;
+    volatile unsigned int DID_EIRQ_EN9:1;
+    volatile unsigned int DID_EIRQ_EN10:1;
+    volatile unsigned int DID_EIRQ_EN11:1;
+    volatile unsigned int reserved_13:19;
+} Ifx_GTM_BRC_EIRQ_EN_Bits;
+
+
+typedef struct _Ifx_GTM_BRC_IRQ_EN_Bits
+{
+    volatile unsigned int DEST_ERR_IRQ_EN:1;
+    volatile unsigned int DID_IRQ_EN0:1;
+    volatile unsigned int DID_IRQ_EN1:1;
+    volatile unsigned int DID_IRQ_EN2:1;
+    volatile unsigned int DID_IRQ_EN3:1;
+    volatile unsigned int DID_IRQ_EN4:1;
+    volatile unsigned int DID_IRQ_EN5:1;
+    volatile unsigned int DID_IRQ_EN6:1;
+    volatile unsigned int DID_IRQ_EN7:1;
+    volatile unsigned int DID_IRQ_EN8:1;
+    volatile unsigned int DID_IRQ_EN9:1;
+    volatile unsigned int DID_IRQ_EN10:1;
+    volatile unsigned int DID_IRQ_EN11:1;
+    volatile unsigned int reserved_13:19;
+} Ifx_GTM_BRC_IRQ_EN_Bits;
+
+
+typedef struct _Ifx_GTM_BRC_IRQ_FORCINT_Bits
+{
+    volatile unsigned int TRG_DEST_ERR:1;
+    volatile unsigned int TRG_DID0:1;
+    volatile unsigned int TRG_DID1:1;
+    volatile unsigned int TRG_DID2:1;
+    volatile unsigned int TRG_DID3:1;
+    volatile unsigned int TRG_DID4:1;
+    volatile unsigned int TRG_DID5:1;
+    volatile unsigned int TRG_DID6:1;
+    volatile unsigned int TRG_DID7:1;
+    volatile unsigned int TRG_DID8:1;
+    volatile unsigned int TRG_DID9:1;
+    volatile unsigned int TRG_DID10:1;
+    volatile unsigned int TRG_DID11:1;
+    volatile unsigned int reserved_13:19;
+} Ifx_GTM_BRC_IRQ_FORCINT_Bits;
+
+
+typedef struct _Ifx_GTM_BRC_IRQ_MODE_Bits
+{
+    volatile unsigned int IRQ_MODE:2;
+    volatile unsigned int reserved_2:30;
+} Ifx_GTM_BRC_IRQ_MODE_Bits;
+
+
+typedef struct _Ifx_GTM_BRC_IRQ_NOTIFY_Bits
+{
+    volatile unsigned int DEST_ERR:1;
+    volatile unsigned int DID0:1;
+    volatile unsigned int DID1:1;
+    volatile unsigned int DID2:1;
+    volatile unsigned int DID3:1;
+    volatile unsigned int DID4:1;
+    volatile unsigned int DID5:1;
+    volatile unsigned int DID6:1;
+    volatile unsigned int DID7:1;
+    volatile unsigned int DID8:1;
+    volatile unsigned int DID9:1;
+    volatile unsigned int DID10:1;
+    volatile unsigned int DID11:1;
+    volatile unsigned int reserved_13:19;
+} Ifx_GTM_BRC_IRQ_NOTIFY_Bits;
+
+
+typedef struct _Ifx_GTM_BRC_RST_Bits
+{
+    volatile unsigned int RST:1;
+    volatile unsigned int reserved_1:31;
+} Ifx_GTM_BRC_RST_Bits;
+
+
+typedef struct _Ifx_GTM_BRC_SRC_ADDR_Bits
+{
+    volatile unsigned int ADDR:9;
+    volatile unsigned int reserved_9:3;
+    volatile unsigned int BRC_MODE:1;
+    volatile unsigned int reserved_13:19;
+} Ifx_GTM_BRC_SRC_ADDR_Bits;
+
+
+typedef struct _Ifx_GTM_BRC_SRC_DEST_Bits
+{
+    volatile unsigned int EN_DEST0:1;
+    volatile unsigned int EN_DEST1:1;
+    volatile unsigned int EN_DEST2:1;
+    volatile unsigned int EN_DEST3:1;
+    volatile unsigned int EN_DEST4:1;
+    volatile unsigned int EN_DEST5:1;
+    volatile unsigned int EN_DEST6:1;
+    volatile unsigned int EN_DEST7:1;
+    volatile unsigned int EN_DEST8:1;
+    volatile unsigned int EN_DEST9:1;
+    volatile unsigned int EN_DEST10:1;
+    volatile unsigned int EN_DEST11:1;
+    volatile unsigned int EN_DEST12:1;
+    volatile unsigned int EN_DEST13:1;
+    volatile unsigned int EN_DEST14:1;
+    volatile unsigned int EN_DEST15:1;
+    volatile unsigned int EN_DEST16:1;
+    volatile unsigned int EN_DEST17:1;
+    volatile unsigned int EN_DEST18:1;
+    volatile unsigned int EN_DEST19:1;
+    volatile unsigned int EN_DEST20:1;
+    volatile unsigned int EN_DEST21:1;
+    volatile unsigned int EN_TRASHBIN:1;
+    volatile unsigned int reserved_23:9;
+} Ifx_GTM_BRC_SRC_DEST_Bits;
+
+
+typedef struct _Ifx_GTM_BRIDGE_MODE_Bits
+{
+    volatile unsigned int BRG_MODE:1;
+    volatile unsigned int MSK_WR_RSP:1;
+    volatile unsigned int BYPASS_SYNC:1;
+    volatile unsigned int reserved_3:5;
+    volatile unsigned int MODE_UP_PGR:1;
+    volatile unsigned int BUFF_OVL:1;
+    volatile unsigned int reserved_10:2;
+    volatile unsigned int SYNC_INPUT_REG:1;
+    volatile unsigned int reserved_13:3;
+    volatile unsigned int BRG_RST:1;
+    volatile unsigned int reserved_17:7;
+    volatile unsigned int BUFF_DPT:8;
+} Ifx_GTM_BRIDGE_MODE_Bits;
+
+
+typedef struct _Ifx_GTM_BRIDGE_PTR1_Bits
+{
+    volatile unsigned int NEW_TRAN_PTR:5;
+    volatile unsigned int FIRST_RSP_PTR:5;
+    volatile unsigned int TRAN_IN_PGR:5;
+    volatile unsigned int ABT_TRAN_PGR:5;
+    volatile unsigned int FBC:6;
+    volatile unsigned int RSP_TRAN_RDY:6;
+} Ifx_GTM_BRIDGE_PTR1_Bits;
+
+
+typedef struct _Ifx_GTM_BRIDGE_PTR2_Bits
+{
+    volatile unsigned int TRAN_IN_PGR2:5;
+    volatile unsigned int reserved_5:27;
+} Ifx_GTM_BRIDGE_PTR2_Bits;
+
+
+typedef struct _Ifx_GTM_CANOUTSEL0_Bits
+{
+    Ifx_UReg_32Bit SEL0:4;
+    Ifx_UReg_32Bit SEL1:4;
+    Ifx_UReg_32Bit SEL2:4;
+    Ifx_UReg_32Bit SEL3:4;
+    Ifx_UReg_32Bit SEL4:4;
+    Ifx_UReg_32Bit SEL5:4;
+    Ifx_UReg_32Bit SEL6:4;
+    Ifx_UReg_32Bit SEL7:4;
+} Ifx_GTM_CANOUTSEL0_Bits;
+
+
+typedef struct _Ifx_GTM_CANOUTSEL1_Bits
+{
+    Ifx_UReg_32Bit SEL0:4;
+    Ifx_UReg_32Bit SEL1:4;
+    Ifx_UReg_32Bit SEL2:4;
+    Ifx_UReg_32Bit SEL3:4;
+    Ifx_UReg_32Bit reserved_16:16;
+} Ifx_GTM_CANOUTSEL1_Bits;
+
+
+typedef struct _Ifx_GTM_CCM_AEIM_STA_Bits
+{
+    volatile unsigned int AEIM_XPT_ADDR:16;
+    volatile unsigned int reserved_16:8;
+    volatile unsigned int AEIM_XPT_STA:2;
+    volatile unsigned int reserved_26:6;
+} Ifx_GTM_CCM_AEIM_STA_Bits;
+
+
+typedef struct _Ifx_GTM_CCM_ARP_CTRL_Bits
+{
+    volatile unsigned int ADDR:16;
+    volatile unsigned int SIZE:4;
+    volatile unsigned int reserved_20:4;
+    volatile unsigned int DIS_PROT:1;
+    volatile unsigned int reserved_25:6;
+    volatile unsigned int WPROT_AEI:1;
+} Ifx_GTM_CCM_ARP_CTRL_Bits;
+
+
+typedef struct _Ifx_GTM_CCM_ARP_PROT_Bits
+{
+    volatile unsigned int WPROT0:1;
+    volatile unsigned int WPROT1:1;
+    volatile unsigned int WPROT2:1;
+    volatile unsigned int WPROT3:1;
+    volatile unsigned int WPROT4:1;
+    volatile unsigned int WPROT5:1;
+    volatile unsigned int WPROT6:1;
+    volatile unsigned int WPROT7:1;
+    volatile unsigned int reserved_8:24;
+} Ifx_GTM_CCM_ARP_PROT_Bits;
+
+
+typedef struct _Ifx_GTM_CCM_ATOM_OUT_Bits
+{
+    volatile unsigned int ATOM_I_OUT:8;
+    volatile unsigned int ATOM_I_OUT_N:8;
+    volatile unsigned int ATOM_IP1_OUT:8;
+    volatile unsigned int ATOM_IP1_OUT_N:8;
+} Ifx_GTM_CCM_ATOM_OUT_Bits;
+
+
+typedef struct _Ifx_GTM_CCM_CFG_Bits
+{
+    volatile unsigned int EN_TIM:1;
+    volatile unsigned int EN_TOM_SPE_TDTM:1;
+    volatile unsigned int EN_ATOM_ADTM:1;
+    volatile unsigned int EN_MCS:1;
+    volatile unsigned int EN_DPLL_MAP:1;
+    volatile unsigned int EN_BRC:1;
+    volatile unsigned int EN_PSM:1;
+    volatile unsigned int EN_CMP_MON:1;
+    volatile unsigned int reserved_8:8;
+    volatile unsigned int CLS_CLK_DIV:2;
+    volatile unsigned int reserved_18:12;
+    volatile unsigned int TBU_DIR1:1;
+    volatile unsigned int TBU_DIR2:1;
+} Ifx_GTM_CCM_CFG_Bits;
+
+
+typedef struct _Ifx_GTM_CCM_CMU_CLK_CFG_Bits
+{
+    volatile unsigned int CLK0_SRC:2;
+    volatile unsigned int reserved_2:2;
+    volatile unsigned int CLK1_SRC:2;
+    volatile unsigned int reserved_6:2;
+    volatile unsigned int CLK2_SRC:2;
+    volatile unsigned int reserved_10:2;
+    volatile unsigned int CLK3_SRC:2;
+    volatile unsigned int reserved_14:2;
+    volatile unsigned int CLK4_SRC:2;
+    volatile unsigned int reserved_18:2;
+    volatile unsigned int CLK5_SRC:2;
+    volatile unsigned int reserved_22:2;
+    volatile unsigned int CLK6_SRC:2;
+    volatile unsigned int reserved_26:2;
+    volatile unsigned int CLK7_SRC:2;
+    volatile unsigned int reserved_30:2;
+} Ifx_GTM_CCM_CMU_CLK_CFG_Bits;
+
+
+typedef struct _Ifx_GTM_CCM_CMU_FXCLK_CFG_Bits
+{
+    volatile unsigned int FXCLK0_SRC:4;
+    volatile unsigned int reserved_4:28;
+} Ifx_GTM_CCM_CMU_FXCLK_CFG_Bits;
+
+
+typedef struct _Ifx_GTM_CCM_EXT_CAP_EN_Bits
+{
+    volatile unsigned int TIM_I_EXT_CAP_EN:8;
+    volatile unsigned int TIM_IP1_EXT_CAP_EN:8;
+    volatile unsigned int reserved_16:16;
+} Ifx_GTM_CCM_EXT_CAP_EN_Bits;
+
+
+typedef struct _Ifx_GTM_CCM_HW_CONF_Bits
+{
+    volatile unsigned int GRSTEN:1;
+    volatile unsigned int BRIDGE_MODE_RST:1;
+    volatile unsigned int SYNC_INPUT_REG:1;
+    volatile unsigned int CFG_CLOCK_RATE:1;
+    volatile unsigned int ATOM_OUT_RST:1;
+    volatile unsigned int ATOM_TRIG_CHAIN:3;
+    volatile unsigned int TOM_OUT_RST:1;
+    volatile unsigned int TOM_TRIG_CHAIN:3;
+    volatile unsigned int RAM_INIT_RST:1;
+    volatile unsigned int ERM:1;
+    volatile unsigned int ARU_CONNECT_CONFIG:1;
+    volatile unsigned int reserved_15:1;
+    volatile unsigned int IRQ_MODE_LEVEL:1;
+    volatile unsigned int IRQ_MODE_PULSE:1;
+    volatile unsigned int IRQ_MODE_PULSE_NOTIFY:1;
+    volatile unsigned int IRQ_MODE_SINGLE_PULSE:1;
+    volatile unsigned int ATOM_TRIG_INTCHAIN:4;
+    volatile unsigned int TOM_TRIG_INTCHAIN:5;
+    volatile unsigned int INT_CLK_EN_GEN:1;
+    volatile unsigned int reserved_30:2;
+} Ifx_GTM_CCM_HW_CONF_Bits;
+
+
+typedef struct _Ifx_GTM_CCM_PROT_Bits
+{
+    volatile unsigned int CLS_PROT:1;
+    volatile unsigned int reserved_1:31;
+} Ifx_GTM_CCM_PROT_Bits;
+
+
+typedef struct _Ifx_GTM_CCM_TIM_AUX_IN_SRC_Bits
+{
+    volatile unsigned int SRC_CH0:1;
+    volatile unsigned int SRC_CH1:1;
+    volatile unsigned int SRC_CH2:1;
+    volatile unsigned int SRC_CH3:1;
+    volatile unsigned int SRC_CH4:1;
+    volatile unsigned int SRC_CH5:1;
+    volatile unsigned int SRC_CH6:1;
+    volatile unsigned int SRC_CH7:1;
+    volatile unsigned int reserved_8:8;
+    volatile unsigned int SEL_OUT_N_CH0:1;
+    volatile unsigned int SEL_OUT_N_CH1:1;
+    volatile unsigned int SEL_OUT_N_CH2:1;
+    volatile unsigned int SEL_OUT_N_CH3:1;
+    volatile unsigned int SEL_OUT_N_CH4:1;
+    volatile unsigned int SEL_OUT_N_CH5:1;
+    volatile unsigned int SEL_OUT_N_CH6:1;
+    volatile unsigned int SEL_OUT_N_CH7:1;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_CCM_TIM_AUX_IN_SRC_Bits;
+
+
+typedef struct _Ifx_GTM_CCM_TOM_OUT_Bits
+{
+    volatile unsigned int TOM_OUT:16;
+    volatile unsigned int TOM_OUT_N:16;
+} Ifx_GTM_CCM_TOM_OUT_Bits;
+
+
+typedef struct _Ifx_GTM_CDTM_DTM_CH_CTRL1_Bits
+{
+    volatile unsigned int O1SEL_0:1;
+    volatile unsigned int I1SEL_0:1;
+    volatile unsigned int reserved_2:1;
+    volatile unsigned int SWAP_0:1;
+    volatile unsigned int O1F_0:2;
+    volatile unsigned int XDT_EN_0_1:1;
+    volatile unsigned int reserved_7:1;
+    volatile unsigned int O1SEL_1:1;
+    volatile unsigned int I1SEL_1:1;
+    volatile unsigned int SH_EN_1:1;
+    volatile unsigned int SWAP_1:1;
+    volatile unsigned int O1F_1:2;
+    volatile unsigned int reserved_14:2;
+    volatile unsigned int O1SEL_2:1;
+    volatile unsigned int I1SEL_2:1;
+    volatile unsigned int SH_EN_2:1;
+    volatile unsigned int SWAP_2:1;
+    volatile unsigned int O1F_2:2;
+    volatile unsigned int XDT_EN_2_3:1;
+    volatile unsigned int reserved_23:1;
+    volatile unsigned int O1SEL_3:1;
+    volatile unsigned int I1SEL_3:1;
+    volatile unsigned int SH_EN_3:1;
+    volatile unsigned int SWAP_3:1;
+    volatile unsigned int O1F_3:2;
+    volatile unsigned int reserved_30:2;
+} Ifx_GTM_CDTM_DTM_CH_CTRL1_Bits;
+
+
+typedef struct _Ifx_GTM_CDTM_DTM_CH_CTRL2_Bits
+{
+    volatile unsigned int POL0_0:1;
+    volatile unsigned int OC0_0:1;
+    volatile unsigned int SL0_0:1;
+    volatile unsigned int DT0_0:1;
+    volatile unsigned int POL1_0:1;
+    volatile unsigned int OC1_0:1;
+    volatile unsigned int SL1_0:1;
+    volatile unsigned int DT1_0:1;
+    volatile unsigned int POL0_1:1;
+    volatile unsigned int OC0_1:1;
+    volatile unsigned int SL0_1:1;
+    volatile unsigned int DT0_1:1;
+    volatile unsigned int POL1_1:1;
+    volatile unsigned int OC1_1:1;
+    volatile unsigned int SL1_1:1;
+    volatile unsigned int DT1_1:1;
+    volatile unsigned int POL0_2:1;
+    volatile unsigned int OC0_2:1;
+    volatile unsigned int SL0_2:1;
+    volatile unsigned int DT0_2:1;
+    volatile unsigned int POL1_2:1;
+    volatile unsigned int OC1_2:1;
+    volatile unsigned int SL1_2:1;
+    volatile unsigned int DT1_2:1;
+    volatile unsigned int POL0_3:1;
+    volatile unsigned int OC0_3:1;
+    volatile unsigned int SL0_3:1;
+    volatile unsigned int DT0_3:1;
+    volatile unsigned int POL1_3:1;
+    volatile unsigned int OC1_3:1;
+    volatile unsigned int SL1_3:1;
+    volatile unsigned int DT1_3:1;
+} Ifx_GTM_CDTM_DTM_CH_CTRL2_Bits;
+
+
+typedef struct _Ifx_GTM_CDTM_DTM_CH_CTRL2_SR_Bits
+{
+    volatile unsigned int POL0_0_SR:1;
+    volatile unsigned int OC0_0_SR:1;
+    volatile unsigned int SL0_0_SR:1;
+    volatile unsigned int DT0_0_SR:1;
+    volatile unsigned int POL1_0_SR:1;
+    volatile unsigned int OC1_0_SR:1;
+    volatile unsigned int SL1_0_SR:1;
+    volatile unsigned int DT1_0_SR:1;
+    volatile unsigned int POL0_1_SR:1;
+    volatile unsigned int OC0_1_SR:1;
+    volatile unsigned int SL0_1_SR:1;
+    volatile unsigned int DT0_1_SR:1;
+    volatile unsigned int POL1_1_SR:1;
+    volatile unsigned int OC1_1_SR:1;
+    volatile unsigned int SL1_1_SR:1;
+    volatile unsigned int DT1_1_SR:1;
+    volatile unsigned int POL0_2_SR:1;
+    volatile unsigned int OC0_2_SR:1;
+    volatile unsigned int SL0_2_SR:1;
+    volatile unsigned int DT0_2_SR:1;
+    volatile unsigned int POL1_2_SR:1;
+    volatile unsigned int OC1_2_SR:1;
+    volatile unsigned int SL1_2_SR:1;
+    volatile unsigned int DT1_2_SR:1;
+    volatile unsigned int POL0_3_SR:1;
+    volatile unsigned int OC0_3_SR:1;
+    volatile unsigned int SL0_3_SR:1;
+    volatile unsigned int DT0_3_SR:1;
+    volatile unsigned int POL1_3_SR:1;
+    volatile unsigned int OC1_3_SR:1;
+    volatile unsigned int SL1_3_SR:1;
+    volatile unsigned int DT1_3_SR:1;
+} Ifx_GTM_CDTM_DTM_CH_CTRL2_SR_Bits;
+
+
+typedef struct _Ifx_GTM_CDTM_DTM_CH_CTRL3_Bits
+{
+    volatile unsigned int CII0:1;
+    volatile unsigned int CIS0:1;
+    volatile unsigned int TSEL0_0:1;
+    volatile unsigned int TSEL1_0:1;
+    volatile unsigned int reserved_4:4;
+    volatile unsigned int CII1:1;
+    volatile unsigned int CIS1:1;
+    volatile unsigned int TSEL0_1:1;
+    volatile unsigned int TSEL1_1:1;
+    volatile unsigned int reserved_12:4;
+    volatile unsigned int CII2:1;
+    volatile unsigned int CIS2:1;
+    volatile unsigned int TSEL0_2:1;
+    volatile unsigned int TSEL1_2:1;
+    volatile unsigned int reserved_20:4;
+    volatile unsigned int CII3:1;
+    volatile unsigned int CIS3:1;
+    volatile unsigned int TSEL0_3:1;
+    volatile unsigned int TSEL1_3:1;
+    volatile unsigned int reserved_28:4;
+} Ifx_GTM_CDTM_DTM_CH_CTRL3_Bits;
+
+
+typedef struct _Ifx_GTM_CDTM_DTM_CH_DTV_Bits
+{
+    volatile unsigned int RELRISE:10;
+    volatile unsigned int reserved_10:6;
+    volatile unsigned int RELFALL:10;
+    volatile unsigned int reserved_26:6;
+} Ifx_GTM_CDTM_DTM_CH_DTV_Bits;
+
+
+typedef struct _Ifx_GTM_CDTM_DTM_CH_SR_Bits
+{
+    volatile unsigned int SL0_0_SR_SR:1;
+    volatile unsigned int SL1_0_SR_SR:1;
+    volatile unsigned int SL0_1_SR_SR:1;
+    volatile unsigned int SL1_1_SR_SR:1;
+    volatile unsigned int SL0_2_SR_SR:1;
+    volatile unsigned int SL1_2_SR_SR:1;
+    volatile unsigned int SL0_3_SR_SR:1;
+    volatile unsigned int SL1_3_SR_SR:1;
+    volatile unsigned int reserved_8:24;
+} Ifx_GTM_CDTM_DTM_CH_SR_Bits;
+
+
+typedef struct _Ifx_GTM_CDTM_DTM_CTRL_Bits
+{
+    volatile unsigned int CLK_SEL:2;
+    volatile unsigned int DTM_SEL:2;
+    volatile unsigned int UPD_MODE:3;
+    volatile unsigned int reserved_7:1;
+    volatile unsigned int SR_UPD_EN:1;
+    volatile unsigned int reserved_9:7;
+    volatile unsigned int SHUT_OFF_RST:1;
+    volatile unsigned int reserved_17:15;
+} Ifx_GTM_CDTM_DTM_CTRL_Bits;
+
+
+typedef struct _Ifx_GTM_CDTM_DTM_PS_CTRL_Bits
+{
+    volatile unsigned int RELBLK:10;
+    volatile unsigned int reserved_10:6;
+    volatile unsigned int PSU_IN_SEL:1;
+    volatile unsigned int IN_POL:1;
+    volatile unsigned int TIM_SEL:1;
+    volatile unsigned int reserved_19:1;
+    volatile unsigned int SHIFT_SEL:2;
+    volatile unsigned int reserved_22:10;
+} Ifx_GTM_CDTM_DTM_PS_CTRL_Bits;
+
+
+typedef struct _Ifx_GTM_CFG_Bits
+{
+    volatile unsigned int SRC_IN_MUX:1;
+    volatile unsigned int reserved_1:31;
+} Ifx_GTM_CFG_Bits;
+
+
+typedef struct _Ifx_GTM_CLC_Bits
+{
+    Ifx_UReg_32Bit DISR:1;
+    Ifx_UReg_32Bit DISS:1;
+    Ifx_UReg_32Bit reserved_2:1;
+    Ifx_UReg_32Bit EDIS:1;
+    Ifx_UReg_32Bit reserved_4:28;
+} Ifx_GTM_CLC_Bits;
+
+
+typedef struct _Ifx_GTM_CLS_CLK_CFG_Bits
+{
+    volatile unsigned int CLS0_CLK_DIV:2;
+    volatile unsigned int CLS1_CLK_DIV:2;
+    volatile unsigned int CLS2_CLK_DIV:2;
+    volatile unsigned int CLS3_CLK_DIV:2;
+    volatile unsigned int CLS4_CLK_DIV:2;
+    volatile unsigned int CLS5_CLK_DIV:2;
+    volatile unsigned int CLS6_CLK_DIV:2;
+    volatile unsigned int CLS7_CLK_DIV:2;
+    volatile unsigned int CLS8_CLK_DIV:2;
+    volatile unsigned int reserved_18:2;
+    volatile unsigned int reserved_20:2;
+    volatile unsigned int reserved_22:2;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_CLS_CLK_CFG_Bits;
+
+
+typedef struct _Ifx_GTM_CMP_EIRQ_EN_Bits
+{
+    volatile unsigned int ABWC0_EN_EIRQ:1;
+    volatile unsigned int ABWC1_EN_EIRQ:1;
+    volatile unsigned int ABWC2_EN_EIRQ:1;
+    volatile unsigned int ABWC3_EN_EIRQ:1;
+    volatile unsigned int ABWC4_EN_EIRQ:1;
+    volatile unsigned int ABWC5_EN_EIRQ:1;
+    volatile unsigned int ABWC6_EN_EIRQ:1;
+    volatile unsigned int ABWC7_EN_EIRQ:1;
+    volatile unsigned int ABWC8_EN_EIRQ:1;
+    volatile unsigned int ABWC9_EN_EIRQ:1;
+    volatile unsigned int ABWC10_EN_EIRQ:1;
+    volatile unsigned int ABWC11_EN_EIRQ:1;
+    volatile unsigned int TBWC0_EN_EIRQ:1;
+    volatile unsigned int TBWC1_EN_EIRQ:1;
+    volatile unsigned int TBWC2_EN_EIRQ:1;
+    volatile unsigned int TBWC3_EN_EIRQ:1;
+    volatile unsigned int TBWC4_EN_EIRQ:1;
+    volatile unsigned int TBWC5_EN_EIRQ:1;
+    volatile unsigned int TBWC6_EN_EIRQ:1;
+    volatile unsigned int TBWC7_EN_EIRQ:1;
+    volatile unsigned int TBWC8_EN_EIRQ:1;
+    volatile unsigned int TBWC9_EN_EIRQ:1;
+    volatile unsigned int TBWC10_EN_EIRQ:1;
+    volatile unsigned int TBWC11_EN_EIRQ:1;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_CMP_EIRQ_EN_Bits;
+
+
+typedef struct _Ifx_GTM_CMP_EN_Bits
+{
+    volatile unsigned int ABWC0_EN:1;
+    volatile unsigned int ABWC1_EN:1;
+    volatile unsigned int ABWC2_EN:1;
+    volatile unsigned int ABWC3_EN:1;
+    volatile unsigned int ABWC4_EN:1;
+    volatile unsigned int ABWC5_EN:1;
+    volatile unsigned int ABWC6_EN:1;
+    volatile unsigned int ABWC7_EN:1;
+    volatile unsigned int ABWC8_EN:1;
+    volatile unsigned int ABWC9_EN:1;
+    volatile unsigned int ABWC10_EN:1;
+    volatile unsigned int ABWC11_EN:1;
+    volatile unsigned int TBWC0_EN:1;
+    volatile unsigned int TBWC1_EN:1;
+    volatile unsigned int TBWC2_EN:1;
+    volatile unsigned int TBWC3_EN:1;
+    volatile unsigned int TBWC4_EN:1;
+    volatile unsigned int TBWC5_EN:1;
+    volatile unsigned int TBWC6_EN:1;
+    volatile unsigned int TBWC7_EN:1;
+    volatile unsigned int TBWC8_EN:1;
+    volatile unsigned int TBWC9_EN:1;
+    volatile unsigned int TBWC10_EN:1;
+    volatile unsigned int TBWC11_EN:1;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_CMP_EN_Bits;
+
+
+typedef struct _Ifx_GTM_CMP_IRQ_EN_Bits
+{
+    volatile unsigned int ABWC0_EN_IRQ:1;
+    volatile unsigned int ABWC1_EN_IRQ:1;
+    volatile unsigned int ABWC2_EN_IRQ:1;
+    volatile unsigned int ABWC3_EN_IRQ:1;
+    volatile unsigned int ABWC4_EN_IRQ:1;
+    volatile unsigned int ABWC5_EN_IRQ:1;
+    volatile unsigned int ABWC6_EN_IRQ:1;
+    volatile unsigned int ABWC7_EN_IRQ:1;
+    volatile unsigned int ABWC8_EN_IRQ:1;
+    volatile unsigned int ABWC9_EN_IRQ:1;
+    volatile unsigned int ABWC10_EN_IRQ:1;
+    volatile unsigned int ABWC11_EN_IRQ:1;
+    volatile unsigned int TBWC0_EN_IRQ:1;
+    volatile unsigned int TBWC1_EN_IRQ:1;
+    volatile unsigned int TBWC2_EN_IRQ:1;
+    volatile unsigned int TBWC3_EN_IRQ:1;
+    volatile unsigned int TBWC4_EN_IRQ:1;
+    volatile unsigned int TBWC5_EN_IRQ:1;
+    volatile unsigned int TBWC6_EN_IRQ:1;
+    volatile unsigned int TBWC7_EN_IRQ:1;
+    volatile unsigned int TBWC8_EN_IRQ:1;
+    volatile unsigned int TBWC9_EN_IRQ:1;
+    volatile unsigned int TBWC10_EN_IRQ:1;
+    volatile unsigned int TBWC11_EN_IRQ:1;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_CMP_IRQ_EN_Bits;
+
+
+typedef struct _Ifx_GTM_CMP_IRQ_FORCINT_Bits
+{
+    volatile unsigned int TRG_ABWC0:1;
+    volatile unsigned int TRG_ABWC1:1;
+    volatile unsigned int TRG_ABWC2:1;
+    volatile unsigned int TRG_ABWC3:1;
+    volatile unsigned int TRG_ABWC4:1;
+    volatile unsigned int TRG_ABWC5:1;
+    volatile unsigned int TRG_ABWC6:1;
+    volatile unsigned int TRG_ABWC7:1;
+    volatile unsigned int TRG_ABWC8:1;
+    volatile unsigned int TRG_ABWC9:1;
+    volatile unsigned int TRG_ABWC10:1;
+    volatile unsigned int TRG_ABWC11:1;
+    volatile unsigned int TRG_TBWC0:1;
+    volatile unsigned int TRG_TBWC1:1;
+    volatile unsigned int TRG_TBWC2:1;
+    volatile unsigned int TRG_TBWC3:1;
+    volatile unsigned int TRG_TBWC4:1;
+    volatile unsigned int TRG_TBWC5:1;
+    volatile unsigned int TRG_TBWC6:1;
+    volatile unsigned int TRG_TBWC7:1;
+    volatile unsigned int TRG_TBWC8:1;
+    volatile unsigned int TRG_TBWC9:1;
+    volatile unsigned int TRG_TBWC10:1;
+    volatile unsigned int TRG_TBWC11:1;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_CMP_IRQ_FORCINT_Bits;
+
+
+typedef struct _Ifx_GTM_CMP_IRQ_MODE_Bits
+{
+    volatile unsigned int IRQ_MODE:2;
+    volatile unsigned int reserved_2:30;
+} Ifx_GTM_CMP_IRQ_MODE_Bits;
+
+
+typedef struct _Ifx_GTM_CMP_IRQ_NOTIFY_Bits
+{
+    volatile unsigned int ABWC0:1;
+    volatile unsigned int ABWC1:1;
+    volatile unsigned int ABWC2:1;
+    volatile unsigned int ABWC3:1;
+    volatile unsigned int ABWC4:1;
+    volatile unsigned int ABWC5:1;
+    volatile unsigned int ABWC6:1;
+    volatile unsigned int ABWC7:1;
+    volatile unsigned int ABWC8:1;
+    volatile unsigned int ABWC9:1;
+    volatile unsigned int ABWC10:1;
+    volatile unsigned int ABWC11:1;
+    volatile unsigned int TBWC0:1;
+    volatile unsigned int TBWC1:1;
+    volatile unsigned int TBWC2:1;
+    volatile unsigned int TBWC3:1;
+    volatile unsigned int TBWC4:1;
+    volatile unsigned int TBWC5:1;
+    volatile unsigned int TBWC6:1;
+    volatile unsigned int TBWC7:1;
+    volatile unsigned int TBWC8:1;
+    volatile unsigned int TBWC9:1;
+    volatile unsigned int TBWC10:1;
+    volatile unsigned int TBWC11:1;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_CMP_IRQ_NOTIFY_Bits;
+
+
+typedef struct _Ifx_GTM_CMU_CLK_CTRL_Bits
+{
+    volatile unsigned int CLK0_EXT_DIVIDER:1;
+    volatile unsigned int CLK1_EXT_DIVIDER:1;
+    volatile unsigned int CLK2_EXT_DIVIDER:1;
+    volatile unsigned int CLK3_EXT_DIVIDER:1;
+    volatile unsigned int CLK4_EXT_DIVIDER:1;
+    volatile unsigned int CLK5_EXT_DIVIDER:1;
+    volatile unsigned int CLK6_EXT_DIVIDER:1;
+    volatile unsigned int CLK7_EXT_DIVIDER:1;
+    volatile unsigned int CLK8_EXT_DIVIDER:1;
+    volatile unsigned int reserved_9:23;
+} Ifx_GTM_CMU_CLK_CTRL_Bits;
+
+
+typedef struct _Ifx_GTM_CMU_CLK_EN_Bits
+{
+    volatile unsigned int EN_CLK0:2;
+    volatile unsigned int EN_CLK1:2;
+    volatile unsigned int EN_CLK2:2;
+    volatile unsigned int EN_CLK3:2;
+    volatile unsigned int EN_CLK4:2;
+    volatile unsigned int EN_CLK5:2;
+    volatile unsigned int EN_CLK6:2;
+    volatile unsigned int EN_CLK7:2;
+    volatile unsigned int EN_ECLK0:2;
+    volatile unsigned int EN_ECLK1:2;
+    volatile unsigned int EN_ECLK2:2;
+    volatile unsigned int EN_FXCLK:2;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_CMU_CLK_EN_Bits;
+
+
+typedef struct _Ifx_GTM_CMU_CLK__CTRL_Bits
+{
+    volatile unsigned int CLK_CNT:24;
+    volatile unsigned int CLK_SEL:2;
+    volatile unsigned int reserved_26:6;
+} Ifx_GTM_CMU_CLK__CTRL_Bits;
+
+
+typedef struct _Ifx_GTM_CMU_ECLK_DEN_Bits
+{
+    volatile unsigned int ECLK_DEN:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_CMU_ECLK_DEN_Bits;
+
+
+typedef struct _Ifx_GTM_CMU_ECLK_NUM_Bits
+{
+    volatile unsigned int ECLK_NUM:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_CMU_ECLK_NUM_Bits;
+
+
+typedef struct _Ifx_GTM_CMU_FXCLK_CTRL_Bits
+{
+    volatile unsigned int FXCLK_SEL:4;
+    volatile unsigned int reserved_4:28;
+} Ifx_GTM_CMU_FXCLK_CTRL_Bits;
+
+
+typedef struct _Ifx_GTM_CMU_GCLK_DEN_Bits
+{
+    volatile unsigned int GCLK_DEN:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_CMU_GCLK_DEN_Bits;
+
+
+typedef struct _Ifx_GTM_CMU_GCLK_NUM_Bits
+{
+    volatile unsigned int GCLK_NUM:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_CMU_GCLK_NUM_Bits;
+
+
+typedef struct _Ifx_GTM_CMU_GLB_CTRL_Bits
+{
+    volatile unsigned int ARU_ADDR_RSTGLB:1;
+    volatile unsigned int reserved_1:31;
+} Ifx_GTM_CMU_GLB_CTRL_Bits;
+
+
+typedef struct _Ifx_GTM_CTRL_Bits
+{
+    volatile unsigned int RF_PROT:1;
+    volatile unsigned int TO_MODE:1;
+    volatile unsigned int reserved_2:2;
+    volatile unsigned int TO_VAL:5;
+    volatile unsigned int reserved_9:3;
+    volatile unsigned int AEIM_CLUSTER:4;
+    volatile unsigned int reserved_16:16;
+} Ifx_GTM_CTRL_Bits;
+
+
+typedef struct _Ifx_GTM_DATAIN_Bits
+{
+    Ifx_UReg_32Bit DATA:32;
+} Ifx_GTM_DATAIN_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_ACB_Bits
+{
+    volatile unsigned int ACB_0:5;
+    volatile unsigned int reserved_5:3;
+    volatile unsigned int ACB_1:5;
+    volatile unsigned int reserved_13:3;
+    volatile unsigned int ACB_2:5;
+    volatile unsigned int reserved_21:3;
+    volatile unsigned int ACB_3:5;
+    volatile unsigned int reserved_29:3;
+} Ifx_GTM_DPLL_ACB_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_ACT_STA_Bits
+{
+    volatile unsigned int ACT_N:32;
+} Ifx_GTM_DPLL_ACT_STA_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_ADD_IN_CAL1_Bits
+{
+    volatile unsigned int ADD_IN_CAL1:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_ADD_IN_CAL1_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_ADD_IN_CAL2_Bits
+{
+    volatile unsigned int ADD_IN_CAL2:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_ADD_IN_CAL2_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_ADD_IN_LD1_Bits
+{
+    volatile unsigned int ADD_IN_LD1:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_ADD_IN_LD1_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_ADD_IN_LD2_Bits
+{
+    volatile unsigned int ADD_IN_LD2:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_ADD_IN_LD2_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_ADT_S_Bits
+{
+    volatile unsigned int PD_S:16;
+    volatile unsigned int NS:6;
+    volatile unsigned int reserved_22:2;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_ADT_S_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_ADT_TI_Bits
+{
+    volatile unsigned int PD:13;
+    volatile unsigned int TINT:3;
+    volatile unsigned int NT:3;
+    volatile unsigned int reserved_19:5;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_ADT_TI_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_AOSV_2_Bits
+{
+    volatile unsigned int AOSV_2A:8;
+    volatile unsigned int AOSV_2B:8;
+    volatile unsigned int AOSV_2C:8;
+    volatile unsigned int AOSV_2D:8;
+} Ifx_GTM_DPLL_AOSV_2_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_APS_Bits
+{
+    volatile unsigned int reserved_0:1;
+    volatile unsigned int WAPS:1;
+    volatile unsigned int APS:6;
+    volatile unsigned int reserved_8:5;
+    volatile unsigned int WAPS_1C2:1;
+    volatile unsigned int APS_1C2:6;
+    volatile unsigned int reserved_20:12;
+} Ifx_GTM_DPLL_APS_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_APS_1C3_Bits
+{
+    volatile unsigned int reserved_0:2;
+    volatile unsigned int APS_1C3:6;
+    volatile unsigned int reserved_8:24;
+} Ifx_GTM_DPLL_APS_1C3_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_APS_1C3_EXT_Bits
+{
+    volatile unsigned int reserved_0:2;
+    volatile unsigned int APS_1C3:7;
+    volatile unsigned int reserved_9:23;
+} Ifx_GTM_DPLL_APS_1C3_EXT_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_APS_EXT_Bits
+{
+    volatile unsigned int reserved_0:1;
+    volatile unsigned int WAPS:1;
+    volatile unsigned int APS:7;
+    volatile unsigned int reserved_9:4;
+    volatile unsigned int WAPS_1C2:1;
+    volatile unsigned int APS_1C2:7;
+    volatile unsigned int reserved_21:11;
+} Ifx_GTM_DPLL_APS_EXT_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_APS_SYNC_Bits
+{
+    volatile unsigned int APS_1C2_EXT:6;
+    volatile unsigned int APS_1C2_STATUS:1;
+    volatile unsigned int reserved_7:7;
+    volatile unsigned int APS_1C2_OLD:6;
+    volatile unsigned int reserved_20:12;
+} Ifx_GTM_DPLL_APS_SYNC_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_APS_SYNC_EXT_Bits
+{
+    volatile unsigned int APS_1C2_EXT:7;
+    volatile unsigned int reserved_7:8;
+    volatile unsigned int APS_1C2_STATUS:1;
+    volatile unsigned int APS_1C2_OLD:7;
+    volatile unsigned int reserved_23:9;
+} Ifx_GTM_DPLL_APS_SYNC_EXT_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_APT_Bits
+{
+    volatile unsigned int reserved_0:1;
+    volatile unsigned int WAPT:1;
+    volatile unsigned int APT:10;
+    volatile unsigned int reserved_12:1;
+    volatile unsigned int WAPT_2B:1;
+    volatile unsigned int APT_2B:10;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_APT_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_APT_2C_Bits
+{
+    volatile unsigned int reserved_0:2;
+    volatile unsigned int APT_2C:10;
+    volatile unsigned int reserved_12:20;
+} Ifx_GTM_DPLL_APT_2C_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_APT_SYNC_Bits
+{
+    volatile unsigned int APT_2B_EXT:6;
+    volatile unsigned int APT_2B_STATUS:1;
+    volatile unsigned int reserved_7:7;
+    volatile unsigned int APT_2B_OLD:10;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_APT_SYNC_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_CDT_SX_Bits
+{
+    volatile unsigned int CDT_SX:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_CDT_SX_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_CDT_SX_NOM_Bits
+{
+    volatile unsigned int CDT_SX_NOM:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_CDT_SX_NOM_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_CDT_TX_Bits
+{
+    volatile unsigned int CDT_TX:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_CDT_TX_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_CDT_TX_NOM_Bits
+{
+    volatile unsigned int CDT_TX_NOM:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_CDT_TX_NOM_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_CNT_NUM_1_Bits
+{
+    volatile unsigned int CNT_NUM_1:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_CNT_NUM_1_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_CNT_NUM_2_Bits
+{
+    volatile unsigned int CNT_NUM_2:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_CNT_NUM_2_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_CSN_MAX_Bits
+{
+    volatile unsigned int CSN_MAX:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_CSN_MAX_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_CSN_MIN_Bits
+{
+    volatile unsigned int CSN_MIN:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_CSN_MIN_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_CTN_MAX_Bits
+{
+    volatile unsigned int CTN_MAX:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_CTN_MAX_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_CTN_MIN_Bits
+{
+    volatile unsigned int CTN_MIN:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_CTN_MIN_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_CTRL_0_Bits
+{
+    volatile unsigned int MLT:10;
+    volatile unsigned int IFP:1;
+    volatile unsigned int SNU:5;
+    volatile unsigned int TNU:9;
+    volatile unsigned int AMS:1;
+    volatile unsigned int AMT:1;
+    volatile unsigned int IDS:1;
+    volatile unsigned int IDT:1;
+    volatile unsigned int SEN:1;
+    volatile unsigned int TEN:1;
+    volatile unsigned int RMO:1;
+} Ifx_GTM_DPLL_CTRL_0_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_CTRL_0_SHADOW_STATE_Bits
+{
+    volatile unsigned int reserved_0:10;
+    volatile unsigned int IFP:1;
+    volatile unsigned int reserved_11:14;
+    volatile unsigned int AMS:1;
+    volatile unsigned int reserved_26:1;
+    volatile unsigned int IDS:1;
+    volatile unsigned int reserved_28:3;
+    volatile unsigned int RMO:1;
+} Ifx_GTM_DPLL_CTRL_0_SHADOW_STATE_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_CTRL_0_SHADOW_TRIGGER_Bits
+{
+    volatile unsigned int MLT:10;
+    volatile unsigned int IFP:1;
+    volatile unsigned int reserved_11:15;
+    volatile unsigned int AMT:1;
+    volatile unsigned int reserved_27:1;
+    volatile unsigned int IDT:1;
+    volatile unsigned int reserved_29:2;
+    volatile unsigned int RMO:1;
+} Ifx_GTM_DPLL_CTRL_0_SHADOW_TRIGGER_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_CTRL_1_Bits
+{
+    volatile unsigned int DMO:1;
+    volatile unsigned int DEN:1;
+    volatile unsigned int IDDS:1;
+    volatile unsigned int COA:1;
+    volatile unsigned int PIT:1;
+    volatile unsigned int SGE1:1;
+    volatile unsigned int DLM1:1;
+    volatile unsigned int PCM1:1;
+    volatile unsigned int SGE2:1;
+    volatile unsigned int DLM2:1;
+    volatile unsigned int PCM2:1;
+    volatile unsigned int SYN_NS:5;
+    volatile unsigned int SYN_NT:6;
+    volatile unsigned int LCD:1;
+    volatile unsigned int SWR:1;
+    volatile unsigned int SYSF:1;
+    volatile unsigned int TS0_HRS:1;
+    volatile unsigned int TS0_HRT:1;
+    volatile unsigned int SMC:1;
+    volatile unsigned int SSL:2;
+    volatile unsigned int TSL:2;
+} Ifx_GTM_DPLL_CTRL_1_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_CTRL_11_Bits
+{
+    volatile unsigned int SIP1:1;
+    volatile unsigned int ERZ1:1;
+    volatile unsigned int PCMF1:1;
+    volatile unsigned int FSYL1:1;
+    volatile unsigned int INCF1:1;
+    volatile unsigned int PCMF1_INCCNT_B:1;
+    volatile unsigned int ADT:1;
+    volatile unsigned int ADS:1;
+    volatile unsigned int SIP2:1;
+    volatile unsigned int ERZ2:1;
+    volatile unsigned int PCMF2:1;
+    volatile unsigned int FSYL2:1;
+    volatile unsigned int INCF2:1;
+    volatile unsigned int PCMF2_INCCNT_B:1;
+    volatile unsigned int STATE_EXT:1;
+    volatile unsigned int ACBU:1;
+    volatile unsigned int WSIP1:1;
+    volatile unsigned int WERZ1:1;
+    volatile unsigned int WPCMF1:1;
+    volatile unsigned int WFSYL1:1;
+    volatile unsigned int WINCF1:1;
+    volatile unsigned int WPCMF1_INCCNT_B:1;
+    volatile unsigned int WADT:1;
+    volatile unsigned int WADS:1;
+    volatile unsigned int WSIP2:1;
+    volatile unsigned int WERZ2:1;
+    volatile unsigned int WPCMF2:1;
+    volatile unsigned int WFSYL2:1;
+    volatile unsigned int WINCF2:1;
+    volatile unsigned int WPCMF2_INCCNT_B:1;
+    volatile unsigned int WSTATE_EXT:1;
+    volatile unsigned int WACBU:1;
+} Ifx_GTM_DPLL_CTRL_11_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_CTRL_1_SHADOW_STATE_Bits
+{
+    volatile unsigned int DMO:1;
+    volatile unsigned int reserved_1:2;
+    volatile unsigned int COA:1;
+    volatile unsigned int reserved_4:1;
+    volatile unsigned int SGE1:1;
+    volatile unsigned int DLM1:1;
+    volatile unsigned int PCM1:1;
+    volatile unsigned int SGE2:1;
+    volatile unsigned int DLM2:1;
+    volatile unsigned int PCM2:1;
+    volatile unsigned int reserved_11:21;
+} Ifx_GTM_DPLL_CTRL_1_SHADOW_STATE_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_CTRL_1_SHADOW_TRIGGER_Bits
+{
+    volatile unsigned int DMO:1;
+    volatile unsigned int reserved_1:2;
+    volatile unsigned int COA:1;
+    volatile unsigned int PIT:1;
+    volatile unsigned int SGE1:1;
+    volatile unsigned int DLM1:1;
+    volatile unsigned int PCM1:1;
+    volatile unsigned int reserved_8:24;
+} Ifx_GTM_DPLL_CTRL_1_SHADOW_TRIGGER_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_CTRL_2_Bits
+{
+    volatile unsigned int reserved_0:8;
+    volatile unsigned int AEN0:1;
+    volatile unsigned int AEN1:1;
+    volatile unsigned int AEN2:1;
+    volatile unsigned int AEN3:1;
+    volatile unsigned int AEN4:1;
+    volatile unsigned int AEN5:1;
+    volatile unsigned int AEN6:1;
+    volatile unsigned int AEN7:1;
+    volatile unsigned int WAD0:1;
+    volatile unsigned int WAD1:1;
+    volatile unsigned int WAD2:1;
+    volatile unsigned int WAD3:1;
+    volatile unsigned int WAD4:1;
+    volatile unsigned int WAD5:1;
+    volatile unsigned int WAD6:1;
+    volatile unsigned int WAD7:1;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_CTRL_2_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_CTRL_3_Bits
+{
+    volatile unsigned int reserved_0:8;
+    volatile unsigned int AEN8:1;
+    volatile unsigned int AEN9:1;
+    volatile unsigned int AEN10:1;
+    volatile unsigned int AEN11:1;
+    volatile unsigned int AEN12:1;
+    volatile unsigned int AEN13:1;
+    volatile unsigned int AEN14:1;
+    volatile unsigned int AEN15:1;
+    volatile unsigned int WAD8:1;
+    volatile unsigned int WAD9:1;
+    volatile unsigned int WAD10:1;
+    volatile unsigned int WAD11:1;
+    volatile unsigned int WAD12:1;
+    volatile unsigned int WAD13:1;
+    volatile unsigned int WAD14:1;
+    volatile unsigned int WAD15:1;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_CTRL_3_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_CTRL_4_Bits
+{
+    volatile unsigned int reserved_0:8;
+    volatile unsigned int AEN16:1;
+    volatile unsigned int AEN17:1;
+    volatile unsigned int AEN18:1;
+    volatile unsigned int AEN19:1;
+    volatile unsigned int AEN20:1;
+    volatile unsigned int AEN21:1;
+    volatile unsigned int AEN22:1;
+    volatile unsigned int AEN23:1;
+    volatile unsigned int WAD16:1;
+    volatile unsigned int WAD17:1;
+    volatile unsigned int WAD18:1;
+    volatile unsigned int WAD19:1;
+    volatile unsigned int WAD20:1;
+    volatile unsigned int WAD21:1;
+    volatile unsigned int WAD22:1;
+    volatile unsigned int WAD23:1;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_CTRL_4_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_CTRL_5_Bits
+{
+    volatile unsigned int reserved_0:8;
+    volatile unsigned int AEN24:1;
+    volatile unsigned int AEN25:1;
+    volatile unsigned int AEN26:1;
+    volatile unsigned int AEN27:1;
+    volatile unsigned int AEN28:1;
+    volatile unsigned int AEN29:1;
+    volatile unsigned int AEN30:1;
+    volatile unsigned int AEN31:1;
+    volatile unsigned int WAD24:1;
+    volatile unsigned int WAD25:1;
+    volatile unsigned int WAD26:1;
+    volatile unsigned int WAD27:1;
+    volatile unsigned int WAD28:1;
+    volatile unsigned int WAD29:1;
+    volatile unsigned int WAD30:1;
+    volatile unsigned int WAD31:1;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_CTRL_5_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_CTRL_EXT_Bits
+{
+    volatile unsigned int SNU:6;
+    volatile unsigned int reserved_6:10;
+    volatile unsigned int SYN_NS:6;
+    volatile unsigned int reserved_22:10;
+} Ifx_GTM_DPLL_CTRL_EXT_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_DLA_Bits
+{
+    volatile unsigned int DLA:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_DLA_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_DTA_Bits
+{
+    volatile unsigned int DTA:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_DTA_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_DT_S_Bits
+{
+    volatile unsigned int DT_S:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_DT_S_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_DT_S_ACT_Bits
+{
+    volatile unsigned int DT_S_ACT:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_DT_S_ACT_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_DT_S_START_Bits
+{
+    volatile unsigned int DPLL_DT_S_START:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_DT_S_START_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_DT_TI_Bits
+{
+    volatile unsigned int DT_T:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_DT_TI_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_DT_T_ACT_Bits
+{
+    volatile unsigned int DT_T_ACT:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_DT_T_ACT_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_DT_T_START_Bits
+{
+    volatile unsigned int DPLL_DT_T_START:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_DT_T_START_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_EDT_S_Bits
+{
+    volatile unsigned int EDT_S:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_EDT_S_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_EDT_T_Bits
+{
+    volatile unsigned int EDT_T:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_EDT_T_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_EIRQ_EN_Bits
+{
+    volatile unsigned int PDI_EIRQ_EN:1;
+    volatile unsigned int PEI_EIRQ_EN:1;
+    volatile unsigned int TINI_EIRQ_EN:1;
+    volatile unsigned int TAXI_EIRQ_EN:1;
+    volatile unsigned int SISI_EIRQ_EN:1;
+    volatile unsigned int TISI_EIRQ_EN:1;
+    volatile unsigned int MSI_EIRQ_EN:1;
+    volatile unsigned int MTI_EIRQ_EN:1;
+    volatile unsigned int SASI_EIRQ_EN:1;
+    volatile unsigned int TASI_EIRQ_EN:1;
+    volatile unsigned int PWI_EIRQ_EN:1;
+    volatile unsigned int W2I_EIRQ_EN:1;
+    volatile unsigned int W1I_EIRQ_EN:1;
+    volatile unsigned int GL1I_EIRQ_EN:1;
+    volatile unsigned int LL1I_EIRQ_EN:1;
+    volatile unsigned int EI_EIRQ_EN:1;
+    volatile unsigned int GL2I_EIRQ_EN:1;
+    volatile unsigned int LL2I_EIRQ_EN:1;
+    volatile unsigned int TE0I_EIRQ_EN:1;
+    volatile unsigned int TE1I_EIRQ_EN:1;
+    volatile unsigned int TE2I_EIRQ_EN:1;
+    volatile unsigned int TE3I_EIRQ_EN:1;
+    volatile unsigned int TE4I_EIRQ_EN:1;
+    volatile unsigned int CDTI_EIRQ_EN:1;
+    volatile unsigned int CDSI_EIRQ_EN:1;
+    volatile unsigned int TORI_EIRQ_EN:1;
+    volatile unsigned int SORI_EIRQ_EN:1;
+    volatile unsigned int DCGI_EIRQ_EN:1;
+    volatile unsigned int reserved_28:4;
+} Ifx_GTM_DPLL_EIRQ_EN_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_FTV_S_Bits
+{
+    volatile unsigned int STATE_FT:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_FTV_S_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_FTV_T_Bits
+{
+    volatile unsigned int TRIGGER_FT:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_FTV_T_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_ID_PMTR_Bits
+{
+    volatile unsigned int ID_PMTR_X:9;
+    volatile unsigned int reserved_9:23;
+} Ifx_GTM_DPLL_ID_PMTR_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_INCF1_OFFSET_Bits
+{
+    volatile unsigned int DPLL_INCF1_OFFSET:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_INCF1_OFFSET_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_INCF2_OFFSET_Bits
+{
+    volatile unsigned int DPLL_INCF2_OFFSET:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_INCF2_OFFSET_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_INC_CNT1_Bits
+{
+    volatile unsigned int INC_CNT1:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_INC_CNT1_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_INC_CNT1_MASK_Bits
+{
+    volatile unsigned int INC_CNT1_NOTIFY:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_INC_CNT1_MASK_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_INC_CNT2_Bits
+{
+    volatile unsigned int INC_CNT2:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_INC_CNT2_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_INC_CNT2_MASK_Bits
+{
+    volatile unsigned int INC_CNT2_NOTIFY:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_INC_CNT2_MASK_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_IRQ_EN_Bits
+{
+    volatile unsigned int PDI_IRQ_EN:1;
+    volatile unsigned int PEI_IRQ_EN:1;
+    volatile unsigned int TINI_IRQ_EN:1;
+    volatile unsigned int TAXI_IRQ_EN:1;
+    volatile unsigned int SISI_IRQ_EN:1;
+    volatile unsigned int TISI_IRQ_EN:1;
+    volatile unsigned int MSI_IRQ_EN:1;
+    volatile unsigned int MTI_IRQ_EN:1;
+    volatile unsigned int SASI_IRQ_EN:1;
+    volatile unsigned int TASI_IRQ_EN:1;
+    volatile unsigned int PWI_IRQ_EN:1;
+    volatile unsigned int W2I_IRQ_EN:1;
+    volatile unsigned int W1I_IRQ_EN:1;
+    volatile unsigned int GL1I_IRQ_EN:1;
+    volatile unsigned int LL1I_IRQ_EN:1;
+    volatile unsigned int EI_IRQ_EN:1;
+    volatile unsigned int GL2I_IRQ_EN:1;
+    volatile unsigned int LL2I_IRQ_EN:1;
+    volatile unsigned int TE0I_IRQ_EN:1;
+    volatile unsigned int TE1I_IRQ_EN:1;
+    volatile unsigned int TE2I_IRQ_EN:1;
+    volatile unsigned int TE3I_IRQ_EN:1;
+    volatile unsigned int TE4I_IRQ_EN:1;
+    volatile unsigned int CDTI_IRQ_EN:1;
+    volatile unsigned int CDSI_IRQ_EN:1;
+    volatile unsigned int TORI_IRQ_EN:1;
+    volatile unsigned int SORI_IRQ_EN:1;
+    volatile unsigned int DCGI_IRQ_EN:1;
+    volatile unsigned int reserved_28:4;
+} Ifx_GTM_DPLL_IRQ_EN_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_IRQ_FORCINT_Bits
+{
+    volatile unsigned int TRG_PDI:1;
+    volatile unsigned int TRG_PEI:1;
+    volatile unsigned int TRG_TINI:1;
+    volatile unsigned int TRG_TAXI:1;
+    volatile unsigned int TRG_SISI:1;
+    volatile unsigned int TRG_TISI:1;
+    volatile unsigned int TRG_MSI:1;
+    volatile unsigned int TRG_MTI:1;
+    volatile unsigned int TRG_SASI:1;
+    volatile unsigned int TRG_TASI:1;
+    volatile unsigned int TRG_PWI:1;
+    volatile unsigned int TRG_W2I:1;
+    volatile unsigned int TRG_W1I:1;
+    volatile unsigned int TRG_GL1I:1;
+    volatile unsigned int TRG_LL1I:1;
+    volatile unsigned int TRG_EI:1;
+    volatile unsigned int TRG_GL2I:1;
+    volatile unsigned int TRG_LL2I:1;
+    volatile unsigned int TRG_TE0I:1;
+    volatile unsigned int TRG_TE1I:1;
+    volatile unsigned int TRG_TE2I:1;
+    volatile unsigned int TRG_TE3I:1;
+    volatile unsigned int TRG_TE4I:1;
+    volatile unsigned int TRG_CDTI:1;
+    volatile unsigned int TRG_CDSI:1;
+    volatile unsigned int TRG_TORI:1;
+    volatile unsigned int TRG_SORI:1;
+    volatile unsigned int TRG_DCGI:1;
+    volatile unsigned int reserved_28:4;
+} Ifx_GTM_DPLL_IRQ_FORCINT_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_IRQ_MODE_Bits
+{
+    volatile unsigned int IRQ_MODE:2;
+    volatile unsigned int reserved_2:30;
+} Ifx_GTM_DPLL_IRQ_MODE_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_IRQ_NOTIFY_Bits
+{
+    volatile unsigned int PDI:1;
+    volatile unsigned int PEI:1;
+    volatile unsigned int TINI:1;
+    volatile unsigned int TAXI:1;
+    volatile unsigned int SISI:1;
+    volatile unsigned int TISI:1;
+    volatile unsigned int MSI:1;
+    volatile unsigned int MTI:1;
+    volatile unsigned int SASI:1;
+    volatile unsigned int TASI:1;
+    volatile unsigned int PWI:1;
+    volatile unsigned int W2I:1;
+    volatile unsigned int W1I:1;
+    volatile unsigned int GL1I:1;
+    volatile unsigned int LL1I:1;
+    volatile unsigned int EI:1;
+    volatile unsigned int GL2I:1;
+    volatile unsigned int LL2I:1;
+    volatile unsigned int TE0I:1;
+    volatile unsigned int TE1I:1;
+    volatile unsigned int TE2I:1;
+    volatile unsigned int TE3I:1;
+    volatile unsigned int TE4I:1;
+    volatile unsigned int CDTI:1;
+    volatile unsigned int CDSI:1;
+    volatile unsigned int TORI:1;
+    volatile unsigned int SORI:1;
+    volatile unsigned int DCGI:1;
+    volatile unsigned int reserved_28:4;
+} Ifx_GTM_DPLL_IRQ_NOTIFY_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_MEDT_S_Bits
+{
+    volatile unsigned int MEDT_S:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_MEDT_S_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_MEDT_T_Bits
+{
+    volatile unsigned int MEDT_T:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_MEDT_T_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_MLS1_Bits
+{
+    volatile unsigned int MLS1:18;
+    volatile unsigned int reserved_18:6;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_MLS1_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_MLS2_Bits
+{
+    volatile unsigned int MLS2:18;
+    volatile unsigned int reserved_18:6;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_MLS2_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_MPVAL1_Bits
+{
+    volatile unsigned int MPVAL1:16;
+    volatile unsigned int SIX1:8;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_MPVAL1_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_MPVAL2_Bits
+{
+    volatile unsigned int MPVAL2:16;
+    volatile unsigned int SIX2:8;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_MPVAL2_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_NA_Bits
+{
+    volatile unsigned int DB:10;
+    volatile unsigned int DW:10;
+    volatile unsigned int reserved_20:4;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_NA_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_NMB_S_Bits
+{
+    volatile unsigned int NMB_S:20;
+    volatile unsigned int reserved_20:4;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_NMB_S_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_NMB_S_TAR_Bits
+{
+    volatile unsigned int NMB_S_TAR:20;
+    volatile unsigned int reserved_20:4;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_NMB_S_TAR_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_NMB_S_TAR_OLD_Bits
+{
+    volatile unsigned int NMB_S_TAR_OLD:20;
+    volatile unsigned int reserved_20:4;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_NMB_S_TAR_OLD_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_NMB_T_Bits
+{
+    volatile unsigned int NMB_T:16;
+    volatile unsigned int reserved_16:8;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_NMB_T_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_NMB_T_TAR_Bits
+{
+    volatile unsigned int NMB_T_TAR:16;
+    volatile unsigned int reserved_16:8;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_NMB_T_TAR_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_NMB_T_TAR_OLD_Bits
+{
+    volatile unsigned int NMB_T_TAR_OLD:16;
+    volatile unsigned int reserved_16:8;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_NMB_T_TAR_OLD_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_NTI_CNT_Bits
+{
+    volatile unsigned int NTI_CNT:10;
+    volatile unsigned int reserved_10:22;
+} Ifx_GTM_DPLL_NTI_CNT_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_NUSC_Bits
+{
+    volatile unsigned int NUSE:6;
+    volatile unsigned int FSS:1;
+    volatile unsigned int SYN_S:6;
+    volatile unsigned int SYN_S_OLD:6;
+    volatile unsigned int VSN:6;
+    volatile unsigned int reserved_25:4;
+    volatile unsigned int WNUS:1;
+    volatile unsigned int WSYN:1;
+    volatile unsigned int WVSN:1;
+} Ifx_GTM_DPLL_NUSC_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_NUSC_EXT1_Bits
+{
+    volatile unsigned int SYN_S:7;
+    volatile unsigned int reserved_7:9;
+    volatile unsigned int SYN_S_OLD:7;
+    volatile unsigned int reserved_23:7;
+    volatile unsigned int WSYN:1;
+    volatile unsigned int reserved_31:1;
+} Ifx_GTM_DPLL_NUSC_EXT1_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_NUSC_EXT2_Bits
+{
+    volatile unsigned int NUSE:7;
+    volatile unsigned int reserved_7:8;
+    volatile unsigned int FSS:1;
+    volatile unsigned int VSN:7;
+    volatile unsigned int reserved_23:6;
+    volatile unsigned int WNUS:1;
+    volatile unsigned int reserved_30:1;
+    volatile unsigned int WVSN:1;
+} Ifx_GTM_DPLL_NUSC_EXT2_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_NUTC_Bits
+{
+    volatile unsigned int NUTE:10;
+    volatile unsigned int FST:1;
+    volatile unsigned int reserved_11:2;
+    volatile unsigned int SYN_T:3;
+    volatile unsigned int SYN_T_OLD:3;
+    volatile unsigned int VTN:6;
+    volatile unsigned int reserved_25:4;
+    volatile unsigned int WNUT:1;
+    volatile unsigned int WSYN:1;
+    volatile unsigned int WVTN:1;
+} Ifx_GTM_DPLL_NUTC_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_OSW_Bits
+{
+    volatile unsigned int SWON_S:1;
+    volatile unsigned int SWON_T:1;
+    volatile unsigned int reserved_2:6;
+    volatile unsigned int OSS:2;
+    volatile unsigned int reserved_10:22;
+} Ifx_GTM_DPLL_OSW_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_PDT_Bits
+{
+    volatile unsigned int DB:14;
+    volatile unsigned int DW:10;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_PDT_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_PSA_Bits
+{
+    volatile unsigned int PSA:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_PSA_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_PSAC_Bits
+{
+    volatile unsigned int PSAC:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_PSAC_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_PSSC_Bits
+{
+    volatile unsigned int PSSC:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_PSSC_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_PSSM_Bits
+{
+    volatile unsigned int PSSM:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_PSSM_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_PSSM_OLD_Bits
+{
+    volatile unsigned int PSSM_OLD:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_PSSM_OLD_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_PSTC_Bits
+{
+    volatile unsigned int PSTC:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_PSTC_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_PSTM_Bits
+{
+    volatile unsigned int PSTM:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_PSTM_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_PSTM_OLD_Bits
+{
+    volatile unsigned int PSTM_OLD:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_PSTM_OLD_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_PVT_Bits
+{
+    volatile unsigned int PVT:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_PVT_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_RAM_INI_Bits
+{
+    volatile unsigned int INIT_1A:1;
+    volatile unsigned int INIT_1BC:1;
+    volatile unsigned int INIT_2:1;
+    volatile unsigned int reserved_3:1;
+    volatile unsigned int INIT_RAM:1;
+    volatile unsigned int reserved_5:27;
+} Ifx_GTM_DPLL_RAM_INI_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_RCDT_SX_Bits
+{
+    volatile unsigned int RCDT_SX:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_RCDT_SX_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_RCDT_SX_NOM_Bits
+{
+    volatile unsigned int RCDT_SX_NOM:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_RCDT_SX_NOM_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_RCDT_TX_Bits
+{
+    volatile unsigned int RCDT_TX:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_RCDT_TX_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_RCDT_TX_NOM_Bits
+{
+    volatile unsigned int RCDT_TX_NOM:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_RCDT_TX_NOM_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_RDT_S_Bits
+{
+    volatile unsigned int RDT_S:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_RDT_S_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_RDT_S_ACT_Bits
+{
+    volatile unsigned int RDT_S_ACT:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_RDT_S_ACT_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_RDT_TI_Bits
+{
+    volatile unsigned int RDT_T:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_RDT_TI_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_RDT_T_ACT_Bits
+{
+    volatile unsigned int RDT_T_ACT:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_RDT_T_ACT_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_SIDEL_Bits
+{
+    volatile unsigned int SIDEL:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_SIDEL_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_SLR_Bits
+{
+    volatile unsigned int SLR:8;
+    volatile unsigned int reserved_8:16;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_SLR_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_STA_Bits
+{
+    volatile unsigned int STA_T:8;
+    volatile unsigned int reserved_8:1;
+    volatile unsigned int CNT_T:3;
+    volatile unsigned int STA_S:8;
+    volatile unsigned int reserved_20:1;
+    volatile unsigned int CNT_S:3;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_STA_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_STATUS_Bits
+{
+    volatile unsigned int FPCE:1;
+    volatile unsigned int CSO:1;
+    volatile unsigned int reserved_2:1;
+    volatile unsigned int CTO:1;
+    volatile unsigned int CRO:1;
+    volatile unsigned int RCS:1;
+    volatile unsigned int RCT:1;
+    volatile unsigned int PSE:1;
+    volatile unsigned int SOR:1;
+    volatile unsigned int MS:1;
+    volatile unsigned int TOR:1;
+    volatile unsigned int MT:1;
+    volatile unsigned int RAM2_ERR:1;
+    volatile unsigned int reserved_13:2;
+    volatile unsigned int LOW_RES:1;
+    volatile unsigned int CSVS:1;
+    volatile unsigned int CSVT:1;
+    volatile unsigned int CAIP2:1;
+    volatile unsigned int CAIP1:1;
+    volatile unsigned int ISN:1;
+    volatile unsigned int ITN:1;
+    volatile unsigned int BWD2:1;
+    volatile unsigned int BWD1:1;
+    volatile unsigned int reserved_24:1;
+    volatile unsigned int LOCK2:1;
+    volatile unsigned int SYS:1;
+    volatile unsigned int SYT:1;
+    volatile unsigned int FSD:1;
+    volatile unsigned int FTD:1;
+    volatile unsigned int LOCK1:1;
+    volatile unsigned int ERR:1;
+} Ifx_GTM_DPLL_STATUS_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_STA_FLAG_Bits
+{
+    volatile unsigned int STA_FLAG_T:1;
+    volatile unsigned int reserved_1:7;
+    volatile unsigned int STA_FLAG_S:1;
+    volatile unsigned int INC_CNT1_FLAG:1;
+    volatile unsigned int INC_CNT2_FLAG:1;
+    volatile unsigned int reserved_11:21;
+} Ifx_GTM_DPLL_STA_FLAG_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_STA_MASK_Bits
+{
+    volatile unsigned int STA_NOTIFY_T:8;
+    volatile unsigned int STA_NOTIFY_S:8;
+    volatile unsigned int reserved_16:16;
+} Ifx_GTM_DPLL_STA_MASK_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_TBU_TS0_S_Bits
+{
+    volatile unsigned int TBU_TS0_S:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_TBU_TS0_S_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_TBU_TS0_T_Bits
+{
+    volatile unsigned int TBU_TS0_T:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_TBU_TS0_T_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_THMA_Bits
+{
+    volatile unsigned int THMA:16;
+    volatile unsigned int reserved_16:8;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_THMA_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_THMI_Bits
+{
+    volatile unsigned int THMI:16;
+    volatile unsigned int reserved_16:8;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_THMI_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_THVAL_Bits
+{
+    volatile unsigned int THVAL:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_THVAL_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_THVAL2_Bits
+{
+    volatile unsigned int THVAL:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_THVAL2_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_TIDEL_Bits
+{
+    volatile unsigned int TIDEL:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_TIDEL_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_TLR_Bits
+{
+    volatile unsigned int TLR:8;
+    volatile unsigned int reserved_8:16;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_TLR_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_TOV_Bits
+{
+    volatile unsigned int TOV_DB:10;
+    volatile unsigned int TOV_DW:6;
+    volatile unsigned int reserved_16:8;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_TOV_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_TOV_S_Bits
+{
+    volatile unsigned int DB:10;
+    volatile unsigned int DW:6;
+    volatile unsigned int reserved_16:8;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_TOV_S_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_TSAC_Bits
+{
+    volatile unsigned int TSAC:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_TSAC_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_TSF_S_Bits
+{
+    volatile unsigned int TSF_S:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_TSF_S_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_TSF_TI_Bits
+{
+    volatile unsigned int TSF_T:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_TSF_TI_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_TS_S_Bits
+{
+    volatile unsigned int STATE_TS:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_TS_S_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_TS_S_OLD_Bits
+{
+    volatile unsigned int STATE_TS_OLD:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_TS_S_OLD_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_TS_T_Bits
+{
+    volatile unsigned int TRIGGER_TS:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_TS_T_Bits;
+
+
+typedef struct _Ifx_GTM_DPLL_TS_T_OLD_Bits
+{
+    volatile unsigned int TRIGGER_TS_OLD:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_DPLL_TS_T_OLD_Bits;
+
+
+typedef struct _Ifx_GTM_DSADCINSEL_Bits
+{
+    Ifx_UReg_32Bit INSEL0:4;
+    Ifx_UReg_32Bit INSEL1:4;
+    Ifx_UReg_32Bit INSEL2:4;
+    Ifx_UReg_32Bit INSEL3:4;
+    Ifx_UReg_32Bit INSEL4:4;
+    Ifx_UReg_32Bit INSEL5:4;
+    Ifx_UReg_32Bit INSEL6:4;
+    Ifx_UReg_32Bit INSEL7:4;
+} Ifx_GTM_DSADCINSEL_Bits;
+
+
+typedef struct _Ifx_GTM_DSADC_OUTSEL0_Bits
+{
+    Ifx_UReg_32Bit SEL0:4;
+    Ifx_UReg_32Bit SEL1:4;
+    Ifx_UReg_32Bit SEL2:4;
+    Ifx_UReg_32Bit SEL3:4;
+    Ifx_UReg_32Bit SEL4:4;
+    Ifx_UReg_32Bit SEL5:4;
+    Ifx_UReg_32Bit SEL6:4;
+    Ifx_UReg_32Bit SEL7:4;
+} Ifx_GTM_DSADC_OUTSEL0_Bits;
+
+
+typedef struct _Ifx_GTM_DSADC_OUTSEL1_Bits
+{
+    Ifx_UReg_32Bit SEL8:4;
+    Ifx_UReg_32Bit SEL9:4;
+    Ifx_UReg_32Bit reserved_8:24;
+} Ifx_GTM_DSADC_OUTSEL1_Bits;
+
+
+typedef struct _Ifx_GTM_DTMAUXINSEL_Bits
+{
+    Ifx_UReg_32Bit ASEL0:2;
+    Ifx_UReg_32Bit ASEL1:2;
+    Ifx_UReg_32Bit ASEL2:2;
+    Ifx_UReg_32Bit ASEL3:2;
+    Ifx_UReg_32Bit ASEL4:2;
+    Ifx_UReg_32Bit ASEL5:2;
+    Ifx_UReg_32Bit reserved_12:4;
+    Ifx_UReg_32Bit TSEL0:2;
+    Ifx_UReg_32Bit TSEL1:2;
+    Ifx_UReg_32Bit TSEL2:2;
+    Ifx_UReg_32Bit TSEL3:2;
+    Ifx_UReg_32Bit reserved_24:8;
+} Ifx_GTM_DTMAUXINSEL_Bits;
+
+
+typedef struct _Ifx_GTM_DXINCON_Bits
+{
+    Ifx_UReg_32Bit IN0:1;
+    Ifx_UReg_32Bit IN1:1;
+    Ifx_UReg_32Bit IN2:1;
+    Ifx_UReg_32Bit IN3:1;
+    Ifx_UReg_32Bit IN4:1;
+    Ifx_UReg_32Bit IN5:1;
+    Ifx_UReg_32Bit IN6:1;
+    Ifx_UReg_32Bit reserved_7:9;
+    Ifx_UReg_32Bit DSS0:1;
+    Ifx_UReg_32Bit DSS1:1;
+    Ifx_UReg_32Bit DSS2:1;
+    Ifx_UReg_32Bit DSS3:1;
+    Ifx_UReg_32Bit DSS4:1;
+    Ifx_UReg_32Bit DSS5:1;
+    Ifx_UReg_32Bit DSS6:1;
+    Ifx_UReg_32Bit reserved_23:9;
+} Ifx_GTM_DXINCON_Bits;
+
+
+typedef struct _Ifx_GTM_DXOUTCON_Bits
+{
+    Ifx_UReg_32Bit OUT0:1;
+    Ifx_UReg_32Bit OUT1:1;
+    Ifx_UReg_32Bit OUT2:1;
+    Ifx_UReg_32Bit OUT3:1;
+    Ifx_UReg_32Bit OUT4:1;
+    Ifx_UReg_32Bit OUT5:1;
+    Ifx_UReg_32Bit OUT6:1;
+    Ifx_UReg_32Bit reserved_7:25;
+} Ifx_GTM_DXOUTCON_Bits;
+
+
+typedef struct _Ifx_GTM_EIRQ_EN_Bits
+{
+    volatile unsigned int AEI_TO_XPT_EIRQ_EN:1;
+    volatile unsigned int AEI_USP_ADDR_EIRQ_EN:1;
+    volatile unsigned int AEI_IM_ADDR_EIRQ_EN:1;
+    volatile unsigned int AEI_USP_BE_EIRQ_EN:1;
+    volatile unsigned int AEIM_USP_ADDR_EIRQ_EN:1;
+    volatile unsigned int AEIM_IM_ADDR_EIRQ_EN:1;
+    volatile unsigned int AEIM_USP_BE_EIRQ_EN:1;
+    volatile unsigned int CLK_EN_ERR_EIRQ_EN:1;
+    volatile unsigned int CLK_PER_ERR_EIRQ_EN:1;
+    volatile unsigned int reserved_9:23;
+} Ifx_GTM_EIRQ_EN_Bits;
+
+
+typedef struct _Ifx_GTM_EXT_CAP_EN_Bits
+{
+    volatile unsigned int TIM_I_EXT_CAP_EN:8;
+    volatile unsigned int TIM_IP1_EXT_CAP_EN:8;
+    volatile unsigned int reserved_16:16;
+} Ifx_GTM_EXT_CAP_EN_Bits;
+
+
+typedef struct _Ifx_GTM_HW_CONF_Bits
+{
+    volatile unsigned int GRSTEN:1;
+    volatile unsigned int BRIDGE_MODE_RST:1;
+    volatile unsigned int SYNC_INPUT_REG:1;
+    volatile unsigned int CFG_CLOCK_RATE:1;
+    volatile unsigned int ATOM_OUT_RST:1;
+    volatile unsigned int ATOM_TRIG_CHAIN:3;
+    volatile unsigned int TOM_OUT_RST:1;
+    volatile unsigned int TOM_TRIG_CHAIN:3;
+    volatile unsigned int RAM_INIT_RST:1;
+    volatile unsigned int ERM:1;
+    volatile unsigned int ARU_CONNECT_CONFIG:1;
+    volatile unsigned int reserved_15:1;
+    volatile unsigned int IRQ_MODE_LEVEL:1;
+    volatile unsigned int IRQ_MODE_PULSE:1;
+    volatile unsigned int IRQ_MODE_PULSE_NOTIFY:1;
+    volatile unsigned int IRQ_MODE_SINGLE_PULSE:1;
+    volatile unsigned int ATOM_TRIG_INTCHAIN:4;
+    volatile unsigned int TOM_TRIG_INTCHAIN:5;
+    volatile unsigned int INT_CLK_EN_GEN:1;
+    volatile unsigned int reserved_30:2;
+} Ifx_GTM_HW_CONF_Bits;
+
+
+typedef struct _Ifx_GTM_ICM_IRQG_CEI0_Bits
+{
+    volatile unsigned int FIFO0_CH0_EIRQ:1;
+    volatile unsigned int FIFO0_CH1_EIRQ:1;
+    volatile unsigned int FIFO0_CH2_EIRQ:1;
+    volatile unsigned int FIFO0_CH3_EIRQ:1;
+    volatile unsigned int FIFO0_CH4_EIRQ:1;
+    volatile unsigned int FIFO0_CH5_EIRQ:1;
+    volatile unsigned int FIFO0_CH6_EIRQ:1;
+    volatile unsigned int FIFO0_CH7_EIRQ:1;
+    volatile unsigned int FIFO1_CH0_EIRQ:1;
+    volatile unsigned int FIFO1_CH1_EIRQ:1;
+    volatile unsigned int FIFO1_CH2_EIRQ:1;
+    volatile unsigned int FIFO1_CH3_EIRQ:1;
+    volatile unsigned int FIFO1_CH4_EIRQ:1;
+    volatile unsigned int FIFO1_CH5_EIRQ:1;
+    volatile unsigned int FIFO1_CH6_EIRQ:1;
+    volatile unsigned int FIFO1_CH7_EIRQ:1;
+    volatile unsigned int FIFO2_CH0_EIRQ:1;
+    volatile unsigned int FIFO2_CH1_EIRQ:1;
+    volatile unsigned int FIFO2_CH2_EIRQ:1;
+    volatile unsigned int FIFO2_CH3_EIRQ:1;
+    volatile unsigned int FIFO2_CH4_EIRQ:1;
+    volatile unsigned int FIFO2_CH5_EIRQ:1;
+    volatile unsigned int FIFO2_CH6_EIRQ:1;
+    volatile unsigned int FIFO2_CH7_EIRQ:1;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_ICM_IRQG_CEI0_Bits;
+
+
+typedef struct _Ifx_GTM_ICM_IRQG_CEI1_Bits
+{
+    volatile unsigned int TIM0_CH0_EIRQ:1;
+    volatile unsigned int TIM0_CH1_EIRQ:1;
+    volatile unsigned int TIM0_CH2_EIRQ:1;
+    volatile unsigned int TIM0_CH3_EIRQ:1;
+    volatile unsigned int TIM0_CH4_EIRQ:1;
+    volatile unsigned int TIM0_CH5_EIRQ:1;
+    volatile unsigned int TIM0_CH6_EIRQ:1;
+    volatile unsigned int TIM0_CH7_EIRQ:1;
+    volatile unsigned int TIM1_CH0_EIRQ:1;
+    volatile unsigned int TIM1_CH1_EIRQ:1;
+    volatile unsigned int TIM1_CH2_EIRQ:1;
+    volatile unsigned int TIM1_CH3_EIRQ:1;
+    volatile unsigned int TIM1_CH4_EIRQ:1;
+    volatile unsigned int TIM1_CH5_EIRQ:1;
+    volatile unsigned int TIM1_CH6_EIRQ:1;
+    volatile unsigned int TIM1_CH7_EIRQ:1;
+    volatile unsigned int TIM2_CH0_EIRQ:1;
+    volatile unsigned int TIM2_CH1_EIRQ:1;
+    volatile unsigned int TIM2_CH2_EIRQ:1;
+    volatile unsigned int TIM2_CH3_EIRQ:1;
+    volatile unsigned int TIM2_CH4_EIRQ:1;
+    volatile unsigned int TIM2_CH5_EIRQ:1;
+    volatile unsigned int TIM2_CH6_EIRQ:1;
+    volatile unsigned int TIM2_CH7_EIRQ:1;
+    volatile unsigned int TIM3_CH0_EIRQ:1;
+    volatile unsigned int TIM3_CH1_EIRQ:1;
+    volatile unsigned int TIM3_CH2_EIRQ:1;
+    volatile unsigned int TIM3_CH3_EIRQ:1;
+    volatile unsigned int TIM3_CH4_EIRQ:1;
+    volatile unsigned int TIM3_CH5_EIRQ:1;
+    volatile unsigned int TIM3_CH6_EIRQ:1;
+    volatile unsigned int TIM3_CH7_EIRQ:1;
+} Ifx_GTM_ICM_IRQG_CEI1_Bits;
+
+
+typedef struct _Ifx_GTM_ICM_IRQG_CEI2_Bits
+{
+    volatile unsigned int TIM4_CH0_EIRQ:1;
+    volatile unsigned int TIM4_CH1_EIRQ:1;
+    volatile unsigned int TIM4_CH2_EIRQ:1;
+    volatile unsigned int TIM4_CH3_EIRQ:1;
+    volatile unsigned int TIM4_CH4_EIRQ:1;
+    volatile unsigned int TIM4_CH5_EIRQ:1;
+    volatile unsigned int TIM4_CH6_EIRQ:1;
+    volatile unsigned int TIM4_CH7_EIRQ:1;
+    volatile unsigned int TIM5_CH0_EIRQ:1;
+    volatile unsigned int TIM5_CH1_EIRQ:1;
+    volatile unsigned int TIM5_CH2_EIRQ:1;
+    volatile unsigned int TIM5_CH3_EIRQ:1;
+    volatile unsigned int TIM5_CH4_EIRQ:1;
+    volatile unsigned int TIM5_CH5_EIRQ:1;
+    volatile unsigned int TIM5_CH6_EIRQ:1;
+    volatile unsigned int TIM5_CH7_EIRQ:1;
+    volatile unsigned int TIM6_CH0_EIRQ:1;
+    volatile unsigned int TIM6_CH1_EIRQ:1;
+    volatile unsigned int TIM6_CH2_EIRQ:1;
+    volatile unsigned int TIM6_CH3_EIRQ:1;
+    volatile unsigned int TIM6_CH4_EIRQ:1;
+    volatile unsigned int TIM6_CH5_EIRQ:1;
+    volatile unsigned int TIM6_CH6_EIRQ:1;
+    volatile unsigned int TIM6_CH7_EIRQ:1;
+    volatile unsigned int TIM7_CH0_EIRQ:1;
+    volatile unsigned int TIM7_CH1_EIRQ:1;
+    volatile unsigned int TIM7_CH2_EIRQ:1;
+    volatile unsigned int TIM7_CH3_EIRQ:1;
+    volatile unsigned int TIM7_CH4_EIRQ:1;
+    volatile unsigned int TIM7_CH5_EIRQ:1;
+    volatile unsigned int TIM7_CH6_EIRQ:1;
+    volatile unsigned int TIM7_CH7_EIRQ:1;
+} Ifx_GTM_ICM_IRQG_CEI2_Bits;
+
+
+typedef struct _Ifx_GTM_ICM_IRQG_CEI3_Bits
+{
+    volatile unsigned int MCS0_CH0_EIRQ:1;
+    volatile unsigned int MCS0_CH1_EIRQ:1;
+    volatile unsigned int MCS0_CH2_EIRQ:1;
+    volatile unsigned int MCS0_CH3_EIRQ:1;
+    volatile unsigned int MCS0_CH4_EIRQ:1;
+    volatile unsigned int MCS0_CH5_EIRQ:1;
+    volatile unsigned int MCS0_CH6_EIRQ:1;
+    volatile unsigned int MCS0_CH7_EIRQ:1;
+    volatile unsigned int MCS1_CH0_EIRQ:1;
+    volatile unsigned int MCS1_CH1_EIRQ:1;
+    volatile unsigned int MCS1_CH2_EIRQ:1;
+    volatile unsigned int MCS1_CH3_EIRQ:1;
+    volatile unsigned int MCS1_CH4_EIRQ:1;
+    volatile unsigned int MCS1_CH5_EIRQ:1;
+    volatile unsigned int MCS1_CH6_EIRQ:1;
+    volatile unsigned int MCS1_CH7_EIRQ:1;
+    volatile unsigned int MCS2_CH0_EIRQ:1;
+    volatile unsigned int MCS2_CH1_EIRQ:1;
+    volatile unsigned int MCS2_CH2_EIRQ:1;
+    volatile unsigned int MCS2_CH3_EIRQ:1;
+    volatile unsigned int MCS2_CH4_EIRQ:1;
+    volatile unsigned int MCS2_CH5_EIRQ:1;
+    volatile unsigned int MCS2_CH6_EIRQ:1;
+    volatile unsigned int MCS2_CH7_EIRQ:1;
+    volatile unsigned int MCS3_CH0_EIRQ:1;
+    volatile unsigned int MCS3_CH1_EIRQ:1;
+    volatile unsigned int MCS3_CH2_EIRQ:1;
+    volatile unsigned int MCS3_CH3_EIRQ:1;
+    volatile unsigned int MCS3_CH4_EIRQ:1;
+    volatile unsigned int MCS3_CH5_EIRQ:1;
+    volatile unsigned int MCS3_CH6_EIRQ:1;
+    volatile unsigned int MCS3_CH7_EIRQ:1;
+} Ifx_GTM_ICM_IRQG_CEI3_Bits;
+
+
+typedef struct _Ifx_GTM_ICM_IRQG_CEI4_Bits
+{
+    volatile unsigned int MCS4_CH0_EIRQ:1;
+    volatile unsigned int MCS4_CH1_EIRQ:1;
+    volatile unsigned int MCS4_CH2_EIRQ:1;
+    volatile unsigned int MCS4_CH3_EIRQ:1;
+    volatile unsigned int MCS4_CH4_EIRQ:1;
+    volatile unsigned int MCS4_CH5_EIRQ:1;
+    volatile unsigned int MCS4_CH6_EIRQ:1;
+    volatile unsigned int MCS4_CH7_EIRQ:1;
+    volatile unsigned int MCS5_CH0_EIRQ:1;
+    volatile unsigned int MCS5_CH1_EIRQ:1;
+    volatile unsigned int MCS5_CH2_EIRQ:1;
+    volatile unsigned int MCS5_CH3_EIRQ:1;
+    volatile unsigned int MCS5_CH4_EIRQ:1;
+    volatile unsigned int MCS5_CH5_EIRQ:1;
+    volatile unsigned int MCS5_CH6_EIRQ:1;
+    volatile unsigned int MCS5_CH7_EIRQ:1;
+    volatile unsigned int MCS6_CH0_EIRQ:1;
+    volatile unsigned int MCS6_CH1_EIRQ:1;
+    volatile unsigned int MCS6_CH2_EIRQ:1;
+    volatile unsigned int MCS6_CH3_EIRQ:1;
+    volatile unsigned int MCS6_CH4_EIRQ:1;
+    volatile unsigned int MCS6_CH5_EIRQ:1;
+    volatile unsigned int MCS6_CH6_EIRQ:1;
+    volatile unsigned int MCS6_CH7_EIRQ:1;
+    volatile unsigned int MCS7_CH0_EIRQ:1;
+    volatile unsigned int MCS7_CH1_EIRQ:1;
+    volatile unsigned int MCS7_CH2_EIRQ:1;
+    volatile unsigned int MCS7_CH3_EIRQ:1;
+    volatile unsigned int MCS7_CH4_EIRQ:1;
+    volatile unsigned int MCS7_CH5_EIRQ:1;
+    volatile unsigned int MCS7_CH6_EIRQ:1;
+    volatile unsigned int MCS7_CH7_EIRQ:1;
+} Ifx_GTM_ICM_IRQG_CEI4_Bits;
+
+
+typedef struct _Ifx_GTM_ICM_IRQG_CEI_MCS_Bits
+{
+    volatile unsigned int MCS_CH0_EIRQ:1;
+    volatile unsigned int MCS_CH1_EIRQ:1;
+    volatile unsigned int MCS_CH2_EIRQ:1;
+    volatile unsigned int MCS_CH3_EIRQ:1;
+    volatile unsigned int MCS_CH4_EIRQ:1;
+    volatile unsigned int MCS_CH5_EIRQ:1;
+    volatile unsigned int MCS_CH6_EIRQ:1;
+    volatile unsigned int MCS_CH7_EIRQ:1;
+    volatile unsigned int reserved_8:24;
+} Ifx_GTM_ICM_IRQG_CEI_MCS_Bits;
+
+
+typedef struct _Ifx_GTM_ICM_IRQG_CEI_PSM_Bits
+{
+    volatile unsigned int PSM_M0_CH0_EIRQ:1;
+    volatile unsigned int PSM_M0_CH1_EIRQ:1;
+    volatile unsigned int PSM_M0_CH2_EIRQ:1;
+    volatile unsigned int PSM_M0_CH3_EIRQ:1;
+    volatile unsigned int PSM_M0_CH4_EIRQ:1;
+    volatile unsigned int PSM_M0_CH5_EIRQ:1;
+    volatile unsigned int PSM_M0_CH6_EIRQ:1;
+    volatile unsigned int PSM_M0_CH7_EIRQ:1;
+    volatile unsigned int PSM_M1_CH0_EIRQ:1;
+    volatile unsigned int PSM_M1_CH1_EIRQ:1;
+    volatile unsigned int PSM_M1_CH2_EIRQ:1;
+    volatile unsigned int PSM_M1_CH3_EIRQ:1;
+    volatile unsigned int PSM_M1_CH4_EIRQ:1;
+    volatile unsigned int PSM_M1_CH5_EIRQ:1;
+    volatile unsigned int PSM_M1_CH6_EIRQ:1;
+    volatile unsigned int PSM_M1_CH7_EIRQ:1;
+    volatile unsigned int PSM_M2_CH0_EIRQ:1;
+    volatile unsigned int PSM_M2_CH1_EIRQ:1;
+    volatile unsigned int PSM_M2_CH2_EIRQ:1;
+    volatile unsigned int PSM_M2_CH3_EIRQ:1;
+    volatile unsigned int PSM_M2_CH4_EIRQ:1;
+    volatile unsigned int PSM_M2_CH5_EIRQ:1;
+    volatile unsigned int PSM_M2_CH6_EIRQ:1;
+    volatile unsigned int PSM_M2_CH7_EIRQ:1;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_ICM_IRQG_CEI_PSM_Bits;
+
+
+typedef struct _Ifx_GTM_ICM_IRQG_CEI_SPE_Bits
+{
+    volatile unsigned int SPE0_EIRQ:1;
+    volatile unsigned int SPE1_EIRQ:1;
+    volatile unsigned int SPE2_EIRQ:1;
+    volatile unsigned int SPE3_EIRQ:1;
+    volatile unsigned int SPE4_EIRQ:1;
+    volatile unsigned int SPE5_EIRQ:1;
+    volatile unsigned int reserved_6:26;
+} Ifx_GTM_ICM_IRQG_CEI_SPE_Bits;
+
+
+typedef struct _Ifx_GTM_ICM_IRQG_CI_ATOM_Bits
+{
+    volatile unsigned int ATOM_M0_CH0_IRQ:1;
+    volatile unsigned int ATOM_M0_CH1_IRQ:1;
+    volatile unsigned int ATOM_M0_CH2_IRQ:1;
+    volatile unsigned int ATOM_M0_CH3_IRQ:1;
+    volatile unsigned int ATOM_M0_CH4_IRQ:1;
+    volatile unsigned int ATOM_M0_CH5_IRQ:1;
+    volatile unsigned int ATOM_M0_CH6_IRQ:1;
+    volatile unsigned int ATOM_M0_CH7_IRQ:1;
+    volatile unsigned int ATOM_M1_CH0_IRQ:1;
+    volatile unsigned int ATOM_M1_CH1_IRQ:1;
+    volatile unsigned int ATOM_M1_CH2_IRQ:1;
+    volatile unsigned int ATOM_M1_CH3_IRQ:1;
+    volatile unsigned int ATOM_M1_CH4_IRQ:1;
+    volatile unsigned int ATOM_M1_CH5_IRQ:1;
+    volatile unsigned int ATOM_M1_CH6_IRQ:1;
+    volatile unsigned int ATOM_M1_CH7_IRQ:1;
+    volatile unsigned int ATOM_M2_CH0_IRQ:1;
+    volatile unsigned int ATOM_M2_CH1_IRQ:1;
+    volatile unsigned int ATOM_M2_CH2_IRQ:1;
+    volatile unsigned int ATOM_M2_CH3_IRQ:1;
+    volatile unsigned int ATOM_M2_CH4_IRQ:1;
+    volatile unsigned int ATOM_M2_CH5_IRQ:1;
+    volatile unsigned int ATOM_M2_CH6_IRQ:1;
+    volatile unsigned int ATOM_M2_CH7_IRQ:1;
+    volatile unsigned int ATOM_M3_CH0_IRQ:1;
+    volatile unsigned int ATOM_M3_CH1_IRQ:1;
+    volatile unsigned int ATOM_M3_CH2_IRQ:1;
+    volatile unsigned int ATOM_M3_CH3_IRQ:1;
+    volatile unsigned int ATOM_M3_CH4_IRQ:1;
+    volatile unsigned int ATOM_M3_CH5_IRQ:1;
+    volatile unsigned int ATOM_M3_CH6_IRQ:1;
+    volatile unsigned int ATOM_M3_CH7_IRQ:1;
+} Ifx_GTM_ICM_IRQG_CI_ATOM_Bits;
+
+
+typedef struct _Ifx_GTM_ICM_IRQG_CI_MCS_Bits
+{
+    volatile unsigned int MCS_CH0_IRQ:1;
+    volatile unsigned int MCS_CH1_IRQ:1;
+    volatile unsigned int MCS_CH2_IRQ:1;
+    volatile unsigned int MCS_CH3_IRQ:1;
+    volatile unsigned int MCS_CH4_IRQ:1;
+    volatile unsigned int MCS_CH5_IRQ:1;
+    volatile unsigned int MCS_CH6_IRQ:1;
+    volatile unsigned int MCS_CH7_IRQ:1;
+    volatile unsigned int reserved_8:24;
+} Ifx_GTM_ICM_IRQG_CI_MCS_Bits;
+
+
+typedef struct _Ifx_GTM_ICM_IRQG_CI_PSM_Bits
+{
+    volatile unsigned int PSM_M0_CH0_IRQ:1;
+    volatile unsigned int PSM_M0_CH1_IRQ:1;
+    volatile unsigned int PSM_M0_CH2_IRQ:1;
+    volatile unsigned int PSM_M0_CH3_IRQ:1;
+    volatile unsigned int PSM_M0_CH4_IRQ:1;
+    volatile unsigned int PSM_M0_CH5_IRQ:1;
+    volatile unsigned int PSM_M0_CH6_IRQ:1;
+    volatile unsigned int PSM_M0_CH7_IRQ:1;
+    volatile unsigned int PSM_M1_CH0_IRQ:1;
+    volatile unsigned int PSM_M1_CH1_IRQ:1;
+    volatile unsigned int PSM_M1_CH2_IRQ:1;
+    volatile unsigned int PSM_M1_CH3_IRQ:1;
+    volatile unsigned int PSM_M1_CH4_IRQ:1;
+    volatile unsigned int PSM_M1_CH5_IRQ:1;
+    volatile unsigned int PSM_M1_CH6_IRQ:1;
+    volatile unsigned int PSM_M1_CH7_IRQ:1;
+    volatile unsigned int PSM_M2_CH0_IRQ:1;
+    volatile unsigned int PSM_M2_CH1_IRQ:1;
+    volatile unsigned int PSM_M2_CH2_IRQ:1;
+    volatile unsigned int PSM_M2_CH3_IRQ:1;
+    volatile unsigned int PSM_M2_CH4_IRQ:1;
+    volatile unsigned int PSM_M2_CH5_IRQ:1;
+    volatile unsigned int PSM_M2_CH6_IRQ:1;
+    volatile unsigned int PSM_M2_CH7_IRQ:1;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_ICM_IRQG_CI_PSM_Bits;
+
+
+typedef struct _Ifx_GTM_ICM_IRQG_CI_SPE_Bits
+{
+    volatile unsigned int SPE0_IRQ:1;
+    volatile unsigned int SPE1_IRQ:1;
+    volatile unsigned int SPE2_IRQ:1;
+    volatile unsigned int SPE3_IRQ:1;
+    volatile unsigned int SPE4_IRQ:1;
+    volatile unsigned int SPE5_IRQ:1;
+    volatile unsigned int reserved_6:26;
+} Ifx_GTM_ICM_IRQG_CI_SPE_Bits;
+
+
+typedef struct _Ifx_GTM_ICM_IRQG_CI_TOM_Bits
+{
+    volatile unsigned int TOM_M0_CH0_IRQ:1;
+    volatile unsigned int TOM_M0_CH1_IRQ:1;
+    volatile unsigned int TOM_M0_CH2_IRQ:1;
+    volatile unsigned int TOM_M0_CH3_IRQ:1;
+    volatile unsigned int TOM_M0_CH4_IRQ:1;
+    volatile unsigned int TOM_M0_CH5_IRQ:1;
+    volatile unsigned int TOM_M0_CH6_IRQ:1;
+    volatile unsigned int TOM_M0_CH7_IRQ:1;
+    volatile unsigned int TOM_M0_CH8_IRQ:1;
+    volatile unsigned int TOM_M0_CH9_IRQ:1;
+    volatile unsigned int TOM_M0_CH10_IRQ:1;
+    volatile unsigned int TOM_M0_CH11_IRQ:1;
+    volatile unsigned int TOM_M0_CH12_IRQ:1;
+    volatile unsigned int TOM_M0_CH13_IRQ:1;
+    volatile unsigned int TOM_M0_CH14_IRQ:1;
+    volatile unsigned int TOM_M0_CH15_IRQ:1;
+    volatile unsigned int TOM_M1_CH0_IRQ:1;
+    volatile unsigned int TOM_M1_CH1_IRQ:1;
+    volatile unsigned int TOM_M1_CH2_IRQ:1;
+    volatile unsigned int TOM_M1_CH3_IRQ:1;
+    volatile unsigned int TOM_M1_CH4_IRQ:1;
+    volatile unsigned int TOM_M1_CH5_IRQ:1;
+    volatile unsigned int TOM_M1_CH6_IRQ:1;
+    volatile unsigned int TOM_M1_CH7_IRQ:1;
+    volatile unsigned int TOM_M1_CH8_IRQ:1;
+    volatile unsigned int TOM_M1_CH9_IRQ:1;
+    volatile unsigned int TOM_M1_CH10_IRQ:1;
+    volatile unsigned int TOM_M1_CH11_IRQ:1;
+    volatile unsigned int TOM_M1_CH12_IRQ:1;
+    volatile unsigned int TOM_M1_CH13_IRQ:1;
+    volatile unsigned int TOM_M1_CH14_IRQ:1;
+    volatile unsigned int TOM_M1_CH15_IRQ:1;
+} Ifx_GTM_ICM_IRQG_CI_TOM_Bits;
+
+
+typedef struct _Ifx_GTM_ICM_IRQG_MEI_Bits
+{
+    volatile unsigned int GTM_EIRQ:1;
+    volatile unsigned int BRC_EIRQ:1;
+    volatile unsigned int FIFO0_EIRQ:1;
+    volatile unsigned int FIFO1_EIRQ:1;
+    volatile unsigned int TIM0_EIRQ:1;
+    volatile unsigned int TIM1_EIRQ:1;
+    volatile unsigned int TIM2_EIRQ:1;
+    volatile unsigned int TIM3_EIRQ:1;
+    volatile unsigned int TIM4_EIRQ:1;
+    volatile unsigned int TIM5_EIRQ:1;
+    volatile unsigned int TIM6_EIRQ:1;
+    volatile unsigned int TIM7_EIRQ:1;
+    volatile unsigned int MCS0_EIRQ:1;
+    volatile unsigned int MCS1_EIRQ:1;
+    volatile unsigned int MCS2_EIRQ:1;
+    volatile unsigned int MCS3_EIRQ:1;
+    volatile unsigned int MCS4_EIRQ:1;
+    volatile unsigned int MCS5_EIRQ:1;
+    volatile unsigned int MCS6_EIRQ:1;
+    volatile unsigned int MCS7_EIRQ:1;
+    volatile unsigned int SPE0_EIRQ:1;
+    volatile unsigned int SPE1_EIRQ:1;
+    volatile unsigned int SPE2_EIRQ:1;
+    volatile unsigned int SPE3_EIRQ:1;
+    volatile unsigned int CMP_EIRQ:1;
+    volatile unsigned int DPLL_EIRQ:1;
+    volatile unsigned int reserved_26:6;
+} Ifx_GTM_ICM_IRQG_MEI_Bits;
+
+
+typedef struct _Ifx_GTM_ICM_IRQG_MEI_CLS_Bits
+{
+    volatile unsigned int TIM_M0_EIRQ:1;
+    volatile unsigned int MCS_M0_EIRQ:1;
+    volatile unsigned int SPE_M0_EIRQ:1;
+    volatile unsigned int FIFO_M0_EIRQ:1;
+    volatile unsigned int reserved_4:4;
+    volatile unsigned int TIM_M1_EIRQ:1;
+    volatile unsigned int MCS_M1_EIRQ:1;
+    volatile unsigned int SPE_M1_EIRQ:1;
+    volatile unsigned int FIFO_M1_EIRQ:1;
+    volatile unsigned int reserved_12:4;
+    volatile unsigned int TIM_M2_EIRQ:1;
+    volatile unsigned int MCS_M2_EIRQ:1;
+    volatile unsigned int SPE_M2_EIRQ:1;
+    volatile unsigned int reserved_19:1;
+    volatile unsigned int reserved_20:4;
+    volatile unsigned int TIM_M3_EIRQ:1;
+    volatile unsigned int MCS_M3_EIRQ:1;
+    volatile unsigned int SPE_M3_EIRQ:1;
+    volatile unsigned int reserved_27:1;
+    volatile unsigned int reserved_28:4;
+} Ifx_GTM_ICM_IRQG_MEI_CLS_Bits;
+
+
+typedef struct _Ifx_GTM_ICM_IRQG_R0_Bits
+{
+    volatile unsigned int ARU_NEW_DATA0_IRQ:1;
+    volatile unsigned int ARU_NEW_DATA1_IRQ:1;
+    volatile unsigned int ARU_ACC_ACK_IRQ:1;
+    volatile unsigned int BRC_IRQ:1;
+    volatile unsigned int AEI_IRQ:1;
+    volatile unsigned int CMP_IRQ:1;
+    volatile unsigned int SPE0_IRQ:1;
+    volatile unsigned int SPE1_IRQ:1;
+    volatile unsigned int SPE2_IRQ:1;
+    volatile unsigned int SPE3_IRQ:1;
+    volatile unsigned int SPE4_IRQ:1;
+    volatile unsigned int SPE5_IRQ:1;
+    volatile unsigned int reserved_12:4;
+    volatile unsigned int PSM0_CH0_IRQ:1;
+    volatile unsigned int PSM0_CH1_IRQ:1;
+    volatile unsigned int PSM0_CH2_IRQ:1;
+    volatile unsigned int PSM0_CH3_IRQ:1;
+    volatile unsigned int PSM0_CH4_IRQ:1;
+    volatile unsigned int PSM0_CH5_IRQ:1;
+    volatile unsigned int PSM0_CH6_IRQ:1;
+    volatile unsigned int PSM0_CH7_IRQ:1;
+    volatile unsigned int PSM1_CH0_IRQ:1;
+    volatile unsigned int PSM1_CH1_IRQ:1;
+    volatile unsigned int PSM1_CH2_IRQ:1;
+    volatile unsigned int PSM1_CH3_IRQ:1;
+    volatile unsigned int PSM1_CH4_IRQ:1;
+    volatile unsigned int PSM1_CH5_IRQ:1;
+    volatile unsigned int PSM1_CH6_IRQ:1;
+    volatile unsigned int PSM1_CH7_IRQ:1;
+} Ifx_GTM_ICM_IRQG_R0_Bits;
+
+
+typedef struct _Ifx_GTM_ICM_IRQG_R1_Bits
+{
+    volatile unsigned int DPLL_DCGI_IRQ:1;
+    volatile unsigned int DPLL_EDI_IRQ:1;
+    volatile unsigned int DPLL_TINI_IRQ:1;
+    volatile unsigned int DPLL_TAXI_IRQ:1;
+    volatile unsigned int DPLL_SISI_IRQ:1;
+    volatile unsigned int DPLL_TISI_IRQ:1;
+    volatile unsigned int DPLL_MSI_IRQ:1;
+    volatile unsigned int DPLL_MTI_IRQ:1;
+    volatile unsigned int DPLL_SASI_IRQ:1;
+    volatile unsigned int DPLL_TASI_IRQ:1;
+    volatile unsigned int DPLL_PWI_IRQ:1;
+    volatile unsigned int DPLL_W2I_IRQ:1;
+    volatile unsigned int DPLL_W1I_IRQ:1;
+    volatile unsigned int DPLL_GL1I_IRQ:1;
+    volatile unsigned int DPLL_LL1I_IRQ:1;
+    volatile unsigned int DPLL_EI_IRQ:1;
+    volatile unsigned int DPLL_GL2I_IRQ:1;
+    volatile unsigned int DPLL_LL2I_IRQ:1;
+    volatile unsigned int DPLL_TE0I_IRQ:1;
+    volatile unsigned int DPLL_TE1I_IRQ:1;
+    volatile unsigned int DPLL_TE2I_IRQ:1;
+    volatile unsigned int DPLL_TE3I_IRQ:1;
+    volatile unsigned int DPLL_TE4I_IRQ:1;
+    volatile unsigned int DPLL_CDTI_IRQ:1;
+    volatile unsigned int DPLL_CDSI_IRQ:1;
+    volatile unsigned int DPLL_TORI_IRQ:1;
+    volatile unsigned int DPLL_SORI_IRQ:1;
+    volatile unsigned int reserved_27:5;
+} Ifx_GTM_ICM_IRQG_R1_Bits;
+
+
+typedef struct _Ifx_GTM_ICM_IRQG_R10_Bits
+{
+    volatile unsigned int ATOM4_CH0_IRQ:1;
+    volatile unsigned int ATOM4_CH1_IRQ:1;
+    volatile unsigned int ATOM4_CH2_IRQ:1;
+    volatile unsigned int ATOM4_CH3_IRQ:1;
+    volatile unsigned int ATOM4_CH4_IRQ:1;
+    volatile unsigned int ATOM4_CH5_IRQ:1;
+    volatile unsigned int ATOM4_CH6_IRQ:1;
+    volatile unsigned int ATOM4_CH7_IRQ:1;
+    volatile unsigned int ATOM5_CH0_IRQ:1;
+    volatile unsigned int ATOM5_CH1_IRQ:1;
+    volatile unsigned int ATOM5_CH2_IRQ:1;
+    volatile unsigned int ATOM5_CH3_IRQ:1;
+    volatile unsigned int ATOM5_CH4_IRQ:1;
+    volatile unsigned int ATOM5_CH5_IRQ:1;
+    volatile unsigned int ATOM5_CH6_IRQ:1;
+    volatile unsigned int ATOM5_CH7_IRQ:1;
+    volatile unsigned int ATOM6_CH0_IRQ:1;
+    volatile unsigned int ATOM6_CH1_IRQ:1;
+    volatile unsigned int ATOM6_CH2_IRQ:1;
+    volatile unsigned int ATOM6_CH3_IRQ:1;
+    volatile unsigned int ATOM6_CH4_IRQ:1;
+    volatile unsigned int ATOM6_CH5_IRQ:1;
+    volatile unsigned int ATOM6_CH6_IRQ:1;
+    volatile unsigned int ATOM6_CH7_IRQ:1;
+    volatile unsigned int ATOM7_CH0_IRQ:1;
+    volatile unsigned int ATOM7_CH1_IRQ:1;
+    volatile unsigned int ATOM7_CH2_IRQ:1;
+    volatile unsigned int ATOM7_CH3_IRQ:1;
+    volatile unsigned int ATOM7_CH4_IRQ:1;
+    volatile unsigned int ATOM7_CH5_IRQ:1;
+    volatile unsigned int ATOM7_CH6_IRQ:1;
+    volatile unsigned int ATOM7_CH7_IRQ:1;
+} Ifx_GTM_ICM_IRQG_R10_Bits;
+
+
+typedef struct _Ifx_GTM_ICM_IRQG_R11_Bits
+{
+    volatile unsigned int ATOM8_CH0_IRQ:1;
+    volatile unsigned int ATOM8_CH1_IRQ:1;
+    volatile unsigned int ATOM8_CH2_IRQ:1;
+    volatile unsigned int ATOM8_CH3_IRQ:1;
+    volatile unsigned int ATOM8_CH4_IRQ:1;
+    volatile unsigned int ATOM8_CH5_IRQ:1;
+    volatile unsigned int ATOM8_CH6_IRQ:1;
+    volatile unsigned int ATOM8_CH7_IRQ:1;
+    volatile unsigned int ATOM9_CH0_IRQ:1;
+    volatile unsigned int ATOM9_CH1_IRQ:1;
+    volatile unsigned int ATOM9_CH2_IRQ:1;
+    volatile unsigned int ATOM9_CH3_IRQ:1;
+    volatile unsigned int ATOM9_CH4_IRQ:1;
+    volatile unsigned int ATOM9_CH5_IRQ:1;
+    volatile unsigned int ATOM9_CH6_IRQ:1;
+    volatile unsigned int ATOM9_CH7_IRQ:1;
+    volatile unsigned int ATOM10_CH0_IRQ:1;
+    volatile unsigned int ATOM10_CH1_IRQ:1;
+    volatile unsigned int ATOM10_CH2_IRQ:1;
+    volatile unsigned int ATOM10_CH3_IRQ:1;
+    volatile unsigned int ATOM10_CH4_IRQ:1;
+    volatile unsigned int ATOM10_CH5_IRQ:1;
+    volatile unsigned int ATOM10_CH6_IRQ:1;
+    volatile unsigned int ATOM10_CH7_IRQ:1;
+    volatile unsigned int ATOM11_CH0_IRQ:1;
+    volatile unsigned int ATOM11_CH1_IRQ:1;
+    volatile unsigned int ATOM11_CH2_IRQ:1;
+    volatile unsigned int ATOM11_CH3_IRQ:1;
+    volatile unsigned int ATOM11_CH4_IRQ:1;
+    volatile unsigned int ATOM11_CH5_IRQ:1;
+    volatile unsigned int ATOM11_CH6_IRQ:1;
+    volatile unsigned int ATOM11_CH7_IRQ:1;
+} Ifx_GTM_ICM_IRQG_R11_Bits;
+
+
+typedef struct _Ifx_GTM_ICM_IRQG_R2_Bits
+{
+    volatile unsigned int TIM0_CH0_IRQ:1;
+    volatile unsigned int TIM0_CH1_IRQ:1;
+    volatile unsigned int TIM0_CH2_IRQ:1;
+    volatile unsigned int TIM0_CH3_IRQ:1;
+    volatile unsigned int TIM0_CH4_IRQ:1;
+    volatile unsigned int TIM0_CH5_IRQ:1;
+    volatile unsigned int TIM0_CH6_IRQ:1;
+    volatile unsigned int TIM0_CH7_IRQ:1;
+    volatile unsigned int TIM1_CH0_IRQ:1;
+    volatile unsigned int TIM1_CH1_IRQ:1;
+    volatile unsigned int TIM1_CH2_IRQ:1;
+    volatile unsigned int TIM1_CH3_IRQ:1;
+    volatile unsigned int TIM1_CH4_IRQ:1;
+    volatile unsigned int TIM1_CH5_IRQ:1;
+    volatile unsigned int TIM1_CH6_IRQ:1;
+    volatile unsigned int TIM1_CH7_IRQ:1;
+    volatile unsigned int TIM2_CH0_IRQ:1;
+    volatile unsigned int TIM2_CH1_IRQ:1;
+    volatile unsigned int TIM2_CH2_IRQ:1;
+    volatile unsigned int TIM2_CH3_IRQ:1;
+    volatile unsigned int TIM2_CH4_IRQ:1;
+    volatile unsigned int TIM2_CH5_IRQ:1;
+    volatile unsigned int TIM2_CH6_IRQ:1;
+    volatile unsigned int TIM2_CH7_IRQ:1;
+    volatile unsigned int TIM3_CH0_IRQ:1;
+    volatile unsigned int TIM3_CH1_IRQ:1;
+    volatile unsigned int TIM3_CH2_IRQ:1;
+    volatile unsigned int TIM3_CH3_IRQ:1;
+    volatile unsigned int TIM3_CH4_IRQ:1;
+    volatile unsigned int TIM3_CH5_IRQ:1;
+    volatile unsigned int TIM3_CH6_IRQ:1;
+    volatile unsigned int TIM3_CH7_IRQ:1;
+} Ifx_GTM_ICM_IRQG_R2_Bits;
+
+
+typedef struct _Ifx_GTM_ICM_IRQG_R3_Bits
+{
+    volatile unsigned int TIM4_CH0_IRQ:1;
+    volatile unsigned int TIM4_CH1_IRQ:1;
+    volatile unsigned int TIM4_CH2_IRQ:1;
+    volatile unsigned int TIM4_CH3_IRQ:1;
+    volatile unsigned int TIM4_CH4_IRQ:1;
+    volatile unsigned int TIM4_CH5_IRQ:1;
+    volatile unsigned int TIM4_CH6_IRQ:1;
+    volatile unsigned int TIM4_CH7_IRQ:1;
+    volatile unsigned int TIM5_CH0_IRQ:1;
+    volatile unsigned int TIM5_CH1_IRQ:1;
+    volatile unsigned int TIM5_CH2_IRQ:1;
+    volatile unsigned int TIM5_CH3_IRQ:1;
+    volatile unsigned int TIM5_CH4_IRQ:1;
+    volatile unsigned int TIM5_CH5_IRQ:1;
+    volatile unsigned int TIM5_CH6_IRQ:1;
+    volatile unsigned int TIM5_CH7_IRQ:1;
+    volatile unsigned int TIM6_CH0_IRQ:1;
+    volatile unsigned int TIM6_CH1_IRQ:1;
+    volatile unsigned int TIM6_CH2_IRQ:1;
+    volatile unsigned int TIM6_CH3_IRQ:1;
+    volatile unsigned int TIM6_CH4_IRQ:1;
+    volatile unsigned int TIM6_CH5_IRQ:1;
+    volatile unsigned int TIM6_CH6_IRQ:1;
+    volatile unsigned int TIM6_CH7_IRQ:1;
+    volatile unsigned int TIM7_CH0_IRQ:1;
+    volatile unsigned int TIM7_CH1_IRQ:1;
+    volatile unsigned int TIM7_CH2_IRQ:1;
+    volatile unsigned int TIM7_CH3_IRQ:1;
+    volatile unsigned int TIM7_CH4_IRQ:1;
+    volatile unsigned int TIM7_CH5_IRQ:1;
+    volatile unsigned int TIM7_CH6_IRQ:1;
+    volatile unsigned int TIM7_CH7_IRQ:1;
+} Ifx_GTM_ICM_IRQG_R3_Bits;
+
+
+typedef struct _Ifx_GTM_ICM_IRQG_R4_Bits
+{
+    volatile unsigned int MCS0_CH0_IRQ:1;
+    volatile unsigned int MCS0_CH1_IRQ:1;
+    volatile unsigned int MCS0_CH2_IRQ:1;
+    volatile unsigned int MCS0_CH3_IRQ:1;
+    volatile unsigned int MCS0_CH4_IRQ:1;
+    volatile unsigned int MCS0_CH5_IRQ:1;
+    volatile unsigned int MCS0_CH6_IRQ:1;
+    volatile unsigned int MCS0_CH7_IRQ:1;
+    volatile unsigned int MCS1_CH0_IRQ:1;
+    volatile unsigned int MCS1_CH1_IRQ:1;
+    volatile unsigned int MCS1_CH2_IRQ:1;
+    volatile unsigned int MCS1_CH3_IRQ:1;
+    volatile unsigned int MCS1_CH4_IRQ:1;
+    volatile unsigned int MCS1_CH5_IRQ:1;
+    volatile unsigned int MCS1_CH6_IRQ:1;
+    volatile unsigned int MCS1_CH7_IRQ:1;
+    volatile unsigned int MCS2_CH0_IRQ:1;
+    volatile unsigned int MCS2_CH1_IRQ:1;
+    volatile unsigned int MCS2_CH2_IRQ:1;
+    volatile unsigned int MCS2_CH3_IRQ:1;
+    volatile unsigned int MCS2_CH4_IRQ:1;
+    volatile unsigned int MCS2_CH5_IRQ:1;
+    volatile unsigned int MCS2_CH6_IRQ:1;
+    volatile unsigned int MCS2_CH7_IRQ:1;
+    volatile unsigned int MCS3_CH0_IRQ:1;
+    volatile unsigned int MCS3_CH1_IRQ:1;
+    volatile unsigned int MCS3_CH2_IRQ:1;
+    volatile unsigned int MCS3_CH3_IRQ:1;
+    volatile unsigned int MCS3_CH4_IRQ:1;
+    volatile unsigned int MCS3_CH5_IRQ:1;
+    volatile unsigned int MCS3_CH6_IRQ:1;
+    volatile unsigned int MCS3_CH7_IRQ:1;
+} Ifx_GTM_ICM_IRQG_R4_Bits;
+
+
+typedef struct _Ifx_GTM_ICM_IRQG_R5_Bits
+{
+    volatile unsigned int MCS4_CH0_IRQ:1;
+    volatile unsigned int MCS4_CH1_IRQ:1;
+    volatile unsigned int MCS4_CH2_IRQ:1;
+    volatile unsigned int MCS4_CH3_IRQ:1;
+    volatile unsigned int MCS4_CH4_IRQ:1;
+    volatile unsigned int MCS4_CH5_IRQ:1;
+    volatile unsigned int MCS4_CH6_IRQ:1;
+    volatile unsigned int MCS4_CH7_IRQ:1;
+    volatile unsigned int MCS5_CH0_IRQ:1;
+    volatile unsigned int MCS5_CH1_IRQ:1;
+    volatile unsigned int MCS5_CH2_IRQ:1;
+    volatile unsigned int MCS5_CH3_IRQ:1;
+    volatile unsigned int MCS5_CH4_IRQ:1;
+    volatile unsigned int MCS5_CH5_IRQ:1;
+    volatile unsigned int MCS5_CH6_IRQ:1;
+    volatile unsigned int MCS5_CH7_IRQ:1;
+    volatile unsigned int MCS6_CH0_IRQ:1;
+    volatile unsigned int MCS6_CH1_IRQ:1;
+    volatile unsigned int MCS6_CH2_IRQ:1;
+    volatile unsigned int MCS6_CH3_IRQ:1;
+    volatile unsigned int MCS6_CH4_IRQ:1;
+    volatile unsigned int MCS6_CH5_IRQ:1;
+    volatile unsigned int MCS6_CH6_IRQ:1;
+    volatile unsigned int MCS6_CH7_IRQ:1;
+    volatile unsigned int MCS7_CH0_IRQ:1;
+    volatile unsigned int MCS7_CH1_IRQ:1;
+    volatile unsigned int MCS7_CH2_IRQ:1;
+    volatile unsigned int MCS7_CH3_IRQ:1;
+    volatile unsigned int MCS7_CH4_IRQ:1;
+    volatile unsigned int MCS7_CH5_IRQ:1;
+    volatile unsigned int MCS7_CH6_IRQ:1;
+    volatile unsigned int MCS7_CH7_IRQ:1;
+} Ifx_GTM_ICM_IRQG_R5_Bits;
+
+
+typedef struct _Ifx_GTM_ICM_IRQG_R6_Bits
+{
+    volatile unsigned int TOM0_CH0_IRQ:1;
+    volatile unsigned int TOM0_CH1_IRQ:1;
+    volatile unsigned int TOM0_CH2_IRQ:1;
+    volatile unsigned int TOM0_CH3_IRQ:1;
+    volatile unsigned int TOM0_CH4_IRQ:1;
+    volatile unsigned int TOM0_CH5_IRQ:1;
+    volatile unsigned int TOM0_CH6_IRQ:1;
+    volatile unsigned int TOM0_CH7_IRQ:1;
+    volatile unsigned int TOM0_CH8_IRQ:1;
+    volatile unsigned int TOM0_CH9_IRQ:1;
+    volatile unsigned int TOM0_CH10_IRQ:1;
+    volatile unsigned int TOM0_CH11_IRQ:1;
+    volatile unsigned int TOM0_CH12_IRQ:1;
+    volatile unsigned int TOM0_CH13_IRQ:1;
+    volatile unsigned int TOM0_CH14_IRQ:1;
+    volatile unsigned int TOM0_CH15_IRQ:1;
+    volatile unsigned int TOM1_CH0_IRQ:1;
+    volatile unsigned int TOM1_CH1_IRQ:1;
+    volatile unsigned int TOM1_CH2_IRQ:1;
+    volatile unsigned int TOM1_CH3_IRQ:1;
+    volatile unsigned int TOM1_CH4_IRQ:1;
+    volatile unsigned int TOM1_CH5_IRQ:1;
+    volatile unsigned int TOM1_CH6_IRQ:1;
+    volatile unsigned int TOM1_CH7_IRQ:1;
+    volatile unsigned int TOM1_CH8_IRQ:1;
+    volatile unsigned int TOM1_CH9_IRQ:1;
+    volatile unsigned int TOM1_CH10_IRQ:1;
+    volatile unsigned int TOM1_CH11_IRQ:1;
+    volatile unsigned int TOM1_CH12_IRQ:1;
+    volatile unsigned int TOM1_CH13_IRQ:1;
+    volatile unsigned int TOM1_CH14_IRQ:1;
+    volatile unsigned int TOM1_CH15_IRQ:1;
+} Ifx_GTM_ICM_IRQG_R6_Bits;
+
+
+typedef struct _Ifx_GTM_ICM_IRQG_R7_Bits
+{
+    volatile unsigned int TOM2_CH0_IRQ:1;
+    volatile unsigned int TOM2_CH1_IRQ:1;
+    volatile unsigned int TOM2_CH2_IRQ:1;
+    volatile unsigned int TOM2_CH3_IRQ:1;
+    volatile unsigned int TOM2_CH4_IRQ:1;
+    volatile unsigned int TOM2_CH5_IRQ:1;
+    volatile unsigned int TOM2_CH6_IRQ:1;
+    volatile unsigned int TOM2_CH7_IRQ:1;
+    volatile unsigned int TOM2_CH8_IRQ:1;
+    volatile unsigned int TOM2_CH9_IRQ:1;
+    volatile unsigned int TOM2_CH10_IRQ:1;
+    volatile unsigned int TOM2_CH11_IRQ:1;
+    volatile unsigned int TOM2_CH12_IRQ:1;
+    volatile unsigned int TOM2_CH13_IRQ:1;
+    volatile unsigned int TOM2_CH14_IRQ:1;
+    volatile unsigned int TOM2_CH15_IRQ:1;
+    volatile unsigned int TOM3_CH0_IRQ:1;
+    volatile unsigned int TOM3_CH1_IRQ:1;
+    volatile unsigned int TOM3_CH2_IRQ:1;
+    volatile unsigned int TOM3_CH3_IRQ:1;
+    volatile unsigned int TOM3_CH4_IRQ:1;
+    volatile unsigned int TOM3_CH5_IRQ:1;
+    volatile unsigned int TOM3_CH6_IRQ:1;
+    volatile unsigned int TOM3_CH7_IRQ:1;
+    volatile unsigned int TOM3_CH8_IRQ:1;
+    volatile unsigned int TOM3_CH9_IRQ:1;
+    volatile unsigned int TOM3_CH10_IRQ:1;
+    volatile unsigned int TOM3_CH11_IRQ:1;
+    volatile unsigned int TOM3_CH12_IRQ:1;
+    volatile unsigned int TOM3_CH13_IRQ:1;
+    volatile unsigned int TOM3_CH14_IRQ:1;
+    volatile unsigned int TOM3_CH15_IRQ:1;
+} Ifx_GTM_ICM_IRQG_R7_Bits;
+
+
+typedef struct _Ifx_GTM_ICM_IRQG_R8_Bits
+{
+    volatile unsigned int TOM4_CH0_IRQ:1;
+    volatile unsigned int TOM4_CH1_IRQ:1;
+    volatile unsigned int TOM4_CH2_IRQ:1;
+    volatile unsigned int TOM4_CH3_IRQ:1;
+    volatile unsigned int TOM4_CH4_IRQ:1;
+    volatile unsigned int TOM4_CH5_IRQ:1;
+    volatile unsigned int TOM4_CH6_IRQ:1;
+    volatile unsigned int TOM4_CH7_IRQ:1;
+    volatile unsigned int TOM4_CH8_IRQ:1;
+    volatile unsigned int TOM4_CH9_IRQ:1;
+    volatile unsigned int TOM4_CH10_IRQ:1;
+    volatile unsigned int TOM4_CH11_IRQ:1;
+    volatile unsigned int TOM4_CH12_IRQ:1;
+    volatile unsigned int TOM4_CH13_IRQ:1;
+    volatile unsigned int TOM4_CH14_IRQ:1;
+    volatile unsigned int TOM4_CH15_IRQ:1;
+    volatile unsigned int TOM5_CH0_IRQ:1;
+    volatile unsigned int TOM5_CH1_IRQ:1;
+    volatile unsigned int TOM5_CH2_IRQ:1;
+    volatile unsigned int TOM5_CH3_IRQ:1;
+    volatile unsigned int TOM5_CH4_IRQ:1;
+    volatile unsigned int TOM5_CH5_IRQ:1;
+    volatile unsigned int TOM5_CH6_IRQ:1;
+    volatile unsigned int TOM5_CH7_IRQ:1;
+    volatile unsigned int TOM5_CH8_IRQ:1;
+    volatile unsigned int TOM5_CH9_IRQ:1;
+    volatile unsigned int TOM5_CH10_IRQ:1;
+    volatile unsigned int TOM5_CH11_IRQ:1;
+    volatile unsigned int TOM5_CH12_IRQ:1;
+    volatile unsigned int TOM5_CH13_IRQ:1;
+    volatile unsigned int TOM5_CH14_IRQ:1;
+    volatile unsigned int TOM5_CH15_IRQ:1;
+} Ifx_GTM_ICM_IRQG_R8_Bits;
+
+
+typedef struct _Ifx_GTM_ICM_IRQG_R9_Bits
+{
+    volatile unsigned int ATOM0_CH0_IRQ:1;
+    volatile unsigned int ATOM0_CH1_IRQ:1;
+    volatile unsigned int ATOM0_CH2_IRQ:1;
+    volatile unsigned int ATOM0_CH3_IRQ:1;
+    volatile unsigned int ATOM0_CH4_IRQ:1;
+    volatile unsigned int ATOM0_CH5_IRQ:1;
+    volatile unsigned int ATOM0_CH6_IRQ:1;
+    volatile unsigned int ATOM0_CH7_IRQ:1;
+    volatile unsigned int ATOM1_CH0_IRQ:1;
+    volatile unsigned int ATOM1_CH1_IRQ:1;
+    volatile unsigned int ATOM1_CH2_IRQ:1;
+    volatile unsigned int ATOM1_CH3_IRQ:1;
+    volatile unsigned int ATOM1_CH4_IRQ:1;
+    volatile unsigned int ATOM1_CH5_IRQ:1;
+    volatile unsigned int ATOM1_CH6_IRQ:1;
+    volatile unsigned int ATOM1_CH7_IRQ:1;
+    volatile unsigned int ATOM2_CH0_IRQ:1;
+    volatile unsigned int ATOM2_CH1_IRQ:1;
+    volatile unsigned int ATOM2_CH2_IRQ:1;
+    volatile unsigned int ATOM2_CH3_IRQ:1;
+    volatile unsigned int ATOM2_CH4_IRQ:1;
+    volatile unsigned int ATOM2_CH5_IRQ:1;
+    volatile unsigned int ATOM2_CH6_IRQ:1;
+    volatile unsigned int ATOM2_CH7_IRQ:1;
+    volatile unsigned int ATOM3_CH0_IRQ:1;
+    volatile unsigned int ATOM3_CH1_IRQ:1;
+    volatile unsigned int ATOM3_CH2_IRQ:1;
+    volatile unsigned int ATOM3_CH3_IRQ:1;
+    volatile unsigned int ATOM3_CH4_IRQ:1;
+    volatile unsigned int ATOM3_CH5_IRQ:1;
+    volatile unsigned int ATOM3_CH6_IRQ:1;
+    volatile unsigned int ATOM3_CH7_IRQ:1;
+} Ifx_GTM_ICM_IRQG_R9_Bits;
+
+
+typedef struct _Ifx_GTM_INTOUT_Bits
+{
+    Ifx_UReg_32Bit INT0:2;
+    Ifx_UReg_32Bit reserved_2:30;
+} Ifx_GTM_INTOUT_Bits;
+
+
+typedef struct _Ifx_GTM_IRQ_EN_Bits
+{
+    volatile unsigned int AEI_TO_XPT_IRQ_EN:1;
+    volatile unsigned int AEI_USP_ADDR_IRQ_EN:1;
+    volatile unsigned int AEI_IM_ADDR_IRQ_EN:1;
+    volatile unsigned int AEI_USP_BE_IRQ_EN:1;
+    volatile unsigned int AEIM_USP_ADDR_IRQ_EN:1;
+    volatile unsigned int AEIM_IM_ADDR_IRQ_EN:1;
+    volatile unsigned int AEIM_USP_BE_IRQ_EN:1;
+    volatile unsigned int CLK_EN_ERR_IRQ_EN:1;
+    volatile unsigned int CLK_PER_ERR_IRQ_EN:1;
+    volatile unsigned int reserved_9:23;
+} Ifx_GTM_IRQ_EN_Bits;
+
+
+typedef struct _Ifx_GTM_IRQ_FORCINT_Bits
+{
+    volatile unsigned int TRG_AEI_TO_XPT:1;
+    volatile unsigned int TRG_AEI_USP_ADDR:1;
+    volatile unsigned int TRG_AEI_IM_ADDR:1;
+    volatile unsigned int TRG_AEI_USP_BE:1;
+    volatile unsigned int TRG_AEIM_USP_ADDR:1;
+    volatile unsigned int TRG_AEIM_IM_ADDR:1;
+    volatile unsigned int TRG_AEIM_USP_BE:1;
+    volatile unsigned int TRG_CLK_EN_ERR:1;
+    volatile unsigned int TRG_CLK_PER_ERR:1;
+    volatile unsigned int reserved_9:23;
+} Ifx_GTM_IRQ_FORCINT_Bits;
+
+
+typedef struct _Ifx_GTM_IRQ_MODE_Bits
+{
+    volatile unsigned int IRQ_MODE:2;
+    volatile unsigned int reserved_2:30;
+} Ifx_GTM_IRQ_MODE_Bits;
+
+
+typedef struct _Ifx_GTM_IRQ_NOTIFY_Bits
+{
+    volatile unsigned int AEI_TO_XPT:1;
+    volatile unsigned int AEI_USP_ADDR:1;
+    volatile unsigned int AEI_IM_ADDR:1;
+    volatile unsigned int AEI_USP_BE:1;
+    volatile unsigned int AEIM_USP_ADDR:1;
+    volatile unsigned int AEIM_IM_ADDR:1;
+    volatile unsigned int AEIM_USP_BE:1;
+    volatile unsigned int CLK_EN_ERR:1;
+    volatile unsigned int CLK_PER_ERR:1;
+    volatile unsigned int reserved_9:15;
+    volatile unsigned int CLK_EN_ERR_STATE0:1;
+    volatile unsigned int CLK_EN_ERR_STATE1:1;
+    volatile unsigned int reserved_26:2;
+    volatile unsigned int CLK_EN_EXP_STATE0:1;
+    volatile unsigned int CLK_EN_EXP_STATE1:1;
+    volatile unsigned int reserved_30:2;
+} Ifx_GTM_IRQ_NOTIFY_Bits;
+
+
+typedef struct _Ifx_GTM_LCDCDCOUTSEL_Bits
+{
+    Ifx_UReg_32Bit SEL:4;
+    Ifx_UReg_32Bit reserved_4:28;
+} Ifx_GTM_LCDCDCOUTSEL_Bits;
+
+
+typedef struct _Ifx_GTM_MAP_CTRL_Bits
+{
+    volatile unsigned int TSEL:1;
+    volatile unsigned int SSL:3;
+    volatile unsigned int LSEL:1;
+    volatile unsigned int reserved_5:11;
+    volatile unsigned int TSPP0_EN:1;
+    volatile unsigned int TSPP0_DLD:1;
+    volatile unsigned int reserved_18:2;
+    volatile unsigned int TSPP0_I0V:1;
+    volatile unsigned int TSPP0_I1V:1;
+    volatile unsigned int TSPP0_I2V:1;
+    volatile unsigned int reserved_23:1;
+    volatile unsigned int TSPP1_EN:1;
+    volatile unsigned int TSPP1_DLD:1;
+    volatile unsigned int reserved_26:2;
+    volatile unsigned int TSPP1_I0V:1;
+    volatile unsigned int TSPP1_I1V:1;
+    volatile unsigned int TSPP1_I2V:1;
+    volatile unsigned int reserved_31:1;
+} Ifx_GTM_MAP_CTRL_Bits;
+
+
+typedef struct _Ifx_GTM_MCFG_CTRL_Bits
+{
+    volatile unsigned int MEM0:2;
+    volatile unsigned int MEM1:2;
+    volatile unsigned int MEM2:2;
+    volatile unsigned int MEM3:2;
+    volatile unsigned int MEM4:2;
+    volatile unsigned int MEM5:2;
+    volatile unsigned int MEM6:2;
+    volatile unsigned int reserved_14:2;
+    volatile unsigned int reserved_16:2;
+    volatile unsigned int reserved_18:2;
+    volatile unsigned int reserved_20:12;
+} Ifx_GTM_MCFG_CTRL_Bits;
+
+
+typedef struct _Ifx_GTM_MCSINTCLR_Bits
+{
+    Ifx_UReg_32Bit MCS0:1;
+    Ifx_UReg_32Bit MCS1:1;
+    Ifx_UReg_32Bit MCS2:1;
+    Ifx_UReg_32Bit MCS3:1;
+    Ifx_UReg_32Bit MCS4:1;
+    Ifx_UReg_32Bit MCS5:1;
+    Ifx_UReg_32Bit MCS6:1;
+    Ifx_UReg_32Bit reserved_7:25;
+} Ifx_GTM_MCSINTCLR_Bits;
+
+
+typedef struct _Ifx_GTM_MCSINTSTAT_Bits
+{
+    Ifx_UReg_32Bit MCS00:1;
+    Ifx_UReg_32Bit MCS10:1;
+    Ifx_UReg_32Bit MCS20:1;
+    Ifx_UReg_32Bit MCS30:1;
+    Ifx_UReg_32Bit MCS40:1;
+    Ifx_UReg_32Bit MCS50:1;
+    Ifx_UReg_32Bit MCS60:1;
+    Ifx_UReg_32Bit reserved_7:25;
+} Ifx_GTM_MCSINTSTAT_Bits;
+
+
+typedef struct _Ifx_GTM_MCSTRIGOUTSEL_Bits
+{
+    Ifx_UReg_32Bit SEL0:4;
+    Ifx_UReg_32Bit SEL1:4;
+    Ifx_UReg_32Bit SEL2:4;
+    Ifx_UReg_32Bit SEL3:4;
+    Ifx_UReg_32Bit reserved_16:4;
+    Ifx_UReg_32Bit reserved_20:4;
+    Ifx_UReg_32Bit reserved_24:4;
+    Ifx_UReg_32Bit reserved_28:4;
+} Ifx_GTM_MCSTRIGOUTSEL_Bits;
+
+
+typedef struct _Ifx_GTM_MCS_AEM_DIS_Bits
+{
+    volatile unsigned int DIS_CLS0:2;
+    volatile unsigned int DIS_CLS1:2;
+    volatile unsigned int DIS_CLS2:2;
+    volatile unsigned int DIS_CLS3:2;
+    volatile unsigned int DIS_CLS4:2;
+    volatile unsigned int DIS_CLS5:2;
+    volatile unsigned int DIS_CLS6:2;
+    volatile unsigned int DIS_CLS7:2;
+    volatile unsigned int DIS_CLS8:2;
+    volatile unsigned int DIS_CLS9:2;
+    volatile unsigned int DIS_CLS10:2;
+    volatile unsigned int DIS_CLS11:2;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_MCS_AEM_DIS_Bits;
+
+
+typedef struct _Ifx_GTM_MCS_CAT_Bits
+{
+    volatile unsigned int CAT0:1;
+    volatile unsigned int CAT1:1;
+    volatile unsigned int CAT2:1;
+    volatile unsigned int CAT3:1;
+    volatile unsigned int CAT4:1;
+    volatile unsigned int CAT5:1;
+    volatile unsigned int CAT6:1;
+    volatile unsigned int CAT7:1;
+    volatile unsigned int reserved_8:24;
+} Ifx_GTM_MCS_CAT_Bits;
+
+
+typedef struct _Ifx_GTM_MCS_CH_ACB_Bits
+{
+    volatile unsigned int ACB0:1;
+    volatile unsigned int ACB1:1;
+    volatile unsigned int ACB2:1;
+    volatile unsigned int ACB3:1;
+    volatile unsigned int ACB4:1;
+    volatile unsigned int reserved_5:27;
+} Ifx_GTM_MCS_CH_ACB_Bits;
+
+
+typedef struct _Ifx_GTM_MCS_CH_CTRG_Bits
+{
+    volatile unsigned int TRG0:1;
+    volatile unsigned int TRG1:1;
+    volatile unsigned int TRG2:1;
+    volatile unsigned int TRG3:1;
+    volatile unsigned int TRG4:1;
+    volatile unsigned int TRG5:1;
+    volatile unsigned int TRG6:1;
+    volatile unsigned int TRG7:1;
+    volatile unsigned int TRG8:1;
+    volatile unsigned int TRG9:1;
+    volatile unsigned int TRG10:1;
+    volatile unsigned int TRG11:1;
+    volatile unsigned int TRG12:1;
+    volatile unsigned int TRG13:1;
+    volatile unsigned int TRG14:1;
+    volatile unsigned int TRG15:1;
+    volatile unsigned int TRG16:1;
+    volatile unsigned int TRG17:1;
+    volatile unsigned int TRG18:1;
+    volatile unsigned int TRG19:1;
+    volatile unsigned int TRG20:1;
+    volatile unsigned int TRG21:1;
+    volatile unsigned int TRG22:1;
+    volatile unsigned int TRG23:1;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_MCS_CH_CTRG_Bits;
+
+
+typedef struct _Ifx_GTM_MCS_CH_CTRL_Bits
+{
+    volatile unsigned int EN:1;
+    volatile unsigned int IRQ:1;
+    volatile unsigned int ERR:1;
+    volatile unsigned int reserved_3:1;
+    volatile unsigned int CY:1;
+    volatile unsigned int Z:1;
+    volatile unsigned int V:1;
+    volatile unsigned int N:1;
+    volatile unsigned int CAT:1;
+    volatile unsigned int CWT:1;
+    volatile unsigned int SAT:1;
+    volatile unsigned int reserved_11:5;
+    volatile unsigned int SP_CNT:3;
+    volatile unsigned int reserved_19:13;
+} Ifx_GTM_MCS_CH_CTRL_Bits;
+
+
+typedef struct _Ifx_GTM_MCS_CH_EIRQ_EN_Bits
+{
+    volatile unsigned int MCS_EIRQ_EN0:1;
+    volatile unsigned int STK_ERR_EIRQ_EN:1;
+    volatile unsigned int ERR_EIRQ_EN:1;
+    volatile unsigned int reserved_3:29;
+} Ifx_GTM_MCS_CH_EIRQ_EN_Bits;
+
+
+typedef struct _Ifx_GTM_MCS_CH_IRQ_EN_Bits
+{
+    volatile unsigned int MCS_IRQ_EN:1;
+    volatile unsigned int STK_ERR_IRQ_EN:1;
+    volatile unsigned int ERR_IRQ_EN:1;
+    volatile unsigned int reserved_3:29;
+} Ifx_GTM_MCS_CH_IRQ_EN_Bits;
+
+
+typedef struct _Ifx_GTM_MCS_CH_IRQ_FORCINT_Bits
+{
+    volatile unsigned int TRG_MCS_IRQ:1;
+    volatile unsigned int TRG_STK_ERR_IRQ:1;
+    volatile unsigned int TRG_ERR_IRQ:1;
+    volatile unsigned int reserved_3:29;
+} Ifx_GTM_MCS_CH_IRQ_FORCINT_Bits;
+
+
+typedef struct _Ifx_GTM_MCS_CH_IRQ_MODE_Bits
+{
+    volatile unsigned int IRQ_MODE:2;
+    volatile unsigned int reserved_2:30;
+} Ifx_GTM_MCS_CH_IRQ_MODE_Bits;
+
+
+typedef struct _Ifx_GTM_MCS_CH_IRQ_NOTIFY_Bits
+{
+    volatile unsigned int MCS_IRQ:1;
+    volatile unsigned int STK_ERR_IRQ:1;
+    volatile unsigned int ERR_IRQ:1;
+    volatile unsigned int reserved_3:29;
+} Ifx_GTM_MCS_CH_IRQ_NOTIFY_Bits;
+
+
+typedef struct _Ifx_GTM_MCS_CH_MHB_Bits
+{
+    volatile unsigned int DATA:8;
+    volatile unsigned int reserved_8:24;
+} Ifx_GTM_MCS_CH_MHB_Bits;
+
+
+typedef struct _Ifx_GTM_MCS_CH_PC_Bits
+{
+    volatile unsigned int PC:16;
+    volatile unsigned int reserved_16:16;
+} Ifx_GTM_MCS_CH_PC_Bits;
+
+
+typedef struct _Ifx_GTM_MCS_CH_R_Bits
+{
+    volatile unsigned int DATA:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_MCS_CH_R_Bits;
+
+
+typedef struct _Ifx_GTM_MCS_CH_STRG_Bits
+{
+    volatile unsigned int TRG0:1;
+    volatile unsigned int TRG1:1;
+    volatile unsigned int TRG2:1;
+    volatile unsigned int TRG3:1;
+    volatile unsigned int TRG4:1;
+    volatile unsigned int TRG5:1;
+    volatile unsigned int TRG6:1;
+    volatile unsigned int TRG7:1;
+    volatile unsigned int TRG8:1;
+    volatile unsigned int TRG9:1;
+    volatile unsigned int TRG10:1;
+    volatile unsigned int TRG11:1;
+    volatile unsigned int TRG12:1;
+    volatile unsigned int TRG13:1;
+    volatile unsigned int TRG14:1;
+    volatile unsigned int TRG15:1;
+    volatile unsigned int TRG16:1;
+    volatile unsigned int TRG17:1;
+    volatile unsigned int TRG18:1;
+    volatile unsigned int TRG19:1;
+    volatile unsigned int TRG20:1;
+    volatile unsigned int TRG21:1;
+    volatile unsigned int TRG22:1;
+    volatile unsigned int TRG23:1;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_MCS_CH_STRG_Bits;
+
+
+typedef struct _Ifx_GTM_MCS_CTRL_STAT_Bits
+{
+    volatile unsigned int SCD_MODE:2;
+    volatile unsigned int reserved_2:6;
+    volatile unsigned int SCD_CH:4;
+    volatile unsigned int reserved_12:4;
+    volatile unsigned int RAM_RST:1;
+    volatile unsigned int HLT_SP_OFL:1;
+    volatile unsigned int reserved_18:2;
+    volatile unsigned int ERR_SRC_ID:3;
+    volatile unsigned int reserved_23:1;
+    volatile unsigned int EN_TIM_FOUT:1;
+    volatile unsigned int EN_XOREG:1;
+    volatile unsigned int HLT_AEIM_ERR:1;
+    volatile unsigned int reserved_27:5;
+} Ifx_GTM_MCS_CTRL_STAT_Bits;
+
+
+typedef struct _Ifx_GTM_MCS_CWT_Bits
+{
+    volatile unsigned int CWT0:1;
+    volatile unsigned int CWT1:1;
+    volatile unsigned int CWT2:1;
+    volatile unsigned int CWT3:1;
+    volatile unsigned int CWT4:1;
+    volatile unsigned int CWT5:1;
+    volatile unsigned int CWT6:1;
+    volatile unsigned int CWT7:1;
+    volatile unsigned int reserved_8:24;
+} Ifx_GTM_MCS_CWT_Bits;
+
+
+typedef struct _Ifx_GTM_MCS_ERR_Bits
+{
+    volatile unsigned int ERR0:1;
+    volatile unsigned int ERR1:1;
+    volatile unsigned int ERR2:1;
+    volatile unsigned int ERR3:1;
+    volatile unsigned int ERR4:1;
+    volatile unsigned int ERR5:1;
+    volatile unsigned int ERR6:1;
+    volatile unsigned int ERR7:1;
+    volatile unsigned int reserved_8:24;
+} Ifx_GTM_MCS_ERR_Bits;
+
+
+typedef struct _Ifx_GTM_MCS_REG_PROT_Bits
+{
+    volatile unsigned int WPROT0:2;
+    volatile unsigned int WPROT1:2;
+    volatile unsigned int WPROT2:2;
+    volatile unsigned int WPROT3:2;
+    volatile unsigned int WPROT4:2;
+    volatile unsigned int WPROT5:2;
+    volatile unsigned int WPROT6:2;
+    volatile unsigned int WPROT7:2;
+    volatile unsigned int reserved_16:16;
+} Ifx_GTM_MCS_REG_PROT_Bits;
+
+
+typedef struct _Ifx_GTM_MCS_RESET_Bits
+{
+    volatile unsigned int RST0:1;
+    volatile unsigned int RST1:1;
+    volatile unsigned int RST2:1;
+    volatile unsigned int RST3:1;
+    volatile unsigned int RST4:1;
+    volatile unsigned int RST5:1;
+    volatile unsigned int RST6:1;
+    volatile unsigned int RST7:1;
+    volatile unsigned int reserved_8:24;
+} Ifx_GTM_MCS_RESET_Bits;
+
+
+typedef struct _Ifx_GTM_MON_ACTIVITY_MCS_Bits
+{
+    volatile unsigned int MCA_0:1;
+    volatile unsigned int MCA_1:1;
+    volatile unsigned int MCA_2:1;
+    volatile unsigned int MCA_3:1;
+    volatile unsigned int MCA_4:1;
+    volatile unsigned int MCA_5:1;
+    volatile unsigned int MCA_6:1;
+    volatile unsigned int MCA_7:1;
+    volatile unsigned int reserved_8:24;
+} Ifx_GTM_MON_ACTIVITY_MCS_Bits;
+
+
+typedef struct _Ifx_GTM_MON_ACTIVITY_R0_Bits
+{
+    volatile unsigned int MCA_0_0:1;
+    volatile unsigned int MCA_0_1:1;
+    volatile unsigned int MCA_0_2:1;
+    volatile unsigned int MCA_0_3:1;
+    volatile unsigned int MCA_0_4:1;
+    volatile unsigned int MCA_0_5:1;
+    volatile unsigned int MCA_0_6:1;
+    volatile unsigned int MCA_0_7:1;
+    volatile unsigned int MCA_1_0:1;
+    volatile unsigned int MCA_1_1:1;
+    volatile unsigned int MCA_1_2:1;
+    volatile unsigned int MCA_1_3:1;
+    volatile unsigned int MCA_1_4:1;
+    volatile unsigned int MCA_1_5:1;
+    volatile unsigned int MCA_1_6:1;
+    volatile unsigned int MCA_1_7:1;
+    volatile unsigned int MCA_2_0:1;
+    volatile unsigned int MCA_2_1:1;
+    volatile unsigned int MCA_2_2:1;
+    volatile unsigned int MCA_2_3:1;
+    volatile unsigned int MCA_2_4:1;
+    volatile unsigned int MCA_2_5:1;
+    volatile unsigned int MCA_2_6:1;
+    volatile unsigned int MCA_2_7:1;
+    volatile unsigned int MCA_3_0:1;
+    volatile unsigned int MCA_3_1:1;
+    volatile unsigned int MCA_3_2:1;
+    volatile unsigned int MCA_3_3:1;
+    volatile unsigned int MCA_3_4:1;
+    volatile unsigned int MCA_3_5:1;
+    volatile unsigned int MCA_3_6:1;
+    volatile unsigned int MCA_3_7:1;
+} Ifx_GTM_MON_ACTIVITY_R0_Bits;
+
+
+typedef struct _Ifx_GTM_MON_ACTIVITY_R1_Bits
+{
+    volatile unsigned int MCA_4_0:1;
+    volatile unsigned int MCA_4_1:1;
+    volatile unsigned int MCA_4_2:1;
+    volatile unsigned int MCA_4_3:1;
+    volatile unsigned int MCA_4_4:1;
+    volatile unsigned int MCA_4_5:1;
+    volatile unsigned int MCA_4_6:1;
+    volatile unsigned int MCA_4_7:1;
+    volatile unsigned int MCA_5_0:1;
+    volatile unsigned int MCA_5_1:1;
+    volatile unsigned int MCA_5_2:1;
+    volatile unsigned int MCA_5_3:1;
+    volatile unsigned int MCA_5_4:1;
+    volatile unsigned int MCA_5_5:1;
+    volatile unsigned int MCA_5_6:1;
+    volatile unsigned int MCA_5_7:1;
+    volatile unsigned int MCA_6_0:1;
+    volatile unsigned int MCA_6_1:1;
+    volatile unsigned int MCA_6_2:1;
+    volatile unsigned int MCA_6_3:1;
+    volatile unsigned int MCA_6_4:1;
+    volatile unsigned int MCA_6_5:1;
+    volatile unsigned int MCA_6_6:1;
+    volatile unsigned int MCA_6_7:1;
+    volatile unsigned int MCA_7_0:1;
+    volatile unsigned int MCA_7_1:1;
+    volatile unsigned int MCA_7_2:1;
+    volatile unsigned int MCA_7_3:1;
+    volatile unsigned int MCA_7_4:1;
+    volatile unsigned int MCA_7_5:1;
+    volatile unsigned int MCA_7_6:1;
+    volatile unsigned int MCA_7_7:1;
+} Ifx_GTM_MON_ACTIVITY_R1_Bits;
+
+
+typedef struct _Ifx_GTM_MON_STATUS_Bits
+{
+    volatile unsigned int ACT_CMU0:1;
+    volatile unsigned int ACT_CMU1:1;
+    volatile unsigned int ACT_CMU2:1;
+    volatile unsigned int ACT_CMU3:1;
+    volatile unsigned int ACT_CMU4:1;
+    volatile unsigned int ACT_CMU5:1;
+    volatile unsigned int ACT_CMU6:1;
+    volatile unsigned int ACT_CMU7:1;
+    volatile unsigned int ACT_CMUFX0:1;
+    volatile unsigned int ACT_CMUFX1:1;
+    volatile unsigned int ACT_CMUFX2:1;
+    volatile unsigned int ACT_CMUFX3:1;
+    volatile unsigned int ACT_CMUFX4:1;
+    volatile unsigned int reserved_13:1;
+    volatile unsigned int ACT_CMU8:1;
+    volatile unsigned int reserved_15:1;
+    volatile unsigned int CMP_ERR:1;
+    volatile unsigned int reserved_17:3;
+    volatile unsigned int MCS0_ERR:1;
+    volatile unsigned int MCS1_ERR:1;
+    volatile unsigned int MCS2_ERR:1;
+    volatile unsigned int MCS3_ERR:1;
+    volatile unsigned int MCS4_ERR:1;
+    volatile unsigned int MCS5_ERR:1;
+    volatile unsigned int MCS6_ERR:1;
+    volatile unsigned int reserved_27:1;
+    volatile unsigned int reserved_28:1;
+    volatile unsigned int reserved_29:1;
+    volatile unsigned int reserved_30:2;
+} Ifx_GTM_MON_STATUS_Bits;
+
+
+typedef struct _Ifx_GTM_MSC_MSCQ_INHCON_Bits
+{
+    Ifx_UReg_32Bit SEL0:2;
+    Ifx_UReg_32Bit SEL1:2;
+    Ifx_UReg_32Bit SEL2:2;
+    Ifx_UReg_32Bit SEL3:2;
+    Ifx_UReg_32Bit SEL4:2;
+    Ifx_UReg_32Bit SEL5:2;
+    Ifx_UReg_32Bit SEL6:2;
+    Ifx_UReg_32Bit SEL7:2;
+    Ifx_UReg_32Bit SEL8:2;
+    Ifx_UReg_32Bit SEL9:2;
+    Ifx_UReg_32Bit SEL10:2;
+    Ifx_UReg_32Bit SEL11:2;
+    Ifx_UReg_32Bit SEL12:2;
+    Ifx_UReg_32Bit SEL13:2;
+    Ifx_UReg_32Bit SEL14:2;
+    Ifx_UReg_32Bit SEL15:2;
+} Ifx_GTM_MSC_MSCQ_INHCON_Bits;
+
+
+typedef struct _Ifx_GTM_MSC_MSCQ_INLCON_Bits
+{
+    Ifx_UReg_32Bit SEL0:2;
+    Ifx_UReg_32Bit SEL1:2;
+    Ifx_UReg_32Bit SEL2:2;
+    Ifx_UReg_32Bit SEL3:2;
+    Ifx_UReg_32Bit SEL4:2;
+    Ifx_UReg_32Bit SEL5:2;
+    Ifx_UReg_32Bit SEL6:2;
+    Ifx_UReg_32Bit SEL7:2;
+    Ifx_UReg_32Bit SEL8:2;
+    Ifx_UReg_32Bit SEL9:2;
+    Ifx_UReg_32Bit SEL10:2;
+    Ifx_UReg_32Bit SEL11:2;
+    Ifx_UReg_32Bit SEL12:2;
+    Ifx_UReg_32Bit SEL13:2;
+    Ifx_UReg_32Bit SEL14:2;
+    Ifx_UReg_32Bit SEL15:2;
+} Ifx_GTM_MSC_MSCQ_INLCON_Bits;
+
+
+typedef struct _Ifx_GTM_MSC_MSCQ_INLEXTCON_Bits
+{
+    Ifx_UReg_32Bit SEL0:2;
+    Ifx_UReg_32Bit SEL1:2;
+    Ifx_UReg_32Bit SEL2:2;
+    Ifx_UReg_32Bit SEL3:2;
+    Ifx_UReg_32Bit SEL4:2;
+    Ifx_UReg_32Bit SEL5:2;
+    Ifx_UReg_32Bit SEL6:2;
+    Ifx_UReg_32Bit SEL7:2;
+    Ifx_UReg_32Bit SEL8:2;
+    Ifx_UReg_32Bit SEL9:2;
+    Ifx_UReg_32Bit SEL10:2;
+    Ifx_UReg_32Bit SEL11:2;
+    Ifx_UReg_32Bit SEL12:2;
+    Ifx_UReg_32Bit SEL13:2;
+    Ifx_UReg_32Bit SEL14:2;
+    Ifx_UReg_32Bit SEL15:2;
+} Ifx_GTM_MSC_MSCQ_INLEXTCON_Bits;
+
+
+typedef struct _Ifx_GTM_MSC_SET_CON0_Bits
+{
+    Ifx_UReg_32Bit SEL0:5;
+    Ifx_UReg_32Bit reserved_5:3;
+    Ifx_UReg_32Bit SEL1:5;
+    Ifx_UReg_32Bit reserved_13:3;
+    Ifx_UReg_32Bit SEL2:5;
+    Ifx_UReg_32Bit reserved_21:3;
+    Ifx_UReg_32Bit SEL3:5;
+    Ifx_UReg_32Bit reserved_29:3;
+} Ifx_GTM_MSC_SET_CON0_Bits;
+
+
+typedef struct _Ifx_GTM_MSC_SET_CON1_Bits
+{
+    Ifx_UReg_32Bit SEL4:5;
+    Ifx_UReg_32Bit reserved_5:3;
+    Ifx_UReg_32Bit SEL5:5;
+    Ifx_UReg_32Bit reserved_13:3;
+    Ifx_UReg_32Bit SEL6:5;
+    Ifx_UReg_32Bit reserved_21:3;
+    Ifx_UReg_32Bit SEL7:5;
+    Ifx_UReg_32Bit reserved_29:3;
+} Ifx_GTM_MSC_SET_CON1_Bits;
+
+
+typedef struct _Ifx_GTM_MSC_SET_CON2_Bits
+{
+    Ifx_UReg_32Bit SEL8:5;
+    Ifx_UReg_32Bit reserved_5:3;
+    Ifx_UReg_32Bit SEL9:5;
+    Ifx_UReg_32Bit reserved_13:3;
+    Ifx_UReg_32Bit SEL10:5;
+    Ifx_UReg_32Bit reserved_21:3;
+    Ifx_UReg_32Bit SEL11:5;
+    Ifx_UReg_32Bit reserved_29:3;
+} Ifx_GTM_MSC_SET_CON2_Bits;
+
+
+typedef struct _Ifx_GTM_MSC_SET_CON3_Bits
+{
+    Ifx_UReg_32Bit SEL12:5;
+    Ifx_UReg_32Bit reserved_5:3;
+    Ifx_UReg_32Bit SEL13:5;
+    Ifx_UReg_32Bit reserved_13:3;
+    Ifx_UReg_32Bit SEL14:5;
+    Ifx_UReg_32Bit reserved_21:3;
+    Ifx_UReg_32Bit SEL15:5;
+    Ifx_UReg_32Bit reserved_29:3;
+} Ifx_GTM_MSC_SET_CON3_Bits;
+
+
+typedef struct _Ifx_GTM_OCDS_OCS_Bits
+{
+    Ifx_UReg_32Bit reserved_0:24;
+    Ifx_UReg_32Bit SUS:4;
+    Ifx_UReg_32Bit SUS_P:1;
+    Ifx_UReg_32Bit SUSSTA:1;
+    Ifx_UReg_32Bit reserved_30:2;
+} Ifx_GTM_OCDS_OCS_Bits;
+
+
+typedef struct _Ifx_GTM_OCDS_ODA_Bits
+{
+    Ifx_UReg_32Bit DRAC:2;
+    Ifx_UReg_32Bit reserved_2:30;
+} Ifx_GTM_OCDS_ODA_Bits;
+
+
+typedef struct _Ifx_GTM_OCDS_OTBU0T_Bits
+{
+    Ifx_UReg_32Bit CV:27;
+    Ifx_UReg_32Bit reserved_27:1;
+    Ifx_UReg_32Bit CM:2;
+    Ifx_UReg_32Bit reserved_30:2;
+} Ifx_GTM_OCDS_OTBU0T_Bits;
+
+
+typedef struct _Ifx_GTM_OCDS_OTBU1T_Bits
+{
+    Ifx_UReg_32Bit CV:24;
+    Ifx_UReg_32Bit reserved_24:4;
+    Ifx_UReg_32Bit EN:1;
+    Ifx_UReg_32Bit reserved_29:3;
+} Ifx_GTM_OCDS_OTBU1T_Bits;
+
+
+typedef struct _Ifx_GTM_OCDS_OTBU2T_Bits
+{
+    Ifx_UReg_32Bit CV:24;
+    Ifx_UReg_32Bit reserved_24:4;
+    Ifx_UReg_32Bit EN:1;
+    Ifx_UReg_32Bit reserved_29:3;
+} Ifx_GTM_OCDS_OTBU2T_Bits;
+
+
+typedef struct _Ifx_GTM_OCDS_OTBU3T_Bits
+{
+    Ifx_UReg_32Bit CV:24;
+    Ifx_UReg_32Bit reserved_24:4;
+    Ifx_UReg_32Bit EN:1;
+    Ifx_UReg_32Bit reserved_29:3;
+} Ifx_GTM_OCDS_OTBU3T_Bits;
+
+
+typedef struct _Ifx_GTM_OCDS_OTSC0_Bits
+{
+    Ifx_UReg_32Bit B0LMT:3;
+    Ifx_UReg_32Bit reserved_3:1;
+    Ifx_UReg_32Bit B0LMI:4;
+    Ifx_UReg_32Bit B0HMT:3;
+    Ifx_UReg_32Bit reserved_11:1;
+    Ifx_UReg_32Bit B0HMI:4;
+    Ifx_UReg_32Bit B1LMT:3;
+    Ifx_UReg_32Bit reserved_19:1;
+    Ifx_UReg_32Bit B1LMI:4;
+    Ifx_UReg_32Bit B1HMT:3;
+    Ifx_UReg_32Bit reserved_27:1;
+    Ifx_UReg_32Bit B1HMI:4;
+} Ifx_GTM_OCDS_OTSC0_Bits;
+
+
+typedef struct _Ifx_GTM_OCDS_OTSC1_Bits
+{
+    Ifx_UReg_32Bit MCS:4;
+    Ifx_UReg_32Bit MI:4;
+    Ifx_UReg_32Bit reserved_8:1;
+    Ifx_UReg_32Bit MOE:1;
+    Ifx_UReg_32Bit reserved_10:22;
+} Ifx_GTM_OCDS_OTSC1_Bits;
+
+
+typedef struct _Ifx_GTM_OCDS_OTSS_Bits
+{
+    Ifx_UReg_32Bit OTGB0:4;
+    Ifx_UReg_32Bit reserved_4:4;
+    Ifx_UReg_32Bit OTGB1:4;
+    Ifx_UReg_32Bit reserved_12:4;
+    Ifx_UReg_32Bit OTGBM0:4;
+    Ifx_UReg_32Bit reserved_20:4;
+    Ifx_UReg_32Bit OTGBM1:4;
+    Ifx_UReg_32Bit reserved_28:4;
+} Ifx_GTM_OCDS_OTSS_Bits;
+
+
+typedef struct _Ifx_GTM_OUT_ATOM_Bits
+{
+    volatile unsigned int ATOM_I_OUT:8;
+    volatile unsigned int ATOM_I_OUT_N:8;
+    volatile unsigned int ATOM_IP1_OUT:8;
+    volatile unsigned int ATOM_IP1_OUT_N:8;
+} Ifx_GTM_OUT_ATOM_Bits;
+
+
+typedef struct _Ifx_GTM_OUT_TOM_Bits
+{
+    volatile unsigned int TOM_OUT:16;
+    volatile unsigned int TOM_OUT_N:16;
+} Ifx_GTM_OUT_TOM_Bits;
+
+
+typedef struct _Ifx_GTM_PSI5OUTSEL_Bits
+{
+    Ifx_UReg_32Bit SEL0:4;
+    Ifx_UReg_32Bit SEL1:4;
+    Ifx_UReg_32Bit SEL2:4;
+    Ifx_UReg_32Bit SEL3:4;
+    Ifx_UReg_32Bit SEL4:4;
+    Ifx_UReg_32Bit SEL5:4;
+    Ifx_UReg_32Bit reserved_24:8;
+} Ifx_GTM_PSI5OUTSEL_Bits;
+
+
+typedef struct _Ifx_GTM_PSI5SOUTSEL_Bits
+{
+    Ifx_UReg_32Bit SEL0:4;
+    Ifx_UReg_32Bit SEL1:4;
+    Ifx_UReg_32Bit SEL2:4;
+    Ifx_UReg_32Bit SEL3:4;
+    Ifx_UReg_32Bit SEL4:4;
+    Ifx_UReg_32Bit SEL5:4;
+    Ifx_UReg_32Bit SEL6:4;
+    Ifx_UReg_32Bit SEL7:4;
+} Ifx_GTM_PSI5SOUTSEL_Bits;
+
+
+typedef struct _Ifx_GTM_PSM_AFD_CH_BUF_ACC_Bits
+{
+    volatile unsigned int DATA:29;
+    volatile unsigned int reserved_29:3;
+} Ifx_GTM_PSM_AFD_CH_BUF_ACC_Bits;
+
+
+typedef struct _Ifx_GTM_PSM_F2A_ENABLE_Bits
+{
+    volatile unsigned int STR0_EN:2;
+    volatile unsigned int STR1_EN:2;
+    volatile unsigned int STR2_EN:2;
+    volatile unsigned int STR3_EN:2;
+    volatile unsigned int STR4_EN:2;
+    volatile unsigned int STR5_EN:2;
+    volatile unsigned int STR6_EN:2;
+    volatile unsigned int STR7_EN:2;
+    volatile unsigned int reserved_16:16;
+} Ifx_GTM_PSM_F2A_ENABLE_Bits;
+
+
+typedef struct _Ifx_GTM_PSM_F2A_F2A_CTRL_Bits
+{
+    volatile unsigned int STR4_CONF:2;
+    volatile unsigned int STR5_CONF:2;
+    volatile unsigned int STR6_CONF:2;
+    volatile unsigned int STR7_CONF:2;
+    volatile unsigned int reserved_8:24;
+} Ifx_GTM_PSM_F2A_F2A_CTRL_Bits;
+
+
+typedef struct _Ifx_GTM_PSM_F2A_RD_CH_ARU_RD_FIFO_Bits
+{
+    volatile unsigned int ADDR:9;
+    volatile unsigned int reserved_9:23;
+} Ifx_GTM_PSM_F2A_RD_CH_ARU_RD_FIFO_Bits;
+
+
+typedef struct _Ifx_GTM_PSM_F2A_STR_CH_STR_CFG_Bits
+{
+    volatile unsigned int reserved_0:16;
+    volatile unsigned int TMODE:2;
+    volatile unsigned int DIR:1;
+    volatile unsigned int reserved_19:13;
+} Ifx_GTM_PSM_F2A_STR_CH_STR_CFG_Bits;
+
+
+typedef struct _Ifx_GTM_PSM_FIFO_CH_CTRL_Bits
+{
+    volatile unsigned int RBM:1;
+    volatile unsigned int RAP:1;
+    volatile unsigned int FLUSH:1;
+    volatile unsigned int WULOCK:1;
+    volatile unsigned int reserved_4:28;
+} Ifx_GTM_PSM_FIFO_CH_CTRL_Bits;
+
+
+typedef struct _Ifx_GTM_PSM_FIFO_CH_EIRQ_EN_Bits
+{
+    volatile unsigned int FIFO_EMPTY_EIRQ_EN:1;
+    volatile unsigned int FIFO_FULL_EIRQ_EN:1;
+    volatile unsigned int FIFO_LWM_EIRQ_EN:1;
+    volatile unsigned int FIFO_UWM_EIRQ_EN:1;
+    volatile unsigned int reserved_4:28;
+} Ifx_GTM_PSM_FIFO_CH_EIRQ_EN_Bits;
+
+
+typedef struct _Ifx_GTM_PSM_FIFO_CH_END_ADDR_Bits
+{
+    volatile unsigned int ADDR:10;
+    volatile unsigned int reserved_10:22;
+} Ifx_GTM_PSM_FIFO_CH_END_ADDR_Bits;
+
+
+typedef struct _Ifx_GTM_PSM_FIFO_CH_FILL_LEVEL_Bits
+{
+    volatile unsigned int LEVEL:11;
+    volatile unsigned int reserved_11:21;
+} Ifx_GTM_PSM_FIFO_CH_FILL_LEVEL_Bits;
+
+
+typedef struct _Ifx_GTM_PSM_FIFO_CH_IRQ_EN_Bits
+{
+    volatile unsigned int FIFO_EMPTY_IRQ_EN:1;
+    volatile unsigned int FIFO_FULL_IRQ_EN:1;
+    volatile unsigned int FIFO_LWM_IRQ_EN:1;
+    volatile unsigned int FIFO_UWM_IRQ_EN:1;
+    volatile unsigned int reserved_4:28;
+} Ifx_GTM_PSM_FIFO_CH_IRQ_EN_Bits;
+
+
+typedef struct _Ifx_GTM_PSM_FIFO_CH_IRQ_FORCINT_Bits
+{
+    volatile unsigned int TRG_FIFO_EMPTY:1;
+    volatile unsigned int TRG_FIFO_FULL:1;
+    volatile unsigned int TRG_FIFO_LWM:1;
+    volatile unsigned int TRG_FIFO_UWM:1;
+    volatile unsigned int reserved_4:28;
+} Ifx_GTM_PSM_FIFO_CH_IRQ_FORCINT_Bits;
+
+
+typedef struct _Ifx_GTM_PSM_FIFO_CH_IRQ_MODE_Bits
+{
+    volatile unsigned int IRQ_MODE:2;
+    volatile unsigned int DMA_HYSTERESIS:1;
+    volatile unsigned int DMA_HYST_DIR:1;
+    volatile unsigned int reserved_4:28;
+} Ifx_GTM_PSM_FIFO_CH_IRQ_MODE_Bits;
+
+
+typedef struct _Ifx_GTM_PSM_FIFO_CH_IRQ_NOTIFY_Bits
+{
+    volatile unsigned int FIFO_EMPTY:1;
+    volatile unsigned int FIFO_FULL:1;
+    volatile unsigned int FIFO_LWM:1;
+    volatile unsigned int FIFO_UWM:1;
+    volatile unsigned int reserved_4:28;
+} Ifx_GTM_PSM_FIFO_CH_IRQ_NOTIFY_Bits;
+
+
+typedef struct _Ifx_GTM_PSM_FIFO_CH_LOWER_WM_Bits
+{
+    volatile unsigned int ADDR:10;
+    volatile unsigned int reserved_10:22;
+} Ifx_GTM_PSM_FIFO_CH_LOWER_WM_Bits;
+
+
+typedef struct _Ifx_GTM_PSM_FIFO_CH_RD_PTR_Bits
+{
+    volatile unsigned int ADDR:10;
+    volatile unsigned int reserved_10:22;
+} Ifx_GTM_PSM_FIFO_CH_RD_PTR_Bits;
+
+
+typedef struct _Ifx_GTM_PSM_FIFO_CH_START_ADDR_Bits
+{
+    volatile unsigned int ADDR:10;
+    volatile unsigned int reserved_10:22;
+} Ifx_GTM_PSM_FIFO_CH_START_ADDR_Bits;
+
+
+typedef struct _Ifx_GTM_PSM_FIFO_CH_STATUS_Bits
+{
+    volatile unsigned int EMPTY:1;
+    volatile unsigned int FULL:1;
+    volatile unsigned int LOW_WM:1;
+    volatile unsigned int UP_WM:1;
+    volatile unsigned int reserved_4:28;
+} Ifx_GTM_PSM_FIFO_CH_STATUS_Bits;
+
+
+typedef struct _Ifx_GTM_PSM_FIFO_CH_UPPER_WM_Bits
+{
+    volatile unsigned int ADDR:10;
+    volatile unsigned int reserved_10:22;
+} Ifx_GTM_PSM_FIFO_CH_UPPER_WM_Bits;
+
+
+typedef struct _Ifx_GTM_PSM_FIFO_CH_WR_PTR_Bits
+{
+    volatile unsigned int ADDR:10;
+    volatile unsigned int reserved_10:22;
+} Ifx_GTM_PSM_FIFO_CH_WR_PTR_Bits;
+
+
+typedef struct _Ifx_GTM_RESET1_Bits
+{
+    Ifx_UReg_32Bit RST:1;
+    Ifx_UReg_32Bit RSTSTAT:1;
+    Ifx_UReg_32Bit reserved_2:30;
+} Ifx_GTM_RESET1_Bits;
+
+
+typedef struct _Ifx_GTM_RESET2_Bits
+{
+    Ifx_UReg_32Bit RST:1;
+    Ifx_UReg_32Bit reserved_1:31;
+} Ifx_GTM_RESET2_Bits;
+
+
+typedef struct _Ifx_GTM_RESET_CLR_Bits
+{
+    Ifx_UReg_32Bit CLR:1;
+    Ifx_UReg_32Bit reserved_1:31;
+} Ifx_GTM_RESET_CLR_Bits;
+
+
+typedef struct _Ifx_GTM_REV_Bits
+{
+    volatile unsigned int STEP:8;
+    volatile unsigned int NO:4;
+    volatile unsigned int MINOR:4;
+    volatile unsigned int MAJOR:4;
+    volatile unsigned int DEV_CODE0:4;
+    volatile unsigned int DEV_CODE1:4;
+    volatile unsigned int DEV_CODE2:4;
+} Ifx_GTM_REV_Bits;
+
+
+typedef struct _Ifx_GTM_RST_Bits
+{
+    volatile unsigned int reserved_0:1;
+    volatile unsigned int reserved_1:26;
+    volatile unsigned int BRIDGE_MODE_WRDIS:1;
+    volatile unsigned int reserved_28:4;
+} Ifx_GTM_RST_Bits;
+
+
+typedef struct _Ifx_GTM_SPE_CMD_Bits
+{
+    volatile unsigned int SPE_CTRL_CMD:2;
+    volatile unsigned int reserved_2:14;
+    volatile unsigned int SPE_UPD_TRIG:1;
+    volatile unsigned int reserved_17:15;
+} Ifx_GTM_SPE_CMD_Bits;
+
+
+typedef struct _Ifx_GTM_SPE_CTRL_STAT_Bits
+{
+    volatile unsigned int EN:1;
+    volatile unsigned int SIE0:1;
+    volatile unsigned int SIE1:1;
+    volatile unsigned int SIE2:1;
+    volatile unsigned int TRIG_SEL:2;
+    volatile unsigned int TIM_SEL:1;
+    volatile unsigned int FSOM:1;
+    volatile unsigned int SPE_PAT_PTR:3;
+    volatile unsigned int reserved_11:1;
+    volatile unsigned int AIP:3;
+    volatile unsigned int ADIR:1;
+    volatile unsigned int PIP:3;
+    volatile unsigned int PDIR:1;
+    volatile unsigned int NIP:3;
+    volatile unsigned int ETRIG_SEL:1;
+    volatile unsigned int FSOL:8;
+} Ifx_GTM_SPE_CTRL_STAT_Bits;
+
+
+typedef struct _Ifx_GTM_SPE_CTRL_STAT2_Bits
+{
+    volatile unsigned int reserved_0:8;
+    volatile unsigned int SPE_PAT_PTR_BWD:3;
+    volatile unsigned int reserved_11:21;
+} Ifx_GTM_SPE_CTRL_STAT2_Bits;
+
+
+typedef struct _Ifx_GTM_SPE_EIRQ_EN_Bits
+{
+    volatile unsigned int SPE_NIPD_EIRQ_EN:1;
+    volatile unsigned int SPE_DCHG_EIRQ_EN:1;
+    volatile unsigned int SPE_PERR_EIRQ_EN:1;
+    volatile unsigned int SPE_BIS_EIRQ_EN:1;
+    volatile unsigned int SPE_RCMP_EIRQ_EN:1;
+    volatile unsigned int reserved_5:27;
+} Ifx_GTM_SPE_EIRQ_EN_Bits;
+
+
+typedef struct _Ifx_GTM_SPE_IRQ_EN_Bits
+{
+    volatile unsigned int SPE_NIPD_IRQ_EN:1;
+    volatile unsigned int SPE_DCHG_IRQ_EN:1;
+    volatile unsigned int SPE_PERR_IRQ_EN:1;
+    volatile unsigned int SPE_BIS_IRQ_EN:1;
+    volatile unsigned int SPE_RCMP_IRQ_EN:1;
+    volatile unsigned int reserved_5:27;
+} Ifx_GTM_SPE_IRQ_EN_Bits;
+
+
+typedef struct _Ifx_GTM_SPE_IRQ_FORCINT_Bits
+{
+    volatile unsigned int TRG_SPE_NIPD:1;
+    volatile unsigned int TRG_SPE_DCHG:1;
+    volatile unsigned int TRG_SPE_PERR:1;
+    volatile unsigned int TRG_SPE_BIS:1;
+    volatile unsigned int TRG_SPE_RCMP:1;
+    volatile unsigned int reserved_5:27;
+} Ifx_GTM_SPE_IRQ_FORCINT_Bits;
+
+
+typedef struct _Ifx_GTM_SPE_IRQ_MODE_Bits
+{
+    volatile unsigned int IRQ_MODE:2;
+    volatile unsigned int reserved_2:30;
+} Ifx_GTM_SPE_IRQ_MODE_Bits;
+
+
+typedef struct _Ifx_GTM_SPE_IRQ_NOTIFY_Bits
+{
+    volatile unsigned int SPE_NIPD:1;
+    volatile unsigned int SPE_DCHG:1;
+    volatile unsigned int SPE_PERR:1;
+    volatile unsigned int SPE_BIS:1;
+    volatile unsigned int SPE_RCMP:1;
+    volatile unsigned int reserved_5:27;
+} Ifx_GTM_SPE_IRQ_NOTIFY_Bits;
+
+
+typedef struct _Ifx_GTM_SPE_OUT_CTRL_Bits
+{
+    volatile unsigned int SPE_OUT_CTRL:16;
+    volatile unsigned int reserved_16:16;
+} Ifx_GTM_SPE_OUT_CTRL_Bits;
+
+
+typedef struct _Ifx_GTM_SPE_OUT_PAT_Bits
+{
+    volatile unsigned int SPE_OUT_PAT:16;
+    volatile unsigned int reserved_16:16;
+} Ifx_GTM_SPE_OUT_PAT_Bits;
+
+
+typedef struct _Ifx_GTM_SPE_PAT_Bits
+{
+    volatile unsigned int IP0_VAL:1;
+    volatile unsigned int IP0_PAT:3;
+    volatile unsigned int IP1_VAL:1;
+    volatile unsigned int IP1_PAT:3;
+    volatile unsigned int IP2_VAL:1;
+    volatile unsigned int IP2_PAT:3;
+    volatile unsigned int IP3_VAL:1;
+    volatile unsigned int IP3_PAT:3;
+    volatile unsigned int IP4_VAL:1;
+    volatile unsigned int IP4_PAT:3;
+    volatile unsigned int IP5_VAL:1;
+    volatile unsigned int IP5_PAT:3;
+    volatile unsigned int IP6_VAL:1;
+    volatile unsigned int IP6_PAT:3;
+    volatile unsigned int IP7_VAL:1;
+    volatile unsigned int IP7_PAT:3;
+} Ifx_GTM_SPE_PAT_Bits;
+
+
+typedef struct _Ifx_GTM_SPE_REV_CMP_Bits
+{
+    volatile unsigned int REV_CMP:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_SPE_REV_CMP_Bits;
+
+
+typedef struct _Ifx_GTM_SPE_REV_CNT_Bits
+{
+    volatile unsigned int REV_CNT:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_SPE_REV_CNT_Bits;
+
+
+typedef struct _Ifx_GTM_TBU_CH0_BASE_Bits
+{
+    volatile unsigned int BASE:27;
+    volatile unsigned int reserved_27:5;
+} Ifx_GTM_TBU_CH0_BASE_Bits;
+
+
+typedef struct _Ifx_GTM_TBU_CH0_CTRL_Bits
+{
+    volatile unsigned int LOW_RES:1;
+    volatile unsigned int CH_CLK_SRC:3;
+    volatile unsigned int reserved_4:28;
+} Ifx_GTM_TBU_CH0_CTRL_Bits;
+
+
+typedef struct _Ifx_GTM_TBU_CH1_BASE_Bits
+{
+    volatile unsigned int BASE:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_TBU_CH1_BASE_Bits;
+
+
+typedef struct _Ifx_GTM_TBU_CH1_CTRL_Bits
+{
+    volatile unsigned int CH_MODE:1;
+    volatile unsigned int CH_CLK_SRC:3;
+    volatile unsigned int reserved_4:28;
+} Ifx_GTM_TBU_CH1_CTRL_Bits;
+
+
+typedef struct _Ifx_GTM_TBU_CH2_BASE_Bits
+{
+    volatile unsigned int BASE:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_TBU_CH2_BASE_Bits;
+
+
+typedef struct _Ifx_GTM_TBU_CH2_CTRL_Bits
+{
+    volatile unsigned int CH_MODE:1;
+    volatile unsigned int CH_CLK_SRC:3;
+    volatile unsigned int reserved_4:28;
+} Ifx_GTM_TBU_CH2_CTRL_Bits;
+
+
+typedef struct _Ifx_GTM_TBU_CH3_BASE_Bits
+{
+    volatile unsigned int BASE:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_TBU_CH3_BASE_Bits;
+
+
+typedef struct _Ifx_GTM_TBU_CH3_BASE_CAPTURE_Bits
+{
+    volatile unsigned int BASE_CAPTURE:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_TBU_CH3_BASE_CAPTURE_Bits;
+
+
+typedef struct _Ifx_GTM_TBU_CH3_BASE_MARK_Bits
+{
+    volatile unsigned int BASE_MARK:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_TBU_CH3_BASE_MARK_Bits;
+
+
+typedef struct _Ifx_GTM_TBU_CH3_CTRL_Bits
+{
+    volatile unsigned int CH_MODE:1;
+    volatile unsigned int reserved_1:3;
+    volatile unsigned int USE_CH2:1;
+    volatile unsigned int reserved_5:27;
+} Ifx_GTM_TBU_CH3_CTRL_Bits;
+
+
+typedef struct _Ifx_GTM_TBU_CHEN_Bits
+{
+    volatile unsigned int ENDIS_CH0:2;
+    volatile unsigned int ENDIS_CH1:2;
+    volatile unsigned int ENDIS_CH2:2;
+    volatile unsigned int ENDIS_CH3:2;
+    volatile unsigned int reserved_8:24;
+} Ifx_GTM_TBU_CHEN_Bits;
+
+
+typedef struct _Ifx_GTM_TIMINSEL_Bits
+{
+    Ifx_UReg_32Bit CH0SEL:4;
+    Ifx_UReg_32Bit CH1SEL:4;
+    Ifx_UReg_32Bit CH2SEL:4;
+    Ifx_UReg_32Bit CH3SEL:4;
+    Ifx_UReg_32Bit CH4SEL:4;
+    Ifx_UReg_32Bit CH5SEL:4;
+    Ifx_UReg_32Bit CH6SEL:4;
+    Ifx_UReg_32Bit CH7SEL:4;
+} Ifx_GTM_TIMINSEL_Bits;
+
+
+typedef struct _Ifx_GTM_TIM_CH_CNT_Bits
+{
+    volatile unsigned int CNT:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_TIM_CH_CNT_Bits;
+
+
+typedef struct _Ifx_GTM_TIM_CH_CNTS_Bits
+{
+    volatile unsigned int CNTS:24;
+    volatile unsigned int ECNT:8;
+} Ifx_GTM_TIM_CH_CNTS_Bits;
+
+
+typedef struct _Ifx_GTM_TIM_CH_CTRL_Bits
+{
+    volatile unsigned int TIM_EN:1;
+    volatile unsigned int TIM_MODE:3;
+    volatile unsigned int OSM:1;
+    volatile unsigned int ARU_EN:1;
+    volatile unsigned int CICTRL:1;
+    volatile unsigned int TBU0_SEL:1;
+    volatile unsigned int GPR0_SEL:2;
+    volatile unsigned int GPR1_SEL:2;
+    volatile unsigned int CNTS_SEL:1;
+    volatile unsigned int DSL:1;
+    volatile unsigned int ISL:1;
+    volatile unsigned int ECNT_RESET:1;
+    volatile unsigned int FLT_EN:1;
+    volatile unsigned int FLT_CNT_FRQ:2;
+    volatile unsigned int EXT_CAP_EN:1;
+    volatile unsigned int FLT_MODE_RE:1;
+    volatile unsigned int FLT_CTR_RE:1;
+    volatile unsigned int FLT_MODE_FE:1;
+    volatile unsigned int FLT_CTR_FE:1;
+    volatile unsigned int CLK_SEL:3;
+    volatile unsigned int FR_ECNT_OFL:1;
+    volatile unsigned int EGPR0_SEL:1;
+    volatile unsigned int EGPR1_SEL:1;
+    volatile unsigned int TOCTRL:2;
+} Ifx_GTM_TIM_CH_CTRL_Bits;
+
+
+typedef struct _Ifx_GTM_TIM_CH_ECNT_Bits
+{
+    volatile unsigned int ECNT:16;
+    volatile unsigned int reserved_16:16;
+} Ifx_GTM_TIM_CH_ECNT_Bits;
+
+
+typedef struct _Ifx_GTM_TIM_CH_ECTRL_Bits
+{
+    volatile unsigned int EXT_CAP_SRC:4;
+    volatile unsigned int reserved_4:1;
+    volatile unsigned int USE_PREV_TDU_IN:1;
+    volatile unsigned int TODET_IRQ_SRC:2;
+    volatile unsigned int TDU_START:3;
+    volatile unsigned int reserved_11:1;
+    volatile unsigned int TDU_STOP:3;
+    volatile unsigned int reserved_15:1;
+    volatile unsigned int TDU_RESYNC:4;
+    volatile unsigned int reserved_20:2;
+    volatile unsigned int USE_LUT:2;
+    volatile unsigned int EFLT_CTR_RE:1;
+    volatile unsigned int EFLT_CTR_FE:1;
+    volatile unsigned int reserved_26:2;
+    volatile unsigned int SWAP_CAPTURE:1;
+    volatile unsigned int IMM_START:1;
+    volatile unsigned int ECLK_SEL:1;
+    volatile unsigned int USE_PREV_CH_IN:1;
+} Ifx_GTM_TIM_CH_ECTRL_Bits;
+
+
+typedef struct _Ifx_GTM_TIM_CH_EIRQ_EN_Bits
+{
+    volatile unsigned int NEWVAL_EIRQ_EN:1;
+    volatile unsigned int ECNTOFL_EIRQ_EN:1;
+    volatile unsigned int CNTOFL_EIRQ_EN:1;
+    volatile unsigned int GPROFL_EIRQ_EN:1;
+    volatile unsigned int TODET_EIRQ_EN:1;
+    volatile unsigned int GLITCHDET_EIRQ_EN:1;
+    volatile unsigned int reserved_6:26;
+} Ifx_GTM_TIM_CH_EIRQ_EN_Bits;
+
+
+typedef struct _Ifx_GTM_TIM_CH_FLT_FE_Bits
+{
+    volatile unsigned int FLT_FE:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_TIM_CH_FLT_FE_Bits;
+
+
+typedef struct _Ifx_GTM_TIM_CH_FLT_RE_Bits
+{
+    volatile unsigned int FLT_RE:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_TIM_CH_FLT_RE_Bits;
+
+
+typedef struct _Ifx_GTM_TIM_CH_GPR0_Bits
+{
+    volatile unsigned int GPR0:24;
+    volatile unsigned int ECNT:8;
+} Ifx_GTM_TIM_CH_GPR0_Bits;
+
+
+typedef struct _Ifx_GTM_TIM_CH_GPR1_Bits
+{
+    volatile unsigned int GPR1:24;
+    volatile unsigned int ECNT:8;
+} Ifx_GTM_TIM_CH_GPR1_Bits;
+
+
+typedef struct _Ifx_GTM_TIM_CH_IRQ_EN_Bits
+{
+    volatile unsigned int NEWVAL_IRQ_EN:1;
+    volatile unsigned int ECNTOFL_IRQ_EN:1;
+    volatile unsigned int CNTOFL_IRQ_EN:1;
+    volatile unsigned int GPROFL_IRQ_EN:1;
+    volatile unsigned int TODET_IRQ_EN:1;
+    volatile unsigned int GLITCHDET_IRQ_EN:1;
+    volatile unsigned int reserved_6:26;
+} Ifx_GTM_TIM_CH_IRQ_EN_Bits;
+
+
+typedef struct _Ifx_GTM_TIM_CH_IRQ_FORCINT_Bits
+{
+    volatile unsigned int TRG_NEWVAL:1;
+    volatile unsigned int TRG_ECNTOFL:1;
+    volatile unsigned int TRG_CNTOFL:1;
+    volatile unsigned int TRG_GPROFL:1;
+    volatile unsigned int TRG_TODET:1;
+    volatile unsigned int TRG_GLITCHDET:1;
+    volatile unsigned int reserved_6:26;
+} Ifx_GTM_TIM_CH_IRQ_FORCINT_Bits;
+
+
+typedef struct _Ifx_GTM_TIM_CH_IRQ_MODE_Bits
+{
+    volatile unsigned int IRQ_MODE:2;
+    volatile unsigned int reserved_2:30;
+} Ifx_GTM_TIM_CH_IRQ_MODE_Bits;
+
+
+typedef struct _Ifx_GTM_TIM_CH_IRQ_NOTIFY_Bits
+{
+    volatile unsigned int NEWVAL:1;
+    volatile unsigned int ECNTOFL:1;
+    volatile unsigned int CNTOFL:1;
+    volatile unsigned int GPROFL:1;
+    volatile unsigned int TODET:1;
+    volatile unsigned int GLITCHDET:1;
+    volatile unsigned int reserved_6:26;
+} Ifx_GTM_TIM_CH_IRQ_NOTIFY_Bits;
+
+
+typedef struct _Ifx_GTM_TIM_CH_TDUC_Bits
+{
+    volatile unsigned int TO_CNT:8;
+    volatile unsigned int TO_CNT1:8;
+    volatile unsigned int TO_CNT2:8;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_TIM_CH_TDUC_Bits;
+
+
+typedef struct _Ifx_GTM_TIM_CH_TDUV_Bits
+{
+    volatile unsigned int TOV:8;
+    volatile unsigned int TOV1:8;
+    volatile unsigned int TOV2:8;
+    volatile unsigned int SLICING:2;
+    volatile unsigned int TCS_USE_SAMPLE_EVT:1;
+    volatile unsigned int TDU_SAME_CNT_CLK:1;
+    volatile unsigned int TCS:3;
+    volatile unsigned int reserved_31:1;
+} Ifx_GTM_TIM_CH_TDUV_Bits;
+
+
+typedef struct _Ifx_GTM_TIM_INP_VAL_Bits
+{
+    volatile unsigned int F_OUT:8;
+    volatile unsigned int F_IN:8;
+    volatile unsigned int TIM_IN:8;
+    volatile unsigned int reserved_24:8;
+} Ifx_GTM_TIM_INP_VAL_Bits;
+
+
+typedef struct _Ifx_GTM_TIM_IN_SRC_Bits
+{
+    volatile unsigned int VAL_0:2;
+    volatile unsigned int MODE_0:2;
+    volatile unsigned int VAL_1:2;
+    volatile unsigned int MODE_1:2;
+    volatile unsigned int VAL_2:2;
+    volatile unsigned int MODE_2:2;
+    volatile unsigned int VAL_3:2;
+    volatile unsigned int MODE_3:2;
+    volatile unsigned int VAL_4:2;
+    volatile unsigned int MODE_4:2;
+    volatile unsigned int VAL_5:2;
+    volatile unsigned int MODE_5:2;
+    volatile unsigned int VAL_6:2;
+    volatile unsigned int MODE_6:2;
+    volatile unsigned int VAL_7:2;
+    volatile unsigned int MODE_7:2;
+} Ifx_GTM_TIM_IN_SRC_Bits;
+
+
+typedef struct _Ifx_GTM_TIM_RST_Bits
+{
+    volatile unsigned int RST_CH0:1;
+    volatile unsigned int RST_CH1:1;
+    volatile unsigned int RST_CH2:1;
+    volatile unsigned int RST_CH3:1;
+    volatile unsigned int RST_CH4:1;
+    volatile unsigned int RST_CH5:1;
+    volatile unsigned int RST_CH6:1;
+    volatile unsigned int RST_CH7:1;
+    volatile unsigned int reserved_8:24;
+} Ifx_GTM_TIM_RST_Bits;
+
+
+typedef struct _Ifx_GTM_TOM_CH_CM0_Bits
+{
+    volatile unsigned int CM0:16;
+    volatile unsigned int reserved_16:16;
+} Ifx_GTM_TOM_CH_CM0_Bits;
+
+
+typedef struct _Ifx_GTM_TOM_CH_CM1_Bits
+{
+    volatile unsigned int CM1:16;
+    volatile unsigned int reserved_16:16;
+} Ifx_GTM_TOM_CH_CM1_Bits;
+
+
+typedef struct _Ifx_GTM_TOM_CH_CN0_Bits
+{
+    volatile unsigned int CN0:16;
+    volatile unsigned int reserved_16:16;
+} Ifx_GTM_TOM_CH_CN0_Bits;
+
+
+typedef struct _Ifx_GTM_TOM_CH_CTRL_Bits
+{
+    volatile unsigned int reserved_0:7;
+    volatile unsigned int SR0_TRIG:1;
+    volatile unsigned int reserved_8:3;
+    volatile unsigned int SL:1;
+    volatile unsigned int CLK_SRC_SR:3;
+    volatile unsigned int ECLK_SRC:1;
+    volatile unsigned int reserved_16:1;
+    volatile unsigned int TRIG_PULSE:1;
+    volatile unsigned int UDMODE:2;
+    volatile unsigned int RST_CCU0:1;
+    volatile unsigned int OSM_TRIG:1;
+    volatile unsigned int EXT_TRIG:1;
+    volatile unsigned int EXTTRIGOUT:1;
+    volatile unsigned int TRIGOUT:1;
+    volatile unsigned int SPE_TRIG:1;
+    volatile unsigned int OSM:1;
+    volatile unsigned int BITREV:1;
+    volatile unsigned int SPEM:1;
+    volatile unsigned int GCM:1;
+    volatile unsigned int reserved_30:1;
+    volatile unsigned int FREEZE:1;
+} Ifx_GTM_TOM_CH_CTRL_Bits;
+
+
+typedef struct _Ifx_GTM_TOM_CH_IRQ_EN_Bits
+{
+    volatile unsigned int CCU0TC_IRQ_EN:1;
+    volatile unsigned int CCU1TC_IRQ_EN:1;
+    volatile unsigned int reserved_2:30;
+} Ifx_GTM_TOM_CH_IRQ_EN_Bits;
+
+
+typedef struct _Ifx_GTM_TOM_CH_IRQ_FORCINT_Bits
+{
+    volatile unsigned int TRG_CCU0TC0:1;
+    volatile unsigned int TRG_CCU1TC0:1;
+    volatile unsigned int reserved_2:30;
+} Ifx_GTM_TOM_CH_IRQ_FORCINT_Bits;
+
+
+typedef struct _Ifx_GTM_TOM_CH_IRQ_MODE_Bits
+{
+    volatile unsigned int IRQ_MODE:2;
+    volatile unsigned int reserved_2:30;
+} Ifx_GTM_TOM_CH_IRQ_MODE_Bits;
+
+
+typedef struct _Ifx_GTM_TOM_CH_IRQ_NOTIFY_Bits
+{
+    volatile unsigned int CCU0TC:1;
+    volatile unsigned int CCU1TC:1;
+    volatile unsigned int reserved_2:30;
+} Ifx_GTM_TOM_CH_IRQ_NOTIFY_Bits;
+
+
+typedef struct _Ifx_GTM_TOM_CH_SR0_Bits
+{
+    volatile unsigned int SR0:16;
+    volatile unsigned int reserved_16:16;
+} Ifx_GTM_TOM_CH_SR0_Bits;
+
+
+typedef struct _Ifx_GTM_TOM_CH_SR1_Bits
+{
+    volatile unsigned int SR1:16;
+    volatile unsigned int reserved_16:16;
+} Ifx_GTM_TOM_CH_SR1_Bits;
+
+
+typedef struct _Ifx_GTM_TOM_CH_STAT_Bits
+{
+    volatile unsigned int OL:1;
+    volatile unsigned int reserved_1:31;
+} Ifx_GTM_TOM_CH_STAT_Bits;
+
+
+typedef struct _Ifx_GTM_TOM_TGC_ACT_TB_Bits
+{
+    volatile unsigned int ACT_TB:24;
+    volatile unsigned int TB_TRIG:1;
+    volatile unsigned int TBU_SEL:2;
+    volatile unsigned int reserved_27:5;
+} Ifx_GTM_TOM_TGC_ACT_TB_Bits;
+
+
+typedef struct _Ifx_GTM_TOM_TGC_ENDIS_CTRL_Bits
+{
+    volatile unsigned int ENDIS_CTRL0:2;
+    volatile unsigned int ENDIS_CTRL1:2;
+    volatile unsigned int ENDIS_CTRL2:2;
+    volatile unsigned int ENDIS_CTRL3:2;
+    volatile unsigned int ENDIS_CTRL4:2;
+    volatile unsigned int ENDIS_CTRL5:2;
+    volatile unsigned int ENDIS_CTRL6:2;
+    volatile unsigned int ENDIS_CTRL7:2;
+    volatile unsigned int reserved_16:16;
+} Ifx_GTM_TOM_TGC_ENDIS_CTRL_Bits;
+
+
+typedef struct _Ifx_GTM_TOM_TGC_ENDIS_STAT_Bits
+{
+    volatile unsigned int ENDIS_STAT0:2;
+    volatile unsigned int ENDIS_STAT1:2;
+    volatile unsigned int ENDIS_STAT2:2;
+    volatile unsigned int ENDIS_STAT3:2;
+    volatile unsigned int ENDIS_STAT4:2;
+    volatile unsigned int ENDIS_STAT5:2;
+    volatile unsigned int ENDIS_STAT6:2;
+    volatile unsigned int ENDIS_STAT7:2;
+    volatile unsigned int reserved_16:16;
+} Ifx_GTM_TOM_TGC_ENDIS_STAT_Bits;
+
+
+typedef struct _Ifx_GTM_TOM_TGC_FUPD_CTRL_Bits
+{
+    volatile unsigned int FUPD_CTRL0:2;
+    volatile unsigned int FUPD_CTRL1:2;
+    volatile unsigned int FUPD_CTRL2:2;
+    volatile unsigned int FUPD_CTRL3:2;
+    volatile unsigned int FUPD_CTRL4:2;
+    volatile unsigned int FUPD_CTRL5:2;
+    volatile unsigned int FUPD_CTRL6:2;
+    volatile unsigned int FUPD_CTRL7:2;
+    volatile unsigned int RSTCN0_CH0:2;
+    volatile unsigned int RSTCN0_CH1:2;
+    volatile unsigned int RSTCN0_CH2:2;
+    volatile unsigned int RSTCN0_CH3:2;
+    volatile unsigned int RSTCN0_CH4:2;
+    volatile unsigned int RSTCN0_CH5:2;
+    volatile unsigned int RSTCN0_CH6:2;
+    volatile unsigned int RSTCN0_CH7:2;
+} Ifx_GTM_TOM_TGC_FUPD_CTRL_Bits;
+
+
+typedef struct _Ifx_GTM_TOM_TGC_GLB_CTRL_Bits
+{
+    volatile unsigned int HOST_TRIG:1;
+    volatile unsigned int reserved_1:7;
+    volatile unsigned int RST_CH0:1;
+    volatile unsigned int RST_CH1:1;
+    volatile unsigned int RST_CH2:1;
+    volatile unsigned int RST_CH3:1;
+    volatile unsigned int RST_CH4:1;
+    volatile unsigned int RST_CH5:1;
+    volatile unsigned int RST_CH6:1;
+    volatile unsigned int RST_CH7:1;
+    volatile unsigned int UPEN_CTRL0:2;
+    volatile unsigned int UPEN_CTRL1:2;
+    volatile unsigned int UPEN_CTRL2:2;
+    volatile unsigned int UPEN_CTRL3:2;
+    volatile unsigned int UPEN_CTRL4:2;
+    volatile unsigned int UPEN_CTRL5:2;
+    volatile unsigned int UPEN_CTRL6:2;
+    volatile unsigned int UPEN_CTRL7:2;
+} Ifx_GTM_TOM_TGC_GLB_CTRL_Bits;
+
+
+typedef struct _Ifx_GTM_TOM_TGC_INT_TRIG_Bits
+{
+    volatile unsigned int INT_TRIG0:2;
+    volatile unsigned int INT_TRIG1:2;
+    volatile unsigned int INT_TRIG2:2;
+    volatile unsigned int INT_TRIG3:2;
+    volatile unsigned int INT_TRIG4:2;
+    volatile unsigned int INT_TRIG5:2;
+    volatile unsigned int INT_TRIG6:2;
+    volatile unsigned int INT_TRIG7:2;
+    volatile unsigned int reserved_16:16;
+} Ifx_GTM_TOM_TGC_INT_TRIG_Bits;
+
+
+typedef struct _Ifx_GTM_TOM_TGC_OUTEN_CTRL_Bits
+{
+    volatile unsigned int OUTEN_CTRL0:2;
+    volatile unsigned int OUTEN_CTRL1:2;
+    volatile unsigned int OUTEN_CTRL2:2;
+    volatile unsigned int OUTEN_CTRL3:2;
+    volatile unsigned int OUTEN_CTRL4:2;
+    volatile unsigned int OUTEN_CTRL5:2;
+    volatile unsigned int OUTEN_CTRL6:2;
+    volatile unsigned int OUTEN_CTRL7:2;
+    volatile unsigned int reserved_16:16;
+} Ifx_GTM_TOM_TGC_OUTEN_CTRL_Bits;
+
+
+typedef struct _Ifx_GTM_TOM_TGC_OUTEN_STAT_Bits
+{
+    volatile unsigned int OUTEN_STAT0:2;
+    volatile unsigned int OUTEN_STAT1:2;
+    volatile unsigned int OUTEN_STAT2:2;
+    volatile unsigned int OUTEN_STAT3:2;
+    volatile unsigned int OUTEN_STAT4:2;
+    volatile unsigned int OUTEN_STAT5:2;
+    volatile unsigned int OUTEN_STAT6:2;
+    volatile unsigned int OUTEN_STAT7:2;
+    volatile unsigned int reserved_16:16;
+} Ifx_GTM_TOM_TGC_OUTEN_STAT_Bits;
+
+
+typedef struct _Ifx_GTM_TOUTSEL_Bits
+{
+    Ifx_UReg_32Bit SEL0:4;
+    Ifx_UReg_32Bit SEL1:4;
+    Ifx_UReg_32Bit SEL2:4;
+    Ifx_UReg_32Bit SEL3:4;
+    Ifx_UReg_32Bit SEL4:4;
+    Ifx_UReg_32Bit SEL5:4;
+    Ifx_UReg_32Bit SEL6:4;
+    Ifx_UReg_32Bit SEL7:4;
+} Ifx_GTM_TOUTSEL_Bits;
+
+
+typedef struct _Ifx_GTM_TRIGOUT_Bits
+{
+    Ifx_UReg_32Bit TRIG0:2;
+    Ifx_UReg_32Bit TRIG1:2;
+    Ifx_UReg_32Bit TRIG2:2;
+    Ifx_UReg_32Bit TRIG3:2;
+    Ifx_UReg_32Bit TRIG4:2;
+    Ifx_UReg_32Bit TRIG5:2;
+    Ifx_UReg_32Bit TRIG6:2;
+    Ifx_UReg_32Bit TRIG7:2;
+    Ifx_UReg_32Bit reserved_16:16;
+} Ifx_GTM_TRIGOUT_Bits;
+
+
+
+
+
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ACCEN0_Bits B;
+} Ifx_GTM_ACCEN0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ACCEN1_Bits B;
+} Ifx_GTM_ACCEN1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ADCTRIG_OUT0_Bits B;
+} Ifx_GTM_ADCTRIG_OUT0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ADCTRIG_OUT1_Bits B;
+} Ifx_GTM_ADCTRIG_OUT1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_AEI_ADDR_XPT_Bits B;
+} Ifx_GTM_AEI_ADDR_XPT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_AEI_STA_XPT_Bits B;
+} Ifx_GTM_AEI_STA_XPT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ARU_ACCESS_Bits B;
+} Ifx_GTM_ARU_ACCESS;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ARU_CADDR_Bits B;
+} Ifx_GTM_ARU_CADDR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ARU_CADDR_END_Bits B;
+} Ifx_GTM_ARU_CADDR_END;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ARU_CTRL_Bits B;
+} Ifx_GTM_ARU_CTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ARU_DATA_H_Bits B;
+} Ifx_GTM_ARU_DATA_H;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ARU_DATA_L_Bits B;
+} Ifx_GTM_ARU_DATA_L;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ARU_DBG_ACCESS0_Bits B;
+} Ifx_GTM_ARU_DBG_ACCESS0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ARU_DBG_ACCESS1_Bits B;
+} Ifx_GTM_ARU_DBG_ACCESS1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ARU_DBG_DATA0_H_Bits B;
+} Ifx_GTM_ARU_DBG_DATA0_H;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ARU_DBG_DATA0_L_Bits B;
+} Ifx_GTM_ARU_DBG_DATA0_L;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ARU_DBG_DATA1_H_Bits B;
+} Ifx_GTM_ARU_DBG_DATA1_H;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ARU_DBG_DATA1_L_Bits B;
+} Ifx_GTM_ARU_DBG_DATA1_L;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ARU_DYN_CTRL_Bits B;
+} Ifx_GTM_ARU_DYN_CTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ARU_DYN_RDADDR_Bits B;
+} Ifx_GTM_ARU_DYN_RDADDR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ARU_DYN_ROUTE_HIGH_Bits B;
+} Ifx_GTM_ARU_DYN_ROUTE_HIGH;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ARU_DYN_ROUTE_LOW_Bits B;
+} Ifx_GTM_ARU_DYN_ROUTE_LOW;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ARU_DYN_ROUTE_SR_HIGH_Bits B;
+} Ifx_GTM_ARU_DYN_ROUTE_SR_HIGH;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ARU_DYN_ROUTE_SR_LOW_Bits B;
+} Ifx_GTM_ARU_DYN_ROUTE_SR_LOW;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ARU_IRQ_EN_Bits B;
+} Ifx_GTM_ARU_IRQ_EN;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ARU_IRQ_FORCINT_Bits B;
+} Ifx_GTM_ARU_IRQ_FORCINT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ARU_IRQ_MODE_Bits B;
+} Ifx_GTM_ARU_IRQ_MODE;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ARU_IRQ_NOTIFY_Bits B;
+} Ifx_GTM_ARU_IRQ_NOTIFY;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ATOM_AGC_ACT_TB_Bits B;
+} Ifx_GTM_ATOM_AGC_ACT_TB;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ATOM_AGC_ENDIS_CTRL_Bits B;
+} Ifx_GTM_ATOM_AGC_ENDIS_CTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ATOM_AGC_ENDIS_STAT_Bits B;
+} Ifx_GTM_ATOM_AGC_ENDIS_STAT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ATOM_AGC_FUPD_CTRL_Bits B;
+} Ifx_GTM_ATOM_AGC_FUPD_CTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ATOM_AGC_GLB_CTRL_Bits B;
+} Ifx_GTM_ATOM_AGC_GLB_CTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ATOM_AGC_INT_TRIG_Bits B;
+} Ifx_GTM_ATOM_AGC_INT_TRIG;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ATOM_AGC_OUTEN_CTRL_Bits B;
+} Ifx_GTM_ATOM_AGC_OUTEN_CTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ATOM_AGC_OUTEN_STAT_Bits B;
+} Ifx_GTM_ATOM_AGC_OUTEN_STAT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ATOM_CH_CM0_Bits B;
+} Ifx_GTM_ATOM_CH_CM0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ATOM_CH_CM1_Bits B;
+} Ifx_GTM_ATOM_CH_CM1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ATOM_CH_CN0_Bits B;
+} Ifx_GTM_ATOM_CH_CN0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ATOM_CH_CTRL_Bits B;
+} Ifx_GTM_ATOM_CH_CTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ATOM_CH_IRQ_EN_Bits B;
+} Ifx_GTM_ATOM_CH_IRQ_EN;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ATOM_CH_IRQ_FORCINT_Bits B;
+} Ifx_GTM_ATOM_CH_IRQ_FORCINT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ATOM_CH_IRQ_MODE_Bits B;
+} Ifx_GTM_ATOM_CH_IRQ_MODE;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ATOM_CH_IRQ_NOTIFY_Bits B;
+} Ifx_GTM_ATOM_CH_IRQ_NOTIFY;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ATOM_CH_RDADDR_Bits B;
+} Ifx_GTM_ATOM_CH_RDADDR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ATOM_CH_SOMB_Bits B;
+} Ifx_GTM_ATOM_CH_SOMB;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ATOM_CH_SOMC_Bits B;
+} Ifx_GTM_ATOM_CH_SOMC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ATOM_CH_SOMI_Bits B;
+} Ifx_GTM_ATOM_CH_SOMI;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ATOM_CH_SOMP_Bits B;
+} Ifx_GTM_ATOM_CH_SOMP;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ATOM_CH_SOMS_Bits B;
+} Ifx_GTM_ATOM_CH_SOMS;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ATOM_CH_SR0_Bits B;
+} Ifx_GTM_ATOM_CH_SR0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ATOM_CH_SR1_Bits B;
+} Ifx_GTM_ATOM_CH_SR1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ATOM_CH_STAT_Bits B;
+} Ifx_GTM_ATOM_CH_STAT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_AUX_IN_SRC_TIM_Bits B;
+} Ifx_GTM_AUX_IN_SRC_TIM;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_BRC_EIRQ_EN_Bits B;
+} Ifx_GTM_BRC_EIRQ_EN;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_BRC_IRQ_EN_Bits B;
+} Ifx_GTM_BRC_IRQ_EN;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_BRC_IRQ_FORCINT_Bits B;
+} Ifx_GTM_BRC_IRQ_FORCINT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_BRC_IRQ_MODE_Bits B;
+} Ifx_GTM_BRC_IRQ_MODE;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_BRC_IRQ_NOTIFY_Bits B;
+} Ifx_GTM_BRC_IRQ_NOTIFY;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_BRC_RST_Bits B;
+} Ifx_GTM_BRC_RST;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_BRC_SRC_ADDR_Bits B;
+} Ifx_GTM_BRC_SRC_ADDR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_BRC_SRC_DEST_Bits B;
+} Ifx_GTM_BRC_SRC_DEST;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_BRIDGE_MODE_Bits B;
+} Ifx_GTM_BRIDGE_MODE;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_BRIDGE_PTR1_Bits B;
+} Ifx_GTM_BRIDGE_PTR1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_BRIDGE_PTR2_Bits B;
+} Ifx_GTM_BRIDGE_PTR2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CANOUTSEL0_Bits B;
+} Ifx_GTM_CANOUTSEL0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CANOUTSEL1_Bits B;
+} Ifx_GTM_CANOUTSEL1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CCM_AEIM_STA_Bits B;
+} Ifx_GTM_CCM_AEIM_STA;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CCM_ARP_CTRL_Bits B;
+} Ifx_GTM_CCM_ARP_CTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CCM_ARP_PROT_Bits B;
+} Ifx_GTM_CCM_ARP_PROT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CCM_ATOM_OUT_Bits B;
+} Ifx_GTM_CCM_ATOM_OUT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CCM_CFG_Bits B;
+} Ifx_GTM_CCM_CFG;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CCM_CMU_CLK_CFG_Bits B;
+} Ifx_GTM_CCM_CMU_CLK_CFG;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CCM_CMU_FXCLK_CFG_Bits B;
+} Ifx_GTM_CCM_CMU_FXCLK_CFG;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CCM_EXT_CAP_EN_Bits B;
+} Ifx_GTM_CCM_EXT_CAP_EN;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CCM_HW_CONF_Bits B;
+} Ifx_GTM_CCM_HW_CONF;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CCM_PROT_Bits B;
+} Ifx_GTM_CCM_PROT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CCM_TIM_AUX_IN_SRC_Bits B;
+} Ifx_GTM_CCM_TIM_AUX_IN_SRC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CCM_TOM_OUT_Bits B;
+} Ifx_GTM_CCM_TOM_OUT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CDTM_DTM_CH_CTRL1_Bits B;
+} Ifx_GTM_CDTM_DTM_CH_CTRL1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CDTM_DTM_CH_CTRL2_Bits B;
+} Ifx_GTM_CDTM_DTM_CH_CTRL2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CDTM_DTM_CH_CTRL2_SR_Bits B;
+} Ifx_GTM_CDTM_DTM_CH_CTRL2_SR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CDTM_DTM_CH_CTRL3_Bits B;
+} Ifx_GTM_CDTM_DTM_CH_CTRL3;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CDTM_DTM_CH_DTV_Bits B;
+} Ifx_GTM_CDTM_DTM_CH_DTV;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CDTM_DTM_CH_SR_Bits B;
+} Ifx_GTM_CDTM_DTM_CH_SR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CDTM_DTM_CTRL_Bits B;
+} Ifx_GTM_CDTM_DTM_CTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CDTM_DTM_PS_CTRL_Bits B;
+} Ifx_GTM_CDTM_DTM_PS_CTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CFG_Bits B;
+} Ifx_GTM_CFG;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CLC_Bits B;
+} Ifx_GTM_CLC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CLS_CLK_CFG_Bits B;
+} Ifx_GTM_CLS_CLK_CFG;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CMP_EIRQ_EN_Bits B;
+} Ifx_GTM_CMP_EIRQ_EN;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CMP_EN_Bits B;
+} Ifx_GTM_CMP_EN;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CMP_IRQ_EN_Bits B;
+} Ifx_GTM_CMP_IRQ_EN;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CMP_IRQ_FORCINT_Bits B;
+} Ifx_GTM_CMP_IRQ_FORCINT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CMP_IRQ_MODE_Bits B;
+} Ifx_GTM_CMP_IRQ_MODE;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CMP_IRQ_NOTIFY_Bits B;
+} Ifx_GTM_CMP_IRQ_NOTIFY;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CMU_CLK_CTRL_Bits B;
+} Ifx_GTM_CMU_CLK_CTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CMU_CLK_EN_Bits B;
+} Ifx_GTM_CMU_CLK_EN;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CMU_CLK__CTRL_Bits B;
+} Ifx_GTM_CMU_CLK__CTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CMU_ECLK_DEN_Bits B;
+} Ifx_GTM_CMU_ECLK_DEN;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CMU_ECLK_NUM_Bits B;
+} Ifx_GTM_CMU_ECLK_NUM;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CMU_FXCLK_CTRL_Bits B;
+} Ifx_GTM_CMU_FXCLK_CTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CMU_GCLK_DEN_Bits B;
+} Ifx_GTM_CMU_GCLK_DEN;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CMU_GCLK_NUM_Bits B;
+} Ifx_GTM_CMU_GCLK_NUM;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CMU_GLB_CTRL_Bits B;
+} Ifx_GTM_CMU_GLB_CTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_CTRL_Bits B;
+} Ifx_GTM_CTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DATAIN_Bits B;
+} Ifx_GTM_DATAIN;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_ACB_Bits B;
+} Ifx_GTM_DPLL_ACB;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_ACT_STA_Bits B;
+} Ifx_GTM_DPLL_ACT_STA;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_ADD_IN_CAL1_Bits B;
+} Ifx_GTM_DPLL_ADD_IN_CAL1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_ADD_IN_CAL2_Bits B;
+} Ifx_GTM_DPLL_ADD_IN_CAL2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_ADD_IN_LD1_Bits B;
+} Ifx_GTM_DPLL_ADD_IN_LD1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_ADD_IN_LD2_Bits B;
+} Ifx_GTM_DPLL_ADD_IN_LD2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_ADT_S_Bits B;
+} Ifx_GTM_DPLL_ADT_S;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_ADT_TI_Bits B;
+} Ifx_GTM_DPLL_ADT_TI;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_AOSV_2_Bits B;
+} Ifx_GTM_DPLL_AOSV_2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_APS_Bits B;
+} Ifx_GTM_DPLL_APS;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_APS_1C3_Bits B;
+} Ifx_GTM_DPLL_APS_1C3;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_APS_1C3_EXT_Bits B;
+} Ifx_GTM_DPLL_APS_1C3_EXT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_APS_EXT_Bits B;
+} Ifx_GTM_DPLL_APS_EXT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_APS_SYNC_Bits B;
+} Ifx_GTM_DPLL_APS_SYNC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_APS_SYNC_EXT_Bits B;
+} Ifx_GTM_DPLL_APS_SYNC_EXT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_APT_Bits B;
+} Ifx_GTM_DPLL_APT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_APT_2C_Bits B;
+} Ifx_GTM_DPLL_APT_2C;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_APT_SYNC_Bits B;
+} Ifx_GTM_DPLL_APT_SYNC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_CDT_SX_Bits B;
+} Ifx_GTM_DPLL_CDT_SX;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_CDT_SX_NOM_Bits B;
+} Ifx_GTM_DPLL_CDT_SX_NOM;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_CDT_TX_Bits B;
+} Ifx_GTM_DPLL_CDT_TX;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_CDT_TX_NOM_Bits B;
+} Ifx_GTM_DPLL_CDT_TX_NOM;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_CNT_NUM_1_Bits B;
+} Ifx_GTM_DPLL_CNT_NUM_1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_CNT_NUM_2_Bits B;
+} Ifx_GTM_DPLL_CNT_NUM_2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_CSN_MAX_Bits B;
+} Ifx_GTM_DPLL_CSN_MAX;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_CSN_MIN_Bits B;
+} Ifx_GTM_DPLL_CSN_MIN;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_CTN_MAX_Bits B;
+} Ifx_GTM_DPLL_CTN_MAX;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_CTN_MIN_Bits B;
+} Ifx_GTM_DPLL_CTN_MIN;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_CTRL_0_Bits B;
+} Ifx_GTM_DPLL_CTRL_0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_CTRL_0_SHADOW_STATE_Bits B;
+} Ifx_GTM_DPLL_CTRL_0_SHADOW_STATE;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_CTRL_0_SHADOW_TRIGGER_Bits B;
+} Ifx_GTM_DPLL_CTRL_0_SHADOW_TRIGGER;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_CTRL_1_Bits B;
+} Ifx_GTM_DPLL_CTRL_1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_CTRL_11_Bits B;
+} Ifx_GTM_DPLL_CTRL_11;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_CTRL_1_SHADOW_STATE_Bits B;
+} Ifx_GTM_DPLL_CTRL_1_SHADOW_STATE;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_CTRL_1_SHADOW_TRIGGER_Bits B;
+} Ifx_GTM_DPLL_CTRL_1_SHADOW_TRIGGER;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_CTRL_2_Bits B;
+} Ifx_GTM_DPLL_CTRL_2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_CTRL_3_Bits B;
+} Ifx_GTM_DPLL_CTRL_3;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_CTRL_4_Bits B;
+} Ifx_GTM_DPLL_CTRL_4;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_CTRL_5_Bits B;
+} Ifx_GTM_DPLL_CTRL_5;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_CTRL_EXT_Bits B;
+} Ifx_GTM_DPLL_CTRL_EXT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_DLA_Bits B;
+} Ifx_GTM_DPLL_DLA;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_DTA_Bits B;
+} Ifx_GTM_DPLL_DTA;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_DT_S_Bits B;
+} Ifx_GTM_DPLL_DT_S;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_DT_S_ACT_Bits B;
+} Ifx_GTM_DPLL_DT_S_ACT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_DT_S_START_Bits B;
+} Ifx_GTM_DPLL_DT_S_START;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_DT_TI_Bits B;
+} Ifx_GTM_DPLL_DT_TI;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_DT_T_ACT_Bits B;
+} Ifx_GTM_DPLL_DT_T_ACT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_DT_T_START_Bits B;
+} Ifx_GTM_DPLL_DT_T_START;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_EDT_S_Bits B;
+} Ifx_GTM_DPLL_EDT_S;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_EDT_T_Bits B;
+} Ifx_GTM_DPLL_EDT_T;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_EIRQ_EN_Bits B;
+} Ifx_GTM_DPLL_EIRQ_EN;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_FTV_S_Bits B;
+} Ifx_GTM_DPLL_FTV_S;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_FTV_T_Bits B;
+} Ifx_GTM_DPLL_FTV_T;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_ID_PMTR_Bits B;
+} Ifx_GTM_DPLL_ID_PMTR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_INCF1_OFFSET_Bits B;
+} Ifx_GTM_DPLL_INCF1_OFFSET;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_INCF2_OFFSET_Bits B;
+} Ifx_GTM_DPLL_INCF2_OFFSET;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_INC_CNT1_Bits B;
+} Ifx_GTM_DPLL_INC_CNT1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_INC_CNT1_MASK_Bits B;
+} Ifx_GTM_DPLL_INC_CNT1_MASK;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_INC_CNT2_Bits B;
+} Ifx_GTM_DPLL_INC_CNT2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_INC_CNT2_MASK_Bits B;
+} Ifx_GTM_DPLL_INC_CNT2_MASK;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_IRQ_EN_Bits B;
+} Ifx_GTM_DPLL_IRQ_EN;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_IRQ_FORCINT_Bits B;
+} Ifx_GTM_DPLL_IRQ_FORCINT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_IRQ_MODE_Bits B;
+} Ifx_GTM_DPLL_IRQ_MODE;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_IRQ_NOTIFY_Bits B;
+} Ifx_GTM_DPLL_IRQ_NOTIFY;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_MEDT_S_Bits B;
+} Ifx_GTM_DPLL_MEDT_S;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_MEDT_T_Bits B;
+} Ifx_GTM_DPLL_MEDT_T;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_MLS1_Bits B;
+} Ifx_GTM_DPLL_MLS1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_MLS2_Bits B;
+} Ifx_GTM_DPLL_MLS2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_MPVAL1_Bits B;
+} Ifx_GTM_DPLL_MPVAL1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_MPVAL2_Bits B;
+} Ifx_GTM_DPLL_MPVAL2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_NA_Bits B;
+} Ifx_GTM_DPLL_NA;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_NMB_S_Bits B;
+} Ifx_GTM_DPLL_NMB_S;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_NMB_S_TAR_Bits B;
+} Ifx_GTM_DPLL_NMB_S_TAR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_NMB_S_TAR_OLD_Bits B;
+} Ifx_GTM_DPLL_NMB_S_TAR_OLD;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_NMB_T_Bits B;
+} Ifx_GTM_DPLL_NMB_T;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_NMB_T_TAR_Bits B;
+} Ifx_GTM_DPLL_NMB_T_TAR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_NMB_T_TAR_OLD_Bits B;
+} Ifx_GTM_DPLL_NMB_T_TAR_OLD;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_NTI_CNT_Bits B;
+} Ifx_GTM_DPLL_NTI_CNT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_NUSC_Bits B;
+} Ifx_GTM_DPLL_NUSC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_NUSC_EXT1_Bits B;
+} Ifx_GTM_DPLL_NUSC_EXT1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_NUSC_EXT2_Bits B;
+} Ifx_GTM_DPLL_NUSC_EXT2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_NUTC_Bits B;
+} Ifx_GTM_DPLL_NUTC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_OSW_Bits B;
+} Ifx_GTM_DPLL_OSW;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_PDT_Bits B;
+} Ifx_GTM_DPLL_PDT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_PSA_Bits B;
+} Ifx_GTM_DPLL_PSA;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_PSAC_Bits B;
+} Ifx_GTM_DPLL_PSAC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_PSSC_Bits B;
+} Ifx_GTM_DPLL_PSSC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_PSSM_Bits B;
+} Ifx_GTM_DPLL_PSSM;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_PSSM_OLD_Bits B;
+} Ifx_GTM_DPLL_PSSM_OLD;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_PSTC_Bits B;
+} Ifx_GTM_DPLL_PSTC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_PSTM_Bits B;
+} Ifx_GTM_DPLL_PSTM;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_PSTM_OLD_Bits B;
+} Ifx_GTM_DPLL_PSTM_OLD;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_PVT_Bits B;
+} Ifx_GTM_DPLL_PVT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_RAM_INI_Bits B;
+} Ifx_GTM_DPLL_RAM_INI;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_RCDT_SX_Bits B;
+} Ifx_GTM_DPLL_RCDT_SX;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_RCDT_SX_NOM_Bits B;
+} Ifx_GTM_DPLL_RCDT_SX_NOM;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_RCDT_TX_Bits B;
+} Ifx_GTM_DPLL_RCDT_TX;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_RCDT_TX_NOM_Bits B;
+} Ifx_GTM_DPLL_RCDT_TX_NOM;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_RDT_S_Bits B;
+} Ifx_GTM_DPLL_RDT_S;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_RDT_S_ACT_Bits B;
+} Ifx_GTM_DPLL_RDT_S_ACT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_RDT_TI_Bits B;
+} Ifx_GTM_DPLL_RDT_TI;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_RDT_T_ACT_Bits B;
+} Ifx_GTM_DPLL_RDT_T_ACT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_SIDEL_Bits B;
+} Ifx_GTM_DPLL_SIDEL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_SLR_Bits B;
+} Ifx_GTM_DPLL_SLR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_STA_Bits B;
+} Ifx_GTM_DPLL_STA;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_STATUS_Bits B;
+} Ifx_GTM_DPLL_STATUS;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_STA_FLAG_Bits B;
+} Ifx_GTM_DPLL_STA_FLAG;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_STA_MASK_Bits B;
+} Ifx_GTM_DPLL_STA_MASK;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_TBU_TS0_S_Bits B;
+} Ifx_GTM_DPLL_TBU_TS0_S;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_TBU_TS0_T_Bits B;
+} Ifx_GTM_DPLL_TBU_TS0_T;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_THMA_Bits B;
+} Ifx_GTM_DPLL_THMA;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_THMI_Bits B;
+} Ifx_GTM_DPLL_THMI;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_THVAL_Bits B;
+} Ifx_GTM_DPLL_THVAL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_THVAL2_Bits B;
+} Ifx_GTM_DPLL_THVAL2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_TIDEL_Bits B;
+} Ifx_GTM_DPLL_TIDEL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_TLR_Bits B;
+} Ifx_GTM_DPLL_TLR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_TOV_Bits B;
+} Ifx_GTM_DPLL_TOV;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_TOV_S_Bits B;
+} Ifx_GTM_DPLL_TOV_S;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_TSAC_Bits B;
+} Ifx_GTM_DPLL_TSAC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_TSF_S_Bits B;
+} Ifx_GTM_DPLL_TSF_S;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_TSF_TI_Bits B;
+} Ifx_GTM_DPLL_TSF_TI;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_TS_S_Bits B;
+} Ifx_GTM_DPLL_TS_S;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_TS_S_OLD_Bits B;
+} Ifx_GTM_DPLL_TS_S_OLD;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_TS_T_Bits B;
+} Ifx_GTM_DPLL_TS_T;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DPLL_TS_T_OLD_Bits B;
+} Ifx_GTM_DPLL_TS_T_OLD;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DSADCINSEL_Bits B;
+} Ifx_GTM_DSADCINSEL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DSADC_OUTSEL0_Bits B;
+} Ifx_GTM_DSADC_OUTSEL0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DSADC_OUTSEL1_Bits B;
+} Ifx_GTM_DSADC_OUTSEL1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DTMAUXINSEL_Bits B;
+} Ifx_GTM_DTMAUXINSEL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DXINCON_Bits B;
+} Ifx_GTM_DXINCON;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_DXOUTCON_Bits B;
+} Ifx_GTM_DXOUTCON;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_EIRQ_EN_Bits B;
+} Ifx_GTM_EIRQ_EN;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_EXT_CAP_EN_Bits B;
+} Ifx_GTM_EXT_CAP_EN;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_HW_CONF_Bits B;
+} Ifx_GTM_HW_CONF;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ICM_IRQG_CEI0_Bits B;
+} Ifx_GTM_ICM_IRQG_CEI0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ICM_IRQG_CEI1_Bits B;
+} Ifx_GTM_ICM_IRQG_CEI1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ICM_IRQG_CEI2_Bits B;
+} Ifx_GTM_ICM_IRQG_CEI2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ICM_IRQG_CEI3_Bits B;
+} Ifx_GTM_ICM_IRQG_CEI3;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ICM_IRQG_CEI4_Bits B;
+} Ifx_GTM_ICM_IRQG_CEI4;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ICM_IRQG_CEI_MCS_Bits B;
+} Ifx_GTM_ICM_IRQG_CEI_MCS;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ICM_IRQG_CEI_PSM_Bits B;
+} Ifx_GTM_ICM_IRQG_CEI_PSM;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ICM_IRQG_CEI_SPE_Bits B;
+} Ifx_GTM_ICM_IRQG_CEI_SPE;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ICM_IRQG_CI_ATOM_Bits B;
+} Ifx_GTM_ICM_IRQG_CI_ATOM;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ICM_IRQG_CI_MCS_Bits B;
+} Ifx_GTM_ICM_IRQG_CI_MCS;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ICM_IRQG_CI_PSM_Bits B;
+} Ifx_GTM_ICM_IRQG_CI_PSM;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ICM_IRQG_CI_SPE_Bits B;
+} Ifx_GTM_ICM_IRQG_CI_SPE;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ICM_IRQG_CI_TOM_Bits B;
+} Ifx_GTM_ICM_IRQG_CI_TOM;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ICM_IRQG_MEI_Bits B;
+} Ifx_GTM_ICM_IRQG_MEI;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ICM_IRQG_MEI_CLS_Bits B;
+} Ifx_GTM_ICM_IRQG_MEI_CLS;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ICM_IRQG_R0_Bits B;
+} Ifx_GTM_ICM_IRQG_R0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ICM_IRQG_R1_Bits B;
+} Ifx_GTM_ICM_IRQG_R1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ICM_IRQG_R10_Bits B;
+} Ifx_GTM_ICM_IRQG_R10;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ICM_IRQG_R11_Bits B;
+} Ifx_GTM_ICM_IRQG_R11;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ICM_IRQG_R2_Bits B;
+} Ifx_GTM_ICM_IRQG_R2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ICM_IRQG_R3_Bits B;
+} Ifx_GTM_ICM_IRQG_R3;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ICM_IRQG_R4_Bits B;
+} Ifx_GTM_ICM_IRQG_R4;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ICM_IRQG_R5_Bits B;
+} Ifx_GTM_ICM_IRQG_R5;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ICM_IRQG_R6_Bits B;
+} Ifx_GTM_ICM_IRQG_R6;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ICM_IRQG_R7_Bits B;
+} Ifx_GTM_ICM_IRQG_R7;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ICM_IRQG_R8_Bits B;
+} Ifx_GTM_ICM_IRQG_R8;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_ICM_IRQG_R9_Bits B;
+} Ifx_GTM_ICM_IRQG_R9;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_INTOUT_Bits B;
+} Ifx_GTM_INTOUT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_IRQ_EN_Bits B;
+} Ifx_GTM_IRQ_EN;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_IRQ_FORCINT_Bits B;
+} Ifx_GTM_IRQ_FORCINT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_IRQ_MODE_Bits B;
+} Ifx_GTM_IRQ_MODE;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_IRQ_NOTIFY_Bits B;
+} Ifx_GTM_IRQ_NOTIFY;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_LCDCDCOUTSEL_Bits B;
+} Ifx_GTM_LCDCDCOUTSEL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_MAP_CTRL_Bits B;
+} Ifx_GTM_MAP_CTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_MCFG_CTRL_Bits B;
+} Ifx_GTM_MCFG_CTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_MCSINTCLR_Bits B;
+} Ifx_GTM_MCSINTCLR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_MCSINTSTAT_Bits B;
+} Ifx_GTM_MCSINTSTAT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_MCSTRIGOUTSEL_Bits B;
+} Ifx_GTM_MCSTRIGOUTSEL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_MCS_AEM_DIS_Bits B;
+} Ifx_GTM_MCS_AEM_DIS;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_MCS_CAT_Bits B;
+} Ifx_GTM_MCS_CAT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_MCS_CH_ACB_Bits B;
+} Ifx_GTM_MCS_CH_ACB;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_MCS_CH_CTRG_Bits B;
+} Ifx_GTM_MCS_CH_CTRG;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_MCS_CH_CTRL_Bits B;
+} Ifx_GTM_MCS_CH_CTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_MCS_CH_EIRQ_EN_Bits B;
+} Ifx_GTM_MCS_CH_EIRQ_EN;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_MCS_CH_IRQ_EN_Bits B;
+} Ifx_GTM_MCS_CH_IRQ_EN;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_MCS_CH_IRQ_FORCINT_Bits B;
+} Ifx_GTM_MCS_CH_IRQ_FORCINT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_MCS_CH_IRQ_MODE_Bits B;
+} Ifx_GTM_MCS_CH_IRQ_MODE;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_MCS_CH_IRQ_NOTIFY_Bits B;
+} Ifx_GTM_MCS_CH_IRQ_NOTIFY;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_MCS_CH_MHB_Bits B;
+} Ifx_GTM_MCS_CH_MHB;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_MCS_CH_PC_Bits B;
+} Ifx_GTM_MCS_CH_PC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_MCS_CH_R_Bits B;
+} Ifx_GTM_MCS_CH_R;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_MCS_CH_STRG_Bits B;
+} Ifx_GTM_MCS_CH_STRG;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_MCS_CTRL_STAT_Bits B;
+} Ifx_GTM_MCS_CTRL_STAT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_MCS_CWT_Bits B;
+} Ifx_GTM_MCS_CWT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_MCS_ERR_Bits B;
+} Ifx_GTM_MCS_ERR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_MCS_REG_PROT_Bits B;
+} Ifx_GTM_MCS_REG_PROT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_MCS_RESET_Bits B;
+} Ifx_GTM_MCS_RESET;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_MON_ACTIVITY_MCS_Bits B;
+} Ifx_GTM_MON_ACTIVITY_MCS;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_MON_ACTIVITY_R0_Bits B;
+} Ifx_GTM_MON_ACTIVITY_R0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_MON_ACTIVITY_R1_Bits B;
+} Ifx_GTM_MON_ACTIVITY_R1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_MON_STATUS_Bits B;
+} Ifx_GTM_MON_STATUS;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_MSC_MSCQ_INHCON_Bits B;
+} Ifx_GTM_MSC_MSCQ_INHCON;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_MSC_MSCQ_INLCON_Bits B;
+} Ifx_GTM_MSC_MSCQ_INLCON;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_MSC_MSCQ_INLEXTCON_Bits B;
+} Ifx_GTM_MSC_MSCQ_INLEXTCON;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_MSC_SET_CON0_Bits B;
+} Ifx_GTM_MSC_SET_CON0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_MSC_SET_CON1_Bits B;
+} Ifx_GTM_MSC_SET_CON1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_MSC_SET_CON2_Bits B;
+} Ifx_GTM_MSC_SET_CON2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_MSC_SET_CON3_Bits B;
+} Ifx_GTM_MSC_SET_CON3;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_OCDS_OCS_Bits B;
+} Ifx_GTM_OCDS_OCS;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_OCDS_ODA_Bits B;
+} Ifx_GTM_OCDS_ODA;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_OCDS_OTBU0T_Bits B;
+} Ifx_GTM_OCDS_OTBU0T;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_OCDS_OTBU1T_Bits B;
+} Ifx_GTM_OCDS_OTBU1T;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_OCDS_OTBU2T_Bits B;
+} Ifx_GTM_OCDS_OTBU2T;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_OCDS_OTBU3T_Bits B;
+} Ifx_GTM_OCDS_OTBU3T;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_OCDS_OTSC0_Bits B;
+} Ifx_GTM_OCDS_OTSC0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_OCDS_OTSC1_Bits B;
+} Ifx_GTM_OCDS_OTSC1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_OCDS_OTSS_Bits B;
+} Ifx_GTM_OCDS_OTSS;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_OUT_ATOM_Bits B;
+} Ifx_GTM_OUT_ATOM;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_OUT_TOM_Bits B;
+} Ifx_GTM_OUT_TOM;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_PSI5OUTSEL_Bits B;
+} Ifx_GTM_PSI5OUTSEL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_PSI5SOUTSEL_Bits B;
+} Ifx_GTM_PSI5SOUTSEL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_PSM_AFD_CH_BUF_ACC_Bits B;
+} Ifx_GTM_PSM_AFD_CH_BUF_ACC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_PSM_F2A_ENABLE_Bits B;
+} Ifx_GTM_PSM_F2A_ENABLE;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_PSM_F2A_F2A_CTRL_Bits B;
+} Ifx_GTM_PSM_F2A_F2A_CTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_PSM_F2A_RD_CH_ARU_RD_FIFO_Bits B;
+} Ifx_GTM_PSM_F2A_RD_CH_ARU_RD_FIFO;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_PSM_F2A_STR_CH_STR_CFG_Bits B;
+} Ifx_GTM_PSM_F2A_STR_CH_STR_CFG;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_PSM_FIFO_CH_CTRL_Bits B;
+} Ifx_GTM_PSM_FIFO_CH_CTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_PSM_FIFO_CH_EIRQ_EN_Bits B;
+} Ifx_GTM_PSM_FIFO_CH_EIRQ_EN;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_PSM_FIFO_CH_END_ADDR_Bits B;
+} Ifx_GTM_PSM_FIFO_CH_END_ADDR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_PSM_FIFO_CH_FILL_LEVEL_Bits B;
+} Ifx_GTM_PSM_FIFO_CH_FILL_LEVEL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_PSM_FIFO_CH_IRQ_EN_Bits B;
+} Ifx_GTM_PSM_FIFO_CH_IRQ_EN;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_PSM_FIFO_CH_IRQ_FORCINT_Bits B;
+} Ifx_GTM_PSM_FIFO_CH_IRQ_FORCINT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_PSM_FIFO_CH_IRQ_MODE_Bits B;
+} Ifx_GTM_PSM_FIFO_CH_IRQ_MODE;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_PSM_FIFO_CH_IRQ_NOTIFY_Bits B;
+} Ifx_GTM_PSM_FIFO_CH_IRQ_NOTIFY;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_PSM_FIFO_CH_LOWER_WM_Bits B;
+} Ifx_GTM_PSM_FIFO_CH_LOWER_WM;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_PSM_FIFO_CH_RD_PTR_Bits B;
+} Ifx_GTM_PSM_FIFO_CH_RD_PTR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_PSM_FIFO_CH_START_ADDR_Bits B;
+} Ifx_GTM_PSM_FIFO_CH_START_ADDR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_PSM_FIFO_CH_STATUS_Bits B;
+} Ifx_GTM_PSM_FIFO_CH_STATUS;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_PSM_FIFO_CH_UPPER_WM_Bits B;
+} Ifx_GTM_PSM_FIFO_CH_UPPER_WM;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_PSM_FIFO_CH_WR_PTR_Bits B;
+} Ifx_GTM_PSM_FIFO_CH_WR_PTR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_RESET1_Bits B;
+} Ifx_GTM_RESET1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_RESET2_Bits B;
+} Ifx_GTM_RESET2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_RESET_CLR_Bits B;
+} Ifx_GTM_RESET_CLR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_REV_Bits B;
+} Ifx_GTM_REV;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_RST_Bits B;
+} Ifx_GTM_RST;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_SPE_CMD_Bits B;
+} Ifx_GTM_SPE_CMD;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_SPE_CTRL_STAT_Bits B;
+} Ifx_GTM_SPE_CTRL_STAT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_SPE_CTRL_STAT2_Bits B;
+} Ifx_GTM_SPE_CTRL_STAT2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_SPE_EIRQ_EN_Bits B;
+} Ifx_GTM_SPE_EIRQ_EN;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_SPE_IRQ_EN_Bits B;
+} Ifx_GTM_SPE_IRQ_EN;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_SPE_IRQ_FORCINT_Bits B;
+} Ifx_GTM_SPE_IRQ_FORCINT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_SPE_IRQ_MODE_Bits B;
+} Ifx_GTM_SPE_IRQ_MODE;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_SPE_IRQ_NOTIFY_Bits B;
+} Ifx_GTM_SPE_IRQ_NOTIFY;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_SPE_OUT_CTRL_Bits B;
+} Ifx_GTM_SPE_OUT_CTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_SPE_OUT_PAT_Bits B;
+} Ifx_GTM_SPE_OUT_PAT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_SPE_PAT_Bits B;
+} Ifx_GTM_SPE_PAT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_SPE_REV_CMP_Bits B;
+} Ifx_GTM_SPE_REV_CMP;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_SPE_REV_CNT_Bits B;
+} Ifx_GTM_SPE_REV_CNT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TBU_CH0_BASE_Bits B;
+} Ifx_GTM_TBU_CH0_BASE;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TBU_CH0_CTRL_Bits B;
+} Ifx_GTM_TBU_CH0_CTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TBU_CH1_BASE_Bits B;
+} Ifx_GTM_TBU_CH1_BASE;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TBU_CH1_CTRL_Bits B;
+} Ifx_GTM_TBU_CH1_CTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TBU_CH2_BASE_Bits B;
+} Ifx_GTM_TBU_CH2_BASE;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TBU_CH2_CTRL_Bits B;
+} Ifx_GTM_TBU_CH2_CTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TBU_CH3_BASE_Bits B;
+} Ifx_GTM_TBU_CH3_BASE;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TBU_CH3_BASE_CAPTURE_Bits B;
+} Ifx_GTM_TBU_CH3_BASE_CAPTURE;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TBU_CH3_BASE_MARK_Bits B;
+} Ifx_GTM_TBU_CH3_BASE_MARK;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TBU_CH3_CTRL_Bits B;
+} Ifx_GTM_TBU_CH3_CTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TBU_CHEN_Bits B;
+} Ifx_GTM_TBU_CHEN;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TIMINSEL_Bits B;
+} Ifx_GTM_TIMINSEL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TIM_CH_CNT_Bits B;
+} Ifx_GTM_TIM_CH_CNT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TIM_CH_CNTS_Bits B;
+} Ifx_GTM_TIM_CH_CNTS;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TIM_CH_CTRL_Bits B;
+} Ifx_GTM_TIM_CH_CTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TIM_CH_ECNT_Bits B;
+} Ifx_GTM_TIM_CH_ECNT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TIM_CH_ECTRL_Bits B;
+} Ifx_GTM_TIM_CH_ECTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TIM_CH_EIRQ_EN_Bits B;
+} Ifx_GTM_TIM_CH_EIRQ_EN;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TIM_CH_FLT_FE_Bits B;
+} Ifx_GTM_TIM_CH_FLT_FE;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TIM_CH_FLT_RE_Bits B;
+} Ifx_GTM_TIM_CH_FLT_RE;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TIM_CH_GPR0_Bits B;
+} Ifx_GTM_TIM_CH_GPR0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TIM_CH_GPR1_Bits B;
+} Ifx_GTM_TIM_CH_GPR1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TIM_CH_IRQ_EN_Bits B;
+} Ifx_GTM_TIM_CH_IRQ_EN;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TIM_CH_IRQ_FORCINT_Bits B;
+} Ifx_GTM_TIM_CH_IRQ_FORCINT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TIM_CH_IRQ_MODE_Bits B;
+} Ifx_GTM_TIM_CH_IRQ_MODE;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TIM_CH_IRQ_NOTIFY_Bits B;
+} Ifx_GTM_TIM_CH_IRQ_NOTIFY;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TIM_CH_TDUC_Bits B;
+} Ifx_GTM_TIM_CH_TDUC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TIM_CH_TDUV_Bits B;
+} Ifx_GTM_TIM_CH_TDUV;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TIM_INP_VAL_Bits B;
+} Ifx_GTM_TIM_INP_VAL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TIM_IN_SRC_Bits B;
+} Ifx_GTM_TIM_IN_SRC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TIM_RST_Bits B;
+} Ifx_GTM_TIM_RST;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TOM_CH_CM0_Bits B;
+} Ifx_GTM_TOM_CH_CM0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TOM_CH_CM1_Bits B;
+} Ifx_GTM_TOM_CH_CM1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TOM_CH_CN0_Bits B;
+} Ifx_GTM_TOM_CH_CN0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TOM_CH_CTRL_Bits B;
+} Ifx_GTM_TOM_CH_CTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TOM_CH_IRQ_EN_Bits B;
+} Ifx_GTM_TOM_CH_IRQ_EN;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TOM_CH_IRQ_FORCINT_Bits B;
+} Ifx_GTM_TOM_CH_IRQ_FORCINT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TOM_CH_IRQ_MODE_Bits B;
+} Ifx_GTM_TOM_CH_IRQ_MODE;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TOM_CH_IRQ_NOTIFY_Bits B;
+} Ifx_GTM_TOM_CH_IRQ_NOTIFY;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TOM_CH_SR0_Bits B;
+} Ifx_GTM_TOM_CH_SR0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TOM_CH_SR1_Bits B;
+} Ifx_GTM_TOM_CH_SR1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TOM_CH_STAT_Bits B;
+} Ifx_GTM_TOM_CH_STAT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TOM_TGC_ACT_TB_Bits B;
+} Ifx_GTM_TOM_TGC_ACT_TB;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TOM_TGC_ENDIS_CTRL_Bits B;
+} Ifx_GTM_TOM_TGC_ENDIS_CTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TOM_TGC_ENDIS_STAT_Bits B;
+} Ifx_GTM_TOM_TGC_ENDIS_STAT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TOM_TGC_FUPD_CTRL_Bits B;
+} Ifx_GTM_TOM_TGC_FUPD_CTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TOM_TGC_GLB_CTRL_Bits B;
+} Ifx_GTM_TOM_TGC_GLB_CTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TOM_TGC_INT_TRIG_Bits B;
+} Ifx_GTM_TOM_TGC_INT_TRIG;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TOM_TGC_OUTEN_CTRL_Bits B;
+} Ifx_GTM_TOM_TGC_OUTEN_CTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TOM_TGC_OUTEN_STAT_Bits B;
+} Ifx_GTM_TOM_TGC_OUTEN_STAT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TOUTSEL_Bits B;
+} Ifx_GTM_TOUTSEL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_GTM_TRIGOUT_Bits B;
+} Ifx_GTM_TRIGOUT;
+# 8816 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_IRQ
+{
+       Ifx_GTM_IRQ_NOTIFY NOTIFY;
+       Ifx_GTM_IRQ_EN EN;
+       Ifx_GTM_IRQ_FORCINT FORCINT;
+       Ifx_GTM_IRQ_MODE MODE;
+} Ifx_GTM_IRQ;
+# 8837 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_BRIDGE
+{
+       Ifx_GTM_BRIDGE_MODE MODE;
+       Ifx_GTM_BRIDGE_PTR1 PTR1;
+       Ifx_GTM_BRIDGE_PTR2 PTR2;
+} Ifx_GTM_BRIDGE;
+# 8857 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_AUX_IN_SRC
+{
+       Ifx_GTM_AUX_IN_SRC_TIM TIM[7];
+} Ifx_GTM_AUX_IN_SRC;
+# 8875 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_OUT
+{
+       Ifx_GTM_OUT_TOM TOM[5];
+       Ifx_UReg_8Bit reserved_14[4];
+       Ifx_GTM_OUT_ATOM ATOM0;
+       Ifx_GTM_OUT_ATOM ATOM2;
+       Ifx_GTM_OUT_ATOM ATOM4;
+       Ifx_GTM_OUT_ATOM ATOM6;
+       Ifx_GTM_OUT_ATOM ATOM8;
+       Ifx_UReg_8Bit reserved_2C[4];
+} Ifx_GTM_OUT;
+# 8900 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_TBU
+{
+       Ifx_GTM_TBU_CHEN CHEN;
+       Ifx_GTM_TBU_CH0_CTRL CH0_CTRL;
+       Ifx_GTM_TBU_CH0_BASE CH0_BASE;
+       Ifx_GTM_TBU_CH1_CTRL CH1_CTRL;
+       Ifx_GTM_TBU_CH1_BASE CH1_BASE;
+       Ifx_GTM_TBU_CH2_CTRL CH2_CTRL;
+       Ifx_GTM_TBU_CH2_BASE CH2_BASE;
+       Ifx_GTM_TBU_CH3_CTRL CH3_CTRL;
+       Ifx_GTM_TBU_CH3_BASE CH3_BASE;
+       Ifx_GTM_TBU_CH3_BASE_MARK CH3_BASE_MARK;
+       Ifx_GTM_TBU_CH3_BASE_CAPTURE CH3_BASE_CAPTURE;
+} Ifx_GTM_TBU;
+# 8928 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_MON_ACTIVITY
+{
+       Ifx_GTM_MON_ACTIVITY_R0 R0;
+       Ifx_GTM_MON_ACTIVITY_R1 R1;
+       Ifx_GTM_MON_ACTIVITY_MCS MCS[7];
+} Ifx_GTM_MON_ACTIVITY;
+# 8948 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_MON
+{
+       Ifx_GTM_MON_STATUS STATUS;
+       Ifx_GTM_MON_ACTIVITY ACTIVITY;
+       Ifx_UReg_8Bit reserved_28[12];
+} Ifx_GTM_MON;
+# 8968 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_CMP_IRQ
+{
+       Ifx_GTM_CMP_IRQ_NOTIFY NOTIFY;
+       Ifx_GTM_CMP_IRQ_EN EN;
+       Ifx_GTM_CMP_IRQ_FORCINT FORCINT;
+       Ifx_GTM_CMP_IRQ_MODE MODE;
+} Ifx_GTM_CMP_IRQ;
+# 8989 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_CMP
+{
+       Ifx_GTM_CMP_EN EN;
+       Ifx_GTM_CMP_IRQ IRQ;
+       Ifx_GTM_CMP_EIRQ_EN EIRQ_EN;
+} Ifx_GTM_CMP;
+# 9009 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_ARU_DBG
+{
+       Ifx_GTM_ARU_DBG_ACCESS0 ACCESS0;
+       Ifx_GTM_ARU_DBG_DATA0_H DATA0_H;
+       Ifx_GTM_ARU_DBG_DATA0_L DATA0_L;
+       Ifx_GTM_ARU_DBG_ACCESS1 ACCESS1;
+       Ifx_GTM_ARU_DBG_DATA1_H DATA1_H;
+       Ifx_GTM_ARU_DBG_DATA1_L DATA1_L;
+} Ifx_GTM_ARU_DBG;
+# 9032 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_ARU_IRQ
+{
+       Ifx_GTM_ARU_IRQ_NOTIFY NOTIFY;
+       Ifx_GTM_ARU_IRQ_EN EN;
+       Ifx_GTM_ARU_IRQ_FORCINT FORCINT;
+       Ifx_GTM_ARU_IRQ_MODE MODE;
+} Ifx_GTM_ARU_IRQ;
+# 9053 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_ARU
+{
+       Ifx_GTM_ARU_ACCESS ACCESS;
+       Ifx_GTM_ARU_DATA_H DATA_H;
+       Ifx_GTM_ARU_DATA_L DATA_L;
+       Ifx_GTM_ARU_DBG DBG;
+       Ifx_GTM_ARU_IRQ IRQ;
+       Ifx_GTM_ARU_CADDR_END CADDR_END;
+       Ifx_UReg_8Bit reserved_38[4];
+       Ifx_GTM_ARU_CTRL CTRL;
+       Ifx_GTM_ARU_DYN_CTRL DYN_CTRL[2];
+       Ifx_GTM_ARU_DYN_ROUTE_LOW DYN_ROUTE_LOW[2];
+       Ifx_GTM_ARU_DYN_ROUTE_HIGH DYN_ROUTE_HIGH[2];
+       Ifx_GTM_ARU_DYN_ROUTE_SR_LOW DYN_ROUTE_SR_LOW[2];
+       Ifx_GTM_ARU_DYN_ROUTE_SR_HIGH DYN_ROUTE_SR_HIGH[2];
+       Ifx_GTM_ARU_DYN_RDADDR DYN_RDADDR[2];
+       Ifx_UReg_8Bit reserved_70[12];
+       Ifx_GTM_ARU_CADDR CADDR;
+} Ifx_GTM_ARU;
+# 9086 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_CMU_CLK
+{
+       Ifx_GTM_CMU_CLK__CTRL CTRL;
+} Ifx_GTM_CMU_CLK;
+# 9104 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_CMU_ECLK
+{
+       Ifx_GTM_CMU_ECLK_NUM NUM;
+       Ifx_GTM_CMU_ECLK_DEN DEN;
+} Ifx_GTM_CMU_ECLK;
+# 9123 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_CMU_FXCLK
+{
+       Ifx_GTM_CMU_FXCLK_CTRL CTRL;
+} Ifx_GTM_CMU_FXCLK;
+# 9141 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_CMU
+{
+       Ifx_GTM_CMU_CLK_EN CLK_EN;
+       Ifx_GTM_CMU_GCLK_NUM GCLK_NUM;
+       Ifx_GTM_CMU_GCLK_DEN GCLK_DEN;
+       Ifx_GTM_CMU_CLK CLK[8];
+       Ifx_GTM_CMU_ECLK ECLK[3];
+       Ifx_GTM_CMU_FXCLK FXCLK;
+       Ifx_GTM_CMU_GLB_CTRL GLB_CTRL;
+       Ifx_GTM_CMU_CLK_CTRL CLK_CTRL;
+} Ifx_GTM_CMU;
+# 9166 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_BRC_SRC
+{
+       Ifx_GTM_BRC_SRC_ADDR ADDR;
+       Ifx_GTM_BRC_SRC_DEST DEST;
+} Ifx_GTM_BRC_SRC;
+# 9185 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_BRC_IRQ
+{
+       Ifx_GTM_BRC_IRQ_NOTIFY NOTIFY;
+       Ifx_GTM_BRC_IRQ_EN EN;
+       Ifx_GTM_BRC_IRQ_FORCINT FORCINT;
+       Ifx_GTM_BRC_IRQ_MODE MODE;
+} Ifx_GTM_BRC_IRQ;
+# 9206 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_BRC
+{
+       Ifx_GTM_BRC_SRC SRC[12];
+       Ifx_GTM_BRC_IRQ IRQ;
+       Ifx_GTM_BRC_RST RST;
+       Ifx_GTM_BRC_EIRQ_EN EIRQ_EN;
+} Ifx_GTM_BRC;
+# 9227 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_ICM_IRQG
+{
+       Ifx_GTM_ICM_IRQG_R0 R0;
+       Ifx_GTM_ICM_IRQG_R1 R1;
+       Ifx_GTM_ICM_IRQG_R2 R2;
+       Ifx_GTM_ICM_IRQG_R3 R3;
+       Ifx_GTM_ICM_IRQG_R4 R4;
+       Ifx_GTM_ICM_IRQG_R5 R5;
+       Ifx_GTM_ICM_IRQG_R6 R6;
+       Ifx_GTM_ICM_IRQG_R7 R7;
+       Ifx_GTM_ICM_IRQG_R8 R8;
+       Ifx_GTM_ICM_IRQG_R9 R9;
+       Ifx_GTM_ICM_IRQG_R10 R10;
+       Ifx_GTM_ICM_IRQG_R11 R11;
+       Ifx_GTM_ICM_IRQG_MEI MEI;
+       Ifx_GTM_ICM_IRQG_CEI0 CEI0;
+       Ifx_GTM_ICM_IRQG_CEI1 CEI1;
+       Ifx_GTM_ICM_IRQG_CEI2 CEI2;
+       Ifx_GTM_ICM_IRQG_CEI3 CEI3;
+       Ifx_GTM_ICM_IRQG_CEI4 CEI4;
+       Ifx_UReg_8Bit reserved_48[28];
+       Ifx_GTM_ICM_IRQG_CEI_MCS CEI_MCS[7];
+       Ifx_UReg_8Bit reserved_80[36];
+       Ifx_GTM_ICM_IRQG_CEI_PSM CEI_PSM[1];
+       Ifx_UReg_8Bit reserved_A8[12];
+       Ifx_GTM_ICM_IRQG_CEI_SPE CEI_SPE;
+       Ifx_UReg_8Bit reserved_B8[88];
+       Ifx_GTM_ICM_IRQG_MEI_CLS MEI_CLS[2];
+       Ifx_UReg_8Bit reserved_118[8];
+       Ifx_GTM_ICM_IRQG_CI_MCS CI_MCS[7];
+       Ifx_UReg_8Bit reserved_13C[36];
+       Ifx_GTM_ICM_IRQG_CI_PSM CI_PSM[1];
+       Ifx_UReg_8Bit reserved_164[12];
+       Ifx_GTM_ICM_IRQG_CI_SPE CI_SPE;
+       Ifx_UReg_8Bit reserved_174[28];
+       Ifx_GTM_ICM_IRQG_CI_ATOM CI_ATOM[3];
+       Ifx_UReg_8Bit reserved_19C[4];
+       Ifx_GTM_ICM_IRQG_CI_TOM CI_TOM[3];
+} Ifx_GTM_ICM_IRQG;
+# 9280 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_ICM
+{
+       Ifx_GTM_ICM_IRQG IRQG;
+} Ifx_GTM_ICM;
+# 9298 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_SPE_IRQ
+{
+       Ifx_GTM_SPE_IRQ_NOTIFY NOTIFY;
+       Ifx_GTM_SPE_IRQ_EN EN;
+       Ifx_GTM_SPE_IRQ_FORCINT FORCINT;
+       Ifx_GTM_SPE_IRQ_MODE MODE;
+} Ifx_GTM_SPE_IRQ;
+# 9319 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_SPE
+{
+       Ifx_GTM_SPE_CTRL_STAT CTRL_STAT;
+       Ifx_GTM_SPE_PAT PAT;
+       Ifx_GTM_SPE_OUT_PAT OUT_PAT[8];
+       Ifx_GTM_SPE_OUT_CTRL OUT_CTRL;
+       Ifx_GTM_SPE_IRQ IRQ;
+       Ifx_GTM_SPE_EIRQ_EN EIRQ_EN;
+       Ifx_GTM_SPE_REV_CNT REV_CNT;
+       Ifx_GTM_SPE_REV_CMP REV_CMP;
+       Ifx_GTM_SPE_CTRL_STAT2 CTRL_STAT2;
+       Ifx_GTM_SPE_CMD CMD;
+       Ifx_UReg_8Bit reserved_50[48];
+} Ifx_GTM_SPE;
+# 9347 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_TIM_CH_IRQ
+{
+       Ifx_GTM_TIM_CH_IRQ_NOTIFY NOTIFY;
+       Ifx_GTM_TIM_CH_IRQ_EN EN;
+       Ifx_GTM_TIM_CH_IRQ_FORCINT FORCINT;
+       Ifx_GTM_TIM_CH_IRQ_MODE MODE;
+} Ifx_GTM_TIM_CH_IRQ;
+# 9368 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_TIM_CH
+{
+       Ifx_GTM_TIM_CH_GPR0 GPR0;
+       Ifx_GTM_TIM_CH_GPR1 GPR1;
+       Ifx_GTM_TIM_CH_CNT CNT;
+       Ifx_GTM_TIM_CH_ECNT ECNT;
+       Ifx_GTM_TIM_CH_CNTS CNTS;
+       Ifx_GTM_TIM_CH_TDUC TDUC;
+       Ifx_GTM_TIM_CH_TDUV TDUV;
+       Ifx_GTM_TIM_CH_FLT_RE FLT_RE;
+       Ifx_GTM_TIM_CH_FLT_FE FLT_FE;
+       Ifx_GTM_TIM_CH_CTRL CTRL;
+       Ifx_GTM_TIM_CH_ECTRL ECTRL;
+       Ifx_GTM_TIM_CH_IRQ IRQ;
+       Ifx_GTM_TIM_CH_EIRQ_EN EIRQ_EN;
+} Ifx_GTM_TIM_CH;
+# 9398 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_TIM
+{
+       Ifx_GTM_TIM_CH CH0;
+       Ifx_UReg_8Bit reserved_40[52];
+       Ifx_GTM_TIM_INP_VAL INP_VAL;
+       Ifx_GTM_TIM_IN_SRC IN_SRC;
+       Ifx_GTM_TIM_RST RST;
+       Ifx_GTM_TIM_CH CH1;
+       Ifx_UReg_8Bit reserved_C0[64];
+       Ifx_GTM_TIM_CH CH2;
+       Ifx_UReg_8Bit reserved_140[64];
+       Ifx_GTM_TIM_CH CH3;
+       Ifx_UReg_8Bit reserved_1C0[64];
+       Ifx_GTM_TIM_CH CH4;
+       Ifx_UReg_8Bit reserved_240[64];
+       Ifx_GTM_TIM_CH CH5;
+       Ifx_UReg_8Bit reserved_2C0[64];
+       Ifx_GTM_TIM_CH CH6;
+       Ifx_UReg_8Bit reserved_340[64];
+       Ifx_GTM_TIM_CH CH7;
+       Ifx_UReg_8Bit reserved_3C0[1088];
+} Ifx_GTM_TIM;
+# 9434 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_TOM_CH_IRQ
+{
+       Ifx_GTM_TOM_CH_IRQ_NOTIFY NOTIFY;
+       Ifx_GTM_TOM_CH_IRQ_EN EN;
+       Ifx_GTM_TOM_CH_IRQ_FORCINT FORCINT;
+       Ifx_GTM_TOM_CH_IRQ_MODE MODE;
+} Ifx_GTM_TOM_CH_IRQ;
+# 9455 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_TOM_CH
+{
+       Ifx_GTM_TOM_CH_CTRL CTRL;
+       Ifx_GTM_TOM_CH_SR0 SR0;
+       Ifx_GTM_TOM_CH_SR1 SR1;
+       Ifx_GTM_TOM_CH_CM0 CM0;
+       Ifx_GTM_TOM_CH_CM1 CM1;
+       Ifx_GTM_TOM_CH_CN0 CN0;
+       Ifx_GTM_TOM_CH_STAT STAT;
+       Ifx_GTM_TOM_CH_IRQ IRQ;
+} Ifx_GTM_TOM_CH;
+# 9480 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_TOM
+{
+       Ifx_GTM_TOM_CH CH0;
+       Ifx_UReg_8Bit reserved_2C[4];
+       Ifx_GTM_TOM_TGC_GLB_CTRL TGC0_GLB_CTRL;
+       Ifx_GTM_TOM_TGC_ACT_TB TGC0_ACT_TB;
+       Ifx_GTM_TOM_TGC_FUPD_CTRL TGC0_FUPD_CTRL;
+       Ifx_GTM_TOM_TGC_INT_TRIG TGC0_INT_TRIG;
+       Ifx_GTM_TOM_CH CH1;
+       Ifx_UReg_8Bit reserved_6C[4];
+       Ifx_GTM_TOM_TGC_ENDIS_CTRL TGC0_ENDIS_CTRL;
+       Ifx_GTM_TOM_TGC_ENDIS_STAT TGC0_ENDIS_STAT;
+       Ifx_GTM_TOM_TGC_OUTEN_CTRL TGC0_OUTEN_CTRL;
+       Ifx_GTM_TOM_TGC_OUTEN_STAT TGC0_OUTEN_STAT;
+       Ifx_GTM_TOM_CH CH2;
+       Ifx_UReg_8Bit reserved_AC[20];
+       Ifx_GTM_TOM_CH CH3;
+       Ifx_UReg_8Bit reserved_EC[20];
+       Ifx_GTM_TOM_CH CH4;
+       Ifx_UReg_8Bit reserved_12C[20];
+       Ifx_GTM_TOM_CH CH5;
+       Ifx_UReg_8Bit reserved_16C[20];
+       Ifx_GTM_TOM_CH CH6;
+       Ifx_UReg_8Bit reserved_1AC[20];
+       Ifx_GTM_TOM_CH CH7;
+       Ifx_UReg_8Bit reserved_1EC[20];
+       Ifx_GTM_TOM_CH CH8;
+       Ifx_UReg_8Bit reserved_22C[4];
+       Ifx_GTM_TOM_TGC_GLB_CTRL TGC1_GLB_CTRL;
+       Ifx_GTM_TOM_TGC_ACT_TB TGC1_ACT_TB;
+       Ifx_GTM_TOM_TGC_FUPD_CTRL TGC1_FUPD_CTRL;
+       Ifx_GTM_TOM_TGC_INT_TRIG TGC1_INT_TRIG;
+       Ifx_GTM_TOM_CH CH9;
+       Ifx_UReg_8Bit reserved_26C[4];
+       Ifx_GTM_TOM_TGC_ENDIS_CTRL TGC1_ENDIS_CTRL;
+       Ifx_GTM_TOM_TGC_ENDIS_STAT TGC1_ENDIS_STAT;
+       Ifx_GTM_TOM_TGC_OUTEN_CTRL TGC1_OUTEN_CTRL;
+       Ifx_GTM_TOM_TGC_OUTEN_STAT TGC1_OUTEN_STAT;
+       Ifx_GTM_TOM_CH CH10;
+       Ifx_UReg_8Bit reserved_2AC[20];
+       Ifx_GTM_TOM_CH CH11;
+       Ifx_UReg_8Bit reserved_2EC[20];
+       Ifx_GTM_TOM_CH CH12;
+       Ifx_UReg_8Bit reserved_32C[20];
+       Ifx_GTM_TOM_CH CH13;
+       Ifx_UReg_8Bit reserved_36C[20];
+       Ifx_GTM_TOM_CH CH14;
+       Ifx_UReg_8Bit reserved_3AC[20];
+       Ifx_GTM_TOM_CH CH15;
+       Ifx_UReg_8Bit reserved_3EC[1044];
+} Ifx_GTM_TOM;
+# 9545 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_PSM_F2A_RD_CH
+{
+       Ifx_GTM_PSM_F2A_RD_CH_ARU_RD_FIFO ARU_RD_FIFO;
+} Ifx_GTM_PSM_F2A_RD_CH;
+# 9563 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_PSM_F2A_STR_CH
+{
+       Ifx_GTM_PSM_F2A_STR_CH_STR_CFG STR_CFG;
+} Ifx_GTM_PSM_F2A_STR_CH;
+# 9581 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_PSM_F2A
+{
+       Ifx_GTM_PSM_F2A_RD_CH RD_CH[8];
+       Ifx_GTM_PSM_F2A_STR_CH STR_CH[8];
+       Ifx_GTM_PSM_F2A_ENABLE ENABLE;
+       Ifx_GTM_PSM_F2A_F2A_CTRL F2A_CTRL;
+} Ifx_GTM_PSM_F2A;
+# 9602 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_PSM_AFD_CH
+{
+       Ifx_GTM_PSM_AFD_CH_BUF_ACC BUF_ACC;
+       Ifx_UReg_8Bit reserved_4[12];
+} Ifx_GTM_PSM_AFD_CH;
+# 9621 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_PSM_AFD
+{
+       Ifx_GTM_PSM_AFD_CH CH[8];
+} Ifx_GTM_PSM_AFD;
+# 9639 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_PSM_FIFO_CH_IRQ
+{
+       Ifx_GTM_PSM_FIFO_CH_IRQ_NOTIFY NOTIFY;
+       Ifx_GTM_PSM_FIFO_CH_IRQ_EN EN;
+       Ifx_GTM_PSM_FIFO_CH_IRQ_FORCINT FORCINT;
+       Ifx_GTM_PSM_FIFO_CH_IRQ_MODE MODE;
+} Ifx_GTM_PSM_FIFO_CH_IRQ;
+# 9660 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_PSM_FIFO_CH
+{
+       Ifx_GTM_PSM_FIFO_CH_CTRL CTRL;
+       Ifx_GTM_PSM_FIFO_CH_END_ADDR END_ADDR;
+       Ifx_GTM_PSM_FIFO_CH_START_ADDR START_ADDR;
+       Ifx_GTM_PSM_FIFO_CH_UPPER_WM UPPER_WM;
+       Ifx_GTM_PSM_FIFO_CH_LOWER_WM LOWER_WM;
+       Ifx_GTM_PSM_FIFO_CH_STATUS STATUS;
+       Ifx_GTM_PSM_FIFO_CH_FILL_LEVEL FILL_LEVEL;
+       Ifx_GTM_PSM_FIFO_CH_WR_PTR WR_PTR;
+       Ifx_GTM_PSM_FIFO_CH_RD_PTR RD_PTR;
+       Ifx_GTM_PSM_FIFO_CH_IRQ IRQ;
+       Ifx_GTM_PSM_FIFO_CH_EIRQ_EN EIRQ_EN;
+       Ifx_UReg_8Bit reserved_38[8];
+} Ifx_GTM_PSM_FIFO_CH;
+# 9689 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_PSM_FIFO
+{
+       Ifx_GTM_PSM_FIFO_CH CH[8];
+} Ifx_GTM_PSM_FIFO;
+# 9707 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_PSM
+{
+       Ifx_GTM_PSM_F2A F2A;
+       Ifx_UReg_8Bit reserved_48[56];
+       Ifx_GTM_PSM_AFD AFD;
+       Ifx_UReg_8Bit reserved_100[768];
+       Ifx_GTM_PSM_FIFO FIFO;
+       Ifx_UReg_8Bit reserved_600[14848];
+} Ifx_GTM_PSM;
+# 9731 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_DPLL_IRQ
+{
+       Ifx_GTM_DPLL_IRQ_NOTIFY NOTIFY;
+       Ifx_GTM_DPLL_IRQ_EN EN;
+       Ifx_GTM_DPLL_IRQ_FORCINT FORCINT;
+       Ifx_GTM_DPLL_IRQ_MODE MODE;
+} Ifx_GTM_DPLL_IRQ;
+# 9752 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_DPLL
+{
+       Ifx_GTM_DPLL_CTRL_0 CTRL_0;
+       Ifx_GTM_DPLL_CTRL_1 CTRL_1;
+       Ifx_GTM_DPLL_CTRL_2 CTRL_2;
+       Ifx_GTM_DPLL_CTRL_3 CTRL_3;
+       Ifx_GTM_DPLL_CTRL_4 CTRL_4;
+       Ifx_GTM_DPLL_CTRL_5 CTRL_5;
+       Ifx_GTM_DPLL_ACT_STA ACT_STA;
+       Ifx_GTM_DPLL_OSW OSW;
+       Ifx_GTM_DPLL_AOSV_2 AOSV_2;
+       Ifx_GTM_DPLL_APT APT;
+       Ifx_GTM_DPLL_APS APS;
+       Ifx_GTM_DPLL_APT_2C APT_2C;
+       Ifx_GTM_DPLL_APS_1C3 APS_1C3;
+       Ifx_GTM_DPLL_NUTC NUTC;
+       Ifx_GTM_DPLL_NUSC NUSC;
+       Ifx_GTM_DPLL_NTI_CNT NTI_CNT;
+       Ifx_GTM_DPLL_IRQ IRQ;
+       Ifx_GTM_DPLL_EIRQ_EN EIRQ_EN;
+       Ifx_UReg_8Bit reserved_54[92];
+       Ifx_GTM_DPLL_INC_CNT1 INC_CNT1;
+       Ifx_GTM_DPLL_INC_CNT2 INC_CNT2;
+       Ifx_GTM_DPLL_APT_SYNC APT_SYNC;
+       Ifx_GTM_DPLL_APS_SYNC APS_SYNC;
+       Ifx_GTM_DPLL_TBU_TS0_T TBU_TS0_T;
+       Ifx_GTM_DPLL_TBU_TS0_S TBU_TS0_S;
+       Ifx_GTM_DPLL_ADD_IN_LD1 ADD_IN_LD1;
+       Ifx_GTM_DPLL_ADD_IN_LD2 ADD_IN_LD2;
+       Ifx_UReg_8Bit reserved_D0[44];
+       Ifx_GTM_DPLL_STATUS STATUS;
+       Ifx_GTM_DPLL_ID_PMTR ID_PMTR[32];
+       Ifx_UReg_8Bit reserved_180[96];
+       Ifx_GTM_DPLL_CTRL_0_SHADOW_TRIGGER CTRL_0_SHADOW_TRIGGER;
+       Ifx_GTM_DPLL_CTRL_0_SHADOW_STATE CTRL_0_SHADOW_STATE;
+       Ifx_GTM_DPLL_CTRL_1_SHADOW_TRIGGER CTRL_1_SHADOW_TRIGGER;
+       Ifx_GTM_DPLL_CTRL_1_SHADOW_STATE CTRL_1_SHADOW_STATE;
+       Ifx_UReg_8Bit reserved_1F0[12];
+       Ifx_GTM_DPLL_RAM_INI RAM_INI;
+       Ifx_GTM_DPLL_PSA PSA[32];
+       Ifx_GTM_DPLL_DLA DLA[32];
+       Ifx_GTM_DPLL_NA NA[32];
+       Ifx_GTM_DPLL_DTA DTA[32];
+       Ifx_GTM_DPLL_TS_T TS_T;
+       Ifx_GTM_DPLL_TS_T_OLD TS_T_OLD;
+       Ifx_GTM_DPLL_FTV_T FTV_T;
+       Ifx_UReg_8Bit reserved_40C[4];
+       Ifx_GTM_DPLL_TS_S TS_S;
+       Ifx_GTM_DPLL_TS_S_OLD TS_S_OLD;
+       Ifx_GTM_DPLL_FTV_S FTV_S;
+       Ifx_UReg_8Bit reserved_41C[4];
+       Ifx_GTM_DPLL_THMI THMI;
+       Ifx_GTM_DPLL_THMA THMA;
+       Ifx_GTM_DPLL_THVAL THVAL;
+       Ifx_UReg_8Bit reserved_42C[4];
+       Ifx_GTM_DPLL_TOV TOV;
+       Ifx_GTM_DPLL_TOV_S TOV_S;
+       Ifx_GTM_DPLL_ADD_IN_CAL1 ADD_IN_CAL1;
+       Ifx_GTM_DPLL_ADD_IN_CAL2 ADD_IN_CAL2;
+       Ifx_GTM_DPLL_MPVAL1 MPVAL1;
+       Ifx_GTM_DPLL_MPVAL2 MPVAL2;
+       Ifx_GTM_DPLL_NMB_T_TAR NMB_T_TAR;
+       Ifx_GTM_DPLL_NMB_T_TAR_OLD NMB_T_TAR_OLD;
+       Ifx_GTM_DPLL_NMB_S_TAR NMB_S_TAR;
+       Ifx_GTM_DPLL_NMB_S_TAR_OLD NMB_S_TAR_OLD;
+       Ifx_UReg_8Bit reserved_458[8];
+       Ifx_GTM_DPLL_RCDT_TX RCDT_TX;
+       Ifx_GTM_DPLL_RCDT_SX RCDT_SX;
+       Ifx_GTM_DPLL_RCDT_TX_NOM RCDT_TX_NOM;
+       Ifx_GTM_DPLL_RCDT_SX_NOM RCDT_SX_NOM;
+       Ifx_GTM_DPLL_RDT_T_ACT RDT_T_ACT;
+       Ifx_GTM_DPLL_RDT_S_ACT RDT_S_ACT;
+       Ifx_GTM_DPLL_DT_T_ACT DT_T_ACT;
+       Ifx_GTM_DPLL_DT_S_ACT DT_S_ACT;
+       Ifx_GTM_DPLL_EDT_T EDT_T;
+       Ifx_GTM_DPLL_MEDT_T MEDT_T;
+       Ifx_GTM_DPLL_EDT_S EDT_S;
+       Ifx_GTM_DPLL_MEDT_S MEDT_S;
+       Ifx_GTM_DPLL_CDT_TX CDT_TX;
+       Ifx_GTM_DPLL_CDT_SX CDT_SX;
+       Ifx_GTM_DPLL_CDT_TX_NOM CDT_TX_NOM;
+       Ifx_GTM_DPLL_CDT_SX_NOM CDT_SX_NOM;
+       Ifx_GTM_DPLL_TLR TLR;
+       Ifx_GTM_DPLL_SLR SLR;
+       Ifx_UReg_8Bit reserved_4A8[88];
+       Ifx_GTM_DPLL_PDT PDT[32];
+       Ifx_UReg_8Bit reserved_580[64];
+       Ifx_GTM_DPLL_MLS1 MLS1;
+       Ifx_GTM_DPLL_MLS2 MLS2;
+       Ifx_GTM_DPLL_CNT_NUM_1 CNT_NUM_1;
+       Ifx_GTM_DPLL_CNT_NUM_2 CNT_NUM_2;
+       Ifx_GTM_DPLL_PVT PVT;
+       Ifx_UReg_8Bit reserved_5D4[12];
+       Ifx_GTM_DPLL_PSTC PSTC;
+       Ifx_GTM_DPLL_PSSC PSSC;
+       Ifx_GTM_DPLL_PSTM PSTM;
+       Ifx_GTM_DPLL_PSTM_OLD PSTM_OLD;
+       Ifx_GTM_DPLL_PSSM PSSM;
+       Ifx_GTM_DPLL_PSSM_OLD PSSM_OLD;
+       Ifx_GTM_DPLL_NMB_T NMB_T;
+       Ifx_GTM_DPLL_NMB_S NMB_S;
+       Ifx_GTM_DPLL_RDT_S RDT_S[64];
+       Ifx_GTM_DPLL_TSF_S TSF_S[64];
+       Ifx_GTM_DPLL_ADT_S ADT_S[64];
+       Ifx_GTM_DPLL_DT_S DT_S[64];
+       Ifx_UReg_8Bit reserved_A00[1024];
+       Ifx_GTM_DPLL_TSAC TSAC[32];
+       Ifx_GTM_DPLL_PSAC PSAC[32];
+       Ifx_GTM_DPLL_ACB ACB[8];
+       Ifx_GTM_DPLL_CTRL_11 CTRL_11;
+       Ifx_GTM_DPLL_THVAL2 THVAL2;
+       Ifx_GTM_DPLL_TIDEL TIDEL;
+       Ifx_GTM_DPLL_SIDEL SIDEL;
+       Ifx_GTM_DPLL_APS_SYNC_EXT APS_SYNC_EXT;
+       Ifx_GTM_DPLL_CTRL_EXT CTRL_EXT;
+       Ifx_GTM_DPLL_APS_EXT APS_EXT;
+       Ifx_GTM_DPLL_APS_1C3_EXT APS_1C3_EXT;
+       Ifx_GTM_DPLL_STA STA;
+       Ifx_GTM_DPLL_INCF1_OFFSET INCF1_OFFSET;
+       Ifx_GTM_DPLL_INCF2_OFFSET INCF2_OFFSET;
+       Ifx_GTM_DPLL_DT_T_START DT_T_START;
+       Ifx_GTM_DPLL_DT_S_START DT_S_START;
+       Ifx_GTM_DPLL_STA_MASK STA_MASK;
+       Ifx_GTM_DPLL_STA_FLAG STA_FLAG;
+       Ifx_GTM_DPLL_INC_CNT1_MASK INC_CNT1_MASK;
+       Ifx_GTM_DPLL_INC_CNT2_MASK INC_CNT2_MASK;
+       Ifx_GTM_DPLL_NUSC_EXT1 NUSC_EXT1;
+       Ifx_GTM_DPLL_NUSC_EXT2 NUSC_EXT2;
+       Ifx_GTM_DPLL_CTN_MIN CTN_MIN;
+       Ifx_GTM_DPLL_CTN_MAX CTN_MAX;
+       Ifx_GTM_DPLL_CSN_MIN CSN_MIN;
+       Ifx_GTM_DPLL_CSN_MAX CSN_MAX;
+       Ifx_UReg_8Bit reserved_F7C[12420];
+       Ifx_UReg_32Bit RR2[4096];
+} Ifx_GTM_DPLL;
+# 9901 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_MCS_RAM
+{
+       Ifx_UReg_32Bit MEM[2048];
+       Ifx_UReg_32Bit MEM1[1024];
+} Ifx_GTM_MCS_RAM;
+# 9920 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_OCDS
+{
+       Ifx_GTM_OCDS_OTBU0T OTBU0T;
+       Ifx_GTM_OCDS_OTBU1T OTBU1T;
+       Ifx_GTM_OCDS_OTBU2T OTBU2T;
+       Ifx_GTM_OCDS_OTBU3T OTBU3T;
+       Ifx_GTM_OCDS_OTSS OTSS;
+       Ifx_GTM_OCDS_OTSC0 OTSC0;
+       Ifx_GTM_OCDS_OTSC1 OTSC1;
+       Ifx_GTM_OCDS_ODA ODA;
+       Ifx_GTM_OCDS_OCS OCS;
+} Ifx_GTM_OCDS;
+# 9946 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_DSADC
+{
+       Ifx_GTM_DSADC_OUTSEL0 OUTSEL0;
+       Ifx_GTM_DSADC_OUTSEL1 OUTSEL1;
+} Ifx_GTM_DSADC;
+# 9965 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_ADCTRIG
+{
+       Ifx_GTM_ADCTRIG_OUT0 OUT0;
+       Ifx_GTM_ADCTRIG_OUT1 OUT1;
+} Ifx_GTM_ADCTRIG;
+# 9984 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_MSC_SET
+{
+       Ifx_GTM_MSC_SET_CON0 CON0;
+       Ifx_GTM_MSC_SET_CON1 CON1;
+       Ifx_GTM_MSC_SET_CON2 CON2;
+       Ifx_GTM_MSC_SET_CON3 CON3;
+} Ifx_GTM_MSC_SET;
+# 10005 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_MSC_MSCQ
+{
+       Ifx_GTM_MSC_MSCQ_INLCON INLCON;
+       Ifx_GTM_MSC_MSCQ_INHCON INHCON;
+       Ifx_GTM_MSC_MSCQ_INLEXTCON INLEXTCON;
+} Ifx_GTM_MSC_MSCQ;
+# 10025 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_MSC
+{
+       Ifx_GTM_MSC_SET SET[7];
+       Ifx_UReg_8Bit reserved_70[32];
+       Ifx_GTM_MSC_MSCQ MSCQ[3];
+} Ifx_GTM_MSC;
+# 10045 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_CCM_ARP
+{
+       Ifx_GTM_CCM_ARP_CTRL CTRL;
+       Ifx_GTM_CCM_ARP_PROT PROT;
+} Ifx_GTM_CCM_ARP;
+# 10064 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_CCM
+{
+       Ifx_GTM_CCM_ARP ARP[10];
+       Ifx_UReg_8Bit reserved_50[392];
+       Ifx_GTM_CCM_AEIM_STA AEIM_STA;
+       Ifx_GTM_CCM_HW_CONF HW_CONF;
+       Ifx_GTM_CCM_TIM_AUX_IN_SRC TIM_AUX_IN_SRC;
+       Ifx_GTM_CCM_EXT_CAP_EN EXT_CAP_EN;
+       Ifx_GTM_CCM_TOM_OUT TOM_OUT;
+       Ifx_GTM_CCM_ATOM_OUT ATOM_OUT;
+       Ifx_GTM_CCM_CMU_CLK_CFG CMU_CLK_CFG;
+       Ifx_GTM_CCM_CMU_FXCLK_CFG CMU_FXCLK_CFG;
+       Ifx_GTM_CCM_CFG CFG;
+       Ifx_GTM_CCM_PROT PROT;
+} Ifx_GTM_CCM;
+# 10093 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_CDTM_DTM_CH
+{
+       Ifx_GTM_CDTM_DTM_CH_DTV DTV;
+} Ifx_GTM_CDTM_DTM_CH;
+# 10111 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_CDTM_DTM
+{
+       Ifx_GTM_CDTM_DTM_CTRL CTRL;
+       Ifx_GTM_CDTM_DTM_CH_CTRL1 CH_CTRL1;
+       Ifx_GTM_CDTM_DTM_CH_CTRL2 CH_CTRL2;
+       Ifx_GTM_CDTM_DTM_CH_CTRL2_SR CH_CTRL2_SR;
+       Ifx_GTM_CDTM_DTM_PS_CTRL PS_CTRL;
+       Ifx_GTM_CDTM_DTM_CH CH[4];
+       Ifx_GTM_CDTM_DTM_CH_SR CH_SR;
+       Ifx_GTM_CDTM_DTM_CH_CTRL3 CH_CTRL3;
+       Ifx_UReg_8Bit reserved_2C[20];
+} Ifx_GTM_CDTM_DTM;
+# 10137 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_CDTM
+{
+       Ifx_GTM_CDTM_DTM DTM[6];
+       Ifx_UReg_8Bit reserved_180[640];
+} Ifx_GTM_CDTM;
+# 10156 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_ATOM_CH_IRQ
+{
+       Ifx_GTM_ATOM_CH_IRQ_NOTIFY NOTIFY;
+       Ifx_GTM_ATOM_CH_IRQ_EN EN;
+       Ifx_GTM_ATOM_CH_IRQ_FORCINT FORCINT;
+       Ifx_GTM_ATOM_CH_IRQ_MODE MODE;
+} Ifx_GTM_ATOM_CH_IRQ;
+# 10177 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_ATOM_CH
+{
+       Ifx_GTM_ATOM_CH_RDADDR RDADDR;
+       union
+       {
+            Ifx_GTM_ATOM_CH_CTRL CTRL;
+            Ifx_GTM_ATOM_CH_SOMB SOMB;
+            Ifx_GTM_ATOM_CH_SOMC SOMC;
+            Ifx_GTM_ATOM_CH_SOMI SOMI;
+            Ifx_GTM_ATOM_CH_SOMP SOMP;
+            Ifx_GTM_ATOM_CH_SOMS SOMS;
+       };
+       Ifx_GTM_ATOM_CH_SR0 SR0;
+       Ifx_GTM_ATOM_CH_SR1 SR1;
+       Ifx_GTM_ATOM_CH_CM0 CM0;
+       Ifx_GTM_ATOM_CH_CM1 CM1;
+       Ifx_GTM_ATOM_CH_CN0 CN0;
+       Ifx_GTM_ATOM_CH_STAT STAT;
+       Ifx_GTM_ATOM_CH_IRQ IRQ;
+} Ifx_GTM_ATOM_CH;
+# 10211 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_ATOM_AGC
+{
+       Ifx_GTM_ATOM_AGC_GLB_CTRL GLB_CTRL;
+       Ifx_GTM_ATOM_AGC_ENDIS_CTRL ENDIS_CTRL;
+       Ifx_GTM_ATOM_AGC_ENDIS_STAT ENDIS_STAT;
+       Ifx_GTM_ATOM_AGC_ACT_TB ACT_TB;
+       Ifx_GTM_ATOM_AGC_OUTEN_CTRL OUTEN_CTRL;
+       Ifx_GTM_ATOM_AGC_OUTEN_STAT OUTEN_STAT;
+       Ifx_GTM_ATOM_AGC_FUPD_CTRL FUPD_CTRL;
+       Ifx_GTM_ATOM_AGC_INT_TRIG INT_TRIG;
+       Ifx_UReg_8Bit reserved_20[32];
+} Ifx_GTM_ATOM_AGC;
+# 10237 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_ATOM
+{
+       Ifx_GTM_ATOM_CH CH0;
+       Ifx_UReg_8Bit reserved_30[16];
+       Ifx_GTM_ATOM_AGC AGC;
+       Ifx_GTM_ATOM_CH CH1;
+       Ifx_UReg_8Bit reserved_B0[80];
+       Ifx_GTM_ATOM_CH CH2;
+       Ifx_UReg_8Bit reserved_130[80];
+       Ifx_GTM_ATOM_CH CH3;
+       Ifx_UReg_8Bit reserved_1B0[80];
+       Ifx_GTM_ATOM_CH CH4;
+       Ifx_UReg_8Bit reserved_230[80];
+       Ifx_GTM_ATOM_CH CH5;
+       Ifx_UReg_8Bit reserved_2B0[80];
+       Ifx_GTM_ATOM_CH CH6;
+       Ifx_UReg_8Bit reserved_330[80];
+       Ifx_GTM_ATOM_CH CH7;
+       Ifx_UReg_8Bit reserved_3B0[1104];
+} Ifx_GTM_ATOM;
+# 10271 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_MCS_CH_IRQ
+{
+       Ifx_GTM_MCS_CH_IRQ_NOTIFY NOTIFY;
+       Ifx_GTM_MCS_CH_IRQ_EN EN;
+       Ifx_GTM_MCS_CH_IRQ_FORCINT FORCINT;
+       Ifx_GTM_MCS_CH_IRQ_MODE MODE;
+} Ifx_GTM_MCS_CH_IRQ;
+# 10292 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_MCS_CH
+{
+       Ifx_GTM_MCS_CH_R R[8];
+       Ifx_GTM_MCS_CH_CTRL CTRL;
+       Ifx_GTM_MCS_CH_ACB ACB;
+       Ifx_GTM_MCS_CH_CTRG CTRG;
+       Ifx_GTM_MCS_CH_STRG STRG;
+       Ifx_UReg_8Bit reserved_30[12];
+       Ifx_GTM_MCS_CH_MHB MHB;
+       Ifx_GTM_MCS_CH_PC PC;
+       Ifx_GTM_MCS_CH_IRQ IRQ;
+       Ifx_GTM_MCS_CH_EIRQ_EN EIRQ_EN;
+} Ifx_GTM_MCS_CH;
+# 10319 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM_MCS
+{
+       Ifx_GTM_MCS_CH CH0;
+       Ifx_UReg_8Bit reserved_58[8];
+       Ifx_GTM_MCS_REG_PROT REG_PROT;
+       Ifx_GTM_MCS_CTRL_STAT CTRL_STAT;
+       Ifx_GTM_MCS_RESET RESET;
+       Ifx_GTM_MCS_CAT CAT;
+       Ifx_GTM_MCS_CWT CWT;
+       Ifx_UReg_8Bit reserved_74[8];
+       Ifx_GTM_MCS_ERR ERR;
+       Ifx_GTM_MCS_CH CH1;
+       Ifx_UReg_8Bit reserved_D8[40];
+       Ifx_GTM_MCS_CH CH2;
+       Ifx_UReg_8Bit reserved_158[40];
+       Ifx_GTM_MCS_CH CH3;
+       Ifx_UReg_8Bit reserved_1D8[40];
+       Ifx_GTM_MCS_CH CH4;
+       Ifx_UReg_8Bit reserved_258[40];
+       Ifx_GTM_MCS_CH CH5;
+       Ifx_UReg_8Bit reserved_2D8[40];
+       Ifx_GTM_MCS_CH CH6;
+       Ifx_UReg_8Bit reserved_358[40];
+       Ifx_GTM_MCS_CH CH7;
+       Ifx_UReg_8Bit reserved_3D8[3112];
+} Ifx_GTM_MCS;
+# 10359 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+typedef volatile struct _Ifx_GTM
+{
+       Ifx_GTM_REV REV;
+       Ifx_GTM_RST RST;
+       Ifx_GTM_CTRL CTRL;
+       Ifx_GTM_AEI_ADDR_XPT AEI_ADDR_XPT;
+       Ifx_GTM_IRQ IRQ;
+       Ifx_GTM_EIRQ_EN EIRQ_EN;
+       Ifx_GTM_HW_CONF HW_CONF;
+       Ifx_GTM_CFG CFG;
+       Ifx_GTM_AEI_STA_XPT AEI_STA_XPT;
+       Ifx_GTM_BRIDGE BRIDGE;
+       Ifx_GTM_MCS_AEM_DIS MCS_AEM_DIS;
+       Ifx_GTM_AUX_IN_SRC AUX_IN_SRC;
+       Ifx_GTM_EXT_CAP_EN EXT_CAP_EN[7];
+       Ifx_UReg_8Bit reserved_78[8];
+       Ifx_GTM_OUT OUT;
+       Ifx_GTM_CLS_CLK_CFG CLS_CLK_CFG;
+       Ifx_UReg_8Bit reserved_B4[76];
+       Ifx_GTM_TBU TBU;
+       Ifx_UReg_8Bit reserved_12C[84];
+       Ifx_GTM_MON MON;
+       Ifx_UReg_8Bit reserved_1B4[76];
+       Ifx_GTM_CMP CMP;
+       Ifx_UReg_8Bit reserved_218[104];
+       Ifx_GTM_ARU ARU;
+       Ifx_GTM_CMU CMU;
+       Ifx_UReg_8Bit reserved_350[176];
+       Ifx_GTM_BRC BRC;
+       Ifx_UReg_8Bit reserved_478[392];
+       Ifx_GTM_ICM ICM;
+       Ifx_UReg_8Bit reserved_7AC[84];
+       Ifx_GTM_SPE SPE[4];
+       Ifx_UReg_8Bit reserved_A00[1280];
+       Ifx_GTM_MAP_CTRL MAP_CTRL;
+       Ifx_UReg_8Bit reserved_F04[60];
+       Ifx_GTM_MCFG_CTRL MCFG_CTRL;
+       Ifx_UReg_8Bit reserved_F44[188];
+       Ifx_GTM_TIM TIM[7];
+       Ifx_UReg_8Bit reserved_4800[14336];
+       Ifx_GTM_TOM TOM[5];
+       Ifx_UReg_8Bit reserved_A800[55296];
+       Ifx_GTM_PSM PSM[2];
+       Ifx_UReg_8Bit reserved_20000[32768];
+       Ifx_GTM_DPLL DPLL;
+       Ifx_UReg_8Bit reserved_30000[457984];
+       Ifx_GTM_CLC CLC;
+       Ifx_GTM_RESET_CLR RESET_CLR;
+       Ifx_GTM_RESET1 RESET1;
+       Ifx_GTM_RESET2 RESET2;
+       Ifx_GTM_ACCEN0 ACCEN0;
+       Ifx_GTM_ACCEN1 ACCEN1;
+       Ifx_GTM_OCDS OCDS;
+       Ifx_UReg_8Bit reserved_9FD3C[4];
+       Ifx_GTM_TIMINSEL TIMINSEL[7];
+       Ifx_UReg_8Bit reserved_9FD5C[4];
+       Ifx_GTM_TOUTSEL TOUTSEL[34];
+       Ifx_UReg_8Bit reserved_9FDE8[24];
+       Ifx_GTM_DSADCINSEL DSADCINSEL[6];
+       Ifx_UReg_8Bit reserved_9FE18[8];
+       Ifx_GTM_DSADC DSADC[4];
+       Ifx_GTM_ADCTRIG ADCTRIG[5];
+       Ifx_UReg_8Bit reserved_9FE68[8];
+       Ifx_GTM_DXOUTCON DXOUTCON;
+       Ifx_GTM_TRIGOUT TRIGOUT[7];
+       Ifx_UReg_8Bit reserved_9FE90[12];
+       Ifx_GTM_INTOUT INTOUT[7];
+       Ifx_UReg_8Bit reserved_9FEB8[12];
+       Ifx_GTM_MCSTRIGOUTSEL MCSTRIGOUTSEL;
+       Ifx_GTM_MCSINTSTAT MCSINTSTAT;
+       Ifx_GTM_MCSINTCLR MCSINTCLR;
+       Ifx_GTM_DXINCON DXINCON;
+       Ifx_GTM_DATAIN DATAIN[7];
+       Ifx_UReg_8Bit reserved_9FEF0[16];
+       Ifx_GTM_MSC MSC;
+       Ifx_UReg_8Bit reserved_9FFB4[24];
+       Ifx_GTM_PSI5OUTSEL PSI5OUTSEL;
+       Ifx_GTM_PSI5SOUTSEL PSI5SOUTSEL;
+       Ifx_GTM_LCDCDCOUTSEL LCDCDCOUTSEL;
+       Ifx_GTM_DTMAUXINSEL DTMAUXINSEL;
+       Ifx_GTM_CANOUTSEL0 CANOUTSEL0;
+       Ifx_GTM_CANOUTSEL1 CANOUTSEL1;
+       Ifx_UReg_8Bit reserved_9FFE4[270364];
+       Ifx_GTM_CCM CCM[9];
+       Ifx_UReg_8Bit reserved_E3200[3584];
+       Ifx_GTM_CDTM CDTM[6];
+       Ifx_UReg_8Bit reserved_E5800[10240];
+       Ifx_GTM_ATOM ATOM[9];
+       Ifx_UReg_8Bit reserved_EC800[14336];
+       Ifx_GTM_MCS MCS[7];
+       Ifx_UReg_8Bit reserved_F7000[36864];
+} Ifx_GTM;
+# 57 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_reg.h" 2
+# 2 ".\\output\\inc/IfxGtm_reg.h" 2
+# 54 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h" 2
+# 160 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+typedef uint8 Mcu_17_Gtm_TimerOutType;
+
+
+
+
+
+typedef uint8 Mcu_17_Gtm_TimerOutputEnableType;
+
+
+
+
+
+typedef uint8 Mcu_17_Gtm_TimerEnableType;
+
+
+
+
+typedef enum
+{
+  MCU_NOCHANGE_OUT_ON_TRIGGER = 0X0U,
+  MCU_DISABLE_OUT_ON_TRIGGER = 0x1U,
+  MCU_ENABLE_OUT_ON_TRIGGER = 0x2U
+} Mcu_17_Gtm_TimerOutputEnTriggerType;
+
+
+
+typedef enum
+{
+  MCU_NOCHANGE_ON_TRIGGER = 0X0U,
+  MCU_DISABLE_ON_TRIGGER = 0x1U,
+  MCU_ENABLE_ON_TRIGGER = 0x2U
+} Mcu_17_Gtm_TimerEnTriggerType;
+
+
+
+typedef uint8 Mcu_17_Gtm_TimerUpdateEnableType;
+
+
+
+
+typedef uint8 Mcu_17_Gtm_TimerStatusType;
+
+
+
+
+
+typedef uint8 Mcu_17_Gtm_MappedPortTimerOutType;
+# 222 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+typedef uint32 Mcu_17_Gtm_TimerChIdentifierType;
+
+
+
+typedef struct
+{
+  Mcu_17_Gtm_TimerChIdentifierType TimerId;
+  uint32 TimChCtrlReg;
+  uint32 TimChExtendedCtrlReg;
+  uint32 TimChFltRisingEdge;
+  uint32 TimChFltFallingEdge;
+  uint8 TimChIntEnMode;
+} Mcu_17_Gtm_TimChConfigType;
+
+
+
+typedef struct
+{
+  Mcu_17_Gtm_TimerOutType TimerType;
+  Mcu_17_Gtm_TimerChIdentifierType TimerId;
+  uint32 TimerChCtrlReg;
+  uint32 TimerChCN0Reg;
+  uint32 TimerChCM0Reg;
+  uint32 TimerChCM1Reg;
+  uint32 TimerChSR0Reg;
+  uint32 TimerChSR1Reg;
+  uint32 TimerChPortOutConfig;
+  uint8 TimerChIntEnMode;
+} Mcu_17_Gtm_TomAtomChConfigType;
+
+
+
+
+typedef volatile struct
+{
+  Ifx_GTM_TIM_CH CH;
+  uint8 Reserved1[64];
+} Mcu_17_Gtm_TimCh;
+
+
+
+typedef volatile struct
+{
+  Mcu_17_Gtm_TimCh TIM_CHANNEL[8];
+} Mcu_17_Gtm_TimChArray;
+
+
+
+
+typedef volatile struct
+{
+
+  Ifx_GTM_TOM_TGC_GLB_CTRL TGC_GLB_CTRL;
+
+  Ifx_GTM_TOM_TGC_ACT_TB TGC_ACT_TB;
+
+  Ifx_GTM_TOM_TGC_FUPD_CTRL TGC_FUPD_CTRL;
+
+  Ifx_GTM_TOM_TGC_INT_TRIG TGC_INT_TRIG;
+
+  uint8 Reserved2[48];
+
+  Ifx_GTM_TOM_TGC_ENDIS_CTRL TGC_ENDIS_CTRL;
+
+  Ifx_GTM_TOM_TGC_ENDIS_STAT TGC_ENDIS_STAT;
+
+  Ifx_GTM_TOM_TGC_OUTEN_CTRL TGC_OUTEN_CTRL;
+
+  Ifx_GTM_TOM_TGC_OUTEN_STAT TGC_OUTEN_STAT;
+  uint8 Reserved3[432];
+} Mcu_17_Gtm_TomTgc;
+
+
+
+typedef volatile struct
+{
+  uint8 Reserved1[48];
+  Mcu_17_Gtm_TomTgc TOM_TGC[2];
+} Mcu_17_Gtm_TomTgcArray;
+
+
+
+typedef volatile struct
+{
+  Ifx_GTM_TOM_CH CH;
+  uint8 Reserved1[20];
+} Mcu_17_Gtm_TomCh;
+
+
+
+typedef volatile struct
+{
+  Mcu_17_Gtm_TomCh TOM_CHANNEL[16];
+} Mcu_17_Gtm_TomChArray;
+
+
+
+
+typedef volatile struct
+{
+  Ifx_GTM_ATOM_CH CH;
+  uint8 Reserved1[80];
+} Mcu_17_Gtm_AtomCh;
+
+
+
+typedef volatile struct
+{
+  Mcu_17_Gtm_AtomCh ATOM_CHANNEL[8];
+} Mcu_17_Gtm_AtomChArray;
+
+
+
+
+
+
+typedef uint8 Mcu_17_Ccu6_KernelIdentifierType;
+
+
+
+
+typedef uint8 Mcu_17_Ccu6_TimerType;
+
+
+
+
+typedef uint8 Mcu_17_Ccu6_ComparatorType;
+
+
+
+
+
+
+typedef uint32 Mcu_17_Ccu6_TimerChIdentifierType;
+
+
+typedef struct
+{
+  Mcu_17_Ccu6_TimerChIdentifierType TimerId;
+  uint32 TimerCtrlReg0;
+
+
+
+
+  uint32 ModCtrlReg;
+
+
+
+  uint32 PasStateLvlReg;
+
+
+
+  uint32 TimerCntReg;
+  uint32 TimerPeriodReg;
+  uint32 Ccu6ShadowReg;
+  uint8 TimerModeSelectReg;
+  uint8 PortInSelReg0;
+  uint8 IntEnReg;
+  uint8 IntNodePointerReg;
+} Mcu_17_Ccu6_TimerConfigType;
+
+
+
+typedef struct
+{
+  Mcu_17_Ccu6_TimerChIdentifierType TimerId;
+  uint8 IEnBitPos;
+  uint8 IEnLen;
+  uint8 RegVal;
+} Mcu_17_Ccu6_TimerChIntType;
+
+
+
+
+typedef uint8 Mcu_17_Gpt12_TimerBlockType;
+
+
+
+
+typedef uint8 Mcu_17_Gpt12_TimerChIdentifierType;
+
+
+
+
+
+
+
+typedef uint8 Mcu_17_Gpt12_ClkPrescalarType;
+# 421 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+typedef struct
+{
+  Mcu_17_Gpt12_TimerChIdentifierType TimerId;
+  uint32 TimerCtrlReg;
+  uint32 TimerCntReg;
+  uint8 PortInSelReg;
+} Mcu_17_Gpt12_TimerConfigType;
+
+
+
+
+
+typedef void (* const Mcu_17_Timer_CallbackFuncPtrType)
+(
+  uint8 LogicalChannelId,
+  uint32 StatusFlags
+);
+
+
+
+
+typedef struct
+{
+  uint32 CompareRegVal;
+  unsigned_int StmTimerId : 8;
+  unsigned_int CMPRegId : 8;
+  unsigned_int CmconRegVal : 8;
+  unsigned_int reserved : 8;
+} Mcu_17_Stm_TimerConfigType;
+
+
+
+
+typedef uint8 Mcu_17_Stm_StmIdentifierType;
+
+
+typedef uint8 Mcu_17_Stm_StmCmpIdentifierType;
+
+
+typedef uint8 Mcu_17_Stm_ComIntEnableType;
+
+
+
+typedef uint8 Mcu_17_Eru_SrcIdentifierType;
+# 523 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+# 1 ".\\output\\inc/Mcu_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Mcu_MemMap.h" 1
+# 325 ".\\output\\inc/..\\..\\Integration\\mcal\\Mcu_MemMap.h"
+#pragma section "Code.Cpu0" ax
+# 2 ".\\output\\inc/Mcu_MemMap.h" 2
+# 524 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h" 2
+# 553 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Gtm_TomChannelInit
+              (const Mcu_17_Gtm_TomAtomChConfigType * const ConfigPtr);
+# 584 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Gtm_TomChannelShadowTransfer
+(
+  const uint8 Module,
+  const uint8 Channel
+);
+# 616 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Gtm_TomChannelDeInit
+(
+  const uint8 Module,
+  const uint8 Channel
+);
+# 655 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Gtm_TomChannelEnable
+(
+  const uint8 Module,
+  const uint8 Channel,
+  const Mcu_17_Gtm_TimerOutputEnableType TimerOutputEn
+);
+# 690 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Gtm_TomChannelDisable
+(
+  const uint8 Module,
+  const uint8 Channel
+);
+# 728 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern Mcu_17_Gtm_TimerStatusType Mcu_17_Gtm_IsTomChannelEnabled
+(
+  const uint8 Module,
+  const uint8 Channel
+);
+# 762 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Gtm_TomTriggerRequest
+(
+  const uint8 Module,
+  const uint8 TomTgcIndex,
+  const uint16 TriggerChannels
+);
+# 795 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern Std_ReturnType Mcu_17_Gtm_TomChInitCheck
+(
+  const Mcu_17_Gtm_TomAtomChConfigType *const ConfigPtr
+);
+# 829 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Gtm_TomChUpdateEnDis
+(
+  const uint8 Module,
+  const uint8 Channel,
+  const Mcu_17_Gtm_TimerUpdateEnableType UpEnVal
+);
+# 865 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Gtm_TomChOutEnCtrlUpdate
+(
+  const uint8 Module,
+  const uint8 Channel,
+  const Mcu_17_Gtm_TimerOutputEnTriggerType TimerOutputEnDis
+);
+# 900 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Gtm_TomChOutEnStatUpdate
+(
+  const uint8 Module,
+  const uint8 Channel,
+  const Mcu_17_Gtm_TimerOutputEnableType TimerOutputEnDis
+);
+# 935 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Gtm_TomChEndisCtrlUpdate
+(
+  const uint8 Module,
+  const uint8 Channel,
+  const Mcu_17_Gtm_TimerEnTriggerType TimerEnDis
+);
+# 969 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Gtm_TomChEndisStatUpdate
+(
+  const uint8 Module,
+  const uint8 Channel,
+  const Mcu_17_Gtm_TimerEnableType TimerEnDis
+);
+# 1002 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Gtm_AtomChannelInit
+(
+  const Mcu_17_Gtm_TomAtomChConfigType *const ConfigPtr
+);
+# 1035 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Gtm_AtomChannelShadowTransfer
+(
+  const uint8 Module,
+  const uint8 Channel
+);
+# 1067 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Gtm_AtomChannelDeInit
+(
+  const uint8 Module,
+  const uint8 Channel
+);
+# 1106 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Gtm_AtomChannelEnable
+(
+  const uint8 Module,
+  const uint8 Channel,
+  const Mcu_17_Gtm_TimerOutputEnableType TimerOutputEn
+);
+# 1141 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Gtm_AtomChannelDisable
+(
+  const uint8 Module,
+  const uint8 Channel
+);
+# 1180 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern Mcu_17_Gtm_TimerStatusType Mcu_17_Gtm_IsAtomChannelEnabled
+(
+  const uint8 Module,
+  const uint8 Channel
+);
+# 1212 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Gtm_AtomTriggerRequest
+(
+  const uint8 Module,
+  const uint16 TriggerChannels
+);
+# 1242 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern Std_ReturnType Mcu_17_Gtm_AtomChInitCheck
+(
+  const Mcu_17_Gtm_TomAtomChConfigType *const ConfigPtr
+);
+# 1276 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Gtm_AtomChUpdateEnDis
+(
+  const uint8 Module,
+  const uint8 Channel,
+  const Mcu_17_Gtm_TimerUpdateEnableType UpEnVal
+);
+# 1312 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Gtm_AtomChOutEnCtrlUpdate
+(
+  const uint8 Module,
+  const uint8 Channel,
+  const Mcu_17_Gtm_TimerOutputEnTriggerType TimerOutputEnDis
+);
+# 1347 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Gtm_AtomChOutEnStatUpdate
+(
+  const uint8 Module,
+  const uint8 Channel,
+  const Mcu_17_Gtm_TimerOutputEnableType TimerOutputEnDis
+);
+# 1382 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Gtm_AtomChEndisCtrlUpdate
+(
+  const uint8 Module,
+  const uint8 Channel,
+  const Mcu_17_Gtm_TimerEnTriggerType TimerEnDis
+);
+# 1416 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Gtm_AtomChEndisStatUpdate
+(
+  const uint8 Module,
+  const uint8 Channel,
+  const Mcu_17_Gtm_TimerEnableType TimerEnDis
+);
+# 1449 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Gtm_TimChannelInit
+(
+  const Mcu_17_Gtm_TimChConfigType * const ConfigPtr
+);
+# 1480 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Gtm_TimChannelDeInit
+(
+  const uint8 Module,
+  const uint8 Channel
+);
+# 1512 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Gtm_TimChannelEnable
+(
+  const uint8 Module,
+  const uint8 Channel
+);
+# 1545 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Gtm_TimChannelDisable
+(
+  const uint8 Module,
+  const uint8 Channel
+);
+# 1583 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern Mcu_17_Gtm_TimerStatusType Mcu_17_Gtm_IsTimChannelEnabled
+(
+  const uint8 Module,
+  const uint8 Channel
+);
+# 1618 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Gtm_ConnectPortPinToTim
+(
+  const uint8 Module,
+  const uint8 Channel,
+  const uint8 TimerChselValue
+);
+# 1657 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Gtm_ConnectTimerOutToPortPin
+(
+  const uint16 Tout_IndexNumber,
+  const Mcu_17_Gtm_MappedPortTimerOutType TimerOutColumnSelect
+);
+# 1689 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern Std_ReturnType Mcu_17_Gtm_TimChInitCheck
+(
+  const Mcu_17_Gtm_TimChConfigType *const ConfigPtr
+);
+# 1721 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Ccu6_TimerInit
+(
+  const Mcu_17_Ccu6_TimerConfigType * const ConfigPtr
+);
+# 1749 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Ccu6_TimerDeInit
+(
+  const Mcu_17_Ccu6_TimerChIdentifierType TimerId
+);
+# 1776 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Ccu6_TimerStart
+(
+  const Mcu_17_Ccu6_TimerChIdentifierType TimerId
+);
+# 1803 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Ccu6_TimerStop
+(
+  const Mcu_17_Ccu6_TimerChIdentifierType TimerId
+);
+# 1832 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Ccu6_TimerShadowTransfer
+(
+  const Mcu_17_Ccu6_TimerChIdentifierType TimerId
+);
+# 1862 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Ccu6_TimerIntEnDis
+(
+  const Mcu_17_Ccu6_TimerChIntType * const Ccu6IntConfig
+);
+# 1893 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern Std_ReturnType Mcu_17_Ccu6_TimerInitCheck
+(
+  const Mcu_17_Ccu6_TimerConfigType * const ConfigPtr
+);
+# 1922 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Gpt12_TimerInit
+(
+  const Mcu_17_Gpt12_TimerConfigType * const ConfigPtr
+);
+# 1952 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern Std_ReturnType Mcu_17_Gpt12_TimerInitCheck
+(
+  const Mcu_17_Gpt12_TimerConfigType *const ConfigPtr
+);
+# 1980 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Gpt12_TimerDeInit
+(
+  const Mcu_17_Gpt12_TimerChIdentifierType TimerId
+);
+# 2007 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Gpt12_TimerStart
+(
+  const Mcu_17_Gpt12_TimerChIdentifierType TimerId
+);
+# 2034 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Gpt12_TimerStop
+(
+  const Mcu_17_Gpt12_TimerChIdentifierType TimerId
+);
+# 2062 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Stm_SetupComparator
+(
+  const Mcu_17_Stm_TimerConfigType * const ConfigPtr
+);
+# 2092 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern Std_ReturnType Mcu_17_Stm_CheckComparator
+(
+  const Mcu_17_Stm_TimerConfigType * const ConfigPtr
+);
+# 2121 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Stm_ComparatorIntDisable
+(
+  const uint8 StmTimerId,
+  const uint8 StmComparatorId
+);
+
+
+
+
+
+# 1 ".\\output\\inc/Mcu_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Mcu_MemMap.h" 1
+# 337 ".\\output\\inc/..\\..\\Integration\\mcal\\Mcu_MemMap.h"
+#pragma section
+# 2 ".\\output\\inc/Mcu_MemMap.h" 2
+# 2132 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h" 2
+# 2141 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+# 1 ".\\output\\inc/Mcu_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Mcu_MemMap.h" 1
+# 350 ".\\output\\inc/..\\..\\Integration\\mcal\\Mcu_MemMap.h"
+#pragma section "Code.Cpu0" ax
+# 2 ".\\output\\inc/Mcu_MemMap.h" 2
+# 2142 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h" 2
+# 2174 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Gtm_TomChannelIsr
+(
+  const uint8 Module,
+  const uint8 Channel
+);
+# 2210 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Gtm_AtomChannelIsr
+(
+  const uint8 Module,
+  const uint8 Channel
+);
+# 2246 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Gtm_TimChannelIsr
+(
+  const uint8 Module,
+  const uint8 Channel
+);
+# 2283 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Ccu6_ChannelIsr
+(
+  const Mcu_17_Ccu6_KernelIdentifierType Kernel,
+  const Mcu_17_Ccu6_ComparatorType Comparator
+);
+# 2315 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Gpt12_ChannelIsr
+(
+  const Mcu_17_Gpt12_TimerChIdentifierType Timer
+);
+# 2348 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Stm_CompareMatchIsr
+(
+  const Mcu_17_Stm_StmIdentifierType StmTimerId,
+  const Mcu_17_Stm_StmCmpIdentifierType StmCmpId
+);
+# 2381 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h"
+extern void Mcu_17_Eru_GatingIsr
+(
+  const Mcu_17_Eru_SrcIdentifierType EruSrcId
+);
+
+
+
+
+
+
+# 1 ".\\output\\inc/Mcu_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Mcu_MemMap.h" 1
+# 362 ".\\output\\inc/..\\..\\Integration\\mcal\\Mcu_MemMap.h"
+#pragma section
+# 2 ".\\output\\inc/Mcu_MemMap.h" 2
+# 2392 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Mcu\\inc\\Mcu_17_TimerIp.h" 2
+# 2 ".\\output\\inc/Mcu_17_TimerIp.h" 2
+# 52 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Gpt\\inc\\Gpt.h" 2
+
+# 1 ".\\output\\inc/McalLib.h" 1
+# 54 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Gpt\\inc\\Gpt.h" 2
+# 158 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Gpt\\inc\\Gpt.h"
+typedef enum
+{
+  GTM_GPT_CHANNEL_RUNNING = (uint32)0U,
+  GTM_GPT_WRONG_PARAM = (uint32)1U,
+  GTM_GPT_CHANNEL_BUSY = (uint32)2U
+} Gtm_GptChannelStatusType;
+# 172 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Gpt\\inc\\Gpt.h"
+typedef void(*const Gpt_NotificationPtrType)(void);
+
+
+
+
+typedef boolean Gpt_EnableWakeupType;
+
+
+
+
+typedef uint8 Gpt_ChannelType;
+
+
+
+
+
+typedef uint32 Gpt_ValueType;
+
+
+
+
+typedef enum
+{
+  GPT_MODE_NORMAL = (uint32)0U,
+  GPT_MODE_SLEEP = (uint32)1U,
+} Gpt_ModeType;
+
+
+
+
+typedef uint8 Gpt_ChannelModeType;
+
+
+
+typedef uint8 Gpt_ClockType;
+
+
+
+
+typedef enum
+{
+  GPT_PREDEF_TIMER_1US_16BIT = (uint32)0U,
+  GPT_PREDEF_TIMER_1US_24BIT = (uint32)1U,
+  GPT_PREDEF_TIMER_1US_32BIT = (uint32)2U,
+  GPT_PREDEF_TIMER_100US_32BIT = (uint32)3U
+} Gpt_PredefTimerType;
+
+
+
+
+typedef struct
+{
+# 239 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Gpt\\inc\\Gpt.h"
+  Gpt_ChannelModeType GptChannelMode;
+
+
+
+  const Mcu_17_Gtm_TomAtomChConfigType* const GptGtmTimerInfo;
+
+
+
+
+} Gpt_ChannelConfigType;
+# 318 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Gpt\\inc\\Gpt.h"
+typedef struct
+{
+
+
+
+
+
+
+  const Gpt_ChannelConfigType * const ChannelConfigPtr;
+# 342 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Gpt\\inc\\Gpt.h"
+  const uint8 Gpt_MaxNormalChannels;
+
+} Gpt_CoreConfigType;
+
+
+
+
+typedef struct
+{
+
+  const Gpt_CoreConfigType* const Gpt_Config_CorePtr[(0x4U)];
+} Gpt_ConfigType;
+# 396 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Gpt\\inc\\Gpt.h"
+# 1 ".\\output\\inc/Gpt_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Gpt_MemMap.h" 1
+# 832 ".\\output\\inc/..\\..\\Integration\\mcal\\Gpt_MemMap.h"
+#pragma section "Code.Cpu0" ax
+# 2 ".\\output\\inc/Gpt_MemMap.h" 2
+# 397 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Gpt\\inc\\Gpt.h" 2
+# 461 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Gpt\\inc\\Gpt.h"
+extern void Gpt_Init(const Gpt_ConfigType *const ConfigPtr);
+# 603 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Gpt\\inc\\Gpt.h"
+extern void Gpt_StartTimer(const Gpt_ChannelType Channel, const Gpt_ValueType Value);
+# 628 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Gpt\\inc\\Gpt.h"
+extern void Gpt_StopTimer(const Gpt_ChannelType Channel);
+# 912 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Gpt\\inc\\Gpt.h"
+extern Std_ReturnType Gpt_InitCheck(const Gpt_ConfigType *const ConfigPtr);
+# 926 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Gpt\\inc\\Gpt.h"
+# 1 ".\\output\\inc/Gpt_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Gpt_MemMap.h" 1
+# 844 ".\\output\\inc/..\\..\\Integration\\mcal\\Gpt_MemMap.h"
+#pragma section
+# 2 ".\\output\\inc/Gpt_MemMap.h" 2
+# 927 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Gpt\\inc\\Gpt.h" 2
+
+
+
+
+
+
+# 1 ".\\output\\inc/Gpt_PBcfg.h" 1
+# 1 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Gpt_PBcfg.h" 1
+# 64 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Gpt_PBcfg.h"
+# 1 ".\\output\\inc/Gpt_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Gpt_MemMap.h" 1
+# 635 ".\\output\\inc/..\\..\\Integration\\mcal\\Gpt_MemMap.h"
+#pragma section "Config.Cpu0.Unspecified" a 4
+# 2 ".\\output\\inc/Gpt_MemMap.h" 2
+# 65 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Gpt_PBcfg.h" 2
+
+
+extern const Gpt_ConfigType Gpt_Config;
+# 82 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Gpt_PBcfg.h"
+# 1 ".\\output\\inc/Gpt_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Gpt_MemMap.h" 1
+# 648 ".\\output\\inc/..\\..\\Integration\\mcal\\Gpt_MemMap.h"
+#pragma section
+# 2 ".\\output\\inc/Gpt_MemMap.h" 2
+# 83 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\Gpt_PBcfg.h" 2
+# 2 ".\\output\\inc/Gpt_PBcfg.h" 2
+# 934 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\Gpt\\inc\\Gpt.h" 2
+# 2 ".\\output\\inc/Gpt.h" 2
+# 18 ".\\output\\inc/..\\..\\Integration\\ecu\\EcuM_PBDefine.h" 2
+# 1 ".\\output\\inc/Can.h" 1
+# 19 ".\\output\\inc/..\\..\\Integration\\ecu\\EcuM_PBDefine.h" 2
+# 1 ".\\output\\inc/Gpt.h" 1
+# 20 ".\\output\\inc/..\\..\\Integration\\ecu\\EcuM_PBDefine.h" 2
+# 2 ".\\output\\inc/EcuM_PBDefine.h" 2
+# 10 ".\\output\\inc/..\\..\\bsw\\EcuM\\EcuM_Cfg_RbExt.h" 2
+# 2 ".\\output\\inc/EcuM_Cfg_RbExt.h" 2
+# 25 ".\\output\\inc/..\\..\\bsw\\EcuM\\api\\EcuM.h" 2
+# 1 ".\\output\\inc/EcuM_Cfg_RbMo.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\EcuM_Cfg_RbMo.h" 1
+# 2 ".\\output\\inc/EcuM_Cfg_RbMo.h" 2
+# 26 ".\\output\\inc/..\\..\\bsw\\EcuM\\api\\EcuM.h" 2
+# 1 ".\\output\\inc/EcuM_Cfg_PbExt.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\EcuM_Cfg_PbExt.h" 1
+# 2 ".\\output\\inc/EcuM_Cfg_PbExt.h" 2
+# 27 ".\\output\\inc/..\\..\\bsw\\EcuM\\api\\EcuM.h" 2
+
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\api\\EcuM_Cbk.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\EcuM\\api\\EcuM_Cbk.h"
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\EcuM\\api\\EcuM_Cbk.h" 2
+
+
+
+# 1 ".\\output\\inc/EcuM_Generated_Types.h" 1
+# 15 ".\\output\\inc/..\\..\\bsw\\EcuM\\api\\EcuM_Cbk.h" 2
+
+# 1 ".\\output\\inc/EcuM_Cfg_Version.h" 1
+# 17 ".\\output\\inc/..\\..\\bsw\\EcuM\\api\\EcuM_Cbk.h" 2
+
+# 1 ".\\output\\inc/EcuM_Cfg_CbkStartup.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\EcuM_Cfg_CbkStartup.h" 1
+# 2 ".\\output\\inc/EcuM_Cfg_CbkStartup.h" 2
+# 19 ".\\output\\inc/..\\..\\bsw\\EcuM\\api\\EcuM_Cbk.h" 2
+
+
+
+
+
+
+# 1 ".\\output\\inc/EcuM_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h" 1
+# 260 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 261 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h" 2
+# 11 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h" 2
+# 2 ".\\output\\inc/EcuM_MemMap.h" 2
+# 26 ".\\output\\inc/..\\..\\bsw\\EcuM\\api\\EcuM_Cbk.h" 2
+
+
+
+
+
+extern void EcuM_SetWakeupEvent( EcuM_WakeupSourceType sources );
+
+extern void EcuM_ValidateWakeupEvent( EcuM_WakeupSourceType sources );
+
+extern void EcuM_CheckWakeup( EcuM_WakeupSourceType wakeupSource );
+
+extern void EcuM_EndCheckWakeup( EcuM_WakeupSourceType sources );
+
+
+
+# 1 ".\\output\\inc/EcuM_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h" 1
+# 267 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 268 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h" 2
+# 11 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h" 2
+# 2 ".\\output\\inc/EcuM_MemMap.h" 2
+# 42 ".\\output\\inc/..\\..\\bsw\\EcuM\\api\\EcuM_Cbk.h" 2
+# 29 ".\\output\\inc/..\\..\\bsw\\EcuM\\api\\EcuM.h" 2
+# 89 ".\\output\\inc/..\\..\\bsw\\EcuM\\api\\EcuM.h"
+# 1 ".\\output\\inc/EcuM_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h" 1
+# 129 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 130 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h" 2
+# 11 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h" 2
+# 2 ".\\output\\inc/EcuM_MemMap.h" 2
+# 90 ".\\output\\inc/..\\..\\bsw\\EcuM\\api\\EcuM.h" 2
+
+extern EcuM_ShutdownTargetInfoType EcuM_Rb_dataShutdownInfo_st;
+
+# 1 ".\\output\\inc/EcuM_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h" 1
+# 136 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 137 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h" 2
+# 11 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h" 2
+# 2 ".\\output\\inc/EcuM_MemMap.h" 2
+# 94 ".\\output\\inc/..\\..\\bsw\\EcuM\\api\\EcuM.h" 2
+# 114 ".\\output\\inc/..\\..\\bsw\\EcuM\\api\\EcuM.h"
+# 1 ".\\output\\inc/EcuM_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h" 1
+# 260 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 261 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h" 2
+# 11 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h" 2
+# 2 ".\\output\\inc/EcuM_MemMap.h" 2
+# 115 ".\\output\\inc/..\\..\\bsw\\EcuM\\api\\EcuM.h" 2
+
+
+
+extern void EcuM_Init(void);
+
+extern void EcuM_StartupTwo(void);
+
+extern Std_ReturnType EcuM_GoDown(uint16 caller);
+extern Std_ReturnType EcuM_GoDownHaltPoll(uint16 caller);
+
+extern void EcuM_Shutdown(void );
+
+extern EcuM_WakeupSourceType EcuM_GetValidatedWakeupEvents(void);
+
+extern EcuM_WakeupSourceType EcuM_GetExpiredWakeupEvents( void );
+
+extern EcuM_WakeupSourceType EcuM_GetPendingWakeupEvents( void );
+
+
+
+
+
+
+extern void EcuM_ClearWakeupEvent (EcuM_WakeupSourceType sources);
+
+extern void EcuM_GetVersionInfo (Std_VersionInfoType * versioninfo);
+
+extern Std_ReturnType EcuM_SelectBootTarget(EcuM_BootTargetType target);
+
+extern Std_ReturnType EcuM_GetBootTarget(EcuM_BootTargetType * target);
+
+extern Std_ReturnType EcuM_GetShutdownTarget(
+                                        EcuM_ShutdownTargetType * shutdownTarget,
+                                        EcuM_ShutdownModeType * shutdownMode);
+
+extern Std_ReturnType EcuM_SelectShutdownTarget(
+                                        EcuM_ShutdownTargetType shutdownTarget,
+                                        EcuM_ShutdownModeType shutdownMode );
+
+extern Std_ReturnType EcuM_SelectShutdownCause( EcuM_ShutdownCauseType shutdownCause );
+
+extern Std_ReturnType EcuM_GetShutdownCause(
+                                        EcuM_ShutdownCauseType * shutdownCause );
+
+extern Std_ReturnType EcuM_GetLastShutdownTarget(
+                                        EcuM_ShutdownTargetType * shutdownTarget,
+                                        EcuM_ShutdownModeType * shutdownMode );
+
+
+extern Std_ReturnType EcuM_Rb_NvMSingleBlockCallbackFunction (
+                                        uint8 ServiceId,
+                                        uint8 JobResult);
+Std_ReturnType EcuM_Rb_GetLastShutdownInfo(
+        EcuM_ShutdownInfoType * shutdownCauseInfo);
+# 194 ".\\output\\inc/..\\..\\bsw\\EcuM\\api\\EcuM.h"
+# 1 ".\\output\\inc/EcuM_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h" 1
+# 267 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 268 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_Cfg_MemMap.h" 2
+# 11 ".\\output\\inc/..\\..\\bsw\\EcuM\\integration\\EcuM_MemMap.h" 2
+# 2 ".\\output\\inc/EcuM_MemMap.h" 2
+# 195 ".\\output\\inc/..\\..\\bsw\\EcuM\\api\\EcuM.h" 2
+# 2 ".\\output\\inc/EcuM.h" 2
+# 25 ".\\output\\inc/..\\..\\bsw\\NvM\\NvM_Cfg.h" 2
+# 2 ".\\output\\inc/NvM_Cfg.h" 2
+# 13 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM_Types.h" 2
+
+
+
+# 1 ".\\output\\inc/rba_MemLib_UseRte.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Rba_MemLib\\rba_MemLib_UseRte.h" 1
+# 2 ".\\output\\inc/rba_MemLib_UseRte.h" 2
+# 17 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM_Types.h" 2
+# 25 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM_Types.h"
+# 1 ".\\output\\inc/Rte_NvM_Type.h" 1
+# 1 ".\\output\\inc/..\\..\\rte\\Rte_NvM_Type.h" 1
+# 2 ".\\output\\inc/Rte_NvM_Type.h" 2
+# 26 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM_Types.h" 2
+# 142 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM_Types.h"
+typedef enum
+{
+    NVM_RB_MIGRATION_RESULT_INIT_E = 0,
+    NVM_RB_MIGRATION_RESULT_NOT_NECESSARY_E = 1,
+    NVM_RB_MIGRATION_RESULT_TO_SMALLER_SIZE_E = 2,
+    NVM_RB_MIGRATION_RESULT_TO_BIGGER_SIZE_E = 3,
+    NVM_RB_MIGRATION_RESULT_NOT_DONE_E = 4,
+    NVM_RB_MIGRATION_RESULT_DEACTIVATED_E = 5
+}NvM_Rb_MigrationResult_ten;
+
+
+typedef enum
+{
+    NVM_RB_STATUS_UNINIT = 0,
+    NVM_RB_STATUS_IDLE = 1,
+    NVM_RB_STATUS_BUSY = 2
+} NvM_Rb_StatusType;
+
+
+typedef enum
+{
+    NVM_BLOCK_NATIVE,
+    NVM_BLOCK_REDUNDANT,
+    NVM_BLOCK_DATASET
+} NvM_BlockManagementType;
+
+
+
+typedef enum
+{
+    NVM_PRV_ACTIVITY_NOT_INIT = 0,
+    NVM_PRV_ACTIVITY_IDLE,
+    NVM_PRV_ACTIVITY_BUSY,
+    NVM_PRV_ACTIVITY_RAM_BLOCK_CRC
+} NvM_Prv_Activities_ten;
+
+
+
+
+
+typedef enum
+{
+
+    NvM_Rb_RequestType_NA_e = 0,
+
+    NvM_Rb_RequestType_Multi_e,
+
+    NvM_Rb_RequestType_Single_e
+
+} NvM_Rb_RequestType_ten;
+# 215 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM_Types.h"
+typedef enum
+{
+
+    NvM_Prv_Crc_Type_NoCrc_e, NvM_Prv_Crc_Type_8_Bit_e, NvM_Prv_Crc_Type_16_Bit_e, NvM_Prv_Crc_Type_32_Bit_e,
+
+
+
+
+
+
+    NvM_Prv_Crc_Type_Count_e
+
+} NvM_Prv_Crc_Type_ten;
+# 261 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM_Types.h"
+typedef enum
+{
+
+    NvM_Prv_idJob_Idle_e, NvM_Prv_idJob_Read_e, NvM_Prv_idJob_Write_e, NvM_Prv_idJob_Erase_e, NvM_Prv_idJob_Restore_e, NvM_Prv_idJob_Maintain_e, NvM_Prv_idJob_Validate_e, NvM_Prv_idJob_Invalidate_e, NvM_Prv_idJob_ReadIdConfigForReadAll_e, NvM_Prv_idJob_InvalidateForFirstInitAll_e, NvM_Prv_idJob_RestoreForImplicitRecovery_e, NvM_Prv_idJob_InvalidateForRemoveNonResistant_e, NvM_Prv_idJob_RecalcRamBlkCrc_e, NvM_Prv_idJob_WriteAll_e, NvM_Prv_idJob_Suspend_e, NvM_Prv_idJob_Invalid_e,
+
+
+
+
+
+
+    NvM_Prv_idJob_Count_e
+
+} NvM_Prv_idJob_ten;
+# 317 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM_Types.h"
+enum
+{
+
+    NvM_Prv_ServiceBit_ReadAll_e, NvM_Prv_ServiceBit_RemoveNonResistant_e, NvM_Prv_ServiceBit_WriteAll_e, NvM_Prv_ServiceBit_FirstInitAll_e, NvM_Prv_ServiceBit_Maintain_e, NvM_Prv_ServiceBit_InitAtLayoutChange_e, NvM_Prv_ServiceBit_ValidateAll_e, NvM_Prv_ServiceBit_NotUsed_0_e, NvM_Prv_ServiceBit_Read_e, NvM_Prv_ServiceBit_Write_e, NvM_Prv_ServiceBit_Invalidate_e, NvM_Prv_ServiceBit_Erase_e, NvM_Prv_ServiceBit_Restore_e, NvM_Prv_ServiceBit_NotUsed_1_e, NvM_Prv_ServiceBit_NotUsed_2_e, NvM_Prv_ServiceBit_NotUsed_3_e, NvM_Prv_ServiceBit_Unspecified_e,
+
+    NvM_Prv_ServiceBit_nr_e
+};
+
+
+
+typedef uint16 NvM_Prv_ServiceBit_tuo;
+
+
+
+
+typedef uint8 NvM_Prv_idService_tuo;
+
+
+
+typedef uint8 NvM_Prv_idDetError_tuo;
+
+
+
+
+
+
+
+enum
+{
+
+    NvM_Prv_idQueue_Multi_e,
+
+
+
+
+
+
+
+    NvM_Prv_idQueue_Standard_e,
+# 368 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM_Types.h"
+    NvM_Prv_idQueue_nrQueues_e
+};
+
+
+typedef uint8 NvM_Prv_idQueue_tuo;
+
+
+
+typedef union
+{
+    uint8 Crc8_u8;
+    uint16 Crc16_u16;
+    uint32 Crc32_u32;
+
+} NvM_Prv_Crc_tun;
+
+typedef union
+{
+    void* ptrRamBlock_pv;
+    uint8* ptrRamBlock_pu8;
+
+} NvM_Prv_ptrRamBlock_tun;
+
+typedef union
+{
+    void const* ptrRomBlock_pcv;
+    uint8 const* ptrRomBlock_pcu8;
+
+} NvM_Prv_ptrRomBlock_tun;
+
+
+
+
+typedef struct
+{
+
+    NvM_Prv_idService_tuo idService_uo;
+
+
+    NvM_BlockIdType idBlock_uo;
+
+
+    NvM_Prv_ServiceBit_tuo ServiceBit_uo;
+
+
+
+    NvM_Prv_ptrRamBlock_tun BlockData_un;
+
+} NvM_Prv_QueueEntry_tst;
+
+
+
+
+typedef struct
+{
+
+
+
+    NvM_Prv_Activities_ten Activity_rAMwM_en;
+
+    NvM_Prv_idQueue_tuo idQueueActive_uo;
+
+    NvM_Prv_idService_tuo idServiceActive_uo;
+
+} NvM_Prv_MainStates_tst;
+# 13 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM.h" 2
+# 282 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM.h"
+# 1 ".\\output\\inc/NvM_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\NvM\\integration\\NvM_MemMap.h" 1
+# 36 ".\\output\\inc/..\\..\\bsw\\NvM\\integration\\NvM_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 37 ".\\output\\inc/..\\..\\bsw\\NvM\\integration\\NvM_MemMap.h" 2
+# 2 ".\\output\\inc/NvM_MemMap.h" 2
+# 283 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM.h" 2
+
+
+
+
+
+
+extern uint8 NvM_Rb_stBlockErrors_au8[(60u)];
+
+
+# 1 ".\\output\\inc/NvM_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\NvM\\integration\\NvM_MemMap.h" 1
+# 40 ".\\output\\inc/..\\..\\bsw\\NvM\\integration\\NvM_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 41 ".\\output\\inc/..\\..\\bsw\\NvM\\integration\\NvM_MemMap.h" 2
+# 2 ".\\output\\inc/NvM_MemMap.h" 2
+# 293 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM.h" 2
+
+
+# 1 ".\\output\\inc/NvM_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\NvM\\integration\\NvM_MemMap.h" 1
+# 106 ".\\output\\inc/..\\..\\bsw\\NvM\\integration\\NvM_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 107 ".\\output\\inc/..\\..\\bsw\\NvM\\integration\\NvM_MemMap.h" 2
+# 2 ".\\output\\inc/NvM_MemMap.h" 2
+# 296 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM.h" 2
+
+
+extern uint8 NvM_Rb_minNrFreeStdQueueEntries_u8;
+
+
+
+
+
+# 1 ".\\output\\inc/NvM_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\NvM\\integration\\NvM_MemMap.h" 1
+# 110 ".\\output\\inc/..\\..\\bsw\\NvM\\integration\\NvM_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 111 ".\\output\\inc/..\\..\\bsw\\NvM\\integration\\NvM_MemMap.h" 2
+# 2 ".\\output\\inc/NvM_MemMap.h" 2
+# 305 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM.h" 2
+# 346 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM.h"
+# 1 ".\\output\\inc/NvM_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\NvM\\integration\\NvM_MemMap.h" 1
+# 259 ".\\output\\inc/..\\..\\bsw\\NvM\\integration\\NvM_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 260 ".\\output\\inc/..\\..\\bsw\\NvM\\integration\\NvM_MemMap.h" 2
+# 2 ".\\output\\inc/NvM_MemMap.h" 2
+# 347 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM.h" 2
+
+
+extern void NvM_Init(void);
+# 359 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM.h"
+extern Std_ReturnType NvM_SetDataIndex(NvM_BlockIdType BlockId, uint8 DataIndex);
+
+
+
+
+extern Std_ReturnType NvM_Rb_GetBlockId(uint16 PersistentId, NvM_BlockIdType *BlockIdPtr);
+# 374 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM.h"
+extern Std_ReturnType NvM_GetDataIndex(NvM_BlockIdType BlockId, uint8 *DataIndexPtr);
+# 385 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM.h"
+extern Std_ReturnType NvM_SetBlockProtection(NvM_BlockIdType BlockId, boolean ProtectionEnabled);
+# 396 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM.h"
+extern Std_ReturnType NvM_GetErrorStatus(NvM_BlockIdType BlockId, NvM_RequestResultType *RequestResultPtr);
+# 408 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM.h"
+extern Std_ReturnType NvM_SetRamBlockStatus(NvM_BlockIdType BlockId, boolean BlockChanged);
+
+
+
+extern void NvM_SetBlockLockStatus(NvM_BlockIdType BlockId, boolean BlockLocked);
+
+
+
+extern Std_ReturnType NvM_Rb_GetActiveService(uint8 *ServiceIdPtr);
+
+
+extern Std_ReturnType NvM_Rb_GetMigrationResult(NvM_BlockIdType BlockId, NvM_Rb_MigrationResult_ten *MigrationResultPtr);
+
+
+
+extern Std_ReturnType NvM_Rb_GetNvBlockLength(NvM_BlockIdType BlockId, uint16 *NvBlockLengthPtr);
+
+
+extern Std_ReturnType NvM_Rb_GetStatus(NvM_Rb_StatusType *StatusPtr);
+
+
+
+
+extern Std_ReturnType NvM_Rb_SetWriteAllTrigger(NvM_BlockIdType BlockId, boolean WriteAllTrigger);
+
+
+
+extern Std_ReturnType NvM_Rb_GetWriteCounter(NvM_BlockIdType idBlock_uo, uint32* cntrWrite_puo);
+# 459 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM.h"
+extern NvM_Rb_RequestType_ten NvM_Rb_GetRequestType(void);
+
+
+
+extern NvM_BlockIdType NvM_Rb_GetBlockIdCausingLastDetError(void);
+
+
+
+
+
+
+
+extern NvM_BlockManagementType NvM_Rb_GetBlockType(NvM_BlockIdType BlockId);
+
+extern boolean NvM_Rb_IsInitAtLayoutChangeEnqueued(void);
+
+extern boolean NvM_Rb_IsBlockSelectedForInitAtLayoutChange(NvM_BlockIdType BlockId);
+
+extern boolean NvM_Rb_IsBlockSelectedForFirstInitAll(NvM_BlockIdType BlockId);
+# 490 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM.h"
+extern Std_ReturnType NvM_ReadBlock(NvM_BlockIdType BlockId, NvM_Rb_VoidPtr NvM_DstPtr);
+# 508 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM.h"
+extern Std_ReturnType NvM_ReadPRAMBlock(NvM_BlockIdType BlockId);
+# 526 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM.h"
+extern Std_ReturnType NvM_WriteBlock(NvM_BlockIdType BlockId, NvM_Rb_ConstVoidPtr NvM_SrcPtr);
+# 544 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM.h"
+extern Std_ReturnType NvM_WritePRAMBlock(NvM_BlockIdType BlockId);
+# 562 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM.h"
+extern Std_ReturnType NvM_RestoreBlockDefaults(NvM_BlockIdType BlockId, NvM_Rb_VoidPtr NvM_DstPtr);
+# 580 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM.h"
+extern Std_ReturnType NvM_RestorePRAMBlockDefaults(NvM_BlockIdType BlockId);
+# 598 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM.h"
+extern Std_ReturnType NvM_EraseNvBlock(NvM_BlockIdType BlockId);
+# 616 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM.h"
+extern Std_ReturnType NvM_InvalidateNvBlock(NvM_BlockIdType BlockId);
+# 659 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM.h"
+extern void NvM_ReadAll(void);
+# 668 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM.h"
+extern void NvM_WriteAll(void);
+# 677 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM.h"
+extern void NvM_CancelWriteAll(void);
+# 686 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM.h"
+extern void NvM_Rb_FirstInitAll(void);
+# 695 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM.h"
+extern void NvM_ValidateAll(void);
+# 713 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM.h"
+extern void NvM_MainFunction(void);
+
+
+
+# 1 ".\\output\\inc/NvM_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\NvM\\integration\\NvM_MemMap.h" 1
+# 263 ".\\output\\inc/..\\..\\bsw\\NvM\\integration\\NvM_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 264 ".\\output\\inc/..\\..\\bsw\\NvM\\integration\\NvM_MemMap.h" 2
+# 2 ".\\output\\inc/NvM_MemMap.h" 2
+# 718 ".\\output\\inc/..\\..\\bsw\\NvM\\api\\NvM.h" 2
+# 2 ".\\output\\inc/NvM.h" 2
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\nvm\\Dem_Nvm.h" 2
+# 1 ".\\output\\inc/Dem_Main.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\nvm\\Dem_Nvm.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\nvm\\Dem_Nvm_Types.h" 1
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Cfg_Nvm.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_Nvm.h" 1
+# 2 ".\\output\\inc/Dem_Cfg_Nvm.h" 2
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\nvm\\Dem_Nvm_Types.h" 2
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\nvm\\Dem_Nvm_Types.h" 2
+# 1 ".\\output\\inc/Dem_EvMemTypes.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evmem\\Dem_EvMemTypes.h" 1
+# 2 ".\\output\\inc/Dem_EvMemTypes.h" 2
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\nvm\\Dem_Nvm_Types.h" 2
+# 1 ".\\output\\inc/Dem_GenericNvData.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\main\\Dem_GenericNvData.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\main\\Dem_OperationCycle.h" 1
+# 7 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\main\\Dem_GenericNvData.h" 2
+# 1 ".\\output\\inc/Dem_EvMemGenTypes.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evmem\\Dem_EvMemGenTypes.h" 1
+
+
+
+
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 6 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evmem\\Dem_EvMemGenTypes.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EvMem.h" 1
+# 7 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evmem\\Dem_EvMemGenTypes.h" 2
+# 2 ".\\output\\inc/Dem_EvMemGenTypes.h" 2
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\main\\Dem_GenericNvData.h" 2
+
+typedef struct
+{
+
+    rba_DemObd_PidDataType pidData;
+
+
+   Dem_OperationCycleList OperationCycleStates;
+   Dem_OperationCycleList OperationCycleQualified;
+
+
+
+   boolean Overflow[6u];
+
+   Dem_DtcIdType DtcIdsByOccurrenceTime[7u];
+
+} Dem_GenericNvDataType;
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 162 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 163 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 28 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\main\\Dem_GenericNvData.h" 2
+extern Dem_GenericNvDataType Dem_GenericNvData;
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 175 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 176 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 31 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\main\\Dem_GenericNvData.h" 2
+# 2 ".\\output\\inc/Dem_GenericNvData.h" 2
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\nvm\\Dem_Nvm_Types.h" 2
+# 1 ".\\output\\inc/NvM.h" 1
+# 12 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\nvm\\Dem_Nvm_Types.h" 2
+# 1 ".\\output\\inc/Dem_Bfm.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\Dem_Bfm.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Cfg.h" 1
+# 7 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\Dem_Bfm.h" 2
+# 2 ".\\output\\inc/Dem_Bfm.h" 2
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\nvm\\Dem_Nvm_Types.h" 2
+
+
+# 1 ".\\output\\inc/rba_DemObdBasic_Types.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_Types.h" 1
+# 2 ".\\output\\inc/rba_DemObdBasic_Types.h" 2
+# 16 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\nvm\\Dem_Nvm_Types.h" 2
+
+
+
+typedef uint8 Dem_NvmBlockIdType;
+
+typedef union
+{
+    Dem_EvMemEventMemoryType evMemData;
+    Dem_GenericNvDataType genericNvData;
+
+
+    rba_DemObdBasic_PdtcMemType obdPdtcMemData[6u];
+# 42 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\nvm\\Dem_Nvm_Types.h"
+} Dem_NvMStorageBufferData;
+
+
+typedef void (*Dem_NvmCopyFunction) (void *destination, const void* source, uint32 size);
+
+
+typedef struct
+{
+    Dem_NvmBlockIdType id;
+    Dem_NvMStorageBufferData data;
+    boolean busy;
+} Dem_NvMStorageBufferType;
+
+
+typedef struct
+{
+    void* ramAdress;
+    uint32 nvmBlockSize;
+    uint8 copyFunctionPointerIndex;
+} Dem_NvmBlockIdExtendedType;
+
+
+typedef uint8 Dem_NvmBlockStatusType;
+# 75 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\nvm\\Dem_Nvm_Types.h"
+typedef Dem_NvmBlockStatusType Dem_NvMBlockStatusDoubleBufferType[5];
+
+
+
+
+
+
+
+typedef NvM_RequestResultType Dem_NvmResultType;
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\nvm\\Dem_Nvm.h" 2
+# 1 ".\\output\\inc/Dem_Array.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\nvm\\Dem_Nvm.h" 2
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 12 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\nvm\\Dem_Nvm.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_Main.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\nvm\\Dem_Nvm.h" 2
+# 1 ".\\output\\inc/rba_DiagLib_Bits8.h" 1
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\nvm\\Dem_Nvm.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\nvm\\Dem_NvmHashIdNvData.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/Platform_Types.h" 1
+# 7 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\nvm\\Dem_NvmHashIdNvData.h" 2
+# 1 ".\\output\\inc/Dem_Array.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\nvm\\Dem_NvmHashIdNvData.h" 2
+# 1 ".\\output\\inc/Dem_Cfg.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\nvm\\Dem_NvmHashIdNvData.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_Nvm.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\nvm\\Dem_NvmHashIdNvData.h" 2
+
+typedef uint8 Dem_NvmHashIdType;
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 162 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 163 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 15 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\nvm\\Dem_NvmHashIdNvData.h" 2
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 175 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 176 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 22 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\nvm\\Dem_NvmHashIdNvData.h" 2
+# 15 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\nvm\\Dem_Nvm.h" 2
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 23 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 24 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 19 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\nvm\\Dem_Nvm.h" 2
+
+extern Dem_NvMBlockStatusDoubleBufferType Dem_NvMBlockStatusDoubleBuffer[21];
+extern Dem_NvMStorageBufferType Dem_NvMStorageBuffer[2];
+
+extern Dem_EraseAllStatusType Dem_EraseAllNvMDataStatus;
+extern boolean Dem_NvMAnyClearFailed;
+
+extern boolean Dem_NvMImmediateStorageRequested;
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 36 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 37 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 31 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\nvm\\Dem_Nvm.h" 2
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 69 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 70 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 35 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\nvm\\Dem_Nvm.h" 2
+
+extern const NvM_BlockIdType Dem_NvMBlockMap2NvmId[21];
+extern const Dem_NvmBlockIdExtendedType Dem_NvmBlockIdExtended[18];
+extern const Dem_NvmCopyFunction DemCopyFctPtrTable[1];
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 82 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 83 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 45 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\nvm\\Dem_Nvm.h" 2
+
+
+static __inline__ NvM_BlockIdType Dem_NvMGetNvMBlocKId(Dem_NvmBlockIdType id)
+{
+    return Dem_NvMBlockMap2NvmId[id];
+}
+
+static __inline__ Dem_NvmResultType Dem_NvmGetStatus (Dem_NvmBlockIdType id)
+{
+    NvM_RequestResultType result;
+    Dem_NvmResultType returnValue;
+    if (NvM_GetErrorStatus (Dem_NvMGetNvMBlocKId(id), &result) == 0x01u)
+    {
+        returnValue = (1U);
+    }
+    else
+    {
+        switch (result)
+        {
+            case (6U):
+                returnValue = (6U);
+                break;
+
+            case (0U):
+            case (7U):
+            case (8U):
+                returnValue = (0U);
+                break;
+
+            case (2U):
+                returnValue = (2U);
+                break;
+
+            case (5U):
+                returnValue = (5U);
+                break;
+
+            case (3U):
+                returnValue = (3U);
+                break;
+
+            case (4U):
+                returnValue = (4U);
+
+
+                break;
+
+            default:
+
+                returnValue = (1U);
+                break;
+        }
+    }
+    return returnValue;
+}
+
+static __inline__ void Dem_NvMWriteBlockOnShutdown(Dem_NvmBlockIdType id)
+{
+    Dem_NvMBlockStatusDoubleBuffer[id][1u] = 0x01u;
+}
+
+static __inline__ void Dem_NvMWriteBlockImmediate(Dem_NvmBlockIdType id)
+{
+    Dem_NvMBlockStatusDoubleBuffer[id][2u] = 0x02u;
+}
+
+static __inline__ void Dem_NvMClearBlockByWrite(Dem_NvmBlockIdType id)
+{
+    Dem_NvMBlockStatusDoubleBuffer[id][3u] = 0x08u;
+}
+
+static __inline__ void Dem_NvMClearBlockByInvalidate(Dem_NvmBlockIdType id)
+{
+    Dem_NvMBlockStatusDoubleBuffer[id][3u] = 0x10u;
+}
+
+static __inline__ void Dem_NvMExcludeBlockFromStatemachine(Dem_NvmBlockIdType id, boolean exclude)
+{
+    if(exclude)
+    {
+        Dem_NvMBlockStatusDoubleBuffer[id][4u] = 0x40u;
+    }
+    else
+    {
+        Dem_NvMBlockStatusDoubleBuffer[id][4u] = 0x00u;
+    }
+}
+
+void Dem_NvMInit(void);
+void Dem_NvMMainFunction(void);
+void Dem_NvMShutdown(void);
+boolean Dem_NvMIsClearPending(void);
+boolean Dem_NvMIsImmediatePending(void);
+boolean Dem_NvMIsBlockClearPending( Dem_NvmBlockIdType demNvMId);
+boolean Dem_NvMIsBlockAllowedToBeExcluded(Dem_NvmBlockIdType demNvMId);
+boolean Dem_NvMIsBlockExcluded( Dem_NvmBlockIdType demNvMId);
+void Dem_NvMNormalMemCopy(void* Dest_pv, const void* Src_pcv, uint32 numBytes_s32);
+
+
+
+
+
+static __inline__ void Dem_NvMStartClear(void)
+{
+    Dem_NvMAnyClearFailed = (0 != 0);
+}
+
+static __inline__ boolean Dem_NvMIsClearFailed(void)
+{
+    return Dem_NvMAnyClearFailed;
+}
+
+
+
+static __inline__ void Dem_NvMSetImmediateStorageRequested(boolean state)
+{
+    Dem_NvMImmediateStorageRequested = state;
+}
+
+
+static __inline__ boolean Dem_NvMIsImmediateStorageRequested(void)
+{
+    return Dem_NvMImmediateStorageRequested;
+}
+
+
+static __inline__ uint8 Dem_NvMGetInvalidateAllNvMBlocksStatus(void)
+{
+    return Dem_EraseAllNvMDataStatus;
+}
+
+static __inline__ Dem_boolean_least Dem_NvMIsInvalidateAllNVMBlocksRequested (void)
+{
+
+
+
+
+
+   return (0 != 0);
+
+}
+# 2 ".\\output\\inc/Dem_Nvm.h" 2
+# 28 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h" 2
+# 1 ".\\output\\inc/Dem_IndicatorAttributes.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\indct\\Dem_IndicatorAttributes.h" 1
+
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\indct\\Dem_IndicatorAttributes.h" 2
+# 1 ".\\output\\inc/Dem_Array.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\indct\\Dem_IndicatorAttributes.h" 2
+# 1 ".\\output\\inc/Dem_BitArray.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\indct\\Dem_IndicatorAttributes.h" 2
+# 1 ".\\output\\inc/rba_DiagLib_Bits8.h" 1
+# 12 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\indct\\Dem_IndicatorAttributes.h" 2
+# 1 ".\\output\\inc/rba_DiagLib_Bits16.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\indct\\Dem_IndicatorAttributes.h" 2
+# 1 ".\\output\\inc/rba_DiagLib_Bits32.h" 1
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\indct\\Dem_IndicatorAttributes.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EventIndicators.h" 1
+# 15 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\indct\\Dem_IndicatorAttributes.h" 2
+# 1 ".\\output\\inc/Dem_ISO14229Byte.h" 1
+# 16 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\indct\\Dem_IndicatorAttributes.h" 2
+# 1 ".\\output\\inc/Dem_Mapping.h" 1
+# 17 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\indct\\Dem_IndicatorAttributes.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\indct\\Dem_Indicator.h" 1
+
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\indct\\Dem_Indicator.h" 2
+
+
+
+typedef struct
+{
+    uint16 blinkingCtr;
+    uint16 continousCtr;
+    uint16 slowFlashCtr;
+    uint16 fastFlashCtr;
+} Dem_IndicatorStatus;
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 23 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 24 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 23 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\indct\\Dem_Indicator.h" 2
+extern Dem_IndicatorStatus Dem_AllIndicatorStatus[(2u + 2u)];
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 36 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 37 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 26 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\indct\\Dem_Indicator.h" 2
+
+static __inline__ uint16 Dem_IndicatorGetBlinkingCounter(uint8 indicatorId)
+{
+ return (Dem_AllIndicatorStatus[indicatorId].blinkingCtr);
+}
+
+static __inline__ uint16 Dem_IndicatorGetContinuousCounter(uint8 indicatorId)
+{
+ return (Dem_AllIndicatorStatus[indicatorId].continousCtr);
+}
+
+static __inline__ uint16 Dem_IndicatorGetFastFlashCtr(uint8 indicatorId)
+{
+    return (Dem_AllIndicatorStatus[indicatorId].fastFlashCtr);
+}
+
+static __inline__ uint16 Dem_IndicatorGetSlowFlashCtr(uint8 indicatorId)
+{
+    return (Dem_AllIndicatorStatus[indicatorId].slowFlashCtr);
+}
+
+static __inline__ void Dem_IndicatorSetContinuousCtr(uint8 indicatorId, uint16 continuousCtr)
+{
+ Dem_AllIndicatorStatus[indicatorId].continousCtr = continuousCtr;
+}
+
+static __inline__ void Dem_IndicatorSetBlinkingCtr(uint8 indicatorId, uint16 blinkingCtr)
+{
+ Dem_AllIndicatorStatus[indicatorId].blinkingCtr = blinkingCtr;
+}
+
+static __inline__ void Dem_IndicatorSetFastFlashCtr(uint8 indicatorId, uint16 fastFlashCtr)
+{
+    Dem_AllIndicatorStatus[indicatorId].fastFlashCtr = fastFlashCtr;
+}
+
+static __inline__ void Dem_IndicatorSetSlowFlashCtr(uint8 indicatorId, uint16 slowFlashCtr)
+{
+    Dem_AllIndicatorStatus[indicatorId].slowFlashCtr = slowFlashCtr;
+}
+
+static __inline__ void Dem_IndicatorIncrementBehaviourCounter(uint8 indicatorId, uint8 indicatorBehaviour)
+{
+    uint16 blinkingCounter = Dem_IndicatorGetBlinkingCounter(indicatorId);
+    uint16 countinuousCounter = Dem_IndicatorGetContinuousCounter(indicatorId);
+    uint16 fastFlashCounter = Dem_IndicatorGetFastFlashCtr(indicatorId);
+    uint16 slowFlashCounter = Dem_IndicatorGetSlowFlashCtr(indicatorId);
+
+    if(indicatorBehaviour == (1U))
+    {
+        countinuousCounter++;
+        Dem_IndicatorSetContinuousCtr(indicatorId, countinuousCounter);
+    }
+    else if(indicatorBehaviour == (2U))
+    {
+        blinkingCounter++;
+        Dem_IndicatorSetBlinkingCtr(indicatorId, blinkingCounter);
+    }
+    else if (indicatorBehaviour == (3U))
+    {
+        countinuousCounter++;
+        blinkingCounter++;
+        Dem_IndicatorSetContinuousCtr(indicatorId, countinuousCounter);
+        Dem_IndicatorSetBlinkingCtr(indicatorId, blinkingCounter);
+    }
+    else if (indicatorBehaviour == (5U))
+    {
+        fastFlashCounter++;
+        Dem_IndicatorSetFastFlashCtr(indicatorId, fastFlashCounter);
+    }
+    else if (indicatorBehaviour == (4U))
+    {
+        slowFlashCounter++;
+        Dem_IndicatorSetSlowFlashCtr(indicatorId, slowFlashCounter);
+    }
+    else
+    {
+
+    }
+}
+
+static __inline__ void Dem_IndicatorDecrementBehaviourCounter(uint8 indicatorId, uint8 indicatorBehaviour)
+{
+    uint16 blinkingCounter = Dem_IndicatorGetBlinkingCounter(indicatorId);
+    uint16 countinuousCounter = Dem_IndicatorGetContinuousCounter(indicatorId);
+    uint16 fastFlashCounter = Dem_IndicatorGetFastFlashCtr(indicatorId);
+    uint16 slowFlashCounter = Dem_IndicatorGetSlowFlashCtr(indicatorId);
+
+    if ((indicatorBehaviour == (1U)) && (countinuousCounter > 0u))
+    {
+        countinuousCounter--;
+        Dem_IndicatorSetContinuousCtr(indicatorId, countinuousCounter);
+    }
+    else if ((indicatorBehaviour == (2U)) && (blinkingCounter > 0u))
+    {
+        blinkingCounter--;
+        Dem_IndicatorSetBlinkingCtr(indicatorId, blinkingCounter);
+    }
+    else if ((indicatorBehaviour == (3U)) && (blinkingCounter > 0u) && (countinuousCounter > 0u))
+    {
+        blinkingCounter--;
+        countinuousCounter--;
+        Dem_IndicatorSetContinuousCtr(indicatorId, countinuousCounter);
+        Dem_IndicatorSetBlinkingCtr(indicatorId, blinkingCounter);
+    }
+    else if ((indicatorBehaviour == (5U)) && (fastFlashCounter > 0u))
+    {
+        fastFlashCounter--;
+        Dem_IndicatorSetFastFlashCtr(indicatorId, fastFlashCounter);
+    }
+    else if ((indicatorBehaviour == (4U)) && (slowFlashCounter > 0u))
+    {
+        slowFlashCounter--;
+        Dem_IndicatorSetSlowFlashCtr(indicatorId, slowFlashCounter);
+    }
+    else
+    {
+
+    }
+}
+
+static __inline__ uint8 Dem_EvtGetIndicatorStatus(uint8 indicatorId)
+{
+    uint8 IndicatorStatus;
+
+    do { Os_SuspendAllInterrupts(); } while (0);
+
+    if (Dem_IndicatorGetFastFlashCtr(indicatorId) > 0u)
+    {
+        IndicatorStatus = (5U);
+    }
+    else if(Dem_IndicatorGetSlowFlashCtr(indicatorId) > 0u)
+    {
+        IndicatorStatus = (4U);
+    }
+    else if((Dem_IndicatorGetBlinkingCounter(indicatorId) > 0u) && (Dem_IndicatorGetContinuousCounter(indicatorId) == 0u))
+    {
+        IndicatorStatus = (2U);
+    }
+    else if((Dem_IndicatorGetBlinkingCounter(indicatorId) == 0u) && (Dem_IndicatorGetContinuousCounter(indicatorId) > 0u))
+    {
+        IndicatorStatus = (1U);
+    }
+    else if((Dem_IndicatorGetBlinkingCounter(indicatorId) > 0u) && (Dem_IndicatorGetContinuousCounter(indicatorId) > 0u))
+    {
+        IndicatorStatus = (3U);
+    }
+    else
+    {
+        IndicatorStatus = (0U);
+    }
+
+    do { Os_ResumeAllInterrupts(); } while (0);
+
+    return IndicatorStatus;
+}
+
+
+
+
+void Dem_UpdateISO14229WIRStatus (Dem_EventIdType EventId);
+# 18 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\indct\\Dem_IndicatorAttributes.h" 2
+# 1 ".\\output\\inc/Dem_Nvm.h" 1
+# 19 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\indct\\Dem_IndicatorAttributes.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\indct\\Dem_IndicatorAttributesNvData.h" 1
+
+
+
+
+
+
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\indct\\Dem_IndicatorAttributesTypes.h" 1
+
+
+
+
+
+
+# 1 ".\\output\\inc/Platform_Types.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\indct\\Dem_IndicatorAttributesTypes.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EventIndicators.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\indct\\Dem_IndicatorAttributesTypes.h" 2
+
+
+
+typedef struct
+{
+    uint8 failureCycleCounterVal;
+    uint8 healingCycleCounterVal;
+} Dem_EvtIndicatorAttributeState;
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\indct\\Dem_IndicatorAttributesNvData.h" 2
+# 1 ".\\output\\inc/Dem_Array.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\indct\\Dem_IndicatorAttributesNvData.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EventId.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\indct\\Dem_IndicatorAttributesNvData.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EventIndicators.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\indct\\Dem_IndicatorAttributesNvData.h" 2
+
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 162 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 163 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 16 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\indct\\Dem_IndicatorAttributesNvData.h" 2
+extern Dem_EvtIndicatorAttributeState Dem_AllEventsIndicatorState[((500u * 1u))];
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 175 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 176 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 19 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\indct\\Dem_IndicatorAttributesNvData.h" 2
+# 20 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\indct\\Dem_IndicatorAttributes.h" 2
+# 50 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\indct\\Dem_IndicatorAttributes.h"
+typedef struct
+{
+
+   Dem_EvtIndicatorParamType attributes;
+}Dem_EvtIndicatorAttributeParam;
+# 80 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\indct\\Dem_IndicatorAttributes.h"
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 69 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 70 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 81 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\indct\\Dem_IndicatorAttributes.h" 2
+extern const Dem_EvtIndicatorAttributeParam Dem_AllEventsIndicatorParam[((500u * 1u))];
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 82 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 83 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 84 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\indct\\Dem_IndicatorAttributes.h" 2
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 92 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 93 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 90 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\indct\\Dem_IndicatorAttributes.h" 2
+
+
+
+static __inline__ uint8 Dem_IndicatorAttrib_GetIndicatorId(uint16_least indicatorIndex)
+{
+ return (uint8) rba_DiagLib_Bit16GetBits(Dem_AllEventsIndicatorParam[indicatorIndex].attributes,
+   8u,
+   2u);
+}
+
+static __inline__ uint8 Dem_IndicatorAttrib_GetBehaviour(uint16_least indicatorIndex)
+{
+
+ return (uint8) rba_DiagLib_Bit16GetBits(Dem_AllEventsIndicatorParam[indicatorIndex].attributes,
+   1u,
+   0x03u);
+
+
+
+
+}
+
+static __inline__ uint8 Dem_IndicatorAttrib_GetFailureCycleThreshold(uint16_least indicatorIndex)
+{
+
+
+
+
+
+ ((void)(indicatorIndex));
+ return 2u;
+
+}
+
+static __inline__ uint8 Dem_IndicatorAttrib_GetHealingCycleThreshold(uint16_least indicatorIndex)
+{
+
+
+
+
+
+ ((void)(indicatorIndex));
+ return 3u;
+
+}
+
+
+
+static __inline__ boolean Dem_IndicatorAttrib_IsApiControl(uint16_least indicatorIndex)
+{
+   return rba_DiagLib_Bit16IsBitSet(Dem_AllEventsIndicatorParam[indicatorIndex].attributes, 0u);
+}
+
+
+
+static __inline__ uint8 Dem_IndicatorAttribGetFailureCycCtr(uint16_least indicatorIndex)
+{
+   return Dem_AllEventsIndicatorState[indicatorIndex].failureCycleCounterVal;
+}
+
+static __inline__ void Dem_IndicatorAttribSetFailureCycCtr(uint16_least indicatorIndex, uint8 failureCtr)
+{
+ Dem_AllEventsIndicatorState[indicatorIndex].failureCycleCounterVal = failureCtr;
+ Dem_NvMWriteBlockOnShutdown(20u);
+}
+
+
+
+static __inline__ uint8 Dem_IndicatorAttribGetHealingCycCtr (uint16_least indicatorIndex)
+{
+   return Dem_AllEventsIndicatorState[indicatorIndex].healingCycleCounterVal;
+}
+
+static __inline__ void Dem_IndicatorAttribSetHealingCycCtr(uint16_least indicatorIndex, uint8 healingCtr)
+{
+ Dem_AllEventsIndicatorState[indicatorIndex].healingCycleCounterVal = healingCtr;
+ Dem_NvMWriteBlockOnShutdown(20u);
+}
+
+
+
+
+static __inline__ Dem_boolean_least Dem_IsIndicatorAttributeValid(uint16_least indicatorIndex)
+{
+ return (Dem_AllEventsIndicatorParam[indicatorIndex].attributes != 0u);
+}
+
+
+
+
+void Dem_SetIndicatorDeActivation(Dem_EventIdType EventId, Dem_UdsStatusByteType isoByteOld, Dem_UdsStatusByteType isoByteNew);
+void Dem_SetIndicatorActivation(Dem_EventIdType EventId, Dem_UdsStatusByteType isoByteOld, Dem_UdsStatusByteType isoByteNew);
+void Dem_IndicatorAttributeInit(void);
+void Dem_IndicatorAttributeInitCheckNvM(void);
+Dem_boolean_least Dem_isAnyIndicatorAttribOn (Dem_EventIdType EventId);
+
+
+
+static __inline__ void Dem_ClearIndicatorAttributes(Dem_EventIdType EventId,Dem_UdsStatusByteType isoByteOld, Dem_UdsStatusByteType isoByteNew)
+{
+
+    Dem_EventIndicatorAttributeIterator it;
+    uint16_least currentIndicAttrib = 0;
+    uint8 indicatorId, indicatorBehaviour;
+
+    do {} while (0);
+
+    if (!Dem_ISO14229ByteIsWarningIndicatorRequested(isoByteNew))
+    {
+
+        for (Dem_EventIndicatorAttributeIteratorNew(EventId, &it); Dem_EventIndicatorAttributeIsValid(EventId, &it);
+                Dem_EventIndicatorAttributeNext(&it))
+        {
+            currentIndicAttrib = Dem_EventIndicatorAttributeCurrent(&it);
+            if (Dem_IsIndicatorAttributeValid(currentIndicAttrib))
+            {
+                indicatorId = Dem_IndicatorAttrib_GetIndicatorId(currentIndicAttrib);
+                indicatorBehaviour = Dem_IndicatorAttrib_GetBehaviour(currentIndicAttrib);
+                if (Dem_IndicatorAttribGetFailureCycCtr(currentIndicAttrib) == 0xFF)
+                {
+                    Dem_IndicatorDecrementBehaviourCounter(indicatorId, indicatorBehaviour);
+                }
+                Dem_IndicatorAttribSetFailureCycCtr(currentIndicAttrib, 0);
+                Dem_IndicatorAttribSetHealingCycCtr(currentIndicAttrib, 0);
+            }
+        }
+    }
+
+    ((void)(isoByteOld));
+}
+# 231 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\indct\\Dem_IndicatorAttributes.h"
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 232 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\indct\\Dem_IndicatorAttributes.h" 2
+# 2 ".\\output\\inc/Dem_IndicatorAttributes.h" 2
+# 29 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h" 2
+# 1 ".\\output\\inc/Dem_Indicator.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\indct\\Dem_Indicator.h" 1
+# 2 ".\\output\\inc/Dem_Indicator.h" 2
+# 30 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventStatusNvData.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/Platform_Types.h" 1
+# 7 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventStatusNvData.h" 2
+# 1 ".\\output\\inc/Dem_Array.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventStatusNvData.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_Events.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventStatusNvData.h" 2
+# 1 ".\\output\\inc/Dem_BitArray.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventStatusNvData.h" 2
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 162 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 163 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventStatusNvData.h" 2
+
+extern uint8 Dem_AllEventsStatusByte[(500u +1u)];
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 175 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 176 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 23 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventStatusNvData.h" 2
+# 31 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h" 2
+
+# 1 ".\\output\\inc/Dem_Cfg_Events_DataStructures.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_Events_DataStructures.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_Events_DataStructures.h"
+# 1 ".\\output\\inc/Dem_Internal.h" 1
+# 12 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_Events_DataStructures.h" 2
+# 1 ".\\output\\inc/Dem_Lib.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_Events_DataStructures.h" 2
+# 1 ".\\output\\inc/rba_DiagLib.h" 1
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_Events_DataStructures.h" 2
+# 1 ".\\output\\inc/Dem_Lock.h" 1
+# 15 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_Events_DataStructures.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_StorageCondition.h" 1
+# 16 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_Events_DataStructures.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EnableCondition.h" 1
+# 17 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_Events_DataStructures.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EventsCallback.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EventsCallback.h"
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 92 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 93 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 12 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EventsCallback.h" 2
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 15 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EventsCallback.h" 2
+# 18 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_Events_DataStructures.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_ExtPrototypes.h" 1
+# 19 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_Events_DataStructures.h" 2
+# 1 ".\\output\\inc/Rte_Dem.h" 1
+# 20 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_Events_DataStructures.h" 2
+
+typedef Std_ReturnType (*Dem_EvtClearAllowedFncType)(boolean *Allowed);
+# 35 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_Events_DataStructures.h"
+typedef struct {
+ uint8 data2;
+ uint8 data3;
+} Dem_EvtParam_8Type;
+
+typedef struct {
+ uint32 data1;
+} Dem_EvtParam_32Type;
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 69 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 70 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 46 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_Events_DataStructures.h" 2
+extern const Dem_EvtParam_8Type Dem_EvtParam_8[501];
+extern const Dem_EvtParam_32Type Dem_EvtParam_32[501];
+
+static __inline__ uint8 Dem_EvtParam_GetDebounceBehavior(Dem_EventIdType indx) {
+ do {} while (0);
+ return (uint8)(rba_DiagLib_Bit8GetSingleBit(Dem_EvtParam_8[indx].data3, 0));
+}
+
+static __inline__ boolean Dem_EvtParam_GetIsRecoverable(Dem_EventIdType indx) {
+ do {} while (0);
+ return rba_DiagLib_Bit8IsBitSet(Dem_EvtParam_8[indx].data3, 1);
+}
+
+
+static __inline__ boolean Dem_EvtParam_GetStoreTestFailedToNextOC(
+  Dem_EventIdType indx) {
+ do {} while (0);
+ return (1 != 0);
+}
+
+static __inline__ boolean Dem_EvtParam_GetRequestsWarningIndicator(
+  Dem_EventIdType indx) {
+ do {} while (0);
+ return rba_DiagLib_Bit8IsBitSet(Dem_EvtParam_8[indx].data3, 2);
+}
+
+
+static __inline__ Dem_EventCategoryType Dem_EvtParam_GetCategory(
+  Dem_EventIdType indx) {
+ do {} while (0);
+ return 0;
+}
+
+static __inline__ boolean Dem_EvtParam_GetIsEventDestPrimary(Dem_EventIdType indx) {
+ do {} while (0);
+ return rba_DiagLib_Bit8IsBitSet(Dem_EvtParam_8[indx].data3, 3);
+}
+
+static __inline__ boolean Dem_EvtParam_GetIsEventDestSecondary(
+  Dem_EventIdType indx) {
+ do {} while (0);
+ return rba_DiagLib_Bit8IsBitSet(Dem_EvtParam_8[indx].data3, 4);
+}
+
+static __inline__ boolean Dem_EvtParam_GetIsEventDestMirror(Dem_EventIdType indx) {
+ do {} while (0);
+ return rba_DiagLib_Bit8IsBitSet(Dem_EvtParam_8[indx].data3, 5);
+}
+
+static __inline__ boolean Dem_EvtParam_GetAgingAllowed(Dem_EventIdType indx) {
+ do {} while (0);
+ return rba_DiagLib_Bit32IsBitSet(Dem_EvtParam_32[indx].data1, 0);
+}
+
+
+static __inline__ boolean Dem_EvtParam_GetIsGlobalFDCCallbackConfigured(
+  Dem_EventIdType indx) {
+ do {} while (0);
+ return (0 != 0);
+}
+
+
+static __inline__ boolean Dem_EvtParam_GetTriggersDataChangedCallback(
+  Dem_EventIdType indx) {
+ do {} while (0);
+ return (0 != 0);
+}
+
+static __inline__ uint8 Dem_EvtParam_GetSignificance(Dem_EventIdType indx) {
+ do {} while (0);
+ return (uint8)(rba_DiagLib_Bit32GetSingleBit(Dem_EvtParam_32[indx].data1, 1));
+}
+
+static __inline__ uint8 Dem_EvtParam_GetOperationCycleID(Dem_EventIdType indx) {
+ do {} while (0);
+ return (uint8)(rba_DiagLib_Bit32GetBits(Dem_EvtParam_32[indx].data1, 2, 3));
+}
+
+static __inline__ uint8 Dem_EvtParam_GetAgingCycleID(Dem_EventIdType indx) {
+ do {} while (0);
+ return (uint8)(rba_DiagLib_Bit32GetBits(Dem_EvtParam_32[indx].data1, 5, 3));
+}
+
+static __inline__ uint8 Dem_EvtParam_GetFailureCycleID(Dem_EventIdType indx) {
+ do {} while (0);
+ return (uint8)(rba_DiagLib_Bit32GetBits(Dem_EvtParam_32[indx].data1, 8, 3));
+}
+
+static __inline__ boolean Dem_EvtParam_GetInitialSuppressionStatus(
+  Dem_EventIdType indx) {
+ do {} while (0);
+ return rba_DiagLib_Bit32IsBitSet(Dem_EvtParam_32[indx].data1, 11);
+}
+
+static __inline__ uint8 Dem_EvtParam_GetDebounceMethodIndex(Dem_EventIdType indx) {
+ do {} while (0);
+ return (uint8)(rba_DiagLib_Bit32GetSingleBit(Dem_EvtParam_32[indx].data1, 12));
+}
+
+static __inline__ uint16 Dem_EvtParam_GetDebounceParamSettingIndex(
+  Dem_EventIdType indx) {
+ do {} while (0);
+ return (uint16)(rba_DiagLib_Bit32GetBits(Dem_EvtParam_32[indx].data1, 13, 9));
+}
+
+
+static __inline__ uint8 Dem_EvtParam_GetBufferTimeSFB(Dem_EventIdType indx) {
+ do {} while (0);
+ return 0;
+}
+
+static __inline__ uint8 Dem_EvtParam_GetAgingThreshold(Dem_EventIdType indx) {
+ do {} while (0);
+ return Dem_EvtParam_8[indx].data2;
+}
+
+static __inline__ uint8 Dem_EvtParam_GetAgingThresholdForTFSLC(
+  Dem_EventIdType indx) {
+ do {} while (0);
+ return (uint8)(rba_DiagLib_Bit32GetSingleBit(Dem_EvtParam_32[indx].data1, 22));
+}
+
+static __inline__ uint8 Dem_EvtParam_GetFailureConfirmationThreshold(
+  Dem_EventIdType indx) {
+ do {} while (0);
+ return (uint8)(rba_DiagLib_Bit32GetBits(Dem_EvtParam_32[indx].data1, 23, 2));
+}
+
+static __inline__ uint8 Dem_EvtParam_GetEventPriority(Dem_EventIdType indx) {
+ do {} while (0);
+ return (uint8)(rba_DiagLib_Bit32GetBits(Dem_EvtParam_32[indx].data1, 25, 3));
+}
+
+static __inline__ uint8 Dem_EvtParam_GetMaxNumberFreezeFrameRecords(
+  Dem_EventIdType indx) {
+ do {} while (0);
+ return (uint8)(rba_DiagLib_Bit32GetBits(Dem_EvtParam_32[indx].data1, 28, 2));
+}
+
+
+static __inline__ Dem_StoCoList Dem_EvtParam_GetStorageConditions(
+  Dem_EventIdType indx) {
+ do {} while (0);
+ return 0;
+}
+
+
+static __inline__ Dem_EnCoList Dem_EvtParam_GetEnableConditions(
+  Dem_EventIdType indx) {
+ do {} while (0);
+ return 0;
+}
+
+
+static __inline__ uint8 Dem_EvtParam_GetCallbackEventStatusChangedIndex(
+  Dem_EventIdType indx) {
+ do {} while (0);
+ return 0u;
+}
+
+
+static __inline__ Dem_EvtClearAllowedFncType Dem_EvtParam_GetCallbackClearAllowed(
+  Dem_EventIdType indx) {
+ do {} while (0);
+ return ((void *)0);
+}
+
+
+static __inline__ uint8 Dem_EvtParam_GetClearAllowedBehavior(Dem_EventIdType indx) {
+ do {} while (0);
+ return (0u);
+}
+
+static __inline__ boolean Dem_EvtParam_GetIsFFPrestorageSupported(
+  Dem_EventIdType indx) {
+ do {} while (0);
+ return rba_DiagLib_Bit32IsBitSet(Dem_EvtParam_32[indx].data1, 30);
+}
+
+static __inline__ boolean Dem_EvtParam_GetIsEventOBDRelevant(Dem_EventIdType indx) {
+ do {} while (0);
+ return rba_DiagLib_Bit32IsBitSet(Dem_EvtParam_32[indx].data1, 31);
+}
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 82 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 83 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 232 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_Events_DataStructures.h" 2
+# 2 ".\\output\\inc/Dem_Cfg_Events_DataStructures.h" 2
+# 33 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h" 2
+
+
+
+
+
+typedef Std_ReturnType (* Dem_InitMForEAllowedFncType) (Dem_InitMonitorReasonType InitMonitorReason);
+typedef struct
+{
+
+  uint16 Eventid;
+  Dem_InitMForEAllowedFncType InitMForEAllwdCBFnc;
+}Dem_InitMonitorForE;
+
+typedef struct
+{
+    Dem_EvtStateType state;
+    sint16 debounceLevel;
+} Dem_EvtState;
+
+typedef struct
+{
+    Dem_EventStatusType lastReportedEvent;
+} Dem_EvtState8;
+
+typedef void (* Dem_EvtStatusChangeFncType) ( Dem_EventIdType EventId, Dem_UdsStatusByteType EventStatusOld, Dem_UdsStatusByteType EventStatusNew );
+# 116 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h"
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 69 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 70 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 117 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h" 2
+# 136 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h"
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 82 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 83 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 137 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h" 2
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 23 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 24 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 141 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h" 2
+
+extern uint32 Dem_EvtIsAnyInitMonitoringRequestedMask;
+extern Dem_EvtState Dem_AllEventsState[(500u +1u)];
+extern Dem_EvtState8 Dem_AllEventsState8[(500u +1u)];
+extern uint32 Dem_AllEventsResetDebouncerRequested[(((((500u +1u))-1u) >> 5u)+1UL)];
+extern uint32 Dem_EventWasPassedReported[(((((500u +1u))-1u) >> 5u)+1UL)];
+
+extern uint16 Dem_GlobalInitMonitoringCounter;
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 36 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 37 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 152 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h" 2
+
+
+
+
+static __inline__ Dem_boolean_least Dem_EvtGetHistoryStatus(Dem_EventIdType EventId)
+{
+
+
+
+    ((void)(EventId));
+    return (0 != 0);
+
+}
+
+
+static __inline__ void Dem_EvtSetHistoryStatus(Dem_EventIdType EventId, boolean newStatus)
+{
+
+
+
+
+    ((void)(EventId));
+    ((void)(newStatus));
+
+}
+
+
+
+
+
+
+
+static __inline__ sint16 Dem_EvtGetDebounceLevel (Dem_EventIdType EventId)
+{
+   return Dem_AllEventsState[EventId].debounceLevel;
+}
+
+
+static __inline__ void Dem_EvtSetDebounceLevel (Dem_EventIdType EventId, sint16 debounceLevel)
+{
+   Dem_AllEventsState[EventId].debounceLevel = debounceLevel;
+}
+
+
+static __inline__ void Dem_EvtIncDebounceLevel (Dem_EventIdType EventId)
+{
+   Dem_AllEventsState[EventId].debounceLevel++;
+}
+
+static __inline__ void Dem_EvtDecDebounceLevel (Dem_EventIdType EventId)
+{
+   Dem_AllEventsState[EventId].debounceLevel--;
+}
+
+
+
+
+
+static __inline__ Dem_EventStatusType Dem_EvtGetLastReportedEvent (Dem_EventIdType EventId)
+{
+   return Dem_AllEventsState8[EventId].lastReportedEvent;
+}
+
+
+static __inline__ void Dem_EvtSetLastReportedEvent (Dem_EventIdType EventId, Dem_EventStatusType EventStatus)
+{
+   Dem_AllEventsState8[EventId].lastReportedEvent = EventStatus;
+}
+
+
+
+
+
+
+Dem_boolean_least Dem_EvtIsRecoverable (Dem_EventIdType EventId);
+
+static __inline__ Dem_boolean_least Dem_EvtIsNotRecoverableTOC(Dem_EventIdType EventId)
+{
+    return (! Dem_EvtIsRecoverable(EventId));
+}
+
+
+
+static __inline__ Dem_boolean_least Dem_EvtIsCausal (Dem_EventIdType EventId)
+{
+   return rba_DiagLib_Bit16IsBitSet (Dem_AllEventsState[EventId].state, 0u);
+}
+
+
+static __inline__ void Dem_EvtSetCausal_Flag (Dem_EventIdType EventId, Dem_boolean_least setBit)
+{
+    do {} while (0);
+   rba_DiagLib_Bit16OverwriteBit(&Dem_AllEventsState[EventId].state, 0u, setBit);
+}
+
+static __inline__ Dem_boolean_least Dem_EvtIsRecheckedAndWaitingForMonResult (Dem_EventIdType EventId)
+{
+
+
+
+    ((void)(EventId));
+    return (0 != 0);
+
+}
+
+
+static __inline__ void Dem_EvtSetIsRecheckedAndWaitingForMonResult (Dem_EventIdType EventId, Dem_boolean_least setBit)
+{
+
+
+
+
+    ((void)(EventId));
+    ((void)(setBit));
+
+}
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 92 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 93 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 272 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h" 2
+
+boolean Dem_EvtClearEventAllowed ( Dem_EventIdType eventId );
+void Dem_EvtSetCausal (Dem_EventIdType EventId, Dem_boolean_least causal);
+Std_ReturnType Dem_EvtResetIsoByteCallback(void);
+void Dem_EvtPreInitEvents (void);
+void Dem_EvtInitEvents(void);
+
+
+void Dem_EvtSetSuppression (Dem_EventIdType EventId, Dem_boolean_least newSuppressed);
+# 289 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h"
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 290 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h" 2
+# 324 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h"
+static __inline__ Dem_boolean_least Dem_EvtIsSuspicious (Dem_EventIdType EventId)
+{
+   return rba_DiagLib_Bit16IsBitSet (Dem_AllEventsState[EventId].state, 1u);
+}
+
+
+static __inline__ void Dem_EvtSetSuspicionLevel (Dem_EventIdType EventId, Dem_boolean_least setBit)
+{
+   rba_DiagLib_Bit16OverwriteBit (&Dem_AllEventsState[EventId].state, 1u, setBit);
+}
+# 358 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h"
+static __inline__ void Dem_EvtSetFDCThresholdReached (Dem_EventIdType EventId, Dem_boolean_least setBit)
+{
+
+
+
+   ((void)(EventId));
+   ((void)(setBit));
+
+}
+# 387 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h"
+static __inline__ Dem_boolean_least Dem_EvtIsStorageFiltered (Dem_EventIdType EventId)
+{
+
+
+
+   ((void)(EventId));
+   return (0 != 0);
+
+}
+
+
+static __inline__ void Dem_EvtSetStorageFiltered (Dem_EventIdType EventId, Dem_boolean_least setBit)
+{
+
+
+
+   ((void)(EventId));
+   ((void)(setBit));
+
+}
+static __inline__ Dem_boolean_least Dem_EvtAllEnableConditionsFulfilled (Dem_EventIdType EventId)
+{
+   return (Dem_EnCoAreAllFulfilled(Dem_EvtParam_GetEnableConditions(EventId)));
+}
+
+
+
+static __inline__ void Dem_EvtRequestResetFailureFilter(Dem_EventIdType EventId, Dem_boolean_least setBit)
+{
+    do {} while (0);
+    Dem_BitArrayOverwriteBit(Dem_AllEventsResetDebouncerRequested, EventId, setBit);
+}
+
+static __inline__ Dem_boolean_least Dem_EvtIsResetFailureFilterRequested(Dem_EventIdType EventId)
+{
+    return Dem_BitArrayIsBitSet(Dem_AllEventsResetDebouncerRequested, EventId);
+}
+
+
+
+static __inline__ Dem_boolean_least Dem_EvtIsResetFailureFilterRequestedAfterDtcSetting (Dem_EventIdType EventId)
+{
+
+
+
+
+
+    ((void)(EventId));
+    return (0 != 0);
+
+}
+
+
+static __inline__ void Dem_EvtRequestResetFailureFilterAfterDtcSetting (Dem_EventIdType EventId, Dem_boolean_least setBit)
+{
+
+    do {} while (0);
+
+
+
+
+   ((void)(EventId));
+   ((void)(setBit));
+
+}
+
+
+
+static __inline__ void Dem_EvtRequestResetFailureFilterAfterStorageCondition (Dem_EventIdType EventId, Dem_boolean_least setBit)
+{
+ do {} while (0);
+
+
+
+    ((void)(EventId));
+    ((void)(setBit));
+
+}
+
+static __inline__ Dem_boolean_least Dem_EvtIsResetFailureFilterRequestedAfterStorageCondition (Dem_EventIdType EventId)
+{
+
+
+
+    ((void)(EventId));
+ return (0 != 0);
+
+}
+
+static __inline__ void Dem_EvtIncreaseGlobalInitMonitoringCounter(void)
+{
+    Dem_GlobalInitMonitoringCounter++;
+}
+
+
+static __inline__ void Dem_EvtSetAnyInitMonitoring (Dem_InitMonitorReasonType reason) { rba_DiagLib_Bit32SetBit(&Dem_EvtIsAnyInitMonitoringRequestedMask, reason); }
+static __inline__ void Dem_EvtResetAnyInitMonitoring (void) { Dem_EvtIsAnyInitMonitoringRequestedMask = 0u; }
+static __inline__ boolean Dem_EvtIsAnyInitMonitoringRequested (void) { return (Dem_EvtIsAnyInitMonitoringRequestedMask != 0u); }
+static __inline__ boolean Dem_EvtIsAnyInitMonitoringRequestedClear (void) { return rba_DiagLib_Bit32IsBitSet(Dem_EvtIsAnyInitMonitoringRequestedMask, (1U)); }
+
+
+
+static __inline__ void Dem_EvtSetInitMonitoring (Dem_EventIdType EventId, Dem_InitMonitorReasonType newReason)
+{
+    Dem_InitMonitorReasonType oldReason = (Dem_InitMonitorReasonType)rba_DiagLib_Bit16GetBits (Dem_AllEventsState[EventId].state, 3u, 3u);
+
+    do {} while (0);
+    if ((oldReason == 0u) || (oldReason > newReason))
+    {
+        rba_DiagLib_Bit16OverwriteBits (&Dem_AllEventsState[EventId].state, 3u, 3u, newReason);
+    }
+    Dem_EvtIncreaseGlobalInitMonitoringCounter();
+    Dem_EvtSetAnyInitMonitoring (newReason);
+}
+
+
+
+static __inline__ uint8 Dem_EvtIsInitMonitoringRequested (Dem_EventIdType EventId)
+{
+  return ((uint8)(rba_DiagLib_Bit16GetBits (Dem_AllEventsState[EventId].state, 3u, 3u )));
+}
+
+static __inline__ void Dem_EvtClearInitMonitoringRequests (Dem_EventIdType EventId)
+{
+  rba_DiagLib_Bit16ClearBits (&Dem_AllEventsState[EventId].state, 3u, 3u);
+}
+# 589 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h"
+static __inline__ void Dem_EvtSetWIRExtern(Dem_EventIdType EventId, Dem_boolean_least newState)
+{
+  rba_DiagLib_Bit16OverwriteBit (&Dem_AllEventsState[EventId].state, 6u,newState);
+}
+
+
+static __inline__ Dem_boolean_least Dem_EvtIsWIRExternal(Dem_EventIdType EventId)
+{
+  return rba_DiagLib_Bit16IsBitSet (Dem_AllEventsState[EventId].state, 6u);
+}
+# 609 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h"
+static __inline__ Dem_boolean_least Dem_isEventAffectedByOperationCycleList (Dem_EventIdType EventId, Dem_OperationCycleList operationCycleList)
+{
+  return ((operationCycleList & (Dem_OperationCycleList)(1u<<Dem_EvtParam_GetOperationCycleID(EventId))) != 0u);
+}
+
+static __inline__ Dem_boolean_least Dem_isEventAffectedByAgingCycleList (Dem_EventIdType EventId, Dem_OperationCycleList agingCycleList)
+{
+  return ((agingCycleList & (Dem_OperationCycleList)(1u<<Dem_EvtParam_GetAgingCycleID(EventId))) != 0u);
+}
+
+static __inline__ Dem_boolean_least Dem_isEventAffectedByFailureCycleList (Dem_EventIdType EventId, Dem_OperationCycleList failureCycleList)
+{
+   return ((failureCycleList & (Dem_OperationCycleList)(1u<<Dem_EvtParam_GetFailureCycleID(EventId))) != 0u);
+}
+# 651 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h"
+static __inline__ Dem_boolean_least Dem_EvtIsSuppressed (Dem_EventIdType EventId)
+{
+  return rba_DiagLib_Bit16IsBitSet (Dem_AllEventsState[EventId].state, 2u);
+}
+
+
+
+static __inline__ Dem_boolean_least Dem_EvtIsNextReportRelevantForMemories (Dem_EventIdType EventId)
+{
+   return rba_DiagLib_Bit16IsBitSet (Dem_AllEventsState[EventId].state, 9u);
+}
+
+
+static __inline__ void Dem_EvtSetNextReportRelevantForMemories (Dem_EventIdType EventId, Dem_boolean_least setBit)
+{
+   rba_DiagLib_Bit16OverwriteBit (&Dem_AllEventsState[EventId].state, 9u, setBit);
+}
+# 679 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h"
+static __inline__ Dem_boolean_least Dem_EvtGetTestFailedTFCSincePreinit(Dem_EventIdType EventId)
+{
+    return rba_DiagLib_Bit16IsBitSet(Dem_AllEventsState[EventId].state, 7u);
+}
+# 691 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h"
+static __inline__ void Dem_EvtSetTestFailedTFCSincePreinit(Dem_EventIdType EventId, Dem_boolean_least newState)
+{
+    do {} while (0);
+    rba_DiagLib_Bit16OverwriteBit(&Dem_AllEventsState[EventId].state, 7u, newState);
+}
+# 704 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h"
+static __inline__ Dem_boolean_least Dem_EvtGetTestCompleteTFCSincePreinit(Dem_EventIdType EventId)
+{
+    return rba_DiagLib_Bit16IsBitSet(Dem_AllEventsState[EventId].state, 8u);
+}
+# 716 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h"
+static __inline__ void Dem_EvtSetTestCompleteTFCSincePreinit(Dem_EventIdType EventId, Dem_boolean_least newState)
+{
+    do {} while (0);
+    rba_DiagLib_Bit16OverwriteBit(&Dem_AllEventsState[EventId].state, 8u, newState);
+}
+
+
+
+
+static __inline__ void Dem_EvtSetPassedWasReported (Dem_EventIdType EventId, Dem_boolean_least setBit)
+{
+    do {} while (0);
+    Dem_BitArrayOverwriteBit (Dem_EventWasPassedReported, EventId, setBit);
+}
+
+static __inline__ Dem_boolean_least Dem_EvtWasPassedReported (const uint32 buffer[], Dem_EventIdType EventId)
+{
+    return Dem_BitArrayIsBitSet (buffer, EventId);
+}
+# 2 ".\\output\\inc/Dem_Events.h" 2
+# 8 "bsw\\Dem\\src\\evmem\\Dem_EvMemBase.h" 2
+# 1 ".\\output\\inc/Dem_ISO14229Byte.h" 1
+# 9 "bsw\\Dem\\src\\evmem\\Dem_EvMemBase.h" 2
+# 1 ".\\output\\inc/Dem_OperationCycle.h" 1
+# 10 "bsw\\Dem\\src\\evmem\\Dem_EvMemBase.h" 2
+# 1 ".\\output\\inc/Dem_Nvm.h" 1
+# 11 "bsw\\Dem\\src\\evmem\\Dem_EvMemBase.h" 2
+
+# 1 ".\\output\\inc/Dem_EnvTrigger.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvTrigger.h" 1
+
+
+
+
+
+
+typedef struct
+{
+
+ Dem_TriggerType currentTrigger;
+ Dem_TriggerType storedTrigger;
+
+ Dem_TriggerType matchingTrigger;
+} Dem_EnvTriggerParamType;
+
+
+static __inline__ void Dem_EnvSetTrigger(Dem_TriggerType* trigger, Dem_TriggerType trigger2set)
+{
+ *trigger = (*trigger) | trigger2set;
+}
+
+static __inline__ Dem_boolean_least Dem_EnvIsAnyTriggerSet(Dem_TriggerType trigger2test)
+{
+ return (Dem_boolean_least)(trigger2test != 0);
+}
+
+static __inline__ Dem_boolean_least Dem_EnvIsTriggerSet(Dem_TriggerType trigger, Dem_TriggerType trigger2test)
+{
+ return Dem_EnvIsAnyTriggerSet(trigger & trigger2test);
+}
+
+static __inline__ Dem_TriggerType Dem_GetSmallerTrigger(Dem_TriggerType trigger)
+{
+    if ((trigger & 0x01u) == 0x01u )
+    {
+        return 0x08u;
+    }
+    else if((trigger & 0x02u) == 0x02u )
+    {
+        return (0x08u | 0x01u);
+    }
+    else if((trigger & 0x04u) == 0x04u )
+    {
+        return (0x08u | 0x01u | 0x02u);
+    }
+    else
+    {
+        return 0x00u;
+    }
+
+}
+# 2 ".\\output\\inc/Dem_EnvTrigger.h" 2
+# 13 "bsw\\Dem\\src\\evmem\\Dem_EvMemBase.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EnvDataElement.h" 1
+# 14 "bsw\\Dem\\src\\evmem\\Dem_EvMemBase.h" 2
+# 1 ".\\output\\inc/Dem_Deb.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\deb\\Dem_Deb.h" 1
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\deb\\Dem_Deb.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\deb\\Dem_DebBase.h" 1
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\deb\\Dem_DebBase.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_Deb.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\deb\\Dem_DebBase.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\deb\\Dem_DebSharing.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\deb\\Dem_DebBase.h" 2
+
+
+typedef uint8_least (*Dem_DebFilter) (Dem_EventIdType EventId, Dem_EventStatusType* status, const void* paramSet, uint16 paramIndex );
+typedef void (*Dem_DebGetLimits) (const void* paramSet, uint16 paramIndex, sint16_least* MinThreshold, sint16_least* MaxThreshold);
+typedef void (*Dem_DebCyclic) (Dem_EventIdType EventId, const void* paramSet, uint16 paramIndex );
+
+
+typedef struct
+{
+   Dem_DebGetLimits funcPointer_GetLimits;
+   Dem_DebCyclic funcPointer_Cyclic;
+   const void* paramSet;
+   uint16 paramCount;
+   Dem_DebFilter funcPointer_Filter;
+} Dem_DebClass;
+# 35 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\deb\\Dem_DebBase.h"
+typedef uint8_least Dem_DebouncedActionType;
+# 48 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\deb\\Dem_DebBase.h"
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 46 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 47 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 49 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\deb\\Dem_DebBase.h" 2
+extern Dem_DebClass Dem_Cfg_DebClasses[2];
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 59 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 60 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 52 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\deb\\Dem_DebBase.h" 2
+# 62 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\deb\\Dem_DebBase.h"
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 92 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 93 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 63 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\deb\\Dem_DebBase.h" 2
+
+void Dem_DebSwitchToAlternativeParameters(void);
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 68 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\deb\\Dem_DebBase.h" 2
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\deb\\Dem_Deb.h" 2
+# 1 ".\\output\\inc/Dem_Mapping.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\deb\\Dem_Deb.h" 2
+# 1 ".\\output\\inc/Dem_Events.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\deb\\Dem_Deb.h" 2
+# 1 ".\\output\\inc/Dem_Dependencies.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evdep\\Dem_Dependencies.h" 1
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evdep\\Dem_Dependencies.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_Nodes.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evdep\\Dem_Dependencies.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_NodeId.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evdep\\Dem_Dependencies.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_StorageCondition.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evdep\\Dem_Dependencies.h" 2
+# 1 ".\\output\\inc/Dem_Array.h" 1
+# 12 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evdep\\Dem_Dependencies.h" 2
+# 1 ".\\output\\inc/rba_DiagLib_Bits8.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evdep\\Dem_Dependencies.h" 2
+# 285 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evdep\\Dem_Dependencies.h"
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 92 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 93 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 286 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evdep\\Dem_Dependencies.h" 2
+
+
+static __inline__ Dem_boolean_least Dem_Dependencies_CheckEventIsCausal(Dem_EventIdType EventId, Dem_ComponentIdType NodeId)
+{
+    ((void)(EventId));
+    ((void)(NodeId));
+    return (1 != 0);
+}
+static __inline__ void Dem_Dependencies_ResetNodeFailed(Dem_ComponentIdType NodeId)
+{
+    ((void)(NodeId));
+}
+
+static __inline__ void Dem_Dependencies_SetNodeFailed(Dem_ComponentIdType NodeId, boolean EventIsCausal, boolean EventStorageFiltered, boolean EventIsRecoverable)
+{
+    ((void)(NodeId));
+    ((void)(EventIsCausal));
+    ((void)(EventStorageFiltered));
+    ((void)(EventIsRecoverable));
+}
+
+static __inline__ void Dem_Dependencies_ResetNodeFailedFiltered(Dem_ComponentIdType NodeId)
+{
+    ((void)(NodeId));
+}
+
+
+static __inline__ boolean Dem_NodeIsAvailable(Dem_ComponentIdType NodeId)
+{
+    ((void)(NodeId));
+    return (1 != 0);
+}
+
+
+static __inline__ boolean Dem_NodeRecoveryAllowed (Dem_ComponentIdType NodeId)
+{
+    ((void)(NodeId));
+    return (1 != 0);
+}
+
+static __inline__ void Dem_NodeSetRecovered(Dem_ComponentIdType NodeId)
+{
+    ((void)(NodeId));
+}
+
+static __inline__ void Dem_NodeSetSuspicious(Dem_ComponentIdType NodeId, Dem_boolean_least suspicious)
+{
+    ((void)(NodeId));
+    ((void)(suspicious));
+}
+
+static __inline__ Std_ReturnType Dem_NodeSetAvailable (Dem_ComponentIdType ComponentId, boolean AvailableStatus)
+{
+    ((void)(ComponentId));
+    ((void)(AvailableStatus));
+    return 0x00u;
+}
+
+static __inline__ void Dem_NodeSetHasCausalFault (const Dem_ComponentIdType NodeId, Dem_boolean_least causalFault)
+{
+    ((void)(NodeId));
+    ((void)(causalFault));
+}
+
+static __inline__ void Dem_NodeSetRecheckOnClear (Dem_ComponentIdType NodeId, Dem_boolean_least newRecheckOnClear) { ((void)(NodeId)); ((void)(newRecheckOnClear)); }
+static __inline__ void Dem_NodeRecheckOnClear (void) {}
+
+static __inline__ void Dem_Dependencies_SetNodeFailedNotRecoverable(Dem_ComponentIdType NodeId)
+{
+    ((void)(NodeId));
+}
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 360 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evdep\\Dem_Dependencies.h" 2
+# 2 ".\\output\\inc/Dem_Dependencies.h" 2
+# 12 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\deb\\Dem_Deb.h" 2
+# 1 ".\\output\\inc/Dem_DisturbanceMemory.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\distmem\\Dem_DisturbanceMemory.h" 1
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\distmem\\Dem_DisturbanceMemory.h" 2
+
+# 1 ".\\output\\inc/Dem_Array.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\distmem\\Dem_DisturbanceMemory.h" 2
+# 1 ".\\output\\inc/rba_DiagLib_Bits8.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\distmem\\Dem_DisturbanceMemory.h" 2
+# 1 ".\\output\\inc/rba_DiagLib_Bits16.h" 1
+# 12 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\distmem\\Dem_DisturbanceMemory.h" 2
+# 1 ".\\output\\inc/Dem_Events.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\distmem\\Dem_DisturbanceMemory.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_DistMem.h" 1
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\distmem\\Dem_DisturbanceMemory.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EnvMain.h" 1
+# 15 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\distmem\\Dem_DisturbanceMemory.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\distmem\\Dem_DisturbanceMemoryNvData.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\distmem\\Dem_DisturbanceMemoryTypes.h" 1
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\distmem\\Dem_DisturbanceMemoryTypes.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_DistMem.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\distmem\\Dem_DisturbanceMemoryTypes.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EnvMain.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\distmem\\Dem_DisturbanceMemoryTypes.h" 2
+# 1 ".\\output\\inc/Dem_Cfg.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\distmem\\Dem_DisturbanceMemoryTypes.h" 2
+# 7 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\distmem\\Dem_DisturbanceMemoryNvData.h" 2
+# 1 ".\\output\\inc/Dem_Array.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\distmem\\Dem_DisturbanceMemoryNvData.h" 2
+# 16 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\distmem\\Dem_DisturbanceMemory.h" 2
+# 2 ".\\output\\inc/Dem_DisturbanceMemory.h" 2
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\deb\\Dem_Deb.h" 2
+# 1 ".\\output\\inc/Dem_EvBuff.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evbuff\\Dem_EvBuff.h" 1
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Cfg_EvBuff.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evbuff\\Dem_EvBuff.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_Nodes.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evbuff\\Dem_EvBuff.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evbuff\\Dem_EvBuffEvent.h" 1
+
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evbuff\\Dem_EvBuffEvent.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EnvMain.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evbuff\\Dem_EvBuffEvent.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EvBuff.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evbuff\\Dem_EvBuffEvent.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_Nodes.h" 1
+# 12 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evbuff\\Dem_EvBuffEvent.h" 2
+# 1 ".\\output\\inc/Dem_Mapping.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evbuff\\Dem_EvBuffEvent.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evbuff\\Dem_EvBuffTypes.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 7 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evbuff\\Dem_EvBuffTypes.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EnvMain.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evbuff\\Dem_EvBuffTypes.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EvBuff.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evbuff\\Dem_EvBuffTypes.h" 2
+# 32 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evbuff\\Dem_EvBuffTypes.h"
+typedef union
+{
+
+
+
+
+
+    uint32 EnforceAlignment;
+
+    uint8 Buffer[(40u + 10u+ 0u)];
+} Dem_EvBuffEnvDataAlignedType;
+
+typedef struct {
+
+
+    Dem_EvBuffEnvDataAlignedType envData;
+# 56 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evbuff\\Dem_EvBuffTypes.h"
+}Dem_EvBuffEvent_MemData;
+
+typedef struct {
+
+    Dem_EvBuffEvent_MemData memData;
+
+    uint8 eventType;
+
+
+
+
+
+    Dem_EventIdType eventId;
+
+
+    Dem_DebugDataType debug0;
+    Dem_DebugDataType debug1;
+
+
+    boolean IsEnvDataCaptured;
+}Dem_EvBuffEvent;
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evbuff\\Dem_EvBuffEvent.h" 2
+# 24 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evbuff\\Dem_EvBuffEvent.h"
+static __inline__ void Dem_EvBuffSetCounter (Dem_EvBuffEvent *evBuff, uint8 value)
+{
+
+
+
+    ((void)(evBuff));
+    ((void)(value));
+
+}
+
+static __inline__ uint8 Dem_EvBuffGetCounter (const Dem_EvBuffEvent *evBuff)
+{
+
+
+
+    ((void)(evBuff));
+    return 0;
+
+}
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evbuff\\Dem_EvBuff.h" 2
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evbuff\\Dem_EvBuff.h" 2
+# 1 ".\\output\\inc/Dem_Mapping.h" 1
+# 12 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evbuff\\Dem_EvBuff.h" 2
+# 1 ".\\output\\inc/Dem_Events.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evbuff\\Dem_EvBuff.h" 2
+
+typedef struct
+{
+    uint16 OverflowCounter;
+    uint16 OverflowCounterSet;
+    Dem_EvBuffEvent Locations[15u];
+} Dem_EvtBufferState;
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 162 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 163 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 27 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evbuff\\Dem_EvBuff.h" 2
+extern Dem_EvtBufferState Dem_EvtBuffer;
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 175 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 176 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 30 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evbuff\\Dem_EvBuff.h" 2
+# 40 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evbuff\\Dem_EvBuff.h"
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 92 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 93 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 41 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evbuff\\Dem_EvBuff.h" 2
+
+
+void Dem_EvBuffRemoveAllPrestored (void);
+
+void Dem_EvBuffMainFunction(void);
+
+
+
+void Dem_PreStoredFFInitCheckNvM(void);
+void Dem_PreStoredFFShutdown(void);
+
+
+
+Dem_boolean_least Dem_EvBuffInsert (uint8 eventType,
+        Dem_EventIdType eventId
+        ,Dem_DebugDataType debug0,Dem_DebugDataType debug1);
+
+const Dem_EvBuffEvent* Dem_EvBuffGetEvent (uint32* locationIndex);
+
+void Dem_EvBuffRemoveEvent (uint32 locationIndex);
+
+void Dem_EvBuffEnvCaptureData(
+    Dem_EventIdType EventId,
+    uint8 *EnvData
+    ,Dem_DebugDataType debug0,Dem_DebugDataType debug1);
+
+
+
+
+
+
+static __inline__ uint8_least Dem_EvBuffClearSequentialFailures (Dem_EventIdType EventId, Dem_ComponentIdType nodeID, uint8 counterInit) {
+    ((void)(EventId));
+    ((void)(nodeID));
+    ((void)(counterInit));
+    return 0;
+}
+
+
+
+
+void Dem_EvBuffClear (Dem_EventIdType EventId);
+void Dem_EvBuffCaptureAllEnvData(Dem_EvBuffEvent *evBuffEvent, Dem_EvBuffEvent_MemData *memData);
+Dem_boolean_least Dem_EvBuffIsEventPending (Dem_EventIdType EventId);
+
+static __inline__ Dem_boolean_least Dem_EvBuffIsAnyEventPending (void)
+{
+    return Dem_EvBuffIsEventPending (0u);
+}
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evbuff\\Dem_EvBuff.h"
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evbuff\\Dem_EvBuff.h" 2
+# 2 ".\\output\\inc/Dem_EvBuff.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\deb\\Dem_Deb.h" 2
+# 1 ".\\output\\inc/Dem_EventFHandling.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventFHandling.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 7 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventFHandling.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_Events.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventFHandling.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EvBuff.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventFHandling.h" 2
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 92 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 93 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 12 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventFHandling.h" 2
+
+void Dem_ReportErrorStatusDisableQueue (void);
+void Dem_ReportErrorStatusEnableQueue (void);
+void Dem_PreInitErrorQueue(void);
+# 33 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventFHandling.h"
+void Dem_EvtProcessPassedAndFailed (Dem_EventIdType EventId, Dem_EventStatusType EventStatus
+                      ,Dem_DebugDataType debug0_ul,Dem_DebugDataType debug1_ul);
+
+Dem_boolean_least Dem_EvtsRestoreFailurefromPreviousIC (Dem_EventIdType EventId);
+# 55 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventFHandling.h"
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 56 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventFHandling.h" 2
+# 2 ".\\output\\inc/Dem_EventFHandling.h" 2
+# 15 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\deb\\Dem_Deb.h" 2
+# 1 ".\\output\\inc/Dem_Main.h" 1
+# 16 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\deb\\Dem_Deb.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_Events_DataStructures.h" 1
+# 17 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\deb\\Dem_Deb.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\deb\\Dem_DebMonInternal.h" 1
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\deb\\Dem_DebMonInternal.h" 2
+# 1 ".\\output\\inc/Dem_Events.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\deb\\Dem_DebMonInternal.h" 2
+
+typedef Std_ReturnType(*Dem_GetFaultDetectionCounterOfIntDebMonitors)(sint8 * faultDetCtr);
+
+
+typedef struct
+{
+
+    Dem_GetFaultDetectionCounterOfIntDebMonitors funcPointer_GetFDC;
+}Dem_DebounceMonitorInternal;
+# 18 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\deb\\Dem_Deb.h" 2
+
+
+
+
+
+Std_ReturnType Dem_DebGetDebounceCounter4Calculation (Dem_EventIdType EventId, sint16 *debounceCounter);
+sint8 Dem_DebCalculateFaultDetectionCounter(Dem_EventIdType EventId, sint16 debounceCounter);
+boolean Dem_DebHandleResetConditions (Dem_EventIdType EventId);
+# 34 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\deb\\Dem_Deb.h"
+static __inline__ Dem_DebouncedActionType Dem_DebCallFilter (Dem_EventIdType EventId, Dem_EventStatusType* status)
+{
+ Dem_DebFilter funcPoint;
+ const void* paramSet;
+ uint8_least debAction;
+ debAction = 0x00u;
+# 48 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\deb\\Dem_Deb.h"
+  {
+
+
+
+
+        {
+            funcPoint = Dem_Cfg_DebClasses[Dem_EvtParam_GetDebounceMethodIndex(EventId)].funcPointer_Filter;
+            paramSet = Dem_Cfg_DebClasses[Dem_EvtParam_GetDebounceMethodIndex(EventId)].paramSet;
+            do { if (!(Dem_EvtParam_GetDebounceParamSettingIndex(EventId) < Dem_Cfg_DebClasses[Dem_EvtParam_GetDebounceMethodIndex(EventId)].paramCount)) { do {Dem_EventIdCausingLastDetError = 0; Det_ReportError(54,0,0xA0,2);}while(0); } } while(0);
+            debAction = (*funcPoint) (EventId, status, paramSet, Dem_EvtParam_GetDebounceParamSettingIndex(EventId));
+        }
+  }
+    return debAction;
+}
+
+
+static __inline__ Dem_boolean_least Dem_DebHandleDebounceAction__processBits(Dem_EventIdType EventId, Dem_DebouncedActionType debAction)
+{
+    Dem_boolean_least insertToEvBuffer = (0 != 0);
+
+    ((void)(EventId));
+    ((void)(debAction));
+
+    do {} while (0);
+# 122 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\deb\\Dem_Deb.h"
+   return (insertToEvBuffer);
+}
+
+static __inline__ void Dem_DebHandleDebounceAction(Dem_EventIdType EventId, Dem_DebouncedActionType debAction, Dem_DebugDataType debug0 ,Dem_DebugDataType debug1)
+{
+    Dem_boolean_least insertUnrobustToEvBuffer;
+    do { Os_SuspendAllInterrupts(); } while (0);
+    insertUnrobustToEvBuffer = Dem_DebHandleDebounceAction__processBits(EventId, debAction);
+    do { Os_ResumeAllInterrupts(); } while (0);
+
+    if (insertUnrobustToEvBuffer)
+    {
+
+        (void)Dem_EvBuffInsert(7u, EventId ,debug0,debug1);
+    }
+    else
+    {
+        ((void)(debug0));
+        ((void)(debug1));
+    }
+}
+
+static __inline__ Dem_boolean_least Dem_DebHandleDebounceAction_4_TimeBasedDeb(Dem_EventIdType EventId, Dem_DebouncedActionType debAction)
+{
+    return Dem_DebHandleDebounceAction__processBits(EventId, debAction);
+}
+
+
+
+static __inline__ void Dem_TimeBasedDebounceInternMainFunction(void)
+{
+# 176 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\deb\\Dem_Deb.h"
+}
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 92 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 93 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 181 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\deb\\Dem_Deb.h" 2
+
+void Dem_DebMainFunction(void);
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 186 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\deb\\Dem_Deb.h" 2
+# 2 ".\\output\\inc/Dem_Deb.h" 2
+# 15 "bsw\\Dem\\src\\evmem\\Dem_EvMemBase.h" 2
+# 1 ".\\output\\inc/Dem_EvBuffEvent.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evbuff\\Dem_EvBuffEvent.h" 1
+# 2 ".\\output\\inc/Dem_EvBuffEvent.h" 2
+# 16 "bsw\\Dem\\src\\evmem\\Dem_EvMemBase.h" 2
+# 1 ".\\output\\inc/Dem_Lib.h" 1
+# 17 "bsw\\Dem\\src\\evmem\\Dem_EvMemBase.h" 2
+# 1 ".\\output\\inc/Dem_DTCStatusByte.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCStatusByte.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_ClientBaseHandling.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\client\\Dem_ClientBaseHandling.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\client\\Dem_ClientHandlingTypes.h" 1
+# 7 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\client\\Dem_ClientBaseHandling.h" 2
+# 1 ".\\output\\inc/Dem_EnvExtendedData.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvExtendedData.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 7 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvExtendedData.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvExtendedDataRec.h" 1
+
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvExtendedDataRec.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvDataElement.h" 1
+
+
+
+
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 6 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvDataElement.h" 2
+# 1 ".\\output\\inc/Dem_Lib.h" 1
+# 7 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvDataElement.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EnvDataElement.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvDataElement.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EnvDataElement_DataSize.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EnvDataElement_DataSize.h" 1
+# 2 ".\\output\\inc/Dem_Cfg_EnvDataElement_DataSize.h" 2
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvDataElement.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_InternalEnvData.h" 1
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_InternalEnvData.h" 2
+# 1 ".\\output\\inc/Dem_EvMemTypes.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_InternalEnvData.h" 2
+
+
+
+
+typedef struct
+{
+
+ Dem_EventIdType eventId;
+
+
+ Dem_DebugDataType debug0;
+
+ Dem_DebugDataType debug1;
+
+
+ Dem_EvMemEventMemoryType *evMemLocation;
+} Dem_InternalEnvData;
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvDataElement.h" 2
+
+typedef uint8 Dem_EncodingType;
+typedef Std_ReturnType (*Dem_ReadExternalDataElementFnc)(uint8* Buffer);
+typedef Std_ReturnType (*Dem_ReadInternalDataElementFnc)(uint8* Buffer, const Dem_InternalEnvData* internalData, Dem_EncodingType Endianness);
+
+
+
+
+typedef struct
+{
+
+    Dem_ReadExternalDataElementFnc ReadExternalFnc;
+
+
+    Dem_ReadInternalDataElementFnc ReadInternalFnc;
+
+    uint8 Size;
+ boolean captureOnRetrieve;
+} Dem_EnvDataElement;
+# 44 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvDataElement.h"
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 69 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 70 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 45 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvDataElement.h" 2
+extern const Dem_EnvDataElement Dem_Cfg_EnvDataElement[(156+1)];
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 82 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 83 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 48 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvDataElement.h" 2
+
+static __inline__ void Dem_EnvInsertPadding(uint8* const* start, uint8 size)
+{
+ rba_DiagLib_MemUtils_MemSet((uint8*)(*start),(sint32)(0xFF),(uint32)(size));
+}
+
+
+static __inline__ void Dem_EnvDACapture(uint8 dataElementId, uint8** start, const uint8* end, const Dem_InternalEnvData* internalEnvData)
+{
+ Std_ReturnType result = 0x01u;
+ do { if (!((*start + Dem_Cfg_EnvDataElement[dataElementId].Size) <= end)) { do {Dem_EventIdCausingLastDetError = 0; Det_ReportError(54,0,0xA7,0);}while(0); } } while(0);
+
+ if (!Dem_Cfg_EnvDataElement[dataElementId].captureOnRetrieve)
+ {
+
+  if (Dem_Cfg_EnvDataElement[dataElementId].ReadExternalFnc != ((void *)0))
+  {
+   result = (Dem_Cfg_EnvDataElement[dataElementId].ReadExternalFnc)(*start);
+  }
+
+
+
+  if (Dem_Cfg_EnvDataElement[dataElementId].ReadInternalFnc != ((void *)0))
+  {
+   result = (Dem_Cfg_EnvDataElement[dataElementId].ReadInternalFnc)(*start, internalEnvData, 1u);
+  }
+
+
+  if (result != 0x00u)
+  {
+   Dem_EnvInsertPadding (start, Dem_Cfg_EnvDataElement[dataElementId].Size);
+   do {Dem_EventIdCausingLastDetError = 0u; Det_ReportError(54,0,0xA7,0x30);}while(0);
+  }
+ }
+ else
+ {
+  Dem_EnvInsertPadding (start, Dem_Cfg_EnvDataElement[dataElementId].Size);
+ }
+
+ *start += Dem_Cfg_EnvDataElement[dataElementId].Size;
+}
+
+static __inline__ void Dem_EnvDACopy(uint8 dataElementId, uint8** start, const uint8* end, const uint8** src)
+{
+ do { if (!((*start + Dem_Cfg_EnvDataElement[dataElementId].Size) <= end)) { do {Dem_EventIdCausingLastDetError = 0; Det_ReportError(54,0,0xA9,0);}while(0); } } while(0);
+
+ rba_DiagLib_MemUtils_MemCpy((uint8*)(*start),(const uint8*)(*src),(uint32)(Dem_Cfg_EnvDataElement[dataElementId].Size));
+ *start += Dem_Cfg_EnvDataElement[dataElementId].Size;
+ *src += Dem_Cfg_EnvDataElement[dataElementId].Size;
+}
+
+static __inline__ void Dem_EnvDASkip(uint8 dataElementId, uint8** start, const uint8* end, const uint8** src)
+{
+ do { if (!((*start + Dem_Cfg_EnvDataElement[dataElementId].Size) <= end)) { do {Dem_EventIdCausingLastDetError = 0; Det_ReportError(54,0,0xA8,0);}while(0); } } while(0);
+
+ *start += Dem_Cfg_EnvDataElement[dataElementId].Size;
+ *src += Dem_Cfg_EnvDataElement[dataElementId].Size;
+}
+
+
+
+
+static __inline__ Dem_boolean_least Dem_EnvDARetrieve(uint8 dataElementId,
+  uint8** start,
+  const uint8* end,
+  const uint8** src,
+  const Dem_InternalEnvData* internalEnvData)
+{
+ Std_ReturnType result = 0x01u;
+
+ if ((*start + Dem_Cfg_EnvDataElement[dataElementId].Size )> end)
+ {
+  return (0 != 0);
+ }
+
+ if (Dem_Cfg_EnvDataElement[dataElementId].captureOnRetrieve)
+ {
+
+  if (Dem_Cfg_EnvDataElement[dataElementId].ReadInternalFnc != ((void *)0))
+  {
+   result = (Dem_Cfg_EnvDataElement[dataElementId].ReadInternalFnc)(*start, internalEnvData,1u);
+  }
+
+
+  if (result != 0x00u)
+  {
+   Dem_EnvInsertPadding (start, Dem_Cfg_EnvDataElement[dataElementId].Size);
+   do {Dem_EventIdCausingLastDetError = 0u; Det_ReportError(54,0,0xA2,0x30);}while(0);
+  }
+ }
+ else
+ {
+     rba_DiagLib_MemUtils_MemCpy((uint8*)(*start),(const uint8*)(*src),(uint32)(Dem_Cfg_EnvDataElement[dataElementId].Size));
+ }
+ *start += Dem_Cfg_EnvDataElement[dataElementId].Size;
+ *src += Dem_Cfg_EnvDataElement[dataElementId].Size;
+ return (1 != 0);
+}
+
+static __inline__ uint8 Dem_EnvDAGetSizeOf(uint8 dataElementId)
+{
+ return Dem_Cfg_EnvDataElement[dataElementId].Size;
+}
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 92 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 93 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 153 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvDataElement.h" 2
+# 161 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvDataElement.h"
+Std_ReturnType Dem_ReadEventStatusByte( uint8* buffer, const Dem_InternalEnvData* internalData, Dem_EncodingType Endianness );
+
+
+Std_ReturnType Dem_ReadAgingCtrUpCnt(uint8* Buffer, const Dem_InternalEnvData* internalData, Dem_EncodingType Endianness);
+
+
+
+
+
+
+
+Std_ReturnType Dem_ReadOccCtr(uint8* Buffer, const Dem_InternalEnvData* internalData, Dem_EncodingType Endianness);
+# 216 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvDataElement.h"
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 217 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvDataElement.h" 2
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvExtendedDataRec.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EnvExtendedDataRec.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EnvExtendedDataRec.h" 1
+# 2 ".\\output\\inc/Dem_Cfg_EnvExtendedDataRec.h" 2
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvExtendedDataRec.h" 2
+
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvTrigger.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvExtendedDataRec.h" 2
+
+
+
+typedef struct
+{
+   uint8 recordNumber;
+   Dem_TriggerType trigger;
+   boolean update;
+   uint16 dataElementIndex;
+} Dem_EnvExtDataRec;
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 69 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 70 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 26 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvExtendedDataRec.h" 2
+extern const uint8 Dem_Cfg_EnvExtData2DataElement[];
+extern const Dem_EnvExtDataRec Dem_Cfg_EnvExtDataRec[(1+1)];
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 82 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 83 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 30 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvExtendedDataRec.h" 2
+
+static __inline__ uint8 Dem_EnvEDRGetRecordNumber (uint8 extDataRecId)
+{
+   return Dem_Cfg_EnvExtDataRec[extDataRecId].recordNumber;
+}
+
+static __inline__ boolean Dem_EnvEDRGetUpdate (uint8 extDataRecId)
+{
+   return Dem_Cfg_EnvExtDataRec[extDataRecId].update;
+}
+
+
+static __inline__ Dem_TriggerType Dem_EnvEDRGetRecordTrigger (uint8 extDataRecId)
+{
+   return Dem_Cfg_EnvExtDataRec[extDataRecId].trigger;
+}
+
+static __inline__ void Dem_EnvEDRCapture (uint8 extDataRecId, uint8** start, const uint8* end, const Dem_InternalEnvData* internalEnvData)
+{
+   uint32 i;
+   for (i = Dem_Cfg_EnvExtDataRec[extDataRecId-1].dataElementIndex;
+        i < Dem_Cfg_EnvExtDataRec[extDataRecId].dataElementIndex;
+        i++)
+   {
+      Dem_EnvDACapture(Dem_Cfg_EnvExtData2DataElement[i], start, end, internalEnvData);
+   }
+}
+
+
+
+
+static __inline__ void Dem_EnvEDRCopyRaw (uint8 extDataRecId, uint8** start, const uint8* end, const uint8** src, Dem_EnvTriggerParamType* triggerParam)
+{
+ uint32 i;
+ Dem_TriggerType trigger;
+ boolean update;
+
+
+
+
+
+
+
+ trigger = Dem_EnvEDRGetRecordTrigger(extDataRecId);
+ update = Dem_EnvEDRGetUpdate(extDataRecId);
+
+ if ( (Dem_EnvIsTriggerSet(triggerParam->currentTrigger,trigger) &&
+  (!Dem_EnvIsTriggerSet(triggerParam->storedTrigger, trigger) || update))
+
+     || (Dem_EnvIsTriggerSet(Dem_GetSmallerTrigger(triggerParam->currentTrigger),trigger) &&
+             (!Dem_EnvIsTriggerSet(triggerParam->storedTrigger, trigger))))
+
+ {
+  Dem_EnvSetTrigger(&triggerParam->matchingTrigger, trigger);
+  for (i = Dem_Cfg_EnvExtDataRec[extDataRecId-1].dataElementIndex;
+    i < Dem_Cfg_EnvExtDataRec[extDataRecId].dataElementIndex;
+    i++)
+  {
+   Dem_EnvDACopy(Dem_Cfg_EnvExtData2DataElement[i], start, end, src);
+  }
+ }
+ else
+ {
+  for (i = Dem_Cfg_EnvExtDataRec[extDataRecId-1].dataElementIndex;
+    i < Dem_Cfg_EnvExtDataRec[extDataRecId].dataElementIndex;
+    i++)
+  {
+   Dem_EnvDASkip(Dem_Cfg_EnvExtData2DataElement[i], start, end, src);
+  }
+ }
+}
+
+
+
+
+static __inline__ Dem_boolean_least Dem_EnvEDRRetrieve (uint8 extDataRecId, uint8** start, const uint8* end, const uint8** const src, const Dem_InternalEnvData* internalEnvData)
+{
+   uint32 i;
+   for (i = Dem_Cfg_EnvExtDataRec[extDataRecId-1].dataElementIndex;
+        i < Dem_Cfg_EnvExtDataRec[extDataRecId].dataElementIndex;
+        i++)
+   {
+      if (!Dem_EnvDARetrieve(Dem_Cfg_EnvExtData2DataElement[i], start, end, src, internalEnvData))
+      {
+         return (0 != 0);
+      }
+   }
+   return (1 != 0);
+}
+
+
+static __inline__ uint16 Dem_EnvEDRGetSize (uint8 extDataRecId)
+{
+   uint32 i;
+   uint16 byteSize = 0;
+   for (i = Dem_Cfg_EnvExtDataRec[extDataRecId-1].dataElementIndex;
+        i < Dem_Cfg_EnvExtDataRec[extDataRecId].dataElementIndex;
+        i++)
+   {
+      byteSize += Dem_EnvDAGetSizeOf(Dem_Cfg_EnvExtData2DataElement[i]);
+   }
+   return byteSize;
+}
+
+
+static __inline__ void Dem_EnvEDRSkipSrc (uint8 extDataRecId, const uint8** src)
+{
+ *src += Dem_EnvEDRGetSize(extDataRecId);
+}
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvExtendedData.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EnvExtendedData.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EnvExtendedData.h" 1
+# 2 ".\\output\\inc/Dem_Cfg_EnvExtendedData.h" 2
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvExtendedData.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_Main.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvExtendedData.h" 2
+
+
+typedef struct
+{
+ uint16 extDataRecIndex;
+ uint16 rawByteSize;
+} Dem_EnvExtData;
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 69 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 70 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 19 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvExtendedData.h" 2
+extern const uint8 Dem_Cfg_EnvExtData2ExtDataRec[];
+extern const Dem_EnvExtData Dem_Cfg_EnvExtData[(4+1)];
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 82 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 83 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 23 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvExtendedData.h" 2
+
+static __inline__ void Dem_EnvEDCapture(uint8 extDataId, uint8* buffer, uint16 size, const Dem_InternalEnvData* internalEnvData)
+{
+ uint16_least i;
+ const uint8* end = &buffer[size];
+
+ for (i = Dem_Cfg_EnvExtData[extDataId - 1].extDataRecIndex; i < Dem_Cfg_EnvExtData[extDataId].extDataRecIndex; i++)
+ {
+  Dem_EnvEDRCapture (Dem_Cfg_EnvExtData2ExtDataRec[i], &buffer, end, internalEnvData);
+ }
+
+
+
+
+}
+
+static __inline__ uint16 Dem_EnvEDGetRawByteSize(uint8 extDataId)
+{
+ return Dem_Cfg_EnvExtData[extDataId].rawByteSize;
+}
+
+static __inline__ void Dem_EnvEDCopyRaw(uint8 extDataId, uint8* dest, uint16 bufsize, const uint8* src, Dem_EnvTriggerParamType* triggerParam)
+{
+ uint16_least i;
+ const uint8* end = dest + bufsize;
+
+ for (i = Dem_Cfg_EnvExtData[extDataId - 1].extDataRecIndex; i < Dem_Cfg_EnvExtData[extDataId].extDataRecIndex; i++)
+ {
+  Dem_EnvEDRCopyRaw (Dem_Cfg_EnvExtData2ExtDataRec[i], &dest, end, &src, triggerParam);
+ }
+}
+
+static __inline__ Std_ReturnType Dem_EnvEDRetrieveExtendedData(uint8 extDataId,
+  uint8* dest,
+  uint16* bufsize,
+  const uint8* src,
+  const Dem_InternalEnvData* internalEnvData)
+{
+ uint8* writepos = dest;
+ uint8* end = dest + *bufsize;
+ uint16_least i;
+
+ for (i = Dem_Cfg_EnvExtData[extDataId - 1].extDataRecIndex; i < Dem_Cfg_EnvExtData[extDataId].extDataRecIndex; i++)
+ {
+  if (!Dem_EnvEDRRetrieve (Dem_Cfg_EnvExtData2ExtDataRec[i], &writepos, end, &src, internalEnvData))
+  {
+   return 21u;
+  }
+ }
+
+ *bufsize = (uint16)(writepos - dest);
+ return 0x00u;
+}
+
+static __inline__ Dem_boolean_least Dem_EnvEDIsRecordNumberValid(uint8 extDataId, uint8 RecordNumber, Dem_TriggerType* trigger, uint16* EDRIndex)
+{
+ uint16 i;
+
+ if(extDataId != 0)
+    {
+        for (i = Dem_Cfg_EnvExtData[extDataId - 1].extDataRecIndex; i < Dem_Cfg_EnvExtData[extDataId].extDataRecIndex; i++)
+        {
+            if (Dem_EnvEDRGetRecordNumber(Dem_Cfg_EnvExtData2ExtDataRec[i]) == RecordNumber)
+            {
+                *trigger = Dem_EnvEDRGetRecordTrigger(Dem_Cfg_EnvExtData2ExtDataRec[i]);
+                *EDRIndex = i;
+                return (1 != 0);
+            }
+        }
+    }
+ return (0 != 0);
+}
+
+static __inline__ Std_ReturnType Dem_EnvEDRetrieveRawOrFormattedExtendedDataRecord(uint8 extDataId,
+        uint8 RecordNumber,
+        uint8* dest,
+        uint16* bufsize,
+        const uint8* src,
+        const Dem_InternalEnvData* internalEnvData,
+        boolean Raw)
+{
+    uint8* writepos = dest;
+    uint8* end = dest + *bufsize;
+    uint16_least i;
+
+    if(! Raw)
+    {
+        if (*bufsize < 1)
+        {
+            return 21u;
+        }
+        *writepos = RecordNumber;
+        writepos++;
+    }
+
+    for (i = Dem_Cfg_EnvExtData[extDataId - 1].extDataRecIndex; i < Dem_Cfg_EnvExtData[extDataId].extDataRecIndex; i++)
+    {
+        if (Dem_EnvEDRGetRecordNumber (Dem_Cfg_EnvExtData2ExtDataRec[i]) == RecordNumber)
+        {
+            if (!Dem_EnvEDRRetrieve (Dem_Cfg_EnvExtData2ExtDataRec[i], &writepos, end, &src, internalEnvData))
+            {
+                return 21u;
+            }
+            *bufsize = (uint16)(writepos - dest);
+            return 0x00u;
+        }
+        else
+        {
+            Dem_EnvEDRSkipSrc (Dem_Cfg_EnvExtData2ExtDataRec[i], &src);
+        }
+    }
+    return 48u;
+}
+
+static __inline__ Std_ReturnType Dem_EnvEDGetSizeOfEDR(uint8 extDataId,
+  uint8 RecordNumber,
+  uint16* size)
+{
+ uint16_least i;
+
+ for (i = Dem_Cfg_EnvExtData[extDataId - 1].extDataRecIndex; i < Dem_Cfg_EnvExtData[extDataId].extDataRecIndex; i++)
+ {
+  if (Dem_EnvEDRGetRecordNumber (Dem_Cfg_EnvExtData2ExtDataRec[i]) == RecordNumber)
+  {
+   *size = (uint16)(Dem_EnvEDRGetSize (Dem_Cfg_EnvExtData2ExtDataRec[i]) + 1);
+   return 0x00u;
+  }
+ }
+
+ return 48u;
+}
+# 2 ".\\output\\inc/Dem_EnvExtendedData.h" 2
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\client\\Dem_ClientBaseHandling.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\client\\Dem_Client.h" 1
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Array.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\client\\Dem_Client.h" 2
+# 1 ".\\output\\inc/Dem_EvMemTypes.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\client\\Dem_Client.h" 2
+# 1 ".\\output\\inc/Dem_EnvRecordIterator.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvRecordIterator.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 7 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvRecordIterator.h" 2
+
+typedef struct
+{
+    boolean isRequestedRecValid;
+    uint8 requestedRecNum;
+    uint16 end_recIndex;
+    uint16 current_recIndex;
+    Dem_EventIdType EventId;
+}Dem_EnvRecordIteratorType;
+# 2 ".\\output\\inc/Dem_EnvRecordIterator.h" 2
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\client\\Dem_Client.h" 2
+# 1 ".\\output\\inc/Dem_Lib.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\client\\Dem_Client.h" 2
+
+
+
+typedef struct
+{
+    boolean IsCopyValid;
+    Dem_EvMemEventMemoryType EvMemCopy;
+} Dem_ClientSelectED_FFDataType;
+
+typedef struct
+{
+    Dem_DTCFormatType DTCFormat;
+    Dem_DTCOriginType DTCOrigin;
+    boolean IsDTCRecordUpdateDisabled;
+    uint8 SelectED_FF_MachineState;
+    boolean IsED_FFSelectionPending;
+    boolean IsGetNextDataCalled;
+    volatile uint8 DTCStatus;
+    uint32 DTC;
+    Dem_ClientSelectED_FFDataType SelectED_FFData;
+    Dem_EnvRecordIteratorType SelectED_FFIt;
+} Dem_ClientState_Standard;
+
+typedef struct
+{
+
+
+
+
+    uint8 Dem_Dummy;
+
+} Dem_ClientState_J1939;
+
+typedef struct
+{
+    volatile uint8 client_state;
+    volatile Dem_ClientRequestType request;
+    volatile Dem_ClientResultType result;
+    Dem_ClientSelectionType selection;
+    union
+    {
+        Dem_ClientState_Standard standard;
+        Dem_ClientState_J1939 j1939;
+    } data;
+
+} Dem_ClientState;
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 23 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 24 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 60 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\client\\Dem_Client.h" 2
+
+extern Dem_ClientState Dem_AllClientsState[((1u +1u)+1u)];
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 36 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 37 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 65 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\client\\Dem_Client.h" 2
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 92 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 93 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 68 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\client\\Dem_Client.h" 2
+
+typedef struct {
+    Dem_ClientIdType it;
+    Dem_ClientIdType end;
+} Dem_ClientIdListIterator;
+
+
+
+
+
+static __inline__ void Dem_Client_ClientIdIteratorNew(Dem_ClientIdListIterator *ClientIdIt, uint8 iteratortype)
+{
+
+    if (iteratortype == 0x01)
+    {
+        ClientIdIt->it = 1;
+        ClientIdIt->end = (1u +1u);
+    }
+    else if (iteratortype == 0x02)
+    {
+        ClientIdIt->it = 1;
+        ClientIdIt->end = ((1u +1u)+1u);
+    }
+# 100 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\client\\Dem_Client.h"
+    else
+    {
+
+        do { if (!((0 != 0))) { do {Dem_EventIdCausingLastDetError = 0; Det_ReportError(54,0,0xFA,0);}while(0); } } while(0);
+    }
+}
+
+static __inline__ Dem_boolean_least Dem_Client_ClientIdIteratorValid(const Dem_ClientIdListIterator *ClientIdIt)
+{
+    return ((Dem_boolean_least)(ClientIdIt->it < ClientIdIt->end ));
+}
+
+static __inline__ void Dem_Client_ClientIdIteratorNext(Dem_ClientIdListIterator *ClientIdIt)
+{
+    (ClientIdIt->it)++;
+}
+
+static __inline__ Dem_ClientIdType Dem_Client_ClientIdIteratorCurrent(const Dem_ClientIdListIterator *ClientIdIt)
+{
+   return (Dem_ClientIdType)(ClientIdIt->it);
+}
+
+
+static __inline__ Dem_boolean_least Dem_isClientIdValid(Dem_ClientIdType clientId)
+{
+   return ((clientId != 0x00) && (clientId < ((1u +1u)+1u)));
+}
+
+void Dem_ClientInit(void);
+
+static __inline__ Dem_ClientState* Dem_Client_getClient (Dem_ClientIdType ClientId)
+{
+    return (&Dem_AllClientsState[ClientId]);
+}
+
+static __inline__ uint8 Dem_Client_GetClientType (Dem_ClientIdType ClientId)
+{
+    return((Dem_isClientIdValid(ClientId))?((ClientId <= 1u)?0x00u:0x01u):0xFFu);
+}
+
+Std_ReturnType Dem_Client_Operation(uint8 ClientId, uint8 requestId, uint8 ApiId);
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 148 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\client\\Dem_Client.h" 2
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\client\\Dem_ClientBaseHandling.h" 2
+# 1 ".\\output\\inc/Dem_Lib.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\client\\Dem_ClientBaseHandling.h" 2
+# 1 ".\\output\\inc/Rte_Dem_Type.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\client\\Dem_ClientBaseHandling.h" 2
+
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 92 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 93 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 16 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\client\\Dem_ClientBaseHandling.h" 2
+# 31 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\client\\Dem_ClientBaseHandling.h"
+static __inline__ void Dem_ClientSelectED_FFDataType_SetEvMemCopyValid(Dem_ClientIdType ClientId, boolean IsCopyValid )
+{
+    Dem_AllClientsState[ClientId].data.standard.SelectED_FFData.IsCopyValid = IsCopyValid;
+}
+
+static __inline__ boolean Dem_ClientSelectED_FFDataType_IsEvMemCopyValid( Dem_ClientIdType ClientId )
+{
+    return (Dem_AllClientsState[ClientId].data.standard.SelectED_FFData.IsCopyValid);
+}
+
+
+static __inline__ void Dem_Client_SetDTCRecordUpdateDisabled(Dem_ClientIdType ClientId, boolean Disabled )
+{
+    Dem_AllClientsState[ClientId].data.standard.IsDTCRecordUpdateDisabled = Disabled;
+}
+
+static __inline__ boolean Dem_Client_IsDTCRecordUpdateDisabled( Dem_ClientIdType ClientId )
+{
+    return (Dem_AllClientsState[ClientId].data.standard.IsDTCRecordUpdateDisabled);
+}
+
+
+static __inline__ void Dem_ClientSelectED_FFDataType_SaveEvMemCopy( Dem_ClientIdType ClientId, const Dem_EvMemEventMemoryType* EvMem )
+{
+    Dem_AllClientsState[ClientId].data.standard.SelectED_FFData.EvMemCopy = *EvMem ;
+}
+
+static __inline__ Dem_EvMemEventMemoryType* Dem_ClientSelectED_FFDataType_GetEvMemCopy(Dem_ClientIdType ClientId)
+{
+    return ( &Dem_AllClientsState[ClientId].data.standard.SelectED_FFData.EvMemCopy );
+}
+
+static __inline__ void Dem_ClientSetED_FFSelectionPending(Dem_ClientIdType ClientId, boolean SetBit)
+{
+    Dem_AllClientsState[ClientId].data.standard.IsED_FFSelectionPending = SetBit;
+}
+
+static __inline__ boolean Dem_ClientIsED_FFSelectionPending(Dem_ClientIdType ClientId)
+{
+    return Dem_AllClientsState[ClientId].data.standard.IsED_FFSelectionPending;
+}
+
+static __inline__ void Dem_ClientSetGetNextDataCalled(Dem_ClientIdType ClientId, boolean SetBit)
+{
+    Dem_AllClientsState[ClientId].data.standard.IsGetNextDataCalled = SetBit;
+}
+
+static __inline__ boolean Dem_ClientIsGetNextDataCalled(Dem_ClientIdType ClientId)
+{
+    return Dem_AllClientsState[ClientId].data.standard.IsGetNextDataCalled;
+}
+
+
+
+
+static __inline__ void Dem_ClientResultType_setResult(volatile Dem_ClientResultType *result, Dem_ClientRequestType request, Std_ReturnType newResult)
+{
+    Dem_ClientResultType tempResult;
+
+
+    typedef uint8 Dem_static_assertion_DEM_CLIENTRSULTTYPE_SHALL_BE_UINT16[(2*(((((sizeof(Dem_ClientResultType)) >= 2u))!=((0 != 0)))?1:0))-1];
+
+    tempResult = (request & 0xFF00u);
+    tempResult |= newResult;
+    *result = tempResult;
+}
+
+static __inline__ Std_ReturnType Dem_ClientResultType_getResult(Dem_ClientResultType result)
+{
+    return ((Std_ReturnType)(result & 0xFFu));
+}
+
+static __inline__ Std_ReturnType Dem_ClientResultType_getRequest(Dem_ClientRequestType request)
+{
+    return ((Std_ReturnType)(request & 0xFFu));
+}
+
+static __inline__ void Dem_ClientResultType_confirmCancel(volatile Dem_ClientResultType *result, Dem_ClientRequestType request)
+{
+    Dem_ClientResultType tempResult;
+
+
+    typedef uint8 Dem_static_assertion_DEM_CLIENTRSULTTYPE_SHALL_BE_UINT16[(2*(((((sizeof(Dem_ClientResultType)) >= 2u))!=((0 != 0)))?1:0))-1];
+
+    tempResult = (request & 0xFF00u);
+    tempResult |= 0x01u;
+    *result = tempResult;
+}
+
+
+
+
+
+
+static __inline__ boolean Dem_ClientRequestType_isRequestInProgress(Dem_ClientIdType clientId)
+{
+    return ((Dem_AllClientsState[clientId].request & 0xFF00u)
+            != (Dem_AllClientsState[clientId].result & 0xFF00u));
+}
+
+static __inline__ uint8 Dem_ClientRequestType_getMachineIndex(Dem_ClientRequestType request)
+{
+    uint8 machineIndex;
+    machineIndex = (((uint8)(request & 0xFFu)) >> 1u);
+    return machineIndex;
+}
+
+static __inline__ void Dem_ClientRequestType_setRequest(volatile Dem_ClientRequestType *request, uint8 newRequest)
+{
+    Dem_ClientRequestType tempRequest;
+
+
+    typedef uint8 Dem_static_assertion_DEM_CLIENTREQUESTTYPE_SHALL_BE_UINT16[(2*(((((sizeof(Dem_ClientRequestType) >= 2u)))!=((0 != 0)))?1:0))-1];
+
+    tempRequest = *request;
+    tempRequest += 0x0100u;
+    tempRequest = (tempRequest & 0xFF00u) | newRequest;
+    *request = tempRequest;
+}
+
+
+static __inline__ void Dem_ClientRequestType_cancelRequest(volatile Dem_ClientRequestType *request)
+{
+    Dem_ClientRequestType_setRequest(request,1);
+}
+
+
+static __inline__ boolean Dem_ClientRequestType_isCancelRequested(Dem_ClientRequestType request)
+{
+    return ((request & 0x01u) == 1u);
+}
+# 171 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\client\\Dem_ClientBaseHandling.h"
+static __inline__ uint16 Dem_ClientSelectionType_getSelectionDtcIndex (Dem_ClientSelectionType selection)
+{
+    return ((uint16)(selection & 0xFFFFu));
+}
+
+static __inline__ void Dem_ClientSelectionType_setSelection (Dem_ClientSelectionType *selection, uint16 dtcId, uint8 typeOfSelection, Std_ReturnType selectionResult)
+{
+    Dem_ClientSelectionType tempSelection;
+
+
+    typedef uint8 Dem_static_assertion_DEM_CLIENTSELECTIONTYPE_SHALL_BE_UINT32[(2*(((((sizeof(Dem_ClientSelectionType) >= 4u)))!=((0 != 0)))?1:0))-1];
+
+    tempSelection = (((uint32)dtcId) | (((uint32)typeOfSelection) << 16u) | (((uint32)selectionResult) << 24u));
+    *selection = tempSelection;
+}
+
+static __inline__ boolean Dem_ClientSelectionType_isSelectionSingleDTC (Dem_ClientSelectionType selection)
+{
+    uint8 tempSelectionType;
+    tempSelectionType = (uint8)((selection >> 16u) & 0xFFu);
+
+    return (tempSelectionType == 0X03u);
+}
+
+static __inline__ boolean Dem_ClientSelectionType_isSelectionDTCGroupAll (Dem_ClientSelectionType selection)
+{
+    uint8 tempSelectionType;
+    tempSelectionType = (uint8)((selection >> 16u) & 0xFFu);
+
+    return (tempSelectionType == 0X01u);
+}
+
+static __inline__ boolean Dem_ClientSelectionType_isSelectionDTCGroup (Dem_ClientSelectionType selection)
+{
+    uint8 tempSelectionType;
+    tempSelectionType = (uint8)((selection >> 16u) & 0xFFu);
+
+    return (tempSelectionType == 0X02u);
+}
+
+static __inline__ boolean Dem_ClientSelectionType_isSelectionPending (Dem_ClientSelectionType selection)
+{
+    uint8 tempSelectionResult;
+    tempSelectionResult = (uint8)((selection >> 24u) & 0xFFu);
+
+    return (tempSelectionResult == 4u);
+}
+
+static __inline__ void Dem_ClientSelectionType_invalidateSelectionResult (Dem_ClientSelectionType *selection)
+{
+    Std_ReturnType tempresult = 4u;
+    Dem_ClientSelectionType tempSelection;
+
+
+    typedef uint8 Dem_static_assertion_DEM_CLIENTSELECTIONTYPE_SHALL_BE_UINT32[(2*(((((sizeof(Dem_ClientSelectionType) >= 4u)))!=((0 != 0)))?1:0))-1];
+
+    tempSelection = (*selection & 0x00FFFFFFu);
+    tempSelection |= (((uint32)tempresult) << 24u);
+    *selection = tempSelection;
+}
+
+static __inline__ Std_ReturnType Dem_ClientSelectionType_getSelectionResult (Dem_ClientSelectionType selection)
+{
+    return ((Std_ReturnType)((selection >> 24u) & 0xFFu));
+}
+
+static __inline__ uint8 Dem_ClientSelectionType_getTypeOfSelection (Dem_ClientSelectionType selection)
+{
+    return ((uint8)((selection >> 16u) & 0xFFu));
+}
+
+static __inline__ boolean Dem_Client_IsSelectionResultAvailable(uint8 ClientId, uint8 requestId)
+{
+    return (((requestId == 0x06u) || (requestId == 0x08u) ||
+         (requestId == 0x0Au) || (requestId == 0x0Cu) ||
+         (requestId == 0x14u))
+        && (Dem_ClientSelectionType_getSelectionResult(Dem_AllClientsState[ClientId].selection) != 4u));
+}
+
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 254 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\client\\Dem_ClientBaseHandling.h" 2
+# 2 ".\\output\\inc/Dem_ClientBaseHandling.h" 2
+# 7 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCStatusByte.h" 2
+# 1 ".\\output\\inc/Dem_ClientMachine_Clear.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\client\\Dem_ClientMachine_Clear.h" 1
+
+
+
+
+
+
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\client\\Dem_ClientBaseHandling.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\client\\Dem_ClientMachine_Clear.h" 2
+
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\client\\Dem_ClientMachine_Clear.h" 2
+# 1 ".\\output\\inc/Dem_Mapping.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\client\\Dem_ClientMachine_Clear.h" 2
+# 1 ".\\output\\inc/Dem_Nvm.h" 1
+# 12 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\client\\Dem_ClientMachine_Clear.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_Clear.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\client\\Dem_ClientMachine_Clear.h" 2
+
+
+
+
+
+
+
+typedef struct
+{
+  uint8 activeClient;
+  uint8 machine_state;
+
+  boolean IsNewClearRequest;
+
+  boolean IsClearInterrupted;
+
+  uint16 NumberOfEventsProcessed;
+
+  Dem_DtcIdListIterator DtcIt;
+  Dem_EventIdIterator EvtIt;
+  Dem_EventIdListIterator EvtListIt;
+
+
+
+} Dem_ClientClearMachineType;
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 23 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 24 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 41 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\client\\Dem_ClientMachine_Clear.h" 2
+
+extern Dem_ClientClearMachineType Dem_ClientClearMachine;
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 36 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 37 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 46 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\client\\Dem_ClientMachine_Clear.h" 2
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 92 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 93 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 49 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\client\\Dem_ClientMachine_Clear.h" 2
+
+
+
+
+static __inline__ void Dem_ClientClearMachine_SetMachineActiveClient(Dem_ClientIdType ClientId)
+{
+    Dem_ClientClearMachine.activeClient = ClientId;
+}
+
+static __inline__ boolean Dem_ClientClearMachine_isProcessingClient(Dem_ClientIdType ClientId)
+{
+    return (Dem_ClientClearMachine.activeClient == ClientId);
+}
+
+static __inline__ uint8 Dem_ClientClearMachine_GetMachineActiveClient(void)
+{
+    return Dem_ClientClearMachine.activeClient;
+}
+
+static __inline__ void Dem_ClientClearMachine_SetMachineState(uint8 state)
+{
+    Dem_ClientClearMachine.machine_state = state;
+}
+
+static __inline__ uint8 Dem_ClientClearMachine_GetMachineState(void)
+{
+    return Dem_ClientClearMachine.machine_state;
+}
+
+static __inline__ void Dem_ClientMachineClear_SetClientRequest(Dem_ClientIdType ClientId)
+{
+    if ((Dem_Client_GetClientType(ClientId) == 0x00u)
+            && (Dem_LibGetParamBool(2 == 2)
+            && (Dem_ClientSelectionType_getTypeOfSelection(Dem_AllClientsState[ClientId].selection) != 0X01u)))
+   {
+        Dem_ClientResultType_setResult(&Dem_AllClientsState[ClientId].result, Dem_AllClientsState[ClientId].request, 8u);
+    }
+    else
+    {
+        if (Dem_ClientClearMachine_GetMachineState() == 0x00u)
+        {
+            Dem_ClientClearMachine.IsNewClearRequest = (1 != 0);
+            Dem_ClientClearMachine_SetMachineActiveClient(ClientId);
+            Dem_NvMStartClear();
+            Dem_ClientClearMachine_SetMachineState(0x01u);
+        }
+        else if (Dem_ClientClearMachine_GetMachineActiveClient() != ClientId)
+        {
+            Dem_ClientResultType_setResult(&Dem_Client_getClient(ClientId)->result,Dem_Client_getClient(ClientId)->request,5u);
+        }
+        else
+        {
+
+        }
+    }
+
+}
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 109 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\client\\Dem_ClientMachine_Clear.h" 2
+# 2 ".\\output\\inc/Dem_ClientMachine_Clear.h" 2
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCStatusByte.h" 2
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCStatusByte.h" 2
+
+# 1 ".\\output\\inc/Dem_Clear.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCStatusByte.h" 2
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 92 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 93 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCStatusByte.h" 2
+
+uint8 Dem_DtcStatusByteRetrieve (Dem_DtcIdType dtcId);
+uint8 Dem_DtcStatusByteRetrieveWithOrigin (Dem_DtcIdType dtcId, Dem_DTCOriginType DtcOrigin, boolean* DtcStatusIsValid);
+void Dem_ClearDTCsEvents(Dem_EventIdType EventId, Dem_DTCOriginType DTCOrigin, Dem_ClientClearMachineType *Dem_ClientClearMachinePtr);
+void Dem_ClearAllDTCs(Dem_DTCOriginType DTCOrigin, Dem_ClientClearMachineType *Dem_ClientClearMachinePtr);
+void Dem_ClearSingleDTC(Dem_DtcIdType dtcId, Dem_DTCOriginType DTCOrigin, Dem_ClientClearMachineType *Dem_ClientClearMachinePtr);
+boolean Dem_IsPendingClearEvent(Dem_EventIdType EventId);
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 24 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCStatusByte.h" 2
+# 2 ".\\output\\inc/Dem_DTCStatusByte.h" 2
+# 18 "bsw\\Dem\\src\\evmem\\Dem_EvMemBase.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_Events_DataStructures.h" 1
+# 19 "bsw\\Dem\\src\\evmem\\Dem_EvMemBase.h" 2
+# 1 "bsw\\Dem\\src\\evmem\\Dem_EvMemNvData.h" 1
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Array.h" 1
+# 8 "bsw\\Dem\\src\\evmem\\Dem_EvMemNvData.h" 2
+# 20 "bsw\\Dem\\src\\evmem\\Dem_EvMemNvData.h"
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 162 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 163 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 21 "bsw\\Dem\\src\\evmem\\Dem_EvMemNvData.h" 2
+extern Dem_EvMemEventMemoryType Dem_EvMemEventMemory[(15u + 0u + 1u)];
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 175 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 176 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 24 "bsw\\Dem\\src\\evmem\\Dem_EvMemNvData.h" 2
+# 20 "bsw\\Dem\\src\\evmem\\Dem_EvMemBase.h" 2
+
+typedef uint8 Dem_EvMemActionType;
+# 40 "bsw\\Dem\\src\\evmem\\Dem_EvMemBase.h"
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 92 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 93 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 41 "bsw\\Dem\\src\\evmem\\Dem_EvMemBase.h" 2
+uint32 Dem_EvMemGetNewEventMemoryTimeId(uint16_least MemId);
+void Dem_EvMemCopyToMirrorMemory(uint16_least LocId);
+void Dem_EvMemForceClearEventMemoryLocation(uint16_least LocId, uint16_least WriteSts, Dem_EvMemActionType actionType);
+uint16_least Dem_EvMemGetEventMemoryStorageLocation (Dem_EventIdType EventId, uint8 EventType, uint16_least MemId, Dem_boolean_least isDisplacementSupported, uint16_least displacementStrategy);
+uint16_least Dem_EvMemGetMirrorMemoryStorageLocation(Dem_EventIdType EventId, uint16_least MemId, Dem_boolean_least isDisplacementSupported, uint16_least displacementStrategy);
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 53 "bsw\\Dem\\src\\evmem\\Dem_EvMemBase.h" 2
+# 72 "bsw\\Dem\\src\\evmem\\Dem_EvMemBase.h"
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 69 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 70 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 73 "bsw\\Dem\\src\\evmem\\Dem_EvMemBase.h" 2
+extern const Dem_NvmBlockIdType Dem_EvMemNvmId[(15u + 0u + 1u)];
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 82 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 83 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 76 "bsw\\Dem\\src\\evmem\\Dem_EvMemBase.h" 2
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 69 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 70 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 80 "bsw\\Dem\\src\\evmem\\Dem_EvMemBase.h" 2
+extern const uint16_least Dem_EvMemLocIdList[(((0u +1u))+1u)+1u];
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 82 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 83 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 83 "bsw\\Dem\\src\\evmem\\Dem_EvMemBase.h" 2
+
+
+
+
+
+
+
+static __inline__ Dem_boolean_least Dem_EvMemIsMemIdValid(uint16_least MemId)
+{
+    return (Dem_boolean_least)(MemId < (((0u +1u))+1u));
+}
+
+
+
+
+
+static __inline__ Dem_boolean_least Dem_EvMemIsEventMemLocIdValid(uint16_least LocId)
+{
+    return (Dem_boolean_least)(LocId < (15u + 0u + 1u));
+}
+
+static __inline__ uint16_least Dem_EvMemLocId2ReaderCopyLocId(uint16_least LocId)
+{
+    do { if (!(Dem_EvMemIsEventMemLocIdValid(LocId))) { do {Dem_EventIdCausingLastDetError = 0; Det_ReportError(54,0,0xB5,10);}while(0); } } while(0);
+
+
+
+
+    return LocId;
+
+}
+
+static __inline__ Dem_boolean_least Dem_EvMemIsReaderCopyLocIdValid(uint16_least LocId)
+{
+    return (Dem_boolean_least)(LocId < (15u + 0u + 1u));
+}
+
+
+static __inline__ uint16_least Dem_EvMemGetEventMemStatusByPtr(const Dem_EvMemEventMemoryType *EventMemory)
+{
+    return EventMemory->Hdr.Data.Status;
+}
+
+static __inline__ uint16_least Dem_EvMemGetEventMemStatus(uint16_least LocId)
+{
+    uint16_least Status = 0;
+    if(Dem_EvMemIsReaderCopyLocIdValid(LocId))
+    {
+        Status = Dem_EvMemGetEventMemStatusByPtr(&Dem_EvMemEventMemory[LocId]);
+    }
+    return Status;
+}
+
+
+static __inline__ void Dem_EvMemSetEventMemStatus(uint16_least LocId, uint16_least Status)
+{
+    Dem_EvMemEventMemory[LocId].Hdr.Data.Status = (uint16)Status;
+}
+
+
+
+static __inline__ Dem_EventIdType Dem_EvMemGetEventMemEventIdByPtr(const Dem_EvMemEventMemoryType *EventMemory)
+{
+    return EventMemory->Hdr.Data.EventId;
+}
+
+static __inline__ Dem_EventIdType Dem_EvMemGetEventMemEventId(uint16_least LocId)
+{
+    Dem_EventIdType EventId = 0;
+    if(Dem_EvMemIsReaderCopyLocIdValid(LocId))
+    {
+        EventId = Dem_EvMemGetEventMemEventIdByPtr(&Dem_EvMemEventMemory[LocId]);
+    }
+    return EventId;
+}
+
+
+static __inline__ void Dem_EvMemSetEventMemEventId(uint16_least LocId, Dem_EventIdType EventId)
+{
+    Dem_EvMemEventMemory[LocId].Hdr.Data.EventId = (uint16)EventId;
+}
+
+
+
+static __inline__ uint32 Dem_EvMemGetEventMemTimeIdByPtr(const Dem_EvMemEventMemoryType *EventMemory)
+{
+    return EventMemory->TimeId;
+}
+
+static __inline__ uint32 Dem_EvMemGetEventMemTimeId(uint16_least LocId)
+{
+    return Dem_EvMemGetEventMemTimeIdByPtr(&Dem_EvMemEventMemory[LocId]);
+}
+
+
+static __inline__ void Dem_EvMemSetEventMemTimeId(uint16_least LocId, uint32 TimeId)
+{
+    Dem_EvMemEventMemory[LocId].TimeId = TimeId;
+}
+
+
+
+static __inline__ uint8 Dem_EvMemGetEventMemDtcStatusByPtr(const Dem_EvMemEventMemoryType *EventMemory)
+{
+    (void)(EventMemory);
+
+
+
+
+    return 0;
+
+}
+
+static __inline__ uint8 Dem_EvMemGetEventMemDtcStatus(uint16_least LocId)
+{
+    return Dem_EvMemGetEventMemDtcStatusByPtr(&Dem_EvMemEventMemory[LocId]);
+}
+
+
+static __inline__ void Dem_EvMemSetEventMemDtcStatus(uint16_least LocId, uint8 DtcStatus)
+{
+    (void)(LocId);
+    (void)(DtcStatus);
+
+
+
+
+}
+
+
+static __inline__ uint8_least Dem_EvMemGetEventMemFailureCounterByPtr(const Dem_EvMemEventMemoryType *EventMemory)
+{
+    return EventMemory->FailureCounter;
+}
+
+static __inline__ uint8_least Dem_EvMemGetEventMemFailureCounter(uint16_least LocId)
+{
+    return Dem_EvMemGetEventMemFailureCounterByPtr(&Dem_EvMemEventMemory[LocId]);
+}
+
+
+static __inline__ void Dem_EvMemSetEventMemFailureCounter(uint16_least LocId, uint8 FailureCounter)
+{
+    Dem_EvMemEventMemory[LocId].FailureCounter = FailureCounter;
+}
+
+
+static __inline__ uint16_least Dem_EvMemGetEventMemOccurrenceCounterByPtr(const Dem_EvMemEventMemoryType *EventMemory)
+{
+    (void)(EventMemory);
+
+
+    return (uint16_least)EventMemory->OccurrenceCounter;
+
+
+
+}
+
+static __inline__ uint16_least Dem_EvMemGetEventMemOccurrenceCounter(uint16_least LocId)
+{
+    return Dem_EvMemGetEventMemOccurrenceCounterByPtr(&Dem_EvMemEventMemory[LocId]);
+}
+
+
+static __inline__ void Dem_EvMemSetEventMemOccurrenceCounter(uint16_least LocId, uint16_least OccurrenceCounter)
+{
+    (void)(LocId);
+    (void)(OccurrenceCounter);
+
+
+    Dem_EvMemEventMemory[LocId].OccurrenceCounter = (Dem_EvMemOccurrenceCounterType) OccurrenceCounter;
+
+}
+
+
+static __inline__ uint16_least Dem_EvMemGetEventMemAgingCounterByPtr(const Dem_EvMemEventMemoryType *EventMemory)
+{
+   (void)(EventMemory);
+
+
+      return (uint16_least)EventMemory->AgingCounter;
+
+
+
+}
+
+static __inline__ uint16_least Dem_EvMemGetEventMemAgingCounter(uint16_least LocId)
+{
+   return Dem_EvMemGetEventMemAgingCounterByPtr(&Dem_EvMemEventMemory[LocId]);
+
+}
+
+static __inline__ void Dem_EvMemSetEventMemAgingCounter(uint16_least LocId, uint16_least AgingCounter)
+{
+    (void)(LocId);
+    (void)(AgingCounter);
+
+
+    Dem_EvMemEventMemory[LocId].AgingCounter = (Dem_EvMemAgingCounterType) AgingCounter;
+
+}
+
+
+static __inline__ uint16_least Dem_EvMemGetEventMemAgingCounterForTFSLCByPtr(const Dem_EvMemEventMemoryType *EventMemory)
+{
+   (void)(EventMemory);
+
+
+
+
+    return 0;
+
+}
+
+static __inline__ uint16_least Dem_EvMemGetEventMemAgingCounterForTFSLC(uint16_least LocId)
+{
+   return Dem_EvMemGetEventMemAgingCounterForTFSLCByPtr(&Dem_EvMemEventMemory[LocId]);
+
+}
+
+static __inline__ void Dem_EvMemSetEventMemAgingCounterForTFSLC(uint16_least LocId, uint16_least AgingCounterForTFSLC)
+{
+    (void)(LocId);
+    (void)(AgingCounterForTFSLC);
+
+
+
+
+}
+
+
+
+
+static __inline__ void Dem_EvMemSetMaxFdcDuringCurrentCycleByPtr(Dem_EvMemEventMemoryType *EventMemory, sint8 fdc)
+{
+    (void)(EventMemory);
+    (void)(fdc);
+
+
+
+
+}
+
+
+static __inline__ void Dem_EvMemSetMaxFdcSinceLastClearByPtr(Dem_EvMemEventMemoryType *EventMemory, sint8 fdc)
+{
+    (void)(EventMemory);
+    (void)(fdc);
+
+
+
+
+}
+
+
+static __inline__ sint8 Dem_EvMemGetMaxFdcDuringCurrentCycleByPtr(const Dem_EvMemEventMemoryType *EventMemory)
+{
+    (void)(EventMemory);
+
+
+
+
+ return 0;
+
+}
+
+static __inline__ sint8 Dem_EvMemGetMaxFdcSinceLastClearByPtr(const Dem_EvMemEventMemoryType *EventMemory)
+{
+    (void)(EventMemory);
+
+
+
+
+    return 0;
+
+}
+
+static __inline__ void Dem_EvMemSetMaxFdcDuringCurrentCycle(uint16_least LocId, sint8 fdc)
+{
+ Dem_EvMemSetMaxFdcDuringCurrentCycleByPtr(&(Dem_EvMemEventMemory[LocId]), fdc);
+}
+
+static __inline__ void Dem_EvMemSetMaxFdcSinceLastClear(uint16_least LocId, sint8 fdc)
+{
+ Dem_EvMemSetMaxFdcSinceLastClearByPtr(&(Dem_EvMemEventMemory[LocId]), fdc);
+}
+
+
+static __inline__ sint8 Dem_EvMemGetMaxFdcDuringCurrentCycle(uint16_least LocId)
+{
+    return Dem_EvMemGetMaxFdcDuringCurrentCycleByPtr (&(Dem_EvMemEventMemory[LocId]));
+}
+
+static __inline__ sint8 Dem_EvMemGetMaxFdcSinceLastClear(uint16_least LocId)
+{
+ return Dem_EvMemGetMaxFdcSinceLastClearByPtr (&(Dem_EvMemEventMemory[LocId]));
+}
+
+
+
+
+static __inline__ uint8 Dem_EvMemGetCyclesSinceFirstFailedByPtr(const Dem_EvMemEventMemoryType *EventMemory)
+{
+
+
+
+ ((void)(EventMemory));
+    return 0;
+
+}
+
+static __inline__ uint8 Dem_EvMemGetCyclesSinceLastFailedByPtr(const Dem_EvMemEventMemoryType *EventMemory)
+{
+
+
+
+ ((void)(EventMemory));
+ return 0;
+
+}
+
+static __inline__ uint8 Dem_EvMemGetCyclesSinceLastFailedExcludingTNCByPtr(const Dem_EvMemEventMemoryType *EventMemory)
+{
+
+
+
+ ((void)(EventMemory));
+ return 0;
+
+}
+
+static __inline__ uint8 Dem_EvMemGetFailedCyclesByPtr(const Dem_EvMemEventMemoryType *EventMemory)
+{
+
+
+
+ ((void)(EventMemory));
+ return 0;
+
+}
+
+static __inline__ void Dem_EvMemIncCyclesSinceFirstFailed(uint16_least LocId)
+{
+
+
+
+
+
+
+ ((void)(LocId));
+
+}
+
+static __inline__ void Dem_EvMemIncCyclesSinceLastFailed(uint16_least LocId)
+{
+
+
+
+
+
+
+ ((void)(LocId));
+
+}
+
+static __inline__ void Dem_EvMemIncCyclesSinceLastFailedExcludingTNC(uint16_least LocId)
+{
+
+
+
+
+
+
+ ((void)(LocId));
+
+}
+
+static __inline__ void Dem_EvMemIncFailedCycles(uint16_least LocId)
+{
+
+
+
+
+
+
+ ((void)(LocId));
+
+}
+
+static __inline__ void Dem_EvMemResetCyclesSinceLastFailed(uint16_least LocId)
+{
+
+
+
+ ((void)(LocId));
+
+}
+
+static __inline__ void Dem_EvMemResetCyclesSinceLastFailedExcludingTNC(uint16_least LocId)
+{
+
+
+
+ ((void)(LocId));
+
+}
+
+
+static __inline__ uint8 Dem_EvMemGetEventMemFreezeFrameCounterByPtr(const Dem_EvMemEventMemoryType *EventMemory)
+{
+   (void)(EventMemory);
+
+
+   return EventMemory->FreezeFrameCounter;
+
+
+
+
+}
+
+static __inline__ uint8 Dem_EvMemGetEventMemFreezeFrameCounter(uint16_least LocId)
+{
+   return Dem_EvMemGetEventMemFreezeFrameCounterByPtr(&Dem_EvMemEventMemory[LocId]);
+}
+
+
+
+static __inline__ void Dem_EvMemSetEventMemLocFreezeFrameCounter(uint16_least LocId, uint8 FreezeFrameCounter)
+{
+   (void)(LocId);
+   (void)(FreezeFrameCounter);
+
+
+   Dem_EvMemEventMemory[LocId].FreezeFrameCounter = FreezeFrameCounter;
+
+}
+
+
+
+static __inline__ Dem_TriggerType Dem_EvMemGetEventMemTriggerByPtr(const Dem_EvMemEventMemoryType *EventMemory)
+{
+   (void)(EventMemory);
+
+
+   return EventMemory->Trigger;
+
+
+
+
+}
+
+static __inline__ Dem_TriggerType Dem_EvMemGetEventMemTrigger(uint16_least LocId)
+{
+   return Dem_EvMemGetEventMemTriggerByPtr(&Dem_EvMemEventMemory[LocId]);
+}
+
+static __inline__ void Dem_EvMemSetEventMemTrigger(uint16_least LocId, Dem_TriggerType Trigger)
+{
+   (void)(LocId);
+   (void)(Trigger);
+
+
+   Dem_EvMemEventMemory[LocId].Trigger = Trigger;
+
+}
+
+
+
+static __inline__ uint8 *Dem_EvMemGetEventMemDataByPtr(Dem_EvMemEventMemoryType *EventMemory)
+{
+   return EventMemory->Data;
+}
+
+static __inline__ uint8 *Dem_EvMemGetEventMemData(uint16_least LocId)
+{
+   return Dem_EvMemGetEventMemDataByPtr(&Dem_EvMemEventMemory[LocId]);
+}
+
+static __inline__ uint16 Dem_EvMemGetEventMemDataSize(void)
+{
+   return sizeof(Dem_EvMemEventMemory[0].Data);
+}
+
+
+
+
+
+
+
+static __inline__ Dem_boolean_least Dem_EvMemIsTestFailedSLC(uint16_least Status)
+{
+   return (Dem_boolean_least)((Status & (0x0040u | 0x1000u)) == (0x0040u | 0x1000u));
+}
+
+static __inline__ Dem_boolean_least Dem_EvMemIsTestCompleteTFC(uint16_least Status)
+{
+    return ((Status & 0x0020u) == 0x0020u);
+}
+
+static __inline__ Dem_boolean_least Dem_EvMemIsTestFailedTFC (uint16_least Status)
+{
+    return ((Status & 0x0002u) == 0x0002u);
+}
+
+static __inline__ Dem_boolean_least Dem_EvMemIsStored(uint16_least Status)
+{
+   return (Dem_boolean_least)((Status & (0x1000u | 0x0080u)) == 0x1000u);
+}
+
+static __inline__ Dem_boolean_least Dem_EvMemIsEmpty(uint16_least Status)
+{
+   return (Dem_boolean_least)((Status & (0x1000u | 0x0080u)) == 0u);
+}
+
+static __inline__ Dem_boolean_least Dem_EvMemIsDeleted(uint16_least Status)
+{
+   (void)(Status);
+
+
+
+
+   return (0 != 0);
+
+}
+static __inline__ uint16_least Dem_EvMemSetToEmpty(void)
+{
+ return 0u;
+}
+
+static __inline__ uint16_least Dem_EvMemSetToDelete(uint16_least Status)
+{
+ (void)(Status);
+
+
+
+
+    return Dem_EvMemSetToEmpty();
+
+}
+
+static __inline__ Dem_boolean_least Dem_EvMemGetShadowVisibility(void)
+{
+ return (0 != 0);
+}
+
+static __inline__ Dem_boolean_least Dem_EvMemIsVisible(uint16_least Status, Dem_boolean_least ShadowEntriesVisible)
+{
+ return (Dem_boolean_least)( ( Dem_EvMemIsStored(Status)) ||
+                       (!Dem_EvMemIsEmpty (Status) && Dem_EvMemGetShadowVisibility() && ShadowEntriesVisible));
+}
+
+
+
+
+
+
+
+static __inline__ uint16_least Dem_EvMemGetEventMemStartLocId(uint16_least MemId)
+{
+
+ (void)(MemId);
+
+
+
+
+ return Dem_EvMemLocIdList[MemId];
+
+}
+
+static __inline__ uint16_least Dem_EvMemGetEventMemEndLocId(uint16_least MemId)
+{
+ (void)(MemId);
+
+
+
+
+ return Dem_EvMemLocIdList[MemId+1u];
+
+}
+
+
+static __inline__ void Dem_EvMemEventMemoryLocIteratorNew (uint16_least *LocId, uint16_least MemId)
+{
+    *LocId = Dem_EvMemGetEventMemStartLocId(MemId);
+}
+
+
+static __inline__ Dem_boolean_least Dem_EvMemEventMemoryLocIteratorIsValid (const uint16_least *LocId, uint16_least MemId)
+{
+    return (Dem_boolean_least)(*LocId < Dem_EvMemGetEventMemEndLocId(MemId));
+}
+
+
+static __inline__ void Dem_EvMemEventMemoryLocIteratorNext (uint16_least *LocId, uint16_least MemId)
+{
+    (void)(MemId);
+    (*LocId)++;
+}
+
+static __inline__ void Dem_EvMemEventMemoryLocIteratorInvalidate (uint16_least *LocId, uint16_least MemId)
+{
+    *LocId = Dem_EvMemGetEventMemEndLocId(MemId);
+}
+
+
+static __inline__ void Dem_EvMemEventMemoryIteratorNew(uint16_least *MemId)
+{
+ *MemId = 0;
+}
+
+static __inline__ Dem_boolean_least Dem_EvMemEventMemoryIteratorIsValid(const uint16_least *MemId)
+{
+ return (Dem_boolean_least) (*MemId < (((0u +1u))+1u));
+}
+
+static __inline__ void Dem_EvMemEventMemoryIteratorNext(uint16_least *MemId)
+{
+ (*MemId)++;
+}
+
+static __inline__ void Dem_EvMemEventMemoryAllLocIteratorNew (uint16_least *LocId)
+{
+    *LocId = 0;
+}
+
+static __inline__ Dem_boolean_least Dem_EvMemEventMemoryAllLocIteratorIsValid (const uint16_least *LocId)
+{
+    return (Dem_boolean_least)(*LocId < (15u + 0u + 1u));
+}
+
+static __inline__ void Dem_EvMemEventMemoryAllLocIteratorNext (uint16_least *LocId)
+{
+    (*LocId)++;
+}
+
+static __inline__ void Dem_EvMemEventMemoryPrimaryUserdefLocIteratorNew (uint16_least *LocId)
+{
+    *LocId = 0;
+}
+
+static __inline__ Dem_boolean_least Dem_EvMemEventMemoryPrimaryUserdefLocIteratorIsValid (const uint16_least *LocId)
+{
+    return (Dem_boolean_least)(*LocId < (15u + 0u));
+}
+
+static __inline__ void Dem_EvMemEventMemoryPrimaryUserdefLocIteratorNext (uint16_least *LocId)
+{
+    (*LocId)++;
+}
+
+static __inline__ Dem_boolean_least Dem_EvMemIsOriginPrimary (uint16_least LocId)
+{
+   return (Dem_boolean_least) (LocId < 15u);
+}
+
+static __inline__ Dem_boolean_least Dem_EvMemIsOriginSecondary (uint16_least LocId)
+{
+   return (Dem_boolean_least) ((LocId >= 15u) &&
+                               (LocId < (15u + 0u)));
+}
+
+static __inline__ Dem_boolean_least Dem_EvMemIsOriginMirror (uint16_least LocId)
+{
+   return (Dem_boolean_least) ((LocId >= (15u + 0u)) &&
+                               (LocId < (15u + 0u + 1u)));
+}
+
+
+
+
+
+
+
+static __inline__ Dem_boolean_least Dem_EvMemIsEdgeTrigger(uint16_least StatusOld, uint16_least StatusNew, uint16_least Trigger)
+{
+ return (Dem_boolean_least) (((StatusOld ^ StatusNew) & Trigger) != 0u);
+}
+
+static __inline__ uint16_least Dem_EvMemGetEventMemId(uint16_least LocId)
+{
+ uint16_least MemId;
+
+ for (Dem_EvMemEventMemoryIteratorNew (&MemId);
+   Dem_EvMemEventMemoryIteratorIsValid (&MemId);
+   Dem_EvMemEventMemoryIteratorNext (&MemId))
+ {
+  if (LocId < Dem_EvMemGetEventMemEndLocId (MemId))
+  {
+   return MemId;
+  }
+ }
+
+ do { if (!(Dem_LibGetParamBool((0 != 0)))) { do {Dem_EventIdCausingLastDetError = 0; Det_ReportError(54,0,0xC2,0);}while(0); } } while(0);
+ return 0xFFFFu;
+
+}
+
+
+
+
+
+
+static __inline__ Dem_boolean_least Dem_EvMemIsDisplaceEventMemoryLocAllowed(Dem_EventIdType NewEventId, uint16_least LocId)
+{
+   (void)(NewEventId);
+   (void)(LocId);
+
+   return (1 != 0);
+}
+
+
+static __inline__ Dem_boolean_least Dem_EvMemIsEventFailedAllowed(Dem_EventIdType EventId, uint16_least MemId)
+{
+   (void)(EventId);
+   (void)(MemId);
+
+   return((1 != 0));
+}
+
+
+static __inline__ Dem_boolean_least Dem_EvMemIsEventPassedAllowed(Dem_EventIdType EventId, uint16_least MemId)
+{
+    uint8 DtcStatusByte = 0;
+
+    (void)(EventId);
+    (void)(MemId);
+    (void)(DtcStatusByte);
+# 820 "bsw\\Dem\\src\\evmem\\Dem_EvMemBase.h"
+    return((1 != 0));
+
+}
+
+
+static __inline__ Dem_boolean_least Dem_EvMemIsEventUnRobustAllowed(Dem_EventIdType EventId, uint16_least MemId)
+{
+   (void)(EventId);
+   (void)(MemId);
+
+   return((1 != 0));
+}
+
+static __inline__ Dem_boolean_least Dem_EvMemIsEventMemoryDisplacementSupported(uint16_least MemId)
+{
+   (void)(MemId);
+
+   return (Dem_boolean_least)(Dem_LibGetParamBool((1 != 0)));
+}
+
+
+static __inline__ Dem_boolean_least Dem_EvMemIsTriggerOccurrenceCounter(Dem_EventIdType EventId, uint16_least MemId, uint16_least StatusOld, uint16_least StatusNew)
+{
+ (void)(EventId);
+ (void)(MemId);
+
+
+
+
+ return Dem_EvMemIsEdgeTrigger (StatusOld, StatusNew, 0x0001u) && ((StatusNew & 0u) == 0u);
+}
+
+static __inline__ Dem_TriggerType Dem_EvMemGetTriggerOnFailed(uint16_least StatusOld, uint16_least StatusNew)
+{
+ Dem_TriggerType Trigger;
+ Trigger = 0x00u;
+ if (Dem_EvMemIsEdgeTrigger (StatusOld, StatusNew, 0x0001u))
+ {
+  Dem_EnvSetTrigger(&Trigger, 0x01u);
+ }
+ if (Dem_EvMemIsEdgeTrigger (StatusOld, StatusNew, 0x0004u))
+ {
+  Dem_EnvSetTrigger(&Trigger, 0x02u);
+ }
+ if (Dem_EvMemIsEdgeTrigger (StatusOld, StatusNew, 0x0008u))
+ {
+  Dem_EnvSetTrigger(&Trigger, 0x04u);
+ }
+
+ return Trigger;
+}
+
+
+static __inline__ Dem_TriggerType Dem_EvMemGetTriggerOnPassed(uint16_least StatusOld, uint16_least StatusNew)
+{
+ Dem_TriggerType Trigger;
+ Trigger = 0x00u;
+ if (Dem_EvMemIsEdgeTrigger (StatusOld, StatusNew, 0x0001u))
+ {
+  Dem_EnvSetTrigger(&Trigger, 0x10u);
+ }
+ return Trigger;
+}
+# 892 "bsw\\Dem\\src\\evmem\\Dem_EvMemBase.h"
+static __inline__ Dem_boolean_least Dem_EvMemIsTriggerMirrorOnFailed(Dem_EventIdType EventId, uint16_least MemId, uint16_least StatusOld, uint16_least StatusNew)
+{
+   (void)(EventId);
+   (void)(MemId);
+
+   return (Dem_boolean_least)(Dem_EvMemIsEdgeTrigger(StatusOld, StatusNew, 0x0001u));
+}
+
+
+static __inline__ Dem_boolean_least Dem_EvMemIsTriggerMirrorOnClear(Dem_EventIdType EventId, uint16_least LocId, uint16_least StatusOld, uint16_least StatusNew)
+{
+   (void)(EventId);
+   (void)(LocId);
+   (void)(StatusOld);
+   (void)(StatusNew);
+
+   return (Dem_boolean_least)((StatusOld & 0x0008u) != 0u);
+}
+# 919 "bsw\\Dem\\src\\evmem\\Dem_EvMemBase.h"
+static __inline__ uint16_least Dem_EvMemGetRamStsMask(Dem_EventIdType EventId)
+{
+    uint16_least stsMask = 0u;
+    if (!Dem_EvtParam_GetStoreTestFailedToNextOC(EventId))
+    {
+        stsMask |= 0x0001u;
+    }
+    return stsMask;
+}
+
+
+
+
+
+
+static __inline__ Dem_boolean_least Dem_EvMemIsEqualEvent(Dem_EventIdType EventId1, Dem_EventIdType EventId2)
+{
+   if (Dem_LibGetParamUI8(3u) != Dem_LibGetParamUI8(3u))
+   {
+        return (Dem_boolean_least)(Dem_DtcIdFromEventId(EventId1) == Dem_DtcIdFromEventId(EventId2));
+   }
+   else
+   {
+        return (Dem_boolean_least)(EventId1 == EventId2);
+   }
+}
+
+
+static __inline__ Dem_boolean_least Dem_EvMemIsNvStatusChanged(Dem_EventIdType EventId, uint16_least StatusOld, uint16_least StatusNew)
+{
+   return (Dem_boolean_least)(Dem_EvMemIsEdgeTrigger(StatusOld, StatusNew, ~Dem_EvMemGetRamStsMask(EventId)));
+}
+# 15 "bsw\\Dem\\src\\evmem\\Dem_EvMem.h" 2
+
+# 1 "bsw\\Dem\\src\\evmem\\Dem_EvMemApi.h" 1
+
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Cfg_EvMem.h" 1
+# 9 "bsw\\Dem\\src\\evmem\\Dem_EvMemApi.h" 2
+
+# 1 ".\\output\\inc/Dem_Cfg_Client.h" 1
+# 11 "bsw\\Dem\\src\\evmem\\Dem_EvMemApi.h" 2
+
+
+typedef struct
+{
+  uint16_least FilteredRecordLocIdIterator;
+  uint16_least FilteredRecordLocIdOfDTC;
+  uint8 FilteredRecordFreezeFrameIdIterator;
+  boolean IsFFRecordOfDTCReported[15u];
+  Dem_DtcIdType CurrentDtcId;
+} Dem_Client_FF_FilterParamsType;
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 23 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 24 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 24 "bsw\\Dem\\src\\evmem\\Dem_EvMemApi.h" 2
+extern Dem_Client_FF_FilterParamsType Dem_Client_FF_FilterParams[((1u +1u)+1u)];
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 36 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 37 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 27 "bsw\\Dem\\src\\evmem\\Dem_EvMemApi.h" 2
+
+
+
+
+
+
+static __inline__ Dem_boolean_least Dem_EvMemIsDtcKindValid (Dem_DTCKindType DTCKind)
+{
+    return (DTCKind == 0x01u);
+}
+
+
+static __inline__ Dem_boolean_least Dem_EvMemIsDtcOriginValid (Dem_DTCOriginType *DTCOrigin)
+{
+    if(*DTCOrigin == (0x0u + 0x0100u))
+    {
+        *DTCOrigin = (5U);
+    }
+    if(*DTCOrigin == (4U))
+    {
+        *DTCOrigin = (1U);
+    }
+    return (
+               (*DTCOrigin == (1U))
+
+
+
+
+            || (*DTCOrigin == (2U))
+
+           );
+}
+# 17 "bsw\\Dem\\src\\evmem\\Dem_EvMem.h" 2
+# 1 "bsw\\Dem\\src\\evmem\\Dem_EvMemAging.h" 1
+# 14 "bsw\\Dem\\src\\evmem\\Dem_EvMemAging.h"
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 92 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 93 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 15 "bsw\\Dem\\src\\evmem\\Dem_EvMemAging.h" 2
+uint16_least Dem_EvMemGetCurrentAgingCycleCounter(Dem_EventIdType EventId);
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 18 "bsw\\Dem\\src\\evmem\\Dem_EvMemAging.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_Events_DataStructures.h" 1
+# 19 "bsw\\Dem\\src\\evmem\\Dem_EvMemAging.h" 2
+
+static __inline__ uint16_least Dem_EvMemGetCurrentAgingCycleCounterInt(Dem_EventIdType EventId)
+{
+
+
+
+
+
+
+    (void)(EventId);
+    return 0;
+
+}
+# 61 "bsw\\Dem\\src\\evmem\\Dem_EvMemAging.h"
+static __inline__ Dem_boolean_least Dem_EvMemIsAged(Dem_EventIdType EventId, uint16_least LocId, uint16_least StatusNew)
+{
+ (void)(LocId);
+ (void)(EventId);
+
+ return (Dem_boolean_least)((StatusNew & 0x0400u) != 0u);
+
+}
+
+
+static __inline__ uint16_least Dem_EvMemGetEventMemAgingCounterScaled(const Dem_EvMemEventMemoryType *EventMemory)
+{
+ uint16_least AgingCounter;
+
+ if (Dem_LibGetParamUI8(1u) == Dem_LibGetParamUI8(2u))
+ {
+  AgingCounter = Dem_EvtParam_GetAgingThreshold(Dem_EvMemGetEventMemEventIdByPtr(EventMemory)) - Dem_EvMemGetEventMemAgingCounterByPtr(EventMemory);
+ }
+ else if (Dem_LibGetParamUI8(1u) == Dem_LibGetParamUI8(4u))
+ {
+  if ((Dem_EvMemGetEventMemStatusByPtr(EventMemory) & 0x0001u) != 0u)
+  {
+   AgingCounter = 0;
+  }
+  else if ((Dem_EvMemGetEventMemStatusByPtr(EventMemory) & 0x0400u) != 0u)
+  {
+   AgingCounter = Dem_EvtParam_GetAgingThreshold(Dem_EvMemGetEventMemEventIdByPtr(EventMemory));
+  }
+  else
+  {
+   AgingCounter = (uint16_least)((Dem_EvMemAgingCounterType)(Dem_EvMemGetCurrentAgingCycleCounterInt(Dem_EvMemGetEventMemEventIdByPtr(EventMemory)) - Dem_EvMemGetEventMemAgingCounterByPtr(EventMemory)));
+  }
+ }
+ else if (Dem_LibGetParamUI8(1u) == Dem_LibGetParamUI8(5u))
+ {
+  if ((Dem_EvMemGetEventMemStatusByPtr(EventMemory) & 0x0001u) != 0u)
+  {
+   AgingCounter = Dem_EvtParam_GetAgingThreshold(Dem_EvMemGetEventMemEventIdByPtr(EventMemory));
+  }
+  else if ((Dem_EvMemGetEventMemStatusByPtr(EventMemory) & 0x0400u) != 0u)
+  {
+   AgingCounter = 0;
+  }
+  else
+  {
+   AgingCounter = Dem_EvtParam_GetAgingThreshold(Dem_EvMemGetEventMemEventIdByPtr(EventMemory)) -
+   ((uint16_least)((Dem_EvMemAgingCounterType)(Dem_EvMemGetCurrentAgingCycleCounterInt(Dem_EvMemGetEventMemEventIdByPtr(EventMemory)) - Dem_EvMemGetEventMemAgingCounterByPtr(EventMemory))));
+  }
+ }
+ else if (Dem_LibGetParamUI8(1u) == Dem_LibGetParamUI8(3u))
+ {
+  if ((Dem_EvMemGetEventMemStatusByPtr(EventMemory) & 0x0001u) != 0u)
+  {
+   AgingCounter = Dem_EvMemGetEventMemAgingCounterByPtr(EventMemory);
+  }
+  else
+  {
+   AgingCounter = (uint16_least)((Dem_EvMemAgingCounterType)(Dem_EvMemGetEventMemAgingCounterByPtr(EventMemory) + Dem_EvtParam_GetAgingThreshold(Dem_EvMemGetEventMemEventIdByPtr(EventMemory))));
+  }
+ }
+ else
+ {
+  AgingCounter = Dem_EvMemGetEventMemAgingCounterByPtr(EventMemory);
+ }
+
+ return AgingCounter;
+}
+
+
+static __inline__ void Dem_EvMemSetAgingCounterOnAgingCycle(Dem_EventIdType EventId, uint16_least LocId, uint16_least* StatusNew, uint16_least* WriteSts)
+{
+
+ Dem_boolean_least IsAgingThresholdReached;
+
+ if (!Dem_EvMemIsAged(EventId, LocId, *StatusNew))
+ {
+  if ((Dem_LibGetParamUI8(1u) == Dem_LibGetParamUI8(1u)) ||
+    (Dem_LibGetParamUI8(1u) == Dem_LibGetParamUI8(2u)))
+  {
+   if (((*StatusNew & ((0x0100u * ( (Dem_LibGetParamBool((1 != 0))) ? 1u : 0u )) | (0x0200u * ( (Dem_LibGetParamBool((0 != 0))) ? 1u : 0u )) | 0x0001u| 0x0008u)) == ((0x0200u * ( (Dem_LibGetParamBool((0 != 0))) ? 1u : 0u )) | 0x0008u))
+
+
+
+       )
+   {
+       if(Dem_EvMemGetEventMemAgingCounter(LocId) < Dem_EvtParam_GetAgingThreshold(EventId))
+       {
+           Dem_EvMemSetEventMemAgingCounter(LocId, (uint16_least)(Dem_EvMemGetEventMemAgingCounter(LocId) + 1u));
+       }
+# 158 "bsw\\Dem\\src\\evmem\\Dem_EvMemAging.h"
+    *WriteSts = *WriteSts | 0x0001u;
+   }
+   if ((*StatusNew & (0x0008u
+
+
+
+   )) != 0u)
+   {
+    if (Dem_LibGetParamBool((1 != 0)))
+    {
+     *StatusNew = *StatusNew & (uint16_least)(~(uint16_least)0x0100u);
+    }
+    if (Dem_LibGetParamBool((0 != 0)))
+    {
+     *StatusNew = *StatusNew & (uint16_least)(~(uint16_least)0x0200u);
+    }
+   }
+  }
+ }
+
+
+ IsAgingThresholdReached = (0 != 0);
+ if ((Dem_LibGetParamUI8(1u) == Dem_LibGetParamUI8(1u)) ||
+   (Dem_LibGetParamUI8(1u) == Dem_LibGetParamUI8(2u)))
+ {
+     IsAgingThresholdReached = (Dem_boolean_least)((Dem_EvMemGetEventMemAgingCounter(LocId) >= Dem_EvtParam_GetAgingThreshold(EventId)) && (Dem_EvtParam_GetAgingThreshold(EventId) != 0)
+
+
+
+                                        );
+ }
+
+ if ((Dem_LibGetParamUI8(1u) == Dem_LibGetParamUI8(3u)) ||
+   (Dem_LibGetParamUI8(1u) == Dem_LibGetParamUI8(4u)) ||
+   (Dem_LibGetParamUI8(1u) == Dem_LibGetParamUI8(5u)))
+ {
+
+  Dem_EvMemAgingCounterType AgingCounterDiff;
+
+
+
+
+  AgingCounterDiff = (Dem_EvMemAgingCounterType)(Dem_EvMemGetCurrentAgingCycleCounterInt(EventId) - Dem_EvMemGetEventMemAgingCounter(LocId));
+
+  IsAgingThresholdReached = (Dem_boolean_least)(((uint16_least)AgingCounterDiff >= Dem_EvtParam_GetAgingThreshold(EventId))
+
+
+
+                      );
+
+ }
+
+ if (IsAgingThresholdReached)
+ {
+  *StatusNew = *StatusNew | 0x0400u;
+ }
+
+}
+
+static __inline__ void Dem_EvMemSetAgingCounterOnEventFailed(Dem_EventIdType EventId, uint16_least LocId, uint16_least* StatusNew, uint16_least* WriteSts)
+{
+    if ( ! Dem_LibGetParamBool((0 != 0)) || Dem_EvtParam_GetAgingAllowed(EventId) )
+    {
+        *StatusNew = *StatusNew & (uint16_least)(~((uint16_least)0x0400u));
+        if ((Dem_EvMemGetEventMemStatus(LocId) & 0x0001u) == 0u)
+        {
+            if ((Dem_LibGetParamUI8(1u) == Dem_LibGetParamUI8(1u)) ||
+                    (Dem_LibGetParamUI8(1u) == Dem_LibGetParamUI8(2u)))
+            {
+                Dem_EvMemSetEventMemAgingCounter(LocId,0);
+
+
+
+                *WriteSts = *WriteSts | 0x0001u;
+            }
+            if ((Dem_LibGetParamUI8(1u) == Dem_LibGetParamUI8(3u)) ||
+                    (Dem_LibGetParamUI8(1u) == Dem_LibGetParamUI8(4u)) ||
+                    (Dem_LibGetParamUI8(1u) == Dem_LibGetParamUI8(5u)))
+            {
+                Dem_EvMemSetEventMemAgingCounter(LocId,Dem_EvMemGetCurrentAgingCycleCounterInt(EventId));
+
+
+
+
+                *WriteSts = *WriteSts | 0x0001u;
+            }
+        }
+
+        if ((Dem_LibGetParamUI8(1u) == Dem_LibGetParamUI8(1u)) ||
+                (Dem_LibGetParamUI8(1u) == Dem_LibGetParamUI8(2u)))
+        {
+
+
+
+
+            if ((*StatusNew & (0x0008u | 0x0400u)) == 0x0008u)
+
+            {
+                if (Dem_LibGetParamBool((1 != 0)))
+                {
+                    *StatusNew = *StatusNew | 0x0100u;
+                }
+                if (Dem_LibGetParamBool((0 != 0)))
+                {
+                    *StatusNew = *StatusNew | 0x0200u;
+                }
+            }
+        }
+    }
+}
+
+static __inline__ void Dem_EvMemSetAgingCounterOnEventPassed(Dem_EventIdType EventId, uint16_least LocId, uint16_least *StatusNew, uint16_least* WriteSts)
+{
+    if ( ! Dem_LibGetParamBool((0 != 0)) || Dem_EvtParam_GetAgingAllowed(EventId) )
+    {
+        if ((Dem_LibGetParamUI8(1u) == Dem_LibGetParamUI8(3u)) ||
+                (Dem_LibGetParamUI8(1u) == Dem_LibGetParamUI8(4u)) ||
+                (Dem_LibGetParamUI8(1u) == Dem_LibGetParamUI8(5u)))
+        {
+            if ((Dem_EvMemGetEventMemStatus(LocId) & 0x0001u) != 0u)
+            {
+                Dem_EvMemSetEventMemAgingCounter(LocId,(uint16_least)(Dem_EvMemGetCurrentAgingCycleCounterInt(EventId)));
+
+
+
+                *WriteSts = *WriteSts | 0x0001u;
+            }
+        }
+
+        if ((Dem_LibGetParamUI8(1u) == Dem_LibGetParamUI8(1u)) ||
+                (Dem_LibGetParamUI8(1u) == Dem_LibGetParamUI8(2u)))
+        {
+
+
+
+
+            if ((*StatusNew & (0x0008u | 0x0400u)) == 0x0008u)
+
+            {
+                if (Dem_LibGetParamBool((0 != 0)))
+                {
+                    *StatusNew = *StatusNew | 0x0200u;
+                }
+            }
+        }
+    }
+}
+
+static __inline__ Dem_boolean_least Dem_EvMemIsAgingCalculationAllowed(uint16_least locationStatus)
+{
+    return ((locationStatus & (0x0008u
+
+
+
+    )) != 0u);
+}
+# 18 "bsw\\Dem\\src\\evmem\\Dem_EvMem.h" 2
+
+
+
+# 1 ".\\output\\inc/Dem_Cfg_Events_DataStructures.h" 1
+# 22 "bsw\\Dem\\src\\evmem\\Dem_EvMem.h" 2
+
+typedef struct {
+    uint8 evMemId;
+    boolean originSupported;
+} Dem_EvMemMapOrigin2IdType;
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 69 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 70 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 30 "bsw\\Dem\\src\\evmem\\Dem_EvMem.h" 2
+extern const Dem_EvMemMapOrigin2IdType Dem_EvMemMapOrigin2Id[6];
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 82 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 83 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 33 "bsw\\Dem\\src\\evmem\\Dem_EvMem.h" 2
+
+
+static __inline__ boolean Dem_EvMemIsOriginSupported (Dem_DTCOriginType origin)
+{
+    return Dem_EvMemMapOrigin2Id[origin].originSupported;
+}
+
+static __inline__ uint8 Dem_EvMemGetEvMemIdFromOrigin (Dem_DTCOriginType origin)
+{
+    return Dem_EvMemMapOrigin2Id[origin].evMemId;
+}
+
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 92 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 93 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 52 "bsw\\Dem\\src\\evmem\\Dem_EvMem.h" 2
+void Dem_EvMemInit(void);
+void Dem_EvMemInitCausality(void);
+void Dem_EvMemMainFunction(void);
+
+void Dem_EvMemClearEvent(Dem_EventIdType EventId, uint16_least MemId);
+void Dem_EvMemEraseEventMemory(uint16_least MemId);
+
+void Dem_EvMemSetEventPassed(Dem_EventIdType EventId, uint16_least MemId, const uint8 *EnvData);
+void Dem_EvMemSetEventFailed(Dem_EventIdType EventId, uint16_least MemId, const uint8 *EnvData);
+void Dem_EvMemSetEventUnRobust(Dem_EventIdType EventId, uint16_least MemId, const uint8 *EnvData);
+void Dem_EvMemStartOperationCycle(Dem_OperationCycleList operationCycleList, uint16_least MemId);
+
+void Dem_EvMem_ResetEvent_ForOBDConsistency(uint16_least EvMemLocId);
+
+uint16_least Dem_EvMemGetEventMemoryOrReaderCopyLocIdOfDtcWithVisibility(Dem_DtcIdType DtcId, uint16_least MemId, Dem_boolean_least ShadowEntriesVisible, Dem_boolean_least SearchInReaderCopy);
+uint16_least Dem_EvMemGetEventMemoryStatusOfDtc(Dem_DtcIdType DtcId, uint16_least MemId);
+uint16_least Dem_EvMemGetEventMemoryStatusOfEvent(Dem_EventIdType EventId, uint16_least MemId);
+uint16_least Dem_EvMemGetEventMemoryLocIdOfEvent (Dem_EventIdType EventId, uint16_least MemId);
+Std_ReturnType Dem_EvMemGetReaderCopyOfEvent(Dem_EvMemEventMemoryType* ReaderCopy, Dem_EventIdType EventId, uint16_least MemId);
+void Dem_EvMemSetStatusWithNotifications(uint16_least LocId, uint16_least StatusNew, uint16_least WriteSts, Dem_EvMemActionType actionType);
+void Dem_EvMemSetNextReportRelevantForStorageFilteredEventsForEvCombOnStorage(Dem_EventIdType EventId);
+
+
+
+
+
+
+uint16_least Dem_EvMemGetMemoryLocIdOfDtcAndOriginWithVisibility(Dem_DtcIdType DtcId, Dem_DTCOriginType DTCOrigin, Dem_boolean_least ShadowEntriesVisible);
+
+
+Dem_NvmBlockIdType Dem_EvMemGetNvmIdFromLocId(uint16_least LocId);
+
+
+
+
+static __inline__ void Dem_EvMemFdcUpdate(void) {}
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 91 "bsw\\Dem\\src\\evmem\\Dem_EvMem.h" 2
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 23 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 24 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 93 "bsw\\Dem\\src\\evmem\\Dem_EvMem.h" 2
+extern boolean Dem_EvMemIsLocked;
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 36 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 37 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 96 "bsw\\Dem\\src\\evmem\\Dem_EvMem.h" 2
+
+
+
+
+
+static __inline__ uint16_least Dem_EvMemGetEventMemoryLocIdOfDtcWithVisibility(Dem_DtcIdType DtcId, uint16_least MemId, Dem_boolean_least ShadowEntriesVisible)
+{
+    return Dem_EvMemGetEventMemoryOrReaderCopyLocIdOfDtcWithVisibility(DtcId, MemId, ShadowEntriesVisible, (0 != 0));
+}
+
+
+static __inline__ void Dem_EvMemSetEventFailedAllMem(Dem_EventIdType EventId, const uint8 *EnvData)
+{
+   if (Dem_EvtParam_GetIsEventDestPrimary(EventId))
+   {
+      Dem_EvMemSetEventFailed(EventId,(0u),EnvData);
+   }
+
+
+
+
+
+
+}
+
+
+static __inline__ void Dem_EvMemSetEventPassedAllMem(Dem_EventIdType EventId, const uint8 *EnvData)
+{
+   if (Dem_EvtParam_GetIsEventDestPrimary(EventId))
+   {
+      Dem_EvMemSetEventPassed(EventId,(0u),EnvData);
+   }
+
+
+
+
+
+
+}
+
+
+static __inline__ void Dem_EvMemSetEventUnRobustAllMem(Dem_EventIdType EventId, const uint8 *EnvData)
+{
+   if (Dem_EvtParam_GetIsEventDestPrimary(EventId))
+   {
+      Dem_EvMemSetEventUnRobust(EventId,(0u),EnvData);
+   }
+
+
+
+
+
+
+}
+
+static __inline__ void Dem_EvMemStartOperationCycleAllMem(Dem_OperationCycleList operationCycleList)
+{
+    Dem_EvMemStartOperationCycle(operationCycleList, (0u));
+
+
+
+}
+
+static __inline__ uint16_least Dem_EvMemGetMemIdForDTCOrigin(Dem_DTCOriginType DTCOrigin)
+{
+    uint16_least returnValue;
+    switch (DTCOrigin)
+    {
+        case (1U):
+            returnValue = (0u);
+            break;
+# 175 "bsw\\Dem\\src\\evmem\\Dem_EvMem.h"
+        case (2U):
+            returnValue = (((0u +1u)));
+            break;
+
+
+
+
+
+
+        default:
+            returnValue = 0xFFFFu;
+            break;
+    }
+    return returnValue;
+}
+
+static __inline__ void Dem_EvMemClearEventAndOrigin(Dem_EventIdType EventId, Dem_DTCOriginType DTCOrigin)
+{
+    uint16_least MemId = Dem_EvMemGetMemIdForDTCOrigin(DTCOrigin);
+    if (!Dem_EvMemIsMemIdValid(MemId))
+    {
+        return;
+    }
+# 207 "bsw\\Dem\\src\\evmem\\Dem_EvMem.h"
+    Dem_EvMemClearEvent(EventId, MemId);
+
+
+}
+
+static __inline__ uint16_least Dem_EvMemGetEventMemoryStatusOfDtcAndOrigin(Dem_DtcIdType DtcId, Dem_DTCOriginType DTCOrigin)
+{
+    uint16_least MemId = Dem_EvMemGetMemIdForDTCOrigin(DTCOrigin);
+    if (!Dem_EvMemIsMemIdValid(MemId) ||
+            (Dem_LibGetParamBool((0 != 0)) && (DTCOrigin == (2U)))
+       )
+    {
+        return 0;
+    }
+
+    return Dem_EvMemGetEventMemoryStatusOfDtc(DtcId, MemId);
+}
+
+static __inline__ uint16_least Dem_EvMemGetEventMemoryStatusOfEventAndOrigin(Dem_EventIdType EventId, Dem_DTCOriginType DTCOrigin)
+{
+    uint16_least MemId = Dem_EvMemGetMemIdForDTCOrigin(DTCOrigin);
+    if (!Dem_EvMemIsMemIdValid(MemId) ||
+            (Dem_LibGetParamBool((0 != 0)) && (DTCOrigin == (2U)))
+       )
+    {
+        return 0;
+    }
+
+    return Dem_EvMemGetEventMemoryStatusOfEvent(EventId, MemId);
+}
+
+static __inline__ uint16_least Dem_EvMemGetMemIdForEvent(Dem_EventIdType EventId)
+{
+    if(Dem_EvtParam_GetIsEventDestPrimary(EventId))
+    {
+        return (0u);
+    }
+# 252 "bsw\\Dem\\src\\evmem\\Dem_EvMem.h"
+    return 0xFFFFu;
+}
+
+static __inline__ uint16_least Dem_EvMemGetLocationOfEventFromEventMemory(Dem_EventIdType EventId)
+{
+    uint16_least MemId = Dem_EvMemGetMemIdForEvent(EventId);
+    if (!Dem_EvMemIsMemIdValid(MemId))
+    {
+        return 0xFFFFu;
+    }
+
+    return Dem_EvMemGetEventMemoryLocIdOfEvent(EventId, MemId);
+
+}
+
+static __inline__ Std_ReturnType Dem_EvMemGetReaderCopyOfEventFromEventMemory(
+        Dem_EvMemEventMemoryType* ReaderCopy,
+        Dem_EventIdType EventId
+)
+{
+    uint16_least MemId = Dem_EvMemGetMemIdForEvent(EventId);
+    if (!Dem_EvMemIsMemIdValid(MemId))
+    {
+        return 0x01u;
+    }
+
+    return Dem_EvMemGetReaderCopyOfEvent(ReaderCopy, EventId, MemId);
+}
+
+static __inline__ boolean Dem_GetEvMemLockInternal(void)
+{
+    return Dem_EvMemIsLocked;
+}
+static __inline__ uint16_least Dem_EvMemGetMemoryLocIdOfDtcAndOrigin(Dem_DtcIdType DtcId, Dem_DTCOriginType DTCOrigin)
+{
+
+    return Dem_EvMemGetMemoryLocIdOfDtcAndOriginWithVisibility(DtcId,DTCOrigin,(0 != 0));
+}
+static __inline__ uint16_least Dem_EvMemGetEventMemoryLocIdOfDtc(Dem_DtcIdType DtcId, uint16_least MemId)
+{
+
+    return Dem_EvMemGetEventMemoryLocIdOfDtcWithVisibility(DtcId,MemId,(0 != 0));
+}
+
+static __inline__ void Dem_EvMemReaderCopiesEnterLock(void)
+{
+
+    if (Dem_LibGetParamBool((0 != 0)))
+    {
+        do { Os_SuspendAllInterrupts(); } while (0);
+    }
+}
+
+static __inline__ void Dem_EvMemReaderCopiesExitLock(void)
+{
+    if (Dem_LibGetParamBool((0 != 0)))
+    {
+        do { Os_ResumeAllInterrupts(); } while (0);
+    }
+}
+# 7 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c" 2
+
+# 1 ".\\output\\inc/Dem_Events.h" 1
+# 9 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c" 2
+# 1 ".\\output\\inc/Dem_EnvMain.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvMain.h" 1
+
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Mapping.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvMain.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EnvMain.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvMain.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_DistMem.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvMain.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvExtendedData.h" 1
+# 12 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvMain.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvFreezeFrame.h" 1
+
+
+
+
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 6 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvFreezeFrame.h" 2
+
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvDid.h" 1
+
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvDid.h" 2
+# 1 ".\\output\\inc/Dem_Array.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvDid.h" 2
+
+# 1 ".\\output\\inc/Dem_Cfg_EnvDid.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EnvDid.h" 1
+# 2 ".\\output\\inc/Dem_Cfg_EnvDid.h" 2
+# 12 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvDid.h" 2
+
+
+typedef struct
+{
+ uint16 dataElementIndex;
+ uint16 identifier;
+} Dem_EnvDid;
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 69 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 70 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 21 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvDid.h" 2
+extern const uint8 Dem_Cfg_EnvDid2DataElement[];
+extern const Dem_EnvDid Dem_Cfg_EnvDid[(145+1)];
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 82 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 83 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 25 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvDid.h" 2
+
+static __inline__ void Dem_EnvDIDCapture(uint8 didId, uint8** start, const uint8* end, const Dem_InternalEnvData *internalEnvData)
+{
+ uint16_least i;
+ for (i = Dem_Cfg_EnvDid[didId - 1].dataElementIndex;
+   i < Dem_Cfg_EnvDid[didId].dataElementIndex;
+   i++)
+ {
+  Dem_EnvDACapture(Dem_Cfg_EnvDid2DataElement[i], start, end, internalEnvData);
+ }
+}
+
+
+
+
+
+static __inline__ Dem_boolean_least Dem_EnvDIDRetrieveRaw(uint8 didId, uint8** start, const uint8* end, const uint8** src, const Dem_InternalEnvData* internalEnvData)
+{
+ uint16_least i;
+
+ for (i = Dem_Cfg_EnvDid[didId - 1].dataElementIndex;
+   i < Dem_Cfg_EnvDid[didId].dataElementIndex;
+   i++)
+ {
+  if (!Dem_EnvDARetrieve(Dem_Cfg_EnvDid2DataElement[i], start, end, src, internalEnvData))
+  {
+   return (0 != 0);
+  }
+ }
+ return (1 != 0);
+}
+
+
+
+static __inline__ Dem_boolean_least Dem_EnvDIDRetrieve(uint8 didId, uint8** start, const uint8* end, const uint8** src, const Dem_InternalEnvData* internalEnvData)
+{
+ if ((end - *start) < 2)
+ {
+  return (0 != 0);
+ }
+ **start = (uint8) ((Dem_Cfg_EnvDid[didId].identifier / 256u) & 0xFFu);
+ (*start)++;
+ **start = (uint8)((Dem_Cfg_EnvDid[didId].identifier) & 0xFFu);
+ (*start)++;
+
+ return Dem_EnvDIDRetrieveRaw(didId, start, end, src, internalEnvData);
+}
+
+
+
+
+
+static __inline__ Dem_boolean_least Dem_EnvDIDRetrieveSpecificDid (uint8 didId, uint16 identifier, uint8** start, const uint8* end, const uint8** src, const Dem_InternalEnvData* internalEnvData)
+{
+ uint16_least i;
+
+ if (Dem_Cfg_EnvDid[didId].identifier == identifier)
+ {
+  for (i = Dem_Cfg_EnvDid[didId - 1].dataElementIndex;
+    i < Dem_Cfg_EnvDid[didId].dataElementIndex;
+    i++)
+  {
+   if (!Dem_EnvDARetrieve(Dem_Cfg_EnvDid2DataElement[i], start, end, src, internalEnvData))
+   {
+    return (0 != 0);
+   }
+  }
+  return (1 != 0);
+ }
+ else
+ {
+  for (i = Dem_Cfg_EnvDid[didId - 1].dataElementIndex;
+    i < Dem_Cfg_EnvDid[didId].dataElementIndex;
+    i++)
+  {
+   *src += Dem_EnvDAGetSizeOf(Dem_Cfg_EnvDid2DataElement[i]);
+  }
+ }
+
+ return (0 != 0);
+}
+
+
+static __inline__ uint16 Dem_EnvDIDGetSize(uint8 didId)
+{
+ uint16_least i;
+ uint16 byteSize = 2;
+
+ for (i = Dem_Cfg_EnvDid[didId - 1].dataElementIndex;
+   i < Dem_Cfg_EnvDid[didId].dataElementIndex;
+   i++)
+ {
+  byteSize += Dem_EnvDAGetSizeOf(Dem_Cfg_EnvDid2DataElement[i]);
+ }
+ return byteSize;
+}
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvFreezeFrame.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EnvFreezeFrame.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EnvFreezeFrame.h" 1
+# 2 ".\\output\\inc/Dem_Cfg_EnvFreezeFrame.h" 2
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvFreezeFrame.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_Main.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvFreezeFrame.h" 2
+
+
+typedef struct
+{
+ uint16 didIndex;
+ uint16 rawByteSize;
+} Dem_EnvFreezeFrame;
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 69 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 70 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 19 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvFreezeFrame.h" 2
+extern const uint8 Dem_Cfg_EnvFreezeFrame2Did[];
+extern const Dem_EnvFreezeFrame Dem_Cfg_EnvFreezeFrame[(5+1)];
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 82 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 83 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 23 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvFreezeFrame.h" 2
+
+
+static __inline__ void Dem_EnvFFCapture(uint8 freezeFrameId, uint8* buffer, uint16 size, const Dem_InternalEnvData* internalEnvData)
+{
+ uint32 i;
+ uint8* end = buffer + size;
+
+ for (i = Dem_Cfg_EnvFreezeFrame[freezeFrameId - 1].didIndex; i < Dem_Cfg_EnvFreezeFrame[freezeFrameId].didIndex; i++)
+ {
+  Dem_EnvDIDCapture (Dem_Cfg_EnvFreezeFrame2Did[i], &buffer, end, internalEnvData);
+ }
+
+
+
+
+}
+
+static __inline__ uint16 Dem_EnvFFGetRawByteSize(uint8 freezeFrameId)
+{
+ return Dem_Cfg_EnvFreezeFrame[freezeFrameId].rawByteSize;
+}
+
+static __inline__ Std_ReturnType Dem_EnvFFRetrieve(uint8 freezeFrameId,
+  uint8 RecNum,
+  uint8* dest,
+  uint16* bufsize,
+  const uint8* src,
+  const Dem_InternalEnvData* internalEnvData)
+{
+ uint8* writepos = dest;
+ uint8* end = dest + *bufsize;
+ uint16_least i;
+ Std_ReturnType returnValue = 0x00u;
+
+ if (*bufsize < 2)
+ {
+     returnValue = 21u;
+ }
+ else
+    {
+        *writepos = RecNum;
+        writepos++;
+
+        *writepos = (uint8) (Dem_Cfg_EnvFreezeFrame[freezeFrameId].didIndex - Dem_Cfg_EnvFreezeFrame[freezeFrameId - 1].didIndex);
+        writepos++;
+
+        for (i = Dem_Cfg_EnvFreezeFrame[freezeFrameId - 1].didIndex; i < Dem_Cfg_EnvFreezeFrame[freezeFrameId].didIndex; i++)
+        {
+            if (!Dem_EnvDIDRetrieve(Dem_Cfg_EnvFreezeFrame2Did[i], &writepos, end, &src, internalEnvData))
+            {
+                returnValue = 21u;
+            }
+        }
+
+        *bufsize = (uint16) (writepos - dest);
+    }
+ return returnValue;
+}
+
+static __inline__ Std_ReturnType Dem_EnvFFGetSize(uint8 freezeFrameId, uint16* size)
+{
+ uint16_least i;
+ *size = 2;
+
+ for (i = Dem_Cfg_EnvFreezeFrame[freezeFrameId - 1].didIndex; i < Dem_Cfg_EnvFreezeFrame[freezeFrameId].didIndex; i++)
+ {
+  *size += (Dem_EnvDIDGetSize (Dem_Cfg_EnvFreezeFrame2Did[i]));
+ }
+
+ return 0x00u;
+}
+
+static __inline__ void Dem_EnvFFRetrieveRaw(uint8 freezeFrameId, uint8* dest, uint16* bufsize, const uint8* src, const Dem_InternalEnvData *internalEnvData)
+{
+ uint8* writepos = dest;
+ uint8* end = dest + *bufsize;
+ uint16_least i;
+
+ for (i = Dem_Cfg_EnvFreezeFrame[freezeFrameId - 1].didIndex; i < Dem_Cfg_EnvFreezeFrame[freezeFrameId].didIndex; i++)
+ {
+  (void)Dem_EnvDIDRetrieveRaw (Dem_Cfg_EnvFreezeFrame2Did[i], &writepos, end, &src, internalEnvData);
+ }
+
+ *bufsize = (uint16)(writepos - dest);
+}
+
+static __inline__ Dem_boolean_least Dem_EnvFFRetrieveDid(uint8 freezeFrameId,
+  uint8* dest,
+  uint16* bufsize,
+  uint16 did,
+  const uint8* src,
+  const Dem_InternalEnvData* internalEnvData)
+{
+ uint8* writepos = dest;
+ uint8* end = dest + *bufsize;
+ uint16_least i;
+
+ for (i = Dem_Cfg_EnvFreezeFrame[freezeFrameId - 1].didIndex; i < Dem_Cfg_EnvFreezeFrame[freezeFrameId].didIndex; i++)
+ {
+  if (Dem_EnvDIDRetrieveSpecificDid (Dem_Cfg_EnvFreezeFrame2Did[i], did, &writepos, end, &src, internalEnvData))
+  {
+   *bufsize = (uint16)(writepos - dest);
+   return (1 != 0);
+  }
+ }
+
+ *bufsize = 0;
+ return (0 != 0);
+}
+
+
+static __inline__ void Dem_EnvFFCopyRaw(uint8 freezeFrameId, uint8* dest, uint16 bufsize, const uint8* src)
+{
+ const uint16 bytesize = Dem_Cfg_EnvFreezeFrame[freezeFrameId].rawByteSize;
+
+ do { if (!(bytesize <= bufsize)) { do {Dem_EventIdCausingLastDetError = 0; Det_ReportError(54,0,0xAE,0);}while(0); } } while(0);
+ rba_DiagLib_MemUtils_MemCpy((uint8*)(dest),(const uint8*)(src),(uint32)(bytesize));
+}
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvMain.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvFFRecNumeration.h" 1
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvFFRecNumeration.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EnvFFRecNumeration.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EnvFFRecNumeration.h" 1
+# 2 ".\\output\\inc/Dem_Cfg_EnvFFRecNumeration.h" 2
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvFFRecNumeration.h" 2
+# 1 ".\\output\\inc/Dem_Events.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvFFRecNumeration.h" 2
+# 1 ".\\output\\inc/Dem_EvMem.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evmem\\Dem_EvMem.h" 1
+# 2 ".\\output\\inc/Dem_EvMem.h" 2
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvFFRecNumeration.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_Events_DataStructures.h" 1
+# 12 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvFFRecNumeration.h" 2
+# 60 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvFFRecNumeration.h"
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 69 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 70 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 61 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvFFRecNumeration.h" 2
+extern const uint8 Dem_Cfg_EnvFFRecNumConf[1][2];
+
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 82 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 83 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 67 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvFFRecNumeration.h" 2
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 92 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 93 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 70 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvFFRecNumeration.h" 2
+uint8 Dem_EnvGetIndexOfFFRecConf(Dem_EventIdType EventId, uint8 RecNumber);
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 73 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvFFRecNumeration.h" 2
+
+typedef struct
+{
+   uint8 recordNumber;
+   Dem_TriggerType trigger;
+   boolean update;
+} Dem_EnvFFRec;
+
+extern const Dem_EnvFFRec Dem_Cfg_EnvFFRec[(2u+1u)];
+
+static __inline__ uint8 Dem_EnvGetFFRecNumClassIndex (Dem_EventIdType EventId)
+{
+
+
+
+ return 0;
+
+}
+
+static __inline__ Dem_boolean_least Dem_EnvIsFFRecNumValid(Dem_EventIdType EventId, uint8 RecNumber)
+{
+ uint8 RecNumberIndex;
+
+ RecNumberIndex = Dem_EnvGetIndexOfFFRecConf(EventId,RecNumber);
+ return (Dem_boolean_least)((RecNumber > 0) && (RecNumberIndex != 0xFF));
+}
+
+static __inline__ uint8 Dem_EnvGetIndexFromFFRecNum(Dem_EventIdType EventId, uint8 RecNumber)
+{
+ uint8 RecNumberIndex;
+
+ RecNumberIndex = Dem_EnvGetIndexOfFFRecConf(EventId,RecNumber);
+ do { if (!(RecNumberIndex != 0xFF)) { do {Dem_EventIdCausingLastDetError = 0; Det_ReportError(54,0,0xCB,0x0);}while(0); } } while(0);
+    return RecNumberIndex;
+}
+
+
+static __inline__ uint8 Dem_EnvGetFFRecNumFromIndex(Dem_EventIdType EventId, uint8 idx)
+{
+   do { if (!(idx < Dem_EvtParam_GetMaxNumberFreezeFrameRecords(EventId))) { do {Dem_EventIdCausingLastDetError = 0; Det_ReportError(54,0,0xCC,0x0);}while(0); } } while(0);
+   return Dem_Cfg_EnvFFRecNumConf [Dem_EnvGetFFRecNumClassIndex(EventId)][idx];
+}
+
+static __inline__ Dem_TriggerType Dem_EnvGetFFRecordTrigger (uint8 RecNumber)
+{
+    uint8 indx;
+
+    for(indx = 1 ; indx < (2u+1u) ; indx++)
+    {
+        if(Dem_Cfg_EnvFFRec[indx].recordNumber == RecNumber)
+        {
+            return Dem_Cfg_EnvFFRec[indx].trigger;
+        }
+    }
+    return 0;
+}
+
+static __inline__ void Dem_EnvGetFFRecordTriggerAndUpdate (uint8 RecNumber, Dem_TriggerType* Trigger, boolean* Update)
+{
+    uint8 indx;
+
+   for(indx = 1 ; indx < (2u+1u) ; indx++)
+   {
+       if(Dem_Cfg_EnvFFRec[indx].recordNumber == RecNumber)
+       {
+           *Trigger = Dem_Cfg_EnvFFRec[indx].trigger;
+           *Update = Dem_Cfg_EnvFFRec[indx].update;
+           return;
+       }
+   }
+   *Trigger = 0;
+   *Update = (0 != 0);
+}
+
+static __inline__ Dem_boolean_least Dem_EnvIsFFRecNumStored(const Dem_EvMemEventMemoryType *EventMemory, uint8 RecNumber)
+{
+    uint8 indx;
+
+    for(indx = 1 ; indx < (2u+1u) ; indx++)
+    {
+        if(Dem_Cfg_EnvFFRec[indx].recordNumber == RecNumber)
+        {
+            return (Dem_EnvIsTriggerSet(Dem_Cfg_EnvFFRec[indx].trigger , Dem_EvMemGetEventMemTriggerByPtr(EventMemory)));
+        }
+    }
+    return (0 != 0);
+
+}
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvMain.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvRecordIterator.h" 1
+# 15 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvMain.h" 2
+
+
+
+typedef struct
+{
+ uint8 extDataId;
+ uint8 freezeFrameId;
+} Dem_EnvDataMap;
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 69 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 70 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 26 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvMain.h" 2
+extern const Dem_EnvDataMap Dem_Cfg_EnvEventId2EnvData[(500u +1u)];
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 82 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 83 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 29 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvMain.h" 2
+
+static __inline__ Dem_boolean_least Dem_EnvHasExtendedData(Dem_EventIdType EventId)
+{
+ return (Dem_Cfg_EnvEventId2EnvData[EventId].extDataId != 0);
+}
+static __inline__ Dem_boolean_least Dem_EnvHasFreezeFrame(Dem_EventIdType EventId)
+{
+ return (Dem_Cfg_EnvEventId2EnvData[EventId].freezeFrameId != 0);
+}
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 92 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 93 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 41 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvMain.h" 2
+
+void Dem_EnvCaptureED (Dem_EventIdType EventId, uint8* dest, uint16 destSize ,Dem_DebugDataType debug0,Dem_DebugDataType debug1);
+
+
+
+
+void Dem_EnvCaptureFF (Dem_EventIdType EventId, uint8* dest, uint16 destSize ,Dem_DebugDataType debug0,Dem_DebugDataType debug1);
+void Dem_EnvCopyRawFF (Dem_EventIdType EventId, uint8* dest, uint16 destSize, uint8 ffIndex, const uint8* src);
+void Dem_EnvCopyRawED (Dem_EventIdType EventId, uint8* dest, uint16 destSize, const uint8* src, Dem_EnvTriggerParamType* triggerParam);
+Dem_boolean_least Dem_EnvIsEDRNumberStored(Dem_EventIdType EventId, uint8 RecordNumber, const Dem_EvMemEventMemoryType *EventMemory);
+
+
+
+Dem_boolean_least Dem_EnvIsEDRNumberValid(Dem_EventIdType EventId, uint8 RecordNumber, Dem_TriggerType* trigger);
+Std_ReturnType Dem_EnvRetrieveEDR(Dem_EventIdType EventId, uint8 RecordNumber, uint8* dest, uint16* destSize, const uint8* src, Dem_EvMemEventMemoryType *evMemLocation);
+Std_ReturnType Dem_EnvRetrieveFF(Dem_EventIdType EventId, uint8* dest, uint16* destSize, uint8 ffIndex, const uint8* src, Dem_EvMemEventMemoryType *evMemLocation);
+uint8 Dem_EnvGetTotalNumberOfStoredFFForEvent(Dem_EventIdType EventId, const Dem_EvMemEventMemoryType* EvMem);
+
+Std_ReturnType Dem_EnvGetSizeOfEDR(Dem_EventIdType EventId, uint8 RecordNumber, uint16* size);
+Std_ReturnType Dem_EnvGetSizeOfFF(Dem_EventIdType EventId, uint16* size);
+Std_ReturnType Dem_EnvGetSizeOfEDR_AllOrObdStored(Dem_EventIdType EventId, uint16* size, const Dem_EvMemEventMemoryType *EventMemory, boolean OnlyOBD);
+
+
+
+Std_ReturnType Dem_EnvRetrieveRawED(Dem_EventIdType EventId, uint8* dest, uint16* destSize, const uint8* src, Dem_EvMemEventMemoryType *evMemLocation);
+Dem_boolean_least Dem_EnvRetrieveRawEDR(Dem_EventIdType EventId, uint8 RecordNumber, uint8* dest, uint16* destSize, const uint8* src, Dem_EvMemEventMemoryType *evMemLocation);
+Std_ReturnType Dem_EnvRetrieveRawFF(Dem_EventIdType EventId, uint8* dest, uint16* destSize, uint8 ffIndex, const uint8* src, Dem_EvMemEventMemoryType *evMemLocation);
+Dem_boolean_least Dem_EnvRetrieveRawDid(Dem_EventIdType EventId, uint8* dest, uint16* destSize, uint8 ffIndex, uint16 did, const uint8* src, Dem_EvMemEventMemoryType *evMemLocation);
+
+static __inline__ uint16 Dem_EnvGetTotalNumOfConfEDR_OBDOrAll(Dem_EventIdType EventId, boolean OnlyOBD)
+{
+    uint8 edId = Dem_Cfg_EnvEventId2EnvData[EventId].extDataId;
+    uint16 EDRecId;
+    uint16 TotalConfEDR = 0;
+
+    for(EDRecId = Dem_Cfg_EnvExtData[edId - 1].extDataRecIndex; EDRecId <Dem_Cfg_EnvExtData[edId].extDataRecIndex; EDRecId++)
+    {
+        uint8 RecNum = Dem_EnvEDRGetRecordNumber(Dem_Cfg_EnvExtData2ExtDataRec[EDRecId]);
+        if((!OnlyOBD) || (RecNum >= 0x90))
+        {
+            TotalConfEDR ++;
+        }
+    }
+    return TotalConfEDR;
+}
+
+
+static __inline__ boolean Dem_EnvEDRIteratorIsValid(const Dem_EnvRecordIteratorType* it)
+{
+    return (it->current_recIndex < it->end_recIndex);
+}
+
+static __inline__ uint8 Dem_EnvEDRIteratorCurrentRecNum(const Dem_EnvRecordIteratorType* it)
+{
+    return Dem_Cfg_EnvExtDataRec[Dem_Cfg_EnvExtData2ExtDataRec[it->current_recIndex]].recordNumber;
+}
+
+static __inline__ void Dem_EnvEDRIteratorNext(Dem_EnvRecordIteratorType* it)
+{
+    it->current_recIndex++;
+    if(it->requestedRecNum == 0xFE)
+    {
+
+        while((Dem_EnvEDRIteratorIsValid(it)) && (Dem_EnvEDRIteratorCurrentRecNum(it) < 0x90) )
+        {
+            it->current_recIndex++;
+        }
+    }
+}
+
+static __inline__ void Dem_EnvEDRIteratorNew(Dem_EnvRecordIteratorType* it, uint8 RecordNumber, Dem_EventIdType EventId)
+{
+    uint8 edId = Dem_Cfg_EnvEventId2EnvData[EventId].extDataId;
+    Dem_TriggerType Trigger;
+
+    it->isRequestedRecValid = (1 != 0);
+    it->requestedRecNum = RecordNumber;
+    it->current_recIndex = Dem_Cfg_EnvExtData[edId - 1].extDataRecIndex;
+    it->end_recIndex = Dem_Cfg_EnvExtData[edId].extDataRecIndex;
+
+    if(RecordNumber == 0xFF)
+    {
+
+    }
+    else if (RecordNumber == 0xFE)
+    {
+        if( Dem_EnvEDRIteratorCurrentRecNum(it) < 0x90)
+        {
+            Dem_EnvEDRIteratorNext(it);
+        }
+    }
+    else if (Dem_EnvEDIsRecordNumberValid(edId, RecordNumber, &Trigger, &(it->current_recIndex)))
+    {
+        it->end_recIndex = (it->current_recIndex + 1);
+    }
+    else
+    {
+        it->isRequestedRecValid = (0 != 0);
+        it->current_recIndex = it->end_recIndex;
+    }
+}
+
+static __inline__ uint16 Dem_EnvEDRIteratorCurrent(const Dem_EnvRecordIteratorType* it)
+{
+    return it->current_recIndex;
+}
+
+static __inline__ uint8 Dem_EnvEDRIteratorRequestedRecNum(const Dem_EnvRecordIteratorType* it)
+{
+    return it->requestedRecNum;
+}
+
+static __inline__ boolean Dem_EnvEDRIteratorIsRequestedRecValid(const Dem_EnvRecordIteratorType* it)
+{
+    return it->isRequestedRecValid;
+}
+
+
+
+static __inline__ boolean Dem_EnvFFRecIteratorIsValid(const Dem_EnvRecordIteratorType* it)
+{
+    return (it->current_recIndex < it->end_recIndex);
+}
+
+static __inline__ void Dem_EnvFFRecIteratorNext(Dem_EnvRecordIteratorType* it)
+{
+    it->current_recIndex++;
+}
+
+static __inline__ void Dem_EnvFFRecIteratorNew(Dem_EnvRecordIteratorType* it, uint8 RecordNumber, Dem_EventIdType EventId)
+{
+    it->isRequestedRecValid = (1 != 0);
+    it->requestedRecNum = RecordNumber;
+    it->current_recIndex = 0;
+    it->end_recIndex = Dem_EvtParam_GetMaxNumberFreezeFrameRecords(EventId);
+    it->EventId = EventId;
+
+    if(RecordNumber == 0xFF)
+    {
+
+    }
+    else if(Dem_EnvIsFFRecNumValid(EventId, RecordNumber))
+    {
+        it->current_recIndex = Dem_EnvGetIndexFromFFRecNum(EventId, RecordNumber);
+        it->end_recIndex = (it->current_recIndex + 1);
+    }
+    else
+    {
+        it->isRequestedRecValid = (0 != 0);
+        it->current_recIndex = it->end_recIndex;
+    }
+}
+
+static __inline__ uint16 Dem_EnvFFRecIteratorCurrent(const Dem_EnvRecordIteratorType* it)
+{
+    return it->current_recIndex;
+}
+
+static __inline__ uint8 Dem_EnvFFRecIteratorCurrentRecNum(const Dem_EnvRecordIteratorType* it)
+{
+    return Dem_EnvGetFFRecNumFromIndex(it->EventId, (uint8)it->current_recIndex);
+}
+
+static __inline__ uint8 Dem_EnvFFRecIteratorRequestedRecNum(const Dem_EnvRecordIteratorType* it)
+{
+    return it->requestedRecNum;
+}
+
+static __inline__ boolean Dem_EnvFFRecIteratorIsRequestedRecValid(const Dem_EnvRecordIteratorType* it)
+{
+    return it->isRequestedRecValid;
+}
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 217 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_EnvMain.h" 2
+# 2 ".\\output\\inc/Dem_EnvMain.h" 2
+# 10 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c" 2
+# 1 ".\\output\\inc/Dem_Mapping.h" 1
+# 11 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c" 2
+# 1 ".\\output\\inc/Dem_DTCs.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCs.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCs.h"
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCs.h" 2
+# 1 ".\\output\\inc/Dem_Array.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCs.h" 2
+# 1 ".\\output\\inc/Dem_BitArray.h" 1
+# 12 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCs.h" 2
+# 1 ".\\output\\inc/rba_DiagLib_Bits8.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCs.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_DtcId.h" 1
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCs.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_DTC_DataStructures.h" 1
+# 15 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCs.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_Main.h" 1
+# 16 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCs.h" 2
+# 1 ".\\output\\inc/Dem_Mapping.h" 1
+# 17 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCs.h" 2
+# 1 ".\\output\\inc/Dem_ISO14229Byte.h" 1
+# 18 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCs.h" 2
+# 1 ".\\output\\inc/Dem_Events.h" 1
+# 19 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCs.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCStatusByte.h" 1
+# 20 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCs.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_Events_DataStructures.h" 1
+# 21 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCs.h" 2
+
+# 1 ".\\output\\inc/Dem_Helpers.h" 1
+# 23 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCs.h" 2
+# 1 ".\\output\\inc/Dem_EvMem.h" 1
+# 24 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCs.h" 2
+
+
+
+
+
+typedef struct {
+ Dem_DtcStateType state;
+} Dem_DtcState;
+
+typedef boolean DemControlDtcSettingType;
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 23 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 24 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 36 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCs.h" 2
+extern DemControlDtcSettingType Dem_DtcSettingDisabledFlag;
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 36 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 37 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 39 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCs.h" 2
+# 73 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCs.h"
+typedef struct {
+   uint8 kind_severity_storage;
+   uint8 Functional_Unit;
+} Dem_DtcParam8;
+
+
+
+typedef struct {
+   uint16 ObdCode;
+} Dem_DtcParam16;
+
+
+
+typedef struct {
+   Dem_DtcCodeType code;
+} Dem_DtcParam32;
+
+typedef struct {
+    Dem_DtcCodeType AltDtccode;
+    Dem_DtcCodeType Dtccode;
+}Dem_DtcAltParam;
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 23 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 24 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 98 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCs.h" 2
+
+    extern Dem_DtcState Dem_AllDTCsState[(500u +1u)];
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 36 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 37 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 103 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCs.h" 2
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 46 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 47 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCs.h" 2
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 59 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 60 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 113 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCs.h" 2
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 69 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 70 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 116 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCs.h" 2
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 82 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 83 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 123 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCs.h" 2
+
+
+static __inline__ Dem_boolean_least Dem_DtcIsSuppressed (Dem_DtcIdType dtcId)
+{
+
+    return rba_DiagLib_Bit8IsBitSet (Dem_AllDTCsState[dtcId].state, 0u);
+
+
+
+
+}
+
+static __inline__ Dem_boolean_least Dem_DtcIsSuppressedDirectly (Dem_DtcIdType dtcId)
+{
+
+
+
+    ((void)(dtcId));
+    return (0 != 0);
+
+}
+
+static __inline__ Dem_boolean_least Dem_DtcIsSupported (Dem_DtcIdType dtcID)
+{
+    return (Dem_isDtcIdValid(dtcID)
+            && (!Dem_DtcIsSuppressed(dtcID))
+    );
+}
+
+
+static __inline__ void Dem_DtcHandleEventSuppression (Dem_DtcIdType dtcId, Dem_boolean_least eventUnsuppressed)
+{
+    do {} while (0);
+
+    if (!Dem_DtcIsSuppressedDirectly(dtcId))
+    {
+        Dem_EventIdListIterator it;
+
+        if (!eventUnsuppressed)
+        {
+            for (Dem_EventIdListIteratorNewFromDtcId(&it, dtcId);
+                    Dem_EventIdListIteratorIsValid(&it);
+                    Dem_EventIdListIteratorNext(&it))
+            {
+                if ( !Dem_EvtIsSuppressed(Dem_EventIdListIteratorCurrent(&it)) )
+                {
+                    eventUnsuppressed = (1 != 0);
+                    break;
+                }
+            }
+        }
+
+        rba_DiagLib_Bit8OverwriteBit (&Dem_AllDTCsState[dtcId].state, 0u, !eventUnsuppressed);
+    }
+}
+
+
+Dem_DtcIdType Dem_DtcIdFromDtcCode (Dem_DtcCodeType dtcCode);
+# 231 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCs.h"
+static __inline__ Dem_DtcCodeType Dem_GetDtcCode (Dem_DtcIdType dtcId)
+{
+# 247 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCs.h"
+    {
+        return Dem_Cfg_Dtc_GetDtcCode(dtcId);
+    }
+}
+# 270 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCs.h"
+static __inline__ Dem_boolean_least Dem_EventUsesOrigin (Dem_EventIdType eventId, Dem_DTCOriginType origin)
+{
+ if ( ((origin == (1U)) && Dem_EvtParam_GetIsEventDestPrimary(eventId))
+   || ((origin == (5U)) && Dem_EvtParam_GetIsEventDestSecondary(eventId))
+   || ((origin == (2U)) && Dem_EvtParam_GetIsEventDestMirror(eventId))
+
+
+   || ((origin == (3U)) && (Dem_Cfg_Dtc_GetKind(Dem_DtcIdFromEventId(eventId)) == 0x02u))
+
+
+ )
+ {
+  return (1 != 0);
+ }
+ return (0 != 0);
+}
+
+static __inline__ Dem_boolean_least Dem_DtcUsesOrigin (Dem_DtcIdType dtcId, Dem_DTCOriginType origin)
+{
+    Dem_EventIdType eventId = Dem_DtcIdGetFirstEventId(dtcId);
+    return Dem_EventUsesOrigin(eventId, origin);
+}
+
+
+
+void Dem_DtcSetDTCSetting (Dem_DtcIdType dtcId, Dem_boolean_least setBit);
+
+
+static __inline__ Dem_boolean_least Dem_DtcIsDTCSettingEnabled(Dem_DtcIdType dtcId)
+{
+ return (!(rba_DiagLib_Bit8IsBitSet (Dem_AllDTCsState[dtcId].state, 1u)));
+}
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 92 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 93 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 305 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCs.h" 2
+
+
+Dem_boolean_least Dem_IsEventEnabledByDtcSetting(Dem_EventIdType EventId);
+
+static __inline__ Dem_boolean_least Dem_IsEventReportingEnabledByDtcSetting(Dem_EventIdType EventId)
+{
+
+    return Dem_IsEventEnabledByDtcSetting(EventId);
+
+
+
+
+}
+
+static __inline__ Dem_boolean_least Dem_IsEventStorageEnabledByDtcSetting(Dem_EventIdType EventId)
+{
+
+    ((void)(EventId));
+    return (1 != 0);
+
+
+
+}
+
+
+
+
+sint8 Dem_DtcFaultDetectionRetrieve (Dem_DtcIdType dtcId);
+
+
+
+static __inline__ void Dem_SetDtcSettingFlag(DemControlDtcSettingType DtcSettingDisabled)
+{
+    Dem_DtcSettingDisabledFlag = DtcSettingDisabled;
+}
+
+static __inline__ Dem_boolean_least Dem_IsDtcSettingDisabled(void)
+{
+    return Dem_DtcSettingDisabledFlag;
+}
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 349 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCs.h" 2
+# 2 ".\\output\\inc/Dem_DTCs.h" 2
+# 12 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c" 2
+# 1 ".\\output\\inc/Dem_Obd.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\Dem_Obd.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Cfg.h" 1
+# 7 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\Dem_Obd.h" 2
+
+
+
+# 1 ".\\output\\inc/rba_DemObd_Dem.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObd_Dem.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_Dem.h" 1
+
+
+
+
+
+
+# 1 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_DemNvData.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Array.h" 1
+# 7 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_DemNvData.h" 2
+# 1 ".\\output\\inc/rba_DemObdBasic_PdtcMemTypes.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_DemNvData.h" 2
+# 1 ".\\output\\inc/rba_DemObdBasic_Cfg_Main.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_DemNvData.h" 2
+# 1 ".\\output\\inc/rba_DemObdBasic_IumprTypes.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_DemNvData.h" 2
+# 1 ".\\output\\inc/rba_DemObdBasic_Cfg_Iumpr.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\rba_DemObdBasic_Cfg_Iumpr.h" 1
+# 2 ".\\output\\inc/rba_DemObdBasic_Cfg_Iumpr.h" 2
+# 11 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_DemNvData.h" 2
+
+# 1 ".\\output\\inc/rba_DemObdBasic_DtrTypes.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_DemNvData.h" 2
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 162 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 163 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 17 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_DemNvData.h" 2
+
+extern rba_DemObdBasic_PdtcMemType rba_DemObdBasic_PdtcMem[6u];
+
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 175 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 176 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 27 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_DemNvData.h" 2
+# 8 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_Dem.h" 2
+
+
+# 1 ".\\output\\inc/Dem_DTCFilter.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCFilter.h" 1
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCFilter.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCs.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCFilter.h" 2
+
+# 1 ".\\output\\inc/Dem_Main.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCFilter.h" 2
+
+typedef struct
+{
+   boolean isNewFilterCriteria;
+   boolean filterSet;
+   uint8 DTCStatusMask;
+   Dem_DTCFormatType DTCFormat;
+   Dem_DTCOriginType DTCOrigin;
+   boolean FilterWithSeverity;
+   Dem_DTCSeverityType DTCSeverityMask;
+   boolean FilterForFaultDetectionCounter;
+   uint16 numberOfMatchingDTCs;
+   Dem_DtcIdIterator searchIt, retrieveIt;
+
+   rba_DemObdBasic_DTCFilterState obdFilter;
+
+} Dem_DTCFilterState;
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 23 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 24 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 31 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCFilter.h" 2
+    extern uint32 Dem_DTCFilterMatching[(1u +1u)][(((((500u +1u))-1u) >> 5u)+1UL)];
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 36 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 37 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 34 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCFilter.h" 2
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 92 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 93 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 38 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCFilter.h" 2
+
+Std_ReturnType Dem_GetNumberOfStandardFilteredDTC(uint8 ClientId, uint16* NumberOfFilteredDTC);
+Std_ReturnType Dem_GetNextFilteredStandardDTCID (uint8 ClientId, Dem_DtcIdType* dtcId, uint32* DTC, uint8* DTCStatus, sint8* DTCFaultDetectionCounter);
+void Dem_DTCFilterStandardMainFunction(uint8 ClientId);
+
+void Dem_SetDTCFilterstartIterator(uint8 ClientId);
+boolean Dem_IsStandardFilterFinished(const Dem_DtcIdIterator *it);
+void Dem_FilterInit(void);
+void Dem_DtcFilterInit(uint8 ClientId);
+void Dem_DTCFilterMainFunction(void);
+Dem_boolean_least Dem_DTCFilterMatches (const Dem_DTCFilterState* dtcFilter_p, Dem_DtcIdType dtcId);
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 52 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_DTCFilter.h" 2
+# 2 ".\\output\\inc/Dem_DTCFilter.h" 2
+# 11 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_Dem.h" 2
+
+
+
+void rba_DemObdBasic_Init(void);
+void rba_DemObdBasic_InitCheckPlausability(void);
+void rba_DemObdBasic_InitCheckNvm(void);
+void rba_DemObdBasic_MainFunction(void);
+void rba_DemObdBasic_Shutdown(void);
+void rba_DemObdBasic_Clear(Dem_DTCOriginType DTCOrigin);
+
+
+Dem_IndicatorStatusType rba_DemObdBasic_Mil_GetIndicatorStatusExternal(void);
+
+
+void rba_DemObdBasic_FF_CaptureFF(Dem_EventIdType EventId, uint8* dest, uint16 destSize);
+Std_ReturnType rba_DemObdBasic_FF_RetrievePidData(uint8 PID, uint8* DestBuffer, uint16* BufSize, Dem_EvMemEventMemoryType* EventMemory);
+void rba_DemObdBasic_FF_SetObdFFAvailable(uint16_least LocId, boolean FFAvailable);
+boolean rba_DemObdBasic_FF_IsObdFFAvailable(const Dem_EvMemEventMemoryType* EventMemory);
+
+
+void rba_DemObdBasic_SetCycleQualified(Dem_OperationCycleIdType OperationCycleId);
+void rba_DemObdBasic_StartOperationCycle (Dem_OperationCycleList currentTriggers, Dem_OperationCycleList currentQualified);
+
+
+boolean rba_DemObdBasic_Event_IsRequestingMil(Dem_EventIdType EventId);
+
+
+uint16_least rba_DemObdBasic_EvMem_GetLocationOfOBDFreezeFrame (void);
+boolean rba_DemObdBasic_EvMem_IsTriggerObdFreezeFrame (Dem_EventIdType EventId, uint16_least MemId, uint16_least StatusOld, uint16_least StatusNew);
+void rba_DemObdBasic_EvMem_CopyFreezeFrame (Dem_EventIdType EventId, uint8* dest, uint16 destSize, const uint8* src);
+void rba_DemObdBasic_EvMem_CommonMilDebModifyFailureCounter (uint16_least LocId, uint16_least MemId, Dem_EventIdType EventId, uint16_least *failureCounter);
+boolean rba_DemObdBasic_EvMem_IsAgingOfLocationAllowed (uint16_least LocId);
+boolean rba_DemObdBasic_EvMem_IsDisplaceEventMemoryLocAllowed (Dem_EventIdType NewEventId, uint16_least LocId, uint16_least LocIdObdServ02);
+void rba_DemObdBasic_EvMem_HandleImmediateAgeing(Dem_EventIdType EventId);
+void rba_DemObdBasic_EvMem_StatusNotificationPending (uint16_least LocId, Dem_EventIdType EventId);
+void rba_DemObdBasic_EvMem_StatusNotificationThresholdReached (uint16_least LocId, Dem_EventIdType EventId);
+void rba_DemObdBasic_EvMem_StatusNotificationConfirmed (uint16_least LocId, Dem_EventIdType EventId);
+boolean rba_DemObdBasic_EvMem_IsConfirmationVisibleInObd(uint16_least Status);
+# 58 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObdBasic_Dem.h"
+void rba_DemObdBasic_NvMInit(void);
+void rba_DemObdBasic_NvMShutdown(void);
+
+
+Dem_DtcCodeType rba_DemObdBasic_Dtc_GetCode(Dem_DtcIdType dtcId);
+Std_ReturnType rba_DemObdBasic_Dtc_GetNextFilteredDTC(Dem_DTCFilterState* dtcFilter_p, uint32* DTC, uint8* DTCStatus);
+void rba_DemObdBasic_Dtc_DtcFilterInit(Dem_DTCFilterState* dtcFilter_p);
+void rba_DemObdBasic_Dtc_SetDTCFilter(Dem_DTCFilterState* dtcFilter_p, Dem_DTCOriginType DTCOrigin);
+boolean rba_DemObdBasic_Dtc_DTCFilterMatches (Dem_DtcIdType dtcId, const Dem_DTCFilterState* DemDTCFilter);
+# 7 ".\\output\\inc/..\\..\\bsw\\Rba_DemObdBasic\\api\\rba_DemObd_Dem.h" 2
+
+static __inline__ void rba_DemObd_Init(void)
+{
+    rba_DemObdBasic_Init();
+}
+
+static __inline__ void rba_DemObd_MainFunction(void)
+{
+    rba_DemObdBasic_MainFunction();
+}
+
+static __inline__ void rba_DemObd_Clear(Dem_DTCOriginType DTCOrigin)
+{
+    rba_DemObdBasic_Clear(DTCOrigin);
+}
+# 2 ".\\output\\inc/rba_DemObd_Dem.h" 2
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\Dem_Obd.h" 2
+# 2 ".\\output\\inc/Dem_Obd.h" 2
+# 13 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c" 2
+# 1 "bsw\\Dem\\src\\evmem\\Dem_EvMemGen.h" 1
+
+
+
+
+
+# 1 "bsw\\Dem\\src\\evmem\\Dem_EvMemGenTypes.h" 1
+# 7 "bsw\\Dem\\src\\evmem\\Dem_EvMemGen.h" 2
+
+
+# 1 ".\\output\\inc/Dem_DTCs.h" 1
+# 10 "bsw\\Dem\\src\\evmem\\Dem_EvMemGen.h" 2
+# 1 ".\\output\\inc/Dem_GenericNvData.h" 1
+# 11 "bsw\\Dem\\src\\evmem\\Dem_EvMemGen.h" 2
+# 30 "bsw\\Dem\\src\\evmem\\Dem_EvMemGen.h"
+static __inline__ Dem_DtcIdType Dem_EvMemGenGetDtcIdByOccIndex(uint32 OccIndex)
+{
+
+    return (Dem_GenericNvData.DtcIdsByOccurrenceTime[OccIndex]);
+
+
+
+
+}
+
+
+static __inline__ void Dem_EvMemGenSetDtcByOccIndex(Dem_DtcIdType DtcId,uint32 OccIndex)
+{
+
+    (Dem_GenericNvData.DtcIdsByOccurrenceTime[OccIndex]) = (DtcId);
+
+
+
+
+}
+
+
+static __inline__ Dem_DTCOriginType Dem_EvMemGenGetDtcOrginFromMemId(uint16_least MemId)
+{
+   Dem_DTCOriginType DtcOrigin = (1U);
+
+   if (Dem_LibGetParamBool((0 != 0)))
+   {
+      if (MemId == 0xFFFFu)
+      {
+         DtcOrigin = (5U);
+      }
+   }
+
+   if (Dem_LibGetParamBool((1 != 0)))
+   {
+
+      if (MemId == (((0u +1u))))
+      {
+         DtcOrigin = (2U);
+      }
+   }
+
+   return DtcOrigin;
+
+}
+
+
+static __inline__ void Dem_EvMemGenReportEvent(Dem_EventIdType EventId, uint32 FirstOccIndex, uint32 RecntOccIndex)
+{
+   Dem_DtcIdType DtcId;
+
+
+   DtcId = Dem_DtcIdFromEventId (EventId);
+
+   if (Dem_isDtcIdValid (DtcId))
+   {
+
+
+      if (!Dem_isDtcIdValid(Dem_EvMemGenGetDtcIdByOccIndex(FirstOccIndex)))
+      {
+
+         Dem_EvMemGenSetDtcByOccIndex(DtcId,FirstOccIndex);
+
+         Dem_NvMWriteBlockOnShutdown(0u);
+      }
+
+      if (Dem_EvMemGenGetDtcIdByOccIndex(RecntOccIndex) != DtcId)
+      {
+
+         Dem_EvMemGenSetDtcByOccIndex(DtcId,RecntOccIndex);
+
+         Dem_NvMWriteBlockOnShutdown(0u);
+      }
+   }
+}
+
+
+static __inline__ void Dem_EvMemGenReportFailedEvent(Dem_EventIdType EventId)
+{
+
+    Dem_DtcIdType DtcId;
+
+
+ if(!Dem_GetEvMemLockInternal())
+ {
+
+     if ( Dem_EvtParam_GetIsEventDestPrimary(EventId) )
+     {
+
+
+         do { Os_SuspendAllInterrupts(); } while (0);
+         Dem_EvMemGenReportEvent(EventId,0x01,0x02);
+
+
+         DtcId = Dem_DtcIdFromEventId(EventId);
+         if ((Dem_isDtcIdValid(DtcId)) && (Dem_Cfg_Dtc_GetKind(DtcId) == 0x02u))
+         {
+             Dem_EvMemGenReportEvent(EventId,0x05,0x06);
+         }
+
+         do { Os_ResumeAllInterrupts(); } while (0);
+     }
+ }
+}
+
+
+static __inline__ void Dem_EvMemGenReportConfirmedEvent(Dem_EventIdType EventId, uint16_least MemId)
+{
+
+   if (MemId == (0u))
+   {
+
+      Dem_EvMemGenReportEvent(EventId,0x03,0x04);
+   }
+}
+
+
+static __inline__ void Dem_EvMemGenClearDtcByOccurrenceTime(Dem_DTCOriginType DtcOrigin)
+{
+   ((void)(DtcOrigin));
+
+   if (DtcOrigin == (1U))
+   {
+
+      do { Os_SuspendAllInterrupts(); } while (0);
+      rba_DiagLib_MemUtils_MemSet((uint8*)(&(Dem_GenericNvData.DtcIdsByOccurrenceTime)),(sint32)(0),(uint32)(sizeof(Dem_GenericNvData.DtcIdsByOccurrenceTime)));
+      do { Os_ResumeAllInterrupts(); } while (0);
+
+      Dem_NvMClearBlockByWrite(0u);
+   }
+}
+
+
+
+
+
+
+static __inline__ Dem_DtcIdType Dem_EvMemGenGetLastFailedDtcFromGenNvData(void)
+{
+ return Dem_EvMemGenGetDtcIdByOccIndex(0x02);
+}
+
+
+static __inline__ Dem_DtcIdType Dem_EvMemGenGetLastConfirmedDtcFromGenNvData(void)
+{
+ return Dem_EvMemGenGetDtcIdByOccIndex(0x04);
+}
+
+
+
+
+
+
+
+static __inline__ void Dem_EvMemGenSetOverflow(Dem_DTCOriginType DtcOrigin)
+{
+
+    (Dem_GenericNvData.Overflow[DtcOrigin]) = ((1 != 0));
+
+
+
+}
+
+
+static __inline__ boolean Dem_EvMemGenIsOverflow(Dem_DTCOriginType DtcOrigin)
+{
+
+    return (boolean)(Dem_GenericNvData.Overflow[DtcOrigin]);
+
+
+
+
+}
+
+
+static __inline__ void Dem_EvMemGenReportEventMemoryOverflowByOrigin(Dem_DTCOriginType DtcOrigin)
+{
+   if (!Dem_EvMemGenIsOverflow(DtcOrigin))
+   {
+      Dem_EvMemGenSetOverflow(DtcOrigin);
+      Dem_NvMWriteBlockOnShutdown(0u);
+   }
+}
+
+
+static __inline__ void Dem_EvMemGenClearOverflow(Dem_DTCOriginType DtcOrigin)
+{
+
+    (Dem_GenericNvData.Overflow[DtcOrigin]) = ((0 != 0));
+    Dem_NvMClearBlockByWrite(0u);
+
+
+
+}
+# 240 "bsw\\Dem\\src\\evmem\\Dem_EvMemGen.h"
+static __inline__ void Dem_EvMemGenInitEventMemoryGen(void)
+{
+    Dem_NvmResultType NvmResult;
+
+
+    NvmResult = Dem_NvmGetStatus (0u);
+
+
+    if (NvmResult == (5U))
+    {
+
+        rba_DiagLib_MemUtils_MemSet((uint8*)(&(Dem_GenericNvData.DtcIdsByOccurrenceTime)),(sint32)(0),(uint32)(sizeof(Dem_GenericNvData.DtcIdsByOccurrenceTime)));
+    }
+
+
+    if (NvmResult == (0U))
+    {
+        uint32 idx;
+
+        for (idx = 0; idx < 7u; idx++)
+        {
+            if (!(Dem_isDtcIdValid(Dem_EvMemGenGetDtcIdByOccIndex(idx)) ||
+                    (Dem_EvMemGenGetDtcIdByOccIndex(idx) == 0u)))
+            {
+                NvmResult = (1U);
+            }
+        }
+    }
+
+
+    if ((NvmResult != (0U)) && (NvmResult != (5U)))
+    {
+
+        rba_DiagLib_MemUtils_MemSet((uint8*)(&(Dem_GenericNvData.DtcIdsByOccurrenceTime)),(sint32)(0),(uint32)(sizeof(Dem_GenericNvData.DtcIdsByOccurrenceTime)));
+        Dem_NvMWriteBlockOnShutdown(0u);
+    }
+
+}
+# 14 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c" 2
+# 1 ".\\output\\inc/Dem_ConsisChk.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\consischk\\Dem_ConsisChk.h" 1
+
+
+
+
+# 1 ".\\output\\inc/Dem_EvMemGen.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\evmem\\Dem_EvMemGen.h" 1
+# 2 ".\\output\\inc/Dem_EvMemGen.h" 2
+# 6 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\consischk\\Dem_ConsisChk.h" 2
+# 1 ".\\output\\inc/Dem_EventStatus.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventStatus.h" 1
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_ISO14229Byte.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventStatus.h" 2
+# 1 ".\\output\\inc/Dem_Array.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventStatus.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_Events.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventStatus.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EventId.h" 1
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventStatus.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_OperationCycle.h" 1
+# 12 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventStatus.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EvMem.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventStatus.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_Clear.h" 1
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventStatus.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Events.h" 1
+# 15 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventStatus.h" 2
+
+
+# 1 ".\\output\\inc/Dem_PendingBitHandling.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_PendingBitHandling.h" 1
+# 2 ".\\output\\inc/Dem_PendingBitHandling.h" 2
+# 18 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventStatus.h" 2
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 23 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 24 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 22 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventStatus.h" 2
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 36 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 37 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 29 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventStatus.h" 2
+
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 92 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 93 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 34 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventStatus.h" 2
+
+static __inline__ Dem_UdsStatusByteType Dem_EvtGetIsoByte (Dem_EventIdType EventId)
+{
+    return Dem_AllEventsStatusByte[EventId];
+}
+# 47 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventStatus.h"
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 48 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventStatus.h" 2
+# 56 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventStatus.h"
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 92 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 93 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 57 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventStatus.h" 2
+# 68 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventStatus.h"
+void Dem_EventStatusInitCheckNvM(void);
+void Dem_ClearEvent(Dem_EventIdType eventId, boolean ClearFully);
+void Dem_EvtAdvanceOperationCycle(Dem_OperationCycleList operationCycleList);
+
+
+
+
+
+
+
+static __inline__ void Dem_InitEventStatusTestFailed(void)
+{
+# 99 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventStatus.h"
+}
+
+
+static __inline__ Dem_UdsStatusByteType Dem_EvtGetIsoByte4DtcCalculation (Dem_EventIdType EventId)
+{
+
+    return Dem_AllEventsStatusByte[EventId];
+
+
+
+}
+
+
+
+
+
+static __inline__ Dem_boolean_least Dem_EvtSt_IsUpdateNeeded(Dem_EventIdType EventId, Dem_boolean_least reportIsFailed)
+{
+    return (
+           (Dem_ISO14229ByteIsTestFailed(Dem_EvtGetIsoByte(EventId)) != reportIsFailed)
+        || (!Dem_ISO14229ByteIsTestCompleteTOC(Dem_EvtGetIsoByte(EventId)))
+
+
+        || (reportIsFailed && !Dem_EvtGetTestFailedTFCSincePreinit(EventId))
+        || (!Dem_EvtGetTestCompleteTFCSincePreinit(EventId))
+
+
+
+
+
+
+    );
+}
+
+
+static __inline__ void Dem_EvtSt_HandleInitialization (Dem_EventIdType EventId)
+{
+    Dem_AllEventsStatusByte[EventId] = ( ((1u<<6u))|((1u<<4u)) );
+
+
+
+
+
+
+
+}
+
+
+static __inline__ void Dem_EvtSt_HandleFailed(Dem_EventIdType EventId)
+{
+    Dem_ISO14229ByteSetTestFailed (&(Dem_AllEventsStatusByte[EventId]), (1 != 0));
+    Dem_ISO14229ByteSetTestFailedTOC (&(Dem_AllEventsStatusByte[EventId]), (1 != 0));
+    Dem_ISO14229ByteSetTestFailedSLC (&(Dem_AllEventsStatusByte[EventId]), (1 != 0));
+    Dem_ISO14229ByteSetTestCompleteTOC (&(Dem_AllEventsStatusByte[EventId]), (1 != 0));
+    Dem_ISO14229ByteSetTestCompleteSLC (&(Dem_AllEventsStatusByte[EventId]), (1 != 0));
+# 164 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventStatus.h"
+    Dem_EvtSetTestFailedTFCSincePreinit(EventId, (1 != 0));
+    Dem_EvtSetTestCompleteTFCSincePreinit(EventId, (1 != 0));
+
+
+
+
+
+}
+
+static __inline__ void Dem_EvtSt_HandlePassed(Dem_EventIdType EventId)
+{
+    Dem_ISO14229ByteSetTestFailed (&(Dem_AllEventsStatusByte[EventId]), (0 != 0));
+    Dem_ISO14229ByteSetTestCompleteTOC (&(Dem_AllEventsStatusByte[EventId]), (1 != 0));
+    Dem_ISO14229ByteSetTestCompleteSLC (&(Dem_AllEventsStatusByte[EventId]), (1 != 0));
+
+
+    Dem_EvtSetTestCompleteTFCSincePreinit(EventId, (1 != 0));
+
+
+
+
+
+}
+
+static __inline__ void Dem_EvtSt_HandleResetEventStatus(Dem_EventIdType EventId)
+{
+    Dem_ISO14229ByteSetTestFailed(&(Dem_AllEventsStatusByte[EventId]), (0 != 0));
+
+
+
+}
+
+static __inline__ void Dem_EvtSt_HandleEvtAvailable(Dem_EventIdType EventId)
+{
+    Dem_AllEventsStatusByte[EventId] = ( ((1u<<6u))|((1u<<4u)) );
+
+
+
+}
+
+static __inline__ void Dem_EvtSt_HandleEvtNotAvailable(Dem_EventIdType EventId)
+{
+    Dem_AllEventsStatusByte[EventId] = (0x00);
+
+
+
+}
+
+static __inline__ void Dem_EvtSt_HandleClear(Dem_EventIdType EventId)
+{
+
+    Dem_AllEventsStatusByte[EventId] = ( ((1u<<6u))|((1u<<4u)) );
+# 230 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventStatus.h"
+    Dem_EvtSetTestFailedTFCSincePreinit(EventId, (0 != 0));
+    Dem_EvtSetTestCompleteTFCSincePreinit(EventId, (0 != 0));
+
+
+
+
+
+}
+
+static __inline__ void Dem_EvtSt_HandleClear_OnlyThisCycleAndReadiness(Dem_EventIdType EventId)
+{
+    Dem_ISO14229ByteSetTestFailedTOC (&(Dem_AllEventsStatusByte[EventId]), (0 != 0));
+    Dem_ISO14229ByteSetTestFailedSLC (&(Dem_AllEventsStatusByte[EventId]), (0 != 0));
+    Dem_ISO14229ByteSetTestCompleteTOC (&(Dem_AllEventsStatusByte[EventId]), (0 != 0));
+    Dem_ISO14229ByteSetTestCompleteSLC (&(Dem_AllEventsStatusByte[EventId]), (0 != 0));
+
+
+
+
+
+
+
+}
+
+static __inline__ void Dem_EvtSt_HandleClear_ClearTestInformation(Dem_EventIdType EventId)
+{
+    Dem_ISO14229ByteSetTestFailedTOC (&(Dem_AllEventsStatusByte[EventId]), (0 != 0));
+    Dem_ISO14229ByteSetTestCompleteTOC (&(Dem_AllEventsStatusByte[EventId]), (0 != 0));
+}
+
+static __inline__ void Dem_EvtSt_HandleNewOperationCycle(Dem_EventIdType EventId)
+{
+    if(!Dem_EvtIsSuppressed(EventId))
+    {
+
+
+        Dem_AllEventsStatusByte[EventId] &= (Dem_UdsStatusByteType)(~((1u<<1u)));
+        Dem_AllEventsStatusByte[EventId] |= ((1u<<6u));
+
+
+
+    }
+}
+
+static __inline__ void Dem_EvtSt_HandleNewFailureCycle(Dem_EventIdType EventId)
+{
+
+    Dem_EvtSetTestFailedTFCSincePreinit(EventId, (0 != 0));
+    Dem_EvtSetTestCompleteTFCSincePreinit(EventId, (0 != 0));
+
+
+
+}
+
+static __inline__ void Dem_EvtSt_HandleIndicatorOn(Dem_EventIdType EventId)
+{
+    Dem_ISO14229ByteSetWarningIndicatorRequested(&(Dem_AllEventsStatusByte[EventId]), (1 != 0));
+
+
+
+}
+
+static __inline__ void Dem_EvtSt_HandleIndicatorOff(Dem_EventIdType EventId)
+{
+    Dem_ISO14229ByteSetWarningIndicatorRequested(&(Dem_AllEventsStatusByte[EventId]), (0 != 0));
+
+
+
+}
+
+static __inline__ void Dem_EvtSt_HandleDTCSettingOn(Dem_EventIdType EventId)
+{
+
+
+
+    ((void)(EventId));
+
+}
+
+static __inline__ void Dem_EvtSt_HandleConfirmation(Dem_EventIdType EventId)
+{
+
+
+
+
+
+    Dem_ISO14229ByteSetPendingDTC(&(Dem_AllEventsStatusByte[EventId]), (1 != 0));
+
+
+
+    Dem_ISO14229ByteSetConfirmedDTC(&(Dem_AllEventsStatusByte[EventId]), (1 != 0));
+
+
+
+}
+
+static __inline__ void Dem_EvtSt_HandleAging(Dem_EventIdType EventId)
+{
+    if ( Dem_LibGetParamBool((0 != 0)) )
+    {
+        Dem_ISO14229ByteSetTestFailedSLC(&(Dem_AllEventsStatusByte[EventId]), (0 != 0));
+    }
+    Dem_ISO14229ByteSetConfirmedDTC(&(Dem_AllEventsStatusByte[EventId]), (0 != 0));
+
+
+
+
+}
+
+static __inline__ void Dem_EvtSt_HandleAgingOfConfirmed(Dem_EventIdType EventId)
+{
+
+    Dem_ISO14229ByteSetConfirmedDTC(&(Dem_AllEventsStatusByte[EventId]), (0 != 0));
+
+
+
+
+}
+
+
+static __inline__ void Dem_EvtSt_HandleImmediateAging(Dem_EventIdType EventId)
+{
+    if ( Dem_LibGetParamBool((0 != 0)) )
+    {
+        Dem_ISO14229ByteSetTestFailedSLC(&(Dem_AllEventsStatusByte[EventId]), (0 != 0));
+    }
+    Dem_ISO14229ByteSetConfirmedDTC(&(Dem_AllEventsStatusByte[EventId]), (0 != 0));
+    Dem_ISO14229ByteSetPendingDTC(&(Dem_AllEventsStatusByte[EventId]), (0 != 0));
+
+
+
+}
+
+
+
+
+static __inline__ void Dem_EvtSt_HandleDisplacement(Dem_EventIdType EventId)
+{
+    if ( Dem_LibGetParamBool((1 != 0)) )
+    {
+        if ( Dem_LibGetParamBool((0 != 0)))
+        {
+            Dem_ISO14229ByteSetTestFailedSLC(&(Dem_AllEventsStatusByte[EventId]), (0 != 0));
+        }
+        Dem_ISO14229ByteSetConfirmedDTC(&(Dem_AllEventsStatusByte[EventId]), (0 != 0));
+    }
+    Dem_ISO14229ByteSetPendingDTC(&(Dem_AllEventsStatusByte[EventId]), (0 != 0));
+
+
+
+
+}
+
+static __inline__ void Dem_EvtSt_HandleEvCombinationReplacement(Dem_EventIdType EventId)
+{
+
+    if ( Dem_LibGetParamBool((0 != 0)) )
+    {
+        Dem_ISO14229ByteSetTestFailedSLC(&(Dem_AllEventsStatusByte[EventId]), (0 != 0));
+    }
+    Dem_ISO14229ByteSetConfirmedDTC(&(Dem_AllEventsStatusByte[EventId]), (0 != 0));
+
+    Dem_ISO14229ByteSetPendingDTC(&(Dem_AllEventsStatusByte[EventId]), (0 != 0));
+
+
+
+
+}
+
+
+static __inline__ void Dem_EvtSt_HandlePendingDTC(Dem_EventIdType EventId, Dem_boolean_least setBit)
+{
+    Dem_ISO14229ByteSetPendingDTC(&(Dem_AllEventsStatusByte[EventId]), setBit);
+
+
+
+}
+
+
+
+
+static __inline__ Dem_boolean_least Dem_EvtSt_GetTestFailed(Dem_EventIdType EventId)
+{
+    return Dem_ISO14229ByteIsTestFailed(Dem_AllEventsStatusByte[EventId]);
+}
+static __inline__ Dem_boolean_least Dem_EvtSt_GetTestFailedTOC(Dem_EventIdType EventId)
+{
+    return Dem_ISO14229ByteIsTestFailedTOC(Dem_AllEventsStatusByte[EventId]);
+}
+static __inline__ Dem_boolean_least Dem_EvtSt_GetTestCompleteTOC (Dem_EventIdType EventId)
+{
+    return Dem_ISO14229ByteIsTestCompleteTOC(Dem_AllEventsStatusByte[EventId]);
+}
+
+static __inline__ Dem_boolean_least Dem_EvtSt_GetPending(Dem_EventIdType EventId)
+{
+    return Dem_ISO14229ByteIsPendingDTC(Dem_AllEventsStatusByte[EventId]);
+}
+
+
+static __inline__ Dem_boolean_least Dem_EvtSt_GetWIR (Dem_EventIdType EventId)
+{
+    return Dem_ISO14229ByteIsWarningIndicatorRequested(Dem_AllEventsStatusByte[EventId]);
+}
+
+
+static __inline__ void Dem_EvtSt_SetTestFailed(Dem_EventIdType EventId, Dem_boolean_least setBit)
+{
+    Dem_ISO14229ByteSetTestFailed(&(Dem_AllEventsStatusByte[EventId]), setBit);
+
+
+
+}
+static __inline__ void Dem_EvtSt_SetTestFailedSLC(Dem_EventIdType EventId, Dem_boolean_least setBit)
+{
+    Dem_ISO14229ByteSetTestFailedSLC(&(Dem_AllEventsStatusByte[EventId]), setBit);
+
+
+
+}
+static __inline__ void Dem_EvtSt_SetTestCompleteSLC (Dem_EventIdType EventId, Dem_boolean_least setBit)
+{
+    Dem_ISO14229ByteSetTestCompleteSLC(&(Dem_AllEventsStatusByte[EventId]), setBit);
+
+
+
+}
+static __inline__ void Dem_EvtSt_SetConfirmedDTC(Dem_EventIdType EventId, Dem_boolean_least setBit)
+{
+    Dem_ISO14229ByteSetConfirmedDTC(&(Dem_AllEventsStatusByte[EventId]), setBit);
+
+
+
+}
+static __inline__ void Dem_EvtSt_SetPendingDTC(Dem_EventIdType EventId, Dem_boolean_least setBit)
+{
+    Dem_ISO14229ByteSetPendingDTC(&(Dem_AllEventsStatusByte[EventId]), setBit);
+
+
+
+}
+# 482 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventStatus.h"
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 483 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventStatus.h" 2
+# 2 ".\\output\\inc/Dem_EventStatus.h" 2
+# 7 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\consischk\\Dem_ConsisChk.h" 2
+# 1 ".\\output\\inc/Dem_IndicatorAttributes.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\consischk\\Dem_ConsisChk.h" 2
+
+static __inline__ void Dem_StatusByteConsistencyCheck(uint16_least LocId, uint16_least Status)
+{
+
+
+ if (Dem_EvMemIsOriginPrimary(LocId) || Dem_EvMemIsOriginSecondary(LocId))
+ {
+        Dem_EventIdType EventId;
+        EventId = Dem_EvMemGetEventMemEventId(LocId);
+
+        if (Dem_LibGetParamBool(1u ==
+                                2u))
+        {
+
+            Dem_EvtSt_SetTestFailed(EventId, (Status & 0x0001u) != 0u);
+        }
+
+
+  if ((Status & (0x0004u | 0x0008u
+
+
+
+  )) != 0u)
+  {
+   Dem_EvtSt_SetTestFailedSLC(EventId,(1 != 0));
+   Dem_EvtSt_SetTestCompleteSLC(EventId,(1 != 0));
+            if ((Status & (0x0008u)) != 0u)
+            {
+                Dem_EvtSt_SetConfirmedDTC(EventId,(1 != 0));
+            }
+            if ((Status & (0x0004u)) != 0u)
+            {
+               Dem_EvtSt_SetPendingDTC(EventId,(1 != 0));
+            }
+
+            do {} while (0);
+
+  }
+ }
+}
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 92 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 93 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 51 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\consischk\\Dem_ConsisChk.h" 2
+
+void Dem_ConsistencyCheckForDTC(void);
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 56 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\consischk\\Dem_ConsisChk.h" 2
+# 2 ".\\output\\inc/Dem_ConsisChk.h" 2
+# 15 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c" 2
+# 1 ".\\output\\inc/Dem_Prv_CallEvtStChngdCbk.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Prv_CallEvtStChngdCbk.h" 1
+# 15 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Prv_CallEvtStChngdCbk.h"
+# 1 ".\\output\\inc/Dem_DTCs.h" 1
+# 16 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Prv_CallEvtStChngdCbk.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EventsCallback.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_EventsCallback.h" 1
+# 2 ".\\output\\inc/Dem_Cfg_EventsCallback.h" 2
+# 17 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Prv_CallEvtStChngdCbk.h" 2
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_EventStatus.h" 1
+# 18 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Prv_CallEvtStChngdCbk.h" 2
+# 1 ".\\output\\inc/Dem_Prv_CallDtcStChngdCbk.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_Prv_CallDtcStChngdCbk.h" 1
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\dtc\\Dem_Prv_CallDtcStChngdCbk.h"
+typedef struct {
+    Dem_UdsStatusByteType status;
+    boolean isStatusChangeToBeCalculated;
+}Dem_DTCStatusAndUpdateInfoType;
+# 2 ".\\output\\inc/Dem_Prv_CallDtcStChngdCbk.h" 2
+# 19 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Prv_CallEvtStChngdCbk.h" 2
+
+static __inline__ void Dem_CallBackTriggerOnEventStatus (
+  Dem_EventIdType EventId,
+  Dem_UdsStatusByteType EventStatusOld,
+  Dem_UdsStatusByteType EventStatusNew,
+  Dem_UdsStatusByteType dtcStByteOld
+)
+{
+
+
+
+
+
+
+    do {} while (0);
+    ((void)(dtcStByteOld));
+    ((void)(EventId));
+    ((void)(EventStatusOld));
+    ((void)(EventStatusNew));
+# 70 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Prv_CallEvtStChngdCbk.h"
+}
+
+
+static __inline__ void Dem_CallBackTriggerOnMultipleEventStatus(
+        Dem_EventIdType EventId,
+        Dem_UdsStatusByteType EventStatusOld,
+        Dem_UdsStatusByteType EventStatusNew,
+        Dem_DTCStatusAndUpdateInfoType* Dem_DTCStatusAndUpdateInfo)
+{
+    ((void)(EventId));
+    ((void)(EventStatusOld));
+    ((void)(EventStatusNew));
+    ((void)(Dem_DTCStatusAndUpdateInfo));
+# 103 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Prv_CallEvtStChngdCbk.h"
+}
+
+static __inline__ void Dem_StatusChange_GetOldStatus (
+  Dem_EventIdType EventId,
+  Dem_UdsStatusByteType *isoByteOld,
+  Dem_UdsStatusByteType *dtcStByteOld
+)
+{
+
+
+
+
+
+ *(isoByteOld) = Dem_EvtGetIsoByte(EventId);
+    *dtcStByteOld = 0;
+# 130 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Prv_CallEvtStChngdCbk.h"
+ (void) dtcStByteOld;
+
+}
+# 147 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\event\\Dem_Prv_CallEvtStChngdCbk.h"
+static __inline__ void Dem_TriggerOn_EventStatusChange (
+        Dem_EventIdType EventId,
+        Dem_UdsStatusByteType isoByteOld,
+        Dem_UdsStatusByteType isoByteNew,
+        Dem_UdsStatusByteType dtcStByteOld
+)
+{
+    if ( isoByteNew != isoByteOld )
+    {
+
+
+
+        Dem_CallBackTriggerOnEventStatus(EventId,isoByteOld,isoByteNew,dtcStByteOld);
+    }
+}
+
+static __inline__ void Dem_TriggerOn_MultipleEventStatusChange(
+        Dem_EventIdType EventId,
+        Dem_UdsStatusByteType isoByteOld,
+        Dem_UdsStatusByteType isoByteNew,
+        Dem_DTCStatusAndUpdateInfoType* Dem_DTCStatusAndUpdateInfo)
+{
+    if ( isoByteNew != isoByteOld )
+    {
+
+
+
+        Dem_CallBackTriggerOnMultipleEventStatus(EventId,isoByteOld,isoByteNew, Dem_DTCStatusAndUpdateInfo);
+    }
+}
+# 2 ".\\output\\inc/Dem_Prv_CallEvtStChngdCbk.h" 2
+# 16 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c" 2
+# 1 ".\\output\\inc/Dem_Cfg_ExtPrototypes.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_ExtPrototypes.h" 1
+# 2 ".\\output\\inc/Dem_Cfg_ExtPrototypes.h" 2
+# 17 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c" 2
+# 1 ".\\output\\inc/Dem_Lib.h" 1
+# 18 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c" 2
+
+
+
+# 1 ".\\output\\inc/Dem_ChronoSort.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\Dem_ChronoSort.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_Cfg_DTCs.h" 1
+# 7 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\Dem_ChronoSort.h" 2
+
+# 1 ".\\output\\inc/Dem_Cfg_DTC_DataStructures.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\Dem_ChronoSort.h" 2
+# 2 ".\\output\\inc/Dem_ChronoSort.h" 2
+# 22 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c" 2
+# 1 ".\\output\\inc/Dem_J1939EnvFreezeFrame.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_J1939EnvFreezeFrame.h" 1
+
+
+
+
+# 1 ".\\output\\inc/Dem_Types.h" 1
+# 6 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_J1939EnvFreezeFrame.h" 2
+
+# 1 ".\\output\\inc/Dem_Cfg_Main.h" 1
+# 8 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_J1939EnvFreezeFrame.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EventId.h" 1
+# 9 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_J1939EnvFreezeFrame.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_J1939EnvSpn.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_J1939EnvSpn.h" 1
+# 2 ".\\output\\inc/Dem_Cfg_J1939EnvSpn.h" 2
+# 10 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_J1939EnvFreezeFrame.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_J1939EnvFreezeFrame.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\Dem_Cfg_J1939EnvFreezeFrame.h" 1
+# 2 ".\\output\\inc/Dem_Cfg_J1939EnvFreezeFrame.h" 2
+# 11 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_J1939EnvFreezeFrame.h" 2
+# 1 ".\\output\\inc/Dem_Cfg_EnvMain.h" 1
+# 12 ".\\output\\inc/..\\..\\bsw\\Dem\\src\\env\\Dem_J1939EnvFreezeFrame.h" 2
+# 2 ".\\output\\inc/Dem_J1939EnvFreezeFrame.h" 2
+# 23 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c" 2
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 69 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 70 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 30 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c" 2
+
+const Dem_NvmBlockIdType Dem_EvMemNvmId[(15u + 0u + 1u)] = { 1u, 2u, 9u, 10u, 11u, 12u, 13u, 14u, 15u, 16u, 3u, 4u, 5u, 6u, 7u, 8u};
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 82 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 83 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 34 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c" 2
+# 55 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c"
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 69 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 70 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 56 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c" 2
+
+const uint16_least Dem_EvMemLocIdList[(((0u +1u))+1u)+1u] = { 0u, 15u, (15u + 0u + 1u), };
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 82 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 83 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 60 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c" 2
+
+
+
+
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 23 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 24 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 68 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c" 2
+static uint16 Dem_EvMemEvBuffOverflowCounterCopy;
+boolean Dem_EvMemIsLocked;
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 36 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 37 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 72 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c" 2
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 162 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 163 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 75 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c" 2
+Dem_EvMemEventMemoryType Dem_EvMemEventMemory[(15u + 0u + 1u)];
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 175 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 176 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 78 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c" 2
+# 119 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c"
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 69 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 70 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 120 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c" 2
+
+const Dem_EvMemMapOrigin2IdType Dem_EvMemMapOrigin2Id[6] = { { 0, (0 != 0) }, { (0u), (1 != 0) }, { (((0u +1u))), (1 != 0) }, { 0, (0 != 0) }, { 0, (0 != 0) }, { 0, (0 != 0) } };
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 82 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 83 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 124 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c" 2
+
+
+
+
+
+
+
+static __inline__ Dem_boolean_least Dem_EvMemIsClearByWriteRequired(uint16_least LocId)
+{
+
+    if (Dem_LibGetParamUI8(2u) == Dem_LibGetParamUI8(2u) )
+    {
+        if (Dem_EvMemIsOriginMirror(LocId))
+        {
+            return (1 != 0);
+        }
+    }
+
+
+    if (!Dem_EvMemIsStored (Dem_EvMemGetEventMemStatus (LocId)))
+    {
+        return (1 != 0);
+    }
+
+    return (0 != 0);
+}
+
+
+static __inline__ Dem_boolean_least Dem_EvMemIsWriteImmediateRequired(uint16_least LocId)
+{
+
+    if (!Dem_LibGetParamBool((0 != 0)))
+    {
+        return (0 != 0);
+    }
+
+
+    if (!Dem_Cfg_Dtc_GetNv_Storage (Dem_DtcIdFromEventId (Dem_EvMemGetEventMemEventId (LocId))))
+    {
+        return (0 != 0);
+    }
+
+
+    if (!Dem_LibGetParamBool((0 != 0)))
+    {
+        return (1 != 0);
+    }
+
+
+    if (Dem_EvMemGetEventMemOccurrenceCounter(LocId) <= Dem_LibGetParamUI16(0))
+    {
+        return (1 != 0);
+    }
+
+    return (0 != 0);
+}
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 92 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 93 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 183 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c" 2
+static void Dem_EvMemEventMemoryWriteNotification(uint16_least LocId, uint16_least writeSts)
+{
+    ((void)(writeSts));
+
+
+    Dem_EvMemSetEventMemStatus(LocId, Dem_EvMemGetEventMemStatus(LocId) & (~0u));
+
+    if (Dem_EvMemIsClearByWriteRequired(LocId))
+    {
+
+        Dem_NvMClearBlockByWrite(Dem_EvMemGetNvmIdFromLocId (LocId));
+    }
+    else if (Dem_EvMemIsWriteImmediateRequired(LocId))
+    {
+
+        Dem_NvMWriteBlockImmediate(Dem_EvMemGetNvmIdFromLocId (LocId));
+    }
+    else
+    {
+
+        Dem_NvMWriteBlockOnShutdown(Dem_EvMemGetNvmIdFromLocId (LocId));
+    }
+}
+
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 211 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c" 2
+
+
+
+
+
+static __inline__ Dem_boolean_least Dem_EvMemIsStatusNotificationRequired(uint16_least LocId)
+{
+    return (Dem_EvMemIsOriginPrimary(LocId) || Dem_EvMemIsOriginSecondary(LocId));
+}
+
+
+
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 92 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 93 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 224 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c" 2
+
+
+static void Dem_EvMemSetStatusNotification(uint16_least LocId, Dem_EventIdType EventId, Dem_EvMemActionType actionType)
+{
+    Dem_UdsStatusByteType isoByteOld, isoByteNew;
+    Dem_UdsStatusByteType dtcStByteOld;
+    if (Dem_EvMemIsStatusNotificationRequired(LocId))
+    {
+        if (actionType!=4)
+        {
+            do { Os_SuspendAllInterrupts(); } while (0);
+            Dem_StatusChange_GetOldStatus(EventId, &isoByteOld, &dtcStByteOld);
+            if (actionType== 1)
+            {
+                Dem_EvtSt_HandleConfirmation(EventId);
+            } else if (actionType == 2)
+            {
+                Dem_EvtSt_HandleDisplacement(EventId);
+            } else if (actionType == 3)
+            {
+                Dem_EvtSt_HandleAging(EventId);
+            } else if (actionType == 7)
+            {
+                Dem_EvtSt_HandleImmediateAging(EventId);
+            } else if (actionType == 5)
+            {
+
+
+
+
+
+                Dem_EvtSt_HandlePendingDTC(EventId, (1 != 0));
+
+
+
+            } else if (actionType == 6)
+            {
+                Dem_EvtSt_HandlePendingDTC(EventId, (0 != 0));
+            } else if (actionType == 8)
+            {
+                Dem_EvtSt_HandleAgingOfConfirmed(EventId);
+            } else
+            {
+
+            }
+
+            do {} while (0);
+# 286 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c"
+            isoByteNew = Dem_EvtGetIsoByte(EventId);
+
+            do { Os_ResumeAllInterrupts(); } while (0);
+
+            Dem_TriggerOn_EventStatusChange(EventId,isoByteOld,isoByteNew,dtcStByteOld);
+        }
+    }
+}
+
+
+
+static void Dem_EvMemClearOldEventStatusNotification(uint16_least LocId, Dem_EventIdType EventIdOld, uint16_least StatusOld)
+{
+ Dem_UdsStatusByteType isoByteOld, isoByteNew;
+ Dem_UdsStatusByteType dtcStByteOld;
+
+ if (Dem_LibGetParamUI8(3u) == Dem_LibGetParamUI8(2u))
+ {
+  if (Dem_EvMemIsStatusNotificationRequired (LocId))
+  {
+   if( Dem_EvMemIsStored(StatusOld) && (Dem_EvMemGetEventMemEventId(LocId) != EventIdOld))
+   {
+       do { Os_SuspendAllInterrupts(); } while (0);
+    Dem_StatusChange_GetOldStatus(EventIdOld, &isoByteOld, &dtcStByteOld);
+    Dem_EvtSt_HandleEvCombinationReplacement(EventIdOld);
+
+
+
+
+
+    do {} while (0);
+
+
+                isoByteNew = Dem_EvtGetIsoByte(EventIdOld);
+
+    do { Os_ResumeAllInterrupts(); } while (0);
+
+    Dem_TriggerOn_EventStatusChange(EventIdOld,isoByteOld,isoByteNew,dtcStByteOld);
+   }
+  }
+ }
+}
+
+static __inline__ void Dem_NotifyEvtDataChange(Dem_EventIdType EventId)
+{
+
+
+
+
+
+
+    ((void)(EventId));
+
+}
+
+void Dem_EvMemSetStatusWithNotifications(uint16_least LocId, uint16_least StatusNew, uint16_least WriteSts, Dem_EvMemActionType actionType)
+{
+   Dem_EvMemSetEventMemStatus (LocId, StatusNew);
+
+   if (WriteSts != 0x0000u)
+   {
+
+      Dem_EvMemEventMemoryWriteNotification (LocId, WriteSts);
+      if(((WriteSts & 0x0002u) != 0u) && (!Dem_EvMemIsOriginMirror(LocId)))
+      {
+
+          Dem_NotifyEvtDataChange(Dem_EvMemGetEventMemEventId(LocId));
+      }
+   }
+
+   Dem_EvMemSetStatusNotification (LocId, Dem_EvMemGetEventMemEventId(LocId), actionType);
+}
+
+static __inline__ boolean Dem_EvMemProcessPassedEventsReport(Dem_EventIdType eventId, const uint32 EvMemRecheckEvents[])
+{
+    uint8 tempEnvBuffer[(40u + 10u+ 0u)];
+    if( (Dem_EvtWasPassedReported (EvMemRecheckEvents, eventId)) && (!Dem_EvtSt_GetTestFailed(eventId)) )
+    {
+        if(Dem_IsEventStorageEnabledByDtcSetting (eventId))
+        {
+
+
+
+            tempEnvBuffer[0] = 0;
+
+            Dem_EvMemSetEventPassedAllMem(eventId, tempEnvBuffer);
+            return (1 != 0);
+        }
+    }
+    return (0 != 0);
+}
+
+
+static void Dem_EvMemProcessPassedEvents (void)
+{
+
+
+
+
+    uint16_least LocId;
+    Dem_EventIdType eventId;
+    uint32 Dem_EvMemRecheckEvents[(((((500u +1u))-1u) >> 5u)+1UL)];
+
+    if (Dem_EvMemEvBuffOverflowCounterCopy != Dem_EvtBuffer.OverflowCounter)
+    {
+        do { Os_SuspendAllInterrupts(); } while (0);
+        Dem_EvMemEvBuffOverflowCounterCopy = Dem_EvtBuffer.OverflowCounter;
+        rba_DiagLib_MemUtils_MemCpy((uint8*)(&Dem_EvMemRecheckEvents),(const uint8*)(&Dem_EventWasPassedReported),(uint32)(sizeof(Dem_EventWasPassedReported)));
+        Dem_BitArrayClearAll(Dem_EventWasPassedReported,(500u +1u));
+        do { Os_ResumeAllInterrupts(); } while (0);
+
+        for (Dem_EvMemEventMemoryPrimaryUserdefLocIteratorNew (&LocId);
+                Dem_EvMemEventMemoryPrimaryUserdefLocIteratorIsValid(&LocId);
+                Dem_EvMemEventMemoryPrimaryUserdefLocIteratorNext (&LocId))
+        {
+
+            if (Dem_EvMemIsStored(Dem_EvMemGetEventMemStatus(LocId)))
+            {
+# 420 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c"
+                eventId = Dem_EvMemGetEventMemEventId(LocId);
+                (void)Dem_EvMemProcessPassedEventsReport(eventId, Dem_EvMemRecheckEvents);
+
+            }
+        }
+    }
+}
+
+
+
+
+
+
+void Dem_EvMemEraseEventMemory(uint16_least MemId)
+{
+    uint16_least LocId;
+
+    do { if (!(Dem_EvMemIsMemIdValid(MemId))) { do {Dem_EventIdCausingLastDetError = 0; Det_ReportError(54,0,0xB1,0);}while(0); } } while(0);
+
+   for (Dem_EvMemEventMemoryLocIteratorNew (&LocId, MemId);
+         Dem_EvMemEventMemoryLocIteratorIsValid (&LocId, MemId);
+         Dem_EvMemEventMemoryLocIteratorNext (&LocId, MemId))
+   {
+      if (!Dem_EvMemIsEmpty (Dem_EvMemGetEventMemStatus (LocId)))
+      {
+
+         Dem_EvMemSetStatusWithNotifications(LocId,Dem_EvMemSetToEmpty(),0x0004u,4);
+
+         rba_DiagLib_MemUtils_MemSet((uint8*)(&(Dem_EvMemEventMemory[LocId])),(sint32)(0),(uint32)(sizeof(Dem_EvMemEventMemory[LocId])));
+      }
+   }
+}
+
+void Dem_EvMemForceClearEventMemoryLocation(uint16_least LocId, uint16_least WriteSts, Dem_EvMemActionType actionType)
+{
+    uint16_least Status;
+    uint16_least StatusNew;
+
+    Status = Dem_EvMemGetEventMemStatus (LocId);
+
+   if (Dem_EvMemIsStored (Status))
+   {
+      StatusNew = Dem_EvMemSetToDelete (Status);
+
+
+
+        if (Dem_LibGetParamUI8(2u) == Dem_LibGetParamUI8(2u))
+        {
+            if (Dem_EvtParam_GetIsEventDestMirror(Dem_EvMemGetEventMemEventId (LocId)))
+            {
+                if (Dem_EvMemIsTriggerMirrorOnClear (Dem_EvMemGetEventMemEventId (LocId), LocId, Status, StatusNew))
+                {
+                    Dem_EvMemCopyToMirrorMemory (LocId);
+                }
+            }
+        }
+
+
+
+      Dem_EvMemSetStatusWithNotifications(LocId,StatusNew,WriteSts, actionType);
+   }
+}
+
+void Dem_EvMemClearEvent(Dem_EventIdType EventId, uint16_least MemId)
+{
+    uint16_least LocId;
+
+
+    do { if (!(Dem_EvMemIsMemIdValid(MemId))) { do {Dem_EventIdCausingLastDetError = 0; Det_ReportError(54,0,0xE3,0);}while(0); } } while(0);
+
+    LocId = Dem_EvMemGetEventMemoryLocIdOfEvent (EventId, MemId);
+    if (Dem_EvMemIsEventMemLocIdValid (LocId))
+    {
+        if (Dem_EvMemGetEventMemEventId (LocId) == EventId)
+        {
+            Dem_EvMemForceClearEventMemoryLocation(LocId, 0x0004u, 6);
+        }
+    }
+}
+
+
+
+
+
+
+
+uint32 Dem_EvMemGetNewEventMemoryTimeId(uint16_least MemId)
+{
+    uint32 TimeId;
+    uint32 MaxTimeId;
+    uint16_least LocId;
+
+
+    MaxTimeId = 0;
+    for (Dem_EvMemEventMemoryLocIteratorNew (&LocId, MemId);
+            Dem_EvMemEventMemoryLocIteratorIsValid(&LocId, MemId);
+            Dem_EvMemEventMemoryLocIteratorNext (&LocId, MemId))
+    {
+        if( ( (!Dem_LibGetParamBool((0 != 0))) && Dem_EvMemIsStored(Dem_EvMemGetEventMemStatus(LocId)) ) ||
+            ( Dem_LibGetParamBool((0 != 0)) && (!Dem_EvMemIsEmpty(Dem_EvMemGetEventMemStatus(LocId))) ) )
+        {
+            TimeId = Dem_EvMemGetEventMemTimeId(LocId);
+            if (MaxTimeId < TimeId)
+            {
+                MaxTimeId = TimeId;
+            }
+        }
+    }
+
+
+    if (Dem_LibGetParamBool((0 != 0)))
+    {
+
+        if (MaxTimeId >= 0xFFFFFFFFuL)
+        {
+            for (Dem_EvMemEventMemoryLocIteratorNew (&LocId, MemId);
+                    Dem_EvMemEventMemoryLocIteratorIsValid(&LocId, MemId);
+                    Dem_EvMemEventMemoryLocIteratorNext (&LocId, MemId))
+            {
+
+                Dem_EvMemSetEventMemTimeId(LocId,0);
+
+                Dem_EvMemEventMemoryWriteNotification(LocId, 0x0001u);
+            }
+
+            MaxTimeId = 0; }
+    }
+
+
+    if (MaxTimeId < 0xFFFFFFFFuL)
+    {
+        MaxTimeId++;
+    }
+
+    return MaxTimeId;
+}
+
+
+static __inline__ uint16_least Dem_EvMemGetEventMemoryDisplacementLocation(Dem_EventIdType EventId, uint8 EventType, uint16_least MemId)
+{
+    uint16_least LocId;
+    uint16_least SearchLocId;
+    uint16_least Prio;
+    uint16_least SearchPrio;
+# 574 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c"
+    uint16_least Active;
+    uint16_least SearchActive;
+    boolean TestComplete;
+    uint32 TimeId;
+    uint32 SearchTimeId;
+
+
+    uint16_least LocIdObdServ02;
+
+    SearchActive = 0x0001u;
+    SearchTimeId = 0xFFFFFFFFuL;
+    SearchLocId = 0xFFFFu;
+# 594 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c"
+    LocIdObdServ02 = rba_DemObdBasic_EvMem_GetLocationOfOBDFreezeFrame();
+# 604 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c"
+    SearchPrio = Dem_EvtParam_GetEventPriority(EventId);
+
+    if(EventType == 7u)
+    {
+        SearchPrio = SearchPrio + 255u;
+    }
+
+    for (Dem_EvMemEventMemoryLocIteratorNew (&LocId, MemId);
+            Dem_EvMemEventMemoryLocIteratorIsValid(&LocId, MemId);
+            Dem_EvMemEventMemoryLocIteratorNext (&LocId, MemId))
+    {
+        if (Dem_EvMemIsStored(Dem_EvMemGetEventMemStatus(LocId)))
+        {
+
+            if (( Dem_EvMemIsDisplaceEventMemoryLocAllowed(EventId, LocId))
+
+                    && (rba_DemObdBasic_EvMem_IsDisplaceEventMemoryLocAllowed(EventId, LocId, LocIdObdServ02))
+
+            )
+            {
+                Active = Dem_EvMemGetEventMemStatus(LocId) & 0x0001u;
+                TestComplete = Dem_EvtSt_GetTestCompleteTOC(Dem_EvMemGetEventMemEventId(LocId));
+                TimeId = Dem_EvMemGetEventMemTimeId(LocId);
+                Prio = Dem_EvtParam_GetEventPriority(Dem_EvMemGetEventMemEventId(LocId));
+                if ((Dem_EvMemGetEventMemStatus(LocId) & 0x0040u) == 0u)
+                {
+                    Prio = Prio + 255u;
+                }
+
+                if ( (Prio > SearchPrio)
+                     || ((Prio == SearchPrio) && (Active < SearchActive))
+                     || ((Prio == SearchPrio) && (Active == SearchActive) && (TimeId <= SearchTimeId)))
+
+                {
+
+
+                    if (!((Prio == SearchPrio) && (Active == SearchActive) && (TestComplete)))
+                    {
+                        SearchLocId = LocId;
+                        SearchPrio = Prio;
+                        SearchActive = Active;
+                        SearchTimeId = TimeId;
+                    }
+                }
+# 664 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c"
+            }
+        }
+    }
+
+    if (SearchLocId != 0xFFFFu)
+    {
+        Dem_EvMemForceClearEventMemoryLocation(SearchLocId, 0x0004u, 2);
+    }
+# 683 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c"
+    else
+    {
+
+    }
+
+
+    return (SearchLocId);
+}
+
+
+static __inline__ uint16_least Dem_EvMemGetEventMemoryDisplacementLocationFIFO(Dem_EventIdType EventId, uint8 EventType, uint16_least MemId)
+{
+    uint16_least LocId;
+    uint16_least SearchLocId;
+    uint32 TimeId;
+    uint32 SearchTimeId;
+
+    ((void)(EventType));
+
+    SearchTimeId = 0xFFFFFFFFuL;
+    SearchLocId = 0xFFFFu;
+
+ for ( Dem_EvMemEventMemoryLocIteratorNew (&LocId, MemId);
+   Dem_EvMemEventMemoryLocIteratorIsValid(&LocId, MemId);
+   Dem_EvMemEventMemoryLocIteratorNext (&LocId, MemId))
+ {
+  if (Dem_EvMemIsStored(Dem_EvMemGetEventMemStatus(LocId)))
+  {
+   if (Dem_EvMemIsDisplaceEventMemoryLocAllowed(EventId, LocId))
+   {
+    TimeId = Dem_EvMemGetEventMemTimeId(LocId);
+    if (TimeId <= SearchTimeId)
+    {
+     SearchLocId = LocId;
+     SearchTimeId = TimeId;
+    }
+   }
+  }
+ }
+
+ if (SearchLocId != 0xFFFFu)
+ {
+  Dem_EvMemForceClearEventMemoryLocation(SearchLocId, 0x0004u, 2);
+ }
+
+    return (SearchLocId);
+}
+
+
+uint16_least Dem_EvMemGetEventMemoryStorageLocation(Dem_EventIdType EventId, uint8 EventType, uint16_least MemId, Dem_boolean_least isDisplacementSupported, uint16_least displacementStrategy)
+{
+
+    uint16_least Status;
+    uint16_least LocId;
+    uint16_least StorageLocId;
+    uint16_least StoragePrio;
+
+
+
+
+
+
+
+    StoragePrio = 0u;
+    StorageLocId = 0xFFFFu;
+    for (Dem_EvMemEventMemoryLocIteratorNew (&LocId, MemId);
+            Dem_EvMemEventMemoryLocIteratorIsValid(&LocId, MemId);
+            Dem_EvMemEventMemoryLocIteratorNext (&LocId, MemId))
+    {
+
+        Status = Dem_EvMemGetEventMemStatus(LocId);
+
+        if (Dem_EvMemIsEmpty(Status))
+        {
+            if (StoragePrio < 2u)
+            {
+                StorageLocId = LocId;
+                StoragePrio = 2u;
+            }
+        }
+        else
+        {
+            if (Dem_EvMemIsEqualEvent(EventId, Dem_EvMemGetEventMemEventId(LocId)))
+            {
+                StorageLocId = LocId;
+                break;
+            }
+
+            if (Dem_EvMemIsDeleted(Status))
+            {
+                if (StoragePrio < 1u)
+                {
+                    StorageLocId = LocId;
+                    StoragePrio = 1u;
+                }
+                else
+                {
+                    if (Dem_LibGetParamBool((0 != 0)))
+                    {
+                        if (StoragePrio == 1u)
+                        {
+                            if (Dem_EvMemGetEventMemTimeId(LocId) < Dem_EvMemGetEventMemTimeId(StorageLocId))
+                            {
+                                StorageLocId = LocId;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+    if (StorageLocId == 0xFFFFu)
+    {
+        Dem_EvMemGenReportEventMemoryOverflowByOrigin(Dem_EvMemGenGetDtcOrginFromMemId(MemId));
+
+        if (isDisplacementSupported)
+        {
+            if (displacementStrategy == 1u)
+            {
+                StorageLocId = Dem_EvMemGetEventMemoryDisplacementLocation(EventId, EventType, MemId);
+
+            }
+            else if (displacementStrategy == 2u)
+            {
+                if (Dem_LibGetParamUI8(1u) == Dem_LibGetParamUI8(2u))
+                {
+                    StorageLocId = Dem_EvMemGetEventMemoryDisplacementLocationFIFO(EventId, EventType, MemId);
+                }
+            }
+            else
+            {
+                ((void)(StorageLocId));
+
+
+
+            }
+        }
+    }
+
+    return(StorageLocId);
+}
+
+
+static void Dem_EvMemUpdateFFDataForConfRec(Dem_EventIdType EventId, uint8 FFRecNum, uint16_least LocId, const uint8* EnvData, Dem_EnvTriggerParamType *TriggerParam, uint16_least* WriteSts)
+{
+    Dem_TriggerType ConfTrigger;
+    boolean ConfUpdate;
+    uint8 Counter;
+    uint8 FFIndex;
+
+    Dem_EnvGetFFRecordTriggerAndUpdate(FFRecNum, &ConfTrigger, &ConfUpdate );
+
+    if ( (Dem_EnvIsTriggerSet(TriggerParam->currentTrigger,ConfTrigger) &&
+        (!Dem_EnvIsTriggerSet(TriggerParam->storedTrigger, ConfTrigger) || ConfUpdate))
+
+        || (Dem_EnvIsTriggerSet(Dem_GetSmallerTrigger(TriggerParam->currentTrigger),ConfTrigger) &&
+                (!Dem_EnvIsTriggerSet(TriggerParam->storedTrigger, ConfTrigger))))
+    {
+        FFIndex = Dem_EnvGetIndexFromFFRecNum(EventId, FFRecNum);
+
+        Dem_EnvCopyRawFF(EventId, Dem_EvMemGetEventMemData(LocId), Dem_EvMemGetEventMemDataSize(), FFIndex, EnvData);
+        *WriteSts = *WriteSts | 0x0002u;
+
+
+        if (!Dem_EnvIsTriggerSet(TriggerParam->storedTrigger, ConfTrigger))
+        {
+            Counter = Dem_EvMemGetEventMemFreezeFrameCounter(LocId);
+            Counter++;
+
+            Dem_EvMemSetEventMemLocFreezeFrameCounter(LocId, Counter);
+
+            *WriteSts = *WriteSts | 0x0001u;
+            Dem_EnvSetTrigger(&TriggerParam->matchingTrigger, ConfTrigger);
+        }
+    }
+}
+
+static void Dem_EvMemUpdateExtendedData(Dem_EventIdType EventId, const uint8 *EnvData, uint16_least LocId, Dem_EnvTriggerParamType *TriggerParam)
+{
+    uint8 EnvDataLocal[(40u + 10u+ 0u)];
+
+    if (Dem_EnvIsAnyTriggerSet(TriggerParam->currentTrigger))
+    {
+        if (Dem_EnvHasExtendedData(EventId))
+        {
+            if (EnvData == ((void *)0))
+            {
+
+                Dem_EnvCaptureED(EventId, EnvDataLocal, sizeof(EnvDataLocal),(0),(0));
+                Dem_EnvCopyRawED(EventId, Dem_EvMemGetEventMemData(LocId), Dem_EvMemGetEventMemDataSize(), EnvDataLocal, TriggerParam);
+            }
+            else
+            {
+                Dem_EnvCopyRawED(EventId, Dem_EvMemGetEventMemData(LocId), Dem_EvMemGetEventMemDataSize(), EnvData, TriggerParam);
+            }
+        }
+    }
+}
+
+static void Dem_EvMemUpdateFreezeFrameData(Dem_EventIdType EventId, const uint8 *EnvData, uint16_least LocId, Dem_EnvTriggerParamType *TriggerParam, uint16_least* WriteSts)
+{
+
+    uint8 Counter;
+    uint8 Threshold;
+    uint8 FFRecNum;
+    uint8 indx;
+
+    if (Dem_EnvHasFreezeFrame(EventId))
+    {
+        if (Dem_LibGetParamUI8(2) == Dem_LibGetParamUI8(1))
+        {
+
+
+            if (Dem_EnvIsTriggerSet(TriggerParam->currentTrigger, 0x01u))
+            {
+                Counter = Dem_EvMemGetEventMemFreezeFrameCounter(LocId);
+                Threshold = Dem_EvtParam_GetMaxNumberFreezeFrameRecords(EventId);
+                if (Counter < Threshold)
+                {
+                    Counter++;
+                    *WriteSts = *WriteSts | 0x0001u;
+                }
+
+                if ((Threshold > 1u) || ((Dem_EvMemGetEventMemFreezeFrameCounter(LocId) == 0u)))
+                {
+                    Dem_EnvCopyRawFF(EventId, Dem_EvMemGetEventMemData(LocId), Dem_EvMemGetEventMemDataSize(), (uint8) (Counter - 1u), EnvData);
+                    *WriteSts = *WriteSts | 0x0002u;
+                }
+
+
+                Dem_EvMemSetEventMemLocFreezeFrameCounter(LocId, Counter);
+
+            }
+        }
+        else
+        {
+            for (indx = 0; indx < Dem_EvtParam_GetMaxNumberFreezeFrameRecords(EventId); indx++)
+            {
+                FFRecNum = Dem_EnvGetFFRecNumFromIndex(EventId, indx);
+                if (Dem_EnvIsFFRecNumValid(EventId, FFRecNum))
+                {
+                    Dem_EvMemUpdateFFDataForConfRec(EventId, FFRecNum, LocId, EnvData, TriggerParam, WriteSts);
+                }
+            }
+        }
+    }
+}
+
+static void Dem_EvMemUpdateEnvData(Dem_EventIdType EventId,const uint8 *EnvData,uint16_least LocId,Dem_TriggerType Trigger,uint16_least *WriteSts, uint8 EnvDataUpdate)
+{
+    Dem_EnvTriggerParamType TriggerParam;
+
+    TriggerParam.currentTrigger = Trigger;
+    TriggerParam.storedTrigger = Dem_EvMemGetEventMemTrigger(LocId);
+    TriggerParam.matchingTrigger = 0x00u;
+
+
+    if ( ((EnvDataUpdate == 0u) || (EnvDataUpdate == 1u))
+            && (Dem_LibGetParamBool((1 != 0))))
+    {
+        Dem_EvMemUpdateExtendedData(EventId, EnvData, LocId, &TriggerParam );
+    }
+
+
+    if ( ((EnvDataUpdate == 0u) || (EnvDataUpdate == 2u))
+            && (Dem_LibGetParamBool((1 != 0))))
+    {
+        Dem_EvMemUpdateFreezeFrameData(EventId, EnvData, LocId, &TriggerParam, WriteSts);
+    }
+
+    if (Dem_EnvIsAnyTriggerSet(TriggerParam.matchingTrigger ))
+    {
+        Dem_EnvSetTrigger(&TriggerParam.storedTrigger,( TriggerParam.matchingTrigger));
+        Dem_EvMemSetEventMemTrigger(LocId,TriggerParam.storedTrigger);
+        *WriteSts = *WriteSts | 0x0002u;
+    }
+}
+
+void Dem_EvMemSetEventFailed(Dem_EventIdType EventId, uint16_least MemId, const uint8 *EnvData)
+{
+    uint16_least LocId;
+    uint16_least StatusOld;
+    uint16_least StatusNew;
+    uint16_least Counter;
+    uint16_least Threshold;
+    uint16_least WriteSts;
+
+    Dem_EventIdType EventIdOld;
+    Dem_EvMemActionType actiontype = 4;
+
+    if(!Dem_GetEvMemLockInternal())
+    {
+
+        do { if (!(Dem_isEventIdValid(EventId))) { do {Dem_EventIdCausingLastDetError = 0; Det_ReportError(54,0,0xB5,0);}while(0); } } while(0);
+        do { if (!(Dem_EvMemIsMemIdValid(MemId))) { do {Dem_EventIdCausingLastDetError = 0; Det_ReportError(54,0,0xB5,2);}while(0); } } while(0);
+
+        if (!Dem_isDtcIdValid (Dem_DtcIdFromEventId (EventId)))
+        {
+            return;
+        }
+
+
+        WriteSts = 0x0000u;
+
+        if (Dem_EvMemIsEventFailedAllowed (EventId, MemId))
+        {
+            LocId = Dem_EvMemGetEventMemoryStorageLocation (EventId, 1u, MemId, Dem_EvMemIsEventMemoryDisplacementSupported (MemId), 1u);
+            if (Dem_EvMemIsEventMemLocIdValid (LocId))
+            {
+
+                if (!Dem_EvMemIsStored (Dem_EvMemGetEventMemStatus (LocId)))
+                {
+                    rba_DiagLib_MemUtils_MemSet((uint8*)(&(Dem_EvMemEventMemory[LocId])),(sint32)(0),(uint32)(sizeof(Dem_EvMemEventMemory[LocId])));
+
+                }
+                else
+                {
+                    Dem_EvMemResetCyclesSinceLastFailed(LocId);
+                    Dem_EvMemResetCyclesSinceLastFailedExcludingTNC(LocId);
+                }
+
+                StatusOld = Dem_EvMemGetEventMemStatus (LocId);
+                StatusNew = StatusOld;
+
+
+                if ((StatusNew & 0x0002u) == 0u)
+                {
+                    Dem_EvMemIncFailedCycles(LocId);
+                }
+
+
+                StatusNew = StatusNew | 0x0001u | 0x0040u | 0x1000u;
+
+
+                if (Dem_LibGetParamBool((1 != 0)))
+                {
+                    StatusNew = StatusNew | 0x0020u;
+                }
+
+
+
+             StatusNew = StatusNew | 0x0004u | 0x0010u | 0x0002u;
+             actiontype = 5;
+
+                if (Dem_EvMemIsEdgeTrigger (StatusOld, StatusNew, 0x0004u))
+                {
+                    rba_DemObdBasic_EvMem_StatusNotificationPending(LocId, EventId);
+                }
+
+
+
+               if (Dem_EvMemIsEdgeTrigger (StatusOld, StatusNew, 0x0002u))
+               {
+
+                   Threshold = Dem_EvtParam_GetFailureConfirmationThreshold(EventId);
+                   Counter = Dem_EvMemGetEventMemFailureCounter (LocId);
+                   if (Dem_EvMemIsEdgeTrigger (StatusOld, StatusNew, 0x0004u))
+                   {
+                       Counter = 0;
+                   }
+
+
+                   rba_DemObdBasic_EvMem_CommonMilDebModifyFailureCounter(LocId, MemId, EventId, &Counter);
+
+
+                   if (Counter < Threshold)
+                   {
+                       Counter++;
+                       if (Counter >= Threshold)
+                       {
+                           StatusNew = StatusNew | 0x0008u | 0x0800u;
+
+                           rba_DemObdBasic_EvMem_StatusNotificationThresholdReached(LocId, EventId);
+
+                       }
+                       Dem_EvMemSetEventMemFailureCounter (LocId, (uint8) Counter);
+                       WriteSts = WriteSts | 0x0001u;
+                   }
+               }
+
+
+                if((StatusNew & 0x0008u) != 0u)
+                {
+                    actiontype = 1;
+
+        if (Dem_EvMemIsEdgeTrigger (StatusOld, StatusNew, 0x0008u))
+        {
+            Dem_EvMemGenReportConfirmedEvent(EventId, MemId);
+
+                        rba_DemObdBasic_EvMem_StatusNotificationConfirmed(LocId, EventId);
+
+        }
+    }
+
+
+                if (Dem_LibGetParamBool((1 != 0)))
+                {
+
+                    if (!Dem_EvMemIsStored (StatusOld))
+                    {
+                        Counter = 1;
+                        Dem_EvMemSetEventMemOccurrenceCounter (LocId, Counter);
+                        WriteSts = WriteSts | 0x0008u;
+                    }
+                    else
+                    {
+                        if (Dem_EvMemIsTriggerOccurrenceCounter (EventId, MemId, StatusOld, StatusNew))
+                        {
+                            Counter = Dem_EvMemGetEventMemOccurrenceCounter (LocId);
+                            if (Counter < 0xFFu)
+                            {
+                                Counter++;
+                                Dem_EvMemSetEventMemOccurrenceCounter (LocId, Counter);
+                                WriteSts = WriteSts | 0x0008u;
+                            }
+                        }
+                    }
+                }
+
+
+                if (Dem_LibGetParamBool((1 != 0)))
+                {
+                    Dem_EvMemSetAgingCounterOnEventFailed (EventId, LocId, &StatusNew, &WriteSts);
+                }
+# 1122 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c"
+                if(Dem_LibGetParamBool((1 != 0)) || Dem_LibGetParamBool((1 != 0)))
+                {
+                    Dem_EvMemUpdateEnvData(EventId,EnvData,LocId,Dem_EvMemGetTriggerOnFailed(StatusOld, StatusNew), &WriteSts, 0u);
+                }
+
+
+
+                if (rba_DemObdBasic_EvMem_IsTriggerObdFreezeFrame(EventId, MemId, StatusOld, StatusNew))
+                {
+                    rba_DemObdBasic_EvMem_CopyFreezeFrame(EventId, Dem_EvMemGetEventMemData (LocId), Dem_EvMemGetEventMemDataSize(), EnvData);
+                    rba_DemObdBasic_FF_SetObdFFAvailable(LocId, (1 != 0));
+                }
+# 1143 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c"
+                EventIdOld = Dem_EvMemGetEventMemEventId(LocId);
+                if (Dem_EvMemIsNvStatusChanged (EventId, StatusOld, StatusNew))
+                {
+                    WriteSts = WriteSts | 0x0001u;
+                }
+
+
+                if (WriteSts != 0x0000u)
+                {
+                    Dem_EvMemSetEventMemEventId (LocId, EventId);
+
+
+
+
+
+
+
+                    Dem_EvMemSetEventMemTimeId (LocId, Dem_EvMemGetNewEventMemoryTimeId (MemId));
+                }
+
+
+    Dem_EvMemSetStatusWithNotifications(LocId,StatusNew,WriteSts,actiontype);
+
+    Dem_EvMemClearOldEventStatusNotification(LocId, EventIdOld, StatusOld);
+
+
+
+                if (Dem_LibGetParamUI8(2u) == Dem_LibGetParamUI8(1u))
+                {
+                    if (Dem_EvtParam_GetIsEventDestMirror(EventId))
+                    {
+                        if (Dem_EvMemIsTriggerMirrorOnFailed (EventId, MemId, StatusOld, StatusNew))
+                        {
+                            Dem_EvMemCopyToMirrorMemory (LocId);
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+static void Dem_EvMemReaderCopiesUpdate(void)
+{
+# 1207 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c"
+}
+
+static uint16_least Dem_EvMemGetEventMemoryOrReaderCopyLocIdOfEvent(Dem_EventIdType EventId, uint16_least MemId, Dem_boolean_least SearchInReaderCopy)
+{
+    uint16_least LocId;
+    uint16_least LocIdIt;
+    uint16_least LocIdOfStoredEvent;
+
+
+    do { if (!(Dem_EvMemIsMemIdValid(MemId))) { do {Dem_EventIdCausingLastDetError = 0; Det_ReportError(54,0,0xB6,0);}while(0); } } while(0);
+
+    LocIdOfStoredEvent = 0xFFFFu;
+    for (Dem_EvMemEventMemoryLocIteratorNew(&LocIdIt, MemId);
+         Dem_EvMemEventMemoryLocIteratorIsValid(&LocIdIt, MemId);
+         Dem_EvMemEventMemoryLocIteratorNext(&LocIdIt, MemId))
+    {
+        if (SearchInReaderCopy)
+        {
+            if (Dem_LibGetParamBool((0 != 0)))
+            {
+                do {} while (0);
+            }
+            LocId = Dem_EvMemLocId2ReaderCopyLocId(LocIdIt);
+        }
+        else
+        {
+            LocId = LocIdIt;
+        }
+
+
+        if (Dem_EvMemIsStored (Dem_EvMemGetEventMemStatus (LocId)))
+        {
+            if (Dem_EvMemIsEqualEvent (EventId, Dem_EvMemGetEventMemEventId (LocId)))
+            {
+                LocIdOfStoredEvent = LocId;
+                break;
+            }
+        }
+    }
+
+    return LocIdOfStoredEvent;
+}
+
+uint16_least Dem_EvMemGetEventMemoryLocIdOfEvent(Dem_EventIdType EventId, uint16_least MemId)
+{
+    return Dem_EvMemGetEventMemoryOrReaderCopyLocIdOfEvent(EventId, MemId, (0 != 0));
+}
+
+Std_ReturnType Dem_EvMemGetReaderCopyOfEvent(
+        Dem_EvMemEventMemoryType* ReaderCopy,
+        Dem_EventIdType EventId,
+        uint16_least MemId
+)
+{
+    uint16_least LocId;
+    Std_ReturnType retval;
+
+    if (ReaderCopy == ((void *)0))
+    {
+        return 0x01u;
+    }
+
+    Dem_EvMemReaderCopiesEnterLock();
+    {
+
+        LocId = Dem_EvMemGetEventMemoryOrReaderCopyLocIdOfEvent(EventId, MemId, (1 != 0));
+        if (Dem_EvMemIsReaderCopyLocIdValid(LocId))
+        {
+
+            *ReaderCopy = Dem_EvMemEventMemory[LocId];
+            retval = 0x00u;
+        }
+        else
+        {
+            retval = 0x01u;
+        }
+    }
+    Dem_EvMemReaderCopiesExitLock();
+
+    return retval;
+}
+
+void Dem_EvMemSetNextReportRelevantForStorageFilteredEventsForEvCombOnStorage(Dem_EventIdType EventId)
+{
+    Dem_EventIdListIterator eventIt;
+    Dem_EventIdType eventId;
+    Dem_DtcIdType dtcId = Dem_DtcIdFromEventId(EventId);
+
+    if (Dem_DtcIsSupported(dtcId))
+    {
+        for (Dem_EventIdListIteratorNewFromDtcId(&eventIt, dtcId);
+                Dem_EventIdListIteratorIsValid(&eventIt);
+                Dem_EventIdListIteratorNext(&eventIt))
+        {
+            eventId = Dem_EventIdListIteratorCurrent(&eventIt);
+
+            if (Dem_EvtIsStorageFiltered(eventId))
+            {
+                Dem_EvtSetNextReportRelevantForMemories(eventId, (1 != 0));
+            }
+        }
+    }
+}
+
+void Dem_EvMemSetEventPassed(Dem_EventIdType EventId, uint16_least MemId, const uint8 *EnvData)
+{
+    uint16_least StatusOld;
+    uint16_least StatusNew;
+    uint16_least LocId;
+    uint16_least WriteSts;
+
+    if(!Dem_GetEvMemLockInternal())
+    {
+        (void)(EnvData);
+
+
+        do { if (!(Dem_isEventIdValid(EventId))) { do {Dem_EventIdCausingLastDetError = 0; Det_ReportError(54,0,0xE5,0);}while(0); } } while(0);
+        do { if (!(Dem_EvMemIsMemIdValid(MemId))) { do {Dem_EventIdCausingLastDetError = 0; Det_ReportError(54,0,0xE5,2);}while(0); } } while(0);
+
+        if (!Dem_isDtcIdValid (Dem_DtcIdFromEventId (EventId)))
+        {
+            return;
+        }
+
+        WriteSts = 0x0000u;
+        LocId = Dem_EvMemGetEventMemoryLocIdOfEvent (EventId, MemId);
+        if (Dem_EvMemIsEventMemLocIdValid (LocId))
+        {
+            if (Dem_EvMemIsEventPassedAllowed (EventId, LocId))
+            {
+
+                StatusOld = Dem_EvMemGetEventMemStatus (LocId);
+                StatusNew = StatusOld;
+
+                if (Dem_EvMemIsTestFailedSLC(StatusOld))
+                {
+
+                    StatusNew = StatusNew & (uint16_least) ~((uint16_least) 0x0001u);
+
+
+
+                    if (((StatusOld & 0x0004u) != 0u) && ((StatusOld & 0x0002u) == 0u))
+                    {
+                            StatusNew = StatusNew & (uint16_least)(~((uint16_least)(0x0010u | 0x0800u)));
+                    }
+
+
+                    if (Dem_LibGetParamBool((1 != 0)))
+                    {
+                        StatusNew = StatusNew | 0x0020u;
+                    }
+
+
+     if (Dem_LibGetParamBool((1 != 0)))
+     {
+
+                        if (Dem_EvtParam_GetAgingAllowed(EventId) && (Dem_EvtParam_GetAgingThreshold(EventId) == 0u))
+         {
+
+             Dem_EvMemForceClearEventMemoryLocation (LocId, 0x0004u, 7);
+             StatusNew = Dem_EvMemGetEventMemStatus (LocId);
+
+
+                            rba_DemObdBasic_EvMem_HandleImmediateAgeing(EventId);
+
+                        }
+                        else
+                        {
+                            Dem_EvMemSetAgingCounterOnEventPassed (EventId, LocId, &StatusNew, &WriteSts);
+                        }
+                    }
+
+
+     if (Dem_EvMemIsNvStatusChanged (EventId, StatusOld, StatusNew))
+     {
+      WriteSts = WriteSts | 0x0001u;
+     }
+
+
+     if (Dem_LibGetParamBool ((1 != 0)) && (Dem_LibGetParamBool((0 != 0))))
+     {
+
+                     Dem_EvMemUpdateEnvData(EventId,EnvData,LocId,Dem_EvMemGetTriggerOnPassed(StatusOld, StatusNew), &WriteSts, 1u);
+     }
+
+
+
+     Dem_EvMemSetStatusWithNotifications(LocId,StatusNew,WriteSts,4);
+    }
+   }
+
+
+
+
+
+
+
+  }
+ }
+}
+
+void Dem_EvMemSetEventUnRobust(Dem_EventIdType EventId, uint16_least MemId, const uint8 *EnvData)
+{
+    uint16_least LocId;
+    uint16_least WriteSts;
+    uint16_least StatusNew;
+    uint16_least StatusOld;
+
+    if (!Dem_GetEvMemLockInternal())
+    {
+
+        do { if (!(Dem_isEventIdValid(EventId))) { do {Dem_EventIdCausingLastDetError = 0; Det_ReportError(54,0,0xD0,0);}while(0); } } while(0);
+        do { if (!(Dem_EvMemIsMemIdValid(MemId))) { do {Dem_EventIdCausingLastDetError = 0; Det_ReportError(54,0,0xD0,1);}while(0); } } while(0);
+
+        if (!Dem_isDtcIdValid(Dem_DtcIdFromEventId(EventId)))
+        {
+            return;
+        }
+
+        WriteSts = 0x0000u;
+
+        if (Dem_EvMemIsEventUnRobustAllowed(EventId, MemId))
+        {
+            LocId = Dem_EvMemGetEventMemoryStorageLocation(EventId, 7u, MemId, (0 != 0),
+                    1u);
+
+            if (Dem_EvMemIsEventMemLocIdValid(LocId))
+            {
+
+                if (!Dem_EvMemIsStored(Dem_EvMemGetEventMemStatus(LocId)))
+                {
+                    rba_DiagLib_MemUtils_MemSet((uint8*)(&(Dem_EvMemEventMemory[LocId])),(sint32)(0),(uint32)(sizeof(Dem_EvMemEventMemory[LocId])));
+
+                }
+
+                StatusOld = Dem_EvMemGetEventMemStatus(LocId);
+                StatusNew = StatusOld;
+
+                if ((Dem_LibGetParamBool((1 != 0)) || Dem_LibGetParamBool((1 != 0)))
+                        && Dem_LibGetParamBool((0 != 0)))
+                {
+                    Dem_EvMemUpdateEnvData(EventId,EnvData,LocId,0x08u, &WriteSts, 0u);
+                }
+# 1458 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c"
+                if (WriteSts != 0x0000u)
+                {
+
+                    if (!Dem_EvMemIsTestFailedSLC(Dem_EvMemGetEventMemStatus(LocId)))
+                    {
+
+                        Dem_EvMemSetEventMemEventId(LocId, EventId);
+
+
+
+
+
+
+
+                        Dem_EvMemSetEventMemTimeId(LocId, Dem_EvMemGetNewEventMemoryTimeId(MemId));
+                    }
+                    StatusNew = StatusNew | 0x1000u;
+
+                    Dem_EvMemSetStatusWithNotifications(LocId, StatusNew, WriteSts, 4);
+                }
+            }
+        }
+    }
+}
+# 1491 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c"
+uint16_least Dem_EvMemGetMirrorMemoryStorageLocation(Dem_EventIdType EventId, uint16_least MemId, Dem_boolean_least isDisplacementSupported, uint16_least displacementStrategy)
+{
+    return Dem_EvMemGetEventMemoryStorageLocation(EventId, 1u, MemId, isDisplacementSupported, displacementStrategy);
+}
+
+
+
+void Dem_EvMemCopyToMirrorMemory(uint16_least LocId)
+{
+
+    uint16_least EventMemStatus;
+    uint16_least MirrorMemLocId;
+    Dem_EventIdType EventId;
+    uint32 TimeId;
+    uint16_least WriteSts;
+
+
+    do { if (!(Dem_EvMemIsMemIdValid((((0u +1u)))))) { do {Dem_EventIdCausingLastDetError = 0; Det_ReportError(54,0,0xBE,0);}while(0); } } while(0);
+
+    if (Dem_EvMemGetEventMemId(LocId) != (((0u +1u))))
+    {
+        EventMemStatus = Dem_EvMemGetEventMemStatus(LocId);
+        if (Dem_EvMemIsStored(EventMemStatus))
+        {
+            EventId = Dem_EvMemGetEventMemEventId(LocId);
+            MirrorMemLocId = Dem_EvMemGetMirrorMemoryStorageLocation(EventId, (((0u +1u))), (1 != 0), 1u);
+            if (Dem_EvMemIsEventMemLocIdValid(MirrorMemLocId))
+            {
+
+                TimeId = Dem_EvMemGetNewEventMemoryTimeId((((0u +1u))));
+
+                Dem_EvMemEventMemory[MirrorMemLocId] = Dem_EvMemEventMemory[LocId];
+
+                if (Dem_LibGetParamBool((1 != 0)) && Dem_LibGetParamBool((0 != 0)))
+                {
+                    WriteSts = 0x0000u;
+                    Dem_EvMemUpdateEnvData(Dem_EvMemGetEventMemEventId(MirrorMemLocId),((void *)0),MirrorMemLocId,0x20u, &WriteSts, 1u);
+                }
+
+
+                Dem_EvMemSetEventMemTimeId (MirrorMemLocId, TimeId);
+
+                if (Dem_LibGetParamBool((0 != 0)))
+                {
+                    Dem_EvMemSetEventMemDtcStatus(MirrorMemLocId, Dem_DtcStatusByteRetrieve(Dem_DtcIdFromEventId(EventId)));
+                }
+
+                Dem_EvMemEventMemoryWriteNotification(MirrorMemLocId, 0x0001u);
+            }
+        }
+    }
+}
+# 1551 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c"
+static void Dem_EvMemLocationStartFailureCycle(Dem_OperationCycleList operationCycleList, uint16_least LocId)
+{
+    uint16_least StatusOld;
+    uint16_least StatusNew;
+    Dem_EventIdType EventId;
+    uint16_least WriteSts;
+    Dem_EvMemActionType actionType = 6;
+
+    WriteSts = 0x0000u;
+    StatusOld = Dem_EvMemGetEventMemStatus(LocId);
+    if (Dem_EvMemIsStored(StatusOld))
+    {
+        EventId = Dem_EvMemGetEventMemEventId(LocId);
+        if (Dem_isEventAffectedByFailureCycleList(EventId, operationCycleList))
+        {
+            StatusNew = StatusOld;
+
+            Dem_EvtSetNextReportRelevantForMemories(Dem_EvMemGetEventMemEventId (LocId), (1 != 0));
+
+
+            StatusNew = StatusNew & (uint16_least) (~((uint16_least) 0x0004u));
+            if ((StatusOld & 0x0010u) != 0u)
+            {
+                StatusNew = StatusNew | 0x0004u;
+                actionType = 4;
+            }
+
+
+            StatusNew = StatusNew & (uint16_least) (~((uint16_least) 0x0002u));
+
+
+            if (
+                ((StatusNew & (0x0004u | 0x0008u | 0x0040u)) == 0x0040u)
+
+
+
+            )
+            {
+                Dem_EvMemForceClearEventMemoryLocation(LocId, 0x0004u, actionType);
+                return;
+            }
+
+            if (Dem_LibGetParamBool((1 != 0)))
+            {
+                StatusNew &= (uint16_least) (~((uint16_least) 0x0020u));
+            }
+
+            if (Dem_EvMemIsNvStatusChanged(EventId, StatusOld, StatusNew))
+            {
+                WriteSts = WriteSts | 0x0001u;
+            }
+
+
+
+            if(Dem_EvMemEventMemory[LocId].ObdMilResetThisCycle == (1 != 0))
+            {
+                StatusNew = StatusNew & (uint16_least)(~(uint16_least)0x0100u);
+            }
+
+
+            Dem_EvMemSetStatusWithNotifications(LocId, StatusNew, WriteSts, actionType);
+        }
+    }
+}
+
+
+static void Dem_EvMemLocationStartAgingCycle(Dem_OperationCycleList operationCycleList, uint16_least LocId)
+{
+
+    uint16_least StatusOld;
+    uint16_least StatusNew;
+    Dem_EventIdType EventId;
+    uint16_least WriteSts;
+    Dem_boolean_least IsCleared;
+    Dem_EvMemActionType actiontype;
+
+    if (Dem_LibGetParamBool ((1 != 0)))
+    {
+        WriteSts = 0x0000u;
+        IsCleared = (0 != 0);
+        StatusOld = Dem_EvMemGetEventMemStatus (LocId);
+        actiontype = 4;
+        if (Dem_EvMemIsStored (StatusOld))
+        {
+            EventId = Dem_EvMemGetEventMemEventId (LocId);
+
+            if (Dem_isEventAffectedByAgingCycleList (EventId, operationCycleList))
+            {
+
+                Dem_EvtSetNextReportRelevantForMemories(Dem_EvMemGetEventMemEventId (LocId), (1 != 0));
+
+
+                if (rba_DemObdBasic_EvMem_IsAgingOfLocationAllowed(LocId))
+
+                {
+
+
+                    if (Dem_EvMemIsAgingCalculationAllowed(StatusOld) &&
+                            ( ! Dem_LibGetParamBool((0 != 0)) || Dem_EvtParam_GetAgingAllowed(EventId) ) )
+                    {
+                        StatusNew = StatusOld;
+
+                        Dem_EvMemSetAgingCounterOnAgingCycle (EventId, LocId, &StatusNew, &WriteSts);
+
+                        if (Dem_EvMemIsAged (EventId, LocId, StatusNew))
+                        {
+                            if (Dem_EvtParam_GetAgingAllowed (EventId))
+                            {
+                                Dem_EvMemForceClearEventMemoryLocation (LocId, 0x0004u, 3);
+                                IsCleared = (1 != 0);
+                            }
+                        }
+
+
+                        if (!IsCleared)
+                        {
+# 1679 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c"
+                            if (Dem_EvMemIsNvStatusChanged (EventId, StatusOld, StatusNew))
+                            {
+                                WriteSts = WriteSts | 0x0001u;
+                            }
+
+                            Dem_EvMemSetStatusWithNotifications(LocId,StatusNew,WriteSts,actiontype);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+static void Dem_EvMemLocationStartOperationCycle (Dem_OperationCycleList operationCycleList, uint16_least LocId)
+{
+    Dem_EventIdType EventId;
+    uint16_least WriteSts = 0x0000u;
+    uint16_least Status;
+
+    Status = Dem_EvMemGetEventMemStatus (LocId);
+
+    if (Dem_EvMemIsStored (Status))
+    {
+        EventId = Dem_EvMemGetEventMemEventId (LocId);
+        if (Dem_isEventAffectedByOperationCycleList (EventId, operationCycleList))
+        {
+            if((Status & 0x0040u) == 0x0040u)
+            {
+                if ( Dem_LibGetParamBool((0 != 0)) )
+                {
+                    Dem_EvMemIncCyclesSinceFirstFailed(LocId);
+                    WriteSts = WriteSts | 0x0001u;
+                }
+                if ( Dem_LibGetParamBool((0 != 0)) )
+                {
+                    Dem_EvMemIncCyclesSinceLastFailed(LocId);
+                    WriteSts = WriteSts | 0x0001u;
+                }
+                if ( Dem_LibGetParamBool((0 != 0)) && Dem_EvtSt_GetTestCompleteTOC(EventId)
+
+
+
+                    )
+                {
+                    Dem_EvMemIncCyclesSinceLastFailedExcludingTNC(LocId);
+                    WriteSts = WriteSts | 0x0001u;
+                }
+            }
+            if ( Dem_LibGetParamBool((0 != 0)) )
+            {
+                Dem_EvMemSetMaxFdcDuringCurrentCycle(LocId, 0);
+                WriteSts = WriteSts | 0x0001u;
+            }
+
+
+
+
+
+        }
+    }
+
+    if (WriteSts != 0x0000u)
+    {
+
+        Dem_EvMemEventMemoryWriteNotification (LocId, WriteSts);
+    }
+}
+
+void Dem_EvMemStartOperationCycle(Dem_OperationCycleList operationCycleList, uint16_least MemId)
+{
+    uint16_least LocId;
+    if(!Dem_GetEvMemLockInternal())
+    {
+
+        do { if (!(Dem_EvMemIsMemIdValid(MemId))) { do {Dem_EventIdCausingLastDetError = 0; Det_ReportError(54,0,0xF2,0);}while(0); } } while(0);
+
+        for (Dem_EvMemEventMemoryLocIteratorNew (&LocId, MemId);
+                Dem_EvMemEventMemoryLocIteratorIsValid(&LocId, MemId);
+                Dem_EvMemEventMemoryLocIteratorNext (&LocId, MemId))
+        {
+            Dem_EvMemLocationStartFailureCycle (operationCycleList, LocId);
+            Dem_EvMemLocationStartAgingCycle (operationCycleList, LocId);
+            Dem_EvMemLocationStartOperationCycle (operationCycleList, LocId);
+        }
+    }
+}
+
+
+uint16_least Dem_EvMemGetEventMemoryStatusOfDtc(Dem_DtcIdType DtcId, uint16_least MemId)
+{
+    uint16_least LocId;
+    uint16_least Status;
+
+
+    do { if (!(Dem_EvMemIsMemIdValid(MemId))) { do {Dem_EventIdCausingLastDetError = 0; Det_ReportError(54,0,0xF5,0);}while(0); } } while(0);
+
+    Status = 0;
+    for (Dem_EvMemEventMemoryLocIteratorNew (&LocId, MemId);
+            Dem_EvMemEventMemoryLocIteratorIsValid(&LocId, MemId);
+            Dem_EvMemEventMemoryLocIteratorNext (&LocId, MemId))
+    {
+        if (Dem_EvMemIsStored(Dem_EvMemGetEventMemStatus(LocId)))
+        {
+            if (DtcId == Dem_DtcIdFromEventId(Dem_EvMemGetEventMemEventId(LocId)))
+            {
+                Status = Status | Dem_EvMemGetEventMemStatus(LocId);
+                if (Dem_LibGetParamUI8(3u) != Dem_LibGetParamUI8(3u))
+                {
+                    break;
+                }
+            }
+        }
+    }
+
+    return Status & (0x0004u | 0x0008u);
+}
+
+
+uint16_least Dem_EvMemGetEventMemoryStatusOfEvent(Dem_EventIdType EventId, uint16_least MemId)
+{
+    uint16_least LocId;
+    uint16_least Status;
+
+
+    do { if (!(Dem_EvMemIsMemIdValid(MemId))) { do {Dem_EventIdCausingLastDetError = 0; Det_ReportError(54,0,0xC1,0);}while(0); } } while(0);
+
+    LocId = Dem_EvMemGetEventMemoryLocIdOfEvent(EventId, MemId);
+    if (Dem_EvMemIsEventMemLocIdValid(LocId))
+    {
+        Status = Dem_EvMemGetEventMemStatus(LocId) & (0x0004u | 0x0008u);
+    }
+    else
+    {
+        Status = 0;
+    }
+
+    return Status;
+}
+
+static uint16_least Dem_EvMemGetPrioOfLocation(uint16_least LocId)
+{
+    uint16_least Status;
+
+    Status = Dem_EvMemGetEventMemStatus(LocId);
+    if ((Status & 0x0008u) != 0u)
+    {
+        return 2;
+    }
+    if ((Status & 0x0040u) != 0u)
+    {
+        return 1;
+    }
+
+    return 0;
+}
+
+
+
+uint16_least Dem_EvMemGetEventMemoryOrReaderCopyLocIdOfDtcWithVisibility(Dem_DtcIdType DtcId, uint16_least MemId, Dem_boolean_least ShadowEntriesVisible, Dem_boolean_least SearchInReaderCopy)
+{
+    uint32 TimeId;
+    uint32 SearchTimeId;
+    uint16_least LocId, LocIdIt;
+    uint16_least SearchLocId;
+    uint16_least Prio;
+    uint16_least SearchPrio;
+
+
+    do { if (!(Dem_EvMemIsMemIdValid(MemId))) { do {Dem_EventIdCausingLastDetError = 0; Det_ReportError(54,0,0xF5,0);}while(0); } } while(0);
+    do { if (!(Dem_isDtcIdValid(DtcId))) { do {Dem_EventIdCausingLastDetError = 0; Det_ReportError(54,0,0xF5,1);}while(0); } } while(0);
+
+    SearchPrio = 0;
+    SearchLocId = 0xFFFFu;
+
+    SearchTimeId = 0xFFFFFFFFuL;
+    if (Dem_LibGetParamUI8(1u) == Dem_LibGetParamUI8(1u))
+    {
+        SearchTimeId = 0;
+    }
+
+    for (Dem_EvMemEventMemoryLocIteratorNew (&LocIdIt, MemId);
+            Dem_EvMemEventMemoryLocIteratorIsValid(&LocIdIt, MemId);
+            Dem_EvMemEventMemoryLocIteratorNext (&LocIdIt, MemId))
+    {
+        if (SearchInReaderCopy)
+        {
+            if (Dem_LibGetParamBool((0 != 0)))
+            {
+                do {} while (0);
+            }
+            LocId = Dem_EvMemLocId2ReaderCopyLocId(LocIdIt);
+        }
+        else
+        {
+            LocId = LocIdIt;
+        }
+
+        if ( Dem_EvMemIsVisible(Dem_EvMemGetEventMemStatus(LocId), ShadowEntriesVisible))
+        {
+            if (DtcId == Dem_DtcIdFromEventId(Dem_EvMemGetEventMemEventId(LocId)))
+            {
+                Prio = Dem_EvMemGetPrioOfLocation(LocId);
+                TimeId = Dem_EvMemGetEventMemTimeId(LocId);
+
+                if ( (Prio > SearchPrio) || ( (Prio == SearchPrio) &&
+                   ( ((TimeId >= SearchTimeId) && (Dem_LibGetParamUI8(1u) == Dem_LibGetParamUI8(1u))) ||
+                     ((TimeId <= SearchTimeId) && (Dem_LibGetParamUI8(1u) == Dem_LibGetParamUI8(2u))) ) ) )
+                {
+                    SearchLocId = LocId;
+                    SearchTimeId = TimeId;
+                    SearchPrio = Prio;
+                    if (Dem_LibGetParamUI8(3u) != Dem_LibGetParamUI8(3u))
+                    {
+                        break;
+                    }
+                }
+            }
+        }
+    }
+    return(SearchLocId);
+}
+# 1990 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c"
+Dem_NvmBlockIdType Dem_EvMemGetNvmIdFromLocId(uint16_least LocId)
+{
+    Dem_NvmBlockIdType returnValue = 0;
+
+    if(Dem_EvMemIsEventMemLocIdValid(LocId))
+    {
+        returnValue = Dem_EvMemNvmId[LocId];
+    }
+    else
+    {
+        do {Dem_EventIdCausingLastDetError = 0; Det_ReportError(54,0,0xF3,0);}while(0);
+    }
+
+    return returnValue;
+}
+
+static void Dem_EvMemNvMReadEventMemoryInit(uint16_least LocId)
+{
+    uint16_least Status;
+    Dem_NvmResultType NvmResult;
+    Dem_EventIdType EventId;
+
+
+    do { if (!(Dem_EvMemIsEventMemLocIdValid(LocId))) { do {Dem_EventIdCausingLastDetError = 0; Det_ReportError(54,0,0xBC,0);}while(0); } } while(0);
+
+
+    NvmResult = Dem_NvmGetStatus (Dem_EvMemGetNvmIdFromLocId (LocId));
+
+    if (NvmResult == (5U))
+    {
+        rba_DiagLib_MemUtils_MemSet((uint8*)(&(Dem_EvMemEventMemory[LocId])),(sint32)(0),(uint32)(sizeof(Dem_EvMemEventMemory[LocId])));
+    }
+
+    if (NvmResult == (0U))
+    {
+        Status = Dem_EvMemGetEventMemStatus (LocId);
+
+
+
+        if ((Status & (0x1000u | 0x0080u)) == (0x1000u | 0x0080u))
+        {
+            NvmResult = (1U);
+        }
+        else
+        {
+            if (!Dem_EvMemIsEmpty (Status))
+            {
+                EventId = Dem_EvMemGetEventMemEventId (LocId);
+
+                if (!Dem_isEventIdValid (EventId))
+                {
+                    NvmResult = (1U);
+                }
+
+                else
+                {
+                    if (!Dem_isDtcIdValid (Dem_DtcIdFromEventId (EventId)))
+                    {
+                        NvmResult = (1U);
+                    }
+                }
+            }
+        }
+    }
+
+
+    if ((NvmResult != (0U)) && (NvmResult != (5U)))
+    {
+        rba_DiagLib_MemUtils_MemSet((uint8*)(&(Dem_EvMemEventMemory[LocId])),(sint32)(0),(uint32)(sizeof(Dem_EvMemEventMemory[LocId])));
+
+        Dem_EvMemEventMemoryWriteNotification (LocId, 0x0004u);
+    }
+
+
+    Dem_EvMemSetEventMemStatus(LocId, Dem_EvMemGetEventMemStatus(LocId) & (~0u));
+}
+
+void Dem_EvMem_ResetEvent_ForOBDConsistency(uint16_least EvMemLocId)
+{
+    Dem_EvMemActionType actiontype = 4;
+    uint16_least WriteSts = 0x0000u | 0x0001u;
+    uint16_least Status = Dem_EvMemGetEventMemStatus (EvMemLocId);
+
+    Dem_EventIdType EventId = Dem_EvMemGetEventMemEventId(EvMemLocId);
+
+    Dem_EvtSt_HandleClear_ClearTestInformation(EventId);
+
+    Status = Status & (uint16_least)(~((uint16_least)0x0020u));
+    Status = Status & (uint16_least)(~((uint16_least)0x0200u));
+
+    if ( ! Dem_LibGetParamBool((0 != 0)) || Dem_EvtParam_GetAgingAllowed(EventId) )
+    {
+        Status = Status & (uint16_least)(~((uint16_least)0x0400u));
+
+        Dem_EvMemSetEventMemAgingCounter(EvMemLocId,0);
+
+
+
+    }
+
+    Dem_EvMemSetEventMemFailureCounter (EvMemLocId, Dem_EvtParam_GetFailureConfirmationThreshold(EventId));
+
+    Dem_EvMemSetStatusWithNotifications(EvMemLocId, Status, WriteSts, actiontype);
+}
+
+
+
+
+
+void Dem_EvMemInit(void)
+{
+
+    uint16_least Status;
+    uint16_least LocId;
+
+    Dem_EventIdIterator eventIt;
+
+    for (Dem_EventIdIteratorNew (&eventIt);
+            Dem_EventIdIteratorIsValid (&eventIt);
+            Dem_EventIdIteratorNext (&eventIt))
+    {
+        Dem_EvtSt_SetPendingDTC(Dem_EventIdIteratorCurrent(&eventIt), (0 != 0));
+
+        if (Dem_LibGetParamBool ((1 != 0)))
+        {
+            Dem_EvtSt_SetConfirmedDTC(Dem_EventIdIteratorCurrent(&eventIt), (0 != 0));
+
+
+
+
+
+
+        }
+    }
+
+   for (Dem_EvMemEventMemoryAllLocIteratorNew (&LocId);
+        Dem_EvMemEventMemoryAllLocIteratorIsValid(&LocId);
+        Dem_EvMemEventMemoryAllLocIteratorNext (&LocId))
+   {
+       Dem_EvMemNvMReadEventMemoryInit (LocId);
+       Status = Dem_EvMemGetEventMemStatus (LocId);
+       if (Dem_EvMemIsStored (Status))
+       {
+           Status = Status & (~Dem_EvMemGetRamStsMask(Dem_EvMemGetEventMemEventId(LocId)));
+
+           Dem_EvMemSetStatusWithNotifications(LocId,Status,0x0000u,4);
+
+
+
+           Dem_StatusByteConsistencyCheck(LocId, Status);
+       }
+   }
+
+   Dem_EvMemGenInitEventMemoryGen();
+
+
+   Dem_ConsistencyCheckForDTC();
+
+
+
+
+
+
+   Dem_EvMemReaderCopiesUpdate();
+}
+
+
+void Dem_EvMemInitCausality(void)
+{
+    uint16_least Status;
+    uint16_least LocId;
+
+
+    do { Os_SuspendAllInterrupts(); } while (0);
+
+    for (Dem_EvMemEventMemoryAllLocIteratorNew (&LocId);
+            Dem_EvMemEventMemoryAllLocIteratorIsValid(&LocId);
+            Dem_EvMemEventMemoryAllLocIteratorNext (&LocId))
+    {
+        if (!Dem_EvMemIsOriginMirror(LocId))
+        {
+            Status = Dem_EvMemGetEventMemStatus (LocId);
+            if (Dem_EvMemIsStored (Status) && !Dem_EvMemIsDeleted(Status) && Dem_EvMemIsTestFailedSLC(Status))
+            {
+                Dem_EventIdType evtId = Dem_EvMemGetEventMemEventId (LocId);
+                if (Dem_isEventIdValid(evtId))
+                {
+                    if (Dem_EvtSt_GetTestFailed(evtId)){
+                        Dem_EvtSetCausal(evtId, (1 != 0));
+                    }
+                }
+            }
+        }
+    }
+
+    do { Os_ResumeAllInterrupts(); } while (0);
+}
+
+void Dem_EvMemMainFunction(void)
+{
+    Dem_EvMemProcessPassedEvents();
+    Dem_EvMemFdcUpdate();
+
+
+
+
+
+    Dem_EvMemReaderCopiesUpdate();
+}
+
+
+
+
+
+Std_ReturnType Dem_LockEventMemory (boolean Lock)
+{
+    Dem_EvMemIsLocked = Lock;
+    return 0x00u;
+}
+
+boolean Dem_GetEvMemLock(void)
+{
+    return Dem_GetEvMemLockInternal();
+}
+# 2269 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c"
+# 1 ".\\output\\inc/Dem_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 1
+# 105 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h"
+# 1 ".\\output\\inc/Bsw_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Memmap\\Bsw_MemMap.h" 1
+# 2 ".\\output\\inc/Bsw_MemMap.h" 2
+# 106 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_Cfg_MemMap.h" 2
+# 14 ".\\output\\inc/..\\..\\bsw\\Dem\\integration\\Dem_MemMap.h" 2
+# 2 ".\\output\\inc/Dem_MemMap.h" 2
+# 2270 "bsw\\Dem\\src\\evmem\\Dem_EvMem.c" 2

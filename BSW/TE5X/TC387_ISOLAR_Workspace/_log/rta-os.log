@@ -1,0 +1,51 @@
+********************************************************************************
+Build Execution started
+********************************************************************************
+Tool Version : ISOLAR-A/B 9.2.1 
+Tool Build Id :20220317_1800
+Date : Wed Jun 26 13:26:50 CST 2024
+Project : INVT_TC387_HighTec_AR422_SA_BSW_0222
+********************************************************************************
+
+********************************************************************************
+Project clean execution has started at 13:26:50:210 hh:mm:ss:ms 
+********************************************************************************
+C:\Users\Administrator\Desktop\ETAS_OS\TC387_ISOLAR_Workspace\src\os directory cleaned
+Clean action: RTA_OS 
+********************************************************************************
+Project clean execution has been completed
+Time taken to run Project Clean :: 00:00:00:021 hh:mm:ss:ms 
+********************************************************************************
+********************************************************************************
+Main build execution has started at 13:26:57:224 hh:mm:ss:ms 
+********************************************************************************
+Execute action: RTA_OS 
+********************************************************************************
+RTA-OS Code Generator 
+Version 6.2.0.32429, Copyright c ETAS 2021
+Warning: The AR-PACKAGE being imported from file 'C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/ecu_config/os/internal/Os_EcucValues.arxml' has a different name to that already in the system. Expected 'ETAS_Project'.
+ (Location = C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/ecu_config/os/internal/Os_EcucValues.arxml)
+Warning: No ECU information found when reading input file 'C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/ecu_config/rte/internal/Rte_EcucValues.arxml'.
+Warning: The AR-PACKAGE being imported from file 'C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/src/rte/iocNeeds.arxml' has a different name to that already in the system. Expected 'ETAS_Project'.
+ (Location = C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/src/rte/iocNeeds.arxml)
+Warning: The AR-PACKAGE being imported from file 'C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/src/rte/osNeeds.arxml' has a different name to that already in the system. Expected 'ETAS_Project'.
+ (Location = C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/src/rte/osNeeds.arxml)
+Selected target TriCoreHighTec[TC38x] V5.0.27.1533
+.............................................................................................................
+Information: ScheduleTable Rte_ScheduleTable has 100 expiry points.
+Warning: Full-stack AUTOSAR configuration detected. Task terminations will be prevented. (See OS option 'Allow forced TASK terminations'.)
+Information: Allocating SRC_GPSR00 as cross-core interrupt for core 0
+Information: Allocating SRC_GPSR01 as cross-core interrupt for core 1
+Information: Allocating SRC_GPSR02 as cross-core interrupt for core 2
+Information: Allocating SRC_GPSR03 as cross-core interrupt for core 3
+Information: Updated 'RTAOS.a'
+Errors: 0, Warnings: 5.
+Command: C:\ETAS\RTA-CAR_9.2.1\RTA-OS_6.2.0/bin/rtaosgen.exe  --ar_version:4.4.0 --output:"C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/src/os" --include:"C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/src/bsw/" --include:"C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/src/rte" --include:"C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/ecu_config/os" --include:"C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/ecu_config/rte" --include:"C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/src/ASW" --include:"C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/src/Integration" --include:"C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/src/Integration/TC38x" --include:"C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/src/Integration/ecu" --include:"C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/src/Integration/mcal" --include:"C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/src/Integration/os" --include:"C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/src/Integration/rte" --include:"C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/src/bsw/ComStack" --include:"C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/src/bsw/ComStack/api" --include:"C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/src/bsw/EcuM" --include:"C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/src/bsw/integration" --include:"C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/src/bsw/integration/Memmap" --include:"C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/src/bsw/integration/SchM" --include:"C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/src/bsw/integration/rba_BswSrv"   "C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/ecu_config/bsw/BSW_Manual_Config/EcuC_Hardware_Partition_EcucValues.arxml"  "C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/ecu_config/os/internal/Os_EcucValues.arxml"  "C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/ecu_config/rte/internal/Rte_EcucValues.arxml"  "C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/src/rte/iocNeeds.arxml"  "C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/src/rte/osNeeds.arxml"  
+
+Execution of action RTA_OS successfully completed
+********************************************************************************
+
+Build Summary 
+********************************************************************************
+- RTA_OS --> Success (Executed for 00:00:57:599 hh:mm:ss:ms)
+Time taken for the complete build: 00:01:03:313

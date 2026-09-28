@@ -1,0 +1,5 @@
+/atend:quit
+database /folder=. /version="VERSION ORIGINALE"
+import /file=.\INITIAL_Calib.rp2 /dest:"INITIAL_Calib"
+database /folder=. /version="VERSION ORIGINALE"
+import /file=.\INITIAL_Vehicle.rp2 /dest:"INITIAL_Vehicle"

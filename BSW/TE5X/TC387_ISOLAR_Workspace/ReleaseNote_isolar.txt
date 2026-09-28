@@ -1,0 +1,145 @@
+V6.8  2024-02-23  18:58    LZJ
+   跟800V同步得到，主要同步了DEM部分。
+
+V6.7  2024-02-21  9:18     LZJ
+   将src解决编译警告的手写部分代码同步到ISOLAR中，以减少同步区别。
+
+V6.6  2024-02-06  10:02    LZJ
+   将Core2Bsw5ms重新修改为Core2Asw5ms，因为ASW层配的任务实际上还是运行在ASW，只是修改名字没有用。
+
+V6.5  2024-02-05  13:40    LZJ
+   将BswM模块Rule的Properties进行修改，使生成的代码一致；将CPT_CDD_CORE2的taskref从Core2_BSW_5ms修改为10ms，模块的timingevent为10ms，之前放错了任务；删除RE_ASW_WDG_Deadline，包括timingevent、runnable。
+
+V6.4  2024-02-02  13：16    LZJ
+   删除COM在rte、ASW处的残留；ASW文件夹由src的ASW同步过来，以保持一致。
+
+V6.3  2024-01-19  9:10     LZJ
+   打开了Rx2的Callout，Rx1的Callout函数名字从Rx修改为Rx1。
+
+V6.2  2024-01-18  15:14    LZJ
+   打开了Tx2~Tx6的Callout，Tx1的Callout函数名字从Tx修改为Tx1。
+
+V6.1  2024-01-16  11:21    LZJ
+   解决了报错，现BSW RTE OS编译通过，等待测试。
+
+V6.0b 2024-01-15  18:33    LZJ
+   未成品，修改了OS和RTE想要修改Core2 ASW 10ms的任务为Core2 BSW 5ms的，目前OS编译报错，待解决。
+
+V6.0  2024-01-06  18:31    ZYX/LRY
+   修改了一些DSM、MAIN相关的东西，同时修改了OS使preboot闪灯时间为2s。
+
+V5.0  2023-12-26  18:55    LZJ
+   将UDS诊断ID修改为HPT150的；将CAN控制器NODE_1即内部CAN的波特率从500改为1000，不会影响实际代码，是为了跟实际生效的EB对应上。
+
+V4.9  2023-12-22  8:50     LZJ
+   将Tx的ID改过去。
+
+V4.8  2023-12-18  17:22    LRY
+   刘工给的三件套工程，改动未知。由V4.5b得到，期间的改动未同步。
+
+V4.7  2023-12-6   16:34    LZJ
+   将所有不用的Tx扩展帧修改为从5亿两千万01开始排序。
+
+V4.6  2023-12-5   16:34    LRY
+   应该是没有改动。
+
+V4.5b 2023-11-29  11:13    LZJ
+   ecuc模块删除了之前岚图导入COM模块的报文命名Ref。
+
+V4.5  2023-11-28  19:53    LZJ
+   删除了特殊报文NODE_1_Rx的C、D、E、F、H，并将G改为C，删除了NODE_1_Tx的F、G、H、I、M，并将J改为F、K改为G、L改为H，这些邮箱后续的一系列连接也已删除；删除了COM模块多余的GCU分组。
+
+V4.4  2023-11-25  18:04    LZJ
+   COM模块将RxTx的TimeBase修改为5ms，原先10ms。
+
+V4.3  2023-11-24  10:19    LRY
+   有一些其它模块的改动。
+
+V4.2b 2023-11-22  17:35    LZJ
+   PduR模块将Dest和Src的命名修改为Rx1234Tx1234，不再保留岚图的报文命名。
+
+V4.2  2023-11-18  13:18    LZJ
+   将特殊报文的邮箱命名规则修改为ABCD、将应用报文的命名从邮箱0开始排序；将多余的Tx报文也配置为扩展帧的形式，并且ID也是从5亿开始算。
+
+V4.1  2023-11-09  11:07    LRY
+   isolar处刘工似乎未作改动。
+
+V4.0  2023-11-03  14:36    LZJ
+   根据东风项目把Rx3~Rx27配置成了扩展帧，修改can+canif，eb那边同步修改。
+
+V3.9  2023-10-30  9:42     LZJ
+   V3.8版本的isolar生成的rte层缺少Rx12、16、22的超时函数定义，编译报错，查看过后发现这3个在原先岚图的报文分别是EOL1、EOL2和GCU_Cal_Rx，它们的CANID分别为1363（0x553）、1364（0x554）、1427（0x593），此3个同时在isolar报错
+却能成功生成bsw和rte。
+   原因是在原先岚图的这3个报文并没有配置超时函数，所以现在只是在com那边配超时的话，走过rte层后去调用并调不到这个函数，因为在isolar rte那边并没有配这3个报文的component、mapping等等东西。
+   因此如果非要让这3个报文走rte层配上超时的话，需要做完以上工作，但项目时间较紧，rte学习成本高。目前是将COM处所有信号的ComNotification全部删除掉。同时将Rx和Tx的callout各自只保留一个，做在了Rx1和Tx1处。
+
+V3.8  2023-10-27  18:43    LZJ
+   将所有Rx报文配置完，那么目前所拥有邮箱的所有报文就已配置完，但似乎还有些特殊的报文，之后继续清除掉。所有报文都加了超时回调和Callout，所有信号都加了超时。
+
+V3.7c 2023-10-27  11:18    LZJ
+   将多余的Tx报文全部规范为Tx数字的形式，并删除之前的测试报文TEST_receive。之后需要将多余的Rx报文全部规范。
+
+V3.7b 2023-10-26  17:07    LZJ
+   将COM、PDUR、ECUC里的Tx报文MCUF_CAL_Tx1234也挪到了最前面。但此版本生成的src文件夹里的代码并没有改变，因此未同步至src。
+
+V3.7  2023-10-26  16:41    LZJ
+   Tx不能动的邮箱已经挪到最前面，之后再开始排Tx123。并且此版本修改了之前漏改的Tx4为DIRECT的错误。
+
+V3.6b 2023-10-26  14:36    LZJ
+   Canif处将attributes修改为Can_17_McmCanConf_CanHardwareObject，这样跟eb命名相同，就可以省去两次宏定义了。
+
+V3.6  2023-10-26  9：01     LZJ
+   从结点0发送邮箱3开始，一路修改为TX123456的报文形式，并且修改ID为东风项目对应的报文ID。eb那边不需要进行更改，因为发送报文没有掩码。并且在COM模块将TX123456的ComFirstTimeout、ComTimeout参数删除。（Tx2原先就没有）（此参数
+无用了，于是把全部发送的这2个参数都删除）。进Com→Pdus→点击某个报文看详细配置→一路把文件夹展开→ComTxModeMode要改成DIRECT，此参数决定报文收发形式，改成这个因此为事件型。True和False判断的都改。此版本将所有报文都修改完毕。
+
+V3.5  2023-10-25  14：24    LZJ
+   RxMailBox6里的PDCM1报文修改为Rx2，同时eb那边也修改邮箱掩码。
+
+V3.1  2023-10-24  10:04    LZJ
+   将RxMailBox5里的PDCM22报文修改为Rx1，之后一连贯的Can里的canid、canif、com、pdur、ecuc等均进行修改，超时和回调函数也已重命名。生成BSW和RTE后同步至SRC。
+
+V3.0  2023-10-18  14:20    LZJ
+   增加1个Rx邮箱MailBox31,canif、com、pdu、ecuc处也进行相应增加并编译通过。原本也增加了1个Tx邮箱并编译通过，但修改EB时发现Rx邮箱最多为64个、Tx邮箱最多为32个（目前已32个），因此仅保留新增的Rx邮箱。
+Can_17_McmCan_PBcfg.c第880行开始说明邮箱配置上限。EB处同步进行修改，并一起同步至src中进行测试。
+
+V2.3  2023-10-12  11:06    LZJ
+   COM处将所有发送信号放入MCU_F分组，同时在两个分组里的EOL345也删掉其GCU分组；删除发送报文的Callout，其命名为E2E_Protect_Tx。
+
+V2.2c 2023-10-11  17:29    LZJ
+   在AR Explore处将frames的startbit也修改为0，之前V2.2版本此处未进行修改但收发测试正常，之后此版本需要同步到SRC并进行测试（生成后发现改动为DBC_SysDesc.arxml会发生变化，但此文件不在src文件夹中，因此同步后没有发生变化，
+编译后产生的hex文件相同，不再测试。之后开发采用V2.2c的ISOLAR）。
+
+V2.2b 2023-10-11  17:11    LZJ
+   在AR Explore处将绝大部分信号length修改为64bits，类型修改为uint64，编译通过，6个信号若修改为uint64会报错（IPB4、IPB5、IPB7、IVI_timeAndGPS和其它2个报文）。该版本未同步至SRC进行收发测试，往后继续使用V2.2版本进行开发。
+
+V2.2  2023-10-10  13:15    LZJ
+   不断赋值的问题已在V2.2的SRC中解决。此版本在COM处将所有信号修改为小端格式、起始位修改为0bit、分组已修改了部分信号；AR Explore处除uint64的信号，其余均修改为Uint16；ASW_COM.arxml处也已同步修改。
+
+V2.1b  2023-10-09  13:44   LZJ
+   没有较大改动，对应V2.1b的SRC，问题依旧存在。
+
+V2.1  2023-10-08  17:39    LZJ
+   将GCU1、2、3、4的信号修改为UInt16，将报文分组修改为MCUF_Tx，同步到V2.1的src中并烧录，目前现象收发依旧不正常，testpro处修改值会被覆盖。
+
+V2.0  2023-10-08  9：15     LZJ
+   所有问题信号已修正，目前接收正常，发送会被不断重新赋值，需要source insight处修改一下代码。
+
+V1.4  2023-10-07  16:17    LZJ
+   ISOLAR进Filesystem Navigator→asw_config→ASW_COM.arxml→AUTOSAR→Interfaces中找到有问题信号的COM修改属性为UInt16【/DataTypes/UInt16】
+例如信号bcm_pepsPowerMode，找到COM_bcm_pepsPowerMode展开，单击展开出来的COM_bcm_pepsPowerMode，下方窗口选择Properties，修改Type为上述的数据类型，注意SR_bcm_pepsPowerMode的类型保持Float不变
+保存ISOLAR工程，重新generate BSW和RTE（应该是RTE就可以了），比较ISOLAR工程的src和TC375的src，区别均在RTE文件夹中的.c文件，里面修改的数据类型定义复制至TC375的src中，重新rebuild.bat即可
+下个版本将对所有错误信号进行修正。（此版本也在AR Explore中修改了信号的start bit、bit length、type等参数，大多数统一修改为7bit开始，长12bits，uint16类型）（此版本对应的src版本为srcV1.4）
+
+V1.3  2023-10-07  10:06    LZJ
+   修改了AR Explore处有问题的信号，有问题的信号起始位全部修改为7、长度全部修改为12、类型全部修改为uint16。准备进行generate ECU configuration wizard。
+
+V1.2  2023-09-28  15:58    LZJ
+   此版本以V1.0为基础，重新进AR Explore处删除信号使RTE编译通过。相比于V1.1版本，此版本应该正确删除了信号（V1.1错误删除了MCUF1的全部信号，且PDCM_Body_IC有2个信号）
+（此版本也删除了EOL的CCP以及其它NM信号，感觉应该不能删，在Core0_OsTask_ASW_100ms.c文件1300行左右有对EOL信号的引用）。
+此版本的SRC复制到了srcV1.3中，TC375编译通过，问题还是跟以前一样，一半左右的Rx报文会错误帧，之后尝试修改ISOLAR处AR Explore的信号大小和类型，并尝试同步到SRC中重新编译。
+
+V1.1  2023-09-26 17:24     LZJ
+   此版本之前链接的信号已全部删除Ref，RTE编译通过，但OS似乎有问题需要编译OS。
+
+V1.0  2023-09-22 17:37     LZJ
+   此版本为第一版发布，具体修改为：1、所有报文只保留一个信号，并且该信号startbit为7、bits为64，相关Ref已删除，BSW可编译通过。

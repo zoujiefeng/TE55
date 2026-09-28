@@ -1,0 +1,323 @@
+	.file	"ADS1115_Calib.c"
+.section .text,"ax",@progbits
+.Ltext0:
+	.global	ADS1115_u8UserCfg_DRC
+.section .rodata.Calib_8.ADS1115_u8UserCfg_DRC,"a",@progbits
+	.type	ADS1115_u8UserCfg_DRC, @object
+	.size	ADS1115_u8UserCfg_DRC, 1
+ADS1115_u8UserCfg_DRC:
+	.byte	7
+	.global	ADS1115_u8UserCfg_MUXC
+.section .rodata.Calib_8.ADS1115_u8UserCfg_MUXC,"a",@progbits
+	.type	ADS1115_u8UserCfg_MUXC, @object
+	.size	ADS1115_u8UserCfg_MUXC, 1
+ADS1115_u8UserCfg_MUXC:
+	.zero	1
+	.global	ADS1115_u8UserCfg_PGAC
+.section .rodata.Calib_8.ADS1115_u8UserCfg_PGAC,"a",@progbits
+	.type	ADS1115_u8UserCfg_PGAC, @object
+	.size	ADS1115_u8UserCfg_PGAC, 1
+ADS1115_u8UserCfg_PGAC:
+	.byte	2
+.section .text,"ax",@progbits
+.Letext0:
+	.file 1 "bswcdd\\ADS1115\\ADS1115.h"
+	.file 2 "bswcdd\\ADS1115\\ADS1115_Calib.c"
+	.file 3 ".\\output\\inc/..\\..\\bsw\\integration\\Platform_Types.h"
+.section .debug_info,"",@progbits
+.Ldebug_info0:
+	.uaword	0x5ad
+	.uahalf	0x2
+	.uaword	.Ldebug_abbrev0
+	.byte	0x4
+	.uleb128 0x1
+	.ascii	"GNU C 4.9.4 build on 2020-09-01 -mli"
+	.string	"cense-dir=s:\\hightec\\toolchains\\tricore\\v4.9.4.1\\bin\\../lib/gcc/tricore/4.9.4/../../../../licenses -mcpu=tc38xx -mpragma-data-sections -mtc162 -maligned-data-sections -gdwarf-2 -O3 -fno-builtin -fno-common -ffunction-sections -fdata-sections -fshort-double"
+	.byte	0x1
+	.string	"bswcdd\\ADS1115\\ADS1115_Calib.c"
+	.string	"D:\\\\1_OutProjest\\\\dongfeng\\\\90080-05101\\\\trunk\\\\BSW\\\\20Proj\\\\BSW\\\\TE5X\\\\src"
+	.uaword	.Ldebug_line0
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x6
+	.string	"signed char"
+	.uleb128 0x3
+	.string	"uint8"
+	.byte	0x3
+	.byte	0x51
+	.uaword	0x1bd
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x8
+	.string	"unsigned char"
+	.uleb128 0x2
+	.byte	0x2
+	.byte	0x5
+	.string	"short int"
+	.uleb128 0x2
+	.byte	0x2
+	.byte	0x7
+	.string	"short unsigned int"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x5
+	.string	"int"
+	.uleb128 0x2
+	.byte	0x8
+	.byte	0x5
+	.string	"long long int"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x7
+	.string	"unsigned int"
+	.uleb128 0x2
+	.byte	0x8
+	.byte	0x7
+	.string	"long long unsigned int"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x4
+	.string	"float"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x4
+	.string	"double"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x5
+	.string	"long int"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x7
+	.string	"long unsigned int"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x7
+	.string	"sizetype"
+	.uleb128 0x4
+	.uaword	0x1b0
+	.uleb128 0x5
+	.string	"ADS1115_InputMuxCfg"
+	.byte	0x1
+	.byte	0x1
+	.byte	0x6a
+	.uaword	0x359
+	.uleb128 0x6
+	.string	"eADS1115_CFG_MUX_A0A1"
+	.sleb128 0
+	.uleb128 0x6
+	.string	"eADS1115_CFG_MUX_A0A3"
+	.sleb128 1
+	.uleb128 0x6
+	.string	"eADS1115_CFG_MUX_A1A3"
+	.sleb128 2
+	.uleb128 0x6
+	.string	"eADS1115_CFG_MUX_A2A3"
+	.sleb128 3
+	.uleb128 0x6
+	.string	"eADS1115_CFG_MUX_A0GND"
+	.sleb128 4
+	.uleb128 0x6
+	.string	"eADS1115_CFG_MUX_A1GND"
+	.sleb128 5
+	.uleb128 0x6
+	.string	"eADS1115_CFG_MUX_A2GND"
+	.sleb128 6
+	.uleb128 0x6
+	.string	"eADS1115_CFG_MUX_A3GND"
+	.sleb128 7
+	.byte	0
+	.uleb128 0x5
+	.string	"ADS1115_PGACfg"
+	.byte	0x1
+	.byte	0x1
+	.byte	0x75
+	.uaword	0x45f
+	.uleb128 0x6
+	.string	"eADS1115_CFG_PGA_FSR_6_144"
+	.sleb128 0
+	.uleb128 0x6
+	.string	"eADS1115_CFG_PGA_FSR_4_096"
+	.sleb128 1
+	.uleb128 0x6
+	.string	"eADS1115_CFG_PGA_FSR_2_048"
+	.sleb128 2
+	.uleb128 0x6
+	.string	"eADS1115_CFG_PGA_FSR_1_024"
+	.sleb128 3
+	.uleb128 0x6
+	.string	"eADS1115_CFG_PGA_FSR_0_512"
+	.sleb128 4
+	.uleb128 0x6
+	.string	"eADS1115_CFG_PGA_FSR_0_256_1"
+	.sleb128 5
+	.uleb128 0x6
+	.string	"eADS1115_CFG_PGA_FSR_0_256_2"
+	.sleb128 6
+	.uleb128 0x6
+	.string	"eADS1115_CFG_PGA_FSR_0_256_3"
+	.sleb128 7
+	.byte	0
+	.uleb128 0x5
+	.string	"ADS1115_SPSCfg"
+	.byte	0x1
+	.byte	0x1
+	.byte	0x80
+	.uaword	0x542
+	.uleb128 0x6
+	.string	"eADS1115_CFG_DR_8_SPS"
+	.sleb128 0
+	.uleb128 0x6
+	.string	"eADS1115_CFG_DR_16_SPS"
+	.sleb128 1
+	.uleb128 0x6
+	.string	"eADS1115_CFG_DR_32_SPS"
+	.sleb128 2
+	.uleb128 0x6
+	.string	"eADS1115_CFG_DR_64_SPS"
+	.sleb128 3
+	.uleb128 0x6
+	.string	"eADS1115_CFG_DR_128_SPS"
+	.sleb128 4
+	.uleb128 0x6
+	.string	"eADS1115_CFG_DR_250_SPS"
+	.sleb128 5
+	.uleb128 0x6
+	.string	"eADS1115_CFG_DR_475_SPS"
+	.sleb128 6
+	.uleb128 0x6
+	.string	"eADS1115_CFG_DR_860_SPS"
+	.sleb128 7
+	.byte	0
+	.uleb128 0x7
+	.string	"ADS1115_u8UserCfg_PGAC"
+	.byte	0x2
+	.byte	0x25
+	.uaword	0x273
+	.byte	0x1
+	.byte	0x5
+	.byte	0x3
+	.uaword	ADS1115_u8UserCfg_PGAC
+	.uleb128 0x7
+	.string	"ADS1115_u8UserCfg_MUXC"
+	.byte	0x2
+	.byte	0x26
+	.uaword	0x273
+	.byte	0x1
+	.byte	0x5
+	.byte	0x3
+	.uaword	ADS1115_u8UserCfg_MUXC
+	.uleb128 0x7
+	.string	"ADS1115_u8UserCfg_DRC"
+	.byte	0x2
+	.byte	0x27
+	.uaword	0x273
+	.byte	0x1
+	.byte	0x5
+	.byte	0x3
+	.uaword	ADS1115_u8UserCfg_DRC
+	.byte	0
+.section .debug_abbrev,"",@progbits
+.Ldebug_abbrev0:
+	.uleb128 0x1
+	.uleb128 0x11
+	.byte	0x1
+	.uleb128 0x25
+	.uleb128 0x8
+	.uleb128 0x13
+	.uleb128 0xb
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x1b
+	.uleb128 0x8
+	.uleb128 0x10
+	.uleb128 0x6
+	.byte	0
+	.byte	0
+	.uleb128 0x2
+	.uleb128 0x24
+	.byte	0
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3e
+	.uleb128 0xb
+	.uleb128 0x3
+	.uleb128 0x8
+	.byte	0
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x16
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x4
+	.uleb128 0x26
+	.byte	0
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x5
+	.uleb128 0x4
+	.byte	0x1
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x6
+	.uleb128 0x28
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x1c
+	.uleb128 0xd
+	.byte	0
+	.byte	0
+	.uleb128 0x7
+	.uleb128 0x34
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x2
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.byte	0
+.section .debug_aranges,"",@progbits
+	.uaword	0x14
+	.uahalf	0x2
+	.uaword	.Ldebug_info0
+	.byte	0x4
+	.byte	0
+	.uahalf	0
+	.uahalf	0
+	.uaword	0
+	.uaword	0
+.section .debug_line,"",@progbits
+.Ldebug_line0:
+.section .debug_str,"",@progbits
+	.ident	"GCC: (HighTec Release HDP-v4.9.4.1-11fcedf) 4.9.4 build on 2020-09-01"

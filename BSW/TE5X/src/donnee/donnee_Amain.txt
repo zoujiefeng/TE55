@@ -1,0 +1,52 @@
+Nom_donn�e|Type|Nom_module|Public|Nb_lignes|Nb_colonnes|Label_p�re|Offset|Masque_acc�s|Affichage|Unit�|Fonction_transfert_ades|Coefficient_a|Coefficient_b|Groupe|Groupe_1|Groupe_2|Alias_1|Alias_2|Genre|Variable_indice_ligne|Variable_indice_colonne|Fonction_transfert_ligne|Fonction_transfert_colonne|Table_breakpoint_ligne|Table_breakpoint_colonne|R�f�rence_sp�cification|Recuperable|Modifiable|Fournisseur|Responsable|Valeurs|Visualisable_ADES|Donn�e_a_supprimer|Validation|Commentaires|Volatile|MinDecValue|MaxDecValue|MinPhysValue|MaxPhysValue|Def_Eval|MemSec
+
+AMAIN_bBswReadySts|boolean|AMAIN|0|0|0|AMAIN_bBswReadySts|0|0|Phys|bool|2|0||AMAIN|AMAIN|Raw|AMAIN_bBswReadySts||1|||||||NONE|0|1||||1|0|0|BSW Power on check finish flag.|0||||||
+AMAIN_bESMStarted|boolean|AMAIN|0|0|0|AMAIN_bESMStarted|0|0|Phys|bool|2|0||AMAIN|AMAIN|Raw|AMAIN_bESMStarted||1|||||||NONE|0|1||||1|0|0|BSW Power on check finish flag.|0||||||
+AMAIN_bSoftOvBhvFlg|boolean|AMAIN|0|0|0|AMAIN_bSoftOvBhvFlg|0|0|Phys|bool|2|0||AMAIN|AMAIN|Raw|AMAIN_bSoftOvBhvFlg||1|||||||NONE|0|1||||1|0|0|BSW Power on check finish flag.|0||||||
+AMAIN_bSoftOvCurrPhsUFlg|boolean|AMAIN|0|0|0|AMAIN_bSoftOvCurrPhsUFlg|0|0|Phys|bool|2|0||AMAIN|AMAIN|Raw|AMAIN_bSoftOvCurrPhsUFlg||1|||||||NONE|0|1||||1|0|0|BSW Power on check finish flag.|0||||||
+AMAIN_bSoftOvCurrPhsVFlg|boolean|AMAIN|0|0|0|AMAIN_bSoftOvCurrPhsVFlg|0|0|Phys|bool|2|0||AMAIN|AMAIN|Raw|AMAIN_bSoftOvCurrPhsVFlg||1|||||||NONE|0|1||||1|0|0|BSW Power on check finish flag.|0||||||
+AMAIN_bSoftOvCurrPhsWFlg|boolean|AMAIN|0|0|0|AMAIN_bSoftOvCurrPhsWFlg|0|0|Phys|bool|2|0||AMAIN|AMAIN|Raw|AMAIN_bSoftOvCurrPhsWFlg||1|||||||NONE|0|1||||1|0|0|BSW Power on check finish flag.|0||||||
+AMAIN_bVSIStarted|boolean|AMAIN|0|0|0|AMAIN_bVSIStarted|0|0|Phys|bool|2|0||AMAIN|AMAIN|Raw|AMAIN_bVSIStarted||1|||||||NONE|0|1||||1|0|0|BSW Power on check finish flag.|0||||||
+AMAIN_ESMGo2StartupIEvent|boolean|AMAIN|0|0|0|AMAIN_ESMGo2StartupIEvent|0|0|Phys|bool|2|0||AMAIN|AMAIN|Raw|AMAIN_ESMGo2StartupIEvent||1|||||||NONE|0|1||||1|0|0|BSW Power on check finish flag.|0||||||
+AMAIN_bProgConditionOk|boolean|AMAIN|0|0|0|AMAIN_bProgConditionOk|0|0|Phys|bool|2|0||AMAIN|AMAIN|Raw|AMAIN_bProgConditionOk||1|||||||NONE|0|1||||1|0|0|BSW Power on check finish flag.|0||||||
+AMAIN_f32PWMDutyUPhys|float32|AMAIN|0|0|0|AMAIN_f32PWMDutyUPhys|0|0|Phys|-|1|1|0|AMAIN|AMAIN|Physical|AMAIN_f32PWMDutyUPhys||1|||||||NONE|0|1||||1|0|0|... |1||||||
+AMAIN_f32PWMDutyVPhys|float32|AMAIN|0|0|0|AMAIN_f32PWMDutyVPhys|0|0|Phys|-|1|1|0|AMAIN|AMAIN|Physical|AMAIN_f32PWMDutyVPhys||1|||||||NONE|0|1||||1|0|0|... |1||||||
+AMAIN_f32PWMDutyWPhys|float32|AMAIN|0|0|0|AMAIN_f32PWMDutyWPhys|0|0|Phys|-|1|1|0|AMAIN|AMAIN|Physical|AMAIN_f32PWMDutyWPhys||1|||||||NONE|0|1||||1|0|0|... |1||||||
+AMAIN_u8DEV_Fault|uint8|AMAIN|0|1|16|AMAIN_u8DEV_Fault|0|0|Phys|-|1|1|0|AMAIN|AMAIN||AMAIN_u8DEV_Fault||1|*|*|*|*|*|*||0|1||||1|0|0|-|0|||||0|
+
+AMAIN_u16Cnt1|uint16|AMAIN|0|0|0|AMAIN_u16Cnt1|0|0|Phys|-|0|0|0|AMAIN|AMAIN|Physical|AMAIN_u16Cnt1||1|||||||NONE|0|1||||1|0|0|... |1||||||
+AMAIN_u16Cnt2|uint16|AMAIN|0|0|0|AMAIN_u16Cnt2|0|0|Phys|-|0|0|0|AMAIN|AMAIN|Physical|AMAIN_u16Cnt2||1|||||||NONE|0|1||||1|0|0|... |1||||||
+AMAIN_u16Cnt5|uint16|AMAIN|0|0|0|AMAIN_u16Cnt5|0|0|Phys|-|0|0|0|AMAIN|AMAIN|Physical|AMAIN_u16Cnt5||1|||||||NONE|0|1||||1|0|0|... |1||||||
+AMAIN_u16Cnt10|uint16|AMAIN|0|0|0|AMAIN_u16Cnt10|0|0|Phys|-|0|0|0|AMAIN|AMAIN|Physical|AMAIN_u16Cnt10||1|||||||NONE|0|1||||1|0|0|... |1||||||
+AMAIN_u16Cnt100|uint16|AMAIN|0|0|0|AMAIN_u16Cnt100|0|0|Phys|-|0|0|0|AMAIN|AMAIN|Physical|AMAIN_u16Cnt100||1|||||||NONE|0|1||||1|0|0|... |1||||||
+AMAIN_u16Cnt200|uint16|AMAIN|0|0|0|AMAIN_u16Cnt200|0|0|Phys|-|0|0|0|AMAIN|AMAIN|Physical|AMAIN_u16Cnt200||1|||||||NONE|0|1||||1|0|0|... |1||||||
+AMAIN_u16VadcPhaseCurU|uint16|AMAIN|0|0|0|AMAIN_u16VadcPhaseCurU|0|0|Phys|-|0|0|0|AMAIN|AMAIN|Physical|AMAIN_u16VadcPhaseCurU||1|||||||NONE|0|1||||1|0|0|... |1||||||
+AMAIN_u16VadcPhaseCurV|uint16|AMAIN|0|0|0|AMAIN_u16VadcPhaseCurV|0|0|Phys|-|0|0|0|AMAIN|AMAIN|Physical|AMAIN_u16VadcPhaseCurV||1|||||||NONE|0|1||||1|0|0|... |1||||||
+AMAIN_u16VadcPhaseCurW|uint16|AMAIN|0|0|0|AMAIN_u16VadcPhaseCurW|0|0|Phys|-|0|0|0|AMAIN|AMAIN|Physical|AMAIN_u16VadcPhaseCurW||1|||||||NONE|0|1||||1|0|0|... |1||||||
+
+AMAIN_startTime|uint32|AMAIN|0|0|0|AMAIN_startTime|0|0|D�ci|-||||AMAIN|AMAIN|Raw|AMAIN_startTime||1|||||||NONE|0|1||||1|0|0|...|1||||||
+AMAIN_EndTime|uint32|AMAIN|0|0|0|AMAIN_EndTime|0|0|D�ci|-||||AMAIN|AMAIN|Raw|AMAIN_EndTime||1|||||||NONE|0|1||||1|0|0|...|1||||||
+AMAIN_TotalTime|uint32|AMAIN|0|0|0|AMAIN_TotalTime|0|0|D�ci|-||||AMAIN|AMAIN|Raw|AMAIN_TotalTime||1|||||||NONE|0|1||||1|0|0|...|1||||||
+
+
+AMAIN_f32CanSpeedTgtSetC|float32|AMAIN|0|0|0|AMAIN_f32CanSpeedTgtSetC|0|0|Phys|-|1|1|0|AMAIN|AMAIN||AMAIN_f32CanSpeedTgtSetC||2|||||||...|1|1|||0.5|1|0|0|...|0||||||
+AMAIN_f32UvwOvCurrThdC|float32|AMAIN|0|0|0|AMAIN_f32UvwOvCurrThdC|0|0|Phys|-|1|1|0|AMAIN|AMAIN||AMAIN_f32UvwOvCurrThdC||2|||||||...|1|1|||0.5|1|0|0|...|0||||||
+AMAIN_u32VSICntCkreqESMStartedC|uint32|AMAIN|0|0|0|AMAIN_u32VSICntCkreqESMStartedC|0|0|Phys|-|1|1|0|AMAIN|AMAIN||AMAIN_u32VSICntCkreqESMStartedC||2|||||||...|1|1|||200000|1|0|0|Spare|0||||||
+AMAIN_u32VSICntCkreqVSIStartedC|uint32|AMAIN|0|0|0|AMAIN_u32VSICntCkreqESMStartedC|0|0|Phys|-|1|1|0|AMAIN|AMAIN||AMAIN_u32VSICntCkreqESMStartedC||2|||||||...|1|1|||200000|1|0|0|Spare|0||||||
+AMAIN_f32OverBhvThdC|float32|AMAIN|0|0|0|AMAIN_f32OverBhvThdC|0|0|Phys|-|1|1|0|AMAIN|AMAIN||AMAIN_f32OverBhvThdC||2|||||||...|1|1|||0.5|1|0|0|...|0||||||
+
+AMAIN_HARDBenchOnC|boolean|AMAIN|0|0|0|AMAIN_HARDBenchOnC|0|0|Phys|bool|2|0||AMAIN|AMAIN||AMAIN_HARDBenchOnC||2|||||||NONE|1|1|||1|1|0|0|Bench VSI write datas|0||||||
+AMAIN_VSIBenchOnWriteDataC|boolean|AMAIN|0|0|0|AMAIN_VSIBenchOnWriteDataC|0|0|Phys|bool|2|0||AMAIN|AMAIN||AMAIN_VSIBenchOnWriteDataC||2|||||||NONE|1|1|||1|1|0|0|Bench VSI write datas|0||||||
+
+
+TPPC_u8ACMASCStep|uint8|AMAIN|0|0|0|TPPC_u8ACMASCStep|0|0|Hexa|-||||AMAIN|AMAIN|Raw|TPPC_u8ACMASCStep||1|||||||NONE|0|1|||0x00|1|0|0|ACM State|0||||||
+AMAIN_u16ACMASCStartupChkFaultLowCnt|uint16|AMAIN|0|0|0|AMAIN_u16ACMASCStartupChkFaultLowCnt|0|0|D�ci|-||||AMAIN|AMAIN|Raw|AMAIN_u16ACMASCStartupChkFaultLowCnt||1|||||||NONE|0|1||||1|0|0|...|1||||||
+AMAIN_u16ACMASCStartupChkFaultHighCnt|uint16|AMAIN|0|0|0|AMAIN_u16ACMASCStartupChkFaultHighCnt|0|0|D�ci|-||||AMAIN|AMAIN|Raw|AMAIN_u16ACMASCStartupChkFaultHighCnt||1|||||||NONE|0|1||||1|0|0|...|1||||||
+AMAIN_u8ACMASCRecoverTimes|uint8|AMAIN|0|0|0|AMAIN_u8ACMASCRecoverTimes|0|0|D�ci|-||||AMAIN|AMAIN|Raw|AMAIN_u8ACMASCRecoverTimes||1|||||||NONE|0|1||||1|0|0|...|1||||||
+AMAIN_u16ACMASCRecoverCnt|uint16|AMAIN|0|0|0|AMAIN_u16ACMASCRecoverCnt|0|0|D�ci|-||||AMAIN|AMAIN|Raw|AMAIN_u16ACMASCRecoverCnt||1|||||||NONE|0|1||||1|0|0|...|1||||||
+
+TPPC_u8EPSASCStep|uint8|AMAIN|0|0|0|TPPC_u8EPSASCStep|0|0|Hexa|-||||AMAIN|AMAIN|Raw|TPPC_u8EPSASCStep||1|||||||NONE|0|1|||0x00|1|0|0|EPS State|0||||||
+AMAIN_u16EPSASCStartupChkFaultLowCnt|uint16|AMAIN|0|0|0|AMAIN_u16EPSASCStartupChkFaultLowCnt|0|0|D�ci|-||||AMAIN|AMAIN|Raw|AMAIN_u16EPSASCStartupChkFaultLowCnt||1|||||||NONE|0|1||||1|0|0|...|1||||||
+AMAIN_u16EPSASCStartupChkFaultHighCnt|uint16|AMAIN|0|0|0|AMAIN_u16EPSASCStartupChkFaultHighCnt|0|0|D�ci|-||||AMAIN|AMAIN|Raw|AMAIN_u16EPSASCStartupChkFaultHighCnt||1|||||||NONE|0|1||||1|0|0|...|1||||||
+AMAIN_u8EPSASCRecoverTimes|uint8|AMAIN|0|0|0|AMAIN_u8EPSASCRecoverTimes|0|0|D�ci|-||||AMAIN|AMAIN|Raw|AMAIN_u8EPSASCRecoverTimes||1|||||||NONE|0|1||||1|0|0|...|1||||||
+AMAIN_u16EPSASCRecoverCnt|uint16|AMAIN|0|0|0|AMAIN_u16EPSASCRecoverCnt|0|0|D�ci|-||||AMAIN|AMAIN|Raw|AMAIN_u16EPSASCRecoverCnt||1|||||||NONE|0|1||||1|0|0|...|1||||||

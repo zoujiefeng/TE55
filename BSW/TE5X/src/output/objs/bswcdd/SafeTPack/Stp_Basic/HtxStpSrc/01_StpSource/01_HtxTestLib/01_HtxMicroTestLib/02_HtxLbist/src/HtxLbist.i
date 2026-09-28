@@ -1,0 +1,9413 @@
+# 1 "bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\src\\HtxLbist.c"
+# 1 "D:\\1_OutProjest\\dongfeng\\90080-05101\\trunk\\BSW\\20Proj\\BSW\\TE5X\\src//"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "s:\\hightec\\toolchains\\tricore\\v4.9.4.1\\tricore\\include\\stdc-predef.h" 1 3
+# 1 "<command-line>" 2
+# 1 "bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\src\\HtxLbist.c"
+# 43 "bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\src\\HtxLbist.c"
+# 1 ".\\output\\inc/IfxScu_reg.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxScu_reg.h" 1
+# 56 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxScu_reg.h"
+# 1 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxScu_regdef.h" 1
+# 57 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxScu_regdef.h"
+# 1 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\Ifx_TypesReg.h" 1
+# 96 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\Ifx_TypesReg.h"
+typedef unsigned char Ifx_UReg_8Bit;
+typedef unsigned short Ifx_UReg_16Bit;
+typedef unsigned int Ifx_UReg_32Bit;
+typedef signed char Ifx_SReg_8Bit;
+typedef signed short Ifx_SReg_16Bit;
+typedef signed int Ifx_SReg_32Bit;
+# 58 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxScu_regdef.h" 2
+# 68 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxScu_regdef.h"
+typedef struct _Ifx_SCU_ACCEN00_Bits
+{
+    Ifx_UReg_32Bit EN0:1;
+    Ifx_UReg_32Bit EN1:1;
+    Ifx_UReg_32Bit EN2:1;
+    Ifx_UReg_32Bit EN3:1;
+    Ifx_UReg_32Bit EN4:1;
+    Ifx_UReg_32Bit EN5:1;
+    Ifx_UReg_32Bit EN6:1;
+    Ifx_UReg_32Bit EN7:1;
+    Ifx_UReg_32Bit EN8:1;
+    Ifx_UReg_32Bit EN9:1;
+    Ifx_UReg_32Bit EN10:1;
+    Ifx_UReg_32Bit EN11:1;
+    Ifx_UReg_32Bit EN12:1;
+    Ifx_UReg_32Bit EN13:1;
+    Ifx_UReg_32Bit EN14:1;
+    Ifx_UReg_32Bit EN15:1;
+    Ifx_UReg_32Bit EN16:1;
+    Ifx_UReg_32Bit EN17:1;
+    Ifx_UReg_32Bit EN18:1;
+    Ifx_UReg_32Bit EN19:1;
+    Ifx_UReg_32Bit EN20:1;
+    Ifx_UReg_32Bit EN21:1;
+    Ifx_UReg_32Bit EN22:1;
+    Ifx_UReg_32Bit EN23:1;
+    Ifx_UReg_32Bit EN24:1;
+    Ifx_UReg_32Bit EN25:1;
+    Ifx_UReg_32Bit EN26:1;
+    Ifx_UReg_32Bit EN27:1;
+    Ifx_UReg_32Bit EN28:1;
+    Ifx_UReg_32Bit EN29:1;
+    Ifx_UReg_32Bit EN30:1;
+    Ifx_UReg_32Bit EN31:1;
+} Ifx_SCU_ACCEN00_Bits;
+
+
+typedef struct _Ifx_SCU_ACCEN01_Bits
+{
+    Ifx_UReg_32Bit reserved_0:32;
+} Ifx_SCU_ACCEN01_Bits;
+
+
+typedef struct _Ifx_SCU_ACCEN10_Bits
+{
+    Ifx_UReg_32Bit EN0:1;
+    Ifx_UReg_32Bit EN1:1;
+    Ifx_UReg_32Bit EN2:1;
+    Ifx_UReg_32Bit EN3:1;
+    Ifx_UReg_32Bit EN4:1;
+    Ifx_UReg_32Bit EN5:1;
+    Ifx_UReg_32Bit EN6:1;
+    Ifx_UReg_32Bit EN7:1;
+    Ifx_UReg_32Bit EN8:1;
+    Ifx_UReg_32Bit EN9:1;
+    Ifx_UReg_32Bit EN10:1;
+    Ifx_UReg_32Bit EN11:1;
+    Ifx_UReg_32Bit EN12:1;
+    Ifx_UReg_32Bit EN13:1;
+    Ifx_UReg_32Bit EN14:1;
+    Ifx_UReg_32Bit EN15:1;
+    Ifx_UReg_32Bit EN16:1;
+    Ifx_UReg_32Bit EN17:1;
+    Ifx_UReg_32Bit EN18:1;
+    Ifx_UReg_32Bit EN19:1;
+    Ifx_UReg_32Bit EN20:1;
+    Ifx_UReg_32Bit EN21:1;
+    Ifx_UReg_32Bit EN22:1;
+    Ifx_UReg_32Bit EN23:1;
+    Ifx_UReg_32Bit EN24:1;
+    Ifx_UReg_32Bit EN25:1;
+    Ifx_UReg_32Bit EN26:1;
+    Ifx_UReg_32Bit EN27:1;
+    Ifx_UReg_32Bit EN28:1;
+    Ifx_UReg_32Bit EN29:1;
+    Ifx_UReg_32Bit EN30:1;
+    Ifx_UReg_32Bit EN31:1;
+} Ifx_SCU_ACCEN10_Bits;
+
+
+typedef struct _Ifx_SCU_ACCEN11_Bits
+{
+    Ifx_UReg_32Bit reserved_0:32;
+} Ifx_SCU_ACCEN11_Bits;
+
+
+typedef struct _Ifx_SCU_ARSTDIS_Bits
+{
+    Ifx_UReg_32Bit STM0DIS:1;
+    Ifx_UReg_32Bit STM1DIS:1;
+    Ifx_UReg_32Bit STM2DIS:1;
+    Ifx_UReg_32Bit STM3DIS:1;
+    Ifx_UReg_32Bit reserved_4:1;
+    Ifx_UReg_32Bit reserved_5:1;
+    Ifx_UReg_32Bit reserved_6:2;
+    Ifx_UReg_32Bit reserved_8:24;
+} Ifx_SCU_ARSTDIS_Bits;
+
+
+typedef struct _Ifx_SCU_CCUCON0_Bits
+{
+    Ifx_UReg_32Bit STMDIV:4;
+    Ifx_UReg_32Bit GTMDIV:4;
+    Ifx_UReg_32Bit SRIDIV:4;
+    Ifx_UReg_32Bit LPDIV:3;
+    Ifx_UReg_32Bit reserved_15:1;
+    Ifx_UReg_32Bit SPBDIV:4;
+    Ifx_UReg_32Bit BBBDIV:4;
+    Ifx_UReg_32Bit FSIDIV:2;
+    Ifx_UReg_32Bit FSI2DIV:2;
+    Ifx_UReg_32Bit CLKSEL:2;
+    Ifx_UReg_32Bit UP:1;
+    Ifx_UReg_32Bit LCK:1;
+} Ifx_SCU_CCUCON0_Bits;
+
+
+typedef struct _Ifx_SCU_CCUCON1_Bits
+{
+    Ifx_UReg_32Bit MCANDIV:4;
+    Ifx_UReg_32Bit CLKSELMCAN:2;
+    Ifx_UReg_32Bit reserved_6:1;
+    Ifx_UReg_32Bit PLL1DIVDIS:1;
+    Ifx_UReg_32Bit I2CDIV:4;
+    Ifx_UReg_32Bit reserved_12:4;
+    Ifx_UReg_32Bit MSCDIV:4;
+    Ifx_UReg_32Bit CLKSELMSC:2;
+    Ifx_UReg_32Bit reserved_22:2;
+    Ifx_UReg_32Bit QSPIDIV:4;
+    Ifx_UReg_32Bit CLKSELQSPI:2;
+    Ifx_UReg_32Bit reserved_30:1;
+    Ifx_UReg_32Bit LCK:1;
+} Ifx_SCU_CCUCON1_Bits;
+
+
+typedef struct _Ifx_SCU_CCUCON2_Bits
+{
+    Ifx_UReg_32Bit ASCLINFDIV:4;
+    Ifx_UReg_32Bit reserved_4:4;
+    Ifx_UReg_32Bit ASCLINSDIV:4;
+    Ifx_UReg_32Bit CLKSELASCLINS:2;
+    Ifx_UReg_32Bit reserved_14:10;
+    Ifx_UReg_32Bit reserved_24:1;
+    Ifx_UReg_32Bit ERAYPERON:1;
+    Ifx_UReg_32Bit reserved_26:1;
+    Ifx_UReg_32Bit reserved_27:4;
+    Ifx_UReg_32Bit LCK:1;
+} Ifx_SCU_CCUCON2_Bits;
+
+
+typedef struct _Ifx_SCU_CCUCON3_Bits
+{
+    Ifx_UReg_32Bit PLL0MONEN:1;
+    Ifx_UReg_32Bit PLL1MONEN:1;
+    Ifx_UReg_32Bit PLL2MONEN:1;
+    Ifx_UReg_32Bit SPBMONEN:1;
+    Ifx_UReg_32Bit BACKMONEN:1;
+    Ifx_UReg_32Bit reserved_5:3;
+    Ifx_UReg_32Bit PLL0MONTST:1;
+    Ifx_UReg_32Bit PLL1MONTST:1;
+    Ifx_UReg_32Bit PLL2MONTST:1;
+    Ifx_UReg_32Bit SPBMONTST:1;
+    Ifx_UReg_32Bit BACKMONTST:1;
+    Ifx_UReg_32Bit reserved_13:11;
+    Ifx_UReg_32Bit reserved_24:6;
+    Ifx_UReg_32Bit UP:1;
+    Ifx_UReg_32Bit LCK:1;
+} Ifx_SCU_CCUCON3_Bits;
+
+
+typedef struct _Ifx_SCU_CCUCON4_Bits
+{
+    Ifx_UReg_32Bit LOTHR:12;
+    Ifx_UReg_32Bit UPTHR:12;
+    Ifx_UReg_32Bit MONEN:1;
+    Ifx_UReg_32Bit MONTST:1;
+    Ifx_UReg_32Bit reserved_26:4;
+    Ifx_UReg_32Bit UP:1;
+    Ifx_UReg_32Bit LCK:1;
+} Ifx_SCU_CCUCON4_Bits;
+
+
+typedef struct _Ifx_SCU_CCUCON5_Bits
+{
+    Ifx_UReg_32Bit GETHDIV:4;
+    Ifx_UReg_32Bit MCANHDIV:4;
+    Ifx_UReg_32Bit reserved_8:4;
+    Ifx_UReg_32Bit reserved_12:18;
+    Ifx_UReg_32Bit UP:1;
+    Ifx_UReg_32Bit LCK:1;
+} Ifx_SCU_CCUCON5_Bits;
+
+
+typedef struct _Ifx_SCU_CCUCON6_Bits
+{
+    Ifx_UReg_32Bit CPU0DIV:6;
+    Ifx_UReg_32Bit reserved_6:26;
+} Ifx_SCU_CCUCON6_Bits;
+
+
+typedef struct _Ifx_SCU_CCUCON7_Bits
+{
+    Ifx_UReg_32Bit CPU1DIV:6;
+    Ifx_UReg_32Bit reserved_6:26;
+} Ifx_SCU_CCUCON7_Bits;
+
+
+typedef struct _Ifx_SCU_CCUCON8_Bits
+{
+    Ifx_UReg_32Bit CPU2DIV:6;
+    Ifx_UReg_32Bit reserved_6:26;
+} Ifx_SCU_CCUCON8_Bits;
+
+
+typedef struct _Ifx_SCU_CCUCON9_Bits
+{
+    Ifx_UReg_32Bit CPU3DIV:6;
+    Ifx_UReg_32Bit reserved_6:26;
+} Ifx_SCU_CCUCON9_Bits;
+
+
+typedef struct _Ifx_SCU_CHIPID_Bits
+{
+    Ifx_UReg_32Bit CHREV:6;
+    Ifx_UReg_32Bit CHTEC:2;
+    Ifx_UReg_32Bit CHPK:4;
+    Ifx_UReg_32Bit CHID:4;
+    Ifx_UReg_32Bit EEA:1;
+    Ifx_UReg_32Bit UCODE:7;
+    Ifx_UReg_32Bit FSIZE:4;
+    Ifx_UReg_32Bit VART:3;
+    Ifx_UReg_32Bit SEC:1;
+} Ifx_SCU_CHIPID_Bits;
+
+
+typedef struct _Ifx_SCU_DTSCLIM_Bits
+{
+    Ifx_UReg_32Bit LOWER:12;
+    Ifx_UReg_32Bit reserved_12:1;
+    Ifx_UReg_32Bit BGPOK:1;
+    Ifx_UReg_32Bit EN:1;
+    Ifx_UReg_32Bit LLU:1;
+    Ifx_UReg_32Bit UPPER:12;
+    Ifx_UReg_32Bit INTEN:1;
+    Ifx_UReg_32Bit reserved_29:1;
+    Ifx_UReg_32Bit INT:1;
+    Ifx_UReg_32Bit UOF:1;
+} Ifx_SCU_DTSCLIM_Bits;
+
+
+typedef struct _Ifx_SCU_DTSCSTAT_Bits
+{
+    Ifx_UReg_32Bit RESULT:12;
+    Ifx_UReg_32Bit reserved_12:20;
+} Ifx_SCU_DTSCSTAT_Bits;
+
+
+typedef struct _Ifx_SCU_EICON0_Bits
+{
+    volatile unsigned int reserved_0:1;
+    volatile unsigned int ENDINIT:1;
+    volatile unsigned int EPW:14;
+    volatile unsigned int REL:16;
+} Ifx_SCU_EICON0_Bits;
+
+
+typedef struct _Ifx_SCU_EICON1_Bits
+{
+    Ifx_UReg_32Bit reserved_0:1;
+    Ifx_UReg_32Bit reserved_1:1;
+    Ifx_UReg_32Bit IR0:1;
+    Ifx_UReg_32Bit DR:1;
+    Ifx_UReg_32Bit reserved_4:1;
+    Ifx_UReg_32Bit IR1:1;
+    Ifx_UReg_32Bit reserved_6:26;
+} Ifx_SCU_EICON1_Bits;
+
+
+typedef struct _Ifx_SCU_EICR_Bits
+{
+    Ifx_UReg_32Bit reserved_0:4;
+    Ifx_UReg_32Bit EXIS0:3;
+    Ifx_UReg_32Bit reserved_7:1;
+    Ifx_UReg_32Bit FEN0:1;
+    Ifx_UReg_32Bit REN0:1;
+    Ifx_UReg_32Bit LDEN0:1;
+    Ifx_UReg_32Bit EIEN0:1;
+    Ifx_UReg_32Bit INP0:3;
+    Ifx_UReg_32Bit reserved_15:5;
+    Ifx_UReg_32Bit EXIS1:3;
+    Ifx_UReg_32Bit reserved_23:1;
+    Ifx_UReg_32Bit FEN1:1;
+    Ifx_UReg_32Bit REN1:1;
+    Ifx_UReg_32Bit LDEN1:1;
+    Ifx_UReg_32Bit EIEN1:1;
+    Ifx_UReg_32Bit INP1:3;
+    Ifx_UReg_32Bit reserved_31:1;
+} Ifx_SCU_EICR_Bits;
+
+
+typedef struct _Ifx_SCU_EIFILT_Bits
+{
+    Ifx_UReg_32Bit FILRQ0A:1;
+    Ifx_UReg_32Bit FILRQ5A:1;
+    Ifx_UReg_32Bit FILRQ2A:1;
+    Ifx_UReg_32Bit FILRQ3A:1;
+    Ifx_UReg_32Bit FILRQ0C:1;
+    Ifx_UReg_32Bit FILRQ1C:1;
+    Ifx_UReg_32Bit FILRQ3C:1;
+    Ifx_UReg_32Bit FILRQ2C:1;
+    Ifx_UReg_32Bit FILRQ4A:1;
+    Ifx_UReg_32Bit FILRQ6A:1;
+    Ifx_UReg_32Bit FILRQ1A:1;
+    Ifx_UReg_32Bit FILRQ7A:1;
+    Ifx_UReg_32Bit FILRQ6D:1;
+    Ifx_UReg_32Bit FILRQ4D:1;
+    Ifx_UReg_32Bit FILRQ2B:1;
+    Ifx_UReg_32Bit FILRQ3B:1;
+    Ifx_UReg_32Bit FILRQ7C:1;
+    Ifx_UReg_32Bit reserved_17:7;
+    Ifx_UReg_32Bit FILTDIV:4;
+    Ifx_UReg_32Bit DEPTH:4;
+} Ifx_SCU_EIFILT_Bits;
+
+
+typedef struct _Ifx_SCU_EIFR_Bits
+{
+    Ifx_UReg_32Bit INTF0:1;
+    Ifx_UReg_32Bit INTF1:1;
+    Ifx_UReg_32Bit INTF2:1;
+    Ifx_UReg_32Bit INTF3:1;
+    Ifx_UReg_32Bit INTF4:1;
+    Ifx_UReg_32Bit INTF5:1;
+    Ifx_UReg_32Bit INTF6:1;
+    Ifx_UReg_32Bit INTF7:1;
+    Ifx_UReg_32Bit reserved_8:24;
+} Ifx_SCU_EIFR_Bits;
+
+
+typedef struct _Ifx_SCU_EISR_Bits
+{
+    Ifx_UReg_32Bit AE:1;
+    Ifx_UReg_32Bit OE:1;
+    Ifx_UReg_32Bit IS0:1;
+    Ifx_UReg_32Bit DS:1;
+    Ifx_UReg_32Bit TO:1;
+    Ifx_UReg_32Bit IS1:1;
+    Ifx_UReg_32Bit reserved_6:10;
+    Ifx_UReg_32Bit TIM:16;
+} Ifx_SCU_EISR_Bits;
+
+
+typedef struct _Ifx_SCU_EMSR_Bits
+{
+    Ifx_UReg_32Bit POL:1;
+    Ifx_UReg_32Bit MODE:1;
+    Ifx_UReg_32Bit ENON:1;
+    Ifx_UReg_32Bit PSEL:1;
+    Ifx_UReg_32Bit reserved_4:12;
+    Ifx_UReg_32Bit EMSF:1;
+    Ifx_UReg_32Bit SEMSF:1;
+    Ifx_UReg_32Bit reserved_18:14;
+} Ifx_SCU_EMSR_Bits;
+
+
+typedef struct _Ifx_SCU_EMSSW_Bits
+{
+    Ifx_UReg_32Bit reserved_0:24;
+    Ifx_UReg_32Bit EMSFM:2;
+    Ifx_UReg_32Bit SEMSFM:2;
+    Ifx_UReg_32Bit reserved_28:4;
+} Ifx_SCU_EMSSW_Bits;
+
+
+typedef struct _Ifx_SCU_ESRCFGX_ESRCFGX_Bits
+{
+    Ifx_UReg_32Bit reserved_0:7;
+    Ifx_UReg_32Bit EDCON:2;
+    Ifx_UReg_32Bit reserved_9:23;
+} Ifx_SCU_ESRCFGX_ESRCFGX_Bits;
+
+
+typedef struct _Ifx_SCU_ESROCFG_Bits
+{
+    Ifx_UReg_32Bit ARI:1;
+    Ifx_UReg_32Bit ARC:1;
+    Ifx_UReg_32Bit reserved_2:30;
+} Ifx_SCU_ESROCFG_Bits;
+
+
+typedef struct _Ifx_SCU_EXTCON_Bits
+{
+    Ifx_UReg_32Bit EN0:1;
+    Ifx_UReg_32Bit reserved_1:1;
+    Ifx_UReg_32Bit SEL0:4;
+    Ifx_UReg_32Bit reserved_6:10;
+    Ifx_UReg_32Bit EN1:1;
+    Ifx_UReg_32Bit NSEL:1;
+    Ifx_UReg_32Bit SEL1:4;
+    Ifx_UReg_32Bit reserved_22:2;
+    Ifx_UReg_32Bit DIV1:8;
+} Ifx_SCU_EXTCON_Bits;
+
+
+typedef struct _Ifx_SCU_FDR_Bits
+{
+    Ifx_UReg_32Bit STEP:10;
+    Ifx_UReg_32Bit reserved_10:4;
+    Ifx_UReg_32Bit DM:2;
+    Ifx_UReg_32Bit RESULT:10;
+    Ifx_UReg_32Bit reserved_26:5;
+    Ifx_UReg_32Bit DISCLK:1;
+} Ifx_SCU_FDR_Bits;
+
+
+typedef struct _Ifx_SCU_FMR_Bits
+{
+    Ifx_UReg_32Bit FS0:1;
+    Ifx_UReg_32Bit FS1:1;
+    Ifx_UReg_32Bit FS2:1;
+    Ifx_UReg_32Bit FS3:1;
+    Ifx_UReg_32Bit FS4:1;
+    Ifx_UReg_32Bit FS5:1;
+    Ifx_UReg_32Bit FS6:1;
+    Ifx_UReg_32Bit FS7:1;
+    Ifx_UReg_32Bit reserved_8:8;
+    Ifx_UReg_32Bit FC0:1;
+    Ifx_UReg_32Bit FC1:1;
+    Ifx_UReg_32Bit FC2:1;
+    Ifx_UReg_32Bit FC3:1;
+    Ifx_UReg_32Bit FC4:1;
+    Ifx_UReg_32Bit FC5:1;
+    Ifx_UReg_32Bit FC6:1;
+    Ifx_UReg_32Bit FC7:1;
+    Ifx_UReg_32Bit reserved_24:8;
+} Ifx_SCU_FMR_Bits;
+
+
+typedef struct _Ifx_SCU_ID_Bits
+{
+    Ifx_UReg_32Bit MODREV:8;
+    Ifx_UReg_32Bit MODTYPE:8;
+    Ifx_UReg_32Bit MODNUMBER:16;
+} Ifx_SCU_ID_Bits;
+
+
+typedef struct _Ifx_SCU_IGCR_Bits
+{
+    Ifx_UReg_32Bit IPEN00:1;
+    Ifx_UReg_32Bit IPEN01:1;
+    Ifx_UReg_32Bit IPEN02:1;
+    Ifx_UReg_32Bit IPEN03:1;
+    Ifx_UReg_32Bit IPEN04:1;
+    Ifx_UReg_32Bit IPEN05:1;
+    Ifx_UReg_32Bit IPEN06:1;
+    Ifx_UReg_32Bit IPEN07:1;
+    Ifx_UReg_32Bit reserved_8:5;
+    Ifx_UReg_32Bit GEEN0:1;
+    Ifx_UReg_32Bit IGP0:2;
+    Ifx_UReg_32Bit IPEN10:1;
+    Ifx_UReg_32Bit IPEN11:1;
+    Ifx_UReg_32Bit IPEN12:1;
+    Ifx_UReg_32Bit IPEN13:1;
+    Ifx_UReg_32Bit IPEN14:1;
+    Ifx_UReg_32Bit IPEN15:1;
+    Ifx_UReg_32Bit IPEN16:1;
+    Ifx_UReg_32Bit IPEN17:1;
+    Ifx_UReg_32Bit reserved_24:5;
+    Ifx_UReg_32Bit GEEN1:1;
+    Ifx_UReg_32Bit IGP1:2;
+} Ifx_SCU_IGCR_Bits;
+
+
+typedef struct _Ifx_SCU_IN_Bits
+{
+    Ifx_UReg_32Bit P0:1;
+    Ifx_UReg_32Bit P1:1;
+    Ifx_UReg_32Bit reserved_2:30;
+} Ifx_SCU_IN_Bits;
+
+
+typedef struct _Ifx_SCU_IOCR_Bits
+{
+    Ifx_UReg_32Bit reserved_0:4;
+    Ifx_UReg_32Bit PC0:4;
+    Ifx_UReg_32Bit reserved_8:4;
+    Ifx_UReg_32Bit PC1:4;
+    Ifx_UReg_32Bit reserved_16:16;
+} Ifx_SCU_IOCR_Bits;
+
+
+typedef struct _Ifx_SCU_LBISTCTRL0_Bits
+{
+    Ifx_UReg_32Bit LBISTREQ:1;
+    Ifx_UReg_32Bit LBISTRES:1;
+    Ifx_UReg_32Bit PATTERNS:18;
+    Ifx_UReg_32Bit reserved_20:8;
+    Ifx_UReg_32Bit LBISTDONE:1;
+    Ifx_UReg_32Bit reserved_29:1;
+    Ifx_UReg_32Bit LBISTERRINJ:1;
+    Ifx_UReg_32Bit LBISTREQRED:1;
+} Ifx_SCU_LBISTCTRL0_Bits;
+
+
+typedef struct _Ifx_SCU_LBISTCTRL1_Bits
+{
+    Ifx_UReg_32Bit SEED:19;
+    Ifx_UReg_32Bit reserved_19:5;
+    Ifx_UReg_32Bit SPLITSH:3;
+    Ifx_UReg_32Bit BODY:1;
+    Ifx_UReg_32Bit LBISTFREQU:4;
+} Ifx_SCU_LBISTCTRL1_Bits;
+
+
+typedef struct _Ifx_SCU_LBISTCTRL2_Bits
+{
+    Ifx_UReg_32Bit LENGTH:12;
+    Ifx_UReg_32Bit reserved_12:20;
+} Ifx_SCU_LBISTCTRL2_Bits;
+
+
+typedef struct _Ifx_SCU_LBISTCTRL3_Bits
+{
+    Ifx_UReg_32Bit SIGNATURE:32;
+} Ifx_SCU_LBISTCTRL3_Bits;
+
+
+typedef struct _Ifx_SCU_LCLCON0_Bits
+{
+    Ifx_UReg_32Bit reserved_0:1;
+    Ifx_UReg_32Bit reserved_1:14;
+    Ifx_UReg_32Bit reserved_15:1;
+    Ifx_UReg_32Bit LS0:1;
+    Ifx_UReg_32Bit reserved_17:14;
+    Ifx_UReg_32Bit LSEN0:1;
+} Ifx_SCU_LCLCON0_Bits;
+
+
+typedef struct _Ifx_SCU_LCLCON1_Bits
+{
+    Ifx_UReg_32Bit reserved_0:1;
+    Ifx_UReg_32Bit reserved_1:14;
+    Ifx_UReg_32Bit reserved_15:1;
+    Ifx_UReg_32Bit LS1:1;
+    Ifx_UReg_32Bit reserved_17:14;
+    Ifx_UReg_32Bit LSEN1:1;
+} Ifx_SCU_LCLCON1_Bits;
+
+
+typedef struct _Ifx_SCU_LCLTEST_Bits
+{
+    Ifx_UReg_32Bit LCLT0:1;
+    Ifx_UReg_32Bit LCLT1:1;
+    Ifx_UReg_32Bit LCLT2:1;
+    Ifx_UReg_32Bit LCLT3:1;
+    Ifx_UReg_32Bit reserved_4:1;
+    Ifx_UReg_32Bit reserved_5:1;
+    Ifx_UReg_32Bit reserved_6:10;
+    Ifx_UReg_32Bit PLCLT0:1;
+    Ifx_UReg_32Bit PLCLT1:1;
+    Ifx_UReg_32Bit PLCLT2:1;
+    Ifx_UReg_32Bit PLCLT3:1;
+    Ifx_UReg_32Bit reserved_20:1;
+    Ifx_UReg_32Bit reserved_21:1;
+    Ifx_UReg_32Bit reserved_22:10;
+} Ifx_SCU_LCLTEST_Bits;
+
+
+typedef struct _Ifx_SCU_MANID_Bits
+{
+    Ifx_UReg_32Bit DEPT:5;
+    Ifx_UReg_32Bit MANUF:11;
+    Ifx_UReg_32Bit reserved_16:16;
+} Ifx_SCU_MANID_Bits;
+
+
+typedef struct _Ifx_SCU_OMR_Bits
+{
+    Ifx_UReg_32Bit PS0:1;
+    Ifx_UReg_32Bit PS1:1;
+    Ifx_UReg_32Bit reserved_2:14;
+    Ifx_UReg_32Bit PCL0:1;
+    Ifx_UReg_32Bit PCL1:1;
+    Ifx_UReg_32Bit reserved_18:14;
+} Ifx_SCU_OMR_Bits;
+
+
+typedef struct _Ifx_SCU_OSCCON_Bits
+{
+    Ifx_UReg_32Bit reserved_0:1;
+    Ifx_UReg_32Bit PLLLV:1;
+    Ifx_UReg_32Bit OSCRES:1;
+    Ifx_UReg_32Bit GAINSEL:2;
+    Ifx_UReg_32Bit MODE:2;
+    Ifx_UReg_32Bit SHBY:1;
+    Ifx_UReg_32Bit PLLHV:1;
+    Ifx_UReg_32Bit HYSEN:1;
+    Ifx_UReg_32Bit HYSCTL:2;
+    Ifx_UReg_32Bit AMPCTL:2;
+    Ifx_UReg_32Bit reserved_14:2;
+    Ifx_UReg_32Bit OSCVAL:5;
+    Ifx_UReg_32Bit reserved_21:2;
+    Ifx_UReg_32Bit APREN:1;
+    Ifx_UReg_32Bit CAP0EN:1;
+    Ifx_UReg_32Bit CAP1EN:1;
+    Ifx_UReg_32Bit CAP2EN:1;
+    Ifx_UReg_32Bit CAP3EN:1;
+    Ifx_UReg_32Bit reserved_28:4;
+} Ifx_SCU_OSCCON_Bits;
+
+
+typedef struct _Ifx_SCU_OUT_Bits
+{
+    Ifx_UReg_32Bit P0:1;
+    Ifx_UReg_32Bit P1:1;
+    Ifx_UReg_32Bit reserved_2:30;
+} Ifx_SCU_OUT_Bits;
+
+
+typedef struct _Ifx_SCU_OVCCON_Bits
+{
+    Ifx_UReg_32Bit CSEL0:1;
+    Ifx_UReg_32Bit CSEL1:1;
+    Ifx_UReg_32Bit CSEL2:1;
+    Ifx_UReg_32Bit CSEL3:1;
+    Ifx_UReg_32Bit reserved_4:1;
+    Ifx_UReg_32Bit reserved_5:1;
+    Ifx_UReg_32Bit reserved_6:10;
+    Ifx_UReg_32Bit OVSTRT:1;
+    Ifx_UReg_32Bit OVSTP:1;
+    Ifx_UReg_32Bit DCINVAL:1;
+    Ifx_UReg_32Bit reserved_19:5;
+    Ifx_UReg_32Bit OVCONF:1;
+    Ifx_UReg_32Bit POVCONF:1;
+    Ifx_UReg_32Bit reserved_26:6;
+} Ifx_SCU_OVCCON_Bits;
+
+
+typedef struct _Ifx_SCU_OVCENABLE_Bits
+{
+    Ifx_UReg_32Bit OVEN0:1;
+    Ifx_UReg_32Bit OVEN1:1;
+    Ifx_UReg_32Bit OVEN2:1;
+    Ifx_UReg_32Bit OVEN3:1;
+    Ifx_UReg_32Bit reserved_4:1;
+    Ifx_UReg_32Bit reserved_5:1;
+    Ifx_UReg_32Bit reserved_6:26;
+} Ifx_SCU_OVCENABLE_Bits;
+
+
+typedef struct _Ifx_SCU_PDISC_Bits
+{
+    Ifx_UReg_32Bit PDIS0:1;
+    Ifx_UReg_32Bit PDIS1:1;
+    Ifx_UReg_32Bit reserved_2:30;
+} Ifx_SCU_PDISC_Bits;
+
+
+typedef struct _Ifx_SCU_PDR_Bits
+{
+    Ifx_UReg_32Bit PD0:2;
+    Ifx_UReg_32Bit PL0:2;
+    Ifx_UReg_32Bit PD1:2;
+    Ifx_UReg_32Bit PL1:2;
+    Ifx_UReg_32Bit reserved_8:24;
+} Ifx_SCU_PDR_Bits;
+
+
+typedef struct _Ifx_SCU_PDRR_Bits
+{
+    Ifx_UReg_32Bit PDR0:1;
+    Ifx_UReg_32Bit PDR1:1;
+    Ifx_UReg_32Bit PDR2:1;
+    Ifx_UReg_32Bit PDR3:1;
+    Ifx_UReg_32Bit PDR4:1;
+    Ifx_UReg_32Bit PDR5:1;
+    Ifx_UReg_32Bit PDR6:1;
+    Ifx_UReg_32Bit PDR7:1;
+    Ifx_UReg_32Bit reserved_8:24;
+} Ifx_SCU_PDRR_Bits;
+
+
+typedef struct _Ifx_SCU_PERPLLCON0_Bits
+{
+    Ifx_UReg_32Bit DIVBY:1;
+    Ifx_UReg_32Bit reserved_1:8;
+    Ifx_UReg_32Bit NDIV:7;
+    Ifx_UReg_32Bit PLLPWD:1;
+    Ifx_UReg_32Bit reserved_17:1;
+    Ifx_UReg_32Bit RESLD:1;
+    Ifx_UReg_32Bit reserved_19:5;
+    Ifx_UReg_32Bit PDIV:3;
+    Ifx_UReg_32Bit reserved_27:5;
+} Ifx_SCU_PERPLLCON0_Bits;
+
+
+typedef struct _Ifx_SCU_PERPLLCON1_Bits
+{
+    Ifx_UReg_32Bit K2DIV:3;
+    Ifx_UReg_32Bit reserved_3:5;
+    Ifx_UReg_32Bit K3DIV:3;
+    Ifx_UReg_32Bit reserved_11:21;
+} Ifx_SCU_PERPLLCON1_Bits;
+
+
+typedef struct _Ifx_SCU_PERPLLSTAT_Bits
+{
+    Ifx_UReg_32Bit reserved_0:1;
+    Ifx_UReg_32Bit PWDSTAT:1;
+    Ifx_UReg_32Bit LOCK:1;
+    Ifx_UReg_32Bit reserved_3:1;
+    Ifx_UReg_32Bit K3RDY:1;
+    Ifx_UReg_32Bit K2RDY:1;
+    Ifx_UReg_32Bit reserved_6:1;
+    Ifx_UReg_32Bit reserved_7:25;
+} Ifx_SCU_PERPLLSTAT_Bits;
+
+
+typedef struct _Ifx_SCU_PMCSR0_Bits
+{
+    Ifx_UReg_32Bit REQSLP:2;
+    Ifx_UReg_32Bit reserved_2:6;
+    Ifx_UReg_32Bit PMST:3;
+    Ifx_UReg_32Bit reserved_11:21;
+} Ifx_SCU_PMCSR0_Bits;
+
+
+typedef struct _Ifx_SCU_PMCSR1_Bits
+{
+    Ifx_UReg_32Bit REQSLP:2;
+    Ifx_UReg_32Bit reserved_2:6;
+    Ifx_UReg_32Bit PMST:3;
+    Ifx_UReg_32Bit reserved_11:21;
+} Ifx_SCU_PMCSR1_Bits;
+
+
+typedef struct _Ifx_SCU_PMCSR2_Bits
+{
+    Ifx_UReg_32Bit REQSLP:2;
+    Ifx_UReg_32Bit reserved_2:6;
+    Ifx_UReg_32Bit PMST:3;
+    Ifx_UReg_32Bit reserved_11:21;
+} Ifx_SCU_PMCSR2_Bits;
+
+
+typedef struct _Ifx_SCU_PMCSR3_Bits
+{
+    Ifx_UReg_32Bit REQSLP:2;
+    Ifx_UReg_32Bit reserved_2:6;
+    Ifx_UReg_32Bit PMST:3;
+    Ifx_UReg_32Bit reserved_11:21;
+} Ifx_SCU_PMCSR3_Bits;
+
+
+typedef struct _Ifx_SCU_PMCSR4_Bits
+{
+    Ifx_UReg_32Bit REQSLP:2;
+    Ifx_UReg_32Bit reserved_2:6;
+    Ifx_UReg_32Bit PMST:3;
+    Ifx_UReg_32Bit reserved_11:21;
+} Ifx_SCU_PMCSR4_Bits;
+
+
+typedef struct _Ifx_SCU_PMCSR5_Bits
+{
+    Ifx_UReg_32Bit REQSLP:2;
+    Ifx_UReg_32Bit reserved_2:6;
+    Ifx_UReg_32Bit PMST:3;
+    Ifx_UReg_32Bit reserved_11:21;
+} Ifx_SCU_PMCSR5_Bits;
+
+
+typedef struct _Ifx_SCU_PMSTAT0_Bits
+{
+    Ifx_UReg_32Bit CPU0:1;
+    Ifx_UReg_32Bit CPU1:1;
+    Ifx_UReg_32Bit CPU2:1;
+    Ifx_UReg_32Bit CPU3:1;
+    Ifx_UReg_32Bit CPU4:1;
+    Ifx_UReg_32Bit CPU5:1;
+    Ifx_UReg_32Bit reserved_6:10;
+    Ifx_UReg_32Bit CPU0LS:1;
+    Ifx_UReg_32Bit CPU1LS:1;
+    Ifx_UReg_32Bit CPU2LS:1;
+    Ifx_UReg_32Bit CPU3LS:1;
+    Ifx_UReg_32Bit reserved_20:12;
+} Ifx_SCU_PMSTAT0_Bits;
+
+
+typedef struct _Ifx_SCU_PMSWCR1_Bits
+{
+    Ifx_UReg_32Bit reserved_0:8;
+    Ifx_UReg_32Bit CPUIDLSEL:3;
+    Ifx_UReg_32Bit reserved_11:1;
+    Ifx_UReg_32Bit IRADIS:1;
+    Ifx_UReg_32Bit reserved_13:11;
+    Ifx_UReg_32Bit CPUSEL:3;
+    Ifx_UReg_32Bit STBYEVEN:1;
+    Ifx_UReg_32Bit STBYEV:3;
+    Ifx_UReg_32Bit reserved_31:1;
+} Ifx_SCU_PMSWCR1_Bits;
+
+
+typedef struct _Ifx_SCU_PMTRCSR0_Bits
+{
+    Ifx_UReg_32Bit LJTEN:1;
+    Ifx_UReg_32Bit LJTOVEN:1;
+    Ifx_UReg_32Bit LJTOVIEN:1;
+    Ifx_UReg_32Bit LJTSTRT:1;
+    Ifx_UReg_32Bit LJTSTP:1;
+    Ifx_UReg_32Bit LJTCLR:1;
+    Ifx_UReg_32Bit reserved_6:6;
+    Ifx_UReg_32Bit SDSTEP:4;
+    Ifx_UReg_32Bit VDTEN:1;
+    Ifx_UReg_32Bit VDTOVEN:1;
+    Ifx_UReg_32Bit VDTOVIEN:1;
+    Ifx_UReg_32Bit VDTSTRT:1;
+    Ifx_UReg_32Bit VDTSTP:1;
+    Ifx_UReg_32Bit VDTCLR:1;
+    Ifx_UReg_32Bit reserved_22:7;
+    Ifx_UReg_32Bit LPSLPEN:1;
+    Ifx_UReg_32Bit reserved_30:2;
+} Ifx_SCU_PMTRCSR0_Bits;
+
+
+typedef struct _Ifx_SCU_PMTRCSR1_Bits
+{
+    Ifx_UReg_32Bit LJTCV:16;
+    Ifx_UReg_32Bit VDTCV:10;
+    Ifx_UReg_32Bit reserved_26:6;
+} Ifx_SCU_PMTRCSR1_Bits;
+
+
+typedef struct _Ifx_SCU_PMTRCSR2_Bits
+{
+    Ifx_UReg_32Bit LDJMPREQ:2;
+    Ifx_UReg_32Bit reserved_2:2;
+    Ifx_UReg_32Bit LJTRUN:2;
+    Ifx_UReg_32Bit reserved_6:2;
+    Ifx_UReg_32Bit LJTOV:1;
+    Ifx_UReg_32Bit reserved_9:3;
+    Ifx_UReg_32Bit LJTOVCLR:1;
+    Ifx_UReg_32Bit reserved_13:3;
+    Ifx_UReg_32Bit LJTCNT:16;
+} Ifx_SCU_PMTRCSR2_Bits;
+
+
+typedef struct _Ifx_SCU_PMTRCSR3_Bits
+{
+    Ifx_UReg_32Bit VDROOPREQ:2;
+    Ifx_UReg_32Bit reserved_2:2;
+    Ifx_UReg_32Bit VDTRUN:2;
+    Ifx_UReg_32Bit reserved_6:2;
+    Ifx_UReg_32Bit VDTOV:1;
+    Ifx_UReg_32Bit reserved_9:3;
+    Ifx_UReg_32Bit VDTOVCLR:1;
+    Ifx_UReg_32Bit reserved_13:3;
+    Ifx_UReg_32Bit VDTCNT:10;
+    Ifx_UReg_32Bit reserved_26:6;
+} Ifx_SCU_PMTRCSR3_Bits;
+
+
+typedef struct _Ifx_SCU_RSTCON_Bits
+{
+    Ifx_UReg_32Bit ESR0:2;
+    Ifx_UReg_32Bit ESR1:2;
+    Ifx_UReg_32Bit reserved_4:2;
+    Ifx_UReg_32Bit SMU:2;
+    Ifx_UReg_32Bit SW:2;
+    Ifx_UReg_32Bit STM0:2;
+    Ifx_UReg_32Bit STM1:2;
+    Ifx_UReg_32Bit STM2:2;
+    Ifx_UReg_32Bit STM3:2;
+    Ifx_UReg_32Bit reserved_18:2;
+    Ifx_UReg_32Bit reserved_20:2;
+    Ifx_UReg_32Bit reserved_22:10;
+} Ifx_SCU_RSTCON_Bits;
+
+
+typedef struct _Ifx_SCU_RSTCON2_Bits
+{
+    Ifx_UReg_32Bit FRTO:1;
+    Ifx_UReg_32Bit CLRC:1;
+    Ifx_UReg_32Bit reserved_2:1;
+    Ifx_UReg_32Bit reserved_3:1;
+    Ifx_UReg_32Bit reserved_4:1;
+    Ifx_UReg_32Bit reserved_5:1;
+    Ifx_UReg_32Bit reserved_6:1;
+    Ifx_UReg_32Bit CSSX:6;
+    Ifx_UReg_32Bit reserved_13:1;
+    Ifx_UReg_32Bit reserved_14:1;
+    Ifx_UReg_32Bit reserved_15:1;
+    Ifx_UReg_32Bit USRINFO:16;
+} Ifx_SCU_RSTCON2_Bits;
+
+
+typedef struct _Ifx_SCU_RSTCON3_Bits
+{
+    Ifx_UReg_32Bit reserved_0:32;
+} Ifx_SCU_RSTCON3_Bits;
+
+
+typedef struct _Ifx_SCU_RSTSTAT_Bits
+{
+    Ifx_UReg_32Bit ESR0:1;
+    Ifx_UReg_32Bit ESR1:1;
+    Ifx_UReg_32Bit reserved_2:1;
+    Ifx_UReg_32Bit SMU:1;
+    Ifx_UReg_32Bit SW:1;
+    Ifx_UReg_32Bit STM0:1;
+    Ifx_UReg_32Bit STM1:1;
+    Ifx_UReg_32Bit STM2:1;
+    Ifx_UReg_32Bit STM3:1;
+    Ifx_UReg_32Bit reserved_9:1;
+    Ifx_UReg_32Bit reserved_10:1;
+    Ifx_UReg_32Bit reserved_11:5;
+    Ifx_UReg_32Bit PORST:1;
+    Ifx_UReg_32Bit reserved_17:1;
+    Ifx_UReg_32Bit CB0:1;
+    Ifx_UReg_32Bit CB1:1;
+    Ifx_UReg_32Bit CB3:1;
+    Ifx_UReg_32Bit reserved_21:1;
+    Ifx_UReg_32Bit reserved_22:1;
+    Ifx_UReg_32Bit EVRC:1;
+    Ifx_UReg_32Bit EVR33:1;
+    Ifx_UReg_32Bit SWD:1;
+    Ifx_UReg_32Bit HSMS:1;
+    Ifx_UReg_32Bit HSMA:1;
+    Ifx_UReg_32Bit STBYR:1;
+    Ifx_UReg_32Bit LBPORST:1;
+    Ifx_UReg_32Bit LBTERM:1;
+    Ifx_UReg_32Bit reserved_31:1;
+} Ifx_SCU_RSTSTAT_Bits;
+
+
+typedef struct _Ifx_SCU_SEICON0_Bits
+{
+    volatile unsigned int reserved_0:1;
+    volatile unsigned int ENDINIT:1;
+    volatile unsigned int EPW:14;
+    volatile unsigned int REL:16;
+} Ifx_SCU_SEICON0_Bits;
+
+
+typedef struct _Ifx_SCU_SEICON1_Bits
+{
+    Ifx_UReg_32Bit reserved_0:1;
+    Ifx_UReg_32Bit reserved_1:1;
+    Ifx_UReg_32Bit IR0:1;
+    Ifx_UReg_32Bit DR:1;
+    Ifx_UReg_32Bit reserved_4:1;
+    Ifx_UReg_32Bit IR1:1;
+    Ifx_UReg_32Bit reserved_6:26;
+} Ifx_SCU_SEICON1_Bits;
+
+
+typedef struct _Ifx_SCU_SEISR_Bits
+{
+    Ifx_UReg_32Bit AE:1;
+    Ifx_UReg_32Bit OE:1;
+    Ifx_UReg_32Bit IS0:1;
+    Ifx_UReg_32Bit DS:1;
+    Ifx_UReg_32Bit TO:1;
+    Ifx_UReg_32Bit IS1:1;
+    Ifx_UReg_32Bit reserved_6:10;
+    Ifx_UReg_32Bit TIM:16;
+} Ifx_SCU_SEISR_Bits;
+
+
+typedef struct _Ifx_SCU_STCON_Bits
+{
+    Ifx_UReg_32Bit reserved_0:13;
+    Ifx_UReg_32Bit SFCBAE:1;
+    Ifx_UReg_32Bit CFCBAE:1;
+    Ifx_UReg_32Bit STP:1;
+    Ifx_UReg_32Bit reserved_16:16;
+} Ifx_SCU_STCON_Bits;
+
+
+typedef struct _Ifx_SCU_STMEM1_Bits
+{
+    Ifx_UReg_32Bit MEM:32;
+} Ifx_SCU_STMEM1_Bits;
+
+
+typedef struct _Ifx_SCU_STMEM2_Bits
+{
+    Ifx_UReg_32Bit MEM:32;
+} Ifx_SCU_STMEM2_Bits;
+
+
+typedef struct _Ifx_SCU_STMEM3_Bits
+{
+    Ifx_UReg_32Bit MEM:32;
+} Ifx_SCU_STMEM3_Bits;
+
+
+typedef struct _Ifx_SCU_STMEM4_Bits
+{
+    Ifx_UReg_32Bit MEM:32;
+} Ifx_SCU_STMEM4_Bits;
+
+
+typedef struct _Ifx_SCU_STMEM5_Bits
+{
+    Ifx_UReg_32Bit MEM:32;
+} Ifx_SCU_STMEM5_Bits;
+
+
+typedef struct _Ifx_SCU_STMEM6_Bits
+{
+    Ifx_UReg_32Bit MEM:32;
+} Ifx_SCU_STMEM6_Bits;
+
+
+typedef struct _Ifx_SCU_STSTAT_Bits
+{
+    Ifx_UReg_32Bit HWCFG:8;
+    Ifx_UReg_32Bit FTM:7;
+    Ifx_UReg_32Bit MODE:1;
+    Ifx_UReg_32Bit FCBAE:1;
+    Ifx_UReg_32Bit LUDIS:1;
+    Ifx_UReg_32Bit reserved_18:1;
+    Ifx_UReg_32Bit TRSTL:1;
+    Ifx_UReg_32Bit SPDEN:1;
+    Ifx_UReg_32Bit reserved_21:1;
+    Ifx_UReg_32Bit reserved_22:1;
+    Ifx_UReg_32Bit reserved_23:1;
+    Ifx_UReg_32Bit RAMINT:1;
+    Ifx_UReg_32Bit reserved_25:3;
+    Ifx_UReg_32Bit reserved_28:4;
+} Ifx_SCU_STSTAT_Bits;
+
+
+typedef struct _Ifx_SCU_SWAPCTRL_Bits
+{
+    Ifx_UReg_32Bit ADDRCFG:2;
+    Ifx_UReg_32Bit SPARE:14;
+    Ifx_UReg_32Bit reserved_16:16;
+} Ifx_SCU_SWAPCTRL_Bits;
+
+
+typedef struct _Ifx_SCU_SWRSTCON_Bits
+{
+    Ifx_UReg_32Bit reserved_0:1;
+    Ifx_UReg_32Bit SWRSTREQ:1;
+    Ifx_UReg_32Bit reserved_2:6;
+    Ifx_UReg_32Bit reserved_8:8;
+    Ifx_UReg_32Bit reserved_16:16;
+} Ifx_SCU_SWRSTCON_Bits;
+
+
+typedef struct _Ifx_SCU_SYSCON_Bits
+{
+    Ifx_UReg_32Bit CCTRIG0:1;
+    Ifx_UReg_32Bit reserved_1:1;
+    Ifx_UReg_32Bit RAMINTM:2;
+    Ifx_UReg_32Bit SETLUDIS:1;
+    Ifx_UReg_32Bit reserved_5:1;
+    Ifx_UReg_32Bit reserved_6:1;
+    Ifx_UReg_32Bit reserved_7:1;
+    Ifx_UReg_32Bit DDC:1;
+    Ifx_UReg_32Bit reserved_9:7;
+    Ifx_UReg_32Bit reserved_16:16;
+} Ifx_SCU_SYSCON_Bits;
+
+
+typedef struct _Ifx_SCU_SYSPLLCON0_Bits
+{
+    Ifx_UReg_32Bit reserved_0:2;
+    Ifx_UReg_32Bit MODEN:1;
+    Ifx_UReg_32Bit reserved_3:6;
+    Ifx_UReg_32Bit NDIV:7;
+    Ifx_UReg_32Bit PLLPWD:1;
+    Ifx_UReg_32Bit reserved_17:1;
+    Ifx_UReg_32Bit RESLD:1;
+    Ifx_UReg_32Bit reserved_19:5;
+    Ifx_UReg_32Bit PDIV:3;
+    Ifx_UReg_32Bit reserved_27:3;
+    Ifx_UReg_32Bit INSEL:2;
+} Ifx_SCU_SYSPLLCON0_Bits;
+
+
+typedef struct _Ifx_SCU_SYSPLLCON1_Bits
+{
+    Ifx_UReg_32Bit K2DIV:3;
+    Ifx_UReg_32Bit reserved_3:29;
+} Ifx_SCU_SYSPLLCON1_Bits;
+
+
+typedef struct _Ifx_SCU_SYSPLLCON2_Bits
+{
+    Ifx_UReg_32Bit MODCFG:16;
+    Ifx_UReg_32Bit reserved_16:16;
+} Ifx_SCU_SYSPLLCON2_Bits;
+
+
+typedef struct _Ifx_SCU_SYSPLLSTAT_Bits
+{
+    Ifx_UReg_32Bit reserved_0:1;
+    Ifx_UReg_32Bit PWDSTAT:1;
+    Ifx_UReg_32Bit LOCK:1;
+    Ifx_UReg_32Bit reserved_3:2;
+    Ifx_UReg_32Bit K2RDY:1;
+    Ifx_UReg_32Bit reserved_6:1;
+    Ifx_UReg_32Bit MODRUN:1;
+    Ifx_UReg_32Bit reserved_8:24;
+} Ifx_SCU_SYSPLLSTAT_Bits;
+
+
+typedef struct _Ifx_SCU_TRAPCLR_Bits
+{
+    Ifx_UReg_32Bit ESR0T:1;
+    Ifx_UReg_32Bit ESR1T:1;
+    Ifx_UReg_32Bit TRAP2:1;
+    Ifx_UReg_32Bit SMUT:1;
+    Ifx_UReg_32Bit reserved_4:28;
+} Ifx_SCU_TRAPCLR_Bits;
+
+
+typedef struct _Ifx_SCU_TRAPDIS0_Bits
+{
+    Ifx_UReg_32Bit CPU0ESR0T:1;
+    Ifx_UReg_32Bit CPU0ESR1T:1;
+    Ifx_UReg_32Bit CPU0TRAP2T:1;
+    Ifx_UReg_32Bit CPU0SMUT:1;
+    Ifx_UReg_32Bit reserved_4:4;
+    Ifx_UReg_32Bit CPU1ESR0T:1;
+    Ifx_UReg_32Bit CPU1ESR1T:1;
+    Ifx_UReg_32Bit CPU1TRAP2T:1;
+    Ifx_UReg_32Bit CPU1SMUT:1;
+    Ifx_UReg_32Bit reserved_12:4;
+    Ifx_UReg_32Bit CPU2ESR0T:1;
+    Ifx_UReg_32Bit CPU2ESR1T:1;
+    Ifx_UReg_32Bit CPU2TRAP2T:1;
+    Ifx_UReg_32Bit CPU2SMUT:1;
+    Ifx_UReg_32Bit reserved_20:4;
+    Ifx_UReg_32Bit CPU3ESR0T:1;
+    Ifx_UReg_32Bit CPU3ESR1T:1;
+    Ifx_UReg_32Bit CPU3TRAP2T:1;
+    Ifx_UReg_32Bit CPU3SMUT:1;
+    Ifx_UReg_32Bit reserved_28:4;
+} Ifx_SCU_TRAPDIS0_Bits;
+
+
+typedef struct _Ifx_SCU_TRAPDIS1_Bits
+{
+    Ifx_UReg_32Bit reserved_0:4;
+    Ifx_UReg_32Bit reserved_4:4;
+    Ifx_UReg_32Bit reserved_8:4;
+    Ifx_UReg_32Bit reserved_12:4;
+    Ifx_UReg_32Bit reserved_16:16;
+} Ifx_SCU_TRAPDIS1_Bits;
+
+
+typedef struct _Ifx_SCU_TRAPSET_Bits
+{
+    Ifx_UReg_32Bit ESR0T:1;
+    Ifx_UReg_32Bit ESR1T:1;
+    Ifx_UReg_32Bit TRAP2:1;
+    Ifx_UReg_32Bit SMUT:1;
+    Ifx_UReg_32Bit reserved_4:28;
+} Ifx_SCU_TRAPSET_Bits;
+
+
+typedef struct _Ifx_SCU_TRAPSTAT_Bits
+{
+    Ifx_UReg_32Bit ESR0T:1;
+    Ifx_UReg_32Bit ESR1T:1;
+    Ifx_UReg_32Bit TRAP2:1;
+    Ifx_UReg_32Bit SMUT:1;
+    Ifx_UReg_32Bit reserved_4:28;
+} Ifx_SCU_TRAPSTAT_Bits;
+
+
+typedef struct _Ifx_SCU_WDTCPU_CON0_Bits
+{
+    volatile unsigned int ENDINIT:1;
+    volatile unsigned int LCK:1;
+    volatile unsigned int PW:14;
+    volatile unsigned int REL:16;
+} Ifx_SCU_WDTCPU_CON0_Bits;
+
+
+typedef struct _Ifx_SCU_WDTCPU_CON1_Bits
+{
+    Ifx_UReg_32Bit reserved_0:1;
+    Ifx_UReg_32Bit reserved_1:1;
+    Ifx_UReg_32Bit IR0:1;
+    Ifx_UReg_32Bit DR:1;
+    Ifx_UReg_32Bit reserved_4:1;
+    Ifx_UReg_32Bit IR1:1;
+    Ifx_UReg_32Bit UR:1;
+    Ifx_UReg_32Bit PAR:1;
+    Ifx_UReg_32Bit TCR:1;
+    Ifx_UReg_32Bit TCTR:7;
+    Ifx_UReg_32Bit reserved_16:16;
+} Ifx_SCU_WDTCPU_CON1_Bits;
+
+
+typedef struct _Ifx_SCU_WDTCPU_SR_Bits
+{
+    Ifx_UReg_32Bit AE:1;
+    Ifx_UReg_32Bit OE:1;
+    Ifx_UReg_32Bit IS0:1;
+    Ifx_UReg_32Bit DS:1;
+    Ifx_UReg_32Bit TO:1;
+    Ifx_UReg_32Bit IS1:1;
+    Ifx_UReg_32Bit US:1;
+    Ifx_UReg_32Bit PAS:1;
+    Ifx_UReg_32Bit TCS:1;
+    Ifx_UReg_32Bit TCT:7;
+    Ifx_UReg_32Bit TIM:16;
+} Ifx_SCU_WDTCPU_SR_Bits;
+
+
+typedef struct _Ifx_SCU_WDTS_CON0_Bits
+{
+    volatile unsigned int ENDINIT:1;
+    volatile unsigned int LCK:1;
+    volatile unsigned int PW:14;
+    volatile unsigned int REL:16;
+} Ifx_SCU_WDTS_CON0_Bits;
+
+
+typedef struct _Ifx_SCU_WDTS_CON1_Bits
+{
+    Ifx_UReg_32Bit CLRIRF:1;
+    Ifx_UReg_32Bit reserved_1:1;
+    Ifx_UReg_32Bit IR0:1;
+    Ifx_UReg_32Bit DR:1;
+    Ifx_UReg_32Bit reserved_4:1;
+    Ifx_UReg_32Bit IR1:1;
+    Ifx_UReg_32Bit UR:1;
+    Ifx_UReg_32Bit PAR:1;
+    Ifx_UReg_32Bit TCR:1;
+    Ifx_UReg_32Bit TCTR:7;
+    Ifx_UReg_32Bit reserved_16:16;
+} Ifx_SCU_WDTS_CON1_Bits;
+
+
+typedef struct _Ifx_SCU_WDTS_SR_Bits
+{
+    Ifx_UReg_32Bit AE:1;
+    Ifx_UReg_32Bit OE:1;
+    Ifx_UReg_32Bit IS0:1;
+    Ifx_UReg_32Bit DS:1;
+    Ifx_UReg_32Bit TO:1;
+    Ifx_UReg_32Bit IS1:1;
+    Ifx_UReg_32Bit US:1;
+    Ifx_UReg_32Bit PAS:1;
+    Ifx_UReg_32Bit TCS:1;
+    Ifx_UReg_32Bit TCT:7;
+    Ifx_UReg_32Bit TIM:16;
+} Ifx_SCU_WDTS_SR_Bits;
+
+
+
+
+
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_ACCEN00_Bits B;
+} Ifx_SCU_ACCEN00;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_ACCEN01_Bits B;
+} Ifx_SCU_ACCEN01;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_ACCEN10_Bits B;
+} Ifx_SCU_ACCEN10;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_ACCEN11_Bits B;
+} Ifx_SCU_ACCEN11;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_ARSTDIS_Bits B;
+} Ifx_SCU_ARSTDIS;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_CCUCON0_Bits B;
+} Ifx_SCU_CCUCON0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_CCUCON1_Bits B;
+} Ifx_SCU_CCUCON1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_CCUCON2_Bits B;
+} Ifx_SCU_CCUCON2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_CCUCON3_Bits B;
+} Ifx_SCU_CCUCON3;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_CCUCON4_Bits B;
+} Ifx_SCU_CCUCON4;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_CCUCON5_Bits B;
+} Ifx_SCU_CCUCON5;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_CCUCON6_Bits B;
+} Ifx_SCU_CCUCON6;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_CCUCON7_Bits B;
+} Ifx_SCU_CCUCON7;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_CCUCON8_Bits B;
+} Ifx_SCU_CCUCON8;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_CCUCON9_Bits B;
+} Ifx_SCU_CCUCON9;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_CHIPID_Bits B;
+} Ifx_SCU_CHIPID;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_DTSCLIM_Bits B;
+} Ifx_SCU_DTSCLIM;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_DTSCSTAT_Bits B;
+} Ifx_SCU_DTSCSTAT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_EICON0_Bits B;
+} Ifx_SCU_EICON0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_EICON1_Bits B;
+} Ifx_SCU_EICON1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_EICR_Bits B;
+} Ifx_SCU_EICR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_EIFILT_Bits B;
+} Ifx_SCU_EIFILT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_EIFR_Bits B;
+} Ifx_SCU_EIFR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_EISR_Bits B;
+} Ifx_SCU_EISR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_EMSR_Bits B;
+} Ifx_SCU_EMSR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_EMSSW_Bits B;
+} Ifx_SCU_EMSSW;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_ESRCFGX_ESRCFGX_Bits B;
+} Ifx_SCU_ESRCFGX_ESRCFGX;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_ESROCFG_Bits B;
+} Ifx_SCU_ESROCFG;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_EXTCON_Bits B;
+} Ifx_SCU_EXTCON;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_FDR_Bits B;
+} Ifx_SCU_FDR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_FMR_Bits B;
+} Ifx_SCU_FMR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_ID_Bits B;
+} Ifx_SCU_ID;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_IGCR_Bits B;
+} Ifx_SCU_IGCR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_IN_Bits B;
+} Ifx_SCU_IN;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_IOCR_Bits B;
+} Ifx_SCU_IOCR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_LBISTCTRL0_Bits B;
+} Ifx_SCU_LBISTCTRL0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_LBISTCTRL1_Bits B;
+} Ifx_SCU_LBISTCTRL1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_LBISTCTRL2_Bits B;
+} Ifx_SCU_LBISTCTRL2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_LBISTCTRL3_Bits B;
+} Ifx_SCU_LBISTCTRL3;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_LCLCON0_Bits B;
+} Ifx_SCU_LCLCON0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_LCLCON1_Bits B;
+} Ifx_SCU_LCLCON1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_LCLTEST_Bits B;
+} Ifx_SCU_LCLTEST;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_MANID_Bits B;
+} Ifx_SCU_MANID;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_OMR_Bits B;
+} Ifx_SCU_OMR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_OSCCON_Bits B;
+} Ifx_SCU_OSCCON;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_OUT_Bits B;
+} Ifx_SCU_OUT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_OVCCON_Bits B;
+} Ifx_SCU_OVCCON;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_OVCENABLE_Bits B;
+} Ifx_SCU_OVCENABLE;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_PDISC_Bits B;
+} Ifx_SCU_PDISC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_PDR_Bits B;
+} Ifx_SCU_PDR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_PDRR_Bits B;
+} Ifx_SCU_PDRR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_PERPLLCON0_Bits B;
+} Ifx_SCU_PERPLLCON0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_PERPLLCON1_Bits B;
+} Ifx_SCU_PERPLLCON1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_PERPLLSTAT_Bits B;
+} Ifx_SCU_PERPLLSTAT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_PMCSR0_Bits B;
+} Ifx_SCU_PMCSR0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_PMCSR1_Bits B;
+} Ifx_SCU_PMCSR1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_PMCSR2_Bits B;
+} Ifx_SCU_PMCSR2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_PMCSR3_Bits B;
+} Ifx_SCU_PMCSR3;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_PMCSR4_Bits B;
+} Ifx_SCU_PMCSR4;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_PMCSR5_Bits B;
+} Ifx_SCU_PMCSR5;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_PMSTAT0_Bits B;
+} Ifx_SCU_PMSTAT0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_PMSWCR1_Bits B;
+} Ifx_SCU_PMSWCR1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_PMTRCSR0_Bits B;
+} Ifx_SCU_PMTRCSR0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_PMTRCSR1_Bits B;
+} Ifx_SCU_PMTRCSR1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_PMTRCSR2_Bits B;
+} Ifx_SCU_PMTRCSR2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_PMTRCSR3_Bits B;
+} Ifx_SCU_PMTRCSR3;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_RSTCON_Bits B;
+} Ifx_SCU_RSTCON;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_RSTCON2_Bits B;
+} Ifx_SCU_RSTCON2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_RSTCON3_Bits B;
+} Ifx_SCU_RSTCON3;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_RSTSTAT_Bits B;
+} Ifx_SCU_RSTSTAT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_SEICON0_Bits B;
+} Ifx_SCU_SEICON0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_SEICON1_Bits B;
+} Ifx_SCU_SEICON1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_SEISR_Bits B;
+} Ifx_SCU_SEISR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_STCON_Bits B;
+} Ifx_SCU_STCON;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_STMEM1_Bits B;
+} Ifx_SCU_STMEM1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_STMEM2_Bits B;
+} Ifx_SCU_STMEM2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_STMEM3_Bits B;
+} Ifx_SCU_STMEM3;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_STMEM4_Bits B;
+} Ifx_SCU_STMEM4;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_STMEM5_Bits B;
+} Ifx_SCU_STMEM5;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_STMEM6_Bits B;
+} Ifx_SCU_STMEM6;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_STSTAT_Bits B;
+} Ifx_SCU_STSTAT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_SWAPCTRL_Bits B;
+} Ifx_SCU_SWAPCTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_SWRSTCON_Bits B;
+} Ifx_SCU_SWRSTCON;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_SYSCON_Bits B;
+} Ifx_SCU_SYSCON;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_SYSPLLCON0_Bits B;
+} Ifx_SCU_SYSPLLCON0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_SYSPLLCON1_Bits B;
+} Ifx_SCU_SYSPLLCON1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_SYSPLLCON2_Bits B;
+} Ifx_SCU_SYSPLLCON2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_SYSPLLSTAT_Bits B;
+} Ifx_SCU_SYSPLLSTAT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_TRAPCLR_Bits B;
+} Ifx_SCU_TRAPCLR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_TRAPDIS0_Bits B;
+} Ifx_SCU_TRAPDIS0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_TRAPDIS1_Bits B;
+} Ifx_SCU_TRAPDIS1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_TRAPSET_Bits B;
+} Ifx_SCU_TRAPSET;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_TRAPSTAT_Bits B;
+} Ifx_SCU_TRAPSTAT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_WDTCPU_CON0_Bits B;
+} Ifx_SCU_WDTCPU_CON0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_WDTCPU_CON1_Bits B;
+} Ifx_SCU_WDTCPU_CON1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_WDTCPU_SR_Bits B;
+} Ifx_SCU_WDTCPU_SR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_WDTS_CON0_Bits B;
+} Ifx_SCU_WDTS_CON0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_WDTS_CON1_Bits B;
+} Ifx_SCU_WDTS_CON1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SCU_WDTS_SR_Bits B;
+} Ifx_SCU_WDTS_SR;
+# 2130 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxScu_regdef.h"
+typedef volatile struct _Ifx_SCU_ESRCFGX
+{
+       Ifx_SCU_ESRCFGX_ESRCFGX ESRCFGX;
+} Ifx_SCU_ESRCFGX;
+# 2148 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxScu_regdef.h"
+typedef volatile struct _Ifx_SCU_WDTCPU
+{
+       Ifx_SCU_WDTCPU_CON0 CON0;
+       Ifx_SCU_WDTCPU_CON1 CON1;
+       Ifx_SCU_WDTCPU_SR SR;
+} Ifx_SCU_WDTCPU;
+# 2168 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxScu_regdef.h"
+typedef volatile struct _Ifx_SCU_WDTS
+{
+       Ifx_SCU_WDTS_CON0 CON0;
+       Ifx_SCU_WDTS_CON1 CON1;
+       Ifx_SCU_WDTS_SR SR;
+} Ifx_SCU_WDTS;
+# 2188 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxScu_regdef.h"
+typedef volatile struct _Ifx_SCU
+{
+       Ifx_UReg_8Bit reserved_0[8];
+       Ifx_SCU_ID ID;
+       Ifx_UReg_8Bit reserved_C[4];
+       Ifx_SCU_OSCCON OSCCON;
+       Ifx_SCU_SYSPLLSTAT SYSPLLSTAT;
+       Ifx_SCU_SYSPLLCON0 SYSPLLCON0;
+       Ifx_SCU_SYSPLLCON1 SYSPLLCON1;
+       Ifx_SCU_SYSPLLCON2 SYSPLLCON2;
+       Ifx_SCU_PERPLLSTAT PERPLLSTAT;
+       Ifx_SCU_PERPLLCON0 PERPLLCON0;
+       Ifx_SCU_PERPLLCON1 PERPLLCON1;
+       Ifx_SCU_CCUCON0 CCUCON0;
+       Ifx_SCU_CCUCON1 CCUCON1;
+       Ifx_SCU_FDR FDR;
+       Ifx_SCU_EXTCON EXTCON;
+       Ifx_SCU_CCUCON2 CCUCON2;
+       Ifx_SCU_CCUCON3 CCUCON3;
+       Ifx_SCU_CCUCON4 CCUCON4;
+       Ifx_SCU_CCUCON5 CCUCON5;
+       Ifx_SCU_RSTSTAT RSTSTAT;
+       Ifx_UReg_8Bit reserved_54[4];
+       Ifx_SCU_RSTCON RSTCON;
+       Ifx_SCU_ARSTDIS ARSTDIS;
+       Ifx_SCU_SWRSTCON SWRSTCON;
+       Ifx_SCU_RSTCON2 RSTCON2;
+       Ifx_SCU_RSTCON3 RSTCON3;
+       Ifx_UReg_8Bit reserved_6C[4];
+       Ifx_SCU_ESRCFGX ESRCFGX[2];
+       Ifx_SCU_ESROCFG ESROCFG;
+       Ifx_SCU_SYSCON SYSCON;
+       Ifx_SCU_CCUCON6 CCUCON6;
+       Ifx_SCU_CCUCON7 CCUCON7;
+       Ifx_SCU_CCUCON8 CCUCON8;
+       Ifx_SCU_CCUCON9 CCUCON9;
+       Ifx_UReg_8Bit reserved_90[12];
+       Ifx_SCU_PDR PDR;
+       Ifx_SCU_IOCR IOCR;
+       Ifx_SCU_OUT OUT;
+       Ifx_SCU_OMR OMR;
+       Ifx_SCU_IN IN;
+       Ifx_UReg_8Bit reserved_B0[16];
+       Ifx_SCU_STSTAT STSTAT;
+       Ifx_SCU_STCON STCON;
+       Ifx_SCU_PMCSR0 PMCSR0;
+       Ifx_SCU_PMCSR1 PMCSR1;
+       Ifx_SCU_PMCSR2 PMCSR2;
+       Ifx_SCU_PMCSR3 PMCSR3;
+       Ifx_SCU_PMCSR4 PMCSR4;
+       Ifx_SCU_PMCSR5 PMCSR5;
+       Ifx_UReg_8Bit reserved_E0[4];
+       Ifx_SCU_PMSTAT0 PMSTAT0;
+       Ifx_SCU_PMSWCR1 PMSWCR1;
+       Ifx_UReg_8Bit reserved_EC[16];
+       Ifx_SCU_EMSR EMSR;
+       Ifx_SCU_EMSSW EMSSW;
+       Ifx_SCU_DTSCSTAT DTSCSTAT;
+       Ifx_SCU_DTSCLIM DTSCLIM;
+       Ifx_UReg_8Bit reserved_10C[20];
+       Ifx_SCU_TRAPDIS1 TRAPDIS1;
+       Ifx_SCU_TRAPSTAT TRAPSTAT;
+       Ifx_SCU_TRAPSET TRAPSET;
+       Ifx_SCU_TRAPCLR TRAPCLR;
+       Ifx_SCU_TRAPDIS0 TRAPDIS0;
+       Ifx_SCU_LCLCON0 LCLCON0;
+       Ifx_SCU_LCLCON1 LCLCON1;
+       Ifx_SCU_LCLTEST LCLTEST;
+       Ifx_SCU_CHIPID CHIPID;
+       Ifx_SCU_MANID MANID;
+       Ifx_UReg_8Bit reserved_148[4];
+       Ifx_SCU_SWAPCTRL SWAPCTRL;
+       Ifx_UReg_8Bit reserved_150[20];
+       Ifx_SCU_LBISTCTRL0 LBISTCTRL0;
+       Ifx_SCU_LBISTCTRL1 LBISTCTRL1;
+       Ifx_SCU_LBISTCTRL2 LBISTCTRL2;
+       Ifx_SCU_LBISTCTRL3 LBISTCTRL3;
+       Ifx_UReg_8Bit reserved_174[16];
+       Ifx_SCU_STMEM1 STMEM1;
+       Ifx_SCU_STMEM2 STMEM2;
+       Ifx_SCU_PDISC PDISC;
+       Ifx_UReg_8Bit reserved_190[8];
+       Ifx_SCU_PMTRCSR0 PMTRCSR0;
+       Ifx_SCU_PMTRCSR1 PMTRCSR1;
+       Ifx_SCU_PMTRCSR2 PMTRCSR2;
+       Ifx_SCU_PMTRCSR3 PMTRCSR3;
+       Ifx_UReg_8Bit reserved_1A8[24];
+       Ifx_SCU_STMEM3 STMEM3;
+       Ifx_SCU_STMEM4 STMEM4;
+       Ifx_SCU_STMEM5 STMEM5;
+       Ifx_SCU_STMEM6 STMEM6;
+       Ifx_UReg_8Bit reserved_1D0[16];
+       Ifx_SCU_OVCENABLE OVCENABLE;
+       Ifx_SCU_OVCCON OVCCON;
+       Ifx_UReg_8Bit reserved_1E8[36];
+       Ifx_SCU_EIFILT EIFILT;
+       Ifx_SCU_EICR EICR[4];
+       Ifx_SCU_EIFR EIFR;
+       Ifx_SCU_FMR FMR;
+       Ifx_SCU_PDRR PDRR;
+       Ifx_SCU_IGCR IGCR[4];
+       Ifx_UReg_8Bit reserved_23C[16];
+       Ifx_SCU_WDTCPU WDTCPU[4];
+       Ifx_UReg_8Bit reserved_27C[32];
+       Ifx_SCU_EICON0 EICON0;
+       Ifx_SCU_EICON1 EICON1;
+       Ifx_SCU_EISR EISR;
+       Ifx_SCU_WDTS WDTS;
+       Ifx_SCU_SEICON0 SEICON0;
+       Ifx_SCU_SEICON1 SEICON1;
+       Ifx_SCU_SEISR SEISR;
+       Ifx_UReg_8Bit reserved_2C0[304];
+       Ifx_SCU_ACCEN11 ACCEN11;
+       Ifx_SCU_ACCEN10 ACCEN10;
+       Ifx_SCU_ACCEN01 ACCEN01;
+       Ifx_SCU_ACCEN00 ACCEN00;
+} Ifx_SCU;
+# 57 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxScu_reg.h" 2
+# 2 ".\\output\\inc/IfxScu_reg.h" 2
+# 44 "bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\src\\HtxLbist.c" 2
+# 1 ".\\output\\inc/IfxCpu_reg.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxCpu_reg.h" 1
+# 65 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxCpu_reg.h"
+# 1 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxCpu_regdef.h" 1
+# 68 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxCpu_regdef.h"
+typedef struct _Ifx_CPU_A_Bits
+{
+    volatile unsigned int ADDR:32;
+} Ifx_CPU_A_Bits;
+
+
+typedef struct _Ifx_CPU_BIV_Bits
+{
+    volatile unsigned int VSS:1;
+    volatile unsigned int BIV:31;
+} Ifx_CPU_BIV_Bits;
+
+
+typedef struct _Ifx_CPU_BLK_OMASK_Bits
+{
+    volatile unsigned int reserved_0:5;
+    volatile unsigned int OMASK:12;
+    volatile unsigned int ONE:11;
+    volatile unsigned int reserved_28:4;
+} Ifx_CPU_BLK_OMASK_Bits;
+
+
+typedef struct _Ifx_CPU_BLK_OTAR_Bits
+{
+    volatile unsigned int reserved_0:5;
+    volatile unsigned int TBASE:23;
+    volatile unsigned int reserved_28:4;
+} Ifx_CPU_BLK_OTAR_Bits;
+
+
+typedef struct _Ifx_CPU_BLK_RABR_Bits
+{
+    volatile unsigned int reserved_0:5;
+    volatile unsigned int OBASE:17;
+    volatile unsigned int reserved_22:2;
+    volatile unsigned int OMEM:4;
+    volatile unsigned int reserved_28:3;
+    volatile unsigned int OVEN:1;
+} Ifx_CPU_BLK_RABR_Bits;
+
+
+typedef struct _Ifx_CPU_BTV_Bits
+{
+    volatile unsigned int reserved_0:1;
+    volatile unsigned int BTV:31;
+} Ifx_CPU_BTV_Bits;
+
+
+typedef struct _Ifx_CPU_CCNT_Bits
+{
+    volatile unsigned int COUNTVALUE:31;
+    volatile unsigned int SOVF:1;
+} Ifx_CPU_CCNT_Bits;
+
+
+typedef struct _Ifx_CPU_CCTRL_Bits
+{
+    volatile unsigned int CM:1;
+    volatile unsigned int CE:1;
+    volatile unsigned int M1:3;
+    volatile unsigned int M2:3;
+    volatile unsigned int M3:3;
+    volatile unsigned int reserved_11:21;
+} Ifx_CPU_CCTRL_Bits;
+
+
+typedef struct _Ifx_CPU_COMPAT_Bits
+{
+    volatile unsigned int reserved_0:3;
+    volatile unsigned int RM:1;
+    volatile unsigned int SP:1;
+    volatile unsigned int reserved_5:27;
+} Ifx_CPU_COMPAT_Bits;
+
+
+typedef struct _Ifx_CPU_CORE_ID_Bits
+{
+    volatile unsigned int CORE_ID:3;
+    volatile unsigned int reserved_3:29;
+} Ifx_CPU_CORE_ID_Bits;
+
+
+typedef struct _Ifx_CPU_CPR_L_Bits
+{
+    volatile unsigned int reserved_0:5;
+    volatile unsigned int LOWBND:27;
+} Ifx_CPU_CPR_L_Bits;
+
+
+typedef struct _Ifx_CPU_CPR_U_Bits
+{
+    volatile unsigned int reserved_0:5;
+    volatile unsigned int UPPBND:27;
+} Ifx_CPU_CPR_U_Bits;
+
+
+typedef struct _Ifx_CPU_CPU_ID_Bits
+{
+    volatile unsigned int MOD_REV:8;
+    volatile unsigned int MOD_32B:8;
+    volatile unsigned int MOD:16;
+} Ifx_CPU_CPU_ID_Bits;
+
+
+typedef struct _Ifx_CPU_CPXE_Bits
+{
+    volatile unsigned int XE_N:10;
+    volatile unsigned int reserved_10:22;
+} Ifx_CPU_CPXE_Bits;
+
+
+typedef struct _Ifx_CPU_CREVT_Bits
+{
+    volatile unsigned int EVTA:3;
+    volatile unsigned int BBM:1;
+    volatile unsigned int BOD:1;
+    volatile unsigned int SUSP:1;
+    volatile unsigned int CNT:2;
+    volatile unsigned int reserved_8:24;
+} Ifx_CPU_CREVT_Bits;
+
+
+typedef struct _Ifx_CPU_CUS_ID_Bits
+{
+    volatile unsigned int CID:3;
+    volatile unsigned int reserved_3:29;
+} Ifx_CPU_CUS_ID_Bits;
+
+
+typedef struct _Ifx_CPU_D_Bits
+{
+    volatile unsigned int DATA:32;
+} Ifx_CPU_D_Bits;
+
+
+typedef struct _Ifx_CPU_DATR_Bits
+{
+    volatile unsigned int reserved_0:3;
+    volatile unsigned int SBE:1;
+    volatile unsigned int reserved_4:5;
+    volatile unsigned int CWE:1;
+    volatile unsigned int CFE:1;
+    volatile unsigned int reserved_11:3;
+    volatile unsigned int SOE:1;
+    volatile unsigned int reserved_15:1;
+    volatile unsigned int reserved_16:16;
+} Ifx_CPU_DATR_Bits;
+
+
+typedef struct _Ifx_CPU_DBGSR_Bits
+{
+    volatile unsigned int DE:1;
+    volatile unsigned int HALT:2;
+    volatile unsigned int SIH:1;
+    volatile unsigned int SUSP:1;
+    volatile unsigned int reserved_5:1;
+    volatile unsigned int PREVSUSP:1;
+    volatile unsigned int PEVT:1;
+    volatile unsigned int EVTSRC:5;
+    volatile unsigned int reserved_13:19;
+} Ifx_CPU_DBGSR_Bits;
+
+
+typedef struct _Ifx_CPU_DBGTCR_Bits
+{
+    volatile unsigned int DTA:1;
+    volatile unsigned int reserved_1:31;
+} Ifx_CPU_DBGTCR_Bits;
+
+
+typedef struct _Ifx_CPU_DCON0_Bits
+{
+    volatile unsigned int reserved_0:1;
+    volatile unsigned int DCBYP:1;
+    volatile unsigned int reserved_2:30;
+} Ifx_CPU_DCON0_Bits;
+
+
+typedef struct _Ifx_CPU_DCON2_Bits
+{
+    volatile unsigned int DCACHE_SZE:16;
+    volatile unsigned int DSCRATCH_SZE:16;
+} Ifx_CPU_DCON2_Bits;
+
+
+typedef struct _Ifx_CPU_DCX_Bits
+{
+    volatile unsigned int reserved_0:6;
+    volatile unsigned int DCXVALUE:26;
+} Ifx_CPU_DCX_Bits;
+
+
+typedef struct _Ifx_CPU_DEADD_Bits
+{
+    volatile unsigned int ERROR_ADDRESS:32;
+} Ifx_CPU_DEADD_Bits;
+
+
+typedef struct _Ifx_CPU_DIEAR_Bits
+{
+    volatile unsigned int TA:32;
+} Ifx_CPU_DIEAR_Bits;
+
+
+typedef struct _Ifx_CPU_DIETR_Bits
+{
+    volatile unsigned int IED:1;
+    volatile unsigned int IE_T:1;
+    volatile unsigned int IE_C:1;
+    volatile unsigned int IE_S:1;
+    volatile unsigned int IE_BI:1;
+    volatile unsigned int E_INFO:6;
+    volatile unsigned int IE_UNC:1;
+    volatile unsigned int IE_SP:1;
+    volatile unsigned int IE_BS:1;
+    volatile unsigned int IE_DLMU:1;
+    volatile unsigned int IE_LPB:1;
+    volatile unsigned int IE_MTMV:1;
+    volatile unsigned int reserved_17:15;
+} Ifx_CPU_DIETR_Bits;
+
+
+typedef struct _Ifx_CPU_DLMU_SPROT_RGNACCENA_R_Bits
+{
+    volatile unsigned int EN0:1;
+    volatile unsigned int EN1:1;
+    volatile unsigned int EN2:1;
+    volatile unsigned int EN3:1;
+    volatile unsigned int EN4:1;
+    volatile unsigned int EN5:1;
+    volatile unsigned int EN6:1;
+    volatile unsigned int EN7:1;
+    volatile unsigned int EN8:1;
+    volatile unsigned int EN9:1;
+    volatile unsigned int EN10:1;
+    volatile unsigned int EN11:1;
+    volatile unsigned int EN12:1;
+    volatile unsigned int EN13:1;
+    volatile unsigned int EN14:1;
+    volatile unsigned int EN15:1;
+    volatile unsigned int EN16:1;
+    volatile unsigned int EN17:1;
+    volatile unsigned int EN18:1;
+    volatile unsigned int EN19:1;
+    volatile unsigned int EN20:1;
+    volatile unsigned int EN21:1;
+    volatile unsigned int EN22:1;
+    volatile unsigned int EN23:1;
+    volatile unsigned int EN24:1;
+    volatile unsigned int EN25:1;
+    volatile unsigned int EN26:1;
+    volatile unsigned int EN27:1;
+    volatile unsigned int EN28:1;
+    volatile unsigned int EN29:1;
+    volatile unsigned int EN30:1;
+    volatile unsigned int EN31:1;
+} Ifx_CPU_DLMU_SPROT_RGNACCENA_R_Bits;
+
+
+typedef struct _Ifx_CPU_DLMU_SPROT_RGNACCENA_W_Bits
+{
+    volatile unsigned int EN0:1;
+    volatile unsigned int EN1:1;
+    volatile unsigned int EN2:1;
+    volatile unsigned int EN3:1;
+    volatile unsigned int EN4:1;
+    volatile unsigned int EN5:1;
+    volatile unsigned int EN6:1;
+    volatile unsigned int EN7:1;
+    volatile unsigned int EN8:1;
+    volatile unsigned int EN9:1;
+    volatile unsigned int EN10:1;
+    volatile unsigned int EN11:1;
+    volatile unsigned int EN12:1;
+    volatile unsigned int EN13:1;
+    volatile unsigned int EN14:1;
+    volatile unsigned int EN15:1;
+    volatile unsigned int EN16:1;
+    volatile unsigned int EN17:1;
+    volatile unsigned int EN18:1;
+    volatile unsigned int EN19:1;
+    volatile unsigned int EN20:1;
+    volatile unsigned int EN21:1;
+    volatile unsigned int EN22:1;
+    volatile unsigned int EN23:1;
+    volatile unsigned int EN24:1;
+    volatile unsigned int EN25:1;
+    volatile unsigned int EN26:1;
+    volatile unsigned int EN27:1;
+    volatile unsigned int EN28:1;
+    volatile unsigned int EN29:1;
+    volatile unsigned int EN30:1;
+    volatile unsigned int EN31:1;
+} Ifx_CPU_DLMU_SPROT_RGNACCENA_W_Bits;
+
+
+typedef struct _Ifx_CPU_DLMU_SPROT_RGNACCENB_R_Bits
+{
+    volatile unsigned int EN32:1;
+    volatile unsigned int EN33:1;
+    volatile unsigned int EN34:1;
+    volatile unsigned int EN35:1;
+    volatile unsigned int EN36:1;
+    volatile unsigned int EN37:1;
+    volatile unsigned int EN38:1;
+    volatile unsigned int EN39:1;
+    volatile unsigned int EN40:1;
+    volatile unsigned int EN41:1;
+    volatile unsigned int EN42:1;
+    volatile unsigned int EN43:1;
+    volatile unsigned int EN44:1;
+    volatile unsigned int EN45:1;
+    volatile unsigned int EN46:1;
+    volatile unsigned int EN47:1;
+    volatile unsigned int EN48:1;
+    volatile unsigned int EN49:1;
+    volatile unsigned int EN50:1;
+    volatile unsigned int EN51:1;
+    volatile unsigned int EN52:1;
+    volatile unsigned int EN53:1;
+    volatile unsigned int EN54:1;
+    volatile unsigned int EN55:1;
+    volatile unsigned int EN56:1;
+    volatile unsigned int EN57:1;
+    volatile unsigned int EN58:1;
+    volatile unsigned int EN59:1;
+    volatile unsigned int EN60:1;
+    volatile unsigned int EN61:1;
+    volatile unsigned int EN62:1;
+    volatile unsigned int EN63:1;
+} Ifx_CPU_DLMU_SPROT_RGNACCENB_R_Bits;
+
+
+typedef struct _Ifx_CPU_DLMU_SPROT_RGNACCENB_W_Bits
+{
+    volatile unsigned int EN32:1;
+    volatile unsigned int EN33:1;
+    volatile unsigned int EN34:1;
+    volatile unsigned int EN35:1;
+    volatile unsigned int EN36:1;
+    volatile unsigned int EN37:1;
+    volatile unsigned int EN38:1;
+    volatile unsigned int EN39:1;
+    volatile unsigned int EN40:1;
+    volatile unsigned int EN41:1;
+    volatile unsigned int EN42:1;
+    volatile unsigned int EN43:1;
+    volatile unsigned int EN44:1;
+    volatile unsigned int EN45:1;
+    volatile unsigned int EN46:1;
+    volatile unsigned int EN47:1;
+    volatile unsigned int EN48:1;
+    volatile unsigned int EN49:1;
+    volatile unsigned int EN50:1;
+    volatile unsigned int EN51:1;
+    volatile unsigned int EN52:1;
+    volatile unsigned int EN53:1;
+    volatile unsigned int EN54:1;
+    volatile unsigned int EN55:1;
+    volatile unsigned int EN56:1;
+    volatile unsigned int EN57:1;
+    volatile unsigned int EN58:1;
+    volatile unsigned int EN59:1;
+    volatile unsigned int EN60:1;
+    volatile unsigned int EN61:1;
+    volatile unsigned int EN62:1;
+    volatile unsigned int EN63:1;
+} Ifx_CPU_DLMU_SPROT_RGNACCENB_W_Bits;
+
+
+typedef struct _Ifx_CPU_DLMU_SPROT_RGNLA_Bits
+{
+    volatile unsigned int reserved_0:5;
+    volatile unsigned int ADDR:27;
+} Ifx_CPU_DLMU_SPROT_RGNLA_Bits;
+
+
+typedef struct _Ifx_CPU_DLMU_SPROT_RGNUA_Bits
+{
+    volatile unsigned int reserved_0:5;
+    volatile unsigned int ADDR:27;
+} Ifx_CPU_DLMU_SPROT_RGNUA_Bits;
+
+
+typedef struct _Ifx_CPU_DMS_Bits
+{
+    volatile unsigned int reserved_0:1;
+    volatile unsigned int DMSVALUE:31;
+} Ifx_CPU_DMS_Bits;
+
+
+typedef struct _Ifx_CPU_DPRE_Bits
+{
+    volatile unsigned int RE_N:18;
+    volatile unsigned int reserved_18:14;
+} Ifx_CPU_DPRE_Bits;
+
+
+typedef struct _Ifx_CPU_DPR_L_Bits
+{
+    volatile unsigned int reserved_0:3;
+    volatile unsigned int LOWBND:29;
+} Ifx_CPU_DPR_L_Bits;
+
+
+typedef struct _Ifx_CPU_DPR_U_Bits
+{
+    volatile unsigned int reserved_0:3;
+    volatile unsigned int UPPBND:29;
+} Ifx_CPU_DPR_U_Bits;
+
+
+typedef struct _Ifx_CPU_DPWE_Bits
+{
+    volatile unsigned int WE_N:18;
+    volatile unsigned int reserved_18:14;
+} Ifx_CPU_DPWE_Bits;
+
+
+typedef struct _Ifx_CPU_DSTR_Bits
+{
+    volatile unsigned int SRE:1;
+    volatile unsigned int GAE:1;
+    volatile unsigned int LBE:1;
+    volatile unsigned int DRE:1;
+    volatile unsigned int reserved_4:2;
+    volatile unsigned int CRE:1;
+    volatile unsigned int reserved_7:7;
+    volatile unsigned int DTME:1;
+    volatile unsigned int LOE:1;
+    volatile unsigned int SDE:1;
+    volatile unsigned int SCE:1;
+    volatile unsigned int CAC:1;
+    volatile unsigned int MPE:1;
+    volatile unsigned int CLE:1;
+    volatile unsigned int reserved_21:3;
+    volatile unsigned int ALN:1;
+    volatile unsigned int reserved_25:7;
+} Ifx_CPU_DSTR_Bits;
+
+
+typedef struct _Ifx_CPU_EXEVT_Bits
+{
+    volatile unsigned int EVTA:3;
+    volatile unsigned int BBM:1;
+    volatile unsigned int BOD:1;
+    volatile unsigned int SUSP:1;
+    volatile unsigned int CNT:2;
+    volatile unsigned int reserved_8:24;
+} Ifx_CPU_EXEVT_Bits;
+
+
+typedef struct _Ifx_CPU_FCX_Bits
+{
+    volatile unsigned int FCXO:16;
+    volatile unsigned int FCXS:4;
+    volatile unsigned int reserved_20:12;
+} Ifx_CPU_FCX_Bits;
+
+
+typedef struct _Ifx_CPU_FLASHCON0_Bits
+{
+    volatile unsigned int TAG1:6;
+    volatile unsigned int reserved_6:2;
+    volatile unsigned int TAG2:6;
+    volatile unsigned int reserved_14:2;
+    volatile unsigned int TAG3:6;
+    volatile unsigned int reserved_22:2;
+    volatile unsigned int TAG4:6;
+    volatile unsigned int reserved_30:2;
+} Ifx_CPU_FLASHCON0_Bits;
+
+
+typedef struct _Ifx_CPU_FLASHCON1_Bits
+{
+    volatile unsigned int STALL:1;
+    volatile unsigned int reserved_1:15;
+    volatile unsigned int MASKUECC:2;
+    volatile unsigned int reserved_18:6;
+    volatile unsigned int reserved_24:2;
+    volatile unsigned int reserved_26:6;
+} Ifx_CPU_FLASHCON1_Bits;
+
+
+typedef struct _Ifx_CPU_FLASHCON2_Bits
+{
+    volatile unsigned int RECDIS:2;
+    volatile unsigned int ECCCORDIS:2;
+    volatile unsigned int reserved_4:4;
+    volatile unsigned int HMARGIN:2;
+    volatile unsigned int MSEL:2;
+    volatile unsigned int reserved_12:4;
+    volatile unsigned int ECCSCLR:2;
+    volatile unsigned int reserved_18:6;
+    volatile unsigned int SBABCLR:2;
+    volatile unsigned int DBABCLR:2;
+    volatile unsigned int MBABCLR:2;
+    volatile unsigned int ZBABCLR:2;
+} Ifx_CPU_FLASHCON2_Bits;
+
+
+typedef struct _Ifx_CPU_FLASHCON3_Bits
+{
+    volatile unsigned int ECCERRINJ:1;
+    volatile unsigned int EDCERRINJ:1;
+    volatile unsigned int SBABERRINJ:1;
+    volatile unsigned int DBABERRINJ:1;
+    volatile unsigned int MBABERRINJ:1;
+    volatile unsigned int ZBABERRINJ:1;
+    volatile unsigned int SBERERRINJ:1;
+    volatile unsigned int DBERERRINJ:1;
+    volatile unsigned int NVMCERRINJ:1;
+    volatile unsigned int FLCONERRINJ:1;
+    volatile unsigned int reserved_10:22;
+} Ifx_CPU_FLASHCON3_Bits;
+
+
+typedef struct _Ifx_CPU_FLASHCON4_Bits
+{
+    volatile unsigned int DDIS:1;
+    volatile unsigned int reserved_1:31;
+} Ifx_CPU_FLASHCON4_Bits;
+
+
+typedef struct _Ifx_CPU_FPU_TRAP_CON_Bits
+{
+    volatile unsigned int TST:1;
+    volatile unsigned int TCL:1;
+    volatile unsigned int reserved_2:6;
+    volatile unsigned int RM:2;
+    volatile unsigned int reserved_10:8;
+    volatile unsigned int FXE:1;
+    volatile unsigned int FUE:1;
+    volatile unsigned int FZE:1;
+    volatile unsigned int FVE:1;
+    volatile unsigned int FIE:1;
+    volatile unsigned int reserved_23:3;
+    volatile unsigned int FX:1;
+    volatile unsigned int FU:1;
+    volatile unsigned int FZ:1;
+    volatile unsigned int FV:1;
+    volatile unsigned int FI:1;
+    volatile unsigned int reserved_31:1;
+} Ifx_CPU_FPU_TRAP_CON_Bits;
+
+
+typedef struct _Ifx_CPU_FPU_TRAP_OPC_Bits
+{
+    volatile unsigned int OPC:8;
+    volatile unsigned int FMT:1;
+    volatile unsigned int reserved_9:7;
+    volatile unsigned int DREG:4;
+    volatile unsigned int reserved_20:12;
+} Ifx_CPU_FPU_TRAP_OPC_Bits;
+
+
+typedef struct _Ifx_CPU_FPU_TRAP_PC_Bits
+{
+    volatile unsigned int PC:32;
+} Ifx_CPU_FPU_TRAP_PC_Bits;
+
+
+typedef struct _Ifx_CPU_FPU_TRAP_SRC1_Bits
+{
+    volatile unsigned int SRC1:32;
+} Ifx_CPU_FPU_TRAP_SRC1_Bits;
+
+
+typedef struct _Ifx_CPU_FPU_TRAP_SRC2_Bits
+{
+    volatile unsigned int SRC2:32;
+} Ifx_CPU_FPU_TRAP_SRC2_Bits;
+
+
+typedef struct _Ifx_CPU_FPU_TRAP_SRC3_Bits
+{
+    volatile unsigned int SRC3:32;
+} Ifx_CPU_FPU_TRAP_SRC3_Bits;
+
+
+typedef struct _Ifx_CPU_ICNT_Bits
+{
+    volatile unsigned int COUNTVALUE:31;
+    volatile unsigned int SOVF:1;
+} Ifx_CPU_ICNT_Bits;
+
+
+typedef struct _Ifx_CPU_ICR_Bits
+{
+    volatile unsigned int CCPN:8;
+    volatile unsigned int reserved_8:7;
+    volatile unsigned int IE:1;
+    volatile unsigned int PIPN:8;
+    volatile unsigned int reserved_24:8;
+} Ifx_CPU_ICR_Bits;
+
+
+typedef struct _Ifx_CPU_ISP_Bits
+{
+    volatile unsigned int ISP:32;
+} Ifx_CPU_ISP_Bits;
+
+
+typedef struct _Ifx_CPU_KRST0_Bits
+{
+    volatile unsigned int RST:1;
+    volatile unsigned int RSTSTAT:2;
+    volatile unsigned int reserved_3:29;
+} Ifx_CPU_KRST0_Bits;
+
+
+typedef struct _Ifx_CPU_KRST1_Bits
+{
+    volatile unsigned int RST:1;
+    volatile unsigned int reserved_1:31;
+} Ifx_CPU_KRST1_Bits;
+
+
+typedef struct _Ifx_CPU_KRSTCLR_Bits
+{
+    volatile unsigned int CLR:1;
+    volatile unsigned int reserved_1:31;
+} Ifx_CPU_KRSTCLR_Bits;
+
+
+typedef struct _Ifx_CPU_LCX_Bits
+{
+    volatile unsigned int LCXO:16;
+    volatile unsigned int LCXS:4;
+    volatile unsigned int reserved_20:12;
+} Ifx_CPU_LCX_Bits;
+
+
+typedef struct _Ifx_CPU_LPB_SPROT_ACCENA_R_Bits
+{
+    volatile unsigned int EN0:1;
+    volatile unsigned int EN1:1;
+    volatile unsigned int EN2:1;
+    volatile unsigned int EN3:1;
+    volatile unsigned int EN4:1;
+    volatile unsigned int EN5:1;
+    volatile unsigned int EN6:1;
+    volatile unsigned int EN7:1;
+    volatile unsigned int EN8:1;
+    volatile unsigned int EN9:1;
+    volatile unsigned int EN10:1;
+    volatile unsigned int EN11:1;
+    volatile unsigned int EN12:1;
+    volatile unsigned int EN13:1;
+    volatile unsigned int EN14:1;
+    volatile unsigned int EN15:1;
+    volatile unsigned int EN16:1;
+    volatile unsigned int EN17:1;
+    volatile unsigned int EN18:1;
+    volatile unsigned int EN19:1;
+    volatile unsigned int EN20:1;
+    volatile unsigned int EN21:1;
+    volatile unsigned int EN22:1;
+    volatile unsigned int EN23:1;
+    volatile unsigned int EN24:1;
+    volatile unsigned int EN25:1;
+    volatile unsigned int EN26:1;
+    volatile unsigned int EN27:1;
+    volatile unsigned int EN28:1;
+    volatile unsigned int EN29:1;
+    volatile unsigned int EN30:1;
+    volatile unsigned int EN31:1;
+} Ifx_CPU_LPB_SPROT_ACCENA_R_Bits;
+
+
+typedef struct _Ifx_CPU_LPB_SPROT_ACCENB_R_Bits
+{
+    volatile unsigned int EN32:1;
+    volatile unsigned int EN33:1;
+    volatile unsigned int EN34:1;
+    volatile unsigned int EN35:1;
+    volatile unsigned int EN36:1;
+    volatile unsigned int EN37:1;
+    volatile unsigned int EN38:1;
+    volatile unsigned int EN39:1;
+    volatile unsigned int EN40:1;
+    volatile unsigned int EN41:1;
+    volatile unsigned int EN42:1;
+    volatile unsigned int EN43:1;
+    volatile unsigned int EN44:1;
+    volatile unsigned int EN45:1;
+    volatile unsigned int EN46:1;
+    volatile unsigned int EN47:1;
+    volatile unsigned int EN48:1;
+    volatile unsigned int EN49:1;
+    volatile unsigned int EN50:1;
+    volatile unsigned int EN51:1;
+    volatile unsigned int EN52:1;
+    volatile unsigned int EN53:1;
+    volatile unsigned int EN54:1;
+    volatile unsigned int EN55:1;
+    volatile unsigned int EN56:1;
+    volatile unsigned int EN57:1;
+    volatile unsigned int EN58:1;
+    volatile unsigned int EN59:1;
+    volatile unsigned int EN60:1;
+    volatile unsigned int EN61:1;
+    volatile unsigned int EN62:1;
+    volatile unsigned int EN63:1;
+} Ifx_CPU_LPB_SPROT_ACCENB_R_Bits;
+
+
+typedef struct _Ifx_CPU_M1CNT_Bits
+{
+    volatile unsigned int COUNTVALUE:31;
+    volatile unsigned int SOVF:1;
+} Ifx_CPU_M1CNT_Bits;
+
+
+typedef struct _Ifx_CPU_M2CNT_Bits
+{
+    volatile unsigned int COUNTVALUE:31;
+    volatile unsigned int SOVF:1;
+} Ifx_CPU_M2CNT_Bits;
+
+
+typedef struct _Ifx_CPU_M3CNT_Bits
+{
+    volatile unsigned int COUNTVALUE:31;
+    volatile unsigned int SOVF:1;
+} Ifx_CPU_M3CNT_Bits;
+
+
+typedef struct _Ifx_CPU_OSEL_Bits
+{
+    volatile unsigned int SHOVEN_X:32;
+} Ifx_CPU_OSEL_Bits;
+
+
+typedef struct _Ifx_CPU_PC_Bits
+{
+    volatile unsigned int reserved_0:1;
+    volatile unsigned int PC:31;
+} Ifx_CPU_PC_Bits;
+
+
+typedef struct _Ifx_CPU_PCON0_Bits
+{
+    volatile unsigned int reserved_0:1;
+    volatile unsigned int PCBYP:1;
+    volatile unsigned int reserved_2:30;
+} Ifx_CPU_PCON0_Bits;
+
+
+typedef struct _Ifx_CPU_PCON1_Bits
+{
+    volatile unsigned int PCINV:1;
+    volatile unsigned int PBINV:1;
+    volatile unsigned int reserved_2:30;
+} Ifx_CPU_PCON1_Bits;
+
+
+typedef struct _Ifx_CPU_PCON2_Bits
+{
+    volatile unsigned int PCACHE_SZE:16;
+    volatile unsigned int PSCRATCH_SZE:16;
+} Ifx_CPU_PCON2_Bits;
+
+
+typedef struct _Ifx_CPU_PCXI_Bits
+{
+    volatile unsigned int PCXO:16;
+    volatile unsigned int PCXS:4;
+    volatile unsigned int UL:1;
+    volatile unsigned int PIE:1;
+    volatile unsigned int PCPN:8;
+    volatile unsigned int reserved_30:2;
+} Ifx_CPU_PCXI_Bits;
+
+
+typedef struct _Ifx_CPU_PIEAR_Bits
+{
+    volatile unsigned int TA:32;
+} Ifx_CPU_PIEAR_Bits;
+
+
+typedef struct _Ifx_CPU_PIETR_Bits
+{
+    volatile unsigned int IED:1;
+    volatile unsigned int IE_T:1;
+    volatile unsigned int IE_C:1;
+    volatile unsigned int IE_S:1;
+    volatile unsigned int IE_BI:1;
+    volatile unsigned int E_INFO:6;
+    volatile unsigned int IE_UNC:1;
+    volatile unsigned int IE_SP:1;
+    volatile unsigned int IE_BS:1;
+    volatile unsigned int IE_ADDR:1;
+    volatile unsigned int IE_LPB:1;
+    volatile unsigned int IE_MTMV:1;
+    volatile unsigned int reserved_17:15;
+} Ifx_CPU_PIETR_Bits;
+
+
+typedef struct _Ifx_CPU_PMA0_Bits
+{
+    volatile unsigned int DAC:16;
+    volatile unsigned int reserved_16:16;
+} Ifx_CPU_PMA0_Bits;
+
+
+typedef struct _Ifx_CPU_PMA1_Bits
+{
+    volatile unsigned int CAC:16;
+    volatile unsigned int reserved_16:16;
+} Ifx_CPU_PMA1_Bits;
+
+
+typedef struct _Ifx_CPU_PMA2_Bits
+{
+    volatile unsigned int PSI:16;
+    volatile unsigned int reserved_16:16;
+} Ifx_CPU_PMA2_Bits;
+
+
+typedef struct _Ifx_CPU_PSTR_Bits
+{
+    volatile unsigned int FRE:1;
+    volatile unsigned int reserved_1:1;
+    volatile unsigned int FBE:1;
+    volatile unsigned int reserved_3:9;
+    volatile unsigned int FPE:1;
+    volatile unsigned int reserved_13:1;
+    volatile unsigned int FME:1;
+    volatile unsigned int reserved_15:17;
+} Ifx_CPU_PSTR_Bits;
+
+
+typedef struct _Ifx_CPU_PSW_Bits
+{
+    volatile unsigned int CDC:7;
+    volatile unsigned int CDE:1;
+    volatile unsigned int GW:1;
+    volatile unsigned int IS:1;
+    volatile unsigned int IO:2;
+    volatile unsigned int PRS:2;
+    volatile unsigned int S:1;
+    volatile unsigned int PRS2:1;
+    volatile unsigned int reserved_16:8;
+    volatile unsigned int USB:8;
+} Ifx_CPU_PSW_Bits;
+
+
+typedef struct _Ifx_CPU_RGN_ACCENA_Bits
+{
+    volatile unsigned int EN0:1;
+    volatile unsigned int EN1:1;
+    volatile unsigned int EN2:1;
+    volatile unsigned int EN3:1;
+    volatile unsigned int EN4:1;
+    volatile unsigned int EN5:1;
+    volatile unsigned int EN6:1;
+    volatile unsigned int EN7:1;
+    volatile unsigned int EN8:1;
+    volatile unsigned int EN9:1;
+    volatile unsigned int EN10:1;
+    volatile unsigned int EN11:1;
+    volatile unsigned int EN12:1;
+    volatile unsigned int EN13:1;
+    volatile unsigned int EN14:1;
+    volatile unsigned int EN15:1;
+    volatile unsigned int EN16:1;
+    volatile unsigned int EN17:1;
+    volatile unsigned int EN18:1;
+    volatile unsigned int EN19:1;
+    volatile unsigned int EN20:1;
+    volatile unsigned int EN21:1;
+    volatile unsigned int EN22:1;
+    volatile unsigned int EN23:1;
+    volatile unsigned int EN24:1;
+    volatile unsigned int EN25:1;
+    volatile unsigned int EN26:1;
+    volatile unsigned int EN27:1;
+    volatile unsigned int EN28:1;
+    volatile unsigned int EN29:1;
+    volatile unsigned int EN30:1;
+    volatile unsigned int EN31:1;
+} Ifx_CPU_RGN_ACCENA_Bits;
+
+
+typedef struct _Ifx_CPU_RGN_ACCENB_Bits
+{
+    volatile unsigned int EN32:1;
+    volatile unsigned int EN33:1;
+    volatile unsigned int EN34:1;
+    volatile unsigned int EN35:1;
+    volatile unsigned int EN36:1;
+    volatile unsigned int EN37:1;
+    volatile unsigned int EN38:1;
+    volatile unsigned int EN39:1;
+    volatile unsigned int EN40:1;
+    volatile unsigned int EN41:1;
+    volatile unsigned int EN42:1;
+    volatile unsigned int EN43:1;
+    volatile unsigned int EN44:1;
+    volatile unsigned int EN45:1;
+    volatile unsigned int EN46:1;
+    volatile unsigned int EN47:1;
+    volatile unsigned int EN48:1;
+    volatile unsigned int EN49:1;
+    volatile unsigned int EN50:1;
+    volatile unsigned int EN51:1;
+    volatile unsigned int EN52:1;
+    volatile unsigned int EN53:1;
+    volatile unsigned int EN54:1;
+    volatile unsigned int EN55:1;
+    volatile unsigned int EN56:1;
+    volatile unsigned int EN57:1;
+    volatile unsigned int EN58:1;
+    volatile unsigned int EN59:1;
+    volatile unsigned int EN60:1;
+    volatile unsigned int EN61:1;
+    volatile unsigned int EN62:1;
+    volatile unsigned int EN63:1;
+} Ifx_CPU_RGN_ACCENB_Bits;
+
+
+typedef struct _Ifx_CPU_RGN_LA_Bits
+{
+    volatile unsigned int reserved_0:5;
+    volatile unsigned int ADDR:27;
+} Ifx_CPU_RGN_LA_Bits;
+
+
+typedef struct _Ifx_CPU_RGN_UA_Bits
+{
+    volatile unsigned int reserved_0:5;
+    volatile unsigned int ADDR:27;
+} Ifx_CPU_RGN_UA_Bits;
+
+
+typedef struct _Ifx_CPU_SEGEN_Bits
+{
+    volatile unsigned int ADFLIP:8;
+    volatile unsigned int ADTYPE:2;
+    volatile unsigned int reserved_10:21;
+    volatile unsigned int AE:1;
+} Ifx_CPU_SEGEN_Bits;
+
+
+typedef struct _Ifx_CPU_SFR_SPROT_ACCENA_W_Bits
+{
+    volatile unsigned int EN0:1;
+    volatile unsigned int EN1:1;
+    volatile unsigned int EN2:1;
+    volatile unsigned int EN3:1;
+    volatile unsigned int EN4:1;
+    volatile unsigned int EN5:1;
+    volatile unsigned int EN6:1;
+    volatile unsigned int EN7:1;
+    volatile unsigned int EN8:1;
+    volatile unsigned int EN9:1;
+    volatile unsigned int EN10:1;
+    volatile unsigned int EN11:1;
+    volatile unsigned int EN12:1;
+    volatile unsigned int EN13:1;
+    volatile unsigned int EN14:1;
+    volatile unsigned int EN15:1;
+    volatile unsigned int EN16:1;
+    volatile unsigned int EN17:1;
+    volatile unsigned int EN18:1;
+    volatile unsigned int EN19:1;
+    volatile unsigned int EN20:1;
+    volatile unsigned int EN21:1;
+    volatile unsigned int EN22:1;
+    volatile unsigned int EN23:1;
+    volatile unsigned int EN24:1;
+    volatile unsigned int EN25:1;
+    volatile unsigned int EN26:1;
+    volatile unsigned int EN27:1;
+    volatile unsigned int EN28:1;
+    volatile unsigned int EN29:1;
+    volatile unsigned int EN30:1;
+    volatile unsigned int EN31:1;
+} Ifx_CPU_SFR_SPROT_ACCENA_W_Bits;
+
+
+typedef struct _Ifx_CPU_SFR_SPROT_ACCENB_W_Bits
+{
+    volatile unsigned int EN32:1;
+    volatile unsigned int EN33:1;
+    volatile unsigned int EN34:1;
+    volatile unsigned int EN35:1;
+    volatile unsigned int EN36:1;
+    volatile unsigned int EN37:1;
+    volatile unsigned int EN38:1;
+    volatile unsigned int EN39:1;
+    volatile unsigned int EN40:1;
+    volatile unsigned int EN41:1;
+    volatile unsigned int EN42:1;
+    volatile unsigned int EN43:1;
+    volatile unsigned int EN44:1;
+    volatile unsigned int EN45:1;
+    volatile unsigned int EN46:1;
+    volatile unsigned int EN47:1;
+    volatile unsigned int EN48:1;
+    volatile unsigned int EN49:1;
+    volatile unsigned int EN50:1;
+    volatile unsigned int EN51:1;
+    volatile unsigned int EN52:1;
+    volatile unsigned int EN53:1;
+    volatile unsigned int EN54:1;
+    volatile unsigned int EN55:1;
+    volatile unsigned int EN56:1;
+    volatile unsigned int EN57:1;
+    volatile unsigned int EN58:1;
+    volatile unsigned int EN59:1;
+    volatile unsigned int EN60:1;
+    volatile unsigned int EN61:1;
+    volatile unsigned int EN62:1;
+    volatile unsigned int EN63:1;
+} Ifx_CPU_SFR_SPROT_ACCENB_W_Bits;
+
+
+typedef struct _Ifx_CPU_SMACON_Bits
+{
+    volatile unsigned int reserved_0:24;
+    volatile unsigned int IODT:1;
+    volatile unsigned int reserved_25:7;
+} Ifx_CPU_SMACON_Bits;
+
+
+typedef struct _Ifx_CPU_SPR_SPROT_RGNACCENA_R_Bits
+{
+    volatile unsigned int EN0:1;
+    volatile unsigned int EN1:1;
+    volatile unsigned int EN2:1;
+    volatile unsigned int EN3:1;
+    volatile unsigned int EN4:1;
+    volatile unsigned int EN5:1;
+    volatile unsigned int EN6:1;
+    volatile unsigned int EN7:1;
+    volatile unsigned int EN8:1;
+    volatile unsigned int EN9:1;
+    volatile unsigned int EN10:1;
+    volatile unsigned int EN11:1;
+    volatile unsigned int EN12:1;
+    volatile unsigned int EN13:1;
+    volatile unsigned int EN14:1;
+    volatile unsigned int EN15:1;
+    volatile unsigned int EN16:1;
+    volatile unsigned int EN17:1;
+    volatile unsigned int EN18:1;
+    volatile unsigned int EN19:1;
+    volatile unsigned int EN20:1;
+    volatile unsigned int EN21:1;
+    volatile unsigned int EN22:1;
+    volatile unsigned int EN23:1;
+    volatile unsigned int EN24:1;
+    volatile unsigned int EN25:1;
+    volatile unsigned int EN26:1;
+    volatile unsigned int EN27:1;
+    volatile unsigned int EN28:1;
+    volatile unsigned int EN29:1;
+    volatile unsigned int EN30:1;
+    volatile unsigned int EN31:1;
+} Ifx_CPU_SPR_SPROT_RGNACCENA_R_Bits;
+
+
+typedef struct _Ifx_CPU_SPR_SPROT_RGNACCENB_R_Bits
+{
+    volatile unsigned int EN32:1;
+    volatile unsigned int EN33:1;
+    volatile unsigned int EN34:1;
+    volatile unsigned int EN35:1;
+    volatile unsigned int EN36:1;
+    volatile unsigned int EN37:1;
+    volatile unsigned int EN38:1;
+    volatile unsigned int EN39:1;
+    volatile unsigned int EN40:1;
+    volatile unsigned int EN41:1;
+    volatile unsigned int EN42:1;
+    volatile unsigned int EN43:1;
+    volatile unsigned int EN44:1;
+    volatile unsigned int EN45:1;
+    volatile unsigned int EN46:1;
+    volatile unsigned int EN47:1;
+    volatile unsigned int EN48:1;
+    volatile unsigned int EN49:1;
+    volatile unsigned int EN50:1;
+    volatile unsigned int EN51:1;
+    volatile unsigned int EN52:1;
+    volatile unsigned int EN53:1;
+    volatile unsigned int EN54:1;
+    volatile unsigned int EN55:1;
+    volatile unsigned int EN56:1;
+    volatile unsigned int EN57:1;
+    volatile unsigned int EN58:1;
+    volatile unsigned int EN59:1;
+    volatile unsigned int EN60:1;
+    volatile unsigned int EN61:1;
+    volatile unsigned int EN62:1;
+    volatile unsigned int EN63:1;
+} Ifx_CPU_SPR_SPROT_RGNACCENB_R_Bits;
+
+
+typedef struct _Ifx_CPU_SWEVT_Bits
+{
+    volatile unsigned int EVTA:3;
+    volatile unsigned int BBM:1;
+    volatile unsigned int BOD:1;
+    volatile unsigned int SUSP:1;
+    volatile unsigned int CNT:2;
+    volatile unsigned int reserved_8:24;
+} Ifx_CPU_SWEVT_Bits;
+
+
+typedef struct _Ifx_CPU_SYSCON_Bits
+{
+    volatile unsigned int FCDSF:1;
+    volatile unsigned int PROTEN:1;
+    volatile unsigned int TPROTEN:1;
+    volatile unsigned int IS:1;
+    volatile unsigned int TS:1;
+    volatile unsigned int reserved_5:3;
+    volatile unsigned int ESDIS:1;
+    volatile unsigned int reserved_9:7;
+    volatile unsigned int U1_IED:1;
+    volatile unsigned int U1_IOS:1;
+    volatile unsigned int reserved_18:6;
+    volatile unsigned int BHALT:1;
+    volatile unsigned int reserved_25:7;
+} Ifx_CPU_SYSCON_Bits;
+
+
+typedef struct _Ifx_CPU_TASK_ASI_Bits
+{
+    volatile unsigned int ASI:5;
+    volatile unsigned int reserved_5:27;
+} Ifx_CPU_TASK_ASI_Bits;
+
+
+typedef struct _Ifx_CPU_TPS_CON_Bits
+{
+    volatile unsigned int TEXP0:1;
+    volatile unsigned int TEXP1:1;
+    volatile unsigned int TEXP2:1;
+    volatile unsigned int reserved_3:13;
+    volatile unsigned int TTRAP:1;
+    volatile unsigned int reserved_17:15;
+} Ifx_CPU_TPS_CON_Bits;
+
+
+typedef struct _Ifx_CPU_TPS_EXTIM_CLASS_EN_Bits
+{
+    volatile unsigned int EXTIM_CLASS_EN:8;
+    volatile unsigned int reserved_8:24;
+} Ifx_CPU_TPS_EXTIM_CLASS_EN_Bits;
+
+
+typedef struct _Ifx_CPU_TPS_EXTIM_ENTRY_CVAL_Bits
+{
+    volatile unsigned int ENTRY_CVAL:12;
+    volatile unsigned int reserved_12:20;
+} Ifx_CPU_TPS_EXTIM_ENTRY_CVAL_Bits;
+
+
+typedef struct _Ifx_CPU_TPS_EXTIM_ENTRY_LVAL_Bits
+{
+    volatile unsigned int reserved_0:4;
+    volatile unsigned int ENTRY_LVAL:8;
+    volatile unsigned int reserved_12:20;
+} Ifx_CPU_TPS_EXTIM_ENTRY_LVAL_Bits;
+
+
+typedef struct _Ifx_CPU_TPS_EXTIM_EXIT_CVAL_Bits
+{
+    volatile unsigned int EXIT_CVAL:24;
+    volatile unsigned int reserved_24:8;
+} Ifx_CPU_TPS_EXTIM_EXIT_CVAL_Bits;
+
+
+typedef struct _Ifx_CPU_TPS_EXTIM_EXIT_LVAL_Bits
+{
+    volatile unsigned int reserved_0:4;
+    volatile unsigned int EXIT_LVAL:20;
+    volatile unsigned int reserved_24:8;
+} Ifx_CPU_TPS_EXTIM_EXIT_LVAL_Bits;
+
+
+typedef struct _Ifx_CPU_TPS_EXTIM_FCX_Bits
+{
+    volatile unsigned int EXIT_FCX:20;
+    volatile unsigned int reserved_20:12;
+} Ifx_CPU_TPS_EXTIM_FCX_Bits;
+
+
+typedef struct _Ifx_CPU_TPS_EXTIM_STAT_Bits
+{
+    volatile unsigned int EXIT_TIN:8;
+    volatile unsigned int EXIT_CLASS:3;
+    volatile unsigned int reserved_11:4;
+    volatile unsigned int EXIT_AT:1;
+    volatile unsigned int ENTRY_TIN:8;
+    volatile unsigned int ENTRY_CLASS:3;
+    volatile unsigned int reserved_27:4;
+    volatile unsigned int ENTRY_AT:1;
+} Ifx_CPU_TPS_EXTIM_STAT_Bits;
+
+
+typedef struct _Ifx_CPU_TPS_TIMER_Bits
+{
+    volatile unsigned int TIMER:32;
+} Ifx_CPU_TPS_TIMER_Bits;
+
+
+typedef struct _Ifx_CPU_TRIG_ACC_Bits
+{
+    volatile unsigned int T0:1;
+    volatile unsigned int T1:1;
+    volatile unsigned int T2:1;
+    volatile unsigned int T3:1;
+    volatile unsigned int T4:1;
+    volatile unsigned int T5:1;
+    volatile unsigned int T6:1;
+    volatile unsigned int T7:1;
+    volatile unsigned int reserved_8:24;
+} Ifx_CPU_TRIG_ACC_Bits;
+
+
+typedef struct _Ifx_CPU_TR_ADR_Bits
+{
+    volatile unsigned int ADDR:32;
+} Ifx_CPU_TR_ADR_Bits;
+
+
+typedef struct _Ifx_CPU_TR_EVT_Bits
+{
+    volatile unsigned int EVTA:3;
+    volatile unsigned int BBM:1;
+    volatile unsigned int BOD:1;
+    volatile unsigned int SUSP:1;
+    volatile unsigned int CNT:2;
+    volatile unsigned int reserved_8:4;
+    volatile unsigned int TYP:1;
+    volatile unsigned int RNG:1;
+    volatile unsigned int reserved_14:1;
+    volatile unsigned int ASI_EN:1;
+    volatile unsigned int ASI:5;
+    volatile unsigned int reserved_21:6;
+    volatile unsigned int AST:1;
+    volatile unsigned int ALD:1;
+    volatile unsigned int reserved_29:3;
+} Ifx_CPU_TR_EVT_Bits;
+
+
+
+
+
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_A_Bits B;
+} Ifx_CPU_A;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_BIV_Bits B;
+} Ifx_CPU_BIV;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_BLK_OMASK_Bits B;
+} Ifx_CPU_BLK_OMASK;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_BLK_OTAR_Bits B;
+} Ifx_CPU_BLK_OTAR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_BLK_RABR_Bits B;
+} Ifx_CPU_BLK_RABR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_BTV_Bits B;
+} Ifx_CPU_BTV;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_CCNT_Bits B;
+} Ifx_CPU_CCNT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_CCTRL_Bits B;
+} Ifx_CPU_CCTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_COMPAT_Bits B;
+} Ifx_CPU_COMPAT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_CORE_ID_Bits B;
+} Ifx_CPU_CORE_ID;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_CPR_L_Bits B;
+} Ifx_CPU_CPR_L;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_CPR_U_Bits B;
+} Ifx_CPU_CPR_U;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_CPU_ID_Bits B;
+} Ifx_CPU_CPU_ID;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_CPXE_Bits B;
+} Ifx_CPU_CPXE;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_CREVT_Bits B;
+} Ifx_CPU_CREVT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_CUS_ID_Bits B;
+} Ifx_CPU_CUS_ID;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_D_Bits B;
+} Ifx_CPU_D;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_DATR_Bits B;
+} Ifx_CPU_DATR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_DBGSR_Bits B;
+} Ifx_CPU_DBGSR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_DBGTCR_Bits B;
+} Ifx_CPU_DBGTCR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_DCON0_Bits B;
+} Ifx_CPU_DCON0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_DCON2_Bits B;
+} Ifx_CPU_DCON2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_DCX_Bits B;
+} Ifx_CPU_DCX;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_DEADD_Bits B;
+} Ifx_CPU_DEADD;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_DIEAR_Bits B;
+} Ifx_CPU_DIEAR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_DIETR_Bits B;
+} Ifx_CPU_DIETR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_DLMU_SPROT_RGNACCENA_R_Bits B;
+} Ifx_CPU_DLMU_SPROT_RGNACCENA_R;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_DLMU_SPROT_RGNACCENA_W_Bits B;
+} Ifx_CPU_DLMU_SPROT_RGNACCENA_W;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_DLMU_SPROT_RGNACCENB_R_Bits B;
+} Ifx_CPU_DLMU_SPROT_RGNACCENB_R;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_DLMU_SPROT_RGNACCENB_W_Bits B;
+} Ifx_CPU_DLMU_SPROT_RGNACCENB_W;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_DLMU_SPROT_RGNLA_Bits B;
+} Ifx_CPU_DLMU_SPROT_RGNLA;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_DLMU_SPROT_RGNUA_Bits B;
+} Ifx_CPU_DLMU_SPROT_RGNUA;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_DMS_Bits B;
+} Ifx_CPU_DMS;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_DPRE_Bits B;
+} Ifx_CPU_DPRE;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_DPR_L_Bits B;
+} Ifx_CPU_DPR_L;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_DPR_U_Bits B;
+} Ifx_CPU_DPR_U;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_DPWE_Bits B;
+} Ifx_CPU_DPWE;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_DSTR_Bits B;
+} Ifx_CPU_DSTR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_EXEVT_Bits B;
+} Ifx_CPU_EXEVT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_FCX_Bits B;
+} Ifx_CPU_FCX;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_FLASHCON0_Bits B;
+} Ifx_CPU_FLASHCON0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_FLASHCON1_Bits B;
+} Ifx_CPU_FLASHCON1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_FLASHCON2_Bits B;
+} Ifx_CPU_FLASHCON2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_FLASHCON3_Bits B;
+} Ifx_CPU_FLASHCON3;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_FLASHCON4_Bits B;
+} Ifx_CPU_FLASHCON4;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_FPU_TRAP_CON_Bits B;
+} Ifx_CPU_FPU_TRAP_CON;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_FPU_TRAP_OPC_Bits B;
+} Ifx_CPU_FPU_TRAP_OPC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_FPU_TRAP_PC_Bits B;
+} Ifx_CPU_FPU_TRAP_PC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_FPU_TRAP_SRC1_Bits B;
+} Ifx_CPU_FPU_TRAP_SRC1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_FPU_TRAP_SRC2_Bits B;
+} Ifx_CPU_FPU_TRAP_SRC2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_FPU_TRAP_SRC3_Bits B;
+} Ifx_CPU_FPU_TRAP_SRC3;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_ICNT_Bits B;
+} Ifx_CPU_ICNT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_ICR_Bits B;
+} Ifx_CPU_ICR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_ISP_Bits B;
+} Ifx_CPU_ISP;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_KRST0_Bits B;
+} Ifx_CPU_KRST0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_KRST1_Bits B;
+} Ifx_CPU_KRST1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_KRSTCLR_Bits B;
+} Ifx_CPU_KRSTCLR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_LCX_Bits B;
+} Ifx_CPU_LCX;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_LPB_SPROT_ACCENA_R_Bits B;
+} Ifx_CPU_LPB_SPROT_ACCENA_R;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_LPB_SPROT_ACCENB_R_Bits B;
+} Ifx_CPU_LPB_SPROT_ACCENB_R;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_M1CNT_Bits B;
+} Ifx_CPU_M1CNT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_M2CNT_Bits B;
+} Ifx_CPU_M2CNT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_M3CNT_Bits B;
+} Ifx_CPU_M3CNT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_OSEL_Bits B;
+} Ifx_CPU_OSEL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_PC_Bits B;
+} Ifx_CPU_PC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_PCON0_Bits B;
+} Ifx_CPU_PCON0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_PCON1_Bits B;
+} Ifx_CPU_PCON1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_PCON2_Bits B;
+} Ifx_CPU_PCON2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_PCXI_Bits B;
+} Ifx_CPU_PCXI;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_PIEAR_Bits B;
+} Ifx_CPU_PIEAR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_PIETR_Bits B;
+} Ifx_CPU_PIETR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_PMA0_Bits B;
+} Ifx_CPU_PMA0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_PMA1_Bits B;
+} Ifx_CPU_PMA1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_PMA2_Bits B;
+} Ifx_CPU_PMA2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_PSTR_Bits B;
+} Ifx_CPU_PSTR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_PSW_Bits B;
+} Ifx_CPU_PSW;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_RGN_ACCENA_Bits B;
+} Ifx_CPU_RGN_ACCENA;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_RGN_ACCENB_Bits B;
+} Ifx_CPU_RGN_ACCENB;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_RGN_LA_Bits B;
+} Ifx_CPU_RGN_LA;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_RGN_UA_Bits B;
+} Ifx_CPU_RGN_UA;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_SEGEN_Bits B;
+} Ifx_CPU_SEGEN;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_SFR_SPROT_ACCENA_W_Bits B;
+} Ifx_CPU_SFR_SPROT_ACCENA_W;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_SFR_SPROT_ACCENB_W_Bits B;
+} Ifx_CPU_SFR_SPROT_ACCENB_W;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_SMACON_Bits B;
+} Ifx_CPU_SMACON;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_SPR_SPROT_RGNACCENA_R_Bits B;
+} Ifx_CPU_SPR_SPROT_RGNACCENA_R;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_SPR_SPROT_RGNACCENB_R_Bits B;
+} Ifx_CPU_SPR_SPROT_RGNACCENB_R;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_SWEVT_Bits B;
+} Ifx_CPU_SWEVT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_SYSCON_Bits B;
+} Ifx_CPU_SYSCON;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_TASK_ASI_Bits B;
+} Ifx_CPU_TASK_ASI;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_TPS_CON_Bits B;
+} Ifx_CPU_TPS_CON;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_TPS_EXTIM_CLASS_EN_Bits B;
+} Ifx_CPU_TPS_EXTIM_CLASS_EN;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_TPS_EXTIM_ENTRY_CVAL_Bits B;
+} Ifx_CPU_TPS_EXTIM_ENTRY_CVAL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_TPS_EXTIM_ENTRY_LVAL_Bits B;
+} Ifx_CPU_TPS_EXTIM_ENTRY_LVAL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_TPS_EXTIM_EXIT_CVAL_Bits B;
+} Ifx_CPU_TPS_EXTIM_EXIT_CVAL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_TPS_EXTIM_EXIT_LVAL_Bits B;
+} Ifx_CPU_TPS_EXTIM_EXIT_LVAL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_TPS_EXTIM_FCX_Bits B;
+} Ifx_CPU_TPS_EXTIM_FCX;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_TPS_EXTIM_STAT_Bits B;
+} Ifx_CPU_TPS_EXTIM_STAT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_TPS_TIMER_Bits B;
+} Ifx_CPU_TPS_TIMER;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_TRIG_ACC_Bits B;
+} Ifx_CPU_TRIG_ACC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_TR_ADR_Bits B;
+} Ifx_CPU_TR_ADR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_CPU_TR_EVT_Bits B;
+} Ifx_CPU_TR_EVT;
+# 2141 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxCpu_regdef.h"
+typedef volatile struct _Ifx_CPU_RGN
+{
+       Ifx_CPU_RGN_LA LA;
+       Ifx_CPU_RGN_UA UA;
+       Ifx_CPU_RGN_ACCENA ACCENA;
+       Ifx_CPU_RGN_ACCENB ACCENB;
+} Ifx_CPU_RGN;
+# 2162 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxCpu_regdef.h"
+typedef volatile struct _Ifx_CPU_BLK
+{
+       Ifx_CPU_BLK_RABR RABR;
+       Ifx_CPU_BLK_OTAR OTAR;
+       Ifx_CPU_BLK_OMASK OMASK;
+} Ifx_CPU_BLK;
+# 2182 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxCpu_regdef.h"
+typedef volatile struct _Ifx_CPU_FPU_TRAP
+{
+       Ifx_CPU_FPU_TRAP_CON CON;
+       Ifx_CPU_FPU_TRAP_PC PC;
+       Ifx_CPU_FPU_TRAP_OPC OPC;
+       Ifx_UReg_8Bit reserved_C[4];
+       Ifx_CPU_FPU_TRAP_SRC1 SRC1;
+       Ifx_CPU_FPU_TRAP_SRC2 SRC2;
+       Ifx_CPU_FPU_TRAP_SRC3 SRC3;
+} Ifx_CPU_FPU_TRAP;
+# 2206 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxCpu_regdef.h"
+typedef volatile struct _Ifx_CPU_DPR
+{
+       Ifx_CPU_DPR_L L;
+       Ifx_CPU_DPR_U U;
+} Ifx_CPU_DPR;
+# 2225 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxCpu_regdef.h"
+typedef volatile struct _Ifx_CPU_CPR
+{
+       Ifx_CPU_CPR_L L;
+       Ifx_CPU_CPR_U U;
+} Ifx_CPU_CPR;
+# 2244 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxCpu_regdef.h"
+typedef volatile struct _Ifx_CPU_TPS
+{
+       Ifx_CPU_TPS_CON CON;
+       Ifx_CPU_TPS_TIMER TIMER[3];
+} Ifx_CPU_TPS;
+# 2263 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxCpu_regdef.h"
+typedef volatile struct _Ifx_CPU_TPS_EXTIM
+{
+       Ifx_CPU_TPS_EXTIM_ENTRY_LVAL ENTRY_LVAL;
+       Ifx_CPU_TPS_EXTIM_ENTRY_CVAL ENTRY_CVAL;
+       Ifx_CPU_TPS_EXTIM_EXIT_LVAL EXIT_LVAL;
+       Ifx_CPU_TPS_EXTIM_EXIT_CVAL EXIT_CVAL;
+       Ifx_CPU_TPS_EXTIM_CLASS_EN CLASS_EN;
+       Ifx_CPU_TPS_EXTIM_STAT STAT;
+       Ifx_CPU_TPS_EXTIM_FCX FCX;
+} Ifx_CPU_TPS_EXTIM;
+# 2287 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxCpu_regdef.h"
+typedef volatile struct _Ifx_CPU_TR
+{
+       Ifx_CPU_TR_EVT EVT;
+       Ifx_CPU_TR_ADR ADR;
+} Ifx_CPU_TR;
+# 2306 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxCpu_regdef.h"
+typedef volatile struct _Ifx_CPU
+{
+       Ifx_UReg_8Bit reserved_0[4352];
+       Ifx_CPU_FLASHCON0 FLASHCON0;
+       Ifx_CPU_FLASHCON1 FLASHCON1;
+       Ifx_CPU_FLASHCON2 FLASHCON2;
+       Ifx_CPU_FLASHCON3 FLASHCON3;
+       Ifx_CPU_FLASHCON4 FLASHCON4;
+       Ifx_UReg_8Bit reserved_1114[48876];
+       Ifx_CPU_KRST0 KRST0;
+       Ifx_CPU_KRST1 KRST1;
+       Ifx_CPU_KRSTCLR KRSTCLR;
+       Ifx_UReg_8Bit reserved_D00C[4084];
+       Ifx_CPU_RGN RGN[8];
+       Ifx_UReg_8Bit reserved_E080[8];
+       Ifx_CPU_SPR_SPROT_RGNACCENA_R SPR_SPROT_RGNACCENA_R0;
+       Ifx_CPU_SPR_SPROT_RGNACCENB_R SPR_SPROT_RGNACCENB_R0;
+       Ifx_UReg_8Bit reserved_E090[8];
+       Ifx_CPU_SPR_SPROT_RGNACCENA_R SPR_SPROT_RGNACCENA_R1;
+       Ifx_CPU_SPR_SPROT_RGNACCENB_R SPR_SPROT_RGNACCENB_R1;
+       Ifx_UReg_8Bit reserved_E0A0[8];
+       Ifx_CPU_SPR_SPROT_RGNACCENA_R SPR_SPROT_RGNACCENA_R2;
+       Ifx_CPU_SPR_SPROT_RGNACCENB_R SPR_SPROT_RGNACCENB_R2;
+       Ifx_UReg_8Bit reserved_E0B0[8];
+       Ifx_CPU_SPR_SPROT_RGNACCENA_R SPR_SPROT_RGNACCENA_R3;
+       Ifx_CPU_SPR_SPROT_RGNACCENB_R SPR_SPROT_RGNACCENB_R3;
+       Ifx_UReg_8Bit reserved_E0C0[8];
+       Ifx_CPU_SPR_SPROT_RGNACCENA_R SPR_SPROT_RGNACCENA_R4;
+       Ifx_CPU_SPR_SPROT_RGNACCENB_R SPR_SPROT_RGNACCENB_R4;
+       Ifx_UReg_8Bit reserved_E0D0[8];
+       Ifx_CPU_SPR_SPROT_RGNACCENA_R SPR_SPROT_RGNACCENA_R5;
+       Ifx_CPU_SPR_SPROT_RGNACCENB_R SPR_SPROT_RGNACCENB_R5;
+       Ifx_UReg_8Bit reserved_E0E0[8];
+       Ifx_CPU_SPR_SPROT_RGNACCENA_R SPR_SPROT_RGNACCENA_R6;
+       Ifx_CPU_SPR_SPROT_RGNACCENB_R SPR_SPROT_RGNACCENB_R6;
+       Ifx_UReg_8Bit reserved_E0F0[8];
+       Ifx_CPU_SPR_SPROT_RGNACCENA_R SPR_SPROT_RGNACCENA_R7;
+       Ifx_CPU_SPR_SPROT_RGNACCENB_R SPR_SPROT_RGNACCENB_R7;
+       Ifx_CPU_SFR_SPROT_ACCENA_W SFR_SPROT_ACCENA_W;
+       Ifx_CPU_SFR_SPROT_ACCENB_W SFR_SPROT_ACCENB_W;
+       Ifx_UReg_8Bit reserved_E108[8];
+       Ifx_CPU_LPB_SPROT_ACCENA_R LPB_SPROT_ACCENA_R;
+       Ifx_CPU_LPB_SPROT_ACCENB_R LPB_SPROT_ACCENB_R;
+       Ifx_UReg_8Bit reserved_E118[232];
+       Ifx_CPU_DLMU_SPROT_RGNLA DLMU_SPROT_RGNLA0;
+       Ifx_CPU_DLMU_SPROT_RGNUA DLMU_SPROT_RGNUA0;
+       Ifx_CPU_DLMU_SPROT_RGNACCENA_W DLMU_SPROT_RGNACCENA_W0;
+       Ifx_CPU_DLMU_SPROT_RGNACCENB_W DLMU_SPROT_RGNACCENB_W0;
+       Ifx_CPU_DLMU_SPROT_RGNLA DLMU_SPROT_RGNLA1;
+       Ifx_CPU_DLMU_SPROT_RGNUA DLMU_SPROT_RGNUA1;
+       Ifx_CPU_DLMU_SPROT_RGNACCENA_W DLMU_SPROT_RGNACCENA_W1;
+       Ifx_CPU_DLMU_SPROT_RGNACCENB_W DLMU_SPROT_RGNACCENB_W1;
+       Ifx_CPU_DLMU_SPROT_RGNLA DLMU_SPROT_RGNLA2;
+       Ifx_CPU_DLMU_SPROT_RGNUA DLMU_SPROT_RGNUA2;
+       Ifx_CPU_DLMU_SPROT_RGNACCENA_W DLMU_SPROT_RGNACCENA_W2;
+       Ifx_CPU_DLMU_SPROT_RGNACCENB_W DLMU_SPROT_RGNACCENB_W2;
+       Ifx_CPU_DLMU_SPROT_RGNLA DLMU_SPROT_RGNLA3;
+       Ifx_CPU_DLMU_SPROT_RGNUA DLMU_SPROT_RGNUA3;
+       Ifx_CPU_DLMU_SPROT_RGNACCENA_W DLMU_SPROT_RGNACCENA_W3;
+       Ifx_CPU_DLMU_SPROT_RGNACCENB_W DLMU_SPROT_RGNACCENB_W3;
+       Ifx_CPU_DLMU_SPROT_RGNLA DLMU_SPROT_RGNLA4;
+       Ifx_CPU_DLMU_SPROT_RGNUA DLMU_SPROT_RGNUA4;
+       Ifx_CPU_DLMU_SPROT_RGNACCENA_W DLMU_SPROT_RGNACCENA_W4;
+       Ifx_CPU_DLMU_SPROT_RGNACCENB_W DLMU_SPROT_RGNACCENB_W4;
+       Ifx_CPU_DLMU_SPROT_RGNLA DLMU_SPROT_RGNLA5;
+       Ifx_CPU_DLMU_SPROT_RGNUA DLMU_SPROT_RGNUA5;
+       Ifx_CPU_DLMU_SPROT_RGNACCENA_W DLMU_SPROT_RGNACCENA_W5;
+       Ifx_CPU_DLMU_SPROT_RGNACCENB_W DLMU_SPROT_RGNACCENB_W5;
+       Ifx_CPU_DLMU_SPROT_RGNLA DLMU_SPROT_RGNLA6;
+       Ifx_CPU_DLMU_SPROT_RGNUA DLMU_SPROT_RGNUA6;
+       Ifx_CPU_DLMU_SPROT_RGNACCENA_W DLMU_SPROT_RGNACCENA_W6;
+       Ifx_CPU_DLMU_SPROT_RGNACCENB_W DLMU_SPROT_RGNACCENB_W6;
+       Ifx_CPU_DLMU_SPROT_RGNLA DLMU_SPROT_RGNLA7;
+       Ifx_CPU_DLMU_SPROT_RGNUA DLMU_SPROT_RGNUA7;
+       Ifx_CPU_DLMU_SPROT_RGNACCENA_W DLMU_SPROT_RGNACCENA_W7;
+       Ifx_CPU_DLMU_SPROT_RGNACCENB_W DLMU_SPROT_RGNACCENB_W7;
+       Ifx_UReg_8Bit reserved_E280[8];
+       Ifx_CPU_DLMU_SPROT_RGNACCENA_R DLMU_SPROT_RGNACCENA_R0;
+       Ifx_CPU_DLMU_SPROT_RGNACCENB_R DLMU_SPROT_RGNACCENB_R0;
+       Ifx_UReg_8Bit reserved_E290[8];
+       Ifx_CPU_DLMU_SPROT_RGNACCENA_R DLMU_SPROT_RGNACCENA_R1;
+       Ifx_CPU_DLMU_SPROT_RGNACCENB_R DLMU_SPROT_RGNACCENB_R1;
+       Ifx_UReg_8Bit reserved_E2A0[8];
+       Ifx_CPU_DLMU_SPROT_RGNACCENA_R DLMU_SPROT_RGNACCENA_R2;
+       Ifx_CPU_DLMU_SPROT_RGNACCENB_R DLMU_SPROT_RGNACCENB_R2;
+       Ifx_UReg_8Bit reserved_E2B0[8];
+       Ifx_CPU_DLMU_SPROT_RGNACCENA_R DLMU_SPROT_RGNACCENA_R3;
+       Ifx_CPU_DLMU_SPROT_RGNACCENB_R DLMU_SPROT_RGNACCENB_R3;
+       Ifx_UReg_8Bit reserved_E2C0[8];
+       Ifx_CPU_DLMU_SPROT_RGNACCENA_R DLMU_SPROT_RGNACCENA_R4;
+       Ifx_CPU_DLMU_SPROT_RGNACCENB_R DLMU_SPROT_RGNACCENB_R4;
+       Ifx_UReg_8Bit reserved_E2D0[8];
+       Ifx_CPU_DLMU_SPROT_RGNACCENA_R DLMU_SPROT_RGNACCENA_R5;
+       Ifx_CPU_DLMU_SPROT_RGNACCENB_R DLMU_SPROT_RGNACCENB_R5;
+       Ifx_UReg_8Bit reserved_E2E0[8];
+       Ifx_CPU_DLMU_SPROT_RGNACCENA_R DLMU_SPROT_RGNACCENA_R6;
+       Ifx_CPU_DLMU_SPROT_RGNACCENB_R DLMU_SPROT_RGNACCENB_R6;
+       Ifx_UReg_8Bit reserved_E2F0[8];
+       Ifx_CPU_DLMU_SPROT_RGNACCENA_R DLMU_SPROT_RGNACCENA_R7;
+       Ifx_CPU_DLMU_SPROT_RGNACCENB_R DLMU_SPROT_RGNACCENB_R7;
+       Ifx_UReg_8Bit reserved_E300[6144];
+       Ifx_CPU_OSEL OSEL;
+       Ifx_UReg_8Bit reserved_FB04[12];
+       Ifx_CPU_BLK BLK[32];
+       Ifx_UReg_8Bit reserved_FC90[5024];
+       Ifx_CPU_SEGEN SEGEN;
+       Ifx_UReg_8Bit reserved_11034[28624];
+       Ifx_CPU_TASK_ASI TASK_ASI;
+       Ifx_UReg_8Bit reserved_18008[248];
+       Ifx_CPU_PMA0 PMA0;
+       Ifx_CPU_PMA1 PMA1;
+       Ifx_CPU_PMA2 PMA2;
+       Ifx_UReg_8Bit reserved_1810C[3828];
+       Ifx_CPU_DCON2 DCON2;
+       Ifx_UReg_8Bit reserved_19004[8];
+       Ifx_CPU_SMACON SMACON;
+       Ifx_CPU_DSTR DSTR;
+       Ifx_UReg_8Bit reserved_19014[4];
+       Ifx_CPU_DATR DATR;
+       Ifx_CPU_DEADD DEADD;
+       Ifx_CPU_DIEAR DIEAR;
+       Ifx_CPU_DIETR DIETR;
+       Ifx_UReg_8Bit reserved_19028[24];
+       Ifx_CPU_DCON0 DCON0;
+       Ifx_UReg_8Bit reserved_19044[444];
+       Ifx_CPU_PSTR PSTR;
+       Ifx_CPU_PCON1 PCON1;
+       Ifx_CPU_PCON2 PCON2;
+       Ifx_CPU_PCON0 PCON0;
+       Ifx_CPU_PIEAR PIEAR;
+       Ifx_CPU_PIETR PIETR;
+       Ifx_UReg_8Bit reserved_19218[488];
+       Ifx_CPU_COMPAT COMPAT;
+       Ifx_UReg_8Bit reserved_19404[3068];
+       Ifx_CPU_FPU_TRAP FPU_TRAP;
+       Ifx_UReg_8Bit reserved_1A01C[8164];
+       Ifx_CPU_DPR DPR[18];
+       Ifx_UReg_8Bit reserved_1C090[3952];
+       Ifx_CPU_CPR CPR[10];
+       Ifx_UReg_8Bit reserved_1D050[4016];
+       Ifx_CPU_CPXE CPXE_0;
+       Ifx_CPU_CPXE CPXE_1;
+       Ifx_CPU_CPXE CPXE_2;
+       Ifx_CPU_CPXE CPXE_3;
+       Ifx_CPU_DPRE DPRE_0;
+       Ifx_CPU_DPRE DPRE_1;
+       Ifx_CPU_DPRE DPRE_2;
+       Ifx_CPU_DPRE DPRE_3;
+       Ifx_CPU_DPWE DPWE_0;
+       Ifx_CPU_DPWE DPWE_1;
+       Ifx_CPU_DPWE DPWE_2;
+       Ifx_CPU_DPWE DPWE_3;
+       Ifx_UReg_8Bit reserved_1E030[16];
+       Ifx_CPU_CPXE CPXE_4;
+       Ifx_CPU_CPXE CPXE_5;
+       Ifx_UReg_8Bit reserved_1E048[8];
+       Ifx_CPU_DPRE DPRE_4;
+       Ifx_CPU_DPRE DPRE_5;
+       Ifx_UReg_8Bit reserved_1E058[8];
+       Ifx_CPU_DPWE DPWE_4;
+       Ifx_CPU_DPWE DPWE_5;
+       Ifx_UReg_8Bit reserved_1E068[920];
+       Ifx_CPU_TPS TPS;
+       Ifx_UReg_8Bit reserved_1E410[48];
+       Ifx_CPU_TPS_EXTIM TPS_EXTIM;
+       Ifx_UReg_8Bit reserved_1E45C[2980];
+       Ifx_CPU_TR TR[8];
+       Ifx_UReg_8Bit reserved_1F040[3008];
+       Ifx_CPU_CCTRL CCTRL;
+       Ifx_CPU_CCNT CCNT;
+       Ifx_CPU_ICNT ICNT;
+       Ifx_CPU_M1CNT M1CNT;
+       Ifx_CPU_M2CNT M2CNT;
+       Ifx_CPU_M3CNT M3CNT;
+       Ifx_UReg_8Bit reserved_1FC18[232];
+       Ifx_CPU_DBGSR DBGSR;
+       Ifx_UReg_8Bit reserved_1FD04[4];
+       Ifx_CPU_EXEVT EXEVT;
+       Ifx_CPU_CREVT CREVT;
+       Ifx_CPU_SWEVT SWEVT;
+       Ifx_UReg_8Bit reserved_1FD14[28];
+       Ifx_CPU_TRIG_ACC TRIG_ACC;
+       Ifx_UReg_8Bit reserved_1FD34[12];
+       Ifx_CPU_DMS DMS;
+       Ifx_CPU_DCX DCX;
+       Ifx_CPU_DBGTCR DBGTCR;
+       Ifx_UReg_8Bit reserved_1FD4C[180];
+       Ifx_CPU_PCXI PCXI;
+       Ifx_CPU_PSW PSW;
+       Ifx_CPU_PC PC;
+       Ifx_UReg_8Bit reserved_1FE0C[8];
+       Ifx_CPU_SYSCON SYSCON;
+       Ifx_CPU_CPU_ID CPU_ID;
+       Ifx_CPU_CORE_ID CORE_ID;
+       Ifx_CPU_BIV BIV;
+       Ifx_CPU_BTV BTV;
+       Ifx_CPU_ISP ISP;
+       Ifx_CPU_ICR ICR;
+       Ifx_UReg_8Bit reserved_1FE30[8];
+       Ifx_CPU_FCX FCX;
+       Ifx_CPU_LCX LCX;
+       Ifx_UReg_8Bit reserved_1FE40[16];
+       Ifx_CPU_CUS_ID CUS_ID;
+       Ifx_UReg_8Bit reserved_1FE54[172];
+       Ifx_CPU_D D[16];
+       Ifx_UReg_8Bit reserved_1FF40[64];
+       Ifx_CPU_A A[16];
+       Ifx_UReg_8Bit reserved_1FFC0[64];
+} Ifx_CPU;
+# 66 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxCpu_reg.h" 2
+# 2 ".\\output\\inc/IfxCpu_reg.h" 2
+# 45 "bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\src\\HtxLbist.c" 2
+# 1 ".\\output\\inc/IfxSmu_reg.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxSmu_reg.h" 1
+# 56 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxSmu_reg.h"
+# 1 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxSmu_regdef.h" 1
+# 68 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxSmu_regdef.h"
+typedef struct _Ifx_SMU_ACCEN0_Bits
+{
+    Ifx_UReg_32Bit EN0:1;
+    Ifx_UReg_32Bit EN1:1;
+    Ifx_UReg_32Bit EN2:1;
+    Ifx_UReg_32Bit EN3:1;
+    Ifx_UReg_32Bit EN4:1;
+    Ifx_UReg_32Bit EN5:1;
+    Ifx_UReg_32Bit EN6:1;
+    Ifx_UReg_32Bit EN7:1;
+    Ifx_UReg_32Bit EN8:1;
+    Ifx_UReg_32Bit EN9:1;
+    Ifx_UReg_32Bit EN10:1;
+    Ifx_UReg_32Bit EN11:1;
+    Ifx_UReg_32Bit EN12:1;
+    Ifx_UReg_32Bit EN13:1;
+    Ifx_UReg_32Bit EN14:1;
+    Ifx_UReg_32Bit EN15:1;
+    Ifx_UReg_32Bit EN16:1;
+    Ifx_UReg_32Bit EN17:1;
+    Ifx_UReg_32Bit EN18:1;
+    Ifx_UReg_32Bit EN19:1;
+    Ifx_UReg_32Bit EN20:1;
+    Ifx_UReg_32Bit EN21:1;
+    Ifx_UReg_32Bit EN22:1;
+    Ifx_UReg_32Bit EN23:1;
+    Ifx_UReg_32Bit EN24:1;
+    Ifx_UReg_32Bit EN25:1;
+    Ifx_UReg_32Bit EN26:1;
+    Ifx_UReg_32Bit EN27:1;
+    Ifx_UReg_32Bit EN28:1;
+    Ifx_UReg_32Bit EN29:1;
+    Ifx_UReg_32Bit EN30:1;
+    Ifx_UReg_32Bit EN31:1;
+} Ifx_SMU_ACCEN0_Bits;
+
+
+typedef struct _Ifx_SMU_ACCEN1_Bits
+{
+    Ifx_UReg_32Bit reserved_0:32;
+} Ifx_SMU_ACCEN1_Bits;
+
+
+typedef struct _Ifx_SMU_AD_Bits
+{
+    Ifx_UReg_32Bit DF0:1;
+    Ifx_UReg_32Bit DF1:1;
+    Ifx_UReg_32Bit DF2:1;
+    Ifx_UReg_32Bit DF3:1;
+    Ifx_UReg_32Bit DF4:1;
+    Ifx_UReg_32Bit DF5:1;
+    Ifx_UReg_32Bit DF6:1;
+    Ifx_UReg_32Bit DF7:1;
+    Ifx_UReg_32Bit DF8:1;
+    Ifx_UReg_32Bit DF9:1;
+    Ifx_UReg_32Bit DF10:1;
+    Ifx_UReg_32Bit DF11:1;
+    Ifx_UReg_32Bit DF12:1;
+    Ifx_UReg_32Bit DF13:1;
+    Ifx_UReg_32Bit DF14:1;
+    Ifx_UReg_32Bit DF15:1;
+    Ifx_UReg_32Bit DF16:1;
+    Ifx_UReg_32Bit DF17:1;
+    Ifx_UReg_32Bit DF18:1;
+    Ifx_UReg_32Bit DF19:1;
+    Ifx_UReg_32Bit DF20:1;
+    Ifx_UReg_32Bit DF21:1;
+    Ifx_UReg_32Bit DF22:1;
+    Ifx_UReg_32Bit DF23:1;
+    Ifx_UReg_32Bit DF24:1;
+    Ifx_UReg_32Bit DF25:1;
+    Ifx_UReg_32Bit DF26:1;
+    Ifx_UReg_32Bit DF27:1;
+    Ifx_UReg_32Bit DF28:1;
+    Ifx_UReg_32Bit DF29:1;
+    Ifx_UReg_32Bit DF30:1;
+    Ifx_UReg_32Bit DF31:1;
+} Ifx_SMU_AD_Bits;
+
+
+typedef struct _Ifx_SMU_AEX_Bits
+{
+    Ifx_UReg_32Bit IRQ0STS:1;
+    Ifx_UReg_32Bit IRQ1STS:1;
+    Ifx_UReg_32Bit IRQ2STS:1;
+    Ifx_UReg_32Bit RST0STS:1;
+    Ifx_UReg_32Bit RST1STS:1;
+    Ifx_UReg_32Bit RST2STS:1;
+    Ifx_UReg_32Bit RST3STS:1;
+    Ifx_UReg_32Bit RST4STS:1;
+    Ifx_UReg_32Bit RST5STS:1;
+    Ifx_UReg_32Bit NMISTS:1;
+    Ifx_UReg_32Bit reserved_10:1;
+    Ifx_UReg_32Bit EMSSTS:1;
+    Ifx_UReg_32Bit reserved_12:4;
+    Ifx_UReg_32Bit IRQ0AEM:1;
+    Ifx_UReg_32Bit IRQ1AEM:1;
+    Ifx_UReg_32Bit IRQ2AEM:1;
+    Ifx_UReg_32Bit RST0AEM:1;
+    Ifx_UReg_32Bit RST1AEM:1;
+    Ifx_UReg_32Bit RST2AEM:1;
+    Ifx_UReg_32Bit RST3AEM:1;
+    Ifx_UReg_32Bit RST4AEM:1;
+    Ifx_UReg_32Bit RST5AEM:1;
+    Ifx_UReg_32Bit NMIAEM:1;
+    Ifx_UReg_32Bit reserved_26:1;
+    Ifx_UReg_32Bit EMSAEM:1;
+    Ifx_UReg_32Bit reserved_28:4;
+} Ifx_SMU_AEX_Bits;
+
+
+typedef struct _Ifx_SMU_AEXCLR_Bits
+{
+    volatile unsigned int IRQ0CLR:1;
+    volatile unsigned int IRQ1CLR:1;
+    volatile unsigned int IRQ2CLR:1;
+    volatile unsigned int RST0CLR:1;
+    volatile unsigned int RST1CLR:1;
+    volatile unsigned int RST2CLR:1;
+    volatile unsigned int RST3CLR:1;
+    volatile unsigned int RST4CLR:1;
+    volatile unsigned int RST5CLR:1;
+    volatile unsigned int NMICLR:1;
+    volatile unsigned int reserved_10:1;
+    volatile unsigned int EMSCLR:1;
+    volatile unsigned int reserved_12:4;
+    volatile unsigned int IRQ0AEMCLR:1;
+    volatile unsigned int IRQ1AEMCLR:1;
+    volatile unsigned int IRQ2AEMCLR:1;
+    volatile unsigned int RST0AEMCLR:1;
+    volatile unsigned int RST1AEMCLR:1;
+    volatile unsigned int RST2AEMCLR:1;
+    volatile unsigned int RST3AEMCLR:1;
+    volatile unsigned int RST4AEMCLR:1;
+    volatile unsigned int RST5AEMCLR:1;
+    volatile unsigned int NMIAEMCLR:1;
+    volatile unsigned int reserved_26:1;
+    volatile unsigned int EMSAEMCLR:1;
+    volatile unsigned int reserved_28:4;
+} Ifx_SMU_AEXCLR_Bits;
+
+
+typedef struct _Ifx_SMU_AFCNT_Bits
+{
+    Ifx_UReg_32Bit FCNT:4;
+    Ifx_UReg_32Bit ACNT:12;
+    Ifx_UReg_32Bit reserved_16:14;
+    Ifx_UReg_32Bit FCO:1;
+    Ifx_UReg_32Bit ACO:1;
+} Ifx_SMU_AFCNT_Bits;
+
+
+typedef struct _Ifx_SMU_AG_Bits
+{
+    volatile unsigned int SF0:1;
+    volatile unsigned int SF1:1;
+    volatile unsigned int SF2:1;
+    volatile unsigned int SF3:1;
+    volatile unsigned int SF4:1;
+    volatile unsigned int SF5:1;
+    volatile unsigned int SF6:1;
+    volatile unsigned int SF7:1;
+    volatile unsigned int SF8:1;
+    volatile unsigned int SF9:1;
+    volatile unsigned int SF10:1;
+    volatile unsigned int SF11:1;
+    volatile unsigned int SF12:1;
+    volatile unsigned int SF13:1;
+    volatile unsigned int SF14:1;
+    volatile unsigned int SF15:1;
+    volatile unsigned int SF16:1;
+    volatile unsigned int SF17:1;
+    volatile unsigned int SF18:1;
+    volatile unsigned int SF19:1;
+    volatile unsigned int SF20:1;
+    volatile unsigned int SF21:1;
+    volatile unsigned int SF22:1;
+    volatile unsigned int SF23:1;
+    volatile unsigned int SF24:1;
+    volatile unsigned int SF25:1;
+    volatile unsigned int SF26:1;
+    volatile unsigned int SF27:1;
+    volatile unsigned int SF28:1;
+    volatile unsigned int SF29:1;
+    volatile unsigned int SF30:1;
+    volatile unsigned int SF31:1;
+} Ifx_SMU_AG_Bits;
+
+
+typedef struct _Ifx_SMU_AGC_Bits
+{
+    volatile unsigned int IGCS0:3;
+    volatile unsigned int reserved_3:1;
+    volatile unsigned int IGCS1:3;
+    volatile unsigned int reserved_7:1;
+    volatile unsigned int IGCS2:3;
+    volatile unsigned int reserved_11:5;
+    volatile unsigned int RCS:6;
+    volatile unsigned int reserved_22:2;
+    volatile unsigned int PES:5;
+    volatile unsigned int EFRST:1;
+    volatile unsigned int reserved_30:2;
+} Ifx_SMU_AGC_Bits;
+
+
+typedef struct _Ifx_SMU_AGCF_Bits
+{
+    volatile unsigned int CF0:1;
+    volatile unsigned int CF1:1;
+    volatile unsigned int CF2:1;
+    volatile unsigned int CF3:1;
+    volatile unsigned int CF4:1;
+    volatile unsigned int CF5:1;
+    volatile unsigned int CF6:1;
+    volatile unsigned int CF7:1;
+    volatile unsigned int CF8:1;
+    volatile unsigned int CF9:1;
+    volatile unsigned int CF10:1;
+    volatile unsigned int CF11:1;
+    volatile unsigned int CF12:1;
+    volatile unsigned int CF13:1;
+    volatile unsigned int CF14:1;
+    volatile unsigned int CF15:1;
+    volatile unsigned int CF16:1;
+    volatile unsigned int CF17:1;
+    volatile unsigned int CF18:1;
+    volatile unsigned int CF19:1;
+    volatile unsigned int CF20:1;
+    volatile unsigned int CF21:1;
+    volatile unsigned int CF22:1;
+    volatile unsigned int CF23:1;
+    volatile unsigned int CF24:1;
+    volatile unsigned int CF25:1;
+    volatile unsigned int CF26:1;
+    volatile unsigned int CF27:1;
+    volatile unsigned int CF28:1;
+    volatile unsigned int CF29:1;
+    volatile unsigned int CF30:1;
+    volatile unsigned int CF31:1;
+} Ifx_SMU_AGCF_Bits;
+
+
+typedef struct _Ifx_SMU_AGFSP_Bits
+{
+    volatile unsigned int FE0:1;
+    volatile unsigned int FE1:1;
+    volatile unsigned int FE2:1;
+    volatile unsigned int FE3:1;
+    volatile unsigned int FE4:1;
+    volatile unsigned int FE5:1;
+    volatile unsigned int FE6:1;
+    volatile unsigned int FE7:1;
+    volatile unsigned int FE8:1;
+    volatile unsigned int FE9:1;
+    volatile unsigned int FE10:1;
+    volatile unsigned int FE11:1;
+    volatile unsigned int FE12:1;
+    volatile unsigned int FE13:1;
+    volatile unsigned int FE14:1;
+    volatile unsigned int FE15:1;
+    volatile unsigned int FE16:1;
+    volatile unsigned int FE17:1;
+    volatile unsigned int FE18:1;
+    volatile unsigned int FE19:1;
+    volatile unsigned int FE20:1;
+    volatile unsigned int FE21:1;
+    volatile unsigned int FE22:1;
+    volatile unsigned int FE23:1;
+    volatile unsigned int FE24:1;
+    volatile unsigned int FE25:1;
+    volatile unsigned int FE26:1;
+    volatile unsigned int FE27:1;
+    volatile unsigned int FE28:1;
+    volatile unsigned int FE29:1;
+    volatile unsigned int FE30:1;
+    volatile unsigned int FE31:1;
+} Ifx_SMU_AGFSP_Bits;
+
+
+typedef struct _Ifx_SMU_CLC_Bits
+{
+    Ifx_UReg_32Bit DISR:1;
+    Ifx_UReg_32Bit DISS:1;
+    Ifx_UReg_32Bit reserved_2:1;
+    Ifx_UReg_32Bit EDIS:1;
+    Ifx_UReg_32Bit reserved_4:28;
+} Ifx_SMU_CLC_Bits;
+
+
+typedef struct _Ifx_SMU_CMD_Bits
+{
+    volatile unsigned int CMD:4;
+    volatile unsigned int ARG:4;
+    volatile unsigned int reserved_8:24;
+} Ifx_SMU_CMD_Bits;
+
+
+typedef struct _Ifx_SMU_DBG_Bits
+{
+    Ifx_UReg_32Bit SSM:2;
+    Ifx_UReg_32Bit reserved_2:30;
+} Ifx_SMU_DBG_Bits;
+
+
+typedef struct _Ifx_SMU_FSP_Bits
+{
+    volatile unsigned int PRE1:3;
+    volatile unsigned int PRE2:2;
+    volatile unsigned int MODE:2;
+    volatile unsigned int PES:1;
+    volatile unsigned int TFSP_LOW:14;
+    volatile unsigned int TFSP_HIGH:10;
+} Ifx_SMU_FSP_Bits;
+
+
+typedef struct _Ifx_SMU_ID_Bits
+{
+    Ifx_UReg_32Bit MOD_REV:8;
+    Ifx_UReg_32Bit MOD_TYPE:8;
+    Ifx_UReg_32Bit MOD_NUMBER:16;
+} Ifx_SMU_ID_Bits;
+
+
+typedef struct _Ifx_SMU_KEYS_Bits
+{
+    volatile unsigned int CFGLCK:8;
+    volatile unsigned int PERLCK:8;
+    volatile unsigned int reserved_16:16;
+} Ifx_SMU_KEYS_Bits;
+
+
+typedef struct _Ifx_SMU_OCS_Bits
+{
+    Ifx_UReg_32Bit TGS:2;
+    Ifx_UReg_32Bit TGB:1;
+    Ifx_UReg_32Bit TG_P:1;
+    Ifx_UReg_32Bit reserved_4:20;
+    Ifx_UReg_32Bit SUS:4;
+    Ifx_UReg_32Bit SUS_P:1;
+    Ifx_UReg_32Bit SUSSTA:1;
+    Ifx_UReg_32Bit reserved_30:2;
+} Ifx_SMU_OCS_Bits;
+
+
+typedef struct _Ifx_SMU_PCTL_Bits
+{
+    volatile unsigned int HWDIR:2;
+    volatile unsigned int HWEN:2;
+    volatile unsigned int GFSCU_EN:1;
+    volatile unsigned int GFSTS_EN:1;
+    volatile unsigned int reserved_6:1;
+    volatile unsigned int PCS:1;
+    volatile unsigned int reserved_8:6;
+    volatile unsigned int reserved_14:9;
+    volatile unsigned int reserved_23:9;
+} Ifx_SMU_PCTL_Bits;
+
+
+typedef struct _Ifx_SMU_RMCTL_Bits
+{
+    volatile unsigned int TE0:1;
+    volatile unsigned int TE1:1;
+    volatile unsigned int TE2:1;
+    volatile unsigned int TE3:1;
+    volatile unsigned int TE4:1;
+    volatile unsigned int TE5:1;
+    volatile unsigned int TE6:1;
+    volatile unsigned int TE7:1;
+    volatile unsigned int TE8:1;
+    volatile unsigned int TE9:1;
+    volatile unsigned int TE10:1;
+    volatile unsigned int reserved_11:1;
+    volatile unsigned int reserved_12:1;
+    volatile unsigned int reserved_13:1;
+    volatile unsigned int reserved_14:1;
+    volatile unsigned int reserved_15:1;
+    volatile unsigned int reserved_16:1;
+    volatile unsigned int reserved_17:1;
+    volatile unsigned int reserved_18:1;
+    volatile unsigned int reserved_19:1;
+    volatile unsigned int reserved_20:1;
+    volatile unsigned int reserved_21:1;
+    volatile unsigned int reserved_22:1;
+    volatile unsigned int reserved_23:1;
+    volatile unsigned int reserved_24:1;
+    volatile unsigned int reserved_25:1;
+    volatile unsigned int reserved_26:1;
+    volatile unsigned int reserved_27:1;
+    volatile unsigned int reserved_28:1;
+    volatile unsigned int reserved_29:1;
+    volatile unsigned int reserved_30:1;
+    volatile unsigned int reserved_31:1;
+} Ifx_SMU_RMCTL_Bits;
+
+
+typedef struct _Ifx_SMU_RMEF_Bits
+{
+    volatile unsigned int EF0:1;
+    volatile unsigned int EF1:1;
+    volatile unsigned int EF2:1;
+    volatile unsigned int EF3:1;
+    volatile unsigned int EF4:1;
+    volatile unsigned int EF5:1;
+    volatile unsigned int EF6:1;
+    volatile unsigned int EF7:1;
+    volatile unsigned int EF8:1;
+    volatile unsigned int EF9:1;
+    volatile unsigned int EF10:1;
+    volatile unsigned int reserved_11:1;
+    volatile unsigned int reserved_12:1;
+    volatile unsigned int reserved_13:1;
+    volatile unsigned int reserved_14:1;
+    volatile unsigned int reserved_15:1;
+    volatile unsigned int reserved_16:1;
+    volatile unsigned int reserved_17:1;
+    volatile unsigned int reserved_18:1;
+    volatile unsigned int reserved_19:1;
+    volatile unsigned int reserved_20:1;
+    volatile unsigned int reserved_21:1;
+    volatile unsigned int reserved_22:1;
+    volatile unsigned int reserved_23:1;
+    volatile unsigned int reserved_24:1;
+    volatile unsigned int reserved_25:1;
+    volatile unsigned int reserved_26:1;
+    volatile unsigned int reserved_27:1;
+    volatile unsigned int reserved_28:1;
+    volatile unsigned int reserved_29:1;
+    volatile unsigned int reserved_30:1;
+    volatile unsigned int reserved_31:1;
+} Ifx_SMU_RMEF_Bits;
+
+
+typedef struct _Ifx_SMU_RMSTS_Bits
+{
+    volatile unsigned int STS0:1;
+    volatile unsigned int STS1:1;
+    volatile unsigned int STS2:1;
+    volatile unsigned int STS3:1;
+    volatile unsigned int STS4:1;
+    volatile unsigned int STS5:1;
+    volatile unsigned int STS6:1;
+    volatile unsigned int STS7:1;
+    volatile unsigned int STS8:1;
+    volatile unsigned int STS9:1;
+    volatile unsigned int STS10:1;
+    volatile unsigned int reserved_11:1;
+    volatile unsigned int reserved_12:1;
+    volatile unsigned int reserved_13:1;
+    volatile unsigned int reserved_14:1;
+    volatile unsigned int reserved_15:1;
+    volatile unsigned int reserved_16:1;
+    volatile unsigned int reserved_17:1;
+    volatile unsigned int reserved_18:1;
+    volatile unsigned int reserved_19:1;
+    volatile unsigned int reserved_20:1;
+    volatile unsigned int reserved_21:1;
+    volatile unsigned int reserved_22:1;
+    volatile unsigned int reserved_23:1;
+    volatile unsigned int reserved_24:1;
+    volatile unsigned int reserved_25:1;
+    volatile unsigned int reserved_26:1;
+    volatile unsigned int reserved_27:1;
+    volatile unsigned int reserved_28:1;
+    volatile unsigned int reserved_29:1;
+    volatile unsigned int reserved_30:1;
+    volatile unsigned int reserved_31:1;
+} Ifx_SMU_RMSTS_Bits;
+
+
+typedef struct _Ifx_SMU_RTAC00_Bits
+{
+    volatile unsigned int GID0:4;
+    volatile unsigned int ALID0:5;
+    volatile unsigned int reserved_9:7;
+    volatile unsigned int GID1:4;
+    volatile unsigned int ALID1:5;
+    volatile unsigned int reserved_25:7;
+} Ifx_SMU_RTAC00_Bits;
+
+
+typedef struct _Ifx_SMU_RTAC01_Bits
+{
+    volatile unsigned int GID2:4;
+    volatile unsigned int ALID2:5;
+    volatile unsigned int reserved_9:7;
+    volatile unsigned int GID3:4;
+    volatile unsigned int ALID3:5;
+    volatile unsigned int reserved_25:7;
+} Ifx_SMU_RTAC01_Bits;
+
+
+typedef struct _Ifx_SMU_RTAC10_Bits
+{
+    volatile unsigned int GID0:4;
+    volatile unsigned int ALID0:5;
+    volatile unsigned int reserved_9:7;
+    volatile unsigned int GID1:4;
+    volatile unsigned int ALID1:5;
+    volatile unsigned int reserved_25:7;
+} Ifx_SMU_RTAC10_Bits;
+
+
+typedef struct _Ifx_SMU_RTAC11_Bits
+{
+    volatile unsigned int GID2:4;
+    volatile unsigned int ALID2:5;
+    volatile unsigned int reserved_9:7;
+    volatile unsigned int GID3:4;
+    volatile unsigned int ALID3:5;
+    volatile unsigned int reserved_25:7;
+} Ifx_SMU_RTAC11_Bits;
+
+
+typedef struct _Ifx_SMU_RTC_Bits
+{
+    volatile unsigned int RT0E:1;
+    volatile unsigned int RT1E:1;
+    volatile unsigned int reserved_2:6;
+    volatile unsigned int RTD:24;
+} Ifx_SMU_RTC_Bits;
+
+
+typedef struct _Ifx_SMU_STS_Bits
+{
+    volatile unsigned int CMD:4;
+    volatile unsigned int ARG:4;
+    volatile unsigned int RES:1;
+    volatile unsigned int ASCE:1;
+    volatile unsigned int FSP:2;
+    volatile unsigned int FSTS:1;
+    volatile unsigned int reserved_13:3;
+    volatile unsigned int RTS0:1;
+    volatile unsigned int RTME0:1;
+    volatile unsigned int RTS1:1;
+    volatile unsigned int RTME1:1;
+    volatile unsigned int reserved_20:12;
+} Ifx_SMU_STS_Bits;
+
+
+
+
+
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SMU_ACCEN0_Bits B;
+} Ifx_SMU_ACCEN0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SMU_ACCEN1_Bits B;
+} Ifx_SMU_ACCEN1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SMU_AD_Bits B;
+} Ifx_SMU_AD;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SMU_AEX_Bits B;
+} Ifx_SMU_AEX;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SMU_AEXCLR_Bits B;
+} Ifx_SMU_AEXCLR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SMU_AFCNT_Bits B;
+} Ifx_SMU_AFCNT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SMU_AG_Bits B;
+} Ifx_SMU_AG;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SMU_AGC_Bits B;
+} Ifx_SMU_AGC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SMU_AGCF_Bits B;
+} Ifx_SMU_AGCF;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SMU_AGFSP_Bits B;
+} Ifx_SMU_AGFSP;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SMU_CLC_Bits B;
+} Ifx_SMU_CLC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SMU_CMD_Bits B;
+} Ifx_SMU_CMD;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SMU_DBG_Bits B;
+} Ifx_SMU_DBG;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SMU_FSP_Bits B;
+} Ifx_SMU_FSP;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SMU_ID_Bits B;
+} Ifx_SMU_ID;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SMU_KEYS_Bits B;
+} Ifx_SMU_KEYS;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SMU_OCS_Bits B;
+} Ifx_SMU_OCS;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SMU_PCTL_Bits B;
+} Ifx_SMU_PCTL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SMU_RMCTL_Bits B;
+} Ifx_SMU_RMCTL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SMU_RMEF_Bits B;
+} Ifx_SMU_RMEF;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SMU_RMSTS_Bits B;
+} Ifx_SMU_RMSTS;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SMU_RTAC00_Bits B;
+} Ifx_SMU_RTAC00;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SMU_RTAC01_Bits B;
+} Ifx_SMU_RTAC01;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SMU_RTAC10_Bits B;
+} Ifx_SMU_RTAC10;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SMU_RTAC11_Bits B;
+} Ifx_SMU_RTAC11;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SMU_RTC_Bits B;
+} Ifx_SMU_RTC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_SMU_STS_Bits B;
+} Ifx_SMU_STS;
+# 837 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxSmu_regdef.h"
+typedef volatile struct _Ifx_SMU
+{
+       Ifx_SMU_CLC CLC;
+       Ifx_UReg_8Bit reserved_4[4];
+       Ifx_SMU_ID ID;
+       Ifx_UReg_8Bit reserved_C[20];
+       Ifx_SMU_CMD CMD;
+       Ifx_SMU_STS STS;
+       Ifx_SMU_FSP FSP;
+       Ifx_SMU_AGC AGC;
+       Ifx_SMU_RTC RTC;
+       Ifx_SMU_KEYS KEYS;
+       Ifx_SMU_DBG DBG;
+       Ifx_SMU_PCTL PCTL;
+       Ifx_SMU_AFCNT AFCNT;
+       Ifx_UReg_8Bit reserved_44[28];
+       Ifx_SMU_RTAC00 RTAC00;
+       Ifx_SMU_RTAC01 RTAC01;
+       Ifx_SMU_RTAC10 RTAC10;
+       Ifx_SMU_RTAC11 RTAC11;
+       Ifx_SMU_AEX AEX;
+       Ifx_SMU_AEXCLR AEXCLR;
+       Ifx_UReg_8Bit reserved_78[136];
+       Ifx_SMU_AGCF AGCF[12][3];
+       Ifx_SMU_AGFSP AGFSP[12];
+       Ifx_SMU_AG AG[12];
+       Ifx_UReg_8Bit reserved_1F0[16];
+       Ifx_SMU_AD AD[12];
+       Ifx_UReg_8Bit reserved_230[208];
+       Ifx_SMU_RMCTL RMCTL;
+       Ifx_SMU_RMEF RMEF;
+       Ifx_SMU_RMSTS RMSTS;
+       Ifx_UReg_8Bit reserved_30C[1244];
+       Ifx_SMU_OCS OCS;
+       Ifx_UReg_8Bit reserved_7EC[12];
+       Ifx_SMU_ACCEN1 ACCEN1;
+       Ifx_SMU_ACCEN0 ACCEN0;
+} Ifx_SMU;
+# 57 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxSmu_reg.h" 2
+# 2 ".\\output\\inc/IfxSmu_reg.h" 2
+# 46 "bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\src\\HtxLbist.c" 2
+# 1 ".\\output\\inc/IfxMtu_reg.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxMtu_reg.h" 1
+# 56 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxMtu_reg.h"
+# 1 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxMtu_regdef.h" 1
+# 68 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxMtu_regdef.h"
+typedef struct _Ifx_MTU_ACCEN0_Bits
+{
+    Ifx_UReg_32Bit EN0:1;
+    Ifx_UReg_32Bit EN1:1;
+    Ifx_UReg_32Bit EN2:1;
+    Ifx_UReg_32Bit EN3:1;
+    Ifx_UReg_32Bit EN4:1;
+    Ifx_UReg_32Bit EN5:1;
+    Ifx_UReg_32Bit EN6:1;
+    Ifx_UReg_32Bit EN7:1;
+    Ifx_UReg_32Bit EN8:1;
+    Ifx_UReg_32Bit EN9:1;
+    Ifx_UReg_32Bit EN10:1;
+    Ifx_UReg_32Bit EN11:1;
+    Ifx_UReg_32Bit EN12:1;
+    Ifx_UReg_32Bit EN13:1;
+    Ifx_UReg_32Bit EN14:1;
+    Ifx_UReg_32Bit EN15:1;
+    Ifx_UReg_32Bit EN16:1;
+    Ifx_UReg_32Bit EN17:1;
+    Ifx_UReg_32Bit EN18:1;
+    Ifx_UReg_32Bit EN19:1;
+    Ifx_UReg_32Bit EN20:1;
+    Ifx_UReg_32Bit EN21:1;
+    Ifx_UReg_32Bit EN22:1;
+    Ifx_UReg_32Bit EN23:1;
+    Ifx_UReg_32Bit EN24:1;
+    Ifx_UReg_32Bit EN25:1;
+    Ifx_UReg_32Bit EN26:1;
+    Ifx_UReg_32Bit EN27:1;
+    Ifx_UReg_32Bit EN28:1;
+    Ifx_UReg_32Bit EN29:1;
+    Ifx_UReg_32Bit EN30:1;
+    Ifx_UReg_32Bit EN31:1;
+} Ifx_MTU_ACCEN0_Bits;
+
+
+typedef struct _Ifx_MTU_ACCEN1_Bits
+{
+    Ifx_UReg_32Bit reserved_0:32;
+} Ifx_MTU_ACCEN1_Bits;
+
+
+typedef struct _Ifx_MTU_CLC_Bits
+{
+    Ifx_UReg_32Bit DISR:1;
+    Ifx_UReg_32Bit DISS:1;
+    Ifx_UReg_32Bit RESVD:1;
+    Ifx_UReg_32Bit EDIS:1;
+    Ifx_UReg_32Bit reserved_4:4;
+    Ifx_UReg_32Bit reserved_8:8;
+    Ifx_UReg_32Bit reserved_16:16;
+} Ifx_MTU_CLC_Bits;
+
+
+typedef struct _Ifx_MTU_ID_Bits
+{
+    Ifx_UReg_32Bit MODREV:8;
+    Ifx_UReg_32Bit MODTYPE:8;
+    Ifx_UReg_32Bit MODNUMBER:16;
+} Ifx_MTU_ID_Bits;
+
+
+typedef struct _Ifx_MTU_MC_ALMSRCS_Bits
+{
+    volatile unsigned short SBE:1;
+    volatile unsigned short DBE:1;
+    volatile unsigned short ADDRE:1;
+    volatile unsigned short OVFE:1;
+    volatile unsigned short OPENE:1;
+    volatile unsigned short MISCE:1;
+    volatile unsigned short reserved_6:10;
+} Ifx_MTU_MC_ALMSRCS_Bits;
+
+
+typedef struct _Ifx_MTU_MC_CONFIG0_Bits
+{
+    volatile unsigned short ACCSTYPE:8;
+    volatile unsigned short reserved_8:4;
+    volatile unsigned short NUMACCS:4;
+} Ifx_MTU_MC_CONFIG0_Bits;
+
+
+typedef struct _Ifx_MTU_MC_CONFIG1_Bits
+{
+    volatile unsigned short ACCSPAT:8;
+    volatile unsigned short SELFASTB:4;
+    volatile unsigned short AG_MOD:4;
+} Ifx_MTU_MC_CONFIG1_Bits;
+
+
+typedef struct _Ifx_MTU_MC_ECCD_Bits
+{
+    volatile unsigned short SERR:1;
+    volatile unsigned short CERR:1;
+    volatile unsigned short UCERR:1;
+    volatile unsigned short MERR:1;
+    volatile unsigned short TRC:1;
+    volatile unsigned short VAL:5;
+    volatile unsigned short PERMERR:5;
+    volatile unsigned short EOV:1;
+} Ifx_MTU_MC_ECCD_Bits;
+
+
+typedef struct _Ifx_MTU_MC_ECCS_Bits
+{
+    volatile unsigned short CENE:1;
+    volatile unsigned short UCENE:1;
+    volatile unsigned short MENE:1;
+    volatile unsigned short ECE:1;
+    volatile unsigned short TRE:1;
+    volatile unsigned short BFLE:1;
+    volatile unsigned short SFLE:1;
+    volatile unsigned short reserved_7:1;
+    volatile unsigned short ECCMAP:2;
+    volatile unsigned short TC_TWR_SEL:1;
+    volatile unsigned short SFFD:1;
+    volatile unsigned short reserved_12:4;
+} Ifx_MTU_MC_ECCS_Bits;
+
+
+typedef struct _Ifx_MTU_MC_ERRINFO_Bits
+{
+    volatile unsigned short SBERR:1;
+    volatile unsigned short DBERR:1;
+    volatile unsigned short ADDRERR:1;
+    volatile unsigned short reserved_3:13;
+} Ifx_MTU_MC_ERRINFO_Bits;
+
+
+typedef struct _Ifx_MTU_MC_ETRR_Bits
+{
+    volatile unsigned short ADDR:13;
+    volatile unsigned short MBI:3;
+} Ifx_MTU_MC_ETRR_Bits;
+
+
+typedef struct _Ifx_MTU_MC_FAULTSTS_Bits
+{
+    volatile unsigned short OPERR:6;
+    volatile unsigned short reserved_6:2;
+    volatile unsigned short MISCERR:6;
+    volatile unsigned short reserved_14:2;
+} Ifx_MTU_MC_FAULTSTS_Bits;
+
+
+typedef struct _Ifx_MTU_MC_MCONTROL_Bits
+{
+    volatile unsigned short START:1;
+    volatile unsigned short RESUME:1;
+    volatile unsigned short ESTF:1;
+    volatile unsigned short DIR:1;
+    volatile unsigned short DINIT:1;
+    volatile unsigned short RCADR:1;
+    volatile unsigned short ROWTOG:1;
+    volatile unsigned short BITTOG:1;
+    volatile unsigned short reserved_8:1;
+    volatile unsigned short FAILDMP:1;
+    volatile unsigned short EN_DESCR:1;
+    volatile unsigned short reserved_11:1;
+    volatile unsigned short reserved_12:1;
+    volatile unsigned short reserved_13:1;
+    volatile unsigned short reserved_14:1;
+    volatile unsigned short SRAM_CLR:1;
+} Ifx_MTU_MC_MCONTROL_Bits;
+
+
+typedef struct _Ifx_MTU_MC_MSTATUS_Bits
+{
+    volatile unsigned short DONE:1;
+    volatile unsigned short FAIL:1;
+    volatile unsigned short FDA:1;
+    volatile unsigned short SFAIL:1;
+    volatile unsigned short reserved_4:1;
+    volatile unsigned short reserved_5:11;
+} Ifx_MTU_MC_MSTATUS_Bits;
+
+
+typedef struct _Ifx_MTU_MC_RANGE_Bits
+{
+    volatile unsigned short ADDR:14;
+    volatile unsigned short INJERR:1;
+    volatile unsigned short RAEN:1;
+} Ifx_MTU_MC_RANGE_Bits;
+
+
+typedef struct _Ifx_MTU_MC_RDBFL_Bits
+{
+    volatile unsigned short WDATA:16;
+} Ifx_MTU_MC_RDBFL_Bits;
+
+
+typedef struct _Ifx_MTU_MC_REVID_Bits
+{
+    volatile unsigned short REV_ID:16;
+} Ifx_MTU_MC_REVID_Bits;
+
+
+typedef struct _Ifx_MTU_MEMDONE0_Bits
+{
+    Ifx_UReg_32Bit CPU0_DMEM_DONE:1;
+    Ifx_UReg_32Bit CPU0_DTAG_DONE:1;
+    Ifx_UReg_32Bit CPU0_PMEM_DONE:1;
+    Ifx_UReg_32Bit CPU0_PTAG_DONE:1;
+    Ifx_UReg_32Bit CPU0_DLMU_STBY_DONE:1;
+    Ifx_UReg_32Bit CPU1_DMEM_DONE:1;
+    Ifx_UReg_32Bit CPU1_DTAG_DONE:1;
+    Ifx_UReg_32Bit CPU1_PMEM_DONE:1;
+    Ifx_UReg_32Bit CPU1_PTAG_DONE:1;
+    Ifx_UReg_32Bit CPU1_DLMU_STBY_DONE:1;
+    Ifx_UReg_32Bit CPU2_DMEM_DONE:1;
+    Ifx_UReg_32Bit CPU2_DTAG_DONE:1;
+    Ifx_UReg_32Bit CPU2_PMEM_DONE:1;
+    Ifx_UReg_32Bit CPU2_PTAG_DONE:1;
+    Ifx_UReg_32Bit CPU2_DLMU_DONE:1;
+    Ifx_UReg_32Bit CPU3_DMEM_DONE:1;
+    Ifx_UReg_32Bit CPU3_DTAG_DONE:1;
+    Ifx_UReg_32Bit CPU3_PMEM_DONE:1;
+    Ifx_UReg_32Bit CPU3_PTAG_DONE:1;
+    Ifx_UReg_32Bit CPU3_DLMU_DONE:1;
+    Ifx_UReg_32Bit reserved_20:1;
+    Ifx_UReg_32Bit reserved_21:1;
+    Ifx_UReg_32Bit reserved_22:1;
+    Ifx_UReg_32Bit reserved_23:1;
+    Ifx_UReg_32Bit reserved_24:1;
+    Ifx_UReg_32Bit reserved_25:1;
+    Ifx_UReg_32Bit reserved_26:1;
+    Ifx_UReg_32Bit reserved_27:1;
+    Ifx_UReg_32Bit reserved_28:1;
+    Ifx_UReg_32Bit reserved_29:1;
+    Ifx_UReg_32Bit LMU00_DONE:1;
+    Ifx_UReg_32Bit reserved_31:1;
+} Ifx_MTU_MEMDONE0_Bits;
+
+
+typedef struct _Ifx_MTU_MEMDONE1_Bits
+{
+    Ifx_UReg_32Bit reserved_0:1;
+    Ifx_UReg_32Bit reserved_1:1;
+    Ifx_UReg_32Bit CPU0_DMEM1_DONE:1;
+    Ifx_UReg_32Bit CPU1_DMEM1_DONE:1;
+    Ifx_UReg_32Bit reserved_4:1;
+    Ifx_UReg_32Bit reserved_5:1;
+    Ifx_UReg_32Bit DAM0_DONE:1;
+    Ifx_UReg_32Bit reserved_7:1;
+    Ifx_UReg_32Bit reserved_8:1;
+    Ifx_UReg_32Bit SADMA_DONE:1;
+    Ifx_UReg_32Bit MINI_MCDS_DONE:1;
+    Ifx_UReg_32Bit reserved_11:1;
+    Ifx_UReg_32Bit reserved_12:1;
+    Ifx_UReg_32Bit reserved_13:1;
+    Ifx_UReg_32Bit reserved_14:1;
+    Ifx_UReg_32Bit reserved_15:1;
+    Ifx_UReg_32Bit reserved_16:1;
+    Ifx_UReg_32Bit reserved_17:1;
+    Ifx_UReg_32Bit reserved_18:1;
+    Ifx_UReg_32Bit reserved_19:1;
+    Ifx_UReg_32Bit reserved_20:1;
+    Ifx_UReg_32Bit GTM_FIFO_DONE:1;
+    Ifx_UReg_32Bit GTM_MCS0SLOW_DONE:1;
+    Ifx_UReg_32Bit GTM_MCS0FAST_DONE:1;
+    Ifx_UReg_32Bit GTM_MCS1SLOW_DONE:1;
+    Ifx_UReg_32Bit GTM_MCS1FAST_DONE:1;
+    Ifx_UReg_32Bit GTM_DPLL1A_DONE:1;
+    Ifx_UReg_32Bit GTM_DPLL1BC_DONE:1;
+    Ifx_UReg_32Bit GTM_DPLL2_DONE:1;
+    Ifx_UReg_32Bit reserved_29:1;
+    Ifx_UReg_32Bit MCAN10_DONE:1;
+    Ifx_UReg_32Bit MCAN20_DONE:1;
+} Ifx_MTU_MEMDONE1_Bits;
+
+
+typedef struct _Ifx_MTU_MEMDONE2_Bits
+{
+    Ifx_UReg_32Bit MCAN21_DONE:1;
+    Ifx_UReg_32Bit PSI5_DONE:1;
+    Ifx_UReg_32Bit ERAY_OBF0_DONE:1;
+    Ifx_UReg_32Bit ERAY_OBF1_DONE:1;
+    Ifx_UReg_32Bit ERAY_TBF_IBF0_DONE:1;
+    Ifx_UReg_32Bit ERAY_TBF_IBF1_DONE:1;
+    Ifx_UReg_32Bit ERAY_MBF0_DONE:1;
+    Ifx_UReg_32Bit ERAY_MBF1_DONE:1;
+    Ifx_UReg_32Bit reserved_8:1;
+    Ifx_UReg_32Bit reserved_9:1;
+    Ifx_UReg_32Bit reserved_10:1;
+    Ifx_UReg_32Bit reserved_11:1;
+    Ifx_UReg_32Bit reserved_12:1;
+    Ifx_UReg_32Bit SCR_XRAM_DONE:1;
+    Ifx_UReg_32Bit SCR_RAMINT_DONE:1;
+    Ifx_UReg_32Bit reserved_15:1;
+    Ifx_UReg_32Bit reserved_16:1;
+    Ifx_UReg_32Bit reserved_17:1;
+    Ifx_UReg_32Bit GIGETH_RX_DONE:1;
+    Ifx_UReg_32Bit GIGETH_TX_DONE:1;
+    Ifx_UReg_32Bit reserved_20:1;
+    Ifx_UReg_32Bit reserved_21:1;
+    Ifx_UReg_32Bit reserved_22:1;
+    Ifx_UReg_32Bit reserved_23:1;
+    Ifx_UReg_32Bit reserved_24:1;
+    Ifx_UReg_32Bit reserved_25:1;
+    Ifx_UReg_32Bit reserved_26:1;
+    Ifx_UReg_32Bit reserved_27:1;
+    Ifx_UReg_32Bit reserved_28:1;
+    Ifx_UReg_32Bit reserved_29:1;
+    Ifx_UReg_32Bit reserved_30:1;
+    Ifx_UReg_32Bit reserved_31:1;
+} Ifx_MTU_MEMDONE2_Bits;
+
+
+typedef struct _Ifx_MTU_MEMFDA0_Bits
+{
+    Ifx_UReg_32Bit CPU0_DMEM_FDA:1;
+    Ifx_UReg_32Bit CPU0_DTAG_FDA:1;
+    Ifx_UReg_32Bit CPU0_PMEM_FDA:1;
+    Ifx_UReg_32Bit CPU0_PTAG_FDA:1;
+    Ifx_UReg_32Bit CPU0_DLMU_STBY_FDA:1;
+    Ifx_UReg_32Bit CPU1_DMEM_FDA:1;
+    Ifx_UReg_32Bit CPU1_DTAG_FDA:1;
+    Ifx_UReg_32Bit CPU1_PMEM_FDA:1;
+    Ifx_UReg_32Bit CPU1_PTAG_FDA:1;
+    Ifx_UReg_32Bit CPU1_DLMU_STBY_FDA:1;
+    Ifx_UReg_32Bit CPU2_DMEM_FDA:1;
+    Ifx_UReg_32Bit CPU2_DTAG_FDA:1;
+    Ifx_UReg_32Bit CPU2_PMEM_FDA:1;
+    Ifx_UReg_32Bit CPU2_PTAG_FDA:1;
+    Ifx_UReg_32Bit CPU2_DLMU_FDA:1;
+    Ifx_UReg_32Bit CPU3_DMEM_FDA:1;
+    Ifx_UReg_32Bit CPU3_DTAG_FDA:1;
+    Ifx_UReg_32Bit CPU3_PMEM_FDA:1;
+    Ifx_UReg_32Bit CPU3_PTAG_FDA:1;
+    Ifx_UReg_32Bit CPU3_DLMU_FDA:1;
+    Ifx_UReg_32Bit reserved_20:1;
+    Ifx_UReg_32Bit reserved_21:1;
+    Ifx_UReg_32Bit reserved_22:1;
+    Ifx_UReg_32Bit reserved_23:1;
+    Ifx_UReg_32Bit reserved_24:1;
+    Ifx_UReg_32Bit reserved_25:1;
+    Ifx_UReg_32Bit reserved_26:1;
+    Ifx_UReg_32Bit reserved_27:1;
+    Ifx_UReg_32Bit reserved_28:1;
+    Ifx_UReg_32Bit reserved_29:1;
+    Ifx_UReg_32Bit LMU00_FDA:1;
+    Ifx_UReg_32Bit reserved_31:1;
+} Ifx_MTU_MEMFDA0_Bits;
+
+
+typedef struct _Ifx_MTU_MEMFDA1_Bits
+{
+    Ifx_UReg_32Bit reserved_0:1;
+    Ifx_UReg_32Bit reserved_1:1;
+    Ifx_UReg_32Bit CPU0_DMEM1_FDA:1;
+    Ifx_UReg_32Bit CPU1_DMEM1_FDA:1;
+    Ifx_UReg_32Bit reserved_4:1;
+    Ifx_UReg_32Bit reserved_5:1;
+    Ifx_UReg_32Bit DAM0_FDA:1;
+    Ifx_UReg_32Bit reserved_7:1;
+    Ifx_UReg_32Bit reserved_8:1;
+    Ifx_UReg_32Bit SADMA_FDA:1;
+    Ifx_UReg_32Bit MINI_MCDS_FDA:1;
+    Ifx_UReg_32Bit reserved_11:1;
+    Ifx_UReg_32Bit reserved_12:1;
+    Ifx_UReg_32Bit reserved_13:1;
+    Ifx_UReg_32Bit reserved_14:1;
+    Ifx_UReg_32Bit reserved_15:1;
+    Ifx_UReg_32Bit reserved_16:1;
+    Ifx_UReg_32Bit reserved_17:1;
+    Ifx_UReg_32Bit reserved_18:1;
+    Ifx_UReg_32Bit reserved_19:1;
+    Ifx_UReg_32Bit reserved_20:1;
+    Ifx_UReg_32Bit GTM_FIFO_FDA:1;
+    Ifx_UReg_32Bit GTM_MCS0SLOW_FDA:1;
+    Ifx_UReg_32Bit GTM_MCS0FAST_FDA:1;
+    Ifx_UReg_32Bit GTM_MCS1SLOW_FDA:1;
+    Ifx_UReg_32Bit GTM_MCS1FAST_FDA:1;
+    Ifx_UReg_32Bit GTM_DPLL1A_FDA:1;
+    Ifx_UReg_32Bit GTM_DPLL1BC_FDA:1;
+    Ifx_UReg_32Bit GTM_DPLL2_FDA:1;
+    Ifx_UReg_32Bit reserved_29:1;
+    Ifx_UReg_32Bit MCAN10_FDA:1;
+    Ifx_UReg_32Bit MCAN20_FDA:1;
+} Ifx_MTU_MEMFDA1_Bits;
+
+
+typedef struct _Ifx_MTU_MEMFDA2_Bits
+{
+    Ifx_UReg_32Bit MCAN21_FDA:1;
+    Ifx_UReg_32Bit PSI5_FDA:1;
+    Ifx_UReg_32Bit ERAY_OBF0_FDA:1;
+    Ifx_UReg_32Bit ERAY_OBF1_FDA:1;
+    Ifx_UReg_32Bit ERAY_TBF_IBF0_FDA:1;
+    Ifx_UReg_32Bit ERAY_TBF_IBF1_FDA:1;
+    Ifx_UReg_32Bit ERAY_MBF0_FDA:1;
+    Ifx_UReg_32Bit ERAY_MBF1_FDA:1;
+    Ifx_UReg_32Bit reserved_8:1;
+    Ifx_UReg_32Bit reserved_9:1;
+    Ifx_UReg_32Bit reserved_10:1;
+    Ifx_UReg_32Bit reserved_11:1;
+    Ifx_UReg_32Bit reserved_12:1;
+    Ifx_UReg_32Bit SCR_XRAM_FDA:1;
+    Ifx_UReg_32Bit SCR_RAMINT_FDA:1;
+    Ifx_UReg_32Bit reserved_15:1;
+    Ifx_UReg_32Bit reserved_16:1;
+    Ifx_UReg_32Bit reserved_17:1;
+    Ifx_UReg_32Bit GIGETH_RX_FDA:1;
+    Ifx_UReg_32Bit GIGETH_TX_FDA:1;
+    Ifx_UReg_32Bit reserved_20:1;
+    Ifx_UReg_32Bit reserved_21:1;
+    Ifx_UReg_32Bit reserved_22:1;
+    Ifx_UReg_32Bit reserved_23:1;
+    Ifx_UReg_32Bit reserved_24:1;
+    Ifx_UReg_32Bit reserved_25:1;
+    Ifx_UReg_32Bit reserved_26:1;
+    Ifx_UReg_32Bit reserved_27:1;
+    Ifx_UReg_32Bit reserved_28:1;
+    Ifx_UReg_32Bit reserved_29:1;
+    Ifx_UReg_32Bit reserved_30:1;
+    Ifx_UReg_32Bit reserved_31:1;
+} Ifx_MTU_MEMFDA2_Bits;
+
+
+typedef struct _Ifx_MTU_MEMMAP_Bits
+{
+    Ifx_UReg_32Bit CPU0_DCMAP:1;
+    Ifx_UReg_32Bit CPU0_DTMAP:1;
+    Ifx_UReg_32Bit CPU0_PCMAP:1;
+    Ifx_UReg_32Bit CPU0_PTMAP:1;
+    Ifx_UReg_32Bit reserved_4:1;
+    Ifx_UReg_32Bit CPU1_DCMAP:1;
+    Ifx_UReg_32Bit CPU1_DTMAP:1;
+    Ifx_UReg_32Bit CPU1_PCMAP:1;
+    Ifx_UReg_32Bit CPU1_PTMAP:1;
+    Ifx_UReg_32Bit reserved_9:1;
+    Ifx_UReg_32Bit CPU2_DCMAP:1;
+    Ifx_UReg_32Bit CPU2_DTMAP:1;
+    Ifx_UReg_32Bit CPU2_PCMAP:1;
+    Ifx_UReg_32Bit CPU2_PTMAP:1;
+    Ifx_UReg_32Bit reserved_14:1;
+    Ifx_UReg_32Bit CPU3_DCMAP:1;
+    Ifx_UReg_32Bit CPU3_DTMAP:1;
+    Ifx_UReg_32Bit CPU3_PCMAP:1;
+    Ifx_UReg_32Bit CPU3_PTMAP:1;
+    Ifx_UReg_32Bit reserved_19:1;
+    Ifx_UReg_32Bit MEM20MAP:1;
+    Ifx_UReg_32Bit MEM21MAP:1;
+    Ifx_UReg_32Bit MEM22MAP:1;
+    Ifx_UReg_32Bit MEM23MAP:1;
+    Ifx_UReg_32Bit reserved_24:1;
+    Ifx_UReg_32Bit MEM25MAP:1;
+    Ifx_UReg_32Bit MEM26MAP:1;
+    Ifx_UReg_32Bit MEM27MAP:1;
+    Ifx_UReg_32Bit MEM28MAP:1;
+    Ifx_UReg_32Bit reserved_29:3;
+} Ifx_MTU_MEMMAP_Bits;
+
+
+typedef struct _Ifx_MTU_MEMSTAT0_Bits
+{
+    Ifx_UReg_32Bit CPU0_DMEM_AIU:1;
+    Ifx_UReg_32Bit CPU0_DTAG_AIU:1;
+    Ifx_UReg_32Bit CPU0_PMEM_AIU:1;
+    Ifx_UReg_32Bit CPU0_PTAG_AIU:1;
+    Ifx_UReg_32Bit reserved_4:1;
+    Ifx_UReg_32Bit CPU1_DMEM_AIU:1;
+    Ifx_UReg_32Bit CPU1_DTAG_AIU:1;
+    Ifx_UReg_32Bit CPU1_PMEM_AIU:1;
+    Ifx_UReg_32Bit CPU1_PTAG_AIU:1;
+    Ifx_UReg_32Bit reserved_9:1;
+    Ifx_UReg_32Bit CPU2_DMEM_AIU:1;
+    Ifx_UReg_32Bit CPU2_DTAG_AIU:1;
+    Ifx_UReg_32Bit CPU2_PMEM_AIU:1;
+    Ifx_UReg_32Bit CPU2_PTAG_AIU:1;
+    Ifx_UReg_32Bit reserved_14:1;
+    Ifx_UReg_32Bit CPU3_DMEM_AIU:1;
+    Ifx_UReg_32Bit CPU3_DTAG_AIU:1;
+    Ifx_UReg_32Bit CPU3_PMEM_AIU:1;
+    Ifx_UReg_32Bit CPU3_PTAG_AIU:1;
+    Ifx_UReg_32Bit reserved_19:1;
+    Ifx_UReg_32Bit reserved_20:1;
+    Ifx_UReg_32Bit reserved_21:1;
+    Ifx_UReg_32Bit reserved_22:1;
+    Ifx_UReg_32Bit reserved_23:1;
+    Ifx_UReg_32Bit reserved_24:1;
+    Ifx_UReg_32Bit reserved_25:1;
+    Ifx_UReg_32Bit reserved_26:1;
+    Ifx_UReg_32Bit reserved_27:1;
+    Ifx_UReg_32Bit reserved_28:1;
+    Ifx_UReg_32Bit reserved_29:3;
+} Ifx_MTU_MEMSTAT0_Bits;
+
+
+typedef struct _Ifx_MTU_MEMSTAT1_Bits
+{
+    Ifx_UReg_32Bit reserved_0:2;
+    Ifx_UReg_32Bit CPU0_DMEM1_AIU:1;
+    Ifx_UReg_32Bit CPU1_DMEM1_AIU:1;
+    Ifx_UReg_32Bit reserved_4:1;
+    Ifx_UReg_32Bit reserved_5:3;
+    Ifx_UReg_32Bit reserved_8:1;
+    Ifx_UReg_32Bit reserved_9:23;
+} Ifx_MTU_MEMSTAT1_Bits;
+
+
+typedef struct _Ifx_MTU_MEMSTAT2_Bits
+{
+    Ifx_UReg_32Bit reserved_0:2;
+    Ifx_UReg_32Bit reserved_2:2;
+    Ifx_UReg_32Bit reserved_4:1;
+    Ifx_UReg_32Bit reserved_5:3;
+    Ifx_UReg_32Bit reserved_8:1;
+    Ifx_UReg_32Bit reserved_9:1;
+    Ifx_UReg_32Bit reserved_10:1;
+    Ifx_UReg_32Bit reserved_11:1;
+    Ifx_UReg_32Bit reserved_12:1;
+    Ifx_UReg_32Bit reserved_13:4;
+    Ifx_UReg_32Bit reserved_17:1;
+    Ifx_UReg_32Bit reserved_18:14;
+} Ifx_MTU_MEMSTAT2_Bits;
+
+
+typedef struct _Ifx_MTU_MEMTEST0_Bits
+{
+    Ifx_UReg_32Bit CPU0_DMEM_EN:1;
+    Ifx_UReg_32Bit CPU0_DTAG_EN:1;
+    Ifx_UReg_32Bit CPU0_PMEM_EN:1;
+    Ifx_UReg_32Bit CPU0_PTAG_EN:1;
+    Ifx_UReg_32Bit CPU0_DLMU_STBY_EN:1;
+    Ifx_UReg_32Bit CPU1_DMEM_EN:1;
+    Ifx_UReg_32Bit CPU1_DTAG_EN:1;
+    Ifx_UReg_32Bit CPU1_PMEM_EN:1;
+    Ifx_UReg_32Bit CPU1_PTAG_EN:1;
+    Ifx_UReg_32Bit CPU1_DLMU_STBY_EN:1;
+    Ifx_UReg_32Bit CPU2_DMEM_EN:1;
+    Ifx_UReg_32Bit CPU2_DTAG_EN:1;
+    Ifx_UReg_32Bit CPU2_PMEM_EN:1;
+    Ifx_UReg_32Bit CPU2_PTAG_EN:1;
+    Ifx_UReg_32Bit CPU2_DLMU_EN:1;
+    Ifx_UReg_32Bit CPU3_DMEM_EN:1;
+    Ifx_UReg_32Bit CPU3_DTAG_EN:1;
+    Ifx_UReg_32Bit CPU3_PMEM_EN:1;
+    Ifx_UReg_32Bit CPU3_PTAG_EN:1;
+    Ifx_UReg_32Bit CPU3_DLMU_EN:1;
+    Ifx_UReg_32Bit reserved_20:1;
+    Ifx_UReg_32Bit reserved_21:1;
+    Ifx_UReg_32Bit reserved_22:1;
+    Ifx_UReg_32Bit reserved_23:1;
+    Ifx_UReg_32Bit reserved_24:1;
+    Ifx_UReg_32Bit reserved_25:1;
+    Ifx_UReg_32Bit reserved_26:1;
+    Ifx_UReg_32Bit reserved_27:1;
+    Ifx_UReg_32Bit reserved_28:1;
+    Ifx_UReg_32Bit reserved_29:1;
+    Ifx_UReg_32Bit LMU00_EN:1;
+    Ifx_UReg_32Bit reserved_31:1;
+} Ifx_MTU_MEMTEST0_Bits;
+
+
+typedef struct _Ifx_MTU_MEMTEST1_Bits
+{
+    Ifx_UReg_32Bit reserved_0:1;
+    Ifx_UReg_32Bit reserved_1:1;
+    Ifx_UReg_32Bit CPU0_DMEM1_EN:1;
+    Ifx_UReg_32Bit CPU1_DMEM1_EN:1;
+    Ifx_UReg_32Bit reserved_4:1;
+    Ifx_UReg_32Bit reserved_5:1;
+    Ifx_UReg_32Bit DAM0_EN:1;
+    Ifx_UReg_32Bit reserved_7:1;
+    Ifx_UReg_32Bit reserved_8:1;
+    Ifx_UReg_32Bit SADMA_EN:1;
+    Ifx_UReg_32Bit MINI_MCDS_EN:1;
+    Ifx_UReg_32Bit reserved_11:1;
+    Ifx_UReg_32Bit reserved_12:1;
+    Ifx_UReg_32Bit reserved_13:1;
+    Ifx_UReg_32Bit reserved_14:1;
+    Ifx_UReg_32Bit reserved_15:1;
+    Ifx_UReg_32Bit reserved_16:1;
+    Ifx_UReg_32Bit reserved_17:1;
+    Ifx_UReg_32Bit reserved_18:1;
+    Ifx_UReg_32Bit reserved_19:1;
+    Ifx_UReg_32Bit reserved_20:1;
+    Ifx_UReg_32Bit GTM_FIFO_EN:1;
+    Ifx_UReg_32Bit GTM_MCS0SLOW_EN:1;
+    Ifx_UReg_32Bit GTM_MCS0FAST_EN:1;
+    Ifx_UReg_32Bit GTM_MCS1SLOW_EN:1;
+    Ifx_UReg_32Bit GTM_MCS1FAST_EN:1;
+    Ifx_UReg_32Bit GTM_DPLL1A_EN:1;
+    Ifx_UReg_32Bit GTM_DPLL1BC_EN:1;
+    Ifx_UReg_32Bit GTM_DPLL2_EN:1;
+    Ifx_UReg_32Bit reserved_29:1;
+    Ifx_UReg_32Bit MCAN10_EN:1;
+    Ifx_UReg_32Bit MCAN20_EN:1;
+} Ifx_MTU_MEMTEST1_Bits;
+
+
+typedef struct _Ifx_MTU_MEMTEST2_Bits
+{
+    Ifx_UReg_32Bit MCAN21_EN:1;
+    Ifx_UReg_32Bit PSI5_EN:1;
+    Ifx_UReg_32Bit ERAY_OBF0_EN:1;
+    Ifx_UReg_32Bit ERAY_OBF1_EN:1;
+    Ifx_UReg_32Bit ERAY_TBF_IBF0_EN:1;
+    Ifx_UReg_32Bit ERAY_TBF_IBF1_EN:1;
+    Ifx_UReg_32Bit ERAY_MBF0_EN:1;
+    Ifx_UReg_32Bit ERAY_MBF1_EN:1;
+    Ifx_UReg_32Bit reserved_8:1;
+    Ifx_UReg_32Bit reserved_9:1;
+    Ifx_UReg_32Bit reserved_10:1;
+    Ifx_UReg_32Bit reserved_11:1;
+    Ifx_UReg_32Bit reserved_12:1;
+    Ifx_UReg_32Bit SCR_XRAM_EN:1;
+    Ifx_UReg_32Bit SCR_RAMINT_EN:1;
+    Ifx_UReg_32Bit reserved_15:1;
+    Ifx_UReg_32Bit reserved_16:1;
+    Ifx_UReg_32Bit reserved_17:1;
+    Ifx_UReg_32Bit GIGETH_RX_EN:1;
+    Ifx_UReg_32Bit GIGETH_TX_EN:1;
+    Ifx_UReg_32Bit reserved_20:1;
+    Ifx_UReg_32Bit reserved_21:1;
+    Ifx_UReg_32Bit reserved_22:1;
+    Ifx_UReg_32Bit reserved_23:1;
+    Ifx_UReg_32Bit reserved_24:1;
+    Ifx_UReg_32Bit reserved_25:1;
+    Ifx_UReg_32Bit reserved_26:1;
+    Ifx_UReg_32Bit reserved_27:1;
+    Ifx_UReg_32Bit reserved_28:1;
+    Ifx_UReg_32Bit reserved_29:1;
+    Ifx_UReg_32Bit reserved_30:1;
+    Ifx_UReg_32Bit reserved_31:1;
+} Ifx_MTU_MEMTEST2_Bits;
+
+
+
+
+
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_MTU_ACCEN0_Bits B;
+} Ifx_MTU_ACCEN0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_MTU_ACCEN1_Bits B;
+} Ifx_MTU_ACCEN1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_MTU_CLC_Bits B;
+} Ifx_MTU_CLC;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_MTU_ID_Bits B;
+} Ifx_MTU_ID;
+
+
+typedef union
+{
+    Ifx_UReg_16Bit U;
+    Ifx_SReg_16Bit I;
+    Ifx_MTU_MC_ALMSRCS_Bits B;
+} Ifx_MTU_MC_ALMSRCS;
+
+
+typedef union
+{
+    Ifx_UReg_16Bit U;
+    Ifx_SReg_16Bit I;
+    Ifx_MTU_MC_CONFIG0_Bits B;
+} Ifx_MTU_MC_CONFIG0;
+
+
+typedef union
+{
+    Ifx_UReg_16Bit U;
+    Ifx_SReg_16Bit I;
+    Ifx_MTU_MC_CONFIG1_Bits B;
+} Ifx_MTU_MC_CONFIG1;
+
+
+typedef union
+{
+    Ifx_UReg_16Bit U;
+    Ifx_SReg_16Bit I;
+    Ifx_MTU_MC_ECCD_Bits B;
+} Ifx_MTU_MC_ECCD;
+
+
+typedef union
+{
+    Ifx_UReg_16Bit U;
+    Ifx_SReg_16Bit I;
+    Ifx_MTU_MC_ECCS_Bits B;
+} Ifx_MTU_MC_ECCS;
+
+
+typedef union
+{
+    Ifx_UReg_16Bit U;
+    Ifx_SReg_16Bit I;
+    Ifx_MTU_MC_ERRINFO_Bits B;
+} Ifx_MTU_MC_ERRINFO;
+
+
+typedef union
+{
+    Ifx_UReg_16Bit U;
+    Ifx_SReg_16Bit I;
+    Ifx_MTU_MC_ETRR_Bits B;
+} Ifx_MTU_MC_ETRR;
+
+
+typedef union
+{
+    Ifx_UReg_16Bit U;
+    Ifx_SReg_16Bit I;
+    Ifx_MTU_MC_FAULTSTS_Bits B;
+} Ifx_MTU_MC_FAULTSTS;
+
+
+typedef union
+{
+    Ifx_UReg_16Bit U;
+    Ifx_SReg_16Bit I;
+    Ifx_MTU_MC_MCONTROL_Bits B;
+} Ifx_MTU_MC_MCONTROL;
+
+
+typedef union
+{
+    Ifx_UReg_16Bit U;
+    Ifx_SReg_16Bit I;
+    Ifx_MTU_MC_MSTATUS_Bits B;
+} Ifx_MTU_MC_MSTATUS;
+
+
+typedef union
+{
+    Ifx_UReg_16Bit U;
+    Ifx_SReg_16Bit I;
+    Ifx_MTU_MC_RANGE_Bits B;
+} Ifx_MTU_MC_RANGE;
+
+
+typedef union
+{
+    Ifx_UReg_16Bit U;
+    Ifx_SReg_16Bit I;
+    Ifx_MTU_MC_RDBFL_Bits B;
+} Ifx_MTU_MC_RDBFL;
+
+
+typedef union
+{
+    Ifx_UReg_16Bit U;
+    Ifx_SReg_16Bit I;
+    Ifx_MTU_MC_REVID_Bits B;
+} Ifx_MTU_MC_REVID;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_MTU_MEMDONE0_Bits B;
+} Ifx_MTU_MEMDONE0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_MTU_MEMDONE1_Bits B;
+} Ifx_MTU_MEMDONE1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_MTU_MEMDONE2_Bits B;
+} Ifx_MTU_MEMDONE2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_MTU_MEMFDA0_Bits B;
+} Ifx_MTU_MEMFDA0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_MTU_MEMFDA1_Bits B;
+} Ifx_MTU_MEMFDA1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_MTU_MEMFDA2_Bits B;
+} Ifx_MTU_MEMFDA2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_MTU_MEMMAP_Bits B;
+} Ifx_MTU_MEMMAP;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_MTU_MEMSTAT0_Bits B;
+} Ifx_MTU_MEMSTAT0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_MTU_MEMSTAT1_Bits B;
+} Ifx_MTU_MEMSTAT1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_MTU_MEMSTAT2_Bits B;
+} Ifx_MTU_MEMSTAT2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_MTU_MEMTEST0_Bits B;
+} Ifx_MTU_MEMTEST0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_MTU_MEMTEST1_Bits B;
+} Ifx_MTU_MEMTEST1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_MTU_MEMTEST2_Bits B;
+} Ifx_MTU_MEMTEST2;
+# 952 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxMtu_regdef.h"
+typedef volatile struct _Ifx_MTU_MC
+{
+       Ifx_MTU_MC_CONFIG0 CONFIG0;
+       Ifx_MTU_MC_CONFIG1 CONFIG1;
+       Ifx_MTU_MC_MCONTROL MCONTROL;
+       Ifx_MTU_MC_MSTATUS MSTATUS;
+       Ifx_MTU_MC_RANGE RANGE;
+       Ifx_UReg_8Bit reserved_A[2];
+       Ifx_MTU_MC_REVID REVID;
+       Ifx_MTU_MC_ECCS ECCS;
+       Ifx_MTU_MC_ECCD ECCD;
+       Ifx_MTU_MC_ETRR ETRR[5];
+       Ifx_UReg_8Bit reserved_1C[68];
+       Ifx_MTU_MC_RDBFL RDBFL[67];
+       Ifx_UReg_8Bit reserved_E6[8];
+       Ifx_MTU_MC_ALMSRCS ALMSRCS;
+       Ifx_MTU_MC_FAULTSTS FAULTSTS;
+       Ifx_MTU_MC_ERRINFO ERRINFO[5];
+       Ifx_UReg_8Bit reserved_FC[4];
+} Ifx_MTU_MC;
+# 986 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxMtu_regdef.h"
+typedef volatile struct _Ifx_MTU
+{
+       Ifx_MTU_CLC CLC;
+       Ifx_UReg_8Bit reserved_4[4];
+       Ifx_MTU_ID ID;
+       Ifx_UReg_8Bit reserved_C[4];
+       Ifx_MTU_MEMTEST0 MEMTEST0;
+       Ifx_MTU_MEMTEST1 MEMTEST1;
+       Ifx_MTU_MEMTEST2 MEMTEST2;
+       Ifx_MTU_MEMMAP MEMMAP;
+       Ifx_UReg_8Bit reserved_20[24];
+       Ifx_MTU_MEMSTAT0 MEMSTAT0;
+       Ifx_MTU_MEMSTAT1 MEMSTAT1;
+       Ifx_MTU_MEMSTAT2 MEMSTAT2;
+       Ifx_UReg_8Bit reserved_44[12];
+       Ifx_MTU_MEMDONE0 MEMDONE0;
+       Ifx_MTU_MEMDONE1 MEMDONE1;
+       Ifx_MTU_MEMDONE2 MEMDONE2;
+       Ifx_UReg_8Bit reserved_5C[4];
+       Ifx_MTU_MEMFDA0 MEMFDA0;
+       Ifx_MTU_MEMFDA1 MEMFDA1;
+       Ifx_MTU_MEMFDA2 MEMFDA2;
+       Ifx_UReg_8Bit reserved_6C[140];
+       Ifx_MTU_ACCEN1 ACCEN1;
+       Ifx_MTU_ACCEN0 ACCEN0;
+       Ifx_UReg_8Bit reserved_100[3840];
+       Ifx_MTU_MC MC[96];
+       Ifx_UReg_8Bit reserved_7000[36864];
+} Ifx_MTU;
+# 57 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxMtu_reg.h" 2
+# 2 ".\\output\\inc/IfxMtu_reg.h" 2
+# 47 "bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\src\\HtxLbist.c" 2
+# 1 ".\\output\\inc/IfxPms_reg.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxPms_reg.h" 1
+# 56 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxPms_reg.h"
+# 1 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxPms_regdef.h" 1
+# 68 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxPms_regdef.h"
+typedef struct _Ifx_PMS_ACCEN0_Bits
+{
+    volatile unsigned int EN0:1;
+    volatile unsigned int EN1:1;
+    volatile unsigned int EN2:1;
+    volatile unsigned int EN3:1;
+    volatile unsigned int EN4:1;
+    volatile unsigned int EN5:1;
+    volatile unsigned int EN6:1;
+    volatile unsigned int EN7:1;
+    volatile unsigned int EN8:1;
+    volatile unsigned int EN9:1;
+    volatile unsigned int EN10:1;
+    volatile unsigned int EN11:1;
+    volatile unsigned int EN12:1;
+    volatile unsigned int EN13:1;
+    volatile unsigned int EN14:1;
+    volatile unsigned int EN15:1;
+    volatile unsigned int EN16:1;
+    volatile unsigned int EN17:1;
+    volatile unsigned int EN18:1;
+    volatile unsigned int EN19:1;
+    volatile unsigned int EN20:1;
+    volatile unsigned int EN21:1;
+    volatile unsigned int EN22:1;
+    volatile unsigned int EN23:1;
+    volatile unsigned int EN24:1;
+    volatile unsigned int EN25:1;
+    volatile unsigned int EN26:1;
+    volatile unsigned int EN27:1;
+    volatile unsigned int EN28:1;
+    volatile unsigned int EN29:1;
+    volatile unsigned int EN30:1;
+    volatile unsigned int EN31:1;
+} Ifx_PMS_ACCEN0_Bits;
+
+
+typedef struct _Ifx_PMS_ACCEN1_Bits
+{
+    volatile unsigned int reserved_0:32;
+} Ifx_PMS_ACCEN1_Bits;
+
+
+typedef struct _Ifx_PMS_AGFSP_STDBY0_Bits
+{
+    Ifx_UReg_32Bit reserved_0:1;
+    Ifx_UReg_32Bit reserved_1:1;
+    Ifx_UReg_32Bit reserved_2:1;
+    Ifx_UReg_32Bit reserved_3:1;
+    Ifx_UReg_32Bit FE4:1;
+    Ifx_UReg_32Bit FE5:1;
+    Ifx_UReg_32Bit FE6:1;
+    Ifx_UReg_32Bit FE7:1;
+    Ifx_UReg_32Bit FE8:1;
+    Ifx_UReg_32Bit FE9:1;
+    Ifx_UReg_32Bit FE10:1;
+    Ifx_UReg_32Bit FE11:1;
+    Ifx_UReg_32Bit FE12:1;
+    Ifx_UReg_32Bit FE13:1;
+    Ifx_UReg_32Bit FE14:1;
+    Ifx_UReg_32Bit FE15:1;
+    Ifx_UReg_32Bit reserved_16:1;
+    Ifx_UReg_32Bit reserved_17:13;
+    Ifx_UReg_32Bit BITPROT:1;
+    Ifx_UReg_32Bit reserved_31:1;
+} Ifx_PMS_AGFSP_STDBY0_Bits;
+
+
+typedef struct _Ifx_PMS_AGFSP_STDBY1_Bits
+{
+    Ifx_UReg_32Bit FE0:1;
+    Ifx_UReg_32Bit FE1:1;
+    Ifx_UReg_32Bit FE2:1;
+    Ifx_UReg_32Bit FE3:1;
+    Ifx_UReg_32Bit FE4:1;
+    Ifx_UReg_32Bit FE5:1;
+    Ifx_UReg_32Bit reserved_6:1;
+    Ifx_UReg_32Bit FE7:1;
+    Ifx_UReg_32Bit FE8:1;
+    Ifx_UReg_32Bit FE9:1;
+    Ifx_UReg_32Bit FE10:1;
+    Ifx_UReg_32Bit FE11:1;
+    Ifx_UReg_32Bit FE12:1;
+    Ifx_UReg_32Bit FE13:1;
+    Ifx_UReg_32Bit FE14:1;
+    Ifx_UReg_32Bit FE15:1;
+    Ifx_UReg_32Bit FE16:1;
+    Ifx_UReg_32Bit reserved_17:13;
+    Ifx_UReg_32Bit BITPROT:1;
+    Ifx_UReg_32Bit reserved_31:1;
+} Ifx_PMS_AGFSP_STDBY1_Bits;
+
+
+typedef struct _Ifx_PMS_AG_STDBY0_Bits
+{
+    Ifx_UReg_32Bit reserved_0:1;
+    Ifx_UReg_32Bit reserved_1:1;
+    Ifx_UReg_32Bit reserved_2:1;
+    Ifx_UReg_32Bit reserved_3:1;
+    Ifx_UReg_32Bit SF4:1;
+    Ifx_UReg_32Bit SF5:1;
+    Ifx_UReg_32Bit SF6:1;
+    Ifx_UReg_32Bit SF7:1;
+    Ifx_UReg_32Bit SF8:1;
+    Ifx_UReg_32Bit SF9:1;
+    Ifx_UReg_32Bit SF10:1;
+    Ifx_UReg_32Bit SF11:1;
+    Ifx_UReg_32Bit SF12:1;
+    Ifx_UReg_32Bit SF13:1;
+    Ifx_UReg_32Bit SF14:1;
+    Ifx_UReg_32Bit SF15:1;
+    Ifx_UReg_32Bit reserved_16:1;
+    Ifx_UReg_32Bit reserved_17:13;
+    Ifx_UReg_32Bit FSPERR:1;
+    Ifx_UReg_32Bit reserved_31:1;
+} Ifx_PMS_AG_STDBY0_Bits;
+
+
+typedef struct _Ifx_PMS_AG_STDBY1_Bits
+{
+    Ifx_UReg_32Bit SF0:1;
+    Ifx_UReg_32Bit SF1:1;
+    Ifx_UReg_32Bit SF2:1;
+    Ifx_UReg_32Bit SF3:1;
+    Ifx_UReg_32Bit SF4:1;
+    Ifx_UReg_32Bit SF5:1;
+    Ifx_UReg_32Bit reserved_6:1;
+    Ifx_UReg_32Bit SF7:1;
+    Ifx_UReg_32Bit SF8:1;
+    Ifx_UReg_32Bit SF9:1;
+    Ifx_UReg_32Bit SF10:1;
+    Ifx_UReg_32Bit SF11:1;
+    Ifx_UReg_32Bit SF12:1;
+    Ifx_UReg_32Bit SF13:1;
+    Ifx_UReg_32Bit SF14:1;
+    Ifx_UReg_32Bit SF15:1;
+    Ifx_UReg_32Bit SF16:1;
+    Ifx_UReg_32Bit reserved_17:13;
+    Ifx_UReg_32Bit reserved_30:1;
+    Ifx_UReg_32Bit reserved_31:1;
+} Ifx_PMS_AG_STDBY1_Bits;
+
+
+typedef struct _Ifx_PMS_CMD_STDBY_Bits
+{
+    Ifx_UReg_32Bit SMUEN:1;
+    Ifx_UReg_32Bit FSP0EN:1;
+    Ifx_UReg_32Bit FSP1EN:1;
+    Ifx_UReg_32Bit ASCE:1;
+    Ifx_UReg_32Bit reserved_4:26;
+    Ifx_UReg_32Bit BITPROT:1;
+    Ifx_UReg_32Bit reserved_31:1;
+} Ifx_PMS_CMD_STDBY_Bits;
+
+
+typedef struct _Ifx_PMS_DTSLIM_Bits
+{
+    Ifx_UReg_32Bit LOWER:12;
+    Ifx_UReg_32Bit reserved_12:3;
+    Ifx_UReg_32Bit LLU:1;
+    Ifx_UReg_32Bit UPPER:12;
+    Ifx_UReg_32Bit reserved_28:2;
+    Ifx_UReg_32Bit SLCK:1;
+    Ifx_UReg_32Bit UOF:1;
+} Ifx_PMS_DTSLIM_Bits;
+
+
+typedef struct _Ifx_PMS_DTSSTAT_Bits
+{
+    Ifx_UReg_32Bit RESULT:12;
+    Ifx_UReg_32Bit reserved_12:20;
+} Ifx_PMS_DTSSTAT_Bits;
+
+
+typedef struct _Ifx_PMS_EVR33CON_Bits
+{
+    Ifx_UReg_32Bit SHVH33:8;
+    Ifx_UReg_32Bit reserved_8:4;
+    Ifx_UReg_32Bit SHHVEN:1;
+    Ifx_UReg_32Bit SHLVEN:1;
+    Ifx_UReg_32Bit reserved_14:2;
+    Ifx_UReg_32Bit SHVL33:8;
+    Ifx_UReg_32Bit reserved_24:4;
+    Ifx_UReg_32Bit reserved_28:1;
+    Ifx_UReg_32Bit reserved_29:1;
+    Ifx_UReg_32Bit SLCK:1;
+    Ifx_UReg_32Bit reserved_31:1;
+} Ifx_PMS_EVR33CON_Bits;
+
+
+typedef struct _Ifx_PMS_EVRADCSTAT_Bits
+{
+    Ifx_UReg_32Bit ADCCV:8;
+    Ifx_UReg_32Bit ADC33V:8;
+    Ifx_UReg_32Bit ADCSWDV:8;
+    Ifx_UReg_32Bit OVC:1;
+    Ifx_UReg_32Bit OV33:1;
+    Ifx_UReg_32Bit OVSWD:1;
+    Ifx_UReg_32Bit UVC:1;
+    Ifx_UReg_32Bit UV33:1;
+    Ifx_UReg_32Bit UVSWD:1;
+    Ifx_UReg_32Bit reserved_30:2;
+} Ifx_PMS_EVRADCSTAT_Bits;
+
+
+typedef struct _Ifx_PMS_EVROSCCTRL_Bits
+{
+    Ifx_UReg_32Bit OSCFTRIM:6;
+    Ifx_UReg_32Bit reserved_6:10;
+    Ifx_UReg_32Bit OSCFPTRIM:6;
+    Ifx_UReg_32Bit reserved_22:7;
+    Ifx_UReg_32Bit OSCTEMPOFFS:1;
+    Ifx_UReg_32Bit reserved_30:1;
+    Ifx_UReg_32Bit OSCTRIMEN:1;
+} Ifx_PMS_EVROSCCTRL_Bits;
+
+
+typedef struct _Ifx_PMS_EVRRSTCON_Bits
+{
+    Ifx_UReg_32Bit RSTCTRIM:8;
+    Ifx_UReg_32Bit RST33TRIM:8;
+    Ifx_UReg_32Bit RSTSWDTRIM:8;
+    Ifx_UReg_32Bit RSTCOFF:1;
+    Ifx_UReg_32Bit BPRSTCOFF:1;
+    Ifx_UReg_32Bit RST33OFF:1;
+    Ifx_UReg_32Bit BPRST33OFF:1;
+    Ifx_UReg_32Bit RSTSWDOFF:1;
+    Ifx_UReg_32Bit BPRSTSWDOFF:1;
+    Ifx_UReg_32Bit SLCK:1;
+    Ifx_UReg_32Bit reserved_31:1;
+} Ifx_PMS_EVRRSTCON_Bits;
+
+
+typedef struct _Ifx_PMS_EVRRSTSTAT_Bits
+{
+    Ifx_UReg_32Bit RSTC:8;
+    Ifx_UReg_32Bit RST33:8;
+    Ifx_UReg_32Bit RSTSWD:8;
+    Ifx_UReg_32Bit RSTCOFF:1;
+    Ifx_UReg_32Bit reserved_25:1;
+    Ifx_UReg_32Bit RST33OFF:1;
+    Ifx_UReg_32Bit reserved_27:1;
+    Ifx_UReg_32Bit RSTSWDOFF:1;
+    Ifx_UReg_32Bit reserved_29:3;
+} Ifx_PMS_EVRRSTSTAT_Bits;
+
+
+typedef struct _Ifx_PMS_EVRSDCOEFF0_Bits
+{
+    Ifx_UReg_32Bit M0S0EN:1;
+    Ifx_UReg_32Bit M0S2EN:1;
+    Ifx_UReg_32Bit M0S3EN:1;
+    Ifx_UReg_32Bit M0S3CLIP:1;
+    Ifx_UReg_32Bit M0S4EN:1;
+    Ifx_UReg_32Bit M0RAMPEN:1;
+    Ifx_UReg_32Bit M0SFRGET:1;
+    Ifx_UReg_32Bit M0SKIPEN:1;
+    Ifx_UReg_32Bit M0S3COEFF:4;
+    Ifx_UReg_32Bit M0S4COEFF:4;
+    Ifx_UReg_32Bit M0SRMPCOEFF:4;
+    Ifx_UReg_32Bit M0FGETCOEFF:4;
+    Ifx_UReg_32Bit M0S2COEFF:4;
+    Ifx_UReg_32Bit M0S2VINSRC:1;
+    Ifx_UReg_32Bit M0S2VOSRC:1;
+    Ifx_UReg_32Bit M0SRMPCOEFFFRAC:1;
+    Ifx_UReg_32Bit LCK:1;
+} Ifx_PMS_EVRSDCOEFF0_Bits;
+
+
+typedef struct _Ifx_PMS_EVRSDCOEFF1_Bits
+{
+    Ifx_UReg_32Bit M0VOCFLPF:4;
+    Ifx_UReg_32Bit M0VOCFINC:4;
+    Ifx_UReg_32Bit M0VOUT:8;
+    Ifx_UReg_32Bit M0VIN:11;
+    Ifx_UReg_32Bit M0S3COEFFFRAC:2;
+    Ifx_UReg_32Bit M0S2COEFFFRAC:2;
+    Ifx_UReg_32Bit LCK:1;
+} Ifx_PMS_EVRSDCOEFF1_Bits;
+
+
+typedef struct _Ifx_PMS_EVRSDCOEFF2_Bits
+{
+    Ifx_UReg_32Bit M1S0EN:1;
+    Ifx_UReg_32Bit M1S2EN:1;
+    Ifx_UReg_32Bit M1S3EN:1;
+    Ifx_UReg_32Bit M1S3CLIP:1;
+    Ifx_UReg_32Bit M1S4EN:1;
+    Ifx_UReg_32Bit M1RAMPEN:1;
+    Ifx_UReg_32Bit M1SFRGET:1;
+    Ifx_UReg_32Bit M1SKIPEN:1;
+    Ifx_UReg_32Bit M1S3COEFF:4;
+    Ifx_UReg_32Bit M1S4COEFF:4;
+    Ifx_UReg_32Bit M1SRMPCOEFF:4;
+    Ifx_UReg_32Bit M1FGETCOEFF:4;
+    Ifx_UReg_32Bit M1S2COEFF:4;
+    Ifx_UReg_32Bit M1S2VINSRC:1;
+    Ifx_UReg_32Bit M1S2VOSRC:1;
+    Ifx_UReg_32Bit reserved_30:2;
+} Ifx_PMS_EVRSDCOEFF2_Bits;
+
+
+typedef struct _Ifx_PMS_EVRSDCOEFF3_Bits
+{
+    Ifx_UReg_32Bit M1VOCFLPF:4;
+    Ifx_UReg_32Bit M1VOCFINC:4;
+    Ifx_UReg_32Bit M1VOUT:8;
+    Ifx_UReg_32Bit M1VIN:11;
+    Ifx_UReg_32Bit M1S3COEFFFRAC:2;
+    Ifx_UReg_32Bit M1S2COEFFFRAC:2;
+    Ifx_UReg_32Bit M1SRMPCOEFFFRAC:1;
+} Ifx_PMS_EVRSDCOEFF3_Bits;
+
+
+typedef struct _Ifx_PMS_EVRSDCOEFF4_Bits
+{
+    Ifx_UReg_32Bit M2S0EN:1;
+    Ifx_UReg_32Bit M2S2EN:1;
+    Ifx_UReg_32Bit M2S3EN:1;
+    Ifx_UReg_32Bit M2S3CLIP:1;
+    Ifx_UReg_32Bit M2S4EN:1;
+    Ifx_UReg_32Bit M2RAMPEN:1;
+    Ifx_UReg_32Bit M2SFRGET:1;
+    Ifx_UReg_32Bit M2SKIPEN:1;
+    Ifx_UReg_32Bit M2S3COEFF:4;
+    Ifx_UReg_32Bit M2S4COEFF:4;
+    Ifx_UReg_32Bit M2SRMPCOEFF:4;
+    Ifx_UReg_32Bit M2FGETCOEFF:4;
+    Ifx_UReg_32Bit M2S2COEFF:4;
+    Ifx_UReg_32Bit M2S2VINSRC:1;
+    Ifx_UReg_32Bit M2S2VOSRC:1;
+    Ifx_UReg_32Bit reserved_30:2;
+} Ifx_PMS_EVRSDCOEFF4_Bits;
+
+
+typedef struct _Ifx_PMS_EVRSDCOEFF5_Bits
+{
+    Ifx_UReg_32Bit M2VOCFLPF:4;
+    Ifx_UReg_32Bit M2VOCFINC:4;
+    Ifx_UReg_32Bit M2VOUT:8;
+    Ifx_UReg_32Bit M2VIN:11;
+    Ifx_UReg_32Bit M2S3COEFFFRAC:2;
+    Ifx_UReg_32Bit M2S2COEFFFRAC:2;
+    Ifx_UReg_32Bit M2SRMPCOEFFFRAC:1;
+} Ifx_PMS_EVRSDCOEFF5_Bits;
+
+
+typedef struct _Ifx_PMS_EVRSDCOEFF6_Bits
+{
+    Ifx_UReg_32Bit CT5REG0:8;
+    Ifx_UReg_32Bit CT5REG1:8;
+    Ifx_UReg_32Bit CT5REG2:8;
+    Ifx_UReg_32Bit reserved_24:7;
+    Ifx_UReg_32Bit LCK:1;
+} Ifx_PMS_EVRSDCOEFF6_Bits;
+
+
+typedef struct _Ifx_PMS_EVRSDCOEFF7_Bits
+{
+    Ifx_UReg_32Bit CT5REG3:8;
+    Ifx_UReg_32Bit CT5REG4:8;
+    Ifx_UReg_32Bit reserved_16:15;
+    Ifx_UReg_32Bit LCK:1;
+} Ifx_PMS_EVRSDCOEFF7_Bits;
+
+
+typedef struct _Ifx_PMS_EVRSDCOEFF8_Bits
+{
+    Ifx_UReg_32Bit CT33REG0:8;
+    Ifx_UReg_32Bit CT33REG1:8;
+    Ifx_UReg_32Bit CT33REG2:8;
+    Ifx_UReg_32Bit reserved_24:7;
+    Ifx_UReg_32Bit LCK:1;
+} Ifx_PMS_EVRSDCOEFF8_Bits;
+
+
+typedef struct _Ifx_PMS_EVRSDCOEFF9_Bits
+{
+    Ifx_UReg_32Bit CT33REG3:8;
+    Ifx_UReg_32Bit CT33REG4:8;
+    Ifx_UReg_32Bit reserved_16:15;
+    Ifx_UReg_32Bit LCK:1;
+} Ifx_PMS_EVRSDCOEFF9_Bits;
+
+
+typedef struct _Ifx_PMS_EVRSDCTRL0_Bits
+{
+    Ifx_UReg_32Bit SDFREQSPRD:16;
+    Ifx_UReg_32Bit SDFREQ:12;
+    Ifx_UReg_32Bit NGOFF:1;
+    Ifx_UReg_32Bit PGOFF:1;
+    Ifx_UReg_32Bit UP:1;
+    Ifx_UReg_32Bit LCK:1;
+} Ifx_PMS_EVRSDCTRL0_Bits;
+
+
+typedef struct _Ifx_PMS_EVRSDCTRL1_Bits
+{
+    Ifx_UReg_32Bit M0TOFF:8;
+    Ifx_UReg_32Bit M0TON:8;
+    Ifx_UReg_32Bit M0S0COEFF:4;
+    Ifx_UReg_32Bit M0DEADBD:2;
+    Ifx_UReg_32Bit M0ADCZB:2;
+    Ifx_UReg_32Bit M0SKIP:4;
+    Ifx_UReg_32Bit reserved_28:2;
+    Ifx_UReg_32Bit SYNCEN:1;
+    Ifx_UReg_32Bit LCK:1;
+} Ifx_PMS_EVRSDCTRL1_Bits;
+
+
+typedef struct _Ifx_PMS_EVRSDCTRL10_Bits
+{
+    Ifx_UReg_32Bit SHVH:8;
+    Ifx_UReg_32Bit SHVL:8;
+    Ifx_UReg_32Bit reserved_16:12;
+    Ifx_UReg_32Bit SHHVEN:1;
+    Ifx_UReg_32Bit SHLVEN:1;
+    Ifx_UReg_32Bit reserved_30:2;
+} Ifx_PMS_EVRSDCTRL10_Bits;
+
+
+typedef struct _Ifx_PMS_EVRSDCTRL11_Bits
+{
+    Ifx_UReg_32Bit DROOPVH:5;
+    Ifx_UReg_32Bit reserved_5:3;
+    Ifx_UReg_32Bit DROOPVL:5;
+    Ifx_UReg_32Bit reserved_13:3;
+    Ifx_UReg_32Bit SYNCMAXDEV:5;
+    Ifx_UReg_32Bit reserved_21:3;
+    Ifx_UReg_32Bit SYNCHYST:3;
+    Ifx_UReg_32Bit reserved_27:1;
+    Ifx_UReg_32Bit SYNCMUXSEL:2;
+    Ifx_UReg_32Bit reserved_30:1;
+    Ifx_UReg_32Bit LCK:1;
+} Ifx_PMS_EVRSDCTRL11_Bits;
+
+
+typedef struct _Ifx_PMS_EVRSDCTRL2_Bits
+{
+    Ifx_UReg_32Bit LPBNDOFFSET:4;
+    Ifx_UReg_32Bit LPBNDWIDTH:4;
+    Ifx_UReg_32Bit LPLPFCOEFF:4;
+    Ifx_UReg_32Bit reserved_12:4;
+    Ifx_UReg_32Bit SDFREQLP:12;
+    Ifx_UReg_32Bit reserved_28:2;
+    Ifx_UReg_32Bit EVRCMOD:1;
+    Ifx_UReg_32Bit LCK:1;
+} Ifx_PMS_EVRSDCTRL2_Bits;
+
+
+typedef struct _Ifx_PMS_EVRSDCTRL3_Bits
+{
+    Ifx_UReg_32Bit M1TOFF:8;
+    Ifx_UReg_32Bit M1TON:8;
+    Ifx_UReg_32Bit M1S0COEFF:4;
+    Ifx_UReg_32Bit M1DEADBD:2;
+    Ifx_UReg_32Bit M1ADCZB:2;
+    Ifx_UReg_32Bit M1SKIP:4;
+    Ifx_UReg_32Bit reserved_28:4;
+} Ifx_PMS_EVRSDCTRL3_Bits;
+
+
+typedef struct _Ifx_PMS_EVRSDCTRL4_Bits
+{
+    Ifx_UReg_32Bit VOKCFG:6;
+    Ifx_UReg_32Bit reserved_6:10;
+    Ifx_UReg_32Bit SDFREQST:12;
+    Ifx_UReg_32Bit reserved_28:4;
+} Ifx_PMS_EVRSDCTRL4_Bits;
+
+
+typedef struct _Ifx_PMS_EVRSDCTRL5_Bits
+{
+    Ifx_UReg_32Bit M2TOFF:8;
+    Ifx_UReg_32Bit M2TON:8;
+    Ifx_UReg_32Bit M2S0COEFF:4;
+    Ifx_UReg_32Bit M2DEADBD:2;
+    Ifx_UReg_32Bit M2ADCZB:2;
+    Ifx_UReg_32Bit M2SKIP:4;
+    Ifx_UReg_32Bit reserved_28:4;
+} Ifx_PMS_EVRSDCTRL5_Bits;
+
+
+typedef struct _Ifx_PMS_EVRSDCTRL6_Bits
+{
+    Ifx_UReg_32Bit SVINTH:8;
+    Ifx_UReg_32Bit SVOTH:8;
+    Ifx_UReg_32Bit SINCLO:3;
+    Ifx_UReg_32Bit reserved_19:1;
+    Ifx_UReg_32Bit SINCHI:3;
+    Ifx_UReg_32Bit reserved_23:8;
+    Ifx_UReg_32Bit LCK:1;
+} Ifx_PMS_EVRSDCTRL6_Bits;
+
+
+typedef struct _Ifx_PMS_EVRSDCTRL7_Bits
+{
+    Ifx_UReg_32Bit DRVNI:2;
+    Ifx_UReg_32Bit DRVPCBF:2;
+    Ifx_UReg_32Bit DRVP:4;
+    Ifx_UReg_32Bit DRVSLOMODE:2;
+    Ifx_UReg_32Bit reserved_10:6;
+    Ifx_UReg_32Bit DRVSPR:8;
+    Ifx_UReg_32Bit SYNCDIVFAC:3;
+    Ifx_UReg_32Bit reserved_27:4;
+    Ifx_UReg_32Bit LCK:1;
+} Ifx_PMS_EVRSDCTRL7_Bits;
+
+
+typedef struct _Ifx_PMS_EVRSDCTRL8_Bits
+{
+    Ifx_UReg_32Bit FBADCOFFS:8;
+    Ifx_UReg_32Bit FBADCSMP:6;
+    Ifx_UReg_32Bit reserved_14:2;
+    Ifx_UReg_32Bit FBADCBLNK:2;
+    Ifx_UReg_32Bit reserved_18:2;
+    Ifx_UReg_32Bit FBADCLPF:2;
+    Ifx_UReg_32Bit reserved_22:2;
+    Ifx_UReg_32Bit FBADCERR:2;
+    Ifx_UReg_32Bit reserved_26:2;
+    Ifx_UReg_32Bit FBADCLSB:1;
+    Ifx_UReg_32Bit reserved_29:2;
+    Ifx_UReg_32Bit LCK:1;
+} Ifx_PMS_EVRSDCTRL8_Bits;
+
+
+typedef struct _Ifx_PMS_EVRSDCTRL9_Bits
+{
+    Ifx_UReg_32Bit FFADCOFFS:8;
+    Ifx_UReg_32Bit FFADCLPF:3;
+    Ifx_UReg_32Bit reserved_11:20;
+    Ifx_UReg_32Bit LCK:1;
+} Ifx_PMS_EVRSDCTRL9_Bits;
+
+
+typedef struct _Ifx_PMS_EVRSDSTAT0_Bits
+{
+    Ifx_UReg_32Bit ADCFBCV:8;
+    Ifx_UReg_32Bit reserved_8:8;
+    Ifx_UReg_32Bit DPWMOUT:12;
+    Ifx_UReg_32Bit reserved_28:4;
+} Ifx_PMS_EVRSDSTAT0_Bits;
+
+
+typedef struct _Ifx_PMS_EVRSTAT_Bits
+{
+    Ifx_UReg_32Bit EVRC:1;
+    Ifx_UReg_32Bit OVC:1;
+    Ifx_UReg_32Bit EVR33:1;
+    Ifx_UReg_32Bit OV33:1;
+    Ifx_UReg_32Bit OVSWD:1;
+    Ifx_UReg_32Bit UVC:1;
+    Ifx_UReg_32Bit UV33:1;
+    Ifx_UReg_32Bit UVSWD:1;
+    Ifx_UReg_32Bit SYNCLCK:1;
+    Ifx_UReg_32Bit EVR33VOK:1;
+    Ifx_UReg_32Bit reserved_10:3;
+    Ifx_UReg_32Bit RSTC:1;
+    Ifx_UReg_32Bit RST33:1;
+    Ifx_UReg_32Bit RSTSWD:1;
+    Ifx_UReg_32Bit EVRCSHLV:1;
+    Ifx_UReg_32Bit EVRCSHHV:1;
+    Ifx_UReg_32Bit EVR33SHLV:1;
+    Ifx_UReg_32Bit EVR33SHHV:1;
+    Ifx_UReg_32Bit SWDLVL:1;
+    Ifx_UReg_32Bit SDVOK:1;
+    Ifx_UReg_32Bit EVRCMOD:2;
+    Ifx_UReg_32Bit OVPRE:1;
+    Ifx_UReg_32Bit OVSB:1;
+    Ifx_UReg_32Bit OVDDM:1;
+    Ifx_UReg_32Bit UVPRE:1;
+    Ifx_UReg_32Bit UVSB:1;
+    Ifx_UReg_32Bit UVDDM:1;
+    Ifx_UReg_32Bit reserved_30:2;
+} Ifx_PMS_EVRSTAT_Bits;
+
+
+typedef struct _Ifx_PMS_EVRTRIM_Bits
+{
+    Ifx_UReg_32Bit EVR33VOUTSEL:8;
+    Ifx_UReg_32Bit SDVOUTSEL:8;
+    Ifx_UReg_32Bit EVR33VOUTTRIM:6;
+    Ifx_UReg_32Bit reserved_22:2;
+    Ifx_UReg_32Bit SDVOUTTRIM:6;
+    Ifx_UReg_32Bit SLCK:1;
+    Ifx_UReg_32Bit LCK:1;
+} Ifx_PMS_EVRTRIM_Bits;
+
+
+typedef struct _Ifx_PMS_EVRTRIMSTAT_Bits
+{
+    Ifx_UReg_32Bit EVR33VOUTSEL:8;
+    Ifx_UReg_32Bit SDVOUTSEL:8;
+    Ifx_UReg_32Bit EVR33VOUTTRIM:6;
+    Ifx_UReg_32Bit reserved_22:2;
+    Ifx_UReg_32Bit SDVOUTTRIM:6;
+    Ifx_UReg_32Bit reserved_30:2;
+} Ifx_PMS_EVRTRIMSTAT_Bits;
+
+
+typedef struct _Ifx_PMS_HSMOVMON_Bits
+{
+    Ifx_UReg_32Bit EVRCOVVAL:8;
+    Ifx_UReg_32Bit EVR33OVVAL:8;
+    Ifx_UReg_32Bit SWDOVVAL:8;
+    Ifx_UReg_32Bit EVRCOFF:1;
+    Ifx_UReg_32Bit EVR33OFF:1;
+    Ifx_UReg_32Bit SWDOFF:1;
+    Ifx_UReg_32Bit reserved_27:4;
+    Ifx_UReg_32Bit SLCK:1;
+} Ifx_PMS_HSMOVMON_Bits;
+
+
+typedef struct _Ifx_PMS_HSMUVMON_Bits
+{
+    Ifx_UReg_32Bit EVRCUVVAL:8;
+    Ifx_UReg_32Bit EVR33UVVAL:8;
+    Ifx_UReg_32Bit SWDUVVAL:8;
+    Ifx_UReg_32Bit EVRCOFF:1;
+    Ifx_UReg_32Bit EVR33OFF:1;
+    Ifx_UReg_32Bit SWDOFF:1;
+    Ifx_UReg_32Bit HSMFIL:4;
+    Ifx_UReg_32Bit SLCK:1;
+} Ifx_PMS_HSMUVMON_Bits;
+
+
+typedef struct _Ifx_PMS_ID_Bits
+{
+    Ifx_UReg_32Bit MODREV:8;
+    Ifx_UReg_32Bit MODTYPE:8;
+    Ifx_UReg_32Bit MODNUMBER:16;
+} Ifx_PMS_ID_Bits;
+
+
+typedef struct _Ifx_PMS_MONBISTCTRL_Bits
+{
+    Ifx_UReg_32Bit TSTEN:1;
+    Ifx_UReg_32Bit TSTCLR:1;
+    Ifx_UReg_32Bit reserved_2:28;
+    Ifx_UReg_32Bit BITPROT:1;
+    Ifx_UReg_32Bit reserved_31:1;
+} Ifx_PMS_MONBISTCTRL_Bits;
+
+
+typedef struct _Ifx_PMS_MONBISTSTAT_Bits
+{
+    Ifx_UReg_32Bit TSTOK:1;
+    Ifx_UReg_32Bit reserved_1:1;
+    Ifx_UReg_32Bit TSTRUN:1;
+    Ifx_UReg_32Bit TSTDONE:1;
+    Ifx_UReg_32Bit SMUERR:1;
+    Ifx_UReg_32Bit PMSERR:1;
+    Ifx_UReg_32Bit reserved_6:26;
+} Ifx_PMS_MONBISTSTAT_Bits;
+
+
+typedef struct _Ifx_PMS_MONCTRL_Bits
+{
+    Ifx_UReg_32Bit EVRCOVMOD:2;
+    Ifx_UReg_32Bit PREOVMOD:2;
+    Ifx_UReg_32Bit EVRCUVMOD:2;
+    Ifx_UReg_32Bit PREUVMOD:2;
+    Ifx_UReg_32Bit EVR33OVMOD:2;
+    Ifx_UReg_32Bit VDDMOVMOD:2;
+    Ifx_UReg_32Bit EVR33UVMOD:2;
+    Ifx_UReg_32Bit VDDMUVMOD:2;
+    Ifx_UReg_32Bit SWDOVMOD:2;
+    Ifx_UReg_32Bit SBOVMOD:2;
+    Ifx_UReg_32Bit SWDUVMOD:2;
+    Ifx_UReg_32Bit SBUVMOD:2;
+    Ifx_UReg_32Bit reserved_24:6;
+    Ifx_UReg_32Bit SLCK:1;
+    Ifx_UReg_32Bit reserved_31:1;
+} Ifx_PMS_MONCTRL_Bits;
+
+
+typedef struct _Ifx_PMS_MONFILT_Bits
+{
+    Ifx_UReg_32Bit EVRCFIL:4;
+    Ifx_UReg_32Bit PREFIL:4;
+    Ifx_UReg_32Bit EVR33FIL:4;
+    Ifx_UReg_32Bit VDDMFIL:4;
+    Ifx_UReg_32Bit SWDFIL:4;
+    Ifx_UReg_32Bit SBFIL:4;
+    Ifx_UReg_32Bit reserved_24:5;
+    Ifx_UReg_32Bit CLRFIL:1;
+    Ifx_UReg_32Bit SLCK:1;
+    Ifx_UReg_32Bit reserved_31:1;
+} Ifx_PMS_MONFILT_Bits;
+
+
+typedef struct _Ifx_PMS_MONSTAT1_Bits
+{
+    Ifx_UReg_32Bit ADCCV:8;
+    Ifx_UReg_32Bit ADC33V:8;
+    Ifx_UReg_32Bit ADCSWDV:8;
+    Ifx_UReg_32Bit ACTVCNT:6;
+    Ifx_UReg_32Bit reserved_30:2;
+} Ifx_PMS_MONSTAT1_Bits;
+
+
+typedef struct _Ifx_PMS_MONSTAT2_Bits
+{
+    Ifx_UReg_32Bit ADCPRE:8;
+    Ifx_UReg_32Bit ADCSB:8;
+    Ifx_UReg_32Bit ADCVDDM:8;
+    Ifx_UReg_32Bit reserved_24:8;
+} Ifx_PMS_MONSTAT2_Bits;
+
+
+typedef struct _Ifx_PMS_OTSC0_Bits
+{
+    Ifx_UReg_32Bit B0LAM:4;
+    Ifx_UReg_32Bit reserved_4:4;
+    Ifx_UReg_32Bit B0HAM:4;
+    Ifx_UReg_32Bit reserved_12:4;
+    Ifx_UReg_32Bit B1LAM:4;
+    Ifx_UReg_32Bit reserved_20:4;
+    Ifx_UReg_32Bit B1HAM:4;
+    Ifx_UReg_32Bit reserved_28:4;
+} Ifx_PMS_OTSC0_Bits;
+
+
+typedef struct _Ifx_PMS_OTSC1_Bits
+{
+    Ifx_UReg_32Bit B0EC:4;
+    Ifx_UReg_32Bit reserved_4:4;
+    Ifx_UReg_32Bit B1EC:4;
+    Ifx_UReg_32Bit reserved_12:4;
+    Ifx_UReg_32Bit DMONAD:8;
+    Ifx_UReg_32Bit SMCDBG:8;
+} Ifx_PMS_OTSC1_Bits;
+
+
+typedef struct _Ifx_PMS_OTSS_Bits
+{
+    Ifx_UReg_32Bit OTGB0:4;
+    Ifx_UReg_32Bit reserved_4:4;
+    Ifx_UReg_32Bit OTGB1:4;
+    Ifx_UReg_32Bit reserved_12:4;
+    Ifx_UReg_32Bit reserved_16:16;
+} Ifx_PMS_OTSS_Bits;
+
+
+typedef struct _Ifx_PMS_OVMON_Bits
+{
+    Ifx_UReg_32Bit EVRCOVVAL:8;
+    Ifx_UReg_32Bit EVR33OVVAL:8;
+    Ifx_UReg_32Bit SWDOVVAL:8;
+    Ifx_UReg_32Bit reserved_24:6;
+    Ifx_UReg_32Bit SLCK:1;
+    Ifx_UReg_32Bit reserved_31:1;
+} Ifx_PMS_OVMON_Bits;
+
+
+typedef struct _Ifx_PMS_OVMON2_Bits
+{
+    Ifx_UReg_32Bit PREOVVAL:8;
+    Ifx_UReg_32Bit VDDMOVVAL:8;
+    Ifx_UReg_32Bit SBOVVAL:8;
+    Ifx_UReg_32Bit reserved_24:6;
+    Ifx_UReg_32Bit SLCK:1;
+    Ifx_UReg_32Bit reserved_31:1;
+} Ifx_PMS_OVMON2_Bits;
+
+
+typedef struct _Ifx_PMS_PMSIEN_Bits
+{
+    Ifx_UReg_32Bit OVSWD:1;
+    Ifx_UReg_32Bit UVSWD:1;
+    Ifx_UReg_32Bit OV33:1;
+    Ifx_UReg_32Bit UV33:1;
+    Ifx_UReg_32Bit OVC:1;
+    Ifx_UReg_32Bit UVC:1;
+    Ifx_UReg_32Bit OVPRE:1;
+    Ifx_UReg_32Bit UVPRE:1;
+    Ifx_UReg_32Bit OVDDM:1;
+    Ifx_UReg_32Bit UVDDM:1;
+    Ifx_UReg_32Bit OVSB:1;
+    Ifx_UReg_32Bit UVSB:1;
+    Ifx_UReg_32Bit reserved_12:4;
+    Ifx_UReg_32Bit EVRCMOD:1;
+    Ifx_UReg_32Bit SDVOK:1;
+    Ifx_UReg_32Bit SYNCLCK:1;
+    Ifx_UReg_32Bit SWDLVL:1;
+    Ifx_UReg_32Bit reserved_20:1;
+    Ifx_UReg_32Bit WUTWKP:1;
+    Ifx_UReg_32Bit ESR0WKP:1;
+    Ifx_UReg_32Bit ESR1WKP:1;
+    Ifx_UReg_32Bit PINAWKP:1;
+    Ifx_UReg_32Bit PINBWKP:1;
+    Ifx_UReg_32Bit SCRINT:1;
+    Ifx_UReg_32Bit SCRRST:1;
+    Ifx_UReg_32Bit SCRECC:1;
+    Ifx_UReg_32Bit SCRWDT:1;
+    Ifx_UReg_32Bit reserved_30:2;
+} Ifx_PMS_PMSIEN_Bits;
+
+
+typedef struct _Ifx_PMS_PMSWCR0_Bits
+{
+    Ifx_UReg_32Bit reserved_0:2;
+    Ifx_UReg_32Bit VEXTSTBYEN:1;
+    Ifx_UReg_32Bit VDDSTBYEN:1;
+    Ifx_UReg_32Bit ESR0DFEN:1;
+    Ifx_UReg_32Bit ESR0EDCON:2;
+    Ifx_UReg_32Bit ESR1DFEN:1;
+    Ifx_UReg_32Bit ESR1EDCON:2;
+    Ifx_UReg_32Bit PINADFEN:1;
+    Ifx_UReg_32Bit PINAEDCON:2;
+    Ifx_UReg_32Bit PINBDFEN:1;
+    Ifx_UReg_32Bit PINBEDCON:2;
+    Ifx_UReg_32Bit STBYRAMSEL:3;
+    Ifx_UReg_32Bit reserved_19:1;
+    Ifx_UReg_32Bit BLNKFIL:4;
+    Ifx_UReg_32Bit ESR0WKEN:1;
+    Ifx_UReg_32Bit ESR1WKEN:1;
+    Ifx_UReg_32Bit PINAWKEN:1;
+    Ifx_UReg_32Bit PINBWKEN:1;
+    Ifx_UReg_32Bit PWRWKEN:1;
+    Ifx_UReg_32Bit SCRWKEN:1;
+    Ifx_UReg_32Bit PORSTWKEN:1;
+    Ifx_UReg_32Bit WUTWKEN:1;
+} Ifx_PMS_PMSWCR0_Bits;
+
+
+typedef struct _Ifx_PMS_PMSWCR2_Bits
+{
+    Ifx_UReg_32Bit SCRINT:8;
+    Ifx_UReg_32Bit reserved_8:1;
+    Ifx_UReg_32Bit SCRECC:1;
+    Ifx_UReg_32Bit SCRWDT:1;
+    Ifx_UReg_32Bit SCRRST:1;
+    Ifx_UReg_32Bit reserved_12:4;
+    Ifx_UReg_32Bit TCINT:8;
+    Ifx_UReg_32Bit TCINTREQ:1;
+    Ifx_UReg_32Bit SMURST:1;
+    Ifx_UReg_32Bit RST:1;
+    Ifx_UReg_32Bit reserved_27:5;
+} Ifx_PMS_PMSWCR2_Bits;
+
+
+typedef struct _Ifx_PMS_PMSWCR3_Bits
+{
+    Ifx_UReg_32Bit WUTREL:24;
+    Ifx_UReg_32Bit reserved_24:3;
+    Ifx_UReg_32Bit WUTEN:1;
+    Ifx_UReg_32Bit BUSY:1;
+    Ifx_UReg_32Bit WUTDIV:1;
+    Ifx_UReg_32Bit WUTMODE:1;
+    Ifx_UReg_32Bit reserved_31:1;
+} Ifx_PMS_PMSWCR3_Bits;
+
+
+typedef struct _Ifx_PMS_PMSWCR4_Bits
+{
+    Ifx_UReg_32Bit BPSCRSTREQ:1;
+    Ifx_UReg_32Bit SCRSTREQ:1;
+    Ifx_UReg_32Bit reserved_2:2;
+    Ifx_UReg_32Bit BPPORSTREQ:1;
+    Ifx_UReg_32Bit PORSTREQ:1;
+    Ifx_UReg_32Bit SCRCLKSEL:1;
+    Ifx_UReg_32Bit reserved_7:9;
+    Ifx_UReg_32Bit SCRCFG:8;
+    Ifx_UReg_32Bit BPSCREN:1;
+    Ifx_UReg_32Bit SCREN:1;
+    Ifx_UReg_32Bit reserved_26:6;
+} Ifx_PMS_PMSWCR4_Bits;
+
+
+typedef struct _Ifx_PMS_PMSWCR5_Bits
+{
+    Ifx_UReg_32Bit BPTRISTREQ:1;
+    Ifx_UReg_32Bit TRISTREQ:1;
+    Ifx_UReg_32Bit ESR0TRIST:1;
+    Ifx_UReg_32Bit reserved_3:1;
+    Ifx_UReg_32Bit PORSTDF:1;
+    Ifx_UReg_32Bit reserved_5:1;
+    Ifx_UReg_32Bit DCDCSYNCO:1;
+    Ifx_UReg_32Bit reserved_7:25;
+} Ifx_PMS_PMSWCR5_Bits;
+
+
+typedef struct _Ifx_PMS_PMSWSTAT_Bits
+{
+    Ifx_UReg_32Bit reserved_0:1;
+    Ifx_UReg_32Bit HWCFGEVR:2;
+    Ifx_UReg_32Bit reserved_3:1;
+    Ifx_UReg_32Bit HWCFG4:1;
+    Ifx_UReg_32Bit HWCFG5:1;
+    Ifx_UReg_32Bit TRIST:1;
+    Ifx_UReg_32Bit TESTMODE:1;
+    Ifx_UReg_32Bit ESR0TRIST:1;
+    Ifx_UReg_32Bit reserved_9:2;
+    Ifx_UReg_32Bit PORSTDF:1;
+    Ifx_UReg_32Bit reserved_12:4;
+    Ifx_UReg_32Bit SCR:1;
+    Ifx_UReg_32Bit SCRST:1;
+    Ifx_UReg_32Bit SCRCLK:1;
+    Ifx_UReg_32Bit PORSTREQ:1;
+    Ifx_UReg_32Bit reserved_20:4;
+    Ifx_UReg_32Bit WUTEN:1;
+    Ifx_UReg_32Bit WUTRUN:1;
+    Ifx_UReg_32Bit WUTMODE:1;
+    Ifx_UReg_32Bit reserved_27:1;
+    Ifx_UReg_32Bit ESR0INT:1;
+    Ifx_UReg_32Bit ESR1INT:1;
+    Ifx_UReg_32Bit PINAINT:1;
+    Ifx_UReg_32Bit PINBINT:1;
+} Ifx_PMS_PMSWSTAT_Bits;
+
+
+typedef struct _Ifx_PMS_PMSWSTAT2_Bits
+{
+    Ifx_UReg_32Bit ESR0WKP:1;
+    Ifx_UReg_32Bit ESR1WKP:1;
+    Ifx_UReg_32Bit PINAWKP:1;
+    Ifx_UReg_32Bit PINBWKP:1;
+    Ifx_UReg_32Bit PWRWKP:1;
+    Ifx_UReg_32Bit SCRWKP:1;
+    Ifx_UReg_32Bit PORSTWKP:1;
+    Ifx_UReg_32Bit WUTWKP:1;
+    Ifx_UReg_32Bit ESR0OVRUN:1;
+    Ifx_UReg_32Bit ESR1OVRUN:1;
+    Ifx_UReg_32Bit PINAOVRUN:1;
+    Ifx_UReg_32Bit PINBOVRUN:1;
+    Ifx_UReg_32Bit VDDSTBYEN:1;
+    Ifx_UReg_32Bit SCROVRUN:1;
+    Ifx_UReg_32Bit PORSTOVRUN:1;
+    Ifx_UReg_32Bit WUTOVRUN:1;
+    Ifx_UReg_32Bit STBYRAM:3;
+    Ifx_UReg_32Bit VEXTSTBYEN:1;
+    Ifx_UReg_32Bit BLNKFIL:4;
+    Ifx_UReg_32Bit ESR0WKEN:1;
+    Ifx_UReg_32Bit ESR1WKEN:1;
+    Ifx_UReg_32Bit PINAWKEN:1;
+    Ifx_UReg_32Bit PINBWKEN:1;
+    Ifx_UReg_32Bit PWRWKEN:1;
+    Ifx_UReg_32Bit SCRWKEN:1;
+    Ifx_UReg_32Bit PORSTWKEN:1;
+    Ifx_UReg_32Bit WUTWKEN:1;
+} Ifx_PMS_PMSWSTAT2_Bits;
+
+
+typedef struct _Ifx_PMS_PMSWSTATCLR_Bits
+{
+    Ifx_UReg_32Bit ESR0WKPCLR:1;
+    Ifx_UReg_32Bit ESR1WKPCLR:1;
+    Ifx_UReg_32Bit PINAWKPCLR:1;
+    Ifx_UReg_32Bit PINBWKPCLR:1;
+    Ifx_UReg_32Bit PWRWKPCLR:1;
+    Ifx_UReg_32Bit SCRWKPCLR:1;
+    Ifx_UReg_32Bit PORSTWKPCLR:1;
+    Ifx_UReg_32Bit WUTWKPCLR:1;
+    Ifx_UReg_32Bit ESR0OVRUNCLR:1;
+    Ifx_UReg_32Bit ESR1OVRUNCLR:1;
+    Ifx_UReg_32Bit PINAOVRUNCLR:1;
+    Ifx_UReg_32Bit PINBOVRUNCLR:1;
+    Ifx_UReg_32Bit reserved_12:1;
+    Ifx_UReg_32Bit SCROVRUNCLR:1;
+    Ifx_UReg_32Bit PORSTOVRUNCLR:1;
+    Ifx_UReg_32Bit WUTOVRUNCLR:1;
+    Ifx_UReg_32Bit SCRSTCLR:1;
+    Ifx_UReg_32Bit reserved_17:11;
+    Ifx_UReg_32Bit ESR0INTCLR:1;
+    Ifx_UReg_32Bit ESR1INTCLR:1;
+    Ifx_UReg_32Bit PINAINTCLR:1;
+    Ifx_UReg_32Bit PINBINTCLR:1;
+} Ifx_PMS_PMSWSTATCLR_Bits;
+
+
+typedef struct _Ifx_PMS_PMSWUTCNT_Bits
+{
+    Ifx_UReg_32Bit WUTCNT:24;
+    Ifx_UReg_32Bit reserved_24:8;
+} Ifx_PMS_PMSWUTCNT_Bits;
+
+
+typedef struct _Ifx_PMS_UVMON_Bits
+{
+    Ifx_UReg_32Bit EVRCUVVAL:8;
+    Ifx_UReg_32Bit EVR33UVVAL:8;
+    Ifx_UReg_32Bit SWDUVVAL:8;
+    Ifx_UReg_32Bit reserved_24:6;
+    Ifx_UReg_32Bit SLCK:1;
+    Ifx_UReg_32Bit reserved_31:1;
+} Ifx_PMS_UVMON_Bits;
+
+
+typedef struct _Ifx_PMS_UVMON2_Bits
+{
+    Ifx_UReg_32Bit PREUVVAL:8;
+    Ifx_UReg_32Bit VDDMUVVAL:8;
+    Ifx_UReg_32Bit SBUVVAL:8;
+    Ifx_UReg_32Bit VDDMLVLSEL:6;
+    Ifx_UReg_32Bit SLCK:1;
+    Ifx_UReg_32Bit reserved_31:1;
+} Ifx_PMS_UVMON2_Bits;
+
+
+
+
+
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_ACCEN0_Bits B;
+} Ifx_PMS_ACCEN0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_ACCEN1_Bits B;
+} Ifx_PMS_ACCEN1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_AGFSP_STDBY0_Bits B;
+} Ifx_PMS_AGFSP_STDBY0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_AGFSP_STDBY1_Bits B;
+} Ifx_PMS_AGFSP_STDBY1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_AG_STDBY0_Bits B;
+} Ifx_PMS_AG_STDBY0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_AG_STDBY1_Bits B;
+} Ifx_PMS_AG_STDBY1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_CMD_STDBY_Bits B;
+} Ifx_PMS_CMD_STDBY;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_DTSLIM_Bits B;
+} Ifx_PMS_DTSLIM;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_DTSSTAT_Bits B;
+} Ifx_PMS_DTSSTAT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_EVR33CON_Bits B;
+} Ifx_PMS_EVR33CON;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_EVRADCSTAT_Bits B;
+} Ifx_PMS_EVRADCSTAT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_EVROSCCTRL_Bits B;
+} Ifx_PMS_EVROSCCTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_EVRRSTCON_Bits B;
+} Ifx_PMS_EVRRSTCON;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_EVRRSTSTAT_Bits B;
+} Ifx_PMS_EVRRSTSTAT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_EVRSDCOEFF0_Bits B;
+} Ifx_PMS_EVRSDCOEFF0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_EVRSDCOEFF1_Bits B;
+} Ifx_PMS_EVRSDCOEFF1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_EVRSDCOEFF2_Bits B;
+} Ifx_PMS_EVRSDCOEFF2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_EVRSDCOEFF3_Bits B;
+} Ifx_PMS_EVRSDCOEFF3;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_EVRSDCOEFF4_Bits B;
+} Ifx_PMS_EVRSDCOEFF4;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_EVRSDCOEFF5_Bits B;
+} Ifx_PMS_EVRSDCOEFF5;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_EVRSDCOEFF6_Bits B;
+} Ifx_PMS_EVRSDCOEFF6;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_EVRSDCOEFF7_Bits B;
+} Ifx_PMS_EVRSDCOEFF7;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_EVRSDCOEFF8_Bits B;
+} Ifx_PMS_EVRSDCOEFF8;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_EVRSDCOEFF9_Bits B;
+} Ifx_PMS_EVRSDCOEFF9;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_EVRSDCTRL0_Bits B;
+} Ifx_PMS_EVRSDCTRL0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_EVRSDCTRL1_Bits B;
+} Ifx_PMS_EVRSDCTRL1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_EVRSDCTRL10_Bits B;
+} Ifx_PMS_EVRSDCTRL10;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_EVRSDCTRL11_Bits B;
+} Ifx_PMS_EVRSDCTRL11;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_EVRSDCTRL2_Bits B;
+} Ifx_PMS_EVRSDCTRL2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_EVRSDCTRL3_Bits B;
+} Ifx_PMS_EVRSDCTRL3;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_EVRSDCTRL4_Bits B;
+} Ifx_PMS_EVRSDCTRL4;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_EVRSDCTRL5_Bits B;
+} Ifx_PMS_EVRSDCTRL5;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_EVRSDCTRL6_Bits B;
+} Ifx_PMS_EVRSDCTRL6;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_EVRSDCTRL7_Bits B;
+} Ifx_PMS_EVRSDCTRL7;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_EVRSDCTRL8_Bits B;
+} Ifx_PMS_EVRSDCTRL8;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_EVRSDCTRL9_Bits B;
+} Ifx_PMS_EVRSDCTRL9;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_EVRSDSTAT0_Bits B;
+} Ifx_PMS_EVRSDSTAT0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_EVRSTAT_Bits B;
+} Ifx_PMS_EVRSTAT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_EVRTRIM_Bits B;
+} Ifx_PMS_EVRTRIM;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_EVRTRIMSTAT_Bits B;
+} Ifx_PMS_EVRTRIMSTAT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_HSMOVMON_Bits B;
+} Ifx_PMS_HSMOVMON;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_HSMUVMON_Bits B;
+} Ifx_PMS_HSMUVMON;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_ID_Bits B;
+} Ifx_PMS_ID;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_MONBISTCTRL_Bits B;
+} Ifx_PMS_MONBISTCTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_MONBISTSTAT_Bits B;
+} Ifx_PMS_MONBISTSTAT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_MONCTRL_Bits B;
+} Ifx_PMS_MONCTRL;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_MONFILT_Bits B;
+} Ifx_PMS_MONFILT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_MONSTAT1_Bits B;
+} Ifx_PMS_MONSTAT1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_MONSTAT2_Bits B;
+} Ifx_PMS_MONSTAT2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_OTSC0_Bits B;
+} Ifx_PMS_OTSC0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_OTSC1_Bits B;
+} Ifx_PMS_OTSC1;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_OTSS_Bits B;
+} Ifx_PMS_OTSS;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_OVMON_Bits B;
+} Ifx_PMS_OVMON;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_OVMON2_Bits B;
+} Ifx_PMS_OVMON2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_PMSIEN_Bits B;
+} Ifx_PMS_PMSIEN;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_PMSWCR0_Bits B;
+} Ifx_PMS_PMSWCR0;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_PMSWCR2_Bits B;
+} Ifx_PMS_PMSWCR2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_PMSWCR3_Bits B;
+} Ifx_PMS_PMSWCR3;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_PMSWCR4_Bits B;
+} Ifx_PMS_PMSWCR4;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_PMSWCR5_Bits B;
+} Ifx_PMS_PMSWCR5;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_PMSWSTAT_Bits B;
+} Ifx_PMS_PMSWSTAT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_PMSWSTAT2_Bits B;
+} Ifx_PMS_PMSWSTAT2;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_PMSWSTATCLR_Bits B;
+} Ifx_PMS_PMSWSTATCLR;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_PMSWUTCNT_Bits B;
+} Ifx_PMS_PMSWUTCNT;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_UVMON_Bits B;
+} Ifx_PMS_UVMON;
+
+
+typedef union
+{
+    Ifx_UReg_32Bit U;
+    Ifx_SReg_32Bit I;
+    Ifx_PMS_UVMON2_Bits B;
+} Ifx_PMS_UVMON2;
+# 1610 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxPms_regdef.h"
+typedef volatile struct _Ifx_PMS
+{
+       Ifx_UReg_8Bit reserved_0[8];
+       Ifx_PMS_ID ID;
+       Ifx_UReg_8Bit reserved_C[32];
+       Ifx_PMS_EVRSTAT EVRSTAT;
+       Ifx_UReg_8Bit reserved_30[4];
+       Ifx_PMS_EVRADCSTAT EVRADCSTAT;
+       Ifx_UReg_8Bit reserved_38[4];
+       Ifx_PMS_EVRRSTCON EVRRSTCON;
+       Ifx_UReg_8Bit reserved_40[4];
+       Ifx_PMS_EVRRSTSTAT EVRRSTSTAT;
+       Ifx_UReg_8Bit reserved_48[4];
+       Ifx_PMS_EVRTRIM EVRTRIM;
+       Ifx_PMS_EVRTRIMSTAT EVRTRIMSTAT;
+       Ifx_UReg_8Bit reserved_54[12];
+       Ifx_PMS_MONSTAT1 MONSTAT1;
+       Ifx_PMS_MONSTAT2 MONSTAT2;
+       Ifx_PMS_MONCTRL MONCTRL;
+       Ifx_UReg_8Bit reserved_6C[4];
+       Ifx_PMS_MONFILT MONFILT;
+       Ifx_PMS_PMSIEN PMSIEN;
+       Ifx_PMS_UVMON UVMON;
+       Ifx_PMS_OVMON OVMON;
+       Ifx_PMS_UVMON2 UVMON2;
+       Ifx_PMS_OVMON2 OVMON2;
+       Ifx_PMS_HSMUVMON HSMUVMON;
+       Ifx_PMS_HSMOVMON HSMOVMON;
+       Ifx_PMS_EVR33CON EVR33CON;
+       Ifx_UReg_8Bit reserved_94[12];
+       Ifx_PMS_EVROSCCTRL EVROSCCTRL;
+       Ifx_UReg_8Bit reserved_A4[16];
+       Ifx_PMS_PMSWCR0 PMSWCR0;
+       Ifx_PMS_PMSWCR2 PMSWCR2;
+       Ifx_UReg_8Bit reserved_BC[4];
+       Ifx_PMS_PMSWCR3 PMSWCR3;
+       Ifx_PMS_PMSWCR4 PMSWCR4;
+       Ifx_PMS_PMSWCR5 PMSWCR5;
+       Ifx_UReg_8Bit reserved_CC[8];
+       Ifx_PMS_PMSWSTAT PMSWSTAT;
+       Ifx_PMS_PMSWSTAT2 PMSWSTAT2;
+       Ifx_PMS_PMSWUTCNT PMSWUTCNT;
+       Ifx_UReg_8Bit reserved_E0[8];
+       Ifx_PMS_PMSWSTATCLR PMSWSTATCLR;
+       Ifx_UReg_8Bit reserved_EC[16];
+       Ifx_PMS_EVRSDSTAT0 EVRSDSTAT0;
+       Ifx_UReg_8Bit reserved_100[8];
+       Ifx_PMS_EVRSDCTRL0 EVRSDCTRL0;
+       Ifx_PMS_EVRSDCTRL1 EVRSDCTRL1;
+       Ifx_PMS_EVRSDCTRL2 EVRSDCTRL2;
+       Ifx_PMS_EVRSDCTRL3 EVRSDCTRL3;
+       Ifx_PMS_EVRSDCTRL4 EVRSDCTRL4;
+       Ifx_PMS_EVRSDCTRL5 EVRSDCTRL5;
+       Ifx_PMS_EVRSDCTRL6 EVRSDCTRL6;
+       Ifx_PMS_EVRSDCTRL7 EVRSDCTRL7;
+       Ifx_PMS_EVRSDCTRL8 EVRSDCTRL8;
+       Ifx_PMS_EVRSDCTRL9 EVRSDCTRL9;
+       Ifx_PMS_EVRSDCTRL10 EVRSDCTRL10;
+       Ifx_PMS_EVRSDCTRL11 EVRSDCTRL11;
+       Ifx_UReg_8Bit reserved_138[16];
+       Ifx_PMS_EVRSDCOEFF0 EVRSDCOEFF0;
+       Ifx_PMS_EVRSDCOEFF1 EVRSDCOEFF1;
+       Ifx_PMS_EVRSDCOEFF2 EVRSDCOEFF2;
+       Ifx_PMS_EVRSDCOEFF3 EVRSDCOEFF3;
+       Ifx_PMS_EVRSDCOEFF4 EVRSDCOEFF4;
+       Ifx_PMS_EVRSDCOEFF5 EVRSDCOEFF5;
+       Ifx_PMS_EVRSDCOEFF6 EVRSDCOEFF6;
+       Ifx_PMS_EVRSDCOEFF7 EVRSDCOEFF7;
+       Ifx_PMS_EVRSDCOEFF8 EVRSDCOEFF8;
+       Ifx_PMS_EVRSDCOEFF9 EVRSDCOEFF9;
+       Ifx_UReg_8Bit reserved_170[24];
+       Ifx_PMS_AG_STDBY0 AG_STDBY0;
+       Ifx_PMS_AG_STDBY1 AG_STDBY1;
+       Ifx_PMS_MONBISTSTAT MONBISTSTAT;
+       Ifx_UReg_8Bit reserved_194[4];
+       Ifx_PMS_MONBISTCTRL MONBISTCTRL;
+       Ifx_PMS_CMD_STDBY CMD_STDBY;
+       Ifx_UReg_8Bit reserved_1A0[4];
+       Ifx_PMS_AGFSP_STDBY0 AGFSP_STDBY0;
+       Ifx_PMS_AGFSP_STDBY1 AGFSP_STDBY1;
+       Ifx_UReg_8Bit reserved_1AC[20];
+       Ifx_PMS_DTSSTAT DTSSTAT;
+       Ifx_UReg_8Bit reserved_1C4[4];
+       Ifx_PMS_DTSLIM DTSLIM;
+       Ifx_UReg_8Bit reserved_1CC[20];
+       Ifx_PMS_OTSS OTSS;
+       Ifx_PMS_OTSC0 OTSC0;
+       Ifx_PMS_OTSC1 OTSC1;
+       Ifx_UReg_8Bit reserved_1EC[12];
+       Ifx_PMS_ACCEN1 ACCEN1;
+       Ifx_PMS_ACCEN0 ACCEN0;
+} Ifx_PMS;
+# 57 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxPms_reg.h" 2
+# 2 ".\\output\\inc/IfxPms_reg.h" 2
+# 48 "bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\src\\HtxLbist.c" 2
+# 1 ".\\output\\inc/IfxScu_bf.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxScu_bf.h" 1
+# 2 ".\\output\\inc/IfxScu_bf.h" 2
+# 49 "bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\src\\HtxLbist.c" 2
+
+
+
+
+
+# 1 ".\\output\\inc/HtxLbist.h" 1
+# 1 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\inc\\HtxLbist.h" 1
+# 51 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\inc\\HtxLbist.h"
+# 1 ".\\output\\inc/HtxTestHnd_ErrorCodes.h" 1
+# 1 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\02_HtxTestHandler\\inc\\HtxTestHnd_ErrorCodes.h" 1
+# 51 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\02_HtxTestHandler\\inc\\HtxTestHnd_ErrorCodes.h"
+# 1 ".\\output\\inc/HtxStpIf.h" 1
+# 1 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\02_StpIntegration\\01_HtxStpIf\\inc\\HtxStpIf.h" 1
+# 56 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\02_StpIntegration\\01_HtxStpIf\\inc\\HtxStpIf.h"
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Std_Types.h" 1
+# 21 ".\\output\\inc/..\\..\\bsw\\integration\\Std_Types.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Platform_Types.h" 1
+# 13 ".\\output\\inc/..\\..\\bsw\\integration\\Platform_Types.h"
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Platform_Types_Cfg.h" 1
+# 14 ".\\output\\inc/..\\..\\bsw\\integration\\Platform_Types.h" 2
+# 76 ".\\output\\inc/..\\..\\bsw\\integration\\Platform_Types.h"
+typedef signed char sint8;
+
+
+
+
+typedef unsigned char uint8;
+
+
+
+
+typedef signed short sint16;
+
+
+
+
+typedef unsigned short uint16;
+
+
+
+
+typedef signed int sint32;
+
+
+
+
+typedef signed long long sint64;
+
+
+
+
+typedef unsigned int uint32;
+
+
+
+
+typedef unsigned long long uint64;
+
+
+
+
+
+typedef float float32;
+
+
+typedef double float64;
+
+
+
+
+
+
+
+typedef unsigned char boolean;
+
+
+
+
+
+
+typedef signed long sint8_least;
+
+
+typedef unsigned long uint8_least;
+
+
+
+
+typedef signed long sint16_least;
+
+
+
+
+typedef unsigned long uint16_least;
+
+
+
+
+typedef signed long sint32_least;
+
+
+
+
+typedef unsigned long uint32_least;
+# 22 ".\\output\\inc/..\\..\\bsw\\integration\\Std_Types.h" 2
+# 1 ".\\output\\inc/Compiler.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Compiler.h" 1
+# 44 ".\\output\\inc/..\\..\\Integration\\mcal\\Compiler.h"
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Compiler_Cfg.h" 1
+# 50 ".\\output\\inc/..\\..\\Integration\\mcal\\Compiler_Cfg.h"
+# 1 ".\\output\\inc/Os_Compiler_Cfg.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\os\\Os_Compiler_Cfg.h" 1
+
+
+
+
+
+# 1 ".\\output\\inc/Compiler.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Compiler.h" 1
+# 2 ".\\output\\inc/Compiler.h" 2
+# 7 ".\\output\\inc/..\\..\\Integration\\os\\Os_Compiler_Cfg.h" 2
+# 2 ".\\output\\inc/Os_Compiler_Cfg.h" 2
+# 51 ".\\output\\inc/..\\..\\Integration\\mcal\\Compiler_Cfg.h" 2
+# 45 ".\\output\\inc/..\\..\\Integration\\mcal\\Compiler.h" 2
+# 2 ".\\output\\inc/Compiler.h" 2
+# 23 ".\\output\\inc/..\\..\\bsw\\integration\\Std_Types.h" 2
+# 72 ".\\output\\inc/..\\..\\bsw\\integration\\Std_Types.h"
+    typedef unsigned char StatusType;
+# 96 ".\\output\\inc/..\\..\\bsw\\integration\\Std_Types.h"
+typedef uint8 Std_ReturnType;
+
+
+
+typedef struct
+{
+    uint16 vendorID;
+    uint16 moduleID;
+    uint8 sw_major_version;
+    uint8 sw_minor_version;
+    uint8 sw_patch_version;
+} Std_VersionInfoType;
+# 2 ".\\output\\inc/Std_Types.h" 2
+# 57 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\02_StpIntegration\\01_HtxStpIf\\inc\\HtxStpIf.h" 2
+# 1 ".\\output\\inc/Platform_Types.h" 1
+# 1 ".\\output\\inc/..\\..\\bsw\\integration\\Platform_Types.h" 1
+# 2 ".\\output\\inc/Platform_Types.h" 2
+# 58 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\02_StpIntegration\\01_HtxStpIf\\inc\\HtxStpIf.h" 2
+# 1 ".\\output\\inc/McalLib.h" 1
+# 1 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h" 1
+# 41 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+# 1 ".\\output\\inc/McalLib_Cfg.h" 1
+# 1 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Gen\\inc\\McalLib_Cfg.h" 1
+# 2 ".\\output\\inc/McalLib_Cfg.h" 2
+# 42 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h" 2
+# 1 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\Mcal_Compiler.h" 1
+# 45 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\Mcal_Compiler.h"
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 46 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\Mcal_Compiler.h" 2
+# 1 ".\\output\\inc/Compiler.h" 1
+# 47 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\Mcal_Compiler.h" 2
+
+
+
+
+
+
+# 1 "s:\\hightec\\toolchains\\tricore\\v4.9.4.1\\tricore\\include\\machine\\intrinsics.h" 1 3
+# 88 "s:\\hightec\\toolchains\\tricore\\v4.9.4.1\\tricore\\include\\machine\\intrinsics.h" 3
+static __inline__ __attribute__((__always_inline__))
+void _bisr (const unsigned __irq_level)
+{
+  __asm__ volatile ("bisr %0" :: "i" (__irq_level) : "memory");
+}
+# 110 "s:\\hightec\\toolchains\\tricore\\v4.9.4.1\\tricore\\include\\machine\\intrinsics.h" 3
+static __inline__ __attribute__((__always_inline__))
+unsigned _mfcr (const unsigned __regaddr)
+{
+  unsigned __res;
+  __asm__ volatile ("mfcr %0, LO:%1"
+                    : "=d" (__res) : "i" (__regaddr) : "memory");
+  return __res;
+}
+# 134 "s:\\hightec\\toolchains\\tricore\\v4.9.4.1\\tricore\\include\\machine\\intrinsics.h" 3
+static __inline__ __attribute__((__always_inline__))
+void _mtcr (const unsigned __regaddr, const unsigned __val)
+{
+  __asm__ volatile ("mtcr LO:%0, %1"
+                    :: "i" (__regaddr), "d" (__val) : "memory");
+}
+# 152 "s:\\hightec\\toolchains\\tricore\\v4.9.4.1\\tricore\\include\\machine\\intrinsics.h" 3
+static __inline__ __attribute__((__always_inline__))
+void _syscall (const unsigned __service)
+{
+  __asm__ volatile ("syscall %0" :: "i" (__service) : "memory");
+}
+
+
+
+
+
+
+static __inline__ __attribute__((__always_inline__))
+void _disable (void)
+{
+  __asm__ volatile ("disable" ::: "memory");
+}
+
+static __inline__ __attribute__((__always_inline__))
+void _enable (void)
+{
+  __asm__ volatile ("enable" ::: "memory");
+}
+
+static __inline__ __attribute__((__always_inline__))
+void _debug (void)
+{
+  __asm__ volatile ("debug" ::: "memory");
+}
+
+static __inline__ __attribute__((__always_inline__))
+void _isync (void)
+{
+  __asm__ volatile ("isync" ::: "memory");
+}
+
+static __inline__ __attribute__((__always_inline__))
+void _dsync (void)
+{
+  __asm__ volatile ("dsync" ::: "memory");
+}
+
+static __inline__ __attribute__((__always_inline__))
+void _rstv (void)
+{
+  __asm__ volatile ("rstv" ::: "memory");
+}
+
+static __inline__ __attribute__((__always_inline__))
+void _rslcx (void)
+{
+    __asm__ volatile ("rslcx" ::: "memory",
+                      "d0", "d1", "d2", "d3", "d4", "d5", "d6", "d7",
+                      "a2", "a3", "a4", "a5", "a6", "a7", "a11");
+}
+
+
+static __inline__ __attribute__((__always_inline__))
+void _svlcx (void)
+{
+  __asm__ volatile ("svlcx" ::: "memory");
+}
+
+static __inline__ __attribute__((__always_inline__))
+void _nop (void)
+{
+  __asm__ volatile ("nop" ::: "memory");
+}
+# 227 "s:\\hightec\\toolchains\\tricore\\v4.9.4.1\\tricore\\include\\machine\\intrinsics.h" 3
+static __inline__ __attribute__((__always_inline__))
+void _restore (const int irqs_on)
+{
+
+
+
+  if (irqs_on)
+    _enable();
+  else
+    _disable();
+
+}
+# 54 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\Mcal_Compiler.h" 2
+# 75 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\Mcal_Compiler.h"
+typedef unsigned int unsigned_int;
+# 201 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\Mcal_Compiler.h"
+static __inline__ unsigned __crc32bw( unsigned b, unsigned a )
+ __attribute__ ((always_inline));
+
+
+
+
+
+
+static __inline__ unsigned __crc32bw( unsigned b, unsigned a ) {
+  unsigned res;
+  __asm__ volatile("crc32b.w %0, %1, %2" :"=d"(res) : "d"(b), "d"(a): "memory");
+    return res;
+}
+# 223 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\Mcal_Compiler.h"
+static __inline__ unsigned __crc32b( unsigned b, unsigned a )
+ __attribute__ ((always_inline));
+
+
+
+
+
+
+static __inline__ unsigned __crc32b( unsigned b, unsigned a ) {
+  unsigned res;
+  __asm__ volatile("crc32.b %0, %1, %2" :"=d"(res) : "d"(b), "d"(a): "memory");
+    return res;
+}
+# 613 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\Mcal_Compiler.h"
+static __inline__ unsigned _extru(unsigned a, unsigned p, unsigned w) {
+  unsigned res;
+  __asm__ volatile ("mov %%d14,%2  \n                     mov %%d15,%3  \n                     extr.u %0,%1,%%e14"
+
+
+                    : "=d" (res) : "d" (a), "d" (p), "d" (w):"d14","d15");
+  return res;
+}
+# 717 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\Mcal_Compiler.h"
+static __inline__ unsigned int cmpswap_w (unsigned int volatile *address,
+           unsigned int value, unsigned int condition)
+{
+  __extension__ unsigned long long reg64
+    = value | (unsigned long long) condition << 32;
+
+  __asm__ __volatile__ ("cmpswap.w [%[addr]]0, %A[reg]"
+                        : [reg] "+d" (reg64)
+                        : [addr] "a" (address)
+                        : "memory");
+    return reg64;
+}
+# 839 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\Mcal_Compiler.h"
+static __inline__ unsigned int swapmskw (unsigned int *address,
+                                           unsigned int value,unsigned int mask)
+{
+  __extension__ unsigned long long reg64
+    = value | (unsigned long long) mask << 32;
+
+    __asm__ __volatile__( "swapmsk.w [%[addr]] 0,%A[reg]"
+        : [reg]"+d" (reg64)
+        : [addr]"a" (address)
+        : "memory");
+     return ((unsigned int)reg64 & mask);
+}
+# 43 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h" 2
+# 273 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+# 1 ".\\output\\inc/McalLib_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\McalLib_MemMap.h" 1
+# 137 ".\\output\\inc/..\\..\\Integration\\mcal\\McalLib_MemMap.h"
+#pragma section "Code.Cpu0" ax
+# 2 ".\\output\\inc/McalLib_MemMap.h" 2
+# 274 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h" 2
+# 297 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern uint32 Mcal_GetCpuWdgPassword(void);
+# 324 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern uint32 Mcal_SetCpuWdgPassword(const uint32 Password);
+# 350 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern void Mcal_WriteCpuEndInitProtReg
+(volatile void* const RegAddress, const uint32 DataValue);
+# 377 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern uint32 Mcal_GetSafetyEndInitPassword(void);
+# 405 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern uint32 Mcal_SetSafetyEndInitPassword(const uint32 Password);
+# 432 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern void Mcal_WriteSafetyEndInitProtReg
+( volatile void* const RegAddress, const uint32 DataValue);
+# 466 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern void Mcal_WriteSafetyEndInitProtRegMask
+(volatile void* const RegAddress, const uint32 DataValue, uint32 Mask);
+# 492 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern uint32 Mcal_GetPeripheralEndInitPassword(void);
+# 520 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern uint32 Mcal_SetPeripheralEndInitPassword(const uint32 Password);
+# 547 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern void Mcal_WritePeripEndInitProtReg
+( volatile void* const RegAddress, const uint32 DataValue);
+# 573 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern uint32 Mcal_GetCpuPhysicalId(void);
+# 609 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern uint32 Mcal_GetGlobalDsprAddress
+(const uint32 CpuId, const uint32 LocalDsprAddress);
+# 642 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern uint32 Mcal_GetLocalDsprAddress(const uint32 GlobalDsprAddress);
+# 677 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern uint32 Mcal_GetGlobalPsprAddress
+(const uint32 CpuId, const uint32 LocalPsprAddress);
+# 711 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern uint32 Mcal_GetLocalPsprAddress(const uint32 GlobalPsprAddress);
+# 734 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern uint32 Mcal_DelayTickResolution(void);
+# 762 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern uint32 Mcal_DelayResetTickCalibration(void);
+# 794 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern uint32 Mcal_DelayGetTick(void);
+# 821 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern uint32 Mcal_GetCpuIndex(void);
+# 853 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern void Mcal_GetSpinlock
+(volatile uint32 * const LockAddress, const uint32 Timeout);
+# 879 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern void Mcal_ReleaseSpinlock(volatile uint32 * const LockAddress);
+# 903 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern void McalLib_GetVersionInfo( Std_VersionInfoType* const versioninfo);
+# 930 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern void Mcal_WriteSafetyEndInitProtReg16(volatile void* const RegAddress,
+                                      const uint16 DataValue);
+# 963 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern uint32 Mcal_UpdateSafetyEndInit(const uint32 NewPassword,
+                                       const boolean UpdatePassword,
+                                       const boolean SetResetProtection);
+# 995 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h"
+extern uint32 Mcal_UpdatePeripheralEndInit(const uint32 NewPassword,
+                                           const boolean UpdatePassword,
+                                           const boolean SetResetProtection);
+
+
+
+
+
+# 1 ".\\output\\inc/McalLib_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\McalLib_MemMap.h" 1
+# 149 ".\\output\\inc/..\\..\\Integration\\mcal\\McalLib_MemMap.h"
+#pragma section
+# 2 ".\\output\\inc/McalLib_MemMap.h" 2
+# 1004 ".\\output\\inc/..\\..\\Targets\\TC38xx\\MCAL\\MCAL_Modules\\McalLib\\inc\\McalLib.h" 2
+# 2 ".\\output\\inc/McalLib.h" 2
+# 59 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\02_StpIntegration\\01_HtxStpIf\\inc\\HtxStpIf.h" 2
+# 1 ".\\output\\inc/Smu.h" 1
+# 1 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\Mcal\\Smu\\inc\\Smu.h" 1
+# 47 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\Mcal\\Smu\\inc\\Smu.h"
+# 1 ".\\output\\inc/Smu_Cfg.h" 1
+# 1 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\AppSw\\CfgMcal\\inc\\Smu_Cfg.h" 1
+# 2 ".\\output\\inc/Smu_Cfg.h" 2
+# 48 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\Mcal\\Smu\\inc\\Smu.h" 2
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 49 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\Mcal\\Smu\\inc\\Smu.h" 2
+# 124 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\Mcal\\Smu\\inc\\Smu.h"
+typedef uint32 Smu_FSPActionType;
+
+
+
+typedef enum
+{
+  SMU_EFRST_DISABLE = 0U,
+  SMU_EFRST_ENABLE = 1U
+} Smu_EnableRunStateType;
+
+
+
+
+typedef uint8 Smu_CoreCommandType;
+# 149 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\Mcal\\Smu\\inc\\Smu.h"
+typedef uint8 Smu_CoreStateType;
+# 158 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\Mcal\\Smu\\inc\\Smu.h"
+typedef uint8 Smu_CoreAlarmActionType;
+# 170 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\Mcal\\Smu\\inc\\Smu.h"
+typedef enum
+{
+  SMU_ALARM_GROUP0 = 0U,
+  SMU_ALARM_GROUP1 = 1U,
+  SMU_ALARM_GROUP2 = 2U,
+  SMU_ALARM_GROUP3 = 3U,
+  SMU_ALARM_GROUP4 = 4U,
+  SMU_ALARM_GROUP5 = 5U,
+  SMU_ALARM_GROUP6 = 6U,
+  SMU_ALARM_GROUP7 = 7U,
+  SMU_ALARM_GROUP8 = 8U,
+  SMU_ALARM_GROUP9 = 9U,
+  SMU_ALARM_GROUP10 = 10U,
+  SMU_ALARM_GROUP11 = 11U,
+  SMU_ALARM_GROUP20 = 20U,
+  SMU_ALARM_GROUP21 = 21U
+} Smu_AlarmGroupId;
+
+
+
+typedef enum
+{
+  SMU_ALARM_0 = 0U,
+  SMU_ALARM_1 = 1U,
+  SMU_ALARM_2 = 2U,
+  SMU_ALARM_3 = 3U,
+  SMU_ALARM_4 = 4U,
+  SMU_ALARM_5 = 5U,
+  SMU_ALARM_6 = 6U,
+  SMU_ALARM_7 = 7U,
+  SMU_ALARM_8 = 8U,
+  SMU_ALARM_9 = 9U,
+  SMU_ALARM_10 = 10U,
+  SMU_ALARM_11 = 11U,
+  SMU_ALARM_12 = 12U,
+  SMU_ALARM_13 = 13U,
+  SMU_ALARM_14 = 14U,
+  SMU_ALARM_15 = 15U,
+  SMU_ALARM_16 = 16U,
+  SMU_ALARM_17 = 17U,
+  SMU_ALARM_18 = 18U,
+  SMU_ALARM_19 = 19U,
+  SMU_ALARM_20 = 20U,
+  SMU_ALARM_21 = 21U,
+  SMU_ALARM_22 = 22U,
+  SMU_ALARM_23 = 23U,
+  SMU_ALARM_24 = 24U,
+  SMU_ALARM_25 = 25U,
+  SMU_ALARM_26 = 26U,
+  SMU_ALARM_27 = 27U,
+  SMU_ALARM_28 = 28U,
+  SMU_ALARM_29 = 29U,
+  SMU_ALARM_30 = 30U,
+  SMU_ALARM_31 = 31U
+} Smu_AlarmIdType;
+
+
+
+typedef uint8 Smu_SffTestResType;
+
+
+
+
+typedef struct
+{
+  uint32 FSPCfg;
+  uint32 AGCCfg;
+  uint32 RTCCfg;
+  uint32 RTAC00Cfg;
+  uint32 RTAC01Cfg;
+  uint32 RTAC10Cfg;
+  uint32 RTAC11Cfg;
+  uint32 AlarmStdbyCfg;
+  uint32 AlarmCoreConfig[((uint32)(36U))];
+  uint32 AlarmCoreFspConfig[((uint32)(12U))];
+  uint32 AlarmStdbyFspConfig[((uint32)(2U))];
+} Smu_ConfigType;
+# 261 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\Mcal\\Smu\\inc\\Smu.h"
+# 1 ".\\output\\inc/Smu_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Smu_MemMap.h" 1
+# 112 ".\\output\\inc/..\\..\\Integration\\mcal\\Smu_MemMap.h"
+#pragma section "Code.Cpu0" ax
+# 2 ".\\output\\inc/Smu_MemMap.h" 2
+# 262 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\Mcal\\Smu\\inc\\Smu.h" 2
+# 295 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\Mcal\\Smu\\inc\\Smu.h"
+extern Std_ReturnType Smu_Init
+(
+  const Smu_ConfigType* const ConfigPtr
+);
+# 326 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\Mcal\\Smu\\inc\\Smu.h"
+extern Std_ReturnType Smu_DeInit(void);
+# 359 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\Mcal\\Smu\\inc\\Smu.h"
+extern Std_ReturnType Smu_GetAlarmAction
+(
+  const Smu_AlarmGroupId AlarmGroup,
+  const Smu_AlarmIdType AlarmPos,
+  Smu_CoreAlarmActionType* const IntAlarmAction,
+  Smu_FSPActionType* const FSPAction
+);
+# 398 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\Mcal\\Smu\\inc\\Smu.h"
+extern Std_ReturnType Smu_SetAlarmAction
+(
+  const Smu_AlarmGroupId AlarmGroup,
+  const Smu_AlarmIdType AlarmPos,
+  const Smu_CoreAlarmActionType AlarmAction,
+  const Smu_FSPActionType FSPAction
+);
+# 430 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\Mcal\\Smu\\inc\\Smu.h"
+extern Std_ReturnType Smu_LockConfigRegs(void);
+# 465 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\Mcal\\Smu\\inc\\Smu.h"
+extern Std_ReturnType Smu_ActivateRunState(const uint32 Cmd);
+# 494 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\Mcal\\Smu\\inc\\Smu.h"
+extern Std_ReturnType Smu_ClearAlarmStatus
+(
+  const Smu_AlarmGroupId AlarmGroup,
+  const Smu_AlarmIdType AlarmPos
+);
+# 532 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\Mcal\\Smu\\inc\\Smu.h"
+extern Std_ReturnType Smu_SetAlarmStatus
+(
+  const Smu_AlarmGroupId AlarmGroup,
+  const Smu_AlarmIdType AlarmPos
+);
+# 564 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\Mcal\\Smu\\inc\\Smu.h"
+extern Std_ReturnType Smu_GetAlarmStatus
+(
+  const Smu_AlarmGroupId AlarmGroup,
+  uint32* const AlarmStatus
+);
+# 598 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\Mcal\\Smu\\inc\\Smu.h"
+extern Std_ReturnType Smu_GetAlarmDebugStatus
+(
+  const Smu_AlarmGroupId AlarmGroup,
+  uint32* const AlarmStatus
+);
+# 629 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\Mcal\\Smu\\inc\\Smu.h"
+extern Std_ReturnType Smu_SetupErrorPin(void);
+# 652 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\Mcal\\Smu\\inc\\Smu.h"
+extern Std_ReturnType Smu_ReleaseErrorPin(void);
+# 682 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\Mcal\\Smu\\inc\\Smu.h"
+extern Std_ReturnType Smu_ReleaseFSP(void);
+# 711 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\Mcal\\Smu\\inc\\Smu.h"
+extern Std_ReturnType Smu_ActivateFSP(void);
+# 741 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\Mcal\\Smu\\inc\\Smu.h"
+extern Std_ReturnType Smu_RTStop(const uint8 TimerNum );
+# 775 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\Mcal\\Smu\\inc\\Smu.h"
+extern Std_ReturnType Smu_GetRTMissedEvent
+(
+  const uint8 TimerNum,
+  boolean* const EventMissed
+);
+# 806 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\Mcal\\Smu\\inc\\Smu.h"
+extern Smu_CoreStateType Smu_GetSmuState(void);
+# 831 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\Mcal\\Smu\\inc\\Smu.h"
+extern Std_ReturnType Smu_ActivatePES (void);
+# 856 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\Mcal\\Smu\\inc\\Smu.h"
+extern Std_ReturnType Smu_CoreAliveTest (void);
+# 882 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\Mcal\\Smu\\inc\\Smu.h"
+extern Std_ReturnType Smu_GetAlarmExecutionStatus(
+  const uint32 AlarmExecStatusReq,
+  uint32* const AlarmExecStatus);
+# 909 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\Mcal\\Smu\\inc\\Smu.h"
+extern Std_ReturnType Smu_ClearAlarmExecutionStatus
+(
+  const uint32 AlarmExecStatusReq
+);
+# 942 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\Mcal\\Smu\\inc\\Smu.h"
+extern Std_ReturnType Smu_RegisterMonitor
+(
+  const uint16 * const RegMonPtr, Smu_SffTestResType * const RegMonResult
+);
+# 972 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\Mcal\\Smu\\inc\\Smu.h"
+extern Std_ReturnType Smu_InitCheck (const Smu_ConfigType* const ConfigPtr);
+# 1019 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\Mcal\\Smu\\inc\\Smu.h"
+# 1 ".\\output\\inc/Smu_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Smu_MemMap.h" 1
+# 124 ".\\output\\inc/..\\..\\Integration\\mcal\\Smu_MemMap.h"
+#pragma section
+# 2 ".\\output\\inc/Smu_MemMap.h" 2
+# 1020 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\Mcal\\Smu\\inc\\Smu.h" 2
+
+# 1 ".\\output\\inc/Smu_PBcfg.h" 1
+# 1 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\AppSw\\CfgMcal\\inc\\Smu_PBcfg.h" 1
+# 54 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\AppSw\\CfgMcal\\inc\\Smu_PBcfg.h"
+# 1 ".\\output\\inc/Smu_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Smu_MemMap.h" 1
+# 77 ".\\output\\inc/..\\..\\Integration\\mcal\\Smu_MemMap.h"
+#pragma section "Config.Cpu0.Unspecified" a 4
+# 2 ".\\output\\inc/Smu_MemMap.h" 2
+# 55 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\AppSw\\CfgMcal\\inc\\Smu_PBcfg.h" 2
+
+extern const Smu_ConfigType Smu_Config;
+
+
+
+
+
+# 1 ".\\output\\inc/Smu_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\Integration\\mcal\\Smu_MemMap.h" 1
+# 90 ".\\output\\inc/..\\..\\Integration\\mcal\\Smu_MemMap.h"
+#pragma section
+# 2 ".\\output\\inc/Smu_MemMap.h" 2
+# 63 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\AppSw\\CfgMcal\\inc\\Smu_PBcfg.h" 2
+# 2 ".\\output\\inc/Smu_PBcfg.h" 2
+# 1022 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\Mcal\\Smu\\inc\\Smu.h" 2
+# 2 ".\\output\\inc/Smu.h" 2
+# 60 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\02_StpIntegration\\01_HtxStpIf\\inc\\HtxStpIf.h" 2
+
+
+
+
+
+
+
+# 1 ".\\output\\inc/SchM_HtxIntSafeWdg.h" 1
+# 1 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\BaseSw\\Integration\\SchM_HtxIntSafeWdg.h" 1
+# 77 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\BaseSw\\Integration\\SchM_HtxIntSafeWdg.h"
+extern void SchM_Enter_HtxIntSafeWdgWdtscon0(void);
+# 108 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\BaseSw\\Integration\\SchM_HtxIntSafeWdg.h"
+extern void SchM_Exit_HtxIntSafeWdgWdtscon0(void);
+# 139 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\BaseSw\\Integration\\SchM_HtxIntSafeWdg.h"
+extern void SchM_Enter_HtxIntSafeWdgWdtscon1(void);
+# 170 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\BaseSw\\Integration\\SchM_HtxIntSafeWdg.h"
+extern void SchM_Exit_HtxIntSafeWdgWdtscon1(void);
+# 2 ".\\output\\inc/SchM_HtxIntSafeWdg.h" 2
+# 68 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\02_StpIntegration\\01_HtxStpIf\\inc\\HtxStpIf.h" 2
+# 1 ".\\output\\inc/StpRefApp.h" 1
+# 1 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\AppSw\\DemoHtxStp\\StpRefApp\\inc\\StpRefApp.h" 1
+# 43 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\AppSw\\DemoHtxStp\\StpRefApp\\inc\\StpRefApp.h"
+# 1 ".\\output\\inc/Std_Types.h" 1
+# 44 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\AppSw\\DemoHtxStp\\StpRefApp\\inc\\StpRefApp.h" 2
+# 68 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\AppSw\\DemoHtxStp\\StpRefApp\\inc\\StpRefApp.h"
+extern uint8 GetActiveCall(void);
+extern void SetActiveCall(uint8 u8Called);
+# 101 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\AppSw\\DemoHtxStp\\StpRefApp\\inc\\StpRefApp.h"
+extern void StpRefApp_SafeTpackMain(void);
+# 134 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\AppSw\\DemoHtxStp\\StpRefApp\\inc\\StpRefApp.h"
+extern void StpRefApp_Tick(void);
+# 167 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\AppSw\\DemoHtxStp\\StpRefApp\\inc\\StpRefApp.h"
+extern void StpRefApp_WaitForTick(void);
+# 200 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\AppSw\\DemoHtxStp\\StpRefApp\\inc\\StpRefApp.h"
+extern void StpRefApp_SafeWdgInit(void);
+# 233 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\AppSw\\DemoHtxStp\\StpRefApp\\inc\\StpRefApp.h"
+extern void StpRefApp_Runtime_Cpu0(void);
+# 265 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\AppSw\\DemoHtxStp\\StpRefApp\\inc\\StpRefApp.h"
+extern void StpRefApp_Runtime_Cpu1(void);
+# 297 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\AppSw\\DemoHtxStp\\StpRefApp\\inc\\StpRefApp.h"
+extern void StpRefApp_Runtime_Cpu2(void);
+# 329 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\AppSw\\DemoHtxStp\\StpRefApp\\inc\\StpRefApp.h"
+extern void StpRefApp_Runtime_Cpu3(void);
+# 361 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\AppSw\\DemoHtxStp\\StpRefApp\\inc\\StpRefApp.h"
+extern void StpRefApp_Runtime_Cpu4(void);
+# 393 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\AppSw\\DemoHtxStp\\StpRefApp\\inc\\StpRefApp.h"
+extern void StpRefApp_Runtime_Cpu5(void);
+# 427 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\AppSw\\DemoHtxStp\\StpRefApp\\inc\\StpRefApp.h"
+extern uint8 TLF35584Demo_IsSsspActive(void);
+# 459 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\AppSw\\DemoHtxStp\\StpRefApp\\inc\\StpRefApp.h"
+extern void TLF35584Demo_InterruptHandler(void);
+# 490 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\AppSw\\DemoHtxStp\\StpRefApp\\inc\\StpRefApp.h"
+extern void StpRefApp_TlfDisable(void);
+# 2 ".\\output\\inc/StpRefApp.h" 2
+# 69 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\02_StpIntegration\\01_HtxStpIf\\inc\\HtxStpIf.h" 2
+# 1 ".\\output\\inc/AppCbk.h" 1
+# 1 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\AppSw\\DemoHtxStp\\StpRefApp\\inc\\AppCbk.h" 1
+# 46 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\AppSw\\DemoHtxStp\\StpRefApp\\inc\\AppCbk.h"
+# 1 ".\\output\\inc/Platform_Types.h" 1
+# 47 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\AppSw\\DemoHtxStp\\StpRefApp\\inc\\AppCbk.h" 2
+# 72 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\AppSw\\DemoHtxStp\\StpRefApp\\inc\\AppCbk.h"
+typedef uint32 AppCbk_ErrorIdType;
+# 117 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\AppSw\\DemoHtxStp\\StpRefApp\\inc\\AppCbk.h"
+extern void AppCbk_ErrorHandler(AppCbk_ErrorIdType ErrorId);
+extern void AppCbk_PfmErrorHandler(uint32 ErrorType);
+extern void AppCbk_PfmMonitorFaultHandler(uint32 Seid, uint32 FaultType);
+# 2 ".\\output\\inc/AppCbk.h" 2
+# 70 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\02_StpIntegration\\01_HtxStpIf\\inc\\HtxStpIf.h" 2
+# 2 ".\\output\\inc/HtxStpIf.h" 2
+# 52 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\02_HtxTestHandler\\inc\\HtxTestHnd_ErrorCodes.h" 2
+# 151 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\02_HtxTestHandler\\inc\\HtxTestHnd_ErrorCodes.h"
+typedef uint32 HtxTestHnd_TstRsltType;
+# 2 ".\\output\\inc/HtxTestHnd_ErrorCodes.h" 2
+# 52 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\inc\\HtxLbist.h" 2
+# 1 ".\\output\\inc/HtxStpIf.h" 1
+# 53 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\inc\\HtxLbist.h" 2
+# 1 ".\\output\\inc/HtxLbist_Cfg.h" 1
+# 1 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\StpEBGenSrc\\inc\\HtxLbist_Cfg.h" 1
+# 2 ".\\output\\inc/HtxLbist_Cfg.h" 2
+# 54 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\inc\\HtxLbist.h" 2
+# 70 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\inc\\HtxLbist.h"
+typedef enum HtxLbist_StateType
+{
+    HTXLBIST_START_STATE = 0U,
+    HTXLBIST_RUN_STATE,
+    HTXLBIST_PASS_STATE,
+    HTXLBIST_FAIL_STATE
+} HtxLbist_StateType;
+
+
+typedef struct HtxLbist_DataType
+{
+
+    HtxTestHnd_TstRsltType LbistLastResult;
+    HtxLbist_StateType LbistState;
+    uint32 LbistCrc;
+    uint32 LbistRuns;
+
+
+    uint32 FwDataCrc;
+    uint16 Cpu0DlmuEccd;
+    uint16 Cpu0DlmuFaultsts;
+    uint16 Cpu0DlmuErrinfo;
+    uint16 Cpu1DlmuEccd;
+    uint16 Cpu1DlmuFaultsts;
+    uint16 Cpu1DlmuErrinfo;
+    uint32 Dummy1;
+    uint16 Dummy2;
+    uint8 DlmuUsage;
+    uint8 DlmuUsageRedn;
+
+} HtxLbist_DataType;
+
+
+typedef struct HtxLbist_ConfigSetType
+{
+    uint32 HtxLbist_LbistCtrl0RegVal;
+    uint32 HtxLbist_LbistCtrl1RegVal;
+    uint32 HtxLbist_LbistCtrl2RegVal;
+    uint32 HtxLbist_LbistCtrl3RegVal;
+} HtxLbist_ConfigSetType;
+# 125 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\inc\\HtxLbist.h"
+# 1 ".\\output\\inc/HtxTestLib_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\02_StpIntegration\\01_HtxStpIf\\inc\\HtxTestLib_MemMap.h" 1
+# 831 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\02_StpIntegration\\01_HtxStpIf\\inc\\HtxTestLib_MemMap.h"
+#pragma section "Config.Cpu0.Unspecified" a 4
+# 2 ".\\output\\inc/HtxTestLib_MemMap.h" 2
+# 126 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\inc\\HtxLbist.h" 2
+
+extern const HtxLbist_ConfigSetType HtxLbist_kConfigSet[((uint8)1U)];
+
+
+
+
+
+
+
+# 1 ".\\output\\inc/HtxTestLib_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\02_StpIntegration\\01_HtxStpIf\\inc\\HtxTestLib_MemMap.h" 1
+# 844 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\02_StpIntegration\\01_HtxStpIf\\inc\\HtxTestLib_MemMap.h"
+#pragma section
+# 2 ".\\output\\inc/HtxTestLib_MemMap.h" 2
+# 136 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\inc\\HtxLbist.h" 2
+# 147 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\inc\\HtxLbist.h"
+# 1 ".\\output\\inc/HtxTestLib_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\02_StpIntegration\\01_HtxStpIf\\inc\\HtxTestLib_MemMap.h" 1
+# 940 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\02_StpIntegration\\01_HtxStpIf\\inc\\HtxTestLib_MemMap.h"
+#pragma section "Code.Cpu0" ax
+# 2 ".\\output\\inc/HtxTestLib_MemMap.h" 2
+# 148 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\inc\\HtxLbist.h" 2
+# 209 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\inc\\HtxLbist.h"
+extern HtxTestHnd_TstRsltType HtxLbist_Test
+(
+    const uint8 ParamSetIndex,
+    const uint8 TstSeed,
+    uint32* const TstSignature
+);
+# 245 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\inc\\HtxLbist.h"
+extern Std_ReturnType HtxLbist_IsTrapExpected(void);
+
+
+
+
+
+
+
+# 1 ".\\output\\inc/HtxTestLib_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\02_StpIntegration\\01_HtxStpIf\\inc\\HtxTestLib_MemMap.h" 1
+# 952 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\02_StpIntegration\\01_HtxStpIf\\inc\\HtxTestLib_MemMap.h"
+#pragma section
+# 2 ".\\output\\inc/HtxTestLib_MemMap.h" 2
+# 254 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\inc\\HtxLbist.h" 2
+# 2 ".\\output\\inc/HtxLbist.h" 2
+# 55 "bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\src\\HtxLbist.c" 2
+# 124 "bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\src\\HtxLbist.c"
+# 1 ".\\output\\inc/HtxTestLib_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\02_StpIntegration\\01_HtxStpIf\\inc\\HtxTestLib_MemMap.h" 1
+# 56 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\02_StpIntegration\\01_HtxStpIf\\inc\\HtxTestLib_MemMap.h"
+#pragma section "ClearedData.LmuNC.32bit" aw 4
+# 2 ".\\output\\inc/HtxTestLib_MemMap.h" 2
+# 125 "bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\src\\HtxLbist.c" 2
+
+static uint32 HtxLbist_TrapExpected;
+static uint32 HtxLbist_TrapExpectedRedn;
+
+
+
+
+
+
+
+# 1 ".\\output\\inc/HtxTestLib_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\02_StpIntegration\\01_HtxStpIf\\inc\\HtxTestLib_MemMap.h" 1
+# 69 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\02_StpIntegration\\01_HtxStpIf\\inc\\HtxTestLib_MemMap.h"
+#pragma section
+# 2 ".\\output\\inc/HtxTestLib_MemMap.h" 2
+# 136 "bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\src\\HtxLbist.c" 2
+# 147 "bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\src\\HtxLbist.c"
+# 1 ".\\output\\inc/HtxTestLib_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\02_StpIntegration\\01_HtxStpIf\\inc\\HtxTestLib_MemMap.h" 1
+# 940 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\02_StpIntegration\\01_HtxStpIf\\inc\\HtxTestLib_MemMap.h"
+#pragma section "Code.Cpu0" ax
+# 2 ".\\output\\inc/HtxTestLib_MemMap.h" 2
+# 148 "bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\src\\HtxLbist.c" 2
+
+static HtxTestHnd_TstRsltType HtxLbist_lTriggerLBIST
+(
+    const uint32 LbistTrigCrc,
+    const uint8 ParamSetIndex,
+    const uint8 TstSeed
+);
+
+static HtxTestHnd_TstRsltType HtxLbist_lGetLbistStatus
+(
+    const uint32 expSig,
+    uint32 * const TstSignature
+);
+
+static void HtxLbist_lResetLbistHw(void);
+
+static void HtxLbist_lSetCrc(void);
+
+static uint32 HtxLbist_lIsColdPorstOrStdby(void);
+
+static Std_ReturnType HtxLbist_lCheckCrc(void);
+
+static uint32 HtxLbist_lMtuEnable(void);
+
+static void HtxLbist_lMtuDisable(uint32 WasMtuEnabled);
+
+
+static void HtxLbist_lSetFwDataCrc(void);
+
+static void HtxLbist_lInitDlmu(void);
+
+static void HtxLbist_lInitLbistData(void);
+
+static void HtxLbist_lSetDlmuUsage(const uint8 lDlmuUsg);
+
+static void HtxLbist_lSetTrapStatus(const uint32 value);
+
+static void HtxLbist_lClearColdResetStatus(void);
+
+static void HtxLbist_lBackupMtuForFwCheck(void);
+
+
+
+
+
+
+# 1 ".\\output\\inc/HtxTestLib_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\02_StpIntegration\\01_HtxStpIf\\inc\\HtxTestLib_MemMap.h" 1
+# 952 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\02_StpIntegration\\01_HtxStpIf\\inc\\HtxTestLib_MemMap.h"
+#pragma section
+# 2 ".\\output\\inc/HtxTestLib_MemMap.h" 2
+# 195 "bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\src\\HtxLbist.c" 2
+# 206 "bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\src\\HtxLbist.c"
+# 1 ".\\output\\inc/HtxTestLib_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\02_StpIntegration\\01_HtxStpIf\\inc\\HtxTestLib_MemMap.h" 1
+# 940 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\02_StpIntegration\\01_HtxStpIf\\inc\\HtxTestLib_MemMap.h"
+#pragma section "Code.Cpu0" ax
+# 2 ".\\output\\inc/HtxTestLib_MemMap.h" 2
+# 207 "bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\src\\HtxLbist.c" 2
+# 268 "bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\src\\HtxLbist.c"
+HtxTestHnd_TstRsltType HtxLbist_Test
+(
+    const uint8 ParamSetIndex,
+    const uint8 TstSeed,
+    uint32* const TstSignature
+)
+{
+    HtxTestHnd_TstRsltType Result;
+
+    if (ParamSetIndex < ((uint8)1U))
+    {
+
+        *TstSignature = (__crc32bw((unsigned int)((uint32)(((uint16)0x0001))),(unsigned int)((uint32)(TstSeed))));
+
+
+        *TstSignature = (__crc32bw((unsigned int)((uint32)(*TstSignature)),(unsigned int)((uint32)(ParamSetIndex))));
+
+        if (HtxLbist_lIsColdPorstOrStdby() == (1 != 0))
+        {
+
+
+
+
+            HtxLbist_lSetTrapStatus(((uint32)0xA5A5A5A5U));
+            Std_ReturnType lCrcStatus = HtxLbist_lCheckCrc();
+            HtxLbist_lSetTrapStatus(((uint32)0U));
+
+
+            if (lCrcStatus == 0x01u)
+            {
+                HtxLbist_lInitLbistData();
+                HtxLbist_lSetCrc();
+            }
+
+
+
+            if (HtxLbist_lCheckCrc() == 0x00u)
+            {
+                HtxLbist_lBackupMtuForFwCheck();
+                uint32 LbistTrigReq = (0 != 0);
+
+
+                if ((*(volatile HtxLbist_DataType*)0x90000040U).LbistState == HTXLBIST_START_STATE)
+                {
+
+                    if ((*(volatile Ifx_SCU_LBISTCTRL0*)0xF0036164u).B.LBISTDONE == 1U)
+                    {
+
+                        (*(volatile HtxLbist_DataType*)0x90000040U).LbistRuns = 1U;
+                        (*(volatile HtxLbist_DataType*)0x90000040U).LbistState = HTXLBIST_RUN_STATE;
+
+
+
+                        Result = HtxLbist_lGetLbistStatus(HtxLbist_kConfigSet[ParamSetIndex].HtxLbist_LbistCtrl3RegVal, TstSignature);
+
+
+                        (*(volatile HtxLbist_DataType*)0x90000040U).LbistLastResult = Result;
+
+                        if (Result == (0x000101FFU))
+                        {
+                            (*(volatile HtxLbist_DataType*)0x90000040U).LbistState = HTXLBIST_PASS_STATE;
+                        }
+                        else
+                        {
+                            (*(volatile HtxLbist_DataType*)0x90000040U).LbistState = HTXLBIST_RUN_STATE;
+                            LbistTrigReq = (1 != 0);
+                        }
+                    }
+                    else
+                    {
+
+
+                        Result = (0x00010204U);
+
+                        (*(volatile HtxLbist_DataType*)0x90000040U).LbistState = HTXLBIST_RUN_STATE;
+                        LbistTrigReq = (1 != 0);
+                    }
+                }
+                else if ((*(volatile HtxLbist_DataType*)0x90000040U).LbistState == HTXLBIST_RUN_STATE)
+                {
+                    Result = HtxLbist_lGetLbistStatus(HtxLbist_kConfigSet[ParamSetIndex].HtxLbist_LbistCtrl3RegVal, TstSignature);
+
+
+                    (*(volatile HtxLbist_DataType*)0x90000040U).LbistLastResult = Result;
+
+                    if (Result == (0x000101FFU))
+                    {
+                        (*(volatile HtxLbist_DataType*)0x90000040U).LbistState = HTXLBIST_PASS_STATE;
+                    }
+                    else
+                    {
+                        if ((*(volatile HtxLbist_DataType*)0x90000040U).LbistRuns < ((uint8)3U))
+                        {
+                            LbistTrigReq = (1 != 0);
+                        }
+                        else
+                        {
+                            (*(volatile HtxLbist_DataType*)0x90000040U).LbistRuns = 0U;
+                            (*(volatile HtxLbist_DataType*)0x90000040U).LbistState = HTXLBIST_FAIL_STATE;
+                            HtxLbist_lResetLbistHw();
+                        }
+                    }
+                }
+                else if ((*(volatile HtxLbist_DataType*)0x90000040U).LbistState == HTXLBIST_PASS_STATE)
+                {
+                    Result = (0x000101FFU);
+                    *TstSignature = (__crc32bw((unsigned int)((uint32)(*TstSignature)),(unsigned int)((uint32)(Result))));
+                }
+                else
+                {
+                    Result = (*(volatile HtxLbist_DataType*)0x90000040U).LbistLastResult;
+                }
+
+                if (LbistTrigReq == (1 != 0))
+                {
+                    (*(volatile HtxLbist_DataType*)0x90000040U).LbistRuns++;
+
+                    HtxLbist_lSetDlmuUsage((((uint8)2U)));
+                    HtxLbist_lSetCrc();
+
+
+
+                    Result = HtxLbist_lTriggerLBIST(
+                        (__crc32bw((unsigned int)((uint32)(*TstSignature)),(unsigned int)((uint32)(((uint32)0x00000012U))))), ParamSetIndex, TstSeed);
+                }
+
+                HtxLbist_lSetCrc();
+            }
+            else
+            {
+                Result = (0x00010203U);
+            }
+        }
+        else
+        {
+
+            Result = (0x000101FFU);
+            *TstSignature = (__crc32bw((unsigned int)((uint32)(*TstSignature)),(unsigned int)((uint32)(Result))));
+        }
+    }
+    else
+    {
+        Result = (0x00010205U);
+    }
+
+    *TstSignature = (__crc32bw((unsigned int)((uint32)(*TstSignature)),(unsigned int)((uint32)(Result))));
+
+    return Result;
+}
+# 454 "bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\src\\HtxLbist.c"
+Std_ReturnType HtxLbist_IsTrapExpected(void)
+{
+    Std_ReturnType lRetVal;
+
+    lRetVal = 0x01u;
+
+    if((((uint32)0xA5A5A5A5U) == HtxLbist_TrapExpected) &&
+       (((uint32)0x5A5A5A5AU) == HtxLbist_TrapExpectedRedn))
+    {
+
+
+        _dsync(); do { unsigned __newval = (unsigned) (((0U))); __asm__ volatile ("mtcr LO:" "((0x9024))" ", %0" :: "d" (__newval) : "memory"); } while (0); _isync();
+
+
+
+        _dsync(); do { unsigned __newval = (unsigned) (((0U))); __asm__ volatile ("mtcr LO:" "((0x9010))" ", %0" :: "d" (__newval) : "memory"); } while (0); _isync();
+
+
+        HtxLbist_lInitDlmu();
+
+        lRetVal = 0x00u;
+    }
+
+    return lRetVal;
+}
+# 509 "bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\src\\HtxLbist.c"
+static uint32 HtxLbist_lMtuEnable(void)
+{
+    uint32 WasMtuEnabled;
+
+
+
+
+    Ifx_MTU_CLC MtuClcReg;
+    MtuClcReg.U = (*(volatile Ifx_MTU_CLC*)0xF0060000u).U;
+
+    if(MtuClcReg.B.DISS == 1U)
+    {
+     WasMtuEnabled = (0 != 0);
+
+
+        MtuClcReg.B.DISR = 0U;
+        Mcal_WritePeripEndInitProtReg(&(*(volatile Ifx_MTU_CLC*)0xF0060000u).U,MtuClcReg.U);
+
+
+
+
+        volatile uint32 ldummy = (*(volatile Ifx_MTU_CLC*)0xF0060000u).U;
+        (void)(ldummy);
+    }
+    else
+    {
+     WasMtuEnabled = (1 != 0);
+    }
+
+    return WasMtuEnabled;
+}
+# 572 "bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\src\\HtxLbist.c"
+static void HtxLbist_lMtuDisable(uint32 WasMtuEnabled)
+{
+
+
+
+
+    Ifx_MTU_CLC MtuClcReg;
+
+    if (WasMtuEnabled == (0 != 0))
+    {
+
+        MtuClcReg.U = (*(volatile Ifx_MTU_CLC*)0xF0060000u).U;
+        MtuClcReg.B.DISR = 1U;
+        Mcal_WritePeripEndInitProtReg(&(*(volatile Ifx_MTU_CLC*)0xF0060000u).U,MtuClcReg.U);
+    }
+}
+# 618 "bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\src\\HtxLbist.c"
+static Std_ReturnType HtxLbist_lCheckCrc(void)
+{
+    uint32 temp;
+    uint8 Retval;
+
+
+
+    (void)(*(volatile HtxLbist_DataType*)0x90000040U).LbistLastResult;
+    (void)(*(volatile HtxLbist_DataType*)0x90000040U).LbistState;
+    (void)(*(volatile HtxLbist_DataType*)0x90000040U).LbistCrc;
+    (void)(*(volatile HtxLbist_DataType*)0x90000040U).LbistRuns;
+    (void)(*(volatile HtxLbist_DataType*)0x90000040U).FwDataCrc;
+    (void)(*(volatile HtxLbist_DataType*)0x90000040U).Cpu0DlmuEccd;
+    (void)(*(volatile HtxLbist_DataType*)0x90000040U).Cpu0DlmuFaultsts;
+    (void)(*(volatile HtxLbist_DataType*)0x90000040U).Cpu0DlmuErrinfo;
+    (void)(*(volatile HtxLbist_DataType*)0x90000040U).Cpu1DlmuEccd;
+    (void)(*(volatile HtxLbist_DataType*)0x90000040U).Cpu1DlmuFaultsts;
+    (void)(*(volatile HtxLbist_DataType*)0x90000040U).Cpu1DlmuErrinfo;
+    (void)(*(volatile HtxLbist_DataType*)0x90000040U).Dummy1;
+    (void)(*(volatile HtxLbist_DataType*)0x90000040U).Dummy2;
+    (void)(*(volatile HtxLbist_DataType*)0x90000040U).DlmuUsage;
+    (void)(*(volatile HtxLbist_DataType*)0x90000040U).DlmuUsageRedn;
+
+    temp = (uint32)(__crc32bw((unsigned int)((uint32)((*(volatile HtxLbist_DataType*)0x90000040U).LbistState)),(unsigned int)((uint32)(((uint16)0x0001)))));
+    temp = (uint32)(__crc32bw((unsigned int)((uint32)((*(volatile HtxLbist_DataType*)0x90000040U).LbistRuns)),(unsigned int)((uint32)(temp))));
+    temp = (uint32)(__crc32bw((unsigned int)((uint32)((*(volatile HtxLbist_DataType*)0x90000040U).LbistLastResult)),(unsigned int)((uint32)(temp))));
+
+    if((*(volatile HtxLbist_DataType*)0x90000040U).LbistCrc == temp)
+    {
+        Retval = 0x00u;
+    }
+    else
+    {
+        Retval = 0x01u;
+    }
+
+    return Retval;
+}
+# 685 "bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\src\\HtxLbist.c"
+static uint32 HtxLbist_lIsColdPorstOrStdby(void)
+{
+
+
+
+
+    Ifx_SCU_RSTSTAT lRststatRegVal;
+    lRststatRegVal.U = (*(volatile Ifx_SCU_RSTSTAT*)0xF0036050u).U;
+    uint32 IsColdOrStandbyReset;
+
+
+    if (((lRststatRegVal.U & (uint32)(((0x1u) << (28u)) | ((0x1u) << (25u)) | ((0x1u) << (24u)) | ((0x1u) << (23u)))) != (uint32)0U) &&
+        (lRststatRegVal.B.PORST == (uint8)1U))
+    {
+        IsColdOrStandbyReset = (1 != 0);
+    }
+    else
+    {
+
+
+        const uint32 lWakeupStat = (uint32)(*(volatile Ifx_PMS_PMSWSTAT2*)0xF02480D8u).U;
+        const uint32 lUpper8bitsWakeStat = (lWakeupStat >> ((uint8)24U)) & ((uint32)0x000000FFU);
+        const uint32 lLower8bitsWakeStat = (lWakeupStat & ((uint32)0x000000FFU));
+
+        if ((lLower8bitsWakeStat & lUpper8bitsWakeStat) != 0U)
+        {
+
+
+            HtxLbist_lInitDlmu();
+            IsColdOrStandbyReset = (1 != 0);
+        }
+        else if (lRststatRegVal.B.LBTERM == 1U)
+        {
+
+
+
+            IsColdOrStandbyReset = (1 != 0);
+        }
+        else
+        {
+            IsColdOrStandbyReset = (0 != 0);
+        }
+    }
+
+    return IsColdOrStandbyReset;
+}
+# 759 "bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\src\\HtxLbist.c"
+static void HtxLbist_lSetCrc(void)
+{
+    uint32 temp;
+
+    temp = (uint32)(__crc32bw((unsigned int)((uint32)((*(volatile HtxLbist_DataType*)0x90000040U).LbistState)),(unsigned int)((uint32)(((uint16)0x0001)))));
+    temp = (uint32)(__crc32bw((unsigned int)((uint32)((*(volatile HtxLbist_DataType*)0x90000040U).LbistRuns)),(unsigned int)((uint32)(temp))));
+    temp = (uint32)(__crc32bw((unsigned int)((uint32)((*(volatile HtxLbist_DataType*)0x90000040U).LbistLastResult)),(unsigned int)((uint32)(temp))));
+
+    (*(volatile HtxLbist_DataType*)0x90000040U).LbistCrc = temp;
+}
+# 809 "bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\src\\HtxLbist.c"
+static HtxTestHnd_TstRsltType HtxLbist_lGetLbistStatus
+(
+    const uint32 expSig,
+    uint32 * const TstSignature
+)
+{
+    HtxTestHnd_TstRsltType Result;
+
+
+
+    if(((*(Ifx_SCU*)0xF0036000u)).RSTSTAT.B.LBPORST == 1U)
+    {
+        Result = (0x00010107U);
+    }
+    else
+    {
+
+        if(((*(Ifx_SCU*)0xF0036000u)).RSTSTAT.B.LBTERM == 0U)
+        {
+            Result = (0x0001020DU);
+        }
+        else
+        {
+
+
+
+
+            if(((*(Ifx_SCU*)0xF0036000u)).LBISTCTRL3.B.SIGNATURE != expSig)
+            {
+                Result = (0x0001020EU);
+            }
+            else
+            {
+
+                Result = (0x000101FFU);
+
+                *TstSignature = (uint32)(__crc32bw((unsigned int)((uint32)(*TstSignature)),(unsigned int)((uint32)(Result))));
+
+
+
+
+
+                HtxLbist_lResetLbistHw();
+            }
+        }
+    }
+
+    return(Result);
+
+}
+# 894 "bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\src\\HtxLbist.c"
+static HtxTestHnd_TstRsltType HtxLbist_lTriggerLBIST
+(
+    const uint32 LbistTrigCrc,
+    const uint8 ParamSetIndex,
+    const uint8 TstSeed
+)
+{
+
+
+
+
+    Ifx_SCU_LBISTCTRL0 LbistCtrl0RegVal;
+    uint32 ExptdTrigCrc;
+    HtxTestHnd_TstRsltType Result;
+
+    Result = (0x00010204U);
+
+    HtxLbist_lClearColdResetStatus();
+    HtxLbist_lResetLbistHw();
+
+
+    Mcal_WriteSafetyEndInitProtReg(&((*(Ifx_SCU*)0xF0036000u)).LBISTCTRL0.U,HtxLbist_kConfigSet[ParamSetIndex].HtxLbist_LbistCtrl0RegVal)
+                                                                                                 ;
+
+    Mcal_WriteSafetyEndInitProtReg(&((*(Ifx_SCU*)0xF0036000u)).LBISTCTRL1.U,HtxLbist_kConfigSet[ParamSetIndex].HtxLbist_LbistCtrl1RegVal)
+                                                                                                 ;
+
+    Mcal_WriteSafetyEndInitProtReg(&((*(Ifx_SCU*)0xF0036000u)).LBISTCTRL2.U,HtxLbist_kConfigSet[ParamSetIndex].HtxLbist_LbistCtrl2RegVal)
+                                                                                                 ;
+
+
+
+    ExptdTrigCrc = (uint32)(__crc32bw((unsigned int)((uint32)(((uint16)0x0001))),(unsigned int)((uint32)(TstSeed))));
+    ExptdTrigCrc = (uint32)(__crc32bw((unsigned int)((uint32)(ExptdTrigCrc)),(unsigned int)((uint32)(ParamSetIndex))));
+    ExptdTrigCrc = (uint32)(__crc32bw((unsigned int)((uint32)(ExptdTrigCrc)),(unsigned int)((uint32)(((uint32)0x00000012U)))));
+
+
+    if(ExptdTrigCrc != LbistTrigCrc)
+    {
+
+        Result = (0x00010102U);
+    }
+    else
+    {
+
+
+        LbistCtrl0RegVal.U = ((*(Ifx_SCU*)0xF0036000u)).LBISTCTRL0.U;
+        LbistCtrl0RegVal.B.LBISTREQ = 1U;
+        LbistCtrl0RegVal.B.LBISTREQRED = 1U;
+
+        Mcal_WriteSafetyEndInitProtReg(&((*(Ifx_SCU*)0xF0036000u)).LBISTCTRL0.U,(uint32)LbistCtrl0RegVal.U);
+
+
+
+
+
+
+        while (1U)
+        {
+            (_nop());
+        }
+    }
+
+    return(Result);
+
+}
+# 985 "bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\src\\HtxLbist.c"
+static void HtxLbist_lResetLbistHw(void)
+{
+
+
+
+
+    Ifx_SCU_LBISTCTRL0 LbistCtrl0Reg;
+    uint32 Timeout;
+
+    Timeout = ((uint32)0x000000FFU);
+
+
+    LbistCtrl0Reg.U = ((*(Ifx_SCU*)0xF0036000u)).LBISTCTRL0.U;
+    LbistCtrl0Reg.B.LBISTRES = 1U;
+    Mcal_WriteSafetyEndInitProtReg(&((*(Ifx_SCU*)0xF0036000u)).LBISTCTRL0.U,(uint32)LbistCtrl0Reg.U);
+
+
+    while((((*(Ifx_SCU*)0xF0036000u)).LBISTCTRL0.B.LBISTDONE == 1U) && (Timeout > 0U))
+    {
+        Timeout--;
+    }
+}
+# 1036 "bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\src\\HtxLbist.c"
+static void HtxLbist_lSetFwDataCrc(void)
+{
+    uint32 ltempCrc32;
+
+    ltempCrc32 = 0U;
+
+
+
+
+    ltempCrc32 = (uint32)(__crc32bw((unsigned int)((uint32)(ltempCrc32)),(unsigned int)((uint32)((uint32)(*(volatile HtxLbist_DataType*)0x90000040U).Cpu0DlmuEccd))));
+    ltempCrc32 = (uint32)(__crc32bw((unsigned int)((uint32)(ltempCrc32)),(unsigned int)((uint32)((uint32)(*(volatile HtxLbist_DataType*)0x90000040U).Cpu0DlmuFaultsts))));
+    ltempCrc32 = (uint32)(__crc32bw((unsigned int)((uint32)(ltempCrc32)),(unsigned int)((uint32)((uint32)(*(volatile HtxLbist_DataType*)0x90000040U).Cpu0DlmuErrinfo))));
+
+
+
+    ltempCrc32 = (uint32)(__crc32bw((unsigned int)((uint32)(ltempCrc32)),(unsigned int)((uint32)((uint32)(*(volatile HtxLbist_DataType*)0x90000040U).Cpu1DlmuEccd))));
+    ltempCrc32 = (uint32)(__crc32bw((unsigned int)((uint32)(ltempCrc32)),(unsigned int)((uint32)((uint32)(*(volatile HtxLbist_DataType*)0x90000040U).Cpu1DlmuFaultsts))));
+    ltempCrc32 = (uint32)(__crc32bw((unsigned int)((uint32)(ltempCrc32)),(unsigned int)((uint32)((uint32)(*(volatile HtxLbist_DataType*)0x90000040U).Cpu1DlmuErrinfo))));
+
+
+    (*(volatile HtxLbist_DataType*)0x90000040U).FwDataCrc = ltempCrc32;
+}
+# 1090 "bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\src\\HtxLbist.c"
+static void HtxLbist_lInitDlmu(void)
+{
+    uint32 i = 0U;
+    for (i = 0U; i < sizeof(HtxLbist_DataType) / sizeof(uint64); i++)
+    {
+
+
+
+
+        ((volatile uint64 *)&(*(volatile HtxLbist_DataType*)0x90000040U))[i] = 0U;
+    }
+}
+# 1131 "bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\src\\HtxLbist.c"
+static void HtxLbist_lInitLbistData(void)
+{
+
+    (*(volatile HtxLbist_DataType*)0x90000040U).LbistState = HTXLBIST_START_STATE;
+    (*(volatile HtxLbist_DataType*)0x90000040U).LbistRuns = 0U;
+    (*(volatile HtxLbist_DataType*)0x90000040U).LbistLastResult = (0x00010204U);
+
+    HtxLbist_lSetDlmuUsage(((uint8)1U));
+
+}
+# 1171 "bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\src\\HtxLbist.c"
+static void HtxLbist_lSetDlmuUsage(const uint8 lDlmuUsg)
+{
+    (*(volatile HtxLbist_DataType*)0x90000040U).DlmuUsage = lDlmuUsg;
+    (*(volatile HtxLbist_DataType*)0x90000040U).DlmuUsageRedn = (uint8)(~lDlmuUsg);
+}
+# 1206 "bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\src\\HtxLbist.c"
+static void HtxLbist_lSetTrapStatus(const uint32 value)
+{
+    HtxLbist_TrapExpected = value;
+    HtxLbist_TrapExpectedRedn = (uint32)(~value);
+}
+# 1241 "bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\src\\HtxLbist.c"
+static void HtxLbist_lClearColdResetStatus(void)
+{
+    Ifx_SCU_RSTCON2 ScuRstcon;
+    ScuRstcon.U = (*(volatile Ifx_SCU_RSTCON2*)0xF0036064u).U;
+    ScuRstcon.B.CLRC = 1U;
+    Mcal_WriteCpuEndInitProtReg(&(*(volatile Ifx_SCU_RSTCON2*)0xF0036064u).U,ScuRstcon.U);
+}
+# 1279 "bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\src\\HtxLbist.c"
+static void HtxLbist_lBackupMtuForFwCheck(void)
+{
+
+    uint32 WasMtuEnabled = HtxLbist_lMtuEnable();
+
+
+    (*(volatile HtxLbist_DataType*)0x90000040U).Cpu0DlmuEccd = ((*(Ifx_MTU*)0xF0060000u)).MC[((uint8)4U)].ECCD.U;
+    (*(volatile HtxLbist_DataType*)0x90000040U).Cpu0DlmuFaultsts = ((*(Ifx_MTU*)0xF0060000u)).MC[((uint8)4U)].FAULTSTS.U;
+    (*(volatile HtxLbist_DataType*)0x90000040U).Cpu0DlmuErrinfo = ((*(Ifx_MTU*)0xF0060000u)).MC[((uint8)4U)].ERRINFO[0U].U;
+
+
+
+    (*(volatile HtxLbist_DataType*)0x90000040U).Cpu1DlmuEccd = ((*(Ifx_MTU*)0xF0060000u)).MC[((uint8)9U)].ECCD.U;
+    (*(volatile HtxLbist_DataType*)0x90000040U).Cpu1DlmuFaultsts = ((*(Ifx_MTU*)0xF0060000u)).MC[((uint8)9U)].FAULTSTS.U;
+    (*(volatile HtxLbist_DataType*)0x90000040U).Cpu1DlmuErrinfo = ((*(Ifx_MTU*)0xF0060000u)).MC[((uint8)9U)].ERRINFO[0U].U;
+
+
+    HtxLbist_lMtuDisable(WasMtuEnabled);
+
+
+    HtxLbist_lSetFwDataCrc();
+}
+
+
+
+
+
+
+
+# 1 ".\\output\\inc/HtxTestLib_MemMap.h" 1
+# 1 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\02_StpIntegration\\01_HtxStpIf\\inc\\HtxTestLib_MemMap.h" 1
+# 952 ".\\output\\inc/..\\..\\bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\02_StpIntegration\\01_HtxStpIf\\inc\\HtxTestLib_MemMap.h"
+#pragma section
+# 2 ".\\output\\inc/HtxTestLib_MemMap.h" 2
+# 1309 "bswcdd\\SafeTPack\\Stp_Basic\\HtxStpSrc\\01_StpSource\\01_HtxTestLib\\01_HtxMicroTestLib\\02_HtxLbist\\src\\HtxLbist.c" 2

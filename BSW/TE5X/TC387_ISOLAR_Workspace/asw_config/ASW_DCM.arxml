@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00047.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>ASW_DCM</SHORT-NAME>
+      <ELEMENTS>
+        <APPLICATION-SW-COMPONENT-TYPE>
+          <SHORT-NAME>ASW_DCM</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="Master">
+                <SD>true</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <PORTS>
+            <R-PORT-PROTOTYPE UUID="c8d1f0ce-e337-4223-a015-d7e3563846bd">
+              <SHORT-NAME>RPort_DCMServices</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_Dcm/PortInterfaces/DCMServices</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE>
+              <SHORT-NAME>VIT_04</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_Dcm/PortInterfaces/InfotypeServices_DcmDspVehInfoData_04</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE>
+              <SHORT-NAME>VIT_06</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_Dcm/PortInterfaces/InfotypeServices_VIT_06_0</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE>
+              <SHORT-NAME>VIT_0A</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_Dcm/PortInterfaces/InfotypeServices_DcmDspVehInfoData_0A</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE>
+              <SHORT-NAME>DataServices_DcmDspPidData_04</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_Dcm/PortInterfaces/DataServices_DcmDspPidData_04</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE>
+              <SHORT-NAME>DataServices_DcmDspPidData_05</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_Dcm/PortInterfaces/DataServices_DcmDspPidData_05</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE>
+              <SHORT-NAME>DataServices_DcmDspPidData_0C</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_Dcm/PortInterfaces/DataServices_DcmDspPidData_0C</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE>
+              <SHORT-NAME>DataServices_DcmDspPidData_0D</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_Dcm/PortInterfaces/DataServices_DcmDspPidData_0D</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE>
+              <SHORT-NAME>DataServices_DcmDspPidData_21</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_Dcm/PortInterfaces/DataServices_DcmDspPidData_21</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE>
+              <SHORT-NAME>DataServices_DcmDspPidData_30</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_Dcm/PortInterfaces/DataServices_DcmDspPidData_30</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE>
+              <SHORT-NAME>DataServices_DcmDspPidData_31</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_Dcm/PortInterfaces/DataServices_DcmDspPidData_31</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE>
+              <SHORT-NAME>DataServices_DcmDspPidData_41</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_Dcm/PortInterfaces/DataServices_DcmDspPidData_41</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE>
+              <SHORT-NAME>DataServices_DcmDspPidData_42</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_Dcm/PortInterfaces/DataServices_DcmDspPidData_42</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE>
+              <SHORT-NAME>DataServices_DcmDspPidData_49</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_Dcm/PortInterfaces/DataServices_DcmDspPidData_49</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+          </PORTS>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR UUID="5317a249-bcde-4c34-a11f-cdc093bc0ad9">
+              <SHORT-NAME>IB_Diag_SWC</SHORT-NAME>
+              <DATA-TYPE-MAPPING-REFS>
+                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/AUTOSAR_Dcm/DataTypeMappingSets/DTS_DcmDiagnosticSessionControl</DATA-TYPE-MAPPING-REF>
+                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/AUTOSAR_ComM/DataTypeMappingSets/ComMModeMapping</DATA-TYPE-MAPPING-REF>
+                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/AUTOSAR_Dcm/DataTypeMappingSets/DTS_DcmEcuReset</DATA-TYPE-MAPPING-REF>
+                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/AUTOSAR_Dcm/DataTypeMappingSets/DTS_DcmControlDTCSetting</DATA-TYPE-MAPPING-REF>
+              </DATA-TYPE-MAPPING-REFS>
+              <EVENTS>
+                <TIMING-EVENT UUID="9f580a07-7985-4e98-beed-58a8cf169b30">
+                  <SHORT-NAME>TE_ASW_DCM</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ASW_DCM/ASW_DCM/IB_Diag_SWC/ASW_DCM_PeriodicRunnable_10ms</START-ON-EVENT-REF>
+                  <PERIOD>0.01</PERIOD>
+                </TIMING-EVENT>
+                <OPERATION-INVOKED-EVENT>
+                  <SHORT-NAME>OperationInvokedEvent_VIT04</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ASW_DCM/ASW_DCM/IB_Diag_SWC/RunnableEntity_VIT_04</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ASW_DCM/ASW_DCM/VIT_04</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_Dcm/PortInterfaces/InfotypeServices_DcmDspVehInfoData_04/GetInfotypeValueData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT>
+                  <SHORT-NAME>OperationInvokedEvent_VIT_06</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ASW_DCM/ASW_DCM/IB_Diag_SWC/RunnableEntity_VIT_06</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ASW_DCM/ASW_DCM/VIT_06</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_Dcm/PortInterfaces/InfotypeServices_VIT_06_0/GetInfotypeValueData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT>
+                  <SHORT-NAME>OperationInvokedEvent_VIT_0A</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ASW_DCM/ASW_DCM/IB_Diag_SWC/RunnableEntity_VIT_0A</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ASW_DCM/ASW_DCM/VIT_0A</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_Dcm/PortInterfaces/InfotypeServices_DcmDspVehInfoData_0A/GetInfotypeValueData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="a16eb637-67cd-4f1c-9a22-8f78b584b124">
+                  <SHORT-NAME>OIE_RoutineServices_DataServices_R_PID_04_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ASW_DCM/ASW_DCM/IB_Diag_SWC/DataServices_R_PID_04_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ASW_DCM/ASW_DCM/DataServices_DcmDspPidData_04</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_Dcm/PortInterfaces/DataServices_DcmDspPidData_04/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="3d71a4eb-7391-493b-b288-8e06d0e6392e">
+                  <SHORT-NAME>OIE_RoutineServices_DataServices_R_PID_05_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ASW_DCM/ASW_DCM/IB_Diag_SWC/DataServices_R_PID_05_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ASW_DCM/ASW_DCM/DataServices_DcmDspPidData_05</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_Dcm/PortInterfaces/DataServices_DcmDspPidData_05/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="8122ab94-2139-4bde-a454-3d93e5706105">
+                  <SHORT-NAME>OIE_RoutineServices_DataServices_R_PID_0C_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ASW_DCM/ASW_DCM/IB_Diag_SWC/DataServices_R_PID_0C_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ASW_DCM/ASW_DCM/DataServices_DcmDspPidData_0C</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_Dcm/PortInterfaces/DataServices_DcmDspPidData_0C/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="a982d3c0-3328-48b2-8de1-0409db28af65">
+                  <SHORT-NAME>OIE_RoutineServices_DataServices_R_PID_0D_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ASW_DCM/ASW_DCM/IB_Diag_SWC/DataServices_R_PID_0D_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ASW_DCM/ASW_DCM/DataServices_DcmDspPidData_0D</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_Dcm/PortInterfaces/DataServices_DcmDspPidData_0D/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="3dbe182e-6b8e-4098-8686-d7643c80f2fb">
+                  <SHORT-NAME>OIE_RoutineServices_DataServices_R_PID_21_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ASW_DCM/ASW_DCM/IB_Diag_SWC/DataServices_R_PID_21_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ASW_DCM/ASW_DCM/DataServices_DcmDspPidData_21</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_Dcm/PortInterfaces/DataServices_DcmDspPidData_21/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="99794317-031a-47b2-a972-14474a685cfc">
+                  <SHORT-NAME>OIE_RoutineServices_DataServices_R_PID_30_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ASW_DCM/ASW_DCM/IB_Diag_SWC/DataServices_R_PID_30_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ASW_DCM/ASW_DCM/DataServices_DcmDspPidData_30</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_Dcm/PortInterfaces/DataServices_DcmDspPidData_30/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="d3f8a513-73e8-4b01-a463-aaa46fa9f1ff">
+                  <SHORT-NAME>OIE_RoutineServices_DataServices_R_PID_31_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ASW_DCM/ASW_DCM/IB_Diag_SWC/DataServices_R_PID_31_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ASW_DCM/ASW_DCM/DataServices_DcmDspPidData_31</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_Dcm/PortInterfaces/DataServices_DcmDspPidData_31/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="56c1c8ac-9db7-4658-84c9-92925184a7f3">
+                  <SHORT-NAME>OIE_RoutineServices_DataServices_R_PID_41_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ASW_DCM/ASW_DCM/IB_Diag_SWC/DataServices_R_PID_41_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ASW_DCM/ASW_DCM/DataServices_DcmDspPidData_41</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_Dcm/PortInterfaces/DataServices_DcmDspPidData_41/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="ed23cb40-a346-43a1-93cf-f3911080bc36">
+                  <SHORT-NAME>OIE_RoutineServices_DataServices_R_PID_42_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ASW_DCM/ASW_DCM/IB_Diag_SWC/DataServices_R_PID_42_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ASW_DCM/ASW_DCM/DataServices_DcmDspPidData_42</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_Dcm/PortInterfaces/DataServices_DcmDspPidData_42/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="b8dc81eb-1317-40ed-8c36-f957bc4998a6">
+                  <SHORT-NAME>OIE_RoutineServices_DataServices_R_PID_49_ReadData</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ASW_DCM/ASW_DCM/IB_Diag_SWC/DataServices_R_PID_49_ReadData</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ASW_DCM/ASW_DCM/DataServices_DcmDspPidData_49</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_Dcm/PortInterfaces/DataServices_DcmDspPidData_49/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+              </EVENTS>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="ac5c15ea-1394-480b-8015-68a0141c66c4">
+                  <SHORT-NAME>ASW_DCM_PeriodicRunnable_10ms</SHORT-NAME>
+                  <SYMBOL>ASW_DCM_PeriodicRunnable_10ms_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY>
+                  <SHORT-NAME>RunnableEntity_VIT_04</SHORT-NAME>
+                  <SYMBOL>RunnableEntity_0_VIT_04</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY>
+                  <SHORT-NAME>RunnableEntity_VIT_06</SHORT-NAME>
+                  <SYMBOL>RunnableEntity_0_func_vit_06</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY>
+                  <SHORT-NAME>RunnableEntity_VIT_0A</SHORT-NAME>
+                  <SYMBOL>RunnableEntity_0_func_VIT_0A</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="1abe1629-4cb2-43ba-8f37-5f2a4efe25a0">
+                  <SHORT-NAME>DataServices_R_PID_04_ReadData</SHORT-NAME>
+                  <SYMBOL>DataServices_R_PID_04_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="4a244553-0915-4548-a9ac-710832c96b8c">
+                  <SHORT-NAME>DataServices_R_PID_05_ReadData</SHORT-NAME>
+                  <SYMBOL>DataServices_R_PID_05_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="d43a36ff-fdd8-4900-8820-5dbc1eca6796">
+                  <SHORT-NAME>DataServices_R_PID_0C_ReadData</SHORT-NAME>
+                  <SYMBOL>DataServices_R_PID_0C_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="a3470474-941f-4411-89ac-096c71d5415f">
+                  <SHORT-NAME>DataServices_R_PID_0D_ReadData</SHORT-NAME>
+                  <SYMBOL>DataServices_R_PID_0D_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="6a7f8677-c117-446b-9afc-52ab354046b2">
+                  <SHORT-NAME>DataServices_R_PID_21_ReadData</SHORT-NAME>
+                  <SYMBOL>DataServices_R_PID_21_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="40299794-9e27-4826-864c-b28444f04288">
+                  <SHORT-NAME>DataServices_R_PID_30_ReadData</SHORT-NAME>
+                  <SYMBOL>DataServices_R_PID_30_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="d5727c17-5c3b-45af-8cd7-15c78ad4b782">
+                  <SHORT-NAME>DataServices_R_PID_31_ReadData</SHORT-NAME>
+                  <SYMBOL>DataServices_R_PID_31_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="598e6494-dadf-4282-ad8d-50db9af828d8">
+                  <SHORT-NAME>DataServices_R_PID_41_ReadData</SHORT-NAME>
+                  <SYMBOL>DataServices_R_PID_41_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="52cf217a-a43a-4b30-804f-dd00c2ee910e">
+                  <SHORT-NAME>DataServices_R_PID_42_ReadData</SHORT-NAME>
+                  <SYMBOL>DataServices_R_PID_42_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="407101da-be21-45eb-9e95-d0863a6f0f94">
+                  <SHORT-NAME>DataServices_R_PID_49_ReadData</SHORT-NAME>
+                  <SYMBOL>DataServices_R_PID_49_ReadData</SYMBOL>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </APPLICATION-SW-COMPONENT-TYPE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

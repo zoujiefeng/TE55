@@ -1,0 +1,27 @@
+Nom_donnée|Type|Nom_module|Public|Nb_lignes|Nb_colonnes|Label_père|Offset|Masque_accès|Affichage|Unité|Fonction_transfert_ades|Coefficient_a|Coefficient_b|Groupe|Groupe_1|Groupe_2|Alias_1|Alias_2|Genre|Variable_indice_ligne|Variable_indice_colonne|Fonction_transfert_ligne|Fonction_transfert_colonne|Table_breakpoint_ligne|Table_breakpoint_colonne|Référence_spécification|Recuperable|Modifiable|Fournisseur|Responsable|Valeurs|Visualisable_ADES|Donnée_a_supprimer|Validation|Commentaires|Volatile|MinDecValue|MaxDecValue|MinPhysValue|MaxPhysValue|Def_Eval|MemSec
+EAS_bAesVerifyRes|boolean|EAS|1|0|0|EAS_bAesVerifyRes|0|0|Phys|bool|2|0||EAS|EAS||EAS_bAesVerifyRes||1|||||||NONE|0|1||||1|0|0|...|0||||||
+EAS_bImmoCodRcvFlg|boolean|EAS|1|0|0|EAS_bImmoCodRcvFlg|0|0|Phys|bool|2|0||EAS|EAS||EAS_bImmoCodRcvFlg||1|||||||NONE|0|1||||1|0|0|...|0||||||
+EAS_bSendNewChalgFlg|boolean|EAS|1|0|0|EAS_bSendNewChalgFlg|0|0|Phys|bool|2|0||EAS|EAS||EAS_bSendNewChalgFlg||1|||||||NONE|0|1||||1|0|0|...|0||||||
+EAS_u8AuthState|uint8|EAS|1|0|0|EAS_u8AuthState|0|0|Hexa|-||||EAS|EAS|Raw|EAS_u8AuthState||1|||||||NONE|0|1||||1|0|0|.|0||||||
+EAS_u8AuthFailedCnt|uint8|EAS|1|0|0|EAS_u8AuthFailedCnt|0|0|Hexa|-||||EAS|EAS|Raw|EAS_u8AuthFailedCnt||1|||||||NONE|0|1||||1|0|0|.|0||||||
+EAS_u8AuthVerifyCnt|uint8|EAS|1|0|0|EAS_u8AuthVerifyCnt|0|0|Hexa|-||||EAS|EAS|Raw|EAS_u8AuthVerifyCnt||1|||||||NONE|0|1||||1|0|0|.|0||||||
+EAS_au8ParmSK128Nvm|uint8|EAS|1|1|16|EAS_au8ParmSK128Nvm|0|0|Hexa|-||||EAS|EAS||EAS_au8ParmSK128Nvm||1||||||||0|1||||1|0|0||0||||||
+EAS_au8ParmCC64Nvm|uint8|EAS|1|1|8|EAS_au8ParmCC64Nvm|0|0|Hexa|-||||EAS|EAS||EAS_au8ParmCC64Nvm||1||||||||0|1||||1|0|0||0||||||
+EAS_au8ParmSC32Nvm|uint8|EAS|1|1|4|EAS_au8ParmSC32Nvm|0|0|Hexa|-||||EAS|EAS||EAS_au8ParmSC32Nvm||1||||||||0|1||||1|0|0||0||||||
+EAS_au8ParmRN32|uint8|EAS|1|1|4|EAS_au8ParmRN32|0|0|Hexa|-||||EAS|EAS||EAS_au8ParmRN32||1||||||||0|1||||1|0|0||0||||||
+EAS_au8ParmEacSeed|uint8|EAS|1|1|16|EAS_au8ParmEacSeed|0|0|Hexa|-||||EAS|EAS||EAS_au8ParmEacSeed||1||||||||0|1||||1|0|0||0||||||
+EAS_au8ParmEacEncr|uint8|EAS|1|1|16|EAS_au8ParmEacEncr|0|0|Hexa|-||||EAS|EAS||EAS_au8ParmEacEncr||1||||||||0|1||||1|0|0||0||||||
+EAS_au8ParmEarEncr1|uint8|EAS|1|1|16|EAS_au8ParmEarEncr1|0|0|Hexa|-||||EAS|EAS||EAS_au8ParmEarEncr1||1||||||||0|1||||1|0|0||0||||||
+EAS_au8ParmEarEncr2|uint8|EAS|1|1|16|EAS_au8ParmEarEncr2|0|0|Hexa|-||||EAS|EAS||EAS_au8ParmEarEncr2||1||||||||0|1||||1|0|0||0||||||
+EAS_au8ComChallengeVal|uint8|EAS|1|1|8|EAS_au8ComChallengeVal|0|0|Hexa|-||||EAS|EAS||EAS_au8ComChallengeVal||1||||||||0|1||||1|0|0||0||||||
+EAS_au8ComImmoCode|uint8|EAS|1|1|8|EAS_au8ComImmoCode|0|0|Hexa|-||||EAS|EAS||EAS_au8ComImmoCode||1||||||||0|1||||1|0|0||0||||||
+EAS_u8TMReleaseSig|uint8|EAS|1|0|0|EAS_u8TMReleaseSig|0|0|Hexa|-||||EAS|EAS|Raw|EAS_u8TMReleaseSig||1|||||||NONE|0|1||||1|0|0|...|0||||||
+EAS_bRN32EnaOnC|boolean|EAS|1|0|0|EAS_bRN32EnaOnC|0|0|Phys|bool|2|0||EAS|EAS||EAS_bRN32EnaOnC||2|||||||NONE|1|1|||1|1|0|0|Enable random number flag|0||||||
+EAS_u8Chg1DelayTimoutC|uint8|EAS|1|0|0|EAS_u8Chg1DelayTimoutC|0|0|Déci|-||||EAS|EAS||EAS_u8Chg1DelayTimoutC||2|||||||NONE|1|1|||0x01|1|0|0|...|0||||||
+EAS_u8SttTimerCnt|uint8|EAS|1|0|0|EAS_u8SttTimerCnt|0|0|Hexa|-||||EAS|EAS|Raw|EAS_u8SttTimerCnt||1|||||||NONE|0|1||||1|0|0|.|0||||||
+EAS_u8Chg1DelayCnt|uint8|EAS|1|0|0|EAS_u8Chg1DelayCnt|0|0|Hexa|-||||EAS|EAS|Raw|EAS_u8Chg1DelayCnt||1|||||||NONE|0|1||||1|0|0|.|0||||||
+EAS_u8ImmFailReason|uint8|EAS|1|0|0|EAS_u8ImmFailReason|0|0|Hexa|-||||EAS|EAS|Raw|EAS_u8ImmFailReason||1|||||||NONE|0|1||||1|0|0|.|0||||||
+EAS_bDefaultEskFlg|boolean|EAS|0|0|0|EAS_bDefaultEskFlg|0|0|Phys|bool|2|0||EAS|EAS||EAS_bDefaultEskFlg||1|||||||NONE|0|1||||1|0|0|...|0||||||
+EAS_bDefaultEskPassC|boolean|EAS|1|0|0|EAS_bDefaultEskPassC|0|0|Phys|bool|2|0||EAS|EAS||EAS_bDefaultEskPassC||2|||||||NONE|1|1|||0|1|0|0|...|0||||||
+EAS_au32PinESK32|uint32|EAS|1|1|4|EAS_au32PinESK32|0|0|Hexa|-||||EAS|EAS||EAS_au32PinESK32||1||||||||0|1||||1|0|0||0||||||
+

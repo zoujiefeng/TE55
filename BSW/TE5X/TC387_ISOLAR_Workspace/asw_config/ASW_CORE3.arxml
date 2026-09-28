@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00047.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>ASW_CORE3</SHORT-NAME>
+      <ELEMENTS>
+        <APPLICATION-SW-COMPONENT-TYPE>
+          <SHORT-NAME>ASW_CORE3</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="Master">
+                <SD>true</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <PORTS>
+            <R-PORT-PROTOTYPE UUID="7425bf49-ffdb-439f-9d2b-edfc523790f7">
+              <SHORT-NAME>RPort_CPUUtilizationCore3</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/ServiceSwComponentInterface/CPU_Utilization</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="441f1c6f-58fc-42db-805b-ea421a4cff90">
+              <SHORT-NAME>RPort_GetMaxUserStackUtilization</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/ServiceSwComponentInterface/GetMaxUserStackUtilization</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+          </PORTS>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR UUID="f2579a0b-170f-49af-a68a-55074686975c">
+              <SHORT-NAME>SwcInternalBehavior</SHORT-NAME>
+              <EVENTS>
+                <TIMING-EVENT>
+                  <SHORT-NAME>TimingEvent_0</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ASW_CORE3/ASW_CORE3/SwcInternalBehavior/RE_CORE3_SWC</START-ON-EVENT-REF>
+                  <PERIOD>0.005</PERIOD>
+                </TIMING-EVENT>
+                <TIMING-EVENT>
+                  <SHORT-NAME>TimingEvent_1</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ASW_CORE3/ASW_CORE3/SwcInternalBehavior/RE_CORE3_SWC_1ms</START-ON-EVENT-REF>
+                  <PERIOD>0.001</PERIOD>
+                </TIMING-EVENT>
+              </EVENTS>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="6ad21cae-47ec-4ef9-98d2-781b94ac78c6">
+                  <SHORT-NAME>RE_CORE3_SWC</SHORT-NAME>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SERVER-CALL-POINTS>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="2723e80f-2e05-4d0e-80a2-abfe6180d40c">
+                      <SHORT-NAME>SynchronousServerCallPoint_0</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ASW_CORE3/ASW_CORE3/RPort_CPUUtilizationCore3</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ServiceSwComponentInterface/CPU_Utilization/CPU_Utilization</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="713a5401-0d26-4e9f-9947-9fb78fbab136">
+                      <SHORT-NAME>SynchronousServerCallPoint_1</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ASW_CORE3/ASW_CORE3/RPort_GetMaxUserStackUtilization</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ServiceSwComponentInterface/GetMaxUserStackUtilization/GetMaxUserStackUtilization</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                  </SERVER-CALL-POINTS>
+                  <SYMBOL>RE_CORE3_SWC_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="b83713b7-3d46-44a1-bc7c-6534b0b0011f">
+                  <SHORT-NAME>RE_CORE3_SWC_1ms</SHORT-NAME>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>RE_CORE3_SWC_1ms_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </APPLICATION-SW-COMPONENT-TYPE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

@@ -1,0 +1,393 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+        CM_
+        BA_DEF_
+        BA_
+        VAL_
+        CAT_DEF_
+        CAT_
+        FILTER
+        BA_DEF_DEF_
+        EV_DATA_
+        ENVVAR_DATA_
+        SGTYPE_
+        SGTYPE_VAL_
+        BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: Buf1 Buf2 Buf3
+
+
+BO_ 257 Buf1_1: 8 Buf1
+ SG_ FTMTLCS_Iu : 0|12@1+ (1,-2000) [-2000|2095] "" Vector__XXX
+ SG_ FTMTLCS_Iv : 12|12@1+ (1,-2000) [-2000|2095] "" Vector__XXX
+ SG_ FTMTLCS_Iw : 24|12@1+ (1,-2000) [-2000|2095] "" Vector__XXX
+ SG_ SDMTMEP_SinScaled : 36|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ SDMTMEP_CosScaled : 48|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ VSI_AscStep : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 258 Buf1_2: 8 Buf1
+ SG_ GFTMTLCS_Iu : 0|12@1+ (1,-2000) [-2000|2095] "" Vector__XXX
+ SG_ GFTMTLCS_Iv : 12|12@1+ (1,-2000) [-2000|2095] "" Vector__XXX
+ SG_ GFTMTLCS_Iw : 24|12@1+ (1,-2000) [-2000|2095] "" Vector__XXX
+ SG_ GSD_ResolverSinCos2_U16_1 : 36|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ GSD_ResolverSinCos2_U16_2 : 48|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ GVSI_AscStep : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 259 Buf1_3: 8 Buf1
+ SG_ GFT_Iuvw3_U : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ GFT_Iuvw3_V : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ GFT_Iuvw3_W : 32|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ FTCIVDC_DutyCycle_U : 48|8@1+ (0.01,-1) [-1|1.55] "" Vector__XXX
+ SG_ FTCIVDC_DutyCycle_V : 56|8@1+ (0.01,-1) [-1|1.55] "" Vector__XXX
+
+BO_ 260 Buf1_4: 8 Buf1
+ SG_ FTCIVDC_DutyCycle_W : 0|8@1+ (0.01,-1) [-1|1.55] "" Vector__XXX
+ SG_ GFTCIVDC_DutyCycle_U : 8|8@1+ (0.01,-1) [-1|1.55] "" Vector__XXX
+ SG_ GFTCIVDC_DutyCycle_V : 16|8@1+ (0.01,-1) [-1|1.55] "" Vector__XXX
+ SG_ GFTCIVDC_DutyCycle_W : 24|8@1+ (0.01,-1) [-1|1.55] "" Vector__XXX
+ SG_ GCCU6_bHwFaultIgbtH : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ GCCU6_bHwFaultIgbtL : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ GCCU6_bHwFaultDcOvVolt : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ GCCU6_bHwFaultOvcU : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ GCCU6_bHwFaultOvcV : 36|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ GCCU6_bHwFaultOvcW : 37|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ GMAIN_bSoftOvCurrPhsUFlg : 38|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ GMAIN_bSoftOvCurrPhsVFlg : 39|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ GMAIN_bSoftOvCurrPhsWFlg : 40|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 513 Buf2_1: 8 Buf2
+ SG_ FT_ResloverThetaRdSuiPi_F32 : 0|16@1+ (0.001,-4) [-4|61.535] "" Vector__XXX
+ SG_ FTCMTCS_i0dqTgt3_1 : 16|16@1+ (1,-5000) [-5000|60535] "" Vector__XXX
+ SG_ FTCMTCS_i0dqTgt3_2 : 32|16@1+ (1,-5000) [-5000|60535] "" Vector__XXX
+ SG_ FTCMRPC_I0dq3_1 : 48|16@1+ (1,-5000) [-5000|60535] "" Vector__XXX
+
+BO_ 514 Buf2_2: 8 Buf2
+ SG_ FTCMRPC_I0dq3_2 : 0|16@1+ (1,-5000) [-5000|60535] "" Vector__XXX
+ SG_ FTCMTCS_UdqNorm : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ FTCMTCS_idCorTgt : 32|16@1+ (1,-5000) [-5000|60535] "" Vector__XXX
+ SG_ FSEVBHV_Voltage : 48|16@1+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 515 Buf2_3: 8 Buf2
+ SG_ FTCMTCS_ParkVoltageTgt : 0|16@1+ (0.1,0) [0|6553.5] "" Vector__XXX
+ SG_ FSTCGTC_TorqueTgt : 16|16@1+ (0.1,-1500) [-1500|5053.5] "" Vector__XXX
+ SG_ FTCMTCS_ElecTorqueTgt : 32|16@1+ (0.1,-1500) [-1500|5053.5] "" Vector__XXX
+ SG_ FTCMTCS_ElecTorqueMaxMin_1 : 48|16@1+ (0.1,0) [0|65535] "" Vector__XXX
+
+BO_ 516 Buf2_4: 8 Buf2
+ SG_ FTCMTCS_ElecTorqueMaxMin_2 : 0|16@1+ (0.1,-5000) [-1500|5053.5] "" Vector__XXX
+ SG_ GFT_ResloverThetaRdSuiPi_F32 : 16|16@1+ (0.001,-4) [-4|61.535] "" Vector__XXX
+ SG_ GFTCMTCS_i0dqTgt3_1 : 32|16@1+ (1,-5000) [-5000|60535] "" Vector__XXX
+ SG_ GFTCMTCS_i0dqTgt3_2 : 48|16@1+ (1,-5000) [-5000|60535] "" Vector__XXX
+
+BO_ 517 Buf2_5: 8 Buf2
+ SG_ GFTCMRPC_I0dq3_1 : 0|16@1+ (1,-5000) [-5000|60535] "" Vector__XXX
+ SG_ GFTCMRPC_I0dq3_2 : 16|16@1+ (1,-5000) [-5000|60535] "" Vector__XXX
+ SG_ GFTCMCCS_UdqNorm : 32|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ GFTCMTCS_idCorTgt : 48|16@1+ (1,-5000) [-50000|60535] "" Vector__XXX
+
+BO_ 518 Buf2_6: 8 Buf2
+ SG_ GFSEVBHV_Voltage : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ GFTCMTCS_ParkVoltageTgt : 16|16@1+ (0.1,0) [0|6553.5] "" Vector__XXX
+ SG_ GFSTCGTC_TorqueTgt : 32|16@1+ (0.1,-1500) [-1500|5053.5] "" Vector__XXX
+ SG_ GFTCMTCS_ElecTorqueTgt : 48|16@1+ (0.1,-1500) [-1500|5053.5] "" Vector__XXX
+
+BO_ 519 Buf2_7: 8 Buf2
+ SG_ GFTCMTCS_ElecTorqueMaxMin1 : 0|16@1+ (0.1,0) [0|6553.5] "" Vector__XXX
+ SG_ GFTCMTCS_ElecTorqueMaxMin2 : 16|16@1+ (0.1,-1500) [-1500|5053.5] "" Vector__XXX
+ SG_ GFSSMACS_AclState : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ GFTSMACS_AclState : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ FSSMACS_AclState : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ FTSMACS_AclState : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 520 Buf2_8: 8 Buf2
+ SG_ SDMTMEP_SinScaled : 0|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ SDMTMEP_CosScaled : 12|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ GSDMTMEP_SinScaled : 24|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ GSDMTMEP_CosScaled : 36|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ GFS_UbatHV_U16 : 48|12@1+ (1,0) [0|4095] "" Vector__XXX
+
+BO_ 769 Buf3_1: 8 Buf3
+ SG_ BSW_u16RawVolt15VRdc : 0|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ BSW_u16RawVoltDclinkFIL : 12|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ BSW_u16RawVoltP5VHS : 24|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ BSW_u16RawVoltP5VLS : 36|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ BSW_u16RawVoltP16VMulti : 48|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ MAIN_IgbtLowFltCnt : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 770 Buf3_2: 8 Buf3
+ SG_ BSW_u16RawVoltP5VREF : 0|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ BSW_u16RawVoltSnsSup1 : 12|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ BSW_u16RawVoltSnsSup2 : 24|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ BSW_u16RawVolP5VBT : 36|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ BSW_u16RawVoltP5VRefPort : 48|12@1+ (1,0) [0|4095] "" Vector__XXX
+ SG_ MAIN_u8IgbtHighFltCnt : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 771 Buf3_3: 8 Buf3
+ SG_ FaultFailerLevel : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ FSEVBLV_Voltage : 8|8@1+ (0.2,0) [0|51] "" Vector__XXX
+ SG_ FASMTMTA_TempWindingMAX : 16|8@1+ (1,-50) [-50|205] "" Vector__XXX
+ SG_ FSEVETA_TempIgbt : 32|8@1+ (1,-50) [-50|205] "" Vector__XXX
+ SG_ FTEVEIT_EstimTempSecFild : 40|8@1+ (1,-50) [-50|205] "" Vector__XXX
+ SG_ MAIN_u16PWMPeriodVal : 48|16@1+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 772 Buf3_4: 8 Buf3
+ SG_ SDMTMEP_MecaspeedRpm : 0|16@1+ (1,-20000) [-20000|45535] "" Vector__XXX
+ SG_ FTCMTTC_RealMecaTorqueTgt : 16|16@1+ (0.1,-3000) [-3000|3553.5] "" Vector__XXX
+ SG_ SD_AutoPhasingAngle_F32 : 32|16@1+ (0.0001,-3) [-3|3.5535] "" Vector__XXX
+ SG_ MAIN_MSGf32HCU03_TrqSetP : 48|16@1+ (1,-1024) [-1024|64511] "" Vector__XXX
+
+BO_ 773 Buf3_5: 8 Buf3
+ SG_ MAIN_MSGf32VCU_ReqMCUTrq : 0|16@1+ (1,-1024) [-1024|64511] "" Vector__XXX
+ SG_ GFSEVBLV_Voltage : 16|8@1+ (0.2,0) [0|51] "" Vector__XXX
+ SG_ GMAIN_u8IgbtLowFltCnt : 24|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ GMAIN_u8IgbtHighFltCnt : 28|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ GFaultFailerLevel : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ GFSMTMTA_TempWindingMax : 40|8@1+ (1,-50) [-50|205] "" Vector__XXX
+ SG_ GFSEVETA_TempIgbt : 48|8@1+ (1,-50) [-50|205] "" Vector__XXX
+ SG_ GFTEVEIT_EstimTempSecFild : 56|8@1+ (1,-50) [-50|205] "" Vector__XXX
+
+BO_ 774 Buf3_6: 8 Buf3
+ SG_ GMAIN_u16PWMPeriodVal : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ GSDMTMEP_MecaspeedRpm : 16|16@1+ (1,-20000) [-20000|45535] "" Vector__XXX
+ SG_ GFTCMTTC_RealMecaTorqueTgt : 32|16@1+ (0.1,-3000) [-3000|3553.5] "" Vector__XXX
+ SG_ GSD_AutoPhasingAngle_F32 : 48|16@1+ (0.0001,-3) [-3|3.5535] "" Vector__XXX
+
+BO_ 775 Buf3_7: 8 Buf3
+ SG_ MAIN_f32CpuLoadCore2 : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ MAIN_f32CpuLoadCore1 : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ MAIN_f32CpuLoadCore0 : 32|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ MAIN_MSGu8DEV_Fault0 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MAIN_MSGu8DEV_Fault1 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 776 Buf3_8: 8 Buf3
+ SG_ MAIN_MSGu8DEV_Fault2 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MAIN_MSGu8DEV_Fault3 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MAIN_MSGu8DEV_Fault4 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MAIN_MSGu8DEV_Fault5 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MAIN_MSGu8DEV_Fault6 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MAIN_MSGu8DEV_Fault7 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MAIN_MSGu8DEV_Fault8 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MAIN_MSGu8DEV_Fault9 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 777 Buf3_9: 8 Buf3
+ SG_ MAIN_MSGu8DEV_Fault10 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MAIN_MSGu8DEV_Fault11 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MAIN_MSGu8DEV_Fault12 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MAIN_MSGu8DEV_Fault13 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MAIN_MSGu8DEV_Fault14 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ MAIN_MSGu8DEV_Fault15 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ GMAIN_MSGu8DEV_Fault0 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ GMAIN_MSGu8DEV_Fault1 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 784 Buf3_10: 8 Buf3
+ SG_ GMAIN_MSGu8DEV_Fault2 : 0|8@1+ (1,0) [0|255] "W" Vector__XXX
+ SG_ GMAIN_MSGu8DEV_Fault3 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ GMAIN_MSGu8DEV_Fault4 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ GMAIN_MSGu8DEV_Fault5 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ GMAIN_MSGu8DEV_Fault6 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ GMAIN_MSGu8DEV_Fault7 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ GMAIN_MSGu8DEV_Fault8 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ GMAIN_MSGu8DEV_Fault9 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 785 Buf3_11: 8 Buf3
+ SG_ GMAIN_MSGu8DEV_Fault10 : 0|8@1+ (1,0) [0|255] "W" Vector__XXX
+ SG_ GMAIN_MSGu8DEV_Fault11 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ GMAIN_MSGu8DEV_Fault12 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ GMAIN_MSGu8DEV_Fault13 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ GMAIN_MSGu8DEV_Fault14 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ GMAIN_MSGu8DEV_Fault15 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+
+
+
+CM_ SG_ 257 FTMTLCS_Iu "";
+CM_ SG_ 257 FTMTLCS_Iv "";
+CM_ SG_ 257 FTMTLCS_Iw "";
+CM_ SG_ 257 SDMTMEP_SinScaled "";
+CM_ SG_ 257 SDMTMEP_CosScaled "";
+CM_ SG_ 257 VSI_AscStep "";
+CM_ SG_ 258 GFTMTLCS_Iu "";
+CM_ SG_ 258 GFTMTLCS_Iv "";
+CM_ SG_ 258 GFTMTLCS_Iw "";
+CM_ SG_ 258 GSD_ResolverSinCos2_U16_1 "";
+CM_ SG_ 258 GSD_ResolverSinCos2_U16_2 "";
+CM_ SG_ 258 GVSI_AscStep "";
+CM_ SG_ 259 GFT_Iuvw3_U "";
+CM_ SG_ 259 GFT_Iuvw3_V "";
+CM_ SG_ 259 GFT_Iuvw3_W "";
+CM_ SG_ 259 FTCIVDC_DutyCycle_U "";
+CM_ SG_ 259 FTCIVDC_DutyCycle_V "";
+CM_ SG_ 260 FTCIVDC_DutyCycle_W "";
+CM_ SG_ 260 GFTCIVDC_DutyCycle_U "";
+CM_ SG_ 260 GFTCIVDC_DutyCycle_V "";
+CM_ SG_ 260 GFTCIVDC_DutyCycle_W "";
+CM_ SG_ 260 GCCU6_bHwFaultIgbtH "";
+CM_ SG_ 260 GCCU6_bHwFaultIgbtL "";
+CM_ SG_ 260 GCCU6_bHwFaultDcOvVolt "";
+CM_ SG_ 260 GCCU6_bHwFaultOvcU "";
+CM_ SG_ 260 GCCU6_bHwFaultOvcV "";
+CM_ SG_ 260 GCCU6_bHwFaultOvcW "";
+CM_ SG_ 260 GMAIN_bSoftOvCurrPhsUFlg "";
+CM_ SG_ 260 GMAIN_bSoftOvCurrPhsVFlg "";
+CM_ SG_ 260 GMAIN_bSoftOvCurrPhsWFlg "";
+CM_ SG_ 513 FT_ResloverThetaRdSuiPi_F32 "";
+CM_ SG_ 513 FTCMTCS_i0dqTgt3_1 "";
+CM_ SG_ 513 FTCMTCS_i0dqTgt3_2 "";
+CM_ SG_ 513 FTCMRPC_I0dq3_1 "";
+CM_ SG_ 514 FTCMRPC_I0dq3_2 "";
+CM_ SG_ 514 FTCMTCS_UdqNorm "";
+CM_ SG_ 514 FTCMTCS_idCorTgt "";
+CM_ SG_ 514 FSEVBHV_Voltage "";
+CM_ SG_ 515 FTCMTCS_ParkVoltageTgt "";
+CM_ SG_ 515 FSTCGTC_TorqueTgt "";
+CM_ SG_ 515 FTCMTCS_ElecTorqueTgt "";
+CM_ SG_ 515 FTCMTCS_ElecTorqueMaxMin_1 "";
+CM_ SG_ 516 FTCMTCS_ElecTorqueMaxMin_2 "";
+CM_ SG_ 516 GFT_ResloverThetaRdSuiPi_F32 "";
+CM_ SG_ 516 GFTCMTCS_i0dqTgt3_1 "";
+CM_ SG_ 516 GFTCMTCS_i0dqTgt3_2 "";
+CM_ SG_ 517 GFTCMRPC_I0dq3_1 "";
+CM_ SG_ 517 GFTCMRPC_I0dq3_2 "";
+CM_ SG_ 517 GFTCMCCS_UdqNorm "";
+CM_ SG_ 517 GFTCMTCS_idCorTgt "";
+CM_ SG_ 518 GFSEVBHV_Voltage "";
+CM_ SG_ 518 GFTCMTCS_ParkVoltageTgt "";
+CM_ SG_ 518 GFSTCGTC_TorqueTgt "";
+CM_ SG_ 518 GFTCMTCS_ElecTorqueTgt "";
+CM_ SG_ 519 GFTCMTCS_ElecTorqueMaxMin1 "";
+CM_ SG_ 519 GFTCMTCS_ElecTorqueMaxMin2 "";
+CM_ SG_ 519 GFSSMACS_AclState "";
+CM_ SG_ 519 GFTSMACS_AclState "";
+CM_ SG_ 519 FSSMACS_AclState "";
+CM_ SG_ 519 FTSMACS_AclState "";
+CM_ SG_ 520 SDMTMEP_SinScaled "";
+CM_ SG_ 520 SDMTMEP_CosScaled "";
+CM_ SG_ 520 GSDMTMEP_SinScaled "";
+CM_ SG_ 520 GSDMTMEP_CosScaled "";
+CM_ SG_ 520 GFS_UbatHV_U16 "";
+CM_ SG_ 769 BSW_u16RawVolt15VRdc "";
+CM_ SG_ 769 BSW_u16RawVoltDclinkFIL "";
+CM_ SG_ 769 BSW_u16RawVoltP5VHS "";
+CM_ SG_ 769 BSW_u16RawVoltP5VLS "";
+CM_ SG_ 769 BSW_u16RawVoltP16VMulti "";
+CM_ SG_ 769 MAIN_IgbtLowFltCnt "";
+CM_ SG_ 770 BSW_u16RawVoltP5VREF "";
+CM_ SG_ 770 BSW_u16RawVoltSnsSup1 "";
+CM_ SG_ 770 BSW_u16RawVoltSnsSup2 "";
+CM_ SG_ 770 BSW_u16RawVolP5VBT "";
+CM_ SG_ 770 BSW_u16RawVoltP5VRefPort "";
+CM_ SG_ 770 MAIN_u8IgbtHighFltCnt "";
+CM_ SG_ 771 FaultFailerLevel "";
+CM_ SG_ 771 FSEVBLV_Voltage "";
+CM_ SG_ 771 FASMTMTA_TempWindingMAX "";
+CM_ SG_ 771 FSEVETA_TempIgbt "";
+CM_ SG_ 771 FTEVEIT_EstimTempSecFild "";
+CM_ SG_ 771 MAIN_u16PWMPeriodVal "";
+CM_ SG_ 772 SDMTMEP_MecaspeedRpm "";
+CM_ SG_ 772 FTCMTTC_RealMecaTorqueTgt "";
+CM_ SG_ 772 SD_AutoPhasingAngle_F32 "";
+CM_ SG_ 772 MAIN_MSGf32HCU03_TrqSetP "";
+CM_ SG_ 773 MAIN_MSGf32VCU_ReqMCUTrq "";
+CM_ SG_ 773 GFSEVBLV_Voltage "";
+CM_ SG_ 773 GMAIN_u8IgbtLowFltCnt "";
+CM_ SG_ 773 GMAIN_u8IgbtHighFltCnt "";
+CM_ SG_ 773 GFaultFailerLevel "";
+CM_ SG_ 773 GFSMTMTA_TempWindingMax "";
+CM_ SG_ 773 GFSEVETA_TempIgbt "";
+CM_ SG_ 773 GFTEVEIT_EstimTempSecFild "";
+CM_ SG_ 774 GMAIN_u16PWMPeriodVal "";
+CM_ SG_ 774 GSDMTMEP_MecaspeedRpm "";
+CM_ SG_ 774 GFTCMTTC_RealMecaTorqueTgt "";
+CM_ SG_ 774 GSD_AutoPhasingAngle_F32 "";
+CM_ SG_ 775 MAIN_f32CpuLoadCore2 "";
+CM_ SG_ 775 MAIN_f32CpuLoadCore1 "";
+CM_ SG_ 775 MAIN_f32CpuLoadCore0 "";
+CM_ SG_ 775 MAIN_MSGu8DEV_Fault0 "";
+CM_ SG_ 775 MAIN_MSGu8DEV_Fault1 "";
+CM_ SG_ 776 MAIN_MSGu8DEV_Fault2 "";
+CM_ SG_ 776 MAIN_MSGu8DEV_Fault3 "";
+CM_ SG_ 776 MAIN_MSGu8DEV_Fault4 "";
+CM_ SG_ 776 MAIN_MSGu8DEV_Fault5 "";
+CM_ SG_ 776 MAIN_MSGu8DEV_Fault6 "";
+CM_ SG_ 776 MAIN_MSGu8DEV_Fault7 "";
+CM_ SG_ 776 MAIN_MSGu8DEV_Fault8 "";
+CM_ SG_ 776 MAIN_MSGu8DEV_Fault9 "";
+CM_ SG_ 777 MAIN_MSGu8DEV_Fault10 "";
+CM_ SG_ 777 MAIN_MSGu8DEV_Fault11 "";
+CM_ SG_ 777 MAIN_MSGu8DEV_Fault12 "";
+CM_ SG_ 777 MAIN_MSGu8DEV_Fault13 "";
+CM_ SG_ 777 MAIN_MSGu8DEV_Fault14 "";
+CM_ SG_ 777 MAIN_MSGu8DEV_Fault15 "";
+CM_ SG_ 777 GMAIN_MSGu8DEV_Fault0 "";
+CM_ SG_ 777 GMAIN_MSGu8DEV_Fault1 "";
+CM_ SG_ 784 GMAIN_MSGu8DEV_Fault2 "";
+CM_ SG_ 784 GMAIN_MSGu8DEV_Fault3 "";
+CM_ SG_ 784 GMAIN_MSGu8DEV_Fault4 "";
+CM_ SG_ 784 GMAIN_MSGu8DEV_Fault5 "";
+CM_ SG_ 784 GMAIN_MSGu8DEV_Fault6 "";
+CM_ SG_ 784 GMAIN_MSGu8DEV_Fault7 "";
+CM_ SG_ 784 GMAIN_MSGu8DEV_Fault8 "";
+CM_ SG_ 784 GMAIN_MSGu8DEV_Fault9 "";
+CM_ SG_ 785 GMAIN_MSGu8DEV_Fault10 "";
+CM_ SG_ 785 GMAIN_MSGu8DEV_Fault11 "";
+CM_ SG_ 785 GMAIN_MSGu8DEV_Fault12 "";
+CM_ SG_ 785 GMAIN_MSGu8DEV_Fault13 "";
+CM_ SG_ 785 GMAIN_MSGu8DEV_Fault14 "";
+CM_ SG_ 785 GMAIN_MSGu8DEV_Fault15 "";
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0; 
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0; 
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","not_used","not_used","not_used","not_used","Cyclic","not_used","IfActive","NoMsgSendType"; 
+BA_DEF_ BU_  "NmStationAddress" HEX 0 0; 
+BA_DEF_  "DBName" STRING ; 
+BA_DEF_  "BusType" STRING ; 
+BA_DEF_DEF_  "GenSigSendType" "Cyclic"; 
+BA_DEF_DEF_  "GenSigInactiveValue" 0; 
+BA_DEF_DEF_  "GenMsgCycleTime" 0; 
+BA_DEF_DEF_  "GenMsgSendType" "NoMsgSendType"; 
+BA_DEF_DEF_  "NmStationAddress" 0; 
+BA_DEF_DEF_  "DBName" ""; 
+BA_DEF_DEF_  "BusType" "CAN";
+BA_ "DBName" "FaultRecord_Test.dbc";
+BA_ "GenMsgCycleTime" BO_ 257 100;
+BA_ "GenMsgCycleTime" BO_ 258 100;
+BA_ "GenMsgCycleTime" BO_ 259 100;
+BA_ "GenMsgCycleTime" BO_ 260 100;
+BA_ "GenMsgCycleTime" BO_ 513 1000;
+BA_ "GenMsgCycleTime" BO_ 514 1000;
+BA_ "GenMsgCycleTime" BO_ 515 1000;
+BA_ "GenMsgCycleTime" BO_ 516 1000;
+BA_ "GenMsgCycleTime" BO_ 517 1000;
+BA_ "GenMsgCycleTime" BO_ 518 1000;
+BA_ "GenMsgCycleTime" BO_ 519 1000;
+BA_ "GenMsgCycleTime" BO_ 520 1000;
+BA_ "GenMsgCycleTime" BO_ 769 10000;
+BA_ "GenMsgCycleTime" BO_ 770 10000;
+BA_ "GenMsgCycleTime" BO_ 771 10000;
+BA_ "GenMsgCycleTime" BO_ 772 10000;
+BA_ "GenMsgCycleTime" BO_ 773 10000;
+BA_ "GenMsgCycleTime" BO_ 774 10000;
+BA_ "GenMsgCycleTime" BO_ 775 10000;
+BA_ "GenMsgCycleTime" BO_ 776 10000;
+BA_ "GenMsgCycleTime" BO_ 777 10000;
+BA_ "GenMsgCycleTime" BO_ 784 10000;
+BA_ "GenMsgCycleTime" BO_ 785 10000;
+

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00047.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>SWC_DEM</SHORT-NAME>
+      <ELEMENTS>
+        <APPLICATION-SW-COMPONENT-TYPE>
+          <SHORT-NAME>SWC_DEM</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="Master">
+                <SD>true</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <PORTS>
+            <P-PORT-PROTOTYPE>
+              <SHORT-NAME>DataServices_PID_02</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_Dem/PortInterfaces/DataServices_PID_02</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE>
+              <SHORT-NAME>DataServices_PID_04</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_Dem/PortInterfaces/DataServices_PID_04</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE>
+              <SHORT-NAME>DataServices_PID_05</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_Dem/PortInterfaces/DataServices_PID_05</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE>
+              <SHORT-NAME>DataServices_PID_0C</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_Dem/PortInterfaces/DataServices_PID_0C</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE>
+              <SHORT-NAME>DataServices_PID_0D</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_Dem/PortInterfaces/DataServices_PID_0D</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE>
+              <SHORT-NAME>DataServices_PID_42</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_Dem/PortInterfaces/DataServices_PID_42</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE>
+              <SHORT-NAME>DataServices_PID_49</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_Dem/PortInterfaces/DataServices_PID_49</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+          </PORTS>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR UUID="92987871-a91b-4163-9ee6-e1ac885b1d92">
+              <SHORT-NAME>IB_SWC_DEM</SHORT-NAME>
+              <EVENTS>
+                <TIMING-EVENT>
+                  <SHORT-NAME>TimingEvent_SWC_DEM</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/SWC_DEM/SWC_DEM/IB_SWC_DEM/RunnableEntity_swc_dem</START-ON-EVENT-REF>
+                  <PERIOD>0.01</PERIOD>
+                </TIMING-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="e83ce7ec-d617-49c1-989a-cf8d0e7a9ac8">
+                  <SHORT-NAME>OperationInvokedEvent_PID_02</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/SWC_DEM/SWC_DEM/IB_SWC_DEM/ASW_DEM_DataServices_Dem_PID_02</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/SWC_DEM/SWC_DEM/DataServices_PID_02</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_Dem/PortInterfaces/DataServices_PID_02/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="35c9d475-8013-41bd-b961-2454ca3d08f0">
+                  <SHORT-NAME>OperationInvokedEvent_PID_0D</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/SWC_DEM/SWC_DEM/IB_SWC_DEM/ASW_DEM_DataServices_Dem_PID_0D</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/SWC_DEM/SWC_DEM/DataServices_PID_0D</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_Dem/PortInterfaces/DataServices_PID_0D/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="006bf5f7-94be-4fd1-82df-a9a0fb2caba1">
+                  <SHORT-NAME>OperationInvokedEvent_PID_42</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/SWC_DEM/SWC_DEM/IB_SWC_DEM/ASW_DEM_DataServices_Dem_PID_42</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/SWC_DEM/SWC_DEM/DataServices_PID_42</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_Dem/PortInterfaces/DataServices_PID_42/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="d28fca2e-b1e0-4276-9f69-3c4a929dbb10">
+                  <SHORT-NAME>OperationInvokedEvent_PID_49</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/SWC_DEM/SWC_DEM/IB_SWC_DEM/ASW_DEM_DataServices_Dem_PID_49</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/SWC_DEM/SWC_DEM/DataServices_PID_49</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_Dem/PortInterfaces/DataServices_PID_49/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="b3e467ac-8cce-4946-9975-0831499ea14c">
+                  <SHORT-NAME>OperationInvokedEvent_PID_05</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/SWC_DEM/SWC_DEM/IB_SWC_DEM/ASW_DEM_DataServices_Dem_PID_05</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/SWC_DEM/SWC_DEM/DataServices_PID_05</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_Dem/PortInterfaces/DataServices_PID_05/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="4ae3f7ff-ff51-4e3f-973a-37794577470e">
+                  <SHORT-NAME>OperationInvokedEvent_PID_04</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/SWC_DEM/SWC_DEM/IB_SWC_DEM/ASW_DEM_DataServices_Dem_PID_04</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/SWC_DEM/SWC_DEM/DataServices_PID_04</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_Dem/PortInterfaces/DataServices_PID_04/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="f08fb4f2-ea2a-4259-bb8b-a1ecaa3f6571">
+                  <SHORT-NAME>OperationInvokedEvent_PID_0C</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/SWC_DEM/SWC_DEM/IB_SWC_DEM/ASW_DEM_DataServices_Dem_PID_0C</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/SWC_DEM/SWC_DEM/DataServices_PID_0C</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_Dem/PortInterfaces/DataServices_PID_0C/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+              </EVENTS>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY>
+                  <SHORT-NAME>ASW_DEM_DataServices_Dem_PID_02</SHORT-NAME>
+                  <SYMBOL>ASW_DEM_DataServices_DemPID_02_ReadData_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY>
+                  <SHORT-NAME>ASW_DEM_DataServices_Dem_PID_04</SHORT-NAME>
+                  <SYMBOL>ASW_DEM_DataServices_DemPID_04_ReadData_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY>
+                  <SHORT-NAME>ASW_DEM_DataServices_Dem_PID_05</SHORT-NAME>
+                  <SYMBOL>ASW_DEM_DataServices_DemPID_05_ReadData_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY>
+                  <SHORT-NAME>ASW_DEM_DataServices_Dem_PID_0C</SHORT-NAME>
+                  <SYMBOL>ASW_DEM_DataServices_DemPID_0C_ReadData_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY>
+                  <SHORT-NAME>ASW_DEM_DataServices_Dem_PID_0D</SHORT-NAME>
+                  <SYMBOL>ASW_DEM_DataServices_DemPID_0D_ReadData_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY>
+                  <SHORT-NAME>ASW_DEM_DataServices_Dem_PID_42</SHORT-NAME>
+                  <SYMBOL>ASW_DEM_DataServices_DemPID_42_ReadData_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY>
+                  <SHORT-NAME>ASW_DEM_DataServices_Dem_PID_49</SHORT-NAME>
+                  <SYMBOL>ASW_DEM_DataServices_DemPID_49_ReadData_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY>
+                  <SHORT-NAME>RunnableEntity_swc_dem</SHORT-NAME>
+                  <SYMBOL>RunnableEntity_swc_dem</SYMBOL>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </APPLICATION-SW-COMPONENT-TYPE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

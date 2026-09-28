@@ -1,0 +1,214 @@
+// T32 Sun Nov 23 19:13:02 2025
+
+B::
+
+TOOLBAR   ON
+STATUSBAR ON
+FramePOS -241.1,-0.64706,,,Maximized
+WinPAGE.RESet
+
+WinPAGE.Create P000
+WinCLEAR
+
+WinPOS 2.4 8.5882 206. 60. 0. 0. W003 ICONIC
+PER
+WinPAN 0. 48.
+
+WinPOS 93.2 18.647 51. 17. 0. 0. W023 ICONIC
+SYStem
+
+WinPOS 1.5 0.88235 113. 26. 13. 1. W031 ICONIC
+WinTABS 10. 10. 25.
+Data.List CheckCondition
+
+WinPOS 1.0 2.5294 113. 26. 13. 1. W001 ICONIC
+WinTABS 10. 10. 25.
+List P:0x8011CA14
+
+WinPOS 10.5 6.1765 113. 53. 13. 1. W020 ICONIC
+WinTABS 10. 10. 25.
+List e:CanIf_Transmit
+
+WinPOS 53.3 33.824 100. 16. 0. 0. W027 ICONIC
+Var.INFO CanIf_Prv_InitStatus_b
+
+WinPOS 88.8 22.765 100. 34. 0. 0. W032 ICONIC
+per , "STM (System Timer),STM0"
+WinPAN 0. 63.
+
+WinPOS 0.0 0.0 67. 26. 13. 1. W007
+Data.dump (0xAF03F000) /DIALOG
+
+WinPOS 0.0 0.0 67. 26. 13. 1. W013
+Data.dump (0x70001760) /DIALOG
+
+WinPOS 60.5 20.412 113. 26. 13. 1. W015
+WinTABS 10. 10. 25.
+List e:`MAIN_vidOcuPwmTreatment`
+
+WinPOS 114.1 25.941 113. 26. 13. 1. W011
+WinTABS 10. 10. 25.
+List e:MAIN_vidReadAllCallback
+
+WinPOS 65.1 25.353 113. 26. 13. 1. W021
+WinTABS 10. 10. 25.
+List readEVADC
+
+WinPOS 81.9 7.0 113. 26. 13. 1. W014
+WinTABS 10. 10. 25.
+List Os_Cbk_InShutdown
+
+WinPOS 111.9 50.412 61. 14. 0. 1. W004
+WinTABS 26. 26.
+sYmbol.Browse.Var
+
+WinPOS 73.6 23.0 113. 26. 13. 1. W009
+WinTABS 10. 10. 25.
+List IfxEvadc_resetModule
+
+WinPOS 0.0 0.94118 113. 26. 13. 1. W016
+WinTABS 10. 10. 25.
+List EcuM_Shutdown
+
+WinPOS 1.5 0.0 113. 26. 13. 1. W010
+WinTABS 10. 10. 25.
+List ShutdownHook
+
+WinPOS 3.0 0.88235 113. 26. 13. 1. W012
+WinTABS 10. 10. 25.
+List e:PMux_vidMuxHandler_Group3
+
+WinPOS 4.5 1.7647 113. 26. 13. 1. W017
+WinTABS 10. 10. 25.
+List e:VADC_vidTreatment
+
+WinPOS 0.0 39.294 106. 8. 0. 1. W008
+WinTABS 20. 250.
+Core.List
+
+WinPOS 22.5 13.235 113. 26. 13. 1. W025
+WinTABS 10. 10. 25.
+List e:CanIf_RxIndication_Internal
+
+WinPOS 53.5 50.941 55. 14. 0. 1. W002
+WinTABS 46. 26.
+sYmbol.Browse.Function
+
+WinPOS 0.7 0.41176 113. 57. 13. 1. W026
+WinTABS 10. 10. 25.
+List e:CanIf_XCore_LocalCore_Transmit
+
+WinPOS 167.4 33.529 67. 26. 13. 1. W019
+Data.dump v.address("CanIf_Tx_CanId_CanIf_Buffer_CanNodeNum_01_Tx_Basic") /DIALOG
+
+WinPOS 13.3 26.118 67. 26. 13. 1. W030
+Data.dump v.address("CCU6_udtIfxCcu6PwmHlCfg.timer") /DIALOG
+
+WinPOS 72.9 21.235 67. 39. 13. 1. W028
+Data.dump v.address("CanIf_Prv_TxBufferRam_ast[36].last_index") /DIALOG
+
+WinPOS 37.6 2.8235 67. 26. 13. 1. W029
+Data.dump v.address("CanIf_Prv_TxPduRam_ast") /DIALOG
+
+WinPOS 149.9 30.0 54. 22. 0. 0. W024
+Register.view
+
+WinPOS 111.7 15.176 105. 43. 5. 0. W022
+Frame /Locals /Caller
+
+WinPOS 23.2 29.706 113. 26. 13. 1. W033
+WinTABS 10. 10. 25.
+List e:`Mcu_PerformReset`
+
+WinPOS 21.7 18.235 113. 26. 13. 1. W034
+WinTABS 10. 10. 25.
+Data.List ShutdownHook
+
+WinPOS 1.9 50.765 123. 14. 13. 1. W005
+WinTABS 13. 16. 0. 0. 0. 0. 20. 20. 0. 26.
+Break.List
+
+WinPOS 7.5 4.4118 113. 26. 13. 1. W036
+WinTABS 10. 10. 25.
+Data.List Os_Entry_Core0_OsTask_ASW_100ms
+
+WinPOS 1.0 2.1765 67. 41. 13. 1. W000
+Data.dump v.address("CanIf_Prv_ControllerState_ast") /DIALOG
+
+WinPOS 1.0 0.23529 47. 16. 13. 1. W018
+d d:(d:0xF0200000)--d:(d:0xF0200000+0x7FFF) /long
+
+WinPOS 9.0 5.2941 67. 26. 13. 1. W037
+Data.dump (0xAF000000) /DIALOG
+
+WinPOS 51.5 21.706 113. 26. 13. 1. W038
+WinTABS 10. 10. 25.
+Data.List SchM_Switch_BswM_MDGP_AUTOSAR_BswM_ModeDeclarationGroups_MDG_ECUM_STATE
+
+WinPOS 106.3 1.4706 129. 51. 0. 0. W006
+Var.Watch
+
+Var.AddWatch Det_ErrorEntryBuffer
+Var.AddWatch err_log
+Var.AddWatch CanControllerModeCore0
+Var.AddWatch CanTrcv_Prv_TJA1145_State
+Var.AddWatch CanTrcv_Prv_TJA1145_ReqState
+Var.AddWatch CanTrcv_Prv_TJA1145_SpiInitRxBuf_ao
+Var.AddWatch CanTrcv_Prv_TJA1145_SpiCtrlRxBuf_ao
+Var.AddWatch CanTrcv_Prv_TJA1145_SpiCtrlTxBuf_ao
+Var.AddWatch CanIf_Prv_ControllerState_ast
+Var.AddWatch CanSM_CurrNw_Mode_en
+Var.AddWatch CanSM_currBOR_State_en
+Var.AddWatch CanSM_ReqComM_Mode_en
+Var.AddWatch ComM_ChannelStruct
+Var.AddWatch UDS_katDidCfgSet
+Var.AddWatch ComHal_atElementSet
+Var.AddWatch ComHal_tRamBlock
+Var.AddWatch Com_dCom_IPdu_CanNodeNum_01_Tx_26Byte
+Var.AddWatch Can_17_McmCan_kMcmCanConfigCore0
+Var.AddWatch Can_17_McmCan_GblCoreState
+Var.AddWatch Can_17_McmCan_Core0State
+Var.AddWatch CanTxMaskCore0
+Var.AddWatch BackupCanTxMaskCore0
+Var.AddWatch BSW_bRxTOutFlag_Can01_Rx01
+Var.AddWatch BSW_bRxTOutFlag_Can01_Rx02
+Var.AddWatch Com_RxIpduRam_ast
+Var.AddWatch Mailbox
+Var.AddWatch PduInfoPtr
+Var.AddWatch CanIf_Prv_ConfigSet_tpst
+Var.AddWatch CanIf_Prv_ControllerState_ast
+Var.AddWatch Can_17_McmCan_GblCoreState
+Var.AddWatch CanControllerModeCore0
+Var.AddWatch CanIf_Tx_CanId_CanIf_Buffer_CanNodeNum_01_Tx_Basic
+Var.AddWatch CanIf_Prv_TxBufferRam_ast
+Var.AddWatch CanIf_Prv_RxNotification_taen
+Var.AddWatch CanIf_Prv_TxPduRam_ast
+Var.AddWatch CanIf_Prv_InitStatus_b
+Var.AddWatch CanNm_RamData_s
+Var.AddWatch CanIf_Tx_CanId_CanIf_Buffer_CanNodeNum_01_Tx_B
+Var.AddWatch CanIf_Tx_CanId_CanIf_Buffer_CanNodeNum_01_Tx_A
+Var.AddWatch CanIf_Tx_CanId_CanIf_Buffer_CanNodeNum_00_Tx_H
+Var.AddWatch CanIf_Tx_CanId_CanIf_Buffer_CanNodeNum_00_Tx_G
+Var.AddWatch CanIf_Tx_CanId_CanIf_Buffer_CanNodeNum_00_Tx_E
+Var.AddWatch CanIf_Tx_CanId_CanIf_Buffer_CanNodeNum_00_Tx_F
+Var.AddWatch CanIf_Tx_CanId_CanIf_Buffer_CanNodeNum_00_Tx_D
+Var.AddWatch CanIf_Tx_CanId_CanIf_Buffer_CanNodeNum_00_Tx_C
+Var.AddWatch CanIf_Tx_CanId_CanIf_Buffer_CanNodeNum_00_Tx_B
+Var.AddWatch CanIf_Tx_CanId_CanIf_Buffer_CanNodeNum_00_Tx_A
+Var.AddWatch CanIf_Tx_CanId_CanIf_Buffer_CanNodeNum_01_Tx_01
+Var.AddWatch CanIf_SDUBuffer_CanIf_Buffer_CanNodeNum_01_Tx_Basic
+Var.AddWatch CanIf_Prv_TxBufferRam_ast
+Var.AddWatch CCU6_udtIfxCcu6PwmHlCfg
+Var.AddWatch CanIf_Prv_InitStatus_b
+Var.AddWatch CanIf_Prv_TxPduRam_ast
+Var.AddWatch Pdu_temp
+Var.AddWatch Condition
+Var.AddWatch shutdown_b
+
+WinPOS 18.9 27.118 113. 26. 13. 1. W039
+WinTABS 10. 10. 25.
+Data.List BswM_Cfg_DfrdBswNotification_BswM_MRP_BswM_MDG_ECUM_STATE_SHUTDOWN
+
+WinPAGE.select P000
+
+ENDDO

@@ -1,0 +1,3558 @@
+	.file	"IfxGtm_Spe.c"
+.section .text,"ax",@progbits
+.Ltext0:
+.section .text.IfxGtm_Spe_disableInterrupt,"ax",@progbits
+	.align 1
+	.global	IfxGtm_Spe_disableInterrupt
+	.type	IfxGtm_Spe_disableInterrupt, @function
+IfxGtm_Spe_disableInterrupt:
+.LFB221:
+	.file 1 "Integration\\Infineon\\iLLD\\TC38A\\Tricore\\Gtm\\Std\\IfxGtm_Spe.c"
+	.loc 1 54 0
+.LVL0:
+	.loc 1 55 0
+	ld.w	%d15, [%a4] 48
+.LVL1:
+	.loc 1 56 0
+	mov	%d2, 1
+	sh	%d4, %d2, %d4
+.LVL2:
+	xor	%d4, %d15
+.LVL3:
+	.loc 1 57 0
+	st.w	[%a4] 48, %d4
+	ret
+.LFE221:
+	.size	IfxGtm_Spe_disableInterrupt, .-IfxGtm_Spe_disableInterrupt
+.section .text.IfxGtm_Spe_enableErrorInterrupt,"ax",@progbits
+	.align 1
+	.global	IfxGtm_Spe_enableErrorInterrupt
+	.type	IfxGtm_Spe_enableErrorInterrupt, @function
+IfxGtm_Spe_enableErrorInterrupt:
+.LFB222:
+	.loc 1 62 0
+.LVL4:
+	.loc 1 63 0
+	ld.w	%d15, [%a4] 60
+.LVL5:
+	.loc 1 64 0
+	sh	%d5, %d5, %d4
+.LVL6:
+	insert	%d15, %d15, 1, %d4, 1
+.LVL7:
+	and	%d4, %d15, %d5
+.LVL8:
+	.loc 1 65 0
+	st.w	[%a4] 60, %d4
+	ret
+.LFE222:
+	.size	IfxGtm_Spe_enableErrorInterrupt, .-IfxGtm_Spe_enableErrorInterrupt
+.section .text.IfxGtm_Spe_enableInput,"ax",@progbits
+	.align 1
+	.global	IfxGtm_Spe_enableInput
+	.type	IfxGtm_Spe_enableInput, @function
+IfxGtm_Spe_enableInput:
+.LFB223:
+	.loc 1 70 0
+.LVL9:
+	.loc 1 71 0
+	jz	%d5, .L5
+	jne	%d5, 1, .L3
+	.loc 1 75 0
+	ld.w	%d15, [%a4]0
+	add	%d4, 1
+.LVL10:
+	insert	%d4, %d15, 1, %d4, 1
+	st.w	[%a4]0, %d4
+	.loc 1 76 0
+	ret
+.LVL11:
+.L5:
+	.loc 1 79 0
+	ld.w	%d15, [%a4]0
+	st.w	[%a4]0, %d5
+.L3:
+	ret
+.LFE223:
+	.size	IfxGtm_Spe_enableInput, .-IfxGtm_Spe_enableInput
+.section .text.IfxGtm_Spe_enableInterrupt,"ax",@progbits
+	.align 1
+	.global	IfxGtm_Spe_enableInterrupt
+	.type	IfxGtm_Spe_enableInterrupt, @function
+IfxGtm_Spe_enableInterrupt:
+.LFB224:
+	.loc 1 86 0
+.LVL12:
+	.loc 1 87 0
+	ld.w	%d15, [%a4] 48
+.LVL13:
+	.loc 1 88 0
+	insert	%d4, %d15, 1, %d4, 1
+.LVL14:
+	.loc 1 89 0
+	st.w	[%a4] 48, %d4
+	ret
+.LFE224:
+	.size	IfxGtm_Spe_enableInterrupt, .-IfxGtm_Spe_enableInterrupt
+.section .text.IfxGtm_Spe_getFastShutoffLevel,"ax",@progbits
+	.align 1
+	.global	IfxGtm_Spe_getFastShutoffLevel
+	.type	IfxGtm_Spe_getFastShutoffLevel, @function
+IfxGtm_Spe_getFastShutoffLevel:
+.LFB225:
+	.loc 1 94 0
+.LVL15:
+	.loc 1 95 0
+	ld.bu	%d2, [%a4] 3
+.LVL16:
+	.loc 1 96 0
+	mov	%d15, 1
+	sh	%d15, %d15, %d4
+	and	%d2, %d15
+.LVL17:
+	.loc 1 98 0
+	rsub	%d15, %d4, 0
+	sh	%d15, %d2, %d15
+	mov	%d2, %d15
+.LVL18:
+	ret
+.LFE225:
+	.size	IfxGtm_Spe_getFastShutoffLevel, .-IfxGtm_Spe_getFastShutoffLevel
+.section .text.IfxGtm_Spe_getInterruptStatus,"ax",@progbits
+	.align 1
+	.global	IfxGtm_Spe_getInterruptStatus
+	.type	IfxGtm_Spe_getInterruptStatus, @function
+IfxGtm_Spe_getInterruptStatus:
+.LFB226:
+	.loc 1 102 0
+.LVL19:
+	.loc 1 103 0
+	ld.w	%d2, [%a4] 44
+	.loc 1 104 0
+	extr.u	%d2, %d2, %d4, 1
+	ret
+.LFE226:
+	.size	IfxGtm_Spe_getInterruptStatus, .-IfxGtm_Spe_getInterruptStatus
+.section .text.IfxGtm_Spe_getRevCompare,"ax",@progbits
+	.align 1
+	.global	IfxGtm_Spe_getRevCompare
+	.type	IfxGtm_Spe_getRevCompare, @function
+IfxGtm_Spe_getRevCompare:
+.LFB227:
+	.loc 1 108 0
+.LVL20:
+	.loc 1 109 0
+	ld.w	%d2, [%a4] 68
+	.loc 1 110 0
+	insert	%d2, %d2, 0, 24, 8
+	ret
+.LFE227:
+	.size	IfxGtm_Spe_getRevCompare, .-IfxGtm_Spe_getRevCompare
+.section .text.IfxGtm_Spe_selectTrigger,"ax",@progbits
+	.align 1
+	.global	IfxGtm_Spe_selectTrigger
+	.type	IfxGtm_Spe_selectTrigger, @function
+IfxGtm_Spe_selectTrigger:
+.LFB228:
+	.loc 1 114 0
+.LVL21:
+	.loc 1 116 0
+	ld.w	%d15, [%a4]0
+	.loc 1 118 0
+	insert	%d15, %d15, %d4, 4, 2
+.LVL22:
+	.loc 1 119 0
+	ins.t	%d15, %d15,23, %d4,2
+	.loc 1 121 0
+	st.w	[%a4]0, %d15
+	ret
+.LFE228:
+	.size	IfxGtm_Spe_selectTrigger, .-IfxGtm_Spe_selectTrigger
+.section .text.IfxGtm_Spe_setAllInputPatterns,"ax",@progbits
+	.align 1
+	.global	IfxGtm_Spe_setAllInputPatterns
+	.type	IfxGtm_Spe_setAllInputPatterns, @function
+IfxGtm_Spe_setAllInputPatterns:
+.LFB229:
+	.loc 1 126 0
+.LVL23:
+	.loc 1 127 0
+	ld.w	%d15, [%a4] 4
+	.loc 1 129 0
+	ld.w	%d15, [%a5] 4
+	ld.w	%d2, [%a5] 12
+	sh	%d3, %d15, 4
+	ld.w	%d15, [%a5] 8
+	sh	%d2, %d2, 12
+	sh	%d15, %d15, 8
+	or	%d15, %d3
+	ld.w	%d3, [%a5]0
+	or	%d15, %d3
+	or	%d15, %d2
+	ld.w	%d2, [%a5] 16
+	ld.w	%d3, [%a5] 24
+	sh	%d2, %d2, 16
+	or	%d15, %d2
+	ld.w	%d2, [%a5] 20
+	sh	%d2, %d2, 20
+	or	%d15, %d2
+	sh	%d2, %d3, 24
+	or	%d3, %d15, %d2
+	ld.w	%d15, [%a5] 28
+	sh	%d2, %d15, 28
+	or	%d15, %d3, %d2
+.LVL24:
+	.loc 1 131 0
+	st.w	[%a4] 4, %d15
+	ret
+.LFE229:
+	.size	IfxGtm_Spe_setAllInputPatterns, .-IfxGtm_Spe_setAllInputPatterns
+.section .text.IfxGtm_Spe_setInputPattern,"ax",@progbits
+	.align 1
+	.global	IfxGtm_Spe_setInputPattern
+	.type	IfxGtm_Spe_setInputPattern, @function
+IfxGtm_Spe_setInputPattern:
+.LFB230:
+	.loc 1 136 0
+.LVL25:
+	.loc 1 138 0
+	ld.w	%d15, [%a4] 4
+.LVL26:
+	.loc 1 140 0
+	sh	%d4, 2
+.LVL27:
+	ld.w	%d2, [%a5]0
+	insert	%d15, %d15, 15, %d4, 4
+.LVL28:
+	sh	%d4, %d2, %d4
+	and	%d4, %d15
+.LVL29:
+	.loc 1 142 0
+	st.w	[%a4] 4, %d4
+.LVL30:
+	ret
+.LFE230:
+	.size	IfxGtm_Spe_setInputPattern, .-IfxGtm_Spe_setInputPattern
+.section .text.IfxGtm_Spe_setInterrupt,"ax",@progbits
+	.align 1
+	.global	IfxGtm_Spe_setInterrupt
+	.type	IfxGtm_Spe_setInterrupt, @function
+IfxGtm_Spe_setInterrupt:
+.LFB231:
+	.loc 1 147 0
+.LVL31:
+	.loc 1 148 0
+	ld.w	%d15, [%a4] 52
+.LVL32:
+	.loc 1 149 0
+	insert	%d4, %d15, 1, %d4, 1
+.LVL33:
+	.loc 1 150 0
+	st.w	[%a4] 52, %d4
+	ret
+.LFE231:
+	.size	IfxGtm_Spe_setInterrupt, .-IfxGtm_Spe_setInterrupt
+.section .text.IfxGtm_Spe_setOutputPattern,"ax",@progbits
+	.align 1
+	.global	IfxGtm_Spe_setOutputPattern
+	.type	IfxGtm_Spe_setOutputPattern, @function
+IfxGtm_Spe_setOutputPattern:
+.LFB232:
+	.loc 1 155 0
+.LVL34:
+	.loc 1 156 0
+	add	%d4, 2
+.LVL35:
+	ld.w	%d15, [%a5]0
+	addsc.a	%a4, %a4, %d4, 2
+.LVL36:
+	st.w	[%a4]0, %d15
+	ret
+.LFE232:
+	.size	IfxGtm_Spe_setOutputPattern, .-IfxGtm_Spe_setOutputPattern
+.section .text.IfxGtm_Spe_setRevCompare,"ax",@progbits
+	.align 1
+	.global	IfxGtm_Spe_setRevCompare
+	.type	IfxGtm_Spe_setRevCompare, @function
+IfxGtm_Spe_setRevCompare:
+.LFB233:
+	.loc 1 161 0
+.LVL37:
+	.loc 1 162 0
+	ld.w	%d15, [%a4] 68
+	insert	%d15, %d15, %d4, 0, 24
+	st.w	[%a4] 68, %d15
+	ret
+.LFE233:
+	.size	IfxGtm_Spe_setRevCompare, .-IfxGtm_Spe_setRevCompare
+.section .debug_frame,"",@progbits
+.Lframe0:
+	.uaword	.LECIE0-.LSCIE0
+.LSCIE0:
+	.uaword	0xffffffff
+	.byte	0x1
+	.string	""
+	.uleb128 0x1
+	.sleb128 1
+	.byte	0x1b
+	.byte	0xc
+	.uleb128 0x1a
+	.uleb128 0
+	.align 2
+.LECIE0:
+.LSFDE0:
+	.uaword	.LEFDE0-.LASFDE0
+.LASFDE0:
+	.uaword	.Lframe0
+	.uaword	.LFB221
+	.uaword	.LFE221-.LFB221
+	.align 2
+.LEFDE0:
+.LSFDE2:
+	.uaword	.LEFDE2-.LASFDE2
+.LASFDE2:
+	.uaword	.Lframe0
+	.uaword	.LFB222
+	.uaword	.LFE222-.LFB222
+	.align 2
+.LEFDE2:
+.LSFDE4:
+	.uaword	.LEFDE4-.LASFDE4
+.LASFDE4:
+	.uaword	.Lframe0
+	.uaword	.LFB223
+	.uaword	.LFE223-.LFB223
+	.align 2
+.LEFDE4:
+.LSFDE6:
+	.uaword	.LEFDE6-.LASFDE6
+.LASFDE6:
+	.uaword	.Lframe0
+	.uaword	.LFB224
+	.uaword	.LFE224-.LFB224
+	.align 2
+.LEFDE6:
+.LSFDE8:
+	.uaword	.LEFDE8-.LASFDE8
+.LASFDE8:
+	.uaword	.Lframe0
+	.uaword	.LFB225
+	.uaword	.LFE225-.LFB225
+	.align 2
+.LEFDE8:
+.LSFDE10:
+	.uaword	.LEFDE10-.LASFDE10
+.LASFDE10:
+	.uaword	.Lframe0
+	.uaword	.LFB226
+	.uaword	.LFE226-.LFB226
+	.align 2
+.LEFDE10:
+.LSFDE12:
+	.uaword	.LEFDE12-.LASFDE12
+.LASFDE12:
+	.uaword	.Lframe0
+	.uaword	.LFB227
+	.uaword	.LFE227-.LFB227
+	.align 2
+.LEFDE12:
+.LSFDE14:
+	.uaword	.LEFDE14-.LASFDE14
+.LASFDE14:
+	.uaword	.Lframe0
+	.uaword	.LFB228
+	.uaword	.LFE228-.LFB228
+	.align 2
+.LEFDE14:
+.LSFDE16:
+	.uaword	.LEFDE16-.LASFDE16
+.LASFDE16:
+	.uaword	.Lframe0
+	.uaword	.LFB229
+	.uaword	.LFE229-.LFB229
+	.align 2
+.LEFDE16:
+.LSFDE18:
+	.uaword	.LEFDE18-.LASFDE18
+.LASFDE18:
+	.uaword	.Lframe0
+	.uaword	.LFB230
+	.uaword	.LFE230-.LFB230
+	.align 2
+.LEFDE18:
+.LSFDE20:
+	.uaword	.LEFDE20-.LASFDE20
+.LASFDE20:
+	.uaword	.Lframe0
+	.uaword	.LFB231
+	.uaword	.LFE231-.LFB231
+	.align 2
+.LEFDE20:
+.LSFDE22:
+	.uaword	.LEFDE22-.LASFDE22
+.LASFDE22:
+	.uaword	.Lframe0
+	.uaword	.LFB232
+	.uaword	.LFE232-.LFB232
+	.align 2
+.LEFDE22:
+.LSFDE24:
+	.uaword	.LEFDE24-.LASFDE24
+.LASFDE24:
+	.uaword	.Lframe0
+	.uaword	.LFB233
+	.uaword	.LFE233-.LFB233
+	.align 2
+.LEFDE24:
+.section .text,"ax",@progbits
+.Letext0:
+	.file 2 ".\\output\\inc/..\\..\\bsw\\integration\\Platform_Types.h"
+	.file 3 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\Ifx_TypesReg.h"
+	.file 4 ".\\output\\inc/..\\..\\Integration\\Infineon\\Infra\\Sfr\\TC38A\\_Reg\\IfxGtm_regdef.h"
+	.file 5 ".\\output\\inc/..\\..\\Integration\\Infineon\\iLLD\\TC38A\\Tricore\\_Impl\\IfxGtm_cfg.h"
+	.file 6 "Integration\\Infineon\\iLLD\\TC38A\\Tricore\\Gtm\\Std\\IfxGtm_Spe.h"
+.section .debug_info,"",@progbits
+.Ldebug_info0:
+	.uaword	0x1d63
+	.uahalf	0x2
+	.uaword	.Ldebug_abbrev0
+	.byte	0x4
+	.uleb128 0x1
+	.ascii	"GNU C 4.9.4 build on 2020-09-01 -mli"
+	.string	"cense-dir=s:\\hightec\\toolchains\\tricore\\v4.9.4.1\\bin\\../lib/gcc/tricore/4.9.4/../../../../licenses -mcpu=tc38xx -mpragma-data-sections -mtc162 -maligned-data-sections -gdwarf-2 -O3 -fno-builtin -fno-common -ffunction-sections -fdata-sections -fshort-double"
+	.byte	0x1
+	.string	"Integration\\Infineon\\iLLD\\TC38A\\Tricore\\Gtm\\Std\\IfxGtm_Spe.c"
+	.string	"D:\\\\1_OutProjest\\\\dongfeng\\\\90080-05101\\\\trunk\\\\BSW\\\\20Proj\\\\BSW\\\\TE5X\\\\src"
+	.uaword	.Ldebug_ranges0+0
+	.uaword	0
+	.uaword	0
+	.uaword	.Ldebug_line0
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x5
+	.string	"long int"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x7
+	.string	"long unsigned int"
+	.uleb128 0x2
+	.byte	0x8
+	.byte	0x5
+	.string	"long long int"
+	.uleb128 0x2
+	.byte	0x8
+	.byte	0x7
+	.string	"long long unsigned int"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x5
+	.string	"int"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x7
+	.string	"unsigned int"
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x6
+	.string	"char"
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x6
+	.string	"signed char"
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x8
+	.string	"unsigned char"
+	.uleb128 0x2
+	.byte	0x2
+	.byte	0x5
+	.string	"short int"
+	.uleb128 0x2
+	.byte	0x2
+	.byte	0x7
+	.string	"short unsigned int"
+	.uleb128 0x3
+	.string	"uint32"
+	.byte	0x2
+	.byte	0x6a
+	.uaword	0x21e
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x4
+	.string	"float"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x4
+	.string	"double"
+	.uleb128 0x3
+	.string	"boolean"
+	.byte	0x2
+	.byte	0x80
+	.uaword	0x245
+	.uleb128 0x3
+	.string	"Ifx_UReg_8Bit"
+	.byte	0x3
+	.byte	0x60
+	.uaword	0x245
+	.uleb128 0x3
+	.string	"Ifx_UReg_32Bit"
+	.byte	0x3
+	.byte	0x62
+	.uaword	0x21e
+	.uleb128 0x3
+	.string	"Ifx_SReg_32Bit"
+	.byte	0x3
+	.byte	0x65
+	.uaword	0x217
+	.uleb128 0x4
+	.uaword	0x21e
+	.uleb128 0x5
+	.string	"_Ifx_GTM_SPE_CMD_Bits"
+	.byte	0x4
+	.byte	0x4
+	.uahalf	0x12c7
+	.uaword	0x371
+	.uleb128 0x6
+	.string	"SPE_CTRL_CMD"
+	.byte	0x4
+	.uahalf	0x12c9
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x2
+	.byte	0x1e
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x7
+	.uaword	.LASF0
+	.byte	0x4
+	.uahalf	0x12ca
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0xe
+	.byte	0x10
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"SPE_UPD_TRIG"
+	.byte	0x4
+	.uahalf	0x12cb
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0xf
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"reserved_17"
+	.byte	0x4
+	.uahalf	0x12cc
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0xf
+	.byte	0
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.byte	0
+	.uleb128 0x8
+	.string	"Ifx_GTM_SPE_CMD_Bits"
+	.byte	0x4
+	.uahalf	0x12cd
+	.uaword	0x2ef
+	.uleb128 0x5
+	.string	"_Ifx_GTM_SPE_CTRL_STAT_Bits"
+	.byte	0x4
+	.byte	0x4
+	.uahalf	0x12d0
+	.uaword	0x4f1
+	.uleb128 0x6
+	.string	"EN"
+	.byte	0x4
+	.uahalf	0x12d2
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0x1f
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"SIE0"
+	.byte	0x4
+	.uahalf	0x12d3
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0x1e
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"SIE1"
+	.byte	0x4
+	.uahalf	0x12d4
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0x1d
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"SIE2"
+	.byte	0x4
+	.uahalf	0x12d5
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0x1c
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"TRIG_SEL"
+	.byte	0x4
+	.uahalf	0x12d6
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x2
+	.byte	0x1a
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"TIM_SEL"
+	.byte	0x4
+	.uahalf	0x12d7
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0x19
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"FSOM"
+	.byte	0x4
+	.uahalf	0x12d8
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0x18
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"SPE_PAT_PTR"
+	.byte	0x4
+	.uahalf	0x12d9
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x3
+	.byte	0x15
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x7
+	.uaword	.LASF1
+	.byte	0x4
+	.uahalf	0x12da
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0x14
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"AIP"
+	.byte	0x4
+	.uahalf	0x12db
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x3
+	.byte	0x11
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"ADIR"
+	.byte	0x4
+	.uahalf	0x12dc
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0x10
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"PIP"
+	.byte	0x4
+	.uahalf	0x12dd
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x3
+	.byte	0xd
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"PDIR"
+	.byte	0x4
+	.uahalf	0x12de
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0xc
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"NIP"
+	.byte	0x4
+	.uahalf	0x12df
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x3
+	.byte	0x9
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"ETRIG_SEL"
+	.byte	0x4
+	.uahalf	0x12e0
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0x8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"FSOL"
+	.byte	0x4
+	.uahalf	0x12e1
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x8
+	.byte	0
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.byte	0
+	.uleb128 0x8
+	.string	"Ifx_GTM_SPE_CTRL_STAT_Bits"
+	.byte	0x4
+	.uahalf	0x12e2
+	.uaword	0x38e
+	.uleb128 0x5
+	.string	"_Ifx_GTM_SPE_CTRL_STAT2_Bits"
+	.byte	0x4
+	.byte	0x4
+	.uahalf	0x12e5
+	.uaword	0x584
+	.uleb128 0x6
+	.string	"reserved_0"
+	.byte	0x4
+	.uahalf	0x12e7
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x8
+	.byte	0x18
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"SPE_PAT_PTR_BWD"
+	.byte	0x4
+	.uahalf	0x12e8
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x3
+	.byte	0x15
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x7
+	.uaword	.LASF1
+	.byte	0x4
+	.uahalf	0x12e9
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x15
+	.byte	0
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.byte	0
+	.uleb128 0x8
+	.string	"Ifx_GTM_SPE_CTRL_STAT2_Bits"
+	.byte	0x4
+	.uahalf	0x12ea
+	.uaword	0x514
+	.uleb128 0x5
+	.string	"_Ifx_GTM_SPE_EIRQ_EN_Bits"
+	.byte	0x4
+	.byte	0x4
+	.uahalf	0x12ed
+	.uaword	0x678
+	.uleb128 0x6
+	.string	"SPE_NIPD_EIRQ_EN"
+	.byte	0x4
+	.uahalf	0x12ef
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0x1f
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"SPE_DCHG_EIRQ_EN"
+	.byte	0x4
+	.uahalf	0x12f0
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0x1e
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"SPE_PERR_EIRQ_EN"
+	.byte	0x4
+	.uahalf	0x12f1
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0x1d
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"SPE_BIS_EIRQ_EN"
+	.byte	0x4
+	.uahalf	0x12f2
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0x1c
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"SPE_RCMP_EIRQ_EN"
+	.byte	0x4
+	.uahalf	0x12f3
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0x1b
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x7
+	.uaword	.LASF2
+	.byte	0x4
+	.uahalf	0x12f4
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1b
+	.byte	0
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.byte	0
+	.uleb128 0x8
+	.string	"Ifx_GTM_SPE_EIRQ_EN_Bits"
+	.byte	0x4
+	.uahalf	0x12f5
+	.uaword	0x5a8
+	.uleb128 0x5
+	.string	"_Ifx_GTM_SPE_IRQ_EN_Bits"
+	.byte	0x4
+	.byte	0x4
+	.uahalf	0x12f8
+	.uaword	0x763
+	.uleb128 0x6
+	.string	"SPE_NIPD_IRQ_EN"
+	.byte	0x4
+	.uahalf	0x12fa
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0x1f
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"SPE_DCHG_IRQ_EN"
+	.byte	0x4
+	.uahalf	0x12fb
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0x1e
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"SPE_PERR_IRQ_EN"
+	.byte	0x4
+	.uahalf	0x12fc
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0x1d
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"SPE_BIS_IRQ_EN"
+	.byte	0x4
+	.uahalf	0x12fd
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0x1c
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"SPE_RCMP_IRQ_EN"
+	.byte	0x4
+	.uahalf	0x12fe
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0x1b
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x7
+	.uaword	.LASF2
+	.byte	0x4
+	.uahalf	0x12ff
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1b
+	.byte	0
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.byte	0
+	.uleb128 0x8
+	.string	"Ifx_GTM_SPE_IRQ_EN_Bits"
+	.byte	0x4
+	.uahalf	0x1300
+	.uaword	0x699
+	.uleb128 0x5
+	.string	"_Ifx_GTM_SPE_IRQ_FORCINT_Bits"
+	.byte	0x4
+	.byte	0x4
+	.uahalf	0x1303
+	.uaword	0x843
+	.uleb128 0x6
+	.string	"TRG_SPE_NIPD"
+	.byte	0x4
+	.uahalf	0x1305
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0x1f
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"TRG_SPE_DCHG"
+	.byte	0x4
+	.uahalf	0x1306
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0x1e
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"TRG_SPE_PERR"
+	.byte	0x4
+	.uahalf	0x1307
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0x1d
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"TRG_SPE_BIS"
+	.byte	0x4
+	.uahalf	0x1308
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0x1c
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"TRG_SPE_RCMP"
+	.byte	0x4
+	.uahalf	0x1309
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0x1b
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x7
+	.uaword	.LASF2
+	.byte	0x4
+	.uahalf	0x130a
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1b
+	.byte	0
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.byte	0
+	.uleb128 0x8
+	.string	"Ifx_GTM_SPE_IRQ_FORCINT_Bits"
+	.byte	0x4
+	.uahalf	0x130b
+	.uaword	0x783
+	.uleb128 0x5
+	.string	"_Ifx_GTM_SPE_IRQ_MODE_Bits"
+	.byte	0x4
+	.byte	0x4
+	.uahalf	0x130e
+	.uaword	0x8b6
+	.uleb128 0x6
+	.string	"IRQ_MODE"
+	.byte	0x4
+	.uahalf	0x1310
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x2
+	.byte	0x1e
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x7
+	.uaword	.LASF0
+	.byte	0x4
+	.uahalf	0x1311
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1e
+	.byte	0
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.byte	0
+	.uleb128 0x8
+	.string	"Ifx_GTM_SPE_IRQ_MODE_Bits"
+	.byte	0x4
+	.uahalf	0x1312
+	.uaword	0x868
+	.uleb128 0x5
+	.string	"_Ifx_GTM_SPE_IRQ_NOTIFY_Bits"
+	.byte	0x4
+	.byte	0x4
+	.uahalf	0x1315
+	.uaword	0x983
+	.uleb128 0x6
+	.string	"SPE_NIPD"
+	.byte	0x4
+	.uahalf	0x1317
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0x1f
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"SPE_DCHG"
+	.byte	0x4
+	.uahalf	0x1318
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0x1e
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"SPE_PERR"
+	.byte	0x4
+	.uahalf	0x1319
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0x1d
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"SPE_BIS"
+	.byte	0x4
+	.uahalf	0x131a
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0x1c
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"SPE_RCMP"
+	.byte	0x4
+	.uahalf	0x131b
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0x1b
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x7
+	.uaword	.LASF2
+	.byte	0x4
+	.uahalf	0x131c
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1b
+	.byte	0
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.byte	0
+	.uleb128 0x8
+	.string	"Ifx_GTM_SPE_IRQ_NOTIFY_Bits"
+	.byte	0x4
+	.uahalf	0x131d
+	.uaword	0x8d8
+	.uleb128 0x5
+	.string	"_Ifx_GTM_SPE_OUT_CTRL_Bits"
+	.byte	0x4
+	.byte	0x4
+	.uahalf	0x1320
+	.uaword	0x9f9
+	.uleb128 0x6
+	.string	"SPE_OUT_CTRL"
+	.byte	0x4
+	.uahalf	0x1322
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x10
+	.byte	0x10
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x7
+	.uaword	.LASF3
+	.byte	0x4
+	.uahalf	0x1323
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x10
+	.byte	0
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.byte	0
+	.uleb128 0x8
+	.string	"Ifx_GTM_SPE_OUT_CTRL_Bits"
+	.byte	0x4
+	.uahalf	0x1324
+	.uaword	0x9a7
+	.uleb128 0x5
+	.string	"_Ifx_GTM_SPE_OUT_PAT_Bits"
+	.byte	0x4
+	.byte	0x4
+	.uahalf	0x1327
+	.uaword	0xa6b
+	.uleb128 0x6
+	.string	"SPE_OUT_PAT"
+	.byte	0x4
+	.uahalf	0x1329
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x10
+	.byte	0x10
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x7
+	.uaword	.LASF3
+	.byte	0x4
+	.uahalf	0x132a
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x10
+	.byte	0
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.byte	0
+	.uleb128 0x8
+	.string	"Ifx_GTM_SPE_OUT_PAT_Bits"
+	.byte	0x4
+	.uahalf	0x132b
+	.uaword	0xa1b
+	.uleb128 0x5
+	.string	"_Ifx_GTM_SPE_PAT_Bits"
+	.byte	0x4
+	.byte	0x4
+	.uahalf	0x132e
+	.uaword	0xc0c
+	.uleb128 0x6
+	.string	"IP0_VAL"
+	.byte	0x4
+	.uahalf	0x1330
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0x1f
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"IP0_PAT"
+	.byte	0x4
+	.uahalf	0x1331
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x3
+	.byte	0x1c
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"IP1_VAL"
+	.byte	0x4
+	.uahalf	0x1332
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0x1b
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"IP1_PAT"
+	.byte	0x4
+	.uahalf	0x1333
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x3
+	.byte	0x18
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"IP2_VAL"
+	.byte	0x4
+	.uahalf	0x1334
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0x17
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"IP2_PAT"
+	.byte	0x4
+	.uahalf	0x1335
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x3
+	.byte	0x14
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"IP3_VAL"
+	.byte	0x4
+	.uahalf	0x1336
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0x13
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"IP3_PAT"
+	.byte	0x4
+	.uahalf	0x1337
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x3
+	.byte	0x10
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"IP4_VAL"
+	.byte	0x4
+	.uahalf	0x1338
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0xf
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"IP4_PAT"
+	.byte	0x4
+	.uahalf	0x1339
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x3
+	.byte	0xc
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"IP5_VAL"
+	.byte	0x4
+	.uahalf	0x133a
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0xb
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"IP5_PAT"
+	.byte	0x4
+	.uahalf	0x133b
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x3
+	.byte	0x8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"IP6_VAL"
+	.byte	0x4
+	.uahalf	0x133c
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0x7
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"IP6_PAT"
+	.byte	0x4
+	.uahalf	0x133d
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x3
+	.byte	0x4
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"IP7_VAL"
+	.byte	0x4
+	.uahalf	0x133e
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x1
+	.byte	0x3
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x6
+	.string	"IP7_PAT"
+	.byte	0x4
+	.uahalf	0x133f
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x3
+	.byte	0
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.byte	0
+	.uleb128 0x8
+	.string	"Ifx_GTM_SPE_PAT_Bits"
+	.byte	0x4
+	.uahalf	0x1340
+	.uaword	0xa8c
+	.uleb128 0x5
+	.string	"_Ifx_GTM_SPE_REV_CMP_Bits"
+	.byte	0x4
+	.byte	0x4
+	.uahalf	0x1343
+	.uaword	0xc75
+	.uleb128 0x6
+	.string	"REV_CMP"
+	.byte	0x4
+	.uahalf	0x1345
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x18
+	.byte	0x8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x7
+	.uaword	.LASF4
+	.byte	0x4
+	.uahalf	0x1346
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x8
+	.byte	0
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.byte	0
+	.uleb128 0x8
+	.string	"Ifx_GTM_SPE_REV_CMP_Bits"
+	.byte	0x4
+	.uahalf	0x1347
+	.uaword	0xc29
+	.uleb128 0x5
+	.string	"_Ifx_GTM_SPE_REV_CNT_Bits"
+	.byte	0x4
+	.byte	0x4
+	.uahalf	0x134a
+	.uaword	0xce2
+	.uleb128 0x6
+	.string	"REV_CNT"
+	.byte	0x4
+	.uahalf	0x134c
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x18
+	.byte	0x8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x7
+	.uaword	.LASF4
+	.byte	0x4
+	.uahalf	0x134d
+	.uaword	0x2ea
+	.byte	0x4
+	.byte	0x8
+	.byte	0
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.byte	0
+	.uleb128 0x8
+	.string	"Ifx_GTM_SPE_REV_CNT_Bits"
+	.byte	0x4
+	.uahalf	0x134e
+	.uaword	0xc96
+	.uleb128 0x9
+	.byte	0x4
+	.byte	0x4
+	.uahalf	0x205f
+	.uaword	0xd2b
+	.uleb128 0xa
+	.string	"U"
+	.byte	0x4
+	.uahalf	0x2061
+	.uaword	0x2be
+	.uleb128 0xa
+	.string	"I"
+	.byte	0x4
+	.uahalf	0x2062
+	.uaword	0x2d4
+	.uleb128 0xa
+	.string	"B"
+	.byte	0x4
+	.uahalf	0x2063
+	.uaword	0x371
+	.byte	0
+	.uleb128 0x8
+	.string	"Ifx_GTM_SPE_CMD"
+	.byte	0x4
+	.uahalf	0x2064
+	.uaword	0xd03
+	.uleb128 0x9
+	.byte	0x4
+	.byte	0x4
+	.uahalf	0x2067
+	.uaword	0xd6b
+	.uleb128 0xa
+	.string	"U"
+	.byte	0x4
+	.uahalf	0x2069
+	.uaword	0x2be
+	.uleb128 0xa
+	.string	"I"
+	.byte	0x4
+	.uahalf	0x206a
+	.uaword	0x2d4
+	.uleb128 0xa
+	.string	"B"
+	.byte	0x4
+	.uahalf	0x206b
+	.uaword	0x4f1
+	.byte	0
+	.uleb128 0x8
+	.string	"Ifx_GTM_SPE_CTRL_STAT"
+	.byte	0x4
+	.uahalf	0x206c
+	.uaword	0xd43
+	.uleb128 0x9
+	.byte	0x4
+	.byte	0x4
+	.uahalf	0x206f
+	.uaword	0xdb1
+	.uleb128 0xa
+	.string	"U"
+	.byte	0x4
+	.uahalf	0x2071
+	.uaword	0x2be
+	.uleb128 0xa
+	.string	"I"
+	.byte	0x4
+	.uahalf	0x2072
+	.uaword	0x2d4
+	.uleb128 0xa
+	.string	"B"
+	.byte	0x4
+	.uahalf	0x2073
+	.uaword	0x584
+	.byte	0
+	.uleb128 0x8
+	.string	"Ifx_GTM_SPE_CTRL_STAT2"
+	.byte	0x4
+	.uahalf	0x2074
+	.uaword	0xd89
+	.uleb128 0x9
+	.byte	0x4
+	.byte	0x4
+	.uahalf	0x2077
+	.uaword	0xdf8
+	.uleb128 0xa
+	.string	"U"
+	.byte	0x4
+	.uahalf	0x2079
+	.uaword	0x2be
+	.uleb128 0xa
+	.string	"I"
+	.byte	0x4
+	.uahalf	0x207a
+	.uaword	0x2d4
+	.uleb128 0xa
+	.string	"B"
+	.byte	0x4
+	.uahalf	0x207b
+	.uaword	0x678
+	.byte	0
+	.uleb128 0x8
+	.string	"Ifx_GTM_SPE_EIRQ_EN"
+	.byte	0x4
+	.uahalf	0x207c
+	.uaword	0xdd0
+	.uleb128 0x9
+	.byte	0x4
+	.byte	0x4
+	.uahalf	0x207f
+	.uaword	0xe3c
+	.uleb128 0xa
+	.string	"U"
+	.byte	0x4
+	.uahalf	0x2081
+	.uaword	0x2be
+	.uleb128 0xa
+	.string	"I"
+	.byte	0x4
+	.uahalf	0x2082
+	.uaword	0x2d4
+	.uleb128 0xa
+	.string	"B"
+	.byte	0x4
+	.uahalf	0x2083
+	.uaword	0x763
+	.byte	0
+	.uleb128 0x8
+	.string	"Ifx_GTM_SPE_IRQ_EN"
+	.byte	0x4
+	.uahalf	0x2084
+	.uaword	0xe14
+	.uleb128 0x9
+	.byte	0x4
+	.byte	0x4
+	.uahalf	0x2087
+	.uaword	0xe7f
+	.uleb128 0xa
+	.string	"U"
+	.byte	0x4
+	.uahalf	0x2089
+	.uaword	0x2be
+	.uleb128 0xa
+	.string	"I"
+	.byte	0x4
+	.uahalf	0x208a
+	.uaword	0x2d4
+	.uleb128 0xa
+	.string	"B"
+	.byte	0x4
+	.uahalf	0x208b
+	.uaword	0x843
+	.byte	0
+	.uleb128 0x8
+	.string	"Ifx_GTM_SPE_IRQ_FORCINT"
+	.byte	0x4
+	.uahalf	0x208c
+	.uaword	0xe57
+	.uleb128 0x9
+	.byte	0x4
+	.byte	0x4
+	.uahalf	0x208f
+	.uaword	0xec7
+	.uleb128 0xa
+	.string	"U"
+	.byte	0x4
+	.uahalf	0x2091
+	.uaword	0x2be
+	.uleb128 0xa
+	.string	"I"
+	.byte	0x4
+	.uahalf	0x2092
+	.uaword	0x2d4
+	.uleb128 0xa
+	.string	"B"
+	.byte	0x4
+	.uahalf	0x2093
+	.uaword	0x8b6
+	.byte	0
+	.uleb128 0x8
+	.string	"Ifx_GTM_SPE_IRQ_MODE"
+	.byte	0x4
+	.uahalf	0x2094
+	.uaword	0xe9f
+	.uleb128 0x9
+	.byte	0x4
+	.byte	0x4
+	.uahalf	0x2097
+	.uaword	0xf0c
+	.uleb128 0xa
+	.string	"U"
+	.byte	0x4
+	.uahalf	0x2099
+	.uaword	0x2be
+	.uleb128 0xa
+	.string	"I"
+	.byte	0x4
+	.uahalf	0x209a
+	.uaword	0x2d4
+	.uleb128 0xa
+	.string	"B"
+	.byte	0x4
+	.uahalf	0x209b
+	.uaword	0x983
+	.byte	0
+	.uleb128 0x8
+	.string	"Ifx_GTM_SPE_IRQ_NOTIFY"
+	.byte	0x4
+	.uahalf	0x209c
+	.uaword	0xee4
+	.uleb128 0x9
+	.byte	0x4
+	.byte	0x4
+	.uahalf	0x209f
+	.uaword	0xf53
+	.uleb128 0xa
+	.string	"U"
+	.byte	0x4
+	.uahalf	0x20a1
+	.uaword	0x2be
+	.uleb128 0xa
+	.string	"I"
+	.byte	0x4
+	.uahalf	0x20a2
+	.uaword	0x2d4
+	.uleb128 0xa
+	.string	"B"
+	.byte	0x4
+	.uahalf	0x20a3
+	.uaword	0x9f9
+	.byte	0
+	.uleb128 0x8
+	.string	"Ifx_GTM_SPE_OUT_CTRL"
+	.byte	0x4
+	.uahalf	0x20a4
+	.uaword	0xf2b
+	.uleb128 0x9
+	.byte	0x4
+	.byte	0x4
+	.uahalf	0x20a7
+	.uaword	0xf98
+	.uleb128 0xa
+	.string	"U"
+	.byte	0x4
+	.uahalf	0x20a9
+	.uaword	0x2be
+	.uleb128 0xa
+	.string	"I"
+	.byte	0x4
+	.uahalf	0x20aa
+	.uaword	0x2d4
+	.uleb128 0xa
+	.string	"B"
+	.byte	0x4
+	.uahalf	0x20ab
+	.uaword	0xa6b
+	.byte	0
+	.uleb128 0x8
+	.string	"Ifx_GTM_SPE_OUT_PAT"
+	.byte	0x4
+	.uahalf	0x20ac
+	.uaword	0xf70
+	.uleb128 0x9
+	.byte	0x4
+	.byte	0x4
+	.uahalf	0x20af
+	.uaword	0xfdc
+	.uleb128 0xa
+	.string	"U"
+	.byte	0x4
+	.uahalf	0x20b1
+	.uaword	0x2be
+	.uleb128 0xa
+	.string	"I"
+	.byte	0x4
+	.uahalf	0x20b2
+	.uaword	0x2d4
+	.uleb128 0xa
+	.string	"B"
+	.byte	0x4
+	.uahalf	0x20b3
+	.uaword	0xc0c
+	.byte	0
+	.uleb128 0x8
+	.string	"Ifx_GTM_SPE_PAT"
+	.byte	0x4
+	.uahalf	0x20b4
+	.uaword	0xfb4
+	.uleb128 0x9
+	.byte	0x4
+	.byte	0x4
+	.uahalf	0x20b7
+	.uaword	0x101c
+	.uleb128 0xa
+	.string	"U"
+	.byte	0x4
+	.uahalf	0x20b9
+	.uaword	0x2be
+	.uleb128 0xa
+	.string	"I"
+	.byte	0x4
+	.uahalf	0x20ba
+	.uaword	0x2d4
+	.uleb128 0xa
+	.string	"B"
+	.byte	0x4
+	.uahalf	0x20bb
+	.uaword	0xc75
+	.byte	0
+	.uleb128 0x8
+	.string	"Ifx_GTM_SPE_REV_CMP"
+	.byte	0x4
+	.uahalf	0x20bc
+	.uaword	0xff4
+	.uleb128 0x9
+	.byte	0x4
+	.byte	0x4
+	.uahalf	0x20bf
+	.uaword	0x1060
+	.uleb128 0xa
+	.string	"U"
+	.byte	0x4
+	.uahalf	0x20c1
+	.uaword	0x2be
+	.uleb128 0xa
+	.string	"I"
+	.byte	0x4
+	.uahalf	0x20c2
+	.uaword	0x2d4
+	.uleb128 0xa
+	.string	"B"
+	.byte	0x4
+	.uahalf	0x20c3
+	.uaword	0xce2
+	.byte	0
+	.uleb128 0x8
+	.string	"Ifx_GTM_SPE_REV_CNT"
+	.byte	0x4
+	.uahalf	0x20c4
+	.uaword	0x1038
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x7
+	.string	"sizetype"
+	.uleb128 0x5
+	.string	"_Ifx_GTM_SPE_IRQ"
+	.byte	0x10
+	.byte	0x4
+	.uahalf	0x2452
+	.uaword	0x10e6
+	.uleb128 0xb
+	.string	"NOTIFY"
+	.byte	0x4
+	.uahalf	0x2454
+	.uaword	0xf0c
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xb
+	.string	"EN"
+	.byte	0x4
+	.uahalf	0x2455
+	.uaword	0xe3c
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.uleb128 0xb
+	.string	"FORCINT"
+	.byte	0x4
+	.uahalf	0x2456
+	.uaword	0xe7f
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.uleb128 0xb
+	.string	"MODE"
+	.byte	0x4
+	.uahalf	0x2457
+	.uaword	0xec7
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xc
+	.byte	0
+	.uleb128 0x8
+	.string	"Ifx_GTM_SPE_IRQ"
+	.byte	0x4
+	.uahalf	0x2458
+	.uaword	0x10fe
+	.uleb128 0x4
+	.uaword	0x1088
+	.uleb128 0x5
+	.string	"_Ifx_GTM_SPE"
+	.byte	0x80
+	.byte	0x4
+	.uahalf	0x2467
+	.uaword	0x11e9
+	.uleb128 0xb
+	.string	"CTRL_STAT"
+	.byte	0x4
+	.uahalf	0x2469
+	.uaword	0xd6b
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0xb
+	.string	"PAT"
+	.byte	0x4
+	.uahalf	0x246a
+	.uaword	0xfdc
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.uleb128 0xb
+	.string	"OUT_PAT"
+	.byte	0x4
+	.uahalf	0x246b
+	.uaword	0x11e9
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.uleb128 0xb
+	.string	"OUT_CTRL"
+	.byte	0x4
+	.uahalf	0x246c
+	.uaword	0xf53
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x28
+	.uleb128 0xb
+	.string	"IRQ"
+	.byte	0x4
+	.uahalf	0x246d
+	.uaword	0x10e6
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x2c
+	.uleb128 0xb
+	.string	"EIRQ_EN"
+	.byte	0x4
+	.uahalf	0x246e
+	.uaword	0xdf8
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x3c
+	.uleb128 0xb
+	.string	"REV_CNT"
+	.byte	0x4
+	.uahalf	0x246f
+	.uaword	0x1060
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x40
+	.uleb128 0xb
+	.string	"REV_CMP"
+	.byte	0x4
+	.uahalf	0x2470
+	.uaword	0x101c
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x44
+	.uleb128 0xb
+	.string	"CTRL_STAT2"
+	.byte	0x4
+	.uahalf	0x2471
+	.uaword	0xdb1
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x48
+	.uleb128 0xb
+	.string	"CMD"
+	.byte	0x4
+	.uahalf	0x2472
+	.uaword	0xd2b
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4c
+	.uleb128 0xb
+	.string	"reserved_50"
+	.byte	0x4
+	.uahalf	0x2473
+	.uaword	0x11f9
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x50
+	.byte	0
+	.uleb128 0xc
+	.uaword	0xf98
+	.uaword	0x11f9
+	.uleb128 0xd
+	.uaword	0x107c
+	.byte	0x7
+	.byte	0
+	.uleb128 0xc
+	.uaword	0x2a9
+	.uaword	0x1209
+	.uleb128 0xd
+	.uaword	0x107c
+	.byte	0x2f
+	.byte	0
+	.uleb128 0x8
+	.string	"Ifx_GTM_SPE"
+	.byte	0x4
+	.uahalf	0x2474
+	.uaword	0x121d
+	.uleb128 0x4
+	.uaword	0x1103
+	.uleb128 0xe
+	.byte	0x1
+	.byte	0x5
+	.uahalf	0x17b
+	.uaword	0x1359
+	.uleb128 0xf
+	.string	"IfxGtm_Spe_TriggerSource_speNipd"
+	.sleb128 0
+	.uleb128 0xf
+	.string	"IfxGtm_Spe_TriggerSource_tomCh0Ccu0"
+	.sleb128 1
+	.uleb128 0xf
+	.string	"IfxGtm_Spe_TriggerSource_tomCh0Ccu1"
+	.sleb128 2
+	.uleb128 0xf
+	.string	"IfxGtm_Spe_TriggerSource_tomCh2Ccu1"
+	.sleb128 3
+	.uleb128 0xf
+	.string	"IfxGtm_Spe_TriggerSource_tomCh6Ccu1"
+	.sleb128 4
+	.uleb128 0xf
+	.string	"IfxGtm_Spe_TriggerSource_tomCh7Ccu1"
+	.sleb128 5
+	.uleb128 0xf
+	.string	"IfxGtm_Spe_TriggerSource_tomCh8Ccu1"
+	.sleb128 6
+	.uleb128 0xf
+	.string	"IfxGtm_Spe_TriggerSource_tomCh9Ccu1"
+	.sleb128 7
+	.byte	0
+	.uleb128 0x8
+	.string	"IfxGtm_Spe_TriggerSource"
+	.byte	0x5
+	.uahalf	0x184
+	.uaword	0x1222
+	.uleb128 0x10
+	.byte	0x1
+	.byte	0x6
+	.byte	0x8f
+	.uaword	0x13da
+	.uleb128 0xf
+	.string	"IfxGtm_Spe_InputSignal_chX"
+	.sleb128 0
+	.uleb128 0xf
+	.string	"IfxGtm_Spe_InputSignal_chY"
+	.sleb128 1
+	.uleb128 0xf
+	.string	"IfxGtm_Spe_InputSignal_chZ"
+	.sleb128 2
+	.byte	0
+	.uleb128 0x3
+	.string	"IfxGtm_Spe_InputSignal"
+	.byte	0x6
+	.byte	0x93
+	.uaword	0x137a
+	.uleb128 0x10
+	.byte	0x1
+	.byte	0x6
+	.byte	0xa3
+	.uaword	0x14cd
+	.uleb128 0xf
+	.string	"IfxGtm_Spe_InterruptSignal_nipd"
+	.sleb128 0
+	.uleb128 0xf
+	.string	"IfxGtm_Spe_InterruptSignal_dchg"
+	.sleb128 1
+	.uleb128 0xf
+	.string	"IfxGtm_Spe_InterruptSignal_perr"
+	.sleb128 2
+	.uleb128 0xf
+	.string	"IfxGtm_Spe_InterruptSignal_bis"
+	.sleb128 3
+	.uleb128 0xf
+	.string	"IfxGtm_Spe_InterruptSignal_rcmp"
+	.sleb128 4
+	.uleb128 0xf
+	.string	"IfxGtm_Spe_InterruptSignal_count"
+	.sleb128 5
+	.byte	0
+	.uleb128 0x3
+	.string	"IfxGtm_Spe_InterruptSignal"
+	.byte	0x6
+	.byte	0xaa
+	.uaword	0x13f8
+	.uleb128 0x10
+	.byte	0x1
+	.byte	0x6
+	.byte	0xaf
+	.uaword	0x15c8
+	.uleb128 0xf
+	.string	"IfxGtm_Spe_OutChannel_0"
+	.sleb128 0
+	.uleb128 0xf
+	.string	"IfxGtm_Spe_OutChannel_1"
+	.sleb128 1
+	.uleb128 0xf
+	.string	"IfxGtm_Spe_OutChannel_2"
+	.sleb128 2
+	.uleb128 0xf
+	.string	"IfxGtm_Spe_OutChannel_3"
+	.sleb128 3
+	.uleb128 0xf
+	.string	"IfxGtm_Spe_OutChannel_4"
+	.sleb128 4
+	.uleb128 0xf
+	.string	"IfxGtm_Spe_OutChannel_5"
+	.sleb128 5
+	.uleb128 0xf
+	.string	"IfxGtm_Spe_OutChannel_6"
+	.sleb128 6
+	.uleb128 0xf
+	.string	"IfxGtm_Spe_OutChannel_7"
+	.sleb128 7
+	.byte	0
+	.uleb128 0x3
+	.string	"IfxGtm_Spe_OutChannel"
+	.byte	0x6
+	.byte	0xb8
+	.uaword	0x14ef
+	.uleb128 0x10
+	.byte	0x1
+	.byte	0x6
+	.byte	0xbe
+	.uaword	0x16ce
+	.uleb128 0xf
+	.string	"IfxGtm_Spe_PatternIndex_0"
+	.sleb128 0
+	.uleb128 0xf
+	.string	"IfxGtm_Spe_PatternIndex_1"
+	.sleb128 1
+	.uleb128 0xf
+	.string	"IfxGtm_Spe_PatternIndex_2"
+	.sleb128 2
+	.uleb128 0xf
+	.string	"IfxGtm_Spe_PatternIndex_3"
+	.sleb128 3
+	.uleb128 0xf
+	.string	"IfxGtm_Spe_PatternIndex_4"
+	.sleb128 4
+	.uleb128 0xf
+	.string	"IfxGtm_Spe_PatternIndex_5"
+	.sleb128 5
+	.uleb128 0xf
+	.string	"IfxGtm_Spe_PatternIndex_6"
+	.sleb128 6
+	.uleb128 0xf
+	.string	"IfxGtm_Spe_PatternIndex_7"
+	.sleb128 7
+	.byte	0
+	.uleb128 0x3
+	.string	"IfxGtm_Spe_PatternIndex"
+	.byte	0x6
+	.byte	0xc7
+	.uaword	0x15e5
+	.uleb128 0x11
+	.byte	0x2
+	.byte	0x6
+	.byte	0xd3
+	.uaword	0x177e
+	.uleb128 0x12
+	.string	"CH0"
+	.byte	0x6
+	.byte	0xd5
+	.uaword	0x279
+	.byte	0x4
+	.byte	0x2
+	.byte	0x1e
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x12
+	.string	"CH1"
+	.byte	0x6
+	.byte	0xd6
+	.uaword	0x279
+	.byte	0x4
+	.byte	0x2
+	.byte	0x1c
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x12
+	.string	"CH2"
+	.byte	0x6
+	.byte	0xd7
+	.uaword	0x279
+	.byte	0x4
+	.byte	0x2
+	.byte	0x1a
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x12
+	.string	"CH3"
+	.byte	0x6
+	.byte	0xd8
+	.uaword	0x279
+	.byte	0x4
+	.byte	0x2
+	.byte	0x18
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x12
+	.string	"CH4"
+	.byte	0x6
+	.byte	0xd9
+	.uaword	0x279
+	.byte	0x4
+	.byte	0x2
+	.byte	0x16
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x12
+	.string	"CH5"
+	.byte	0x6
+	.byte	0xda
+	.uaword	0x279
+	.byte	0x4
+	.byte	0x2
+	.byte	0x14
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x12
+	.string	"CH6"
+	.byte	0x6
+	.byte	0xdb
+	.uaword	0x279
+	.byte	0x4
+	.byte	0x2
+	.byte	0x12
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x12
+	.string	"CH7"
+	.byte	0x6
+	.byte	0xdc
+	.uaword	0x279
+	.byte	0x4
+	.byte	0x2
+	.byte	0x10
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.byte	0
+	.uleb128 0x3
+	.string	"IfxGtm_Spe_ChannelOutputs"
+	.byte	0x6
+	.byte	0xdd
+	.uaword	0x16ed
+	.uleb128 0x11
+	.byte	0x1
+	.byte	0x6
+	.byte	0xe1
+	.uaword	0x17e8
+	.uleb128 0x12
+	.string	"valid"
+	.byte	0x6
+	.byte	0xe3
+	.uaword	0x279
+	.byte	0x4
+	.byte	0x1
+	.byte	0x1f
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x12
+	.string	"x"
+	.byte	0x6
+	.byte	0xe4
+	.uaword	0x279
+	.byte	0x4
+	.byte	0x1
+	.byte	0x1e
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x12
+	.string	"y"
+	.byte	0x6
+	.byte	0xe5
+	.uaword	0x279
+	.byte	0x4
+	.byte	0x1
+	.byte	0x1d
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x12
+	.string	"z"
+	.byte	0x6
+	.byte	0xe6
+	.uaword	0x279
+	.byte	0x4
+	.byte	0x1
+	.byte	0x1c
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.byte	0
+	.uleb128 0x3
+	.string	"IfxGtm_Spe_PatternSignal"
+	.byte	0x6
+	.byte	0xe7
+	.uaword	0x179f
+	.uleb128 0x13
+	.byte	0x4
+	.byte	0x6
+	.byte	0xef
+	.uaword	0x1828
+	.uleb128 0x14
+	.string	"Signal"
+	.byte	0x6
+	.byte	0xf1
+	.uaword	0x17e8
+	.uleb128 0x14
+	.string	"U"
+	.byte	0x6
+	.byte	0xf2
+	.uaword	0x279
+	.byte	0
+	.uleb128 0x3
+	.string	"IfxGtm_Spe_InputPattern"
+	.byte	0x6
+	.byte	0xf3
+	.uaword	0x1808
+	.uleb128 0x13
+	.byte	0x4
+	.byte	0x6
+	.byte	0xf8
+	.uaword	0x1868
+	.uleb128 0x14
+	.string	"Outputs"
+	.byte	0x6
+	.byte	0xfa
+	.uaword	0x177e
+	.uleb128 0x14
+	.string	"U"
+	.byte	0x6
+	.byte	0xfb
+	.uaword	0x279
+	.byte	0
+	.uleb128 0x3
+	.string	"IfxGtm_Spe_OutputPattern"
+	.byte	0x6
+	.byte	0xfc
+	.uaword	0x1847
+	.uleb128 0x15
+	.byte	0x1
+	.string	"IfxGtm_Spe_disableInterrupt"
+	.byte	0x1
+	.byte	0x35
+	.byte	0x1
+	.uaword	.LFB221
+	.uaword	.LFE221
+	.byte	0x2
+	.byte	0x8a
+	.sleb128 0
+	.byte	0x1
+	.uaword	0x18e5
+	.uleb128 0x16
+	.string	"spe"
+	.byte	0x1
+	.byte	0x35
+	.uaword	0x18e5
+	.byte	0x1
+	.byte	0x64
+	.uleb128 0x17
+	.uaword	.LASF5
+	.byte	0x1
+	.byte	0x35
+	.uaword	0x14cd
+	.uaword	.LLST0
+	.uleb128 0x18
+	.uaword	.LASF6
+	.byte	0x1
+	.byte	0x37
+	.uaword	0x279
+	.uaword	.LLST1
+	.byte	0
+	.uleb128 0x19
+	.byte	0x4
+	.uaword	0x1209
+	.uleb128 0x15
+	.byte	0x1
+	.string	"IfxGtm_Spe_enableErrorInterrupt"
+	.byte	0x1
+	.byte	0x3d
+	.byte	0x1
+	.uaword	.LFB222
+	.uaword	.LFE222
+	.byte	0x2
+	.byte	0x8a
+	.sleb128 0
+	.byte	0x1
+	.uaword	0x195f
+	.uleb128 0x16
+	.string	"spe"
+	.byte	0x1
+	.byte	0x3d
+	.uaword	0x18e5
+	.byte	0x1
+	.byte	0x64
+	.uleb128 0x17
+	.uaword	.LASF5
+	.byte	0x1
+	.byte	0x3d
+	.uaword	0x14cd
+	.uaword	.LLST2
+	.uleb128 0x1a
+	.string	"enabled"
+	.byte	0x1
+	.byte	0x3d
+	.uaword	0x29a
+	.uaword	.LLST3
+	.uleb128 0x18
+	.uaword	.LASF6
+	.byte	0x1
+	.byte	0x3f
+	.uaword	0x279
+	.uaword	.LLST4
+	.byte	0
+	.uleb128 0x15
+	.byte	0x1
+	.string	"IfxGtm_Spe_enableInput"
+	.byte	0x1
+	.byte	0x45
+	.byte	0x1
+	.uaword	.LFB223
+	.uaword	.LFE223
+	.byte	0x2
+	.byte	0x8a
+	.sleb128 0
+	.byte	0x1
+	.uaword	0x19c1
+	.uleb128 0x16
+	.string	"spe"
+	.byte	0x1
+	.byte	0x45
+	.uaword	0x18e5
+	.byte	0x1
+	.byte	0x64
+	.uleb128 0x1a
+	.string	"inputSignal"
+	.byte	0x1
+	.byte	0x45
+	.uaword	0x13da
+	.uaword	.LLST5
+	.uleb128 0x16
+	.string	"enabled"
+	.byte	0x1
+	.byte	0x45
+	.uaword	0x29a
+	.byte	0x1
+	.byte	0x55
+	.byte	0
+	.uleb128 0x15
+	.byte	0x1
+	.string	"IfxGtm_Spe_enableInterrupt"
+	.byte	0x1
+	.byte	0x55
+	.byte	0x1
+	.uaword	.LFB224
+	.uaword	.LFE224
+	.byte	0x2
+	.byte	0x8a
+	.sleb128 0
+	.byte	0x1
+	.uaword	0x1a1d
+	.uleb128 0x16
+	.string	"spe"
+	.byte	0x1
+	.byte	0x55
+	.uaword	0x18e5
+	.byte	0x1
+	.byte	0x64
+	.uleb128 0x17
+	.uaword	.LASF5
+	.byte	0x1
+	.byte	0x55
+	.uaword	0x14cd
+	.uaword	.LLST6
+	.uleb128 0x18
+	.uaword	.LASF6
+	.byte	0x1
+	.byte	0x57
+	.uaword	0x279
+	.uaword	.LLST7
+	.byte	0
+	.uleb128 0x1b
+	.byte	0x1
+	.string	"IfxGtm_Spe_getFastShutoffLevel"
+	.byte	0x1
+	.byte	0x5d
+	.byte	0x1
+	.uaword	0x279
+	.uaword	.LFB225
+	.uaword	.LFE225
+	.byte	0x2
+	.byte	0x8a
+	.sleb128 0
+	.byte	0x1
+	.uaword	0x1a89
+	.uleb128 0x16
+	.string	"spe"
+	.byte	0x1
+	.byte	0x5d
+	.uaword	0x18e5
+	.byte	0x1
+	.byte	0x64
+	.uleb128 0x16
+	.string	"channel"
+	.byte	0x1
+	.byte	0x5d
+	.uaword	0x15c8
+	.byte	0x1
+	.byte	0x54
+	.uleb128 0x1c
+	.string	"fsol_temp"
+	.byte	0x1
+	.byte	0x5f
+	.uaword	0x279
+	.uaword	.LLST8
+	.byte	0
+	.uleb128 0x1b
+	.byte	0x1
+	.string	"IfxGtm_Spe_getInterruptStatus"
+	.byte	0x1
+	.byte	0x65
+	.byte	0x1
+	.uaword	0x29a
+	.uaword	.LFB226
+	.uaword	.LFE226
+	.byte	0x2
+	.byte	0x8a
+	.sleb128 0
+	.byte	0x1
+	.uaword	0x1adb
+	.uleb128 0x16
+	.string	"spe"
+	.byte	0x1
+	.byte	0x65
+	.uaword	0x18e5
+	.byte	0x1
+	.byte	0x64
+	.uleb128 0x1d
+	.uaword	.LASF5
+	.byte	0x1
+	.byte	0x65
+	.uaword	0x14cd
+	.byte	0x1
+	.byte	0x54
+	.byte	0
+	.uleb128 0x1b
+	.byte	0x1
+	.string	"IfxGtm_Spe_getRevCompare"
+	.byte	0x1
+	.byte	0x6b
+	.byte	0x1
+	.uaword	0x279
+	.uaword	.LFB227
+	.uaword	.LFE227
+	.byte	0x2
+	.byte	0x8a
+	.sleb128 0
+	.byte	0x1
+	.uaword	0x1b1b
+	.uleb128 0x16
+	.string	"spe"
+	.byte	0x1
+	.byte	0x6b
+	.uaword	0x18e5
+	.byte	0x1
+	.byte	0x64
+	.byte	0
+	.uleb128 0x15
+	.byte	0x1
+	.string	"IfxGtm_Spe_selectTrigger"
+	.byte	0x1
+	.byte	0x71
+	.byte	0x1
+	.uaword	.LFB228
+	.uaword	.LFE228
+	.byte	0x2
+	.byte	0x8a
+	.sleb128 0
+	.byte	0x1
+	.uaword	0x1b7b
+	.uleb128 0x16
+	.string	"spe"
+	.byte	0x1
+	.byte	0x71
+	.uaword	0x18e5
+	.byte	0x1
+	.byte	0x64
+	.uleb128 0x16
+	.string	"trigger"
+	.byte	0x1
+	.byte	0x71
+	.uaword	0x1359
+	.byte	0x1
+	.byte	0x54
+	.uleb128 0x1e
+	.string	"ctrl_stat"
+	.byte	0x1
+	.byte	0x73
+	.uaword	0xd6b
+	.byte	0x1
+	.byte	0x5f
+	.byte	0
+	.uleb128 0x15
+	.byte	0x1
+	.string	"IfxGtm_Spe_setAllInputPatterns"
+	.byte	0x1
+	.byte	0x7d
+	.byte	0x1
+	.uaword	.LFB229
+	.uaword	.LFE229
+	.byte	0x2
+	.byte	0x8a
+	.sleb128 0
+	.byte	0x1
+	.uaword	0x1bd7
+	.uleb128 0x16
+	.string	"spe"
+	.byte	0x1
+	.byte	0x7d
+	.uaword	0x18e5
+	.byte	0x1
+	.byte	0x64
+	.uleb128 0x1d
+	.uaword	.LASF7
+	.byte	0x1
+	.byte	0x7d
+	.uaword	0x1bd7
+	.byte	0x1
+	.byte	0x65
+	.uleb128 0x1f
+	.uaword	.LASF8
+	.byte	0x1
+	.byte	0x7f
+	.uaword	0x279
+	.byte	0x1
+	.byte	0x5f
+	.byte	0
+	.uleb128 0x19
+	.byte	0x4
+	.uaword	0x1828
+	.uleb128 0x15
+	.byte	0x1
+	.string	"IfxGtm_Spe_setInputPattern"
+	.byte	0x1
+	.byte	0x87
+	.byte	0x1
+	.uaword	.LFB230
+	.uaword	.LFE230
+	.byte	0x2
+	.byte	0x8a
+	.sleb128 0
+	.byte	0x1
+	.uaword	0x1c59
+	.uleb128 0x16
+	.string	"spe"
+	.byte	0x1
+	.byte	0x87
+	.uaword	0x18e5
+	.byte	0x1
+	.byte	0x64
+	.uleb128 0x1d
+	.uaword	.LASF7
+	.byte	0x1
+	.byte	0x87
+	.uaword	0x1bd7
+	.byte	0x1
+	.byte	0x65
+	.uleb128 0x17
+	.uaword	.LASF9
+	.byte	0x1
+	.byte	0x87
+	.uaword	0x16ce
+	.uaword	.LLST9
+	.uleb128 0x1c
+	.string	"pattern"
+	.byte	0x1
+	.byte	0x89
+	.uaword	0x279
+	.uaword	.LLST10
+	.uleb128 0x18
+	.uaword	.LASF8
+	.byte	0x1
+	.byte	0x8a
+	.uaword	0x279
+	.uaword	.LLST11
+	.byte	0
+	.uleb128 0x15
+	.byte	0x1
+	.string	"IfxGtm_Spe_setInterrupt"
+	.byte	0x1
+	.byte	0x92
+	.byte	0x1
+	.uaword	.LFB231
+	.uaword	.LFE231
+	.byte	0x2
+	.byte	0x8a
+	.sleb128 0
+	.byte	0x1
+	.uaword	0x1cbc
+	.uleb128 0x16
+	.string	"spe"
+	.byte	0x1
+	.byte	0x92
+	.uaword	0x18e5
+	.byte	0x1
+	.byte	0x64
+	.uleb128 0x17
+	.uaword	.LASF5
+	.byte	0x1
+	.byte	0x92
+	.uaword	0x14cd
+	.uaword	.LLST12
+	.uleb128 0x1c
+	.string	"forceirq_temp"
+	.byte	0x1
+	.byte	0x94
+	.uaword	0x279
+	.uaword	.LLST13
+	.byte	0
+	.uleb128 0x15
+	.byte	0x1
+	.string	"IfxGtm_Spe_setOutputPattern"
+	.byte	0x1
+	.byte	0x9a
+	.byte	0x1
+	.uaword	.LFB232
+	.uaword	.LFE232
+	.byte	0x2
+	.byte	0x8a
+	.sleb128 0
+	.byte	0x1
+	.uaword	0x1d19
+	.uleb128 0x1a
+	.string	"spe"
+	.byte	0x1
+	.byte	0x9a
+	.uaword	0x18e5
+	.uaword	.LLST14
+	.uleb128 0x1d
+	.uaword	.LASF7
+	.byte	0x1
+	.byte	0x9a
+	.uaword	0x1d19
+	.byte	0x1
+	.byte	0x65
+	.uleb128 0x17
+	.uaword	.LASF9
+	.byte	0x1
+	.byte	0x9a
+	.uaword	0x16ce
+	.uaword	.LLST15
+	.byte	0
+	.uleb128 0x19
+	.byte	0x4
+	.uaword	0x1868
+	.uleb128 0x20
+	.byte	0x1
+	.string	"IfxGtm_Spe_setRevCompare"
+	.byte	0x1
+	.byte	0xa0
+	.byte	0x1
+	.uaword	.LFB233
+	.uaword	.LFE233
+	.byte	0x2
+	.byte	0x8a
+	.sleb128 0
+	.byte	0x1
+	.uleb128 0x16
+	.string	"spe"
+	.byte	0x1
+	.byte	0xa0
+	.uaword	0x18e5
+	.byte	0x1
+	.byte	0x64
+	.uleb128 0x16
+	.string	"count"
+	.byte	0x1
+	.byte	0xa0
+	.uaword	0x279
+	.byte	0x1
+	.byte	0x54
+	.byte	0
+	.byte	0
+.section .debug_abbrev,"",@progbits
+.Ldebug_abbrev0:
+	.uleb128 0x1
+	.uleb128 0x11
+	.byte	0x1
+	.uleb128 0x25
+	.uleb128 0x8
+	.uleb128 0x13
+	.uleb128 0xb
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x1b
+	.uleb128 0x8
+	.uleb128 0x55
+	.uleb128 0x6
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x52
+	.uleb128 0x1
+	.uleb128 0x10
+	.uleb128 0x6
+	.byte	0
+	.byte	0
+	.uleb128 0x2
+	.uleb128 0x24
+	.byte	0
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3e
+	.uleb128 0xb
+	.uleb128 0x3
+	.uleb128 0x8
+	.byte	0
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x16
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x4
+	.uleb128 0x35
+	.byte	0
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x5
+	.uleb128 0x13
+	.byte	0x1
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x6
+	.uleb128 0xd
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0xd
+	.uleb128 0xb
+	.uleb128 0xc
+	.uleb128 0xb
+	.uleb128 0x38
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0x7
+	.uleb128 0xd
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0xe
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0xd
+	.uleb128 0xb
+	.uleb128 0xc
+	.uleb128 0xb
+	.uleb128 0x38
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0x8
+	.uleb128 0x16
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x9
+	.uleb128 0x17
+	.byte	0x1
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0xa
+	.uleb128 0xd
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0xb
+	.uleb128 0xd
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x38
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0xc
+	.uleb128 0x1
+	.byte	0x1
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0xd
+	.uleb128 0x21
+	.byte	0
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2f
+	.uleb128 0xb
+	.byte	0
+	.byte	0
+	.uleb128 0xe
+	.uleb128 0x4
+	.byte	0x1
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0xf
+	.uleb128 0x28
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x1c
+	.uleb128 0xd
+	.byte	0
+	.byte	0
+	.uleb128 0x10
+	.uleb128 0x4
+	.byte	0x1
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x11
+	.uleb128 0x13
+	.byte	0x1
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x12
+	.uleb128 0xd
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0xd
+	.uleb128 0xb
+	.uleb128 0xc
+	.uleb128 0xb
+	.uleb128 0x38
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0x13
+	.uleb128 0x17
+	.byte	0x1
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x14
+	.uleb128 0xd
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x15
+	.uleb128 0x2e
+	.byte	0x1
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x12
+	.uleb128 0x1
+	.uleb128 0x40
+	.uleb128 0xa
+	.uleb128 0x2117
+	.uleb128 0xc
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x16
+	.uleb128 0x5
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0x17
+	.uleb128 0x5
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0xe
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0x6
+	.byte	0
+	.byte	0
+	.uleb128 0x18
+	.uleb128 0x34
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0xe
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0x6
+	.byte	0
+	.byte	0
+	.uleb128 0x19
+	.uleb128 0xf
+	.byte	0
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x1a
+	.uleb128 0x5
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0x6
+	.byte	0
+	.byte	0
+	.uleb128 0x1b
+	.uleb128 0x2e
+	.byte	0x1
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x12
+	.uleb128 0x1
+	.uleb128 0x40
+	.uleb128 0xa
+	.uleb128 0x2117
+	.uleb128 0xc
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x1c
+	.uleb128 0x34
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0x6
+	.byte	0
+	.byte	0
+	.uleb128 0x1d
+	.uleb128 0x5
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0xe
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0x1e
+	.uleb128 0x34
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0x1f
+	.uleb128 0x34
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0xe
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0x20
+	.uleb128 0x2e
+	.byte	0x1
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x12
+	.uleb128 0x1
+	.uleb128 0x40
+	.uleb128 0xa
+	.uleb128 0x2117
+	.uleb128 0xc
+	.byte	0
+	.byte	0
+	.byte	0
+.section .debug_loc,"",@progbits
+.Ldebug_loc0:
+.LLST0:
+	.uaword	.LVL0
+	.uaword	.LVL2
+	.uahalf	0x1
+	.byte	0x54
+	.uaword	.LVL2
+	.uaword	.LFE221
+	.uahalf	0x4
+	.byte	0xf3
+	.uleb128 0x1
+	.byte	0x54
+	.byte	0x9f
+	.uaword	0
+	.uaword	0
+.LLST1:
+	.uaword	.LVL1
+	.uaword	.LVL3
+	.uahalf	0x1
+	.byte	0x5f
+	.uaword	.LVL3
+	.uaword	.LFE221
+	.uahalf	0x1
+	.byte	0x54
+	.uaword	0
+	.uaword	0
+.LLST2:
+	.uaword	.LVL4
+	.uaword	.LVL8
+	.uahalf	0x1
+	.byte	0x54
+	.uaword	.LVL8
+	.uaword	.LFE222
+	.uahalf	0x4
+	.byte	0xf3
+	.uleb128 0x1
+	.byte	0x54
+	.byte	0x9f
+	.uaword	0
+	.uaword	0
+.LLST3:
+	.uaword	.LVL4
+	.uaword	.LVL6
+	.uahalf	0x1
+	.byte	0x55
+	.uaword	.LVL6
+	.uaword	.LFE222
+	.uahalf	0x4
+	.byte	0xf3
+	.uleb128 0x1
+	.byte	0x55
+	.byte	0x9f
+	.uaword	0
+	.uaword	0
+.LLST4:
+	.uaword	.LVL5
+	.uaword	.LVL7
+	.uahalf	0x1
+	.byte	0x5f
+	.uaword	.LVL8
+	.uaword	.LFE222
+	.uahalf	0x1
+	.byte	0x54
+	.uaword	0
+	.uaword	0
+.LLST5:
+	.uaword	.LVL9
+	.uaword	.LVL10
+	.uahalf	0x1
+	.byte	0x54
+	.uaword	.LVL10
+	.uaword	.LVL11
+	.uahalf	0x4
+	.byte	0xf3
+	.uleb128 0x1
+	.byte	0x54
+	.byte	0x9f
+	.uaword	.LVL11
+	.uaword	.LFE223
+	.uahalf	0x1
+	.byte	0x54
+	.uaword	0
+	.uaword	0
+.LLST6:
+	.uaword	.LVL12
+	.uaword	.LVL14
+	.uahalf	0x1
+	.byte	0x54
+	.uaword	.LVL14
+	.uaword	.LFE224
+	.uahalf	0x4
+	.byte	0xf3
+	.uleb128 0x1
+	.byte	0x54
+	.byte	0x9f
+	.uaword	0
+	.uaword	0
+.LLST7:
+	.uaword	.LVL13
+	.uaword	.LVL14
+	.uahalf	0x1
+	.byte	0x5f
+	.uaword	.LVL14
+	.uaword	.LFE224
+	.uahalf	0x1
+	.byte	0x54
+	.uaword	0
+	.uaword	0
+.LLST8:
+	.uaword	.LVL16
+	.uaword	.LVL17
+	.uahalf	0x6
+	.byte	0x72
+	.sleb128 0
+	.byte	0x8
+	.byte	0xff
+	.byte	0x1a
+	.byte	0x9f
+	.uaword	.LVL17
+	.uaword	.LVL18
+	.uahalf	0x6
+	.byte	0x72
+	.sleb128 0
+	.byte	0x74
+	.sleb128 0
+	.byte	0x25
+	.byte	0x9f
+	.uaword	0
+	.uaword	0
+.LLST9:
+	.uaword	.LVL25
+	.uaword	.LVL27
+	.uahalf	0x1
+	.byte	0x54
+	.uaword	.LVL27
+	.uaword	.LFE230
+	.uahalf	0x4
+	.byte	0xf3
+	.uleb128 0x1
+	.byte	0x54
+	.byte	0x9f
+	.uaword	0
+	.uaword	0
+.LLST10:
+	.uaword	.LVL25
+	.uaword	.LVL30
+	.uahalf	0x2
+	.byte	0x85
+	.sleb128 0
+	.uaword	.LVL30
+	.uaword	.LFE230
+	.uahalf	0x1
+	.byte	0x52
+	.uaword	0
+	.uaword	0
+.LLST11:
+	.uaword	.LVL26
+	.uaword	.LVL28
+	.uahalf	0x1
+	.byte	0x5f
+	.uaword	.LVL29
+	.uaword	.LFE230
+	.uahalf	0x1
+	.byte	0x54
+	.uaword	0
+	.uaword	0
+.LLST12:
+	.uaword	.LVL31
+	.uaword	.LVL33
+	.uahalf	0x1
+	.byte	0x54
+	.uaword	.LVL33
+	.uaword	.LFE231
+	.uahalf	0x4
+	.byte	0xf3
+	.uleb128 0x1
+	.byte	0x54
+	.byte	0x9f
+	.uaword	0
+	.uaword	0
+.LLST13:
+	.uaword	.LVL32
+	.uaword	.LVL33
+	.uahalf	0x1
+	.byte	0x5f
+	.uaword	.LVL33
+	.uaword	.LFE231
+	.uahalf	0x1
+	.byte	0x54
+	.uaword	0
+	.uaword	0
+.LLST14:
+	.uaword	.LVL34
+	.uaword	.LVL36
+	.uahalf	0x1
+	.byte	0x64
+	.uaword	.LVL36
+	.uaword	.LFE232
+	.uahalf	0x4
+	.byte	0xf3
+	.uleb128 0x1
+	.byte	0x64
+	.byte	0x9f
+	.uaword	0
+	.uaword	0
+.LLST15:
+	.uaword	.LVL34
+	.uaword	.LVL35
+	.uahalf	0x1
+	.byte	0x54
+	.uaword	.LVL35
+	.uaword	.LFE232
+	.uahalf	0x4
+	.byte	0xf3
+	.uleb128 0x1
+	.byte	0x54
+	.byte	0x9f
+	.uaword	0
+	.uaword	0
+.section .debug_aranges,"",@progbits
+	.uaword	0x7c
+	.uahalf	0x2
+	.uaword	.Ldebug_info0
+	.byte	0x4
+	.byte	0
+	.uahalf	0
+	.uahalf	0
+	.uaword	.LFB221
+	.uaword	.LFE221-.LFB221
+	.uaword	.LFB222
+	.uaword	.LFE222-.LFB222
+	.uaword	.LFB223
+	.uaword	.LFE223-.LFB223
+	.uaword	.LFB224
+	.uaword	.LFE224-.LFB224
+	.uaword	.LFB225
+	.uaword	.LFE225-.LFB225
+	.uaword	.LFB226
+	.uaword	.LFE226-.LFB226
+	.uaword	.LFB227
+	.uaword	.LFE227-.LFB227
+	.uaword	.LFB228
+	.uaword	.LFE228-.LFB228
+	.uaword	.LFB229
+	.uaword	.LFE229-.LFB229
+	.uaword	.LFB230
+	.uaword	.LFE230-.LFB230
+	.uaword	.LFB231
+	.uaword	.LFE231-.LFB231
+	.uaword	.LFB232
+	.uaword	.LFE232-.LFB232
+	.uaword	.LFB233
+	.uaword	.LFE233-.LFB233
+	.uaword	0
+	.uaword	0
+.section .debug_ranges,"",@progbits
+.Ldebug_ranges0:
+	.uaword	.LFB221
+	.uaword	.LFE221
+	.uaword	.LFB222
+	.uaword	.LFE222
+	.uaword	.LFB223
+	.uaword	.LFE223
+	.uaword	.LFB224
+	.uaword	.LFE224
+	.uaword	.LFB225
+	.uaword	.LFE225
+	.uaword	.LFB226
+	.uaword	.LFE226
+	.uaword	.LFB227
+	.uaword	.LFE227
+	.uaword	.LFB228
+	.uaword	.LFE228
+	.uaword	.LFB229
+	.uaword	.LFE229
+	.uaword	.LFB230
+	.uaword	.LFE230
+	.uaword	.LFB231
+	.uaword	.LFE231
+	.uaword	.LFB232
+	.uaword	.LFE232
+	.uaword	.LFB233
+	.uaword	.LFE233
+	.uaword	0
+	.uaword	0
+.section .debug_line,"",@progbits
+.Ldebug_line0:
+.section .debug_str,"",@progbits
+.LASF5:
+	.string	"interrupt"
+.LASF0:
+	.string	"reserved_2"
+.LASF2:
+	.string	"reserved_5"
+.LASF1:
+	.string	"reserved_11"
+.LASF6:
+	.string	"irqen_temp"
+.LASF8:
+	.string	"spepat_temp"
+.LASF4:
+	.string	"reserved_24"
+.LASF3:
+	.string	"reserved_16"
+.LASF9:
+	.string	"patIndex"
+.LASF7:
+	.string	"patPtr"
+	.ident	"GCC: (HighTec Release HDP-v4.9.4.1-11fcedf) 4.9.4 build on 2020-09-01"

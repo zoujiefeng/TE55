@@ -1,0 +1,9 @@
+Nom_donnée|Type|Nom_module|Public|Nb_lignes|Nb_colonnes|Label_père|Offset|Masque_accès|Affichage|Unité|Fonction_transfert_ades|Coefficient_a|Coefficient_b|Groupe|Groupe_1|Groupe_2|Alias_1|Alias_2|Genre|Variable_indice_ligne|Variable_indice_colonne|Fonction_transfert_ligne|Fonction_transfert_colonne|Table_breakpoint_ligne|Table_breakpoint_colonne|Référence_spécification|Recuperable|Modifiable|Fournisseur|Responsable|Valeurs|Visualisable_ADES|Donnée_a_supprimer|Validation|Commentaires|Volatile|MinDecValue|MaxDecValue|MinPhysValue|MaxPhysValue|Def_Eval|MemSec
+SPY_bBufFull|boolean|SPY|0|0|0|SPY_bBufFull|0|0|Phys|bool|2|0||Development_z|Development_z||SPY_bBufFull||1||||||||0|1||||1|0|0||0||||||
+SPY_u16DaqListFirstElmIdx|uint16|SPY|0|0|0|SPY_u16DaqListFirstElmIdx|0|0|Déci|-||||Main|Main||SPY_u16DaqListFirstElmIdx||1||||||||0|1||||1|0|0||0|||||0|
+SPY_u16NrOfElmsToTx|uint16|SPY|0|0|0|SPY_u16NrOfElmsToTx|0|0|Déci|-||||Main|Main||SPY_u16NrOfElmsToTx||1||||||||0|1||||1|0|0||0|||||0|
+SPY_u16PreTrigSmplIdx|uint16|SPY|0|0|0|SPY_u16PreTrigSmplIdx|0|0|Déci|-||||Main|Main||SPY_u16PreTrigSmplIdx||1||||||||0|1||||1|0|0||0|||||0|
+SPY_u16RmngSmplIdx|uint16|SPY|0|0|0|SPY_u16RmngSmplIdx|0|0|Déci|-||||Main|Main||SPY_u16RmngSmplIdx||1||||||||0|1||||1|0|0||0|||||0|
+SPY_u16SmplIdx|uint16|SPY|0|0|0|SPY_u16SmplIdx|0|0|Déci|-||||Main|Main||SPY_u16SmplIdx||1||||||||0|1||||1|0|0||0|||||0|
+SPY_u16TrigSmplIdx|uint16|SPY|0|0|0|SPY_u16TrigSmplIdx|0|0|Déci|-||||Main|Main||SPY_u16TrigSmplIdx||1||||||||0|1||||1|0|0||0|||||0|
+

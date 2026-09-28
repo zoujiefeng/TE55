@@ -1,0 +1,94 @@
+#Generate User: 01004867
+#Generate Time: 2026-09-24 17:27:46
+
+Import('*')
+import re,sys, os, glob, fnmatch
+import prebuild
+objects = [
+]
+# INCLUDE DIRECTORIES
+# Implements: COR010
+includes = [
+	'AcuMain',
+	'AutoMSG',
+	'GcuMain',
+	'',
+	'McuMain',
+	'OcuMain',
+	'PduMain',
+	'_MainModule/AOCUErrProtect',
+	'_MainModule/Assert',
+	'_MainModule/CalibData',
+	'_MainModule/ErrCodePolling',
+	'_MainModule/FFUpdate',
+	'_MainModule/MuxFuncCfg',
+	'_MainModule/OCTrim',
+	'_MainModule/PduCtrl',
+	'_MainModule/ReadAllCallback',
+	'_MainModule/RollErrCode',
+	'_MainModule/RunTime',
+	'_MainModule',
+]#Include Files
+# SOURCE FILES
+sources = [
+	'AcuMain/MAIN_AcuDEF.c',
+	'AcuMain/MAIN_AcuTsk.c',
+	'AutoMSG/MAIN_MSG_Auto_Can01.c',
+	'AutoMSG/MAIN_MSG_Auto_Can01_DEF.c',
+	'AutoMSG/MAIN_MSG_Auto_Can02.c',
+	'AutoMSG/MAIN_MSG_Auto_Can02_DEF.c',
+	'AutoMSG/MAIN_MSG_Auto_Can03.c',
+	'AutoMSG/MAIN_MSG_Auto_Can03_DEF.c',
+	'AutoMSG/MAIN_MSG_period_Can01.c',
+	'AutoMSG/MAIN_MSG_period_Can02.c',
+	'AutoMSG/MAIN_MSG_period_Can03.c',
+	'GcuMain/GMAIN_DEF.c',
+	'GcuMain/GMAIN_tsk.c',
+	'McuMain/MAIN_DEF.c',
+	'McuMain/MAIN_tsk.c',
+	'OcuMain/MAIN_OcuDEF.c',
+	'OcuMain/MAIN_OcuTsk.c',
+	'PduMain/MAIN_PduDEF.c',
+	'PduMain/MAIN_PduTsk.c',
+	'_MainModule/AOCUErrProtect/MAIN_ACMErrProtect.c',
+	'_MainModule/AOCUErrProtect/MAIN_EPSErrProtect.c',
+	'_MainModule/Assert/InvtAssert.c',
+	'_MainModule/CalibData/MAIN_CalibData.c',
+	'_MainModule/ErrCodePolling/MAIN_ECPCfg_ACM.c',
+	'_MainModule/ErrCodePolling/MAIN_ECPCfg_EPS.c',
+	'_MainModule/ErrCodePolling/MAIN_ECPCfg_MCU1.c',
+	'_MainModule/ErrCodePolling/MAIN_ECPCfg_MCU2.c',
+	'_MainModule/ErrCodePolling/MAIN_ECPCfg_PDU.c',
+	'_MainModule/ErrCodePolling/MAIN_ErrCodePolling.c',
+	'_MainModule/FFUpdate/MAIN_FFUpdate.c',
+	'_MainModule/MuxFuncCfg/MAIN_MFC_Calib.c',
+	'_MainModule/MuxFuncCfg/MAIN_MuxFuncCfg.c',
+	'_MainModule/OCTrim/MAIN_OCTrim.c',
+	'_MainModule/PduCtrl/MAIN_PduCtrl.c',
+	'_MainModule/ReadAllCallback/MAIN_ReadAllCallback.c',
+	'_MainModule/RollErrCode/MAIN_RollErrCode.c',
+	'_MainModule/RunTime/MAIN_RunTime.c',
+]#Source Files
+# GENERATED SOURCE FILES
+gen_sources = [
+]
+
+# ADD INCLUDE DIRECTORIES
+for include in includes:
+    env.Append(CPPPATH=[Dir(include).abspath])
+    string = re.sub( r'output\\objs\\','''''' ,Dir(include).abspath)
+    prebuild.createSymlinkHeader( os.path.join(Dir('#').abspath,env['CEN_HEADER_DIR']),string )
+# COMPILE SOURCE FILES
+for source in sources:
+    objects += env.Object(source)
+
+# GENERATED SOURCE FILES
+for gen_source in gen_sources:
+    objects += env.Object(gen_source)
+
+# RETURN
+Return('objects')
+
+#*******************************************************************************
+# END OF FILE
+#*******************************************************************************

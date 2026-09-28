@@ -1,0 +1,9 @@
+Nom_donn�e|Type|Nom_module|Public|Nb_lignes|Nb_colonnes|Label_p�re|Offset|Masque_acc�s|Affichage|Unit�|Fonction_transfert_ades|Coefficient_a|Coefficient_b|Groupe|Groupe_1|Groupe_2|Alias_1|Alias_2|Genre|Variable_indice_ligne|Variable_indice_colonne|Fonction_transfert_ligne|Fonction_transfert_colonne|Table_breakpoint_ligne|Table_breakpoint_colonne|R�f�rence_sp�cification|Recuperable|Modifiable|Fournisseur|Responsable|Valeurs|Visualisable_ADES|Donn�e_a_supprimer|Validation|Commentaires|Volatile|MinDecValue|MaxDecValue|MinPhysValue|MaxPhysValue|Def_Eval|MemSec
+CalUsr_ku32CalibUpdEnaMskA|uint32|CALUSR|1|0|0|CalUsr_ku32CalibUpdEnaMskA|0|0|Hexa|-||||CALUSR|CALUSR||CalUsr_ku32CalibUpdEnaMskA||2|||||||NONE|1|1|||0xAAAAAAAA|1|0|0|...|0||||||
+CalUsr_ku32CalibUpdEnaMskB|uint32|CALUSR|1|0|0|CalUsr_ku32CalibUpdEnaMskB|0|0|Hexa|-||||CALUSR|CALUSR||CalUsr_ku32CalibUpdEnaMskB||2|||||||NONE|1|1|||0xBBBBBBBB|1|0|0|...|0||||||
+CalUsr_u32PODataCRC|uint32|CALUSR|1|0|0|CalUsr_u32PODataCRC|0|0|Hexa|-||||CALUSR|CALUSR|Raw|CalUsr_u32PODataCRC||1|||||||NONE|0|1||||1|0|0|.|0||||||
+CalUsr_u32ChkDataCrc|uint32|CALUSR|0|0|0|CalUsr_u32ChkDataCrc|0|0|Hexa|-||||CALUSR|CALUSR|Raw|CalUsr_u32ChkDataCrc||1|||||||NONE|0|1||||1|0|0|.|0||||||
+CalUsr_bIsCalibUpdEna|boolean|CALUSR|1|0|0|CalUsr_bIsCalibUpdEna|0|0|Phys|bool|2|0||CALUSR|CALUSR||CalUsr_bIsCalibUpdEna||1|||||||NONE|0|1||||1|0|0|Check whether OC enabled|0||||||
+CalUsr_u32POCalibDnEnaMskA|uint32|CALUSR|0|0|0|CalUsr_u32POCalibDnEnaMskA|0|0|Hexa|-||||CALUSR|CALUSR|Raw|CalUsr_u32POCalibDnEnaMskA||1|||||||NONE|0|1||||1|0|0|.|0||||||
+CalUsr_u32POCalibDnEnaMskB|uint32|CALUSR|0|0|0|CalUsr_u32POCalibDnEnaMskB|0|0|Hexa|-||||CALUSR|CALUSR|Raw|CalUsr_u32POCalibDnEnaMskB||1|||||||NONE|0|1||||1|0|0|.|0||||||
+

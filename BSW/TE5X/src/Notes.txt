@@ -1,0 +1,9 @@
+
+RTE Command:
+-nts -ur=2 --os-define-osenv=RTAOS40 --exclusive-area-optimization=enable --os-output-param=all --use-partition-sections=on --deviate-bsw-any-partition=1 --deviate-split-swci-support=1 --os-output-param=changed --have-64bit-int-types=1
+
+Tools used:
+RTA-CAR 9.2.1
+Hightec: cd_v4.9.2.0
+scons: >4.0
+Python:>3.8

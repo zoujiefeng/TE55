@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00047.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>ASW_DEM</SHORT-NAME>
+      <ELEMENTS>
+        <APPLICATION-SW-COMPONENT-TYPE>
+          <SHORT-NAME>ASW_DEM</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="Master">
+                <SD>true</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <PORTS>
+            <R-PORT-PROTOTYPE>
+              <SHORT-NAME>RPort_OpCycle_DemOperationCycle_Power</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_Dem/PortInterfaces/OperationCycle</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="47999e4e-3353-4ea9-a63c-a4ece4e54e4d">
+              <SHORT-NAME>DataServices_CS_ExtendedDataRecord_Fault_pending_counter</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_Dem/PortInterfaces/DataServices_CS_ExtendedDataRecord_Fault_pending_counter</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="5dcd3193-b168-4ac0-b51e-08c6e8f299e4">
+              <SHORT-NAME>DataServices_CS_ExtendedDataRecord_Aged_counter</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_Dem/PortInterfaces/DataServices_CS_ExtendedDataRecord_Aged_counter</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE>
+              <SHORT-NAME>OpCycle_DemOperationCycle_Ignition</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_Dem/PortInterfaces/OperationCycle</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE>
+              <SHORT-NAME>IndStatus_MIL</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/AUTOSAR_Dem/PortInterfaces/IndicatorStatus</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+          </PORTS>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR UUID="92987871-a91b-4163-9ee6-e1ac885b1d92">
+              <SHORT-NAME>IB_Dem_SWC</SHORT-NAME>
+              <EVENTS>
+                <TIMING-EVENT UUID="c079f554-fc3c-441b-8610-3afccb3bccae">
+                  <SHORT-NAME>TimingEvent_Dem_SWC</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ASW_DEM/ASW_DEM/IB_Dem_SWC/ASW_DEM_PeriodicRunnable_10ms</START-ON-EVENT-REF>
+                  <PERIOD>0.01</PERIOD>
+                </TIMING-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="5164fa47-0673-41fc-bd38-436337eabce1">
+                  <SHORT-NAME>OperationInvokedEvent_2</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ASW_DEM/ASW_DEM/IB_Dem_SWC/ASW_DEM_DataServices_CS_ExtendedDataRecord_Fault_pending_counter</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ASW_DEM/ASW_DEM/DataServices_CS_ExtendedDataRecord_Fault_pending_counter</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_Dem/PortInterfaces/DataServices_CS_ExtendedDataRecord_Fault_pending_counter/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="db550a57-d479-423b-9a38-efbb49dca340">
+                  <SHORT-NAME>OperationInvokedEvent_3</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ASW_DEM/ASW_DEM/IB_Dem_SWC/ASW_DEM_DataServices_CS_ExtendedDataRecord_Aged_counter</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ASW_DEM/ASW_DEM/DataServices_CS_ExtendedDataRecord_Aged_counter</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_Dem/PortInterfaces/DataServices_CS_ExtendedDataRecord_Aged_counter/ReadData</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+              </EVENTS>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="6b2d2d32-59c1-4deb-b16f-186fe0c7b715">
+                  <SHORT-NAME>ASW_DEM_PeriodicRunnable_10ms</SHORT-NAME>
+                  <SERVER-CALL-POINTS>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="86a99eaa-33e1-4446-8024-586fb82ad536">
+                      <SHORT-NAME>SynchronousServerCallPoint_10</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ASW_DEM/ASW_DEM/RPort_OpCycle_DemOperationCycle_Power</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_Dem/PortInterfaces/OperationCycle/SetOperationCycleState</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="379a3cf6-7aef-439d-8e6a-d41bcbdf04bd">
+                      <SHORT-NAME>SynchronousServerCallPoint_11</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ASW_DEM/ASW_DEM/RPort_OpCycle_DemOperationCycle_Power</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_Dem/PortInterfaces/OperationCycle/GetOperationCycleState</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="c8d3f982-e56c-4d55-b010-cfaa5d91877f">
+                      <SHORT-NAME>SynchronousServerCallPoint_12</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ASW_DEM/ASW_DEM/RPort_OpCycle_DemOperationCycle_Power</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_Dem/PortInterfaces/OperationCycle/GetCycleQualified</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="c98b7491-8e0c-4b39-bbb4-5dddcd16de4d">
+                      <SHORT-NAME>SynchronousServerCallPoint_13</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ASW_DEM/ASW_DEM/RPort_OpCycle_DemOperationCycle_Power</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_Dem/PortInterfaces/OperationCycle/SetCycleQualified</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="e603a7c5-49df-4c67-9961-b9beb117ae80">
+                      <SHORT-NAME>SynchronousServerCallPoint_6</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ASW_DEM/ASW_DEM/OpCycle_DemOperationCycle_Ignition</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_Dem/PortInterfaces/OperationCycle/SetOperationCycleState</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="7f1fa3d4-a972-474c-a5e1-dc63220fee7f">
+                      <SHORT-NAME>SynchronousServerCallPoint_7</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ASW_DEM/ASW_DEM/OpCycle_DemOperationCycle_Ignition</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_Dem/PortInterfaces/OperationCycle/GetOperationCycleState</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="e96ceaf1-0745-438a-b5e9-f56c0409e68b">
+                      <SHORT-NAME>SynchronousServerCallPoint_8</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/ASW_DEM/ASW_DEM/IndStatus_MIL</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/AUTOSAR_Dem/PortInterfaces/IndicatorStatus/GetIndicatorStatus</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                  </SERVER-CALL-POINTS>
+                  <SYMBOL>ASW_DEM_PeriodicRunnable_10ms_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="427bbe99-e596-4363-9262-8695f5dfc151">
+                  <SHORT-NAME>ASW_DEM_DataServices_CS_ExtendedDataRecord_Fault_pending_counter</SHORT-NAME>
+                  <SYMBOL>ASW_DEM_DataServices_CS_ExtendedDataRecord_Fault_pending_counter_ReadData_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="20071e58-1629-4a1c-9884-f534affafb8a">
+                  <SHORT-NAME>ASW_DEM_DataServices_CS_ExtendedDataRecord_Aged_counter</SHORT-NAME>
+                  <SYMBOL>ASW_DEM_DataServices_CS_ExtendedDataRecord_Aged_counter_ReadData_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="e6939895-c1b8-4af8-99b3-b82395750c2b">
+                  <SHORT-NAME>ASW_DEM_CBStatusComp_DemComponent</SHORT-NAME>
+                  <SYMBOL>ASW_DEM_CBStatusComp_DemComponent_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </APPLICATION-SW-COMPONENT-TYPE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

@@ -1,0 +1,2010 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>ETAS_Project</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>EcucModuleConfigurationValuess</SHORT-NAME>
+                  <ELEMENTS>
+                    <ECUC-MODULE-CONFIGURATION-VALUES>
+                      <SHORT-NAME>Mfx</SHORT-NAME>
+                      <DEFINITION-REF DEST="ECUC-MODULE-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx</DEFINITION-REF>
+                      <CONTAINERS>
+                        <ECUC-CONTAINER-VALUE>
+                          <SHORT-NAME>MfxGeneral_0</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxGeneral</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-NUMERICAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxGeneral/MfxRbOptimizationMcuExtract</DEFINITION-REF>
+                              <VALUE>false</VALUE>
+                            </ECUC-NUMERICAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxGeneral/MfxRbOptimization</DEFINITION-REF>
+                              <VALUE>NO_OPTIMIZATION</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxGeneral/Mfx_VersionInfoAPI</DEFINITION-REF>
+                              <VALUE>ON</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                        <ECUC-CONTAINER-VALUE>
+                          <SHORT-NAME>MfxRbMemoryLocations_0</SHORT-NAME>
+                          <DEFINITION-REF DEST="ECUC-PARAM-CONF-CONTAINER-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations</DEFINITION-REF>
+                          <PARAMETER-VALUES>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbss16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbss16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbss32s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbss32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbss32s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbss32u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbss32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbss32u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbss8s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbss8u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsDiffs16s16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsDiffs16s16s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsDiffs16s16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsDiffs16s16u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsDiffs32s32s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsDiffs32s32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsDiffs32s32s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsDiffs32s32u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsDiffs32s32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsDiffs32s32u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsDiffs8s8s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsDiffs8s8u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsDiffu16s16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsDiffu16s16s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsDiffu16s16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsDiffu16s16u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsDiffu16u16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsDiffu16u16s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsDiffu16u16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsDiffu16u16u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsdiffu32s32s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsdiffu32s32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsdiffu32s32s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsDiffu32s32u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsDiffu32s32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsDiffu32s32u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsdiffu32u32s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsdiffu32u32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsdiffu32u32s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsDiffu32u32u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsDiffu32u32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsDiffu32u32u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsDiffu8s8s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsDiffu8s8u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsDiffu8u8s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsDiffu8u8u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsDiffP2s16s16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsDiffP2s16s16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsDiffP2u16s16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsDiffP2u16s16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsDiffP2u16u16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsDiffP2u16u16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsP2s16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsP2s16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsP2s32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAbsP2s32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAdds16s16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAdds16s16s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAdds16s16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAdds16s16u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAdds32s32s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAdds32s32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAdds32s32s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAdds32s32u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAdds32s32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAdds32s32u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAdds8s8s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAdds8s8u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAddu16s16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAddu16s16s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAddu16s16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAddu16s16u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAddu16u16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAddu16u16s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAddu16u16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAddu16u16u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAddu32s32s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAddu32s32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAddu32s32s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAddu32s32u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAddu32s32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAddu32s32u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAddu32u32s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAddu32u32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAddu32u32s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAddu32u32u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAddu32u32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAddu32u32u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAddu8s8s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAddu8s8u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAddu8u8s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAddu8u8u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAddP2s16s16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAddP2s16s16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAddP2s32s32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAddP2s32s32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAddP2u16s16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAddP2u16s16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAddP2u16u16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAddP2u16u16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAddP2u32s32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAddP2u32s32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAddP2u32u32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocAddP2u32u32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocConvertP2s16s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocConvertP2s16s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocConvertP2s32s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocConvertP2s8s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocConvertP2u16u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocConvertP2u16u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocConvertP2u32u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocConvertP2u8u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivs16s16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivs16s16s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivs16s16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivs16s16u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivs16u16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivs16u16s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivs16u16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivs16u16u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivs32s16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivs32s32s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivs32s32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivs32s32s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivs32s32u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivs32s32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivs32s32u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivs32u16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivs32u32s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivs32u32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivs32u32s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivs32u32u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivs32u32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivs32u32u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivs8s8s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivs8s8u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivs8u8s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivs8u8u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivu16s16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivu16s16s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivu16s16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivu16s16u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivu16u16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivu16u16s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivu16u16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivu16u16u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivu32s32s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivu32s32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivu32s32s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivu32s32u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivu32s32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivu32s32u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivu32u16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivu32u16u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivu32u32s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivu32u32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivu32u32s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivu32u32u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivu32u32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivu32u32u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivu8s8s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivu8s8u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivu8u8s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivu8u8u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivP2s16s16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivP2s16s16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivP2s16u16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivP2s16u16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivP2s32s32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivP2s32s32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivP2s32u32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivP2s32u32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivP2u16s16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivP2u16s16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivP2u16u16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivP2u16u16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivP2u32s32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivP2u32s32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivP2u32u32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivP2u32u32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivShLefts16s16u8s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivShLefts16u16u8s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivShLefts32s32u8s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivShLefts32s32u8s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivShLefts32s32u8s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivShLefts32s32u8u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivShLefts32s32u8u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivShLefts32s32u8u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivShLefts32u32u8s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivShLefts32u32u8s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivShLefts32u32u8s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivShLefts32u32u8u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivShLefts32u32u8u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivShLefts32u32u8u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivShLeftu16u16u8u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivShLeftu16u16u8u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivShLeftu32s32u8s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivShLeftu32s32u8s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivShLeftu32s32u8s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivShLeftu32s32u8u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivShLeftu32s32u8u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivShLeftu32s32u8u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivShLeftu32u32u8s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivShLeftu32u32u8s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivShLeftu32u32u8s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivShLeftu32u32u8u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivShLeftu32u32u8u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivShLeftu32u32u8u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocDivShLeftu8u8u8u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocLimits16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocLimits32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocLimits8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocLimitu16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocLimitu32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocLimitu8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMaxs16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMaxs32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMaxs8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMaxu16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMaxu32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMaxu8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMins16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMins32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMins8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMinu16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMinu32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMinu8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMinmaxs16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMinmaxs32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMinmaxs8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMinmaxu16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMinmaxu32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMinmaxu8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMods16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMods32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMods32s32s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMods32s32s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMods8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocModu16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocModu32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocModu32u32u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocModu32u32u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocModu8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMuls16s16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMuls16s16s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMuls16s16s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMuls16s16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMuls16s16u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMuls16u16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMuls16u16s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMuls16u16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMuls32s32s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMuls32s32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMuls32s32s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMuls32s32u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMuls32s32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMuls32s32u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMuls32u16s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMuls8s8s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMuls8s8u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMuls8u8s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMuls8u8u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulu16s16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulu16s16s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulu16s16s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulu16s16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulu16s16u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulu16u16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulu16u16s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulu16u16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulu16u16u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulu16u16u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulu32s32s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulu32s32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulu32s32s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulu32s32u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulu32s32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulu32s32u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulu32u16u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulu32u32s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulu32u32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulu32u32s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulu32u32u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulu32u32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulu32u32u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulu8s8s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulu8s8u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulu8u8s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulu8u8u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulDivs16s16s16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulDivs16s16u16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulDivs16u16s16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulDivs16u16s16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulDivs16u16u16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulDivs16u16u16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulDivs32s32s16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulDivs32s32s32s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulDivs32s32s32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulDivs32s32s32u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulDivs32s32u32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulDivs32u32s32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulDivs32u32u32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulDivu16s16s16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulDivu16s16s16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulDivu16s16u16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulDivu16s16u16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulDivu16u16u16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulDivu32s32s32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulDivu32s32s32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulDivu32s32u32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulDivu32s32u32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulDivu32u32s32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulDivu32u32u16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulDivu32u32u32u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulDivu32u32u32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulP2s16s16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulP2s16s16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulP2s32s32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulP2s32s32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulP2u16s16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulP2u16s16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulP2u16u16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulP2u16u16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulP2u32s32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulP2u32s32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulP2u32u32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulP2u32u32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulShRights16s16u8s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulShRights16s16u8s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulShRights16s16u8u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulShRights16s16u8u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulShRights32s32u8s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulShRights32s32u8s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulShRights32s32u8s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulShRights32s32u8u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulShRights32s32u8u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulShRights32s32u8u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulShRightu32s32u8s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulShRightu32s32u8s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulShRightu32s32u8s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulShRightu32s32u8u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulShRightu32s32u8u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulShRightu32s32u8u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulShRightu32u32u8s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulShRightu32u32u8s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulShRightu32u32u8s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulShRightu32u32u8u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulShRightu32u32u8u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocMulShRightu32u32u8u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivs16s16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivs16s16s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivs16s16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivs16s16u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivs16u16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivs16u16s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivs16u16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivs16u16u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivs32s16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivs32s32s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivs32s32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivs32s32s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivs32s32u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivs32s32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivs32s32u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivs32u16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivs32u32s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivs32u32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivs32u32s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivs32u32u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivs32u32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivs32u32u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivs8s8s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivs8s8u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivs8u8s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivs8u8u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivu16s16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivu16s16s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivu16s16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivu16s16u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivu16u16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivu16u16s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivu16u16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivu16u16u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivu32s32s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivu32s32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivu32s32s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivu32s32u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivu32s32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivu32s32u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivu32u16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivu32u16u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivu32u32s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivu32u32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivu32u32s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivu32u32u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivu32u32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivu32u32u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivu8s8s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivu8s8u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivu8u8s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRDivu8u8u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRMulDivs16s16s16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRMulDivs16s16u16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRMulDivs16u16s16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRMulDivs16u16s16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRMulDivs16u16u16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRMulDivs16u16u16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRMulDivs32s32s16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRMulDivs32s32s32s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRMulDivs32s32s32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRMulDivs32s32s32u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRMulDivs32s32u32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRMulDivs32u32s32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRMulDivs32u32u32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRMulDivu16s16s16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRMulDivu16s16s16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRMulDivu16s16u16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRMulDivu16s16u16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRMulDivu16u16u16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRMulDivu32s32s32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRMulDivu32s32s32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRMulDivu32s32u32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRMulDivu32s32u32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRMulDivu32u32s32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRMulDivu32u32u16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRMulDivu32u32u32u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocRMulDivu32u32u32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubs16s16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubs16s16s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubs16s16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubs16s16u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubs16u16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubs16u16s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubs16u16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubs16u16u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubs32s32s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubs32s32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubs32s32s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubs32s32u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubs32s32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubs32s32u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubs32u32s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubs32u32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubs32u32s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubs32u32u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubs32u32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubs32u32u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubs8s8s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubs8s8u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubs8u8s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubs8u8u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubu16s16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubu16s16s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubu16s16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubu16s16u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubu16u16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubu16u16s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubu16u16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubu16u16u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubu32s32s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubu32s32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubu32s32s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubu32s32u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubu32s32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubu32s32u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubu32u32s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubu32u32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubu32u32s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubu32u32u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubu32u32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubu32u32u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubu8s8s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubu8s8u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubu8u8s8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubu8u8u8</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubP2s16s16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubP2s16s16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubP2s16u16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubP2s16u16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubP2s32s32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubP2s32s32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubP2s32u32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubP2s32u32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubP2u16s16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubP2u16s16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubP2u16u16s16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubP2u16u16u16</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubP2u32s32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubP2u32s32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubP2u32u32s32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                            <ECUC-TEXTUAL-PARAM-VALUE>
+                              <DEFINITION-REF DEST="ECUC-ENUMERATION-PARAM-DEF">/AUTOSAR_Mfx/EcucModuleDefs/Mfx/MfxRbMemoryLocations/mfxRbMemLocSubP2u32u32u32</DEFINITION-REF>
+                              <VALUE>NORMAL</VALUE>
+                            </ECUC-TEXTUAL-PARAM-VALUE>
+                          </PARAMETER-VALUES>
+                        </ECUC-CONTAINER-VALUE>
+                      </CONTAINERS>
+                    </ECUC-MODULE-CONFIGURATION-VALUES>
+                  </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

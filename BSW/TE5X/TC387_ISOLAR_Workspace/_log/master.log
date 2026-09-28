@@ -1,0 +1,1488 @@
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=C:\Work\01_Project\2022203340_PJ_INVT_AUTOSAR_package\01_Draft\30_Implementation\20_Software\branch\INVT_TC375_HighTec_AR422_NewDBC\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/RPort_DCMServices" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/RPort_DataServices_DcmDspData_SystemFaultRank_Write" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/RPort_DataServices_DcmDspData_VehicleSpeed_Write" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/R_DataServices_DcmDspData_ECU_Serial_Number" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/R_DataServices_DcmDspData_VIN" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D01" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D02" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D06_Comb0" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D06_Comb1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/RPort_OpCycle_DemOperationCycle_Power" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NM/ASW_NM/RP_ComM_UserRequest_CAN0" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NM/ASW_NM/RPort_EcuModeLimitation" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NVM/ASW_NVM/ASW_NVM/RPort_ASW_NVM_BlockNative_1024_1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NVM/ASW_NVM/ASW_NVM/RPort_ASW_NVM_BlockNative_1024_2" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_Alive_Supervision_Entity1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_Deadline_Supervision_Entity1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_Deadline_Supervision_Entity2" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_WdgM_GlobalMode" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2022/06/30 11:30:15
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=C:\Work\01_Project\2022203340_PJ_INVT_AUTOSAR_package\01_Draft\30_Implementation\20_Software\branch\INVT_TC375_HighTec_AR422_NewDBC\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/RPort_DCMServices" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/RPort_DataServices_DcmDspData_SystemFaultRank_Write" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/RPort_DataServices_DcmDspData_VehicleSpeed_Write" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/R_DataServices_DcmDspData_ECU_Serial_Number" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/R_DataServices_DcmDspData_VIN" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D01" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D02" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D06_Comb0" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D06_Comb1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/RPort_OpCycle_DemOperationCycle_Power" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NM/ASW_NM/RP_ComM_UserRequest_CAN0" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NM/ASW_NM/RPort_EcuModeLimitation" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NVM/ASW_NVM/ASW_NVM/RPort_ASW_NVM_BlockNative_1024_1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NVM/ASW_NVM/ASW_NVM/RPort_ASW_NVM_BlockNative_1024_2" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_Alive_Supervision_Entity1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_Deadline_Supervision_Entity1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_Deadline_Supervision_Entity2" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_WdgM_GlobalMode" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2022/06/30 11:31:50
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=C:\Work\01_Project\2022203340_PJ_INVT_AUTOSAR_package\01_Draft\30_Implementation\20_Software\branch\INVT_TC375_HighTec_AR422_NewDBC\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/RPort_DCMServices" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/RPort_DataServices_DcmDspData_SystemFaultRank_Write" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/RPort_DataServices_DcmDspData_VehicleSpeed_Write" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/R_DataServices_DcmDspData_ECU_Serial_Number" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/R_DataServices_DcmDspData_VIN" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D01" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D02" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D06_Comb0" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D06_Comb1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/RPort_OpCycle_DemOperationCycle_Power" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NM/ASW_NM/RP_ComM_UserRequest_CAN0" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NM/ASW_NM/RPort_EcuModeLimitation" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NVM/ASW_NVM/ASW_NVM/RPort_ASW_NVM_BlockNative_1024_1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NVM/ASW_NVM/ASW_NVM/RPort_ASW_NVM_BlockNative_1024_2" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_Alive_Supervision_Entity1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_Deadline_Supervision_Entity1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_Deadline_Supervision_Entity2" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_WdgM_GlobalMode" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2022/06/30 11:46:28
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=C:\Work\01_Project\2022203340_PJ_INVT_AUTOSAR_package\01_Draft\30_Implementation\20_Software\branch\INVT_TC375_HighTec_AR422_NewDBC\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/RPort_DCMServices" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/RPort_DataServices_DcmDspData_SystemFaultRank_Write" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/RPort_DataServices_DcmDspData_VehicleSpeed_Write" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/R_DataServices_DcmDspData_ECU_Serial_Number" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/R_DataServices_DcmDspData_VIN" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D01" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D02" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D06_Comb0" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D06_Comb1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/RPort_OpCycle_DemOperationCycle_Power" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NM/ASW_NM/RP_ComM_UserRequest_CAN0" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NM/ASW_NM/RPort_EcuModeLimitation" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NVM/ASW_NVM/ASW_NVM/RPort_ASW_NVM_BlockNative_1024_1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NVM/ASW_NVM/ASW_NVM/RPort_ASW_NVM_BlockNative_1024_2" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_Alive_Supervision_Entity1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_Deadline_Supervision_Entity1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_Deadline_Supervision_Entity2" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_WdgM_GlobalMode" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2022/06/30 13:36:10
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=C:\Work\01_Project\2022203340_PJ_INVT_AUTOSAR_package\01_Draft\30_Implementation\20_Software\branch\INVT_TC375_HighTec_AR422_NewDBC\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/RPort_DCMServices" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/RPort_DataServices_DcmDspData_SystemFaultRank_Write" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/RPort_DataServices_DcmDspData_VehicleSpeed_Write" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/R_DataServices_DcmDspData_ECU_Serial_Number" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/R_DataServices_DcmDspData_VIN" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D01" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D02" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D06_Comb0" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D06_Comb1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/RPort_OpCycle_DemOperationCycle_Power" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NM/ASW_NM/RP_ComM_UserRequest_CAN0" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NM/ASW_NM/RPort_EcuModeLimitation" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NVM/ASW_NVM/ASW_NVM/RPort_ASW_NVM_BlockNative_1024_1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NVM/ASW_NVM/ASW_NVM/RPort_ASW_NVM_BlockNative_1024_2" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_Alive_Supervision_Entity1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_Deadline_Supervision_Entity1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_Deadline_Supervision_Entity2" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_WdgM_GlobalMode" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2022/06/30 13:37:11
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=C:\Work\01_Project\2022203340_PJ_INVT_AUTOSAR_package\01_Draft\30_Implementation\20_Software\branch\INVT_TC375_HighTec_AR422_NewDBC\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/RPort_DCMServices" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/RPort_DataServices_DcmDspData_SystemFaultRank_Write" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/RPort_DataServices_DcmDspData_VehicleSpeed_Write" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/R_DataServices_DcmDspData_ECU_Serial_Number" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/R_DataServices_DcmDspData_VIN" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D01" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D02" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D06_Comb0" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D06_Comb1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/RPort_OpCycle_DemOperationCycle_Power" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NM/ASW_NM/RP_ComM_UserRequest_CAN0" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NM/ASW_NM/RPort_EcuModeLimitation" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NVM/ASW_NVM/ASW_NVM/RPort_ASW_NVM_BlockNative_1024_1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NVM/ASW_NVM/ASW_NVM/RPort_ASW_NVM_BlockNative_1024_2" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_Alive_Supervision_Entity1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_Deadline_Supervision_Entity1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_Deadline_Supervision_Entity2" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_WdgM_GlobalMode" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2022/06/30 13:43:56
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=C:\Work\01_Project\2022203340_PJ_INVT_AUTOSAR_package\01_Draft\30_Implementation\20_Software\branch\INVT_TC375_HighTec_AR422_NewDBC\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                Following problems occurred during EcuExtract */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+[[CMD_ECUEXTR_ERROR ] : Given EcuInstance is not configured in any System with category "SYSTEM_EXTRACT/SYSTEM_DESCRIPTION".
+]
+
+
+/************************************************************************************************************************************/
+
+[ERROR-MESSAGE] : [EcuExtract_ERR_20] Duplicate SystemMapping <"/Systems/System/SystemMapping"> with same shortname found under System. SystemMapping should have a unique shortname.
+
+[ERROR-MESSAGE] : [EcuExtract_ERR_20] Duplicate SystemMapping <"/Systems/System/SystemMapping"> with same shortname found under System. SystemMapping should have a unique shortname.
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is aborted. Check errors for more details.
+
+
+Generated on 2022/06/30 13:49:40
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=C:\Work\01_Project\2022203340_PJ_INVT_AUTOSAR_package\01_Draft\30_Implementation\20_Software\branch\INVT_TC375_HighTec_AR422_NewDBC\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/RPort_DCMServices" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/RPort_DataServices_DcmDspData_SystemFaultRank_Write" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/RPort_DataServices_DcmDspData_VehicleSpeed_Write" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/R_DataServices_DcmDspData_ECU_Serial_Number" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/R_DataServices_DcmDspData_VIN" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D01" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D02" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D06_Comb0" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D06_Comb1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/RPort_OpCycle_DemOperationCycle_Power" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NM/ASW_NM/RP_ComM_UserRequest_CAN0" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NM/ASW_NM/RPort_EcuModeLimitation" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NVM/ASW_NVM/ASW_NVM/RPort_ASW_NVM_BlockNative_1024_1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NVM/ASW_NVM/ASW_NVM/RPort_ASW_NVM_BlockNative_1024_2" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_Alive_Supervision_Entity1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_Deadline_Supervision_Entity1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_Deadline_Supervision_Entity2" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_WdgM_GlobalMode" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2022/06/30 13:51:40
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=C:\Work\01_Project\2022203340_PJ_INVT_AUTOSAR_package\01_Draft\30_Implementation\20_Software\branch\INVT_TC375_HighTec_AR422_NewDBC\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/RPort_DCMServices" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/RPort_DataServices_DcmDspData_SystemFaultRank_Write" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/RPort_DataServices_DcmDspData_VehicleSpeed_Write" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/R_DataServices_DcmDspData_ECU_Serial_Number" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/R_DataServices_DcmDspData_VIN" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D01" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D02" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D06_Comb0" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D06_Comb1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/RPort_OpCycle_DemOperationCycle_Power" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NM/ASW_NM/RP_ComM_UserRequest_CAN0" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NM/ASW_NM/RPort_EcuModeLimitation" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NVM/ASW_NVM/ASW_NVM/RPort_ASW_NVM_BlockNative_1024_1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NVM/ASW_NVM/ASW_NVM/RPort_ASW_NVM_BlockNative_1024_2" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_Alive_Supervision_Entity1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_Deadline_Supervision_Entity1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_Deadline_Supervision_Entity2" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_WdgM_GlobalMode" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2022/06/30 13:58:37
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=C:\Work\01_Project\2022203340_PJ_INVT_AUTOSAR_package\01_Draft\30_Implementation\20_Software\branch\INVT_TC375_HighTec_AR422_NewDBC\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/RPort_DCMServices" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/RPort_DataServices_DcmDspData_SystemFaultRank_Write" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/RPort_DataServices_DcmDspData_VehicleSpeed_Write" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/R_DataServices_DcmDspData_ECU_Serial_Number" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/R_DataServices_DcmDspData_VIN" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D01" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D02" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D06_Comb0" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D06_Comb1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/RPort_OpCycle_DemOperationCycle_Power" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NM/ASW_NM/RP_ComM_UserRequest_CAN0" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NM/ASW_NM/RPort_EcuModeLimitation" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NVM/ASW_NVM/ASW_NVM/RPort_ASW_NVM_BlockNative_1024_1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NVM/ASW_NVM/ASW_NVM/RPort_ASW_NVM_BlockNative_1024_2" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_Alive_Supervision_Entity1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_Deadline_Supervision_Entity1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_Deadline_Supervision_Entity2" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_WdgM_GlobalMode" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2022/06/30 14:06:33
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=C:\Work\01_Project\2022203340_PJ_INVT_AUTOSAR_package\01_Draft\30_Implementation\20_Software\branch\INVT_TC375_HighTec_AR422_NewDBC\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/RPort_DCMServices" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/RPort_DataServices_DcmDspData_SystemFaultRank_Write" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/RPort_DataServices_DcmDspData_VehicleSpeed_Write" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/R_DataServices_DcmDspData_ECU_Serial_Number" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/R_DataServices_DcmDspData_VIN" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D01" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D02" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D06_Comb0" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D06_Comb1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/RPort_OpCycle_DemOperationCycle_Power" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NM/ASW_NM/RP_ComM_UserRequest_CAN0" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NM/ASW_NM/RPort_EcuModeLimitation" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NVM/ASW_NVM/ASW_NVM/RPort_ASW_NVM_BlockNative_1024_1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NVM/ASW_NVM/ASW_NVM/RPort_ASW_NVM_BlockNative_1024_2" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_Alive_Supervision_Entity1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_Deadline_Supervision_Entity1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_Deadline_Supervision_Entity2" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_WdgM_GlobalMode" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2022/06/30 14:12:33
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=C:\Work\01_Project\2022203340_PJ_INVT_AUTOSAR_package\01_Draft\30_Implementation\20_Software\branch\INVT_TC375_HighTec_AR422_NewDBC\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/RPort_DCMServices" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/RPort_DataServices_DcmDspData_SystemFaultRank_Write" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/RPort_DataServices_DcmDspData_VehicleSpeed_Write" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/R_DataServices_DcmDspData_ECU_Serial_Number" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DCM/ASW_DCM/R_DataServices_DcmDspData_VIN" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D01" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D02" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D06_Comb0" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/Event_DemEventParameter_0D06_Comb1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_DEM/ASW_DEM/RPort_OpCycle_DemOperationCycle_Power" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NM/ASW_NM/RP_ComM_UserRequest_CAN0" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NM/ASW_NM/RPort_EcuModeLimitation" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NVM/ASW_NVM/ASW_NVM/RPort_ASW_NVM_BlockNative_1024_1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NVM/ASW_NVM/ASW_NVM/RPort_ASW_NVM_BlockNative_1024_2" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_Alive_Supervision_Entity1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_Deadline_Supervision_Entity1" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_Deadline_Supervision_Entity2" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ARPackage_0/ASW_WDG/RPort_WdgM_GlobalMode" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2022/06/30 14:21:19
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=E:\Administrator\PROJETS\IFL100_SWA_BSWTC26\AurixGen3\ETAS\Code_20220701a\INVT_TC375_HighTec_AR422_CANDB\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2022/07/21 15:31:27
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=E:\Administrator\PROJETS\IFL100_SWA_BSWTC26\AurixGen3\ETAS\Code_20220701a\INVT_TC375_HighTec_AR422_CANDB\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2022/07/26 16:40:54
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=E:\Administrator\PROJETS\IFL100_SWA_BSWTC26\AurixGen3\ETAS\Code_20220701a\INVT_TC375_HighTec_AR422_CANDB\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2022/07/27 09:09:20
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=E:\Administrator\PROJETS\IFL100_SWA_BSWTC26\AurixGen3\ETAS\Code_20220701a\INVT_TC375_HighTec_AR422_CANDB\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2022/07/27 16:31:40
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=E:\Administrator\PROJETS\IFL100_SWA_BSWTC26\AurixGen3\ETAS\Code_20220701a\INVT_TC375_HighTec_AR422_CAN_Exchange\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2022/07/28 18:26:47
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=E:\Administrator\PROJETS\IFL100_SWA_BSWTC26\AurixGen3\Development\INVT_TC375_HighTec_AR422\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2022/08/24 11:13:48
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=E:\Administrator\PROJETS\IFL100_SWA_BSWTC26\AurixGen3\Development\INVT_TC375_HighTec_AR422\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2022/08/24 13:10:55
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=E:\Administrator\PROJETS\IFL100_SWA_BSWTC26\AurixGen3\Development\INVT_TC375_HighTec_AR422\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_10] VariableDataPrototype<"/AUTOSAR_Dcm/PortInterfaces/DataServices_File_Version/Data" is not configured to any datatype or invalid reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2022/08/24 13:27:14
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=E:\Administrator\PROJETS\IFL100_SWA_BSWTC26\AurixGen3\Development\INVT_TC375_HighTec_AR422\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_10] VariableDataPrototype<"/AUTOSAR_Dcm/PortInterfaces/DataServices_File_Version/Data" is not configured to any datatype or invalid reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2022/08/24 14:02:08
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=E:\Administrator\PROJETS\IFL100_SWA_BSWTC26\AurixGen3\Development\INVT_TC375_HighTec_AR422\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2022/08/24 15:45:13
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=E:\Administrator\PROJETS\IFL100_SWA_BSWTC26\AurixGen3\Development\INVT_TC375_HighTec_AR422\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2022/08/24 17:06:26
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=E:\Administrator\PROJETS\IFL100_SWA_BSWTC26\AurixGen3\Development\INVT_TC375_HighTec_AR422\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [FMCU_FlatMap.arxml, System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2022/08/25 14:05:48
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=E:\Administrator\PROJETS\IFL100_SWA_BSWTC26\AurixGen3\Development\INVT_TC375_HighTec_AR422\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2022/08/25 19:09:58
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=E:\Administrator\PROJETS\IFL100_SWA_BSWTC26\AurixGen3\Development\INVT_TC375_HighTec_AR422\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2022/08/29 14:36:38
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=E:\Administrator\PROJETS\IFL100_SWA_BSWTC26\AurixGen3\Development\INVT_TC375_HighTec_AR422\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[ERROR-MESSAGE] : [EcuExtract_ERROR_25] Invalid AssemblySwConnector has been found. AssemblySwConnector < ASC_CPT_NvM_NvMBlockDescriptor_DID_VehicleSpeed_CPT_ASW_DCM_RPort_ASW_DCM_BlockNative_VehicleSpeed > is not considered for ECUExtract. The connector might have proxy references or involved in alternate or invalid variant configuration
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2022/08/30 09:15:23
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=E:\Administrator\PROJETS\IFL100_SWA_BSWTC26\AurixGen3\Development\INVT_TC375_HighTec_AR422\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2022/08/30 10:21:25
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=E:\Administrator\PROJETS\IFL100_SWA_BSWTC26\AurixGen3\Development\INVT_TC375_HighTec_AR422\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_32] AssemblySwConnector <ASC_CPT_ASW_DCM_P_DataServices_VehicleSpeed_ASW_CPT_NVM_R_DataServices_VehicleSpeed> is not valid. Please check the compatibility of this connection
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_32] AssemblySwConnector <ASC_CPT_ASW_NVM_P_DataServices_VehicleSpeed_ASW_CPT_DCM_R_DataServices_VehicleSpeed> is not valid. Please check the compatibility of this connection
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_32] AssemblySwConnector <ASC_CPT_ASW_DCM_PPort_DataServices_NVMDspData_VehicleSpeed_Read_CPT_ASW_NVM_RPort_DataServices_DCMDspData_VehicleSpeed_Write> is not valid. Please check the compatibility of this connection
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_32] AssemblySwConnector <ASC_CPT_ASW_NVM_PPort_DataServices_DCMDspData_VehicleSpeed_Read_CPT_ASW_DCM_RPort_DataServices_NVMDspData_VehicleSpeed_Write> is not valid. Please check the compatibility of this connection
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2022/08/30 13:09:49
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=E:\Administrator\PROJETS\IFL100_SWA_BSWTC26\AurixGen3\Development\INVT_TC375_HighTec_AR422\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2022/08/30 13:30:12
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=E:\Administrator\PROJETS\IFL100_SWA_BSWTC26\AurixGen3\Development\INVT_TC375_HighTec_AR422\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2022/08/31 09:29:23
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=E:\Administrator\PROJETS\IFL100_SWA_BSWTC26\AurixGen3\Development\INVT_TC375_HighTec_AR422\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2022/09/02 17:13:42
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=E:\Administrator\PROJETS\IFL100_SWA_BSWTC26\AurixGen3\Development\INVT_TC375_HighTec_AR422\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_11] RPortPrototype<"/ASW_NVM/ASW_NVM/ASW_NVM/RPort_DataServices_DCMDspData_VehicleSpeed" is not configured with any Interface or configured to proxy reference
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2022/09/05 10:21:20
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=E:\Administrator\PROJETS\IFL100_SWA_BSWTC26\AurixGen3\Development\INVT_TC375_HighTec_AR422\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2022/09/06 16:22:30
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=F:\010_ProjectBasedonModel\05_TC375BSW\01_Src\branches\CCPDev\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [FMCU_FlatView_SWCD.arxml, System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2022/12/06 19:03:13
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=F:\010_ProjectBasedonModel\05_TC375BSW\01_Src\branches\CCPDev\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2022/12/06 19:08:57
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=F:\010_ProjectBasedonModel\05_TC375BSW\01_Src\branches\CCPDev\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2023/02/23 09:57:50
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=FMCU, --otheropt=F:\010_ProjectBasedonModel\05_TC375BSW\01_Src\branches\CCPDev\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2023/02/23 16:05:35
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=IPC, --otheropt=D:\MyProject\TC387Developement\TC387_BSW_1.0\TC387_ISOLAR_Workspace\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2024/03/07 13:07:29
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=IPC, --otheropt=D:\MyProject\TC387Developement\TC387_BSW_1.0\TC387_ISOLAR_Workspace\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2024/03/07 13:55:19
+/******************************************************END OF REPORT*****************************************************************/
+
+/************************************************************************************************************************************/
+/*                                                                                                                                  */
+/*                                     ISOLAR-A : Headless EcuExtract Report                                                       */
+/*                                                                                                                                  */
+
+/************************************************************************************************************************************/
+
+[Command Line Arguments ] : [-ecuextract, --ecuinstance=IPC, --otheropt=D:\MyProject\TC387Developement\TC387_BSW_1.0\TC387_ISOLAR_Workspace\EcuExtract_CLI_Input.txt]
+
+
+/************************************************************************************************************************************/
+
+[WARNING-MESSAGE] : [EcuExtract_WARN_21] System version is not specified, default System version will be added to the extracted System
+
+[INFO-MESSAGE] : [EcuExtract_OK_02] List of *.arxml files which has been affected due to iterative development of ECU Extract are: [System_EcuExtr.arxml]
+
+
+/************************************************************************************************************************************/
+
+
+EcuExtract is generated successfully.
+
+
+Generated on 2024/03/12 09:40:08
+/******************************************************END OF REPORT*****************************************************************/

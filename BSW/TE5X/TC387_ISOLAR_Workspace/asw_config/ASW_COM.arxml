@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Auto generated XML Component Description for model ASW_COM
+Model version                : 1.394
+Simulink Coder version       : Simulink Coder 9.5 (R2021a) 14-Nov-2020
+XML source code generated on : Mon Dec 05 01:10:01 2022
+Model Checksum               : 2718750695 1158699857 4013384660 1417508272
+-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00047.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>Components</SHORT-NAME>
+      <ELEMENTS>
+        <APPLICATION-SW-COMPONENT-TYPE UUID="85437f4f-f46b-51b5-322e-ef9794798d97">
+          <SHORT-NAME>ASW_COM</SHORT-NAME>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR UUID="78fde38c-6ba0-5879-7c4d-c5412b2e8a4c">
+              <SHORT-NAME>ASW_COM_IB</SHORT-NAME>
+              <EVENTS>
+                <TIMING-EVENT UUID="4cf96fa2-4985-4086-bece-c71d34dbb8ac">
+                  <SHORT-NAME>TE_Can01_Below100ms</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Components/ASW_COM/ASW_COM_IB/MainMsg_Can01_Below100ms</START-ON-EVENT-REF>
+                  <PERIOD>0.01</PERIOD>
+                </TIMING-EVENT>
+                <TIMING-EVENT UUID="c2fb2c07-c8dd-4956-b2a1-941c8e01666f">
+                  <SHORT-NAME>TE_Can01_Above100ms</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Components/ASW_COM/ASW_COM_IB/MainMsg_Can01_Above100ms</START-ON-EVENT-REF>
+                  <PERIOD>0.1</PERIOD>
+                </TIMING-EVENT>
+                <TIMING-EVENT UUID="518dfa69-cdd9-45c6-aac4-5ef9abf60c67">
+                  <SHORT-NAME>TE_Can01_SpecialPeriod</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Components/ASW_COM/ASW_COM_IB/MainMsg_Can01_SpecialPeriod</START-ON-EVENT-REF>
+                  <PERIOD>0.001</PERIOD>
+                </TIMING-EVENT>
+                <TIMING-EVENT>
+                  <SHORT-NAME>TE_Can02_Below100ms</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Components/ASW_COM/ASW_COM_IB/MainMsg_Can02_Below100ms</START-ON-EVENT-REF>
+                  <PERIOD>0.01</PERIOD>
+                </TIMING-EVENT>
+                <TIMING-EVENT>
+                  <SHORT-NAME>TE_Can02_Above100ms</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Components/ASW_COM/ASW_COM_IB/MainMsg_Can02_Above100ms</START-ON-EVENT-REF>
+                  <PERIOD>0.1</PERIOD>
+                </TIMING-EVENT>
+                <TIMING-EVENT>
+                  <SHORT-NAME>TE_Can02_SpecialPeriod</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Components/ASW_COM/ASW_COM_IB/MainMsg_Can02_SpecialPeriod</START-ON-EVENT-REF>
+                  <PERIOD>0.001</PERIOD>
+                </TIMING-EVENT>
+                <TIMING-EVENT>
+                  <SHORT-NAME>TE_Can03_Below100ms</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Components/ASW_COM/ASW_COM_IB/MainMsg_Can03_Below100ms</START-ON-EVENT-REF>
+                  <PERIOD>0.01</PERIOD>
+                </TIMING-EVENT>
+                <TIMING-EVENT>
+                  <SHORT-NAME>TE_Can03_Above100ms</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Components/ASW_COM/ASW_COM_IB/MainMsg_Can03_Above100ms</START-ON-EVENT-REF>
+                  <PERIOD>0.1</PERIOD>
+                </TIMING-EVENT>
+                <TIMING-EVENT>
+                  <SHORT-NAME>TE_Can03_SpecialPeriod</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Components/ASW_COM/ASW_COM_IB/MainMsg_Can03_SpecialPeriod</START-ON-EVENT-REF>
+                  <PERIOD>0.001</PERIOD>
+                </TIMING-EVENT>
+              </EVENTS>
+              <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="f391df88-fd87-58f4-4b1f-9fcb68abdb3f">
+                  <SHORT-NAME>ASW_COM_Init</SHORT-NAME>
+                  <MINIMUM-START-INTERVAL>0.0</MINIMUM-START-INTERVAL>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>ASW_COM_Init</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="72b58ebf-5cc8-4aa7-b4ea-d1680c53bd10">
+                  <SHORT-NAME>MainMsg_Can01_Below100ms</SHORT-NAME>
+                  <SYMBOL>MainMsg_Can01_Below100ms_Func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="a0a2176f-1ceb-4492-a185-db9b13f8f96d">
+                  <SHORT-NAME>MainMsg_Can01_Above100ms</SHORT-NAME>
+                  <SYMBOL>MainMsg_Can01_Above100ms_Func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="9f17b87f-a8cd-4e30-b647-410178c6ed54">
+                  <SHORT-NAME>MainMsg_Can01_SpecialPeriod</SHORT-NAME>
+                  <SYMBOL>MainMsg_Can01_SpecialPeriod_Func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY>
+                  <SHORT-NAME>MainMsg_Can02_Below100ms</SHORT-NAME>
+                  <SYMBOL>MainMsg_Can02_Below100ms_Func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY>
+                  <SHORT-NAME>MainMsg_Can02_Above100ms</SHORT-NAME>
+                  <SYMBOL>MainMsg_Can02_Above100ms_Func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY>
+                  <SHORT-NAME>MainMsg_Can02_SpecialPeriod</SHORT-NAME>
+                  <SYMBOL>MainMsg_Can02_SpecialPeriod_Func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY>
+                  <SHORT-NAME>MainMsg_Can03_Below100ms</SHORT-NAME>
+                  <SYMBOL>MainMsg_Can03_Below100ms_Func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY>
+                  <SHORT-NAME>MainMsg_Can03_Above100ms</SHORT-NAME>
+                  <SYMBOL>MainMsg_Can03_Above100ms_Func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY>
+                  <SHORT-NAME>MainMsg_Can03_SpecialPeriod</SHORT-NAME>
+                  <SYMBOL>MainMsg_Can03_SpecialPeriod_Func</SYMBOL>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+              <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </APPLICATION-SW-COMPONENT-TYPE>
+      </ELEMENTS>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>SwcImplementations</SHORT-NAME>
+          <ELEMENTS>
+            <SWC-IMPLEMENTATION UUID="c3aecb4c-6534-5e43-8da0-a3e41492ea97">
+              <SHORT-NAME>ASW_COM_Impl</SHORT-NAME>
+              <CODE-DESCRIPTORS>
+                <CODE>
+                  <SHORT-NAME>Code</SHORT-NAME>
+                  <ARTIFACT-DESCRIPTORS>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>ASW_COM_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>BCM_peps_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>EMS1_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>EMS3_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>EMS5_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>EMS8_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>GCU1_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>GCU2_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>GCU3_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>GCU4_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>GCU_Inner1_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>GCU_Inner2_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>IPB4_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>IPB5_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>IPB7_Fun_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>IVI_timeAndGPS_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>MCUF1_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>MCUF2_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>MCUF3_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>MCUF4_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>MCUF6_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>MCUF8_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>MCUF_Inner1_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>MCUF_Inner2_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>MCUF_SelfHeat1_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>MCUF_SelfHeat2_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>MCUF_TCU1_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>MCUF_TCU2_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>MCUF_TCU3_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>PDCM10_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>PDCM1_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>PDCM21_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>PDCM22_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>PDCM24_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>PDCM30_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>PDCM5_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>PDCM_ACU_EPS_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>PDCM_Body_IC_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>PDCM_GCU_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>PDCM_IC_ACU_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>PDCM_OBD_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>PDCM_SelfHeat_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>TBOX_VehicleMode_Fun_Cal_wrapper_c</SHORT-LABEL>
+                      <CATEGORY>SWSRC</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>ASW_COM_h</SHORT-LABEL>
+                      <CATEGORY>SWHDR</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>ASW_COM_private_h</SHORT-LABEL>
+                      <CATEGORY>SWHDR</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>ASW_COM_types_h</SHORT-LABEL>
+                      <CATEGORY>SWHDR</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                    <AUTOSAR-ENGINEERING-OBJECT>
+                      <SHORT-LABEL>rtwtypes_h</SHORT-LABEL>
+                      <CATEGORY>SWHDR</CATEGORY>
+                    </AUTOSAR-ENGINEERING-OBJECT>
+                  </ARTIFACT-DESCRIPTORS>
+                </CODE>
+              </CODE-DESCRIPTORS>
+              <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+              <RESOURCE-CONSUMPTION>
+                <SHORT-NAME>RsrcCons_ASW_COM</SHORT-NAME>
+              </RESOURCE-CONSUMPTION>
+              <SW-VERSION>1.394.1</SW-VERSION>
+              <USED-CODE-GENERATOR>Embedded Coder 7.6 (R2021a) 14-Nov-2020</USED-CODE-GENERATOR>
+              <VENDOR-ID>0</VENDOR-ID>
+              <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/Components/ASW_COM/ASW_COM_IB</BEHAVIOR-REF>
+            </SWC-IMPLEMENTATION>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+    <AR-PACKAGE>
+      <SHORT-NAME>DataTypes</SHORT-NAME>
+      <ELEMENTS>
+        <IMPLEMENTATION-DATA-TYPE UUID="53d7cf5c-173a-5f44-5998-5894636645a5">
+          <SHORT-NAME>UInt16</SHORT-NAME>
+          <CATEGORY>VALUE</CATEGORY>
+          <SW-DATA-DEF-PROPS>
+            <SW-DATA-DEF-PROPS-VARIANTS>
+              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataTypes/SwBaseTypes/uint16</BASE-TYPE-REF>
+              </SW-DATA-DEF-PROPS-CONDITIONAL>
+            </SW-DATA-DEF-PROPS-VARIANTS>
+          </SW-DATA-DEF-PROPS>
+        </IMPLEMENTATION-DATA-TYPE>
+        <IMPLEMENTATION-DATA-TYPE UUID="654b8282-4aff-50d1-1bc6-dd2227d60575">
+          <SHORT-NAME>Boolean</SHORT-NAME>
+          <CATEGORY>VALUE</CATEGORY>
+          <SW-DATA-DEF-PROPS>
+            <SW-DATA-DEF-PROPS-VARIANTS>
+              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataTypes/SwBaseTypes/boolean</BASE-TYPE-REF>
+                <COMPU-METHOD-REF DEST="COMPU-METHOD">/DataTypes/CompuMethods/TextTable</COMPU-METHOD-REF>
+              </SW-DATA-DEF-PROPS-CONDITIONAL>
+            </SW-DATA-DEF-PROPS-VARIANTS>
+          </SW-DATA-DEF-PROPS>
+        </IMPLEMENTATION-DATA-TYPE>
+        <IMPLEMENTATION-DATA-TYPE UUID="87aeffcc-8ae1-5364-6475-8796dcd01d4c">
+          <SHORT-NAME>Float</SHORT-NAME>
+          <CATEGORY>VALUE</CATEGORY>
+          <SW-DATA-DEF-PROPS>
+            <SW-DATA-DEF-PROPS-VARIANTS>
+              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataTypes/SwBaseTypes/float32</BASE-TYPE-REF>
+              </SW-DATA-DEF-PROPS-CONDITIONAL>
+            </SW-DATA-DEF-PROPS-VARIANTS>
+          </SW-DATA-DEF-PROPS>
+        </IMPLEMENTATION-DATA-TYPE>
+        <IMPLEMENTATION-DATA-TYPE UUID="528d6279-36b4-5971-0a54-c40f44a698a4">
+          <SHORT-NAME>UInt8</SHORT-NAME>
+          <CATEGORY>VALUE</CATEGORY>
+          <SW-DATA-DEF-PROPS>
+            <SW-DATA-DEF-PROPS-VARIANTS>
+              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataTypes/SwBaseTypes/uint8</BASE-TYPE-REF>
+              </SW-DATA-DEF-PROPS-CONDITIONAL>
+            </SW-DATA-DEF-PROPS-VARIANTS>
+          </SW-DATA-DEF-PROPS>
+        </IMPLEMENTATION-DATA-TYPE>
+        <IMPLEMENTATION-DATA-TYPE UUID="b552d311-bc9d-54e8-0ef7-db44fd6d2cd2">
+          <SHORT-NAME>Double</SHORT-NAME>
+          <CATEGORY>VALUE</CATEGORY>
+          <SW-DATA-DEF-PROPS>
+            <SW-DATA-DEF-PROPS-VARIANTS>
+              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataTypes/SwBaseTypes/float64</BASE-TYPE-REF>
+              </SW-DATA-DEF-PROPS-CONDITIONAL>
+            </SW-DATA-DEF-PROPS-VARIANTS>
+          </SW-DATA-DEF-PROPS>
+        </IMPLEMENTATION-DATA-TYPE>
+        <IMPLEMENTATION-DATA-TYPE UUID="8be9371d-c7b5-50e9-c7ca-a90efef16fd1">
+          <SHORT-NAME>UInt32</SHORT-NAME>
+          <CATEGORY>VALUE</CATEGORY>
+          <SW-DATA-DEF-PROPS>
+            <SW-DATA-DEF-PROPS-VARIANTS>
+              <SW-DATA-DEF-PROPS-CONDITIONAL>
+                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataTypes/SwBaseTypes/uint32</BASE-TYPE-REF>
+              </SW-DATA-DEF-PROPS-CONDITIONAL>
+            </SW-DATA-DEF-PROPS-VARIANTS>
+          </SW-DATA-DEF-PROPS>
+        </IMPLEMENTATION-DATA-TYPE>
+      </ELEMENTS>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>SwAddrMethods</SHORT-NAME>
+          <ELEMENTS>
+            <SW-ADDR-METHOD UUID="8fd4b96f-bc97-59a0-ab20-d5dfc8e2f271">
+              <SHORT-NAME>CODE</SHORT-NAME>
+              <SECTION-TYPE>CODE</SECTION-TYPE>
+            </SW-ADDR-METHOD>
+            <SW-ADDR-METHOD UUID="fe4a4373-f844-52a2-8e89-3f08b3a2aadc">
+              <SHORT-NAME>CONST</SHORT-NAME>
+              <SECTION-TYPE>CONST</SECTION-TYPE>
+            </SW-ADDR-METHOD>
+            <SW-ADDR-METHOD UUID="e4459bd0-bb8c-5c8b-1459-a4ee85d039a5">
+              <SHORT-NAME>VAR</SHORT-NAME>
+              <SECTION-TYPE>VAR</SECTION-TYPE>
+            </SW-ADDR-METHOD>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>SwBaseTypes</SHORT-NAME>
+          <ELEMENTS>
+            <SW-BASE-TYPE UUID="6762eee5-8949-5756-6fe6-7daf06d844c1">
+              <SHORT-NAME>uint16</SHORT-NAME>
+              <CATEGORY>FIXED_LENGTH</CATEGORY>
+              <BASE-TYPE-SIZE>16</BASE-TYPE-SIZE>
+              <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+              <NATIVE-DECLARATION>uint16</NATIVE-DECLARATION>
+            </SW-BASE-TYPE>
+            <SW-BASE-TYPE UUID="e5d44206-abbf-5951-5e6c-e4e66e0b13df">
+              <SHORT-NAME>boolean</SHORT-NAME>
+              <CATEGORY>FIXED_LENGTH</CATEGORY>
+              <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+              <BASE-TYPE-ENCODING>BOOLEAN</BASE-TYPE-ENCODING>
+              <NATIVE-DECLARATION>boolean</NATIVE-DECLARATION>
+            </SW-BASE-TYPE>
+            <SW-BASE-TYPE UUID="876bfd2f-d527-580c-a65b-b022226ed18d">
+              <SHORT-NAME>float32</SHORT-NAME>
+              <CATEGORY>FIXED_LENGTH</CATEGORY>
+              <BASE-TYPE-SIZE>32</BASE-TYPE-SIZE>
+              <BASE-TYPE-ENCODING>IEEE754</BASE-TYPE-ENCODING>
+              <NATIVE-DECLARATION>float32</NATIVE-DECLARATION>
+            </SW-BASE-TYPE>
+            <SW-BASE-TYPE UUID="8897251b-3218-5e46-adb3-37d545b7ced1">
+              <SHORT-NAME>uint8</SHORT-NAME>
+              <CATEGORY>FIXED_LENGTH</CATEGORY>
+              <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+              <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+              <NATIVE-DECLARATION>uint8</NATIVE-DECLARATION>
+            </SW-BASE-TYPE>
+            <SW-BASE-TYPE UUID="6a6df079-06ed-564c-bbb9-c7e751a46d7c">
+              <SHORT-NAME>float64</SHORT-NAME>
+              <CATEGORY>FIXED_LENGTH</CATEGORY>
+              <BASE-TYPE-SIZE>64</BASE-TYPE-SIZE>
+              <BASE-TYPE-ENCODING>IEEE754</BASE-TYPE-ENCODING>
+              <NATIVE-DECLARATION>float64</NATIVE-DECLARATION>
+            </SW-BASE-TYPE>
+            <SW-BASE-TYPE UUID="20a6645b-2103-50f5-2736-7f7f67276add">
+              <SHORT-NAME>uint32</SHORT-NAME>
+              <CATEGORY>FIXED_LENGTH</CATEGORY>
+              <BASE-TYPE-SIZE>32</BASE-TYPE-SIZE>
+              <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+              <NATIVE-DECLARATION>uint32</NATIVE-DECLARATION>
+            </SW-BASE-TYPE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>CompuMethods</SHORT-NAME>
+          <ELEMENTS>
+            <COMPU-METHOD UUID="9a0cd9d3-6c43-58e5-dedf-20eb4e149dec">
+              <SHORT-NAME>TextTable</SHORT-NAME>
+              <CATEGORY>TEXTTABLE</CATEGORY>
+              <UNIT-REF DEST="UNIT">/DataTypes/Units/NoUnit</UNIT-REF>
+              <COMPU-INTERNAL-TO-PHYS>
+                <COMPU-SCALES>
+                  <COMPU-SCALE>
+                    <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                    <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                    <COMPU-CONST>
+                      <VT>FALSE</VT>
+                    </COMPU-CONST>
+                  </COMPU-SCALE>
+                  <COMPU-SCALE>
+                    <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                    <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                    <COMPU-CONST>
+                      <VT>TRUE</VT>
+                    </COMPU-CONST>
+                  </COMPU-SCALE>
+                </COMPU-SCALES>
+              </COMPU-INTERNAL-TO-PHYS>
+            </COMPU-METHOD>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>Units</SHORT-NAME>
+          <ELEMENTS>
+            <UNIT UUID="d044e0c0-1880-515d-1b43-1958fef578c7">
+              <SHORT-NAME>NoUnit</SHORT-NAME>
+              <FACTOR-SI-TO-UNIT>1.0</FACTOR-SI-TO-UNIT>
+              <OFFSET-SI-TO-UNIT>0.0</OFFSET-SI-TO-UNIT>
+            </UNIT>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+    <AR-PACKAGE>
+      <SHORT-NAME>Timing</SHORT-NAME>
+      <ELEMENTS>
+        <SWC-TIMING UUID="b2acdccb-7442-578c-85bc-757c42208649">
+          <SHORT-NAME>ASWC_COM_timing</SHORT-NAME>
+          <TIMING-REQUIREMENTS>
+            <EXECUTION-ORDER-CONSTRAINT UUID="76bea774-69e5-5bef-7df6-b6cea0f894a2">
+              <SHORT-NAME>EOC</SHORT-NAME>
+              <ORDERED-ELEMENTS>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="8fbe19bd-2ef4-5635-8ac5-ee714bbd9718">
+                  <SHORT-NAME>COM_PDCM21_Rec10ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_PDCM22_Rec10ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="303916f2-bf1a-56bf-de9e-ff338b15bd26">
+                  <SHORT-NAME>COM_PDCM22_Rec10ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_PDCM24_Rec10ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="f88ca628-b158-508d-71b0-851239426fc2">
+                  <SHORT-NAME>COM_PDCM24_Rec10ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_EMS1_Rec10ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="263db910-d86b-5745-a859-cac87def068a">
+                  <SHORT-NAME>COM_EMS1_Rec10ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_MCUF1_Snd10ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="f4c70a7c-9a28-5b1c-2a7c-f6e79a98f295">
+                  <SHORT-NAME>COM_MCUF1_Snd10ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_PDCM_ACU_EPS_Rec10ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="02114501-4f21-58bf-92fd-d0373967b667">
+                  <SHORT-NAME>COM_PDCM_ACU_EPS_Rec10ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_GCU2_Snd10ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="0b03bb51-137f-54bb-5564-e0fe0eb25af6">
+                  <SHORT-NAME>COM_GCU2_Snd10ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_EMS3_Rec10ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="6c68abf4-b390-5902-4efa-e11a05d6561a">
+                  <SHORT-NAME>COM_EMS3_Rec10ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_PDCM_GCU_Rec10ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="e433bab4-1635-5f11-156b-aa85c6d2fe05">
+                  <SHORT-NAME>COM_PDCM_GCU_Rec10ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_PDCM10_Rec20ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="ad33efe4-34b8-5f00-cf93-177511c316d3">
+                  <SHORT-NAME>COM_PDCM10_Rec20ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_PDCM30_Rec20ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="a897e2bb-f376-5040-e2d4-866affd266d2">
+                  <SHORT-NAME>COM_PDCM30_Rec20ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_IPB7_Rec20ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="24d76dd2-6e54-5996-9b8a-2e3ebe564c1c">
+                  <SHORT-NAME>COM_IPB7_Rec20ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_PDCM_IC_ACU_Rec20ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="caf0e42f-973f-5ec9-9874-d98dba26e7b6">
+                  <SHORT-NAME>COM_PDCM_IC_ACU_Rec20ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_MCUF3_Snd20ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="c52e42c8-d2db-5a74-4a34-a4038e07e27d">
+                  <SHORT-NAME>COM_MCUF3_Snd20ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_MCUF2_Snd20ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="dadb8f9c-fb78-543a-7c10-1e4795ba5143">
+                  <SHORT-NAME>COM_MCUF2_Snd20ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_GCU1_Snd20ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="497dbe21-8fa8-51c3-3282-deed70e155cb">
+                  <SHORT-NAME>COM_GCU1_Snd20ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_GCU3_Snd20ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="bc847510-b5c5-5c82-a1c9-1b0c0548b5bf">
+                  <SHORT-NAME>COM_GCU3_Snd20ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_MCUF_TCU1_Snd20ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="3d4b01b0-136b-5f1b-768c-35e13d8ac310">
+                  <SHORT-NAME>COM_MCUF_TCU1_Snd20ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_MCUF_TCU2_Snd20ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="6acae7a7-5165-599e-cbd5-0f798f4fcfea">
+                  <SHORT-NAME>COM_MCUF_TCU2_Snd20ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_IPB4_Rec20ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="1889cacc-20e0-5722-9e53-dff8bed28ccd">
+                  <SHORT-NAME>COM_IPB4_Rec20ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_IPB5_Rec20ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="ae8b385c-a034-5d91-1e89-9514280757c9">
+                  <SHORT-NAME>COM_IPB5_Rec20ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_PDCM_SelfHeat_Rec50ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="ecd5c9b9-2a57-5960-6003-8896847620ca">
+                  <SHORT-NAME>COM_PDCM_SelfHeat_Rec50ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_IVI_timeAndGPS_Rec100ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="d010ed97-9753-58eb-e52c-a4decdf6490f">
+                  <SHORT-NAME>COM_IVI_timeAndGPS_Rec100ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_EMS8_Rec100ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="e59a7895-ef6c-5b73-53cd-c4da68b95011">
+                  <SHORT-NAME>COM_EMS8_Rec100ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_PDCM_OBD_Rec100ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="c965eaf6-9c5f-5242-8fc9-35eebd100724">
+                  <SHORT-NAME>COM_PDCM_OBD_Rec100ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_BCM_peps_Rec100ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="e9eb0967-841d-5776-b04e-21531f8a2ddc">
+                  <SHORT-NAME>COM_BCM_peps_Rec100ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_PDCM_Body_IC_Rec100ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="4c2d74b7-eed7-5e00-3894-850b91ad2cfa">
+                  <SHORT-NAME>COM_PDCM_Body_IC_Rec100ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_EMS5_Rec100ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="7b8950b6-ca56-512c-5015-a9a9c45b4489">
+                  <SHORT-NAME>COM_EMS5_Rec100ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_PDCM5_Rec100ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="664064e0-675c-57ed-3d0a-fbadea8fe188">
+                  <SHORT-NAME>COM_PDCM5_Rec100ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_PDCM1_Rec100ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="03e1e9c6-55c0-51db-e534-aa99f907b11b">
+                  <SHORT-NAME>COM_PDCM1_Rec100ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_MCUF6_Snd100ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="3df1aaec-46c1-5ca4-4990-b2bee086138d">
+                  <SHORT-NAME>COM_MCUF6_Snd100ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_MCUF4_Snd100ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="f6c1120b-70f6-5b0e-e83e-f888c744f520">
+                  <SHORT-NAME>COM_MCUF4_Snd100ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_MCUF_SelfHeat2_Snd100ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="6521a506-b00d-5041-7e25-d17b885e3670">
+                  <SHORT-NAME>COM_MCUF_SelfHeat2_Snd100ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_MCUF_SelfHeat1_Snd100ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="e8a4539d-4066-5064-843f-95c546d5aaba">
+                  <SHORT-NAME>COM_MCUF_SelfHeat1_Snd100ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_GCU4_Snd100ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="d4ca4122-97fb-5594-1604-c37beb7018d6">
+                  <SHORT-NAME>COM_GCU4_Snd100ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_MCUF_TCU3_Snd100ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="128e6544-ceb3-5449-a67b-621e04701cfa">
+                  <SHORT-NAME>COM_MCUF_TCU3_Snd100ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_MCUF_Inner1_Snd100ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="c787a7bf-10c1-5df0-6298-5e90ca7fe1c1">
+                  <SHORT-NAME>COM_MCUF_Inner1_Snd100ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_MCUF_Inner2_Snd100ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="2248999c-7d19-511c-1b15-d927c1742343">
+                  <SHORT-NAME>COM_MCUF_Inner2_Snd100ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_GCU_Inner1_Snd100ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="b9dd3f64-b83c-5973-ddd4-5d244c37e93f">
+                  <SHORT-NAME>COM_GCU_Inner1_Snd100ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_GCU_Inner2_Snd100ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="7d0332e6-ff3c-58c4-ba5b-567f1d594cdf">
+                  <SHORT-NAME>COM_GCU_Inner2_Snd100ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_MCUF8_Snd500ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="2d52f891-66b3-5b49-8ecb-164ee6f32664">
+                  <SHORT-NAME>COM_MCUF8_Snd500ms</SHORT-NAME>
+                  <SUCCESSOR-REFS>
+                    <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ASWC_COM_timing/EOC/COM_TBOX_VehicleMode_Rec1000ms</SUCCESSOR-REF>
+                  </SUCCESSOR-REFS>
+                </EOC-EXECUTABLE-ENTITY-REF>
+                <EOC-EXECUTABLE-ENTITY-REF UUID="b9fbcea4-fcf6-5241-4a24-8ff20b630184">
+                  <SHORT-NAME>COM_TBOX_VehicleMode_Rec1000ms</SHORT-NAME>
+                </EOC-EXECUTABLE-ENTITY-REF>
+              </ORDERED-ELEMENTS>
+            </EXECUTION-ORDER-CONSTRAINT>
+          </TIMING-REQUIREMENTS>
+          <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/Components/ASW_COM/ASW_COM_IB</BEHAVIOR-REF>
+        </SWC-TIMING>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

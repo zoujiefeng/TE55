@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00047.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>CDD_CORE3</SHORT-NAME>
+      <ELEMENTS>
+        <APPLICATION-SW-COMPONENT-TYPE>
+          <SHORT-NAME>CDD_CORE3</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="Master">
+                <SD>true</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <PORTS>
+            <P-PORT-PROTOTYPE UUID="fe355072-9020-49ff-96fd-6562593b8311">
+              <SHORT-NAME>PPort_CPUUtilizationCore3</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/ServiceSwComponentInterface/CPU_Utilization</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="8ee03620-b978-48a5-9c14-24c18be6db7e">
+              <SHORT-NAME>PPort_GetMaxUserStackUtilization</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/ServiceSwComponentInterface/GetMaxUserStackUtilization</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+          </PORTS>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR UUID="b9d73a01-355d-43ba-ba1c-9157847cddd6">
+              <SHORT-NAME>SwcInternalBehavior</SHORT-NAME>
+              <EVENTS>
+                <TIMING-EVENT>
+                  <SHORT-NAME>TimingEvent_0</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/CDD_CORE3/CDD_CORE3/SwcInternalBehavior/CDD_CORE3</START-ON-EVENT-REF>
+                  <PERIOD>0.01</PERIOD>
+                </TIMING-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="5f95d2dc-9999-4534-bdc7-38cc6ad919ec">
+                  <SHORT-NAME>OperationInvokedEvent_0</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/CDD_CORE3/CDD_CORE3/SwcInternalBehavior/CPUUtilizationCore3</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/CDD_CORE3/CDD_CORE3/PPort_CPUUtilizationCore3</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ServiceSwComponentInterface/CPU_Utilization/CPU_Utilization</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="359c0e15-126e-4165-ac94-5e9bb68b9b33">
+                  <SHORT-NAME>OperationInvokedEvent_1</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/CDD_CORE3/CDD_CORE3/SwcInternalBehavior/GetMaxUserStackUtilization_Core3</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/CDD_CORE3/CDD_CORE3/PPort_GetMaxUserStackUtilization</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ServiceSwComponentInterface/GetMaxUserStackUtilization/GetMaxUserStackUtilization</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+              </EVENTS>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="4f3a5471-be90-4031-8c9f-c1cf903406e2">
+                  <SHORT-NAME>CDD_CORE3</SHORT-NAME>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CDD_CORE3_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="160acb8d-9169-4003-a105-f1735b73c644">
+                  <SHORT-NAME>CPUUtilizationCore3</SHORT-NAME>
+                  <SYMBOL>CPUUtilizationCore3_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="d21aca42-0fda-45c2-8753-e4092a79807d">
+                  <SHORT-NAME>GetMaxUserStackUtilization_Core3</SHORT-NAME>
+                  <SYMBOL>GetMaxUserStackUtilization_Core3_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </APPLICATION-SW-COMPONENT-TYPE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

@@ -1,0 +1,290 @@
+Nom_donn�e|Type|Nom_module|Public|Nb_lignes|Nb_colonnes|Label_p�re|Offset|Masque_acc�s|Affichage|Unit�|Fonction_transfert_ades|Coefficient_a|Coefficient_b|Groupe|Groupe_1|Groupe_2|Alias_1|Alias_2|Genre|Variable_indice_ligne|Variable_indice_colonne|Fonction_transfert_ligne|Fonction_transfert_colonne|Table_breakpoint_ligne|Table_breakpoint_colonne|R�f�rence_sp�cification|Recuperable|Modifiable|Fournisseur|Responsable|Valeurs|Visualisable_ADES|Donn�e_a_supprimer|Validation|Commentaires|Volatile|MinDecValue|MaxDecValue|MinPhysValue|MaxPhysValue|Def_Eval|MemSec
+
+MAIN_MSGu8MCUR_Cali|uint8|MAIN|0|0|8|MAIN_MSGu8MCUR_Cali|0|0|Hexa|-||||DEV|Calibration|Raw|MAIN_MSGu8MCUR_Cali||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_MSGu8MCUF_Cali1|uint8|MAIN|0|0|8|MAIN_MSGu8MCUF_Cali1|0|0|Hexa|-||||DEV|Calibration|Raw|MAIN_MSGu8MCUF_Cali1||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_MSGu8MCUF_Cali2|uint8|MAIN|0|0|8|MAIN_MSGu8MCUF_Cali2|0|0|Hexa|-||||DEV|Calibration|Raw|MAIN_MSGu8MCUF_Cali2||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_MSGu8MCUF_Cali3|uint8|MAIN|0|0|8|MAIN_MSGu8MCUF_Cali3|0|0|Hexa|-||||DEV|Calibration|Raw|MAIN_MSGu8MCUF_Cali3||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_MSGu8MCUF_Cali4|uint8|MAIN|0|0|8|MAIN_MSGu8MCUF_Cali4|0|0|Hexa|-||||DEV|Calibration|Raw|MAIN_MSGu8MCUF_Cali4||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_MSGu8McuDTC|uint8|MAIN|0|0|0|MAIN_MSGu8McuDTC|0|0|Hexa|-||||Com|M2G|Raw|MAIN_MSGu8McuDTC||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_MSGu8DCU_FltLev|uint8|MAIN|0|0|0|MAIN_MSGu8DCU_FltLev|0|0|Hexa|-||||Com|M2G|Raw|MAIN_MSGu8DCU_FltLev||1|||||||NONE|0|1||||1|0|0|... |0||||||
+MAIN_u32TestVar2|uint32|MAIN|0|0|0|MAIN_u32TestVar2|0|0|D�ci|-||||Main|Main||MAIN_u32TestVar2||1||||||||0|1||||1|0|0||0|||||0|
+MAIN_u32TestVar4|uint32|MAIN|0|0|0|MAIN_u32TestVar4|0|0|D�ci|-||||Main|Main||MAIN_u32TestVar4||1||||||||0|1||||1|0|0||0|||||0|
+MAIN_u32VSICntCkreqESMStartedC|uint32|MAIN|0|0|0|MAIN_u32VSICntCkreqESMStartedC|0|0|D�ci|-||||Main|Main||MAIN_u32VSICntCkreqESMStartedC||2|||||||NONE|1|1|||4900|1|0|0||0|||||0|
+MAIN_u32VSICntCkreqVSIStartedC|uint32|MAIN|0|0|0|MAIN_u32VSICntCkreqVSIStartedC|0|0|D�ci|-||||Main|Main||MAIN_u32VSICntCkreqVSIStartedC||2|||||||NONE|1|1|||100|1|0|0||0|||||0|
+MAIN_u32WaitValueVSISafeTreatment|uint32|MAIN|0|0|0|MAIN_u32WaitValueVSISafeTreatment|0|0|Phys|�s|1|0.055|0|Develop|Develop||MAIN_u32WaitValueVSISafeTreatment||1|||||||NONE|0|1||||1|0|0|Additional wait value for VSISafeTreatment function (debug)|0||||||
+MAIN_u32WaitValueVSITreatment|uint32|MAIN|0|0|0|MAIN_u32WaitValueVSITreatment|0|0|Phys|�s|1|0.02|0|Develop|Develop||MAIN_u32WaitValueVSITreatment||1|||||||NONE|0|1||||1|0|0|Additional wait value for VSITreatment function (debug)|0||||||
+MAIN_u8TestVar1|uint8|MAIN|0|0|0|MAIN_u8TestVar1|0|0|D�ci|-||||Main|Main||MAIN_u8TestVar1||1||||||||0|1||||1|0|0||0|||||0|
+MAIN_VSIBenchOnWriteDataC|boolean|MAIN|0|0|0|MAIN_VSIBenchOnWriteDataC|0|0|Phys|bool|2|0||Develop|Develop||MAIN_VSIBenchOnWriteDataC||2|||||||NONE|1|1|||1|1|0|0|Bench VSI write datas|0||||||
+MAIN_VSIBenchOnWriteEmergSwC|boolean|MAIN|0|0|0|MAIN_VSIBenchOnWriteEmergSwC|0|0|Phys|bool|2|0||Develop|Develop||MAIN_VSIBenchOnWriteEmergSwC||2|||||||NONE|1|1|||1|1|0|0|Bench VSI write EmergencySW|0||||||
+MAIN_VSITxsPwmUl|uint16|MAIN|1|0|0|MAIN_VSITxsPwmUl|0|0|Phys|%|1|400/65536|0|Application|Application||MAIN_VSITxsPwmUl||1|||||||V01 NT 10 01945|0|1||||1|0|0||0||||||
+MAIN_VSITxsPwmUlOn|boolean|MAIN|1|0|0|MAIN_VSITxsPwmUlOn|0|0|Phys|bool|2|0||Application|Application||MAIN_VSITxsPwmUlOn||1|||||||V01 NT 10 01945|0|1||||1|0|0||0||||||
+MAIN_VSITxsPwmUr|uint16|MAIN|1|0|0|MAIN_VSITxsPwmUr|0|0|Phys|%|1|400/65536|0|Application|Application||MAIN_VSITxsPwmUr||1|||||||V01 NT 10 01945|0|1||||1|0|0||0||||||
+MAIN_VSITxsPwmUrOn|boolean|MAIN|1|0|0|MAIN_VSITxsPwmUrOn|0|0|Phys|bool|2|0||Application|Application||MAIN_VSITxsPwmUrOn||1|||||||V01 NT 10 01945|0|1||||1|0|0||0||||||
+MAIN_VSITxsPwmVl|uint16|MAIN|1|0|0|MAIN_VSITxsPwmVl|0|0|Phys|%|1|400/65536|0|Application|Application||MAIN_VSITxsPwmVl||1|||||||V01 NT 10 01945|0|1||||1|0|0||0||||||
+MAIN_VSITxsPwmVlOn|boolean|MAIN|1|0|0|MAIN_VSITxsPwmVlOn|0|0|Phys|bool|2|0||Application|Application||MAIN_VSITxsPwmVlOn||1|||||||V01 NT 10 01945|0|1||||1|0|0||0||||||
+MAIN_VSITxsPwmVr|uint16|MAIN|1|0|0|MAIN_VSITxsPwmVr|0|0|Phys|%|1|400/65536|0|Application|Application||MAIN_VSITxsPwmVr||1|||||||V01 NT 10 01945|0|1||||1|0|0||0||||||
+MAIN_VSITxsPwmVrOn|boolean|MAIN|1|0|0|MAIN_VSITxsPwmVrOn|0|0|Phys|bool|2|0||Application|Application||MAIN_VSITxsPwmVrOn||1|||||||V01 NT 10 01945|0|1||||1|0|0||0||||||
+MAIN_VSITxsPwmWl|uint16|MAIN|1|0|0|MAIN_VSITxsPwmWl|0|0|Phys|%|1|400/65536|0|Application|Application||MAIN_VSITxsPwmWl||1|||||||V01 NT 10 01945|0|1||||1|0|0||0||||||
+MAIN_VSITxsPwmWlOn|boolean|MAIN|1|0|0|MAIN_VSITxsPwmWlOn|0|0|Phys|bool|2|0||Application|Application||MAIN_VSITxsPwmWlOn||1|||||||V01 NT 10 01945|0|1||||1|0|0||0||||||
+MAIN_VSITxsPwmWr|uint16|MAIN|1|0|0|MAIN_VSITxsPwmWr|0|0|Phys|%|1|400/65536|0|Application|Application||MAIN_VSITxsPwmWr||1|||||||V01 NT 10 01945|0|1||||1|0|0||0||||||
+MAIN_VSITxsPwmWrOn|boolean|MAIN|1|0|0|MAIN_VSITxsPwmWrOn|0|0|Phys|bool|2|0||Application|Application||MAIN_VSITxsPwmWrOn||1|||||||V01 NT 10 01945|0|1||||1|0|0||0||||||
+MAIN_bBswReadySts|boolean|MAIN|0|0|0|MAIN_bBswReadySts|0|0|Phys|bool|2|0||MAIN|MAIN|Raw|MAIN_bBswReadySts||1|||||||NONE|0|1||||1|0|0|BSW Power on check finish flag.|0||||||
+MAIN_u16FpgaFltClrCnt|uint16|MAIN|1|0|0|MAIN_u16FpgaFltClrCnt|0|0|D�ci|-||||Develop|Develop||MAIN_u16FpgaFltClrCnt||1||||||||0|1||||1|0|0||0||||||
+MAIN_u16VadcPhaseCurU|uint16|MAIN|1|0|0|MAIN_u16VadcPhaseCurU|0|0|D�ci|-||||Acquisitions|Acquisitions||MAIN_u16VadcPhaseCurU||1||||||||0|1||||1|0|0||0||||||
+MAIN_u16VadcPhaseCurV|uint16|MAIN|1|0|0|MAIN_u16VadcPhaseCurV|0|0|D�ci|-||||Acquisitions|Acquisitions||MAIN_u16VadcPhaseCurV||1||||||||0|1||||1|0|0||0||||||
+MAIN_u16VadcPhaseCurW|uint16|MAIN|1|0|0|MAIN_u16VadcPhaseCurW|0|0|D�ci|-||||Acquisitions|Acquisitions||MAIN_u16VadcPhaseCurW||1||||||||0|1||||1|0|0||0||||||
+MAIN_f32PWMDutyUPhys|float|MAIN|0|0|0|MAIN_f32PWMDutyUPhys|0|0|Phys|%|1|100|0|Com|DCU_3|Physical|MAIN_f32PWMDutyUPhys||1|||||||NONE|0|1|||0|1|0|0|...|0||||||
+MAIN_f32PWMDutyVPhys|float|MAIN|0|0|0|MAIN_f32PWMDutyVPhys|0|0|Phys|%|1|100|0|Com|DCU_3|Physical|MAIN_f32PWMDutyVPhys||1|||||||NONE|0|1|||0|1|0|0|...|0||||||
+MAIN_f32PWMDutyWPhys|float|MAIN|0|0|0|MAIN_f32PWMDutyWPhys|0|0|Phys|%|1|100|0|Com|DCU_3|Physical|MAIN_f32PWMDutyWPhys||1|||||||NONE|0|1|||0|1|0|0|...|0||||||
+MAIN_f32PwmMaxDutyPhysC|float|MAIN|0|0|0|MAIN_f32PwmMaxDutyPhysC|0|0|D�ci|-|1|1|0|Driver|Driver||MAIN_f32PwmMaxDutyPhysC||2|||||||...|1|1|||0.999|1|0|0|Spare|0||||||
+MAIN_f32PwmMinDutyPhysC|float|MAIN|0|0|0|MAIN_f32PwmMinDutyPhysC|0|0|D�ci|-|1|1|0|Driver|Driver||MAIN_f32PwmMinDutyPhysC||2|||||||...|1|1|||0.0|1|0|0|Spare|0||||||
+MAIN_u32PosTreatCkreq|uint32|MAIN|0|0|0|MAIN_u32PosTreatCkreq|0|0|D�ci|-||||Com|Resolver|Raw|MAIN_u32PosTreatCkreq||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_u32EmailCkreq|uint32|MAIN|0|0|0|MAIN_u32EmailCkreq|0|0|D�ci|-||||Com|Resolver|Raw|MAIN_u32EmailCkreq||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_u32PosATimeStamp|uint32|MAIN|0|0|0|MAIN_u32PosATimeStamp|0|0|D�ci|-||||Com|Resolver|Raw|MAIN_u32PosATimeStamp||1|||||||NONE|0|1||||1|0|0|...|1||||||
+MAIN_u32PosBTimeStamp|uint32|MAIN|0|0|0|MAIN_u32PosBTimeStamp|0|0|D�ci|-||||Com|Resolver|Raw|MAIN_u32PosBTimeStamp||1|||||||NONE|0|1||||1|0|0|...|1||||||
+MAIN_s32PosA2BDeltTime|sint32|MAIN|0|0|0|MAIN_s32PosA2BDeltTime|0|0|Phys|�s|1|0.1|0|Develop|Develop||MAIN_s32PosA2BDeltTime||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_s32PosA2BDeltTimMax|sint32|MAIN|0|0|0|MAIN_s32PosA2BDeltTimMax|0|0|Phys|�s|1|0.1|0|MAIN|MAIN||MAIN_s32PosA2BDeltTimMax||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_s32PosA2BDeltTimMin|sint32|MAIN|0|0|0|MAIN_s32PosA2BDeltTimMin|0|0|Phys|�s|1|0.1|0|MAIN|MAIN||MAIN_s32PosA2BDeltTimMin||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_u32BldcTimStampA|uint32|MAIN|0|0|0|MAIN_u32BldcTimStampA|0|0|D�ci|-||||Com|Resolver|Raw|MAIN_u32BldcTimStampA||1|||||||NONE|0|1||||1|0|0|...|1||||||
+MAIN_u32BldcTimStampB|uint32|MAIN|0|0|0|MAIN_u32BldcTimStampB|0|0|D�ci|-||||Com|Resolver|Raw|MAIN_u32BldcTimStampB||1|||||||NONE|0|1||||1|0|0|...|1||||||
+MAIN_u32BldcDeltTime|uint32|MAIN|0|0|0|MAIN_u32BldcDeltTime|0|0|Phys|�s|1|0.01|0|MAIN|MAIN||MAIN_u32BldcDeltTime||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_u16ResSinADVal|uint16|MAIN|1|0|0|MAIN_u16ResSinADVal|0|0|D�ci|-||||Acquisitions|Acquisitions||MAIN_u16ResSinADVal||1||||||||0|1||||1|0|0||0||||||
+MAIN_u16ResCosADVal|uint16|MAIN|1|0|0|MAIN_u16ResCosADVal|0|0|D�ci|-||||Acquisitions|Acquisitions||MAIN_u16ResCosADVal||1||||||||0|1||||1|0|0||0||||||
+MAIN_u16PWMPeriodVal|uint16|MAIN|1|0|0|MAIN_u16PWMPeriodVal|0|0|D�ci|-||||Acquisitions|Acquisitions||MAIN_u16PWMPeriodVal||1||||||||0|1|||2499|1|0|0||0||||||
+MAIN_bPosAccessLock|boolean|MAIN|0|0|0|MAIN_bPosAccessLock|0|0|Phys|bool|2|0||MAIN|MAIN|Raw|MAIN_bPosAccessLock||1|||||||NONE|0|1||||1|0|0|Must be Volatile variable.|1||||||
+MAIN_ku16PwmPerdInitValC|uint16|MAIN|0|0|0|MAIN_ku16PwmPerdInitValC|0|0|D�ci|-||||Main|Main||MAIN_ku16PwmPerdInitValC||2|||||||NONE|1|1|||4999|1|0|0||0|||||0|
+MAIN_u16FpgaFltClrTimoutC|uint16|MAIN|1|0|0|MAIN_u16FpgaFltClrTimoutC|0|0|D�ci|-|1|1|0|Driver|Driver||MAIN_u16FpgaFltClrTimoutC||2|||||||...|1|1|||800|1|0|0|Spare|0||||||
+MAIN_as32OCTrimNvm|sint32|MAIN|1|1|5|MAIN_as32OCTrimNvm|0|0|Hexa|-|1|1|0|MAIN|MAIN||MAIN_as32OCTrimNvm||1|*|*|*|*|*|*||0|1||||1|0|0|-|1|||||0|
+MAIN_bFTInitFinshFlg|boolean|MAIN|0|0|0|MAIN_bFTInitFinshFlg|0|0|Phys|bool|2|0||MAIN|MAIN|Raw|MAIN_bFTInitFinshFlg||1|||||||NONE|0|1||||1|0|0|FT Initilize finished flag|0||||||
+MAIN_f32OcAutophsGainC|float|MAIN|0|0|0|MAIN_f32OcAutophsGainC|0|0|D�ci|-|1|1|0|Driver|Driver||MAIN_f32OcAutophsGainC||2|||||||...|1|1|||0.005556|1|0|0|Spare|0||||||
+MAIN_f32OcAutophsOffstC|float|MAIN|0|0|0|MAIN_f32OcAutophsOffstC|0|0|D�ci|-|1|1|0|Driver|Driver||MAIN_f32OcAutophsOffstC||2|||||||...|1|1|||1.16667|1|0|0|Spare|0||||||
+MAIN_bResExcFltDetEna|boolean|MAIN|0|0|0|MAIN_bResExcFltDetEna|0|0|Phys|bool|2|0||MAIN|MAIN|Raw|MAIN_bResExcFltDetEna||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_f32EmailElecSpeedRds|float|MAIN|0|0|0|MAIN_f32EmailElecSpeedRds|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|MAIN_f32EmailElecSpeedRds||1|||||||NONE|0|1||||1|0|0|... |1||||||
+MAIN_f32EmailThetaElecRdSurPi|float|MAIN|0|0|0|MAIN_f32EmailThetaElecRdSurPi|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|MAIN_f32EmailThetaElecRdSurPi||1|||||||NONE|0|1||||1|0|0|... |1||||||
+MAIN_f32EmailNextThetaElecRdSurPi|float|MAIN|0|0|0|MAIN_f32EmailNextThetaElecRdSurPi|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|MAIN_f32EmailNextThetaElecRdSurPi||1|||||||NONE|0|1||||1|0|0|... |1||||||
+MAIN_f32EmailMecaSpeedRpm|float|MAIN|0|0|0|MAIN_f32EmailMecaSpeedRpm|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|MAIN_f32EmailMecaSpeedRpm||1|||||||NONE|0|1||||1|0|0|... |1||||||
+MAIN_f32EmailMecaSpeedRds|float|MAIN|0|0|0|MAIN_f32EmailMecaSpeedRds|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|MAIN_f32EmailMecaSpeedRds||1|||||||NONE|0|1||||1|0|0|... |1||||||
+MAIN_f32EmailErrThetaRdSurPi|float|MAIN|0|0|0|MAIN_f32EmailErrThetaRdSurPi|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|MAIN_f32EmailErrThetaRdSurPi||1|||||||NONE|0|1||||1|0|0|... |1||||||
+MAIN_u32EmailPosATimeStamp|uint32|MAIN|0|0|0|MAIN_u32EmailPosATimeStamp|0|0|D�ci|-||||Com|Resolver|Raw|MAIN_u32EmailPosATimeStamp||1|||||||NONE|0|1||||1|0|0|...|1||||||
+MAIN_f32ElecSpeedRds|float|MAIN|0|0|0|MAIN_f32ElecSpeedRds|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|MAIN_f32ElecSpeedRds||1|||||||NONE|0|1||||1|0|0|... |1||||||
+MAIN_f32ThetaElecRdSurPi|float|MAIN|0|0|0|MAIN_f32ThetaElecRdSurPi|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|MAIN_f32ThetaElecRdSurPi||1|||||||NONE|0|1||||1|0|0|... |1||||||
+MAIN_f32MecaSpeedRpm|float|MAIN|0|0|0|MAIN_f32MecaSpeedRpm|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|MAIN_f32MecaSpeedRpm||1|||||||NONE|0|1||||1|0|0|... |1||||||
+MAIN_f32MecaSpeedRds|float|MAIN|0|0|0|MAIN_f32MecaSpeedRds|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|MAIN_f32MecaSpeedRds||1|||||||NONE|0|1||||1|0|0|... |1||||||
+MAIN_f32ErrThetaRdSurPi|float|MAIN|0|0|0|MAIN_f32ErrThetaRdSurPi|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|MAIN_f32ErrThetaRdSurPi||1|||||||NONE|0|1||||1|0|0|... |1||||||
+MAIN_s32ResHardDelayC|sint32|MAIN|0|0|0|MAIN_s32ResHardDelayC|0|0|D�ci|-|1|1|0|Driver|Driver||MAIN_s32ResHardDelayC||2|||||||...|1|1|||580|1|0|0|Spare|0||||||
+MAIN_s32CurHardDelayC|sint32|MAIN|0|0|0|MAIN_s32CurHardDelayC|0|0|D�ci|-|1|1|0|Driver|Driver||MAIN_s32CurHardDelayC||2|||||||...|1|1|||600|1|0|0|Spare|0||||||
+MAIN_s32SampleDelayC|sint32|MAIN|0|0|0|MAIN_s32SampleDelayC|0|0|D�ci|-|1|1|0|Driver|Driver||MAIN_s32SampleDelayC||2|||||||...|1|1|||50|1|0|0|Spare|0||||||
+MAIN_f32VsiPwmPeriodC|float|MAIN|0|0|0|MAIN_f32VsiPwmPeriodC|0|0|Phys|us|1|1000000|0|Driver|Driver||MAIN_f32VsiPwmPeriodC||2|||||||...|1|1|||0.000125|1|0|0|Spare|0||||||
+MAIN_f32VsiPwmPeriod|float|MAIN|0|0|0|MAIN_f32VsiPwmPeriod|0|0|Phys|us|1|1000000|0|Com|DCU_3|Physical|MAIN_f32VsiPwmPeriod||1|||||||NONE|0|1||||1|0|0|... |1||||||
+MAIN_s32DeltTimDiff|sint32|MAIN|0|0|0|MAIN_s32DeltTimDiff|0|0|Phys|�s|1|0.01|0|MAIN|MAIN||MAIN_s32DeltTimDiff||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_f32RandomFrecMecaSpdMinC|float|MAIN|0|0|0|MAIN_f32RandomFrecMecaSpdMinC|0|0|Phys|rpm|1|1|0|Driver|Driver||MAIN_f32RandomFrecMecaSpdMinC||2|||||||...|1|1|||5|1|0|0|Spare|0||||||
+MAIN_f32RandomFrecMecaSpdMaxC|float|MAIN|0|0|0|MAIN_f32RandomFrecMecaSpdMaxC|0|0|Phys|rpm|1|1|0|Driver|Driver||MAIN_f32RandomFrecMecaSpdMaxC||2|||||||...|1|1|||5|1|0|0|Spare|0||||||
+MAIN_u16RandomFrecMaxC|uint16|MAIN|0|0|0|MAIN_u16RandomFrecMaxC|0|0|Phys|ms|1|1|0|MAIN|MAIN||MAIN_u16RandomFrecMaxC||2|||||||...|1|1|||0x01|1|0|0|Spare|0||||||
+MAIN_s32Email2PosTreqDiff|sint32|MAIN|0|0|0|MAIN_s32Email2PosTreqDiff|0|0|D�ci|-||||Com|Resolver|Raw|MAIN_s32Email2PosTreqDiff||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_f32BrakPedalPosLowC|float|MAIN|0|0|0|MAIN_f32BrakPedalPosLowC|0|0|Phys|%|1|1|0|Driver|Driver||MAIN_f32BrakPedalPosLowC||2|||||||...|1|1|||30|1|0|0|Spare|0||||||
+MAIN_f32BrakPedPosHighC|float|MAIN|0|0|0|MAIN_f32BrakPedPosHighC|0|0|Phys|%|1|1|0|Driver|Driver||MAIN_f32BrakPedPosHighC||2|||||||...|1|1|||80|1|0|0|Spare|0||||||
+MAIN_f32AntiSlopExitSpdC|float|MAIN|0|0|0|MAIN_f32AntiSlopExitSpdC|0|0|Phys|rpm|1|1|0|Driver|Driver||MAIN_f32AntiSlopExitSpdC||2|||||||...|1|1|||5|1|0|0|Spare|0||||||
+MAIN_u16BrakRelsDelayC|uint16|MAIN|0|0|0|MAIN_u16BrakRelsDelayC|0|0|Phys|ms|1|1|0|MAIN|MAIN||MAIN_u16BrakRelsDelayC||2|||||||...|1|1|||0x01|1|0|0|Spare|0||||||
+MAIN_u16BrakRelsDelayCnt|uint16|MAIN|0|0|0|MAIN_u16BrakRelsDelayCnt|0|0|Phys|-||||MAIN|MAIN|Raw|MAIN_u16BrakRelsDelayCnt||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_f32SlopOrRoadSpdDiffC|float|MAIN|0|0|0|MAIN_f32SlopOrRoadSpdDiffC|0|0|Phys|rpm|1|1|0|Driver|Driver||MAIN_f32SlopOrRoadSpdDiffC||2|||||||...|1|1|||50|1|0|0|Spare|0||||||
+MAIN_u16SlopSpdConfirmCnt|uint16|MAIN|0|0|0|MAIN_u16SlopSpdConfirmCnt|0|0|Phys|-||||MAIN|MAIN|Raw|MAIN_u16SlopSpdConfirmCnt||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_u16SlopSpdConfirmC|uint16|MAIN|0|0|0|MAIN_u16SlopSpdConfirmC|0|0|Phys|-|1|1|0|MAIN|MAIN||MAIN_u16SlopSpdConfirmC||2|||||||...|1|1|||0x01|1|0|0|Spare|0||||||
+MAIN_u16AntiSsChkTimC|uint16|MAIN|0|0|0|MAIN_u16AntiSsChkTimC|0|0|Phys|-|1|1|0|MAIN|MAIN||MAIN_u16AntiSsChkTimC||2|||||||...|1|1|||400|1|0|0|Spare|0||||||
+MAIN_u16SlopSlideTimCnt|uint16|MAIN|0|0|0|MAIN_u16SlopSlideTimCnt|0|0|Phys|-||||MAIN|MAIN|Raw|MAIN_u16SlopSlideTimCnt||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_u16SlopSlideTimoutC|uint16|MAIN|0|0|0|MAIN_u16SlopSlideTimoutC|0|0|Phys|ms|1|1|0|MAIN|MAIN||MAIN_u16SlopSlideTimoutC||2|||||||...|1|1|||15000|1|0|0|Spare|0||||||
+MAIN_u16SlopSlideTim1C|uint16|MAIN|0|0|0|MAIN_u16SlopSlideTim1C|0|0|Phys|ms|1|1|0|MAIN|MAIN||MAIN_u16SlopSlideTim1C||2|||||||...|1|1|||5000|1|0|0|Spare|0||||||
+MAIN_u16SlopSlideTim2C|uint16|MAIN|0|0|0|MAIN_u16SlopSlideTim2C|0|0|Phys|ms|1|1|0|MAIN|MAIN||MAIN_u16SlopSlideTim2C||2|||||||...|1|1|||10000|1|0|0|Spare|0||||||
+MAIN_u16AntiSsGapTimC|uint16|MAIN|0|0|0|MAIN_u16AntiSsGapTimC|0|0|Phys|ms|1|1|0|MAIN|MAIN||MAIN_u16AntiSsGapTimC||2|||||||...|1|1|||600|1|0|0|Spare|0||||||
+MAIN_f32AntiSsGapDrtGainC|float|MAIN|0|0|0|MAIN_f32AntiSsGapDrtGainC|0|0|Phys|-|1|1|0|Driver|Driver||MAIN_f32AntiSsGapDrtGainC||2|||||||...|1|1|||0.70|1|0|0|Spare|0||||||
+MAIN_bSlopSlideTimoutFlg|boolean|MAIN|0|0|0|MAIN_bSlopSlideTimoutFlg|0|0|Phys|bool|2|0||MAIN|MAIN|Raw|MAIN_bSlopSlideTimoutFlg||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_u16AntiSsBrakTimCnt|uint16|MAIN|0|0|0|MAIN_u16AntiSsBrakTimCnt|0|0|Phys|-||||MAIN|MAIN|Raw|MAIN_u16AntiSsBrakTimCnt||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_u16AntiSsEnaBrakCnt|uint16|MAIN|0|0|0|MAIN_u16AntiSsEnaBrakCnt|0|0|Phys|-||||MAIN|MAIN|Raw|MAIN_u16AntiSsEnaBrakCnt||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_u16AntiSsEnaBrakTimC|uint16|MAIN|0|0|0|MAIN_u16AntiSsEnaBrakTimC|0|0|Phys|ms|1|1|0|MAIN|MAIN||MAIN_u16AntiSsEnaBrakTimC||2|||||||...|1|1|||200|1|0|0|Spare|0||||||
+MAIN_f32AntiSsEnaBrakPos|float|MAIN|0|0|0|MAIN_f32AntiSsEnaBrakPos|0|0|Phys|%||||MAIN|MAIN|Raw|MAIN_f32AntiSsEnaBrakPos||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_f32AccPosClrSSTimC|float|MAIN|0|0|0|MAIN_f32AccPosClrSSTimC|0|0|Phys|%|1|1|0|Driver|Driver||MAIN_f32AccPosClrSSTimC||2|||||||...|1|1|||10|1|0|0|Spare|0||||||
+MAIN_f32AntiSsValidTrqC|float|MAIN|0|0|0|MAIN_f32AntiSsValidTrqC|0|0|Phys|Nm|1|1|0|Driver|Driver||MAIN_f32AntiSsValidTrqC||2|||||||...|1|1|||60|1|0|0|Spare|0||||||
+MAIN_f32UvwOvCurrThdC|float|MAIN|0|0|0|MAIN_f32UvwOvCurrThdC|0|0|Phys|A|1|1|0|Driver|Driver||MAIN_f32UvwOvCurrThdC||2|||||||...|1|1|||800|1|0|0|Spare|0||||||
+MAIN_f32PwmFreqHighThrdC|float|MAIN|0|0|0|MAIN_f32PwmFreqHighThrdC|0|0|Phys|A|1|1|0|Driver|Driver||MAIN_f32PwmFreqHighThrdC||2|||||||...|1|1|||6000|1|0|0|Spare|0||||||
+MAIN_f32PwmRatioReduceC|float|MAIN|0|0|0|MAIN_f32PwmRatioReduceC|0|0|Phys|A|1|1|0|Driver|Driver||MAIN_f32PwmRatioReduceC||2|||||||...|1|1|||0.2|1|0|0|Spare|0||||||
+MAIN_u16OverBhvThdC|uint16|MAIN|0|0|0|MAIN_u16OverBhvThdC|0|0|Phys|A|1|1|0|Driver|Driver||MAIN_u16OverBhvThdC||2|||||||...|1|1|||2483|1|0|0|Spare|0||||||
+MAIN_bSoftOvBhvFlg|boolean|MAIN|0|0|0|MAIN_bSoftOvBhvFlg|0|0|Phys|bool|2|0||MAIN|MAIN|Raw|MAIN_bSoftOvBhvFlg||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_bSoftOvCurrPhsUFlg|boolean|MAIN|0|0|0|MAIN_bSoftOvCurrPhsUFlg|0|0|Phys|bool|2|0||MAIN|MAIN|Raw|MAIN_bSoftOvCurrPhsUFlg||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_bSoftOvCurrPhsVFlg|boolean|MAIN|0|0|0|MAIN_bSoftOvCurrPhsVFlg|0|0|Phys|bool|2|0||MAIN|MAIN|Raw|MAIN_bSoftOvCurrPhsVFlg||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_bSoftOvCurrPhsWFlg|boolean|MAIN|0|0|0|MAIN_bSoftOvCurrPhsWFlg|0|0|Phys|bool|2|0||MAIN|MAIN|Raw|MAIN_bSoftOvCurrPhsWFlg||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_u16PwmRatioPerd0C|uint16|MAIN|0|0|0|MAIN_u16PwmRatioPerd0C|0|0|Phys|us|1|0.04|1|Driver|Driver||MAIN_u16PwmRatioPerd0C||2|||||||...|1|1|||4166|1|0|0|Spare|0||||||
+MAIN_u16PwmRatioPerd1C|uint16|MAIN|0|0|0|MAIN_u16PwmRatioPerd1C|0|0|Phys|us|1|0.04|1|Driver|Driver||MAIN_u16PwmRatioPerd1C||2|||||||...|1|1|||6249|1|0|0|Spare|0||||||
+MAIN_u16PwmRatioPerd2C|uint16|MAIN|0|0|0|MAIN_u16PwmRatioPerd2C|0|0|Phys|us|1|0.04|1|Driver|Driver||MAIN_u16PwmRatioPerd2C||2|||||||...|1|1|||8332|1|0|0|Spare|0||||||
+MAIN_u16PwmRatioPerd3C|uint16|MAIN|0|0|0|MAIN_u16PwmRatioPerd3C|0|0|Phys|us|1|0.04|1|Driver|Driver||MAIN_u16PwmRatioPerd3C||2|||||||...|1|1|||12499|1|0|0|Spare|0||||||
+MAIN_bAkdAfterAscReq|boolean|MAIN|0|0|0|MAIN_bAkdAfterAscReq|0|0|Phys|bool|2|0||MAIN|MAIN|Raw|MAIN_bAkdAfterAscReq||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_au8ErrCode|uint8|MAIN|0|1|20|MAIN_au8ErrCode|0|0|Phys|-|1|1|0|MAIN|MAIN||MAIN_au8ErrCode||1|*|*|*|*|*|*||0|1||||1|0|0|-|0|||||0|
+MAIN_u8ErrCodNum|uint8|MAIN|0|0|0|MAIN_u8ErrCodNum|0|0|D�ci|-||||MAIN|MAIN||MAIN_u8ErrCodNum||1||||||||0|1||||1|0|0||0||||||
+MAIN_u8ErrCodRdIdx|uint8|MAIN|0|0|0|MAIN_u8ErrCodRdIdx|0|0|D�ci|-||||MAIN|MAIN||MAIN_u8ErrCodRdIdx||1||||||||0|1||||1|0|0||0||||||
+MAIN_u8ErrCodWrIdx|uint8|MAIN|0|0|0|MAIN_u8ErrCodWrIdx|0|0|D�ci|-||||MAIN|MAIN||MAIN_u8ErrCodWrIdx||1||||||||0|1||||1|0|0||0||||||
+MAIN_bAntiSlopGearEna|boolean|MAIN|0|0|0|MAIN_bAntiSlopGearEna|0|0|Phys|bool|2|0||MAIN|MAIN|Raw|MAIN_bAntiSlopGearEna||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_u8PrevGearPos|uint8|MAIN|0|0|0|MAIN_u8PrevGearPos|0|0|Hexa|-||||Com|DCU_4|Raw|MAIN_u8PrevGearPos||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_f32BrakDeratGainC|float|MAIN|0|0|0|MAIN_f32BrakDeratGainC|0|0|Phys|-|1|1|0|Driver|Driver||MAIN_f32BrakDeratGainC||2|||||||...|1|1|||1|1|0|0|Spare|0||||||
+MAIN_u16HandBrkRelsDelay|uint16|MAIN|0|0|0|MAIN_u16HandBrkRelsDelay|0|0|Phys|-||||MAIN|MAIN|Raw|MAIN_u16HandBrkRelsDelay||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_u16AntiSsValidCnt|uint16|MAIN|0|0|0|MAIN_u16AntiSsValidCnt|0|0|Phys|-||||MAIN|MAIN|Raw|MAIN_u16AntiSsValidCnt||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_u16IuPositiveCnt|uint16|MAIN|0|0|0|MAIN_u16IuPositiveCnt|0|0|Phys|-||||MAIN|MAIN|Raw|MAIN_u16IuPositiveCnt||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_u16IuPositiveSum|uint16|MAIN|0|0|0|MAIN_u16IuPositiveSum|0|0|Phys|-||||MAIN|MAIN|Raw|MAIN_u16IuPositiveSum||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_u16IuNegtiveCnt|uint16|MAIN|0|0|0|MAIN_u16IuNegtiveCnt|0|0|Phys|-||||MAIN|MAIN|Raw|MAIN_u16IuNegtiveCnt||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_u16IuNegtiveSum|uint16|MAIN|0|0|0|MAIN_u16IuNegtiveSum|0|0|Phys|-||||MAIN|MAIN|Raw|MAIN_u16IuNegtiveSum||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_u16IuMiddleCnt|uint16|MAIN|0|0|0|MAIN_u16IuMiddleCnt|0|0|Phys|-||||MAIN|MAIN|Raw|MAIN_u16IuMiddleCnt||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_u16IuMiddleSum|uint16|MAIN|0|0|0|MAIN_u16IuMiddleSum|0|0|Phys|-||||MAIN|MAIN|Raw|MAIN_u16IuMiddleSum||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_u32IuCycleTim|uint32|MAIN|0|0|0|MAIN_u32IuCycleTim|0|0|Phys|-||||MAIN|MAIN|Raw|MAIN_u32IuCycleTim||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_f32IuFrequency|float|MAIN|0|0|0|MAIN_f32IuFrequency|0|0|Phys|Hz|1|1|0|MAIN|MAIN|Physical|MAIN_f32IuFrequency||1|||||||NONE|0|1|||0|1|0|0|...|0||||||
+MAIN_f32IuPeriod|float|MAIN|0|0|0|MAIN_f32IuPeriod|0|0|Phys|s|1|1|0|MAIN|MAIN|Physical|MAIN_f32IuPeriod||1|||||||NONE|0|1|||0|1|0|0|...|0||||||
+MAIN_f32MotSpdEst|float|MAIN|0|0|0|MAIN_f32MotSpdEst|0|0|Phys|s|1|1|0|MAIN|MAIN|Physical|MAIN_f32MotSpdEst||1|||||||NONE|0|1|||0|1|0|0|...|1||||||
+MAIN_bSpdReadyEst|boolean|MAIN|0|0|0|MAIN_bSpdReadyEst|0|0|Phys|bool|2|0||MAIN|MAIN|Raw|MAIN_bSpdReadyEst||1|||||||NONE|0|1||||1|0|0|...|1||||||
+MAIN_u16SpdReadyEstCnt|uint16|MAIN|0|0|0|MAIN_u16SpdReadyEstCnt|0|0|Phys|-||||MAIN|MAIN|Raw|MAIN_u16SpdReadyEstCnt||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_ku16SpdReadyEstConfirmC|uint16|MAIN|0|0|0|MAIN_ku16SpdReadyEstConfirmC|0|0|Phys|-|1|1|0|MAIN|MAIN||MAIN_ku16SpdReadyEstConfirmC||2|||||||...|1|1|||2000|1|0|0|Spare|0||||||
+MAIN_bSpeedReadyFlg|boolean|MAIN|0|0|0|MAIN_bSpeedReadyFlg|0|0|Phys|bool|2|0||MAIN|MAIN|Raw|MAIN_bSpeedReadyFlg||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_u16IuCycleCnt|uint16|MAIN|0|0|0|MAIN_u16IuCycleCnt|0|0|Phys|-||||MAIN|MAIN|Raw|MAIN_u16IuCycleCnt||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_u16IdqDeltaSumCnt|uint16|MAIN|0|0|0|MAIN_u16IdqDeltaSumCnt|0|0|Phys|-||||MAIN|MAIN||MAIN_u16IdqDeltaSumCnt||1||||||||0|1||||1|0|0||0||||||
+MAIN_u16IdqDeltaCntMaxC|uint16|MAIN|0|0|0|MAIN_u16IdqDeltaCntMaxC|0|0|Phys|-|1|1|0|MAIN|MAIN||MAIN_u16IdqDeltaCntMaxC||2|||||||...|1|1|||200|1|0|0|Spare|0||||||
+MAIN_f32IdDeltaSum|float|MAIN|0|0|0|MAIN_f32IdDeltaSum|0|0|Phys|-|1|1|0|MAIN|MAIN|Physical|MAIN_f32IdDeltaSum||1|||||||NONE|0|1||||1|0|0|... |0||||||
+MAIN_f32IqDeltaSum|float|MAIN|0|0|0|MAIN_f32IqDeltaSum|0|0|Phys|-|1|1|0|MAIN|MAIN|Physical|MAIN_f32IqDeltaSum||1|||||||NONE|0|1||||1|0|0|... |0||||||
+MAIN_f32IdDeltaAvg|float|MAIN|0|0|0|MAIN_f32IdDeltaAvg|0|0|Phys|-|1|1|0|MAIN|MAIN|Physical|MAIN_f32IdDeltaAvg||1|||||||NONE|0|1||||1|0|0|... |0||||||
+MAIN_f32IqDeltaAvg|float|MAIN|0|0|0|MAIN_f32IqDeltaAvg|0|0|Phys|-|1|1|0|MAIN|MAIN|Physical|MAIN_f32IqDeltaAvg||1|||||||NONE|0|1||||1|0|0|... |0||||||
+MAIN_f32EstTempRatioScale|float|MAIN|0|0|0|MAIN_f32EstTempRatioScale|0|0|Phys|-|1|1|0|MAIN|MAIN|Physical|MAIN_f32EstTempRatioScale||1|||||||NONE|0|1||||1|0|0|... |0||||||
+MAIN_f32IdQuality|float|MAIN|0|0|0|MAIN_f32IdQuality|0|0|Phys|%|1|1|0|MAIN|MAIN|Physical|MAIN_f32IdQuality||1|||||||NONE|0|1|||0|1|0|0|...|0||||||
+MAIN_f32IqQuality|float|MAIN|0|0|0|MAIN_f32IqQuality|0|0|Phys|%|1|1|0|MAIN|MAIN|Physical|MAIN_f32IqQuality||1|||||||NONE|0|1|||0|1|0|0|...|0||||||
+MAIN_u16T12CntVal|uint16|MAIN|0|0|0|MAIN_u16T12CntVal|0|0|D�ci|-||||MAIN|MAIN||MAIN_u16T12CntVal||1||||||||0|1||||1|0|0||0||||||
+MAIN_u8OverVolIndex|uint8|MAIN|0|0|0|MAIN_u8OverVolIndex|0|0|D�ci|-||||MAIN|MAIN||MAIN_u8OverVolIndex||1||||||||0|1||||1|0|0||0||||||
+MAIN_u16FaultDelayCnt|uint16|MAIN|0|0|0|MAIN_u16FaultDelayCnt|0|0|D�ci|-||||MAIN|MAIN||MAIN_u16FaultDelayCnt||1||||||||0|1||||1|0|0||0||||||
+MAIN_u16OverVolLowDelay|uint16|MAIN|0|0|0|MAIN_u16OverVolLowDelay|0|0|D�ci|-||||MAIN|MAIN||MAIN_u16OverVolLowDelay||1||||||||0|1||||1|0|0||0||||||
+MAIN_u16OverVolMidDelay|uint16|MAIN|0|0|0|MAIN_u16OverVolMidDelay|0|0|D�ci|-||||MAIN|MAIN||MAIN_u16OverVolMidDelay||1||||||||0|1||||1|0|0||0||||||
+MAIN_u16OverVolHighDelay|uint16|MAIN|0|0|0|MAIN_u16OverVolHighDelay|0|0|D�ci|-||||MAIN|MAIN||MAIN_u16OverVolHighDelay||1||||||||0|1||||1|0|0||0||||||
+MAIN_u16VadcBhv|uint16|MAIN|0|0|0|MAIN_u16VadcBhv|0|0|D�ci|-||||MAIN|MAIN||MAIN_u16VadcBhv||1||||||||0|1||||1|0|0||0||||||
+Calibration_debut|uint16|MAIN|0|0|0|Calibration_debut|0|0|D�ci|-||||Divers|Divers||Calibration_debut||4|||||||NONE|0|1||||1|0|0||0|0|65535|||0|<COMP>_START_SEC_CALIB_BEG
+Calibration_fin|uint16|MAIN|0|0|0|Calibration_fin|0|0|D�ci|-||||Divers|Divers||Calibration_fin||4|||||||NONE|0|1||||0|0|0||0|0|65535|||0|<COMP>_START_SEC_CALIB_END
+MAIN_bESMStarted|boolean|MAIN|1|0|0|MAIN_bESMStarted|0|0|Phys|bool|2|0||Diagnostic|Diagnostic||MAIN_bESMStarted||1|||||||NONE|0|1||||1|0|0|Flag ESM started|0||||||
+MAIN_bAscFlag|boolean|MAIN|1|0|0|MAIN_bAscFlag|0|0|Phys|bool|2|0||Diagnostic|Diagnostic||MAIN_bAscFlag||1|||||||NONE|0|1||||1|0|0|Flag ESM started|0||||||
+MAIN_bMSGRxToutBenchOnC|boolean|MAIN|0|0|0|MAIN_bMSGRxToutBenchOnC|0|0|Phys|bool|2|0||Develop|Develop||MAIN_bMSGRxToutBenchOnC||2|||||||NONE|1|1|||0|1|0|0|COM MSG Rx activation|0||||||
+MAIN_bVSIStarted|boolean|MAIN|1|0|0|MAIN_bVSIStarted|0|0|Phys|bool|2|0||Diagnostic|Diagnostic||MAIN_bVSIStarted||1|||||||NONE|0|1||||1|0|0|Flag VSI started|0||||||
+MAIN_ESMGo2StartupIEvent|boolean|MAIN|1|0|0|MAIN_ESMGo2StartupIEvent|0|0|Phys|bool|2|0||Develop|Develop||MAIN_ESMGo2StartupIEvent||1|||||||NONE|0|1||||1|0|0|Ev�nement pour r�initialiser lautomate ESM|0||||||
+MAIN_HARDBenchOnC|boolean|MAIN|0|0|0|MAIN_HARDBenchOnC|0|0|Phys|bool|2|0||Develop|Develop||MAIN_HARDBenchOnC||2|||||||NONE|1|1|||1|1|0|0|HARD activation|0||||||
+HARD_bDioWriteTestEna|boolean|MAIN|0|0|0|HARD_bDioWriteTestEna|0|0|Phys|bool|2|0||Develop|Develop||HARD_bDioWriteTestEna||1|||||||NONE|1|1|||1|1|0|0|HARD activation|0||||||
+MAIN_TSTBenchOnC|boolean|MAIN|0|0|0|MAIN_TSTBenchOnC|0|0|Phys|bool|2|0||Develop|Develop||MAIN_TSTBenchOnC||2|||||||NONE|1|1|||1|1|0|0|TST activation|0||||||
+MAIN_MSGRxBenchOnC|boolean|MAIN|0|0|0|MAIN_MSGRxBenchOnC|0|0|Phys|bool|2|0||Com|Com||MAIN_MSGRxBenchOnC||2|||||||NONE|1|1||||1|0|0|Rx MSG activation|0||||||
+MAIN_MSGTxBenchOnC|boolean|MAIN|0|0|0|MAIN_MSGTxBenchOnC|0|0|Phys|bool|2|0||Com|Com||MAIN_MSGTxBenchOnC||2|||||||NONE|1|1||||1|0|0|Tx MSG activation|0||||||
+MAIN_MSGbBenchTestOnC|boolean|MAIN|0|0|0|MAIN_MSGbBenchTestOnC|0|0|Phys|bool|2|0||Com|Com||MAIN_MSGbBenchTestOnC||2|||||||NONE|1|1|||0|1|0|0|Tx MSG activation|0||||||
+MAIN_MSGbDbgFrameOnC|boolean|MAIN|0|0|0|MAIN_MSGbDbgFrameOnC|0|0|Phys|bool|2|0||Com|Com||MAIN_MSGbDbgFrameOnC||2|||||||NONE|1|1|||1|1|0|0|Tx MSG activation|0||||||
+MAIN_MSGu8GW2_PwrMode|uint8|MAIN|0|0|0|MAIN_MSGu8GW2_PwrMode|0|0|Hexa|||||Com|GW_2|Raw|MAIN_MSGu8GW2_PwrMode||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_MSGu8VCU_McuEnableReq|uint8|MAIN|0|0|0|MAIN_MSGu8VCU_McuEnableReq|0|0|Hexa|-||||Com|DCU_4|Raw|MAIN_MSGu8VCU_McuEnableReq||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_MSGu8VCU_EMWorkMod|uint8|MAIN|0|0|0|MAIN_MSGu8VCU_EMWorkMod|0|0|Hexa|-||||Com|DCU_4|Raw|MAIN_MSGu8VCU_EMWorkMod||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_MSGf32VCU_BrakPedPosPhys|float|MAIN|0|0|0|MAIN_MSGf32VCU_BrakPedPosPhys|0|0|Phys|Kmh||||Com|DCU_4|Raw|MAIN_MSGf32VCU_BrakPedPosPhys||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_MSGu8VCU_HandBrakSts|uint8|MAIN|0|0|0|MAIN_MSGu8VCU_HandBrakSts|0|0|Hexa|-||||Com|DCU_4|Raw|MAIN_MSGu8VCU_HandBrakSts||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_MSGu16EMS_EngActualFlwTorqueRaw|uint16|MAIN|0|0|0|MAIN_MSGu16EMS_EngActualFlwTorqueRaw|0|0|Hexa|-||||Com|DCU_4|Raw|MAIN_MSGu16EMS_EngActualFlwTorqueRaw||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_TCUf32CAP_TargetDutyCyclePhys|float|MAIN|0|0|0|MAIN_TCUf32CAP_TargetDutyCyclePhys|0|0|Phys|Kmh||||Com|Rte|Raw|MAIN_TCUf32CAP_TargetDutyCyclePhys||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_MSGu8BMS_MainPosConnSts|uint8|MAIN|0|0|0|MAIN_MSGu8BMS_MainPosConnSts|0|0|Hexa|-||||Com|DCU_4|Raw|MAIN_MSGu8BMS_MainPosConnSts||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_MSGu8BMS_MainNegConnSts|uint8|MAIN|0|0|0|MAIN_MSGu8BMS_MainNegConnSts|0|0|Hexa|-||||Com|DCU_4|Raw|MAIN_MSGu8BMS_MainNegConnSts||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_TCUu8CAP_TargetMotSts|uint8|MAIN|0|0|0|MAIN_TCUu8CAP_TargetMotSts|0|0|Hexa|-||||Com|DCU_4|Raw|MAIN_TCUu8CAP_TargetMotSts||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_MSGu8MCU_McuPrevSlipFlg|uint8|MAIN|0|0|0|MAIN_MSGu8MCU_McuPrevSlipFlg|0|0|Hexa|-||||Com|DCU_4|Raw|MAIN_MSGu8MCU_McuPrevSlipFlg||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_MSGf32MCU_LvVoltPhys|float|MAIN|0|0|0|MAIN_MSGf32MCU_LvVoltPhys|0|0|Phys|V||||Com|DCU_4|Raw|MAIN_MSGf32MCU_LvVoltPhys||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_MSGu8McuMotSubFltLevel|uint8|MAIN|0|0|0|MAIN_MSGu8McuMotSubFltLevel|0|0|Hexa|-||||Com|DCU_4|Raw|MAIN_MSGu8McuMotSubFltLevel||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_MSGu8McuMotSN|uint8|MAIN|0|0|0|MAIN_MSGu8McuMotSN|0|0|Hexa|-||||Com|DCU_4|Raw|MAIN_MSGu8McuMotSN||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_MSGu8CompileYear|uint8|MAIN|0|0|0|MAIN_MSGu8CompileYear|0|0|Hexa|-||||Com|DCU_4|Raw|MAIN_MSGu8CompileYear||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_MSGu8CompileMonth|uint8|MAIN|0|0|0|MAIN_MSGu8CompileMonth|0|0|Hexa|-||||Com|DCU_4|Raw|MAIN_MSGu8CompileMonth||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_MSGu8CompileDay|uint8|MAIN|0|0|0|MAIN_MSGu8CompileDay|0|0|Hexa|-||||Com|DCU_4|Raw|MAIN_MSGu8CompileDay||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_u8FaultSum|uint8|MAIN|0|0|0|MAIN_u8FaultSum|0|0|Hexa|-||||Com|TCU3Raw||MAIN_u8FaultSum||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_bOCStoreManualReq|boolean|MAIN|0|0|0|MAIN_bOCStoreManualReq|0|0|Hexa|-||||Com|MCU1||MAIN_bOCStoreManualReq||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_u8UdsSwVerVeh|uint8|MAIN|1|1|13|MAIN_u8UdsSwVerVeh|0|0|Hexa|-|1|1|0|MAIN|MAIN||MAIN_u8UdsSwVerVeh||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_u8UdsSwVerSup|uint8|MAIN|1|1|21|MAIN_u8UdsSwVerSup|0|0|Hexa|-|1|1|0|MAIN|MAIN||MAIN_u8UdsSwVerSup||1|||||||NONE|0|1||||1|0|0|...|0||||||
+ASWNM_bStayAwake|boolean|MAIN|0|0|0|ASWNM_bStayAwake|0|0|Phys|bool|2|0||MAIN|MAIN|Raw|ASWNM_bStayAwake||1|||||||NONE|0|1||||1|0|0|...|0||||||
+ASWNM_bFullComSts|boolean|MAIN|0|0|0|ASWNM_bFullComSts|0|0|Phys|bool|2|0||MAIN|MAIN|Raw|ASWNM_bFullComSts||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_TotalTime|uint32|MAIN|0|0|0|MAIN_TotalTime|0|0|D�ci|-||||Main|Main||MAIN_TotalTime||1||||||||0|1||||1|0|0||0|||||0|
+ADCTotalTime|uint32|MAIN|0|0|0|ADCTotalTime|0|0|D�ci|-||||Main|Main||ADCTotalTime||1||||||||0|1||||1|0|0||0|||||0|
+Os_Task_BackGround_Counter|uint32|MAIN|0|0|0|Os_Task_BackGround_Counter|0|0|D�ci|-||||Com|Resolver|Raw|Os_Task_BackGround_Counter||1|||||||NONE|0|1||||1|0|0|...|1||||||
+Os_Task_Idle_Counter|uint32|MAIN|0|0|0|Os_Task_Idle_Counter|0|0|D�ci|-||||Com|Resolver|Raw|Os_Task_Idle_Counter||1|||||||NONE|0|1||||1|0|0|...|1||||||
+MAIN_f32PowerdownVoltC|float|MAIN|0|0|0|MAIN_f32PowerdownVoltC|0|0|D�ci|-|1|1|0|Driver|Driver||MAIN_f32PowerdownVoltC||2|||||||...|1|1||||1|0|0|Spare|0||||||
+ASWNM_u8CurrentState|uint8|MAIN|1|1|21|ASWNM_u8CurrentState|0|0|Hexa|-|1|1|0|MAIN|MAIN||ASWNM_u8CurrentState||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_MSGu8PwModOnCnt|uint8|MAIN|1|0|0|MAIN_MSGu8PwModOnCnt|0|0|Déci|-||||Develop|Develop||MAIN_MSGu8PwModOnCnt||1||||||||0|1||||1|0|0||0||||||
+MAIN_MSGu8PwModOffCnt|uint8|MAIN|1|0|0|MAIN_MSGu8PwModOffCnt|0|0|Déci|-||||Develop|Develop||MAIN_MSGu8PwModOffCnt||1||||||||0|1||||1|0|0||0||||||
+MAIN_MSGu8PwModFiltCntC|uint8|MAIN|0|0|0|MAIN_MSGu8PwModFiltCntC|0|0|Déci|-||||Driver|Driver||MAIN_MSGu8PwModFiltCntC||2|||||||...|1|1|||10|1|0|0|Spare|0||||||
+MAIN_bProgConditionOk|boolean|MAIN|0|0|0|MAIN_bProgConditionOk|0|0|Hexa|-||||Com|MCU1||MAIN_bProgConditionOk||1|||||||NONE|0|1||||1|0|0|...|0||||||
+Core0_f32ModReqLoad|float|MAIN|0|0|0|Core0_f32ModReqLoad|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|Core0_f32ModReqLoad||1|||||||NONE|0|1||||1|0|0|... |1||||||
+Core0_f32Asw100msLoad|float|MAIN|0|0|0|Core0_f32Asw100msLoad|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|Core0_f32Asw100msLoad||1|||||||NONE|0|1||||1|0|0|... |1||||||
+Core0_f32Asw10msLoad|float|MAIN|0|0|0|Core0_f32Asw10msLoad|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|Core0_f32Asw10msLoad||1|||||||NONE|0|1||||1|0|0|... |1||||||
+Core0_f32Bsw100msLoad|float|MAIN|0|0|0|Core0_f32Bsw100msLoad|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|Core0_f32Bsw100msLoad||1|||||||NONE|0|1||||1|0|0|... |1||||||
+Core0_f32Bsw10msLoad|float|MAIN|0|0|0|Core0_f32Bsw10msLoad|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|Core0_f32Bsw10msLoad||1|||||||NONE|0|1||||1|0|0|... |1||||||
+Core0_f32Bsw1msLoad|float|MAIN|0|0|0|Core0_f32Bsw1msLoad|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|Core0_f32Bsw1msLoad||1|||||||NONE|0|1||||1|0|0|... |1||||||
+Core0_f32Bsw50msLoad|float|MAIN|0|0|0|Core0_f32Bsw50msLoad|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|Core0_f32Bsw50msLoad||1|||||||NONE|0|1||||1|0|0|... |1||||||
+Core0_f32VsiTreatmentLoad|float|MAIN|0|0|0|Core0_f32VsiTreatmentLoad|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|Core0_f32VsiTreatmentLoad||1|||||||NONE|0|1||||1|0|0|... |1||||||
+Core1_f32Asw10msLoad|float|MAIN|0|0|0|Core1_f32Asw10msLoad|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|Core1_f32Asw10msLoad||1|||||||NONE|0|1||||1|0|0|... |1||||||
+Core1_f32Asw1msLoad|float|MAIN|0|0|0|Core1_f32Asw1msLoad|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|Core1_f32Asw1msLoad||1|||||||NONE|0|1||||1|0|0|... |1||||||
+Core1_f32Bsw10msLoad|float|MAIN|0|0|0|Core1_f32Bsw10msLoad|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|Core1_f32Bsw10msLoad||1|||||||NONE|0|1||||1|0|0|... |1||||||
+Core1_f32PosTreatmentLoad|float|MAIN|0|0|0|Core1_f32PosTreatmentLoad|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|Core1_f32PosTreatmentLoad||1|||||||NONE|0|1||||1|0|0|... |1||||||
+Core2_f32Asw10msLoad|float|MAIN|0|0|0|Core2_f32Asw10msLoad|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|Core2_f32Asw10msLoad||1|||||||NONE|0|1||||1|0|0|... |1||||||
+Core2_f32Asw1msLoad|float|MAIN|0|0|0|Core2_f32Asw1msLoad|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|Core2_f32Asw1msLoad||1|||||||NONE|0|1||||1|0|0|... |1||||||
+Core2_f32Bsw10msLoad|float|MAIN|0|0|0|Core2_f32Bsw10msLoad|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|Core2_f32Bsw10msLoad||1|||||||NONE|0|1||||1|0|0|... |1||||||
+Core2_f32BldcTreatmentLoad|float|MAIN|0|0|0|Core2_f32BldcTreatmentLoad|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|Core2_f32BldcTreatmentLoad||1|||||||NONE|0|1||||1|0|0|... |1||||||
+MAIN_f32CpuLoadCore0|float|MAIN|0|0|0|MAIN_f32CpuLoadCore0|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|MAIN_f32CpuLoadCore0||1|||||||NONE|0|1||||1|0|0|... |1||||||
+MAIN_f32CpuLoadCore1|float|MAIN|0|0|0|MAIN_f32CpuLoadCore1|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|MAIN_f32CpuLoadCore1||1|||||||NONE|0|1||||1|0|0|... |1||||||
+MAIN_f32CpuLoadCore2|float|MAIN|0|0|0|MAIN_f32CpuLoadCore2|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|MAIN_f32CpuLoadCore2||1|||||||NONE|0|1||||1|0|0|... |1||||||
+MAIN_f32CpuLoadMaxCore0|float|MAIN|0|0|0|MAIN_f32CpuLoadMaxCore0|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|MAIN_f32CpuLoadMaxCore0||1|||||||NONE|0|1||||1|0|0|... |1||||||
+MAIN_f32CpuLoadMaxCore1|float|MAIN|0|0|0|MAIN_f32CpuLoadMaxCore1|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|MAIN_f32CpuLoadMaxCore1||1|||||||NONE|0|1||||1|0|0|... |1||||||
+MAIN_f32CpuLoadMaxCore2|float|MAIN|0|0|0|MAIN_f32CpuLoadMaxCore2|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|MAIN_f32CpuLoadMaxCore2||1|||||||NONE|0|1||||1|0|0|... |1||||||
+MAIN_SampleSequenceEnC|boolean|MAIN|0|0|0|MAIN_SampleSequenceEnC|0|0|Phys|bool|2|0||Com|Com||MAIN_SampleSequenceEnC||2|||||||NONE|1|1|||0|1|0|0|Tx MSG activation|0||||||
+MAIN_MSGu16VCU_DevelopSignal1|uint16|MAIN|0|0|0|MAIN_MSGu16VCU_DevelopSignal1|0|0|Hexa|-||||AutoMSG_Rx27|AutoMSG_Rx27|Raw|MAIN_MSGu16VCU_DevelopSignal1||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_MSGu16VCU_DevelopSignal2|uint16|MAIN|0|0|0|MAIN_MSGu16VCU_DevelopSignal2|0|0|Hexa|-||||AutoMSG_Rx27|AutoMSG_Rx27|Raw|MAIN_MSGu16VCU_DevelopSignal2||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_MSGu16VCU_DevelopSignal3|uint16|MAIN|0|0|0|MAIN_MSGu16VCU_DevelopSignal3|0|0|Hexa|-||||AutoMSG_Rx27|AutoMSG_Rx27|Raw|MAIN_MSGu16VCU_DevelopSignal3||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_MSGu16VCU_DevelopSignal4|uint16|MAIN|0|0|0|MAIN_MSGu16VCU_DevelopSignal4|0|0|Hexa|-||||AutoMSG_Rx27|AutoMSG_Rx27|Raw|MAIN_MSGu16VCU_DevelopSignal4||1|||||||NONE|0|1||||1|0|0|...|0|||||| 
+MAIN_u8VCUAllowTorqUds|uint8|MAIN|0|0|0|MAIN_u8VCUAllowTorqUds|0|0|D�ci|-||||MAIN|MAIN||MAIN_u8VCUAllowTorqUds||1||||||||0|1||||1|0|0||0|||||| 
+MAIN_bTcuTchTrigForUds|boolean|MAIN|0|0|0|MAIN_bTcuTchTrigForUds|0|0|Hexa|-||||MAIN|MAIN||MAIN_bTcuTchTrigForUds||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_bTrigOcByManual|boolean|MAIN|0|0|0|MAIN_bTrigOcByManual|0|0|Hexa|-||||MAIN|MAIN||MAIN_bTrigOcByManual||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_u8TcuTchSttForUds|uint8|MAIN|0|0|0|MAIN_u8TcuTchSttForUds|0|0|Hexa|-||||MAIN|MAIN|Raw|MAIN_u8TcuTchSttForUds||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_u32RunTime_s|uint32|MAIN|0|0|0|MAIN_u32RunTime_s|0|0|D�ci|-||||Main|Main||MAIN_u32RunTime_s||1||||||||0|1||||1|0|0||0|||||0| 
+MAIN_u32GetRunTime_s|uint32|MAIN|0|0|0|MAIN_u32GetRunTime_s|0|0|D�ci|-||||Main|Main||MAIN_u32GetRunTime_s||1||||||||0|1||||1|0|0||0|||||0| 
+MAIN_u32RunTime_ms|uint32|MAIN|0|0|0|MAIN_u32RunTime_ms|0|0|D�ci|-||||Main|Main||MAIN_u32RunTime_ms||1||||||||0|1||||1|0|0||0|||||0| 
+MAIN_CurSequenceEnC|boolean|MAIN|0|0|0|MAIN_CurSequenceEnC|0|0|Phys|bool|2|0||Com|Com||MAIN_CurSequenceEnC||2|||||||NONE|1|1|||0|1|0|0|Tx MSG activation|0||||||
+MAIN_DutySequenceEnC|boolean|MAIN|0|0|0|MAIN_DutySequenceEnC|0|0|Phys|bool|2|0||Com|Com||MAIN_DutySequenceEnC||2|||||||NONE|1|1|||0|1|0|0|Tx MSG activation|0||||||
+MAIN_bTcuTchTrigForUds|boolean|MAIN|0|0|0|MAIN_bTcuTchTrigForUds|0|0|Phys|bool|2|0||MAIN|MAIN|Raw|MAIN_bTcuTchTrigForUds||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_bSysAbnormalPwrDownFlg|boolean|MAIN|0|0|0|MAIN_bSysAbnormalPwrDownFlg|0|0|Phys|bool|2|0||MAIN|MAIN|Raw|MAIN_bSysAbnormalPwrDownFlg||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_u8IGBTStatusUds|uint8|MAIN|0|0|0|MAIN_u8IGBTStatusUds|0|0|Phys|-|0|0|0|MAIN|MAIN|Physical|MAIN_u8IGBTStatusUds||1|||||||NONE|0|1||||1|0|0|... |1||||||
+MAIN_u8CurGainStoreState|uint8|MAIN|0|0|0|MAIN_u8CurGainStoreState|0|0|Phys|-|0|0|0|MAIN|MAIN|Physical|MAIN_u8CurGainStoreState||1|||||||NONE|0|1||||1|0|0|... |1||||||
+MAIN_u8TeachInDoneFlg|uint8|MAIN|0|0|0|MAIN_u8TeachInDoneFlg|0|0|Déci|-||||MAIN|MAIN||MAIN_u8TeachInDoneFlg||1||||||||0|1||||1|0|0||0||||||
+Core0_MaxUserStackUtilization|float|MAIN|0|0|0|Core0_MaxUserStackUtilization|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|Core0_MaxUserStackUtilization||1|||||||NONE|0|1||||1|0|0|... |1||||||
+Core1_MaxUserStackUtilization|float|MAIN|0|0|0|Core1_MaxUserStackUtilization|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|Core1MaxUserStackUtilization||1|||||||NONE|0|1||||1|0|0|... |1||||||
+Core2_MaxUserStackUtilization|float|MAIN|0|0|0|Core2_MaxUserStackUtilization|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|Core2_MaxUserStackUtilization||1|||||||NONE|0|1||||1|0|0|... |1||||||
+Core3_MaxUserStackUtilization|float|MAIN|0|0|0|Core3_MaxUserStackUtilization|0|0|Phys|RPM|1|1|0|Com|DCU_3|Physical|Core3_MaxUserStackUtilization||1|||||||NONE|0|1||||1|0|0|... |1||||||
+Core1_PositionTotalTime|uint32|GMAIN|0|0|0|Core1_PositionTotalTime|0|0|Phys|-|0|0|0|GMAIN|GMAIN|Physical|Core1_PositionTotalTime||1|||||||NONE|0|1||||1|0|0|... |1||||||
+Core1_PositionStopTime|uint32|GMAIN|0|0|0|Core1_PositionStopTime|0|0|Phys|-|0|0|0|GMAIN|GMAIN|Physical|Core1_PositionStopTime||1|||||||NONE|0|1||||1|0|0|... |1||||||
+Core1_PositionStartTime|uint32|GMAIN|0|0|0|Core1_PositionStartTime|0|0|Phys|-|0|0|0|GMAIN|GMAIN|Physical|Core1_PositionStartTime||1|||||||NONE|0|1||||1|0|0|... |1||||||
+MAIN_u8DEV_Fault|uint8|MAIN|0|1|16|MAIN_u8DEV_Fault|0|0|Phys|-|1|1|0|MAIN|MAIN||MAIN_u8DEV_Fault||1|*|*|*|*|*|*||0|1||||1|0|0|-|0|||||0|
+MAIN_bTcuFltLampEnC|boolean|MAIN|0|0|0|MAIN_bTcuFltLampEnC|0|0|Phys|bool|2|0||Com|Com||MAIN_bTcuFltLampEnC||2|||||||NONE|1|1|||0|1|0|0|Tx MSG activation|0||||||
+MAIN_bComDisableFlg|boolean|MAIN|0|0|0|MAIN_bComDisableFlg|0|0|Hexa|-||||MAIN|MAIN||MAIN_bComDisableFlg||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_u8TcuCapPreDrvTypeC|uint8|MAIN|0|0|0|MAIN_u8TcuCapPreDrvTypeC|0|0|Raw|-|1|1|0|Driver|Driver||MAIN_u8TcuCapPreDrvTypeC||2|||||||...|1|1||||1|0|0|Spare|0||||||
+
+MAIN_MFC_u8TempSensorCfgC_MCU1|uint8|MAIN|0|0|0|MAIN_MFC_u8TempSensorCfgC_MCU1|0|0|Raw|-|1|1|0|Driver|Driver||MAIN_MFC_u8TempSensorCfgC_MCU1||2|||||||...|1|1||||1|0|0|Spare|0||||||
+MAIN_MFC_u8TempSensorCfgC_MCU2|uint8|MAIN|0|0|0|MAIN_MFC_u8TempSensorCfgC_MCU2|0|0|Raw|-|1|1|0|Driver|Driver||MAIN_MFC_u8TempSensorCfgC_MCU2||2|||||||...|1|1||||1|0|0|Spare|0||||||
+MAIN_MFC_u8TempSensorCfgC_EPS|uint8|MAIN|0|0|0|MAIN_MFC_u8TempSensorCfgC_EPS|0|0|Raw|-|1|1|0|Driver|Driver||MAIN_MFC_u8TempSensorCfgC_EPS||2|||||||...|1|1||||1|0|0|Spare|0||||||
+MAIN_MFC_u8TempSensorCfgC_ACM|uint8|MAIN|0|0|0|MAIN_MFC_u8TempSensorCfgC_ACM|0|0|Raw|-|1|1|0|Driver|Driver||MAIN_MFC_u8TempSensorCfgC_ACM||2|||||||...|1|1||||1|0|0|Spare|0||||||
+MAIN_MFC_bCanAEnaC|boolean|MAIN|0|0|0|MAIN_MFC_bCanAEnaC|0|0|Phys|bool|2|0||Com|Com||MAIN_MFC_bCanAEnaC||2|||||||NONE|1|1|||0|1|0|0|Tx MSG activation|0||||||
+MAIN_MFC_bCanBEnaC|boolean|MAIN|0|0|0|MAIN_MFC_bCanBEnaC|0|0|Phys|bool|2|0||Com|Com||MAIN_MFC_bCanBEnaC||2|||||||NONE|1|1|||0|1|0|0|Tx MSG activation|0||||||
+MAIN_MFC_bCanCEnaC|boolean|MAIN|0|0|0|MAIN_MFC_bCanCEnaC|0|0|Phys|bool|2|0||Com|Com||MAIN_MFC_bCanCEnaC||2|||||||NONE|1|1|||0|1|0|0|Tx MSG activation|0||||||
+MAIN_MFC_bCanDEnaC|boolean|MAIN|0|0|0|MAIN_MFC_bCanDEnaC|0|0|Phys|bool|2|0||Com|Com||MAIN_MFC_bCanDEnaC||2|||||||NONE|1|1|||0|1|0|0|Tx MSG activation|0||||||
+MAIN_MFC_bCanEEnaC|boolean|MAIN|0|0|0|MAIN_MFC_bCanEEnaC|0|0|Phys|bool|2|0||Com|Com||MAIN_MFC_bCanEEnaC||2|||||||NONE|1|1|||0|1|0|0|Tx MSG activation|0||||||
+MAIN_MFC_bCanFEnaC|boolean|MAIN|0|0|0|MAIN_MFC_bCanFEnaC|0|0|Phys|bool|2|0||Com|Com||MAIN_MFC_bCanFEnaC||2|||||||NONE|1|1|||0|1|0|0|Tx MSG activation|0||||||
+MAIN_MFC_bDcAcEnaC|boolean|MAIN|0|0|0|MAIN_MFC_bDcAcEnaC|0|0|Phys|bool|2|0||Com|Com||MAIN_MFC_bDcAcEnaC||2|||||||NONE|1|1|||0|1|0|0|Tx MSG activation|0||||||
+MAIN_MFC_bTestEnaC|boolean|MAIN|0|0|0|MAIN_MFC_bTestEnaC|0|0|Phys|bool|2|0||Com|Com||MAIN_MFC_bTestEnaC||2|||||||NONE|1|1|||0|1|0|0|Tx MSG activation|0||||||
+
+MAIN_MFC_au8CfgMap|uint8|MAIN|0|1|2|MAIN_MFC_au8CfgMap|0|0|Phys|-|1|1|0|MAIN|MAIN||MAIN_MFC_au8CfgMap||1|*|*|*|*|*|*||0|1||||1|0|0|-|0|||||0|
+
+ADS1115_u8UserCfg_PGAC|uint8|ADS1115|0|0|0|ADS1115_u8UserCfg_PGAC|0|0|Raw|-|1|1|0|ADS1115|ADS1115||ADS1115_u8UserCfg_PGAC||2|||||||...|1|1||||1|0|0|Spare|0||||||
+ADS1115_u8UserCfg_MUXC|uint8|ADS1115|0|0|0|ADS1115_u8UserCfg_MUXC|0|0|Raw|-|1|1|0|ADS1115|ADS1115||ADS1115_u8UserCfg_MUXC||2|||||||...|1|1||||1|0|0|Spare|0||||||
+ADS1115_u8UserCfg_DRC|uint8|ADS1115|0|0|0|ADS1115_u8UserCfg_DRC|0|0|Raw|-|1|1|0|ADS1115|ADS1115||ADS1115_u8UserCfg_DRC||2|||||||...|1|1||||1|0|0|Spare|0||||||
+MAIN_u16ADS1115Result|uint16|ADS1115|0|0|0|MAIN_u16ADS1115Result|0|0|Phys|-||||ADS1115|ADS1115|Raw|MAIN_u16ADS1115Result||1|||||||NONE|0|1||||1|0|0|...|0||||||
+MAIN_u16ADS1115Result_1|uint16|ADS1115|0|0|0|MAIN_u16ADS1115Result_1|0|0|Phys|-||||ADS1115|ADS1115|Raw|MAIN_u16ADS1115Result_1||1|||||||NONE|0|1||||1|0|0|...|0||||||
+
+MAIN_u16HVInputCheck|uint16|MAIN|1|0|0|MAIN_u16HVInputCheck|0|0|D�ci|-||||Acquisitions|Acquisitions||MAIN_u16HVInputCheck||1||||||||0|1||||1|0|0||0||||||
+MAIN_u16SuperStructureCheck|uint16|MAIN|1|0|0|MAIN_u16SuperStructureCheck|0|0|D�ci|-||||Acquisitions|Acquisitions||MAIN_u16SuperStructureCheck||1||||||||0|1||||1|0|0||0||||||
+MAIN_u16DCACResevedCheck|uint16|MAIN|1|0|0|MAIN_u16DCACResevedCheck|0|0|D�ci|-||||Acquisitions|Acquisitions||MAIN_u16DCACResevedCheck||1||||||||0|1||||1|0|0||0||||||
+MAIN_u16DCACInverterCheck|uint16|MAIN|1|0|0|MAIN_u16DCACInverterCheck|0|0|D�ci|-||||Acquisitions|Acquisitions||MAIN_u16DCACInverterCheck||1||||||||0|1||||1|0|0||0||||||
+MAIN_u16AirConditionerCheck|uint16|MAIN|1|0|0|MAIN_u16AirConditionerCheck|0|0|D�ci|-||||Acquisitions|Acquisitions||MAIN_u16AirConditionerCheck||1||||||||0|1||||1|0|0||0||||||
+MAIN_u16HVFanCheck|uint16|MAIN|1|0|0|MAIN_u16HVFanCheck|0|0|D�ci|-||||Acquisitions|Acquisitions||MAIN_u16HVFanCheck||1||||||||0|1||||1|0|0||0||||||
+MAIN_u16WaterCoolingCheck|uint16|MAIN|1|0|0|MAIN_u16WaterCoolingCheck|0|0|D�ci|-||||Acquisitions|Acquisitions||MAIN_u16WaterCoolingCheck||1||||||||0|1||||1|0|0||0||||||
+MAIN_u16BatHeatPTCCheck|uint16|MAIN|1|0|0|MAIN_u16BatHeatPTCCheck|0|0|D�ci|-||||Acquisitions|Acquisitions||MAIN_u16BatHeatPTCCheck||1||||||||0|1||||1|0|0||0||||||
+MAIN_b800VsersionSelcetEnC|boolean|MAIN|0|0|0|MAIN_b800VsersionSelcetEnC|0|0|Phys|bool|2|0||Com|Com||MAIN_b800VsersionSelcetEnC||2|||||||NONE|1|1|||0|1|0|0|Tx MSG activation|0||||||
+
+MAIN_MSGbIsulationTxOnC|boolean|MAIN|0|0|0|MAIN_MSGbIsulationTxOnC|0|0|Phys|bool|2|0||Com|Com||MAIN_MSGbIsulationTxOnC||2|||||||NONE|1|1||||1|0|0|Rx MSG activation|0||||||

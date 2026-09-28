@@ -1,0 +1,469 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: GCU MCU
+
+
+BO_ 1914 XCP_TX_DAQ2: 8 MCU
+
+BO_ 1913 XCP_TX_DAQ1: 8 MCU
+
+BO_ 1912 XCP_TX_DAQ0: 8 MCU
+
+BO_ 1911 XCP_TX_RES: 8 MCU
+
+BO_ 819 XCP_RX_CMD: 8 Vector__XXX
+ SG_ XCP_SIG1 : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  MCU
+
+BO_ 818 XCP_RX_Broadcast: 8 Vector__XXX
+ SG_ XCP_SIG2 : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  MCU
+
+BO_ 535 CCP_TX_DAQ2: 8 MCU
+ SG_ CCP_DAQ2_Byte7 : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ CCP_DAQ2_Byte6 : 55|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ CCP_DAQ2_Byte5 : 47|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ CCP_DAQ2_Byte4 : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ CCP_DAQ2_Byte3 : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ CCP_DAQ2_Byte2 : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ CCP_DAQ2_Byte1 : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ CCP_DAQ2_Byte0 : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 533 CCP_TX_DAQ1: 8 MCU
+ SG_ CCP_DAQ1_Byte7 : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ CCP_DAQ1_Byte6 : 55|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ CCP_DAQ1_Byte5 : 47|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ CCP_DAQ1_Byte4 : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ CCP_DAQ1_Byte3 : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ CCP_DAQ1_Byte2 : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ CCP_DAQ1_Byte1 : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ CCP_DAQ1_Byte0 : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 534 CCP_TX_DAQ0: 8 MCU
+ SG_ CCP_DAQ0_Byte7 : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ CCP_DAQ0_Byte6 : 55|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ CCP_DAQ0_Byte5 : 47|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ CCP_DAQ0_Byte4 : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ CCP_DAQ0_Byte3 : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ CCP_DAQ0_Byte2 : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ CCP_DAQ0_Byte1 : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ CCP_DAQ0_Byte0 : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 792 CCP_TX_DTO: 8 MCU
+ SG_ CCP_DTO_Byte7 : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ CCP_DTO_Byte6 : 55|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ CCP_DTO_Byte5 : 47|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ CCP_DTO_Byte4 : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ CCP_DTO_Byte3 : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ CCP_DTO_Byte2 : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ CCP_DTO_Byte1 : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ CCP_DTO_Byte0 : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 791 CCP_RX_CRO: 8 Vector__XXX
+ SG_ CCP_CRO_Byte7 : 63|8@0+ (1,0) [0|255] ""  MCU
+ SG_ CCP_CRO_Byte6 : 55|8@0+ (1,0) [0|255] ""  MCU
+ SG_ CCP_CRO_Byte5 : 47|8@0+ (1,0) [0|255] ""  MCU
+ SG_ CCP_CRO_Byte4 : 39|8@0+ (1,0) [0|255] ""  MCU
+ SG_ CCP_CRO_Byte3 : 31|8@0+ (1,0) [0|255] ""  MCU
+ SG_ CCP_CRO_Byte2 : 23|8@0+ (1,0) [0|255] ""  MCU
+ SG_ CCP_CRO_Byte1 : 15|8@0+ (1,0) [0|255] ""  MCU
+ SG_ CCP_CRO_Byte0 : 7|8@0+ (1,0) [0|255] ""  MCU
+
+BO_ 395 G2M3_18B: 8 GCU
+ SG_ G2M3_CCP_Byte7 : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ G2M3_CCP_Byte6 : 55|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ G2M3_CCP_Byte5 : 47|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ G2M3_CCP_Byte4 : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ G2M3_CCP_Byte3 : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ G2M3_CCP_Byte2 : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ G2M3_CCP_Byte1 : 15|7@0+ (1,0) [0|127] "" Vector__XXX
+ SG_ G2M3_CCP_PhaseShortLow : 1|1@0+ (1,0) [0|1] ""  MCU
+ SG_ G2M3_CCP_PhaseShortHigh : 0|1@0+ (1,0) [0|1] ""  MCU
+ SG_ G2M3_CCP_PhasePerf : 8|1@0+ (1,0) [0|1] ""  MCU
+ SG_ G2M3_CCP_HALUnderVoltage : 7|1@0+ (1,0) [0|1] ""  MCU
+ SG_ G2M3_CCP_HALOverVoltage : 6|1@0+ (1,0) [0|1] ""  MCU
+ SG_ G2M3_CCP_HALFault : 5|1@0+ (1,0) [0|1] ""  MCU
+ SG_ G2M3_CCP_DrvOverVoltage : 2|1@0+ (1,0) [0|1] ""  MCU
+ SG_ G2M3_CCP_DrvOverTemp : 4|1@0+ (1,0) [0|1] ""  MCU
+ SG_ G2M3_CCP_DrvOverCurrent : 3|1@0+ (1,0) [0|1] ""  MCU
+
+BO_ 378 M2G2_17A: 8 MCU
+ SG_ M2G2_Byte7 : 63|8@0+ (1,0) [0|255] ""  GCU
+ SG_ M2G2_Byte6 : 55|8@0+ (1,0) [0|255] ""  GCU
+ SG_ M2G2_Byte5 : 47|8@0+ (1,0) [0|255] ""  GCU
+ SG_ M2G2_Byte4 : 39|8@0+ (1,0) [0|255] ""  GCU
+ SG_ M2G2_Byte3 : 31|8@0+ (1,0) [0|255] ""  GCU
+ SG_ M2G2_Byte2 : 23|8@0+ (1,0) [0|255] ""  GCU
+ SG_ M2G2_Byte1 : 15|8@0+ (1,0) [0|255] ""  GCU
+ SG_ M2G2_Byte0 : 7|8@0+ (1,0) [0|255] ""  GCU
+
+BO_ 377 M2G1_179: 8 MCU
+ SG_ M2G1_Reserved0 : 27|4@0+ (1,0) [0|15] ""  GCU
+ SG_ M2G1_Byte7 : 63|8@0+ (1,0) [0|255] ""  GCU
+ SG_ M2G1_Byte6 : 55|8@0+ (1,0) [0|255] ""  GCU
+ SG_ M2G1_Byte5 : 47|8@0+ (1,0) [0|255] ""  GCU
+ SG_ M2G1_Byte4 : 39|8@0+ (1,0) [0|255] ""  GCU
+ SG_ M2G1_CCP_TargetMotorSts : 11|4@0+ (1,0) [0|15] ""  GCU
+ SG_ M2G1_CCP_TargetDutyCycle : 23|12@0+ (0.1,-100) [-100|309.5] ""  GCU
+ SG_ M2G1_CAP_FaultLevel : 15|4@0+ (1,0) [0|15] ""  GCU
+ SG_ M2G1_CAP_FaultCode : 7|8@0+ (1,0) [0|255] ""  GCU
+
+BO_ 394 G2M2_18A: 8 GCU
+ SG_ G2M2_CCP_PwrStgTemp : 47|8@0+ (1,-40) [-40|215] ""  MCU
+ SG_ G2M2_CCP_PwrStgPosSts : 19|4@0+ (1,0) [0|15] ""  MCU
+ SG_ G2M2_CCP_DcCurrent : 55|16@0+ (0.1,-1000) [-1000|5553.5] "A"  MCU
+ SG_ G2M2_CCP_PhaseCurLoad : 27|12@0+ (0.025,0) [0|102.375] ""  MCU
+ SG_ G2M2_CCP_PwrStgSts : 31|4@0+ (1,0) [0|15] ""  MCU
+ SG_ G2M2_CCP_PwrStgMode : 23|4@0+ (1,0) [0|15] ""  MCU
+ SG_ G2M2_CCP_CurrentSts : 11|4@0+ (1,0) [0|15] ""  MCU
+ SG_ G2M2_CCP_AvrgCurrent : 7|12@0+ (0.05,0) [0|204.75] ""  MCU
+
+BO_ 393 G2M1_189: 8 GCU
+ SG_ G2M1_CCP_PwrStgActPosInc : 55|16@0+ (1,-32768) [-32768|32767] ""  MCU
+ SG_ G2M1_CCP_DutyCycle : 11|12@0+ (0.1,-100) [-100|309.5] ""  MCU
+ SG_ G2M1_CCP_MotSpd : 39|16@0+ (1,-32768) [-32768|32767] ""  MCU
+ SG_ G2M1_CCP_5VSupply : 31|8@0+ (0.1,0) [0|25.5] ""  MCU
+ SG_ G2M1_CCP_FaultLevel : 15|4@0+ (1,0) [0|15] ""  MCU
+ SG_ G2M1_CCP_FaultCode : 7|8@0+ (1,0) [0|255] ""  MCU
+
+
+
+BA_DEF_ SG_  "GenSigTimeoutValue" INT 0 1000000000;
+BA_DEF_ SG_  "New_ATTDef_1" STRING ;
+BA_DEF_ SG_  "ComFirstTimeoutInSec" FLOAT 0 100;
+BA_DEF_ BO_  "NmMessage" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagState" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagRequest" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagResponse" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgCycleTimeActive" INT 0 0;
+BA_DEF_ BO_  "New_ATTDef_0" STRING ;
+BA_DEF_ BO_  "ComIpduCalloutFunction" STRING ;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "DiagStationAddress" HEX 0 255;
+BA_DEF_ BU_  "NmNode" ENUM  "Not","Yes";
+BA_DEF_ BU_  "NmStationAddress" HEX 0 65535;
+BA_DEF_ BU_  "NmCAN" INT 0 2;
+BA_DEF_ SG_  "ComTimeoutNotification" STRING ;
+BA_DEF_ SG_  "ComTimeoutInSec" FLOAT 0 100;
+BA_DEF_ SG_  "ComNotification" STRING ;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType";
+BA_DEF_ SG_  "GenSigStartValue" HEX 0 2147483648;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 10000;
+BA_DEF_ SG_  "GatewayedSignals" ENUM  "No","Yes";
+BA_DEF_ BO_  "ComTxModeTimePeriodInSec" FLOAT 0 100;
+BA_DEF_ BO_  "CanIfTxPduUserTxConfirmationUL" STRING ;
+BA_DEF_ BO_  "CanIfTxPduSourcePduID" INT 0 65535;
+BA_DEF_ BO_  "CanIfRxPduUserRxIndicationUL" STRING ;
+BA_DEF_ BO_  "CanIfRxPduTargetPduID" INT 0 65535;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","NotUsed","NotUsed","NotUsed","NotUsed","Cyclic","NotUsed","IfActive","NoMsgSendType";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 10000;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 10000;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 1000;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 999999;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 65535;
+BA_DEF_ BU_  "ILUsed" ENUM  "No","Yes";
+BA_DEF_ BU_  "NodelayerModules" STRING ;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "GenSigTimeoutValue" 0;
+BA_DEF_DEF_  "New_ATTDef_1" "";
+BA_DEF_DEF_  "ComFirstTimeoutInSec" 0;
+BA_DEF_DEF_  "NmMessage" "No";
+BA_DEF_DEF_  "DiagState" "No";
+BA_DEF_DEF_  "DiagRequest" "No";
+BA_DEF_DEF_  "DiagResponse" "No";
+BA_DEF_DEF_  "GenMsgCycleTimeActive" 0;
+BA_DEF_DEF_  "New_ATTDef_0" "";
+BA_DEF_DEF_  "ComIpduCalloutFunction" "";
+BA_DEF_DEF_  "NodeLayerModules" "CANoeILNLVector.dll";
+BA_DEF_DEF_  "DiagStationAddress" 0;
+BA_DEF_DEF_  "NmNode" "Not";
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "NmCAN" 0;
+BA_DEF_DEF_  "ComTimeoutNotification" "";
+BA_DEF_DEF_  "ComTimeoutInSec" 0;
+BA_DEF_DEF_  "ComNotification" "";
+BA_DEF_DEF_  "GenSigSendType" "NoSigSendType";
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GatewayedSignals" "No";
+BA_DEF_DEF_  "ComTxModeTimePeriodInSec" 0;
+BA_DEF_DEF_  "CanIfTxPduUserTxConfirmationUL" "PDUR";
+BA_DEF_DEF_  "CanIfTxPduSourcePduID" 0;
+BA_DEF_DEF_  "CanIfRxPduUserRxIndicationUL" "PDUR";
+BA_DEF_DEF_  "CanIfRxPduTargetPduID" 0;
+BA_DEF_DEF_  "GenMsgSendType" "Cyclic";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "No";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "ILUsed" "Yes";
+BA_DEF_DEF_  "NodelayerModules" "CANoeILNLVector.dll";
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "BusType" "";
+BA_ "DBName" "CAN_CCP";
+BA_ "CanIfTxPduUserTxConfirmationUL" BO_ 1914 "XCP";
+BA_ "CanIfRxPduUserRxIndicationUL" BO_ 1914 "XCP";
+BA_ "GenMsgSendType" BO_ 1914 7;
+BA_ "CanIfTxPduUserTxConfirmationUL" BO_ 1913 "XCP";
+BA_ "CanIfRxPduUserRxIndicationUL" BO_ 1913 "XCP";
+BA_ "GenMsgSendType" BO_ 1913 7;
+BA_ "CanIfTxPduUserTxConfirmationUL" BO_ 1912 "XCP";
+BA_ "CanIfRxPduUserRxIndicationUL" BO_ 1912 "XCP";
+BA_ "GenMsgSendType" BO_ 1912 7;
+BA_ "CanIfTxPduUserTxConfirmationUL" BO_ 1911 "XCP";
+BA_ "CanIfRxPduUserRxIndicationUL" BO_ 1911 "XCP";
+BA_ "GenMsgSendType" BO_ 1911 7;
+BA_ "CanIfTxPduUserTxConfirmationUL" BO_ 819 "XCP";
+BA_ "CanIfRxPduUserRxIndicationUL" BO_ 819 "XCP";
+BA_ "GenMsgSendType" BO_ 819 7;
+BA_ "CanIfTxPduUserTxConfirmationUL" BO_ 818 "XCP";
+BA_ "CanIfRxPduUserRxIndicationUL" BO_ 818 "XCP";
+BA_ "GenMsgSendType" BO_ 818 7;
+BA_ "CanIfTxPduUserTxConfirmationUL" BO_ 535 "CDD";
+BA_ "CanIfRxPduUserRxIndicationUL" BO_ 535 "CDD";
+BA_ "GenMsgSendType" BO_ 535 7;
+BA_ "CanIfTxPduUserTxConfirmationUL" BO_ 533 "CDD";
+BA_ "CanIfRxPduUserRxIndicationUL" BO_ 533 "CDD";
+BA_ "GenMsgSendType" BO_ 533 7;
+BA_ "CanIfTxPduUserTxConfirmationUL" BO_ 534 "CDD";
+BA_ "CanIfRxPduUserRxIndicationUL" BO_ 534 "CDD";
+BA_ "GenMsgSendType" BO_ 534 7;
+BA_ "CanIfTxPduUserTxConfirmationUL" BO_ 792 "CDD";
+BA_ "CanIfRxPduUserRxIndicationUL" BO_ 792 "CDD";
+BA_ "GenMsgSendType" BO_ 792 7;
+BA_ "CanIfTxPduUserTxConfirmationUL" BO_ 791 "CDD";
+BA_ "CanIfRxPduUserRxIndicationUL" BO_ 791 "CDD";
+BA_ "GenMsgSendType" BO_ 791 7;
+BA_ "GenMsgCycleTime" BO_ 395 100;
+BA_ "ComTxModeTimePeriodInSec" BO_ 395 0.1;
+BA_ "ComTxModeTimePeriodInSec" BO_ 378 0.02;
+BA_ "GenMsgCycleTime" BO_ 378 20;
+BA_ "ComTxModeTimePeriodInSec" BO_ 377 0.02;
+BA_ "GenMsgCycleTime" BO_ 377 20;
+BA_ "ComTxModeTimePeriodInSec" BO_ 394 0.02;
+BA_ "GenMsgCycleTime" BO_ 394 20;
+BA_ "ComTxModeTimePeriodInSec" BO_ 393 0.02;
+BA_ "GenMsgCycleTime" BO_ 393 20;
+BA_ "ComFirstTimeoutInSec" SG_ 535 CCP_DAQ2_Byte7 1;
+BA_ "ComTimeoutNotification" SG_ 535 CCP_DAQ2_Byte7 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 535 CCP_DAQ2_Byte7 0.25;
+BA_ "ComNotification" SG_ 535 CCP_DAQ2_Byte7 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 535 CCP_DAQ2_Byte6 1;
+BA_ "ComTimeoutNotification" SG_ 535 CCP_DAQ2_Byte6 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 535 CCP_DAQ2_Byte6 0.25;
+BA_ "ComNotification" SG_ 535 CCP_DAQ2_Byte6 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 535 CCP_DAQ2_Byte5 1;
+BA_ "ComTimeoutNotification" SG_ 535 CCP_DAQ2_Byte5 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 535 CCP_DAQ2_Byte5 0.25;
+BA_ "ComNotification" SG_ 535 CCP_DAQ2_Byte5 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 535 CCP_DAQ2_Byte4 1;
+BA_ "ComTimeoutNotification" SG_ 535 CCP_DAQ2_Byte4 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 535 CCP_DAQ2_Byte4 0.25;
+BA_ "ComNotification" SG_ 535 CCP_DAQ2_Byte4 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 535 CCP_DAQ2_Byte3 1;
+BA_ "ComTimeoutNotification" SG_ 535 CCP_DAQ2_Byte3 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 535 CCP_DAQ2_Byte3 0.25;
+BA_ "ComNotification" SG_ 535 CCP_DAQ2_Byte3 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 535 CCP_DAQ2_Byte2 1;
+BA_ "ComTimeoutNotification" SG_ 535 CCP_DAQ2_Byte2 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 535 CCP_DAQ2_Byte2 0.25;
+BA_ "ComNotification" SG_ 535 CCP_DAQ2_Byte2 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 535 CCP_DAQ2_Byte1 1;
+BA_ "ComTimeoutNotification" SG_ 535 CCP_DAQ2_Byte1 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 535 CCP_DAQ2_Byte1 0.25;
+BA_ "ComNotification" SG_ 535 CCP_DAQ2_Byte1 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 535 CCP_DAQ2_Byte0 1;
+BA_ "ComTimeoutNotification" SG_ 535 CCP_DAQ2_Byte0 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 535 CCP_DAQ2_Byte0 0.25;
+BA_ "ComNotification" SG_ 535 CCP_DAQ2_Byte0 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 533 CCP_DAQ1_Byte7 1;
+BA_ "ComTimeoutNotification" SG_ 533 CCP_DAQ1_Byte7 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 533 CCP_DAQ1_Byte7 0.25;
+BA_ "ComNotification" SG_ 533 CCP_DAQ1_Byte7 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 533 CCP_DAQ1_Byte6 1;
+BA_ "ComTimeoutNotification" SG_ 533 CCP_DAQ1_Byte6 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 533 CCP_DAQ1_Byte6 0.25;
+BA_ "ComNotification" SG_ 533 CCP_DAQ1_Byte6 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 533 CCP_DAQ1_Byte5 1;
+BA_ "ComTimeoutNotification" SG_ 533 CCP_DAQ1_Byte5 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 533 CCP_DAQ1_Byte5 0.25;
+BA_ "ComNotification" SG_ 533 CCP_DAQ1_Byte5 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 533 CCP_DAQ1_Byte4 1;
+BA_ "ComTimeoutNotification" SG_ 533 CCP_DAQ1_Byte4 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 533 CCP_DAQ1_Byte4 0.25;
+BA_ "ComNotification" SG_ 533 CCP_DAQ1_Byte4 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 533 CCP_DAQ1_Byte3 1;
+BA_ "ComTimeoutNotification" SG_ 533 CCP_DAQ1_Byte3 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 533 CCP_DAQ1_Byte3 0.25;
+BA_ "ComNotification" SG_ 533 CCP_DAQ1_Byte3 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 533 CCP_DAQ1_Byte2 1;
+BA_ "ComTimeoutNotification" SG_ 533 CCP_DAQ1_Byte2 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 533 CCP_DAQ1_Byte2 0.25;
+BA_ "ComNotification" SG_ 533 CCP_DAQ1_Byte2 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 533 CCP_DAQ1_Byte1 1;
+BA_ "ComTimeoutNotification" SG_ 533 CCP_DAQ1_Byte1 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 533 CCP_DAQ1_Byte1 0.25;
+BA_ "ComNotification" SG_ 533 CCP_DAQ1_Byte1 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 533 CCP_DAQ1_Byte0 1;
+BA_ "ComTimeoutNotification" SG_ 533 CCP_DAQ1_Byte0 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 533 CCP_DAQ1_Byte0 0.25;
+BA_ "ComNotification" SG_ 533 CCP_DAQ1_Byte0 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 534 CCP_DAQ0_Byte7 1;
+BA_ "ComTimeoutNotification" SG_ 534 CCP_DAQ0_Byte7 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 534 CCP_DAQ0_Byte7 0.25;
+BA_ "ComNotification" SG_ 534 CCP_DAQ0_Byte7 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 534 CCP_DAQ0_Byte6 1;
+BA_ "ComTimeoutNotification" SG_ 534 CCP_DAQ0_Byte6 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 534 CCP_DAQ0_Byte6 0.25;
+BA_ "ComNotification" SG_ 534 CCP_DAQ0_Byte6 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 534 CCP_DAQ0_Byte5 1;
+BA_ "ComTimeoutNotification" SG_ 534 CCP_DAQ0_Byte5 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 534 CCP_DAQ0_Byte5 0.25;
+BA_ "ComNotification" SG_ 534 CCP_DAQ0_Byte5 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 534 CCP_DAQ0_Byte4 1;
+BA_ "ComTimeoutNotification" SG_ 534 CCP_DAQ0_Byte4 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 534 CCP_DAQ0_Byte4 0.25;
+BA_ "ComNotification" SG_ 534 CCP_DAQ0_Byte4 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 534 CCP_DAQ0_Byte3 1;
+BA_ "ComTimeoutNotification" SG_ 534 CCP_DAQ0_Byte3 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 534 CCP_DAQ0_Byte3 0.25;
+BA_ "ComNotification" SG_ 534 CCP_DAQ0_Byte3 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 534 CCP_DAQ0_Byte2 1;
+BA_ "ComTimeoutNotification" SG_ 534 CCP_DAQ0_Byte2 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 534 CCP_DAQ0_Byte2 0.25;
+BA_ "ComNotification" SG_ 534 CCP_DAQ0_Byte2 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 534 CCP_DAQ0_Byte1 1;
+BA_ "ComTimeoutNotification" SG_ 534 CCP_DAQ0_Byte1 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 534 CCP_DAQ0_Byte1 0.25;
+BA_ "ComNotification" SG_ 534 CCP_DAQ0_Byte1 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 534 CCP_DAQ0_Byte0 1;
+BA_ "ComTimeoutNotification" SG_ 534 CCP_DAQ0_Byte0 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 534 CCP_DAQ0_Byte0 0.25;
+BA_ "ComNotification" SG_ 534 CCP_DAQ0_Byte0 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 792 CCP_DTO_Byte7 1;
+BA_ "ComTimeoutNotification" SG_ 792 CCP_DTO_Byte7 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 792 CCP_DTO_Byte7 0.25;
+BA_ "ComNotification" SG_ 792 CCP_DTO_Byte7 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 792 CCP_DTO_Byte6 1;
+BA_ "ComTimeoutNotification" SG_ 792 CCP_DTO_Byte6 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 792 CCP_DTO_Byte6 0.25;
+BA_ "ComNotification" SG_ 792 CCP_DTO_Byte6 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 792 CCP_DTO_Byte5 1;
+BA_ "ComTimeoutNotification" SG_ 792 CCP_DTO_Byte5 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 792 CCP_DTO_Byte5 0.25;
+BA_ "ComNotification" SG_ 792 CCP_DTO_Byte5 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 792 CCP_DTO_Byte4 1;
+BA_ "ComTimeoutNotification" SG_ 792 CCP_DTO_Byte4 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 792 CCP_DTO_Byte4 0.25;
+BA_ "ComNotification" SG_ 792 CCP_DTO_Byte4 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 792 CCP_DTO_Byte3 1;
+BA_ "ComTimeoutNotification" SG_ 792 CCP_DTO_Byte3 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 792 CCP_DTO_Byte3 0.25;
+BA_ "ComNotification" SG_ 792 CCP_DTO_Byte3 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 792 CCP_DTO_Byte2 1;
+BA_ "ComTimeoutNotification" SG_ 792 CCP_DTO_Byte2 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 792 CCP_DTO_Byte2 0.25;
+BA_ "ComNotification" SG_ 792 CCP_DTO_Byte2 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 792 CCP_DTO_Byte1 1;
+BA_ "ComTimeoutNotification" SG_ 792 CCP_DTO_Byte1 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 792 CCP_DTO_Byte1 0.25;
+BA_ "ComNotification" SG_ 792 CCP_DTO_Byte1 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 792 CCP_DTO_Byte0 1;
+BA_ "ComTimeoutNotification" SG_ 792 CCP_DTO_Byte0 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 792 CCP_DTO_Byte0 0.25;
+BA_ "ComNotification" SG_ 792 CCP_DTO_Byte0 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 791 CCP_CRO_Byte7 1;
+BA_ "ComTimeoutNotification" SG_ 791 CCP_CRO_Byte7 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 791 CCP_CRO_Byte7 0.25;
+BA_ "ComNotification" SG_ 791 CCP_CRO_Byte7 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 791 CCP_CRO_Byte6 1;
+BA_ "ComTimeoutNotification" SG_ 791 CCP_CRO_Byte6 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 791 CCP_CRO_Byte6 0.25;
+BA_ "ComNotification" SG_ 791 CCP_CRO_Byte6 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 791 CCP_CRO_Byte5 1;
+BA_ "ComTimeoutNotification" SG_ 791 CCP_CRO_Byte5 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 791 CCP_CRO_Byte5 0.25;
+BA_ "ComNotification" SG_ 791 CCP_CRO_Byte5 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 791 CCP_CRO_Byte4 1;
+BA_ "ComTimeoutNotification" SG_ 791 CCP_CRO_Byte4 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 791 CCP_CRO_Byte4 0.25;
+BA_ "ComNotification" SG_ 791 CCP_CRO_Byte4 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 791 CCP_CRO_Byte3 1;
+BA_ "ComTimeoutNotification" SG_ 791 CCP_CRO_Byte3 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 791 CCP_CRO_Byte3 0.25;
+BA_ "ComNotification" SG_ 791 CCP_CRO_Byte3 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 791 CCP_CRO_Byte2 1;
+BA_ "ComTimeoutNotification" SG_ 791 CCP_CRO_Byte2 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 791 CCP_CRO_Byte2 0.25;
+BA_ "ComNotification" SG_ 791 CCP_CRO_Byte2 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 791 CCP_CRO_Byte1 1;
+BA_ "ComTimeoutNotification" SG_ 791 CCP_CRO_Byte1 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 791 CCP_CRO_Byte1 0.25;
+BA_ "ComNotification" SG_ 791 CCP_CRO_Byte1 "BSW_vidMsgAckM2G2";
+BA_ "ComFirstTimeoutInSec" SG_ 791 CCP_CRO_Byte0 1;
+BA_ "ComTimeoutNotification" SG_ 791 CCP_CRO_Byte0 "BSW_vidMsgToutM2G2";
+BA_ "ComTimeoutInSec" SG_ 791 CCP_CRO_Byte0 0.25;
+BA_ "ComNotification" SG_ 791 CCP_CRO_Byte0 "BSW_vidMsgAckM2G2";
+BA_ "ComNotification" SG_ 395 G2M3_CCP_PhaseShortHigh "BSW_vidMsgAckG2m3";
+BA_ "ComTimeoutInSec" SG_ 395 G2M3_CCP_PhaseShortHigh 0.5;
+BA_ "ComTimeoutNotification" SG_ 395 G2M3_CCP_PhaseShortHigh "BSW_vidMsgToutG2m3";
+BA_ "ComFirstTimeoutInSec" SG_ 395 G2M3_CCP_PhaseShortHigh 1;
+BA_ "ComFirstTimeoutInSec" SG_ 378 M2G2_Byte0 1;
+BA_ "ComNotification" SG_ 378 M2G2_Byte0 "BSW_vidMsgAckM2G2";
+BA_ "ComTimeoutInSec" SG_ 378 M2G2_Byte0 0.25;
+BA_ "ComTimeoutNotification" SG_ 378 M2G2_Byte0 "BSW_vidMsgToutM2G2";
+BA_ "GenSigStartValue" SG_ 377 M2G1_CCP_TargetDutyCycle 1000;
+BA_ "ComFirstTimeoutInSec" SG_ 377 M2G1_CAP_FaultCode 1;
+BA_ "ComNotification" SG_ 377 M2G1_CAP_FaultCode "BSW_vidMsgAckM2G1";
+BA_ "ComTimeoutInSec" SG_ 377 M2G1_CAP_FaultCode 0.25;
+BA_ "ComTimeoutNotification" SG_ 377 M2G1_CAP_FaultCode "BSW_vidMsgToutM2G1";
+BA_ "GenSigStartValue" SG_ 394 G2M2_CCP_PwrStgTemp 40;
+BA_ "GenSigStartValue" SG_ 394 G2M2_CCP_DcCurrent 10000;
+BA_ "GenSigStartValue" SG_ 394 G2M2_CCP_AvrgCurrent 0;
+BA_ "ComFirstTimeoutInSec" SG_ 394 G2M2_CCP_AvrgCurrent 1;
+BA_ "ComNotification" SG_ 394 G2M2_CCP_AvrgCurrent "BSW_vidMsgAckG2m2";
+BA_ "ComTimeoutInSec" SG_ 394 G2M2_CCP_AvrgCurrent 0.25;
+BA_ "ComTimeoutNotification" SG_ 394 G2M2_CCP_AvrgCurrent "BSW_vidMsgToutG2m2";
+BA_ "GenSigStartValue" SG_ 393 G2M1_CCP_PwrStgActPosInc 32768;
+BA_ "GenSigStartValue" SG_ 393 G2M1_CCP_DutyCycle 1000;
+BA_ "GenSigStartValue" SG_ 393 G2M1_CCP_MotSpd 32768;
+BA_ "ComFirstTimeoutInSec" SG_ 393 G2M1_CCP_FaultCode 1;
+BA_ "ComNotification" SG_ 393 G2M1_CCP_FaultCode "BSW_vidMsgAckG2m1";
+BA_ "ComTimeoutInSec" SG_ 393 G2M1_CCP_FaultCode 0.25;
+BA_ "ComTimeoutNotification" SG_ 393 G2M1_CCP_FaultCode "BSW_vidMsgToutG2m1";
+

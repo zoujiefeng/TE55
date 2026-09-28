@@ -1,0 +1,79 @@
+// T32 Mon Aug  5 10:50:22 2024
+
+B::
+
+TOOLBAR   ON
+STATUSBAR ON
+FramePOS -0.82353,1.7143,,,Maximized
+WinPAGE.RESet
+
+WinPAGE.Create P000
+WinCLEAR
+
+WinPOS 89.765 16.857 0. 0. 0. 0. W014 ICONIC
+SYStem
+
+WinPOS 98.706 18.571 58. 35. 5. 0. W001 ICONIC
+Frame /Locals /Caller
+
+WinPOS 60.118 23.5 113. 26. 13. 1. W009 ICONIC
+WinTABS 10. 10. 25.
+List e:DRV83xxHAL_vidSpiWrite16Bits
+
+WinPOS 0.0 39.286 106. 8. 0. 1. W008
+WinTABS 20. 250.
+Core.List
+
+WinPOS 111.88 50.429 61. 14. 0. 1. W004
+WinTABS 26. 26.
+sYmbol.Browse.Var
+
+WinPOS 0.0 0.0 113. 26. 13. 1. W000
+WinTABS 10. 10. 25.
+List e:VADC_vidTreatment
+
+WinPOS 66.353 25.214 113. 26. 13. 1. W007
+WinTABS 10. 10. 25.
+List e:Qspi_CddTxRx
+
+WinPOS 34.588 17.964 54. 14. 0. 1. W002
+WinTABS 46. 26.
+sYmbol.Browse.Function
+
+WinPOS 0.0 0.0 113. 26. 13. 1. W003
+WinTABS 10. 10. 25.
+List ShutdownHook
+
+WinPOS 0.88235 0.53571 90. 35. 13. 1. W010
+WinTABS 10. 10. 25.
+List
+
+WinPOS 0.88235 0.53571 89. 35. 13. 1. W012
+WinTABS 10. 10. 25.
+Data.List SafeTLib_MainTask_Master_Runtime
+
+WinPOS 1.2941 41.143 47. 14. 13. 1. W005
+WinTABS 13. 0. 0. 0. 0. 0. 0. 0. 0. 6.
+Break.List
+
+WinPOS 94.353 0.0 71. 36. 0. 0. W006
+Var.Watch
+
+Var.AddWatch g_pkxCmdQPtrSet
+Var.AddWatch UDS_au8ESKDataNvm
+Var.AddWatch UDS_au8ESKDataNvmDef
+Var.AddWatch ESM_StpIState
+Var.AddWatch ESM_u16CmdReq
+Var.AddWatch ESM_EcuState
+Var.AddWatch SBC_bSpiOperateFlag
+Var.AddWatch FAIL_u16KeyOnValue
+Var.AddWatch SafeWdgExtTlf_Data
+Var.AddWatch MAIN_bDflashWriteReq
+Var.AddWatch MAIN_au32CalibParamNvm
+Var.AddWatch MAIN_HARDBenchOnC
+Var.AddWatch HARD_u16Adc_DIAG_COS_L_MCU
+Var.AddWatch HARD_u16Adc_DIAG_SIN_H_GCU
+
+WinPAGE.select P000
+
+ENDDO

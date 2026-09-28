@@ -1,0 +1,1348 @@
+	.file	"esmsrv.c"
+.section .text,"ax",@progbits
+.Ltext0:
+.section .text.ESMSRV_vidSetCmdReq,"ax",@progbits
+	.align 1
+	.global	ESMSRV_vidSetCmdReq
+	.type	ESMSRV_vidSetCmdReq, @function
+ESMSRV_vidSetCmdReq:
+.LFB0:
+	.file 1 "bswcdd\\ESM\\ESM\\esmsrv.c"
+	.loc 1 76 0
+.LVL0:
+	.loc 1 79 0
+	movh.a	%a15, hi:ESM_u16CmdReqNm1
+	.loc 1 77 0
+	jz	%d5, .L2
+	.loc 1 79 0
+	ld.hu	%d15, [%a15] lo:ESM_u16CmdReqNm1
+	and	%d2, %d4, %d15
+	jnz	%d2, .L1
+	.loc 1 81 0
+	movh.a	%a2, hi:ESM_u16CmdReq
+	ld.h	%d2, [%a2] lo:ESM_u16CmdReq
+	or	%d2, %d4
+	st.h	[%a2] lo:ESM_u16CmdReq, %d2
+	.loc 1 82 0
+	movh.a	%a2, hi:ESM_u16CmdRes
+	ld.h	%d2, [%a2] lo:ESM_u16CmdRes
+	andn	%d2, %d2, %d4
+	.loc 1 83 0
+	or	%d4, %d15
+.LVL1:
+	.loc 1 82 0
+	st.h	[%a2] lo:ESM_u16CmdRes, %d2
+	.loc 1 83 0
+	st.h	[%a15] lo:ESM_u16CmdReqNm1, %d4
+	ret
+.LVL2:
+.L2:
+	.loc 1 88 0
+	ld.h	%d15, [%a15] lo:ESM_u16CmdReqNm1
+	andn	%d4, %d15, %d4
+.LVL3:
+	st.h	[%a15] lo:ESM_u16CmdReqNm1, %d4
+.L1:
+	ret
+.LFE0:
+	.size	ESMSRV_vidSetCmdReq, .-ESMSRV_vidSetCmdReq
+.section .text.ESMSRV_vidSetCmdRes,"ax",@progbits
+	.align 1
+	.global	ESMSRV_vidSetCmdRes
+	.type	ESMSRV_vidSetCmdRes, @function
+ESMSRV_vidSetCmdRes:
+.LFB1:
+	.loc 1 102 0
+.LVL4:
+	.loc 1 103 0
+	movh.a	%a15, hi:ESM_u16CmdRes
+	ld.h	%d15, [%a15] lo:ESM_u16CmdRes
+	or	%d4, %d15
+.LVL5:
+	st.h	[%a15] lo:ESM_u16CmdRes, %d4
+	ret
+.LFE1:
+	.size	ESMSRV_vidSetCmdRes, .-ESMSRV_vidSetCmdRes
+.section .text.ESMSRV_bGetCmdReq,"ax",@progbits
+	.align 1
+	.global	ESMSRV_bGetCmdReq
+	.type	ESMSRV_bGetCmdReq, @function
+ESMSRV_bGetCmdReq:
+.LFB2:
+	.loc 1 119 0
+.LVL6:
+	.loc 1 122 0
+	movh.a	%a15, hi:ESM_u16CmdReq
+	ld.hu	%d15, [%a15] lo:ESM_u16CmdReq
+	.loc 1 129 0
+	mov	%d2, 0
+	.loc 1 122 0
+	and	%d3, %d4, %d15
+	jeq	%d3, %d4, .L9
+.LVL7:
+	.loc 1 132 0
+	ret
+.LVL8:
+.L9:
+	.loc 1 125 0
+	andn	%d15, %d15, %d3
+	st.h	[%a15] lo:ESM_u16CmdReq, %d15
+	.loc 1 124 0
+	mov	%d2, 1
+.LVL9:
+	.loc 1 132 0
+	ret
+.LFE2:
+	.size	ESMSRV_bGetCmdReq, .-ESMSRV_bGetCmdReq
+.section .text.ESMSRV_bGetCmdReqNm1,"ax",@progbits
+	.align 1
+	.global	ESMSRV_bGetCmdReqNm1
+	.type	ESMSRV_bGetCmdReqNm1, @function
+ESMSRV_bGetCmdReqNm1:
+.LFB3:
+	.loc 1 144 0
+.LVL10:
+	.loc 1 147 0
+	movh.a	%a15, hi:ESM_u16CmdReqNm1
+	ld.h	%d2, [%a15] lo:ESM_u16CmdReqNm1
+	and	%d2, %d4
+	.loc 1 156 0
+	eq	%d2, %d2, %d4
+	ret
+.LFE3:
+	.size	ESMSRV_bGetCmdReqNm1, .-ESMSRV_bGetCmdReqNm1
+.section .text.ESMSRV_bGetCmdRes,"ax",@progbits
+	.align 1
+	.global	ESMSRV_bGetCmdRes
+	.type	ESMSRV_bGetCmdRes, @function
+ESMSRV_bGetCmdRes:
+.LFB4:
+	.loc 1 168 0
+.LVL11:
+	.loc 1 171 0
+	movh.a	%a15, hi:ESM_u16CmdRes
+	ld.h	%d2, [%a15] lo:ESM_u16CmdRes
+	and	%d2, %d4
+	.loc 1 180 0
+	eq	%d2, %d2, %d4
+	ret
+.LFE4:
+	.size	ESMSRV_bGetCmdRes, .-ESMSRV_bGetCmdRes
+.section .text.ESMSRV_u8GetCallAppli,"ax",@progbits
+	.align 1
+	.global	ESMSRV_u8GetCallAppli
+	.type	ESMSRV_u8GetCallAppli, @function
+ESMSRV_u8GetCallAppli:
+.LFB5:
+	.loc 1 195 0
+	.loc 1 198 0
+	movh.a	%a15, hi:ESM_bCallAppliOn
+	ld.bu	%d15, [%a15] lo:ESM_bCallAppliOn
+	.loc 1 204 0
+	mov	%d2, 0
+	.loc 1 198 0
+	jz	%d15, .L13
+	.loc 1 200 0
+	movh.a	%a15, hi:ESM_EsmMode
+	ld.bu	%d2, [%a15] lo:ESM_EsmMode
+.LVL12:
+.L13:
+	.loc 1 207 0
+	ret
+.LFE5:
+	.size	ESMSRV_u8GetCallAppli, .-ESMSRV_u8GetCallAppli
+.section .text.ESMSRV_u8GetEsmMode,"ax",@progbits
+	.align 1
+	.global	ESMSRV_u8GetEsmMode
+	.type	ESMSRV_u8GetEsmMode, @function
+ESMSRV_u8GetEsmMode:
+.LFB6:
+	.loc 1 219 0
+.LVL13:
+	.loc 1 224 0
+	movh.a	%a15, hi:ESM_EsmMode
+	ld.bu	%d2, [%a15] lo:ESM_EsmMode
+	ret
+.LFE6:
+	.size	ESMSRV_u8GetEsmMode, .-ESMSRV_u8GetEsmMode
+.section .text.ESMSRV_u8GetEsmEcuState,"ax",@progbits
+	.align 1
+	.global	ESMSRV_u8GetEsmEcuState
+	.type	ESMSRV_u8GetEsmEcuState, @function
+ESMSRV_u8GetEsmEcuState:
+.LFB7:
+	.loc 1 236 0
+.LVL14:
+	.loc 1 241 0
+	movh.a	%a15, hi:ESM_EcuState
+	ld.bu	%d2, [%a15] lo:ESM_EcuState
+	ret
+.LFE7:
+	.size	ESMSRV_u8GetEsmEcuState, .-ESMSRV_u8GetEsmEcuState
+.section .text.ESMSRV_vidVSIInit,"ax",@progbits
+	.align 1
+	.global	ESMSRV_vidVSIInit
+	.type	ESMSRV_vidVSIInit, @function
+ESMSRV_vidVSIInit:
+.LFB8:
+	.loc 1 256 0
+	ret
+.LFE8:
+	.size	ESMSRV_vidVSIInit, .-ESMSRV_vidVSIInit
+.section .text.ESMSRV_bGetPoDnReadyFlg,"ax",@progbits
+	.align 1
+	.global	ESMSRV_bGetPoDnReadyFlg
+	.type	ESMSRV_bGetPoDnReadyFlg, @function
+ESMSRV_bGetPoDnReadyFlg:
+.LFB9:
+	.loc 1 269 0
+	.loc 1 271 0
+	movh.a	%a15, hi:ESM_bPwrDnReadyFlg
+	ld.bu	%d2, [%a15] lo:ESM_bPwrDnReadyFlg
+	ret
+.LFE9:
+	.size	ESMSRV_bGetPoDnReadyFlg, .-ESMSRV_bGetPoDnReadyFlg
+.section .text.ESMSRV_bGetPwrLNfClrFltFinsh,"ax",@progbits
+	.align 1
+	.global	ESMSRV_bGetPwrLNfClrFltFinsh
+	.type	ESMSRV_bGetPwrLNfClrFltFinsh, @function
+ESMSRV_bGetPwrLNfClrFltFinsh:
+.LFB10:
+	.loc 1 283 0
+	.loc 1 285 0
+	movh.a	%a15, hi:ESM_bPwrLNfClrFltFinsh
+	ld.bu	%d2, [%a15] lo:ESM_bPwrLNfClrFltFinsh
+	ret
+.LFE10:
+	.size	ESMSRV_bGetPwrLNfClrFltFinsh, .-ESMSRV_bGetPwrLNfClrFltFinsh
+.section .text.ESMSRV_vidSetMcuEnaReq,"ax",@progbits
+	.align 1
+	.global	ESMSRV_vidSetMcuEnaReq
+	.type	ESMSRV_vidSetMcuEnaReq, @function
+ESMSRV_vidSetMcuEnaReq:
+.LFB11:
+	.loc 1 295 0
+.LVL15:
+	.loc 1 296 0
+	ne	%d4, %d4, 0
+.LVL16:
+	movh.a	%a15, hi:ESM_bMcuEnaReq
+	st.b	[%a15] lo:ESM_bMcuEnaReq, %d4
+	ret
+.LFE11:
+	.size	ESMSRV_vidSetMcuEnaReq, .-ESMSRV_vidSetMcuEnaReq
+.section .text.ESMSRV_vidSetAfterrunReq,"ax",@progbits
+	.align 1
+	.global	ESMSRV_vidSetAfterrunReq
+	.type	ESMSRV_vidSetAfterrunReq, @function
+ESMSRV_vidSetAfterrunReq:
+.LFB12:
+	.loc 1 307 0
+.LVL17:
+	.loc 1 308 0
+	ne	%d4, %d4, 0
+.LVL18:
+	movh.a	%a15, hi:ESM_bAfterrunReq
+	st.b	[%a15] lo:ESM_bAfterrunReq, %d4
+	ret
+.LFE12:
+	.size	ESMSRV_vidSetAfterrunReq, .-ESMSRV_vidSetAfterrunReq
+.section .text.ESMSRV_vidSetAfterrunFin,"ax",@progbits
+	.align 1
+	.global	ESMSRV_vidSetAfterrunFin
+	.type	ESMSRV_vidSetAfterrunFin, @function
+ESMSRV_vidSetAfterrunFin:
+.LFB13:
+	.loc 1 319 0
+.LVL19:
+	.loc 1 320 0
+	ne	%d4, %d4, 0
+.LVL20:
+	movh.a	%a15, hi:ESM_bAfterrunFin
+	st.b	[%a15] lo:ESM_bAfterrunFin, %d4
+	ret
+.LFE13:
+	.size	ESMSRV_vidSetAfterrunFin, .-ESMSRV_vidSetAfterrunFin
+.section .debug_frame,"",@progbits
+.Lframe0:
+	.uaword	.LECIE0-.LSCIE0
+.LSCIE0:
+	.uaword	0xffffffff
+	.byte	0x1
+	.string	""
+	.uleb128 0x1
+	.sleb128 1
+	.byte	0x1b
+	.byte	0xc
+	.uleb128 0x1a
+	.uleb128 0
+	.align 2
+.LECIE0:
+.LSFDE0:
+	.uaword	.LEFDE0-.LASFDE0
+.LASFDE0:
+	.uaword	.Lframe0
+	.uaword	.LFB0
+	.uaword	.LFE0-.LFB0
+	.align 2
+.LEFDE0:
+.LSFDE2:
+	.uaword	.LEFDE2-.LASFDE2
+.LASFDE2:
+	.uaword	.Lframe0
+	.uaword	.LFB1
+	.uaword	.LFE1-.LFB1
+	.align 2
+.LEFDE2:
+.LSFDE4:
+	.uaword	.LEFDE4-.LASFDE4
+.LASFDE4:
+	.uaword	.Lframe0
+	.uaword	.LFB2
+	.uaword	.LFE2-.LFB2
+	.align 2
+.LEFDE4:
+.LSFDE6:
+	.uaword	.LEFDE6-.LASFDE6
+.LASFDE6:
+	.uaword	.Lframe0
+	.uaword	.LFB3
+	.uaword	.LFE3-.LFB3
+	.align 2
+.LEFDE6:
+.LSFDE8:
+	.uaword	.LEFDE8-.LASFDE8
+.LASFDE8:
+	.uaword	.Lframe0
+	.uaword	.LFB4
+	.uaword	.LFE4-.LFB4
+	.align 2
+.LEFDE8:
+.LSFDE10:
+	.uaword	.LEFDE10-.LASFDE10
+.LASFDE10:
+	.uaword	.Lframe0
+	.uaword	.LFB5
+	.uaword	.LFE5-.LFB5
+	.align 2
+.LEFDE10:
+.LSFDE12:
+	.uaword	.LEFDE12-.LASFDE12
+.LASFDE12:
+	.uaword	.Lframe0
+	.uaword	.LFB6
+	.uaword	.LFE6-.LFB6
+	.align 2
+.LEFDE12:
+.LSFDE14:
+	.uaword	.LEFDE14-.LASFDE14
+.LASFDE14:
+	.uaword	.Lframe0
+	.uaword	.LFB7
+	.uaword	.LFE7-.LFB7
+	.align 2
+.LEFDE14:
+.LSFDE16:
+	.uaword	.LEFDE16-.LASFDE16
+.LASFDE16:
+	.uaword	.Lframe0
+	.uaword	.LFB8
+	.uaword	.LFE8-.LFB8
+	.align 2
+.LEFDE16:
+.LSFDE18:
+	.uaword	.LEFDE18-.LASFDE18
+.LASFDE18:
+	.uaword	.Lframe0
+	.uaword	.LFB9
+	.uaword	.LFE9-.LFB9
+	.align 2
+.LEFDE18:
+.LSFDE20:
+	.uaword	.LEFDE20-.LASFDE20
+.LASFDE20:
+	.uaword	.Lframe0
+	.uaword	.LFB10
+	.uaword	.LFE10-.LFB10
+	.align 2
+.LEFDE20:
+.LSFDE22:
+	.uaword	.LEFDE22-.LASFDE22
+.LASFDE22:
+	.uaword	.Lframe0
+	.uaword	.LFB11
+	.uaword	.LFE11-.LFB11
+	.align 2
+.LEFDE22:
+.LSFDE24:
+	.uaword	.LEFDE24-.LASFDE24
+.LASFDE24:
+	.uaword	.Lframe0
+	.uaword	.LFB12
+	.uaword	.LFE12-.LFB12
+	.align 2
+.LEFDE24:
+.LSFDE26:
+	.uaword	.LEFDE26-.LASFDE26
+.LASFDE26:
+	.uaword	.Lframe0
+	.uaword	.LFB13
+	.uaword	.LFE13-.LFB13
+	.align 2
+.LEFDE26:
+.section .text,"ax",@progbits
+.Letext0:
+	.file 2 ".\\output\\inc/..\\..\\bsw\\integration\\Platform_Types.h"
+	.file 3 "bswcdd\\ESM\\ESM\\ESM.h"
+	.file 4 ".\\output\\inc/..\\..\\bswcdd\\STFSRV\\STFSRV\\STFSRV.h"
+.section .debug_info,"",@progbits
+.Ldebug_info0:
+	.uaword	0x70d
+	.uahalf	0x2
+	.uaword	.Ldebug_abbrev0
+	.byte	0x4
+	.uleb128 0x1
+	.ascii	"GNU C 4.9.4 build on 2020-09-01 -mli"
+	.string	"cense-dir=s:\\hightec\\toolchains\\tricore\\v4.9.4.1\\bin\\../lib/gcc/tricore/4.9.4/../../../../licenses -mcpu=tc38xx -mpragma-data-sections -mtc162 -maligned-data-sections -gdwarf-2 -O3 -fno-builtin -fno-common -ffunction-sections -fdata-sections -fshort-double"
+	.byte	0x1
+	.string	"bswcdd\\ESM\\ESM\\esmsrv.c"
+	.string	"D:\\\\1_OutProjest\\\\dongfeng\\\\90080-05101\\\\trunk\\\\BSW\\\\20Proj\\\\BSW\\\\TE5X\\\\src"
+	.uaword	.Ldebug_ranges0+0
+	.uaword	0
+	.uaword	0
+	.uaword	.Ldebug_line0
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x6
+	.string	"signed char"
+	.uleb128 0x3
+	.string	"uint8"
+	.byte	0x2
+	.byte	0x51
+	.uaword	0x1c2
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x8
+	.string	"unsigned char"
+	.uleb128 0x2
+	.byte	0x2
+	.byte	0x5
+	.string	"short int"
+	.uleb128 0x3
+	.string	"uint16"
+	.byte	0x2
+	.byte	0x5b
+	.uaword	0x1ee
+	.uleb128 0x2
+	.byte	0x2
+	.byte	0x7
+	.string	"short unsigned int"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x5
+	.string	"int"
+	.uleb128 0x2
+	.byte	0x8
+	.byte	0x5
+	.string	"long long int"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x7
+	.string	"unsigned int"
+	.uleb128 0x2
+	.byte	0x8
+	.byte	0x7
+	.string	"long long unsigned int"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x4
+	.string	"float"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x4
+	.string	"double"
+	.uleb128 0x3
+	.string	"boolean"
+	.byte	0x2
+	.byte	0x80
+	.uaword	0x1c2
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x5
+	.string	"long int"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x7
+	.string	"long unsigned int"
+	.uleb128 0x4
+	.byte	0x1
+	.string	"ESMSRV_vidSetCmdReq"
+	.byte	0x1
+	.byte	0x4b
+	.byte	0x1
+	.uaword	.LFB0
+	.uaword	.LFE0
+	.byte	0x2
+	.byte	0x8a
+	.sleb128 0
+	.byte	0x1
+	.uaword	0x2d2
+	.uleb128 0x5
+	.uaword	.LASF0
+	.byte	0x1
+	.byte	0x4b
+	.uaword	0x1e0
+	.uaword	.LLST0
+	.uleb128 0x6
+	.string	"CmdReq"
+	.byte	0x1
+	.byte	0x4b
+	.uaword	0x259
+	.byte	0x1
+	.byte	0x55
+	.byte	0
+	.uleb128 0x4
+	.byte	0x1
+	.string	"ESMSRV_vidSetCmdRes"
+	.byte	0x1
+	.byte	0x65
+	.byte	0x1
+	.uaword	.LFB1
+	.uaword	.LFE1
+	.byte	0x2
+	.byte	0x8a
+	.sleb128 0
+	.byte	0x1
+	.uaword	0x30b
+	.uleb128 0x5
+	.uaword	.LASF0
+	.byte	0x1
+	.byte	0x65
+	.uaword	0x1e0
+	.uaword	.LLST1
+	.byte	0
+	.uleb128 0x7
+	.byte	0x1
+	.string	"ESMSRV_bGetCmdReq"
+	.byte	0x1
+	.byte	0x76
+	.byte	0x1
+	.uaword	0x259
+	.uaword	.LFB2
+	.uaword	.LFE2
+	.byte	0x2
+	.byte	0x8a
+	.sleb128 0
+	.byte	0x1
+	.uaword	0x353
+	.uleb128 0x8
+	.uaword	.LASF0
+	.byte	0x1
+	.byte	0x76
+	.uaword	0x1e0
+	.byte	0x1
+	.byte	0x54
+	.uleb128 0x9
+	.uaword	.LASF1
+	.byte	0x1
+	.byte	0x78
+	.uaword	0x259
+	.uaword	.LLST2
+	.byte	0
+	.uleb128 0x7
+	.byte	0x1
+	.string	"ESMSRV_bGetCmdReqNm1"
+	.byte	0x1
+	.byte	0x8f
+	.byte	0x1
+	.uaword	0x259
+	.uaword	.LFB3
+	.uaword	.LFE3
+	.byte	0x2
+	.byte	0x8a
+	.sleb128 0
+	.byte	0x1
+	.uaword	0x39a
+	.uleb128 0x8
+	.uaword	.LASF0
+	.byte	0x1
+	.byte	0x8f
+	.uaword	0x1e0
+	.byte	0x1
+	.byte	0x54
+	.uleb128 0xa
+	.uaword	.LASF1
+	.byte	0x1
+	.byte	0x91
+	.uaword	0x259
+	.byte	0
+	.uleb128 0x7
+	.byte	0x1
+	.string	"ESMSRV_bGetCmdRes"
+	.byte	0x1
+	.byte	0xa7
+	.byte	0x1
+	.uaword	0x259
+	.uaword	.LFB4
+	.uaword	.LFE4
+	.byte	0x2
+	.byte	0x8a
+	.sleb128 0
+	.byte	0x1
+	.uaword	0x3de
+	.uleb128 0x8
+	.uaword	.LASF0
+	.byte	0x1
+	.byte	0xa7
+	.uaword	0x1e0
+	.byte	0x1
+	.byte	0x54
+	.uleb128 0xa
+	.uaword	.LASF1
+	.byte	0x1
+	.byte	0xa9
+	.uaword	0x259
+	.byte	0
+	.uleb128 0x7
+	.byte	0x1
+	.string	"ESMSRV_u8GetCallAppli"
+	.byte	0x1
+	.byte	0xc2
+	.byte	0x1
+	.uaword	0x1b5
+	.uaword	.LFB5
+	.uaword	.LFE5
+	.byte	0x2
+	.byte	0x8a
+	.sleb128 0
+	.byte	0x1
+	.uaword	0x41b
+	.uleb128 0xb
+	.uaword	.LASF2
+	.byte	0x1
+	.byte	0xc4
+	.uaword	0x1b5
+	.byte	0x1
+	.byte	0x52
+	.byte	0
+	.uleb128 0x7
+	.byte	0x1
+	.string	"ESMSRV_u8GetEsmMode"
+	.byte	0x1
+	.byte	0xda
+	.byte	0x1
+	.uaword	0x1b5
+	.uaword	.LFB6
+	.uaword	.LFE6
+	.byte	0x2
+	.byte	0x8a
+	.sleb128 0
+	.byte	0x1
+	.uaword	0x454
+	.uleb128 0xa
+	.uaword	.LASF2
+	.byte	0x1
+	.byte	0xdc
+	.uaword	0x1b5
+	.byte	0
+	.uleb128 0x7
+	.byte	0x1
+	.string	"ESMSRV_u8GetEsmEcuState"
+	.byte	0x1
+	.byte	0xeb
+	.byte	0x1
+	.uaword	0x1b5
+	.uaword	.LFB7
+	.uaword	.LFE7
+	.byte	0x2
+	.byte	0x8a
+	.sleb128 0
+	.byte	0x1
+	.uaword	0x49a
+	.uleb128 0xc
+	.string	"u8LocalState"
+	.byte	0x1
+	.byte	0xed
+	.uaword	0x1b5
+	.byte	0
+	.uleb128 0xd
+	.byte	0x1
+	.string	"ESMSRV_vidVSIInit"
+	.byte	0x1
+	.byte	0xff
+	.byte	0x1
+	.uaword	.LFB8
+	.uaword	.LFE8
+	.byte	0x2
+	.byte	0x8a
+	.sleb128 0
+	.byte	0x1
+	.uleb128 0xe
+	.byte	0x1
+	.string	"ESMSRV_bGetPoDnReadyFlg"
+	.byte	0x1
+	.uahalf	0x10c
+	.byte	0x1
+	.uaword	0x259
+	.uaword	.LFB9
+	.uaword	.LFE9
+	.byte	0x2
+	.byte	0x8a
+	.sleb128 0
+	.byte	0x1
+	.uleb128 0xe
+	.byte	0x1
+	.string	"ESMSRV_bGetPwrLNfClrFltFinsh"
+	.byte	0x1
+	.uahalf	0x11a
+	.byte	0x1
+	.uaword	0x259
+	.uaword	.LFB10
+	.uaword	.LFE10
+	.byte	0x2
+	.byte	0x8a
+	.sleb128 0
+	.byte	0x1
+	.uleb128 0xf
+	.byte	0x1
+	.string	"ESMSRV_vidSetMcuEnaReq"
+	.byte	0x1
+	.uahalf	0x126
+	.byte	0x1
+	.uaword	.LFB11
+	.uaword	.LFE11
+	.byte	0x2
+	.byte	0x8a
+	.sleb128 0
+	.byte	0x1
+	.uaword	0x564
+	.uleb128 0x10
+	.string	"u8McuEnaReq"
+	.byte	0x1
+	.uahalf	0x126
+	.uaword	0x564
+	.uaword	.LLST3
+	.byte	0
+	.uleb128 0x11
+	.uaword	0x1b5
+	.uleb128 0xf
+	.byte	0x1
+	.string	"ESMSRV_vidSetAfterrunReq"
+	.byte	0x1
+	.uahalf	0x132
+	.byte	0x1
+	.uaword	.LFB12
+	.uaword	.LFE12
+	.byte	0x2
+	.byte	0x8a
+	.sleb128 0
+	.byte	0x1
+	.uaword	0x5b2
+	.uleb128 0x10
+	.string	"bAfterrunReq"
+	.byte	0x1
+	.uahalf	0x132
+	.uaword	0x259
+	.uaword	.LLST4
+	.byte	0
+	.uleb128 0xf
+	.byte	0x1
+	.string	"ESMSRV_vidSetAfterrunFin"
+	.byte	0x1
+	.uahalf	0x13e
+	.byte	0x1
+	.uaword	.LFB13
+	.uaword	.LFE13
+	.byte	0x2
+	.byte	0x8a
+	.sleb128 0
+	.byte	0x1
+	.uaword	0x5fb
+	.uleb128 0x10
+	.string	"bAfterrunFin"
+	.byte	0x1
+	.uahalf	0x13e
+	.uaword	0x259
+	.uaword	.LLST5
+	.byte	0
+	.uleb128 0x12
+	.string	"ESM_EcuState"
+	.byte	0x3
+	.byte	0x3b
+	.uaword	0x1b5
+	.byte	0x1
+	.byte	0x1
+	.uleb128 0x12
+	.string	"ESM_EsmMode"
+	.byte	0x4
+	.byte	0x57
+	.uaword	0x1e0
+	.byte	0x1
+	.byte	0x1
+	.uleb128 0x12
+	.string	"ESM_bAfterrunFin"
+	.byte	0x4
+	.byte	0x58
+	.uaword	0x259
+	.byte	0x1
+	.byte	0x1
+	.uleb128 0x12
+	.string	"ESM_bAfterrunReq"
+	.byte	0x4
+	.byte	0x59
+	.uaword	0x259
+	.byte	0x1
+	.byte	0x1
+	.uleb128 0x12
+	.string	"ESM_bCallAppliOn"
+	.byte	0x4
+	.byte	0x5a
+	.uaword	0x259
+	.byte	0x1
+	.byte	0x1
+	.uleb128 0x12
+	.string	"ESM_bMcuEnaReq"
+	.byte	0x4
+	.byte	0x5b
+	.uaword	0x259
+	.byte	0x1
+	.byte	0x1
+	.uleb128 0x12
+	.string	"ESM_bPwrDnReadyFlg"
+	.byte	0x4
+	.byte	0x5c
+	.uaword	0x259
+	.byte	0x1
+	.byte	0x1
+	.uleb128 0x12
+	.string	"ESM_bPwrLNfClrFltFinsh"
+	.byte	0x4
+	.byte	0x5d
+	.uaword	0x259
+	.byte	0x1
+	.byte	0x1
+	.uleb128 0x12
+	.string	"ESM_u16CmdReq"
+	.byte	0x4
+	.byte	0x67
+	.uaword	0x1e0
+	.byte	0x1
+	.byte	0x1
+	.uleb128 0x12
+	.string	"ESM_u16CmdReqNm1"
+	.byte	0x4
+	.byte	0x68
+	.uaword	0x1e0
+	.byte	0x1
+	.byte	0x1
+	.uleb128 0x12
+	.string	"ESM_u16CmdRes"
+	.byte	0x4
+	.byte	0x69
+	.uaword	0x1e0
+	.byte	0x1
+	.byte	0x1
+	.byte	0
+.section .debug_abbrev,"",@progbits
+.Ldebug_abbrev0:
+	.uleb128 0x1
+	.uleb128 0x11
+	.byte	0x1
+	.uleb128 0x25
+	.uleb128 0x8
+	.uleb128 0x13
+	.uleb128 0xb
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x1b
+	.uleb128 0x8
+	.uleb128 0x55
+	.uleb128 0x6
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x52
+	.uleb128 0x1
+	.uleb128 0x10
+	.uleb128 0x6
+	.byte	0
+	.byte	0
+	.uleb128 0x2
+	.uleb128 0x24
+	.byte	0
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3e
+	.uleb128 0xb
+	.uleb128 0x3
+	.uleb128 0x8
+	.byte	0
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x16
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x4
+	.uleb128 0x2e
+	.byte	0x1
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x12
+	.uleb128 0x1
+	.uleb128 0x40
+	.uleb128 0xa
+	.uleb128 0x2117
+	.uleb128 0xc
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x5
+	.uleb128 0x5
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0xe
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0x6
+	.byte	0
+	.byte	0
+	.uleb128 0x6
+	.uleb128 0x5
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0x7
+	.uleb128 0x2e
+	.byte	0x1
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x12
+	.uleb128 0x1
+	.uleb128 0x40
+	.uleb128 0xa
+	.uleb128 0x2117
+	.uleb128 0xc
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x8
+	.uleb128 0x5
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0xe
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0x9
+	.uleb128 0x34
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0xe
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0x6
+	.byte	0
+	.byte	0
+	.uleb128 0xa
+	.uleb128 0x34
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0xe
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0xb
+	.uleb128 0x34
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0xe
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0xc
+	.uleb128 0x34
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0xd
+	.uleb128 0x2e
+	.byte	0
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x12
+	.uleb128 0x1
+	.uleb128 0x40
+	.uleb128 0xa
+	.uleb128 0x2117
+	.uleb128 0xc
+	.byte	0
+	.byte	0
+	.uleb128 0xe
+	.uleb128 0x2e
+	.byte	0
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x12
+	.uleb128 0x1
+	.uleb128 0x40
+	.uleb128 0xa
+	.uleb128 0x2117
+	.uleb128 0xc
+	.byte	0
+	.byte	0
+	.uleb128 0xf
+	.uleb128 0x2e
+	.byte	0x1
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x12
+	.uleb128 0x1
+	.uleb128 0x40
+	.uleb128 0xa
+	.uleb128 0x2117
+	.uleb128 0xc
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x10
+	.uleb128 0x5
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0x6
+	.byte	0
+	.byte	0
+	.uleb128 0x11
+	.uleb128 0x26
+	.byte	0
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x12
+	.uleb128 0x34
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x3c
+	.uleb128 0xc
+	.byte	0
+	.byte	0
+	.byte	0
+.section .debug_loc,"",@progbits
+.Ldebug_loc0:
+.LLST0:
+	.uaword	.LVL0
+	.uaword	.LVL1
+	.uahalf	0x1
+	.byte	0x54
+	.uaword	.LVL1
+	.uaword	.LVL2
+	.uahalf	0x4
+	.byte	0xf3
+	.uleb128 0x1
+	.byte	0x54
+	.byte	0x9f
+	.uaword	.LVL2
+	.uaword	.LVL3
+	.uahalf	0x1
+	.byte	0x54
+	.uaword	.LVL3
+	.uaword	.LFE0
+	.uahalf	0x4
+	.byte	0xf3
+	.uleb128 0x1
+	.byte	0x54
+	.byte	0x9f
+	.uaword	0
+	.uaword	0
+.LLST1:
+	.uaword	.LVL4
+	.uaword	.LVL5
+	.uahalf	0x1
+	.byte	0x54
+	.uaword	.LVL5
+	.uaword	.LFE1
+	.uahalf	0x4
+	.byte	0xf3
+	.uleb128 0x1
+	.byte	0x54
+	.byte	0x9f
+	.uaword	0
+	.uaword	0
+.LLST2:
+	.uaword	.LVL7
+	.uaword	.LVL8
+	.uahalf	0x1
+	.byte	0x52
+	.uaword	.LVL8
+	.uaword	.LVL9
+	.uahalf	0x2
+	.byte	0x31
+	.byte	0x9f
+	.uaword	.LVL9
+	.uaword	.LFE2
+	.uahalf	0x1
+	.byte	0x52
+	.uaword	0
+	.uaword	0
+.LLST3:
+	.uaword	.LVL15
+	.uaword	.LVL16
+	.uahalf	0x1
+	.byte	0x54
+	.uaword	.LVL16
+	.uaword	.LFE11
+	.uahalf	0x4
+	.byte	0xf3
+	.uleb128 0x1
+	.byte	0x54
+	.byte	0x9f
+	.uaword	0
+	.uaword	0
+.LLST4:
+	.uaword	.LVL17
+	.uaword	.LVL18
+	.uahalf	0x1
+	.byte	0x54
+	.uaword	.LVL18
+	.uaword	.LFE12
+	.uahalf	0x4
+	.byte	0xf3
+	.uleb128 0x1
+	.byte	0x54
+	.byte	0x9f
+	.uaword	0
+	.uaword	0
+.LLST5:
+	.uaword	.LVL19
+	.uaword	.LVL20
+	.uahalf	0x1
+	.byte	0x54
+	.uaword	.LVL20
+	.uaword	.LFE13
+	.uahalf	0x4
+	.byte	0xf3
+	.uleb128 0x1
+	.byte	0x54
+	.byte	0x9f
+	.uaword	0
+	.uaword	0
+.section .debug_aranges,"",@progbits
+	.uaword	0x84
+	.uahalf	0x2
+	.uaword	.Ldebug_info0
+	.byte	0x4
+	.byte	0
+	.uahalf	0
+	.uahalf	0
+	.uaword	.LFB0
+	.uaword	.LFE0-.LFB0
+	.uaword	.LFB1
+	.uaword	.LFE1-.LFB1
+	.uaword	.LFB2
+	.uaword	.LFE2-.LFB2
+	.uaword	.LFB3
+	.uaword	.LFE3-.LFB3
+	.uaword	.LFB4
+	.uaword	.LFE4-.LFB4
+	.uaword	.LFB5
+	.uaword	.LFE5-.LFB5
+	.uaword	.LFB6
+	.uaword	.LFE6-.LFB6
+	.uaword	.LFB7
+	.uaword	.LFE7-.LFB7
+	.uaword	.LFB8
+	.uaword	.LFE8-.LFB8
+	.uaword	.LFB9
+	.uaword	.LFE9-.LFB9
+	.uaword	.LFB10
+	.uaword	.LFE10-.LFB10
+	.uaword	.LFB11
+	.uaword	.LFE11-.LFB11
+	.uaword	.LFB12
+	.uaword	.LFE12-.LFB12
+	.uaword	.LFB13
+	.uaword	.LFE13-.LFB13
+	.uaword	0
+	.uaword	0
+.section .debug_ranges,"",@progbits
+.Ldebug_ranges0:
+	.uaword	.LFB0
+	.uaword	.LFE0
+	.uaword	.LFB1
+	.uaword	.LFE1
+	.uaword	.LFB2
+	.uaword	.LFE2
+	.uaword	.LFB3
+	.uaword	.LFE3
+	.uaword	.LFB4
+	.uaword	.LFE4
+	.uaword	.LFB5
+	.uaword	.LFE5
+	.uaword	.LFB6
+	.uaword	.LFE6
+	.uaword	.LFB7
+	.uaword	.LFE7
+	.uaword	.LFB8
+	.uaword	.LFE8
+	.uaword	.LFB9
+	.uaword	.LFE9
+	.uaword	.LFB10
+	.uaword	.LFE10
+	.uaword	.LFB11
+	.uaword	.LFE11
+	.uaword	.LFB12
+	.uaword	.LFE12
+	.uaword	.LFB13
+	.uaword	.LFE13
+	.uaword	0
+	.uaword	0
+.section .debug_line,"",@progbits
+.Ldebug_line0:
+.section .debug_str,"",@progbits
+.LASF0:
+	.string	"CmdMask"
+.LASF2:
+	.string	"u8LocalMode"
+.LASF1:
+	.string	"bLocalValue"
+	.extern	ESM_bAfterrunFin,STT_OBJECT,1
+	.extern	ESM_bAfterrunReq,STT_OBJECT,1
+	.extern	ESM_bMcuEnaReq,STT_OBJECT,1
+	.extern	ESM_bPwrLNfClrFltFinsh,STT_OBJECT,1
+	.extern	ESM_bPwrDnReadyFlg,STT_OBJECT,1
+	.extern	ESM_EcuState,STT_OBJECT,1
+	.extern	ESM_EsmMode,STT_OBJECT,2
+	.extern	ESM_bCallAppliOn,STT_OBJECT,1
+	.extern	ESM_u16CmdRes,STT_OBJECT,2
+	.extern	ESM_u16CmdReq,STT_OBJECT,2
+	.extern	ESM_u16CmdReqNm1,STT_OBJECT,2
+	.ident	"GCC: (HighTec Release HDP-v4.9.4.1-11fcedf) 4.9.4 build on 2020-09-01"

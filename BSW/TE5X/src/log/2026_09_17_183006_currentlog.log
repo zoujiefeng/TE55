@@ -1,0 +1,494 @@
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./bsw done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./bswcdd done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./main done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./rte done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./os done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./asw done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./Targets done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./Integration done
+scons: done reading SConscript files.
+scons: Building targets ...
+Compiling bswcdd\BSW\AB_DID_Shared_Deal\AB_DID_Shared.c
+Compiling bswcdd\BSW\bswsrv.c
+bswcdd\BSW\AB_DID_Shared_Deal\AB_DID_Shared.c: In function 'AB_APP_VidUpdataToBOOT':
+bswcdd\BSW\AB_DID_Shared_Deal\AB_DID_Shared.c:81:10: warning: unused variable 'u8Index' [-Wunused-variable]
+    uint8 u8Index;
+          ^
+bswcdd\BSW\AB_DID_Shared_Deal\AB_DID_Shared.c: At top level:
+bswcdd\BSW\AB_DID_Shared_Deal\AB_DID_Shared.c:98:13: warning: 'AB_BOOT_VidUpdataToAPP' defined but not used [-Wunused-function]
+ static void AB_BOOT_VidUpdataToAPP( void )
+             ^
+
+bswcdd\BSW\bswsrv.c: In function 'BSW_vidInit':
+bswcdd\BSW\bswsrv.c:417:4: warning: implicit declaration of function 'J1939_vidDM1_Periodic_Send_Ctr_Func' [-Wimplicit-function-declaration]
+    J1939_vidDM1_Periodic_Send_Ctr_Func( _MAIN_J1939_DM1_NOERR_TX_SW_ ) ;
+    ^
+bswcdd\BSW\bswsrv.c:417:4: warning: nested extern declaration of 'J1939_vidDM1_Periodic_Send_Ctr_Func' [-Wnested-externs]
+bswcdd\BSW\bswsrv.c: In function 'BSW_vidCORE0_1ms_Head_Func':
+bswcdd\BSW\bswsrv.c:602:4: warning: implicit declaration of function 'Stp_vidCore0Runable1ms' [-Wimplicit-function-declaration]
+    Stp_vidCore0Runable1ms();
+    ^
+bswcdd\BSW\bswsrv.c:602:4: warning: nested extern declaration of 'Stp_vidCore0Runable1ms' [-Wnested-externs]
+bswcdd\BSW\bswsrv.c:603:4: warning: implicit declaration of function 'Icu_vidGetDutyCycle' [-Wimplicit-function-declaration]
+    Icu_vidGetDutyCycle();
+    ^
+bswcdd\BSW\bswsrv.c:603:4: warning: nested extern declaration of 'Icu_vidGetDutyCycle' [-Wnested-externs]
+bswcdd\BSW\bswsrv.c:604:4: warning: implicit declaration of function 'ComHal_vidMsgMainfunction' [-Wimplicit-function-declaration]
+    ComHal_vidMsgMainfunction();
+    ^
+bswcdd\BSW\bswsrv.c:604:4: warning: nested extern declaration of 'ComHal_vidMsgMainfunction' [-Wnested-externs]
+bswcdd\BSW\bswsrv.c:609:7: warning: implicit declaration of function 'HARD_vidIoTestIO' [-Wimplicit-function-declaration]
+       HARD_vidIoTestIO();
+       ^
+bswcdd\BSW\bswsrv.c:609:7: warning: nested extern declaration of 'HARD_vidIoTestIO' [-Wnested-externs]
+bswcdd\BSW\bswsrv.c: In function 'BSW_vidCORE0_10ms_Head_Func':
+bswcdd\BSW\bswsrv.c:640:4: warning: implicit declaration of function 'VADC_vidMainFunction' [-Wimplicit-function-declaration]
+    VADC_vidMainFunction();
+    ^
+bswcdd\BSW\bswsrv.c:640:4: warning: nested extern declaration of 'VADC_vidMainFunction' [-Wnested-externs]
+bswcdd\BSW\bswsrv.c:646:7: warning: implicit declaration of function 'HARD_vidModManager' [-Wimplicit-function-declaration]
+       HARD_vidModManager();
+       ^
+bswcdd\BSW\bswsrv.c:646:7: warning: nested extern declaration of 'HARD_vidModManager' [-Wnested-externs]
+bswcdd\BSW\bswsrv.c: In function 'BSW_vidCORE0_100ms_Func':
+bswcdd\BSW\bswsrv.c:674:4: warning: implicit declaration of function 'CCPUSR_vidMainFunction' [-Wimplicit-function-declaration]
+    CCPUSR_vidMainFunction();
+    ^
+bswcdd\BSW\bswsrv.c:674:4: warning: nested extern declaration of 'CCPUSR_vidMainFunction' [-Wnested-externs]
+bswcdd\BSW\bswsrv.c: In function 'BSW_vidCORE1_1ms_Func':
+bswcdd\BSW\bswsrv.c:688:4: warning: implicit declaration of function 'Stp_vidCore1Runable1ms' [-Wimplicit-function-declaration]
+    Stp_vidCore1Runable1ms();
+    ^
+bswcdd\BSW\bswsrv.c:688:4: warning: nested extern declaration of 'Stp_vidCore1Runable1ms' [-Wnested-externs]
+
+Compiling bswcdd\Dsm\DSM_Sav.c
+Compiling bswcdd\Dsm\fail\FAIL.c
+Compiling bswcdd\EAS\EAS.c
+Compiling bswcdd\ERL\EnhancedResetLogger.c
+Compiling bswcdd\ESM\ESM\esm_1.c
+Compiling bswcdd\ESM\GESM\gesm_1.c
+
+Compiling bswcdd\IOHAL\IOHAL_Cfg_I.c
+bswcdd\ERL\EnhancedResetLogger.c:19:26: warning: non-const variable 'NoClearResetLog' put into read-only section '.psram_ErrorInfo'
+ static NoClearResetLog_t NoClearResetLog;
+                          ^
+bswcdd\ERL\EnhancedResetLogger.c:33:1: warning: missing braces around initializer [-Wmissing-braces]
+ const ResetLogNvMEntry_t ERL_xResetLogNvMEntry_0_Rom_NVM = {0};
+ ^
+bswcdd\ERL\EnhancedResetLogger.c:33:1: warning: (near initialization for 'ERL_xResetLogNvMEntry_0_Rom_NVM.au8Data') [-Wmissing-braces]
+bswcdd\ERL\EnhancedResetLogger.c:34:1: warning: missing braces around initializer [-Wmissing-braces]
+ const ResetLogNvMEntry_t ERL_xResetLogNvMEntry_1_Rom_NVM = {0};
+ ^
+bswcdd\ERL\EnhancedResetLogger.c:34:1: warning: (near initialization for 'ERL_xResetLogNvMEntry_1_Rom_NVM.au8Data') [-Wmissing-braces]
+bswcdd\ERL\EnhancedResetLogger.c:35:1: warning: missing braces around initializer [-Wmissing-braces]
+ const ResetLogNvMEntry_t ERL_xResetLogNvMEntry_2_Rom_NVM = {0};
+ ^
+bswcdd\ERL\EnhancedResetLogger.c:35:1: warning: (near initialization for 'ERL_xResetLogNvMEntry_2_Rom_NVM.au8Data') [-Wmissing-braces]
+bswcdd\ERL\EnhancedResetLogger.c:36:1: warning: missing braces around initializer [-Wmissing-braces]
+ const ResetLogNvMEntry_t ERL_xResetLogNvMEntry_3_Rom_NVM = {0};
+ ^
+bswcdd\ERL\EnhancedResetLogger.c:36:1: warning: (near initialization for 'ERL_xResetLogNvMEntry_3_Rom_NVM.au8Data') [-Wmissing-braces]
+bswcdd\ERL\EnhancedResetLogger.c:37:1: warning: missing braces around initializer [-Wmissing-braces]
+ const ResetLogNvMEntry_t ERL_xResetLogNvMEntry_4_Rom_NVM = {0};
+ ^
+bswcdd\ERL\EnhancedResetLogger.c:37:1: warning: (near initialization for 'ERL_xResetLogNvMEntry_4_Rom_NVM.au8Data') [-Wmissing-braces]
+bswcdd\ERL\EnhancedResetLogger.c:38:1: warning: missing braces around initializer [-Wmissing-braces]
+ const ResetLogNvMEntry_t ERL_xResetLogNvMEntry_5_Rom_NVM = {0};
+ ^
+bswcdd\ERL\EnhancedResetLogger.c:38:1: warning: (near initialization for 'ERL_xResetLogNvMEntry_5_Rom_NVM.au8Data') [-Wmissing-braces]
+bswcdd\ERL\EnhancedResetLogger.c:39:1: warning: missing braces around initializer [-Wmissing-braces]
+ const ResetLogNvMEntry_t ERL_xResetLogNvMEntry_6_Rom_NVM = {0};
+ ^
+bswcdd\ERL\EnhancedResetLogger.c:39:1: warning: (near initialization for 'ERL_xResetLogNvMEntry_6_Rom_NVM.au8Data') [-Wmissing-braces]
+bswcdd\ERL\EnhancedResetLogger.c:40:1: warning: missing braces around initializer [-Wmissing-braces]
+ const ResetLogNvMEntry_t ERL_xResetLogNvMEntry_7_Rom_NVM = {0};
+ ^
+bswcdd\ERL\EnhancedResetLogger.c:40:1: warning: (near initialization for 'ERL_xResetLogNvMEntry_7_Rom_NVM.au8Data') [-Wmissing-braces]
+bswcdd\ERL\EnhancedResetLogger.c:41:1: warning: missing braces around initializer [-Wmissing-braces]
+ const ResetLogNvMEntry_t ERL_xResetLogNvMEntry_8_Rom_NVM = {0};
+ ^
+bswcdd\ERL\EnhancedResetLogger.c:41:1: warning: (near initialization for 'ERL_xResetLogNvMEntry_8_Rom_NVM.au8Data') [-Wmissing-braces]
+bswcdd\ERL\EnhancedResetLogger.c:42:1: warning: missing braces around initializer [-Wmissing-braces]
+ const ResetLogNvMEntry_t ERL_xResetLogNvMEntry_9_Rom_NVM = {0};
+ ^
+bswcdd\ERL\EnhancedResetLogger.c:42:1: warning: (near initialization for 'ERL_xResetLogNvMEntry_9_Rom_NVM.au8Data') [-Wmissing-braces]
+bswcdd\ERL\EnhancedResetLogger.c:298:6: warning: no previous prototype for 'ERL_vidRestoreInfoFromNoClearRam' [-Wmissing-prototypes]
+ void ERL_vidRestoreInfoFromNoClearRam(ResetLogNvMEntry_t* entry)
+      ^
+bswcdd\ERL\EnhancedResetLogger.c: In function 'ERL_Init':
+bswcdd\ERL\EnhancedResetLogger.c:347:9: warning: implicit declaration of function 'ERL_SaveResetInfo' [-Wimplicit-function-declaration]
+         ERL_SaveResetInfo();
+         ^
+bswcdd\ERL\EnhancedResetLogger.c:347:9: warning: nested extern declaration of 'ERL_SaveResetInfo' [-Wnested-externs]
+bswcdd\ERL\EnhancedResetLogger.c: At top level:
+bswcdd\ERL\EnhancedResetLogger.c:358:6: warning: no previous prototype for 'ERL_SaveResetInfo' [-Wmissing-prototypes]
+ void ERL_SaveResetInfo(void)
+      ^
+bswcdd\ERL\EnhancedResetLogger.c:358:6: warning: conflicting types for 'ERL_SaveResetInfo'
+bswcdd\ERL\EnhancedResetLogger.c:347:9: note: previous implicit declaration of 'ERL_SaveResetInfo' was here
+         ERL_SaveResetInfo();
+         ^
+bswcdd\ERL\EnhancedResetLogger.c:11:15: warning: 'g_latestSequence' defined but not used [-Wunused-variable]
+ static uint16 g_latestSequence = 0;
+               ^
+bswcdd\ERL\EnhancedResetLogger.c: In function 'ERL_SaveResetInfo':
+bswcdd\ERL\EnhancedResetLogger.c:374:39: warning: 'nextSequence' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     newEntry->xResetLogEntry.sequence = nextSequence;
+                                       ^
+bswcdd\ERL\EnhancedResetLogger.c: At top level:
+bswcdd\ERL\EnhancedResetLogger.c:19:26: warning: non-const variable 'NoClearResetLog' put into read-only section '.psram_ErrorInfo.NoClearResetLog'
+ static NoClearResetLog_t NoClearResetLog;
+                          ^
+
+bswcdd\EAS\EAS.c: In function 'EAS_vidInit':
+bswcdd\EAS\EAS.c:197:10: warning: variable 'u8LocEskSts' set but not used [-Wunused-but-set-variable]
+    uint8 u8LocEskSts;
+          ^
+bswcdd\EAS\EAS.c: At top level:
+bswcdd\EAS\EAS.c:282:9: warning: no previous prototype for 'EAS_bReActiveChk' [-Wmissing-prototypes]
+ boolean EAS_bReActiveChk(uint8 u8LocIgntSts)
+         ^
+bswcdd\EAS\EAS.c: In function 'EAS_vidAuthStateMng':
+bswcdd\EAS\EAS.c:507:42: warning: comparison is always true due to limited range of data type [-Wtype-limits]
+                   if(EAS_u8AuthFailedCnt >= (EAS_MAX_VERIFY_FAILED_LIMIT - 1))
+                                          ^
+
+bswcdd\Dsm\fail\FAIL.c: In function 'AFAIL_vidFailDetection_1ms':
+bswcdd\Dsm\fail\FAIL.c:361:7: warning: implicit declaration of function 'MAIN_bGetACMASCEnableState' [-Wimplicit-function-declaration]
+       FaultDetection(ABSW_HW_,    FPGA_IGBT_H,   (boolean)(TRUE == TPPCDev_bGetHwFaultIgbtH(eTPPC_DEV_GTM_ACM_INDEX) ) || (TRUE == MAIN_bGetACMASCEnableState()));
+       ^
+bswcdd\Dsm\fail\FAIL.c:361:7: warning: nested extern declaration of 'MAIN_bGetACMASCEnableState' [-Wnested-externs]
+bswcdd\Dsm\fail\FAIL.c:367:10: warning: implicit declaration of function 'MAIN_bGetAcuSoftOvcFlag_U' [-Wimplicit-function-declaration]
+          if ( TRUE == MAIN_bGetAcuSoftOvcFlag_U() )
+          ^
+bswcdd\Dsm\fail\FAIL.c:367:10: warning: nested extern declaration of 'MAIN_bGetAcuSoftOvcFlag_U' [-Wnested-externs]
+bswcdd\Dsm\fail\FAIL.c:376:10: warning: implicit declaration of function 'MAIN_bGetAcuSoftOvcFlag_V' [-Wimplicit-function-declaration]
+          if ( TRUE == MAIN_bGetAcuSoftOvcFlag_V() )
+          ^
+bswcdd\Dsm\fail\FAIL.c:376:10: warning: nested extern declaration of 'MAIN_bGetAcuSoftOvcFlag_V' [-Wnested-externs]
+bswcdd\Dsm\fail\FAIL.c:385:10: warning: implicit declaration of function 'MAIN_bGetAcuSoftOvcFlag_W' [-Wimplicit-function-declaration]
+          if ( TRUE == MAIN_bGetAcuSoftOvcFlag_W() )
+          ^
+bswcdd\Dsm\fail\FAIL.c:385:10: warning: nested extern declaration of 'MAIN_bGetAcuSoftOvcFlag_W' [-Wnested-externs]
+bswcdd\Dsm\fail\FAIL.c:400:7: warning: implicit declaration of function 'MAIN_bGetAcuSoftOvBhvFlag' [-Wimplicit-function-declaration]
+       FaultDetection(ABSW_HW2_,   FPGA_OVERVOLTVBAT,   (boolean)(TRUE == MAIN_bGetAcuSoftOvBhvFlag() ) );
+       ^
+bswcdd\Dsm\fail\FAIL.c:400:7: warning: nested extern declaration of 'MAIN_bGetAcuSoftOvBhvFlag' [-Wnested-externs]
+bswcdd\Dsm\fail\FAIL.c: In function 'OFAIL_vidFailDetection_1ms':
+bswcdd\Dsm\fail\FAIL.c:423:7: warning: implicit declaration of function 'MAIN_bGetEPSASCEnableState' [-Wimplicit-function-declaration]
+       FaultDetection(OBSW_HW_,    FPGA_IGBT_H,   (boolean)(TRUE == TPPCDev_bGetHwFaultIgbtH(eTPPC_DEV_GTM_EPS_INDEX) ) || (TRUE == MAIN_bGetEPSASCEnableState()) );
+       ^
+bswcdd\Dsm\fail\FAIL.c:423:7: warning: nested extern declaration of 'MAIN_bGetEPSASCEnableState' [-Wnested-externs]
+bswcdd\Dsm\fail\FAIL.c:429:10: warning: implicit declaration of function 'MAIN_bGetOcuSoftOvcFlag_U' [-Wimplicit-function-declaration]
+          if ( TRUE == MAIN_bGetOcuSoftOvcFlag_U() )
+          ^
+bswcdd\Dsm\fail\FAIL.c:429:10: warning: nested extern declaration of 'MAIN_bGetOcuSoftOvcFlag_U' [-Wnested-externs]
+bswcdd\Dsm\fail\FAIL.c:438:10: warning: implicit declaration of function 'MAIN_bGetOcuSoftOvcFlag_V' [-Wimplicit-function-declaration]
+          if ( TRUE == MAIN_bGetOcuSoftOvcFlag_V() )
+          ^
+bswcdd\Dsm\fail\FAIL.c:438:10: warning: nested extern declaration of 'MAIN_bGetOcuSoftOvcFlag_V' [-Wnested-externs]
+bswcdd\Dsm\fail\FAIL.c:447:10: warning: implicit declaration of function 'MAIN_bGetOcuSoftOvcFlag_W' [-Wimplicit-function-declaration]
+          if ( TRUE == MAIN_bGetOcuSoftOvcFlag_W() )
+          ^
+bswcdd\Dsm\fail\FAIL.c:447:10: warning: nested extern declaration of 'MAIN_bGetOcuSoftOvcFlag_W' [-Wnested-externs]
+bswcdd\Dsm\fail\FAIL.c:462:7: warning: implicit declaration of function 'MAIN_bGetOcuSoftOvBhvFlag' [-Wimplicit-function-declaration]
+       FaultDetection(OBSW_HW2_,   FPGA_OVERVOLTVBAT,   (boolean)(TRUE == MAIN_bGetOcuSoftOvBhvFlag() ) );
+       ^
+bswcdd\Dsm\fail\FAIL.c:462:7: warning: nested extern declaration of 'MAIN_bGetOcuSoftOvBhvFlag' [-Wnested-externs]
+bswcdd\Dsm\fail\FAIL.c: In function 'FAIL_vidFailDetection_10ms':
+bswcdd\Dsm\fail\FAIL.c:526:10: warning: implicit declaration of function 'ComToutDet_bMCU1_CANTimeout_DetFun' [-Wimplicit-function-declaration]
+          FaultDetection(BSW_COM_,    TIMOUTRXVCU,   ComToutDet_bMCU1_CANTimeout_DetFun());
+          ^
+bswcdd\Dsm\fail\FAIL.c:526:10: warning: nested extern declaration of 'ComToutDet_bMCU1_CANTimeout_DetFun' [-Wnested-externs]
+bswcdd\Dsm\fail\FAIL.c:527:10: warning: implicit declaration of function 'ComToutDet_bMCU2_CANTimeout_DetFun' [-Wimplicit-function-declaration]
+          FaultDetection(GBSW_COM_,   TIMOUTRXVCU,   ComToutDet_bMCU2_CANTimeout_DetFun());
+          ^
+bswcdd\Dsm\fail\FAIL.c:527:10: warning: nested extern declaration of 'ComToutDet_bMCU2_CANTimeout_DetFun' [-Wnested-externs]
+bswcdd\Dsm\fail\FAIL.c:528:10: warning: implicit declaration of function 'ComToutDet_bACM_CANTimeout_DetFun' [-Wimplicit-function-declaration]
+          FaultDetection(ABSW_COM_,   TIMOUTRXVCU,   ComToutDet_bACM_CANTimeout_DetFun());
+          ^
+bswcdd\Dsm\fail\FAIL.c:528:10: warning: nested extern declaration of 'ComToutDet_bACM_CANTimeout_DetFun' [-Wnested-externs]
+bswcdd\Dsm\fail\FAIL.c:529:10: warning: implicit declaration of function 'ComToutDet_bEPS_CANTimeout_DetFun' [-Wimplicit-function-declaration]
+          FaultDetection(OBSW_COM_,   TIMOUTRXVCU,   ComToutDet_bEPS_CANTimeout_DetFun());
+          ^
+bswcdd\Dsm\fail\FAIL.c:529:10: warning: nested extern declaration of 'ComToutDet_bEPS_CANTimeout_DetFun' [-Wnested-externs]
+
+
+
+bswcdd\ESM\ESM\esm_1.c: In function 'ESM_vidStfPwrLNf':
+bswcdd\ESM\ESM\esm_1.c:724:16: warning: implicit declaration of function 'FAIL_vidDisableEmbFltCheck' [-Wimplicit-function-declaration]
+                FAIL_vidDisableEmbFltCheck();
+                ^
+bswcdd\ESM\ESM\esm_1.c:724:16: warning: nested extern declaration of 'FAIL_vidDisableEmbFltCheck' [-Wnested-externs]
+
+Compiling bswcdd\SBC\SBC.c
+Compiling bswcdd\UcbSwap\UcbSwap.c
+Compiling bswcdd\UDS\UDS_DidCfg.c
+Compiling bswcdd\UDS\UDS_DidDataDef.c
+Compiling bswcdd\UDS\UDS_DidDataUpdate.c
+Compiling bswcdd\UDS\UDS_DidModule.c
+Compiling bswcdd\UDS\UDS_Nvm_Def.c
+Compiling bswcdd\UDS\UDS_Rdbi.c
+bswcdd\SBC\SBC.c:292:1: warning: "/*" within comment [-Wcomment]
+ /* !FuncName    : SBC_vidCloseLDO                         
+ ^
+bswcdd\SBC\SBC.c:293:1: warning: "/*" within comment [-Wcomment]
+ /* !Description : Disable LDO                 
+ ^
+bswcdd\SBC\SBC.c:294:1: warning: "/*" within comment [-Wcomment]
+ /* !Param       : Delect input parameter                                           
+ ^
+bswcdd\SBC\SBC.c:295:1: warning: "/*" within comment [-Wcomment]
+ /* !LastAuthor  : Zyx                                                            
+ ^
+bswcdd\SBC\SBC.c:296:1: warning: "/*" within comment [-Wcomment]
+ /******************************************************************************/
+ ^
+bswcdd\SBC\SBC.c:308:1: warning: "/*" within comment [-Wcomment]
+ /* !Description : Disable LDO                  
+ ^
+bswcdd\SBC\SBC.c:309:1: warning: "/*" within comment [-Wcomment]
+ /* !Param       : type Not Used                                             
+ ^
+bswcdd\SBC\SBC.c:310:1: warning: "/*" within comment [-Wcomment]
+ /* !LastAuthor  : Zyx                                                     
+ ^
+bswcdd\SBC\SBC.c:311:1: warning: "/*" within comment [-Wcomment]
+ /******************************************************************************/
+ ^
+bswcdd\SBC\SBC.c:323:1: warning: "/*" within comment [-Wcomment]
+ /* !Description : Enable LDO              
+ ^
+bswcdd\SBC\SBC.c:324:1: warning: "/*" within comment [-Wcomment]
+ /* !Param       : Delete input parameter                                             
+ ^
+bswcdd\SBC\SBC.c:325:1: warning: "/*" within comment [-Wcomment]
+ /* !LastAuthor  : Daniel                                                   
+ ^
+bswcdd\SBC\SBC.c:326:1: warning: "/*" within comment [-Wcomment]
+ /******************************************************************************/
+ ^
+bswcdd\SBC\SBC.c:338:1: warning: "/*" within comment [-Wcomment]
+ /* !Description :                   
+ ^
+bswcdd\SBC\SBC.c:339:1: warning: "/*" within comment [-Wcomment]
+ /* !Param       :                                                                        
+ ^
+bswcdd\SBC\SBC.c:340:1: warning: "/*" within comment [-Wcomment]
+ /* !LastAuthor  : Zyx                                                       
+ ^
+bswcdd\SBC\SBC.c:341:1: warning: "/*" within comment [-Wcomment]
+ /******************************************************************************/
+ ^
+In file included from .\output\inc/ComM.h:1:0,
+                 from .\output\inc/..\..\bsw\CanSM\api\CanSM.h:12,
+                 from .\output\inc/CanSM.h:1,
+                 from bswcdd\SBC\SBC.c:24:
+.\output\inc/..\..\bsw\ComM\api\ComM.h:158:23: warning: redundant redeclaration of 'ComM_RequestComMode' [-Wredundant-decls]
+ extern Std_ReturnType ComM_RequestComMode(ComM_UserHandleType User, ComM_ModeType ComMode);
+                       ^
+In file included from .\output\inc/Rte_ASW_NM.h:1:0,
+                 from bswcdd\SBC\SBC.c:21:
+.\output\inc/..\..\rte\Rte_ASW_NM.h:121:16: note: previous declaration of 'ComM_RequestComMode' was here
+ FUNC(Std_ReturnType, ComM_CODE) ComM_RequestComMode(VAR(ComM_UserHandleType, AUTOMATIC) User,
+                ^
+In file included from .\output\inc/ComM.h:1:0,
+                 from .\output\inc/..\..\bsw\CanSM\api\CanSM.h:12,
+                 from .\output\inc/CanSM.h:1,
+                 from bswcdd\SBC\SBC.c:24:
+.\output\inc/..\..\bsw\ComM\api\ComM.h:180:23: warning: redundant redeclaration of 'ComM_GetMaxComMode' [-Wredundant-decls]
+ extern Std_ReturnType ComM_GetMaxComMode(ComM_UserHandleType User, ComM_ModeType * ComMode);
+                       ^
+In file included from .\output\inc/Rte_ASW_NM.h:1:0,
+                 from bswcdd\SBC\SBC.c:21:
+.\output\inc/..\..\rte\Rte_ASW_NM.h:111:16: note: previous declaration of 'ComM_GetMaxComMode' was here
+ FUNC(Std_ReturnType, ComM_CODE) ComM_GetMaxComMode(VAR(ComM_UserHandleType, AUTOMATIC) User,
+                ^
+In file included from .\output\inc/ComM.h:1:0,
+                 from .\output\inc/..\..\bsw\CanSM\api\CanSM.h:12,
+                 from .\output\inc/CanSM.h:1,
+                 from bswcdd\SBC\SBC.c:24:
+.\output\inc/..\..\bsw\ComM\api\ComM.h:202:23: warning: redundant redeclaration of 'ComM_GetRequestedComMode' [-Wredundant-decls]
+ extern Std_ReturnType ComM_GetRequestedComMode(ComM_UserHandleType User, ComM_ModeType * ComMode);
+                       ^
+In file included from .\output\inc/Rte_ASW_NM.h:1:0,
+                 from bswcdd\SBC\SBC.c:21:
+.\output\inc/..\..\rte\Rte_ASW_NM.h:114:16: note: previous declaration of 'ComM_GetRequestedComMode' was here
+ FUNC(Std_ReturnType, ComM_CODE) ComM_GetRequestedComMode(VAR(ComM_UserHandleType, AUTOMATIC) User,
+                ^
+In file included from .\output\inc/ComM.h:1:0,
+                 from .\output\inc/..\..\bsw\CanSM\api\CanSM.h:12,
+                 from .\output\inc/CanSM.h:1,
+                 from bswcdd\SBC\SBC.c:24:
+.\output\inc/..\..\bsw\ComM\api\ComM.h:224:23: warning: redundant redeclaration of 'ComM_GetCurrentComMode' [-Wredundant-decls]
+ extern Std_ReturnType ComM_GetCurrentComMode(ComM_UserHandleType User, ComM_ModeType * ComMode);
+                       ^
+In file included from .\output\inc/Rte_ASW_NM.h:1:0,
+                 from bswcdd\SBC\SBC.c:21:
+.\output\inc/..\..\rte\Rte_ASW_NM.h:108:16: note: previous declaration of 'ComM_GetCurrentComMode' was here
+ FUNC(Std_ReturnType, ComM_CODE) ComM_GetCurrentComMode(VAR(ComM_UserHandleType, AUTOMATIC) User,
+                ^
+In file included from .\output\inc/ComM.h:1:0,
+                 from .\output\inc/..\..\bsw\CanSM\api\CanSM.h:12,
+                 from .\output\inc/CanSM.h:1,
+                 from bswcdd\SBC\SBC.c:24:
+.\output\inc/..\..\bsw\ComM\api\ComM.h:262:23: warning: redundant redeclaration of 'ComM_LimitECUToNoComMode' [-Wredundant-decls]
+ extern Std_ReturnType ComM_LimitECUToNoComMode(boolean Status);
+                       ^
+In file included from .\output\inc/Rte_ASW_NM.h:1:0,
+                 from bswcdd\SBC\SBC.c:21:
+.\output\inc/..\..\rte\Rte_ASW_NM.h:117:16: note: previous declaration of 'ComM_LimitECUToNoComMode' was here
+ FUNC(Std_ReturnType, ComM_CODE) ComM_LimitECUToNoComMode(VAR(boolean, AUTOMATIC) Status);
+                ^
+In file included from .\output\inc/ComM.h:1:0,
+                 from .\output\inc/..\..\bsw\CanSM\api\CanSM.h:12,
+                 from .\output\inc/CanSM.h:1,
+                 from bswcdd\SBC\SBC.c:24:
+.\output\inc/..\..\bsw\ComM\api\ComM.h:300:23: warning: redundant redeclaration of 'ComM_SetECUGroupClassification' [-Wredundant-decls]
+ extern Std_ReturnType ComM_SetECUGroupClassification(ComM_InhibitionStatusType Status);
+                       ^
+In file included from .\output\inc/Rte_ASW_NM.h:1:0,
+                 from bswcdd\SBC\SBC.c:21:
+.\output\inc/..\..\rte\Rte_ASW_NM.h:126:16: note: previous declaration of 'ComM_SetECUGroupClassification' was here
+ FUNC(Std_ReturnType, ComM_CODE) ComM_SetECUGroupClassification(VAR(ComM_InhibitionStatusType, AUTOMATIC) Status);
+                ^
+In file included from .\output\inc/ComM.h:1:0,
+                 from .\output\inc/..\..\bsw\CanSM\api\CanSM.h:12,
+                 from .\output\inc/CanSM.h:1,
+                 from bswcdd\SBC\SBC.c:24:
+.\output\inc/..\..\bsw\ComM\api\ComM.h:319:23: warning: redundant redeclaration of 'ComM_ReadInhibitCounter' [-Wredundant-decls]
+ extern Std_ReturnType ComM_ReadInhibitCounter(uint16 * CounterValue);
+                       ^
+In file included from .\output\inc/Rte_ASW_NM.h:1:0,
+                 from bswcdd\SBC\SBC.c:21:
+.\output\inc/..\..\rte\Rte_ASW_NM.h:119:16: note: previous declaration of 'ComM_ReadInhibitCounter' was here
+ FUNC(Std_ReturnType, ComM_CODE) ComM_ReadInhibitCounter(P2VAR(uint16, AUTOMATIC, RTE_APPL_DATA) CounterValue);
+                ^
+In file included from .\output\inc/ComM.h:1:0,
+                 from .\output\inc/..\..\bsw\CanSM\api\CanSM.h:12,
+                 from .\output\inc/CanSM.h:1,
+                 from bswcdd\SBC\SBC.c:24:
+.\output\inc/..\..\bsw\ComM\api\ComM.h:338:23: warning: redundant redeclaration of 'ComM_ResetInhibitCounter' [-Wredundant-decls]
+ extern Std_ReturnType ComM_ResetInhibitCounter(void);
+                       ^
+In file included from .\output\inc/Rte_ASW_NM.h:1:0,
+                 from bswcdd\SBC\SBC.c:21:
+.\output\inc/..\..\rte\Rte_ASW_NM.h:124:16: note: previous declaration of 'ComM_ResetInhibitCounter' was here
+ FUNC(Std_ReturnType, ComM_CODE) ComM_ResetInhibitCounter(void);
+                ^
+bswcdd\SBC\SBC.c: In function 'SBC_bUnderVoltageManager':
+bswcdd\SBC\SBC.c:368:4: warning: implicit declaration of function 'ESMSRV_bGetPoDnReadyFlg' [-Wimplicit-function-declaration]
+    bLocEsmPoDnReady = ESMSRV_bGetPoDnReadyFlg();
+    ^
+bswcdd\SBC\SBC.c:368:4: warning: nested extern declaration of 'ESMSRV_bGetPoDnReadyFlg' [-Wnested-externs]
+bswcdd\SBC\SBC.c:350:12: warning: unused variable 'f32LocBkpVolAd' [-Wunused-variable]
+    float32 f32LocBkpVolAd = 0;
+            ^
+bswcdd\SBC\SBC.c: In function 'SBC_bCheckOutputStt':
+bswcdd\SBC\SBC.c:650:12: warning: unused variable 'bLocVcuTout' [-Wunused-variable]
+    boolean bLocVcuTout = FALSE;
+            ^
+
+Compiling bswcdd\UDS\UDS_RoutineCtrl.c
+bswcdd\UDS\UDS_DidDataUpdate.c: In function 'UDS_vidUpdateDidData_0xF18B':
+bswcdd\UDS\UDS_DidDataUpdate.c:38:24: error: 'eUDS_DID_CFG_IDX_0xF18B' undeclared (first use in this function)
+    UDS_vidWriteDIDData(eUDS_DID_CFG_IDX_0xF18B, pku8Data);
+                        ^
+bswcdd\UDS\UDS_DidDataUpdate.c:38:24: note: each undeclared identifier is reported only once for each function it appears in
+bswcdd\UDS\UDS_DidDataUpdate.c: In function 'UDS_vidUpdateDidData_0xF195':
+bswcdd\UDS\UDS_DidDataUpdate.c:48:24: error: 'eUDS_DID_CFG_IDX_0xF195' undeclared (first use in this function)
+    UDS_vidWriteDIDData(eUDS_DID_CFG_IDX_0xF195, pku8Data);
+                        ^
+bswcdd\UDS\UDS_DidDataUpdate.c: In function 'UDS_vidUpdateDidData_0xF19A':
+bswcdd\UDS\UDS_DidDataUpdate.c:53:24: error: 'eUDS_DID_CFG_IDX_0xF19A' undeclared (first use in this function)
+    UDS_vidWriteDIDData(eUDS_DID_CFG_IDX_0xF19A, pku8Data);
+                        ^
+bswcdd\UDS\UDS_DidDataUpdate.c: At top level:
+bswcdd\UDS\UDS_DidDataUpdate.c:86:6: warning: no previous prototype for 'UDS_vidUpdateDidData_0x0B20' [-Wmissing-prototypes]
+ void UDS_vidUpdateDidData_0x0B20(const CDD_uCTablePtr kxSrcVal, const UDS_eSrcDataType eDataType)
+      ^
+bswcdd\UDS\UDS_DidDataUpdate.c:91:6: warning: no previous prototype for 'UDS_vidUpdateDidData_0x0B21' [-Wmissing-prototypes]
+ void UDS_vidUpdateDidData_0x0B21(const CDD_uCTablePtr kxSrcVal, const UDS_eSrcDataType eDataType)
+      ^
+bswcdd\UDS\UDS_DidDataUpdate.c:96:6: warning: no previous prototype for 'UDS_vidUpdateDidData_0x0B22' [-Wmissing-prototypes]
+ void UDS_vidUpdateDidData_0x0B22(const CDD_uCTablePtr kxSrcVal, const UDS_eSrcDataType eDataType)
+      ^
+bswcdd\UDS\UDS_DidDataUpdate.c:101:6: warning: no previous prototype for 'UDS_vidUpdateDidData_0x0B23' [-Wmissing-prototypes]
+ void UDS_vidUpdateDidData_0x0B23(const CDD_uCTablePtr kxSrcVal, const UDS_eSrcDataType eDataType)
+      ^
+
+=====
+None
+=====
+scons: *** [output\objs\bswcdd\UDS\UDS_DidDataUpdate.o] Error 1
+
+bswcdd\UDS\UDS_DidCfg.c:1035:21: warning: cast discards 'volatile' qualifier from pointer target type [-Wcast-qual]
+       .au8DataBuf      = (uint8 *)&UDS_au8DidBuf_0x0D2A_1,
+                     ^
+bswcdd\UDS\UDS_DidCfg.c:1053:21: warning: cast discards 'volatile' qualifier from pointer target type [-Wcast-qual]
+       .au8DataBuf      = (uint8 *)&UDS_au8DidBuf_0x0D2A_2,
+                     ^
+bswcdd\UDS\UDS_DidCfg.c:1071:21: warning: cast discards 'volatile' qualifier from pointer target type [-Wcast-qual]
+       .au8DataBuf      = (uint8 *)&UDS_au8DidBuf_0x0D2A_3,
+                     ^
+bswcdd\UDS\UDS_DidCfg.c:1089:21: warning: cast discards 'volatile' qualifier from pointer target type [-Wcast-qual]
+       .au8DataBuf      = (uint8 *)&UDS_au8DidBuf_0x0D2A_4,
+                     ^
+bswcdd\UDS\UDS_DidCfg.c:2205:21: warning: cast discards 'volatile' qualifier from pointer target type [-Wcast-qual]
+       .au8DataBuf      = (uint8 *)&UDS_au8DidBuf_0x1D2A,
+                     ^
+bswcdd\UDS\UDS_DidCfg.c:2223:21: warning: cast discards 'volatile' qualifier from pointer target type [-Wcast-qual]
+       .au8DataBuf      = (uint8 *)&UDS_au8DidBuf_0x1D2A_1,
+                     ^
+bswcdd\UDS\UDS_DidCfg.c:2241:21: warning: cast discards 'volatile' qualifier from pointer target type [-Wcast-qual]
+       .au8DataBuf      = (uint8 *)&UDS_au8DidBuf_0x1D2A_2,
+                     ^
+bswcdd\UDS\UDS_DidCfg.c:2259:21: warning: cast discards 'volatile' qualifier from pointer target type [-Wcast-qual]
+       .au8DataBuf      = (uint8 *)&UDS_au8DidBuf_0x1D2A_3,
+                     ^
+bswcdd\UDS\UDS_DidCfg.c:2277:21: warning: cast discards 'volatile' qualifier from pointer target type [-Wcast-qual]
+       .au8DataBuf      = (uint8 *)&UDS_au8DidBuf_0x1D2A_4,
+                     ^
+
+
+
+bswcdd\UDS\UDS_DidModule.c: In function 'UDS_vidWriteDIDData':
+bswcdd\UDS\UDS_DidModule.c:132:22: warning: initialization discards 'const' qualifier from pointer target type
+  uint8 *pu8DataPtr = Data;
+                      ^
+
+bswcdd\UDS\UDS_Rdbi.c:269:16: warning: no previous prototype for 'DataServices_R_SuppHwVer_F193_ReadData' [-Wmissing-prototypes]
+ Std_ReturnType DataServices_R_SuppHwVer_F193_ReadData (Dcm_OpStatusType OpStatus,uint8 * Data)
+                ^
+bswcdd\UDS\UDS_Rdbi.c:282:16: warning: no previous prototype for 'DataServices_R_SuppSwVer_F195_ReadData' [-Wmissing-prototypes]
+ Std_ReturnType DataServices_R_SuppSwVer_F195_ReadData (Dcm_OpStatusType OpStatus,uint8 * Data)
+                ^
+
+bswcdd\UDS\UDS_RoutineCtrl.c: In function 'DcmDspStartRoutine_ZeroPosSelfLearning':
+bswcdd\UDS\UDS_RoutineCtrl.c:101:4: warning: implicit declaration of function 'MAIN_bChkOcCondition' [-Wimplicit-function-declaration]
+    bLocOcCondSatisfy = MAIN_bChkOcCondition();
+    ^
+bswcdd\UDS\UDS_RoutineCtrl.c:101:4: warning: nested extern declaration of 'MAIN_bChkOcCondition' [-Wnested-externs]
+bswcdd\UDS\UDS_RoutineCtrl.c: In function 'DcmDspStartRoutine_GcuPosSelfLearning':
+bswcdd\UDS\UDS_RoutineCtrl.c:160:4: warning: implicit declaration of function 'GMAIN_bChkOcCondition' [-Wimplicit-function-declaration]
+    bLocOcCondSatisfy = GMAIN_bChkOcCondition();
+    ^
+bswcdd\UDS\UDS_RoutineCtrl.c:160:4: warning: nested extern declaration of 'GMAIN_bChkOcCondition' [-Wnested-externs]
+
+scons: building terminated because of errors.

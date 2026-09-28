@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://autosar.org/schema/r4.0"
+    xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>CanTrcv_EOC</SHORT-NAME>
+      <ELEMENTS>
+        <BSW-MODULE-TIMING>
+          <SHORT-NAME>CanTrcv</SHORT-NAME>
+          <TIMING-REQUIREMENTS>
+            <EXECUTION-ORDER-CONSTRAINT>
+              <SHORT-NAME>EOC_EcuM_Init</SHORT-NAME>
+              <EXECUTION-ORDER-CONSTRAINT-TYPE>ORDINARY-EOC</EXECUTION-ORDER-CONSTRAINT-TYPE>
+              <IS-EVENT>false</IS-EVENT>
+              <ORDERED-ELEMENTS>
+                <EOC-EXECUTABLE-ENTITY-REF>
+                  <SHORT-NAME>EOCExecutableEntityRef_CanTrcv_Init</SHORT-NAME>
+                  <BSW-MODULE-INSTANCE-REF DEST="BSW-IMPLEMENTATION">/AUTOSAR_CanTrcv/BswImplementations/CanTrcv</BSW-MODULE-INSTANCE-REF>
+                  <EXECUTABLE-REF DEST="BSW-CALLED-ENTITY">/AUTOSAR_CanTrcv/BswModuleDescriptions/CanTrcv/BswInternalBehavior/CE_CanTrcv_Init</EXECUTABLE-REF>
+                </EOC-EXECUTABLE-ENTITY-REF>
+              </ORDERED-ELEMENTS>
+              <PERMIT-MULTIPLE-REFERENCES-TO-EE>false</PERMIT-MULTIPLE-REFERENCES-TO-EE>
+            </EXECUTION-ORDER-CONSTRAINT>
+            <EXECUTION-ORDER-CONSTRAINT>
+              <SHORT-NAME>EOC_T_1ms</SHORT-NAME>
+              <EXECUTION-ORDER-CONSTRAINT-TYPE>ORDINARY-EOC</EXECUTION-ORDER-CONSTRAINT-TYPE>
+              <IS-EVENT>true</IS-EVENT>
+              <ORDERED-ELEMENTS>
+                <EOC-EVENT-REF>
+                  <SHORT-NAME>EventRef_1</SHORT-NAME>
+                  <BSW-MODULE-INSTANCE-REF DEST="BSW-IMPLEMENTATION">/AUTOSAR_CanTrcv/BswImplementations/CanTrcv</BSW-MODULE-INSTANCE-REF>
+                  <EVENT-REF DEST="BSW-TIMING-EVENT">/AUTOSAR_CanTrcv/BswModuleDescriptions/CanTrcv/BswInternalBehavior/EV_SE_MainFunction_CanTrcv</EVENT-REF>
+                </EOC-EVENT-REF>
+              </ORDERED-ELEMENTS>
+              <PERMIT-MULTIPLE-REFERENCES-TO-EE>false</PERMIT-MULTIPLE-REFERENCES-TO-EE>
+            </EXECUTION-ORDER-CONSTRAINT>
+          </TIMING-REQUIREMENTS>
+          <BEHAVIOR-REF DEST="BSW-INTERNAL-BEHAVIOR">/AUTOSAR_CanTrcv/BswModuleDescriptions/CanTrcv/BswInternalBehavior</BEHAVIOR-REF>
+        </BSW-MODULE-TIMING>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

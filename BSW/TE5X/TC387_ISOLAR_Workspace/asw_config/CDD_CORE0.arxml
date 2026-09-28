@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>CDD_CORE0</SHORT-NAME>
+      <ELEMENTS>
+        <APPLICATION-SW-COMPONENT-TYPE>
+          <SHORT-NAME>CDD_CORE0</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="Master">
+                <SD>true</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <PORTS>
+            <P-PORT-PROTOTYPE UUID="dffb963b-5353-46fd-8a39-52a1ee0e243f">
+              <SHORT-NAME>PPort_CPUUtilizationCore0</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/ServiceSwComponentInterface/CPU_Utilization</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="6c7894cf-08c8-49f6-9756-652d16d0c28b">
+              <SHORT-NAME>PPort_GetMaxUserStackUtilization</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/ServiceSwComponentInterface/GetMaxUserStackUtilization</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="30d96c9f-006c-4e41-a6f0-57a6f1f6de35">
+              <SHORT-NAME>PPort_Core0Server</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Base_SWC/Core_ClientServer_Interface/Core_ClientServer</OPERATION-REF>
+                  <QUEUE-LENGTH>3</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/Base_SWC/Core_ClientServer_Interface</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+          </PORTS>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR UUID="55c47fda-6bd5-4875-a37d-824b047a96e4">
+              <SHORT-NAME>SwcInternalBehavior</SHORT-NAME>
+              <EVENTS>
+                <TIMING-EVENT>
+                  <SHORT-NAME>TimingEvent_1</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/CDD_CORE0/CDD_CORE0/SwcInternalBehavior/CDD_CORE0</START-ON-EVENT-REF>
+                  <PERIOD>0.01</PERIOD>
+                </TIMING-EVENT>
+                <TIMING-EVENT>
+                  <SHORT-NAME>TimingEvent_2</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/CDD_CORE0/CDD_CORE0/SwcInternalBehavior/RE_OsShell_TriggerBg</START-ON-EVENT-REF>
+                  <PERIOD>0.001</PERIOD>
+                </TIMING-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="3f4f761f-e3c0-4a59-a2ce-b3e7631f7ed8">
+                  <SHORT-NAME>OperationInvokedEvent_0</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/CDD_CORE0/CDD_CORE0/SwcInternalBehavior/GetMaxUserStackUtilization_Core0</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/CDD_CORE0/CDD_CORE0/PPort_GetMaxUserStackUtilization</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ServiceSwComponentInterface/GetMaxUserStackUtilization/GetMaxUserStackUtilization</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="541f8824-fdde-45b5-891e-231673371ee0">
+                  <SHORT-NAME>OperationInvokedEvent_1</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/CDD_CORE0/CDD_CORE0/SwcInternalBehavior/CPUUtilizationCore0</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/CDD_CORE0/CDD_CORE0/PPort_CPUUtilizationCore0</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ServiceSwComponentInterface/CPU_Utilization/CPU_Utilization</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="87fc51cc-3b2f-475b-8457-95785707c0ae">
+                  <SHORT-NAME>OperationInvokedEvent_2</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/CDD_CORE0/CDD_CORE0/SwcInternalBehavior/RE_CORE0_SERVER</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/CDD_CORE0/CDD_CORE0/PPort_Core0Server</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Base_SWC/Core_ClientServer_Interface/Core_ClientServer</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+              </EVENTS>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="42a02f2e-f841-47b4-808d-0f78a941dd9f">
+                  <SHORT-NAME>CPUUtilizationCore0</SHORT-NAME>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CPUUtilizationCore0_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="3a549385-b0e1-4351-8d15-b201e57d70f2">
+                  <SHORT-NAME>CDD_CORE0</SHORT-NAME>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>CDD_CORE0_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="37473807-1dec-43a3-88c0-203f46ab25a4">
+                  <SHORT-NAME>RE_OsShell_TriggerBg</SHORT-NAME>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>RE_OsShell_TriggerBg_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="796bf22c-ae1e-4e15-910d-ab16040f266e">
+                  <SHORT-NAME>GetMaxUserStackUtilization_Core0</SHORT-NAME>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>GetMaxUserStackUtilization_Core0_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="8eb06d73-11e7-4484-b9b2-f03e11c43a4e">
+                  <SHORT-NAME>RE_CORE0_SERVER</SHORT-NAME>
+                  <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                  <SYMBOL>RE_CORE0_SERVER_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </APPLICATION-SW-COMPONENT-TYPE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

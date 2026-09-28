@@ -1,0 +1,219 @@
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./bsw done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./bswcdd done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./main done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./rte done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./os done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./asw done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./Targets done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./Integration done
+scons: done reading SConscript files.
+scons: Building targets ...
+Compiling bsw\Dem\src\env\Dem_EnvDataElement.c
+Compiling bsw\Dem\src\evmem\Dem_EvMemGen.c
+Compiling bsw\Dem\src\indct\Dem_Indicator.c
+Compiling bsw\Dem\src\indct\Dem_IndicatorAttributes.c
+Compiling bsw\Dem\src\main\Dem_Clear.c
+Compiling bsw\Dem\src\main\Dem_Main.c
+Compiling bsw\Dem\src\main\Dem_OperationCycle.c
+Compiling bsw\Dem\src\nvm\Dem_Nvm.c
+Compiling bsw\Dem\src\nvm\Dem_NvmCallbacks.c
+Compiling bsw\Dem\src\stoco\Dem_StorageCondition.c
+Compiling bsw\EcuM\EcuM_Cfg_Startup.c
+Compiling bsw\EcuM\EcuM_PBcfg.c
+Compiling bsw\EcuM\integration\EcuM_Callout_Stubs.c
+Compiling bsw\EcuM\src\EcuM_BootTarget.c
+Compiling bsw\EcuM\src\EcuM_CurrentState.c
+Compiling bsw\EcuM\src\EcuM_KillAllRequests.c
+All licenses in use (-22) (rlm stat (0)) (product: tricore-gcc, version: 4.9.4)
+license check: No valid license!
+bsw\Dem\src\env\Dem_EnvDataElement.c:1:0: error: error in licenser
+ 
+ ^
+bsw\Dem\src\env\Dem_EnvDataElement.c:1:0: error: license check failed
+
+=====
+None
+=====
+scons: *** [output\objs\bsw\Dem\src\env\Dem_EnvDataElement.o] Error 1
+All licenses in use (-22) (rlm stat (0)) (product: tricore-gcc, version: 4.9.4)
+license check: No valid license!
+bsw\Dem\src\evmem\Dem_EvMemGen.c:1:0: error: error in licenser
+ 
+ ^
+bsw\Dem\src\evmem\Dem_EvMemGen.c:1:0: error: license check failed
+
+=====
+None
+=====
+scons: *** [output\objs\bsw\Dem\src\evmem\Dem_EvMemGen.o] Error 1
+All licenses in use (-22) (rlm stat (0)) (product: tricore-gcc, version: 4.9.4)
+license check: No valid license!
+bsw\Dem\src\indct\Dem_Indicator.c:1:0: error: error in licenser
+ 
+ ^
+bsw\Dem\src\indct\Dem_Indicator.c:1:0: error: license check failed
+
+=====
+None
+=====
+scons: *** [output\objs\bsw\Dem\src\indct\Dem_Indicator.o] Error 1
+All licenses in use (-22) (rlm stat (0)) (product: tricore-gcc, version: 4.9.4)
+license check: No valid license!
+bsw\Dem\src\indct\Dem_IndicatorAttributes.c:1:0: error: error in licenser
+ 
+ ^
+bsw\Dem\src\indct\Dem_IndicatorAttributes.c:1:0: error: license check failed
+
+=====
+None
+=====
+scons: *** [output\objs\bsw\Dem\src\indct\Dem_IndicatorAttributes.o] Error 1
+All licenses in use (-22) (rlm stat (0)) (product: tricore-gcc, version: 4.9.4)
+license check: No valid license!
+bsw\Dem\src\main\Dem_Clear.c:1:0: error: error in licenser
+ 
+ ^
+bsw\Dem\src\main\Dem_Clear.c:1:0: error: license check failed
+
+=====
+None
+=====
+scons: *** [output\objs\bsw\Dem\src\main\Dem_Clear.o] Error 1
+All licenses in use (-22) (rlm stat (0)) (product: tricore-gcc, version: 4.9.4)
+license check: No valid license!
+bsw\Dem\src\main\Dem_Main.c:1:0: error: error in licenser
+ 
+ ^
+bsw\Dem\src\main\Dem_Main.c:1:0: error: license check failed
+
+=====
+None
+=====
+scons: *** [output\objs\bsw\Dem\src\main\Dem_Main.o] Error 1
+All licenses in use (-22) (rlm stat (0)) (product: tricore-gcc, version: 4.9.4)
+license check: No valid license!
+bsw\Dem\src\nvm\Dem_Nvm.c:1:0: error: error in licenser
+  
+ ^
+bsw\Dem\src\nvm\Dem_Nvm.c:1:0: error: license check failed
+
+=====
+None
+=====
+scons: *** [output\objs\bsw\Dem\src\nvm\Dem_Nvm.o] Error 1
+All licenses in use (-22) (rlm stat (0)) (product: tricore-gcc, version: 4.9.4)
+license check: No valid license!
+bsw\Dem\src\main\Dem_OperationCycle.c:1:0: error: error in licenser
+ 
+ ^
+bsw\Dem\src\main\Dem_OperationCycle.c:1:0: error: license check failed
+
+=====
+None
+=====
+scons: *** [output\objs\bsw\Dem\src\main\Dem_OperationCycle.o] Error 1
+All licenses in use (-22) (rlm stat (0)) (product: tricore-gcc, version: 4.9.4)
+license check: No valid license!
+bsw\Dem\src\stoco\Dem_StorageCondition.c:1:0: error: error in licenser
+ 
+ ^
+bsw\Dem\src\stoco\Dem_StorageCondition.c:1:0: error: license check failed
+
+=====
+None
+=====
+scons: *** [output\objs\bsw\Dem\src\stoco\Dem_StorageCondition.o] Error 1
+All licenses in use (-22) (rlm stat (0)) (product: tricore-gcc, version: 4.9.4)
+license check: No valid license!
+bsw\Dem\src\nvm\Dem_NvmCallbacks.c:1:0: error: error in licenser
+  
+ ^
+bsw\Dem\src\nvm\Dem_NvmCallbacks.c:1:0: error: license check failed
+
+=====
+None
+=====
+scons: *** [output\objs\bsw\Dem\src\nvm\Dem_NvmCallbacks.o] Error 1
+All licenses in use (-22) (rlm stat (0)) (product: tricore-gcc, version: 4.9.4)
+license check: No valid license!
+bsw\EcuM\integration\EcuM_Callout_Stubs.c:1:0: error: error in licenser
+ 
+ ^
+bsw\EcuM\integration\EcuM_Callout_Stubs.c:1:0: error: license check failed
+
+=====
+None
+=====
+scons: *** [output\objs\bsw\EcuM\integration\EcuM_Callout_Stubs.o] Error 1
+All licenses in use (-22) (rlm stat (0)) (product: tricore-gcc, version: 4.9.4)
+license check: No valid license!
+bsw\EcuM\EcuM_Cfg_Startup.c:1:0: error: error in licenser
+ 
+ ^
+bsw\EcuM\EcuM_Cfg_Startup.c:1:0: error: license check failed
+
+=====
+None
+=====
+scons: *** [output\objs\bsw\EcuM\EcuM_Cfg_Startup.o] Error 1
+All licenses in use (-22) (rlm stat (0)) (product: tricore-gcc, version: 4.9.4)
+license check: No valid license!
+bsw\EcuM\EcuM_PBcfg.c:1:0: error: error in licenser
+ 
+ ^
+bsw\EcuM\EcuM_PBcfg.c:1:0: error: license check failed
+
+=====
+None
+=====
+scons: *** [output\objs\bsw\EcuM\EcuM_PBcfg.o] Error 1
+All licenses in use (-22) (rlm stat (0)) (product: tricore-gcc, version: 4.9.4)
+license check: No valid license!
+bsw\EcuM\src\EcuM_BootTarget.c:1:0: error: error in licenser
+ 
+ ^
+bsw\EcuM\src\EcuM_BootTarget.c:1:0: error: license check failed
+All licenses in use (-22) (rlm stat (0)) (product: tricore-gcc, version: 4.9.4)
+license check: No valid license!
+bsw\EcuM\src\EcuM_CurrentState.c:1:0: error: error in licenser
+ 
+ ^
+bsw\EcuM\src\EcuM_CurrentState.c:1:0: error: license check failed
+
+
+=====
+=====
+None
+None
+=====
+=====
+scons: *** [output\objs\bsw\EcuM\src\EcuM_BootTarget.o] Error 1
+scons: *** [output\objs\bsw\EcuM\src\EcuM_CurrentState.o] Error 1
+All licenses in use (-22) (rlm stat (0)) (product: tricore-gcc, version: 4.9.4)
+license check: No valid license!
+bsw\EcuM\src\EcuM_KillAllRequests.c:1:0: error: error in licenser
+ 
+ ^
+bsw\EcuM\src\EcuM_KillAllRequests.c:1:0: error: license check failed
+
+=====
+None
+=====
+scons: *** [output\objs\bsw\EcuM\src\EcuM_KillAllRequests.o] Error 1
+scons: building terminated because of errors.

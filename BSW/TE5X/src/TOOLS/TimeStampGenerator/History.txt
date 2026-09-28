@@ -1,0 +1,6 @@
+Tools name: TsGenerator
+Version V0.1
+Description: the tools will update bswsrv.c array BSW_kau8IntBswLibDate[YY, MM, DD, TT]
+
+Version V0.2
+Description: adapt TC387 platform array BSW_kau8IntBswLibDate[YY, MM, DD, TT, MIN, SEC]

@@ -1,0 +1,987 @@
+	.file	"ComM_EcuM_WakeupIndication.c"
+.section .text,"ax",@progbits
+.Ltext0:
+.section .text.ComM_EcuM_WakeUpIndication,"ax",@progbits
+	.align 1
+	.global	ComM_EcuM_WakeUpIndication
+	.type	ComM_EcuM_WakeUpIndication, @function
+ComM_EcuM_WakeUpIndication:
+.LFB131:
+	.file 1 "bsw\\ComM\\src\\ComM_EcuM_WakeupIndication.c"
+	.loc 1 41 0
+.LVL0:
+	.loc 1 56 0
+	movh.a	%a15, hi:ComM_GlobalStruct
+	ld.bu	%d15, [%a15] lo:ComM_GlobalStruct
+	jne	%d15, 1, .L6
+	.loc 1 64 0
+	jge.u	%d4, 4, .L7
+.LVL1:
+	.loc 1 89 0
+	movh.a	%a15, hi:ComM_ChannelStruct
+	mov.d	%d2, %a15
+	addi	%d15, %d2, lo:ComM_ChannelStruct
+	madd	%d2, %d15, %d4, 24
+	mov.a	%a15, %d2
+	ld.bu	%d15, [%a15] 12
+	jnz	%d15, .L1
+.LVL2:
+.LBB8:
+.LBB9:
+	.file 2 ".\\output\\inc/..\\..\\bsw\\Bfx\\api\\Bfx_Bit_Inl.h"
+	.loc 2 1131 0
+	ld.bu	%d15, [%a15] 14
+	or	%d15, %d15, 2
+	st.b	[%a15] 14, %d15
+.LVL3:
+.L1:
+	ret
+.LVL4:
+.L6:
+.LBE9:
+.LBE8:
+	.loc 1 60 0
+	mov	%e4, 12
+.LVL5:
+	mov	%d6, 42
+	mov	%d7, 1
+	j	Det_ReportError
+.LVL6:
+.L7:
+	.loc 1 68 0
+	mov	%e4, 12
+.LVL7:
+	mov	%d6, 42
+	mov	%d7, 2
+	j	Det_ReportError
+.LVL8:
+.LFE131:
+	.size	ComM_EcuM_WakeUpIndication, .-ComM_EcuM_WakeUpIndication
+.section .debug_frame,"",@progbits
+.Lframe0:
+	.uaword	.LECIE0-.LSCIE0
+.LSCIE0:
+	.uaword	0xffffffff
+	.byte	0x1
+	.string	""
+	.uleb128 0x1
+	.sleb128 1
+	.byte	0x1b
+	.byte	0xc
+	.uleb128 0x1a
+	.uleb128 0
+	.align 2
+.LECIE0:
+.LSFDE0:
+	.uaword	.LEFDE0-.LASFDE0
+.LASFDE0:
+	.uaword	.Lframe0
+	.uaword	.LFB131
+	.uaword	.LFE131-.LFB131
+	.align 2
+.LEFDE0:
+.section .text,"ax",@progbits
+.Letext0:
+	.file 3 ".\\output\\inc/..\\..\\bsw\\integration\\Platform_Types.h"
+	.file 4 ".\\output\\inc/..\\..\\bsw\\integration\\Std_Types.h"
+	.file 5 ".\\output\\inc/..\\..\\bsw\\ComStack\\api\\ComStack_Types.h"
+	.file 6 ".\\output\\inc/..\\..\\bsw\\ComM\\api\\ComM_Types.h"
+	.file 7 ".\\output\\inc/..\\..\\rte\\Rte_Type.h"
+	.file 8 "bsw\\ComM\\src\\ComM_Priv.h"
+	.file 9 ".\\output\\inc/..\\..\\bsw\\ComM\\integration\\ComM_Cfg_SchM.h"
+	.file 10 ".\\output\\inc/..\\..\\bsw\\Det\\api\\Det.h"
+.section .debug_info,"",@progbits
+.Ldebug_info0:
+	.uaword	0x8b2
+	.uahalf	0x2
+	.uaword	.Ldebug_abbrev0
+	.byte	0x4
+	.uleb128 0x1
+	.ascii	"GNU C 4.9.4 build on 2020-09-01 -mli"
+	.string	"cense-dir=s:\\hightec\\toolchains\\tricore\\v4.9.4.1\\bin\\../lib/gcc/tricore/4.9.4/../../../../licenses -mcpu=tc38xx -mpragma-data-sections -mtc162 -maligned-data-sections -gdwarf-2 -O3 -fno-builtin -fno-common -ffunction-sections -fdata-sections -fshort-double"
+	.byte	0x1
+	.string	"bsw\\ComM\\src\\ComM_EcuM_WakeupIndication.c"
+	.string	"D:\\\\1_OutProjest\\\\dongfeng\\\\90080-05101\\\\trunk\\\\BSW\\\\20Proj\\\\BSW\\\\TE5X\\\\src"
+	.uaword	.Ldebug_ranges0+0
+	.uaword	0
+	.uaword	0
+	.uaword	.Ldebug_line0
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x6
+	.string	"signed char"
+	.uleb128 0x3
+	.string	"uint8"
+	.byte	0x3
+	.byte	0x51
+	.uaword	0x1d4
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x8
+	.string	"unsigned char"
+	.uleb128 0x2
+	.byte	0x2
+	.byte	0x5
+	.string	"short int"
+	.uleb128 0x3
+	.string	"uint16"
+	.byte	0x3
+	.byte	0x5b
+	.uaword	0x200
+	.uleb128 0x2
+	.byte	0x2
+	.byte	0x7
+	.string	"short unsigned int"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x5
+	.string	"int"
+	.uleb128 0x2
+	.byte	0x8
+	.byte	0x5
+	.string	"long long int"
+	.uleb128 0x3
+	.string	"uint32"
+	.byte	0x3
+	.byte	0x6a
+	.uaword	0x23c
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x7
+	.string	"unsigned int"
+	.uleb128 0x2
+	.byte	0x8
+	.byte	0x7
+	.string	"long long unsigned int"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x4
+	.string	"float"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x4
+	.string	"double"
+	.uleb128 0x3
+	.string	"boolean"
+	.byte	0x3
+	.byte	0x80
+	.uaword	0x1d4
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x5
+	.string	"long int"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x7
+	.string	"long unsigned int"
+	.uleb128 0x3
+	.string	"Std_ReturnType"
+	.byte	0x4
+	.byte	0x60
+	.uaword	0x1c7
+	.uleb128 0x4
+	.byte	0x4
+	.uaword	0x1c7
+	.uleb128 0x3
+	.string	"NetworkHandleType"
+	.byte	0x5
+	.byte	0x4f
+	.uaword	0x1c7
+	.uleb128 0x5
+	.byte	0x1
+	.byte	0x6
+	.byte	0x4a
+	.uaword	0x301
+	.uleb128 0x6
+	.string	"COMM_UNINIT"
+	.sleb128 0
+	.uleb128 0x6
+	.string	"COMM_INIT"
+	.sleb128 1
+	.byte	0
+	.uleb128 0x3
+	.string	"ComM_InitStatusType"
+	.byte	0x6
+	.byte	0x4d
+	.uaword	0x2de
+	.uleb128 0x5
+	.byte	0x1
+	.byte	0x6
+	.byte	0x89
+	.uaword	0x3b4
+	.uleb128 0x6
+	.string	"COMM_NO_COM_NO_PENDING_REQUEST"
+	.sleb128 0
+	.uleb128 0x6
+	.string	"COMM_NO_COM_REQUEST_PENDING"
+	.sleb128 1
+	.uleb128 0x6
+	.string	"COMM_FULL_COM_NETWORK_REQUESTED"
+	.sleb128 2
+	.uleb128 0x6
+	.string	"COMM_FULL_COM_READY_SLEEP"
+	.sleb128 3
+	.uleb128 0x6
+	.string	"COMM_SILENT_COM"
+	.sleb128 4
+	.byte	0
+	.uleb128 0x3
+	.string	"ComM_StateType"
+	.byte	0x6
+	.byte	0x8f
+	.uaword	0x31c
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x7
+	.string	"sizetype"
+	.uleb128 0x3
+	.string	"ComM_InhibitionStatusType"
+	.byte	0x7
+	.byte	0xde
+	.uaword	0x1c7
+	.uleb128 0x3
+	.string	"ComM_ModeType"
+	.byte	0x7
+	.byte	0xe0
+	.uaword	0x1c7
+	.uleb128 0x3
+	.string	"ComM_DiagnosticType"
+	.byte	0x8
+	.byte	0xf3
+	.uaword	0x279
+	.uleb128 0x7
+	.byte	0x6
+	.byte	0x8
+	.uahalf	0x109
+	.uaword	0x4be
+	.uleb128 0x8
+	.string	"ComM_InitStatus_en"
+	.byte	0x8
+	.uahalf	0x10b
+	.uaword	0x301
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x8
+	.string	"ComM_InhibitCounter_u16"
+	.byte	0x8
+	.uahalf	0x10d
+	.uaword	0x1f2
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x2
+	.uleb128 0x8
+	.string	"ComM_EcuGroupClassification_u8"
+	.byte	0x8
+	.uahalf	0x10e
+	.uaword	0x3d6
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.uleb128 0x8
+	.string	"ComM_LimitECUToNoCom_b"
+	.byte	0x8
+	.uahalf	0x111
+	.uaword	0x279
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x5
+	.byte	0
+	.uleb128 0x9
+	.string	"ComM_GlobalVarType_tst"
+	.byte	0x8
+	.uahalf	0x113
+	.uaword	0x427
+	.uleb128 0x7
+	.byte	0x18
+	.byte	0x8
+	.uahalf	0x132
+	.uaword	0x6d6
+	.uleb128 0x8
+	.string	"ChannelState_e"
+	.byte	0x8
+	.uahalf	0x134
+	.uaword	0x3b4
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x8
+	.string	"LightTimeoutCtr_u32"
+	.byte	0x8
+	.uahalf	0x135
+	.uaword	0x22e
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.uleb128 0x8
+	.string	"MinFullComTimeoutCtr_u16"
+	.byte	0x8
+	.uahalf	0x136
+	.uaword	0x1f2
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x8
+	.uleb128 0x8
+	.string	"UserRequestCtr_u16"
+	.byte	0x8
+	.uahalf	0x137
+	.uaword	0x1f2
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xa
+	.uleb128 0x8
+	.string	"ChannelMode_u8"
+	.byte	0x8
+	.uahalf	0x138
+	.uaword	0x3f7
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xc
+	.uleb128 0x8
+	.string	"BusSmMode_u8"
+	.byte	0x8
+	.uahalf	0x139
+	.uaword	0x3f7
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xd
+	.uleb128 0x8
+	.string	"PassiveRequestState_u8"
+	.byte	0x8
+	.uahalf	0x13d
+	.uaword	0x1c7
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xe
+	.uleb128 0x8
+	.string	"PncRequestCtr_u8"
+	.byte	0x8
+	.uahalf	0x13e
+	.uaword	0x1c7
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0xf
+	.uleb128 0x8
+	.string	"InhibitionReqStatus_u8"
+	.byte	0x8
+	.uahalf	0x13f
+	.uaword	0x3d6
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x10
+	.uleb128 0x8
+	.string	"NmNetworkRequestStatus_b"
+	.byte	0x8
+	.uahalf	0x140
+	.uaword	0x279
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x11
+	.uleb128 0x8
+	.string	"DiagnosticRequestState_b"
+	.byte	0x8
+	.uahalf	0x141
+	.uaword	0x40c
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x12
+	.uleb128 0x8
+	.string	"CommunicationAllowed_b"
+	.byte	0x8
+	.uahalf	0x142
+	.uaword	0x279
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x13
+	.uleb128 0x8
+	.string	"NmBusSleepIndicationStatus_b"
+	.byte	0x8
+	.uahalf	0x143
+	.uaword	0x279
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x14
+	.uleb128 0x8
+	.string	"NmPrepareBusSleepIndicationStatus_b"
+	.byte	0x8
+	.uahalf	0x144
+	.uaword	0x279
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x15
+	.uleb128 0x8
+	.string	"NmNetworkModeStatus_b"
+	.byte	0x8
+	.uahalf	0x145
+	.uaword	0x279
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x16
+	.byte	0
+	.uleb128 0x9
+	.string	"ComM_ChannelVarType_tst"
+	.byte	0x8
+	.uahalf	0x149
+	.uaword	0x4dd
+	.uleb128 0xa
+	.string	"SchM_Enter_ComM_ChannelNoNest"
+	.byte	0x9
+	.byte	0x9a
+	.byte	0x1
+	.byte	0x3
+	.uleb128 0xb
+	.string	"Bfx_Prv_SetBit_u8u8_Inl"
+	.byte	0x2
+	.uahalf	0x469
+	.byte	0x1
+	.byte	0x3
+	.uaword	0x757
+	.uleb128 0xc
+	.string	"Data"
+	.byte	0x2
+	.uahalf	0x469
+	.uaword	0x2bf
+	.uleb128 0xc
+	.string	"BitPn"
+	.byte	0x2
+	.uahalf	0x469
+	.uaword	0x1c7
+	.byte	0
+	.uleb128 0xa
+	.string	"SchM_Exit_ComM_ChannelNoNest"
+	.byte	0x9
+	.byte	0xaa
+	.byte	0x1
+	.byte	0x3
+	.uleb128 0xd
+	.byte	0x1
+	.string	"ComM_EcuM_WakeUpIndication"
+	.byte	0x1
+	.byte	0x28
+	.byte	0x1
+	.uaword	.LFB131
+	.uaword	.LFE131
+	.byte	0x2
+	.byte	0x8a
+	.sleb128 0
+	.byte	0x1
+	.uaword	0x83c
+	.uleb128 0xe
+	.string	"Channel"
+	.byte	0x1
+	.byte	0x28
+	.uaword	0x2c5
+	.uaword	.LLST0
+	.uleb128 0xf
+	.string	"channelRamPtr_pst"
+	.byte	0x1
+	.byte	0x2d
+	.uaword	0x83c
+	.uleb128 0x10
+	.uaword	0x719
+	.uaword	.LBB8
+	.uaword	.LBE8
+	.byte	0x1
+	.byte	0x6d
+	.uaword	0x7f7
+	.uleb128 0x11
+	.uaword	0x748
+	.uaword	.LLST1
+	.uleb128 0x12
+	.uaword	0x73b
+	.byte	0
+	.uleb128 0x13
+	.uaword	.LVL6
+	.byte	0x1
+	.uaword	0x886
+	.uaword	0x81b
+	.uleb128 0x14
+	.byte	0x1
+	.byte	0x57
+	.byte	0x1
+	.byte	0x31
+	.uleb128 0x14
+	.byte	0x1
+	.byte	0x56
+	.byte	0x2
+	.byte	0x8
+	.byte	0x2a
+	.uleb128 0x14
+	.byte	0x1
+	.byte	0x55
+	.byte	0x1
+	.byte	0x30
+	.uleb128 0x14
+	.byte	0x1
+	.byte	0x54
+	.byte	0x1
+	.byte	0x3c
+	.byte	0
+	.uleb128 0x15
+	.uaword	.LVL8
+	.byte	0x1
+	.uaword	0x886
+	.uleb128 0x14
+	.byte	0x1
+	.byte	0x57
+	.byte	0x1
+	.byte	0x32
+	.uleb128 0x14
+	.byte	0x1
+	.byte	0x56
+	.byte	0x2
+	.byte	0x8
+	.byte	0x2a
+	.uleb128 0x14
+	.byte	0x1
+	.byte	0x55
+	.byte	0x1
+	.byte	0x30
+	.uleb128 0x14
+	.byte	0x1
+	.byte	0x54
+	.byte	0x1
+	.byte	0x3c
+	.byte	0
+	.byte	0
+	.uleb128 0x4
+	.byte	0x4
+	.uaword	0x6d6
+	.uleb128 0x16
+	.string	"ComM_GlobalStruct"
+	.byte	0x8
+	.uahalf	0x1d2
+	.uaword	0x4be
+	.byte	0x1
+	.byte	0x1
+	.uleb128 0x17
+	.uaword	0x6d6
+	.uaword	0x869
+	.uleb128 0x18
+	.byte	0
+	.uleb128 0x16
+	.string	"ComM_ChannelStruct"
+	.byte	0x8
+	.uahalf	0x1d5
+	.uaword	0x85e
+	.byte	0x1
+	.byte	0x1
+	.uleb128 0x19
+	.byte	0x1
+	.string	"Det_ReportError"
+	.byte	0xa
+	.byte	0x70
+	.byte	0x1
+	.uaword	0x2a9
+	.byte	0x1
+	.uleb128 0x1a
+	.uaword	0x1f2
+	.uleb128 0x1a
+	.uaword	0x1c7
+	.uleb128 0x1a
+	.uaword	0x1c7
+	.uleb128 0x1a
+	.uaword	0x1c7
+	.byte	0
+	.byte	0
+.section .debug_abbrev,"",@progbits
+.Ldebug_abbrev0:
+	.uleb128 0x1
+	.uleb128 0x11
+	.byte	0x1
+	.uleb128 0x25
+	.uleb128 0x8
+	.uleb128 0x13
+	.uleb128 0xb
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x1b
+	.uleb128 0x8
+	.uleb128 0x55
+	.uleb128 0x6
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x52
+	.uleb128 0x1
+	.uleb128 0x10
+	.uleb128 0x6
+	.byte	0
+	.byte	0
+	.uleb128 0x2
+	.uleb128 0x24
+	.byte	0
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3e
+	.uleb128 0xb
+	.uleb128 0x3
+	.uleb128 0x8
+	.byte	0
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x16
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x4
+	.uleb128 0xf
+	.byte	0
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x5
+	.uleb128 0x4
+	.byte	0x1
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x6
+	.uleb128 0x28
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x1c
+	.uleb128 0xd
+	.byte	0
+	.byte	0
+	.uleb128 0x7
+	.uleb128 0x13
+	.byte	0x1
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x8
+	.uleb128 0xd
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x38
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0x9
+	.uleb128 0x16
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0xa
+	.uleb128 0x2e
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x20
+	.uleb128 0xb
+	.byte	0
+	.byte	0
+	.uleb128 0xb
+	.uleb128 0x2e
+	.byte	0x1
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x20
+	.uleb128 0xb
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0xc
+	.uleb128 0x5
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0xd
+	.uleb128 0x2e
+	.byte	0x1
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x12
+	.uleb128 0x1
+	.uleb128 0x40
+	.uleb128 0xa
+	.uleb128 0x2117
+	.uleb128 0xc
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0xe
+	.uleb128 0x5
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0x6
+	.byte	0
+	.byte	0
+	.uleb128 0xf
+	.uleb128 0x34
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x10
+	.uleb128 0x1d
+	.byte	0x1
+	.uleb128 0x31
+	.uleb128 0x13
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x12
+	.uleb128 0x1
+	.uleb128 0x58
+	.uleb128 0xb
+	.uleb128 0x59
+	.uleb128 0xb
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x11
+	.uleb128 0x5
+	.byte	0
+	.uleb128 0x31
+	.uleb128 0x13
+	.uleb128 0x2
+	.uleb128 0x6
+	.byte	0
+	.byte	0
+	.uleb128 0x12
+	.uleb128 0x5
+	.byte	0
+	.uleb128 0x31
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x13
+	.uleb128 0x4109
+	.byte	0x1
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x2115
+	.uleb128 0xc
+	.uleb128 0x31
+	.uleb128 0x13
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x14
+	.uleb128 0x410a
+	.byte	0
+	.uleb128 0x2
+	.uleb128 0xa
+	.uleb128 0x2111
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0x15
+	.uleb128 0x4109
+	.byte	0x1
+	.uleb128 0x11
+	.uleb128 0x1
+	.uleb128 0x2115
+	.uleb128 0xc
+	.uleb128 0x31
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x16
+	.uleb128 0x34
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0x5
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x3c
+	.uleb128 0xc
+	.byte	0
+	.byte	0
+	.uleb128 0x17
+	.uleb128 0x1
+	.byte	0x1
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x18
+	.uleb128 0x21
+	.byte	0
+	.byte	0
+	.byte	0
+	.uleb128 0x19
+	.uleb128 0x2e
+	.byte	0x1
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x27
+	.uleb128 0xc
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x3c
+	.uleb128 0xc
+	.byte	0
+	.byte	0
+	.uleb128 0x1a
+	.uleb128 0x5
+	.byte	0
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.byte	0
+.section .debug_loc,"",@progbits
+.Ldebug_loc0:
+.LLST0:
+	.uaword	.LVL0
+	.uaword	.LVL5
+	.uahalf	0x1
+	.byte	0x54
+	.uaword	.LVL5
+	.uaword	.LVL6
+	.uahalf	0x4
+	.byte	0xf3
+	.uleb128 0x1
+	.byte	0x54
+	.byte	0x9f
+	.uaword	.LVL6
+	.uaword	.LVL7
+	.uahalf	0x1
+	.byte	0x54
+	.uaword	.LVL7
+	.uaword	.LFE131
+	.uahalf	0x4
+	.byte	0xf3
+	.uleb128 0x1
+	.byte	0x54
+	.byte	0x9f
+	.uaword	0
+	.uaword	0
+.LLST1:
+	.uaword	.LVL2
+	.uaword	.LVL3
+	.uahalf	0x2
+	.byte	0x31
+	.byte	0x9f
+	.uaword	0
+	.uaword	0
+.section .debug_aranges,"",@progbits
+	.uaword	0x1c
+	.uahalf	0x2
+	.uaword	.Ldebug_info0
+	.byte	0x4
+	.byte	0
+	.uahalf	0
+	.uahalf	0
+	.uaword	.LFB131
+	.uaword	.LFE131-.LFB131
+	.uaword	0
+	.uaword	0
+.section .debug_ranges,"",@progbits
+.Ldebug_ranges0:
+	.uaword	.LFB131
+	.uaword	.LFE131
+	.uaword	0
+	.uaword	0
+.section .debug_line,"",@progbits
+.Ldebug_line0:
+.section .debug_str,"",@progbits
+	.extern	Det_ReportError,STT_FUNC,0
+	.extern	ComM_ChannelStruct,STT_OBJECT,-1
+	.extern	ComM_GlobalStruct,STT_OBJECT,6
+	.ident	"GCC: (HighTec Release HDP-v4.9.4.1-11fcedf) 4.9.4 build on 2020-09-01"

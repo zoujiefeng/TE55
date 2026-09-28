@@ -1,0 +1,26 @@
+RECUPVER v6.0 1.6 55E49D64	(null)
+INITIAL
+Format: HEXA
+MAIN_SampleSequenceEnC              :34_96_01#1C              :1802071900:MAIN_SampleSequenceEnC               :TestPro         :1:1:0:1:2:00
+CCU6_bHwPinAscEnaC                  :34_96_01#1C              :1205211627:CCU6_bHwPinAscEnaC                   :TestPro         :2:0:0:1:2:00
+CCU6_bHwOvcFltDetEnaC               :34_96_01#1C              :1205211627:CCU6_bHwOvcFltDetEnaC                :TestPro         :2:0:0:1:2:01
+RES_u16ExcitDelayC                  :34_9A_01#19              :1606071443:RES_u16ExcitDelayC                   :TestPro         :1:0.1:0:2:2:0244
+FAIL_bCanErrCheckonC                :ECU REVISION             :1205211627:FAIL_bCanErrCheckonC                 :TestPro         :2:0:0:1:2:00
+FTCMTTC_PreTorqueTimeC              :ECU REVISION             :2009171548:FTCMTTC_PreTorqueTimeC               :TestPro         :1:1:0:4:2:0064
+FSTCGTC_jC                          :ECU REVISION             :2009171548:FSTCGTC_jC                           :TestPro         :1:1:0:4:2:3D75C28F
+FSTCGTC_fC                          :ECU REVISION             :2009171548:FSTCGTC_fC                           :TestPro         :1:1:0:4:2:3E3851EC
+FTCMTTC_PreTorqueEnableC            :ECU REVISION             :2009171548:FTCMTTC_PreTorqueEnableC             :TestPro         :2:0:0:1:2:00
+FSTCGTC_BrakeCheckCntThrdC          :34_96_01#1C              :1908231643:FSTCGTC_BrakeCheckCntThrdC           :TestPro         :1:1:0:4:2:012C
+FSTCGTC_HacEnSpeedThrdC             :34_96_01#1C              :1908231643:FSTCGTC_HacEnSpeedThrdC              :TestPro         :1:1:0:4:2:41A00000
+FSTCGTC_HacTimeDelayCntThrdC        :34_96_01#1C              :1908231643:FSTCGTC_HacTimeDelayCntThrdC         :TestPro         :1:1:0:4:2:0258
+RES_u16SyncDelayC                   :34_96_01#1C      	      :2412172043:RES_u16SyncDelayC                    :TestPro         :1:0.1:0:2:2:01A4
+RES_u16SyncDelay2C                  :34_96_01#1C      	      :2412172043:RES_u16SyncDelay2C                   :TestPro         :1:0.1:0:2:2:0244
+SDMTMEP_ResolverParamStoreEnC       :34_96_01#1C              :1205211627:SDMTMEP_ResolverParamStoreEnC        :TestPro         :2:0:0:1:2:01
+BSW_ku16MotorVariantC               :34_96_01#1C              :2412251027:BSW_ku16MotorVariantC                :TestPro         :1:0.04:1:2:2:0030
+GCCU6_bHwPinAscEnaC                 :34_96_01#1C              :1205211627:GCCU6_bHwPinAscEnaC                  :TestPro         :2:0:0:1:2:00
+FTCMTTC_DampingEnableC              :34_96_01#1C              :2412302107:FTCMTTC_DampingEnableC               :TestPro         :2:0:0:1:2:00
+FTCMTTC_PowerLimtEnableC            :34_96_01#1C              :2412302107:FTCMTTC_PowerLimtEnableC             :TestPro         :2:0:0:1:2:00
+FTCMTTC_TorqCorEnableC              :34_96_01#1C              :2412302107:FTCMTTC_TorqCorEnableC               :TestPro         :2:0:0:1:2:00
+FSTCGTC_CanTrqTgtRelatedGearEnC     :34_96_01#1C              :2412302107:FSTCGTC_CanTrqTgtRelatedGearEnC      :TestPro         :2:0:0:1:2:00
+FSTCGTC_MotorDirRevEnableC          :34_96_01#1C              :2412302107:FSTCGTC_MotorDirRevEnableC           :TestPro         :2:0:0:1:2:00
+FTCMTTC_DampingEnableC              :34_96_01#1C              :2412302107:FTCMTTC_DampingEnableC               :TestPro         :2:0:0:1:2:00

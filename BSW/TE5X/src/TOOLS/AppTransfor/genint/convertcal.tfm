@@ -1,0 +1,10 @@
+# ConvertCal
+# Create XXX.int with XXX_epmty.int and XXX.elf or XXX.h86 or ...
+# 
+# Revision history
+# V1.00 : adaptation pour TC264.
+#
+
+open /file_name=%SrcHex%.hex /buf_dest=1
+
+save /buf_src:1 /file_name:%DestInt%.int /format:h86

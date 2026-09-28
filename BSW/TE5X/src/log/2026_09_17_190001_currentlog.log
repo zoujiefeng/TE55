@@ -1,0 +1,256 @@
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./bsw done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./bswcdd done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./main done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./rte done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./os done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./asw done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./Targets done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./Integration done
+scons: done reading SConscript files.
+scons: Building targets ...
+Compiling bswcdd\BSW\bswsrv.c
+bswcdd\BSW\bswsrv.c: In function 'BSW_vidInit':
+bswcdd\BSW\bswsrv.c:417:4: warning: implicit declaration of function 'J1939_vidDM1_Periodic_Send_Ctr_Func' [-Wimplicit-function-declaration]
+    J1939_vidDM1_Periodic_Send_Ctr_Func( _MAIN_J1939_DM1_NOERR_TX_SW_ ) ;
+    ^
+bswcdd\BSW\bswsrv.c:417:4: warning: nested extern declaration of 'J1939_vidDM1_Periodic_Send_Ctr_Func' [-Wnested-externs]
+bswcdd\BSW\bswsrv.c: In function 'BSW_vidCORE0_1ms_Head_Func':
+bswcdd\BSW\bswsrv.c:602:4: warning: implicit declaration of function 'Stp_vidCore0Runable1ms' [-Wimplicit-function-declaration]
+    Stp_vidCore0Runable1ms();
+    ^
+bswcdd\BSW\bswsrv.c:602:4: warning: nested extern declaration of 'Stp_vidCore0Runable1ms' [-Wnested-externs]
+bswcdd\BSW\bswsrv.c:603:4: warning: implicit declaration of function 'Icu_vidGetDutyCycle' [-Wimplicit-function-declaration]
+    Icu_vidGetDutyCycle();
+    ^
+bswcdd\BSW\bswsrv.c:603:4: warning: nested extern declaration of 'Icu_vidGetDutyCycle' [-Wnested-externs]
+bswcdd\BSW\bswsrv.c:604:4: warning: implicit declaration of function 'ComHal_vidMsgMainfunction' [-Wimplicit-function-declaration]
+    ComHal_vidMsgMainfunction();
+    ^
+bswcdd\BSW\bswsrv.c:604:4: warning: nested extern declaration of 'ComHal_vidMsgMainfunction' [-Wnested-externs]
+bswcdd\BSW\bswsrv.c:609:7: warning: implicit declaration of function 'HARD_vidIoTestIO' [-Wimplicit-function-declaration]
+       HARD_vidIoTestIO();
+       ^
+bswcdd\BSW\bswsrv.c:609:7: warning: nested extern declaration of 'HARD_vidIoTestIO' [-Wnested-externs]
+bswcdd\BSW\bswsrv.c: In function 'BSW_vidCORE0_10ms_Head_Func':
+bswcdd\BSW\bswsrv.c:640:4: warning: implicit declaration of function 'VADC_vidMainFunction' [-Wimplicit-function-declaration]
+    VADC_vidMainFunction();
+    ^
+bswcdd\BSW\bswsrv.c:640:4: warning: nested extern declaration of 'VADC_vidMainFunction' [-Wnested-externs]
+bswcdd\BSW\bswsrv.c:646:7: warning: implicit declaration of function 'HARD_vidModManager' [-Wimplicit-function-declaration]
+       HARD_vidModManager();
+       ^
+bswcdd\BSW\bswsrv.c:646:7: warning: nested extern declaration of 'HARD_vidModManager' [-Wnested-externs]
+bswcdd\BSW\bswsrv.c: In function 'BSW_vidCORE0_100ms_Func':
+bswcdd\BSW\bswsrv.c:674:4: warning: implicit declaration of function 'CCPUSR_vidMainFunction' [-Wimplicit-function-declaration]
+    CCPUSR_vidMainFunction();
+    ^
+bswcdd\BSW\bswsrv.c:674:4: warning: nested extern declaration of 'CCPUSR_vidMainFunction' [-Wnested-externs]
+bswcdd\BSW\bswsrv.c: In function 'BSW_vidCORE1_1ms_Func':
+bswcdd\BSW\bswsrv.c:688:4: warning: implicit declaration of function 'Stp_vidCore1Runable1ms' [-Wimplicit-function-declaration]
+    Stp_vidCore1Runable1ms();
+    ^
+bswcdd\BSW\bswsrv.c:688:4: warning: nested extern declaration of 'Stp_vidCore1Runable1ms' [-Wnested-externs]
+
+Compiling bswcdd\UDS\UDS_DidDataUpdate.c
+Compiling bswcdd\UDS\UDS_Wdbi.c
+
+bswcdd\UDS\UDS_DidDataUpdate.c:31:6: warning: no previous prototype for 'UDS_vidUpdateDidData_0xF197' [-Wmissing-prototypes]
+ void UDS_vidUpdateDidData_0xF197(const uint8 * pku8Data)
+      ^
+bswcdd\UDS\UDS_DidDataUpdate.c:41:6: warning: no previous prototype for 'UDS_vidUpdateDidData_0xF188' [-Wmissing-prototypes]
+ void UDS_vidUpdateDidData_0xF188(const uint8 * pku8Data)
+      ^
+bswcdd\UDS\UDS_DidDataUpdate.c:46:6: warning: no previous prototype for 'UDS_vidUpdateDidData_0xF191' [-Wmissing-prototypes]
+ void UDS_vidUpdateDidData_0xF191(const uint8 * pku8Data)
+      ^
+bswcdd\UDS\UDS_DidDataUpdate.c:56:6: warning: no previous prototype for 'UDS_vidUpdateDidData_0xF189' [-Wmissing-prototypes]
+ void UDS_vidUpdateDidData_0xF189(const uint8 * pku8Data)
+      ^
+bswcdd\UDS\UDS_DidDataUpdate.c:61:6: warning: no previous prototype for 'UDS_vidUpdateDidData_0xF190' [-Wmissing-prototypes]
+ void UDS_vidUpdateDidData_0xF190(const uint8 * pku8Data)
+      ^
+bswcdd\UDS\UDS_DidDataUpdate.c:66:6: warning: no previous prototype for 'UDS_vidUpdateDidData_0xB303' [-Wmissing-prototypes]
+ void UDS_vidUpdateDidData_0xB303(const uint8 * pku8Data)
+      ^
+bswcdd\UDS\UDS_DidDataUpdate.c:71:6: warning: no previous prototype for 'UDS_vidUpdateDidData_0xF18C' [-Wmissing-prototypes]
+ void UDS_vidUpdateDidData_0xF18C(const uint8 * pku8Data)
+      ^
+bswcdd\UDS\UDS_DidDataUpdate.c:106:6: warning: no previous prototype for 'UDS_vidUpdateDidData_0x0B20' [-Wmissing-prototypes]
+ void UDS_vidUpdateDidData_0x0B20(const CDD_uCTablePtr kxSrcVal, const UDS_eSrcDataType eDataType)
+      ^
+bswcdd\UDS\UDS_DidDataUpdate.c:111:6: warning: no previous prototype for 'UDS_vidUpdateDidData_0x0B21' [-Wmissing-prototypes]
+ void UDS_vidUpdateDidData_0x0B21(const CDD_uCTablePtr kxSrcVal, const UDS_eSrcDataType eDataType)
+      ^
+bswcdd\UDS\UDS_DidDataUpdate.c:116:6: warning: no previous prototype for 'UDS_vidUpdateDidData_0x0B22' [-Wmissing-prototypes]
+ void UDS_vidUpdateDidData_0x0B22(const CDD_uCTablePtr kxSrcVal, const UDS_eSrcDataType eDataType)
+      ^
+bswcdd\UDS\UDS_DidDataUpdate.c:121:6: warning: no previous prototype for 'UDS_vidUpdateDidData_0x0B23' [-Wmissing-prototypes]
+ void UDS_vidUpdateDidData_0x0B23(const CDD_uCTablePtr kxSrcVal, const UDS_eSrcDataType eDataType)
+      ^
+
+Compiling rte\Rte.c
+Compiling ASW\ASW_DCM\src\ASW_DCM.c
+Compiling ASW\ASW_DCM\src\Dcm_ExternalServiceProcessing.c
+Compiling ASW\ASW_DCM\src\Dcm_FailureAttemptCnt.c
+Compiling ASW\ASW_DCM\src\Diag_SeedKey.c
+Compiling ASW\ASW_NVM\src\ASW_NVM.c
+rte\Rte.c: In function 'Rte_Write_ASW_CORE0_PPort_TransmitData2Core1_Data_ptr':
+rte\Rte.c:1143:34: warning: cast discards 'const' qualifier from pointer target type [-Wcast-qual]
+    (void)IocWrite_Rte_Rx_000000(((P2CONST(Array100ByteDataElement, AUTOMATIC, RTE_APPL_DATA))data));
+                                  ^
+rte\Rte.c: In function 'Rte_Write_ASW_CORE1_PPort_TransmitData2Core0_Data_ptr':
+rte\Rte.c:1206:34: warning: cast discards 'const' qualifier from pointer target type [-Wcast-qual]
+    (void)IocWrite_Rte_Rx_000001(((P2CONST(Array100ByteDataElement, AUTOMATIC, RTE_APPL_DATA))data));
+                                  ^
+
+
+ASW\ASW_DCM\src\Dcm_FailureAttemptCnt.c:12:16: warning: no previous prototype for 'Dcm_GetAttemptCounter_L1' [-Wmissing-prototypes]
+ Std_ReturnType Dcm_GetAttemptCounter_L1( Dcm_OpStatusType OpStatus,uint8 * AttemptCounter)
+                ^
+ASW\ASW_DCM\src\Dcm_FailureAttemptCnt.c:23:16: warning: no previous prototype for 'Dcm_SetAttemptCounter_L1' [-Wmissing-prototypes]
+ {
+                ^
+
+ASW\ASW_DCM\src\Diag_SeedKey.c: In function 'CompareKey_L1':
+ASW\ASW_DCM\src\Diag_SeedKey.c:120:17: warning: variable 'retValue' set but not used [-Wunused-but-set-variable]
+  Std_ReturnType retValue = RTE_E_OK;
+                 ^
+
+
+ASW\ASW_DCM\src\ASW_DCM.c:96:9: warning: no previous prototype for 'DCM_GetComControlState' [-Wmissing-prototypes]
+ boolean DCM_GetComControlState(void)
+         ^
+
+Compiling ASW\Dem_User\Dem_User.c
+Compiling main\GcuMain\GMAIN_tsk.c
+Compiling main\McuMain\MAIN_tsk.c
+
+Compiling main\_MainModule\CalibData\MAIN_CalibData.c
+Compiling main\_MainModule\FFUpdate\MAIN_FFUpdate.c
+Compiling main\_MainModule\ReadAllCallback\MAIN_ReadAllCallback.c
+Compiling main\_MainModule\RunTime\MAIN_RunTime.c
+main\GcuMain\GMAIN_tsk.c: In function 'GMAIN_CORE2_10ms_func':
+main\GcuMain\GMAIN_tsk.c:345:12: warning: unused variable 'bLocAscOngoing' [-Wunused-variable]
+    boolean bLocAscOngoing = FALSE;
+            ^
+main\GcuMain\GMAIN_tsk.c: At top level:
+main\GcuMain\GMAIN_tsk.c:587:6: warning: no previous prototype for 'GMAIN_CORE1_10ms_func' [-Wmissing-prototypes]
+ FUNC(void, ASW_CORE1_CODE) GMAIN_CORE1_10ms_func(void)
+      ^
+main\GcuMain\GMAIN_tsk.c: In function 'GMAIN_vidVSITreatment':
+main\GcuMain\GMAIN_tsk.c:610:12: warning: unused variable 'bLocPwmOnFlg' [-Wunused-variable]
+    boolean bLocPwmOnFlg = FALSE;
+            ^
+main\GcuMain\GMAIN_tsk.c:609:12: warning: unused variable 'bLocIgbtHigFltLev' [-Wunused-variable]
+    boolean bLocIgbtHigFltLev = FALSE;
+            ^
+main\GcuMain\GMAIN_tsk.c:608:12: warning: unused variable 'bLocIgbtLowFltLev' [-Wunused-variable]
+    boolean bLocIgbtLowFltLev = FALSE;
+            ^
+main\GcuMain\GMAIN_tsk.c:607:12: warning: unused variable 'f32LocMecaSpeedRpm' [-Wunused-variable]
+    float32 f32LocMecaSpeedRpm = 0;
+            ^
+main\GcuMain\GMAIN_tsk.c: In function 'GMAIN_vidPositionTreatment':
+main\GcuMain\GMAIN_tsk.c:842:11: warning: variable 'u32LocCore0TimStamp' set but not used [-Wunused-but-set-variable]
+    uint32 u32LocCore0TimStamp;
+           ^
+main\GcuMain\GMAIN_tsk.c: In function 'GMAIN_bSetSaforiAutophsAngC':
+main\GcuMain\GMAIN_tsk.c:1111:11: warning: unused variable 'pf32LocValueAddr' [-Wunused-variable]
+    float* pf32LocValueAddr;
+           ^
+main\GcuMain\GMAIN_tsk.c: At top level:
+main\GcuMain\GMAIN_tsk.c:115:13: warning: 'GMAIN_vidAscRecvCond' declared 'static' but never defined [-Wunused-function]
+ static void GMAIN_vidAscRecvCond(void);
+             ^
+
+main\McuMain\MAIN_tsk.c: In function 'MAIN_TaskInit':
+main\McuMain\MAIN_tsk.c:200:4: warning: implicit declaration of function 'MAIN_PduTaskInit' [-Wimplicit-function-declaration]
+    MAIN_PduTaskInit();
+    ^
+main\McuMain\MAIN_tsk.c:200:4: warning: nested extern declaration of 'MAIN_PduTaskInit' [-Wnested-externs]
+main\McuMain\MAIN_tsk.c: In function 'MAIN_CORE0_1ms_func':
+main\McuMain\MAIN_tsk.c:368:10: warning: implicit declaration of function 'ASWNM_bGetStayAwakeReq' [-Wimplicit-function-declaration]
+          ESMSRV_vidSetCmdReq(ESM_CMD_SW_SHUTDOWN,        (FALSE == ASWNM_bGetStayAwakeReq()));
+          ^
+main\McuMain\MAIN_tsk.c:368:10: warning: nested extern declaration of 'ASWNM_bGetStayAwakeReq' [-Wnested-externs]
+main\McuMain\MAIN_tsk.c: In function 'MAIN_CORE0_200ms_func':
+main\McuMain\MAIN_tsk.c:675:4: warning: implicit declaration of function 'MAIN_vidPduTask200ms' [-Wimplicit-function-declaration]
+    MAIN_vidPduTask200ms();
+    ^
+main\McuMain\MAIN_tsk.c:675:4: warning: nested extern declaration of 'MAIN_vidPduTask200ms' [-Wnested-externs]
+main\McuMain\MAIN_tsk.c: In function 'MAIN_vidVSITreatment':
+main\McuMain\MAIN_tsk.c:747:12: warning: unused variable 'bLocPwmOnFlg' [-Wunused-variable]
+    boolean bLocPwmOnFlg = FALSE;
+            ^
+main\McuMain\MAIN_tsk.c:746:12: warning: unused variable 'bLocIgbtHigFltLev' [-Wunused-variable]
+    boolean bLocIgbtHigFltLev = FALSE;
+            ^
+main\McuMain\MAIN_tsk.c:745:12: warning: unused variable 'bLocIgbtLowFltLev' [-Wunused-variable]
+    boolean bLocIgbtLowFltLev = FALSE;
+            ^
+main\McuMain\MAIN_tsk.c:744:12: warning: unused variable 'f32LocMecaSpeedRpm' [-Wunused-variable]
+    float32 f32LocMecaSpeedRpm = 0;
+            ^
+main\McuMain\MAIN_tsk.c: In function 'MAIN_bSetSaforiAutophsAngC':
+main\McuMain\MAIN_tsk.c:1245:11: warning: unused variable 'pf32LocValueAddr' [-Wunused-variable]
+    float* pf32LocValueAddr;
+           ^
+main\McuMain\MAIN_tsk.c: At top level:
+main\McuMain\MAIN_tsk.c:1515:6: warning: no previous prototype for 'MAIN_vidGetMsgOffDelayT_ms' [-Wmissing-prototypes]
+ void MAIN_vidGetMsgOffDelayT_ms(uint16 * u16DelayMs)
+      ^
+main\McuMain\MAIN_tsk.c: In function 'MAIN_vidCalibVer2String':
+main\McuMain\MAIN_tsk.c:1617:4: warning: implicit declaration of function 'Crc_CalculateCRC32' [-Wimplicit-function-declaration]
+    OBD_u32CalVerifyNum = Crc_CalculateCRC32(&MAIN_SotwareIdentifcation[0], sizeof(MAIN_SotwareIdentifcation), 0xFFFFFFFF, TRUE);
+    ^
+main\McuMain\MAIN_tsk.c:1617:4: warning: nested extern declaration of 'Crc_CalculateCRC32' [-Wnested-externs]
+main\McuMain\MAIN_tsk.c: In function 'RESBSL_CheckCalibChange_func':
+main\McuMain\MAIN_tsk.c:1673:4: warning: implicit declaration of function 'RESBSL_vidCheckCalibChange' [-Wimplicit-function-declaration]
+    RESBSL_vidCheckCalibChange();
+    ^
+main\McuMain\MAIN_tsk.c:1673:4: warning: nested extern declaration of 'RESBSL_vidCheckCalibChange' [-Wnested-externs]
+main\McuMain\MAIN_tsk.c: At top level:
+main\McuMain\MAIN_tsk.c:134:13: warning: 'MAIN_vidAscRecvCond' declared 'static' but never defined [-Wunused-function]
+ static void MAIN_vidAscRecvCond(void);
+             ^
+
+
+main\_MainModule\CalibData\MAIN_CalibData.c: In function 'MAIN_CAL_vidCheckAllCalibData':
+main\_MainModule\CalibData\MAIN_CalibData.c:148:10: warning: unused variable 'u8EcuIndex' [-Wunused-variable]
+    uint8  u8EcuIndex;
+          ^
+
+
+main\_MainModule\ReadAllCallback\MAIN_ReadAllCallback.c: In function 'MAIN_vidReadAllCallback':
+main\_MainModule\ReadAllCallback\MAIN_ReadAllCallback.c:79:4: warning: implicit declaration of function 'BSW_vidReadAllCallback' [-Wimplicit-function-declaration]
+    BSW_vidReadAllCallback();
+    ^
+main\_MainModule\ReadAllCallback\MAIN_ReadAllCallback.c:79:4: warning: nested extern declaration of 'BSW_vidReadAllCallback' [-Wnested-externs]
+
+Linking output\dbg\P_TC387_PLATFORM_0_0.elf...
+output\objs\bsw\Dcm\Dcm_Lcfg_DspUds.o:(.rodata.a4.Dcm_DspDid_ControlInfo_st+0x68): error: undefined reference to `DataServices_RW_F1B7_WriteData'
+output\objs\bsw\Dcm\Dcm_Lcfg_DspUds.o:(.rodata.a4.Dcm_DspDid_ControlInfo_st+0x80): error: undefined reference to `DataServices_RW_F18C_WriteData'
+output\objs\bsw\Dcm\Dcm_Lcfg_DspUds.o:(.rodata.a4.Dcm_DspDid_ControlInfo_st+0x98): error: undefined reference to `DataServices_RW_F190_WriteData'
+collect2.exe: error: ld returned 1 exit status
+
+=====
+None
+=====
+scons: *** [output\dbg\P_TC387_PLATFORM_0_0.elf] Error 1
+scons: building terminated because of errors.

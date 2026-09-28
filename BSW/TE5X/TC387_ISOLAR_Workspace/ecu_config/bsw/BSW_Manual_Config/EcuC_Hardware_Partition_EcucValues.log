@@ -1,0 +1,23 @@
+Start at 6/26/2024 1:26:57 PM
+RTA-OS Code Generator 
+Version 6.2.0.32429, Copyright © ETAS 2021
+Warning: The AR-PACKAGE being imported from file 'C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/ecu_config/os/internal/Os_EcucValues.arxml' has a different name to that already in the system. Expected 'ETAS_Project'.
+ (Location = C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/ecu_config/os/internal/Os_EcucValues.arxml)
+Warning: No ECU information found when reading input file 'C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/ecu_config/rte/internal/Rte_EcucValues.arxml'.
+Warning: The AR-PACKAGE being imported from file 'C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/src/rte/iocNeeds.arxml' has a different name to that already in the system. Expected 'ETAS_Project'.
+ (Location = C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/src/rte/iocNeeds.arxml)
+Warning: The AR-PACKAGE being imported from file 'C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/src/rte/osNeeds.arxml' has a different name to that already in the system. Expected 'ETAS_Project'.
+ (Location = C:/Users/Administrator/Desktop/ETAS_OS/TC387_ISOLAR_Workspace/src/rte/osNeeds.arxml)
+Selected target TriCoreHighTec[TC38x] V5.0.27.1533
+.............................................................................................................
+Stop at 6/26/2024 1:27:54 PM
+Information: ScheduleTable Rte_ScheduleTable has 100 expiry points.
+Warning: Full-stack AUTOSAR configuration detected. Task terminations will be prevented. (See OS option 'Allow forced TASK terminations'.)
+Information: Allocating SRC_GPSR00 as cross-core interrupt for core 0
+Information: Allocating SRC_GPSR01 as cross-core interrupt for core 1
+Information: Allocating SRC_GPSR02 as cross-core interrupt for core 2
+Information: Allocating SRC_GPSR03 as cross-core interrupt for core 3
+Information: Updated 'RTAOS.a'
+
+Errors: 0, Warnings: 5.
+Stop at 6/26/2024 1:27:54 PM

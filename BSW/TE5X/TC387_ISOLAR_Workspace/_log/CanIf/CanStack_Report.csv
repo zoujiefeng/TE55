@@ -1,0 +1,1104 @@
+
+
+
+/*<VersionHead>
+ * This Configuration File is generated using versions (automatically filled in) as listed below.
+ *
+ * $Generator__: CanIf / AR42.10.0.0                Module Package Version
+ * $Editor_____: ISOLAR-A/B 9.2.1_9.2.1                Tool Version
+ * $Model______: 2.0.2.1                ECU Parameter Definition Version
+ *
+
+ </VersionHead>*/
+
+
+*****************************************************************************************************************************************************************************************
+                                               CANSTACK CONFIGURATION REPORT
+
+*****************************************************************************************************************************************************************************************
+Section1:
+                                              CAN DRIVER CONFIGURATION REPORT
+******************************************************************************************************************************************************************************************
+
+
+"CAN driver does not support the report generation for the driver configuration parameters"
+
+
+
+
+*****************************************************************************************************************************************************************************************
+Section2:
+                                                CANIF CONFIGURATION REPORT
+*****************************************************************************************************************************************************************************************
+CanIf Variant configured:                                       ,PRE-COMPILE
+
+Development error detection support:                            ,ENABLED
+
+Partial Networking support:                                     ,DISABLED
+
+Controller WakeUp support:                                      ,DISABLED
+
+Transceiver WakeUp support:                                     ,DISABLED
+
+Set Baudrate support:                                           ,DISABLED
+(This feature will be used only when CAN FD is supported.
+This is currently supported only for IFX and JDP targets)
+
+Direct Hw wite access support for XCP:                          ,DISABLED
+(This feature is available only for JDP targets)
+
+CanIf XCore feature support                                     ,DISABLED
+*******************************************************************************************************************************************************************************************
+LIST OF UPPER LAYERS SUPPORTED:
+***********************************************
+[XCP, CDD, CAN_NM, CAN_TP, PDUR]
+
+EVENTS AND UPPER LAYERS TO BE INDICATED:
+************************************************
+EVENT                          , UPPER LAYER
+Controller BusOff              ,CDD
+Controller Mode Indication     ,CAN_SM
+Transceiver Mode Indication    ,CAN_SM
+****************************************************************************************************************************************************************************************
+CAN TRANSCEIVER INFORMATION:
+********************************************
+
+Number of Can Transceivers configured:                           ,1
+
+S.No    ,CanIfTrcvCfg name      ,Transceiver Reference   ,Transceiver ID    ,Wakeup support,Wakeup source
+1.,CanIfTrcvCfg_0   ,CanTrcvChannel_0   ,0x0   ,DISABLED
+
+************************************************************************************************************************************************************************************
+CanIf ConfigSet Information
+*************************************************************************************************************************************************************************************
+Number of CanIf Configsets peresent in the project:  ,1
+1) Configuration information for __KW_COMMON
+
+   Name of the Variant: ,__KW_COMMON
+
+   Number of FULL TxPdus: ,87
+
+   Number of BASIC TxPdus: ,65
+
+   Number of FULL RxPdus:  ,125
+
+   Number of BASIC RxPdus:  ,1
+
+   Total size of the transmit buffers: , 10 
+
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+
+************************************************************************************************************************************************************************************
+CAN CONTROLLER INFORMATION:
+*******************************************
+Number of CAN controllers configured: ,4
+
+   S.No    ,CanIfCtrlDrvCfg name      ,CanHardwareNode       ,CanHardwareNodeId       ,Can Transceiver Reference
+1.,CanIf_CanNodeNum_00   ,Can_Network_CanNodeNum_00   ,0   ,NONE
+2.,CanIf_CanNodeNum_01   ,Can_Network_CanNodeNum_01   ,1   ,NONE
+3.,CanIf_CanNodeNum_02   ,Can_Network_CanNodeNum_02   ,2   ,NONE
+4.,CanIf_CanNodeNum_03   ,Can_Network_CanNodeNum_03   ,3   ,NONE
+**************************************************************************************************************************************************************************************
+
+LIST OF BASIC TxPdus:
+*****************************
+[CanIf_CanPdu_CanNodeNum_01_TxBasic_01, CanIf_CanPdu_CanNodeNum_01_TxBasic_02, CanIf_CanPdu_CanNodeNum_01_TxBasic_03, CanIf_CanPdu_CanNodeNum_01_TxBasic_04, CanIf_CanPdu_CanNodeNum_01_TxBasic_05, CanIf_CanPdu_CanNodeNum_01_TxBasic_06, CanIf_CanPdu_CanNodeNum_01_TxBasic_07, CanIf_CanPdu_CanNodeNum_01_TxBasic_08, CanIf_CanPdu_CanNodeNum_01_TxBasic_09, CanIf_CanPdu_CanNodeNum_01_TxBasic_10, CanIf_CanPdu_CanNodeNum_01_TxBasic_11, CanIf_CanPdu_CanNodeNum_01_TxBasic_12, CanIf_CanPdu_CanNodeNum_01_TxBasic_13, CanIf_CanPdu_CanNodeNum_01_TxBasic_14, CanIf_CanPdu_CanNodeNum_01_TxBasic_15, CanIf_CanPdu_CanNodeNum_01_TxBasic_16, CanIf_CanPdu_CanNodeNum_01_TxBasic_17, CanIf_CanPdu_CanNodeNum_01_TxBasic_18, CanIf_CanPdu_CanNodeNum_01_TxBasic_19, CanIf_CanPdu_CanNodeNum_01_TxBasic_20, CanIf_CanPdu_CanNodeNum_01_TxBasic_21, CanIf_CanPdu_CanNodeNum_01_TxBasic_22, CanIf_CanPdu_CanNodeNum_01_Tx_25, CanIf_CanPdu_CanNodeNum_01_Tx_25_00, CanIf_CanPdu_CanNodeNum_01_Tx_25_01, CanIf_CanPdu_CanNodeNum_02_TxBasic_01, CanIf_CanPdu_CanNodeNum_02_TxBasic_02, CanIf_CanPdu_CanNodeNum_02_TxBasic_03, CanIf_CanPdu_CanNodeNum_02_TxBasic_04, CanIf_CanPdu_CanNodeNum_02_TxBasic_05, CanIf_CanPdu_CanNodeNum_02_TxBasic_06, CanIf_CanPdu_CanNodeNum_02_TxBasic_07, CanIf_CanPdu_CanNodeNum_02_TxBasic_08, CanIf_CanPdu_CanNodeNum_02_TxBasic_09, CanIf_CanPdu_CanNodeNum_02_TxBasic_10, CanIf_CanPdu_CanNodeNum_02_TxBasic_11, CanIf_CanPdu_CanNodeNum_02_TxBasic_12, CanIf_CanPdu_CanNodeNum_02_TxBasic_13, CanIf_CanPdu_CanNodeNum_02_TxBasic_14, CanIf_CanPdu_CanNodeNum_02_TxBasic_15, CanIf_CanPdu_CanNodeNum_02_TxBasic_16, CanIf_CanPdu_CanNodeNum_02_TxBasic_17, CanIf_CanPdu_CanNodeNum_02_TxBasic_18, CanIf_CanPdu_CanNodeNum_02_TxBasic_19, CanIf_CanPdu_CanNodeNum_02_TxBasic_20, CanIf_CanPdu_CanNodeNum_03_TxBasic_01, CanIf_CanPdu_CanNodeNum_03_TxBasic_02, CanIf_CanPdu_CanNodeNum_03_TxBasic_03, CanIf_CanPdu_CanNodeNum_03_TxBasic_04, CanIf_CanPdu_CanNodeNum_03_TxBasic_05, CanIf_CanPdu_CanNodeNum_03_TxBasic_06, CanIf_CanPdu_CanNodeNum_03_TxBasic_07, CanIf_CanPdu_CanNodeNum_03_TxBasic_08, CanIf_CanPdu_CanNodeNum_03_TxBasic_09, CanIf_CanPdu_CanNodeNum_03_TxBasic_10, CanIf_CanPdu_CanNodeNum_03_TxBasic_11, CanIf_CanPdu_CanNodeNum_03_TxBasic_12, CanIf_CanPdu_CanNodeNum_03_TxBasic_13, CanIf_CanPdu_CanNodeNum_03_TxBasic_14, CanIf_CanPdu_CanNodeNum_03_TxBasic_15, CanIf_CanPdu_CanNodeNum_03_TxBasic_16, CanIf_CanPdu_CanNodeNum_03_TxBasic_17, CanIf_CanPdu_CanNodeNum_03_TxBasic_18, CanIf_CanPdu_CanNodeNum_03_TxBasic_19, CanIf_CanPdu_CanNodeNum_03_TxBasic_20]
+
+Details of BASIC HTH:
+***************************
+
+S.No      ,HTH Name             ,Can HwObject Reference             ,CanHardwareNodeId                , TxPdus mapped
+1.,CanIf_HwTxHandle_CanNodeNum_01_Tx_Basic     ,Can_HwObject_CanNodeNum_01_Tx_Basic     ,Can_Network_CanNodeNum_01     ,[CanIf_CanPdu_CanNodeNum_01_TxBasic_01, CanIf_CanPdu_CanNodeNum_01_TxBasic_02, CanIf_CanPdu_CanNodeNum_01_TxBasic_03, CanIf_CanPdu_CanNodeNum_01_TxBasic_04, CanIf_CanPdu_CanNodeNum_01_TxBasic_05, CanIf_CanPdu_CanNodeNum_01_TxBasic_06, CanIf_CanPdu_CanNodeNum_01_TxBasic_07, CanIf_CanPdu_CanNodeNum_01_TxBasic_08, CanIf_CanPdu_CanNodeNum_01_TxBasic_09, CanIf_CanPdu_CanNodeNum_01_TxBasic_10, CanIf_CanPdu_CanNodeNum_01_TxBasic_11, CanIf_CanPdu_CanNodeNum_01_TxBasic_12, CanIf_CanPdu_CanNodeNum_01_TxBasic_13, CanIf_CanPdu_CanNodeNum_01_TxBasic_14, CanIf_CanPdu_CanNodeNum_01_TxBasic_15, CanIf_CanPdu_CanNodeNum_01_TxBasic_16, CanIf_CanPdu_CanNodeNum_01_TxBasic_17, CanIf_CanPdu_CanNodeNum_01_TxBasic_18, CanIf_CanPdu_CanNodeNum_01_TxBasic_19, CanIf_CanPdu_CanNodeNum_01_TxBasic_20, CanIf_CanPdu_CanNodeNum_01_TxBasic_21, CanIf_CanPdu_CanNodeNum_01_TxBasic_22]
+2.,CanIf_HwTxHandle_CanNodeNum_01_Tx_25     ,Can_HwObject_CanNodeNum_01_Tx_25     ,Can_Network_CanNodeNum_01     ,[CanIf_CanPdu_CanNodeNum_01_Tx_25, CanIf_CanPdu_CanNodeNum_01_Tx_25_00, CanIf_CanPdu_CanNodeNum_01_Tx_25_01]
+3.,CanIf_HwTxHandle_CanNodeNum_02_Tx_Basic     ,Can_HwObject_CanNodeNum_02_Tx_Basic     ,Can_Network_CanNodeNum_02     ,[CanIf_CanPdu_CanNodeNum_02_TxBasic_01, CanIf_CanPdu_CanNodeNum_02_TxBasic_02, CanIf_CanPdu_CanNodeNum_02_TxBasic_03, CanIf_CanPdu_CanNodeNum_02_TxBasic_04, CanIf_CanPdu_CanNodeNum_02_TxBasic_05, CanIf_CanPdu_CanNodeNum_02_TxBasic_06, CanIf_CanPdu_CanNodeNum_02_TxBasic_07, CanIf_CanPdu_CanNodeNum_02_TxBasic_08, CanIf_CanPdu_CanNodeNum_02_TxBasic_09, CanIf_CanPdu_CanNodeNum_02_TxBasic_10, CanIf_CanPdu_CanNodeNum_02_TxBasic_11, CanIf_CanPdu_CanNodeNum_02_TxBasic_12, CanIf_CanPdu_CanNodeNum_02_TxBasic_13, CanIf_CanPdu_CanNodeNum_02_TxBasic_14, CanIf_CanPdu_CanNodeNum_02_TxBasic_15, CanIf_CanPdu_CanNodeNum_02_TxBasic_16, CanIf_CanPdu_CanNodeNum_02_TxBasic_17, CanIf_CanPdu_CanNodeNum_02_TxBasic_18, CanIf_CanPdu_CanNodeNum_02_TxBasic_19, CanIf_CanPdu_CanNodeNum_02_TxBasic_20]
+4.,CanIf_HwTxHandle_CanNodeNum_03_Tx_Basic     ,Can_HwObject_CanNodeNum_03_Tx_Basic     ,Can_Network_CanNodeNum_03     ,[CanIf_CanPdu_CanNodeNum_03_TxBasic_01, CanIf_CanPdu_CanNodeNum_03_TxBasic_02, CanIf_CanPdu_CanNodeNum_03_TxBasic_03, CanIf_CanPdu_CanNodeNum_03_TxBasic_04, CanIf_CanPdu_CanNodeNum_03_TxBasic_05, CanIf_CanPdu_CanNodeNum_03_TxBasic_06, CanIf_CanPdu_CanNodeNum_03_TxBasic_07, CanIf_CanPdu_CanNodeNum_03_TxBasic_08, CanIf_CanPdu_CanNodeNum_03_TxBasic_09, CanIf_CanPdu_CanNodeNum_03_TxBasic_10, CanIf_CanPdu_CanNodeNum_03_TxBasic_11, CanIf_CanPdu_CanNodeNum_03_TxBasic_12, CanIf_CanPdu_CanNodeNum_03_TxBasic_13, CanIf_CanPdu_CanNodeNum_03_TxBasic_14, CanIf_CanPdu_CanNodeNum_03_TxBasic_15, CanIf_CanPdu_CanNodeNum_03_TxBasic_16, CanIf_CanPdu_CanNodeNum_03_TxBasic_17, CanIf_CanPdu_CanNodeNum_03_TxBasic_18, CanIf_CanPdu_CanNodeNum_03_TxBasic_19, CanIf_CanPdu_CanNodeNum_03_TxBasic_20]
+
+****************************************************************************************************************************************************************************************
+DETAILS OF TXPDU:
+*************************
+
+S.No   ,TxPdu Name   ,CanId   ,DLC value   ,CanId Type   ,CanIfTxPdu Type   ,Can Handle Type   ,HTH Reference   ,CanHardwareNodeId   ,Target TxPduId   ,Upper Layer   ,Cbk Name   ,Pdu Reference   ,Read Notification Status
+1.,CanIf_XcpPdu_CanNodeNum_00_Tx_Daq0    ,0x778    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_00_Tx_A    ,Can_Network_CanNodeNum_00    ,11
+    ,XCP    ,&Xcp_CanIfTxConfirmation    ,XcpPdu_Xcp2CanIf_CanNodeNum_00_Tx_Daq0   ,DISABLED
+2.,CanIf_XcpPdu_CanNodeNum_00_Tx_Daq1    ,0x779    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_00_Tx_B    ,Can_Network_CanNodeNum_00    ,11
+    ,XCP    ,&Xcp_CanIfTxConfirmation    ,XcpPdu_Xcp2CanIf_CanNodeNum_00_Tx_Daq1   ,DISABLED
+3.,CanIf_XcpPdu_CanNodeNum_00_Tx_Daq2    ,0x77A    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_00_Tx_C    ,Can_Network_CanNodeNum_00    ,11
+    ,XCP    ,&Xcp_CanIfTxConfirmation    ,XcpPdu_Xcp2CanIf_CanNodeNum_00_Tx_Daq2   ,DISABLED
+4.,CanIf_XcpPdu_CanNodeNum_00_Tx_Res    ,0x777    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_00_Tx_D    ,Can_Network_CanNodeNum_00    ,11
+    ,XCP    ,&Xcp_CanIfTxConfirmation    ,XcpPdu_Xcp2CanIf_CanNodeNum_00_Tx_Res   ,DISABLED
+5.,CanIf_CcpPdu_CanNodeNum_00_Tx_Daq0    ,0x216    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_00_Tx_E    ,Can_Network_CanNodeNum_00    ,11
+    ,CDD    ,&Ccp_TxConfirmation_1ms    ,CcpPdu_Cdd2CanIf_CanNodeNum_00_Tx_Daq0   ,DISABLED
+6.,CanIf_CcpPdu_CanNodeNum_00_Tx_Daq1    ,0x215    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_00_Tx_F    ,Can_Network_CanNodeNum_00    ,11
+    ,CDD    ,&Ccp_TxConfirmation_100us    ,CcpPdu_Cdd2CanIf_CanNodeNum_00_Tx_Daq1   ,DISABLED
+7.,CanIf_CcpPdu_CanNodeNum_00_Tx_Daq2    ,0x217    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_00_Tx_G    ,Can_Network_CanNodeNum_00    ,11
+    ,CDD    ,&Ccp_TxConfirmation_10ms    ,CcpPdu_Cdd2CanIf_CanNodeNum_00_Tx_Daq2   ,DISABLED
+8.,CanIf_CcpPdu_CanNodeNum_00_Tx_Dto    ,0x318    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_00_Tx_H    ,Can_Network_CanNodeNum_00    ,11
+    ,CDD    ,&Ccp_TxConfirmation_DTO    ,CcpPdu_Cdd2CanIf_CanNodeNum_00_Tx_Dto   ,DISABLED
+9.,CanIf_CanNmPdu_CanNodeNum_01_Tx_IPC    ,0x59A    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_A    ,Can_Network_CanNodeNum_01    ,11
+    ,CAN_NM    ,&CanNm_TxConfirmation    ,CanNmPdu_CanNm2CanIf_CanNodeNum_01_IPC   ,DISABLED
+10.,CanIf_DcmPdu_CanNodeNum_01_Tx_PhyResponse    ,0x18DAF1EF    ,10
+    ,EXTENDED_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_B    ,Can_Network_CanNodeNum_01    ,11
+    ,CAN_TP    ,NULL_PTR    ,DcmPdu_CanTp2CanIf_CanNodeNum_01_PhyResponse   ,DISABLED
+11.,CanIf_CanPdu_CanNodeNum_01_TxBasic_01    ,0x1CFF8382    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_Basic    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_TxBasic_01   ,DISABLED
+12.,CanIf_CanPdu_CanNodeNum_01_TxBasic_02    ,0x18FEDA82    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_Basic    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_TxBasic_02   ,DISABLED
+13.,CanIf_CanPdu_CanNodeNum_01_TxBasic_03    ,0x1CFF8383    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_Basic    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_TxBasic_03   ,DISABLED
+14.,CanIf_CanPdu_CanNodeNum_01_TxBasic_04    ,0x18FEDA83    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_Basic    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_TxBasic_04   ,DISABLED
+15.,CanIf_CanPdu_CanNodeNum_01_TxBasic_05    ,0x18FEDA30    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_Basic    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_TxBasic_05   ,DISABLED
+16.,CanIf_CanPdu_CanNodeNum_01_TxBasic_06    ,0x18FEDA8A    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_Basic    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_TxBasic_06   ,DISABLED
+17.,CanIf_CanPdu_CanNodeNum_01_TxBasic_07    ,0x18FEDA8B    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_Basic    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_TxBasic_07   ,DISABLED
+18.,CanIf_CanPdu_CanNodeNum_01_TxBasic_08    ,0x18FECAEF    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_Basic    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_TxBasic_08   ,DISABLED
+19.,CanIf_CanPdu_CanNodeNum_01_TxBasic_09    ,0x18ECFFEF    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_Basic    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_TxBasic_09   ,DISABLED
+20.,CanIf_CanPdu_CanNodeNum_01_TxBasic_10    ,0x18EBFFEF    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_Basic    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_TxBasic_10   ,DISABLED
+21.,CanIf_CanPdu_CanNodeNum_01_TxBasic_11    ,0x18FECA83    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_Basic    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_TxBasic_11   ,DISABLED
+22.,CanIf_CanPdu_CanNodeNum_01_TxBasic_12    ,0x18ECFF83    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_Basic    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_TxBasic_12   ,DISABLED
+23.,CanIf_CanPdu_CanNodeNum_01_TxBasic_13    ,0x18EBFF83    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_Basic    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_TxBasic_13   ,DISABLED
+24.,CanIf_CanPdu_CanNodeNum_01_TxBasic_14    ,0x18FECA30    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_Basic    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_TxBasic_14   ,DISABLED
+25.,CanIf_CanPdu_CanNodeNum_01_TxBasic_15    ,0x18ECFF30    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_Basic    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_TxBasic_15   ,DISABLED
+26.,CanIf_CanPdu_CanNodeNum_01_TxBasic_16    ,0x18EBFF30    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_Basic    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_TxBasic_16   ,DISABLED
+27.,CanIf_CanPdu_CanNodeNum_01_TxBasic_17    ,0x18FECA2E    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_Basic    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_TxBasic_17   ,DISABLED
+28.,CanIf_CanPdu_CanNodeNum_01_TxBasic_18    ,0x18ECFF2E    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_Basic    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_TxBasic_18   ,DISABLED
+29.,CanIf_CanPdu_CanNodeNum_01_TxBasic_19    ,0x18EBFF2E    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_Basic    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_TxBasic_19   ,DISABLED
+30.,CanIf_CanPdu_CanNodeNum_01_TxBasic_20    ,0x18FECA1E    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_Basic    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_TxBasic_20   ,DISABLED
+31.,CanIf_CanPdu_CanNodeNum_01_TxBasic_21    ,0x18ECFF1E    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_Basic    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_TxBasic_20   ,DISABLED
+32.,CanIf_CanPdu_CanNodeNum_01_TxBasic_22    ,0x18EBFF1E    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_Basic    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_TxBasic_20   ,DISABLED
+33.,CanIf_CanPdu_CanNodeNum_01_Tx_01    ,0x18F7011E    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_01    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_Tx_01   ,DISABLED
+34.,CanIf_CanPdu_CanNodeNum_01_Tx_02    ,0x18F7021E    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_02    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_Tx_02   ,DISABLED
+35.,CanIf_CanPdu_CanNodeNum_01_Tx_03    ,0x18F7031E    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_03    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_Tx_03   ,DISABLED
+36.,CanIf_CanPdu_CanNodeNum_01_Tx_04    ,0x18F7041E    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_04    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_Tx_04   ,DISABLED
+37.,CanIf_CanPdu_CanNodeNum_01_Tx_05    ,0xCF6012E    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_05    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_Tx_05   ,DISABLED
+38.,CanIf_CanPdu_CanNodeNum_01_Tx_06    ,0xCF6022E    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_06    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_Tx_06   ,DISABLED
+39.,CanIf_CanPdu_CanNodeNum_01_Tx_07    ,0x18FF2130    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_07    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_Tx_07   ,DISABLED
+40.,CanIf_CanPdu_CanNodeNum_01_Tx_08    ,0x18FF2230    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_08    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_Tx_08   ,DISABLED
+41.,CanIf_CanPdu_CanNodeNum_01_Tx_09    ,0x1EFE9208    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_09    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_Tx_09   ,DISABLED
+42.,CanIf_CanPdu_CanNodeNum_01_Tx_10    ,0x1EFE9209    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_10    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_Tx_10   ,DISABLED
+43.,CanIf_CanPdu_CanNodeNum_01_Tx_11    ,0x1EFE920A    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_11    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_Tx_11   ,DISABLED
+44.,CanIf_CanPdu_CanNodeNum_01_Tx_12    ,0x1EFE920B    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_12    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_Tx_12   ,DISABLED
+45.,CanIf_CanPdu_CanNodeNum_01_Tx_13    ,0x1EFE920C    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_13    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_Tx_13   ,DISABLED
+46.,CanIf_CanPdu_CanNodeNum_01_Tx_14    ,0x1EFE920D    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_14    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_Tx_14   ,DISABLED
+47.,CanIf_CanPdu_CanNodeNum_01_Tx_15    ,0x1EFE920E    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_15    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_Tx_15   ,DISABLED
+48.,CanIf_CanPdu_CanNodeNum_01_Tx_16    ,0x1EFE920F    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_16    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_Tx_16   ,DISABLED
+49.,CanIf_CanPdu_CanNodeNum_01_Tx_17    ,0x1EFE9210    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_17    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_Tx_17   ,DISABLED
+50.,CanIf_CanPdu_CanNodeNum_01_Tx_18    ,0x1EFE9211    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_18    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_Tx_18   ,DISABLED
+51.,CanIf_CanPdu_CanNodeNum_01_Tx_19    ,0x1EFE9212    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_19    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_Tx_19   ,DISABLED
+52.,CanIf_CanPdu_CanNodeNum_01_Tx_20    ,0x1EFE9213    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_20    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_Tx_20   ,DISABLED
+53.,CanIf_CanPdu_CanNodeNum_01_Tx_21    ,0x1EFE9214    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_21    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_Tx_21   ,DISABLED
+54.,CanIf_CanPdu_CanNodeNum_01_Tx_22    ,0x1EFE9215    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_22    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_Tx_22   ,DISABLED
+55.,CanIf_CanPdu_CanNodeNum_01_Tx_23    ,0x1EFE9216    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_23    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_Tx_23   ,DISABLED
+56.,CanIf_CanPdu_CanNodeNum_01_Tx_24    ,0x1EFE9217    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_24    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_Tx_24   ,DISABLED
+57.,CanIf_CanPdu_CanNodeNum_01_Tx_25    ,0x1EFE9218    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_25    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_Tx_25   ,DISABLED
+58.,CanIf_CanPdu_CanNodeNum_01_Tx_25_00    ,0x1EFE9219    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_25    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_Tx_25_00   ,DISABLED
+59.,CanIf_CanPdu_CanNodeNum_01_Tx_25_01    ,0x1EFE921A    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_25    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_Tx_25_01   ,DISABLED
+60.,CanIf_CanPdu_CanNodeNum_01_Tx_26    ,0x1EFE921B    ,10
+    ,EXTENDED_CAN    ,DYNAMIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_01_Tx_26    ,Can_Network_CanNodeNum_01    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_01_Tx_26   ,DISABLED
+61.,CanIf_CanPdu_CanNodeNum_02_TxBasic_01    ,0x701    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_Basic    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_TxBasic_01   ,DISABLED
+62.,CanIf_CanPdu_CanNodeNum_02_TxBasic_02    ,0x702    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_Basic    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_TxBasic_02   ,DISABLED
+63.,CanIf_CanPdu_CanNodeNum_02_TxBasic_03    ,0x703    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_Basic    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_TxBasic_03   ,DISABLED
+64.,CanIf_CanPdu_CanNodeNum_02_TxBasic_04    ,0x704    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_Basic    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_TxBasic_04   ,DISABLED
+65.,CanIf_CanPdu_CanNodeNum_02_TxBasic_05    ,0x705    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_Basic    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_TxBasic_05   ,DISABLED
+66.,CanIf_CanPdu_CanNodeNum_02_TxBasic_06    ,0x706    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_Basic    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_TxBasic_06   ,DISABLED
+67.,CanIf_CanPdu_CanNodeNum_02_TxBasic_07    ,0x707    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_Basic    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_TxBasic_07   ,DISABLED
+68.,CanIf_CanPdu_CanNodeNum_02_TxBasic_08    ,0x708    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_Basic    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_TxBasic_08   ,DISABLED
+69.,CanIf_CanPdu_CanNodeNum_02_TxBasic_09    ,0x709    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_Basic    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_TxBasic_09   ,DISABLED
+70.,CanIf_CanPdu_CanNodeNum_02_TxBasic_10    ,0x710    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_Basic    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_TxBasic_10   ,DISABLED
+71.,CanIf_CanPdu_CanNodeNum_02_TxBasic_11    ,0x711    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_Basic    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_TxBasic_11   ,DISABLED
+72.,CanIf_CanPdu_CanNodeNum_02_TxBasic_12    ,0x712    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_Basic    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_TxBasic_12   ,DISABLED
+73.,CanIf_CanPdu_CanNodeNum_02_TxBasic_13    ,0x713    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_Basic    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_TxBasic_13   ,DISABLED
+74.,CanIf_CanPdu_CanNodeNum_02_TxBasic_14    ,0x714    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_Basic    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_TxBasic_14   ,DISABLED
+75.,CanIf_CanPdu_CanNodeNum_02_TxBasic_15    ,0x715    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_Basic    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_TxBasic_15   ,DISABLED
+76.,CanIf_CanPdu_CanNodeNum_02_TxBasic_16    ,0x716    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_Basic    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_TxBasic_16   ,DISABLED
+77.,CanIf_CanPdu_CanNodeNum_02_TxBasic_17    ,0x717    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_Basic    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_TxBasic_17   ,DISABLED
+78.,CanIf_CanPdu_CanNodeNum_02_TxBasic_18    ,0x718    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_Basic    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_TxBasic_18   ,DISABLED
+79.,CanIf_CanPdu_CanNodeNum_02_TxBasic_19    ,0x719    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_Basic    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_TxBasic_19   ,DISABLED
+80.,CanIf_CanPdu_CanNodeNum_02_TxBasic_20    ,0x720    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_Basic    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_TxBasic_20   ,DISABLED
+81.,CanIf_CanPdu_CanNodeNum_02_Tx_01    ,0xCFF0308    ,10
+    ,EXTENDED_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_01    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_Tx_01   ,DISABLED
+82.,CanIf_CanPdu_CanNodeNum_02_Tx_02    ,0xCFF0008    ,10
+    ,EXTENDED_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_02    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_Tx_02   ,DISABLED
+83.,CanIf_CanPdu_CanNodeNum_02_Tx_03    ,0xCFF0108    ,10
+    ,EXTENDED_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_03    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_Tx_03   ,DISABLED
+84.,CanIf_CanPdu_CanNodeNum_02_Tx_04    ,0xCFF0208    ,10
+    ,EXTENDED_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_04    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_Tx_04   ,DISABLED
+85.,CanIf_CanPdu_CanNodeNum_02_Tx_05    ,0xCFF0309    ,10
+    ,EXTENDED_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_05    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_Tx_05   ,DISABLED
+86.,CanIf_CanPdu_CanNodeNum_02_Tx_06    ,0x1EFE9221    ,10
+    ,EXTENDED_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_06    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_Tx_06   ,DISABLED
+87.,CanIf_CanPdu_CanNodeNum_02_Tx_07    ,0x1EFE9222    ,10
+    ,EXTENDED_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_07    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_Tx_07   ,DISABLED
+88.,CanIf_CanPdu_CanNodeNum_02_Tx_08    ,0x1EFE9223    ,10
+    ,EXTENDED_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_08    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_Tx_08   ,DISABLED
+89.,CanIf_CanPdu_CanNodeNum_02_Tx_09    ,0x1EFE9224    ,10
+    ,EXTENDED_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_09    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_Tx_09   ,DISABLED
+90.,CanIf_CanPdu_CanNodeNum_02_Tx_10    ,0x1EFE9225    ,10
+    ,EXTENDED_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_10    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_Tx_10   ,DISABLED
+91.,CanIf_CanPdu_CanNodeNum_02_Tx_11    ,0x1EFE9226    ,10
+    ,EXTENDED_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_11    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_Tx_11   ,DISABLED
+92.,CanIf_CanPdu_CanNodeNum_02_Tx_12    ,0x1EFE9227    ,10
+    ,EXTENDED_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_12    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_Tx_12   ,DISABLED
+93.,CanIf_CanPdu_CanNodeNum_02_Tx_13    ,0x1EFE9228    ,10
+    ,EXTENDED_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_13    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_Tx_13   ,DISABLED
+94.,CanIf_CanPdu_CanNodeNum_02_Tx_14    ,0x1EFE9229    ,10
+    ,EXTENDED_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_14    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_Tx_14   ,DISABLED
+95.,CanIf_CanPdu_CanNodeNum_02_Tx_15    ,0x1EFE922A    ,10
+    ,EXTENDED_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_15    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_Tx_15   ,DISABLED
+96.,CanIf_CanPdu_CanNodeNum_02_Tx_16    ,0x1EFE922B    ,10
+    ,EXTENDED_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_16    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_Tx_16   ,DISABLED
+97.,CanIf_CanPdu_CanNodeNum_02_Tx_17    ,0x1EFE922C    ,10
+    ,EXTENDED_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_17    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_Tx_17   ,DISABLED
+98.,CanIf_CanPdu_CanNodeNum_02_Tx_18    ,0x1EFE922D    ,10
+    ,EXTENDED_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_18    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_Tx_18   ,DISABLED
+99.,CanIf_CanPdu_CanNodeNum_02_Tx_19    ,0x1EFE922E    ,10
+    ,EXTENDED_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_19    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_Tx_19   ,DISABLED
+100.,CanIf_CanPdu_CanNodeNum_02_Tx_20    ,0x1EFE922F    ,10
+    ,EXTENDED_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_20    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_Tx_20   ,DISABLED
+101.,CanIf_CanPdu_CanNodeNum_02_Tx_21    ,0x1EFE9230    ,10
+    ,EXTENDED_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_21    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_Tx_21   ,DISABLED
+102.,CanIf_CanPdu_CanNodeNum_02_Tx_22    ,0x1EFE9231    ,10
+    ,EXTENDED_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_22    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_Tx_22   ,DISABLED
+103.,CanIf_CanPdu_CanNodeNum_02_Tx_23    ,0x1EFE9232    ,10
+    ,EXTENDED_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_23    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_Tx_23   ,DISABLED
+104.,CanIf_CanPdu_CanNodeNum_02_Tx_24    ,0x1EFE9233    ,10
+    ,EXTENDED_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_24    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_Tx_24   ,DISABLED
+105.,CanIf_CanPdu_CanNodeNum_02_Tx_25    ,0x1EFE9234    ,10
+    ,EXTENDED_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_25    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_Tx_25   ,DISABLED
+106.,CanIf_CanPdu_CanNodeNum_02_Tx_26    ,0x1EFE9235    ,10
+    ,EXTENDED_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_02_Tx_26    ,Can_Network_CanNodeNum_02    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_02_Tx_26   ,DISABLED
+107.,CanIf_CanPdu_CanNodeNum_03_TxBasic_01    ,0x701    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_Basic    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_TxBasic_01   ,DISABLED
+108.,CanIf_CanPdu_CanNodeNum_03_TxBasic_02    ,0x702    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_Basic    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_TxBasic_02   ,DISABLED
+109.,CanIf_CanPdu_CanNodeNum_03_TxBasic_03    ,0x703    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_Basic    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_TxBasic_03   ,DISABLED
+110.,CanIf_CanPdu_CanNodeNum_03_TxBasic_04    ,0x704    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_Basic    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_TxBasic_04   ,DISABLED
+111.,CanIf_CanPdu_CanNodeNum_03_TxBasic_05    ,0x705    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_Basic    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_TxBasic_05   ,DISABLED
+112.,CanIf_CanPdu_CanNodeNum_03_TxBasic_06    ,0x706    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_Basic    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_TxBasic_06   ,DISABLED
+113.,CanIf_CanPdu_CanNodeNum_03_TxBasic_07    ,0x707    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_Basic    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_TxBasic_07   ,DISABLED
+114.,CanIf_CanPdu_CanNodeNum_03_TxBasic_08    ,0x708    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_Basic    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_TxBasic_08   ,DISABLED
+115.,CanIf_CanPdu_CanNodeNum_03_TxBasic_09    ,0x709    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_Basic    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_TxBasic_09   ,DISABLED
+116.,CanIf_CanPdu_CanNodeNum_03_TxBasic_10    ,0x710    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_Basic    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_TxBasic_10   ,DISABLED
+117.,CanIf_CanPdu_CanNodeNum_03_TxBasic_11    ,0x711    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_Basic    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_TxBasic_11   ,DISABLED
+118.,CanIf_CanPdu_CanNodeNum_03_TxBasic_12    ,0x712    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_Basic    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_TxBasic_12   ,DISABLED
+119.,CanIf_CanPdu_CanNodeNum_03_TxBasic_13    ,0x713    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_Basic    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_TxBasic_13   ,DISABLED
+120.,CanIf_CanPdu_CanNodeNum_03_TxBasic_14    ,0x714    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_Basic    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_TxBasic_14   ,DISABLED
+121.,CanIf_CanPdu_CanNodeNum_03_TxBasic_15    ,0x715    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_Basic    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_TxBasic_15   ,DISABLED
+122.,CanIf_CanPdu_CanNodeNum_03_TxBasic_16    ,0x716    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_Basic    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_TxBasic_16   ,DISABLED
+123.,CanIf_CanPdu_CanNodeNum_03_TxBasic_17    ,0x717    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_Basic    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_TxBasic_17   ,DISABLED
+124.,CanIf_CanPdu_CanNodeNum_03_TxBasic_18    ,0x718    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_Basic    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_TxBasic_18   ,DISABLED
+125.,CanIf_CanPdu_CanNodeNum_03_TxBasic_19    ,0x719    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_Basic    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_TxBasic_19   ,DISABLED
+126.,CanIf_CanPdu_CanNodeNum_03_TxBasic_20    ,0x720    ,10
+    ,STANDARD_CAN    ,STATIC    ,BASIC    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_Basic    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_TxBasic_20   ,DISABLED
+127.,CanIf_CanPdu_CanNodeNum_03_Tx_01    ,0x301    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_01    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_Tx_01   ,DISABLED
+128.,CanIf_CanPdu_CanNodeNum_03_Tx_02    ,0x302    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_02    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_Tx_02   ,DISABLED
+129.,CanIf_CanPdu_CanNodeNum_03_Tx_03    ,0x303    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_03    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_Tx_03   ,DISABLED
+130.,CanIf_CanPdu_CanNodeNum_03_Tx_04    ,0x304    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_04    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_Tx_04   ,DISABLED
+131.,CanIf_CanPdu_CanNodeNum_03_Tx_05    ,0x305    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_05    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_Tx_05   ,DISABLED
+132.,CanIf_CanPdu_CanNodeNum_03_Tx_06    ,0x306    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_06    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_Tx_06   ,DISABLED
+133.,CanIf_CanPdu_CanNodeNum_03_Tx_07    ,0x307    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_07    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_Tx_07   ,DISABLED
+134.,CanIf_CanPdu_CanNodeNum_03_Tx_08    ,0x308    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_08    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_Tx_08   ,DISABLED
+135.,CanIf_CanPdu_CanNodeNum_03_Tx_09    ,0x309    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_09    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_Tx_09   ,DISABLED
+136.,CanIf_CanPdu_CanNodeNum_03_Tx_10    ,0x310    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_10    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_Tx_10   ,DISABLED
+137.,CanIf_CanPdu_CanNodeNum_03_Tx_11    ,0x311    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_11    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_Tx_11   ,DISABLED
+138.,CanIf_CanPdu_CanNodeNum_03_Tx_12    ,0x312    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_12    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_Tx_12   ,DISABLED
+139.,CanIf_CanPdu_CanNodeNum_03_Tx_13    ,0x313    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_13    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_Tx_13   ,DISABLED
+140.,CanIf_CanPdu_CanNodeNum_03_Tx_14    ,0x314    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_14    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_Tx_14   ,DISABLED
+141.,CanIf_CanPdu_CanNodeNum_03_Tx_15    ,0x315    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_15    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_Tx_15   ,DISABLED
+142.,CanIf_CanPdu_CanNodeNum_03_Tx_16    ,0x316    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_16    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_Tx_16   ,DISABLED
+143.,CanIf_CanPdu_CanNodeNum_03_Tx_17    ,0x317    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_17    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_Tx_17   ,DISABLED
+144.,CanIf_CanPdu_CanNodeNum_03_Tx_18    ,0x318    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_18    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_Tx_18   ,DISABLED
+145.,CanIf_CanPdu_CanNodeNum_03_Tx_19    ,0x319    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_19    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_Tx_19   ,DISABLED
+146.,CanIf_CanPdu_CanNodeNum_03_Tx_20    ,0x320    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_20    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_Tx_20   ,DISABLED
+147.,CanIf_CanPdu_CanNodeNum_03_Tx_21    ,0x321    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_21    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_Tx_21   ,DISABLED
+148.,CanIf_CanPdu_CanNodeNum_03_Tx_22    ,0x322    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_22    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_Tx_22   ,DISABLED
+149.,CanIf_CanPdu_CanNodeNum_03_Tx_23    ,0x323    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_23    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_Tx_23   ,DISABLED
+150.,CanIf_CanPdu_CanNodeNum_03_Tx_24    ,0x324    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_24    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_Tx_24   ,DISABLED
+151.,CanIf_CanPdu_CanNodeNum_03_Tx_25    ,0x325    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_25    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_Tx_25   ,DISABLED
+152.,CanIf_CanPdu_CanNodeNum_03_Tx_26    ,0x326    ,10
+    ,STANDARD_CAN    ,STATIC    ,FULL    ,CanIf_HwTxHandle_CanNodeNum_03_Tx_26    ,Can_Network_CanNodeNum_03    ,11
+    ,PDUR    ,&PduR_CanIfTxConfirmation    ,CanPdu_PduR2CanIf_CanNodeNum_03_Tx_26   ,DISABLED
+****************************************************************************************************************************************************************************************
+
+LIST OF DYNAMIC TxPdus:
+*********************************
+[CanIf_CanPdu_CanNodeNum_01_TxBasic_01, CanIf_CanPdu_CanNodeNum_01_TxBasic_02, CanIf_CanPdu_CanNodeNum_01_TxBasic_03, CanIf_CanPdu_CanNodeNum_01_TxBasic_04, CanIf_CanPdu_CanNodeNum_01_TxBasic_05, CanIf_CanPdu_CanNodeNum_01_TxBasic_06, CanIf_CanPdu_CanNodeNum_01_TxBasic_07, CanIf_CanPdu_CanNodeNum_01_TxBasic_08, CanIf_CanPdu_CanNodeNum_01_TxBasic_09, CanIf_CanPdu_CanNodeNum_01_TxBasic_10, CanIf_CanPdu_CanNodeNum_01_TxBasic_11, CanIf_CanPdu_CanNodeNum_01_TxBasic_12, CanIf_CanPdu_CanNodeNum_01_TxBasic_13, CanIf_CanPdu_CanNodeNum_01_TxBasic_14, CanIf_CanPdu_CanNodeNum_01_TxBasic_15, CanIf_CanPdu_CanNodeNum_01_TxBasic_16, CanIf_CanPdu_CanNodeNum_01_TxBasic_17, CanIf_CanPdu_CanNodeNum_01_TxBasic_18, CanIf_CanPdu_CanNodeNum_01_TxBasic_19, CanIf_CanPdu_CanNodeNum_01_TxBasic_20, CanIf_CanPdu_CanNodeNum_01_TxBasic_21, CanIf_CanPdu_CanNodeNum_01_TxBasic_22, CanIf_CanPdu_CanNodeNum_01_Tx_01, CanIf_CanPdu_CanNodeNum_01_Tx_02, CanIf_CanPdu_CanNodeNum_01_Tx_03, CanIf_CanPdu_CanNodeNum_01_Tx_04, CanIf_CanPdu_CanNodeNum_01_Tx_05, CanIf_CanPdu_CanNodeNum_01_Tx_06, CanIf_CanPdu_CanNodeNum_01_Tx_07, CanIf_CanPdu_CanNodeNum_01_Tx_08, CanIf_CanPdu_CanNodeNum_01_Tx_09, CanIf_CanPdu_CanNodeNum_01_Tx_10, CanIf_CanPdu_CanNodeNum_01_Tx_11, CanIf_CanPdu_CanNodeNum_01_Tx_12, CanIf_CanPdu_CanNodeNum_01_Tx_13, CanIf_CanPdu_CanNodeNum_01_Tx_14, CanIf_CanPdu_CanNodeNum_01_Tx_15, CanIf_CanPdu_CanNodeNum_01_Tx_16, CanIf_CanPdu_CanNodeNum_01_Tx_17, CanIf_CanPdu_CanNodeNum_01_Tx_18, CanIf_CanPdu_CanNodeNum_01_Tx_19, CanIf_CanPdu_CanNodeNum_01_Tx_20, CanIf_CanPdu_CanNodeNum_01_Tx_21, CanIf_CanPdu_CanNodeNum_01_Tx_22, CanIf_CanPdu_CanNodeNum_01_Tx_23, CanIf_CanPdu_CanNodeNum_01_Tx_24, CanIf_CanPdu_CanNodeNum_01_Tx_25, CanIf_CanPdu_CanNodeNum_01_Tx_25_00, CanIf_CanPdu_CanNodeNum_01_Tx_25_01, CanIf_CanPdu_CanNodeNum_01_Tx_26]
+
+*****************************************************************************************************************************************************************************************
+
+LIST OF BASIC RxPdus:
+*****************************
+[CanIf_CanNmPdu_CanNodeNum_01_Rx_RIPC]
+
+Details of BASIC HRH:
+***************************
+
+S.No  ,HRH Name   ,Can Handle Reference  , CanHardwareNodeId: ,List/Range configuration  ,List/Range of CanIds
+1.,CanIf_HwRxHandle_CanNodeNum_01_Rx_A    ,Can_HwObject_CanNodeNum_01_Rx_A    ,Can_Network_CanNodeNum_01    ,RANGE        Range0:0x580-0x5FF        
+
+*******************************************************************************************************************************************************************************************
+DETAILS OF RXPDU:
+*************************
+
+S.No ,RxPdu Name ,CanId ,DLC value ,CanId Type ,HRH Reference ,CanHardwareNodeId ,Upper Layer ,Cbk Name ,Pdu Reference ,Read Notification Status ,RxPdu Buffering ,CanIfRxPduType
+1.,CanIf_XcpPdu_CanNodeNum_00_Rx_Broadcast    ,0x332    ,0    ,STANDARD_NO_FD_CAN    ,CanIf_HwRxHandle_CanNodeNum_00_Rx_A    ,CanIf_CanNodeNum_00    ,XCP    ,&Xcp_CanIfRxIndication    ,XcpPdu_CanIf2Xcp_CanNodeNum_00_Rx_Broadcast    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+2.,CanIf_XcpPdu_CanNodeNum_00_Rx_Cmd    ,0x333    ,0    ,STANDARD_NO_FD_CAN    ,CanIf_HwRxHandle_CanNodeNum_00_Rx_B    ,CanIf_CanNodeNum_00    ,XCP    ,&Xcp_CanIfRxIndication    ,XcpPdu_CanIf2Xcp_CanNodeNum_00_Rx_Cmd    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+3.,CanIf_CcpPdu_CanNodeNum_00_Rx_Cro    ,0x317    ,0    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_00_Rx_C    ,CanIf_CanNodeNum_00    ,CDD    ,&Ccp_RxIndication_CRO    ,CcpPdu_CanIf2Cdd_CanNodeNum_00_Rx_Cro    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+4.,CanIf_CanNmPdu_CanNodeNum_01_Rx_RIPC    ,0x00    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_A    ,CanIf_CanNodeNum_01    ,CAN_NM    ,&CanNm_RxIndication    ,CanNmPdu_CanIf2CanNm_CanNodeNum_01_RIPC    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+5.,CanIf_DcmPdu_CanNodeNum_01_Rx_FunRequest    ,0x18DBEFF1    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_B    ,CanIf_CanNodeNum_01    ,CAN_TP    ,NULL_PTR    ,DcmPdu_CanIf2CanTp_CanNodeNum_01_FunRequest    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+6.,CanIf_DcmPdu_CanNodeNum_01_Rx_PhyRequest    ,0x18DAEFF1    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_C    ,CanIf_CanNodeNum_01    ,CAN_TP    ,NULL_PTR    ,DcmPdu_CanIf2CanTp_CanNodeNum_01_PhyRequest    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+7.,CanIf_CanPdu_CanNodeNum_01_Rx_01    ,0x18F71E31    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_01    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_01    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+8.,CanIf_CanPdu_CanNodeNum_01_Rx_02    ,0x18F02E31    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_02    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_02    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+9.,CanIf_CanPdu_CanNodeNum_01_Rx_03    ,0x18EF2E31    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_03    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_03    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+10.,CanIf_CanPdu_CanNodeNum_01_Rx_04    ,0x18F53031    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_04    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_04    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+11.,CanIf_CanPdu_CanNodeNum_01_Rx_05    ,0x18FEAE30    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_05    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_05    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+12.,CanIf_CanPdu_CanNodeNum_01_Rx_06    ,0x18FEAE32    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_06    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_06    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+13.,CanIf_CanPdu_CanNodeNum_01_Rx_07    ,0x1DCD6506    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_07    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_07    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+14.,CanIf_CanPdu_CanNodeNum_01_Rx_08    ,0x1DCD6507    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_08    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_08    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+15.,CanIf_CanPdu_CanNodeNum_01_Rx_09    ,0x1DCD6508    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_09    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_09    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+16.,CanIf_CanPdu_CanNodeNum_01_Rx_10    ,0x1DCD6509    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_10    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_10    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+17.,CanIf_CanPdu_CanNodeNum_01_Rx_11    ,0x1DCD650A    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_11    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_11    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+18.,CanIf_CanPdu_CanNodeNum_01_Rx_12    ,0x1DCD650B    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_12    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_12    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+19.,CanIf_CanPdu_CanNodeNum_01_Rx_13    ,0x1DCD650C    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_13    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_13    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+20.,CanIf_CanPdu_CanNodeNum_01_Rx_14    ,0x1DCD650D    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_14    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_14    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+21.,CanIf_CanPdu_CanNodeNum_01_Rx_15    ,0x1DCD650E    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_15    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_15    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+22.,CanIf_CanPdu_CanNodeNum_01_Rx_16    ,0x1DCD650F    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_16    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_16    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+23.,CanIf_CanPdu_CanNodeNum_01_Rx_17    ,0x1DCD6510    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_17    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_17    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+24.,CanIf_CanPdu_CanNodeNum_01_Rx_18    ,0x1DCD6511    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_18    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_18    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+25.,CanIf_CanPdu_CanNodeNum_01_Rx_19    ,0x1DCD6512    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_19    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_19    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+26.,CanIf_CanPdu_CanNodeNum_01_Rx_20    ,0x1DCD6513    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_20    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_20    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+27.,CanIf_CanPdu_CanNodeNum_01_Rx_21    ,0x1DCD6514    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_21    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_21    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+28.,CanIf_CanPdu_CanNodeNum_01_Rx_22    ,0x1DCD6515    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_22    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_22    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+29.,CanIf_CanPdu_CanNodeNum_01_Rx_23    ,0x1DCD6516    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_23    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_23    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+30.,CanIf_CanPdu_CanNodeNum_01_Rx_24    ,0x1DCD6517    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_24    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_24    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+31.,CanIf_CanPdu_CanNodeNum_01_Rx_25    ,0x1DCD6518    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_25    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_25    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+32.,CanIf_CanPdu_CanNodeNum_01_Rx_26    ,0x1DCD6519    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_26    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_26    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+33.,CanIf_CanPdu_CanNodeNum_01_Rx_27    ,0x1DCD651A    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_27    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_27    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+34.,CanIf_CanPdu_CanNodeNum_01_Rx_28    ,0x1DCD651B    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_28    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_28    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+35.,CanIf_CanPdu_CanNodeNum_01_Rx_29    ,0x1DCD651C    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_29    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_29    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+36.,CanIf_CanPdu_CanNodeNum_01_Rx_30    ,0x1DCD651D    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_30    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_30    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+37.,CanIf_CanPdu_CanNodeNum_01_Rx_31    ,0x1DCD651E    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_31    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_31    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+38.,CanIf_CanPdu_CanNodeNum_01_Rx_32    ,0x1DCD651F    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_32    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_32    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+39.,CanIf_CanPdu_CanNodeNum_01_Rx_33    ,0x1DCD6520    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_33    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_33    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+40.,CanIf_CanPdu_CanNodeNum_01_Rx_34    ,0x1DCD6521    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_34    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_34    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+41.,CanIf_CanPdu_CanNodeNum_01_Rx_35    ,0x1DCD6522    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_35    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_35    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+42.,CanIf_CanPdu_CanNodeNum_01_Rx_36    ,0x1DCD6523    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_36    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_36    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+43.,CanIf_CanPdu_CanNodeNum_01_Rx_37    ,0x1DCD6524    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_37    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_37    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+44.,CanIf_CanPdu_CanNodeNum_01_Rx_38    ,0x1DCD6525    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_38    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_38    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+45.,CanIf_CanPdu_CanNodeNum_01_Rx_39    ,0x1DCD6526    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_39    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_39    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+46.,CanIf_CanPdu_CanNodeNum_01_Rx_40    ,0x1DCD6527    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_01_Rx_40    ,CanIf_CanNodeNum_01    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_01_Rx_40    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+47.,CanIf_CanPdu_CanNodeNum_02_Rx_01    ,0xCFF08D0    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_01    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_01    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+48.,CanIf_CanPdu_CanNodeNum_02_Rx_02    ,0xCFF07D0    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_02    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_02    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+49.,CanIf_CanPdu_CanNodeNum_02_Rx_03    ,0xCFF06D0    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_03    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_03    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+50.,CanIf_CanPdu_CanNodeNum_02_Rx_04    ,0x1DCD652B    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_04    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_04    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+51.,CanIf_CanPdu_CanNodeNum_02_Rx_05    ,0x1DCD652C    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_05    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_05    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+52.,CanIf_CanPdu_CanNodeNum_02_Rx_06    ,0x1DCD652D    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_06    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_06    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+53.,CanIf_CanPdu_CanNodeNum_02_Rx_07    ,0x1DCD652E    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_07    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_07    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+54.,CanIf_CanPdu_CanNodeNum_02_Rx_08    ,0x1DCD652F    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_08    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_08    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+55.,CanIf_CanPdu_CanNodeNum_02_Rx_09    ,0x1DCD6530    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_09    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_09    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+56.,CanIf_CanPdu_CanNodeNum_02_Rx_10    ,0x1DCD6531    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_10    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_10    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+57.,CanIf_CanPdu_CanNodeNum_02_Rx_11    ,0x1DCD6532    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_11    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_11    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+58.,CanIf_CanPdu_CanNodeNum_02_Rx_12    ,0x1DCD6533    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_12    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_12    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+59.,CanIf_CanPdu_CanNodeNum_02_Rx_13    ,0x1DCD6534    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_13    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_13    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+60.,CanIf_CanPdu_CanNodeNum_02_Rx_14    ,0x1DCD6535    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_14    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_14    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+61.,CanIf_CanPdu_CanNodeNum_02_Rx_15    ,0x1DCD6536    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_15    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_15    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+62.,CanIf_CanPdu_CanNodeNum_02_Rx_16    ,0x1DCD6537    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_16    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_16    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+63.,CanIf_CanPdu_CanNodeNum_02_Rx_17    ,0x1DCD6538    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_17    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_17    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+64.,CanIf_CanPdu_CanNodeNum_02_Rx_18    ,0x1DCD6539    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_18    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_18    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+65.,CanIf_CanPdu_CanNodeNum_02_Rx_19    ,0x1DCD653A    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_19    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_19    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+66.,CanIf_CanPdu_CanNodeNum_02_Rx_20    ,0x1DCD653B    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_20    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_20    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+67.,CanIf_CanPdu_CanNodeNum_02_Rx_21    ,0x1DCD653C    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_21    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_21    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+68.,CanIf_CanPdu_CanNodeNum_02_Rx_22    ,0x1DCD653D    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_22    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_22    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+69.,CanIf_CanPdu_CanNodeNum_02_Rx_23    ,0x1DCD653E    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_23    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_23    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+70.,CanIf_CanPdu_CanNodeNum_02_Rx_24    ,0x1DCD653F    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_24    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_24    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+71.,CanIf_CanPdu_CanNodeNum_02_Rx_25    ,0x1DCD6540    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_25    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_25    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+72.,CanIf_CanPdu_CanNodeNum_02_Rx_26    ,0x1DCD6541    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_26    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_26    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+73.,CanIf_CanPdu_CanNodeNum_02_Rx_27    ,0x1DCD6542    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_27    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_27    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+74.,CanIf_CanPdu_CanNodeNum_02_Rx_28    ,0x1DCD6543    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_28    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_28    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+75.,CanIf_CanPdu_CanNodeNum_02_Rx_29    ,0x1DCD6544    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_29    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_29    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+76.,CanIf_CanPdu_CanNodeNum_02_Rx_30    ,0x1DCD6545    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_30    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_30    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+77.,CanIf_CanPdu_CanNodeNum_02_Rx_31    ,0x1DCD6546    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_31    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_31    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+78.,CanIf_CanPdu_CanNodeNum_02_Rx_32    ,0x1DCD6547    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_32    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_32    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+79.,CanIf_CanPdu_CanNodeNum_02_Rx_33    ,0x1DCD6548    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_33    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_33    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+80.,CanIf_CanPdu_CanNodeNum_02_Rx_34    ,0x1DCD6549    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_34    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_34    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+81.,CanIf_CanPdu_CanNodeNum_02_Rx_35    ,0x1DCD654A    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_35    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_35    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+82.,CanIf_CanPdu_CanNodeNum_02_Rx_36    ,0x1DCD654B    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_36    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_36    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+83.,CanIf_CanPdu_CanNodeNum_02_Rx_37    ,0x1DCD654C    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_37    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_37    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+84.,CanIf_CanPdu_CanNodeNum_02_Rx_38    ,0x1DCD654D    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_38    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_38    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+85.,CanIf_CanPdu_CanNodeNum_02_Rx_39    ,0x1DCD654E    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_39    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_39    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+86.,CanIf_CanPdu_CanNodeNum_02_Rx_40    ,0x1DCD654F    ,8    ,EXTENDED_CAN    ,CanIf_HwRxHandle_CanNodeNum_02_Rx_40    ,CanIf_CanNodeNum_02    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_02_Rx_40    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+87.,CanIf_CanPdu_CanNodeNum_03_Rx_01    ,0x3C0    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_01    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_01    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+88.,CanIf_CanPdu_CanNodeNum_03_Rx_02    ,0x3C1    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_02    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_02    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+89.,CanIf_CanPdu_CanNodeNum_03_Rx_03    ,0x3C2    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_03    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_03    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+90.,CanIf_CanPdu_CanNodeNum_03_Rx_04    ,0x3C3    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_04    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_04    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+91.,CanIf_CanPdu_CanNodeNum_03_Rx_05    ,0x355    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_05    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_05    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+92.,CanIf_CanPdu_CanNodeNum_03_Rx_06    ,0x356    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_06    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_06    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+93.,CanIf_CanPdu_CanNodeNum_03_Rx_07    ,0x357    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_07    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_07    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+94.,CanIf_CanPdu_CanNodeNum_03_Rx_08    ,0x358    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_08    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_08    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+95.,CanIf_CanPdu_CanNodeNum_03_Rx_09    ,0x359    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_09    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_09    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+96.,CanIf_CanPdu_CanNodeNum_03_Rx_10    ,0x360    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_10    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_10    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+97.,CanIf_CanPdu_CanNodeNum_03_Rx_11    ,0x361    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_11    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_11    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+98.,CanIf_CanPdu_CanNodeNum_03_Rx_12    ,0x362    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_12    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_12    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+99.,CanIf_CanPdu_CanNodeNum_03_Rx_13    ,0x363    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_13    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_13    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+100.,CanIf_CanPdu_CanNodeNum_03_Rx_14    ,0x364    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_14    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_14    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+101.,CanIf_CanPdu_CanNodeNum_03_Rx_15    ,0x365    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_15    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_15    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+102.,CanIf_CanPdu_CanNodeNum_03_Rx_16    ,0x366    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_16    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_16    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+103.,CanIf_CanPdu_CanNodeNum_03_Rx_17    ,0x367    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_17    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_17    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+104.,CanIf_CanPdu_CanNodeNum_03_Rx_18    ,0x368    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_18    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_18    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+105.,CanIf_CanPdu_CanNodeNum_03_Rx_19    ,0x369    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_19    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_19    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+106.,CanIf_CanPdu_CanNodeNum_03_Rx_20    ,0x370    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_20    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_20    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+107.,CanIf_CanPdu_CanNodeNum_03_Rx_21    ,0x371    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_21    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_21    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+108.,CanIf_CanPdu_CanNodeNum_03_Rx_22    ,0x372    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_22    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_22    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+109.,CanIf_CanPdu_CanNodeNum_03_Rx_23    ,0x373    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_23    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_23    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+110.,CanIf_CanPdu_CanNodeNum_03_Rx_24    ,0x374    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_24    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_24    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+111.,CanIf_CanPdu_CanNodeNum_03_Rx_25    ,0x375    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_25    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_25    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+112.,CanIf_CanPdu_CanNodeNum_03_Rx_26    ,0x376    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_26    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_26    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+113.,CanIf_CanPdu_CanNodeNum_03_Rx_27    ,0x377    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_27    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_27    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+114.,CanIf_CanPdu_CanNodeNum_03_Rx_28    ,0x378    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_28    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_28    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+115.,CanIf_CanPdu_CanNodeNum_03_Rx_29    ,0x379    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_29    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_29    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+116.,CanIf_CanPdu_CanNodeNum_03_Rx_30    ,0x380    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_30    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_30    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+117.,CanIf_CanPdu_CanNodeNum_03_Rx_31    ,0x381    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_31    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_31    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+118.,CanIf_CanPdu_CanNodeNum_03_Rx_32    ,0x382    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_32    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_32    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+119.,CanIf_CanPdu_CanNodeNum_03_Rx_33    ,0x383    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_33    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_33    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+120.,CanIf_CanPdu_CanNodeNum_03_Rx_34    ,0x384    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_34    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_34    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+121.,CanIf_CanPdu_CanNodeNum_03_Rx_35    ,0x385    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_35    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_35    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+122.,CanIf_CanPdu_CanNodeNum_03_Rx_36    ,0x386    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_36    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_36    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+123.,CanIf_CanPdu_CanNodeNum_03_Rx_37    ,0x387    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_37    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_37    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+124.,CanIf_CanPdu_CanNodeNum_03_Rx_38    ,0x388    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_38    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_38    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+125.,CanIf_CanPdu_CanNodeNum_03_Rx_39    ,0x389    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_39    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_39    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+126.,CanIf_CanPdu_CanNodeNum_03_Rx_40    ,0x390    ,8    ,STANDARD_CAN    ,CanIf_HwRxHandle_CanNodeNum_03_Rx_40    ,CanIf_CanNodeNum_03    ,PDUR    ,&PduR_CanIfRxIndication    ,CanPdu_CanIf2PduR_CanNodeNum_03_Rx_40    ,ENABLED    ,DISABLED    
+    ,STATIC    
+
+*********************************************************************************************************************************************************************************************
+
+

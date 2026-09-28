@@ -1,0 +1,13 @@
+#ifndef __VADC_FUNC_MAP_H_
+#define __VADC_FUNC_MAP_H_
+
+#include "Std_Types.h"
+
+enum{
+   VADC_0_GROUP_0_M_AN_MOT_COS_1 = 0,
+   VADC_0_GROUP_0_M_AN_MOT_SIN_1,
+   VADC_0_GROUP_0_M_AN_MON_CURRENT_OCP_MCU1,
+   VADC_0_GROUP_0_M_AN_MON_CURRENT_OCP_MCU2,
+};
+
+#endif /* __VADC_FUNC_MAP_H_ */

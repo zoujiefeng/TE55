@@ -1,0 +1,835 @@
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./bsw done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./bswcdd done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./main done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./rte done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./os done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./asw done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./Targets done
+Start remove_macro  . was excuted
+End remove_macro 
+updated sconsscript folder ./Integration done
+scons: done reading SConscript files.
+scons: Building targets ...
+Compiling Integration\ecu\BswM_Callout_Stub.c
+Compiling Integration\mcal\main.c
+
+Compiling bsw\BswM\integration\BswM_Appl.c
+Compiling bsw\BswM\src\BswM.c
+Compiling bsw\BswM\src\BswM_CanSM.c
+Compiling bsw\BswM\src\BswM_ComM.c
+Compiling bsw\BswM\src\BswM_DCM.c
+Compiling bsw\BswM\src\BswM_EcuM.c
+Compiling bsw\BswM\src\BswM_EthIf.c
+Integration\mcal\main.c:51:6: warning: no previous prototype for 'TargetEn_PeriodicInterrupt' [-Wmissing-prototypes]
+ void TargetEn_PeriodicInterrupt(void)
+      ^
+Integration\mcal\main.c: In function 'DefaultInterruptHandler':
+Integration\mcal\main.c:97:72: warning: function might be candidate for attribute 'noreturn' [-Wsuggest-attribute=noreturn]
+ CAT1_ISR(DefaultInterruptHandler)
+                                                                        ^
+
+Compiling bsw\BswM\src\BswM_EthSM.c
+
+
+Compiling bsw\BswM\src\BswM_FrSM.c
+Compiling bsw\BswM\src\BswM_Generic.c
+
+
+Compiling bsw\BswM\src\BswM_J1939Dcm.c
+Compiling bsw\BswM\src\BswM_J1939Nm.c
+
+
+
+Compiling bsw\BswM\src\BswM_LinSM.c
+Compiling bsw\BswM\src\BswM_LinTp.c
+Compiling bsw\BswM\src\BswM_Nm.c
+
+Compiling bsw\BswM\src\BswM_NvM.c
+
+Compiling bsw\BswM\src\BswM_Prv.c
+
+Compiling bsw\BswM\src\BswM_Prv_AC.c
+
+Compiling bsw\BswM\src\BswM_Prv_AL.c
+
+Compiling bsw\BswM\src\BswM_Prv_IntrptQueue.c
+
+Compiling bsw\BswM\src\BswM_Prv_MRP.c
+
+
+Compiling bsw\BswM\src\BswM_Prv_ProcessDeferredRequest.c
+Compiling bsw\BswM\src\BswM_Prv_ProcessDelayedReqst.c
+
+Compiling bsw\BswM\src\BswM_Prv_RL.c
+
+
+Compiling bsw\BswM\src\BswM_Sd.c
+Compiling bsw\BswM\src\BswM_WdgM.c
+
+Compiling bsw\BswM_PreCompile_and_PB_Variant\BswM_Cfg_AC.c
+
+
+Compiling bsw\BswM_PreCompile_and_PB_Variant\BswM_Cfg_LE.c
+Compiling bsw\BswM_PreCompile_and_PB_Variant\BswM_Cfg_ModeManagerReq.c
+
+
+Compiling bsw\BswM_PreCompile_and_PB_Variant\BswM_Cfg_MRP.c
+Compiling bsw\BswM_PreCompile_and_PB_Variant\BswM_Cfg_RL.c
+
+Compiling bsw\BswM_PreCompile_and_PB_Variant\BswM_PBcfg.c
+
+
+bsw\BswM_PreCompile_and_PB_Variant\BswM_Cfg_AC.c: In function 'BswM_Cfg_AC_UserCallout_13_BswM_AI_CanTrcv_Init':
+bsw\BswM_PreCompile_and_PB_Variant\BswM_Cfg_AC.c:640:2: warning: implicit declaration of function 'CanTrcv_Init' [-Wimplicit-function-declaration]
+  CanTrcv_Init (NULL_PTR);
+  ^
+bsw\BswM_PreCompile_and_PB_Variant\BswM_Cfg_AC.c:640:2: warning: nested extern declaration of 'CanTrcv_Init' [-Wnested-externs]
+
+
+bsw\BswM_PreCompile_and_PB_Variant\BswM_Cfg_LE.c: In function 'BswM_Cfg_LE_BswM_LE_AppRun':
+bsw\BswM_PreCompile_and_PB_Variant\BswM_Cfg_LE.c:61:40: warning: comparison between 'enum <anonymous>' and 'CanSM_BswMCurrentStateType' [-Wenum-compare]
+   if (FALSE != BSWMLOGEXP_BSWM_LE_APPRUN) {
+                                        ^
+bsw\BswM_PreCompile_and_PB_Variant\BswM_Cfg_LE.c:61:180: warning: comparison between 'enum <anonymous>' and 'CanSM_BswMCurrentStateType' [-Wenum-compare]
+   if (FALSE != BSWMLOGEXP_BSWM_LE_APPRUN) {
+                                                                                                                                                                                    ^
+bsw\BswM_PreCompile_and_PB_Variant\BswM_Cfg_LE.c:61:259: warning: comparison between 'enum <anonymous>' and 'CanSM_BswMCurrentStateType' [-Wenum-compare]
+   if (FALSE != BSWMLOGEXP_BSWM_LE_APPRUN) {
+                                                                                                                                                                                                                                                                   ^
+
+
+
+
+Compiling bsw\Dcm\Dcm_Lcfg_DslDsd.c
+Compiling bsw\Dcm\Dcm_Lcfg_DspObd.c
+Compiling bsw\Dcm\Dcm_Lcfg_DspUds.c
+Compiling bsw\Dcm\integration\DcmAppl_CheckEncryptionCompressionMethod.c
+Compiling bsw\Dcm\integration\DcmAppl_ConfirmationRespPend.c
+Compiling bsw\Dcm\integration\DcmAppl_DcmCancelPagedBufferProcessing.c
+Compiling bsw\Dcm\integration\DcmAppl_DcmCheckCDTCRecord.c
+Compiling bsw\Dcm\integration\DcmAppl_DcmCheckControlMaskAndState.c
+
+
+
+Compiling bsw\Dcm\integration\DcmAppl_DcmCheckRdbiResponseLength.c
+Compiling bsw\Dcm\integration\DcmAppl_DcmCheckRoutineControlOptionRecord.c
+Compiling bsw\Dcm\integration\DcmAppl_DcmCheckSeed.c
+
+Compiling bsw\Dcm\integration\DcmAppl_DcmCheckWDBIReqLen.c
+
+bsw\Dcm\integration\DcmAppl_DcmCheckControlMaskAndState.c: In function 'DcmAppl_DcmCheckControlMaskAndState':
+bsw\Dcm\integration\DcmAppl_DcmCheckControlMaskAndState.c:38:9: warning: variable 'dataControlMaskLen_u16' set but not used [-Wunused-but-set-variable]
+  uint16 dataControlMaskLen_u16;
+         ^
+
+Compiling bsw\Dcm\integration\DcmAppl_DcmClearRoeEventInformation.c
+Compiling bsw\Dcm\integration\DcmAppl_DcmCommControlConditionCheck.c
+
+
+Compiling bsw\Dcm\integration\DcmAppl_DcmComModeError.c
+Compiling bsw\Dcm\integration\DcmAppl_DcmConfirmation.c
+
+Compiling bsw\Dcm\integration\DcmAppl_DcmConfirmationRDPI.c
+
+
+
+Compiling bsw\Dcm\integration\DcmAppl_DcmConfirmation_DcmNegResp.c
+Compiling bsw\Dcm\integration\DcmAppl_DcmConfirmation_GeneralReject.c
+
+
+
+
+Compiling bsw\Dcm\integration\DcmAppl_DcmControlDtcSettingEnableStatus.c
+Compiling bsw\Dcm\integration\DcmAppl_DcmCopyRxData.c
+Compiling bsw\Dcm\integration\DcmAppl_DcmEcuResetPreparation.c
+Compiling bsw\Dcm\integration\DcmAppl_DcmGetNRCForMinLengthCheck.c
+Compiling bsw\Dcm\integration\DcmAppl_DcmGetP2Timings.c
+
+
+
+Compiling bsw\Dcm\integration\DcmAppl_DcmGetPermissionForMemoryAccess_u8.c
+Compiling bsw\Dcm\integration\DcmAppl_DcmGetPermTxWarmResp.c
+Compiling bsw\Dcm\integration\DcmAppl_DcmGetRemainingResponseLength.c
+
+
+
+Compiling bsw\Dcm\integration\DcmAppl_DcmGetROEDidInfo.c
+Compiling bsw\Dcm\integration\DcmAppl_DcmGetRoeDTCInfo.c
+Compiling bsw\Dcm\integration\DcmAppl_DcmGetRxPermission.c
+
+
+Compiling bsw\Dcm\integration\DcmAppl_DcmGetSesChgPermission.c
+Compiling bsw\Dcm\integration\DcmAppl_DcmGetStoreType.c
+
+Compiling bsw\Dcm\integration\DcmAppl_DcmGetUpdatedDelayForPowerOn.c
+
+
+
+Compiling bsw\Dcm\integration\DcmAppl_DcmGetUpdatedDelayTime.c
+
+Compiling bsw\Dcm\integration\DcmAppl_DcmIndicationFuncTpr.c
+Compiling bsw\Dcm\integration\DcmAppl_DcmIsComModeDefault.c
+Compiling bsw\Dcm\integration\DcmAppl_DcmMemSizeCheckForTransferData.c
+
+
+
+Compiling bsw\Dcm\integration\DcmAppl_DcmModifyResponse.c
+Compiling bsw\Dcm\integration\DcmAppl_DcmNotification.c
+Compiling bsw\Dcm\integration\DcmAppl_DcmReadDataNRC.c
+
+
+
+
+Compiling bsw\Dcm\integration\DcmAppl_DcmReadDddiFromNvM.c
+Compiling bsw\Dcm\integration\DcmAppl_DcmRespWarmInit.c
+Compiling bsw\Dcm\integration\DcmAppl_DcmRxIndication.c
+Compiling bsw\Dcm\integration\DcmAppl_DcmSecaInvalidKey.c
+
+Compiling bsw\Dcm\integration\DcmAppl_DcmSecaValidKey.c
+
+Compiling bsw\Dcm\integration\DcmAppl_DcmSecurityLevelLocked.c
+
+Compiling bsw\Dcm\integration\DcmAppl_DcmSesCtrlChangeIndication.c
+
+Compiling bsw\Dcm\integration\DcmAppl_DcmSetUpRoeEvent.c
+
+
+Compiling bsw\Dcm\integration\DcmAppl_DcmStartOfReception.c
+Compiling bsw\Dcm\integration\DcmAppl_DcmStartProtocol.c
+
+Compiling bsw\Dcm\integration\DcmAppl_DcmStopProtocol.c
+
+Compiling bsw\Dcm\integration\DcmAppl_DcmStoreRespForJump.c
+
+Compiling bsw\Dcm\integration\DcmAppl_DcmStoreROEcycleCounter.c
+
+
+
+Compiling bsw\Dcm\integration\DcmAppl_DcmStoreRoeDidInfo.c
+Compiling bsw\Dcm\integration\DcmAppl_DcmStoreRoeDTCInfo.c
+Compiling bsw\Dcm\integration\DcmAppl_DcmSwitchCommunicationControl.c
+
+Compiling bsw\Dcm\integration\DcmAppl_DcmTransferDataCheckPermission.c
+
+Compiling bsw\Dcm\integration\DcmAppl_DcmUpdateRxTable.c
+
+
+
+
+
+
+Compiling bsw\Dcm\integration\DcmAppl_DcmWriteOrClearDddiInNvM.c
+Compiling bsw\Dcm\integration\DcmAppl_Dcm_GetProgConditions.c
+Compiling bsw\Dcm\integration\DcmAppl_Dcm_ProcessRequestDownload.c
+Compiling bsw\Dcm\integration\DcmAppl_Dcm_ProcessRequestTransferExit.c
+Compiling bsw\Dcm\integration\DcmAppl_Dcm_ProcessRequestUpload.c
+Compiling bsw\Dcm\integration\DcmAppl_Dcm_ReadMemory.c
+
+Compiling bsw\Dcm\integration\DcmAppl_Dcm_SetProgConditions.c
+
+Compiling bsw\Dcm\integration\DcmAppl_Dcm_WriteMemory.c
+
+Compiling bsw\Dcm\integration\DcmAppl_DDDI_Read_Memory_Condition.c
+
+
+bsw\Dcm\integration\DcmAppl_Dcm_ReadMemory.c: In function 'DcmAppl_Dcm_ReadMemory':
+bsw\Dcm\integration\DcmAppl_Dcm_ReadMemory.c:46:33: warning: passing argument 2 of 'rba_BswSrv_MemCopy8' makes pointer from integer without a cast
+     rba_BswSrv_MemCopy8(respbuf,memoryaddress,datalength);
+                                 ^
+In file included from .\output\inc/rba_BswSrv.h:1:0,
+                 from bsw\Dcm\integration\Dcm_Cfg_SchM.h:7,
+                 from bsw\Dcm\integration\DcmAppl_Dcm_ReadMemory.c:5:
+.\output\inc/..\..\bsw\integration\rba_BswSrv\api\rba_BswSrv.h:281:24: note: expected 'const uint8 *' but argument is of type 'uint32'
+ LOCAL_INLINE void rba_BswSrv_MemCopy8(uint8* xDest_pu8, const uint8* xSrc_pcu8, uint32 numBytes_u32)
+                        ^
+
+Compiling bsw\Dcm\integration\DcmAppl_DisableDTCSetting.c
+Compiling bsw\Dcm\integration\DcmAppl_EnableDTCSetting.c
+Compiling bsw\Dcm\integration\DcmAppl_ManufacturerNotification.c
+
+
+Compiling bsw\Dcm\integration\DcmAppl_OBD_Mode04.c
+Compiling bsw\Dcm\integration\DcmAppl_P3TimeoutIndication.c
+
+Compiling bsw\Dcm\integration\DcmAppl_Switch_DcmBootLoaderReset.c
+
+
+
+
+Compiling bsw\Dcm\integration\DcmAppl_Switch_DcmDiagnosticSessionControl.c
+Compiling bsw\Dcm\integration\DcmAppl_Switch_DcmDriveToDriveReset.c
+Compiling bsw\Dcm\integration\DcmAppl_Switch_DcmEcuReset.c
+Compiling bsw\Dcm\integration\DcmAppl_Switch_DcmExecuteDscReset.c
+
+Compiling bsw\Dcm\integration\DcmAppl_Switch_DcmExecuteEcuReset.c
+
+
+Compiling bsw\Dcm\integration\DcmAppl_Switch_DcmExecuteReset.c
+Compiling bsw\Dcm\integration\DcmAppl_Switch_DcmResponseOnEvent.c
+
+
+
+Compiling bsw\Dcm\integration\DcmAppl_Switch_DcmSysSupplierReset.c
+Compiling bsw\Dcm\integration\DcmAppl_UserCommCtrlReEnableModeRuleService.c
+bsw\Dcm\integration\DcmAppl_Switch_DcmBootLoaderReset.c: In function 'DcmAppl_Switch_DcmBootLoaderReset':
+bsw\Dcm\integration\DcmAppl_Switch_DcmBootLoaderReset.c:50:7: warning: implicit declaration of function 'BSW_vidSetChanReqState' [-Wimplicit-function-declaration]
+       BSW_vidSetChanReqState(Dcm_DsldGlobal_st.nrActiveConn_u8);
+       ^
+bsw\Dcm\integration\DcmAppl_Switch_DcmBootLoaderReset.c:50:7: warning: nested extern declaration of 'BSW_vidSetChanReqState' [-Wnested-externs]
+bsw\Dcm\integration\DcmAppl_Switch_DcmBootLoaderReset.c: At top level:
+bsw\Dcm\integration\DcmAppl_Switch_DcmBootLoaderReset.c:65:6: warning: no previous prototype for 'DcmAppl_StayInBoot' [-Wmissing-prototypes]
+ void DcmAppl_StayInBoot(void)
+      ^
+bsw\Dcm\integration\DcmAppl_Switch_DcmBootLoaderReset.c:81:6: warning: no previous prototype for 'DcmAppl_StartSwap' [-Wmissing-prototypes]
+ void DcmAppl_StartSwap(void)
+      ^
+
+
+
+Compiling bsw\Dcm\integration\DcmAppl_UserDIDModeRuleService.c
+Compiling bsw\Dcm\integration\DcmAppl_UserDTCSettingEnableModeRuleService.c
+Compiling bsw\Dcm\integration\DcmAppl_UserMemoryRangeModeRuleService.c
+Compiling bsw\Dcm\integration\DcmAppl_UserRIDModeRuleService.c
+
+
+Compiling bsw\Dcm\integration\DcmAppl_UserServiceModeRuleService.c
+Compiling bsw\Dcm\integration\DcmAppl_UserSubServiceModeRuleService.c
+
+
+Compiling bsw\Dcm\src\DcmCore\DcmCoreDslDsd\DcmCore_DslDsd_BootLoader.c
+Compiling bsw\Dcm\src\DcmCore\DcmCoreDslDsd\DcmCore_DslDsd_ConfirmRespPend.c
+
+
+Compiling bsw\Dcm\src\DcmCore\DcmCoreDslDsd\DcmCore_DslDsd_GetKwpTimingValues.c
+Compiling bsw\Dcm\src\DcmCore\DcmCoreDslDsd\DcmCore_DslDsd_PrepareKwpTimingValues.c
+
+
+Compiling bsw\Dcm\src\DcmCore\DcmCoreDslDsd\DcmCore_DslDsd_RestartP3Timer.c
+Compiling bsw\Dcm\src\DcmCore\DcmCoreDslDsd\DcmCore_DslDsd_RestoreSecaTimer.c
+
+
+Compiling bsw\Dcm\src\DcmCore\DcmCoreDslDsd\DcmCore_DslDsd_SetKwpDefaultTimingValues.c
+Compiling bsw\Dcm\src\DcmCore\DcmCoreDslDsd\DcmCore_DslDsd_SetKwpTimingValues.c
+
+Compiling bsw\Dcm\src\DcmCore\DcmCoreDslDsd\DcmCore_DslDsd_SetP3MaxMonitoring.c
+
+Compiling bsw\Dcm\src\DcmCore\DcmCoreDslDsd\DcmCore_DslDsd_WarmStart.c
+
+
+Compiling bsw\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_InternalApi.c
+Compiling bsw\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_SignalLib.c
+
+
+Compiling bsw\Dcm\src\DcmCore\DcmCoreMain\DcmCore_Main.c
+Compiling bsw\Dcm\src\DcmCore\DcmCoreMain\DcmCore_Main_Init.c
+
+
+Compiling bsw\Dcm\src\DcmDsp\DcmDspLib\DcmDspUds_Memaddress_Calc.c
+Compiling bsw\Dcm\src\DcmDsp\DcmDspObd\DcmDspObd_Mode1.c
+
+
+
+
+Compiling bsw\Dcm\src\DcmDsp\DcmDspObd\DcmDspObd_Mode2.c
+Compiling bsw\Dcm\src\DcmDsp\DcmDspObd\DcmDspObd_Mode37A.c
+Compiling bsw\Dcm\src\DcmDsp\DcmDspObd\DcmDspObd_Mode4.c
+Compiling bsw\Dcm\src\DcmDsp\DcmDspObd\DcmDspObd_Mode6.c
+
+
+
+Compiling bsw\Dcm\src\DcmDsp\DcmDspObd\DcmDspObd_Mode8.c
+
+Compiling bsw\Dcm\src\DcmDsp\DcmDspObd\DcmDspObd_Mode9.c
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_CC.c
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Cdi.c
+bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_CC.c: In function 'Dcm_DcmCommunicationControl':
+bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_CC.c:203:12: warning: 'idx_subNode_u16' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     uint16 idx_subNode_u16;   /* Local variable to get the index of the Sub Node */
+            ^
+
+
+
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Cdtcs.c
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Dddi.c
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Did_Support.c
+
+
+
+
+
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Dsc.c
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Er.c
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_GetVIN.c
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Iocbi.c
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rc.c
+
+
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdbi.c
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdpi.c
+
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdtc.c
+
+
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdtc_GetFreezeFrameDataByRecord.c
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdtc_RepDTCFaultDetectionCounter.c
+
+
+
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdtc_RepFailedDTC.c
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdtc_RepNumDTCByStatusMask.c
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdtc_ReportDTCBySevMaskRec.c
+
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdtc_ReportDTCSnapshotRecId.c
+
+
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdtc_ReportExtendedDataRecordByDTC.c
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdtc_ReportSnapshotRecordByDTC.c
+
+bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdbi.c: In function 'Dcm_DspGetTotalLengthOfDIDs_en':
+bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdbi.c:259:31: warning: variable 'ptrDidConfig' set but not used [-Wunused-but-set-variable]
+     const Dcm_DIDConfig_tst * ptrDidConfig;
+                               ^
+bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdbi.c: In function 'Dcm_GetData_en':
+bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdbi.c:1261:46: warning: variable 'ptrControlSigConfig' set but not used [-Wunused-but-set-variable]
+     const Dcm_SignalDIDSubStructConfig_tst * ptrControlSigConfig;
+                                              ^
+
+
+
+
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdtc_RepSeverityOfDTC.c
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdtc_RepSuppDTC.c
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_RequestDownload.c
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_RequestTransferExit.c
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_RequestUpload.c
+
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rmba.c
+
+
+
+
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Roe.c
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Seca.c
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Seca_ChgSecurity.c
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Seca_RestoreDelayCount.c
+
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Seca_SecurityIni.c
+
+
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Tp.c
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_TransferData.c
+
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Uds_Did_F186.c
+
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Wdbi.c
+
+Compiling bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Wmba.c
+
+
+Compiling bsw\Dcm\src\Dsd\Dcm_Dsd_Lib.c
+Compiling bsw\Dcm\src\Dsd\Dcm_Dsd_Rdpi.c
+In file included from .\output\inc/..\..\bsw\Dem\api\Dem.h:14:0,
+                 from .\output\inc/Dem.h:1,
+                 from .\output\inc/..\..\bsw\PduR\api\PduR.h:42,
+                 from .\output\inc/PduR.h:1,
+                 from .\output\inc/..\..\bsw\PduR\PduR_Dcm.h:4,
+                 from .\output\inc/PduR_Dcm.h:1,
+                 from .\output\inc/..\..\bsw\Dcm\src\DcmCore\DcmCoreDslDsd\DcmCore_DslDsd_Inf.h:23,
+                 from .\output\inc/DcmCore_DslDsd_Inf.h:1,
+                 from bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_TransferData.c:4:
+.\output\inc/..\..\bsw\Dem\api\Dem_Types.h:31:0: warning: "DEM_CLEAR_MEMORY_ERROR" redefined
+ #define DEM_CLEAR_MEMORY_ERROR       6u
+ ^
+In file included from .\output\inc/DcmAppl.h:1:0,
+                 from bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_TransferData_Inf.h:22,
+                 from bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_TransferData.c:3:
+.\output\inc/..\..\bsw\Dcm\integration\DcmAppl.h:53:0: note: this is the location of the previous definition
+ #define DEM_CLEAR_MEMORY_ERROR 6
+ ^
+In file included from .\output\inc/..\..\bsw\Dem\api\Dem.h:14:0,
+                 from .\output\inc/Dem.h:1,
+                 from .\output\inc/..\..\bsw\PduR\api\PduR.h:42,
+                 from .\output\inc/PduR.h:1,
+                 from .\output\inc/..\..\bsw\PduR\PduR_Dcm.h:4,
+                 from .\output\inc/PduR_Dcm.h:1,
+                 from .\output\inc/..\..\bsw\Dcm\src\DcmCore\DcmCoreDslDsd\DcmCore_DslDsd_Inf.h:23,
+                 from .\output\inc/DcmCore_DslDsd_Inf.h:1,
+                 from bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_TransferData.c:4:
+.\output\inc/..\..\bsw\Dem\api\Dem_Types.h:33:0: warning: "DEM_WRONG_DTC" redefined
+ #define DEM_WRONG_DTC                8u
+ ^
+In file included from .\output\inc/DcmAppl.h:1:0,
+                 from bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_TransferData_Inf.h:22,
+                 from bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_TransferData.c:3:
+.\output\inc/..\..\bsw\Dcm\integration\DcmAppl.h:45:0: note: this is the location of the previous definition
+ #define DEM_WRONG_DTC 8
+ ^
+In file included from .\output\inc/..\..\bsw\Dem\api\Dem.h:14:0,
+                 from .\output\inc/Dem.h:1,
+                 from .\output\inc/..\..\bsw\PduR\api\PduR.h:42,
+                 from .\output\inc/PduR.h:1,
+                 from .\output\inc/..\..\bsw\PduR\PduR_Dcm.h:4,
+                 from .\output\inc/PduR_Dcm.h:1,
+                 from .\output\inc/..\..\bsw\Dcm\src\DcmCore\DcmCoreDslDsd\DcmCore_DslDsd_Inf.h:23,
+                 from .\output\inc/DcmCore_DslDsd_Inf.h:1,
+                 from bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_TransferData.c:4:
+.\output\inc/..\..\bsw\Dem\api\Dem_Types.h:34:0: warning: "DEM_WRONG_DTCORIGIN" redefined
+ #define DEM_WRONG_DTCORIGIN          9u
+ ^
+In file included from .\output\inc/DcmAppl.h:1:0,
+                 from bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_TransferData_Inf.h:22,
+                 from bsw\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_TransferData.c:3:
+.\output\inc/..\..\bsw\Dcm\integration\DcmAppl.h:49:0: note: this is the location of the previous definition
+ #define DEM_WRONG_DTCORIGIN 9
+ ^
+
+
+Compiling bsw\Dcm\src\Dsd\Dcm_Dsd_Roe.c
+Compiling bsw\Dcm\src\Dsd\Dcm_Dsd_StateMachine.c
+
+Compiling bsw\Dcm\src\Dsl\Dcm_Dsl_CancelTransmit.c
+
+Compiling bsw\Dcm\src\Dsl\Dcm_Dsl_ComMInteraction.c
+
+Compiling bsw\Dcm\src\Dsl\Dcm_Dsl_CopyRxData.c
+
+Compiling bsw\Dcm\src\Dsl\Dcm_Dsl_CopyTxData.c
+
+
+Compiling bsw\Dcm\src\Dsl\Dcm_Dsl_OBDStateMachine.c
+Compiling bsw\Dcm\src\Dsl\Dcm_Dsl_PagedBuffer.c
+
+
+
+Compiling bsw\Dcm\src\Dsl\Dcm_Dsl_Protocol.c
+Compiling bsw\Dcm\src\Dsl\Dcm_Dsl_RxIndication.c
+Compiling bsw\Dcm\src\Dsl\Dcm_Dsl_Security.c
+
+Compiling bsw\Dcm\src\Dsl\Dcm_Dsl_Session.c
+
+Compiling bsw\Dcm\src\Dsl\Dcm_Dsl_StartOfReception.c
+
+Compiling bsw\Dcm\src\Dsl\Dcm_Dsl_StateMachine.c
+
+
+Compiling bsw\Dcm\src\Dsl\Dcm_Dsl_TxResponse.c
+
+
+
+
+
+
+
+Compiling bsw\EcuM\EcuM_Cfg_Startup.c
+Compiling bsw\EcuM\EcuM_PBcfg.c
+Compiling bsw\EcuM\integration\EcuM_Callout_Stubs.c
+Compiling bsw\EcuM\src\EcuM_BootTarget.c
+Compiling bsw\EcuM\src\EcuM_CurrentState.c
+Compiling bsw\EcuM\src\EcuM_KillAllRequests.c
+Compiling bsw\EcuM\src\EcuM_MainFunction.c
+Compiling bsw\EcuM\src\EcuM_Misc.c
+
+Compiling bsw\EcuM\src\EcuM_Prv.c
+
+Compiling bsw\EcuM\src\EcuM_ReleasePOST_RUN.c
+
+Compiling bsw\EcuM\src\EcuM_ReleaseRUN.c
+
+bsw\EcuM\integration\EcuM_Callout_Stubs.c: In function 'EcuM_ErrorHook':
+bsw\EcuM\integration\EcuM_Callout_Stubs.c:104:6: warning: function might be candidate for attribute 'noreturn' [-Wsuggest-attribute=noreturn]
+ void EcuM_ErrorHook(uint16 reason )
+      ^
+
+
+Compiling bsw\EcuM\src\EcuM_RequestPOST_RUN.c
+Compiling bsw\EcuM\src\EcuM_RequestRUN.c
+Compiling bsw\EcuM\src\EcuM_SetState.c
+
+
+Compiling bsw\EcuM\src\EcuM_Shutdown.c
+Compiling bsw\EcuM\src\EcuM_ShutdownServices.c
+
+
+Compiling bsw\EcuM\src\EcuM_Sleep.c
+Compiling bsw\EcuM\src\EcuM_Startup.c
+
+Compiling bsw\EcuM\src\EcuM_WakeupServices.c
+
+
+
+
+
+
+
+
+Compiling bsw\PduR\PduR_dUpTp.c
+Compiling bsw\PduR\PduR_PBcfg.c
+Compiling bsw\PduR\PduR_UpTp.c
+Compiling bsw\PduR\src\PduR_Gateway_TpDcmTx.c
+Compiling bsw\PduR\src\PduR_Multicast_UpTx.c
+
+
+
+
+
+Compiling bswcdd\BSW\bswsrv.c
+Compiling bswcdd\ESM\ESM\esm_1.c
+Compiling bswcdd\ESM\GESM\gesm_1.c
+bswcdd\BSW\bswsrv.c: In function 'BSW_vidInit':
+bswcdd\BSW\bswsrv.c:417:4: warning: implicit declaration of function 'J1939_vidDM1_Periodic_Send_Ctr_Func' [-Wimplicit-function-declaration]
+    J1939_vidDM1_Periodic_Send_Ctr_Func( _MAIN_J1939_DM1_NOERR_TX_SW_ ) ;
+    ^
+bswcdd\BSW\bswsrv.c:417:4: warning: nested extern declaration of 'J1939_vidDM1_Periodic_Send_Ctr_Func' [-Wnested-externs]
+bswcdd\BSW\bswsrv.c: In function 'BSW_vidCORE0_1ms_Head_Func':
+bswcdd\BSW\bswsrv.c:602:4: warning: implicit declaration of function 'Stp_vidCore0Runable1ms' [-Wimplicit-function-declaration]
+    Stp_vidCore0Runable1ms();
+    ^
+bswcdd\BSW\bswsrv.c:602:4: warning: nested extern declaration of 'Stp_vidCore0Runable1ms' [-Wnested-externs]
+bswcdd\BSW\bswsrv.c:603:4: warning: implicit declaration of function 'Icu_vidGetDutyCycle' [-Wimplicit-function-declaration]
+    Icu_vidGetDutyCycle();
+    ^
+bswcdd\BSW\bswsrv.c:603:4: warning: nested extern declaration of 'Icu_vidGetDutyCycle' [-Wnested-externs]
+bswcdd\BSW\bswsrv.c:604:4: warning: implicit declaration of function 'ComHal_vidMsgMainfunction' [-Wimplicit-function-declaration]
+    ComHal_vidMsgMainfunction();
+    ^
+bswcdd\BSW\bswsrv.c:604:4: warning: nested extern declaration of 'ComHal_vidMsgMainfunction' [-Wnested-externs]
+bswcdd\BSW\bswsrv.c:609:7: warning: implicit declaration of function 'HARD_vidIoTestIO' [-Wimplicit-function-declaration]
+       HARD_vidIoTestIO();
+       ^
+bswcdd\BSW\bswsrv.c:609:7: warning: nested extern declaration of 'HARD_vidIoTestIO' [-Wnested-externs]
+bswcdd\BSW\bswsrv.c: In function 'BSW_vidCORE0_10ms_Head_Func':
+bswcdd\BSW\bswsrv.c:640:4: warning: implicit declaration of function 'VADC_vidMainFunction' [-Wimplicit-function-declaration]
+    VADC_vidMainFunction();
+    ^
+bswcdd\BSW\bswsrv.c:640:4: warning: nested extern declaration of 'VADC_vidMainFunction' [-Wnested-externs]
+bswcdd\BSW\bswsrv.c:646:7: warning: implicit declaration of function 'HARD_vidModManager' [-Wimplicit-function-declaration]
+       HARD_vidModManager();
+       ^
+bswcdd\BSW\bswsrv.c:646:7: warning: nested extern declaration of 'HARD_vidModManager' [-Wnested-externs]
+bswcdd\BSW\bswsrv.c: In function 'BSW_vidCORE0_100ms_Func':
+bswcdd\BSW\bswsrv.c:674:4: warning: implicit declaration of function 'CCPUSR_vidMainFunction' [-Wimplicit-function-declaration]
+    CCPUSR_vidMainFunction();
+    ^
+bswcdd\BSW\bswsrv.c:674:4: warning: nested extern declaration of 'CCPUSR_vidMainFunction' [-Wnested-externs]
+bswcdd\BSW\bswsrv.c: In function 'BSW_vidCORE1_1ms_Func':
+bswcdd\BSW\bswsrv.c:688:4: warning: implicit declaration of function 'Stp_vidCore1Runable1ms' [-Wimplicit-function-declaration]
+    Stp_vidCore1Runable1ms();
+    ^
+bswcdd\BSW\bswsrv.c:688:4: warning: nested extern declaration of 'Stp_vidCore1Runable1ms' [-Wnested-externs]
+
+
+bswcdd\ESM\ESM\esm_1.c: In function 'ESM_vidStfPwrLNf':
+bswcdd\ESM\ESM\esm_1.c:724:16: warning: implicit declaration of function 'FAIL_vidDisableEmbFltCheck' [-Wimplicit-function-declaration]
+                FAIL_vidDisableEmbFltCheck();
+                ^
+bswcdd\ESM\ESM\esm_1.c:724:16: warning: nested extern declaration of 'FAIL_vidDisableEmbFltCheck' [-Wnested-externs]
+
+Compiling bswcdd\SBC\SBC.c
+Compiling bswcdd\UDS\UDS_Rdbi.c
+Compiling bswcdd\UDS\UDS_RoutineCtrl.c
+Compiling bswcdd\UDS\UDS_Wdbi.c
+Compiling ASW\ASW_DCM\src\ASW_DCM.c
+Compiling ASW\ASW_DCM\src\Dcm_ExternalServiceProcessing.c
+bswcdd\SBC\SBC.c:292:1: warning: "/*" within comment [-Wcomment]
+ /* !FuncName    : SBC_vidCloseLDO                         
+ ^
+bswcdd\SBC\SBC.c:293:1: warning: "/*" within comment [-Wcomment]
+ /* !Description : Disable LDO                 
+ ^
+bswcdd\SBC\SBC.c:294:1: warning: "/*" within comment [-Wcomment]
+ /* !Param       : Delect input parameter                                           
+ ^
+bswcdd\SBC\SBC.c:295:1: warning: "/*" within comment [-Wcomment]
+ /* !LastAuthor  : Zyx                                                            
+ ^
+bswcdd\SBC\SBC.c:296:1: warning: "/*" within comment [-Wcomment]
+ /******************************************************************************/
+ ^
+bswcdd\SBC\SBC.c:308:1: warning: "/*" within comment [-Wcomment]
+ /* !Description : Disable LDO                  
+ ^
+bswcdd\SBC\SBC.c:309:1: warning: "/*" within comment [-Wcomment]
+ /* !Param       : type Not Used                                             
+ ^
+bswcdd\SBC\SBC.c:310:1: warning: "/*" within comment [-Wcomment]
+ /* !LastAuthor  : Zyx                                                     
+ ^
+bswcdd\SBC\SBC.c:311:1: warning: "/*" within comment [-Wcomment]
+ /******************************************************************************/
+ ^
+bswcdd\SBC\SBC.c:323:1: warning: "/*" within comment [-Wcomment]
+ /* !Description : Enable LDO              
+ ^
+bswcdd\SBC\SBC.c:324:1: warning: "/*" within comment [-Wcomment]
+ /* !Param       : Delete input parameter                                             
+ ^
+bswcdd\SBC\SBC.c:325:1: warning: "/*" within comment [-Wcomment]
+ /* !LastAuthor  : Daniel                                                   
+ ^
+bswcdd\SBC\SBC.c:326:1: warning: "/*" within comment [-Wcomment]
+ /******************************************************************************/
+ ^
+bswcdd\SBC\SBC.c:338:1: warning: "/*" within comment [-Wcomment]
+ /* !Description :                   
+ ^
+bswcdd\SBC\SBC.c:339:1: warning: "/*" within comment [-Wcomment]
+ /* !Param       :                                                                        
+ ^
+bswcdd\SBC\SBC.c:340:1: warning: "/*" within comment [-Wcomment]
+ /* !LastAuthor  : Zyx                                                       
+ ^
+bswcdd\SBC\SBC.c:341:1: warning: "/*" within comment [-Wcomment]
+ /******************************************************************************/
+ ^
+In file included from .\output\inc/ComM.h:1:0,
+                 from .\output\inc/..\..\bsw\CanSM\api\CanSM.h:12,
+                 from .\output\inc/CanSM.h:1,
+                 from bswcdd\SBC\SBC.c:24:
+.\output\inc/..\..\bsw\ComM\api\ComM.h:158:23: warning: redundant redeclaration of 'ComM_RequestComMode' [-Wredundant-decls]
+ extern Std_ReturnType ComM_RequestComMode(ComM_UserHandleType User, ComM_ModeType ComMode);
+                       ^
+In file included from .\output\inc/Rte_ASW_NM.h:1:0,
+                 from bswcdd\SBC\SBC.c:21:
+.\output\inc/..\..\rte\Rte_ASW_NM.h:121:16: note: previous declaration of 'ComM_RequestComMode' was here
+ FUNC(Std_ReturnType, ComM_CODE) ComM_RequestComMode(VAR(ComM_UserHandleType, AUTOMATIC) User,
+                ^
+In file included from .\output\inc/ComM.h:1:0,
+                 from .\output\inc/..\..\bsw\CanSM\api\CanSM.h:12,
+                 from .\output\inc/CanSM.h:1,
+                 from bswcdd\SBC\SBC.c:24:
+.\output\inc/..\..\bsw\ComM\api\ComM.h:180:23: warning: redundant redeclaration of 'ComM_GetMaxComMode' [-Wredundant-decls]
+ extern Std_ReturnType ComM_GetMaxComMode(ComM_UserHandleType User, ComM_ModeType * ComMode);
+                       ^
+In file included from .\output\inc/Rte_ASW_NM.h:1:0,
+                 from bswcdd\SBC\SBC.c:21:
+.\output\inc/..\..\rte\Rte_ASW_NM.h:111:16: note: previous declaration of 'ComM_GetMaxComMode' was here
+ FUNC(Std_ReturnType, ComM_CODE) ComM_GetMaxComMode(VAR(ComM_UserHandleType, AUTOMATIC) User,
+                ^
+In file included from .\output\inc/ComM.h:1:0,
+                 from .\output\inc/..\..\bsw\CanSM\api\CanSM.h:12,
+                 from .\output\inc/CanSM.h:1,
+                 from bswcdd\SBC\SBC.c:24:
+.\output\inc/..\..\bsw\ComM\api\ComM.h:202:23: warning: redundant redeclaration of 'ComM_GetRequestedComMode' [-Wredundant-decls]
+ extern Std_ReturnType ComM_GetRequestedComMode(ComM_UserHandleType User, ComM_ModeType * ComMode);
+                       ^
+In file included from .\output\inc/Rte_ASW_NM.h:1:0,
+                 from bswcdd\SBC\SBC.c:21:
+.\output\inc/..\..\rte\Rte_ASW_NM.h:114:16: note: previous declaration of 'ComM_GetRequestedComMode' was here
+ FUNC(Std_ReturnType, ComM_CODE) ComM_GetRequestedComMode(VAR(ComM_UserHandleType, AUTOMATIC) User,
+                ^
+In file included from .\output\inc/ComM.h:1:0,
+                 from .\output\inc/..\..\bsw\CanSM\api\CanSM.h:12,
+                 from .\output\inc/CanSM.h:1,
+                 from bswcdd\SBC\SBC.c:24:
+.\output\inc/..\..\bsw\ComM\api\ComM.h:224:23: warning: redundant redeclaration of 'ComM_GetCurrentComMode' [-Wredundant-decls]
+ extern Std_ReturnType ComM_GetCurrentComMode(ComM_UserHandleType User, ComM_ModeType * ComMode);
+                       ^
+In file included from .\output\inc/Rte_ASW_NM.h:1:0,
+                 from bswcdd\SBC\SBC.c:21:
+.\output\inc/..\..\rte\Rte_ASW_NM.h:108:16: note: previous declaration of 'ComM_GetCurrentComMode' was here
+ FUNC(Std_ReturnType, ComM_CODE) ComM_GetCurrentComMode(VAR(ComM_UserHandleType, AUTOMATIC) User,
+                ^
+In file included from .\output\inc/ComM.h:1:0,
+                 from .\output\inc/..\..\bsw\CanSM\api\CanSM.h:12,
+                 from .\output\inc/CanSM.h:1,
+                 from bswcdd\SBC\SBC.c:24:
+.\output\inc/..\..\bsw\ComM\api\ComM.h:262:23: warning: redundant redeclaration of 'ComM_LimitECUToNoComMode' [-Wredundant-decls]
+ extern Std_ReturnType ComM_LimitECUToNoComMode(boolean Status);
+                       ^
+In file included from .\output\inc/Rte_ASW_NM.h:1:0,
+                 from bswcdd\SBC\SBC.c:21:
+.\output\inc/..\..\rte\Rte_ASW_NM.h:117:16: note: previous declaration of 'ComM_LimitECUToNoComMode' was here
+ FUNC(Std_ReturnType, ComM_CODE) ComM_LimitECUToNoComMode(VAR(boolean, AUTOMATIC) Status);
+                ^
+In file included from .\output\inc/ComM.h:1:0,
+                 from .\output\inc/..\..\bsw\CanSM\api\CanSM.h:12,
+                 from .\output\inc/CanSM.h:1,
+                 from bswcdd\SBC\SBC.c:24:
+.\output\inc/..\..\bsw\ComM\api\ComM.h:300:23: warning: redundant redeclaration of 'ComM_SetECUGroupClassification' [-Wredundant-decls]
+ extern Std_ReturnType ComM_SetECUGroupClassification(ComM_InhibitionStatusType Status);
+                       ^
+In file included from .\output\inc/Rte_ASW_NM.h:1:0,
+                 from bswcdd\SBC\SBC.c:21:
+.\output\inc/..\..\rte\Rte_ASW_NM.h:126:16: note: previous declaration of 'ComM_SetECUGroupClassification' was here
+ FUNC(Std_ReturnType, ComM_CODE) ComM_SetECUGroupClassification(VAR(ComM_InhibitionStatusType, AUTOMATIC) Status);
+                ^
+In file included from .\output\inc/ComM.h:1:0,
+                 from .\output\inc/..\..\bsw\CanSM\api\CanSM.h:12,
+                 from .\output\inc/CanSM.h:1,
+                 from bswcdd\SBC\SBC.c:24:
+.\output\inc/..\..\bsw\ComM\api\ComM.h:319:23: warning: redundant redeclaration of 'ComM_ReadInhibitCounter' [-Wredundant-decls]
+ extern Std_ReturnType ComM_ReadInhibitCounter(uint16 * CounterValue);
+                       ^
+In file included from .\output\inc/Rte_ASW_NM.h:1:0,
+                 from bswcdd\SBC\SBC.c:21:
+.\output\inc/..\..\rte\Rte_ASW_NM.h:119:16: note: previous declaration of 'ComM_ReadInhibitCounter' was here
+ FUNC(Std_ReturnType, ComM_CODE) ComM_ReadInhibitCounter(P2VAR(uint16, AUTOMATIC, RTE_APPL_DATA) CounterValue);
+                ^
+In file included from .\output\inc/ComM.h:1:0,
+                 from .\output\inc/..\..\bsw\CanSM\api\CanSM.h:12,
+                 from .\output\inc/CanSM.h:1,
+                 from bswcdd\SBC\SBC.c:24:
+.\output\inc/..\..\bsw\ComM\api\ComM.h:338:23: warning: redundant redeclaration of 'ComM_ResetInhibitCounter' [-Wredundant-decls]
+ extern Std_ReturnType ComM_ResetInhibitCounter(void);
+                       ^
+In file included from .\output\inc/Rte_ASW_NM.h:1:0,
+                 from bswcdd\SBC\SBC.c:21:
+.\output\inc/..\..\rte\Rte_ASW_NM.h:124:16: note: previous declaration of 'ComM_ResetInhibitCounter' was here
+ FUNC(Std_ReturnType, ComM_CODE) ComM_ResetInhibitCounter(void);
+                ^
+bswcdd\SBC\SBC.c: In function 'SBC_bUnderVoltageManager':
+bswcdd\SBC\SBC.c:368:4: warning: implicit declaration of function 'ESMSRV_bGetPoDnReadyFlg' [-Wimplicit-function-declaration]
+    bLocEsmPoDnReady = ESMSRV_bGetPoDnReadyFlg();
+    ^
+bswcdd\SBC\SBC.c:368:4: warning: nested extern declaration of 'ESMSRV_bGetPoDnReadyFlg' [-Wnested-externs]
+bswcdd\SBC\SBC.c:350:12: warning: unused variable 'f32LocBkpVolAd' [-Wunused-variable]
+    float32 f32LocBkpVolAd = 0;
+            ^
+bswcdd\SBC\SBC.c: In function 'SBC_bCheckOutputStt':
+bswcdd\SBC\SBC.c:650:12: warning: unused variable 'bLocVcuTout' [-Wunused-variable]
+    boolean bLocVcuTout = FALSE;
+            ^
+
+
+bswcdd\UDS\UDS_RoutineCtrl.c: In function 'DcmDspStartRoutine_ZeroPosSelfLearning':
+bswcdd\UDS\UDS_RoutineCtrl.c:101:4: warning: implicit declaration of function 'MAIN_bChkOcCondition' [-Wimplicit-function-declaration]
+    bLocOcCondSatisfy = MAIN_bChkOcCondition();
+    ^
+bswcdd\UDS\UDS_RoutineCtrl.c:101:4: warning: nested extern declaration of 'MAIN_bChkOcCondition' [-Wnested-externs]
+bswcdd\UDS\UDS_RoutineCtrl.c: In function 'DcmDspStartRoutine_GcuPosSelfLearning':
+bswcdd\UDS\UDS_RoutineCtrl.c:160:4: warning: implicit declaration of function 'GMAIN_bChkOcCondition' [-Wimplicit-function-declaration]
+    bLocOcCondSatisfy = GMAIN_bChkOcCondition();
+    ^
+bswcdd\UDS\UDS_RoutineCtrl.c:160:4: warning: nested extern declaration of 'GMAIN_bChkOcCondition' [-Wnested-externs]
+
+bswcdd\UDS\UDS_Rdbi.c:269:16: warning: no previous prototype for 'DataServices_R_SuppHwVer_F193_ReadData' [-Wmissing-prototypes]
+ Std_ReturnType DataServices_R_SuppHwVer_F193_ReadData (Dcm_OpStatusType OpStatus,uint8 * Data)
+                ^
+bswcdd\UDS\UDS_Rdbi.c:282:16: warning: no previous prototype for 'DataServices_R_SuppSwVer_F195_ReadData' [-Wmissing-prototypes]
+ Std_ReturnType DataServices_R_SuppSwVer_F195_ReadData (Dcm_OpStatusType OpStatus,uint8 * Data)
+                ^
+
+ASW\ASW_DCM\src\ASW_DCM.c:96:9: warning: no previous prototype for 'DCM_GetComControlState' [-Wmissing-prototypes]
+ boolean DCM_GetComControlState(void)
+         ^
+
+
+Linking output\dbg\P_TC387_PLATFORM_0_0.elf...
+
+Dumping output\dbg\P_TC387_PLATFORM_0_0.elf to output\hex\P_TC387_PLATFORM_0_0.hex
+
+scons: done building targets.

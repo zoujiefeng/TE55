@@ -1,0 +1,187 @@
+#include "Std_Types.h"
+
+#define PWM_OPEN 1
+#define PWM_OFF  0
+
+typedef struct TPPC_CCU6HallCtrlList{
+   uint8 u8CurListIndex;
+   uint8 u8NextListIndex;
+   union{
+      struct{
+         uint8 PWM1A :1;
+         uint8 PWM1B :1;
+         uint8 PWM2A :1;
+         uint8 PWM2B :1;
+         uint8 PWM3A :1;
+         uint8 PWM3B :1;
+         uint8 Reserved :2;
+      }B;
+      uint8 U;
+   }PwmState;
+}TPPC_CCU6HallCtrlList, *PTPPC_CCU6HallCtrlList; 
+
+/* !Comment: TPPC control table */
+/* Column define: Current hall ;  Expect hall;  OutputModel;  */
+const TPPC_CCU6HallCtrlList TPPC_au8BackwardTable[6] = {
+   {
+      1, 5,
+      .PwmState = {
+         {
+            .PWM1A = PWM_OPEN,
+            .PWM1B = PWM_OFF,
+            .PWM2A = PWM_OFF,
+            .PWM2B = PWM_OPEN,
+            .PWM3A = PWM_OFF,
+            .PWM3B = PWM_OFF
+         }
+      }
+   },
+   {
+      2, 3,
+      .PwmState = {
+         {
+            .PWM1A = PWM_OFF,
+            .PWM1B = PWM_OPEN,
+            .PWM2A = PWM_OFF,
+            .PWM2B = PWM_OFF,
+            .PWM3A = PWM_OPEN,
+            .PWM3B = PWM_OFF
+         }
+      }
+   },
+   {
+      3, 1,
+      .PwmState = {
+         {
+            .PWM1A = PWM_OFF,
+            .PWM1B = PWM_OFF,
+            .PWM2A = PWM_OFF,
+            .PWM2B = PWM_OPEN,
+            .PWM3A = PWM_OPEN,
+            .PWM3B = PWM_OFF
+         }
+      }
+   },
+   {
+      4, 6,
+      .PwmState = {
+         {
+            .PWM1A = PWM_OFF,
+            .PWM1B = PWM_OFF,
+            .PWM2A = PWM_OPEN,
+            .PWM2B = PWM_OFF,
+            .PWM3A = PWM_OFF,
+            .PWM3B = PWM_OPEN
+         }
+      }
+   },
+   {
+      5, 4,
+      .PwmState = {
+         {
+            .PWM1A = PWM_OPEN,
+            .PWM1B = PWM_OFF,
+            .PWM2A = PWM_OFF,
+            .PWM2B = PWM_OFF,
+            .PWM3A = PWM_OFF,
+            .PWM3B = PWM_OPEN
+         }
+      }
+   },
+   {
+      6, 2,
+      .PwmState = {
+         {
+            .PWM1A = PWM_OFF,
+            .PWM1B = PWM_OPEN,
+            .PWM2A = PWM_OPEN,
+            .PWM2B = PWM_OFF,
+            .PWM3A = PWM_OFF,
+            .PWM3B = PWM_OFF
+         }
+      }
+   }
+};
+
+/* !Comment: TPPC control table */
+/* Column define: Current hall ;  Expect hall;  OutputModel;  */
+const TPPC_CCU6HallCtrlList TPPC_au8ForwardTable[6] = {
+   {
+      1, 3,
+      .PwmState = {
+         {
+            .PWM1A = PWM_OPEN,
+            .PWM1B = PWM_OFF,
+            .PWM2A = PWM_OFF,
+            .PWM2B = PWM_OFF,
+            .PWM3A = PWM_OFF,
+            .PWM3B = PWM_OPEN
+         }
+      }
+   },
+   {
+      2, 6,
+      .PwmState = {
+         {
+            .PWM1A = PWM_OFF,
+            .PWM1B = PWM_OFF,
+            .PWM2A = PWM_OFF,
+            .PWM2B = PWM_OPEN,
+            .PWM3A = PWM_OPEN,
+            .PWM3B = PWM_OFF
+         }
+      }
+   },
+   {
+      3, 2,
+      .PwmState = {
+         {
+            .PWM1A = PWM_OPEN,
+            .PWM1B = PWM_OFF,
+            .PWM2A = PWM_OFF,
+            .PWM2B = PWM_OPEN,
+            .PWM3A = PWM_OFF,
+            .PWM3B = PWM_OFF
+         }
+      }
+   },
+   {
+      4, 5,
+      .PwmState = {
+         {
+            .PWM1A = PWM_OFF,
+            .PWM1B = PWM_OPEN,
+            .PWM2A = PWM_OPEN,
+            .PWM2B = PWM_OFF,
+            .PWM3A = PWM_OFF,
+            .PWM3B = PWM_OFF
+         }
+      }
+   },
+   {
+      5, 1,
+      .PwmState = {
+         {
+            .PWM1A = PWM_OFF,
+            .PWM1B = PWM_OFF,
+            .PWM2A = PWM_OPEN,
+            .PWM2B = PWM_OFF,
+            .PWM3A = PWM_OFF,
+            .PWM3B = PWM_OPEN
+         }
+      }
+   },
+   {
+      6, 4,
+      .PwmState = {
+         {
+            .PWM1A = PWM_OFF,
+            .PWM1B = PWM_OPEN,
+            .PWM2A = PWM_OFF,
+            .PWM2B = PWM_OFF,
+            .PWM3A = PWM_OPEN,
+            .PWM3B = PWM_OFF
+         }
+      }
+   }
+};

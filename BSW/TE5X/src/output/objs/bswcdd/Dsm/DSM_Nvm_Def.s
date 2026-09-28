@@ -1,0 +1,417 @@
+	.file	"DSM_Nvm_Def.c"
+.section .text,"ax",@progbits
+.Ltext0:
+	.global	DSM_DtcEnvDataNvm_def
+.section .const.DSM_DtcEnvDataNvm_def,"a",@progbits
+	.align 1
+	.type	DSM_DtcEnvDataNvm_def, @object
+	.size	DSM_DtcEnvDataNvm_def, 40
+DSM_DtcEnvDataNvm_def:
+	.zero	40
+	.global	DSM_DtcStatusNvm_def
+.section .const.DSM_DtcStatusNvm_def,"a",@progbits
+	.type	DSM_DtcStatusNvm_def, @object
+	.size	DSM_DtcStatusNvm_def, 10
+DSM_DtcStatusNvm_def:
+	.zero	10
+	.global	DSM_DtcSavedFreezeFrameNvm
+.section .bss.a4.DSM_DtcSavedFreezeFrameNvm,"aw",@nobits
+	.align 2
+	.type	DSM_DtcSavedFreezeFrameNvm, @object
+	.size	DSM_DtcSavedFreezeFrameNvm, 2280
+DSM_DtcSavedFreezeFrameNvm:
+	.zero	2280
+	.global	DSM_DtcStatusNvm
+.section .bss.a1.DSM_DtcStatusNvm,"aw",@nobits
+	.type	DSM_DtcStatusNvm, @object
+	.size	DSM_DtcStatusNvm, 10
+DSM_DtcStatusNvm:
+	.zero	10
+	.global	DSM_DtcEnvDataNvm
+.section .bss.a2.DSM_DtcEnvDataNvm,"aw",@nobits
+	.align 1
+	.type	DSM_DtcEnvDataNvm, @object
+	.size	DSM_DtcEnvDataNvm, 40
+DSM_DtcEnvDataNvm:
+	.zero	40
+	.global	DSM_au8NvmDummySpace01
+.section .bss.a1.DSM_au8NvmDummySpace01,"aw",@nobits
+	.type	DSM_au8NvmDummySpace01, @object
+	.size	DSM_au8NvmDummySpace01, 50
+DSM_au8NvmDummySpace01:
+	.zero	50
+.section .text,"ax",@progbits
+.Letext0:
+	.file 1 ".\\output\\inc/..\\..\\bsw\\integration\\Platform_Types.h"
+	.file 2 "bswcdd\\Dsm\\DSM_Nvm.h"
+	.file 3 "bswcdd\\Dsm\\DSM_Nvm_Def.c"
+.section .debug_info,"",@progbits
+.Ldebug_info0:
+	.uaword	0x4a6
+	.uahalf	0x2
+	.uaword	.Ldebug_abbrev0
+	.byte	0x4
+	.uleb128 0x1
+	.ascii	"GNU C 4.9.4 build on 2020-09-01 -mli"
+	.string	"cense-dir=s:\\hightec\\toolchains\\tricore\\v4.9.4.1\\bin\\../lib/gcc/tricore/4.9.4/../../../../licenses -mcpu=tc38xx -mpragma-data-sections -mtc162 -maligned-data-sections -gdwarf-2 -O3 -fno-builtin -fno-common -ffunction-sections -fdata-sections -fshort-double"
+	.byte	0x1
+	.string	"bswcdd\\Dsm\\DSM_Nvm_Def.c"
+	.string	"D:\\\\1_OutProjest\\\\dongfeng\\\\90080-05101\\\\trunk\\\\BSW\\\\20Proj\\\\BSW\\\\TE5X\\\\src"
+	.uaword	.Ldebug_line0
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x6
+	.string	"signed char"
+	.uleb128 0x3
+	.string	"uint8"
+	.byte	0x1
+	.byte	0x51
+	.uaword	0x1b7
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x8
+	.string	"unsigned char"
+	.uleb128 0x2
+	.byte	0x2
+	.byte	0x5
+	.string	"short int"
+	.uleb128 0x2
+	.byte	0x2
+	.byte	0x7
+	.string	"short unsigned int"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x5
+	.string	"int"
+	.uleb128 0x2
+	.byte	0x8
+	.byte	0x5
+	.string	"long long int"
+	.uleb128 0x3
+	.string	"uint32"
+	.byte	0x1
+	.byte	0x6a
+	.uaword	0x211
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x7
+	.string	"unsigned int"
+	.uleb128 0x2
+	.byte	0x8
+	.byte	0x7
+	.string	"long long unsigned int"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x4
+	.string	"float"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x4
+	.string	"double"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x5
+	.string	"long int"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x7
+	.string	"long unsigned int"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x7
+	.string	"sizetype"
+	.uleb128 0x3
+	.string	"DSM_DtcStatusType"
+	.byte	0x2
+	.byte	0x3a
+	.uaword	0x1aa
+	.uleb128 0x4
+	.byte	0x4
+	.byte	0x2
+	.byte	0x3c
+	.uaword	0x30c
+	.uleb128 0x5
+	.string	"u8DtcAgingCycleCnt"
+	.byte	0x2
+	.byte	0x3e
+	.uaword	0x1aa
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x5
+	.string	"u8DtcOccurCnt"
+	.byte	0x2
+	.byte	0x3f
+	.uaword	0x1aa
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x1
+	.uleb128 0x5
+	.string	"u8DtcEnvDataSpare1"
+	.byte	0x2
+	.byte	0x40
+	.uaword	0x1aa
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x2
+	.uleb128 0x5
+	.string	"u8DtcEnvDataSpare2"
+	.byte	0x2
+	.byte	0x41
+	.uaword	0x1aa
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x3
+	.byte	0
+	.uleb128 0x3
+	.string	"DSM_DtcEnvDataType"
+	.byte	0x2
+	.byte	0x42
+	.uaword	0x294
+	.uleb128 0x4
+	.byte	0xe4
+	.byte	0x2
+	.byte	0x44
+	.uaword	0x35c
+	.uleb128 0x5
+	.string	"DtcNumber"
+	.byte	0x2
+	.byte	0x46
+	.uaword	0x203
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x5
+	.string	"DtcFreezeFrame"
+	.byte	0x2
+	.byte	0x47
+	.uaword	0x35c
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x4
+	.byte	0
+	.uleb128 0x6
+	.uaword	0x1aa
+	.uaword	0x36c
+	.uleb128 0x7
+	.uaword	0x26f
+	.byte	0xdf
+	.byte	0
+	.uleb128 0x3
+	.string	"DSM_DtcSavedContextType"
+	.byte	0x2
+	.byte	0x48
+	.uaword	0x326
+	.uleb128 0x6
+	.uaword	0x30c
+	.uaword	0x39b
+	.uleb128 0x7
+	.uaword	0x26f
+	.byte	0x9
+	.byte	0
+	.uleb128 0x8
+	.string	"DSM_DtcEnvDataNvm"
+	.byte	0x3
+	.byte	0x2b
+	.uaword	0x38b
+	.byte	0x1
+	.byte	0x5
+	.byte	0x3
+	.uaword	DSM_DtcEnvDataNvm
+	.uleb128 0x6
+	.uaword	0x27b
+	.uaword	0x3cb
+	.uleb128 0x7
+	.uaword	0x26f
+	.byte	0x9
+	.byte	0
+	.uleb128 0x8
+	.string	"DSM_DtcStatusNvm"
+	.byte	0x3
+	.byte	0x2c
+	.uaword	0x3bb
+	.byte	0x1
+	.byte	0x5
+	.byte	0x3
+	.uaword	DSM_DtcStatusNvm
+	.uleb128 0x6
+	.uaword	0x36c
+	.uaword	0x3fa
+	.uleb128 0x7
+	.uaword	0x26f
+	.byte	0x9
+	.byte	0
+	.uleb128 0x8
+	.string	"DSM_DtcSavedFreezeFrameNvm"
+	.byte	0x3
+	.byte	0x30
+	.uaword	0x3ea
+	.byte	0x1
+	.byte	0x5
+	.byte	0x3
+	.uaword	DSM_DtcSavedFreezeFrameNvm
+	.uleb128 0x8
+	.string	"DSM_DtcEnvDataNvm_def"
+	.byte	0x3
+	.byte	0x3d
+	.uaword	0x447
+	.byte	0x1
+	.byte	0x5
+	.byte	0x3
+	.uaword	DSM_DtcEnvDataNvm_def
+	.uleb128 0x9
+	.uaword	0x38b
+	.uleb128 0x8
+	.string	"DSM_DtcStatusNvm_def"
+	.byte	0x3
+	.byte	0x3c
+	.uaword	0x46f
+	.byte	0x1
+	.byte	0x5
+	.byte	0x3
+	.uaword	DSM_DtcStatusNvm_def
+	.uleb128 0x9
+	.uaword	0x3bb
+	.uleb128 0x6
+	.uaword	0x1aa
+	.uaword	0x484
+	.uleb128 0x7
+	.uaword	0x26f
+	.byte	0x31
+	.byte	0
+	.uleb128 0x8
+	.string	"DSM_au8NvmDummySpace01"
+	.byte	0x3
+	.byte	0x29
+	.uaword	0x474
+	.byte	0x1
+	.byte	0x5
+	.byte	0x3
+	.uaword	DSM_au8NvmDummySpace01
+	.byte	0
+.section .debug_abbrev,"",@progbits
+.Ldebug_abbrev0:
+	.uleb128 0x1
+	.uleb128 0x11
+	.byte	0x1
+	.uleb128 0x25
+	.uleb128 0x8
+	.uleb128 0x13
+	.uleb128 0xb
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x1b
+	.uleb128 0x8
+	.uleb128 0x10
+	.uleb128 0x6
+	.byte	0
+	.byte	0
+	.uleb128 0x2
+	.uleb128 0x24
+	.byte	0
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3e
+	.uleb128 0xb
+	.uleb128 0x3
+	.uleb128 0x8
+	.byte	0
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x16
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x4
+	.uleb128 0x13
+	.byte	0x1
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x5
+	.uleb128 0xd
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x38
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0x6
+	.uleb128 0x1
+	.byte	0x1
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x7
+	.uleb128 0x21
+	.byte	0
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2f
+	.uleb128 0xb
+	.byte	0
+	.byte	0
+	.uleb128 0x8
+	.uleb128 0x34
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x2
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0x9
+	.uleb128 0x26
+	.byte	0
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.byte	0
+.section .debug_aranges,"",@progbits
+	.uaword	0x14
+	.uahalf	0x2
+	.uaword	.Ldebug_info0
+	.byte	0x4
+	.byte	0
+	.uahalf	0
+	.uahalf	0
+	.uaword	0
+	.uaword	0
+.section .debug_line,"",@progbits
+.Ldebug_line0:
+.section .debug_str,"",@progbits
+	.ident	"GCC: (HighTec Release HDP-v4.9.4.1-11fcedf) 4.9.4 build on 2020-09-01"

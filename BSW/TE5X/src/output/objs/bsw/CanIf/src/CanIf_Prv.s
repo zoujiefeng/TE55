@@ -1,0 +1,461 @@
+	.file	"CanIf_Prv.c"
+.section .text,"ax",@progbits
+.Ltext0:
+	.global	CanIf_Prv_TxNotification_aen
+.section .bss.a1.CanIf_Prv_TxNotification_aen,"aw",@nobits
+	.type	CanIf_Prv_TxNotification_aen, @object
+	.size	CanIf_Prv_TxNotification_aen, 152
+CanIf_Prv_TxNotification_aen:
+	.zero	152
+	.global	CanIf_DynTxPduCanId_au32
+.section .bss.a4.CanIf_DynTxPduCanId_au32,"aw",@nobits
+	.align 2
+	.type	CanIf_DynTxPduCanId_au32, @object
+	.size	CanIf_DynTxPduCanId_au32, 200
+CanIf_DynTxPduCanId_au32:
+	.zero	200
+	.global	CanIf_Prv_TxPduRam_ast
+.section .bss.a1.CanIf_Prv_TxPduRam_ast,"aw",@nobits
+	.type	CanIf_Prv_TxPduRam_ast, @object
+	.size	CanIf_Prv_TxPduRam_ast, 152
+CanIf_Prv_TxPduRam_ast:
+	.zero	152
+	.global	CanIf_Prv_TxBufferRam_ast
+.section .bss.a2.CanIf_Prv_TxBufferRam_ast,"aw",@nobits
+	.align 1
+	.type	CanIf_Prv_TxBufferRam_ast, @object
+	.size	CanIf_Prv_TxBufferRam_ast, 182
+CanIf_Prv_TxBufferRam_ast:
+	.zero	182
+	.global	CanIf_Trcv_LUT
+.section .rodata.a1.CanIf_Trcv_LUT,"a",@progbits
+	.type	CanIf_Trcv_LUT, @object
+	.size	CanIf_Trcv_LUT, 1
+CanIf_Trcv_LUT:
+	.zero	1
+	.global	CanIf_Prv_RxNotification_taen
+.section .bss.a1.CanIf_Prv_RxNotification_taen,"aw",@nobits
+	.type	CanIf_Prv_RxNotification_taen, @object
+	.size	CanIf_Prv_RxNotification_taen, 126
+CanIf_Prv_RxNotification_taen:
+	.zero	126
+.section .text,"ax",@progbits
+.Letext0:
+	.file 1 ".\\output\\inc/..\\..\\bsw\\integration\\Platform_Types.h"
+	.file 2 ".\\output\\inc/..\\..\\bsw\\CanIf\\api\\CanIf_Types.h"
+	.file 3 "bsw\\CanIf\\src\\CanIf_Prv.h"
+	.file 4 "bsw\\CanIf\\src\\CanIf_Prv.c"
+.section .debug_info,"",@progbits
+.Ldebug_info0:
+	.uaword	0x542
+	.uahalf	0x2
+	.uaword	.Ldebug_abbrev0
+	.byte	0x4
+	.uleb128 0x1
+	.ascii	"GNU C 4.9.4 build on 2020-09-01 -mli"
+	.string	"cense-dir=s:\\hightec\\toolchains\\tricore\\v4.9.4.1\\bin\\../lib/gcc/tricore/4.9.4/../../../../licenses -mcpu=tc38xx -mpragma-data-sections -mtc162 -maligned-data-sections -gdwarf-2 -O3 -fno-builtin -fno-common -ffunction-sections -fdata-sections -fshort-double"
+	.byte	0x1
+	.string	"bsw\\CanIf\\src\\CanIf_Prv.c"
+	.string	"D:\\\\1_OutProjest\\\\dongfeng\\\\90080-05101\\\\trunk\\\\BSW\\\\20Proj\\\\BSW\\\\TE5X\\\\src"
+	.uaword	.Ldebug_line0
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x6
+	.string	"signed char"
+	.uleb128 0x3
+	.string	"uint8"
+	.byte	0x1
+	.byte	0x51
+	.uaword	0x1b8
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x8
+	.string	"unsigned char"
+	.uleb128 0x2
+	.byte	0x2
+	.byte	0x5
+	.string	"short int"
+	.uleb128 0x2
+	.byte	0x2
+	.byte	0x7
+	.string	"short unsigned int"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x5
+	.string	"int"
+	.uleb128 0x2
+	.byte	0x8
+	.byte	0x5
+	.string	"long long int"
+	.uleb128 0x3
+	.string	"uint32"
+	.byte	0x1
+	.byte	0x6a
+	.uaword	0x212
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x7
+	.string	"unsigned int"
+	.uleb128 0x2
+	.byte	0x8
+	.byte	0x7
+	.string	"long long unsigned int"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x4
+	.string	"float"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x4
+	.string	"double"
+	.uleb128 0x3
+	.string	"boolean"
+	.byte	0x1
+	.byte	0x80
+	.uaword	0x1b8
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x5
+	.string	"long int"
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x7
+	.string	"long unsigned int"
+	.uleb128 0x4
+	.byte	0x1
+	.byte	0x2
+	.byte	0x62
+	.uaword	0x2bb
+	.uleb128 0x5
+	.string	"CANIF_NO_NOTIFICATION"
+	.sleb128 0
+	.uleb128 0x5
+	.string	"CANIF_TX_RX_NOTIFICATION"
+	.sleb128 1
+	.byte	0
+	.uleb128 0x3
+	.string	"CanIf_NotifStatusType"
+	.byte	0x2
+	.byte	0x6c
+	.uaword	0x27f
+	.uleb128 0x2
+	.byte	0x4
+	.byte	0x7
+	.string	"sizetype"
+	.uleb128 0x6
+	.uaword	0x1ab
+	.uaword	0x2f4
+	.uleb128 0x7
+	.uaword	0x2d8
+	.byte	0
+	.byte	0
+	.uleb128 0x2
+	.byte	0x1
+	.byte	0x6
+	.string	"char"
+	.uleb128 0x4
+	.byte	0x1
+	.byte	0x3
+	.byte	0xe5
+	.uaword	0x349
+	.uleb128 0x5
+	.string	"CANIF_TXBUFFER_EMPTY"
+	.sleb128 0
+	.uleb128 0x5
+	.string	"CANIF_TXBUFFER_READY"
+	.sleb128 1
+	.uleb128 0x5
+	.string	"CANIF_TXBUFFER_FULL"
+	.sleb128 2
+	.byte	0
+	.uleb128 0x3
+	.string	"CanIf_Prv_BuffStatus_ten"
+	.byte	0x3
+	.byte	0xe9
+	.uaword	0x2fc
+	.uleb128 0x8
+	.byte	0x2
+	.byte	0x3
+	.byte	0xee
+	.uaword	0x39e
+	.uleb128 0x9
+	.string	"last_index"
+	.byte	0x3
+	.byte	0xf0
+	.uaword	0x1ab
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.uleb128 0x9
+	.string	"bufferstatus"
+	.byte	0x3
+	.byte	0xf1
+	.uaword	0x349
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0x1
+	.byte	0
+	.uleb128 0x3
+	.string	"CanIf_Prv_TxBufferStatus_tst"
+	.byte	0x3
+	.byte	0xf2
+	.uaword	0x369
+	.uleb128 0x8
+	.byte	0x1
+	.byte	0x3
+	.byte	0xf6
+	.uaword	0x3e7
+	.uleb128 0x9
+	.string	"pdu_buffered_flag"
+	.byte	0x3
+	.byte	0xf8
+	.uaword	0x24f
+	.byte	0x2
+	.byte	0x23
+	.uleb128 0
+	.byte	0
+	.uleb128 0x3
+	.string	"CanIf_Prv_TxPduStatus_tst"
+	.byte	0x3
+	.byte	0xfa
+	.uaword	0x3c2
+	.uleb128 0x6
+	.uaword	0x39e
+	.uaword	0x418
+	.uleb128 0x7
+	.uaword	0x2d8
+	.byte	0x5a
+	.byte	0
+	.uleb128 0xa
+	.string	"CanIf_Prv_TxBufferRam_ast"
+	.byte	0x4
+	.byte	0x31
+	.uaword	0x408
+	.byte	0x1
+	.byte	0x5
+	.byte	0x3
+	.uaword	CanIf_Prv_TxBufferRam_ast
+	.uleb128 0x6
+	.uaword	0x3e7
+	.uaword	0x450
+	.uleb128 0x7
+	.uaword	0x2d8
+	.byte	0x97
+	.byte	0
+	.uleb128 0xa
+	.string	"CanIf_Prv_TxPduRam_ast"
+	.byte	0x4
+	.byte	0x32
+	.uaword	0x440
+	.byte	0x1
+	.byte	0x5
+	.byte	0x3
+	.uaword	CanIf_Prv_TxPduRam_ast
+	.uleb128 0x6
+	.uaword	0x204
+	.uaword	0x485
+	.uleb128 0x7
+	.uaword	0x2d8
+	.byte	0x31
+	.byte	0
+	.uleb128 0xa
+	.string	"CanIf_DynTxPduCanId_au32"
+	.byte	0x4
+	.byte	0x36
+	.uaword	0x475
+	.byte	0x1
+	.byte	0x5
+	.byte	0x3
+	.uaword	CanIf_DynTxPduCanId_au32
+	.uleb128 0x6
+	.uaword	0x2bb
+	.uaword	0x4bc
+	.uleb128 0x7
+	.uaword	0x2d8
+	.byte	0x97
+	.byte	0
+	.uleb128 0xa
+	.string	"CanIf_Prv_TxNotification_aen"
+	.byte	0x4
+	.byte	0x3b
+	.uaword	0x4ac
+	.byte	0x1
+	.byte	0x5
+	.byte	0x3
+	.uaword	CanIf_Prv_TxNotification_aen
+	.uleb128 0x6
+	.uaword	0x2bb
+	.uaword	0x4f7
+	.uleb128 0x7
+	.uaword	0x2d8
+	.byte	0x7d
+	.byte	0
+	.uleb128 0xa
+	.string	"CanIf_Prv_RxNotification_taen"
+	.byte	0x4
+	.byte	0x1d
+	.uaword	0x4e7
+	.byte	0x1
+	.byte	0x5
+	.byte	0x3
+	.uaword	CanIf_Prv_RxNotification_taen
+	.uleb128 0xa
+	.string	"CanIf_Trcv_LUT"
+	.byte	0x4
+	.byte	0x27
+	.uaword	0x540
+	.byte	0x1
+	.byte	0x5
+	.byte	0x3
+	.uaword	CanIf_Trcv_LUT
+	.uleb128 0xb
+	.uaword	0x2e4
+	.byte	0
+.section .debug_abbrev,"",@progbits
+.Ldebug_abbrev0:
+	.uleb128 0x1
+	.uleb128 0x11
+	.byte	0x1
+	.uleb128 0x25
+	.uleb128 0x8
+	.uleb128 0x13
+	.uleb128 0xb
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x1b
+	.uleb128 0x8
+	.uleb128 0x10
+	.uleb128 0x6
+	.byte	0
+	.byte	0
+	.uleb128 0x2
+	.uleb128 0x24
+	.byte	0
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3e
+	.uleb128 0xb
+	.uleb128 0x3
+	.uleb128 0x8
+	.byte	0
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x16
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x4
+	.uleb128 0x4
+	.byte	0x1
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x5
+	.uleb128 0x28
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x1c
+	.uleb128 0xd
+	.byte	0
+	.byte	0
+	.uleb128 0x6
+	.uleb128 0x1
+	.byte	0x1
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x7
+	.uleb128 0x21
+	.byte	0
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x2f
+	.uleb128 0xb
+	.byte	0
+	.byte	0
+	.uleb128 0x8
+	.uleb128 0x13
+	.byte	0x1
+	.uleb128 0xb
+	.uleb128 0xb
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x1
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.uleb128 0x9
+	.uleb128 0xd
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x38
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0xa
+	.uleb128 0x34
+	.byte	0
+	.uleb128 0x3
+	.uleb128 0x8
+	.uleb128 0x3a
+	.uleb128 0xb
+	.uleb128 0x3b
+	.uleb128 0xb
+	.uleb128 0x49
+	.uleb128 0x13
+	.uleb128 0x3f
+	.uleb128 0xc
+	.uleb128 0x2
+	.uleb128 0xa
+	.byte	0
+	.byte	0
+	.uleb128 0xb
+	.uleb128 0x26
+	.byte	0
+	.uleb128 0x49
+	.uleb128 0x13
+	.byte	0
+	.byte	0
+	.byte	0
+.section .debug_aranges,"",@progbits
+	.uaword	0x14
+	.uahalf	0x2
+	.uaword	.Ldebug_info0
+	.byte	0x4
+	.byte	0
+	.uahalf	0
+	.uahalf	0
+	.uaword	0
+	.uaword	0
+.section .debug_line,"",@progbits
+.Ldebug_line0:
+.section .debug_str,"",@progbits
+	.ident	"GCC: (HighTec Release HDP-v4.9.4.1-11fcedf) 4.9.4 build on 2020-09-01"
