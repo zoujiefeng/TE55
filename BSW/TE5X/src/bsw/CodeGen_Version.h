@@ -15,6 +15,6 @@
 #define CODEGEN_LICENSED_STACKS "Common, RTA-BASE, RTA-CAN, RTA-COM, RTA-DIAG, RTA-HWD(Can), RTA-MEM, RTA-SAFE, RTA-XCP"
 #define CODEGEN_CONFIGURED_MODULES "Bfx, ComStack, Crc, Platform, Rba_ArxmlGen, Rba_DiagLib, BswM, Det, EcuM, CanIf, CanNm, CanSM, CanTp, Com, ComM, Nm, PduR, Dcm, Dem, CanTrcv, Fee, MemIf, NvM, Rba_MemLib, WdgIf, WdgM, Xcp"
 #define CODEGEN_SELECTED_MODULES "Rba_ArxmlGen, Com, Fee, NvM, Dem, ComM, Rba_DemObdBasic, ComStack, Dcm, WdgIf, CanIf, Crc, Det, PduR, BswM, Rba_DiagLib, CanTrcv, Xcp, Rba_FeeFs1, CanNm_PreCompile_and_PB_Variant, Bfx, CanNm, CanSM, EcuM, CanTp, CanTp_PreCompile, WdgM, Rba_MemLib, MemIf, Nm, Mfx, BswM_PreCompile_and_PB_Variant"
-#define CODEGEN_GENERATED_ON "2026-07-18T14:43:01.290197+08:00[Asia/Shanghai]"
+#define CODEGEN_GENERATED_ON "2026-09-28T13:29:33.0440092+08:00[Asia/Shanghai]"
 
 #endif

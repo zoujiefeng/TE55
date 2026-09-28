@@ -351,7 +351,7 @@
                       <PARAMETER-VALUES>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemConfigSet/DemEventParameter/DemEventAvailable</DEFINITION-REF>
-                          <VALUE>false</VALUE>
+                          <VALUE>true</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
                       </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>
@@ -2141,7 +2141,7 @@
                       <PARAMETER-VALUES>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemConfigSet/DemEventParameter/DemEventAvailable</DEFINITION-REF>
-                          <VALUE>false</VALUE>
+                          <VALUE>true</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
                       </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>
@@ -4241,7 +4241,7 @@
                       <PARAMETER-VALUES>
                         <ECUC-NUMERICAL-PARAM-VALUE>
                           <DEFINITION-REF DEST="ECUC-BOOLEAN-PARAM-DEF">/AUTOSAR_Dem/EcucModuleDefs/Dem/DemConfigSet/DemEventParameter/DemEventAvailable</DEFINITION-REF>
-                          <VALUE>false</VALUE>
+                          <VALUE>true</VALUE>
                         </ECUC-NUMERICAL-PARAM-VALUE>
                       </PARAMETER-VALUES>
                     </ECUC-CONTAINER-VALUE>
