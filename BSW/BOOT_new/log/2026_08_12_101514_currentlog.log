@@ -1,0 +1,75 @@
+Start remove_macro  . was excuted
+End remove_macro 
+scons: done reading SConscript files.
+scons: Building targets ...
+CC build\objs\PJ_INVT_SBL\Source\Det.o
+CC build\objs\PJ_INVT_SBL\Source\SBL_Flash.o
+CC build\objs\PJ_INVT_SBL\Toolchains_TC387\Inc\FlsLdr_ExclArea.o
+CC build\objs\PJ_INVT_SBL\Toolchains_TC387\Inc\IFX_Os.o
+CC build\objs\PJ_INVT_SBL\Toolchains_TC387\Inc\Mcal_SafetyError.o
+CC build\objs\PJ_INVT_SBL\Toolchains_TC387\Inc\SchM_McalLib.o
+CC build\objs\PJ_INVT_SBL\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.o
+CC build\objs\PJ_INVT_SBL\Toolchains_TC387\Mcal\Mcal_Modules\FlsLoader\Ssc\src\FlsLoader.o
+CC build\objs\PJ_INVT_SBL\Toolchains_TC387\Mcal\Mcal_Modules\FlsLoader\Ssc\src\FlsLoader_Platform.o
+CC build\objs\PJ_INVT_SBL\Toolchains_TC387\Mcal\Mcal_Modules\McalLib\ssc\src\McalLib.o
+ctc F104: protection error: Unable to open license file C:\TASKING\TriCore_v6.3r1\etc\licfile.txt
+
+===================
+None
+===================
+scons: *** [build\objs\PJ_INVT_SBL\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.o] Error 1
+ctc F104: protection error: Unable to open license file C:\TASKING\TriCore_v6.3r1\etc\licfile.txt
+
+ctc F104: protection error: Unable to open license file C:\TASKING\TriCore_v6.3r1\etc\licfile.txt
+ctc F104: protection error: Unable to open license file C:\TASKING\TriCore_v6.3r1\etc\licfile.txt
+===================
+
+===================
+None
+===================
+scons: *** [build\objs\PJ_INVT_SBL\Toolchains_TC387\Inc\IFX_Os.o] Error 1
+None
+===================
+
+===================
+scons: *** [build\objs\PJ_INVT_SBL\Toolchains_TC387\Mcal\Mcal_Modules\McalLib\ssc\src\McalLib.o] Error 1
+None
+===================
+scons: *** [build\objs\PJ_INVT_SBL\Source\SBL_Flash.o] Error 1
+ctc F104: protection error: Unable to open license file C:\TASKING\TriCore_v6.3r1\etc\licfile.txt
+
+===================
+None
+===================
+scons: *** [build\objs\PJ_INVT_SBL\Toolchains_TC387\Inc\FlsLdr_ExclArea.o] Error 1
+ctc F104: protection error: Unable to open license file C:\TASKING\TriCore_v6.3r1\etc\licfile.txt
+
+===================
+None
+===================
+scons: *** [build\objs\PJ_INVT_SBL\Source\Det.o] Error 1
+ctc F104: protection error: Unable to open license file C:\TASKING\TriCore_v6.3r1\etc\licfile.txt
+
+===================
+None
+===================
+scons: *** [build\objs\PJ_INVT_SBL\Toolchains_TC387\Mcal\Mcal_Modules\FlsLoader\Ssc\src\FlsLoader.o] Error 1
+ctc F104: protection error: Unable to open license file C:\TASKING\TriCore_v6.3r1\etc\licfile.txt
+
+===================
+None
+===================
+scons: *** [build\objs\PJ_INVT_SBL\Toolchains_TC387\Inc\SchM_McalLib.o] Error 1
+ctc F104: protection error: Unable to open license file C:\TASKING\TriCore_v6.3r1\etc\licfile.txt
+
+===================
+None
+===================
+scons: *** [build\objs\PJ_INVT_SBL\Toolchains_TC387\Inc\Mcal_SafetyError.o] Error 1
+ctc F104: protection error: Unable to open license file C:\TASKING\TriCore_v6.3r1\etc\licfile.txt
+
+===================
+None
+===================
+scons: *** [build\objs\PJ_INVT_SBL\Toolchains_TC387\Mcal\Mcal_Modules\FlsLoader\Ssc\src\FlsLoader_Platform.o] Error 1
+scons: building terminated because of errors.

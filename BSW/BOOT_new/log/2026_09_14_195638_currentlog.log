@@ -1,0 +1,39 @@
+Start remove_macro  . was excuted
+End remove_macro 
+scons: done reading SConscript files.
+scons: Building targets ...
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\CDD\bsw\bswsrv.o
+ctc W525: ["Fbl\InfineonLib\Infra\CDD\bsw\bswsrv.c" 285/24] discarded 'const' qualifier at assignment: conversion from unsigned char const volatile * to unsigned char *
+ctc W525: ["Fbl\InfineonLib\Infra\CDD\bsw\bswsrv.c" 285/24] discarded 'volatile' qualifier at assignment: conversion from unsigned char const volatile * to unsigned char *
+0 errors, 2 warnings
+
+LINK build\dbg\PJ_INVT_FBL.elf
+ltc E106: unresolved external: ERL_xResetLogNvMEntry_4 - (NvM_Cfg.o)
+ltc E106: unresolved external: ERL_xShutdownStatusBlockRom_NVM - (NvM_Cfg.o)
+ltc E106: unresolved external: ERL_xResetLogNvMEntry_6_Rom_NVM - (NvM_Cfg.o)
+ltc E106: unresolved external: ERL_xResetLogNvMEntry_7_Rom_NVM - (NvM_Cfg.o)
+ltc E106: unresolved external: ERL_xResetLogNvMEntry_0_Rom_NVM - (NvM_Cfg.o)
+ltc E106: unresolved external: ERL_xResetLogNvMEntry_1_Rom_NVM - (NvM_Cfg.o)
+ltc E106: unresolved external: ERL_xResetLogNvMEntry_2_Rom_NVM - (NvM_Cfg.o)
+ltc E106: unresolved external: ERL_xResetLogNvMEntry_3_Rom_NVM - (NvM_Cfg.o)
+ltc E106: unresolved external: ERL_xResetLogNvMEntry_5_Rom_NVM - (NvM_Cfg.o)
+ltc E106: unresolved external: ERL_xResetLogNvMEntry_4_Rom_NVM - (NvM_Cfg.o)
+ltc E106: unresolved external: ERL_xResetLogNvMEntry_8_Rom_NVM - (NvM_Cfg.o)
+ltc E106: unresolved external: ERL_xResetLogNvMEntry_9_Rom_NVM - (NvM_Cfg.o)
+ltc E106: unresolved external: ERL_xShutdownStatusBlock - (NvM_Cfg.o)
+ltc E106: unresolved external: ERL_xResetLogNvMEntry_0 - (NvM_Cfg.o)
+ltc E106: unresolved external: ERL_xResetLogNvMEntry_1 - (NvM_Cfg.o)
+ltc E106: unresolved external: ERL_xResetLogNvMEntry_2 - (NvM_Cfg.o)
+ltc E106: unresolved external: ERL_xResetLogNvMEntry_3 - (NvM_Cfg.o)
+ltc E106: unresolved external: ERL_xResetLogNvMEntry_5 - (NvM_Cfg.o)
+ltc E106: unresolved external: ERL_xResetLogNvMEntry_6 - (NvM_Cfg.o)
+ltc E106: unresolved external: ERL_xResetLogNvMEntry_7 - (NvM_Cfg.o)
+ltc E106: unresolved external: ERL_xResetLogNvMEntry_8 - (NvM_Cfg.o)
+ltc E106: unresolved external: ERL_xResetLogNvMEntry_9 - (NvM_Cfg.o)
+ltc F019: unrecoverable error: fatal link error
+
+===================
+None
+===================
+scons: *** [build\dbg\PJ_INVT_FBL.elf] Error 2
+scons: building terminated because of errors.

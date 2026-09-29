@@ -1,0 +1,4 @@
+IS_PROJECT_ENABLED=true
+SELECT_COMPNENT_NAMING_RULE_COMBO=Use one component for both Receive and Transmit frames
+eclipse.preferences.version=1
+tableViewer=default_component\:.*\#

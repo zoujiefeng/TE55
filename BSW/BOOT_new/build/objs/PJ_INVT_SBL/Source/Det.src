@@ -1,0 +1,91 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 21092262 SN 73118428"
+	.compiler_invocation	"ctc --integer-enumeration -D__CPU__=userdef162 -D__CPU_USERDEF162__ --core=tc1.6.2 --iso=99 --fp-model=+float -D_TASKING_C_TRICORE_=1 -DAUTOSAR_OS_NOT_USED -DDEVELOPMENT -ISbl\\Include -ISbl\\Toolchains_TC387\\Inc -ISbl\\Toolchains_TC387\\Mcal\\MCAL_Gen_new\\inc -ISbl\\Toolchains_TC387\\Mcal\\Mcal_Modules\\FlsLoader\\Ssc\\inc -ISbl\\Toolchains_TC387\\Mcal\\Mcal_Modules\\McalLib\\ssc\\inc\\AS422 -ISbl\\Toolchains_TC387\\Mcal\\Mcal_Modules\\McalLib\\ssc\\inc -ISbl\\Toolchains_TC387\\reg -t4 --language=-comments,-gcc,+volatile,-strings --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --switch=auto -o build\\objs\\PJ_INVT_SBL\\Source\\Det.src Sbl\\Source\\Det.c"
+	.compiler_name		"ctc"
+	;source	'Sbl\\Source\\Det.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.Det.Det_ReportError',code
+	.sect	'.text.Det.Det_ReportError'
+	.align	2
+	
+	.global	Det_ReportError
+
+; Sbl\Source\Det.c	     1  #include "Det.h"
+; Sbl\Source\Det.c	     2  
+; Sbl\Source\Det.c	     3  uint32 cnt = 0;
+; Sbl\Source\Det.c	     4  Std_ReturnType Det_ReportError(uint16 ModuleId, uint8 InstanceId, uint8 ApiId, uint8 ErrorId)
+; Function Det_ReportError
+Det_ReportError:	.type	func
+
+; Sbl\Source\Det.c	     5  {
+; Sbl\Source\Det.c	     6      (void)ModuleId;             /* PRQA S 3112 */ /* MISRA DEVIATION: The parameter is auto-generated and used in others. */
+; Sbl\Source\Det.c	     7      (void)InstanceId;           /* PRQA S 3112 */ /* MISRA DEVIATION: The parameter is auto-generated and used in others. */
+; Sbl\Source\Det.c	     8      (void)ApiId;                /* PRQA S 3112 */ /* MISRA DEVIATION: The parameter is auto-generated and used in others. */
+; Sbl\Source\Det.c	     9      (void)ErrorId;              /* PRQA S 3112 */ /* MISRA DEVIATION: The parameter is auto-generated and used in others. */
+; Sbl\Source\Det.c	    10      errId = ErrorId;
+	movh.a	a15,#@his(errId)
+	st.b	[a15]@los(errId),d7
+
+; Sbl\Source\Det.c	    11  
+; Sbl\Source\Det.c	    12      return E_OK;
+; Sbl\Source\Det.c	    13  }
+	mov	d2,#0
+	ret
+	
+__Det_ReportError_function_end:
+	.size	Det_ReportError,__Det_ReportError_function_end-Det_ReportError
+	; End of function
+	
+	.sdecl	'.text.Det.Det_ReportRuntimeError',code
+	.sect	'.text.Det.Det_ReportRuntimeError'
+	.align	2
+	
+	.global	Det_ReportRuntimeError
+
+; Sbl\Source\Det.c	    14  
+; Sbl\Source\Det.c	    15  FUNC(Std_ReturnType, DET_CODE) Det_ReportRuntimeError(VAR(  uint16, AUTOMATIC) ModuleId,                /* PRQA S 3206 */ /* MISRA DEVIATION: The parameter is auto-generated and used in others. */
+; Function Det_ReportRuntimeError
+Det_ReportRuntimeError:	.type	func
+	sub.a	a10,#8
+
+; Sbl\Source\Det.c	    16                                                              VAR(uint8, AUTOMATIC) InstanceId,           /* PRQA S 3206 */ /* MISRA DEVIATION: The parameter is auto-generated and used in others. */
+; Sbl\Source\Det.c	    17                                                              VAR(uint8, AUTOMATIC) ApiId,                /* PRQA S 3206 */ /* MISRA DEVIATION: The parameter is auto-generated and used in others. */
+; Sbl\Source\Det.c	    18                                                              VAR(uint8, AUTOMATIC) ErrorId)              /* PRQA S 3206 */ /* MISRA DEVIATION: The parameter is auto-generated and used in others. */
+; Sbl\Source\Det.c	    19  {
+; Sbl\Source\Det.c	    20  	Std_ReturnType retVal = E_OK;
+; Sbl\Source\Det.c	    21      volatile uint8 debug_exit = 0;
+	mov	d15,#0
+	st.b	[a10],d15
+
+; Sbl\Source\Det.c	    22  
+; Sbl\Source\Det.c	    23      while (debug_exit == 1u) {}
+.L3:
+	ld.bu	d15,[a10]
+	jeq	d15,#1,.L3
+
+; Sbl\Source\Det.c	    24  
+; Sbl\Source\Det.c	    25      return retVal;
+; Sbl\Source\Det.c	    26  }
+	mov	d2,#0
+	ret
+	
+__Det_ReportRuntimeError_function_end:
+	.size	Det_ReportRuntimeError,__Det_ReportRuntimeError_function_end-Det_ReportRuntimeError
+	; End of function
+	
+	.sdecl	'.data.Det.cnt',data
+	.sect	'.data.Det.cnt'
+	.global	cnt
+	.align	2
+cnt:	.type	object
+	.size	cnt,4
+	.space	4
+	.calls	'Det_ReportError','',0
+	.extern	errId
+	.calls	'Det_ReportRuntimeError','',8
+
+
+	; Module end

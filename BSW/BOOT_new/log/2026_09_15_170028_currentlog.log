@@ -1,0 +1,15 @@
+Start remove_macro  . was excuted
+End remove_macro 
+scons: done reading SConscript files.
+scons: Building targets ...
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\CDD\bsw\bswsrv.o
+ctc W525: ["Fbl\InfineonLib\Infra\CDD\bsw\bswsrv.c" 285/24] discarded 'const' qualifier at assignment: conversion from unsigned char const volatile * to unsigned char *
+ctc W525: ["Fbl\InfineonLib\Infra\CDD\bsw\bswsrv.c" 285/24] discarded 'volatile' qualifier at assignment: conversion from unsigned char const volatile * to unsigned char *
+0 errors, 2 warnings
+
+LINK build\dbg\PJ_INVT_FBL.elf
+ltc W159: LSL: section ".text.start" (function .L44) was not selected because it already has an absolute restriction
+
+./site_scons/site_tools/objcopy.exe -O srec "build\dbg\PJ_INVT_FBL.elf" "build\bin\PJ_INVT_FBL.s19"
+
+scons: done building targets.

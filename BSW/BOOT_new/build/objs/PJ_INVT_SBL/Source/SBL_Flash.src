@@ -1,0 +1,563 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 21092262 SN 73118428"
+	.compiler_invocation	"ctc --integer-enumeration -D__CPU__=userdef162 -D__CPU_USERDEF162__ --core=tc1.6.2 --iso=99 --fp-model=+float -D_TASKING_C_TRICORE_=1 -DAUTOSAR_OS_NOT_USED -DDEVELOPMENT -ISbl\\Include -ISbl\\Toolchains_TC387\\Inc -ISbl\\Toolchains_TC387\\Mcal\\MCAL_Gen_new\\inc -ISbl\\Toolchains_TC387\\Mcal\\Mcal_Modules\\FlsLoader\\Ssc\\inc -ISbl\\Toolchains_TC387\\Mcal\\Mcal_Modules\\McalLib\\ssc\\inc\\AS422 -ISbl\\Toolchains_TC387\\Mcal\\Mcal_Modules\\McalLib\\ssc\\inc -ISbl\\Toolchains_TC387\\reg -t4 --language=-comments,-gcc,+volatile,-strings --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --switch=auto -o build\\objs\\PJ_INVT_SBL\\Source\\SBL_Flash.src Sbl\\Source\\SBL_Flash.c"
+	.compiler_name		"ctc"
+	;source	'Sbl\\Source\\SBL_Flash.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.SBL_Flash.rba_BswSrv_MemCopy',code
+	.sect	'.text.SBL_Flash.rba_BswSrv_MemCopy'
+	.align	2
+	
+	.global	rba_BswSrv_MemCopy
+
+; Sbl\Source\SBL_Flash.c	     1  #include "SBL_Flash.h"
+; Sbl\Source\SBL_Flash.c	     2  #include "FlsLoader.h"
+; Sbl\Source\SBL_Flash.c	     3  
+; Sbl\Source\SBL_Flash.c	     4  
+; Sbl\Source\SBL_Flash.c	     5  #define FLASH_DRIVER_MAX_OF_BYTE_TO_WRITE   1024
+; Sbl\Source\SBL_Flash.c	     6  #define FLASH_DRIVER_MIN_OF_BYTE_TO_WRTIE   256
+; Sbl\Source\SBL_Flash.c	     7  
+; Sbl\Source\SBL_Flash.c	     8  uint8 errId;
+; Sbl\Source\SBL_Flash.c	     9  #define FLASH_HEADER_START_SEC_FLS_HDR
+; Sbl\Source\SBL_Flash.c	    10  #include"MemMap.h"
+; Sbl\Source\SBL_Flash.c	    11  const tFlashHeader FlashHeader =
+; Sbl\Source\SBL_Flash.c	    12  {
+; Sbl\Source\SBL_Flash.c	    13      SBL_FlashInit,
+; Sbl\Source\SBL_Flash.c	    14      SBL_FlashDeinit,
+; Sbl\Source\SBL_Flash.c	    15      SBL_FlashErase,
+; Sbl\Source\SBL_Flash.c	    16      SBL_FlashWrite,
+; Sbl\Source\SBL_Flash.c	    17  };
+; Sbl\Source\SBL_Flash.c	    18  #define FLASH_HEADER_STOP_SEC_FLS_HDR
+; Sbl\Source\SBL_Flash.c	    19  #include"MemMap.h"
+; Sbl\Source\SBL_Flash.c	    20  
+; Sbl\Source\SBL_Flash.c	    21  static uint8 Fls_Driver_WriteBuf[FLASH_DRIVER_MAX_OF_BYTE_TO_WRITE] ;
+; Sbl\Source\SBL_Flash.c	    22  
+; Sbl\Source\SBL_Flash.c	    23  void* rba_BswSrv_MemCopy(void* xDest_pv, const void* xSrc_pcv, uint32 numBytes_u32)
+; Function rba_BswSrv_MemCopy
+rba_BswSrv_MemCopy:	.type	func
+
+; Sbl\Source\SBL_Flash.c	    24  {
+; Sbl\Source\SBL_Flash.c	    25      uint32* xDest_pu32       = (uint32*)xDest_pv;
+	mov.aa	a15,a4
+
+; Sbl\Source\SBL_Flash.c	    26      const uint32* xSrc_pcu32 = (const uint32*)xSrc_pcv;
+; Sbl\Source\SBL_Flash.c	    27      uint16* xDest_pu16;
+; Sbl\Source\SBL_Flash.c	    28      const uint16* xSrc_pcu16;
+; Sbl\Source\SBL_Flash.c	    29      uint8* xDest_pu8;
+; Sbl\Source\SBL_Flash.c	    30      const uint8* xSrc_pcu8;
+; Sbl\Source\SBL_Flash.c	    31      uint32 ctLoop_u32;
+; Sbl\Source\SBL_Flash.c	    32  
+; Sbl\Source\SBL_Flash.c	    33      /* 32 bit aligned copy */
+; Sbl\Source\SBL_Flash.c	    34      /* MISRA RULE 11.3 VIOLATION: cast cannot be avoided here */
+; Sbl\Source\SBL_Flash.c	    35      if ((numBytes_u32 >= 4) && ((((uint32)xDest_pu32 | (uint32)xSrc_pcu32) & 0x03) == 0))
+	jlt.u	d4,#4,.L2
+	mov.d	d15,a4
+	mov.d	d0,a5
+	or	d15,d0
+	and	d15,#3
+	jne	d15,#0,.L3
+
+; Sbl\Source\SBL_Flash.c	    36      {
+; Sbl\Source\SBL_Flash.c	    37          ctLoop_u32 = numBytes_u32 / 4;
+	sh	d15,d4,#-2
+
+; Sbl\Source\SBL_Flash.c	    38          numBytes_u32 &= 0x03;
+	and	d4,d4,#3
+
+; Sbl\Source\SBL_Flash.c	    39          do
+; Sbl\Source\SBL_Flash.c	    40          {
+; Sbl\Source\SBL_Flash.c	    41              *xDest_pu32 = *xSrc_pcu32;
+; Sbl\Source\SBL_Flash.c	    42              xDest_pu32++;
+; Sbl\Source\SBL_Flash.c	    43              xSrc_pcu32++;
+; Sbl\Source\SBL_Flash.c	    44              ctLoop_u32--;
+; Sbl\Source\SBL_Flash.c	    45          } while(ctLoop_u32 > 0);
+.L4:
+	add	d15,#-1
+	ld.w	d0,[a5+]
+	st.w	[a15+],d0
+	jne	d15,#0,.L4
+.L3:
+.L2:
+
+; Sbl\Source\SBL_Flash.c	    46      }
+; Sbl\Source\SBL_Flash.c	    47      /* MISRA RULE 11.4 VIOLATION: cast cannot be avoided here */
+; Sbl\Source\SBL_Flash.c	    48      xDest_pu16 = (uint16*)xDest_pu32;
+; Sbl\Source\SBL_Flash.c	    49      xSrc_pcu16 = (const uint16*)xSrc_pcu32;
+; Sbl\Source\SBL_Flash.c	    50  
+; Sbl\Source\SBL_Flash.c	    51      /* 16 bit aligned copy */
+; Sbl\Source\SBL_Flash.c	    52      /* MISRA RULE 11.3 VIOLATION: cast cannot be avoided here */
+; Sbl\Source\SBL_Flash.c	    53      if ((numBytes_u32 >= 2) && ((((uint32)xDest_pu16 | (uint32)xSrc_pcu16) & 0x01) == 0))
+	jlt.u	d4,#2,.L5
+	mov.d	d15,a15
+	mov.d	d0,a5
+	or	d15,d0
+	jnz.t	d15:0,.L6
+
+; Sbl\Source\SBL_Flash.c	    54      {
+; Sbl\Source\SBL_Flash.c	    55          ctLoop_u32 = numBytes_u32 / 2;
+	sh	d15,d4,#-1
+
+; Sbl\Source\SBL_Flash.c	    56          numBytes_u32 &= 0x01;
+	and	d4,d4,#1
+
+; Sbl\Source\SBL_Flash.c	    57          do
+; Sbl\Source\SBL_Flash.c	    58          {
+; Sbl\Source\SBL_Flash.c	    59              *xDest_pu16 = *xSrc_pcu16;
+; Sbl\Source\SBL_Flash.c	    60              xDest_pu16++;
+; Sbl\Source\SBL_Flash.c	    61              xSrc_pcu16++;
+; Sbl\Source\SBL_Flash.c	    62              ctLoop_u32--;
+; Sbl\Source\SBL_Flash.c	    63          } while(ctLoop_u32 > 0);
+.L7:
+	add	d15,#-1
+	ld.hu	d0,[a5+]2
+	st.h	[a15+],d0
+	jne	d15,#0,.L7
+.L6:
+.L5:
+
+; Sbl\Source\SBL_Flash.c	    64      }
+; Sbl\Source\SBL_Flash.c	    65      /* MISRA RULE 11.4 VIOLATION: cast cannot be avoided here */
+; Sbl\Source\SBL_Flash.c	    66      xDest_pu8 = (uint8*)xDest_pu16;
+; Sbl\Source\SBL_Flash.c	    67      xSrc_pcu8 = (const uint8*)xSrc_pcu16;
+; Sbl\Source\SBL_Flash.c	    68  
+; Sbl\Source\SBL_Flash.c	    69      /* 8 bit copy for remaining data */
+; Sbl\Source\SBL_Flash.c	    70      for(ctLoop_u32 = 0; ctLoop_u32 < numBytes_u32; ctLoop_u32++)
+	mov	d15,#0
+	j	.L8
+.L9:
+
+; Sbl\Source\SBL_Flash.c	    71      {
+; Sbl\Source\SBL_Flash.c	    72          *xDest_pu8 = *xSrc_pcu8;
+	add	d15,#1
+	ld.bu	d0,[a5+]
+	st.b	[a15+],d0
+.L8:
+	jlt.u	d15,d4,.L9
+
+; Sbl\Source\SBL_Flash.c	    73          xDest_pu8++;
+; Sbl\Source\SBL_Flash.c	    74          xSrc_pcu8++;
+; Sbl\Source\SBL_Flash.c	    75      }
+; Sbl\Source\SBL_Flash.c	    76      return xDest_pv;
+	mov.aa	a2,a4
+
+; Sbl\Source\SBL_Flash.c	    77  }
+	ret
+	
+__rba_BswSrv_MemCopy_function_end:
+	.size	rba_BswSrv_MemCopy,__rba_BswSrv_MemCopy_function_end-rba_BswSrv_MemCopy
+	; End of function
+	
+	.sdecl	'.text.SBL_Flash.SBL_FlashGetSectorId',code
+	.sect	'.text.SBL_Flash.SBL_FlashGetSectorId'
+	.align	2
+	
+	.global	SBL_FlashGetSectorId
+
+; Sbl\Source\SBL_Flash.c	    78  
+; Sbl\Source\SBL_Flash.c	    79  #define FLSLOADER_MAX_SECTORS  1 //TODO
+; Sbl\Source\SBL_Flash.c	    80  static const uint32 FlsLoader_PFlashSectorOffset[FLSLOADER_MAX_SECTORS]=
+; Sbl\Source\SBL_Flash.c	    81  {
+; Sbl\Source\SBL_Flash.c	    82    0, // FLSLOADER_PF_S26
+; Sbl\Source\SBL_Flash.c	    83  };
+; Sbl\Source\SBL_Flash.c	    84  
+; Sbl\Source\SBL_Flash.c	    85  IFX_LOCAL_INLINE LengthType SBL_FlashGetSectorId(AddressType startAddress)
+; Function SBL_FlashGetSectorId
+SBL_FlashGetSectorId:	.type	func
+
+; Sbl\Source\SBL_Flash.c	    86  {
+; Sbl\Source\SBL_Flash.c	    87      LengthType SectorNumber = 0;
+; Sbl\Source\SBL_Flash.c	    88      AddressType Offset;
+; Sbl\Source\SBL_Flash.c	    89  
+; Sbl\Source\SBL_Flash.c	    90      Offset = (startAddress - FLSLOADER_PFLASH0_START_ADDRESS);
+	movh	d15,#40960
+	sub	d4,d15
+
+; Sbl\Source\SBL_Flash.c	    91  //    for(SectorNumber = 0U; SectorNumber < FLSLOADER_NUM_OF_PF0_SECTORS; SectorNumber++)
+; Sbl\Source\SBL_Flash.c	    92  //    {
+; Sbl\Source\SBL_Flash.c	    93  //        if(FlsLoader_PFlashSectorOffset[SectorNumber] == Offset)
+; Sbl\Source\SBL_Flash.c	    94  //        {
+; Sbl\Source\SBL_Flash.c	    95  //        break;
+; Sbl\Source\SBL_Flash.c	    96  //        }
+; Sbl\Source\SBL_Flash.c	    97  //    }
+; Sbl\Source\SBL_Flash.c	    98      SectorNumber = Offset/FLSLOADER_PF_SECTOR_SIZE;
+; Sbl\Source\SBL_Flash.c	    99      if(Offset%FLSLOADER_PF_SECTOR_SIZE)
+	insert	d15,d4,#0,#14,#18
+	sh	d2,d4,#-14
+
+; Sbl\Source\SBL_Flash.c	   100      	SectorNumber += 1;
+	cadd	d2,d15,#1
+
+; Sbl\Source\SBL_Flash.c	   101      if(SectorNumber >= FLSLOADER_NUM_OF_PF0_SECTORS)
+	mov	d15,#192
+	jlt.u	d2,d15,.L11
+
+; Sbl\Source\SBL_Flash.c	   102      {
+; Sbl\Source\SBL_Flash.c	   103          if (Offset > 0x200000U)    //if the address does not belong to any sector
+	movh	d15,#32
+	ge.u	d15,d15,d4
+
+; Sbl\Source\SBL_Flash.c	   104          {
+; Sbl\Source\SBL_Flash.c	   105              SectorNumber = 0xFF;    
+	sel	d2,d15,d2,#255
+.L11:
+
+; Sbl\Source\SBL_Flash.c	   106          }
+; Sbl\Source\SBL_Flash.c	   107          else {} //
+; Sbl\Source\SBL_Flash.c	   108      }
+; Sbl\Source\SBL_Flash.c	   109    return (SectorNumber); 
+; Sbl\Source\SBL_Flash.c	   110  }
+	ret
+	
+__SBL_FlashGetSectorId_function_end:
+	.size	SBL_FlashGetSectorId,__SBL_FlashGetSectorId_function_end-SBL_FlashGetSectorId
+	; End of function
+	
+	.sdecl	'.text.SBL_Flash.SBL_FlashInit',code
+	.sect	'.text.SBL_Flash.SBL_FlashInit'
+	.align	2
+	
+	.global	SBL_FlashInit
+
+; Sbl\Source\SBL_Flash.c	   111  
+; Sbl\Source\SBL_Flash.c	   112  /* [$Satisfies $LEAR_FBL_DD_SBL 101] */
+; Sbl\Source\SBL_Flash.c	   113  void SBL_FlashInit(FlashParamType* FlashParam)
+; Function SBL_FlashInit
+SBL_FlashInit:	.type	func
+	mov.aa	a15,a4
+
+; Sbl\Source\SBL_Flash.c	   114  {
+; Sbl\Source\SBL_Flash.c	   115      /*Initialise fls*/
+; Sbl\Source\SBL_Flash.c	   116      if(FlashParam->isInit == (IsInitializedType)UnInitialized)
+	ld.bu	d15,[a15]2
+	jne	d15,#2,.L14
+
+; Sbl\Source\SBL_Flash.c	   117      {
+; Sbl\Source\SBL_Flash.c	   118          FlsLoader_Init(NULL_PTR);
+	mov.a	a4,#0
+	call	FlsLoader_Init
+
+; Sbl\Source\SBL_Flash.c	   119          FlashParam->isInit = Initialized;
+	mov	d15,#3
+	st.b	[a15]2,d15
+
+; Sbl\Source\SBL_Flash.c	   120          FlashParam->errorcode = FlashOk;
+	mov	d15,#0
+	st.h	[a15],d15
+.L14:
+
+; Sbl\Source\SBL_Flash.c	   121      }
+; Sbl\Source\SBL_Flash.c	   122  }
+	ret
+	
+__SBL_FlashInit_function_end:
+	.size	SBL_FlashInit,__SBL_FlashInit_function_end-SBL_FlashInit
+	; End of function
+	
+	.sdecl	'.text.SBL_Flash.SBL_FlashDeinit',code
+	.sect	'.text.SBL_Flash.SBL_FlashDeinit'
+	.align	2
+	
+	.global	SBL_FlashDeinit
+
+; Sbl\Source\SBL_Flash.c	   123  
+; Sbl\Source\SBL_Flash.c	   124  /* [$Satisfies $LEAR_FBL_DD_SBL 104] */
+; Sbl\Source\SBL_Flash.c	   125  void SBL_FlashDeinit(FlashParamType* FlashParam)
+; Function SBL_FlashDeinit
+SBL_FlashDeinit:	.type	func
+
+; Sbl\Source\SBL_Flash.c	   126  {
+; Sbl\Source\SBL_Flash.c	   127      if((IsInitializedType)Initialized == FlashParam->isInit)
+	ld.bu	d15,[a4]2
+	jne	d15,#3,.L15
+
+; Sbl\Source\SBL_Flash.c	   128      {
+; Sbl\Source\SBL_Flash.c	   129          /* just need to set UnInitialized status*/
+; Sbl\Source\SBL_Flash.c	   130          FlashParam->isInit = UnInitialized;
+	mov	d15,#2
+	st.b	[a4]2,d15
+
+; Sbl\Source\SBL_Flash.c	   131          FlashParam->errorcode = FlashOk;
+	mov	d15,#0
+	j	.L16
+.L15:
+
+; Sbl\Source\SBL_Flash.c	   132      }
+; Sbl\Source\SBL_Flash.c	   133      else
+; Sbl\Source\SBL_Flash.c	   134      {
+; Sbl\Source\SBL_Flash.c	   135          FlashParam->errorcode = UnInitialized;
+	mov	d15,#2
+.L16:
+	st.h	[a4],d15
+
+; Sbl\Source\SBL_Flash.c	   136      }
+; Sbl\Source\SBL_Flash.c	   137  
+; Sbl\Source\SBL_Flash.c	   138  }
+	ret
+	
+__SBL_FlashDeinit_function_end:
+	.size	SBL_FlashDeinit,__SBL_FlashDeinit_function_end-SBL_FlashDeinit
+	; End of function
+	
+	.sdecl	'.text.SBL_Flash.SBL_FlashErase',code
+	.sect	'.text.SBL_Flash.SBL_FlashErase'
+	.align	2
+	
+	.global	SBL_FlashErase
+
+; Sbl\Source\SBL_Flash.c	   139  
+; Sbl\Source\SBL_Flash.c	   140  /* [$Satisfies $LEAR_FBL_DD_SBL 102] */
+; Sbl\Source\SBL_Flash.c	   141  void SBL_FlashErase(FlashParamType* FlashParam)
+; Function SBL_FlashErase
+SBL_FlashErase:	.type	func
+	mov.aa	a15,a4
+
+; Sbl\Source\SBL_Flash.c	   142  {
+; Sbl\Source\SBL_Flash.c	   143      Std_ReturnType ret = E_NOT_OK;
+; Sbl\Source\SBL_Flash.c	   144      LengthType sector_num;
+; Sbl\Source\SBL_Flash.c	   145      AddressType address;
+; Sbl\Source\SBL_Flash.c	   146      address = FlashParam->address;
+	ld.w	d8,[a15]4
+
+; Sbl\Source\SBL_Flash.c	   147      if((address & 0xF0000000U) == 0x80000000U)
+	insert	d0,d8,#0,#0,#28
+	movh	d15,#32768
+	jne	d15,d0,.L17
+
+; Sbl\Source\SBL_Flash.c	   148      {
+; Sbl\Source\SBL_Flash.c	   149          // Write to non cached area
+; Sbl\Source\SBL_Flash.c	   150          address|= 0xA0000000U;
+	movh	d15,#40960
+	or	d8,d15
+.L17:
+
+; Sbl\Source\SBL_Flash.c	   151      }  
+; Sbl\Source\SBL_Flash.c	   152      sector_num = (LengthType)SBL_FlashGetSectorId((AddressType)(address + FlashParam->length)) - SBL_FlashGetSectorId((AddressType)address) ;
+; Sbl\Source\SBL_Flash.c	   153      sector_num = 1;
+; Sbl\Source\SBL_Flash.c	   154      if(FlashParam != NULL_PTR)
+; Sbl\Source\SBL_Flash.c	   155      {
+; Sbl\Source\SBL_Flash.c	   156  		if((IsInitializedType)Initialized == FlashParam->isInit)
+	ld.bu	d15,[a15]2
+	jne	d15,#3,.L18
+
+; Sbl\Source\SBL_Flash.c	   157  		{
+; Sbl\Source\SBL_Flash.c	   158              /*Trigger WDG before executing the erase*/
+; Sbl\Source\SBL_Flash.c	   159              if(FlashParam->wdTriggerFct)    /* PRQA S 3344 */
+	ld.a	a2,[a15]16
+	jz.a	a2,.L19
+
+; Sbl\Source\SBL_Flash.c	   160              {
+; Sbl\Source\SBL_Flash.c	   161                  FlashParam->wdTriggerFct();
+	calli	a2
+.L19:
+
+; Sbl\Source\SBL_Flash.c	   162              }
+; Sbl\Source\SBL_Flash.c	   163  			/* invoke the erase routine*/
+; Sbl\Source\SBL_Flash.c	   164  			ret = FlsLoader_Erase((AddressType)address, (LengthType)sector_num);
+	mov	d5,#1
+	mov	d4,d8
+	call	FlsLoader_Erase
+	extr.u	d15,d2,#0,#8
+
+; Sbl\Source\SBL_Flash.c	   165  			if(E_OK == ret)
+	jeq	d15,#0,.L21
+
+; Sbl\Source\SBL_Flash.c	   166  			{
+; Sbl\Source\SBL_Flash.c	   167                  FlashParam->errorcode = FlashOk;
+; Sbl\Source\SBL_Flash.c	   168              }
+; Sbl\Source\SBL_Flash.c	   169              else
+; Sbl\Source\SBL_Flash.c	   170  			{
+; Sbl\Source\SBL_Flash.c	   171  		       FlashParam->errorcode = FlashFailed;
+	mov	d15,#1
+	j	.L22
+.L18:
+
+; Sbl\Source\SBL_Flash.c	   172  			}
+; Sbl\Source\SBL_Flash.c	   173  		}
+; Sbl\Source\SBL_Flash.c	   174  		else
+; Sbl\Source\SBL_Flash.c	   175  		{
+; Sbl\Source\SBL_Flash.c	   176  			FlashParam->errorcode = UnInitialized;
+	mov	d15,#2
+.L21:
+.L22:
+	st.h	[a15],d15
+
+; Sbl\Source\SBL_Flash.c	   177  		}
+; Sbl\Source\SBL_Flash.c	   178      }
+; Sbl\Source\SBL_Flash.c	   179  }
+	ret
+	
+__SBL_FlashErase_function_end:
+	.size	SBL_FlashErase,__SBL_FlashErase_function_end-SBL_FlashErase
+	; End of function
+	
+	.sdecl	'.text.SBL_Flash.SBL_FlashWrite',code
+	.sect	'.text.SBL_Flash.SBL_FlashWrite'
+	.align	2
+	
+	.global	SBL_FlashWrite
+
+; Sbl\Source\SBL_Flash.c	   180  
+; Sbl\Source\SBL_Flash.c	   181  /* [$Satisfies $LEAR_FBL_DD_SBL 103] */
+; Sbl\Source\SBL_Flash.c	   182  void SBL_FlashWrite(FlashParamType* FlashParam)
+; Function SBL_FlashWrite
+SBL_FlashWrite:	.type	func
+	mov.aa	a15,a4
+
+; Sbl\Source\SBL_Flash.c	   183  {
+; Sbl\Source\SBL_Flash.c	   184      LengthType length;
+; Sbl\Source\SBL_Flash.c	   185      AddressType address;
+; Sbl\Source\SBL_Flash.c	   186      Std_ReturnType ret = E_NOT_OK;
+; Sbl\Source\SBL_Flash.c	   187  
+; Sbl\Source\SBL_Flash.c	   188      if(FlashParam != NULL_PTR)
+	jz.a	a15,.L23
+
+; Sbl\Source\SBL_Flash.c	   189      {
+; Sbl\Source\SBL_Flash.c	   190          if((IsInitializedType)Initialized == FlashParam->isInit)
+	ld.bu	d15,[a15]2
+	jne	d15,#3,.L24
+
+; Sbl\Source\SBL_Flash.c	   191          {
+; Sbl\Source\SBL_Flash.c	   192              if(FlashParam->data != NULL_PTR)
+	ld.w	d15,[a15]12
+	jeq	d15,#0,.L25
+
+; Sbl\Source\SBL_Flash.c	   193              {
+; Sbl\Source\SBL_Flash.c	   194                  /* Trigger WDG before executing the write*/
+; Sbl\Source\SBL_Flash.c	   195                  if(FlashParam->wdTriggerFct)    /* PRQA S 3344 */
+	ld.a	a2,[a15]16
+	jz.a	a2,.L26
+
+; Sbl\Source\SBL_Flash.c	   196                  {
+; Sbl\Source\SBL_Flash.c	   197                      FlashParam->wdTriggerFct();
+	calli	a2
+.L26:
+
+; Sbl\Source\SBL_Flash.c	   198                  }
+; Sbl\Source\SBL_Flash.c	   199                  length = FlashParam->length;
+	ld.w	d15,[a15]8
+
+; Sbl\Source\SBL_Flash.c	   200                  address = FlashParam->address;
+	ld.w	d8,[a15]4
+
+; Sbl\Source\SBL_Flash.c	   201                  /*Make an aligment by copying to a buffer*/
+; Sbl\Source\SBL_Flash.c	   202                  rba_BswSrv_MemCopy((uint8 *)Fls_Driver_WriteBuf, (uint8 *)FlashParam->data, length);
+	movh.a	a12,#@his(Fls_Driver_WriteBuf)
+	lea	a12,[a12]@los(Fls_Driver_WriteBuf)
+	ld.a	a5,[a15]12
+	mov.aa	a4,a12
+	mov	d4,d15
+	call	rba_BswSrv_MemCopy
+
+; Sbl\Source\SBL_Flash.c	   203                  if(FLASH_DRIVER_MIN_OF_BYTE_TO_WRTIE > length)
+; Sbl\Source\SBL_Flash.c	   204                  {
+; Sbl\Source\SBL_Flash.c	   205                      /* Ensure that the write size is always equal multiple of 256*/
+; Sbl\Source\SBL_Flash.c	   206                      length = FLASH_DRIVER_MIN_OF_BYTE_TO_WRTIE;
+; Sbl\Source\SBL_Flash.c	   207                  }
+; Sbl\Source\SBL_Flash.c	   208                  /*Convert flash address to non cached */
+; Sbl\Source\SBL_Flash.c	   209  //                if((address & 0xF0000000U) == 0x80000000U)
+; Sbl\Source\SBL_Flash.c	   210  //                {
+; Sbl\Source\SBL_Flash.c	   211                      // Write to non cached area
+; Sbl\Source\SBL_Flash.c	   212                      address|= 0xA0000000U;
+; Sbl\Source\SBL_Flash.c	   213                      /*invoke the write routine*/
+; Sbl\Source\SBL_Flash.c	   214                      ret = FlsLoader_Write(address, length, (const uint8 *)Fls_Driver_WriteBuf);
+	movh	d4,#40960
+	mov.aa	a4,a12
+	or	d4,d8
+	max.u	d5,d15,#256
+	call	FlsLoader_Write
+	extr.u	d15,d2,#0,#8
+
+; Sbl\Source\SBL_Flash.c	   215                      if(E_OK == ret)
+	jeq	d15,#0,.L28
+
+; Sbl\Source\SBL_Flash.c	   216                      {
+; Sbl\Source\SBL_Flash.c	   217                          FlashParam->errorcode = FlashOk;
+; Sbl\Source\SBL_Flash.c	   218                      }
+; Sbl\Source\SBL_Flash.c	   219                  
+; Sbl\Source\SBL_Flash.c	   220                      else
+; Sbl\Source\SBL_Flash.c	   221                      {
+; Sbl\Source\SBL_Flash.c	   222                          FlashParam->errorcode = FlashFailed;
+	mov	d15,#1
+	j	.L29
+.L25:
+
+; Sbl\Source\SBL_Flash.c	   223                      }
+; Sbl\Source\SBL_Flash.c	   224  //                }
+; Sbl\Source\SBL_Flash.c	   225  //                else
+; Sbl\Source\SBL_Flash.c	   226  //                {
+; Sbl\Source\SBL_Flash.c	   227  //                    FlashParam->errorcode = FlashInvalidParam;
+; Sbl\Source\SBL_Flash.c	   228  //                }
+; Sbl\Source\SBL_Flash.c	   229              }
+; Sbl\Source\SBL_Flash.c	   230              else
+; Sbl\Source\SBL_Flash.c	   231              {
+; Sbl\Source\SBL_Flash.c	   232                  FlashParam->errorcode = FlashInvalidParam;
+	mov	d15,#4
+	j	.L30
+.L24:
+
+; Sbl\Source\SBL_Flash.c	   233              }
+; Sbl\Source\SBL_Flash.c	   234  
+; Sbl\Source\SBL_Flash.c	   235          }
+; Sbl\Source\SBL_Flash.c	   236          else
+; Sbl\Source\SBL_Flash.c	   237          {
+; Sbl\Source\SBL_Flash.c	   238              FlashParam->errorcode = UnInitialized;
+	mov	d15,#2
+.L28:
+.L29:
+.L30:
+	st.h	[a15],d15
+.L23:
+
+; Sbl\Source\SBL_Flash.c	   239          }
+; Sbl\Source\SBL_Flash.c	   240      }
+; Sbl\Source\SBL_Flash.c	   241  }
+	ret
+	
+__SBL_FlashWrite_function_end:
+	.size	SBL_FlashWrite,__SBL_FlashWrite_function_end-SBL_FlashWrite
+	; End of function
+	
+	.sdecl	'.bss.SBL_Flash.errId',data
+	.sect	'.bss.SBL_Flash.errId'
+	.global	errId
+errId:	.type	object
+	.size	errId,1
+	.space	1
+	.sdecl	'.rodata.sbl_const_flash_routine_header',data,rom
+	.sect	'.rodata.sbl_const_flash_routine_header'
+	.global	FlashHeader
+	.align	4
+FlashHeader:	.type	object
+	.size	FlashHeader,16
+	.word	SBL_FlashInit,SBL_FlashDeinit,SBL_FlashErase,SBL_FlashWrite
+	.sdecl	'.bss.SBL_Flash.Fls_Driver_WriteBuf',data
+	.sect	'.bss.SBL_Flash.Fls_Driver_WriteBuf'
+Fls_Driver_WriteBuf:	.type	object
+	.size	Fls_Driver_WriteBuf,1024
+	.space	1024
+	.calls	'__INDIRECT__','SBL_FlashInit'
+	.calls	'__INDIRECT__','SBL_FlashDeinit'
+	.calls	'__INDIRECT__','SBL_FlashErase'
+	.calls	'__INDIRECT__','SBL_FlashWrite'
+	.calls	'SBL_FlashInit','FlsLoader_Init'
+	.calls	'SBL_FlashErase','__INDIRECT__'
+	.calls	'SBL_FlashErase','FlsLoader_Erase'
+	.calls	'SBL_FlashWrite','__INDIRECT__'
+	.calls	'SBL_FlashWrite','rba_BswSrv_MemCopy'
+	.calls	'SBL_FlashWrite','FlsLoader_Write'
+	.calls	'rba_BswSrv_MemCopy','',0
+	.calls	'SBL_FlashGetSectorId','',0
+	.calls	'SBL_FlashInit','',0
+	.calls	'SBL_FlashDeinit','',0
+	.calls	'SBL_FlashErase','',0
+	.extern	FlsLoader_Init
+	.extern	FlsLoader_Write
+	.extern	FlsLoader_Erase
+	.extern	__INDIRECT__
+	.calls	'SBL_FlashWrite','',0
+
+
+	; Module end

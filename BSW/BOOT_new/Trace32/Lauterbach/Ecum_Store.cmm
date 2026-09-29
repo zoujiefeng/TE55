@@ -1,0 +1,52 @@
+// T32 Fri Nov 12 14:45:48 2021
+
+B::
+
+TOOLBAR   ON
+STATUSBAR ON
+FramePOS 3.75,1.9286,,,Maximized
+WinPAGE.RESet
+
+WinPAGE.Create P000
+WinCLEAR
+
+WinPOS 213.88 0.0 54. 24. 0. 0. W005
+Register
+
+WinPOS 141.75 0.0 70. 5. 10. 1. W004
+RunTime
+
+WinPOS 142.0 28.071 127. 28. 0. 0. W003
+per
+
+WinPOS 0.0 0.0 113. 26. 13. 1. W002
+WinTABS 10. 10. 25.
+List P:0x80039690
+
+WinPOS 146.0 56.929 95. 18. 5. 0. W008
+frame /locals /caller
+
+WinPOS 0.0 0.0 134. 37. 13. 1. W000
+WinTABS 10. 10. 25.
+d.l
+
+WinPOS 0.0 42.571 124. 6. 23. 1. W001
+WinTABS 13. 0. 0. 0. 0. 0. 0. 0. 0. 73.
+b.l
+
+WinPOS 142.25 7.8571 67. 14. 0. 1. W006
+WinTABS 26. 26.
+sYmbol.Browse.Function
+
+WinPOS 0.0 54.429 124. 10. 0. 0. W007
+Var.Watch
+
+VAR.ADDWATCH AppMode_TC
+VAR.ADDWATCH testmode
+VAR.ADDWATCH startupSource_t
+VAR.ADDWATCH EcuM_Reset
+VAR.ADDWATCH reqr
+
+WinPAGE.select P000
+
+ENDDO

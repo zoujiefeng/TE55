@@ -1,0 +1,240 @@
+#include "SBL_Flash.h"
+#include "FlsLoader.h"
+
+
+#define FLASH_DRIVER_MAX_OF_BYTE_TO_WRITE   1024
+#define FLASH_DRIVER_MIN_OF_BYTE_TO_WRTIE   256
+
+uint8 errId;
+#define FLASH_HEADER_START_SEC_FLS_HDR
+#include"MemMap.h"
+const tFlashHeader FlashHeader =
+{
+    SBL_FlashInit,
+    SBL_FlashDeinit,
+    SBL_FlashErase,
+    SBL_FlashWrite,
+};
+#define FLASH_HEADER_STOP_SEC_FLS_HDR
+#include"MemMap.h"
+
+static uint8 Fls_Driver_WriteBuf[FLASH_DRIVER_MAX_OF_BYTE_TO_WRITE] ;
+
+void* SBL_rba_BswSrv_MemCopy(void* xDest_pv, const void* xSrc_pcv, uint32 numBytes_u32)
+{
+    uint32* xDest_pu32       = (uint32*)xDest_pv;
+    const uint32* xSrc_pcu32 = (const uint32*)xSrc_pcv;
+    uint16* xDest_pu16;
+    const uint16* xSrc_pcu16;
+    uint8* xDest_pu8;
+    const uint8* xSrc_pcu8;
+    uint32 ctLoop_u32;
+
+    /* 32 bit aligned copy */
+    /* MISRA RULE 11.3 VIOLATION: cast cannot be avoided here */
+    if ((numBytes_u32 >= 4) && ((((uint32)xDest_pu32 | (uint32)xSrc_pcu32) & 0x03) == 0))
+    {
+        ctLoop_u32 = numBytes_u32 / 4;
+        numBytes_u32 &= 0x03;
+        do
+        {
+            *xDest_pu32 = *xSrc_pcu32;
+            xDest_pu32++;
+            xSrc_pcu32++;
+            ctLoop_u32--;
+        } while(ctLoop_u32 > 0);
+    }
+    /* MISRA RULE 11.4 VIOLATION: cast cannot be avoided here */
+    xDest_pu16 = (uint16*)xDest_pu32;
+    xSrc_pcu16 = (const uint16*)xSrc_pcu32;
+
+    /* 16 bit aligned copy */
+    /* MISRA RULE 11.3 VIOLATION: cast cannot be avoided here */
+    if ((numBytes_u32 >= 2) && ((((uint32)xDest_pu16 | (uint32)xSrc_pcu16) & 0x01) == 0))
+    {
+        ctLoop_u32 = numBytes_u32 / 2;
+        numBytes_u32 &= 0x01;
+        do
+        {
+            *xDest_pu16 = *xSrc_pcu16;
+            xDest_pu16++;
+            xSrc_pcu16++;
+            ctLoop_u32--;
+        } while(ctLoop_u32 > 0);
+    }
+    /* MISRA RULE 11.4 VIOLATION: cast cannot be avoided here */
+    xDest_pu8 = (uint8*)xDest_pu16;
+    xSrc_pcu8 = (const uint8*)xSrc_pcu16;
+
+    /* 8 bit copy for remaining data */
+    for(ctLoop_u32 = 0; ctLoop_u32 < numBytes_u32; ctLoop_u32++)
+    {
+        *xDest_pu8 = *xSrc_pcu8;
+        xDest_pu8++;
+        xSrc_pcu8++;
+    }
+    return xDest_pv;
+}
+
+#define FLSLOADER_MAX_SECTORS  1 //TODO
+static const uint32 FlsLoader_PFlashSectorOffset[FLSLOADER_MAX_SECTORS]=
+{
+  0, // FLSLOADER_PF_S26
+};
+
+IFX_LOCAL_INLINE LengthType SBL_FlashGetSectorId(AddressType startAddress)
+{
+    LengthType SectorNumber = 0;
+    AddressType Offset;
+
+    Offset = (startAddress - FLSLOADER_PFLASH0_START_ADDRESS);
+//    for(SectorNumber = 0U; SectorNumber < FLSLOADER_NUM_OF_PF0_SECTORS; SectorNumber++)
+//    {
+//        if(FlsLoader_PFlashSectorOffset[SectorNumber] == Offset)
+//        {
+//        break;
+//        }
+//    }
+    SectorNumber = Offset/FLSLOADER_PF_SECTOR_SIZE;
+    if(Offset%FLSLOADER_PF_SECTOR_SIZE)
+    	SectorNumber += 1;
+    if(SectorNumber >= FLSLOADER_NUM_OF_PF0_SECTORS)
+    {
+        if (Offset > 0x200000U)    //if the address does not belong to any sector
+        {
+            SectorNumber = 0xFF;    
+        }
+        else {} //
+    }
+  return (SectorNumber); 
+}
+
+/* [$Satisfies $LEAR_FBL_DD_SBL 101] */
+void SBL_FlashInit(FlashParamType* FlashParam)
+{
+    /*Initialise fls*/
+    if(FlashParam->isInit == (IsInitializedType)UnInitialized)
+    {
+        FlsLoader_Init(NULL_PTR);
+        FlashParam->isInit = Initialized;
+        FlashParam->errorcode = FlashOk;
+    }
+}
+
+/* [$Satisfies $LEAR_FBL_DD_SBL 104] */
+void SBL_FlashDeinit(FlashParamType* FlashParam)
+{
+    if((IsInitializedType)Initialized == FlashParam->isInit)
+    {
+        /* just need to set UnInitialized status*/
+        FlashParam->isInit = UnInitialized;
+        FlashParam->errorcode = FlashOk;
+    }
+    else
+    {
+        FlashParam->errorcode = UnInitialized;
+    }
+
+}
+
+/* [$Satisfies $LEAR_FBL_DD_SBL 102] */
+void SBL_FlashErase(FlashParamType* FlashParam)
+{
+    Std_ReturnType ret = E_NOT_OK;
+    LengthType sector_num;
+    AddressType address;
+    address = FlashParam->address;
+    if((address & 0xF0000000U) == 0x80000000U)
+    {
+        // Write to non cached area
+        address|= 0xA0000000U;
+    }  
+    sector_num = (LengthType)SBL_FlashGetSectorId((AddressType)(address + FlashParam->length)) - SBL_FlashGetSectorId((AddressType)address) ;
+    sector_num = 1;
+    if(FlashParam != NULL_PTR)
+    {
+		if((IsInitializedType)Initialized == FlashParam->isInit)
+		{
+            /*Trigger WDG before executing the erase*/
+            if(FlashParam->wdTriggerFct)    /* PRQA S 3344 */
+            {
+                FlashParam->wdTriggerFct();
+            }
+			/* invoke the erase routine*/
+			ret = FlsLoader_Erase((AddressType)address, (LengthType)sector_num);
+			if(E_OK == ret)
+			{
+                FlashParam->errorcode = FlashOk;
+            }
+            else
+			{
+		       FlashParam->errorcode = FlashFailed;
+			}
+		}
+		else
+		{
+			FlashParam->errorcode = UnInitialized;
+		}
+    }
+}
+
+/* [$Satisfies $LEAR_FBL_DD_SBL 103] */
+void SBL_FlashWrite(FlashParamType* FlashParam)
+{
+    LengthType length;
+    AddressType address;
+    Std_ReturnType ret = E_NOT_OK;
+
+    if(FlashParam != NULL_PTR)
+    {
+        if((IsInitializedType)Initialized == FlashParam->isInit)
+        {
+            if(FlashParam->data != NULL_PTR)
+            {
+                /* Trigger WDG before executing the write*/
+                if(FlashParam->wdTriggerFct)    /* PRQA S 3344 */
+                {
+                    FlashParam->wdTriggerFct();
+                }
+                length = FlashParam->length;
+                address = FlashParam->address;
+                /*Make an aligment by copying to a buffer*/
+                SBL_rba_BswSrv_MemCopy((uint8 *)Fls_Driver_WriteBuf, (uint8 *)FlashParam->data, length);
+                if(FLASH_DRIVER_MIN_OF_BYTE_TO_WRTIE > length)
+                {
+                    /* Ensure that the write size is always equal multiple of 256*/
+                    length = FLASH_DRIVER_MIN_OF_BYTE_TO_WRTIE;
+                }
+                /*Convert flash address to non cached */
+//                if((address & 0xF0000000U) == 0x80000000U)
+//                {
+                    // Write to non cached area
+                    address|= 0xA0000000U;
+                    /*invoke the write routine*/
+                    ret = FlsLoader_Write(address, length, (const uint8 *)Fls_Driver_WriteBuf);
+                    if(E_OK == ret)
+                    {
+                        FlashParam->errorcode = FlashOk;
+                    }
+                    else
+                    {
+                        FlashParam->errorcode = FlashFailed;
+                    }
+//                }
+//                else
+//                {
+//                    FlashParam->errorcode = FlashInvalidParam;
+//                }
+            }
+            else
+            {
+                FlashParam->errorcode = FlashInvalidParam;
+            }
+
+        }
+        else
+        {
+            FlashParam->errorcode = UnInitialized;
+        }
+    }
+}

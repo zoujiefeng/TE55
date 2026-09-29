@@ -1,0 +1,698 @@
+Start remove_macro  . was excuted
+End remove_macro 
+scons: done reading SConscript files.
+scons: Building targets ...
+CC build\objs\PJ_INVT_FBL\Bootloader\ProgM\src\FBL_ProgM.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_CC.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Cdi.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Cdtcs.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Dddi.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Did_Support.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Dsc.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Er.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_GetVIN.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Iocbi.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rc.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdbi.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdpi.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdtc.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdtc_GetFreezeFrameDataByRecord.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdtc_RepDTCFaultDetectionCounter.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdtc_RepFailedDTC.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdtc_RepNumDTCByStatusMask.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdtc_ReportDTCBySevMaskRec.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdtc_ReportDTCSnapshotRecId.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdtc_ReportExtendedDataRecordByDTC.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdtc_ReportSnapshotRecordByDTC.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdtc_RepSeverityOfDTC.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdtc_RepSuppDTC.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_RequestDownload.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W588: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_CC.c" 362/15] dead assignment to "retVal_u8" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_CC.c" 531/19] condition is always false
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_CC.c" 251/39] condition is always true
+0 errors, 4 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_RequestTransferExit.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W588: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rc.c" 403/12] dead assignment to "RetVal" eliminated
+ctc W588: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rc.c" 689/56] dead assignment to "dataSigVal_u32" eliminated
+ctc W588: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rc.c" 753/18] dead assignment to "dataRetVal_u8" eliminated
+ctc W588: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rc.c" 752/20] dead assignment to "adrSignal_pcst" eliminated
+ctc W588: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rc.c" 1375/21] dead assignment to "flgProcessReq_b" eliminated
+0 errors, 6 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_RequestUpload.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rmba.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W588: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Did_Support.c" 189/23] dead assignment to "dataSigLength_u16" eliminated
+ctc W588: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Did_Support.c" 188/23] dead assignment to "dataSigLength_u32" eliminated
+ctc W588: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Did_Support.c" 684/25] dead assignment to "ptrControlSigConfig" eliminated
+ctc W588: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Did_Support.c" 683/19] dead assignment to "ptrSigConfig" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Did_Support.c" 783/100] condition is always true
+0 errors, 6 warnings
+
+ctc W525: ["Fbl\Bootloader\ProgM\src\FBL_ProgM.c" 148/71] discarded 'const' qualifier at argument #1: conversion from unsigned char const * to unsigned char *
+ctc W537: ["Fbl\Bootloader\ProgM\src\FBL_ProgM.c" 286/37] unused variable "StartAddressFormat"
+ctc W537: ["Fbl\Bootloader\ProgM\src\FBL_ProgM.c" 287/37] unused variable "EraseLengthFormat"
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W588: ["Fbl\Bootloader\ProgM\src\FBL_ProgM.c" 302/26] dead assignment to "RetValue" eliminated
+0 errors, 5 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Roe.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Seca.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W588: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdbi.c" 142/42] dead assignment to "dataReadIfcRetVal_u8" eliminated
+ctc W588: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdbi.c" 128/38] dead assignment to "dataCondChkRetVal_u8" eliminated
+ctc W588: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdbi.c" 86/26] dead assignment to "dataReadIfcRetVal_u8" eliminated
+ctc W588: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdbi.c" 85/26] dead assignment to "dataCondChkRetVal_u8" eliminated
+ctc W588: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdbi.c" 389/26] dead assignment to "ptrDidConfig" eliminated
+ctc W588: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdbi.c" 338/26] dead assignment to "ptrDidConfig" eliminated
+ctc W588: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdbi.c" 265/18] dead assignment to "ptrDidConfig" eliminated
+ctc W588: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdbi.c" 1444/45] dead assignment to "ptrControlSigConfig" eliminated
+ctc W588: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdbi.c" 1413/34] dead assignment to "dataSignallength_u32" eliminated
+ctc W588: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdbi.c" 1328/25] dead assignment to "ptrControlSigConfig" eliminated
+ctc W588: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdbi.c" 1327/18] dead assignment to "ptrSigConfig" eliminated
+ctc W588: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Rdbi.c" 1326/18] dead assignment to "ptrDidConfig" eliminated
+0 errors, 13 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Seca_ChgSecurity.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Seca_RestoreDelayCount.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Seca_SecurityIni.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Tp.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_TransferData.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Uds_Did_F186.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Wdbi.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Wmba.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\Dsd\Dcm_Dsd_Lib.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\Dsd\Dcm_Dsd_Rdpi.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\Dsd\Dcm_Dsd_Roe.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\Dsd\Dcm_Dsd_StateMachine.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\Dsl\Dcm_Dsl_CancelTransmit.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\Dsl\Dcm_Dsl_ComMInteraction.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\Dsl\Dcm_Dsl_CopyRxData.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W588: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmDsp\DcmDspUds\DcmDspUds_Wdbi.c" 1543/19] dead assignment to "dataRetVal_u8" eliminated
+0 errors, 2 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\Dsl\Dcm_Dsl_CopyTxData.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\Dsl\Dcm_Dsl_OBDStateMachine.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\Dsl\Dcm_Dsl_PagedBuffer.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\Dsl\Dcm_Dsl_Protocol.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\Dsl\Dcm_Dsl_RxIndication.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\Dsl\Dcm_Dsl_Security.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\Dsl\Dcm_Dsl_Session.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\Dsl\Dcm_Dsl_StartOfReception.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\Dsl\Dcm_Dsl_StateMachine.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\Dsl\Dcm_Dsl_TxResponse.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Fee\src\Fee_Config.o
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Fee\src\Fee_Dbg.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Fee\src\Fee_Job.o
+
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Fee\src\Fee_Lib.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Fee\src\Fee_Medium.o
+
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Fee\src\Fee_Order.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Fee\src\Fee_Proc.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\NvM_Cfg.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\AuxiliaryRequests\Asynchronous\NvM_Rb_AuxInvalidateNvBlock.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\AuxiliaryRequests\Asynchronous\NvM_Rb_AuxReadBlock.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\AuxiliaryRequests\Asynchronous\NvM_Rb_AuxWriteBlock.o
+
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\AuxiliaryRequests\Synchronous\NvM_Rb_AuxGetDataIndex.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\AuxiliaryRequests\Synchronous\NvM_Rb_AuxGetErrorStatus.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\Dsl\Dcm_Dsl_RxIndication.c" 117/5] condition is always true
+0 errors, 3 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\AuxiliaryRequests\Synchronous\NvM_Rb_AuxGetMigrationResult.o
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\AuxiliaryRequests\Synchronous\NvM_Rb_AuxSetDataIndex.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\CommonRequests\NvM_GetVersionInfo.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\CommonRequests\NvM_Init.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W588: ["Fbl\BSW\Bsw_Gen\Dcm\src\Dsl\Dcm_Dsl_Session.c" 141/25] dead assignment to "sessionMask_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 3 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\CommonRequests\NvM_Rb_GetActiveService.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\CommonRequests\NvM_Rb_GetRequestType.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\CommonRequests\NvM_Rb_GetStatus.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_BlockData.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockDescriptor_Inl.h" 566/18] condition is always false
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockDescriptor_Inl.h" 584/18] condition is always false
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockDescriptor_Inl.h" 604/18] condition is always true
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 5 warnings
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\Dsl\Dcm_Dsl_StateMachine.c" 511/9] condition is always true
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\Dsl\Dcm_Dsl_StateMachine.c" 898/5] condition is always true
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\Dsl\Dcm_Dsl_StateMachine.c" 996/9] condition is always true
+0 errors, 5 warnings
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\Dsl\Dcm_Dsl_TxResponse.c" 585/18] condition is always true
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\Dsl\Dcm_Dsl_TxResponse.c" 1521/8] condition is always true
+0 errors, 4 warnings
+
+
+
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\Internal\Crc\NvM_Crc.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\Internal\CryptoServices\NvM_Crypto.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\Internal\CryptoServices\NvM_Csm.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\Internal\ErrorDetection\NvM_ErrorDetection.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\Internal\ExplicitSynchronization\NvM_ExplicitSynchronization.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\Internal\InternalBuffer\NvM_InternalBuffer.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\Internal\JobHandling\NvM_Job.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\Internal\JobHandling\NvM_JobInvalidate.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\Internal\JobHandling\NvM_JobMaintain.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\Internal\JobHandling\NvM_JobRead.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\Internal\JobHandling\NvM_JobRecalcRamBlkCrc.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\Internal\JobHandling\NvM_JobRestore.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\Internal\JobHandling\NvM_JobValidate.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\Internal\JobHandling\NvM_JobWrite.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\Internal\JobResource\NvM_JobResource.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\Internal\MemIf\NvM_MemIf.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\Internal\Monitoring\NvM_Rb_WriteMon.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\Internal\ProcessMultiBlock\NvM_ProcessMultiBlock.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\Internal\QueueHandling\NvM_JobQueue.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\Internal\QueueHandling\NvM_Queue.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\Internal\QueueHandling\NvM_RequestQueue.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\Internal\Service\NvM_Service.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\MultiBlockRequests\NvM_CancelWriteAll.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\MultiBlockRequests\NvM_InitAfterReadAll.o
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\MultiBlockRequests\NvM_Rb_FirstInitAll.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\MultiBlockRequests\NvM_ReadAll.o
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\MultiBlockRequests\NvM_ValidateAll.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\MultiBlockRequests\NvM_WriteAll.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\NvM_Asserts.o
+
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\ScheduledFunctions\NvM_MainFunction.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\ScheduledFunctions\NvM_MainFunctionArbitrate.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\ScheduledFunctions\NvM_MainFunctionJobStart.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\ScheduledFunctions\NvM_MainFunctionResultEval.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\SingleBlockRequests\Asynchronous\NvM_EraseNvBlock.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\SingleBlockRequests\Asynchronous\NvM_InvalidateNvBlock.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\SingleBlockRequests\Asynchronous\NvM_ReadBlock.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\SingleBlockRequests\Asynchronous\NvM_RestoreBlockDefaults.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\SingleBlockRequests\Asynchronous\NvM_WriteBlock.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\MultiBlockRequests\NvM_CancelWriteAll.c" 127/18] condition is always false
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 3 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\SingleBlockRequests\Synchronous\NvM_GetDataIndex.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\SingleBlockRequests\Synchronous\NvM_GetErrorStatus.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\SingleBlockRequests\Synchronous\NvM_Rb_GetBlockId.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\SingleBlockRequests\Synchronous\NvM_Rb_GetMigrationResult.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\SingleBlockRequests\Synchronous\NvM_Rb_GetNvBlockLength.o
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\SingleBlockRequests\Synchronous\NvM_Rb_GetWriteCounter.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\SingleBlockRequests\Synchronous\NvM_Rb_SetWriteAllTrigger.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\SingleBlockRequests\Synchronous\NvM_SetBlockLockStatus.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\SingleBlockRequests\Synchronous\NvM_SetBlockProtection.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\SingleBlockRequests\Synchronous\NvM_SetDataIndex.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\NvM\src\SingleBlockRequests\Synchronous\NvM_SetRamBlockStatus.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\PduR\PduR_PBcfg.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\PduR\PduR_UpTp.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\PduR\src\PduR_Gateway_TpDcmTx.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\PduR\src\PduR_Multicast_UpTx.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\BLSM\src\BLSM_CallOuts.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\BLSM\src\BLSM_Main.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\BLSM\src\BLSM_StayInBoot.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\CDD\bsw\bswsrv.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\CDD\UcbSwap\UcbSwap.o
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\EcuMgr\EcuMgr_Cfg_DownloadTarget.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\EcuMgr\EcuMgr_Cfg_Startup.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\EcuMgr\integration\EcuMgr_DownloadTarget_INVT.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\EcuMgr\integration\EcuMgr_DownloadTarget_USER.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\EcuMgr\integration\EcuMgr_ImplicitDownloadTarget_INVT.o
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\EcuMgr\integration\EcuMgr_ImplicitDownloadTarget_USER.o
+ctc W525: ["Fbl\InfineonLib\Infra\CDD\bsw\bswsrv.c" 285/24] discarded 'const' qualifier at assignment: conversion from unsigned char const volatile * to unsigned char *
+ctc W525: ["Fbl\InfineonLib\Infra\CDD\bsw\bswsrv.c" 285/24] discarded 'volatile' qualifier at assignment: conversion from unsigned char const volatile * to unsigned char *
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\EcuMgr\src\EcuMgr_BootTarget.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\EcuMgr\src\EcuMgr_BootTarget_INVT.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\EcuMgr\src\EcuMgr_DIDServices.o
+ctc E219: ["Fbl\InfineonLib\Infra\EcuMgr\src\EcuMgr_BootTarget.c" 26/1] cannot open #include file "AES128.h"
+1 errors, 0 warnings
+
+===================
+None
+===================
+scons: *** [build\objs\PJ_INVT_FBL\InfineonLib\Infra\EcuMgr\src\EcuMgr_BootTarget.o] Error 1
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+ctc W588: ["Fbl\InfineonLib\Infra\EcuMgr\src\EcuMgr_BootTarget_INVT.c" 119/16] dead assignment to "u32LocalKey" eliminated
+0 errors, 1 warnings
+
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 2 warnings
+
+ctc W537: ["Fbl\InfineonLib\Infra\EcuMgr\src\EcuMgr_DIDServices.c" 132/9] unused variable "fpIdx"
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 2 warnings
+
+ctc W537: ["Fbl\InfineonLib\Infra\CDD\UcbSwap\UcbSwap.c" 168/12] unused variable "addr_cfg"
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 2 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+ctc W523: ["Fbl\InfineonLib\Infra\EcuMgr\EcuMgr_Cfg_DownloadTarget.c" 543/8] pointers to different types at initializer
+ctc W523: ["Fbl\InfineonLib\Infra\EcuMgr\EcuMgr_Cfg_DownloadTarget.c" 550/8] pointers to different types at initializer
+ctc W523: ["Fbl\InfineonLib\Infra\EcuMgr\EcuMgr_Cfg_DownloadTarget.c" 557/8] pointers to different types at initializer
+ctc W523: ["Fbl\InfineonLib\Infra\EcuMgr\EcuMgr_Cfg_DownloadTarget.c" 564/8] pointers to different types at initializer
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 5 warnings
+
+ctc W509: ["Fbl\InfineonLib\Infra\CDD\TLF35584\inc\TLF35584_MemMap.h" 85/7] ignored unrecognized "#pragma section .bss awB"
+ctc W509: ["Fbl\InfineonLib\Infra\CDD\TLF35584\inc\TLF35584_MemMap.h" 122/7] ignored unrecognized "#pragma section"
+ctc W509: ["Fbl\InfineonLib\Infra\CDD\TLF35584\inc\TLF35584_MemMap.h" 94/7] ignored unrecognized "#pragma section .bss awB"
+ctc W509: ["Fbl\InfineonLib\Infra\CDD\TLF35584\inc\TLF35584_MemMap.h" 133/7] ignored unrecognized "#pragma section"
+ctc W509: ["Fbl\InfineonLib\Infra\CDD\TLF35584\inc\TLF35584_MemMap.h" 76/7] ignored unrecognized "#pragma section .text ax"
+ctc W509: ["Fbl\InfineonLib\Infra\CDD\TLF35584\inc\TLF35584_MemMap.h" 111/7] ignored unrecognized "#pragma section"
+ctc W509: ["Fbl\InfineonLib\Infra\CDD\TLF35584\inc\TLF35584_MemMap.h" 85/7] ignored unrecognized "#pragma section .bss awB"
+ctc W509: ["Fbl\InfineonLib\Infra\CDD\TLF35584\inc\TLF35584_MemMap.h" 122/7] ignored unrecognized "#pragma section"
+ctc W509: ["Fbl\InfineonLib\Infra\CDD\TLF35584\inc\TLF35584_MemMap.h" 94/7] ignored unrecognized "#pragma section .bss awB"
+ctc W509: ["Fbl\InfineonLib\Infra\CDD\TLF35584\inc\TLF35584_MemMap.h" 133/7] ignored unrecognized "#pragma section"
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 11 warnings
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+
+ctc W560: ["Fbl\InfineonLib\Infra\EcuMgr\integration\EcuMgr_DownloadTarget_INVT.c" 548/65] possible truncation at implicit conversion to type "unsigned char"
+ctc W547: ["Fbl\InfineonLib\Infra\EcuMgr\integration\EcuMgr_DownloadTarget_INVT.c" 506/19] undefined enum value
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W588: ["Fbl\InfineonLib\Infra\EcuMgr\integration\EcuMgr_DownloadTarget_INVT.c" 142/25] dead assignment to "logicalBlockPtr" eliminated
+ctc W549: ["Fbl\InfineonLib\Infra\EcuMgr\integration\EcuMgr_DownloadTarget_INVT.c" 100/50] condition is always true
+ctc W561: ["Fbl\InfineonLib\Infra\EcuMgr\integration\EcuMgr_DownloadTarget_INVT.c" 150/48] access out of bounds
+0 errors, 6 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+ctc W564: ["Fbl\InfineonLib\Infra\SecurityAlgorithm\KeyObfuscation\KeyOb.h" 15/2] "/*" inside comment
+ctc W560: ["Fbl\InfineonLib\Infra\EcuMgr\integration\EcuMgr_DownloadTarget_USER.c" 529/70] possible truncation at implicit conversion to type "unsigned char"
+ctc W523: ["Fbl\InfineonLib\Infra\EcuMgr\integration\EcuMgr_DownloadTarget_USER.c" 534/16] pointers to different types at argument #1
+ctc W523: ["Fbl\InfineonLib\Infra\EcuMgr\integration\EcuMgr_DownloadTarget_USER.c" 534/51] pointers to different types at argument #3
+ctc W523: ["Fbl\InfineonLib\Infra\EcuMgr\integration\EcuMgr_DownloadTarget_USER.c" 535/16] pointers to different types at argument #1
+ctc W523: ["Fbl\InfineonLib\Infra\EcuMgr\integration\EcuMgr_DownloadTarget_USER.c" 546/49] pointers to different types at argument #2
+ctc W537: ["Fbl\InfineonLib\Infra\EcuMgr\integration\EcuMgr_DownloadTarget_USER.c" 462/11] unused variable "crcValue"
+ctc W547: ["Fbl\InfineonLib\Infra\EcuMgr\integration\EcuMgr_DownloadTarget_USER.c" 432/19] undefined enum value
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W588: ["Fbl\InfineonLib\Infra\EcuMgr\integration\EcuMgr_DownloadTarget_USER.c" 626/17] dead assignment to "ret" eliminated
+ctc W588: ["Fbl\InfineonLib\Infra\EcuMgr\integration\EcuMgr_DownloadTarget_USER.c" 604/17] dead assignment to "ret" eliminated
+ctc W588: ["Fbl\InfineonLib\Infra\EcuMgr\integration\EcuMgr_DownloadTarget_USER.c" 665/25] dead assignment to "logicalBlockPtr" eliminated
+ctc W549: ["Fbl\InfineonLib\Infra\EcuMgr\integration\EcuMgr_DownloadTarget_USER.c" 337/50] condition is always true
+ctc W561: ["Fbl\InfineonLib\Infra\EcuMgr\integration\EcuMgr_DownloadTarget_USER.c" 673/48] access out of bounds
+0 errors, 14 warnings
+
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+scons: building terminated because of errors.

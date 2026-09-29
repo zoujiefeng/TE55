@@ -1,0 +1,119 @@
+// T32 Fri Apr 26 15:15:25 2024
+
+B::
+
+TOOLBAR   ON
+STATUSBAR ON
+FramePOS 19.5,11.143,,,Maximized
+WinPAGE.RESet
+
+WinPAGE.Create P000
+WinCLEAR
+
+WinPOS 3.75 2.1429 0. 0. 13. 1. W019 ICONIC
+WinTABS 10. 10. 25.
+List
+
+WinPOS 146.38 13.071 0. 0. 13. 1. W012 ICONIC
+Data.dump (0xAF000000) /DIALOG
+
+WinPOS 5.5 10.857 0. 0. 13. 1. W016 ICONIC
+WinTABS 10. 10. 25.
+List Det_ReportError
+
+WinPOS 20.25 34.429 0. 0. 0. 0. W017 ICONIC
+PER
+
+WinPOS 89.75 16.857 51. 16. 0. 0. W022 ICONIC
+SYStem
+
+WinPOS 0.0 12.857 54. 8. 13. 1. W003
+WinTABS 10. 10. 25.
+List.auto /CORE 0.
+
+WinPOS 0.0 25.714 54. 8. 0. 0. W004
+Register.view /CORE 0.
+
+WinPOS 58.375 12.857 54. 8. 13. 1. W005
+WinTABS 10. 10. 25.
+List.auto /CORE 1.
+
+WinPOS 58.375 25.714 54. 8. 0. 0. W006
+Register.view /CORE 1.
+
+WinPOS 116.75 12.857 54. 8. 13. 1. W007
+WinTABS 10. 10. 25.
+List.auto /CORE 2.
+
+WinPOS 116.75 25.714 54. 8. 0. 0. W008
+Register.view /CORE 2.
+
+WinPOS 0.0 0.0 54. 8. 0. 1. W000
+WinTABS 20. 15. 20.
+TargetSystem.state
+
+WinPOS 58.375 0.0 54. 8. 13. 1. W001
+WinTABS 10. 10. 25.
+List.auto
+
+WinPOS 72.25 8.4286 67. 33. 13. 1. W011
+Data.dump (0xAF404000) /DIALOG
+
+WinPOS 9.625 24.929 113. 26. 13. 1. W015
+WinTABS 10. 10. 25.
+List FlsLoader_Write
+
+WinPOS 161.88 25.214 67. 26. 13. 1. W020
+Data.dump (0x7001A0C0) /DIALOG
+
+WinPOS 3.75 2.1429 50. 18. 0. 1. W014
+WinTABS 26. 26.
+sYmbol.Browse.symbol
+
+WinPOS 129.63 30.643 105. 25. 5. 0. W009
+Frame /Locals /Caller
+
+WinPOS 170.75 1.9286 67. 26. 13. 1. W018
+Data.dump (0x7001d42c) /DIALOG
+
+WinPOS 1.875 1.0714 113. 26. 13. 1. W021
+WinTABS 10. 10. 25.
+List EcuMgr_DownloadTargetExecuteVerifingRegion
+
+WinPOS 116.75 0.0 101. 16. 0. 0. W002
+Var.Watch
+
+VAR.ADDWATCH flags2
+VAR.ADDWATCH flags1
+VAR.ADDWATCH flags0
+VAR.ADDWATCH flagsc
+VAR.ADDWATCH flags
+VAR.ADDWATCH Rtm_MonSystemLoadPer64k_au16
+VAR.ADDWATCH TstM_StackInfo
+VAR.ADDWATCH Rtm_MonTask
+VAR.ADDWATCH Swap
+VAR.ADDWATCH Swap_Flag
+VAR.ADDWATCH Swap_bSwapCompleted
+VAR.ADDWATCH ImplicitBlock
+VAR.ADDWATCH bNeedCheckFlag
+VAR.ADDWATCH u8VerifyState
+VAR.ADDWATCH FlashParam
+VAR.ADDWATCH Fls_Driver_WriteBuf
+VAR.ADDWATCH FlsDriverFlag
+VAR.ADDWATCH validityLogicalBlocks
+VAR.ADDWATCH Fbl_DataM_NvmBlockStats
+VAR.ADDWATCH validityFlags
+VAR.ADDWATCH TestVar
+VAR.ADDWATCH StayInBootArray
+VAR.ADDWATCH BSW_kau8BootIntRspCanId
+VAR.ADDWATCH LogicalBlockLength
+
+WinPOS 111.75 13.929 67. 26. 13. 1. W013
+Data.dump (0xA0000000) /DIALOG
+
+WinPOS 0.25 8.3571 68. 26. 13. 1. W010
+Data.dump (0xAF402E00) /DIALOG
+
+WinPAGE.select P000
+
+ENDDO

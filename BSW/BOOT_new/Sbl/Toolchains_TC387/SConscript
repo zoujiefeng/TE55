@@ -1,0 +1,13 @@
+Import('*')
+objects = []
+
+# SOURCE FILES
+sources = []
+sources += Glob('*.c')
+sources += Glob('*.s')
+
+# COMPILE SOURCE FILES
+for source in sources:
+  objects += env.Object(source)
+# Objects to return
+Return('objects')

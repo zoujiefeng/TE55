@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>TE56H_XPDU_FBL_TC387_CAN2.0_05101BOOT</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+	</buildSpec>
+	<natures>
+		<nature>dreisoft.tresos.launcher2.plugin.ecucnature</nature>
+		<nature>dreisoft.tresos.launcher2.plugin.launchernature</nature>
+	</natures>
+</projectDescription>

@@ -1,0 +1,128 @@
+Start remove_macro  . was excuted
+End remove_macro 
+scons: done reading SConscript files.
+scons: Building targets ...
+CC build\objs\PJ_INVT_FBL\Bootloader\BootM\src\FBL_BootM.o
+CC build\objs\PJ_INVT_FBL\Bootloader\BootM\src\FBL_BootMCfg.o
+CC build\objs\PJ_INVT_FBL\Bootloader\BootM\src\FBL_BootMPrvCfg.o
+CC build\objs\PJ_INVT_FBL\Bootloader\DataM\src\FBL_DataM.o
+CC build\objs\PJ_INVT_FBL\Bootloader\DataM\src\FBL_DataMCfg.o
+CC build\objs\PJ_INVT_FBL\Bootloader\DataM\src\FBL_DataMPrv.o
+CC build\objs\PJ_INVT_FBL\Bootloader\DataM\src\FBL_DataMPrvCfg.o
+CC build\objs\PJ_INVT_FBL\Bootloader\ProgM\src\FBL_ProgM.o
+CC build\objs\PJ_INVT_FBL\Bootloader\ProgM\src\FBL_ProgM_INVT.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Cfg\src\bsw_new\CanIf\CanIf_cfg.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Cfg\src\bsw_new\CanIf\CanIf_PBcfg.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Cfg\src\bsw_new\CanSM\CanSM_PBcfg.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Cfg\src\bsw_new\CanTp_PreCompile\CanTp_Cfg.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Cfg\src\bsw_new\CanTrcv\CanTrcv_Cfg.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Cfg\src\bsw_new\CanTrcv\CanTrcv_PBcfg.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Cfg\src\bsw_new\Crc\Crc.o
+
+ctc W508: ["Fbl\BSW\Bsw_Cfg\src\bsw_new\CanTrcv\CanTrcv_PBcfg.c" 1/1] empty source file
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Cfg\src\bsw_new\Crc\Crc_Cfg.o
+
+
+ctc W504: ["Fbl\InfineonLib\Infra\Integration\Bsw\CanTrcv\integration\CanTrcv_Cfg_IntCode.h" 10/9] macro "CANTRCV_ECUM_USED" redefined
+ctc I801: ["Fbl\BSW\Bsw_Cfg\src\bsw_new\CanTrcv\CanTrcv_Cfg.h" 68/10] previous definition of macro "CANTRCV_ECUM_USED"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Cfg\src\bsw_new\Dcm\Dcm_Lcfg_DslDsd.o
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Cfg\src\bsw_new\Dcm\Dcm_Lcfg_DspUds.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Cfg\src\bsw_new\Fee\Fee_Cfg.o
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Cfg\src\bsw_new\NvM\NvM_Cfg.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Cfg\src\bsw_new\PduR\PduR_Cfg.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Cfg\src\bsw_new\PduR\PduR_LoTp.o
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Cfg\src\bsw_new\PduR\PduR_PBcfg.o
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Cfg\src\bsw_new\PduR\PduR_UpTp.o
+
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\Dcm_Lcfg_DslDsd.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\Dcm_Lcfg_DspUds.o
+
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreDslDsd\DcmCore_DslDsd_BootLoader.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreDslDsd\DcmCore_DslDsd_ConfirmRespPend.o
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreDslDsd\DcmCore_DslDsd_GetKwpTimingValues.o
+
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreDslDsd\DcmCore_DslDsd_PrepareKwpTimingValues.o
+ctc E288: ["Fbl\Bootloader\ProgM\src\FBL_ProgM.c" 133/16] "Fbl_ProgM_StartCheckRoutineCallback" redeclared with a different prototype
+ctc I802: ["Fbl\BSW\Bsw_Cfg\src\bsw_new\Dcm\Dcm_Lcfg_DspUds.h" 89/23] previous declaration of "Fbl_ProgM_StartCheckRoutineCallback"
+ctc W505: ["Fbl\Bootloader\ProgM\src\FBL_ProgM.c" 600/13] implicit declaration of function "EcuMgr_bGetSeedFlag"
+ctc W577: ["Fbl\Bootloader\ProgM\src\FBL_ProgM.c" 600/32] calling a function without a prototype
+ctc W505: ["Fbl\Bootloader\ProgM\src\FBL_ProgM.c" 602/13] implicit declaration of function "Dcm_Prv_HandleNRCForSeed"
+ctc W577: ["Fbl\Bootloader\ProgM\src\FBL_ProgM.c" 602/37] calling a function without a prototype
+1 errors, 4 warnings
+
+===================
+None
+===================
+scons: *** [build\objs\PJ_INVT_FBL\Bootloader\ProgM\src\FBL_ProgM.o] Error 1
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W588: ["Fbl\Bootloader\ProgM\src\FBL_ProgM_INVT.c" 241/26] dead assignment to "RetValue" eliminated
+ctc W549: ["Fbl\Bootloader\ProgM\src\FBL_ProgM_INVT.c" 262/36] condition is always true
+ctc W549: ["Fbl\Bootloader\ProgM\src\FBL_ProgM_INVT.c" 289/18] condition is always true
+0 errors, 4 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreDslDsd\DcmCore_DslDsd_BootLoader.c" 547/27] condition is always true
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreDslDsd\DcmCore_DslDsd_BootLoader.c" 636/69] condition is always true
+0 errors, 4 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+ctc W588: ["Fbl\BSW\Bsw_Gen\Rba_MemLib\src\rba_MemLib_Inl.h" 271/16] dead assignment to "tiDiff_u32" eliminated
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockDescriptor_Inl.h" 566/18] condition is always false
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockDescriptor_Inl.h" 584/18] condition is always false
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockDescriptor_Inl.h" 604/18] condition is always true
+ctc W549: ["Fbl\BSW\Bsw_Gen\NvM\src\Internal\BlockData\NvM_Prv_BlockData_Inl.h" 257/60] condition is always true
+0 errors, 5 warnings
+
+scons: building terminated because of errors.

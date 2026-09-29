@@ -1,0 +1,417 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 21092262 SN 73118428"
+	.compiler_invocation	"ctc --integer-enumeration -D__CPU__=userdef162 -D__CPU_USERDEF162__ --core=tc1.6.2 --iso=99 --fp-model=+float -D_TASKING_C_TRICORE_=1 -DAUTOSAR_OS_NOT_USED -DDEVELOPMENT -ISbl\\Include -ISbl\\Toolchains_TC387\\Inc -ISbl\\Toolchains_TC387\\Mcal\\MCAL_Gen_new\\inc -ISbl\\Toolchains_TC387\\Mcal\\Mcal_Modules\\FlsLoader\\Ssc\\inc -ISbl\\Toolchains_TC387\\Mcal\\Mcal_Modules\\McalLib\\ssc\\inc\\AS422 -ISbl\\Toolchains_TC387\\Mcal\\Mcal_Modules\\McalLib\\ssc\\inc -ISbl\\Toolchains_TC387\\reg -t4 --language=-comments,-gcc,+volatile,-strings --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --switch=auto -o build\\objs\\PJ_INVT_SBL\\Toolchains_TC387\\Inc\\SchM_McalLib.src Sbl\\Toolchains_TC387\\Inc\\SchM_McalLib.c"
+	.compiler_name		"ctc"
+	;source	'Sbl\\Toolchains_TC387\\Inc\\SchM_McalLib.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.SchM_McalLib.SchM_Enter_McalLib_PeripheralEndInit',code
+	.sect	'.text.SchM_McalLib.SchM_Enter_McalLib_PeripheralEndInit'
+	.align	2
+	
+	.global	SchM_Enter_McalLib_PeripheralEndInit
+
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	     1  /*******************************************************************************
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	     2  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	     3  ** Copyright (C) Infineon Technologies (2018)                                 **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	     4  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	     5  ** All rights reserved.                                                       **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	     6  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	     7  ** This document contains proprietary information belonging to Infineon       **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	     8  ** Technologies. Passing on and copying of this document, and communication   **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	     9  ** of its contents is not permitted without prior written authorization.      **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    10  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    11  ********************************************************************************
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    12  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    13  **  FILENAME     : SchM_McalLib.c                                             **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    14  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    15  **  VERSION      : 2.0.0                                                      **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    16  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    17  **  DATE         : 2018-10-15                                                 **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    18  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    19  **  VARIANT      : Variant PC                                                 **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    20  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    21  **  PLATFORM     : Infineon AURIX2G                                           **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    22  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    23  **  AUTHOR       : DL-AUTOSAR-Engineering                                     **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    24  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    25  **  VENDOR       : Infineon Technologies                                      **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    26  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    27  **  DESCRIPTION  : SchM file for McalLib                                      **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    28  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    29  **  SPECIFICATION(S) : NA                                                     **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    30  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    31  **  MAY BE CHANGED BY USER : yes                                              **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    32  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    33  *******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    34  
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    35  /*******************************************************************************
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    36  **                      Includes                                              **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    37  *******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    38  #include "IFX_Os.h"
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    39  #include "SchM_McalLib.h"
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    40  #ifdef LATENCY_CALC_MCALLIB
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    41  #if(LATENCY_CALC_MCALLIB==1U)
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    42  #include "Test_Latency.h"
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    43  #endif
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    44  #endif
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    45  /*******************************************************************************
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    46  ** Traceability     :                                                         **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    47  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    48  ** Syntax           : void SchM_Enter_McalLib_PeripheralEndInit(void)         **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    49  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    50  ** Description      : Enters Module exclusive area                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    51  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    52  ** Service ID       : NA                                                      **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    53  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    54  ** Sync/Async       : Synchronous                                             **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    55  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    56  ** Reentrancy       : Not Reentrant                                           **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    57  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    58  ** Parameters(in)   : None                                                    **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    59  ** Parameters (out) : None                                                    **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    60  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    61  ** Return value     : None                                                    **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    62  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    63  *******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    64  void SchM_Enter_McalLib_PeripheralEndInit(void)
+; Function SchM_Enter_McalLib_PeripheralEndInit
+SchM_Enter_McalLib_PeripheralEndInit:	.type	func
+
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    65  {
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    66    SuspendAllInterrupts();
+	j	SuspendAllInterrupts
+	
+__SchM_Enter_McalLib_PeripheralEndInit_function_end:
+	.size	SchM_Enter_McalLib_PeripheralEndInit,__SchM_Enter_McalLib_PeripheralEndInit_function_end-SchM_Enter_McalLib_PeripheralEndInit
+	; End of function
+	
+	.sdecl	'.text.SchM_McalLib.SchM_Exit_McalLib_PeripheralEndInit',code
+	.sect	'.text.SchM_McalLib.SchM_Exit_McalLib_PeripheralEndInit'
+	.align	2
+	
+	.global	SchM_Exit_McalLib_PeripheralEndInit
+
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    67    #ifdef LATENCY_CALC_MCALLIB
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    68    #if(LATENCY_CALC_MCALLIB==1U)
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    69    Measure_Start_Value(0);
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    70    #endif
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    71    #endif
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    72  }
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    73  /*******************************************************************************
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    74  ** Traceability     :                                                         **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    75  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    76  ** Syntax           : void SchM_Exit_McalLib_PeripheralEndInit(void)          **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    77  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    78  ** Description      : Exit Module exclusive area                              **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    79  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    80  ** Service ID       : NA                                                      **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    81  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    82  ** Sync/Async       : Synchronous                                             **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    83  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    84  ** Reentrancy       : Not Reentrant                                           **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    85  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    86  ** Parameters(in)   : None                                                    **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    87  ** Parameters (out) : None                                                    **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    88  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    89  ** Return value     : None                                                    **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    90  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    91  *******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    92  void SchM_Exit_McalLib_PeripheralEndInit(void)
+; Function SchM_Exit_McalLib_PeripheralEndInit
+SchM_Exit_McalLib_PeripheralEndInit:	.type	func
+
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    93  {
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    94    #ifdef LATENCY_CALC_MCALLIB
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    95    #if(LATENCY_CALC_MCALLIB==1U)
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    96    Measure_End_Value(0);
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    97    #endif
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    98    #endif
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	    99    ResumeAllInterrupts();
+	j	ResumeAllInterrupts
+	
+__SchM_Exit_McalLib_PeripheralEndInit_function_end:
+	.size	SchM_Exit_McalLib_PeripheralEndInit,__SchM_Exit_McalLib_PeripheralEndInit_function_end-SchM_Exit_McalLib_PeripheralEndInit
+	; End of function
+	
+	.sdecl	'.text.SchM_McalLib.SchM_Enter_McalLib_SafetyEndInit',code
+	.sect	'.text.SchM_McalLib.SchM_Enter_McalLib_SafetyEndInit'
+	.align	2
+	
+	.global	SchM_Enter_McalLib_SafetyEndInit
+
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   100  }
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   101  /*******************************************************************************
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   102  ** Traceability     :                                                         **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   103  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   104  ** Syntax           : void SchM_Enter_McalLib_SafetyEndInit(void)             **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   105  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   106  ** Description      : Enters Module exclusive area                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   107  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   108  ** Service ID       : NA                                                      **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   109  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   110  ** Sync/Async       : Synchronous                                             **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   111  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   112  ** Reentrancy       : Not Reentrant                                           **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   113  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   114  ** Parameters(in)   : None                                                    **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   115  ** Parameters (out) : None                                                    **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   116  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   117  ** Return value     : None                                                    **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   118  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   119  *******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   120  void SchM_Enter_McalLib_SafetyEndInit(void)
+; Function SchM_Enter_McalLib_SafetyEndInit
+SchM_Enter_McalLib_SafetyEndInit:	.type	func
+
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   121  {
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   122    SuspendAllInterrupts();
+	j	SuspendAllInterrupts
+	
+__SchM_Enter_McalLib_SafetyEndInit_function_end:
+	.size	SchM_Enter_McalLib_SafetyEndInit,__SchM_Enter_McalLib_SafetyEndInit_function_end-SchM_Enter_McalLib_SafetyEndInit
+	; End of function
+	
+	.sdecl	'.text.SchM_McalLib.SchM_Exit_McalLib_SafetyEndInit',code
+	.sect	'.text.SchM_McalLib.SchM_Exit_McalLib_SafetyEndInit'
+	.align	2
+	
+	.global	SchM_Exit_McalLib_SafetyEndInit
+
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   123    #ifdef LATENCY_CALC_MCALLIB
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   124    #if(LATENCY_CALC_MCALLIB==1U)
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   125    Measure_Start_Value(1);
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   126    #endif
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   127    #endif
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   128  }
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   129  /*******************************************************************************
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   130  ** Traceability     :                                                         **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   131  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   132  ** Syntax           : void SchM_Exit_McalLib_SafetyEndInit(void)              **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   133  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   134  ** Description      : Exit Module exclusive area                              **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   135  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   136  ** Service ID       : NA                                                      **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   137  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   138  ** Sync/Async       : Synchronous                                             **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   139  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   140  ** Reentrancy       : Not Reentrant                                           **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   141  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   142  ** Parameters(in)   : None                                                    **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   143  ** Parameters (out) : None                                                    **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   144  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   145  ** Return value     : None                                                    **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   146  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   147  *******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   148  void SchM_Exit_McalLib_SafetyEndInit(void)
+; Function SchM_Exit_McalLib_SafetyEndInit
+SchM_Exit_McalLib_SafetyEndInit:	.type	func
+
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   149  {
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   150    #ifdef LATENCY_CALC_MCALLIB
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   151    #if(LATENCY_CALC_MCALLIB==1U)
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   152    Measure_End_Value(1);
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   153    #endif
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   154    #endif
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   155    ResumeAllInterrupts();
+	j	ResumeAllInterrupts
+	
+__SchM_Exit_McalLib_SafetyEndInit_function_end:
+	.size	SchM_Exit_McalLib_SafetyEndInit,__SchM_Exit_McalLib_SafetyEndInit_function_end-SchM_Exit_McalLib_SafetyEndInit
+	; End of function
+	
+	.sdecl	'.text.SchM_McalLib.SchM_Enter_McalLib_CpuEndInit',code
+	.sect	'.text.SchM_McalLib.SchM_Enter_McalLib_CpuEndInit'
+	.align	2
+	
+	.global	SchM_Enter_McalLib_CpuEndInit
+
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   156  }
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   157  /*******************************************************************************
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   158  ** Traceability     :                                                         **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   159  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   160  ** Syntax           : void SchM_Enter_McalLib_CpuEndInit(void)                **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   161  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   162  ** Description      : Enters Module exclusive area                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   163  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   164  ** Service ID       : NA                                                      **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   165  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   166  ** Sync/Async       : Synchronous                                             **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   167  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   168  ** Reentrancy       : Not Reentrant on same CPU, Reentrant on other CPUs      **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   169  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   170  ** Parameters(in)   : None                                                    **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   171  ** Parameters (out) : None                                                    **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   172  ** Return value     : None                                                    **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   173  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   174  *******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   175  void SchM_Enter_McalLib_CpuEndInit(void)
+; Function SchM_Enter_McalLib_CpuEndInit
+SchM_Enter_McalLib_CpuEndInit:	.type	func
+
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   176  {
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   177    SuspendAllInterrupts();
+	j	SuspendAllInterrupts
+	
+__SchM_Enter_McalLib_CpuEndInit_function_end:
+	.size	SchM_Enter_McalLib_CpuEndInit,__SchM_Enter_McalLib_CpuEndInit_function_end-SchM_Enter_McalLib_CpuEndInit
+	; End of function
+	
+	.sdecl	'.text.SchM_McalLib.SchM_Exit_McalLib_CpuEndInit',code
+	.sect	'.text.SchM_McalLib.SchM_Exit_McalLib_CpuEndInit'
+	.align	2
+	
+	.global	SchM_Exit_McalLib_CpuEndInit
+
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   178    #ifdef LATENCY_CALC_MCALLIB
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   179    #if(LATENCY_CALC_MCALLIB==1U)
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   180    Measure_Start_Value(2);
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   181    #endif
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   182    #endif
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   183  }
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   184  /*******************************************************************************
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   185  ** Traceability     :                                                         **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   186  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   187  ** Syntax           : void SchM_Exit_McalLib_CpuEndInit(void)                 **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   188  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   189  ** Description      : Exit Module exclusive area                              **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   190  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   191  ** Service ID       : NA                                                      **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   192  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   193  ** Sync/Async       : Synchronous                                             **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   194  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   195  ** Reentrancy       : Not Reentrant on same CPU, Reentrant on other CPUs      **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   196  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   197  ** Parameters(in)   : None                                                    **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   198  ** Parameters (out) : None                                                    **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   199  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   200  ** Return value     : None                                                    **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   201  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   202  *******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   203  void SchM_Exit_McalLib_CpuEndInit(void)
+; Function SchM_Exit_McalLib_CpuEndInit
+SchM_Exit_McalLib_CpuEndInit:	.type	func
+
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   204  {
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   205    #ifdef LATENCY_CALC_MCALLIB
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   206    #if(LATENCY_CALC_MCALLIB==1U)
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   207    Measure_End_Value(2);
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   208    #endif
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   209    #endif
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   210    ResumeAllInterrupts();
+	j	ResumeAllInterrupts
+	
+__SchM_Exit_McalLib_CpuEndInit_function_end:
+	.size	SchM_Exit_McalLib_CpuEndInit,__SchM_Exit_McalLib_CpuEndInit_function_end-SchM_Exit_McalLib_CpuEndInit
+	; End of function
+	
+	.sdecl	'.text.SchM_McalLib.SchM_Enter_McalLib_StmTimerResolution',code
+	.sect	'.text.SchM_McalLib.SchM_Enter_McalLib_StmTimerResolution'
+	.align	2
+	
+	.global	SchM_Enter_McalLib_StmTimerResolution
+
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   211  }
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   212  /*******************************************************************************
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   213  ** Traceability     :                                                         **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   214  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   215  ** Syntax           : void SchM_Enter_McalLib_StmTimerResolution(void)        **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   216  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   217  ** Description      : Enters Module exclusive area                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   218  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   219  ** Service ID       : NA                                                      **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   220  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   221  ** Sync/Async       : Synchronous                                             **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   222  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   223  ** Reentrancy       : Not Reentrant                                           **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   224  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   225  ** Parameters(in)   : None                                                    **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   226  ** Parameters (out) : None                                                    **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   227  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   228  ** Return value     : None                                                    **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   229  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   230  *******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   231  void SchM_Enter_McalLib_StmTimerResolution(void)
+; Function SchM_Enter_McalLib_StmTimerResolution
+SchM_Enter_McalLib_StmTimerResolution:	.type	func
+
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   232  {
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   233    SuspendAllInterrupts();
+	j	SuspendAllInterrupts
+	
+__SchM_Enter_McalLib_StmTimerResolution_function_end:
+	.size	SchM_Enter_McalLib_StmTimerResolution,__SchM_Enter_McalLib_StmTimerResolution_function_end-SchM_Enter_McalLib_StmTimerResolution
+	; End of function
+	
+	.sdecl	'.text.SchM_McalLib.SchM_Exit_McalLib_StmTimerResolution',code
+	.sect	'.text.SchM_McalLib.SchM_Exit_McalLib_StmTimerResolution'
+	.align	2
+	
+	.global	SchM_Exit_McalLib_StmTimerResolution
+
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   234    #ifdef LATENCY_CALC_MCALLIB
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   235    #if(LATENCY_CALC_MCALLIB==1U)
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   236    Measure_Start_Value(3);
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   237    #endif
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   238    #endif
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   239  }
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   240  /*******************************************************************************
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   241  ** Traceability     :                                                         **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   242  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   243  ** Syntax           : void SchM_Exit_McalLib_StmTimerResolution(void)         **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   244  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   245  ** Description      : Exit Module exclusive area                              **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   246  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   247  ** Service ID       : NA                                                      **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   248  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   249  ** Sync/Async       : Synchronous                                             **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   250  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   251  ** Reentrancy       : Not Reentrant                                           **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   252  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   253  ** Parameters(in)   : None                                                    **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   254  ** Parameters (out) : None                                                    **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   255  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   256  ** Return value     : None                                                    **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   257  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   258  *******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   259  void SchM_Exit_McalLib_StmTimerResolution(void)
+; Function SchM_Exit_McalLib_StmTimerResolution
+SchM_Exit_McalLib_StmTimerResolution:	.type	func
+
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   260  {
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   261    #ifdef LATENCY_CALC_MCALLIB
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   262    #if(LATENCY_CALC_MCALLIB==1U)
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   263    Measure_End_Value(3);
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   264    #endif
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   265    #endif
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   266    ResumeAllInterrupts();
+	j	ResumeAllInterrupts
+	
+__SchM_Exit_McalLib_StmTimerResolution_function_end:
+	.size	SchM_Exit_McalLib_StmTimerResolution,__SchM_Exit_McalLib_StmTimerResolution_function_end-SchM_Exit_McalLib_StmTimerResolution
+	; End of function
+	
+	.calls	'SchM_Enter_McalLib_PeripheralEndInit','SuspendAllInterrupts'
+	.calls	'SchM_Exit_McalLib_PeripheralEndInit','ResumeAllInterrupts'
+	.calls	'SchM_Enter_McalLib_SafetyEndInit','SuspendAllInterrupts'
+	.calls	'SchM_Exit_McalLib_SafetyEndInit','ResumeAllInterrupts'
+	.calls	'SchM_Enter_McalLib_CpuEndInit','SuspendAllInterrupts'
+	.calls	'SchM_Exit_McalLib_CpuEndInit','ResumeAllInterrupts'
+	.calls	'SchM_Enter_McalLib_StmTimerResolution','SuspendAllInterrupts'
+	.calls	'SchM_Exit_McalLib_StmTimerResolution','ResumeAllInterrupts'
+	.calls	'SchM_Enter_McalLib_PeripheralEndInit','',0
+	.calls	'SchM_Exit_McalLib_PeripheralEndInit','',0
+	.calls	'SchM_Enter_McalLib_SafetyEndInit','',0
+	.calls	'SchM_Exit_McalLib_SafetyEndInit','',0
+	.calls	'SchM_Enter_McalLib_CpuEndInit','',0
+	.calls	'SchM_Exit_McalLib_CpuEndInit','',0
+	.calls	'SchM_Enter_McalLib_StmTimerResolution','',0
+	.extern	SuspendAllInterrupts
+	.extern	ResumeAllInterrupts
+	.calls	'SchM_Exit_McalLib_StmTimerResolution','',0
+
+; Sbl\Toolchains_TC387\Inc\SchM_McalLib.c	   267  }
+
+	; Module end

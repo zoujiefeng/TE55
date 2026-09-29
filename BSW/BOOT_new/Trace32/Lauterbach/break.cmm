@@ -1,0 +1,13 @@
+// T32 Sun Feb 12 12:33:21 2023
+
+B::
+
+Break.RESet
+Break.CONFIG.VarConvert OFF
+Break.CONFIG.InexactData ON
+Break.CONFIG.InexactTrigger OFF
+Break.CONFIG.InexactResume ON
+Break.CONFIG.InexactAddress ON
+Break.Set     CanIf_RxIndication /Program
+
+ENDDO

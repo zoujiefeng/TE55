@@ -1,0 +1,156 @@
+; --------------------------------------------------------------------------------
+; @Title: Demo script for TC377TP on TriBoard-TC3x7 (SMP, Flash, multisieve app)
+; @Description:
+;   Programs the multisieve demo application (multi-core) into the processor
+;   internal flash and sets up a demo debug scenario for SMP debugging. Further
+;   information is available in in the Tricore Processor Architecture Manual
+;   (pdf/debugger_tricore.pdf), chapter "SMP Debugging - Quick Start".
+; @Keywords: AURIX2G, flash, Infineon, multi-core, multisieve, TriCore
+; @Author: MOB
+; @Board: TriBoard-TC3x7
+; @Chip: TC377TP
+; @Copyright: (C) 1989-2020 Lauterbach GmbH, licensed for use with TRACE32(R) only
+; --------------------------------------------------------------------------------
+; $Id: smp_demo_multisieve_flash.cmm 15539 2020-01-17 12:22:53Z meick $
+
+
+; --------------------------------------------------------------------------------
+; initialize and start the debugger
+RESet
+SYStem.CPU TC387QP
+CORE.ASSIGN 1. 2. 3. 4. // assign cores to the SMP system
+SYStem.Up
+
+; optional settings:
+SYStem.Option DUALPORT ON
+SETUP.Var %SpotLight
+MAP.BOnchip 0x0--0xffffffff // force onchip-breakpoints
+
+; --------------------------------------------------------------------------------
+; Flash programming
+LOCAL &elfFile &progFlash &bmhdResult
+&elfFile="../../build/dbg/PJ_INVT_FBL.elf"
+
+; prepare flash programming (declarations)
+DO ~~/demo/tricore/flash/tc38x.cmm CPU=TC387QP PREPAREONLY
+
+; check if application is already in flash and load symbols
+Data.LOAD.Elf "&elfFile" /DIFF
+IF FOUND()
+(
+  ; ==== Step 1: Program TriCore code ====
+
+  ;DIALOG.YESNO "Program Lauterbach demo into flash memory?"
+  ;ENTRY &progFlash
+  ;IF (&progFlash)
+  ;(
+    ; enable flash programming
+    FLASH.ReProgram ALL /ERASE
+
+    ; load demo application
+    Data.LOAD.Elf "&elfFile"
+
+    FLASH.ReProgram OFF
+  ;)
+
+  ; ==== Step 2: Write boot mode header ====
+
+  PRIVATE &progUcb &ucbOrigDiff &ucbCopyDiff &supported &DMU_HF_CONFIRM0 &result
+  &progUcb=FALSE()
+  ; Check if both UCBs are in state UNLOCKED or UNREAD. Other states are not supported by this script
+  &DMU_HF_CONFIRM0=Data.Long(ED:0xF8040020)
+  &supported=(((&DMU_HF_CONFIRM0)&(0x00020002))==0x00000000)
+  IF !&supported
+  (
+	  DIALOG.MESSAGE "UCB_BMHD0_ORIG or UCB_BMHD0_COPY are not in state unlocked or unread"
+  )
+  ; Check if we need to program the BMHD
+  &ucbOrigDiff=FALSE()
+  &ucbCopyDiff=FALSE()
+  IF &supported
+  (
+  	Data.LOAD.Elf "&elfFile" 0xAF400000++0x1FF /DIFF
+  	&ucbOrigDiff=FOUND()
+  	Data.LOAD.Elf "&elfFile" 0xAF401000++0x1FF /DIFF
+  	&ucbCopyDiff=FOUND()
+  )
+  ;IF (&ucbOrigDiff)||(&ucbCopyDiff)
+  ;(
+  ;  DIALOG.YESNO "Configure UCB_BMHD0_ORIG and UCB_BMHD0_COPY to start demo application?"
+  ; ENTRY &progUcb
+  ;)
+
+  ;IF (&progUcb)&&(&ucbCopyDiff)
+  IF (&ucbCopyDiff)
+  (
+    ; enable programming of UCB_BMHD0_COPY
+    DO ~~/demo/tricore/flash/tc3xx-ucb.cmm UCB=BMHD0_COPY PREPAREONLY
+    FLASH.AUTO 0xAF401000++0x1FF
+
+    ; load data of UCB_BMHD0_COPY
+    Data.LOAD.Elf "&elfFile" 0xAF401000++0x1FF
+
+    ; check if we loaded a valid UCB
+    DO ~~/demo/tricore/flash/tc3xx-ucb.cmm UCB=BMHD0_COPY CHECKUCB
+    ENTRY &result
+
+    IF ("&result"=="UCBOK")
+    (
+      FLASH.AUTO.off
+    )
+    ELSE
+    (
+      FLASH.AUTO.CANCEL
+    )
+    ; protect UCB sector against unwanted modification
+    FLASH.CHANGETYPE 0xAF401000++0x1FF NOP
+  )
+
+  ;IF (&progUcb)&&(&ucbOrigDiff)
+  ;(
+  ;  ; enable programming of UCB_BMHD0_ORIG
+  ;  DO ~~/demo/tricore/flash/tc3xx-ucb.cmm UCB=BMHD0_ORIG PREPAREONLY
+  ;  FLASH.AUTO 0xAF400000++0x1FF
+  ;
+  ;  ; load data of UCB_BMHD0_ORIG
+  ;  Data.LOAD.Elf "&elfFile" 0xAF400000++0x1FF
+  ;
+  ;  ; check if we loaded a valid UCB
+  ;  DO ~~/demo/tricore/flash/tc3xx-ucb.cmm UCB=BMHD0_ORIG CHECKUCB
+  ;  ENTRY &result
+  ;
+  ;  IF ("&result"=="UCBOK")
+  ;  (
+  ;    FLASH.AUTO.off
+  ;  )
+  ;  ELSE
+  ;  (
+  ;    FLASH.AUTO.CANCEL
+  ;  )
+  ;  ; protect UCB sector against unwanted modification
+  ;  FLASH.CHANGETYPE 0xAF400000++0x1FF NOP
+  ;)
+
+  ; ==== Step 3: Verify programming ====
+
+  Data.LOAD.Elf "&elfFile" /DIFF
+  ;IF FOUND()
+  ;(
+  ;  ; maybe some sections are still declared as NOP?
+  ;  PRIVATE &diffAddress
+  ;  &diffAddress=TRACK.ADDRESS()
+  ;  DIALOG.MESSAGE "File &elfFile has not been fully flashed, difference found at address &diffAddress (check flash declaration)"
+  ;)
+)
+; --------------------------------------------------------------------------------
+; select trace method
+;Trace.Method Onchip
+
+; --------------------------------------------------------------------------------
+; set up MCDS trace
+Trace.OFF
+
+; --------------------------------------------------------------------------------
+; open some windows
+run win.cmm
+ENDDO

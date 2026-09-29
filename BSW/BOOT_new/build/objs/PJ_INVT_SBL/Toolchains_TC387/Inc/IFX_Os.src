@@ -1,0 +1,275 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 21092262 SN 73118428"
+	.compiler_invocation	"ctc --integer-enumeration -D__CPU__=userdef162 -D__CPU_USERDEF162__ --core=tc1.6.2 --iso=99 --fp-model=+float -D_TASKING_C_TRICORE_=1 -DAUTOSAR_OS_NOT_USED -DDEVELOPMENT -ISbl\\Include -ISbl\\Toolchains_TC387\\Inc -ISbl\\Toolchains_TC387\\Mcal\\MCAL_Gen_new\\inc -ISbl\\Toolchains_TC387\\Mcal\\Mcal_Modules\\FlsLoader\\Ssc\\inc -ISbl\\Toolchains_TC387\\Mcal\\Mcal_Modules\\McalLib\\ssc\\inc\\AS422 -ISbl\\Toolchains_TC387\\Mcal\\Mcal_Modules\\McalLib\\ssc\\inc -ISbl\\Toolchains_TC387\\reg -t4 --language=-comments,-gcc,+volatile,-strings --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --switch=auto -o build\\objs\\PJ_INVT_SBL\\Toolchains_TC387\\Inc\\IFX_Os.src Sbl\\Toolchains_TC387\\Inc\\IFX_Os.c"
+	.compiler_name		"ctc"
+	;source	'Sbl\\Toolchains_TC387\\Inc\\IFX_Os.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.IFX_Os.SuspendAllInterrupts',code
+	.sect	'.text.IFX_Os.SuspendAllInterrupts'
+	.align	2
+	
+	.global	SuspendAllInterrupts
+
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	     1  /******************************************************************************
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	     2  **                                                                           **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	     3  ** Copyright (C) Infineon Technologies (2013)                                **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	     4  **                                                                           **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	     5  ** All rights reserved.                                                      **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	     6  **                                                                           **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	     7  ** This document contains proprietary information belonging to Infineon      **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	     8  ** Technologies. Passing on and copying of this document, and communication  **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	     9  ** of its contents is not permitted without prior written authorization.     **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    10  **                                                                           **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    11  *******************************************************************************
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    12  **                                                                           **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    13  **  $FILENAME   : Os.c $                                                     **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    14  **                                                                           **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    15  **  $CC VERSION : \main\14 $                                                 **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    16  **                                                                           **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    17  **  $DATE       : 2018-03-07 $                                               **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    18  **                                                                           **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    19  **  AUTHOR      : DL-AUTOSAR-Engineering                                     **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    20  **                                                                           **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    21  **  VENDOR      : Infineon Technologies                                      **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    22  **                                                                           **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    23  **  DESCRIPTION : This file contains                                         **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    24  **                - stub for OS functionality.                               **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    25  **                                                                           **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    26  **  MAY BE CHANGED BY USER [yes/no]: Yes                                     **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    27  **                                                                           **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    28  ******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    29  
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    30  /******************************************************************************
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    31  **                      Includes                                             **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    32  ******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    33  
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    34  /* Inclusion of Platform_Types.h and Compiler.h */
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    35  #include "Std_Types.h"
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    36  
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    37  /* Inclusion of Tasking sfr file */
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    38  #include "IfxCpu_reg.h"
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    39  
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    40  /* Include Mcal for Library */
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    41  #include "McalLib.h"
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    42  
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    43  /* Inclusion for definition of ENABLE() & DISABLE() functions*/
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    44  #include "IFX_Os.h"
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    45  
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    46  /******************************************************************************
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    47  **                      Imported Compiler Switch Checks                      **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    48  ******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    49  
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    50  /******************************************************************************
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    51  **                      Private Macro Definitions                            **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    52  ******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    53  
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    54  /******************************************************************************
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    55  **                      Private Type Definitions                             **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    56  ******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    57  
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    58  /******************************************************************************
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    59  **                      Private Function Declarations                        **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    60  ******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    61  
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    62  /******************************************************************************
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    63  **                      Global Constant Definitions                          **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    64  ******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    65  
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    66  /******************************************************************************
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    67  **                      Global Variable Definitions                          **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    68  ******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    69  
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    70  /******************************************************************************
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    71  **                      Private Constant Definitions                         **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    72  ******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    73  
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    74  /******************************************************************************
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    75  **                      Private Variable Definitions                         **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    76  ******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    77  static volatile uint8 Os_IntSaveDisableCounter[MCAL_NO_OF_CORES];
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    78  static volatile sint32 Os_SavedIntLevelNested[MCAL_NO_OF_CORES];
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    79  
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    80  /******************************************************************************
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    81  **                      Private Function Definitions                         **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    82  ******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    83  
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    84  /******************************************************************************
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    85  **                      Global Function Definitions                          **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    86  ******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    87  
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    88  /******************************************************************************
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    89  ** Syntax           : void SuspendAllInterrupts(void)                        **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    90  **                                                                           **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    91  ** Service ID       :  none                                                  **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    92  **                                                                           **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    93  ** Sync/Async       : Synchronous                                            **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    94  **                                                                           **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    95  ** Reentrancy       : non - reentrant                                        **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    96  **                                                                           **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    97  ** Parameters(in)   : none                                                   **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    98  **                                                                           **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	    99  ** Parameters (out) : none                                                   **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   100  **                                                                           **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   101  ** Return value     : none                                                   **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   102  **                                                                           **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   103  ** Description      : This function Suspends all interrupts, nested          **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   104  **                                                                           **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   105  ******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   106  void SuspendAllInterrupts(void)
+; Function SuspendAllInterrupts
+SuspendAllInterrupts:	.type	func
+
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   107  {
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   108    uint32 CoreId;
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   109  
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   110    /* Get the current core id */
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   111    CoreId = Mcal_GetCpuIndex();
+	call	Mcal_GetCpuIndex
+
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   112  
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   113    if(Os_IntSaveDisableCounter[CoreId] == 0)
+	fcall	.cocofun_1
+	jne	d15,#0,.L2
+
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   114    {
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   115      Os_SavedIntLevelNested[CoreId] = MFCR(CPU_ICR);/* disable interrupts */
+	movh.a	a2,#@his(Os_SavedIntLevelNested)
+	lea	a2,[a2]@los(Os_SavedIntLevelNested)
+	addsc.a	a2,a2,d2,#2
+	mfcr	d15,#65068
+	st.w	[a2],d15
+
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   116      DISABLE();
+	disable
+.L2:
+
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   117    }
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   118    Os_IntSaveDisableCounter[CoreId]++;
+	ld.bu	d15,[a15]
+	add	d15,#1
+	st.b	[a15],d15
+
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   119  }
+	ret
+	
+__SuspendAllInterrupts_function_end:
+	.size	SuspendAllInterrupts,__SuspendAllInterrupts_function_end-SuspendAllInterrupts
+	; End of function
+	
+	.sdecl	'.text.IFX_Os..cocofun_1',code
+	.sect	'.text.IFX_Os..cocofun_1'
+	.align	2
+; Function .cocofun_1
+.cocofun_1:	.type	func
+; Function body .cocofun_1, coco_iter:0
+	movh.a	a15,#@his(Os_IntSaveDisableCounter)
+	lea	a15,[a15]@los(Os_IntSaveDisableCounter)
+	addsc.a	a15,a15,d2,#0
+	ld.bu	d15,[a15]
+	fret
+	; End of function
+	.sdecl	'.text.IFX_Os.ResumeAllInterrupts',code
+	.sect	'.text.IFX_Os.ResumeAllInterrupts'
+	.align	2
+	
+	.global	ResumeAllInterrupts
+
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   120  /******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   121  
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   122  /*******************************************************************************
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   123  ** Syntax           : void ResumeAllInterrupts(void)                          **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   124  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   125  ** Service ID       :  none                                                   **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   126  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   127  ** Sync/Async       : Synchronous                                             **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   128  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   129  ** Reentrancy       : non - reentrant                                         **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   130  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   131  ** Parameters(in)   : none                                                    **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   132  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   133  ** Parameters (out) : none                                                    **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   134  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   135  ** Return value     : none                                                    **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   136  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   137  ** Description      : This function Resumes all interrupts, nested            **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   138  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   139  *******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   140  void ResumeAllInterrupts(void)
+; Function ResumeAllInterrupts
+ResumeAllInterrupts:	.type	func
+
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   141  {
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   142    uint32 CoreId;
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   143  
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   144    /* Get the current core id */
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   145    CoreId = Mcal_GetCpuIndex();
+	call	Mcal_GetCpuIndex
+
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   146  
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   147    if (Os_IntSaveDisableCounter[CoreId] > 0)
+	fcall	.cocofun_1
+	jeq	d15,#0,.L3
+
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   148    {
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   149      Os_IntSaveDisableCounter[CoreId]--;
+	ld.bu	d15,[a15]
+	add	d15,#-1
+	st.b	[a15],d15
+.L3:
+
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   150    }
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   151  
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   152    if (Os_IntSaveDisableCounter[CoreId] == 0)
+	ld.bu	d15,[a15]
+	jne	d15,#0,.L4
+
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   153    {
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   154      if (Os_SavedIntLevelNested[CoreId] & (0x00000001U << 15))
+	movh.a	a15,#@his(Os_SavedIntLevelNested)
+	lea	a15,[a15]@los(Os_SavedIntLevelNested)
+	addsc.a	a15,a15,d2,#2
+	ld.w	d15,[a15]
+	jz.t	d15:15,.L5
+
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   155      {
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   156        /* interrupts were enabled, enable again */
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   157        ENABLE();
+	enable
+.L5:
+.L4:
+
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   158      }
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   159    }
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   160  }
+	ret
+	
+__ResumeAllInterrupts_function_end:
+	.size	ResumeAllInterrupts,__ResumeAllInterrupts_function_end-ResumeAllInterrupts
+	; End of function
+	
+	.sdecl	'.bss.IFX_Os.Os_IntSaveDisableCounter',data
+	.sect	'.bss.IFX_Os.Os_IntSaveDisableCounter'
+Os_IntSaveDisableCounter:	.type	object
+	.size	Os_IntSaveDisableCounter,4
+	.space	4
+	.sdecl	'.bss.IFX_Os.Os_SavedIntLevelNested',data
+	.sect	'.bss.IFX_Os.Os_SavedIntLevelNested'
+	.align	2
+Os_SavedIntLevelNested:	.type	object
+	.size	Os_SavedIntLevelNested,16
+	.space	16
+	.calls	'SuspendAllInterrupts','Mcal_GetCpuIndex'
+	.calls	'ResumeAllInterrupts','Mcal_GetCpuIndex'
+	.calls	'SuspendAllInterrupts','.cocofun_1'
+	.calls	'ResumeAllInterrupts','.cocofun_1'
+	.calls	'SuspendAllInterrupts','',0
+	.calls	'.cocofun_1','',0
+	.extern	Mcal_GetCpuIndex
+	.calls	'ResumeAllInterrupts','',0
+
+; Sbl\Toolchains_TC387\Inc\IFX_Os.c	   161  
+
+	; Module end

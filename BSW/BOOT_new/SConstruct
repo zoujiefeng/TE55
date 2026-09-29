@@ -1,0 +1,160 @@
+########## BEGIN SCONSTRUCT ##########
+import sys
+import os
+
+sys.path.append(Dir('#').abspath + "\\site_scons")
+sys.path.append(Dir('#').abspath + "\\site_scons\\site_tools")
+import scons_common
+
+		
+# Settings file to be read
+# verify command line
+
+if 'fbl' in COMMAND_LINE_TARGETS:
+	print ("------------------------------------------------------------------------")
+	print ("Building FBL...")
+	print ("------------------------------------------------------------------------")	
+	settings_file = 'fbl_settings.py'
+elif 'sbl' in COMMAND_LINE_TARGETS:
+	print ("------------------------------------------------------------------------")
+	print ("Building secondary bootloader (flash driver)...")
+	print ("------------------------------------------------------------------------")
+	settings_file = 'sbl_settings.py'
+else:
+    print ("Usage: scons [option] target, with target=[fbl, sbl]")
+    exit(1)
+
+
+# Load all the variables into the environment
+if not os.path.exists(settings_file):
+    print ('Could not find file ' + settings_file + ' in current directory.')
+else:
+    vars = Variables(settings_file)
+
+    # Add variables to environment along with some help text
+    vars.Add('OUTPUT_DIR',             'Path to build all target files.', 'output')
+    vars.Add('LOG_DIR',             'Path to store all log files.', 'log')
+    vars.Add('CPU_TARGET',             'CPU to build for.  Must match what the compiler is expecting as \'cpu\' option.')
+    vars.Add('COMPILER_TOOL',         'Custom SCons tool to be used for building.  Must match the file name located in the site_tools directory.')
+    vars.Add('COMPILER_ROOT',         'Path to compiler executables.')
+    vars.Add('COMPILER_FLAGS',         'Compiler flags to use for building.')
+    vars.Add('COMPILER_DEFINES',     'Compiler defines to use for building.')
+    vars.Add('ASSEMBLER_FLAGS',     'Assembler flags to use for building.')
+    vars.Add('ASSEMBLER_DEFINES',     'Assembler defines to use for building.')
+    vars.Add('LINKER_FLAGS',         'Linker flags to be used for building.')
+    vars.Add('LINKER_FILE',         'Path to linker file to be used during linking.')
+    vars.Add('ADD_LIBRARIES',         'Names of additional libraries to be included during linking.  These do not need the file extension.')
+    vars.Add('LIBRARY_PATHS',         'Paths to look for the additional libraries.')
+    vars.Add('A2L_COMMAND',         'A command to run in order to build the A2L file.  The name of the A2L file will be passed in as the last argument to this command line.')
+    vars.Add('BUILD_TYPE',             'Type of build to be done.  Options are: DEBUG, PROD, DEVEL')
+    vars.Add('PROJ_NAME',             'Name of the project to be built.')
+    vars.Add('OBJECT_FILE',         'path to object files to be added during linking.')
+    vars.Add('SW_VERSION_MSB',         'Most signification numbers of the SW version.')
+    vars.Add('SW_VERSION_LSB',         'Least signification numbers of the SW version.')
+    vars.Add('PYTHON_VERSION',         'python3 or python2')
+    vars.Add('CEN_HEADER_DIR',      'path to centralized header file of project.')
+
+    # Initialize the default SCons environment
+    env = Environment(variables = vars)
+
+    # Generate variables help text
+    env.Help(vars.GenerateHelpText(env))
+
+    AddOption('--verbose',
+            dest='verbose',
+            action='store_true',
+            default=False,
+            help='Print verbose infomation during bulding')
+
+if not GetOption('verbose'):
+        env.Replace(
+            ARCOMSTR = 'AR $SOURCE',
+            ASCOMSTR = 'AS $SOURCE',
+            ASPPCOMSTR = 'AS $SOURCE',
+            CCCOMSTR = 'CC $TARGET',
+            CXXCOMSTR = 'CXX $SOURCE',
+            LINKCOMSTR = 'LINK $TARGET'
+            )
+
+if not GetOption('help'):
+    import scons_common
+    import listfile
+    import prebuild
+
+    cur_ptah = os.getcwd()
+
+
+    #setup logging of output 
+    scons_common.setuplogging(env)
+
+    #validate the mandatory values of the environemt
+    scons_common.validate_environment(env)
+
+    #build target/project name
+    env['TARGET_NAME'] = env.subst('$PROJ_NAME')
+
+    #clone the environment and setup compiler specific environment
+    env = env.Clone(tools=[env['COMPILER_TOOL']])
+
+    #storage of all objects to be linked
+    objects = []
+
+    if 'fbl' in COMMAND_LINE_TARGETS:
+
+        IsNeedGenLib = False
+        #update include & source files Sconscript
+        BSW_ExceptFileList = []
+        os.chdir('./Fbl')
+        listfile.List('.',BSW_ExceptFileList, 'Fbl', IsNeedGenLib)
+        os.chdir(cur_ptah)
+
+        #setup build directory
+        fbl_build_dir = os.path.join(env.subst('$OUTPUT_DIR'), 'objs',env.subst('$TARGET_NAME') )
+
+        #specify paths
+        fbl_path = os.path.join('Fbl', 'SConscript')
+
+        #compile each subsystem's SConscript file and collect all objects
+        objects += SConscript(fbl_path, exports='env', variant_dir=fbl_build_dir, duplicate=0)
+
+        #setup output path for elf file
+        fbl_exe_path = os.path.join(env.subst('$OUTPUT_DIR'), 'dbg', env.subst('$TARGET_NAME'))
+        fbl_s19_path = os.path.join(env.subst('$OUTPUT_DIR'), 'bin', env.subst('$TARGET_NAME'))
+
+        #build the final debug, s19 files
+        fbl_exe = env.Program(fbl_exe_path, objects)
+
+        fbl_s19 = env.S19(fbl_s19_path, fbl_exe)
+        # Create targets
+        Alias('fbl', [fbl_exe, fbl_s19])
+        Default(None)
+    elif 'sbl' in COMMAND_LINE_TARGETS:
+        #setup build directory
+        IsNeedGenLib = False
+        
+        BSW_ExceptFileList = []
+        os.chdir('./Sbl')
+        listfile.List('.',BSW_ExceptFileList, 'Sbl', IsNeedGenLib)
+        os.chdir(cur_ptah)
+
+        #setup build directory
+        sbl_build_dir = os.path.join(env.subst('$OUTPUT_DIR'), 'objs',env.subst('$TARGET_NAME') )
+
+        #specify paths
+        sbl_path = os.path.join('Sbl', 'SConscript')
+
+        #compile each subsystem's SConscript file and collect all objects
+        objects += SConscript(sbl_path, exports='env', variant_dir=sbl_build_dir, duplicate=0)
+
+
+        #setup output path for elf file
+        sbl_exe_path = os.path.join(env.subst('$OUTPUT_DIR'), 'dbg', env.subst('$TARGET_NAME'))
+        sbl_s19_path = os.path.join(env.subst('$OUTPUT_DIR'), 'bin', env.subst('$TARGET_NAME'))
+        #build the final debug, s19 files
+        sbl_exe = env.Program(sbl_exe_path, objects)
+
+        sbl_s19 = env.S19(sbl_s19_path, sbl_exe)
+        # Create targets
+        Alias('sbl', [sbl_exe, sbl_s19])
+    else:
+        exit(1)

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>DBC_SysDesc_Can_Network</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>Pkg_Cluster</SHORT-NAME>
+          <ELEMENTS>
+            <CAN-CLUSTER>
+              <SHORT-NAME>Can_Network</SHORT-NAME>
+              <CAN-CLUSTER-VARIANTS>
+                <CAN-CLUSTER-CONDITIONAL>
+                  <PHYSICAL-CHANNELS>
+                    <CAN-PHYSICAL-CHANNEL>
+                      <SHORT-NAME>Can_Network_Channel</SHORT-NAME>
+                      <COMM-CONNECTORS>
+                        <COMMUNICATION-CONNECTOR-REF-CONDITIONAL>
+                          <COMMUNICATION-CONNECTOR-REF DEST="CAN-COMMUNICATION-CONNECTOR">/DBC_SysDesc_Can_Network/Pkg_Ecu/VCU/Conn_CANNODE_0_VCU</COMMUNICATION-CONNECTOR-REF>
+                        </COMMUNICATION-CONNECTOR-REF-CONDITIONAL>
+                      </COMM-CONNECTORS>
+                      <FRAME-TRIGGERINGS>
+                        <CAN-FRAME-TRIGGERING>
+                          <SHORT-NAME>UDS_Rx_Phys_Id_0x737_Trgr</SHORT-NAME>
+                          <FRAME-PORT-REFS>
+                            <FRAME-PORT-REF DEST="FRAME-PORT">/DBC_SysDesc_Can_Network/Pkg_Ecu/VCU/Conn_CANNODE_0_VCU/UDS_Rx_Phys_Id_0x737_VCU_IN</FRAME-PORT-REF>
+                          </FRAME-PORT-REFS>
+                          <FRAME-REF DEST="CAN-FRAME">/DBC_SysDesc_Can_Network/Pkg_Frame/UDS_Rx_Phys_Id_0x737</FRAME-REF>
+                          <PDU-TRIGGERINGS>
+                            <PDU-TRIGGERING-REF-CONDITIONAL>
+                              <PDU-TRIGGERING-REF DEST="PDU-TRIGGERING">/DBC_SysDesc_Can_Network/Pkg_Cluster/Can_Network/Can_Network_Channel/PduTrig_UDS_Rx_Phys_Id_0x737</PDU-TRIGGERING-REF>
+                            </PDU-TRIGGERING-REF-CONDITIONAL>
+                          </PDU-TRIGGERINGS>
+                          <CAN-ADDRESSING-MODE>STANDARD</CAN-ADDRESSING-MODE>
+                          <CAN-FRAME-RX-BEHAVIOR>ANY</CAN-FRAME-RX-BEHAVIOR>
+                          <IDENTIFIER>2019</IDENTIFIER>
+                        </CAN-FRAME-TRIGGERING>
+                        <CAN-FRAME-TRIGGERING>
+                          <SHORT-NAME>UDS_Rx_Func_Id_0x7DF_Trgr</SHORT-NAME>
+                          <FRAME-PORT-REFS>
+                            <FRAME-PORT-REF DEST="FRAME-PORT">/DBC_SysDesc_Can_Network/Pkg_Ecu/VCU/Conn_CANNODE_0_VCU/UDS_Rx_Func_Id_0x7DF_VCU_IN</FRAME-PORT-REF>
+                          </FRAME-PORT-REFS>
+                          <FRAME-REF DEST="CAN-FRAME">/DBC_SysDesc_Can_Network/Pkg_Frame/UDS_Rx_Func_Id_0x7DF</FRAME-REF>
+                          <PDU-TRIGGERINGS>
+                            <PDU-TRIGGERING-REF-CONDITIONAL>
+                              <PDU-TRIGGERING-REF DEST="PDU-TRIGGERING">/DBC_SysDesc_Can_Network/Pkg_Cluster/Can_Network/Can_Network_Channel/PduTrig_UDS_Rx_Func_Id_0x7DF</PDU-TRIGGERING-REF>
+                            </PDU-TRIGGERING-REF-CONDITIONAL>
+                          </PDU-TRIGGERINGS>
+                          <CAN-ADDRESSING-MODE>STANDARD</CAN-ADDRESSING-MODE>
+                          <CAN-FRAME-RX-BEHAVIOR>ANY</CAN-FRAME-RX-BEHAVIOR>
+                          <IDENTIFIER>2015</IDENTIFIER>
+                        </CAN-FRAME-TRIGGERING>
+                        <CAN-FRAME-TRIGGERING>
+                          <SHORT-NAME>UDS_Tx_Phys_Id_0x7B7_Trgr</SHORT-NAME>
+                          <FRAME-PORT-REFS>
+                            <FRAME-PORT-REF DEST="FRAME-PORT">/DBC_SysDesc_Can_Network/Pkg_Ecu/VCU/Conn_CANNODE_0_VCU/UDS_Tx_Phys_Id_0x7B7_VCU_OUT</FRAME-PORT-REF>
+                          </FRAME-PORT-REFS>
+                          <FRAME-REF DEST="CAN-FRAME">/DBC_SysDesc_Can_Network/Pkg_Frame/UDS_Tx_Phys_Id_0x7B7</FRAME-REF>
+                          <PDU-TRIGGERINGS>
+                            <PDU-TRIGGERING-REF-CONDITIONAL>
+                              <PDU-TRIGGERING-REF DEST="PDU-TRIGGERING">/DBC_SysDesc_Can_Network/Pkg_Cluster/Can_Network/Can_Network_Channel/PduTrig_UDS_Tx_Phys_Id_0x7B7</PDU-TRIGGERING-REF>
+                            </PDU-TRIGGERING-REF-CONDITIONAL>
+                          </PDU-TRIGGERINGS>
+                          <CAN-ADDRESSING-MODE>STANDARD</CAN-ADDRESSING-MODE>
+                          <IDENTIFIER>2027</IDENTIFIER>
+                        </CAN-FRAME-TRIGGERING>
+                      </FRAME-TRIGGERINGS>
+                      <PDU-TRIGGERINGS>
+                        <PDU-TRIGGERING UUID="ea27932e-543a-469e-b2fc-3b4b6d1e1850">
+                          <SHORT-NAME>PduTrig_UDS_Rx_Phys_Id_0x737</SHORT-NAME>
+                          <I-PDU-PORT-REFS>
+                            <I-PDU-PORT-REF DEST="I-PDU-PORT">/DBC_SysDesc_Can_Network/Pkg_Ecu/VCU/Conn_CANNODE_0_VCU/IpduPort_UDS_Rx_Phys_Id_0x737_VCU_IN</I-PDU-PORT-REF>
+                          </I-PDU-PORT-REFS>
+                          <I-PDU-REF DEST="DCM-I-PDU">/DBC_SysDesc_Can_Network/Pkg_Pdus/UDS_Rx_Phys_Id_0x737</I-PDU-REF>
+                        </PDU-TRIGGERING>
+                        <PDU-TRIGGERING UUID="42e572bd-72ba-41ff-8cc7-b4a2c7bc155d">
+                          <SHORT-NAME>PduTrig_UDS_Rx_Func_Id_0x7DF</SHORT-NAME>
+                          <I-PDU-PORT-REFS>
+                            <I-PDU-PORT-REF DEST="I-PDU-PORT">/DBC_SysDesc_Can_Network/Pkg_Ecu/VCU/Conn_CANNODE_0_VCU/IpduPort_UDS_Rx_Func_Id_0x7DF_VCU_IN</I-PDU-PORT-REF>
+                          </I-PDU-PORT-REFS>
+                          <I-PDU-REF DEST="DCM-I-PDU">/DBC_SysDesc_Can_Network/Pkg_Pdus/UDS_Rx_Func_Id_0x7DF</I-PDU-REF>
+                        </PDU-TRIGGERING>
+                        <PDU-TRIGGERING UUID="98651402-ac4b-40b2-bca4-05841aa930a5">
+                          <SHORT-NAME>PduTrig_UDS_Tx_Phys_Id_0x7B7</SHORT-NAME>
+                          <I-PDU-PORT-REFS>
+                            <I-PDU-PORT-REF DEST="I-PDU-PORT">/DBC_SysDesc_Can_Network/Pkg_Ecu/VCU/Conn_CANNODE_0_VCU/IpduPort_UDS_Tx_Phys_Id_0x7B7_VCU_OUT</I-PDU-PORT-REF>
+                          </I-PDU-PORT-REFS>
+                          <I-PDU-REF DEST="DCM-I-PDU">/DBC_SysDesc_Can_Network/Pkg_Pdus/UDS_Tx_Phys_Id_0x7B7</I-PDU-REF>
+                        </PDU-TRIGGERING>
+                      </PDU-TRIGGERINGS>
+                    </CAN-PHYSICAL-CHANNEL>
+                  </PHYSICAL-CHANNELS>
+                  <PROTOCOL-NAME>CAN</PROTOCOL-NAME>
+                  <PROTOCOL-VERSION />
+                </CAN-CLUSTER-CONDITIONAL>
+              </CAN-CLUSTER-VARIANTS>
+            </CAN-CLUSTER>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>Pkg_Pdus</SHORT-NAME>
+          <ELEMENTS>
+            <DCM-I-PDU>
+              <SHORT-NAME>UDS_Rx_Phys_Id_0x737</SHORT-NAME>
+              <LENGTH>8</LENGTH>
+            </DCM-I-PDU>
+            <DCM-I-PDU>
+              <SHORT-NAME>UDS_Rx_Func_Id_0x7DF</SHORT-NAME>
+              <LENGTH>8</LENGTH>
+            </DCM-I-PDU>
+            <DCM-I-PDU>
+              <SHORT-NAME>UDS_Tx_Phys_Id_0x7B7</SHORT-NAME>
+              <LENGTH>8</LENGTH>
+            </DCM-I-PDU>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>Pkg_Signal</SHORT-NAME>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>Pkg_ISignal</SHORT-NAME>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>Pkg_Nm</SHORT-NAME>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>Pkg_Frame</SHORT-NAME>
+          <ELEMENTS>
+            <CAN-FRAME>
+              <SHORT-NAME>UDS_Rx_Phys_Id_0x737</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING>
+                  <SHORT-NAME>UDS_Rx_Phys_Id_0x737</SHORT-NAME>
+                  <PDU-REF DEST="DCM-I-PDU">/DBC_SysDesc_Can_Network/Pkg_Pdus/UDS_Rx_Phys_Id_0x737</PDU-REF>
+                  <START-POSITION>7</START-POSITION>
+                  <UPDATE-INDICATION-BIT-POSITION>-1</UPDATE-INDICATION-BIT-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME>
+              <SHORT-NAME>UDS_Rx_Func_Id_0x7DF</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING>
+                  <SHORT-NAME>UDS_Rx_Func_Id_0x7DF</SHORT-NAME>
+                  <PDU-REF DEST="DCM-I-PDU">/DBC_SysDesc_Can_Network/Pkg_Pdus/UDS_Rx_Func_Id_0x7DF</PDU-REF>
+                  <START-POSITION>7</START-POSITION>
+                  <UPDATE-INDICATION-BIT-POSITION>-1</UPDATE-INDICATION-BIT-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME>
+              <SHORT-NAME>UDS_Tx_Phys_Id_0x7B7</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING>
+                  <SHORT-NAME>UDS_Tx_Phys_Id_0x7B7</SHORT-NAME>
+                  <PDU-REF DEST="DCM-I-PDU">/DBC_SysDesc_Can_Network/Pkg_Pdus/UDS_Tx_Phys_Id_0x7B7</PDU-REF>
+                  <START-POSITION>7</START-POSITION>
+                  <UPDATE-INDICATION-BIT-POSITION>-1</UPDATE-INDICATION-BIT-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+          </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+          <SHORT-NAME>Pkg_Ecu</SHORT-NAME>
+          <ELEMENTS>
+            <ECU-INSTANCE>
+              <SHORT-NAME>VCU</SHORT-NAME>
+              <COM-CONFIGURATION-GW-TIME-BASE>0.005</COM-CONFIGURATION-GW-TIME-BASE>
+              <COM-CONFIGURATION-RX-TIME-BASE>0.01</COM-CONFIGURATION-RX-TIME-BASE>
+              <COM-CONFIGURATION-TX-TIME-BASE>0.01</COM-CONFIGURATION-TX-TIME-BASE>
+              <COMM-CONTROLLERS>
+                <CAN-COMMUNICATION-CONTROLLER>
+                  <SHORT-NAME>CANNODE_0</SHORT-NAME>
+                  <CAN-COMMUNICATION-CONTROLLER-VARIANTS>
+                    <CAN-COMMUNICATION-CONTROLLER-CONDITIONAL>
+                      <CAN-CONTROLLER-ATTRIBUTES>
+                        <CAN-CONTROLLER-CONFIGURATION>
+                          <PROP-SEG>0</PROP-SEG>
+                          <SYNC-JUMP-WIDTH>0</SYNC-JUMP-WIDTH>
+                          <TIME-SEG-1>10</TIME-SEG-1>
+                          <TIME-SEG-2>0</TIME-SEG-2>
+                        </CAN-CONTROLLER-CONFIGURATION>
+                      </CAN-CONTROLLER-ATTRIBUTES>
+                    </CAN-COMMUNICATION-CONTROLLER-CONDITIONAL>
+                  </CAN-COMMUNICATION-CONTROLLER-VARIANTS>
+                </CAN-COMMUNICATION-CONTROLLER>
+              </COMM-CONTROLLERS>
+              <CONNECTORS>
+                <CAN-COMMUNICATION-CONNECTOR>
+                  <SHORT-NAME>Conn_CANNODE_0_VCU</SHORT-NAME>
+                  <COMM-CONTROLLER-REF DEST="CAN-COMMUNICATION-CONTROLLER">/DBC_SysDesc_Can_Network/Pkg_Ecu/VCU/CANNODE_0</COMM-CONTROLLER-REF>
+                  <ECU-COMM-PORT-INSTANCES>
+                    <FRAME-PORT>
+                      <SHORT-NAME>UDS_Rx_Phys_Id_0x737_VCU_IN</SHORT-NAME>
+                      <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                    </FRAME-PORT>
+                    <I-PDU-PORT>
+                      <SHORT-NAME>IpduPort_UDS_Rx_Phys_Id_0x737_VCU_IN</SHORT-NAME>
+                      <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                    </I-PDU-PORT>
+                    <FRAME-PORT>
+                      <SHORT-NAME>UDS_Rx_Func_Id_0x7DF_VCU_IN</SHORT-NAME>
+                      <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                    </FRAME-PORT>
+                    <I-PDU-PORT>
+                      <SHORT-NAME>IpduPort_UDS_Rx_Func_Id_0x7DF_VCU_IN</SHORT-NAME>
+                      <COMMUNICATION-DIRECTION>IN</COMMUNICATION-DIRECTION>
+                    </I-PDU-PORT>
+                    <FRAME-PORT>
+                      <SHORT-NAME>UDS_Tx_Phys_Id_0x7B7_VCU_OUT</SHORT-NAME>
+                      <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                    </FRAME-PORT>
+                    <I-PDU-PORT>
+                      <SHORT-NAME>IpduPort_UDS_Tx_Phys_Id_0x7B7_VCU_OUT</SHORT-NAME>
+                      <COMMUNICATION-DIRECTION>OUT</COMMUNICATION-DIRECTION>
+                    </I-PDU-PORT>
+                  </ECU-COMM-PORT-INSTANCES>
+                </CAN-COMMUNICATION-CONNECTOR>
+              </CONNECTORS>
+              <SLEEP-MODE-SUPPORTED>false</SLEEP-MODE-SUPPORTED>
+              <WAKE-UP-OVER-BUS-SUPPORTED>false</WAKE-UP-OVER-BUS-SUPPORTED>
+            </ECU-INSTANCE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

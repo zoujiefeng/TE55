@@ -1,0 +1,35 @@
+Start remove_macro  . was excuted
+End remove_macro 
+scons: done reading SConscript files.
+scons: Building targets ...
+CC build\objs\PJ_INVT_SBL\Source\Det.o
+CC build\objs\PJ_INVT_SBL\Source\SBL_Flash.o
+CC build\objs\PJ_INVT_SBL\Toolchains_TC387\Inc\FlsLdr_ExclArea.o
+CC build\objs\PJ_INVT_SBL\Toolchains_TC387\Inc\IFX_Os.o
+CC build\objs\PJ_INVT_SBL\Toolchains_TC387\Inc\Mcal_SafetyError.o
+CC build\objs\PJ_INVT_SBL\Toolchains_TC387\Inc\SchM_McalLib.o
+CC build\objs\PJ_INVT_SBL\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.o
+CC build\objs\PJ_INVT_SBL\Toolchains_TC387\Mcal\Mcal_Modules\FlsLoader\Ssc\src\FlsLoader.o
+CC build\objs\PJ_INVT_SBL\Toolchains_TC387\Mcal\Mcal_Modules\FlsLoader\Ssc\src\FlsLoader_Platform.o
+CC build\objs\PJ_INVT_SBL\Toolchains_TC387\Mcal\Mcal_Modules\McalLib\ssc\src\McalLib.o
+
+
+
+
+ctc W560: ["Sbl\Source\SBL_Flash.c" 164/8] possible truncation at implicit conversion to type "unsigned char"
+ctc W560: ["Sbl\Source\SBL_Flash.c" 214/25] possible truncation at implicit conversion to type "unsigned char"
+ctc W537: ["Sbl\Source\SBL_Flash.c" 80/21] unused variable "FlsLoader_PFlashSectorOffset"
+ctc W588: ["Sbl\Source\SBL_Flash.c" 152/16] dead assignment to "sector_num" eliminated
+ctc W589: ["Sbl\Source\SBL_Flash.c" 154/8] pointer assumed to be nonzero - test removed
+0 errors, 5 warnings
+
+
+
+
+
+
+LINK build\dbg\PJ_INVT_SBL.elf
+
+./site_scons/site_tools/objcopy.exe -O srec "build\dbg\PJ_INVT_SBL.elf" "build\bin\PJ_INVT_SBL.s19"
+
+scons: done building targets.

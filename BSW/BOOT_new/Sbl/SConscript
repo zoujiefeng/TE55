@@ -1,0 +1,56 @@
+#Generate User: 01004867
+#Generate Time: 2026-08-17 13:15:06
+
+Import('*')
+import re,sys, os, glob, fnmatch
+import prebuild
+objects = []
+# INCLUDE DIRECTORIES
+# Implements: COR010
+includes = [
+	'Include',
+	'Toolchains_TC387/Inc',
+	'Toolchains_TC387/Mcal/MCAL_Gen_new/inc',
+	'Toolchains_TC387/Mcal/Mcal_Modules/FlsLoader/Ssc/inc',
+	'Toolchains_TC387/Mcal/Mcal_Modules/McalLib/ssc/inc/AS422',
+	'Toolchains_TC387/Mcal/Mcal_Modules/McalLib/ssc/inc',
+	'Toolchains_TC387/reg',
+]#Include Files
+# SOURCE FILES
+sources = [
+	'Source/Det.c',
+	'Source/SBL_Flash.c',
+	'Toolchains_TC387/Inc/FlsLdr_ExclArea.c',
+	'Toolchains_TC387/Inc/IFX_Os.c',
+	'Toolchains_TC387/Inc/Mcal_SafetyError.c',
+	'Toolchains_TC387/Inc/SchM_McalLib.c',
+	'Toolchains_TC387/Mcal/MCAL_Gen_new/src/FlsLoader_Cfg.c',
+	'Toolchains_TC387/Mcal/Mcal_Modules/FlsLoader/Ssc/src/FlsLoader.c',
+	'Toolchains_TC387/Mcal/Mcal_Modules/FlsLoader/Ssc/src/FlsLoader_Platform.c',
+	'Toolchains_TC387/Mcal/Mcal_Modules/McalLib/ssc/src/McalLib.c',
+]#Source Files
+# GENERATED SOURCE FILES
+gen_sources = [
+]
+
+# ADD INCLUDE DIRECTORIES
+import scons_common
+for include in includes:
+    cwd = scons_common.get_current_dir()
+    env.Append(CPPPATH=[os.path.join(cwd, include)])
+# COMPILE SOURCE FILES
+for source in sources:
+    objects += env.Object(source)
+    
+
+# GENERATED SOURCE FILES
+for gen_source in gen_sources:
+    objects += env.Object(gen_source)
+
+# RETURN
+
+Return('objects')
+
+#*******************************************************************************
+# END OF FILE
+#*******************************************************************************

@@ -1,0 +1,12 @@
+Import('*')
+objects = []
+
+packages = [
+    'Mcal_Gen/SConscript',
+    'Mcal_Modules/SConscript',
+    'Mcal_Rte/SConscript'
+]
+for package in packages:
+  objects += SConscript(package, exports='env')
+# Objects to return
+Return('objects')

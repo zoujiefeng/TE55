@@ -1,0 +1,416 @@
+Start remove_macro  . was excuted
+End remove_macro 
+scons: done reading SConscript files.
+scons: Building targets ...
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\CDD\bsw\bswsrv.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\EcuMgr\src\AES128.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\EcuMgr\src\EcuMgr_BootTarget.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\EcuMgr\src\EcuMgr_DIDServices_INVT.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\EcuMgr\src\EcuMgr_DownloadTargetFlow.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\EcuMgr\src\EcuMgr_ImplicitDownloadTargetFlow.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\EcuMgr\src\EcuMgr_Startup.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\CanIf\integration\CanIf_RxIndication_Integration.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_CheckEncryptionCompressionMethod.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_ConfirmationRespPend.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmCancelPagedBufferProcessing.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmCheckCDTCRecord.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmCheckControlMaskAndState.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmCheckRdbiResponseLength.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmCheckRoutineControlOptionRecord.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmCheckSeed.o
+ctc W525: ["Fbl\InfineonLib\Infra\CDD\bsw\bswsrv.c" 285/24] discarded 'const' qualifier at assignment: conversion from unsigned char const volatile * to unsigned char *
+ctc W525: ["Fbl\InfineonLib\Infra\CDD\bsw\bswsrv.c" 285/24] discarded 'volatile' qualifier at assignment: conversion from unsigned char const volatile * to unsigned char *
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmCheckWDBIReqLen.o
+ctc W537: ["Fbl\InfineonLib\Infra\EcuMgr\src\AES128.c" 267/11] unused variable "i"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmClearRoeEventInformation.o
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmCommControlConditionCheck.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmComModeError.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmConfirmation.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmConfirmationRDPI.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmConfirmation_DcmNegResp.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmConfirmation_GeneralReject.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmControlDtcSettingEnableStatus.o
+ctc W547: ["Fbl\InfineonLib\Infra\EcuMgr\src\EcuMgr_DownloadTargetFlow.c" 172/26] undefined enum value
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W507: ["Fbl\InfineonLib\Infra\EcuMgr\src\EcuMgr_DownloadTargetFlow.c" 367/52] variable "endAddressBlock" is possibly uninitialized
+0 errors, 3 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmCopyRxData.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmEcuResetPreparation.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmGetNRCForMinLengthCheck.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmGetP2Timings.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmGetPermissionForMemoryAccess_u8.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmGetPermTxWarmResp.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmGetRemainingResponseLength.o
+ctc W547: ["Fbl\InfineonLib\Infra\EcuMgr\src\EcuMgr_ImplicitDownloadTargetFlow.c" 94/26] undefined enum value
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmGetROEDidInfo.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmGetRoeDTCInfo.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmGetRxPermission.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmGetSesChgPermission.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmGetStoreType.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmGetUpdatedDelayForPowerOn.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmGetUpdatedDelayTime.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmIndicationFuncTpr.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmIsComModeDefault.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmMemSizeCheckForTransferData.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmModifyResponse.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmNotification.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmReadDataNRC.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmReadDddiFromNvM.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmRespWarmInit.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmSecaInvalidKey.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmSecaValidKey.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmSecurityLevelLocked.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmSesCtrlChangeIndication.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmSetUpRoeEvent.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmStartOfReception.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmStartProtocol.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmStopProtocol.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmStoreRespForJump.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmStoreROEcycleCounter.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmStoreRoeDidInfo.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmStoreRoeDTCInfo.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmSwitchCommunicationControl.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmTransferDataCheckPermission.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmUpdateRxTable.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DcmWriteOrClearDddiInNvM.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_Dcm_ProcessRequestUpload.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_Dcm_ReadMemory.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_Dcm_SetProgConditions.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+
+
+
+
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DDDI_Read_Memory_Condition.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_DisableDTCSetting.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_EnableDTCSetting.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_ManufacturerNotification.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_OBD_Mode04.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_P3TimeoutIndication.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_Switch_DcmBootLoaderReset.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_Switch_DcmDriveToDriveReset.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_Switch_DcmEcuReset.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_Switch_DcmExecuteDscReset.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_Switch_DcmExecuteReset.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_Switch_DcmResponseOnEvent.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_Switch_DcmSysSupplierReset.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_UserCommCtrlReEnableModeRuleService.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_UserDIDModeRuleService.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_UserDTCSettingEnableModeRuleService.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_UserMemoryRangeModeRuleService.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_UserRIDModeRuleService.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Integration\Bsw\Dcm\integration\DcmAppl_UserSubServiceModeRuleService.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Os\src\Os_Tasks.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\SecurityAlgorithm\KeyObfuscation\KeyOb.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\SecurityAlgorithm\SHA256\SHA256.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Sleep\src\Sleep_Main.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\Stubs\src\Stubs.o
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+ctc W564: ["Fbl\InfineonLib\Infra\SecurityAlgorithm\KeyObfuscation\KeyOb.h" 15/2] "/*" inside comment
+0 errors, 1 warnings
+
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+LINK build\dbg\PJ_INVT_FBL.elf
+ltc E106: unresolved external: UDS_au8WrDidTableNvM_Rom - (NvM_Cfg.o)
+ltc E106: unresolved external: UDS_au8WrDidTableNvM_Ram - (NvM_Cfg.o)
+ltc F019: unrecoverable error: fatal link error
+
+===================
+None
+===================
+scons: *** [build\dbg\PJ_INVT_FBL.elf] Error 2
+scons: building terminated because of errors.

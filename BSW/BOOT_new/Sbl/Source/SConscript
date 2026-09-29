@@ -1,0 +1,11 @@
+Import('*')
+objects = []
+
+# SOURCE FILES
+sources = []
+sources += Glob('*.c')
+
+# COMPILE SOURCE FILES
+objects.extend(sources)
+# Objects to return
+Return('objects')

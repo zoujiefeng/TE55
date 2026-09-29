@@ -1,0 +1,150 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 21092262 SN 73118428"
+	.compiler_invocation	"ctc --integer-enumeration -D__CPU__=userdef162 -D__CPU_USERDEF162__ --core=tc1.6.2 --iso=99 --fp-model=+float -D_TASKING_C_TRICORE_=1 -DAUTOSAR_OS_NOT_USED -DDEVELOPMENT -ISbl\\Include -ISbl\\Toolchains_TC387\\Inc -ISbl\\Toolchains_TC387\\Mcal\\MCAL_Gen_new\\inc -ISbl\\Toolchains_TC387\\Mcal\\Mcal_Modules\\FlsLoader\\Ssc\\inc -ISbl\\Toolchains_TC387\\Mcal\\Mcal_Modules\\McalLib\\ssc\\inc\\AS422 -ISbl\\Toolchains_TC387\\Mcal\\Mcal_Modules\\McalLib\\ssc\\inc -ISbl\\Toolchains_TC387\\reg -t4 --language=-comments,-gcc,+volatile,-strings --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --switch=auto -o build\\objs\\PJ_INVT_SBL\\Toolchains_TC387\\Mcal\\MCAL_Gen_new\\src\\FlsLoader_Cfg.src Sbl\\Toolchains_TC387\\Mcal\\MCAL_Gen_new\\src\\FlsLoader_Cfg.c"
+	.compiler_name		"ctc"
+	;source	'Sbl\\Toolchains_TC387\\Mcal\\MCAL_Gen_new\\src\\FlsLoader_Cfg.c'
+
+	
+$TC162
+	
+	.sdecl	'.rodata.FlsLoader_PFlashSectorCount.Const.Cpu0.8bit',data,rom
+	.sect	'.rodata.FlsLoader_PFlashSectorCount.Const.Cpu0.8bit'
+	.global	FlsLoader_PFlashSectorCount
+FlsLoader_PFlashSectorCount:	.type	object
+	.size	FlsLoader_PFlashSectorCount,4
+	.byte	192,192,192,64
+	.sdecl	'.rodata.FlsLoader_PFlashOffset.Const.Cpu0.32bit',data,rom
+	.sect	'.rodata.FlsLoader_PFlashOffset.Const.Cpu0.32bit'
+	.global	FlsLoader_PFlashOffset
+	.align	4
+FlsLoader_PFlashOffset:	.type	object
+	.size	FlsLoader_PFlashOffset,16
+	.word	-1610612736,-1607467008,-1604321280,-1601175552
+	.sdecl	'.rodata.FlsLoader_PFlashEndAddress.Const.Cpu0.32bit',data,rom
+	.sect	'.rodata.FlsLoader_PFlashEndAddress.Const.Cpu0.32bit'
+	.global	FlsLoader_PFlashEndAddress
+	.align	4
+FlsLoader_PFlashEndAddress:	.type	object
+	.size	FlsLoader_PFlashEndAddress,16
+	.word	-1607467009,-1604321281,-1601175553,-1600126977
+
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	     1  
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	     2  /*******************************************************************************
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	     3  **                                                                            **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	     4  ** Copyright (C) Infineon Technologies (2018)                                 **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	     5  **                                                                            **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	     6  ** All rights reserved.                                                       **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	     7  **                                                                            **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	     8  ** This document contains proprietary information belonging to Infineon       **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	     9  ** Technologies. Passing on and copying of this document, and communication   **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    10  ** of its contents is not permitted without prior written authorization.      **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    11  **                                                                            **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    12  ********************************************************************************
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    13  **                                                                            **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    14  **  FILENAME  : FlsLoader_Cfg.c                                               **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    15  **                                                                            **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    16  **  VERSION   : 8.0.0                                                         **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    17  **                                                                            **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    18  **  DATE, TIME: 2024-05-02, 10:28:55              !!!IGNORE-LINE!!!           **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    19  **                                                                            **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    20  **  GENERATOR : Build b191017-0938                !!!IGNORE-LINE!!!           **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    21  **                                                                            **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    22  **  BSW MODULE DECRIPTION : FlsLoader.bmd                                     **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    23  **                                                                            **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    24  **  VARIANT   : Variant PC                                                    **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    25  **                                                                            **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    26  **  PLATFORM  : Infineon AURIX2G                                              **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    27  **                                                                            **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    28  **  AUTHOR    : DL-AUTOSAR-Engineering                                        **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    29  **                                                                            **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    30  **  VENDOR    : Infineon Technologies                                         **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    31  **                                                                            **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    32  **  DESCRIPTION  : FlsLoader configuration generated out of ECUC file         **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    33  **                                                                            **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    34  **  SPECIFICATION(S) : NA                                                     **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    35  **                                                                            **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    36  **  MAY BE CHANGED BY USER : no                                               **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    37  **                                                                            **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    38  *******************************************************************************/
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    39  
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    40  
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    41  /*******************************************************************************
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    42  **                      Includes                                              **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    43  *******************************************************************************/
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    44    /* Inclusion of Flash header file */
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    45  #include "FlsLoader.h"
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    46  /*******************************************************************************
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    47  **                      Private Macro Definitions                             **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    48  *******************************************************************************/
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    49  
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    50  /*******************************************************************************
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    51  **                      Private Type Definitions                              **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    52  *******************************************************************************/
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    53  
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    54  /******************************************************************************/
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    55  /*******************************************************************************
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    56  ** Name             : FlsLoader_GenerateModuleMap                             **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    57  **                                                                            **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    58  ** Description      : Macro to generate core-channel mappings for a module    **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    59  **                                                                            **
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    60  *******************************************************************************/
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    61  
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    62  
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    63  
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    64  
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    65  #define FLSLOADER_START_SEC_CONST_QM_LOCAL_8
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    66  /* MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    67     without safegaurd. It complies to Autosar guidelines. */
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    68  #include "FlsLoader_MemMap.h"
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    69  
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    70  /* Number of sectors for each PFlash banks */
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    71  const uint8 FlsLoader_PFlashSectorCount[FLSLOADER_NUM_OF_PFLASH_BANK] =
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    72  {
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    73      FLSLOADER_NUM_OF_PF0_SECTORS,
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    74      FLSLOADER_NUM_OF_PF1_SECTORS,
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    75      FLSLOADER_NUM_OF_PF2_SECTORS,
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    76      FLSLOADER_NUM_OF_PF3_SECTORS
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    77  };
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    78  
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    79  #define FLSLOADER_STOP_SEC_CONST_QM_LOCAL_8
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    80  /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration of notification function 
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    81    before MemMap inclusion It complies to Autosar guidelines. */
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    82  /* MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    83     without safegaurd. It complies to Autosar guidelines. */
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    84  #include "FlsLoader_MemMap.h"
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    85  
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    86  
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    87  #define FLSLOADER_START_SEC_CONST_QM_LOCAL_32
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    88  /* MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    89     without safegaurd. It complies to Autosar guidelines. */
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    90  #include "FlsLoader_MemMap.h"
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    91  
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    92  /* Start address of all the PFlash banks */
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    93  const uint32 FlsLoader_PFlashOffset[FLSLOADER_NUM_OF_PFLASH_BANK] =
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    94  {
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    95      (uint32)0XA0000000U,
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    96      (uint32)0XA0300000U,
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    97      (uint32)0XA0600000U,
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    98      (uint32)0XA0900000U
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	    99  };
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	   100  
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	   101  /* End address of all the PFlash banks */
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	   102  const uint32 FlsLoader_PFlashEndAddress[FLSLOADER_NUM_OF_PFLASH_BANK] =
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	   103  {
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	   104      (uint32)0XA02FFFFFU,
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	   105      (uint32)0XA05FFFFFU,
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	   106      (uint32)0XA08FFFFFU,
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	   107      (uint32)0XA09FFFFFU
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	   108  };
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	   109  
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	   110  
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	   111  #define FLSLOADER_STOP_SEC_CONST_QM_LOCAL_32
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	   112  /* MISRA2012_RULE_20_1_JUSTIFICATION: Declaration of notification function 
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	   113    before MemMap inclusion It complies to Autosar guidelines. */
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	   114  /* MISRA2012_RULE_4_10_JUSTIFICATION: Memmap header is repeatedly included
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	   115     without safegaurd. It complies to Autosar guidelines. */
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	   116  #include "FlsLoader_MemMap.h"
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	   117  
+; Sbl\Toolchains_TC387\Mcal\MCAL_Gen_new\src\FlsLoader_Cfg.c	   118  
+
+	; Module end

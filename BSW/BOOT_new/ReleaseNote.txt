@@ -1,0 +1,19 @@
+###########################################################
+Version: 1.2
+Last Author: R.LIU
+Release Date: 2023.11.4
+Updates:
+1. 整理工程。
+
+###########################################################
+Version: 1.1
+Last Author: R.LIU
+Release Date: 2023.11.2
+Updates:
+1. 增加LED呼吸灯功能。
+
+###########################################################
+Version: 1.0
+Last Author: R.LIU
+Release Date: 2023.10.11
+Updates: First Release

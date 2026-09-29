@@ -1,0 +1,98 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 21092262 SN 73118428"
+	.compiler_invocation	"ctc --integer-enumeration -D__CPU__=userdef162 -D__CPU_USERDEF162__ --core=tc1.6.2 --iso=99 --fp-model=+float -D_TASKING_C_TRICORE_=1 -DAUTOSAR_OS_NOT_USED -DDEVELOPMENT -ISbl\\Include -ISbl\\Toolchains_TC387\\Inc -ISbl\\Toolchains_TC387\\Mcal\\MCAL_Gen_new\\inc -ISbl\\Toolchains_TC387\\Mcal\\Mcal_Modules\\FlsLoader\\Ssc\\inc -ISbl\\Toolchains_TC387\\Mcal\\Mcal_Modules\\McalLib\\ssc\\inc\\AS422 -ISbl\\Toolchains_TC387\\Mcal\\Mcal_Modules\\McalLib\\ssc\\inc -ISbl\\Toolchains_TC387\\reg -t4 --language=-comments,-gcc,+volatile,-strings --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --switch=auto -o build\\objs\\PJ_INVT_SBL\\Toolchains_TC387\\Inc\\Mcal_SafetyError.src Sbl\\Toolchains_TC387\\Inc\\Mcal_SafetyError.c"
+	.compiler_name		"ctc"
+	;source	'Sbl\\Toolchains_TC387\\Inc\\Mcal_SafetyError.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.Mcal_SafetyError.Mcal_ReportSafetyError',code
+	.sect	'.text.Mcal_SafetyError.Mcal_ReportSafetyError'
+	.align	2
+	
+	.global	Mcal_ReportSafetyError
+
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	     1  /*******************************************************************************
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	     2  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	     3  ** Copyright (C) Infineon Technologies (2017)                                 **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	     4  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	     5  ** All rights reserved.                                                       **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	     6  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	     7  ** This document contains proprietary information belonging to Infineon       **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	     8  ** Technologies. Passing on and copying of this document, and communication   **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	     9  ** of its contents is not permitted without prior written authorization.      **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    10  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    11  ********************************************************************************
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    12  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    13  **  FILENAME     : Mcal_SafetyError.c                                         **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    14  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    15  **  VERSION      : 1.0.0                                                      **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    16  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    17  **  DATE         : 2017-10-27                                                 **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    18  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    19  **  VARIANT      : NA                                                         **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    20  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    21  **  PLATFORM     : Infineon AURIX2G                                           **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    22  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    23  **  AUTHOR       : DL-AUTOSAR-Engineering                                     **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    24  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    25  **  VENDOR       : Infineon Technologies                                      **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    26  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    27  **  DESCRIPTION  : Safety Error Roporting source file                         **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    28  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    29  **  SPECIFICATION(S) : Safety requirements.                                   **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    30  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    31  **  MAY BE CHANGED BY USER : yes                                              **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    32  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    33  *******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    34  
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    35  /*******************************************************************************
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    36  **                      Includes                                              **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    37  *******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    38  #include "Mcal_SafetyError.h"
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    39  
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    40  /*******************************************************************************
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    41  **                      Imported Compiler Switch Check                        **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    42  *******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    43  /*******************************************************************************
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    44  **                      Private Macro Definitions                             **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    45  *******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    46  /*******************************************************************************
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    47  **                      Private Type Definitions                              **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    48  *******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    49  /*******************************************************************************
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    50  **                      Private Function Declarations                         **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    51  *******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    52  /*******************************************************************************
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    53  **                      Global Constant Definitions                           **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    54  *******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    55  /*******************************************************************************
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    56  **                      Global Variable Definitions                           **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    57  *******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    58  /*******************************************************************************
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    59  **                      Private Constant Definitions                          **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    60  *******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    61  /*******************************************************************************
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    62  **                      Private Variable Definitions                          **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    63  *******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    64  /*******************************************************************************
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    65  **                      Global Function Definitions                           **
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    66  *******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    67  void Mcal_ReportSafetyError(uint16 ModuleId, uint8 InstanceId, uint8 ApiId, uint8 ErrorId)
+; Function Mcal_ReportSafetyError
+Mcal_ReportSafetyError:	.type	func
+
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    68  {
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    69  
+; Sbl\Toolchains_TC387\Inc\Mcal_SafetyError.c	    70  }
+	ret
+	
+__Mcal_ReportSafetyError_function_end:
+	.size	Mcal_ReportSafetyError,__Mcal_ReportSafetyError_function_end-Mcal_ReportSafetyError
+	; End of function
+	
+	.calls	'Mcal_ReportSafetyError','',0
+
+
+	; Module end

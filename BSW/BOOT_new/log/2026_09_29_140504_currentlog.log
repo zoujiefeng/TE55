@@ -1,0 +1,9 @@
+Start remove_macro  . was excuted
+End remove_macro 
+scons: done reading SConscript files.
+scons: Building targets ...
+CC build\objs\PJ_INVT_FBL\Bootloader\BootM\src\FBL_BootM.o
+CC build\objs\PJ_INVT_FBL\Bootloader\BootM\src\FBL_BootMCfg.o
+scons: *** [build\objs\PJ_INVT_FBL\Bootloader\BootM\src\FBL_BootM.o] 
+scons: *** [build\objs\PJ_INVT_FBL\Bootloader\BootM\src\FBL_BootMCfg.o] 
+scons: building terminated because of errors.

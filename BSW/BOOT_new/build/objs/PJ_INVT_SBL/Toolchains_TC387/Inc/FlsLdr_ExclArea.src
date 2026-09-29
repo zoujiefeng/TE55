@@ -1,0 +1,250 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for TriCore: C compiler v6.3r1 Build 21092262 SN 73118428"
+	.compiler_invocation	"ctc --integer-enumeration -D__CPU__=userdef162 -D__CPU_USERDEF162__ --core=tc1.6.2 --iso=99 --fp-model=+float -D_TASKING_C_TRICORE_=1 -DAUTOSAR_OS_NOT_USED -DDEVELOPMENT -ISbl\\Include -ISbl\\Toolchains_TC387\\Inc -ISbl\\Toolchains_TC387\\Mcal\\MCAL_Gen_new\\inc -ISbl\\Toolchains_TC387\\Mcal\\Mcal_Modules\\FlsLoader\\Ssc\\inc -ISbl\\Toolchains_TC387\\Mcal\\Mcal_Modules\\McalLib\\ssc\\inc\\AS422 -ISbl\\Toolchains_TC387\\Mcal\\Mcal_Modules\\McalLib\\ssc\\inc -ISbl\\Toolchains_TC387\\reg -t4 --language=-comments,-gcc,+volatile,-strings --default-near-size=0 -O2 --default-a1-size=0 --default-a0-size=0 --source --switch=auto -o build\\objs\\PJ_INVT_SBL\\Toolchains_TC387\\Inc\\FlsLdr_ExclArea.src Sbl\\Toolchains_TC387\\Inc\\FlsLdr_ExclArea.c"
+	.compiler_name		"ctc"
+	;source	'Sbl\\Toolchains_TC387\\Inc\\FlsLdr_ExclArea.c'
+
+	
+$TC162
+	
+	.sdecl	'.text.FlsLdr_ExclArea.FlsLdr_ExclArea_PfProg_Enter',code
+	.sect	'.text.FlsLdr_ExclArea.FlsLdr_ExclArea_PfProg_Enter'
+	.align	2
+	
+	.global	FlsLdr_ExclArea_PfProg_Enter
+
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	     1  /*******************************************************************************
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	     2  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	     3  ** Copyright (C) Infineon Technologies (2020)                                 **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	     4  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	     5  ** All rights reserved.                                                       **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	     6  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	     7  ** This document contains proprietary information belonging to Infineon       **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	     8  ** Technologies. Passing on and copying of this document, and communication   **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	     9  ** of its contents is not permitted without prior written authorization.      **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    10  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    11  ********************************************************************************
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    12  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    13  **  FILENAME  : FlsLdr_ExclArea.c                                             **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    14  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    15  **  VERSION   : 1.0.0                                                         **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    16  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    17  **  DATE      : 2020-06-26                                                    **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    18  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    19  **  VARIANT   : Post-Build                                                    **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    20  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    21  **  PLATFORM  : Infineon AURIX2G                                              **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    22  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    23  **  AUTHOR    : DL-AUTOSAR-Engineering                                        **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    24  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    25  **  VENDOR    : Infineon Technologies                                         **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    26  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    27  **  DESCRIPTION : File containing the prototype defination of the APIs        **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    28  **                which handles the exclusive area of FlsLoader module        **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    29  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    30  **  SPECIFICATION(S) : Specification of FlsLoader Driver, AUTOSAR             **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    31  **                     Release 4.2.2, 4.4.0                                   **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    32  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    33  **  MAY BE CHANGED BY USER : yes                                              **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    34  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    35  *******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    36  #include "IFX_Os.h"
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    37  #include "FlsLdr_ExclArea.h"
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    38  
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    39  #ifdef LATENCY_CALC_FLSLDR
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    40  #if(LATENCY_CALC_FLSLDR==1U)
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    41  #include "Test_Latency.h"
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    42  #endif
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    43  #endif
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    44  
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    45  /*******************************************************************************
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    46  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    47  ** Syntax           : void FlsLdr_ExclArea_PfProg_Enter(void)                 **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    48  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    49  ** Description      : This API call is invoked by FlsLoader module to define  **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    50  **                    the start of an exclusive area while performing PFlash  **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    51  **                    program operation.                                      **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    52  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    53  ** Service ID       :                                                         **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    54  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    55  ** Sync/Async       : Synchronous                                             **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    56  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    57  ** Reentrancy       : Non Reentrant                                           **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    58  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    59  ** Parameters(in)   : None                                                    **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    60  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    61  ** Parameters (out) : None                                                    **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    62  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    63  ** Return value     : void                                                    **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    64  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    65  *******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    66  void FlsLdr_ExclArea_PfProg_Enter(void)
+; Function FlsLdr_ExclArea_PfProg_Enter
+FlsLdr_ExclArea_PfProg_Enter:	.type	func
+
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    67  {
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    68    SuspendAllInterrupts();
+	j	SuspendAllInterrupts
+	
+__FlsLdr_ExclArea_PfProg_Enter_function_end:
+	.size	FlsLdr_ExclArea_PfProg_Enter,__FlsLdr_ExclArea_PfProg_Enter_function_end-FlsLdr_ExclArea_PfProg_Enter
+	; End of function
+	
+	.sdecl	'.text.FlsLdr_ExclArea.FlsLdr_ExclArea_PfProg_Exit',code
+	.sect	'.text.FlsLdr_ExclArea.FlsLdr_ExclArea_PfProg_Exit'
+	.align	2
+	
+	.global	FlsLdr_ExclArea_PfProg_Exit
+
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    69    #ifdef LATENCY_CALC_FLSLDR
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    70    #if(LATENCY_CALC_FLSLDR==1U)
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    71    Measure_Start_Value(0);
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    72    #endif
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    73    #endif
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    74  }
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    75  
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    76  /*******************************************************************************
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    77  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    78  ** Syntax           : void FlsLdr_ExclArea_PfProg_Exit(void)                  **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    79  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    80  ** Description      : This API call is invoked by FlsLoader module to define  **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    81  **                    the end of an exclusive area while performing PFlash    **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    82  **                    program operation.                                      **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    83  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    84  ** Service ID       :                                                         **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    85  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    86  ** Sync/Async       : Synchronous                                             **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    87  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    88  ** Reentrancy       : Non Reentrant                                           **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    89  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    90  ** Parameters(in)   : None                                                    **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    91  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    92  ** Parameters (out) : None                                                    **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    93  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    94  ** Return value     : void                                                    **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    95  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    96  *******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    97  void FlsLdr_ExclArea_PfProg_Exit(void)
+; Function FlsLdr_ExclArea_PfProg_Exit
+FlsLdr_ExclArea_PfProg_Exit:	.type	func
+
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    98  {
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	    99    ResumeAllInterrupts();
+	j	ResumeAllInterrupts
+	
+__FlsLdr_ExclArea_PfProg_Exit_function_end:
+	.size	FlsLdr_ExclArea_PfProg_Exit,__FlsLdr_ExclArea_PfProg_Exit_function_end-FlsLdr_ExclArea_PfProg_Exit
+	; End of function
+	
+	.sdecl	'.text.FlsLdr_ExclArea.FlsLdr_ExclArea_PfErase_Enter',code
+	.sect	'.text.FlsLdr_ExclArea.FlsLdr_ExclArea_PfErase_Enter'
+	.align	2
+	
+	.global	FlsLdr_ExclArea_PfErase_Enter
+
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   100    #ifdef LATENCY_CALC_FLSLDR
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   101    #if(LATENCY_CALC_FLSLDR==1U)
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   102    Measure_End_Value(0);
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   103    #endif
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   104    #endif
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   105  }
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   106  
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   107  /*******************************************************************************
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   108  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   109  ** Syntax           : void FlsLdr_ExclArea_PfErase_Enter(void)                **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   110  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   111  ** Description      : This API call is invoked by FlsLoader module to define  **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   112  **                    the start of an exclusive area while performing PFlash  **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   113  **                    erase operation.                                        **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   114  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   115  ** Service ID       :                                                         **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   116  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   117  ** Sync/Async       : Synchronous                                             **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   118  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   119  ** Reentrancy       : Non Reentrant                                           **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   120  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   121  ** Parameters(in)   : None                                                    **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   122  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   123  ** Parameters (out) : None                                                    **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   124  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   125  ** Return value     : void                                                    **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   126  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   127  *******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   128  void FlsLdr_ExclArea_PfErase_Enter(void)
+; Function FlsLdr_ExclArea_PfErase_Enter
+FlsLdr_ExclArea_PfErase_Enter:	.type	func
+
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   129  {
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   130    SuspendAllInterrupts();
+	j	SuspendAllInterrupts
+	
+__FlsLdr_ExclArea_PfErase_Enter_function_end:
+	.size	FlsLdr_ExclArea_PfErase_Enter,__FlsLdr_ExclArea_PfErase_Enter_function_end-FlsLdr_ExclArea_PfErase_Enter
+	; End of function
+	
+	.sdecl	'.text.FlsLdr_ExclArea.FlsLdr_ExclArea_PfErase_Exit',code
+	.sect	'.text.FlsLdr_ExclArea.FlsLdr_ExclArea_PfErase_Exit'
+	.align	2
+	
+	.global	FlsLdr_ExclArea_PfErase_Exit
+
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   131    #ifdef LATENCY_CALC_FLSLDR
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   132    #if(LATENCY_CALC_FLSLDR==1U)
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   133    Measure_Start_Value(1);
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   134    #endif
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   135    #endif
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   136  }
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   137  
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   138  /*******************************************************************************
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   139  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   140  ** Syntax           : void FlsLdr_ExclArea_PfErase_Exit(void)                 **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   141  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   142  ** Description      : This API call is invoked by FlsLoader module to define  **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   143  **                    the end of an exclusive area while performing PFlash    **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   144  **                    erase operation.                                        **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   145  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   146  ** Service ID       :                                                         **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   147  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   148  ** Sync/Async       : Synchronous                                             **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   149  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   150  ** Reentrancy       : Non Reentrant                                           **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   151  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   152  ** Parameters(in)   : None                                                    **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   153  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   154  ** Parameters (out) : None                                                    **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   155  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   156  ** Return value     : void                                                    **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   157  **                                                                            **
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   158  *******************************************************************************/
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   159  void FlsLdr_ExclArea_PfErase_Exit(void)
+; Function FlsLdr_ExclArea_PfErase_Exit
+FlsLdr_ExclArea_PfErase_Exit:	.type	func
+
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   160  {
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   161    ResumeAllInterrupts();
+	j	ResumeAllInterrupts
+	
+__FlsLdr_ExclArea_PfErase_Exit_function_end:
+	.size	FlsLdr_ExclArea_PfErase_Exit,__FlsLdr_ExclArea_PfErase_Exit_function_end-FlsLdr_ExclArea_PfErase_Exit
+	; End of function
+	
+	.calls	'FlsLdr_ExclArea_PfProg_Enter','SuspendAllInterrupts'
+	.calls	'FlsLdr_ExclArea_PfProg_Exit','ResumeAllInterrupts'
+	.calls	'FlsLdr_ExclArea_PfErase_Enter','SuspendAllInterrupts'
+	.calls	'FlsLdr_ExclArea_PfErase_Exit','ResumeAllInterrupts'
+	.calls	'FlsLdr_ExclArea_PfProg_Enter','',0
+	.calls	'FlsLdr_ExclArea_PfProg_Exit','',0
+	.calls	'FlsLdr_ExclArea_PfErase_Enter','',0
+	.extern	SuspendAllInterrupts
+	.extern	ResumeAllInterrupts
+	.calls	'FlsLdr_ExclArea_PfErase_Exit','',0
+
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   162    #ifdef LATENCY_CALC_FLSLDR
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   163    #if(LATENCY_CALC_FLSLDR==1U)
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   164    Measure_End_Value(1);
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   165    #endif
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   166    #endif
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   167  }
+; Sbl\Toolchains_TC387\Inc\FlsLdr_ExclArea.c	   168  
+
+	; Module end

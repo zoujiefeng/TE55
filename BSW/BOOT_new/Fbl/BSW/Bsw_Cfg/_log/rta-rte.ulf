@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ULF-PROCESSING-LOG>
+<ADMIN-DATA>
+<LANGUAGE>EN</LANGUAGE>
+<USED-LANGUAGES>
+<L-10 L="EN">English</L-10>
+<L-10 L="DE">German</L-10>
+</USED-LANGUAGES>
+</ADMIN-DATA>
+<LOG-ENTRY TI="E001224" S="b8284b3176602fab8de41a3824e3fb" T="2026-09-14T19:39:18.276+0800">
+<SHORT-NAME>RTA-RTE_1</SHORT-NAME>
+<DESC>
+<L-2 L="EN">Target ARObject: &lt;boolean&gt; Element 'boolean' has a duplicate name within context '/AUTOSAR_Platform/SwBaseTypes' but is not defined by AUTOSAR as splittable. Splittable elements and packages with the same name are merged but all sub-elements within the namespace formed by the splittable element that are not themselves splittable must have unique names. (This error can also occur if an XML file is specified multiple times on the command line). - Line: 439. [Infos] &lt;boolean&gt; : &lt;/AUTOSAR_Platform/SwBaseTypes/boolean&gt;</L-2>
+</DESC>
+<CATEGORY>ERROR</CATEGORY>
+<SDG GID="ULF">
+<SD GID="ULF-INCIDENT-URL">ISOLAR_PlatformTypes.arxml</SD>
+<SD GID="ULF-SIGNATURE-ALG">DEFAULT</SD>
+<SD GID="ULF-TOOL-NAME">RTA-RTE</SD>
+</SDG>
+<SDG GID="B.WORX_LOGGING">
+<SD GID="editorInputUri">platform:/resource/TE56H_XPDU_FBL_TC387_CAN2.0_2/ISOLAR_PlatformTypes.arxml#/AUTOSAR_Platform/SwBaseTypes/boolean?type=SwBaseType</SD>
+<SD GID="editorID">com.bosch.autosartool.generic.editor</SD>
+<SD GID="project_name">TE56H_XPDU_FBL_TC387_CAN2.0_2</SD>
+</SDG>
+<SDG GID="BlueWorX Validation">
+<SD GID="valuri_/AUTOSAR_Platform/SwBaseTypes/boolean">platform:/resource/TE56H_XPDU_FBL_TC387_CAN2.0_2/ISOLAR_PlatformTypes.arxml#/AUTOSAR_Platform/SwBaseTypes/boolean?type=SwBaseType</SD>
+<SD GID="PROJECT">TE56H_XPDU_FBL_TC387_CAN2.0_2</SD>
+<SD GID="KEY_FOR_FILTER">VALUE</SD>
+<SD GID="Resource">/TE56H_XPDU_FBL_TC387_CAN2.0_2/ISOLAR_PlatformTypes.arxml</SD>
+<SD GID="DOMAIN_VALIDATION">DOMAIN_VALIDATION_TRUE</SD>
+<SD GID="QUALIFIEDNAME">/AUTOSAR_Platform/SwBaseTypes/boolean</SD>
+<SD GID="id">E001224</SD>
+<SD GID="URI">platform:/resource/TE56H_XPDU_FBL_TC387_CAN2.0_2/ISOLAR_PlatformTypes.arxml#/AUTOSAR_Platform/SwBaseTypes/boolean?type=SwBaseType</SD>
+</SDG>
+</LOG-ENTRY>
+</ULF-PROCESSING-LOG>

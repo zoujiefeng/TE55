@@ -1,0 +1,117 @@
+Start remove_macro  . was excuted
+End remove_macro 
+scons: done reading SConscript files.
+scons: Building targets ...
+CC build\objs\PJ_INVT_FBL\Bootloader\BootM\src\FBL_BootM.o
+CC build\objs\PJ_INVT_FBL\Bootloader\BootM\src\FBL_BootMCfg.o
+CC build\objs\PJ_INVT_FBL\Bootloader\BootM\src\FBL_BootMPrvCfg.o
+CC build\objs\PJ_INVT_FBL\Bootloader\DataM\src\FBL_DataM.o
+CC build\objs\PJ_INVT_FBL\Bootloader\DataM\src\FBL_DataMCfg.o
+CC build\objs\PJ_INVT_FBL\Bootloader\DataM\src\FBL_DataMPrv.o
+CC build\objs\PJ_INVT_FBL\Bootloader\DataM\src\FBL_DataMPrvCfg.o
+CC build\objs\PJ_INVT_FBL\Bootloader\ProgM\src\FBL_ProgM.o
+CC build\objs\PJ_INVT_FBL\Bootloader\ProgM\src\FBL_ProgMPrv.o
+CC build\objs\PJ_INVT_FBL\Bootloader\ProgM\src\FBL_ProgMPrvCfg.o
+CC build\objs\PJ_INVT_FBL\Bootloader\ProgM\src\FBL_ProgM_INVT.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\CanIf\CanIf_cfg.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\CanIf\CanIf_PBcfg.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\CanIf\src\CanIf_Baudrate.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\CanIf\src\CanIf_Controller.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\CanIf\src\CanIf_GetTxConfirmationState.o
+ctc F104: protection error: Unable to open license file C:\TASKING\TriCore_v6.3r1\etc\licfile.txt
+
+===================
+None
+===================
+scons: *** [build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\CanIf\CanIf_PBcfg.o] Error 1
+ctc F104: protection error: Unable to open license file C:\TASKING\TriCore_v6.3r1\etc\licfile.txt
+
+===================
+None
+===================
+scons: *** [build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\CanIf\src\CanIf_Baudrate.o] Error 1
+ctc F104: protection error: Unable to open license file C:\TASKING\TriCore_v6.3r1\etc\licfile.txt
+ctc F104: protection error: Unable to open license file C:\TASKING\TriCore_v6.3r1\etc\licfile.txt
+
+
+===================
+ctc F104: protection error: Unable to open license file C:\TASKING\TriCore_v6.3r1\etc\licfile.txt
+===================
+
+ctc F104: protection error: Unable to open license file C:\TASKING\TriCore_v6.3r1\etc\licfile.txt
+===================
+None
+
+===================
+None
+===================
+None
+===================
+===================
+scons: *** [build\objs\PJ_INVT_FBL\Bootloader\ProgM\src\FBL_ProgM_INVT.o] Error 1
+ctc F104: protection error: Unable to open license file C:\TASKING\TriCore_v6.3r1\etc\licfile.txt
+scons: *** [build\objs\PJ_INVT_FBL\Bootloader\DataM\src\FBL_DataM.o] Error 1
+None
+===================
+
+===================
+None
+scons: *** [build\objs\PJ_INVT_FBL\Bootloader\ProgM\src\FBL_ProgMPrvCfg.o] Error 1
+===================
+scons: *** [build\objs\PJ_INVT_FBL\Bootloader\DataM\src\FBL_DataMPrvCfg.o] Error 1
+scons: *** [build\objs\PJ_INVT_FBL\Bootloader\BootM\src\FBL_BootMPrvCfg.o] Error 1
+ctc F104: protection error: Unable to open license file C:\TASKING\TriCore_v6.3r1\etc\licfile.txt
+
+===================
+None
+===================
+scons: *** [build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\CanIf\src\CanIf_Controller.o] Error 1
+ctc F104: protection error: Unable to open license file C:\TASKING\TriCore_v6.3r1\etc\licfile.txt
+
+===================
+None
+===================
+scons: *** [build\objs\PJ_INVT_FBL\Bootloader\BootM\src\FBL_BootM.o] Error 1
+ctc F104: protection error: Unable to open license file C:\TASKING\TriCore_v6.3r1\etc\licfile.txt
+
+===================
+None
+===================
+ctc F104: protection error: Unable to open license file C:\TASKING\TriCore_v6.3r1\etc\licfile.txt
+scons: *** [build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\CanIf\src\CanIf_GetTxConfirmationState.o] Error 1
+
+===================
+None
+===================
+scons: *** [build\objs\PJ_INVT_FBL\Bootloader\BootM\src\FBL_BootMCfg.o] Error 1
+ctc F104: protection error: Unable to open license file C:\TASKING\TriCore_v6.3r1\etc\licfile.txt
+
+ctc F104: protection error: Unable to open license file C:\TASKING\TriCore_v6.3r1\etc\licfile.txt
+===================
+
+None
+===================
+===================
+None
+scons: *** [build\objs\PJ_INVT_FBL\Bootloader\ProgM\src\FBL_ProgMPrv.o] Error 1
+===================
+scons: *** [build\objs\PJ_INVT_FBL\Bootloader\DataM\src\FBL_DataMCfg.o] Error 1
+ctc F104: protection error: Unable to open license file C:\TASKING\TriCore_v6.3r1\etc\licfile.txt
+
+===================
+ctc F104: protection error: Unable to open license file C:\TASKING\TriCore_v6.3r1\etc\licfile.txt
+None
+
+===================
+===================
+scons: *** [build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\CanIf\CanIf_cfg.o] Error 1
+None
+===================
+scons: *** [build\objs\PJ_INVT_FBL\Bootloader\DataM\src\FBL_DataMPrv.o] Error 1
+ctc F104: protection error: Unable to open license file C:\TASKING\TriCore_v6.3r1\etc\licfile.txt
+
+===================
+None
+===================
+scons: *** [build\objs\PJ_INVT_FBL\Bootloader\ProgM\src\FBL_ProgM.o] Error 1
+scons: building terminated because of errors.

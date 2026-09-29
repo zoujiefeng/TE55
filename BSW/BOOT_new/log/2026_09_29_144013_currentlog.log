@@ -1,0 +1,70 @@
+Start remove_macro  . was excuted
+End remove_macro 
+scons: done reading SConscript files.
+scons: Building targets ...
+CC build\objs\PJ_INVT_FBL\Bootloader\BootM\src\FBL_BootM.o
+CC build\objs\PJ_INVT_FBL\Bootloader\BootM\src\FBL_BootMCfg.o
+CC build\objs\PJ_INVT_FBL\Bootloader\BootM\src\FBL_BootMPrvCfg.o
+CC build\objs\PJ_INVT_FBL\Bootloader\DataM\src\FBL_DataM.o
+CC build\objs\PJ_INVT_FBL\Bootloader\DataM\src\FBL_DataMCfg.o
+CC build\objs\PJ_INVT_FBL\Bootloader\DataM\src\FBL_DataMPrv.o
+CC build\objs\PJ_INVT_FBL\Bootloader\DataM\src\FBL_DataMPrvCfg.o
+CC build\objs\PJ_INVT_FBL\Bootloader\ProgM\src\FBL_ProgM.o
+CC build\objs\PJ_INVT_FBL\Bootloader\ProgM\src\FBL_ProgM_INVT.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreDslDsd\DcmCore_DslDsd_BootLoader.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreDslDsd\DcmCore_DslDsd_ConfirmRespPend.o
+ctc E272: ["Fbl\Bootloader\DataM\src\FBL_DataMPrvCfg.c" 130/38] undeclared identifier "NVM_CFG_NV_BLOCK_LENGTH_NvM_NTC_Voltage_Calibration"
+ctc E231: ["Fbl\Bootloader\DataM\src\FBL_DataMPrvCfg.c" 130/38] expression must be constant
+ctc E231: ["Fbl\Bootloader\DataM\src\FBL_DataMPrvCfg.c" 131/47] expression must be constant
+ctc E272: ["Fbl\Bootloader\DataM\src\FBL_DataMPrvCfg.c" 133/26] undeclared identifier "NVM_CFG_NV_BLOCK_LENGTH_NvM_RCVoltageGain"
+ctc E231: ["Fbl\Bootloader\DataM\src\FBL_DataMPrvCfg.c" 133/26] expression must be constant
+ctc E231: ["Fbl\Bootloader\DataM\src\FBL_DataMPrvCfg.c" 134/33] expression must be constant
+6 errors, 0 warnings
+
+===================
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreDslDsd\DcmCore_DslDsd_GetKwpTimingValues.o
+None
+===================
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreDslDsd\DcmCore_DslDsd_PrepareKwpTimingValues.o
+scons: *** [build\objs\PJ_INVT_FBL\Bootloader\DataM\src\FBL_DataMPrvCfg.o] Error 1
+
+
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W588: ["Fbl\Bootloader\ProgM\src\FBL_ProgM_INVT.c" 241/26] dead assignment to "RetValue" eliminated
+ctc W549: ["Fbl\Bootloader\ProgM\src\FBL_ProgM_INVT.c" 262/36] condition is always true
+ctc W549: ["Fbl\Bootloader\ProgM\src\FBL_ProgM_INVT.c" 289/18] condition is always true
+0 errors, 4 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W588: ["Fbl\Bootloader\ProgM\src\FBL_ProgM.c" 310/26] dead assignment to "RetValue" eliminated
+0 errors, 2 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreDslDsd\DcmCore_DslDsd_BootLoader.c" 547/27] condition is always true
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreDslDsd\DcmCore_DslDsd_BootLoader.c" 636/69] condition is always true
+0 errors, 4 warnings
+
+scons: building terminated because of errors.

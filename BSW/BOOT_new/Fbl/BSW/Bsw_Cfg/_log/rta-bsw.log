@@ -1,0 +1,558 @@
+********************************************************************************
+Build Execution started
+********************************************************************************
+Tool Version : ISOLAR-A/B 9.2.1 
+Tool Build Id :20220317_1800
+Date : Tue Sep 29 14:48:16 CST 2026
+Project : TE56H_XPDU_FBL_TC387_CAN2.0_2
+********************************************************************************
+
+********************************************************************************
+Project clean execution has started at 14:48:17:253 hh:mm:ss:ms 
+********************************************************************************
+Clean action: CanSM_Prepare 
+Clean action: CanTp_Prepare_PC 
+Clean action: CanTrcv_Forward 
+Clean action: ComStack_Validate 
+Clean action: Crc_Validate 
+Clean action: NvM_ForwardWriteMon 
+Clean action: PduR_Forward 
+Clean action: rba_MemLib_Process 
+Clean action: CanIf_GenerateId 
+Clean action: CanSM_Forward 
+Clean action: CanTrcv_GenerateEOC 
+Clean action: ComStack_Generate 
+Clean action: Crc_Generate 
+Clean action: Dcm_IdGenerator 
+Clean action: NvM_Forward 
+Clean action: NvM_Generate 
+Clean action: CanIf_Forward 
+Clean action: CanSM_Validate 
+Clean action: CanTrcv_Validator 
+Clean action: Fee_Generate 
+Clean action: Fee_GenerateJava 
+Clean action: MemIf_Generate 
+Clean action: PduR_Prepare 
+Clean action: CanIf_Validate 
+Clean action: CanSM_Generate 
+Clean action: CanTp_Validate_PC 
+Clean action: CanTrcv_BSWMD_Forward 
+Clean action: CanTrcv_Generate 
+Clean action: CanTrcv_Generate_PB 
+Clean action: Fee_Forward 
+Clean action: PduR_Validate 
+Clean action: CanIf_Generate 
+Clean action: CanIf_Generate_PB 
+Clean action: CanTp_Generate_PC 
+Clean action: Dcm_validator_generator 
+Clean action: PduR_Generate 
+Clean action: PduR_Generate_PB 
+Clean action: rba_ArxmlGen_Validate 
+Clean action: Dcm_Generator 
+Clean action: rba_ArxmlGen_Generate 
+********************************************************************************
+Project clean execution has been completed
+Time taken to run Project Clean :: 00:00:00:093 hh:mm:ss:ms 
+********************************************************************************
+********************************************************************************
+Pre build execution has started at 14:48:17:400 hh:mm:ss:ms 
+********************************************************************************
+Pre build validation successfully completed
+Execute action: 0_CheckLicenses 
+********************************************************************************
+Starting action: Verifying Licenses
+License availabe for stack: Common: OK 
+License availabe for stack: RTA-BASE: OK 
+License availabe for stack: RTA-CAN: OK 
+License availabe for stack: RTA-COM: OK 
+License availabe for stack: RTA-DIAG: OK 
+License availabe for stack: RTA-ETH: NO 
+License availabe for stack: RTA-FRAY: NO 
+License availabe for stack: RTA-HWD(Can): OK 
+License availabe for stack: RTA-HWD(Eth): NO 
+License availabe for stack: RTA-HWD(Fray): NO 
+License availabe for stack: RTA-HWD(Lin): NO 
+License availabe for stack: RTA-J1939: NO 
+License availabe for stack: RTA-LIN: NO 
+License availabe for stack: RTA-MEM: OK 
+License availabe for stack: RTA-RipsPlugins: NO 
+License availabe for stack: RTA-SAFE: OK 
+License availabe for stack: RTA-SEC: NO 
+License availabe for stack: RTA-SWCL: NO 
+License availabe for stack: RTA-XCP: OK 
+Finished action: Verifying Licenses
+Execution of action 0_CheckLicenses successfully completed
+********************************************************************************
+Execute action: ApplicationRegisterer 
+********************************************************************************
+Starting action: Register the Application. Applicable only for Headless usage
+Finished action: Register the Application. Applicable only for Headless usage
+Registering Application not required - No support for headless
+Execution of action ApplicationRegisterer skipped
+********************************************************************************
+Execute action: BswmdEcucValues_1_RemoveExistingBswmdEcucValues 
+********************************************************************************
+Starting action: Remove Bswmd Ecuc Values for ArxmlGen
+Removing static BSWMD Ecuc Values.
+Static BSWMD Ecuc Values.
+Successfully removed static BSWMD Ecuc Values.
+Finished action: Remove Bswmd Ecuc Values for ArxmlGen
+Execution of action BswmdEcucValues_1_RemoveExistingBswmdEcucValues successfully completed
+********************************************************************************
+Execute action: BswmdEcucValues_2_CreateBswmdEcucValues 
+********************************************************************************
+Starting action: Create Bswmd Ecuc Values for ArxmlGen
+Acquiring static BSWMD Ecuc Values.
+Creating static BSWMD Ecuc Values files.
+Creating file 'CanSM_Prot_EcucValues.arxml'.
+Creating file 'PduR_Prot_EcucValues.arxml'.
+Creating file 'CanTrcv_Prot_EcucValues.arxml'.
+Creating file 'CanIf_Prot_EcucValues.arxml'.
+Successfully created static BSWMD Ecuc Values.
+Finished action: Create Bswmd Ecuc Values for ArxmlGen
+Execution of action BswmdEcucValues_2_CreateBswmdEcucValues successfully completed
+********************************************************************************
+Execute action: DuplicatedParamDefChecker 
+********************************************************************************
+Starting action: Checks for duplicated param defs.
+Finished action: Checks for duplicated param defs.
+Execution of action DuplicatedParamDefChecker successfully completed
+********************************************************************************
+Execute action: ParamDefMissingChecker 
+********************************************************************************
+Starting action: Checks for empty definitons.
+Finished action: Checks for empty definitons.
+Execution of action ParamDefMissingChecker successfully completed
+********************************************************************************
+Execute action: ProjectStateValidator 
+********************************************************************************
+Starting action: Runs project validation.
+Finished action: Runs project validation.
+Execution of action ProjectStateValidator successfully completed
+********************************************************************************
+********************************************************************************
+Main build execution has started at 14:48:20:204 hh:mm:ss:ms 
+********************************************************************************
+Execute action: CanSM_Prepare 
+********************************************************************************
+oAW: Prepare script: CanSM_GenerateId.oaw
+oAW: Run script: CanSM_GenerateId.oaw
+oAW: End of running script: CanSM_GenerateId.oaw
+Execution of action CanSM_Prepare successfully completed
+********************************************************************************
+Execute action: CanTp_Prepare_PC 
+********************************************************************************
+oAW: Prepare script: CanTp_Prepare.mwe
+oAW: Run script: CanTp_Prepare.mwe
+oAW: End of running script: CanTp_Prepare.mwe
+Execution of action CanTp_Prepare_PC successfully completed
+********************************************************************************
+Execute action: CanTrcv_Forward 
+********************************************************************************
+oAW: Prepare script: CanTrcv_Forward.mwe
+oAW: Run script: CanTrcv_Forward.mwe
+oAW: End of running script: CanTrcv_Forward.mwe
+Execution of action CanTrcv_Forward successfully completed
+********************************************************************************
+Execute action: ComStack_Validate 
+********************************************************************************
+oAW: Prepare script: ComStack_Validate.oaw
+oAW: Run script: ComStack_Validate.oaw
+oAW: End of running script: ComStack_Validate.oaw
+Execution of action ComStack_Validate successfully completed
+********************************************************************************
+Execute action: Crc_Validate 
+********************************************************************************
+oAW: Prepare script: Crc_Validate.oaw
+oAW: Run script: Crc_Validate.oaw
+oAW: End of running script: Crc_Validate.oaw
+Execution of action Crc_Validate successfully completed
+********************************************************************************
+Execute action: NvM_ForwardWriteMon 
+********************************************************************************
+CFW: Perl Port Local Host URL : http://127.0.0.1:59937/RPC2
+CFW: Call Version
+CFW: ConfProcess version is: 11.0
+Perl: CFW: Set Variant Data
+Perl: CFW: Variant data created
+Perl: Variant data transferred
+CFW: Call Init_variables
+Perl: PerlHash updated, created and transfered
+Perl: No Input Artefacts passed.
+Perl: Process Step executed in NvM_ForwardWriteMon
+Perl: End of: NvM_ForwardWriteMon
+Execution of action NvM_ForwardWriteMon successfully completed
+********************************************************************************
+Execute action: PduR_Forward 
+********************************************************************************
+oAW: Prepare script: PduR_Forward.oaw
+oAW: Run script: PduR_Forward.oaw
+oAW: End of running script: PduR_Forward.oaw
+Execution of action PduR_Forward successfully completed
+********************************************************************************
+Execute action: rba_MemLib_Process 
+********************************************************************************
+Execution of action rba_MemLib_Process successfully completed
+********************************************************************************
+Execute action: CanIf_GenerateId 
+********************************************************************************
+oAW: Prepare script: CanIf_GenerateId.oaw
+oAW: Run script: CanIf_GenerateId.oaw
+oAW: End of running script: CanIf_GenerateId.oaw
+Execution of action CanIf_GenerateId successfully completed
+********************************************************************************
+Execute action: CanSM_Forward 
+********************************************************************************
+oAW: Prepare script: CanSM_Forward.oaw
+oAW: Run script: CanSM_Forward.oaw
+oAW: End of running script: CanSM_Forward.oaw
+Execution of action CanSM_Forward successfully completed
+********************************************************************************
+Execute action: CanTrcv_GenerateEOC 
+********************************************************************************
+oAW: Prepare script: CanTrcv_GenerateEOC.mwe
+oAW: Run script: CanTrcv_GenerateEOC.mwe
+oAW: End of running script: CanTrcv_GenerateEOC.mwe
+Execution of action CanTrcv_GenerateEOC successfully completed
+********************************************************************************
+Execute action: ComStack_Generate 
+********************************************************************************
+oAW: Prepare script: ComStack_Generate.oaw
+oAW: Run script: ComStack_Generate.oaw
+oAW: End of running script: ComStack_Generate.oaw
+Execution of action ComStack_Generate successfully completed
+********************************************************************************
+Execute action: Crc_Generate 
+********************************************************************************
+oAW: Prepare script: Crc_Generate.oaw
+oAW: Run script: Crc_Generate.oaw
+oAW: End of running script: Crc_Generate.oaw
+Execution of action Crc_Generate successfully completed
+********************************************************************************
+Execute action: Dcm_IdGenerator 
+********************************************************************************
+oAW: Prepare script: Dcm_GenerateID.oaw
+oAW: Run script: Dcm_GenerateID.oaw
+oAW: End of running script: Dcm_GenerateID.oaw
+Execution of action Dcm_IdGenerator successfully completed
+********************************************************************************
+Execute action: NvM_Forward 
+********************************************************************************
+CFW: Call Init_variables
+Perl: PerlHash updated, created and transfered
+Perl: No Input Artefacts passed.
+Perl: Process Step executed in NvM_Forward
+Perl: Push to ARTOP in NvM_Forward
+Perl: End of: NvM_Forward
+Execution of action NvM_Forward successfully completed
+********************************************************************************
+Execute action: NvM_Generate 
+********************************************************************************
+CFW: Call Init_variables
+Perl: PerlHash updated, created and transfered
+Perl: Update Input Artefacts in ConfProcess..
+Perl: ArtefactHash created
+Perl: ArtefactHash transferred
+Perl: Process Step executed in NvM_Generate
+Perl: Push to ARTOP in NvM_Generate
+Perl: End of: NvM_Generate
+Execution of action NvM_Generate successfully completed
+********************************************************************************
+Execute action: CanIf_Forward 
+********************************************************************************
+oAW: Prepare script: CanIf_Forward.oaw
+oAW: Run script: CanIf_Forward.oaw
+oAW: End of running script: CanIf_Forward.oaw
+Execution of action CanIf_Forward successfully completed
+********************************************************************************
+Execute action: CanSM_Validate 
+********************************************************************************
+oAW: Prepare script: CanSM_Validate.oaw
+oAW: Run script: CanSM_Validate.oaw
+oAW: End of running script: CanSM_Validate.oaw
+Execution of action CanSM_Validate successfully completed
+********************************************************************************
+Execute action: CanTrcv_Validator 
+********************************************************************************
+oAW: Prepare script: CanTrcv_Validate.mwe
+oAW: Run script: CanTrcv_Validate.mwe
+oAW: End of running script: CanTrcv_Validate.mwe
+Execution of action CanTrcv_Validator successfully completed
+********************************************************************************
+Execute action: Fee_Generate 
+********************************************************************************
+CFW: Call Init_variables
+Perl: PerlHash updated, created and transfered
+Perl: No Input Artefacts passed.
+Perl: Process Step executed in Fee_Generate
+Perl: End of: Fee_Generate
+Execution of action Fee_Generate successfully completed
+********************************************************************************
+Execute action: Fee_GenerateJava 
+********************************************************************************
+Execution of action Fee_GenerateJava successfully completed
+********************************************************************************
+Execute action: MemIf_Generate 
+********************************************************************************
+CFW: Call Init_variables
+Perl: PerlHash updated, created and transfered
+Perl: No Input Artefacts passed.
+Perl: Process Step executed in MemIf_Generate
+Perl: End of: MemIf_Generate
+Execution of action MemIf_Generate successfully completed
+********************************************************************************
+Execute action: PduR_Prepare 
+********************************************************************************
+oAW: Prepare script: PduR_GenerateId.oaw
+oAW: Run script: PduR_GenerateId.oaw
+oAW: End of running script: PduR_GenerateId.oaw
+Execution of action PduR_Prepare successfully completed
+********************************************************************************
+Execute action: CanIf_Validate 
+********************************************************************************
+oAW: Prepare script: CanIf_Validate.oaw
+oAW: Run script: CanIf_Validate.oaw
+oAW: End of running script: CanIf_Validate.oaw
+Execution of action CanIf_Validate successfully completed
+********************************************************************************
+Execute action: CanSM_Generate 
+********************************************************************************
+oAW: Prepare script: CanSM_Generate.oaw
+oAW: Run script: CanSM_Generate.oaw
+oAW: End of running script: CanSM_Generate.oaw
+Execution of action CanSM_Generate successfully completed
+********************************************************************************
+Execute action: CanTp_Validate_PC 
+********************************************************************************
+oAW: Prepare script: CanTp_Validate.mwe
+oAW: Run script: CanTp_Validate.mwe
+oAW: End of running script: CanTp_Validate.mwe
+Execution of action CanTp_Validate_PC successfully completed
+********************************************************************************
+Execute action: CanTrcv_BSWMD_Forward 
+********************************************************************************
+oAW: Prepare script: CanTrcv_BSWMD_Forward.mwe
+oAW: Run script: CanTrcv_BSWMD_Forward.mwe
+oAW: End of running script: CanTrcv_BSWMD_Forward.mwe
+Execution of action CanTrcv_BSWMD_Forward successfully completed
+********************************************************************************
+Execute action: CanTrcv_Generate 
+********************************************************************************
+oAW: Prepare script: CanTrcv_Generate.mwe
+oAW: Run script: CanTrcv_Generate.mwe
+oAW: End of running script: CanTrcv_Generate.mwe
+Execution of action CanTrcv_Generate successfully completed
+********************************************************************************
+Execute action: CanTrcv_Generate_PB 
+********************************************************************************
+oAW: Prepare script: CanTrcv_GeneratePBL.mwe
+oAW: Run script: CanTrcv_GeneratePBL.mwe
+oAW: End of running script: CanTrcv_GeneratePBL.mwe
+Execution of action CanTrcv_Generate_PB successfully completed
+********************************************************************************
+Execute action: Fee_Forward 
+********************************************************************************
+CFW: Call Init_variables
+Perl: PerlHash updated, created and transfered
+Perl: No Input Artefacts passed.
+Perl: Process Step executed in Fee_Forward
+Perl: Push to ARTOP in Fee_Forward
+Perl: End of: Fee_Forward
+Execution of action Fee_Forward successfully completed
+********************************************************************************
+Execute action: PduR_Validate 
+********************************************************************************
+oAW: Prepare script: PduR_Validate.oaw
+oAW: Run script: PduR_Validate.oaw
+oAW: End of running script: PduR_Validate.oaw
+Execution of action PduR_Validate successfully completed
+********************************************************************************
+Execute action: CanIf_Generate 
+********************************************************************************
+oAW: Prepare script: CanIf_Generate.oaw
+oAW: Run script: CanIf_Generate.oaw
+oAW: End of running script: CanIf_Generate.oaw
+Execution of action CanIf_Generate successfully completed
+********************************************************************************
+Execute action: CanIf_Generate_PB 
+********************************************************************************
+oAW: Prepare script: CanIf_Generate_PB.oaw
+oAW: Run script: CanIf_Generate_PB.oaw
+oAW: End of running script: CanIf_Generate_PB.oaw
+Execution of action CanIf_Generate_PB successfully completed
+********************************************************************************
+Execute action: CanTp_Generate_PC 
+********************************************************************************
+oAW: Prepare script: CanTp_Generate.mwe
+oAW: Run script: CanTp_Generate.mwe
+oAW: End of running script: CanTp_Generate.mwe
+Execution of action CanTp_Generate_PC successfully completed
+********************************************************************************
+Execute action: Dcm_validator_generator 
+********************************************************************************
+oAW: Prepare script: Dcm_Validate.oaw
+oAW: Run script: Dcm_Validate.oaw
+oAW: End of running script: Dcm_Validate.oaw
+Execution of action Dcm_validator_generator successfully completed
+********************************************************************************
+Execute action: PduR_Generate 
+********************************************************************************
+oAW: Prepare script: PduR_Generate.oaw
+oAW: Run script: PduR_Generate.oaw
+oAW: End of running script: PduR_Generate.oaw
+Execution of action PduR_Generate successfully completed
+********************************************************************************
+Execute action: PduR_Generate_PB 
+********************************************************************************
+oAW: Prepare script: PduR_Generate_PB.oaw
+oAW: Run script: PduR_Generate_PB.oaw
+oAW: End of running script: PduR_Generate_PB.oaw
+Execution of action PduR_Generate_PB successfully completed
+********************************************************************************
+Execute action: rba_ArxmlGen_Validate 
+********************************************************************************
+oAW: Prepare script: rba_ArxmlGen_Validate.oaw
+oAW: Run script: rba_ArxmlGen_Validate.oaw
+oAW: End of running script: rba_ArxmlGen_Validate.oaw
+Execution of action rba_ArxmlGen_Validate successfully completed
+********************************************************************************
+Execute action: Dcm_Generator 
+********************************************************************************
+oAW: Prepare script: Dcm_generate.oaw
+oAW: Run script: Dcm_generate.oaw
+oAW: End of running script: Dcm_generate.oaw
+Execution of action Dcm_Generator successfully completed
+********************************************************************************
+Execute action: rba_ArxmlGen_Generate 
+********************************************************************************
+oAW: Prepare script: rba_ArxmlGen_Generate.oaw
+oAW: Run script: rba_ArxmlGen_Generate.oaw
+oAW: End of running script: rba_ArxmlGen_Generate.oaw
+Execution of action rba_ArxmlGen_Generate successfully completed
+********************************************************************************
+********************************************************************************
+Post build execution has started at 14:48:28:702 hh:mm:ss:ms 
+********************************************************************************
+Execute action: CopyOutput_1_CopyGeneratedCodeToOutput 
+********************************************************************************
+Starting action: Copy generated code to the output folder.
+Finished action: Copy generated code to the output folder.
+Execution of action CopyOutput_1_CopyGeneratedCodeToOutput successfully completed
+********************************************************************************
+Execute action: CopyOutput_2_CopyGeneratedArxmlToProject 
+********************************************************************************
+Starting action: Copy generated ARXML to the output folder.
+Finished action: Copy generated ARXML to the output folder.
+Execution of action CopyOutput_2_CopyGeneratedArxmlToProject successfully completed
+********************************************************************************
+Execute action: CopyOutput_3_CopyStaticIntegrationCodeToOutput 
+********************************************************************************
+Starting action: Copy integration code to the output folder.
+Integration code generation not selected, skipping copy action.
+Finished action: Copy integration code to the output folder.
+Execution of action CopyOutput_3_CopyStaticIntegrationCodeToOutput successfully completed
+********************************************************************************
+Execute action: CopyOutput_4_CopyStaticCodeToOutput 
+********************************************************************************
+Starting action: Copy static code to the output folder.
+Static code generation not selected, skipping copy action.
+Finished action: Copy static code to the output folder.
+Execution of action CopyOutput_4_CopyStaticCodeToOutput successfully completed
+********************************************************************************
+Execute action: CopyOutput_5_CopyStaticArxmlToProject 
+********************************************************************************
+Starting action: Copy static ARXML to the output folder.
+Finished action: Copy static ARXML to the output folder.
+Execution of action CopyOutput_5_CopyStaticArxmlToProject successfully completed
+********************************************************************************
+Execute action: CopyOutput_6_CopyGeneratedLogsToOutput 
+********************************************************************************
+Starting action: Copy generated logs to the output folder.
+Finished action: Copy generated logs to the output folder.
+Execution of action CopyOutput_6_CopyGeneratedLogsToOutput successfully completed
+********************************************************************************
+Execute action: CopyOutput_7_CleanupGeneratedCode 
+********************************************************************************
+Starting action: Cleanup generated code to the output folder.
+Finished action: Cleanup generated code to the output folder.
+Execution of action CopyOutput_7_CleanupGeneratedCode successfully completed
+********************************************************************************
+Execute action: GenerateCodeGenVersionHeader 
+********************************************************************************
+Starting action: Generate the CodeGen version and diagnostic header file.
+Finished action: Generate the CodeGen version and diagnostic header file.
+Execution of action GenerateCodeGenVersionHeader successfully completed
+********************************************************************************
+Execute action: MapServiceComponentsToECUExtract 
+********************************************************************************
+Starting action: Map Service Components to ECU_Extract
+message must not be null
+Execution of action MapServiceComponentsToECUExtract failed
+********************************************************************************
+
+********************************************************************************
+Pre Build Summary 
+********************************************************************************
+- 0_CheckLicenses --> Success (Executed for 00:00:00:025 hh:mm:ss:ms)
+- ApplicationRegisterer --> Skipped (Executed for 00:00:00:007 hh:mm:ss:ms)
+- BswmdEcucValues_1_RemoveExistingBswmdEcucValues --> Success (Executed for 00:00:00:012 hh:mm:ss:ms)
+- BswmdEcucValues_2_CreateBswmdEcucValues --> Success (Executed for 00:00:00:075 hh:mm:ss:ms)
+- DuplicatedParamDefChecker --> Success (Executed for 00:00:00:076 hh:mm:ss:ms)
+- ParamDefMissingChecker --> Success (Executed for 00:00:00:066 hh:mm:ss:ms)
+- ProjectStateValidator --> Success (Executed for 00:00:00:007 hh:mm:ss:ms)
+Build Summary 
+********************************************************************************
+- CanSM_Prepare --> Success (Executed for 00:00:02:607 hh:mm:ss:ms)
+- CanTp_Prepare_PC --> Success (Executed for 00:00:00:019 hh:mm:ss:ms)
+- CanTrcv_Forward --> Success (Executed for 00:00:00:020 hh:mm:ss:ms)
+- ComStack_Validate --> Success (Executed for 00:00:00:014 hh:mm:ss:ms)
+- Crc_Validate --> Success (Executed for 00:00:00:014 hh:mm:ss:ms)
+- NvM_ForwardWriteMon --> Success (Executed for 00:00:01:827 hh:mm:ss:ms)
+- PduR_Forward --> Success (Executed for 00:00:00:026 hh:mm:ss:ms)
+- rba_MemLib_Process --> Success (Executed for 00:00:00:061 hh:mm:ss:ms)
+- CanIf_GenerateId --> Success (Executed for 00:00:00:028 hh:mm:ss:ms)
+- CanSM_Forward --> Success (Executed for 00:00:00:023 hh:mm:ss:ms)
+- CanTrcv_GenerateEOC --> Success (Executed for 00:00:00:014 hh:mm:ss:ms)
+- ComStack_Generate --> Success (Executed for 00:00:00:016 hh:mm:ss:ms)
+- Crc_Generate --> Success (Executed for 00:00:00:021 hh:mm:ss:ms)
+- Dcm_IdGenerator --> Success (Executed for 00:00:00:023 hh:mm:ss:ms)
+- NvM_Forward --> Success (Executed for 00:00:00:170 hh:mm:ss:ms)
+- NvM_Generate --> Success (Executed for 00:00:00:208 hh:mm:ss:ms)
+- CanIf_Forward --> Success (Executed for 00:00:00:038 hh:mm:ss:ms)
+- CanSM_Validate --> Success (Executed for 00:00:00:034 hh:mm:ss:ms)
+- CanTrcv_Validator --> Success (Executed for 00:00:00:030 hh:mm:ss:ms)
+- Fee_Generate --> Success (Executed for 00:00:00:323 hh:mm:ss:ms)
+- Fee_GenerateJava --> Success (Executed for 00:00:00:075 hh:mm:ss:ms)
+- MemIf_Generate --> Success (Executed for 00:00:00:048 hh:mm:ss:ms)
+- PduR_Prepare --> Success (Executed for 00:00:00:061 hh:mm:ss:ms)
+- CanIf_Validate --> Success (Executed for 00:00:00:078 hh:mm:ss:ms)
+- CanSM_Generate --> Success (Executed for 00:00:00:030 hh:mm:ss:ms)
+- CanTp_Validate_PC --> Success (Executed for 00:00:00:027 hh:mm:ss:ms)
+- CanTrcv_BSWMD_Forward --> Success (Executed for 00:00:00:023 hh:mm:ss:ms)
+- CanTrcv_Generate --> Success (Executed for 00:00:00:057 hh:mm:ss:ms)
+- CanTrcv_Generate_PB --> Success (Executed for 00:00:00:022 hh:mm:ss:ms)
+- Fee_Forward --> Success (Executed for 00:00:00:079 hh:mm:ss:ms)
+- PduR_Validate --> Success (Executed for 00:00:00:128 hh:mm:ss:ms)
+- CanIf_Generate --> Success (Executed for 00:00:00:071 hh:mm:ss:ms)
+- CanIf_Generate_PB --> Success (Executed for 00:00:00:063 hh:mm:ss:ms)
+- CanTp_Generate_PC --> Success (Executed for 00:00:00:091 hh:mm:ss:ms)
+- Dcm_validator_generator --> Success (Executed for 00:00:00:113 hh:mm:ss:ms)
+- PduR_Generate --> Success (Executed for 00:00:00:247 hh:mm:ss:ms)
+- PduR_Generate_PB --> Success (Executed for 00:00:00:286 hh:mm:ss:ms)
+- rba_ArxmlGen_Validate --> Success (Executed for 00:00:00:041 hh:mm:ss:ms)
+- Dcm_Generator --> Success (Executed for 00:00:00:159 hh:mm:ss:ms)
+- rba_ArxmlGen_Generate --> Success (Executed for 00:00:00:084 hh:mm:ss:ms)
+********************************************************************************
+Post Build Summary 
+********************************************************************************
+- CopyOutput_1_CopyGeneratedCodeToOutput --> Success (Executed for 00:00:00:172 hh:mm:ss:ms)
+- CopyOutput_2_CopyGeneratedArxmlToProject --> Success (Executed for 00:00:00:136 hh:mm:ss:ms)
+- CopyOutput_3_CopyStaticIntegrationCodeToOutput --> Success (Executed for 00:00:00:008 hh:mm:ss:ms)
+- CopyOutput_4_CopyStaticCodeToOutput --> Success (Executed for 00:00:00:008 hh:mm:ss:ms)
+- CopyOutput_5_CopyStaticArxmlToProject --> Success (Executed for 00:00:00:090 hh:mm:ss:ms)
+- CopyOutput_6_CopyGeneratedLogsToOutput --> Success (Executed for 00:00:00:038 hh:mm:ss:ms)
+- CopyOutput_7_CleanupGeneratedCode --> Success (Executed for 00:00:00:053 hh:mm:ss:ms)
+- GenerateCodeGenVersionHeader --> Success (Executed for 00:00:00:013 hh:mm:ss:ms)
+- MapServiceComponentsToECUExtract --> Error (Executed for 00:00:00:009 hh:mm:ss:ms)
+message must not be null
+Time taken for the complete build: 00:00:08:255

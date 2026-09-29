@@ -1,0 +1,85 @@
+Start remove_macro  . was excuted
+End remove_macro 
+scons: done reading SConscript files.
+scons: Building targets ...
+CC build\objs\PJ_INVT_FBL\Bootloader\BootM\src\FBL_BootM.o
+CC build\objs\PJ_INVT_FBL\Bootloader\BootM\src\FBL_BootMCfg.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Dcm\Dcm_Lcfg_DslDsd.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\Fee\Fee_Cfg.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\PduR\PduR_LoTp.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\PduR\PduR_PBcfg.o
+CC build\objs\PJ_INVT_FBL\BSW\Bsw_Gen\PduR\PduR_UpTp.o
+CC build\objs\PJ_INVT_FBL\InfineonLib\Infra\CDD\bsw\bswsrv.o
+
+ctc W525: ["Fbl\InfineonLib\Infra\CDD\bsw\bswsrv.c" 285/24] discarded 'const' qualifier at assignment: conversion from unsigned char const volatile * to unsigned char *
+ctc W525: ["Fbl\InfineonLib\Infra\CDD\bsw\bswsrv.c" 285/24] discarded 'volatile' qualifier at assignment: conversion from unsigned char const volatile * to unsigned char *
+0 errors, 2 warnings
+
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+0 errors, 1 warnings
+
+ctc W529: ["Fbl\InfineonLib\Infra\Integration\Bsw\Dcm\integration\Dcm_Cfg_Timer.h" 75/78] overflow in constant expression of type "unsigned long int"
+ctc W549: ["Fbl\BSW\Bsw_Gen\Dcm\src\DcmCore\DcmCoreLib\DcmCore_DslDsd_Inl.h" 46/5] condition is always true
+0 errors, 2 warnings
+
+LINK build\dbg\PJ_INVT_FBL.elf
+ltc E108: multiple definitions of symbol "CanIf_Callback" in both "CanIf_PBcfg.o" and "CanIf_PBcfg.o"
+ltc E108: multiple definitions of symbol "CanIf_Config" in both "CanIf_PBcfg.o" and "CanIf_PBcfg.o"
+ltc E108: multiple definitions of symbol "CanSM_NetworktoCtrl_Config_acu8" in both "CanSM_PBcfg.o" and "CanSM_PBcfg.o"
+ltc E108: multiple definitions of symbol "CanSM_Network_Config_acst" in both "CanSM_PBcfg.o" and "CanSM_PBcfg.o"
+ltc E108: multiple definitions of symbol "CanSM_ConfigSet" in both "CanSM_PBcfg.o" and "CanSM_PBcfg.o"
+ltc E108: multiple definitions of symbol "CanTp_Config" in both "CanTp_Cfg.o" and "CanTp_Cfg.o"
+ltc E108: multiple definitions of symbol "CanTrcv_TrcvType" in both "CanTrcv_Cfg.o" and "CanTrcv_Cfg.o"
+ltc E108: multiple definitions of symbol "CanTrcv_FctP_st" in both "CanTrcv_Cfg.o" and "CanTrcv_Cfg.o"
+ltc E108: multiple definitions of symbol "CanTrcv_Cfg_SpiPos_au8" in both "CanTrcv_Cfg.o" and "CanTrcv_Cfg.o"
+ltc E108: multiple definitions of symbol "CanTrcv_SpiArray_ast" in both "CanTrcv_Cfg.o" and "CanTrcv_Cfg.o"
+ltc E108: multiple definitions of symbol "CanTrcv_CfgSpiChannel_ao" in both "CanTrcv_Cfg.o" and "CanTrcv_Cfg.o"
+ltc E108: multiple definitions of symbol "CanTrcv_WakeupSource_ao" in both "CanTrcv_Cfg.o" and "CanTrcv_Cfg.o"
+ltc E108: multiple definitions of symbol "Crc_GetVersionInfo" in both "Crc.o" and "Crc.o"
+ltc E108: multiple definitions of symbol "Crc_CalculateCRC16" in both "Crc.o" and "Crc.o"
+ltc E108: multiple definitions of symbol "Crc_CalculateCRC32" in both "Crc.o" and "Crc.o"
+ltc E108: multiple definitions of symbol "CRC_8_Tbl" in both "Crc_Cfg.o" and "Crc_Cfg.o"
+ltc E108: multiple definitions of symbol "CRC_8H2F_Tbl" in both "Crc_Cfg.o" and "Crc_Cfg.o"
+ltc E108: multiple definitions of symbol "CRC_16_Tbl" in both "Crc_Cfg.o" and "Crc_Cfg.o"
+ltc E108: multiple definitions of symbol "CRC_32_REV_Tbl" in both "Crc_Cfg.o" and "Crc_Cfg.o"
+ltc E108: multiple definitions of symbol "CRC_64_REV_Tbl" in both "Crc_Cfg.o" and "Crc_Cfg.o"
+ltc E108: multiple definitions of symbol "Dcm_DcmModeRule_0" in both "Dcm_Lcfg_DslDsd.o" and "Dcm_Lcfg_DslDsd.o"
+ltc E108: multiple definitions of symbol "Dcm_InParameterBuf_au8" in both "Dcm_Lcfg_DslDsd.o" and "Dcm_Lcfg_DslDsd.o"
+ltc E108: multiple definitions of symbol "Dcm_active_commode_e" in both "Dcm_Lcfg_DslDsd.o" and "Dcm_Lcfg_DslDsd.o"
+ltc E108: multiple definitions of symbol "Dcm_Dsld_ComMChannelId_acu8" in both "Dcm_Lcfg_DslDsd.o" and "Dcm_Lcfg_DslDsd.o"
+ltc E108: multiple definitions of symbol "Dcm_Dsld_RoeRxToTestSrcMappingTable" in both "Dcm_Lcfg_DslDsd.o" and "Dcm_Lcfg_DslDsd.o"
+ltc E108: multiple definitions of symbol "Dcm_Dsld_Conf_cs" in both "Dcm_Lcfg_DslDsd.o" and "Dcm_Lcfg_DslDsd.o"
+ltc E108: multiple definitions of symbol "Dcm_RCGetSigVal_u32" in both "Dcm_Lcfg_DspUds.o" and "Dcm_Lcfg_DspUds.o"
+ltc E108: multiple definitions of symbol "Dcm_RCSetSigVal" in both "Dcm_Lcfg_DspUds.o" and "Dcm_Lcfg_DspUds.o"
+ltc E108: multiple definitions of symbol "Dcm_RCSigInN_au8" in both "Dcm_Lcfg_DspUds.o" and "Dcm_Lcfg_DspUds.o"
+ltc E108: multiple definitions of symbol "Dcm_DIDcalculateTableSize_u16" in both "Dcm_Lcfg_DspUds.o" and "Dcm_Lcfg_DspUds.o"
+ltc E108: multiple definitions of symbol "Dcm_ControlDtcSettingModecheck_b" in both "Dcm_Lcfg_DspUds.o" and "Dcm_Lcfg_DspUds.o"
+ltc E108: multiple definitions of symbol "Dcm_RequestDownloadCalculateTableSize_u16" in both "Dcm_Lcfg_DspUds.o" and "Dcm_Lcfg_DspUds.o"
+ltc E108: multiple definitions of symbol "Dcm_Dsp_Session" in both "Dcm_Lcfg_DspUds.o" and "Dcm_Lcfg_DspUds.o"
+ltc E108: multiple definitions of symbol "Dcm_Dsp_Security" in both "Dcm_Lcfg_DspUds.o" and "Dcm_Lcfg_DspUds.o"
+ltc E108: multiple definitions of symbol "Dcm_RCSigOutN_as16" in both "Dcm_Lcfg_DspUds.o" and "Dcm_Lcfg_DspUds.o"
+ltc E108: multiple definitions of symbol "Dcm_RCSigOutN_as32" in both "Dcm_Lcfg_DspUds.o" and "Dcm_Lcfg_DspUds.o"
+ltc E108: multiple definitions of symbol "Dcm_RCSigOutN_as8" in both "Dcm_Lcfg_DspUds.o" and "Dcm_Lcfg_DspUds.o"
+ltc E108: multiple definitions of symbol "Dcm_RCSigOutN_au32" in both "Dcm_Lcfg_DspUds.o" and "Dcm_Lcfg_DspUds.o"
+ltc E108: multiple definitions of symbol "Dcm_RCSigOutN_au16" in both "Dcm_Lcfg_DspUds.o" and "Dcm_Lcfg_DspUds.o"
+ltc E108: multiple definitions of symbol "Dcm_RCSigOutN_au8" in both "Dcm_Lcfg_DspUds.o" and "Dcm_Lcfg_DspUds.o"
+ltc E108: multiple definitions of symbol "Dcm_RCSigInN_as16" in both "Dcm_Lcfg_DspUds.o" and "Dcm_Lcfg_DspUds.o"
+ltc E108: multiple definitions of symbol "Dcm_RCSigInN_as32" in both "Dcm_Lcfg_DspUds.o" and "Dcm_Lcfg_DspUds.o"
+ltc F020: more than 42 errors, aborting
+ltc F019: unrecoverable error: fatal link error
+
+===================
+None
+===================
+scons: *** [build\dbg\PJ_INVT_FBL.elf] Error 2
+scons: building terminated because of errors.
